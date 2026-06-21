@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "nodenext",
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "nodenext",
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "declaration": true,
+    "types": [
+      "node",
+      "vitest"
+    ],
+    "paths": {
+        "axios": ["./node_modules/axios/index.d.ts"]
+    }
+  },
+  "include": [
+    "src/**/*.ts",
+    "**/*.test.ts"
+  ],
+  "exclude": [
+    "node_modules",
+  ]
+}

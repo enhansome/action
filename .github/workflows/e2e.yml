@@ -1,0 +1,65 @@
+name: E2E
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+# Run locally with act (same file runs in CI). No personal token needed:
+# the action fetches repo metadata anonymously (github.ts omits the auth
+# header when the token is empty). CI uses the ephemeral read-only GITHUB_TOKEN.
+#   act --container-architecture linux/amd64 --container-daemon-socket - --job enhance
+jobs:
+  enhance:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Ensure rsync (act image omits it; CI ubuntu-latest has it)
+        run: command -v rsync >/dev/null || { sudo apt-get update -qq && sudo apt-get install -y -qq rsync; }
+
+      - name: Stand up fixture (origin submodule)
+        run: git clone --depth 1 https://github.com/NARKOZ/guides.git origin
+
+      # Orchestration that used to live in the composite action. This block is
+      # the source-of-truth the Phase C per-repo workflow template reuses.
+      - name: Update + sync origin
+        id: origin
+        run: |
+          set -euo pipefail
+          [ -d origin/.git ] || git submodule update --init origin
+          cd origin
+          git fetch --all --tags
+          DEFAULT_BRANCH=$(git remote show origin | sed -n 's/^.*HEAD branch: //p')
+          git checkout "$DEFAULT_BRANCH"
+          git pull origin "$DEFAULT_BRANCH" --ff-only
+          OWNER_REPO=$(git config --get remote.origin.url \
+            | sed -E 's|.*github.com[/:]([^/]+/[^/]+).*|\1|' | sed 's/\.git$//')
+          cd ..
+          rsync -a origin/README.md ./README.md
+          echo "repo=$OWNER_REPO" >> "$GITHUB_OUTPUT"
+
+      - name: Enhance
+        uses: ./
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          markdown_file: README.md
+          working_directory: '.'
+          relative_link_prefix: origin
+          original_repository: ${{ steps.origin.outputs.repo }}
+
+      - name: Assert output (shape, not values)
+        run: |
+          set -e
+          python3 - <<'PY'
+          import json
+          d = json.load(open("README.json"))
+          assert isinstance(d.get("items"), list) and len(d["items"]) > 0, "items missing/empty"
+          got = d["metadata"]["original_repository"]
+          assert got == "NARKOZ/guides", f"original_repository={got!r}"
+          print("README.json OK:", len(d["items"]), "sections")
+          PY
+          grep -q '⭐' README.md && echo "README.md has star badge"

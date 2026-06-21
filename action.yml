@@ -1,0 +1,56 @@
+name: 'Enhance Markdown with GitHub Stars'
+description: 'Parses a markdown file, finds GitHub repo links, and appends star counts.'
+author: 'enhansome'
+
+inputs:
+  github_token:
+    description: 'GitHub token for API calls. If omitted, metadata is fetched anonymously (rate-limited).'
+    required: false
+  markdown_file:
+    description: 'Path to the markdown file to process (relative to working_directory).'
+    required: true
+    default: 'README.md'
+  working_directory:
+    description: 'The directory where the markdown file is located and where the action should operate.'
+    required: false
+    default: '.'
+  json_output_file:
+    description: |
+      Path to save the generated JSON file in the source repository.
+      If set to 'auto', the filename is derived from the markdown file (e.g., README.md -> README.json).
+      If empty, no JSON file is generated in the source repository.
+    required: false
+    default: 'auto'
+  find_and_replace:
+    description: |
+      Multiline list of literal string replacements.
+      Each line should be in the format: `find_string:::replace_string`.
+    required: false
+  regex_find_and_replace:
+    description: |
+      Multiline list of regex-based replacements.
+      Each line should be in the format: `pattern:::replacement_string`.
+      The pattern is a case-sensitive regex with `gm` flags applied.
+    required: false
+  disable_branding:
+    description: "Set to 'true' to disable the default behavior of appending ' with stars' to Awesome list titles."
+    required: false
+    default: 'false'
+  sort_by:
+    description: "Sorts lists that meet the threshold. Options: 'stars' or 'last_commit'. Leave empty to disable sorting."
+    required: false
+    default: ''
+  relative_link_prefix:
+    description: 'A path prefix to prepend to all relative links. Useful when content is moved from a subdirectory.'
+    required: false
+    default: ''
+  original_repository:
+    description: 'The original/submodule repository in owner/repo format that is being enhanced (e.g., owner/repo).'
+    required: false
+    default: ''
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+# No manual env: block — GitHub/act auto-inject INPUT_<NAME> from `with:`
+# (a manual INPUT_X: ${{ inputs.x }} mapping isn't expanded by act).
