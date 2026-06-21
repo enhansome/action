@@ -1,4 +1,4 @@
-name: E2E
+name: test
 
 on:
   push:
@@ -8,12 +8,25 @@ on:
 permissions:
   contents: read
 
-# Run locally with act (same file runs in CI). No personal token needed:
-# the action fetches repo metadata anonymously (github.ts omits the auth
-# header when the token is empty). CI uses the ephemeral read-only GITHUB_TOKEN.
-#   act --container-architecture linux/amd64 --container-daemon-socket - --job enhance
+# Both test layers in one file:
+#  - unit: hermetic vitest suite + tsc + shellcheck (no network, no token)
+#  - e2e:  the workflow itself — orchestration + the Docker action + asserts
+#          (run locally via `make e2e`; anonymous, no token needed)
 jobs:
-  enhance:
+  unit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci
+      - run: npm run build          # tsc — typecheck
+      - run: npm test               # vitest (hermetic; mocks the GitHub API)
+      - run: shellcheck entrypoint.sh
+
+  e2e:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
@@ -24,8 +37,6 @@ jobs:
       - name: Stand up fixture (origin submodule)
         run: git clone --depth 1 https://github.com/NARKOZ/guides.git origin
 
-      # Orchestration that used to live in the composite action. This block is
-      # the source-of-truth the Phase C per-repo workflow template reuses.
       - name: Update + sync origin
         id: origin
         run: |

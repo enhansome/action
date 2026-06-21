@@ -30,7 +30,7 @@ LABEL stage="runner"
 LABEL description="Enhances markdown files with GitHub star counts."
 LABEL maintainer="v1nvn"
 # x-release-please-start-version
-LABEL version="v1.8.4"
+LABEL version="v1.0.0"
 # x-release-please-end
 
 WORKDIR /app
