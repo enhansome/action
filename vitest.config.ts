@@ -1,5 +1,5 @@
 /// <reference types="vitest" />
-import { defineConfig } from 'vitest/config';
+import { configDefaults, defineConfig } from 'vitest/config';
 
 export default defineConfig({
   test: {
@@ -8,5 +8,8 @@ export default defineConfig({
     globals: true,
     // We are testing Node.js code, not browser code.
     environment: 'node',
+    // vitest v4 dropped dist from the default excludes; `tsc` compiles the
+    // *.test.ts files into dist/, so exclude it to avoid running stale copies.
+    exclude: [...configDefaults.exclude, 'dist/**'],
   },
 });

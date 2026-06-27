@@ -6,7 +6,12 @@ import remarkStringify from 'remark-stringify';
 import { unified } from 'unified';
 import { visit } from 'unist-util-visit';
 
-import { getRepoInfo, parseGitHubUrl, RepoInfoDetails } from './github.js';
+import {
+  getRepoInfo,
+  makeOctokit,
+  parseGitHubUrl,
+  RepoInfoDetails,
+} from './github.js';
 
 import type { Heading, Link, List, ListItem, Parent, Root, Text } from 'mdast';
 
@@ -51,10 +56,11 @@ interface JsonItem {
 }
 
 interface JsonMetadata {
+  enhanced_repository: null | string;
+  enhanced_repository_description: null | string;
   last_updated: string;
-  original_repository: null | string;
-  source_repository: null | string;
-  source_repository_description: null | string;
+  original_repository: string;
+  original_repository_sha: null | string;
   title: string;
 }
 
@@ -77,6 +83,10 @@ export async function fetchAllRepoInfo(
   const queue = Array.from(urls);
   const CONCURRENCY_LIMIT = 10; // Process up to 10 requests in parallel
 
+  // One shared client so the throttling plugin can coordinate rate limits
+  // across every lookup instead of per-request.
+  const octokit = makeOctokit(token);
+
   // A worker pulls a URL from the queue, processes it, and repeats
   // until the queue is empty.
   async function worker() {
@@ -89,7 +99,7 @@ export async function fetchAllRepoInfo(
       const details = parseGitHubUrl(url);
       if (details) {
         try {
-          const info = await getRepoInfo(details.owner, details.repo, token);
+          const info = await getRepoInfo(octokit, details.owner, details.repo);
           if (info) {
             repoInfoMap.set(url, info);
           }
@@ -116,11 +126,12 @@ export async function processMarkdownContent(
   token: string,
   replacements: ReplacementRule[] = [],
   sortOptions: SortOptions = { by: '', minLinks: 2 },
-  originalRepository?: string,
+  originalRepository: string,
   relativeLinkPrefix = '',
-  sourceRepository?: string,
-  sourceRepositoryDescription?: string,
-): Promise<{ finalContent: string; isChanged: boolean; jsonData: JsonOutput }> {
+  enhancedRepository?: string,
+  enhancedRepositoryDescription?: string,
+  originalRepositorySha?: string,
+): Promise<{ finalContent: string; jsonData: JsonOutput }> {
   const contentAfterReplacements = applyTextReplacements(
     originalContent,
     replacements,
@@ -140,17 +151,18 @@ export async function processMarkdownContent(
     tree,
     repoInfoMap,
     sortOptions,
-    sourceRepository,
+    enhancedRepository,
   );
 
   const jsonData: JsonOutput = {
     items: sections,
     metadata: {
       last_updated: new Date().toISOString(),
-      original_repository: (originalRepository?.trim() ?? '') || null,
-      source_repository: (sourceRepository?.trim() ?? '') || null,
-      source_repository_description:
-        (sourceRepositoryDescription?.trim() ?? '') || null,
+      original_repository: originalRepository.trim(),
+      original_repository_sha: (originalRepositorySha?.trim() ?? '') || null,
+      enhanced_repository: (enhancedRepository?.trim() ?? '') || null,
+      enhanced_repository_description:
+        (enhancedRepositoryDescription?.trim() ?? '') || null,
       title,
     },
   };
@@ -165,7 +177,6 @@ export async function processMarkdownContent(
 
   return {
     finalContent,
-    isChanged: finalContent.trim() !== originalContent.trim(),
     jsonData,
   };
 }
@@ -441,7 +452,7 @@ function processTree(
   tree: Root,
   repoInfoMap: Map<string, RepoInfoDetails>,
   sortOptions: SortOptions,
-  sourceRepository?: string,
+  enhancedRepository?: string,
 ): { sections: JsonSection[]; title: string } {
   // Collect all H1 headings
   const h1Titles: string[] = [];
@@ -461,8 +472,8 @@ function processTree(
   }
 
   // Fallback: extract from source repository name if available
-  if (documentTitle === '' && sourceRepository) {
-    const repoName = sourceRepository.split('/')[1];
+  if (documentTitle === '' && enhancedRepository) {
+    const repoName = enhancedRepository.split('/')[1];
     if (repoName) {
       documentTitle = formatRepoNameAsTitle(repoName);
     }

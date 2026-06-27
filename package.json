@@ -7,8 +7,8 @@
   "scripts": {
     "build": "tsc",
     "start": "node dist/main.js",
-    "lint": "eslint src/**/*.ts",
-    "format": "prettier --write src/**/*.ts",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "test": "vitest run",
     "test:watch": "vitest",
     "coverage": "vitest run --coverage"
@@ -21,31 +21,40 @@
   ],
   "author": "v1nvn",
   "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
   "dependencies": {
-    "@actions/core": "^1.11.1",
-    "@actions/github": "^6.0.1",
-    "axios": "^1.9.0",
+    "@actions/core": "^3.0.1",
+    "@actions/github": "^9.1.1",
+    "@octokit/core": "^7.0.6",
+    "@octokit/plugin-retry": "^8.0.2",
+    "@octokit/plugin-throttling": "^11.0.2",
     "remark-gfm": "^4.0.1",
     "remark-parse": "^11.0.0",
     "remark-stringify": "^11.0.0",
     "unified": "^11.0.5",
-    "unist-util-visit": "^5.0.0"
+    "unist-util-visit": "^5.1.0"
   },
   "devDependencies": {
-    "@types/node": "^22.15.29",
+    "@eslint/js": "^10.0.1",
+    "@octokit/request-error": "^7.1.0",
+    "@stylistic/eslint-plugin": "^5.10.0",
+    "@types/node": "^26.0.1",
     "@types/unist": "^3.0.3",
-    "@vitest/coverage-v8": "^3.2.4",
-    "axios-mock-adapter": "^2.1.0",
-    "eslint": "^9.32.0",
+    "@vitest/coverage-v8": "^4.1.9",
+    "eslint": "^10.6.0",
     "eslint-config-prettier": "^10.1.8",
-    "eslint-import-resolver-typescript": "^4.4.4",
-    "eslint-plugin-import-x": "^4.16.1",
-    "eslint-plugin-perfectionist": "^4.15.0",
-    "eslint-plugin-prettier": "^5.5.3",
-    "eslint-plugin-promise": "^7.2.1",
-    "prettier": "^3.6.2",
-    "typescript": "^5.8.3",
-    "typescript-eslint": "^8.38.0",
-    "vitest": "^3.2.4"
+    "eslint-import-resolver-typescript": "^4.4.5",
+    "eslint-plugin-import-x": "^4.17.0",
+    "eslint-plugin-n": "^18.2.1",
+    "eslint-plugin-perfectionist": "^5.9.1",
+    "eslint-plugin-prettier": "^5.5.6",
+    "eslint-plugin-promise": "^7.3.0",
+    "globals": "^17.7.0",
+    "prettier": "^3.8.5",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.62.0",
+    "vitest": "^4.1.9"
   }
 }

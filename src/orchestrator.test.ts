@@ -40,13 +40,16 @@ describe('Orchestrator: enhance()', () => {
 
       const { finalContent } = await enhance({
         content: originalContent,
+        originalRepository: 'owner/source-repo',
         token,
       });
 
+      // First arg is the injected Octokit client (auto-mocked → undefined);
+      // assert the meaningful owner/repo args.
       expect(github.getRepoInfo).toHaveBeenCalledWith(
+        undefined,
         'test-user',
         'test-repo',
-        token,
       );
       expect(finalContent).toBe(expectedContent);
     });
@@ -75,6 +78,7 @@ describe('Orchestrator: enhance()', () => {
 
       const { finalContent } = await enhance({
         content: originalContent,
+        originalRepository: 'owner/source-repo',
         token,
       });
 
@@ -97,6 +101,7 @@ describe('Orchestrator: enhance()', () => {
       const { finalContent } = await enhance({
         content: originalContent,
         findAndReplaceRaw,
+        originalRepository: 'owner/source-repo',
         token,
       });
       expect(finalContent).toBe(expectedContent);
@@ -110,6 +115,7 @@ describe('Orchestrator: enhance()', () => {
 
       const { finalContent } = await enhance({
         content: originalContent,
+        originalRepository: 'owner/source-repo',
         regexFindAndReplaceRaw,
         token,
       });
@@ -131,6 +137,7 @@ describe('Orchestrator: enhance()', () => {
 
       const { finalContent } = await enhance({
         content: originalContent,
+        originalRepository: 'owner/source-repo',
         token,
       });
       expect(finalContent).toBe(expectedContent);
@@ -142,6 +149,7 @@ describe('Orchestrator: enhance()', () => {
       const { finalContent } = await enhance({
         content: originalContent,
         disableBranding: true,
+        originalRepository: 'owner/source-repo',
         token,
       });
       expect(finalContent).toBe(originalContent);
@@ -155,7 +163,7 @@ describe('Orchestrator: enhance()', () => {
         repo: url.split('/')[4],
       }));
       vi.mocked(github.getRepoInfo).mockImplementation(
-        (owner: string, repo: string) => {
+        (_octokit, _owner: string, repo: string) => {
           const repoData: Record<string, RepoInfoDetails> = {
             'repo-a': {
               archived: false,
@@ -198,6 +206,7 @@ describe('Orchestrator: enhance()', () => {
     `;
       const { finalContent } = await enhance({
         content: originalContent,
+        originalRepository: 'owner/source-repo',
         sortBy: 'stars',
         token,
       });
@@ -241,7 +250,11 @@ Another valid section.
         return { owner: parts[3], repo: parts[4] };
       });
       vi.mocked(github.getRepoInfo).mockImplementation(
-        (owner: string, repo: string): Promise<null | RepoInfoDetails> => {
+        (
+          _octokit,
+          _owner: string,
+          repo: string,
+        ): Promise<null | RepoInfoDetails> => {
           const db: Record<string, RepoInfoDetails> = {
             'nested-1': {
               archived: false,
@@ -286,6 +299,7 @@ Another valid section.
 
       const { jsonData } = await enhance({
         content: complexContent,
+        originalRepository: 'owner/source-repo',
         sortBy: 'stars',
         token,
       });
@@ -347,7 +361,11 @@ Version: 1.5.0 | Last Updated: TBD
         return null;
       });
       vi.mocked(github.getRepoInfo).mockImplementation(
-        (owner: string, repo: string): Promise<null | RepoInfoDetails> => {
+        (
+          _octokit,
+          _owner: string,
+          repo: string,
+        ): Promise<null | RepoInfoDetails> => {
           const db: Record<string, RepoInfoDetails> = {
             'repo-a': {
               archived: false,
@@ -376,6 +394,7 @@ Version: 1.5.0 | Last Updated: TBD
         content: originalContent,
         findAndReplaceRaw: '__VERSION__:::1.5.0',
         regexFindAndReplaceRaw: '\\d{4}-\\d{2}-\\d{2}:::TBD',
+        originalRepository: 'owner/source-repo',
         sortBy: 'stars',
         token,
       });
@@ -394,44 +413,46 @@ Version: 1.5.0 | Last Updated: TBD
       const originalContent =
         '# Awesome Test List\n\n* [Some Repo](https://github.com/user/repo)';
       const originalRepository = 'jorgebucaran/awsm.fish';
-      const sourceRepository = 'myuser/awsm-with-stars';
+      const enhancedRepository = 'myuser/awsm-with-stars';
 
       const { jsonData } = await enhance({
         content: originalContent,
         originalRepository,
-        sourceRepository,
-        sourceRepositoryDescription: 'Enhanced awesome list',
+        enhancedRepository,
+        enhancedRepositoryDescription: 'Enhanced awesome list',
         token,
       });
 
       expect(jsonData.metadata.original_repository).toBe(originalRepository);
-      expect(jsonData.metadata.source_repository).toBe(sourceRepository);
-      expect(jsonData.metadata.source_repository_description).toBe(
+      expect(jsonData.metadata.enhanced_repository).toBe(enhancedRepository);
+      expect(jsonData.metadata.enhanced_repository_description).toBe(
         'Enhanced awesome list',
       );
     });
 
-    it('should set original_repository to null when not provided', async () => {
+    it('should include the source commit SHA in JSON metadata when provided', async () => {
       const originalContent = '# Awesome Test List';
 
       const { jsonData } = await enhance({
         content: originalContent,
+        originalRepository: 'jorgebucaran/awsm.fish',
+        originalRepositorySha: 'deadbeefcafe',
         token,
       });
 
-      expect(jsonData.metadata.original_repository).toBeNull();
+      expect(jsonData.metadata.original_repository_sha).toBe('deadbeefcafe');
     });
 
-    it('should set original_repository to null when empty string is provided', async () => {
+    it('should set the source commit SHA to null when not provided', async () => {
       const originalContent = '# Awesome Test List';
 
       const { jsonData } = await enhance({
         content: originalContent,
-        originalRepository: '',
+        originalRepository: 'jorgebucaran/awsm.fish',
         token,
       });
 
-      expect(jsonData.metadata.original_repository).toBeNull();
+      expect(jsonData.metadata.original_repository_sha).toBeNull();
     });
   });
 });

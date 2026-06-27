@@ -8,19 +8,19 @@ import {
 export interface EnhanceOptions {
   content: string;
   disableBranding?: boolean;
+  enhancedRepository?: string;
+  enhancedRepositoryDescription?: string;
   findAndReplaceRaw?: string;
-  originalRepository?: string;
+  originalRepository: string;
+  originalRepositorySha?: string;
   regexFindAndReplaceRaw?: string;
   relativeLinkPrefix?: string;
   sortBy?: '' | 'last_commit' | 'stars';
-  sourceRepository?: string;
-  sourceRepositoryDescription?: string;
   token: string;
 }
 
 export interface EnhanceResult {
   finalContent: string;
-  isChanged: boolean;
   jsonData: JsonOutput;
 }
 
@@ -30,11 +30,12 @@ export async function enhance(options: EnhanceOptions): Promise<EnhanceResult> {
     disableBranding = false,
     findAndReplaceRaw = '',
     originalRepository,
+    originalRepositorySha,
     regexFindAndReplaceRaw = '',
     relativeLinkPrefix = '',
     sortBy = '',
-    sourceRepository,
-    sourceRepositoryDescription,
+    enhancedRepository,
+    enhancedRepositoryDescription,
     token,
   } = options;
 
@@ -52,20 +53,20 @@ export async function enhance(options: EnhanceOptions): Promise<EnhanceResult> {
     minLinks: 2,
   };
 
-  const { finalContent, isChanged, jsonData } = await processMarkdownContent(
+  const { finalContent, jsonData } = await processMarkdownContent(
     content,
     token,
     rules,
     sortOptions,
     originalRepository,
     relativeLinkPrefix,
-    sourceRepository,
-    sourceRepositoryDescription,
+    enhancedRepository,
+    enhancedRepositoryDescription,
+    originalRepositorySha,
   );
 
   return {
     finalContent,
-    isChanged,
     jsonData,
   };
 }

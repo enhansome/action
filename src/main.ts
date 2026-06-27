@@ -2,10 +2,17 @@ import * as core from '@actions/core';
 import * as github from '@actions/github';
 import * as fs from 'fs/promises';
 import * as path from 'path';
+import { fileURLToPath } from 'url';
 
+import {
+  getLatestCommitSha,
+  getReadme,
+  makeOctokit,
+  parseOwnerRepo,
+} from './github.js';
 import { enhance } from './orchestrator.js';
 
-async function run(): Promise<void> {
+export async function run(): Promise<void> {
   try {
     // 1. Get all inputs from the GitHub Actions environment
     const token = core.getInput('github_token');
@@ -14,9 +21,7 @@ async function run(): Promise<void> {
         'No github_token provided; fetching metadata anonymously (rate-limited).',
       );
     }
-    const markdownFile = core.getInput('markdown_file', {
-      required: true,
-    });
+    const markdownFile = core.getInput('markdown_file');
     const jsonOutputFile = core.getInput('json_output_file');
     const findAndReplaceRaw = core.getInput('find_and_replace');
     const regexFindAndReplaceRaw = core.getInput('regex_find_and_replace');
@@ -30,15 +35,37 @@ async function run(): Promise<void> {
       return;
     }
 
-    core.info(`Processing file: ${markdownFile}`);
+    // 2. The action always fetches the source list over the API:
+    // `original_repository` is required and `markdown_file` is the output path.
+    const parsed = parseOwnerRepo(originalRepository);
+    if (!parsed) {
+      core.setFailed(
+        `original_repository is required and must be "owner/repo" or a github.com URL (got: "${originalRepository}").`,
+      );
+      return;
+    }
 
-    // 2. Read the file content
-    const originalContent = await fs.readFile(markdownFile, 'utf-8');
+    core.info(`Fetching source README from ${parsed.owner}/${parsed.repo}`);
+    const octokit = makeOctokit(token);
+    const [readme, originalRepositorySha] = await Promise.all([
+      getReadme(octokit, parsed.owner, parsed.repo),
+      getLatestCommitSha(octokit, parsed.owner, parsed.repo),
+    ]);
+    if (readme === null) {
+      core.setFailed(`No README found in ${parsed.owner}/${parsed.repo}`);
+      return;
+    }
+    if (originalRepositorySha === null) {
+      core.warning(
+        `Could not determine the latest commit SHA for ${parsed.owner}/${parsed.repo}; it will be omitted from the JSON output.`,
+      );
+    }
+    const originalContent = readme;
 
     // 3. Call the pure orchestrator function with all the data
     const { repo } = github.context;
-    const sourceRepository = `${repo.owner}/${repo.repo}`;
-    const sourceRepositoryDescription =
+    const enhancedRepository = `${repo.owner}/${repo.repo}`;
+    const enhancedRepositoryDescription =
       (github.context.payload.repository?.description as string | undefined) ??
       '';
 
@@ -47,11 +74,12 @@ async function run(): Promise<void> {
       disableBranding,
       findAndReplaceRaw,
       originalRepository,
+      originalRepositorySha: originalRepositorySha ?? undefined,
       regexFindAndReplaceRaw,
       relativeLinkPrefix,
       sortBy,
-      sourceRepository,
-      sourceRepositoryDescription,
+      enhancedRepository,
+      enhancedRepositoryDescription,
       token,
     });
 
@@ -82,13 +110,10 @@ async function run(): Promise<void> {
       );
     }
 
-    // 5. Write back the updated markdown file if it changed
-    if (result.isChanged) {
-      await fs.writeFile(markdownFile, result.finalContent, 'utf-8');
-      core.info(`Successfully updated ${markdownFile}.`);
-    } else {
-      core.info(`No changes needed for ${markdownFile}.`);
-    }
+    // 5. Write the markdown output. `markdown_file` is the output path and the
+    // badged source always differs from upstream, so write unconditionally.
+    await fs.writeFile(markdownFile, result.finalContent, 'utf-8');
+    core.info(`Successfully wrote ${markdownFile}.`);
 
     core.info('Process finished.');
   } catch (error: unknown) {
@@ -100,4 +125,8 @@ async function run(): Promise<void> {
   }
 }
 
-void run();
+// Only auto-run when invoked directly (e.g. `node dist/main.js`), not when
+// imported by the unit tests.
+if (process.argv[1] === fileURLToPath(import.meta.url)) {
+  void run();
+}

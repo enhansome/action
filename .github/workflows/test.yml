@@ -30,36 +30,16 @@ jobs:
     steps:
       - uses: actions/checkout@v7
 
-      - name: Ensure rsync (act image omits it; CI ubuntu-latest has it)
-        run: command -v rsync >/dev/null || { sudo apt-get update -qq && sudo apt-get install -y -qq rsync; }
-
-      - name: Stand up fixture (origin submodule)
-        run: git clone --depth 1 https://github.com/NARKOZ/guides.git origin
-
-      - name: Update + sync origin
-        id: origin
-        run: |
-          set -euo pipefail
-          [ -d origin/.git ] || git submodule update --init origin
-          cd origin
-          git fetch --all --tags
-          DEFAULT_BRANCH=$(git remote show origin | sed -n 's/^.*HEAD branch: //p')
-          git checkout "$DEFAULT_BRANCH"
-          git pull origin "$DEFAULT_BRANCH" --ff-only
-          OWNER_REPO=$(git config --get remote.origin.url \
-            | sed -E 's|.*github.com[/:]([^/]+/[^/]+).*|\1|' | sed 's/\.git$//')
-          cd ..
-          rsync -a origin/README.md ./README.md
-          echo "repo=$OWNER_REPO" >> "$GITHUB_OUTPUT"
-
+      # The action fetches the source list from `original_repository` itself, so
+      # there is no submodule, clone, or rsync — just checkout → action → assert.
       - name: Enhance
         uses: ./
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           markdown_file: README.md
           working_directory: '.'
-          relative_link_prefix: origin
-          original_repository: ${{ steps.origin.outputs.repo }}
+          original_repository: NARKOZ/guides
+          auto_commit: false # local/act runner can't push; assert on file content
 
       - name: Assert output (shape, not values)
         run: |
@@ -70,6 +50,8 @@ jobs:
           assert isinstance(d.get("items"), list) and len(d["items"]) > 0, "items missing/empty"
           got = d["metadata"]["original_repository"]
           assert got == "NARKOZ/guides", f"original_repository={got!r}"
-          print("README.json OK:", len(d["items"]), "sections")
+          sha = d["metadata"]["original_repository_sha"]
+          assert isinstance(sha, str) and len(sha) == 40, f"original_repository_sha={sha!r}"
+          print("README.json OK:", len(d["items"]), "sections, sha", sha[:7])
           PY
           grep -q '⭐' README.md && echo "README.md has star badge"

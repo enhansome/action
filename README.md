@@ -7,24 +7,27 @@ GitHub repo metadata — ⭐ stars, 🐛 open issues, 🌐 language, 📅 last p
 > **Private-use.** Maintained for the `enhansome` org's enhanced-list repos; not
 > intended for third-party use.
 
-It is a **thin action**: it only enhances a markdown file. Syncing the source
-list, deriving `original_repository`, and committing live in the *consumer
-workflow* below.
+It is **self-contained**: given an `original_repository`, it fetches that repo's
+README over the GitHub API, enhances it, writes `README.md` + `README.json`, and —
+unless `auto_commit: false` — commits and pushes the result. The consumer workflow
+collapses to `checkout → action`: no submodule, no sync shell, no separate commit
+step.
 
 ## Inputs
 
 | input | required | default | description |
 |---|---|---|---|
-| `github_token` | no | — | Token for metadata. Omit to fetch anonymously (rate-limited). |
-| `markdown_file` | yes | `README.md` | File to enhance, relative to `working_directory`. |
-| `working_directory` | no | `.` | Directory containing the file. |
+| `original_repository` | **yes** | — | Source list to fetch + enhance: `owner/repo` or a `github.com` URL. Its README is fetched over the API. |
+| `github_token` | no | — | Token for API calls (README + metadata). Omit to fetch anonymously (rate-limited, 60/hr). |
+| `markdown_file` | no | `README.md` | **Output** path for the enhanced markdown, relative to `working_directory`. |
+| `working_directory` | no | `.` | Directory to operate in / write to. |
 | `json_output_file` | no | `auto` | `auto` → `<base>.json`; empty disables JSON output. |
 | `find_and_replace` | no | — | Lines of `find_string:::replace_string`. |
 | `regex_find_and_replace` | no | — | Lines of `pattern:::replacement_string` (`gm` flags). |
 | `disable_branding` | no | `false` | Suppress the " with stars" title suffix. |
 | `sort_by` | no | — | `stars` or `last_commit`. |
-| `relative_link_prefix` | no | — | Prefix prepended to relative links. |
-| `original_repository` | no | — | `owner/repo` of the source list. |
+| `relative_link_prefix` | no | — | Prefix prepended to relative links (see [migration](#migrating-from-the-submodule-model)). |
+| `auto_commit` | no | `true` | Commit & push the result via `git-auto-commit-action`. Needs `permissions: contents: write` + checkout `persist-credentials: true`. Set `false` to only write files. |
 
 ## Usage
 
@@ -34,43 +37,46 @@ on:
   schedule:
     - cron: '0 2 * * *'
   workflow_dispatch:
-  push:
-    branches: [main]
 permissions:
-  contents: write
+  contents: write          # required for the default auto_commit
 jobs:
   enhance:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v7
-        with:
-          submodules: 'true'
-      - name: Update + sync origin
-        id: origin
-        run: |
-          set -euo pipefail
-          cd origin
-          git fetch --all --tags
-          DEFAULT_BRANCH=$(git remote show origin | sed -n 's/^.*HEAD branch: //p')
-          git checkout "$DEFAULT_BRANCH"
-          git pull origin "$DEFAULT_BRANCH" --ff-only
-          OWNER_REPO=$(git config --get remote.origin.url \
-            | sed -E 's|.*github.com[/:]([^/]+/[^/]+).*|\1|' | sed 's/\.git$//')
-          cd ..
-          rsync -a origin/README.md ./README.md
-          echo "repo=$OWNER_REPO" >> "$GITHUB_OUTPUT"
+      - uses: actions/checkout@v7   # persist-credentials defaults to true
       - uses: enhansome/action@v1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          markdown_file: README.md
-          original_repository: ${{ steps.origin.outputs.repo }}
+          original_repository: NARKOZ/guides
           sort_by: stars
-      - uses: stefanzweifel/git-auto-commit-action@v7
-        with:
-          commit_message: 'docs(enhance): ✨ Auto-update list with latest content & stars'
-          commit_user_name: Enhansome
-          commit_user_email: actions-bot@users.noreply.github.com
 ```
+
+The action fetches `NARKOZ/guides`'s README, enhances it, writes `README.md` +
+`README.json`, and pushes the result. To produce the files without committing
+(e.g. to inspect them or commit them yourself), set `auto_commit: false`. The bot
+push is authored by `GITHUB_TOKEN`, which does not re-trigger workflows — so this is
+loop-safe even under a `push:` trigger.
+
+### Migrating from the submodule model
+
+Older consumers embedded the source list as a git submodule (`origin/`) and ran a
+`fetch / pull / rsync` shell step before the action. To migrate:
+
+```sh
+git submodule deinit -f origin
+git rm origin
+rm -rf .git/modules/origin
+# then drop the `origin` entry from .gitmodules
+```
+
+- Replace the `checkout(submodules: true)` + "sync origin" + `rsync` steps with a
+  plain `checkout`, and set `original_repository` to the literal `owner/repo`.
+- Drop the trailing `git-auto-commit-action` step — `auto_commit` (default `true`)
+  now does it.
+- **`relative_link_prefix`:** the old value `origin` pointed at the local submodule
+  directory, which no longer exists. Either drop it, or set it to a source-repo URL
+  prefix (e.g. `https://github.com/<owner>/<repo>/blob/<default-branch>/`) so
+  relative links in the source README still resolve.
 
 ## Development
 

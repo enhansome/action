@@ -108,7 +108,7 @@ describe('fetchAllRepoInfo with Concurrency', () => {
     ]);
 
     vi.mocked(github.getRepoInfo).mockImplementation(
-      (owner: string, repo: string) => {
+      (_octokit, _owner: string, repo: string) => {
         if (repo.startsWith('fail')) {
           throw new Error(`API failed for ${repo}`);
         }
@@ -191,7 +191,7 @@ describe('Title Extraction from README fixtures', () => {
           token,
           [],
           { by: '', minLinks: 2 },
-          undefined,
+          'owner/source-repo',
           '',
           sourceRepo,
         );
@@ -220,7 +220,7 @@ describe('Title Extraction from README fixtures', () => {
           token,
           [],
           { by: '', minLinks: 2 },
-          undefined,
+          'owner/source-repo',
           '',
           sourceRepo,
         );
@@ -247,7 +247,7 @@ describe('Title Extraction from README fixtures', () => {
           token,
           [],
           { by: '', minLinks: 2 },
-          undefined,
+          'owner/source-repo',
           '',
           sourceRepo,
         );
@@ -274,7 +274,7 @@ describe('Title Extraction from README fixtures', () => {
           token,
           [],
           { by: '', minLinks: 2 },
-          undefined,
+          'owner/source-repo',
           '',
           sourceRepo,
         );
@@ -300,7 +300,7 @@ describe('Title Extraction from README fixtures', () => {
           token,
           [],
           { by: '', minLinks: 2 },
-          undefined,
+          'owner/source-repo',
           '',
           sourceRepo,
         );
