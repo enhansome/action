@@ -9,8 +9,8 @@ permissions:
   contents: read
 
 # Both test layers in one file:
-#  - unit: hermetic vitest suite + tsc + shellcheck (no network, no token)
-#  - e2e:  the workflow itself — orchestration + the Docker action + asserts
+#  - unit: hermetic vitest suite + tsc (no network, no token)
+#  - e2e:  the workflow itself — orchestration + the composite action + asserts
 #          (run locally via `make e2e`; anonymous, no token needed)
 jobs:
   unit:
@@ -19,12 +19,11 @@ jobs:
       - uses: actions/checkout@v7
       - uses: actions/setup-node@v6
         with:
-          node-version: '24'
+          node-version: '24.12.0'
           cache: npm
       - run: npm ci
       - run: npm run build          # tsc — typecheck
       - run: npm test               # vitest (hermetic; mocks the GitHub API)
-      - run: shellcheck entrypoint.sh
 
   e2e:
     runs-on: ubuntu-latest

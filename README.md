@@ -1,19 +1,15 @@
 # enhansome/action
 
-A GitHub **Docker action** that enhances an "awesome list" markdown file with
+A GitHub **composite action** that enhances an "awesome list" markdown file with
 GitHub repo metadata — ⭐ stars, 🐛 open issues, 🌐 language, 📅 last push
 (⚠️ Archived for archived repos) — and emits a structured `README.json`.
 
 > **Private-use.** Maintained for the `enhansome` org's enhanced-list repos; not
 > intended for third-party use.
 
-## Design
-
-This is a **thin action**: it only enhances a markdown file. The surrounding
-orchestration — syncing the source list from an `origin` submodule, deriving
-`original_repository`, and committing — lives in the **consumer workflow**
-(see *Usage*). Keeping the action thin removes the composite/symlink machinery
-and lets `act` exercise the orchestration directly in a plain workflow.
+It is a **thin action**: it only enhances a markdown file. Syncing the source
+list, deriving `original_repository`, and committing live in the *consumer
+workflow* below.
 
 ## Inputs
 
@@ -30,9 +26,7 @@ and lets `act` exercise the orchestration directly in a plain workflow.
 | `relative_link_prefix` | no | — | Prefix prepended to relative links. |
 | `original_repository` | no | — | `owner/repo` of the source list. |
 
-## Usage (consumer workflow)
-
-This is also the template Phase C generates for each enhanced repo:
+## Usage
 
 ```yaml
 name: Enhance Awesome List
@@ -84,31 +78,33 @@ jobs:
 |---|---|
 | `make test` | vitest unit suite — hermetic, no network |
 | `make e2e` | run the integration e2e under `act` |
-| `make ci` | unit + shellcheck (the Docker-free checks) |
+| `make ci` | the Docker-free checks (vitest + tsc) |
 
-All testing lives in `.github/workflows/test.yml` (see `MIGRATION.md` §A5): the
-`unit` job runs the hermetic vitest suite; the `e2e` job drives the full
-composition — orchestration + Docker action + asserts — through `act` and CI.
+Testing lives in `.github/workflows/test.yml`: the `unit` job runs the hermetic
+vitest suite + `tsc`; the `e2e` job drives the full composition — orchestration +
+action + asserts — through `act` and CI.
 
 ## Releasing
 
-Releases are cut from the **`release/v1`** lane, not `main`:
+Releases are cut from **`main`** by [release-please][rp], driven by
+[Conventional Commits][cc]:
 
-- `main` keeps `action.yml` → `image: 'Dockerfile'`, so CI (`uses: ./`) and
-  `make e2e` (act) build at runtime.
-- `release/v1` carries `action.yml` →
-  `image: 'docker://ghcr.io/enhansome/enhance-readme:v<version>'`, so consumers
-  of `enhansome/action@v1.0.x` pull the prebuilt image instead of rebuilding.
-  release-please bumps `<version>` in that line each release.
+| commit | bump |
+|---|---|
+| `fix: ...` | patch (`1.0.0 → 1.0.1`) |
+| `feat: ...` | minor (`1.0.0 → 1.1.0`) |
+| `feat!:` / `BREAKING CHANGE:` | major (`1.0.0 → 2.0.0`) |
 
-**To cut a release** (manual sync):
+1. Conventional-commit pushes to `main` accumulate.
+2. release-please opens a *release PR* bumping `package.json` /
+   `package-lock.json` and staging `CHANGELOG.md`.
+3. Merging it creates the `vX.Y.Z` tag + GitHub Release, then the `release`
+   workflow moves the `vN` / `vN.M` tags so `enhansome/action@v1` / `@v1.0`
+   resolve to the latest release.
 
-1. Merge `main` into `release/v1`. `action.yml` auto-resolves to the pinned
-   image — `main` never edits that line, so the merge won't conflict on it.
-2. Push `release/v1`. The `release` workflow runs release-please; on the release
-   PR merge it builds + pushes `ghcr.io/enhansome/enhance-readme:vX.Y.Z` (plus
-   `vN`, `latest`) and moves the `vN` / `vN.M` git tags so `@v1` stays current.
+The workflow needs a `PAT_FOR_RELEASES` secret (`contents: write` +
+`pull-requests: write`) — not `GITHUB_TOKEN`, because a `GITHUB_TOKEN`-authored
+merge doesn't trigger the follow-on run that moves the tags.
 
-The `ghcr.io/enhansome/enhance-readme` package must be **Public** (consumers'
-runners pull it anonymously). The release workflow needs a `PAT_FOR_RELEASES`
-secret (`contents: write`) for release-please and the major-tag move.
+[rp]: https://github.com/googleapis/release-please
+[cc]: https://www.conventionalcommits.org

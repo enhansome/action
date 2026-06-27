@@ -50,7 +50,52 @@ inputs:
     default: ''
 
 runs:
-  using: 'docker'
-  image: 'Dockerfile'
-# No manual env: block — GitHub/act auto-inject INPUT_<NAME> from `with:`
-# (a manual INPUT_X: ${{ inputs.x }} mapping isn't expanded by act).
+  using: 'composite'
+  steps:
+    - name: Set up Node
+      uses: actions/setup-node@v6
+      with:
+        node-version: '24.12.0'
+
+    - name: Compute build cache key
+      id: cachekey
+      shell: bash
+      run: |
+        hash=$(find \
+          "${{ github.action_path }}/src" \
+          "${{ github.action_path }}/package-lock.json" \
+          "${{ github.action_path }}/tsconfig.json" \
+          -type f -print0 | sort -z | xargs -0 sha256sum | sha256sum | cut -d' ' -f1)
+        echo "hash=$hash" >> "$GITHUB_OUTPUT"
+
+    - name: Restore deps + build cache
+      id: cache
+      uses: actions/cache@v6
+      with:
+        path: |
+          ${{ github.action_path }}/node_modules
+          ${{ github.action_path }}/dist
+        key: enhansome-action-${{ runner.os }}-${{ runner.arch }}-${{ steps.cachekey.outputs.hash }}
+
+    - name: Install dependencies and build
+      if: steps.cache.outputs.cache-hit != 'true'
+      shell: bash
+      working-directory: ${{ github.action_path }}
+      run: |
+        npm ci
+        npm run build
+
+    - name: Enhance markdown
+      shell: bash
+      working-directory: ${{ github.workspace }}/${{ inputs.working_directory }}
+      env:
+        INPUT_GITHUB_TOKEN: ${{ inputs.github_token }}
+        INPUT_MARKDOWN_FILE: ${{ inputs.markdown_file }}
+        INPUT_JSON_OUTPUT_FILE: ${{ inputs.json_output_file }}
+        INPUT_FIND_AND_REPLACE: ${{ inputs.find_and_replace }}
+        INPUT_REGEX_FIND_AND_REPLACE: ${{ inputs.regex_find_and_replace }}
+        INPUT_DISABLE_BRANDING: ${{ inputs.disable_branding }}
+        INPUT_SORT_BY: ${{ inputs.sort_by }}
+        INPUT_RELATIVE_LINK_PREFIX: ${{ inputs.relative_link_prefix }}
+        INPUT_ORIGINAL_REPOSITORY: ${{ inputs.original_repository }}
+      run: node "${{ github.action_path }}/dist/main.js"

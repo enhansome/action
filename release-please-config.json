@@ -4,17 +4,7 @@
     ".": {
       "release-type": "node",
       "include-component-in-tag": false,
-      "changelog-path": "CHANGELOG.md",
-      "extra-files": [
-        {
-          "type": "generic",
-          "path": "Dockerfile"
-        },
-        {
-          "type": "generic",
-          "path": "action.yml"
-        }
-      ]
+      "changelog-path": "CHANGELOG.md"
     }
   }
 }
