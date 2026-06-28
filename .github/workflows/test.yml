@@ -10,7 +10,7 @@ permissions:
 
 # Both test layers in one file:
 #  - unit: hermetic vitest suite + tsc (no network, no token)
-#  - e2e:  the workflow itself — orchestration + the composite action + asserts
+#  - e2e:  the workflow itself - orchestration + the composite action + asserts
 #          (run locally via `make e2e`; anonymous, no token needed)
 jobs:
   unit:
@@ -22,7 +22,7 @@ jobs:
           node-version: '24.12.0'
           cache: npm
       - run: npm ci
-      - run: npm run build          # tsc — typecheck
+      - run: npm run build          # tsc - typecheck
       - run: npm test               # vitest (hermetic; mocks the GitHub API)
 
   e2e:
@@ -30,8 +30,8 @@ jobs:
     steps:
       - uses: actions/checkout@v7
 
-      # The action fetches the source list from `original_repository` itself, so
-      # there is no submodule, clone, or rsync — just checkout → action → assert.
+      # The action fetches the source list from `original_repository` itself:
+      # checkout → action → assert.
       - name: Enhance
         uses: ./
         with:

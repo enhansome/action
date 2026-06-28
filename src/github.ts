@@ -36,7 +36,7 @@ interface RepoIdentifier {
  * outcome. Preserves the old `MAX_WAIT_TIME_SECONDS` cap intent: a reset that
  * is further out than the cap is abandoned rather than waited on.
  *
- * Exported for unit testing — wired into the throttling plugin by `makeOctokit`.
+ * Exported for unit testing - wired into the throttling plugin by `makeOctokit`.
  * @param kind 'primary' or 'secondary' rate limit (for log wording).
  * @returns true to retry, false to give up.
  */
@@ -150,7 +150,7 @@ export async function getReadme(
     });
 
     // With the `raw` media type the body is the markdown string, but the
-    // generated types still describe the JSON shape — cast to string.
+    // generated types still describe the JSON shape - cast to string.
     return response.data as unknown as string;
   } catch (error: unknown) {
     logRequestError(`README for ${owner}/${repo}`, error);

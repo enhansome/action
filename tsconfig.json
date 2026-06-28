@@ -15,10 +15,7 @@
     "types": [
       "node",
       "vitest"
-    ],
-    "paths": {
-        "axios": ["./node_modules/axios/index.d.ts"]
-    }
+    ]
   },
   "include": [
     "src/**/*.ts",
