@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.2.1](https://github.com/enhansome/action/compare/v1.2.0...v1.2.1) (2026-07-04)
+
+
+### Bug Fixes
+
+* brand title via AST and guarantee single H1 ([0da145a](https://github.com/enhansome/action/commit/0da145a3bbcd7cbf6c354350614f9fd96691a7a5))
+* migrate to vite ([718a258](https://github.com/enhansome/action/commit/718a2586b6e68ce095ac56fdda49b8226c5a70f7))
+
 ## [1.2.0](https://github.com/enhansome/action/compare/v1.1.0...v1.2.0) (2026-06-27)
 
 
