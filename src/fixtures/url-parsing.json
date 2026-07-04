@@ -1,0 +1,61 @@
+[
+  {
+    "fn": "parseGitHubUrl",
+    "input": "https://github.com/owner/repo",
+    "expected": { "owner": "owner", "repo": "repo" }
+  },
+  {
+    "fn": "parseGitHubUrl",
+    "input": "https://github.com/owner/repo/",
+    "expected": { "owner": "owner", "repo": "repo" }
+  },
+  {
+    "fn": "parseGitHubUrl",
+    "input": "https://github.com/owner/repo.git",
+    "expected": { "owner": "owner", "repo": "repo" }
+  },
+  {
+    "fn": "parseGitHubUrl",
+    "input": "https://github.com/owner/repo/issues/1",
+    "expected": { "owner": "owner", "repo": "repo" }
+  },
+  {
+    "fn": "parseGitHubUrl",
+    "input": "https://gitlab.com/owner/repo",
+    "expected": null
+  },
+  { "fn": "parseGitHubUrl", "input": "not-a-url", "expected": null },
+  {
+    "fn": "parseOwnerRepo",
+    "input": "owner/repo",
+    "expected": { "owner": "owner", "repo": "repo" }
+  },
+  {
+    "fn": "parseOwnerRepo",
+    "input": "  owner/repo  ",
+    "expected": { "owner": "owner", "repo": "repo" }
+  },
+  {
+    "fn": "parseOwnerRepo",
+    "input": "https://github.com/owner/repo",
+    "expected": { "owner": "owner", "repo": "repo" }
+  },
+  {
+    "fn": "parseOwnerRepo",
+    "input": "github.com/owner/repo",
+    "expected": { "owner": "owner", "repo": "repo" }
+  },
+  {
+    "fn": "parseOwnerRepo",
+    "input": "owner/repo.git",
+    "expected": { "owner": "owner", "repo": "repo" }
+  },
+  { "fn": "parseOwnerRepo", "input": "owner", "expected": null },
+  { "fn": "parseOwnerRepo", "input": "", "expected": null },
+  { "fn": "parseOwnerRepo", "input": "   ", "expected": null },
+  {
+    "fn": "parseOwnerRepo",
+    "input": "owner/repo/extra",
+    "expected": null
+  }
+]

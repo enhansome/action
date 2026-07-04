@@ -1,3 +1,5 @@
+import * as fs from 'fs';
+import * as path from 'path';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 
 import * as github from './github.js';
@@ -9,6 +11,13 @@ vi.mock('./github.js');
 
 describe('Orchestrator: enhance()', () => {
   const token = 'test-token';
+
+  const repoMockDb = JSON.parse(
+    fs.readFileSync(
+      path.join(__dirname, 'fixtures', 'repo-mock-db.json'),
+      'utf-8',
+    ),
+  ) as Record<string, Record<string, RepoInfoDetails>>;
 
   beforeEach(() => {
     // Reset all mocks before each test to ensure isolation
@@ -40,6 +49,7 @@ describe('Orchestrator: enhance()', () => {
 
       const { finalContent } = await enhance({
         content: originalContent,
+        disableBranding: true,
         originalRepository: 'owner/source-repo',
         token,
       });
@@ -78,6 +88,7 @@ describe('Orchestrator: enhance()', () => {
 
       const { finalContent } = await enhance({
         content: originalContent,
+        disableBranding: true,
         originalRepository: 'owner/source-repo',
         token,
       });
@@ -87,40 +98,41 @@ describe('Orchestrator: enhance()', () => {
     });
   });
 
-  describe('Find and Replace', () => {
+  describe('Find and Replace (fixture-driven)', () => {
+    const replacementCases = JSON.parse(
+      fs.readFileSync(
+        path.join(__dirname, 'fixtures', 'replacements.json'),
+        'utf-8',
+      ),
+    ) as {
+      expected: string;
+      find: string;
+      input: string;
+      replace: string;
+      type: 'literal' | 'regex';
+    }[];
+
     beforeEach(() => {
       vi.mocked(github.parseGitHubUrl).mockReturnValue(null);
       vi.mocked(github.getRepoInfo).mockResolvedValue(null);
     });
 
-    it('should perform a literal find and replace', async () => {
-      const originalContent = 'This is version v__VERSION__.';
-      const expectedContent = 'This is version v1.2.3.';
-      const findAndReplaceRaw = 'v__VERSION__:::v1.2.3';
-
-      const { finalContent } = await enhance({
-        content: originalContent,
-        findAndReplaceRaw,
-        originalRepository: 'owner/source-repo',
-        token,
-      });
-      expect(finalContent).toBe(expectedContent);
-    });
-
-    it('should perform a regex find and replace', async () => {
-      const originalContent =
-        'Release date: 2025-01-10\nAnother date: 2024-12-25';
-      const expectedContent = 'Release date: TBD\nAnother date: TBD';
-      const regexFindAndReplaceRaw = '\\d{4}-\\d{2}-\\d{2}:::TBD';
-
-      const { finalContent } = await enhance({
-        content: originalContent,
-        originalRepository: 'owner/source-repo',
-        regexFindAndReplaceRaw,
-        token,
-      });
-      expect(finalContent).toBe(expectedContent);
-    });
+    it.each(replacementCases)(
+      '$type replace "$find" -> "$replace"',
+      async ({ type, find, replace, input, expected }) => {
+        const raw = `${find}:::${replace}`;
+        const { finalContent } = await enhance({
+          content: input,
+          disableBranding: true,
+          originalRepository: 'owner/source-repo',
+          ...(type === 'literal'
+            ? { findAndReplaceRaw: raw }
+            : { regexFindAndReplaceRaw: raw }),
+          token,
+        });
+        expect(finalContent).toBe(expected);
+      },
+    );
   });
 
   describe('Branding', () => {
@@ -132,13 +144,20 @@ describe('Orchestrator: enhance()', () => {
     it('should apply the branding rule by default', async () => {
       const originalContent =
         '# Awesome Go\n\nA list of awesome Go frameworks.';
-      const expectedContent =
-        '# Awesome Go with stars\n\nA list of awesome Go frameworks.';
+      const expectedContent = `# Awesome Go with stars
+
+A list of awesome Go frameworks.
+
+***
+
+> _Enhansomed by [enhansome](https://github.com/enhansome) on 2026-06-28._
+`;
 
       const { finalContent } = await enhance({
         content: originalContent,
         originalRepository: 'owner/source-repo',
         token,
+        now: new Date('2026-06-28T12:00:00Z'),
       });
       expect(finalContent).toBe(expectedContent);
     });
@@ -156,6 +175,200 @@ describe('Orchestrator: enhance()', () => {
     });
   });
 
+  describe('Branding parity (md H1 === metadata.title)', () => {
+    beforeEach(() => {
+      vi.mocked(github.parseGitHubUrl).mockImplementation((url: string) => {
+        if (!url.includes('github.com')) {
+          return null;
+        }
+        const parts = url.split('/');
+        return {
+          owner: parts[parts.length - 2],
+          repo: parts[parts.length - 1],
+        };
+      });
+      vi.mocked(github.getRepoInfo).mockResolvedValue({
+        archived: false,
+        language: 'TypeScript',
+        open_issues_count: 0,
+        owner: 'test-user',
+        pushed_at: '2025-01-01T00:00:00Z',
+        repo: 'test-repo',
+        stargazers_count: 100,
+      });
+    });
+
+    it('brands a generic-H1 list identically in markdown and JSON (guides)', async () => {
+      const content = fs.readFileSync(
+        path.join(__dirname, 'fixtures', 'original', 'guides.md'),
+        'utf-8',
+      );
+
+      const { finalContent, jsonData } = await enhance({
+        content,
+        originalRepository: 'NARKOZ/guides',
+        enhancedRepository: 'enhansome/enhansome-guides',
+        token,
+      });
+
+      // Every enhanced doc reads "Awesome <x> with stars" (req 5), and the
+      // markdown H1 and metadata.title must be identical (req 4).
+      expect(jsonData.metadata.title).toBe('Awesome guides with stars');
+      const lines = finalContent.split('\n');
+      expect(lines[0]).toBe(`# ${jsonData.metadata.title}`);
+      // The source's generic "# Guides" H1 is the de-facto title slot, so the
+      // branded title overrides it — not sits alongside it as a second H1.
+      expect(lines.filter(l => l.startsWith('# '))).toHaveLength(1);
+      expect(lines).not.toContain('# Guides');
+    });
+
+    it('brands the real title H1, not a leading section header', async () => {
+      // "# Contents" is an invalid title (a section header) sitting above the
+      // real "# Awesome Foo". Branding must replace the latter, leave the ToC
+      // heading intact, and never duplicate the title.
+      const content = [
+        '# Contents',
+        '',
+        '- [Tools](#tools)',
+        '',
+        '# Awesome Foo',
+        '',
+        '## Tools',
+        '',
+        '* [a](https://github.com/x/a)',
+        '* [b](https://github.com/x/b)',
+        '',
+      ].join('\n');
+
+      const { finalContent, jsonData } = await enhance({
+        content,
+        originalRepository: 'x/awesome-foo',
+        token,
+      });
+
+      expect(jsonData.metadata.title).toBe('Awesome Foo with stars');
+
+      const lines = finalContent.split('\n');
+      // The ToC header is untouched...
+      expect(lines).toContain('# Contents');
+      // ...the real title is branded exactly once...
+      expect(lines.filter(l => l === '# Awesome Foo with stars')).toHaveLength(
+        1,
+      );
+      // ...and no stale, unbranded copy of the title remains.
+      expect(lines).not.toContain('# Awesome Foo');
+    });
+  });
+
+  describe('Item description extraction', () => {
+    beforeEach(() => {
+      vi.mocked(github.parseGitHubUrl).mockImplementation((url: string) => {
+        if (!url.includes('github.com')) {
+          return null;
+        }
+        const parts = url.split('/');
+        return {
+          owner: parts[parts.length - 2],
+          repo: parts[parts.length - 1],
+        };
+      });
+      vi.mocked(github.getRepoInfo).mockResolvedValue({
+        archived: false,
+        language: 'TypeScript',
+        open_issues_count: 0,
+        owner: 'test-user',
+        pushed_at: '2025-01-01T00:00:00Z',
+        repo: 'test-repo',
+        stargazers_count: 100,
+      });
+    });
+
+    it('gives a link-less item a null description instead of echoing its title', async () => {
+      const content = [
+        '# Awesome Foo',
+        '',
+        '## Tools',
+        '',
+        '* [a](https://github.com/x/a) - tool a',
+        '* [b](https://github.com/x/b) - tool b',
+        '* **Note**: a plain entry without any link',
+        '',
+      ].join('\n');
+
+      const { jsonData } = await enhance({
+        content,
+        originalRepository: 'x/awesome-foo',
+        token,
+      });
+
+      const tools = jsonData.items.find(s => s.title === 'Tools');
+      expect(tools).toBeDefined();
+      const note = tools?.items.find(
+        i => i.title === 'Note: a plain entry without any link',
+      );
+      expect(note, 'link-less item should still be emitted').toBeDefined();
+      // Description must not echo the title back when there is no link to split
+      // the prose on.
+      expect(note?.description).toBeNull();
+    });
+
+    it('preserves a leading non-separator character in a description', async () => {
+      // Only the " - " separator may be stripped from the trailing prose - a
+      // meaningful leading character (here "(") must survive into the
+      // description rather than being eaten by a greedy noise stripper.
+      const content = [
+        '# Awesome Foo',
+        '',
+        '## Tools',
+        '',
+        '* [a](https://github.com/x/a) - (deprecated) legacy tool',
+        '* [b](https://github.com/x/b) - active tool',
+        '',
+      ].join('\n');
+
+      const { jsonData } = await enhance({
+        content,
+        originalRepository: 'x/awesome-foo',
+        token,
+      });
+
+      const tools = jsonData.items.find(s => s.title === 'Tools');
+      const item = tools?.items.find(i => i.title === 'a');
+      expect(item).toBeDefined();
+      expect(item?.description).toBe('(deprecated) legacy tool');
+    });
+  });
+
+  describe('Footer marker (req 3 & 6)', () => {
+    beforeEach(() => {
+      vi.mocked(github.parseGitHubUrl).mockReturnValue(null);
+      vi.mocked(github.getRepoInfo).mockResolvedValue(null);
+    });
+
+    it('appends an enhansomed-on footer with an ISO date when branded', async () => {
+      const { finalContent } = await enhance({
+        content: '# Awesome Go\n\nA list of awesome Go frameworks.',
+        originalRepository: 'owner/source-repo',
+        token,
+        now: new Date('2026-06-28T12:00:00Z'),
+      });
+      expect(finalContent).toMatch(
+        /\n\*\*\*\n\n> _Enhansomed by \[enhansome\]\(https:\/\/github\.com\/enhansome\) on 2026-06-28\._\n$/,
+      );
+    });
+
+    it('does not append the footer when branding is disabled', async () => {
+      const { finalContent } = await enhance({
+        content: '# Awesome Go\n\nA list.',
+        disableBranding: true,
+        originalRepository: 'owner/source-repo',
+        token,
+        now: new Date('2026-06-28T12:00:00Z'),
+      });
+      expect(finalContent).not.toContain('Enhansomed');
+    });
+  });
+
   describe('Sorting', () => {
     beforeEach(() => {
       vi.mocked(github.parseGitHubUrl).mockImplementation((url: string) => ({
@@ -163,38 +376,8 @@ describe('Orchestrator: enhance()', () => {
         repo: url.split('/')[4],
       }));
       vi.mocked(github.getRepoInfo).mockImplementation(
-        (_octokit, _owner: string, repo: string) => {
-          const repoData: Record<string, RepoInfoDetails> = {
-            'repo-a': {
-              archived: false,
-              language: 'Go',
-              open_issues_count: 1,
-              owner: 'user',
-              pushed_at: '2025-01-01T00:00:00Z',
-              repo: 'repo-a',
-              stargazers_count: 200,
-            },
-            'repo-b': {
-              archived: false,
-              language: 'Go',
-              open_issues_count: 1,
-              owner: 'user',
-              pushed_at: '2025-02-01T00:00:00Z',
-              repo: 'repo-b',
-              stargazers_count: 100,
-            },
-            'repo-c': {
-              archived: false,
-              language: 'Go',
-              open_issues_count: 1,
-              owner: 'user',
-              pushed_at: '2025-03-01T00:00:00Z',
-              repo: 'repo-c',
-              stargazers_count: 300,
-            },
-          };
-          return Promise.resolve(repoData[repo]);
-        },
+        (_octokit, _owner: string, repo: string) =>
+          Promise.resolve(repoMockDb.sorting[repo] ?? null),
       );
     });
 
@@ -222,26 +405,10 @@ describe('Orchestrator: enhance()', () => {
 
   describe('JSON Generation and Structure', () => {
     it('should handle a complex markdown structure and create section-based JSON', async () => {
-      const complexContent = `
-# My Awesome List
-
-### First Section
-
-Description for the first section.
-
-* [Repo C](https://github.com/user/repo-c) - 200 stars
-* [Repo B](https://github.com/user/repo-b) - 300 stars
-  * [Nested 1](https://github.com/user/nested-1) - 50 stars.
-* [Repo A](https://github.com/user/repo-a) - 100 stars
-
-### Second Section (Not enough links)
-* [Single Repo](https://github.com/user/single-link-repo)
-
-### Third Section
-Another valid section.
-* [Repo A](https://github.com/user/repo-a) - 100 stars.
-* [Repo C](https://github.com/user/repo-c) - 200 stars.
-`;
+      const complexContent = fs.readFileSync(
+        path.join(__dirname, 'fixtures', 'original', 'complex.md'),
+        'utf-8',
+      );
       vi.mocked(github.parseGitHubUrl).mockImplementation((url: string) => {
         if (!url.includes('github.com')) {
           return null;
@@ -250,51 +417,8 @@ Another valid section.
         return { owner: parts[3], repo: parts[4] };
       });
       vi.mocked(github.getRepoInfo).mockImplementation(
-        (
-          _octokit,
-          _owner: string,
-          repo: string,
-        ): Promise<null | RepoInfoDetails> => {
-          const db: Record<string, RepoInfoDetails> = {
-            'nested-1': {
-              archived: false,
-              language: 'JS',
-              open_issues_count: 4,
-              owner: 'user',
-              pushed_at: '2025-01-15T00:00:00Z',
-              repo: 'nested-1',
-              stargazers_count: 50,
-            },
-            'repo-a': {
-              archived: false,
-              language: 'Go',
-              open_issues_count: 1,
-              owner: 'user',
-              pushed_at: '2025-01-01T00:00:00Z',
-              repo: 'repo-a',
-              stargazers_count: 100,
-            },
-            'repo-b': {
-              archived: false,
-              language: 'Rust',
-              open_issues_count: 2,
-              owner: 'user',
-              pushed_at: '2025-03-01T00:00:00Z',
-              repo: 'repo-b',
-              stargazers_count: 300,
-            },
-            'repo-c': {
-              archived: false,
-              language: 'Python',
-              open_issues_count: 3,
-              owner: 'user',
-              pushed_at: '2025-02-01T00:00:00Z',
-              repo: 'repo-c',
-              stargazers_count: 200,
-            },
-          };
-          return Promise.resolve(db[repo] ?? null);
-        },
+        (_octokit, _owner: string, repo: string) =>
+          Promise.resolve(repoMockDb.structure[repo] ?? null),
       );
 
       const { jsonData } = await enhance({
@@ -308,8 +432,7 @@ Another valid section.
       // Expect two sections, as the middle one with one link is skipped
       expect(jsonData.items).toHaveLength(2);
 
-      // Check metadata
-      expect(jsonData.metadata.title).toBe('My Awesome List');
+      expect(jsonData.metadata.title).toBe('My Awesome List with stars');
 
       // Check first section
       const firstSection = jsonData.items[0];
@@ -347,13 +470,10 @@ Version: __VERSION__ | Last Updated: 2025-01-01
 * [Repo C](https://github.com/user/repo-c) - A new project.
 * [Repo A](https://github.com/user/repo-a) - An older, popular project.
 `;
-      const expectedContent = `# Awesome Test List with stars
-
-Version: 1.5.0 | Last Updated: TBD
-
-* [Repo A](https://github.com/user/repo-a) ⭐ 1,000 | 🐛 10 | 🌐 Go | 📅 2024-05-10 - An older, popular project.
-* [Repo C](https://github.com/user/repo-c) ⭐ 50 | 🐛 1 | 🌐 Rust | 📅 2025-07-12 - A new project.
-`;
+      const expectedContent = fs.readFileSync(
+        path.join(__dirname, 'fixtures', 'expected', 'e2e.md'),
+        'utf-8',
+      );
       vi.mocked(github.parseGitHubUrl).mockImplementation((url: string) => {
         if (url.includes('github.com')) {
           return { owner: 'user', repo: url.split('/')[4] };
@@ -361,33 +481,8 @@ Version: 1.5.0 | Last Updated: TBD
         return null;
       });
       vi.mocked(github.getRepoInfo).mockImplementation(
-        (
-          _octokit,
-          _owner: string,
-          repo: string,
-        ): Promise<null | RepoInfoDetails> => {
-          const db: Record<string, RepoInfoDetails> = {
-            'repo-a': {
-              archived: false,
-              language: 'Go',
-              open_issues_count: 10,
-              owner: 'user',
-              pushed_at: '2024-05-10T12:00:00Z',
-              repo: 'repo-a',
-              stargazers_count: 1000,
-            },
-            'repo-c': {
-              archived: false,
-              language: 'Rust',
-              open_issues_count: 1,
-              owner: 'user',
-              pushed_at: '2025-07-12T12:00:00Z',
-              repo: 'repo-c',
-              stargazers_count: 50,
-            },
-          };
-          return Promise.resolve(db[repo] ?? null);
-        },
+        (_octokit, _owner: string, repo: string) =>
+          Promise.resolve(repoMockDb.endToEnd[repo] ?? null),
       );
 
       const { finalContent } = await enhance({
@@ -397,6 +492,7 @@ Version: 1.5.0 | Last Updated: TBD
         originalRepository: 'owner/source-repo',
         sortBy: 'stars',
         token,
+        now: new Date('2026-06-28T12:00:00Z'),
       });
 
       expect(finalContent).toEqual(expectedContent);

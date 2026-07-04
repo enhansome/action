@@ -1,0 +1,89 @@
+{
+  "sorting": {
+    "repo-a": {
+      "archived": false,
+      "language": "Go",
+      "open_issues_count": 1,
+      "owner": "user",
+      "pushed_at": "2025-01-01T00:00:00Z",
+      "repo": "repo-a",
+      "stargazers_count": 200
+    },
+    "repo-b": {
+      "archived": false,
+      "language": "Go",
+      "open_issues_count": 1,
+      "owner": "user",
+      "pushed_at": "2025-02-01T00:00:00Z",
+      "repo": "repo-b",
+      "stargazers_count": 100
+    },
+    "repo-c": {
+      "archived": false,
+      "language": "Go",
+      "open_issues_count": 1,
+      "owner": "user",
+      "pushed_at": "2025-03-01T00:00:00Z",
+      "repo": "repo-c",
+      "stargazers_count": 300
+    }
+  },
+  "structure": {
+    "nested-1": {
+      "archived": false,
+      "language": "JS",
+      "open_issues_count": 4,
+      "owner": "user",
+      "pushed_at": "2025-01-15T00:00:00Z",
+      "repo": "nested-1",
+      "stargazers_count": 50
+    },
+    "repo-a": {
+      "archived": false,
+      "language": "Go",
+      "open_issues_count": 1,
+      "owner": "user",
+      "pushed_at": "2025-01-01T00:00:00Z",
+      "repo": "repo-a",
+      "stargazers_count": 100
+    },
+    "repo-b": {
+      "archived": false,
+      "language": "Rust",
+      "open_issues_count": 2,
+      "owner": "user",
+      "pushed_at": "2025-03-01T00:00:00Z",
+      "repo": "repo-b",
+      "stargazers_count": 300
+    },
+    "repo-c": {
+      "archived": false,
+      "language": "Python",
+      "open_issues_count": 3,
+      "owner": "user",
+      "pushed_at": "2025-02-01T00:00:00Z",
+      "repo": "repo-c",
+      "stargazers_count": 200
+    }
+  },
+  "endToEnd": {
+    "repo-a": {
+      "archived": false,
+      "language": "Go",
+      "open_issues_count": 10,
+      "owner": "user",
+      "pushed_at": "2024-05-10T12:00:00Z",
+      "repo": "repo-a",
+      "stargazers_count": 1000
+    },
+    "repo-c": {
+      "archived": false,
+      "language": "Rust",
+      "open_issues_count": 1,
+      "owner": "user",
+      "pushed_at": "2025-07-12T12:00:00Z",
+      "repo": "repo-c",
+      "stargazers_count": 50
+    }
+  }
+}

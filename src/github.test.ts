@@ -1,5 +1,7 @@
 import * as core from '@actions/core';
 import { RequestError } from '@octokit/request-error';
+import * as fs from 'fs';
+import * as path from 'path';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 
 import {
@@ -77,91 +79,22 @@ describe('github.ts', () => {
     vi.clearAllMocks();
   });
 
-  describe('parseGitHubUrl', () => {
-    it('should parse a standard GitHub URL', () => {
-      expect(parseGitHubUrl('https://github.com/owner/repo')).toEqual({
-        owner: 'owner',
-        repo: 'repo',
-      });
-    });
+  describe('URL parsing (fixture-driven)', () => {
+    const urlCases = JSON.parse(
+      fs.readFileSync(
+        path.join(__dirname, 'fixtures', 'url-parsing.json'),
+        'utf-8',
+      ),
+    ) as {
+      expected: null | { owner: string; repo: string };
+      fn: 'parseGitHubUrl' | 'parseOwnerRepo';
+      input: string;
+    }[];
 
-    it('should parse a URL with a trailing slash', () => {
-      expect(parseGitHubUrl('https://github.com/owner/repo/')).toEqual({
-        owner: 'owner',
-        repo: 'repo',
-      });
-    });
-
-    it('should parse a URL with a .git suffix', () => {
-      expect(parseGitHubUrl('https://github.com/owner/repo.git')).toEqual({
-        owner: 'owner',
-        repo: 'repo',
-      });
-    });
-
-    it('should parse a URL with subpaths', () => {
-      expect(parseGitHubUrl('https://github.com/owner/repo/issues/1')).toEqual({
-        owner: 'owner',
-        repo: 'repo',
-      });
-    });
-
-    it('should return null for non-GitHub URLs', () => {
-      expect(parseGitHubUrl('https://gitlab.com/owner/repo')).toBeNull();
-    });
-
-    it('should return null for invalid URLs', () => {
-      expect(parseGitHubUrl('not-a-url')).toBeNull();
-    });
-  });
-
-  describe('parseOwnerRepo', () => {
-    it('should parse owner/repo shorthand', () => {
-      expect(parseOwnerRepo('owner/repo')).toEqual({
-        owner: 'owner',
-        repo: 'repo',
-      });
-    });
-
-    it('should trim surrounding whitespace', () => {
-      expect(parseOwnerRepo('  owner/repo  ')).toEqual({
-        owner: 'owner',
-        repo: 'repo',
-      });
-    });
-
-    it('should parse a full GitHub URL', () => {
-      expect(parseOwnerRepo('https://github.com/owner/repo')).toEqual({
-        owner: 'owner',
-        repo: 'repo',
-      });
-    });
-
-    it('should parse a scheme-less github.com URL', () => {
-      expect(parseOwnerRepo('github.com/owner/repo')).toEqual({
-        owner: 'owner',
-        repo: 'repo',
-      });
-    });
-
-    it('should strip a .git suffix from shorthand', () => {
-      expect(parseOwnerRepo('owner/repo.git')).toEqual({
-        owner: 'owner',
-        repo: 'repo',
-      });
-    });
-
-    it('should reject a bare owner', () => {
-      expect(parseOwnerRepo('owner')).toBeNull();
-    });
-
-    it('should reject empty input', () => {
-      expect(parseOwnerRepo('')).toBeNull();
-      expect(parseOwnerRepo('   ')).toBeNull();
-    });
-
-    it('should reject more than two path parts', () => {
-      expect(parseOwnerRepo('owner/repo/extra')).toBeNull();
+    it.each(urlCases)('$fn parses "$input"', ({ fn, input, expected }) => {
+      const result =
+        fn === 'parseGitHubUrl' ? parseGitHubUrl(input) : parseOwnerRepo(input);
+      expect(result).toEqual(expected);
     });
   });
 

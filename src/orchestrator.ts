@@ -11,6 +11,7 @@ export interface EnhanceOptions {
   enhancedRepository?: string;
   enhancedRepositoryDescription?: string;
   findAndReplaceRaw?: string;
+  now?: Date;
   originalRepository: string;
   originalRepositorySha?: string;
   regexFindAndReplaceRaw?: string;
@@ -29,6 +30,7 @@ export async function enhance(options: EnhanceOptions): Promise<EnhanceResult> {
     content,
     disableBranding = false,
     findAndReplaceRaw = '',
+    now = new Date(),
     originalRepository,
     originalRepositorySha,
     regexFindAndReplaceRaw = '',
@@ -63,6 +65,7 @@ export async function enhance(options: EnhanceOptions): Promise<EnhanceResult> {
     enhancedRepository,
     enhancedRepositoryDescription,
     originalRepositorySha,
+    now,
   );
 
   return {

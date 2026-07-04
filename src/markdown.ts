@@ -14,6 +14,7 @@ import {
 } from './github.js';
 
 import type { Heading, Link, List, ListItem, Parent, Root, Text } from 'mdast';
+import type { Node } from 'unist';
 
 // --- TYPE DEFINITIONS ---
 
@@ -131,10 +132,12 @@ export async function processMarkdownContent(
   enhancedRepository?: string,
   enhancedRepositoryDescription?: string,
   originalRepositorySha?: string,
+  now: Date = new Date(),
 ): Promise<{ finalContent: string; jsonData: JsonOutput }> {
+  const brandingEnabled = replacements.some(rule => rule.type === 'branding');
   const contentAfterReplacements = applyTextReplacements(
     originalContent,
-    replacements,
+    replacements.filter(rule => rule.type !== 'branding'),
   );
 
   const processor = unified().use(remarkParse).use(remarkGfm);
@@ -147,17 +150,25 @@ export async function processMarkdownContent(
   const repoInfoMap = await fetchAllRepoInfo(githubUrls, token);
 
   // This single call now handles tree traversal, sorting, and JSON generation.
-  const { sections, title } = processTree(
-    tree,
-    repoInfoMap,
-    sortOptions,
-    enhancedRepository,
-  );
+  // The title derives from the *source* repository (originalRepository), never
+  // the enhanced/mirror repo — otherwise the org name doubles into the title.
+  const {
+    sections,
+    title: rawTitle,
+    titleHeadingIndex,
+  } = processTree(tree, repoInfoMap, sortOptions, originalRepository);
+
+  // Single source of truth for the document title: brand it once and use the
+  // same value for the markdown H1 and metadata.title (parity).
+  const title = brandingEnabled ? brandTitle(rawTitle) : rawTitle;
+  if (brandingEnabled) {
+    applyBrandingToTree(tree, title, titleHeadingIndex);
+  }
 
   const jsonData: JsonOutput = {
     items: sections,
     metadata: {
-      last_updated: new Date().toISOString(),
+      last_updated: now.toISOString(),
       original_repository: originalRepository.trim(),
       original_repository_sha: (originalRepositorySha?.trim() ?? '') || null,
       enhanced_repository: (enhancedRepository?.trim() ?? '') || null,
@@ -172,8 +183,12 @@ export async function processMarkdownContent(
   addInfoBadges(tree, repoInfoMap);
   fixRelativeLinks(tree, relativeLinkPrefix);
 
-  // 4. Convert the modified AST back to a string.
-  const finalContent = serializeAst(tree, originalContent);
+  // 4. Convert the modified AST back to a string, then stamp the enhansomed-on
+  //    footer when branding is on.
+  let finalContent = serializeAst(tree, originalContent);
+  if (brandingEnabled) {
+    finalContent = appendEnhansomedFooter(finalContent, now);
+  }
 
   return {
     finalContent,
@@ -237,14 +252,8 @@ function applyTextReplacements(
           `Skipping invalid regex pattern '${rule.find}': ${e instanceof Error ? e.message : e}`,
         );
       }
-    } else {
-      core.debug('Applying default branding replacement for title.');
-      const brandingRegex = new RegExp('^# (Awesome[\\s-].+)$', 'gm');
-      processedContent = processedContent.replace(
-        brandingRegex,
-        '# $1 with stars',
-      );
     }
+    // 'branding' rules are applied to the AST/title downstream, not here.
   }
 
   return processedContent;
@@ -312,11 +321,28 @@ function formatDate(isoString: null | string): string {
 }
 
 function getNodeText(node: Parent | Root): string {
+  return getInlineText([node]);
+}
+
+// Concatenate the text descendants of a run of inline nodes, collapsing any
+// whitespace (incl. a lone soft-break newline) to a single space. Operates on
+// a slice so callers can isolate text before/after a specific child.
+function getInlineText(nodes: Node[]): string {
   let text = '';
-  visit(node, 'text', (textNode: Text) => {
-    text += textNode.value;
-  });
-  return text.replace(/\s\s+/g, ' ').trim();
+  for (const node of nodes) {
+    visit(node, 'text', (textNode: Text) => {
+      text += textNode.value;
+    });
+  }
+  return text.replace(/\s+/g, ' ').trim();
+}
+
+// Descriptions are the prose trailing a list item's link; strip a single
+// leading separator — a dash, en/em dash, pipe, colon, or middot — and the
+// whitespace around it (e.g. " - ", " — ", "· "). Tightly scoped so a
+// meaningful leading character (digit, symbol, non-ASCII letter) survives.
+function stripLeadingNoise(text: string): string {
+  return text.replace(/^\s*[-–—·|:]\s*/, '').trim();
 }
 
 function processListRecursively(
@@ -350,16 +376,24 @@ function processListRecursively(
     let description = '';
     const paragraph = itemNode.children.find(p => p.type === 'paragraph');
     if (paragraph) {
-      const linkNode = paragraph.children.find(
+      const linkIndex = paragraph.children.findIndex(
         (c): c is Link => c.type === 'link',
       );
-      title = linkNode ? getNodeText(linkNode) : getNodeText(paragraph);
-      description = paragraph.children
-        .filter((c): c is Text => c.type === 'text')
-        .map(t => t.value)
-        .join('')
-        .replace(/^[\s\W]+/, '')
-        .trim();
+      if (linkIndex !== -1) {
+        // The title is the leading text plus the first link's text, so
+        // distinguishing tags like "[UPDATED]" / "[PDF]" survive instead of
+        // being dropped or leaking into the description. The description is
+        // whatever prose trails the link.
+        title = getInlineText(paragraph.children.slice(0, linkIndex + 1));
+        description = stripLeadingNoise(
+          getInlineText(paragraph.children.slice(linkIndex + 1)),
+        );
+      } else {
+        // No link: the whole paragraph is the title, so there is no trailing
+        // prose to treat as a description (avoid echoing the title back).
+        title = getInlineText(paragraph.children);
+        description = '';
+      }
     }
 
     const jsonData: JsonItem = {
@@ -426,8 +460,26 @@ const INVALID_TITLE_PATTERNS = [
   /^science/i,
 ];
 
+// Extract the repo segment from a repository identifier, accepting either
+// "owner/repo" or a github.com URL (with optional trailing ".git").
+function repoNameFromIdentifier(identifier: string): string {
+  const trimmed = identifier.trim();
+  if (!trimmed) {
+    return '';
+  }
+  if (/^https?:\/\//i.test(trimmed)) {
+    const parts = trimmed
+      .replace(/\.git$/i, '')
+      .replace(/[?#].*$/, '')
+      .split('/')
+      .filter(Boolean);
+    return parts[parts.length - 1] ?? '';
+  }
+  const slashIndex = trimmed.lastIndexOf('/');
+  return slashIndex === -1 ? trimmed : trimmed.slice(slashIndex + 1);
+}
+
 function formatRepoNameAsTitle(repoName: string): string {
-  // Convert "awesome-nodejs" or "nodejs" to "Awesome Node.js"
   const cleaned = repoName.replace(/[-_]/g, ' ').replace(/\s+/g, ' ').trim();
 
   // If it already starts with "awesome", format it nicely
@@ -446,34 +498,100 @@ function isValidTitle(title: string): boolean {
 }
 
 /**
+ * Brand a document title into the canonical "Awesome <x> with stars" form.
+ *
+ * If the source title already contains the word "Awesome" (e.g. "Awesome Go"
+ * or "My Awesome List"), keep it verbatim and just append the suffix — never
+ * duplicate the word. Otherwise prefix with "Awesome " first.
+ */
+function brandTitle(title: string): string {
+  const trimmed = title.trim();
+  if (!trimmed) {
+    return trimmed;
+  }
+  if (/\bawesome\b/i.test(trimmed)) {
+    return `${trimmed} with stars`;
+  }
+  return `Awesome ${trimmed} with stars`;
+}
+
+// Index in tree.children of the first H1 usable as the document title — i.e.
+// the first top-level H1 that passes isValidTitle (skipping section headers
+// like "Contributing"/"Contents"). Returns -1 when none qualifies. Shared by
+// title extraction and branding so both act on the very same heading.
+function findTitleHeadingIndex(tree: Root): number {
+  return tree.children.findIndex(
+    (node): node is Heading =>
+      node.type === 'heading' &&
+      node.depth === 1 &&
+      isValidTitle(getNodeText(node)),
+  );
+}
+
+/**
+ * Make the title H1 carry the branded title, so the rendered heading matches
+ * metadata.title exactly. Acts on the heading occupying the title slot:
+ *  - a valid title H1 (e.g. "# Awesome Go") is replaced in place — leading
+ *    non-title H1s like "# Contents" that sit above it are left untouched;
+ *  - when no valid title H1 exists, the document's first H1 (however generic —
+ *    e.g. "# Guides") is the de-facto title slot, so it is overridden too;
+ *  - a source with no H1 at all gets a fresh branded H1 injected at the top.
+ * The branded title is therefore always the sole title H1, never a duplicate.
+ */
+function applyBrandingToTree(
+  tree: Root,
+  title: string,
+  titleHeadingIndex: number,
+): void {
+  if (!title.trim()) {
+    return;
+  }
+  const heading: Heading = {
+    type: 'heading',
+    depth: 1,
+    children: [{ type: 'text', value: title }],
+  };
+  if (titleHeadingIndex !== -1) {
+    tree.children[titleHeadingIndex] = heading;
+    return;
+  }
+  // No valid title H1 anywhere: override the first H1 (the de-facto title slot)
+  // rather than unshifting alongside it, which would leave two H1s. Inject at
+  // the top only when the source has no H1 at all.
+  const firstH1Index = tree.children.findIndex(
+    (node): node is Heading => node.type === 'heading' && node.depth === 1,
+  );
+  if (firstH1Index !== -1) {
+    tree.children[firstH1Index] = heading;
+  } else {
+    tree.children.unshift(heading);
+  }
+}
+
+/**
  * Main orchestrator that walks the document to build sections based on headings.
  */
 function processTree(
   tree: Root,
   repoInfoMap: Map<string, RepoInfoDetails>,
   sortOptions: SortOptions,
-  enhancedRepository?: string,
-): { sections: JsonSection[]; title: string } {
-  // Collect all H1 headings
-  const h1Titles: string[] = [];
-  visit(tree, 'heading', (node: Heading) => {
-    if (node.depth === 1) {
-      h1Titles.push(getNodeText(node));
-    }
-  });
+  originalRepository?: string,
+): { sections: JsonSection[]; title: string; titleHeadingIndex: number } {
+  // Find the first H1 usable as the document title and remember its node index,
+  // so branding can later replace this exact heading. We look only at top-level
+  // headings — the same scope branding and section-building operate on — so the
+  // title text and the branded heading can never drift to different nodes.
+  const titleHeadingIndex = findTitleHeadingIndex(tree);
+  let documentTitle =
+    titleHeadingIndex === -1
+      ? ''
+      : getNodeText(tree.children[titleHeadingIndex] as Heading);
 
-  // Find first valid title (skip section headers like "Contributing", "License", etc.)
-  let documentTitle = '';
-  for (const title of h1Titles) {
-    if (isValidTitle(title)) {
-      documentTitle = title;
-      break;
-    }
-  }
-
-  // Fallback: extract from source repository name if available
-  if (documentTitle === '' && enhancedRepository) {
-    const repoName = enhancedRepository.split('/')[1];
+  // Fallback: derive a subject from the *source* repository name when no valid
+  // H1 is present (e.g. a generic "# Guides" heading). Using the source — not
+  // the enhanced/mirror repo — keeps the org name out of the title.
+  if (documentTitle === '' && originalRepository) {
+    const repoName = repoNameFromIdentifier(originalRepository);
     if (repoName) {
       documentTitle = formatRepoNameAsTitle(repoName);
     }
@@ -523,7 +641,7 @@ function processTree(
     sections.push(currentSection);
   }
 
-  return { sections, title: documentTitle };
+  return { sections, title: documentTitle, titleHeadingIndex };
 }
 
 function serializeAst(tree: Root, originalContent: string): string {
@@ -540,6 +658,15 @@ function serializeAst(tree: Root, originalContent: string): string {
     finalContent += '\n';
   }
   return finalContent;
+}
+
+// Stamp the "Enhansomed by enhansome on <ISO date>." attribution at the end of
+// the document, separated by a thematic break so it reads as a distinct footer.
+function appendEnhansomedFooter(content: string, now: Date): string {
+  const date = now.toISOString().split('T')[0];
+  const footer = `***\n\n> _Enhansomed by [enhansome](https://github.com/enhansome) on ${date}._`;
+  const body = content.replace(/\n+$/, '');
+  return `${body}\n\n${footer}\n`;
 }
 
 function sortLists(

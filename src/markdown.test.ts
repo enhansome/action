@@ -4,10 +4,35 @@ import { beforeEach, describe, expect, it, vi } from 'vitest';
 
 import * as github from './github.js';
 import { RepoInfoDetails } from './github.js';
-import { fetchAllRepoInfo, processMarkdownContent } from './markdown.js';
+import {
+  fetchAllRepoInfo,
+  processMarkdownContent,
+  ReplacementRule,
+} from './markdown.js';
 
 // Mock the modules we depend on
 vi.mock('./github.js');
+
+function findItemByTitle(
+  items: { children?: unknown[]; title: string }[],
+  title: string,
+): undefined | { description: null | string; title: string } {
+  for (const item of items) {
+    if (item.title === title) {
+      return item as { description: null | string; title: string };
+    }
+    if (item.children) {
+      const nested = findItemByTitle(
+        item.children as { children?: unknown[]; title: string }[],
+        title,
+      );
+      if (nested) {
+        return nested;
+      }
+    }
+  }
+  return undefined;
+}
 
 describe('fetchAllRepoInfo with Concurrency', () => {
   const token = 'test-token';
@@ -134,7 +159,7 @@ describe('fetchAllRepoInfo with Concurrency', () => {
   });
 });
 
-describe('Title Extraction from README fixtures', () => {
+describe('Branded titles from README fixtures', () => {
   const fixturesDir = path.join(__dirname, 'fixtures', 'original');
   const expectedTitlesPath = path.join(
     __dirname,
@@ -143,6 +168,7 @@ describe('Title Extraction from README fixtures', () => {
   );
   const sourceReposPath = path.join(__dirname, 'fixtures', 'source-repos.json');
   const token = 'test-token';
+  const brandingRules: ReplacementRule[] = [{ type: 'branding' }];
 
   // Load expected titles and source repos
   const expectedTitles = JSON.parse(
@@ -174,139 +200,109 @@ describe('Title Extraction from README fixtures', () => {
     });
   });
 
-  // Category 1 - No H1 (should use repo name)
-  describe('Category 1 - No H1 (should use repo name)', () => {
-    const category =
-      expectedTitles['Category 1 - No H1 (should use repo name)'];
+  const titleCases: [string, string, string][] = [];
+  for (const [category, fixtures] of Object.entries(expectedTitles)) {
+    for (const [fixtureName, expectedTitle] of Object.entries(fixtures)) {
+      titleCases.push([category, fixtureName, expectedTitle]);
+    }
+  }
 
-    it.each(Object.entries(category))(
-      '%s should extract title "%s"',
-      async (fixtureName, expectedTitle) => {
-        const fixturePath = path.join(fixturesDir, `${fixtureName}.md`);
-        const content = fs.readFileSync(fixturePath, 'utf-8');
-        const sourceRepo = sourceRepos[fixtureName];
+  it.each(titleCases)(
+    '[%s] %s should brand title to "%s"',
+    async (_category, fixtureName, expectedTitle) => {
+      const fixturePath = path.join(fixturesDir, `${fixtureName}.md`);
+      const content = fs.readFileSync(fixturePath, 'utf-8');
+      const sourceRepo = sourceRepos[fixtureName];
 
-        const result = await processMarkdownContent(
-          content,
-          token,
-          [],
-          { by: '', minLinks: 2 },
-          'owner/source-repo',
-          '',
-          sourceRepo,
-        );
+      const result = await processMarkdownContent(
+        content,
+        token,
+        brandingRules,
+        { by: '', minLinks: 2 },
+        sourceRepo,
+        '',
+        `enhansome/enhansome-${fixtureName}`,
+      );
 
-        expect(result.jsonData.metadata.title).toBe(expectedTitle);
-      },
-    );
+      expect(result.jsonData.metadata.title).toBe(expectedTitle);
+      expect(result.finalContent.split('\n')).toContain(`# ${expectedTitle}`);
+    },
+  );
+});
+
+describe('Item titles and descriptions from README fixtures', () => {
+  const fixturesDir = path.join(__dirname, 'fixtures', 'original');
+  const expectedItemsPath = path.join(
+    __dirname,
+    'fixtures',
+    'expected-items.json',
+  );
+  const sourceReposPath = path.join(__dirname, 'fixtures', 'source-repos.json');
+  const token = 'test-token';
+
+  const expectedItems = JSON.parse(
+    fs.readFileSync(expectedItemsPath, 'utf-8'),
+  ) as Record<
+    string,
+    { description: null | string; section: string; title: string }[]
+  >;
+  const sourceRepos = JSON.parse(
+    fs.readFileSync(sourceReposPath, 'utf-8'),
+  ) as Record<string, string>;
+
+  // Flatten the data file into [fixture, section, title, description] rows so
+  // each assertion runs as its own test case.
+  const cases: [string, string, string, null | string][] = [];
+  for (const [fixtureName, entries] of Object.entries(expectedItems)) {
+    for (const { section, title, description } of entries) {
+      cases.push([fixtureName, section, title, description]);
+    }
+  }
+
+  beforeEach(() => {
+    vi.clearAllMocks();
+    vi.mocked(github.getRepoInfo).mockResolvedValue({
+      archived: false,
+      language: 'TypeScript',
+      open_issues_count: 0,
+      owner: 'test-user',
+      pushed_at: '2025-01-01T00:00:00Z',
+      repo: 'test-repo',
+      stargazers_count: 100,
+    });
+    vi.mocked(github.parseGitHubUrl).mockImplementation((url: string) => {
+      if (!url.includes('github.com')) {
+        return null;
+      }
+      const parts = url.split('/');
+      return { owner: parts[parts.length - 2], repo: parts[parts.length - 1] };
+    });
   });
 
-  // Category 2 - Contributing as last H1 (should skip to first valid)
-  describe('Category 2 - Contributing as last H1 (should skip to first valid)', () => {
-    const category =
-      expectedTitles[
-        'Category 2 - Contributing as last H1 (should skip to first valid)'
-      ];
+  it.each(cases)(
+    '%s: section "%s" should contain item "%s" (description %s)',
+    async (fixtureName, section, title, description) => {
+      const fixturePath = path.join(fixturesDir, `${fixtureName}.md`);
+      const content = fs.readFileSync(fixturePath, 'utf-8');
 
-    it.each(Object.entries(category))(
-      '%s should extract title "%s"',
-      async (fixtureName, expectedTitle) => {
-        const fixturePath = path.join(fixturesDir, `${fixtureName}.md`);
-        const content = fs.readFileSync(fixturePath, 'utf-8');
-        const sourceRepo = sourceRepos[fixtureName];
+      const result = await processMarkdownContent(
+        content,
+        token,
+        [],
+        { by: '', minLinks: 2 },
+        sourceRepos[fixtureName],
+        '',
+        `enhansome/enhansome-${fixtureName}`,
+      );
 
-        const result = await processMarkdownContent(
-          content,
-          token,
-          [],
-          { by: '', minLinks: 2 },
-          'owner/source-repo',
-          '',
-          sourceRepo,
-        );
-
-        expect(result.jsonData.metadata.title).toBe(expectedTitle);
-      },
-    );
-  });
-
-  // Category 3 - Other section headers as last H1
-  describe('Category 3 - Other section headers as last H1', () => {
-    const category =
-      expectedTitles['Category 3 - Other section headers as last H1'];
-
-    it.each(Object.entries(category))(
-      '%s should extract title "%s"',
-      async (fixtureName, expectedTitle) => {
-        const fixturePath = path.join(fixturesDir, `${fixtureName}.md`);
-        const content = fs.readFileSync(fixturePath, 'utf-8');
-        const sourceRepo = sourceRepos[fixtureName];
-
-        const result = await processMarkdownContent(
-          content,
-          token,
-          [],
-          { by: '', minLinks: 2 },
-          'owner/source-repo',
-          '',
-          sourceRepo,
-        );
-
-        expect(result.jsonData.metadata.title).toBe(expectedTitle);
-      },
-    );
-  });
-
-  // Category 4 - Empty/complex title (should use repo name)
-  describe('Category 4 - Empty/complex title (should use repo name)', () => {
-    const category =
-      expectedTitles['Category 4 - Empty/complex title (should use repo name)'];
-
-    it.each(Object.entries(category))(
-      '%s should extract title "%s"',
-      async (fixtureName, expectedTitle) => {
-        const fixturePath = path.join(fixturesDir, `${fixtureName}.md`);
-        const content = fs.readFileSync(fixturePath, 'utf-8');
-        const sourceRepo = sourceRepos[fixtureName];
-
-        const result = await processMarkdownContent(
-          content,
-          token,
-          [],
-          { by: '', minLinks: 2 },
-          'owner/source-repo',
-          '',
-          sourceRepo,
-        );
-
-        expect(result.jsonData.metadata.title).toBe(expectedTitle);
-      },
-    );
-  });
-
-  // Category 5 - Miscellaneous bad titles
-  describe('Category 5 - Miscellaneous bad titles', () => {
-    const category = expectedTitles['Category 5 - Miscellaneous bad titles'];
-
-    it.each(Object.entries(category))(
-      '%s should extract title "%s"',
-      async (fixtureName, expectedTitle) => {
-        const fixturePath = path.join(fixturesDir, `${fixtureName}.md`);
-        const content = fs.readFileSync(fixturePath, 'utf-8');
-        const sourceRepo = sourceRepos[fixtureName];
-
-        const result = await processMarkdownContent(
-          content,
-          token,
-          [],
-          { by: '', minLinks: 2 },
-          'owner/source-repo',
-          '',
-          sourceRepo,
-        );
-
-        expect(result.jsonData.metadata.title).toBe(expectedTitle);
-      },
-    );
-  });
+      const sec = result.jsonData.items.find(s => s.title === section);
+      expect(sec, `section "${section}" should exist`).toBeDefined();
+      const item = findItemByTitle(sec?.items ?? [], title);
+      expect(
+        item,
+        `item "${title}" should exist in section "${section}"`,
+      ).toBeDefined();
+      expect(item?.description ?? null).toBe(description);
+    },
+  );
 });
