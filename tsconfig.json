@@ -2,16 +2,17 @@
   "compilerOptions": {
     "target": "ES2022",
     "module": "nodenext",
-    "outDir": "./dist",
-    "rootDir": "./src",
     "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "moduleResolution": "nodenext",
     "resolveJsonModule": true,
-    "sourceMap": true,
-    "declaration": true,
+    "noEmit": true,
     "types": [
       "node",
       "vitest"

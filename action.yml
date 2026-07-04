@@ -72,6 +72,7 @@ runs:
         hash=$(find \
           "${{ github.action_path }}/src" \
           "${{ github.action_path }}/package-lock.json" \
+          "${{ github.action_path }}/vite.config.ts" \
           "${{ github.action_path }}/tsconfig.json" \
           -type f -print0 | sort -z | xargs -0 sha256sum | sha256sum | cut -d' ' -f1)
         echo "hash=$hash" >> "$GITHUB_OUTPUT"

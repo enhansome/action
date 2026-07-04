@@ -1,7 +1,6 @@
 import js from '@eslint/js';
 import stylistic from '@stylistic/eslint-plugin';
 import eslintConfigPrettier from 'eslint-config-prettier/flat';
-import importX from 'eslint-plugin-import-x';
 import nodePlugin from 'eslint-plugin-n';
 import perfectionist from 'eslint-plugin-perfectionist';
 import prettierRecommended from 'eslint-plugin-prettier/recommended';
@@ -17,8 +16,6 @@ export default defineConfig([
   {
     extends: [
       js.configs['recommended'],
-      importX.flatConfigs.recommended,
-      importX.flatConfigs.typescript,
       nodePlugin.configs['flat/recommended-module'],
       ...tseslint.configs.strictTypeChecked,
       ...tseslint.configs.stylisticTypeChecked,
@@ -44,13 +41,11 @@ export default defineConfig([
     },
     rules: {
       'no-unused-vars': 'off',
-      'n/no-missing-import': 'off', // resolved by TS / import-x
+      'n/no-missing-import': 'off', // resolved by TS
       'n/no-unpublished-import': 'off', // dev-only imports in tests
       '@typescript-eslint/restrict-template-expressions': 'off',
       '@typescript-eslint/prefer-nullish-coalescing': 'off',
-      'import-x/order': 'off',
-      'import-x/no-dynamic-require': 'warn',
-      'import-x/no-nodejs-modules': 'off',
+      'promise/always-return': ['error', { ignoreLastCallback: true }],
       curly: 'error',
       'func-style': ['error', 'declaration'],
       'no-else-return': 'error',
