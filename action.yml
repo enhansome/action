@@ -37,9 +37,9 @@ inputs:
     required: false
     default: 'false'
   sort_by:
-    description: "Sorts lists that meet the threshold. Options: 'stars' or 'last_commit'. Leave empty to disable sorting."
+    description: "Sorts lists that meet the threshold. Options: 'stars' (default) or 'last_commit'. Leave empty to disable sorting."
     required: false
-    default: ''
+    default: 'stars'
   relative_link_prefix:
     description: 'A path prefix to prepend to all relative links. Useful when content is moved from a subdirectory.'
     required: false

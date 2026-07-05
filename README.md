@@ -24,7 +24,7 @@ is just `checkout → action`.
 | `find_and_replace` | no | - | Lines of `find_string:::replace_string`. |
 | `regex_find_and_replace` | no | - | Lines of `pattern:::replacement_string` (`gm` flags). |
 | `disable_branding` | no | `false` | Suppress the " with stars" title suffix. |
-| `sort_by` | no | - | `stars` or `last_commit`. |
+| `sort_by` | no | `stars` | `stars` (default) or `last_commit`. Leave empty to keep source order. |
 | `relative_link_prefix` | no | - | Prefix prepended to relative links in the source README, e.g. `https://github.com/<owner>/<repo>/blob/<branch>/` so they resolve against the source repo. |
 | `auto_commit` | no | `true` | Commit & push the result via `git-auto-commit-action`. Needs `permissions: contents: write` + checkout `persist-credentials: true`. Set `false` to only write files. |
 
