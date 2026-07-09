@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.2.2](https://github.com/enhansome/action/compare/v1.2.1...v1.2.2) (2026-07-09)
+
+
+### Bug Fixes
+
+* golden tests expected json ([b28063d](https://github.com/enhansome/action/commit/b28063d66d3784f00f26203f0ff6e5a2dd7aa776))
+* sort by stars by default ([8582633](https://github.com/enhansome/action/commit/85826330a01a61472d73f63ce06c4509fea104fd))
+
 ## [1.2.1](https://github.com/enhansome/action/compare/v1.2.0...v1.2.1) (2026-07-04)
 
 
