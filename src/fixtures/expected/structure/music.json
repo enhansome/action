@@ -6,6 +6,7 @@
         {
           "children": [],
           "description": "A cross-platform, all-in-one digital audio workstation and plugin suite, optimized for EDM production.",
+          "kind": "repository",
           "title": "Stargate DAW",
           "repo_info": {
             "archived": false,
@@ -19,6 +20,7 @@
         {
           "children": [],
           "description": "a free, cross-platform digital audio editor.",
+          "kind": "repository",
           "title": "Audacity",
           "repo_info": {
             "archived": false,
@@ -32,6 +34,7 @@
         {
           "children": [],
           "description": "A free, cross-platform singing voice synthesis framework.",
+          "kind": "repository",
           "title": "OpenUtau",
           "repo_info": {
             "archived": false,
@@ -41,26 +44,6 @@
             "repo": "openutau",
             "stars": 1455
           }
-        },
-        {
-          "children": [],
-          "description": "a cross-platform digital audio workstation emphasizing audio recording.",
-          "title": "Ardour"
-        },
-        {
-          "children": [],
-          "description": "another cross-platform digital audio workstation, more oriented towards making beats.",
-          "title": "LMMS"
-        },
-        {
-          "children": [],
-          "description": "Snd is a sound editor modelled loosely after Emacs.",
-          "title": "snd"
-        },
-        {
-          "children": [],
-          "description": "a next-gen DAW that helps you generate melody, beats, or a whole song, while still being able to edit them.",
-          "title": "TuneFlow"
         }
       ],
       "title": "Audio Editing"
@@ -71,6 +54,7 @@
         {
           "children": [],
           "description": "MusicXML parsing and layout library.",
+          "kind": "repository",
           "title": "mxml",
           "repo_info": {
             "archived": false,
@@ -84,6 +68,7 @@
         {
           "children": [],
           "description": "a python package for music and audio analysis, providing the building blocks necessary to create music information retrieval systems.",
+          "kind": "repository",
           "title": "Librosa",
           "repo_info": {
             "archived": false,
@@ -97,6 +82,7 @@
         {
           "children": [],
           "description": "a Javascript audio library for the modern web.",
+          "kind": "repository",
           "title": "howler.js",
           "repo_info": {
             "archived": false,
@@ -110,6 +96,7 @@
         {
           "children": [],
           "description": "audio.js is a drop-in javascript library that allows HTML5's <audio> tag to be used anywhere.",
+          "kind": "repository",
           "title": "audio.js",
           "repo_info": {
             "archived": false,
@@ -123,6 +110,7 @@
         {
           "children": [],
           "description": "A library for audio and music analysis, feature extraction.",
+          "kind": "repository",
           "title": "audioFlux",
           "repo_info": {
             "archived": false,
@@ -136,6 +124,7 @@
         {
           "children": [],
           "description": "a framework for creating web-based MIDI apps.",
+          "kind": "repository",
           "title": "midi.js",
           "repo_info": {
             "archived": false,
@@ -149,6 +138,7 @@
         {
           "children": [],
           "description": "reference implementation of ChordMark, a text notation format for lyrics, chords and rhythm.",
+          "kind": "repository",
           "title": "chord-mark",
           "repo_info": {
             "archived": false,
@@ -158,26 +148,6 @@
             "repo": "chord-mark",
             "stars": 9582
           }
-        },
-        {
-          "children": [],
-          "description": "an audio synthesis software API for Java.",
-          "title": "JSyn"
-        },
-        {
-          "children": [],
-          "description": "a free, cross-platform, open-source, audio I/O library.",
-          "title": "PortAudio"
-        },
-        {
-          "children": [],
-          "description": "an aggregate of free and useful Audio, DSP and music libraries written in Rust.",
-          "title": "RustAudio"
-        },
-        {
-          "children": [],
-          "description": "a lightweight DSP library written in C.",
-          "title": "Soundpipe"
         }
       ],
       "title": "Audio Libraries"
@@ -188,6 +158,7 @@
         {
           "children": [],
           "description": "is a full-featured CD/DVD/Blu-ray burning and ripping application.",
+          "kind": "repository",
           "title": "K3b",
           "repo_info": {
             "archived": false,
@@ -201,6 +172,7 @@
         {
           "children": [],
           "description": "an open-source personal Spotify analytics tool.",
+          "kind": "repository",
           "title": "Auralytics",
           "repo_info": {
             "archived": false,
@@ -214,6 +186,7 @@
         {
           "children": [],
           "description": "automatic command-line mp3/ogg/flac file tagger and renamer.",
+          "kind": "repository",
           "title": "lltag",
           "repo_info": {
             "archived": false,
@@ -227,6 +200,7 @@
         {
           "children": [],
           "description": "Python CD-DA ripper preferring accuracy over speed.",
+          "kind": "repository",
           "title": "Whipper",
           "repo_info": {
             "archived": false,
@@ -240,6 +214,7 @@
         {
           "children": [],
           "description": "command-line CD ripper.",
+          "kind": "repository",
           "title": "Jack",
           "repo_info": {
             "archived": false,
@@ -253,6 +228,7 @@
         {
           "children": [],
           "description": "a futuristic audio production platform (hardware support, APIs, hosts, plugins and more)",
+          "kind": "repository",
           "title": "Musikernel",
           "repo_info": {
             "archived": false,
@@ -266,6 +242,7 @@
         {
           "children": [],
           "description": "free audio converter. It supports audio CD ripping and tag editing.",
+          "kind": "repository",
           "title": "fre:ac",
           "repo_info": {
             "archived": true,
@@ -279,6 +256,7 @@
         {
           "children": [],
           "description": "rips and encodes standard audio CDs with the least effort required from user. Cross platform.",
+          "kind": "repository",
           "title": "cyanrip",
           "repo_info": {
             "archived": false,
@@ -292,6 +270,7 @@
         {
           "children": [],
           "description": "an open-source personal audio streaming server.",
+          "kind": "repository",
           "title": "Koel",
           "repo_info": {
             "archived": false,
@@ -305,6 +284,7 @@
         {
           "children": [],
           "description": "GTK and GNOME application for ripping CD-Audio and encoding in lossy and lossless audio formats.",
+          "kind": "repository",
           "title": "X Audio Copy",
           "repo_info": {
             "archived": false,
@@ -318,6 +298,7 @@
         {
           "children": [],
           "description": "a Pyo-based graphical environment for music and signal processing.",
+          "kind": "repository",
           "title": "Cecilia",
           "repo_info": {
             "archived": false,
@@ -331,6 +312,7 @@
         {
           "children": [],
           "description": "split flac/ape/wv/wav + cue sheet into separate tracks",
+          "kind": "repository",
           "title": "split2flac",
           "repo_info": {
             "archived": false,
@@ -344,6 +326,7 @@
         {
           "children": [],
           "description": "сontainerized web application and library for automated reference audio mastering.",
+          "kind": "repository",
           "title": "matchering",
           "repo_info": {
             "archived": false,
@@ -357,6 +340,7 @@
         {
           "children": [],
           "description": "is a secure digital audio extraction application (\"cd ripper\") for Unix-like operating systems.",
+          "kind": "repository",
           "title": "Rubyripper",
           "repo_info": {
             "archived": false,
@@ -366,26 +350,6 @@
             "repo": "rubyripper",
             "stars": 4216
           }
-        },
-        {
-          "children": [],
-          "description": "a powerful command-line music organizer and manipulator.",
-          "title": "Beets"
-        },
-        {
-          "children": [],
-          "description": "a high quality, free and open-source MP3 encoder.",
-          "title": "Lame"
-        },
-        {
-          "children": [],
-          "description": "Open Encyclopedia for Music information and Metadata, providing a unique ID for everything",
-          "title": "MusicBrainz"
-        },
-        {
-          "children": [],
-          "description": "a free open-source command line utility for playing, converting and manipulating audio files.",
-          "title": "SoX"
         }
       ],
       "title": "Audio Tools"
@@ -396,6 +360,7 @@
         {
           "children": [],
           "description": "a collection of mostly baroque music, lots of sacred works by J. S. Bach, coded in lilypond/ripple.",
+          "kind": "repository",
           "title": "ciconia/music",
           "repo_info": {
             "archived": false,
@@ -409,6 +374,7 @@
         {
           "children": [],
           "description": "baroque music scores (mainly French music), typeset using lilypond.",
+          "kind": "repository",
           "title": "Éditions Nicolas Sceaux",
           "repo_info": {
             "archived": false,
@@ -422,6 +388,7 @@
         {
           "children": [],
           "description": "sheet music based on editions in the public domain.",
+          "kind": "repository",
           "title": "Mutopia",
           "repo_info": {
             "archived": false,
@@ -435,6 +402,7 @@
         {
           "children": [],
           "description": "a collection of music typeset with lilypond (mostly chamber music and music for cello).",
+          "kind": "repository",
           "title": "cellist/Lilypond-Sheet-Music",
           "repo_info": {
             "archived": false,
@@ -448,6 +416,7 @@
         {
           "children": [],
           "description": "open scores for piano encoded using lilypond.",
+          "kind": "repository",
           "title": "Lavender Blue Open-Scores",
           "repo_info": {
             "archived": false,
@@ -461,6 +430,7 @@
         {
           "children": [],
           "description": "beautiful LilyPond scores under free licenses.",
+          "kind": "repository",
           "title": "wbsoft/lilymusic",
           "repo_info": {
             "archived": false,
@@ -470,21 +440,6 @@
             "repo": "lilymusic",
             "stars": 3265
           }
-        },
-        {
-          "children": [],
-          "description": "engraving and publishing system that produces high quality sheet music for bayan in PDF.",
-          "title": "bayanguru"
-        },
-        {
-          "children": [],
-          "description": "the choral public domain library contains more than 20K free scores of vocal music.",
-          "title": "CPDL"
-        },
-        {
-          "children": [],
-          "description": "the International Music Score Library Project is the largest collection of public domain scores and parts on the web.",
-          "title": "IMSLP"
         }
       ],
       "title": "Free Music Scores"
@@ -495,6 +450,7 @@
         {
           "children": [],
           "description": "Python library for working with MIDI messages and ports.",
+          "kind": "repository",
           "title": "mido",
           "repo_info": {
             "archived": false,
@@ -508,6 +464,7 @@
         {
           "children": [],
           "description": "MIDI drums generator, designed for polyrhythmic parts",
+          "kind": "repository",
           "title": "Polyrhythmix",
           "repo_info": {
             "archived": false,
@@ -521,6 +478,7 @@
         {
           "children": [],
           "description": "a complete Midi-based framework for automatic backing tracks generation.",
+          "kind": "repository",
           "title": "JJazzLab-X",
           "repo_info": {
             "archived": false,
@@ -530,16 +488,6 @@
             "repo": "JJazzLab-X",
             "stars": 12282
           }
-        },
-        {
-          "children": [],
-          "description": "C++ library for parsing Standard MIDI Files.",
-          "title": "Midifile"
-        },
-        {
-          "children": [],
-          "description": "an open-source command line synthesizer that plays MIDI files.",
-          "title": "Timidity"
         }
       ],
       "title": "MIDI Tools & Libraries"
@@ -550,6 +498,7 @@
         {
           "children": [],
           "description": "Lightweight, SVG-based music notation library for TypeScript under MIT license.",
+          "kind": "repository",
           "title": "VectorScore",
           "repo_info": {
             "archived": false,
@@ -563,6 +512,7 @@
         {
           "children": [],
           "description": "DRY for Lilypond - generate scores and parts with minimal fuss.",
+          "kind": "repository",
           "title": "Ripple",
           "repo_info": {
             "archived": false,
@@ -576,6 +526,7 @@
         {
           "children": [],
           "description": "a C++ library for reading and writing MEI files.",
+          "kind": "repository",
           "title": "LibMEI",
           "repo_info": {
             "archived": false,
@@ -589,6 +540,7 @@
         {
           "children": [],
           "description": "Music sheet rendering for iOS and OSX.",
+          "kind": "repository",
           "title": "MusicKit",
           "repo_info": {
             "archived": false,
@@ -602,6 +554,7 @@
         {
           "children": [],
           "description": "Typographic Beat-Oriented Notation for music.",
+          "kind": "repository",
           "title": "Tbon",
           "repo_info": {
             "archived": false,
@@ -615,6 +568,7 @@
         {
           "children": [],
           "description": "a free Lilypond sheet music editor.",
+          "kind": "repository",
           "title": "Frescobaldi",
           "repo_info": {
             "archived": false,
@@ -628,6 +582,7 @@
         {
           "children": [],
           "description": "free open-source music notation and composition software.",
+          "kind": "repository",
           "title": "MuseScore",
           "repo_info": {
             "archived": false,
@@ -641,6 +596,7 @@
         {
           "children": [],
           "description": "free, open source, browser based music notation and composition software.",
+          "kind": "repository",
           "title": "Inknote",
           "repo_info": {
             "archived": false,
@@ -654,6 +610,7 @@
         {
           "children": [],
           "description": "Lilypond version manager.",
+          "kind": "repository",
           "title": "Lilyvm",
           "repo_info": {
             "archived": false,
@@ -667,6 +624,7 @@
         {
           "children": [],
           "description": "Typescript library for rendering MusicXML in the browser.",
+          "kind": "repository",
           "title": "OpenSheetMusicDisplay",
           "repo_info": {
             "archived": false,
@@ -680,6 +638,7 @@
         {
           "children": [],
           "description": "a library and a toolkit for engraving MEI music notation into SVG.",
+          "kind": "repository",
           "title": "Verovio",
           "repo_info": {
             "archived": false,
@@ -693,6 +652,7 @@
         {
           "children": [],
           "description": "a JavaScript library for rendering music notation and guitar tablature.",
+          "kind": "repository",
           "title": "Vexflow",
           "repo_info": {
             "archived": false,
@@ -706,6 +666,7 @@
         {
           "children": [],
           "description": "LilyPond tools - snippets, templates, and extensions.",
+          "kind": "repository",
           "title": "OpenLilyLib",
           "repo_info": {
             "archived": false,
@@ -719,6 +680,7 @@
         {
           "children": [],
           "description": "a free web app for displaying sheet music.",
+          "kind": "repository",
           "title": "Digital Music Stand",
           "repo_info": {
             "archived": false,
@@ -732,6 +694,7 @@
         {
           "children": [],
           "description": "the Lilypond swiss army knife - easily install packages, manage multiple versions of Lilypond, and other tools for power users.",
+          "kind": "repository",
           "title": "Lyp",
           "repo_info": {
             "archived": false,
@@ -745,6 +708,7 @@
         {
           "children": [],
           "description": "tips & tricks for getting the most out of lilypond.",
+          "kind": "repository",
           "title": "Lilypond cook book",
           "repo_info": {
             "archived": false,
@@ -754,86 +718,6 @@
             "repo": "lilypond-cookbook",
             "stars": 2652
           }
-        },
-        {
-          "children": [],
-          "description": "a Python API for Formalized Score Control, based on Lilypond.",
-          "title": "Abjad"
-        },
-        {
-          "children": [],
-          "description": "a text-based notation format for lyrics, chords and rhythm.",
-          "title": "ChordMark"
-        },
-        {
-          "children": [],
-          "description": "a free music notation editor based on Lilypond.",
-          "title": "Denemo"
-        },
-        {
-          "children": [],
-          "description": "A listing and visual comparison of different music fonts.",
-          "title": "Jan Angermüller's music fonts page"
-        },
-        {
-          "children": [],
-          "description": "a generic, portable library and API for the graphical rendering of musical scores.",
-          "title": "Guido"
-        },
-        {
-          "children": [],
-          "description": "online LilyPond-based sheet music editor (with optional GitHub integration).",
-          "title": "Hacklily"
-        },
-        {
-          "children": [],
-          "description": "an online, text-based editor for making PDF-formatted Nashville Number System song charts.",
-          "title": "JotChord"
-        },
-        {
-          "children": [],
-          "description": "an open source web-based LilyPond editor.",
-          "title": "Lilybin"
-        },
-        {
-          "children": [],
-          "description": "free, open-source music engraving program, devoted to producing the highest-quality sheet music possible.",
-          "title": "Lilypond"
-        },
-        {
-          "children": [],
-          "description": "an online database of Lilypond snippets ideas, features and hacks.",
-          "title": "Lilypond Snippet Repository"
-        },
-        {
-          "children": [],
-          "description": "a friendly, browser-based editor for music encodings.",
-          "title": "mei-friend"
-        },
-        {
-          "children": [],
-          "description": "python library for notating music in a graphics-first paradigm.",
-          "title": "neoscore"
-        },
-        {
-          "children": [],
-          "description": "a forum devoted to the practice of music notation.",
-          "title": "NOTATIO"
-        },
-        {
-          "children": [],
-          "description": "a tool and library for manipulating LilyPond files.",
-          "title": "Python-ly"
-        },
-        {
-          "children": [],
-          "description": "a C++ library for parsing SCORE data files.",
-          "title": "Scorelib"
-        },
-        {
-          "children": [],
-          "description": "Proprietary software for creating music score with words.",
-          "title": "Unison"
         }
       ],
       "title": "Music Notation"
@@ -844,6 +728,7 @@
         {
           "children": [],
           "description": "a music live coding library for Python 3.10+ (MIDI/OSC/SuperCollider).",
+          "kind": "repository",
           "title": "Sardine",
           "repo_info": {
             "archived": false,
@@ -857,6 +742,7 @@
         {
           "children": [],
           "description": "a composition library for Overtone.",
+          "kind": "repository",
           "title": "Leipzig",
           "repo_info": {
             "archived": false,
@@ -870,6 +756,7 @@
         {
           "children": [],
           "description": "live programming environment for music.",
+          "kind": "repository",
           "title": "Orca",
           "repo_info": {
             "archived": false,
@@ -883,6 +770,7 @@
         {
           "children": [],
           "description": "a music programming language for musicians.",
+          "kind": "repository",
           "title": "Alda",
           "repo_info": {
             "archived": false,
@@ -896,6 +784,7 @@
         {
           "children": [],
           "description": "A rhythm library for playing drum beats of differents music genres in the browser.",
+          "kind": "repository",
           "title": "DrumBeatRepo",
           "repo_info": {
             "archived": false,
@@ -909,6 +798,7 @@
         {
           "children": [],
           "description": "a Common Lisp environment for composition building on CLM, CMN, CM, MusicXML and Lilypond for score, sound file, and/or MIDI file outputs.",
+          "kind": "repository",
           "title": "slippery chicken",
           "repo_info": {
             "archived": false,
@@ -922,6 +812,7 @@
         {
           "children": [],
           "description": "an Open Source toolkit for designing synthesizers and collaborating with music.",
+          "kind": "repository",
           "title": "Overtone",
           "repo_info": {
             "archived": false,
@@ -935,6 +826,7 @@
         {
           "children": [],
           "description": "a graphical open-source sequencer, based on Iannis Xenakis works, for digital art.",
+          "kind": "repository",
           "title": "IanniX",
           "repo_info": {
             "archived": false,
@@ -948,6 +840,7 @@
         {
           "children": [],
           "description": "a language for real time audio synthesis and algorithmic composition in HTML5. \"Write CoffeeScript, and be processed as SuperCollider.\"",
+          "kind": "repository",
           "title": "CoffeeCollider",
           "repo_info": {
             "archived": false,
@@ -961,6 +854,7 @@
         {
           "children": [],
           "description": "MIDI programming language with decompiler and player, supports karaoke.",
+          "kind": "repository",
           "title": "Midica",
           "repo_info": {
             "archived": false,
@@ -974,6 +868,7 @@
         {
           "children": [],
           "description": "python plugin SDK for the next-gen DAW, that allows you to program your music algorithms & AI models into all stages of music production",
+          "kind": "repository",
           "title": "tuneflow-py",
           "repo_info": {
             "archived": false,
@@ -987,6 +882,7 @@
         {
           "children": [],
           "description": "A strongly-timed programming language aimed at music creation. Heavily inspired by ChucK.",
+          "kind": "repository",
           "title": "Gwion",
           "repo_info": {
             "archived": false,
@@ -1000,6 +896,7 @@
         {
           "children": [],
           "description": "TypeScript-based library designed to generate musical scales.",
+          "kind": "repository",
           "title": "Leiter",
           "repo_info": {
             "archived": false,
@@ -1013,6 +910,7 @@
         {
           "children": [],
           "description": "A small MIDI sequencer DSL designed around vectors and euclidean rhythms.",
+          "kind": "repository",
           "title": "Cane",
           "repo_info": {
             "archived": false,
@@ -1026,6 +924,7 @@
         {
           "children": [],
           "description": "strongly-timed, concurrent, and on-the-fly music programming language.",
+          "kind": "repository",
           "title": "Chuck",
           "repo_info": {
             "archived": false,
@@ -1035,111 +934,6 @@
             "repo": "chuck",
             "stars": 2795
           }
-        },
-        {
-          "children": [],
-          "description": "a cross-platform set of patches and externals for Max, aimed to bring the richness of computer-aided composition into the real-time world.",
-          "title": "Bach: Automated Composer's Helper"
-        },
-        {
-          "children": [],
-          "description": "an open source music composition system.",
-          "title": "Common Music"
-        },
-        {
-          "children": [],
-          "description": "a user-programmable and user-extensible sound processing language and software synthesizer.",
-          "title": "Csound"
-        },
-        {
-          "children": [],
-          "description": "a functional programming language specifically designed for real-time signal processing and synthesis.",
-          "title": "Faust"
-        },
-        {
-          "children": [],
-          "description": "an environmnent for the design of interactive, augmented music scores.",
-          "title": "Inscore"
-        },
-        {
-          "children": [],
-          "description": "A Toolkit for Computational Musicology.",
-          "title": "music21"
-        },
-        {
-          "children": [],
-          "description": "a language for generalized music notation and theory, based on Haskell.",
-          "title": "Music Suite"
-        },
-        {
-          "children": [],
-          "description": "a Python library for composition that outputs notation, MIDI or audio files and that provides a generalized model to describe time-based structures.",
-          "title": "mutwo"
-        },
-        {
-          "children": [],
-          "description": "a sound synthesis and composition language.",
-          "title": "Nyquist"
-        },
-        {
-          "children": [],
-          "description": "a visual programming language based on Lisp.",
-          "title": "OpenMusic"
-        },
-        {
-          "children": [],
-          "description": "an open-source music generation framework written in Lua.",
-          "title": "Platonic Music Engine"
-        },
-        {
-          "children": [],
-          "description": "a visual programming language for audio and other multimedia.",
-          "title": "Pure Data"
-        },
-        {
-          "children": [],
-          "description": "a Python module to help digital signal processing script creation.",
-          "title": "pyo"
-        },
-        {
-          "children": [],
-          "description": "a modular and experimental programming environment with basic DSP routines in python.",
-          "title": "py-modular"
-        },
-        {
-          "children": [],
-          "description": "a live coding synth with an emphasis on educational use.",
-          "title": "Sonic Pi"
-        },
-        {
-          "children": [],
-          "description": "a small stack based audio language.",
-          "title": "Sporth"
-        },
-        {
-          "children": [],
-          "description": "an experiment in making a language built on javascript for live coding patterns using web technologies.",
-          "title": "Strudel"
-        },
-        {
-          "children": [],
-          "description": "a programming language for real time audio synthesis and algorithmic composition.",
-          "title": "SuperCollider"
-        },
-        {
-          "children": [],
-          "description": "a language built on Haskell for live coding patterns.",
-          "title": "Tidal"
-        },
-        {
-          "children": [],
-          "description": "a web based live coding environment (WebAudio / MIDI)",
-          "title": "Topos"
-        },
-        {
-          "children": [],
-          "description": "Domain specific language used in Unison.",
-          "title": "Unilang"
         }
       ],
       "title": "Music Programming"
@@ -1150,6 +944,7 @@
         {
           "children": [],
           "description": "A curated list of software and resources to create music.",
+          "kind": "repository",
           "title": "Awesome Music Production",
           "repo_info": {
             "archived": false,
@@ -1163,6 +958,7 @@
         {
           "children": [],
           "description": "A curated list of awesome sheet music software, libraries and resources.",
+          "kind": "repository",
           "title": "Awesome sheet music",
           "repo_info": {
             "archived": false,
@@ -1176,6 +972,7 @@
         {
           "children": [],
           "description": "A curated collection of music programming languages, libraries, frameworks and tools.",
+          "kind": "repository",
           "title": "Awesome Music Programming",
           "repo_info": {
             "archived": false,
@@ -1189,6 +986,7 @@
         {
           "children": [],
           "description": "Awesome list of websites dedicated to listening to music.",
+          "kind": "repository",
           "title": "Awesome Music Listening",
           "repo_info": {
             "archived": false,
@@ -1202,6 +1000,7 @@
         {
           "children": [],
           "description": "A curated list about Audio Visualization.",
+          "kind": "repository",
           "title": "Awesome Audio Visualization",
           "repo_info": {
             "archived": false,
@@ -1215,6 +1014,7 @@
         {
           "children": [],
           "description": "A curated list of audio DSP and plugin development resources.",
+          "kind": "repository",
           "title": "Awesome Audio DSP",
           "repo_info": {
             "archived": false,
@@ -1228,6 +1028,7 @@
         {
           "children": [],
           "description": "A curated list of awesome WebAudio packages and resources.",
+          "kind": "repository",
           "title": "Awesome WebAudio",
           "repo_info": {
             "archived": false,
@@ -1241,6 +1042,7 @@
         {
           "children": [],
           "description": "A curated list of python software and packages related to scientific research in audio.",
+          "kind": "repository",
           "title": "Awesome Python for Scientific Audio",
           "repo_info": {
             "archived": false,
@@ -1266,6 +1068,7 @@
     "original_repository_sha": "deadbeef",
     "enhanced_repository": "enhansome/enhansome-music",
     "enhanced_repository_description": "enhanced list",
+    "kind": "registry",
     "title": "Awesome Music with stars"
   }
 }

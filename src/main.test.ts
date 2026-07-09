@@ -4,7 +4,7 @@ import { beforeEach, describe, expect, it, vi } from 'vitest';
 
 import * as githubClient from './github.js';
 import { run } from './main.js';
-import { enhance } from './orchestrator.js';
+import { enhance, EnhanceResult } from './orchestrator.js';
 
 let inputs: Record<string, string> = {};
 
@@ -41,12 +41,13 @@ vi.mock('./orchestrator.js', () => ({
   enhance: vi.fn(),
 }));
 
-function enhanceResult(overrides = {}) {
+function enhanceResult(overrides: Partial<EnhanceResult> = {}): EnhanceResult {
   return {
     finalContent: 'enhanced',
     jsonData: {
       items: [],
       metadata: {
+        kind: 'repository',
         last_updated: '2026-06-27T00:00:00.000Z',
         original_repository: 'NARKOZ/guides',
         original_repository_sha: 'abc123',
@@ -122,13 +123,17 @@ describe('main: run()', () => {
     expect(fs.writeFile).toHaveBeenCalledWith('README.md', 'enhanced', 'utf-8');
   });
 
-  it('fails when the source has no README', async () => {
-    vi.mocked(githubClient.getReadme).mockResolvedValue(null);
+  it('fails when the source README cannot be fetched (strict mode, D7)', async () => {
+    vi.mocked(githubClient.getReadme).mockRejectedValue(
+      new Error('Not Found (404)'),
+    );
 
     await run();
 
+    // getReadme now throws; the top-level catch surfaces the error message
+    // instead of a dedicated null branch.
     expect(core.setFailed).toHaveBeenCalledWith(
-      'No README found in NARKOZ/guides',
+      'Action failed with error: Not Found (404)',
     );
     expect(fs.writeFile).not.toHaveBeenCalled();
   });

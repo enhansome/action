@@ -11,6 +11,7 @@
         {
           "children": [],
           "description": "Machine learning toolbox.",
+          "kind": "repository",
           "title": "Shogun",
           "repo_info": {
             "archived": false,
@@ -24,6 +25,7 @@
         {
           "children": [],
           "description": "Machine Learning toolbox for Humans.",
+          "kind": "repository",
           "title": "Reproducible Experiment Platform (REP)",
           "repo_info": {
             "archived": true,
@@ -37,6 +39,7 @@
         {
           "children": [],
           "description": "Simple structured learning framework for Python.",
+          "kind": "repository",
           "title": "pystruct",
           "repo_info": {
             "archived": false,
@@ -50,6 +53,7 @@
         {
           "children": [],
           "description": "High Performance, Easy-to-use, and Scalable Machine Learning Package.",
+          "kind": "repository",
           "title": "xLearn",
           "repo_info": {
             "archived": false,
@@ -63,6 +67,7 @@
         {
           "children": [],
           "description": "An open-source, low-code machine learning library in Python.",
+          "kind": "repository",
           "title": "PyCaret",
           "repo_info": {
             "archived": false,
@@ -76,6 +81,7 @@
         {
           "children": [],
           "description": "Multi-label classification for python.",
+          "kind": "repository",
           "title": "scikit-multilearn",
           "repo_info": {
             "archived": false,
@@ -89,6 +95,7 @@
         {
           "children": [],
           "description": "Modular active learning framework for Python3.",
+          "kind": "repository",
           "title": "modAL",
           "repo_info": {
             "archived": false,
@@ -102,6 +109,7 @@
         {
           "children": [],
           "description": "50%+ Faster, 50%+ less RAM usage, GPU support re-written Sklearn, Statsmodels.",
+          "kind": "repository",
           "title": "hyperlearn",
           "repo_info": {
             "archived": false,
@@ -115,6 +123,7 @@
         {
           "children": [],
           "description": "PySpark + scikit-learn = Sparkit-learn.",
+          "kind": "repository",
           "title": "Sparkit-learn",
           "repo_info": {
             "archived": false,
@@ -128,6 +137,7 @@
         {
           "children": [],
           "description": "Sequence classification toolkit for Python.",
+          "kind": "repository",
           "title": "seqlearn",
           "repo_info": {
             "archived": false,
@@ -141,6 +151,7 @@
         {
           "children": [],
           "description": "Highly interpretable classifiers for scikit learn.",
+          "kind": "repository",
           "title": "sklearn-expertsys",
           "repo_info": {
             "archived": false,
@@ -154,6 +165,7 @@
         {
           "children": [],
           "description": "Generalized Additive Models in Python.",
+          "kind": "repository",
           "title": "pyGAM",
           "repo_info": {
             "archived": false,
@@ -167,6 +179,7 @@
         {
           "children": [],
           "description": "Toolkit for making real-world machine learning and data analysis applications in C++ (Python bindings).",
+          "kind": "repository",
           "title": "dlib",
           "repo_info": {
             "archived": false,
@@ -180,6 +193,7 @@
         {
           "children": [],
           "description": "RAPIDS Machine Learning Library.",
+          "kind": "repository",
           "title": "cuML",
           "repo_info": {
             "archived": false,
@@ -193,6 +207,7 @@
         {
           "children": [],
           "description": "Extension and helper modules for Python's data analysis and machine learning libraries.",
+          "kind": "repository",
           "title": "MLxtend",
           "repo_info": {
             "archived": false,
@@ -206,6 +221,7 @@
         {
           "children": [],
           "description": "Metric learning algorithms in Python.",
+          "kind": "repository",
           "title": "metric-learn",
           "repo_info": {
             "archived": false,
@@ -219,6 +235,7 @@
         {
           "children": [],
           "description": "A scalable C++ machine learning library (Python bindings).",
+          "kind": "repository",
           "title": "mlpack",
           "repo_info": {
             "archived": false,
@@ -232,6 +249,7 @@
         {
           "children": [],
           "description": "Uplift modeling and causal inference with machine learning algorithms.",
+          "kind": "repository",
           "title": "causalml",
           "repo_info": {
             "archived": false,
@@ -245,6 +263,7 @@
         {
           "children": [],
           "description": "Implementation of the rulefit.",
+          "kind": "repository",
           "title": "RuleFit",
           "repo_info": {
             "archived": false,
@@ -254,16 +273,6 @@
             "repo": "rulefit",
             "stars": 2979
           }
-        },
-        {
-          "children": [],
-          "description": "Fundamental algorithms for scientific computing in Python",
-          "title": "SciPy"
-        },
-        {
-          "children": [],
-          "description": "Machine learning in Python.",
-          "title": "scikit-learn"
         }
       ],
       "title": "General Purpose Machine Learning"
@@ -274,6 +283,7 @@
         {
           "children": [],
           "description": "Fast GBDTs and Random Forests on GPUs.",
+          "kind": "repository",
           "title": "ThunderGBM",
           "repo_info": {
             "archived": false,
@@ -287,6 +297,7 @@
         {
           "children": [],
           "description": "A fast, distributed, high-performance gradient boosting.",
+          "kind": "repository",
           "title": "LightGBM",
           "repo_info": {
             "archived": true,
@@ -300,6 +311,7 @@
         {
           "children": [],
           "description": "Scalable, Portable, and Distributed Gradient Boosting.",
+          "kind": "repository",
           "title": "XGBoost",
           "repo_info": {
             "archived": false,
@@ -313,6 +325,7 @@
         {
           "children": [],
           "description": "An open-source gradient boosting on decision trees library.",
+          "kind": "repository",
           "title": "CatBoost",
           "repo_info": {
             "archived": false,
@@ -326,6 +339,7 @@
         {
           "children": [],
           "description": "A collection of state-of-the-art algorithms for the training, serving and interpretation of Decision Forest models in Keras.",
+          "kind": "repository",
           "title": "TensorFlow Decision Forests",
           "repo_info": {
             "archived": false,
@@ -339,6 +353,7 @@
         {
           "children": [],
           "description": "Natural Gradient Boosting for Probabilistic Prediction.",
+          "kind": "repository",
           "title": "NGBoost",
           "repo_info": {
             "archived": false,
@@ -358,6 +373,7 @@
         {
           "children": [],
           "description": "Library for machine learning stacking generalization.",
+          "kind": "repository",
           "title": "stacked_generalization",
           "repo_info": {
             "archived": false,
@@ -371,6 +387,7 @@
         {
           "children": [],
           "description": "Simple and useful stacking library written in Python.",
+          "kind": "repository",
           "title": "Stacking",
           "repo_info": {
             "archived": false,
@@ -384,6 +401,7 @@
         {
           "children": [],
           "description": "Python package for stacking (machine learning technique).",
+          "kind": "repository",
           "title": "vecstack",
           "repo_info": {
             "archived": false,
@@ -393,11 +411,6 @@
             "repo": "vecstack",
             "stars": 13986
           }
-        },
-        {
-          "children": [],
-          "description": "High performance ensemble learning.",
-          "title": "ML-Ensemble"
         }
       ],
       "title": "Ensemble Methods"
@@ -408,6 +421,7 @@
         {
           "children": [],
           "description": "Python-based implementations of algorithms for learning on imbalanced data.",
+          "kind": "repository",
           "title": "imbalanced-algorithms",
           "repo_info": {
             "archived": false,
@@ -421,6 +435,7 @@
         {
           "children": [],
           "description": "Module to perform under-sampling and over-sampling with various techniques.",
+          "kind": "repository",
           "title": "imbalanced-learn",
           "repo_info": {
             "archived": false,
@@ -440,6 +455,7 @@
         {
           "children": [],
           "description": "Python Wrapper of Regularized Greedy Forest.",
+          "kind": "repository",
           "title": "rgf_python",
           "repo_info": {
             "archived": true,
@@ -453,6 +469,7 @@
         {
           "children": [],
           "description": "Wrapper of the Random Bits Forest program written by (Wang et al., 2016).",
+          "kind": "repository",
           "title": "sklearn-random-bits-forest",
           "repo_info": {
             "archived": false,
@@ -466,6 +483,7 @@
         {
           "children": [],
           "description": "A forest of random projection trees.",
+          "kind": "repository",
           "title": "rpforest",
           "repo_info": {
             "archived": false,
@@ -485,6 +503,7 @@
         {
           "children": [],
           "description": "A fast SVM Library on GPUs and CPUs.",
+          "kind": "repository",
           "title": "ThunderSVM",
           "repo_info": {
             "archived": false,
@@ -498,6 +517,7 @@
         {
           "children": [],
           "description": "A library for Factorization Machines.",
+          "kind": "repository",
           "title": "fastFM",
           "repo_info": {
             "archived": false,
@@ -511,6 +531,7 @@
         {
           "children": [],
           "description": "An implementation of SVMs.",
+          "kind": "repository",
           "title": "liquidSVM",
           "repo_info": {
             "archived": false,
@@ -524,6 +545,7 @@
         {
           "children": [],
           "description": "Relevance Vector Machine implementation using the scikit-learn API.",
+          "kind": "repository",
           "title": "scikit-rvm",
           "repo_info": {
             "archived": false,
@@ -537,6 +559,7 @@
         {
           "children": [],
           "description": "TensorFlow implementation of an arbitrary order Factorization Machine.",
+          "kind": "repository",
           "title": "tffm",
           "repo_info": {
             "archived": false,
@@ -550,6 +573,7 @@
         {
           "children": [],
           "description": "Factorization machines in python.",
+          "kind": "repository",
           "title": "pyFM",
           "repo_info": {
             "archived": false,
@@ -574,6 +598,7 @@
         {
           "children": [],
           "description": "PyTorch Lightning is just organized PyTorch.",
+          "kind": "repository",
           "title": "pytorch-lightning",
           "repo_info": {
             "archived": false,
@@ -587,6 +612,7 @@
         {
           "children": [],
           "description": "High-level library to help with training neural networks in PyTorch.",
+          "kind": "repository",
           "title": "ignite",
           "repo_info": {
             "archived": false,
@@ -600,6 +626,7 @@
         {
           "children": [],
           "description": "High-level utils for PyTorch DL & RL research.",
+          "kind": "repository",
           "title": "Catalyst",
           "repo_info": {
             "archived": false,
@@ -613,6 +640,7 @@
         {
           "children": [],
           "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration.",
+          "kind": "repository",
           "title": "PyTorch",
           "repo_info": {
             "archived": false,
@@ -626,6 +654,7 @@
         {
           "children": [],
           "description": "A scikit-learn compatible neural network library that wraps PyTorch.",
+          "kind": "repository",
           "title": "skorch",
           "repo_info": {
             "archived": false,
@@ -639,6 +668,7 @@
         {
           "children": [],
           "description": "A PyTorch-based deep learning library for drug pair scoring.",
+          "kind": "repository",
           "title": "ChemicalX",
           "repo_info": {
             "archived": false,
@@ -658,6 +688,7 @@
         {
           "children": [],
           "description": "Distributed Deep learning with Keras & Spark.",
+          "kind": "repository",
           "title": "Elephas",
           "repo_info": {
             "archived": false,
@@ -671,6 +702,7 @@
         {
           "children": [],
           "description": "A Neural Net Training Interface on TensorFlow.",
+          "kind": "repository",
           "title": "tensorpack",
           "repo_info": {
             "archived": false,
@@ -684,6 +716,7 @@
         {
           "children": [],
           "description": "Computation using data flow graphs for scalable machine learning by Google.",
+          "kind": "repository",
           "title": "TensorFlow",
           "repo_info": {
             "archived": false,
@@ -697,6 +730,7 @@
         {
           "children": [],
           "description": "Keras community contributions.",
+          "kind": "repository",
           "title": "keras-contrib",
           "repo_info": {
             "archived": false,
@@ -710,6 +744,7 @@
         {
           "children": [],
           "description": "Deploy TensorFlow graphs for fast evaluation and export to TensorFlow-less environments running numpy.",
+          "kind": "repository",
           "title": "tfdeploy",
           "repo_info": {
             "archived": false,
@@ -723,6 +758,7 @@
         {
           "children": [],
           "description": "Deep learning with dynamic computation graphs in TensorFlow.",
+          "kind": "repository",
           "title": "TensorFlow Fold",
           "repo_info": {
             "archived": false,
@@ -736,6 +772,7 @@
         {
           "children": [],
           "description": "A quantization deep learning library.",
+          "kind": "repository",
           "title": "qkeras",
           "repo_info": {
             "archived": false,
@@ -749,6 +786,7 @@
         {
           "children": [],
           "description": "TensorFlow ROCm port.",
+          "kind": "repository",
           "title": "tensorflow-upstream",
           "repo_info": {
             "archived": false,
@@ -762,6 +800,7 @@
         {
           "children": [],
           "description": "TensorFlow-based neural network library.",
+          "kind": "repository",
           "title": "Sonnet",
           "repo_info": {
             "archived": false,
@@ -775,6 +814,7 @@
         {
           "children": [],
           "description": "A toolbox that allows one to train and test deep learning models without the need to write code.",
+          "kind": "repository",
           "title": "Ludwig",
           "repo_info": {
             "archived": false,
@@ -788,6 +828,7 @@
         {
           "children": [],
           "description": "Model Parallelism Made Easier.",
+          "kind": "repository",
           "title": "Mesh TensorFlow",
           "repo_info": {
             "archived": false,
@@ -801,6 +842,7 @@
         {
           "children": [],
           "description": "Deep Learning and Reinforcement Learning Library for Researcher and Engineer.",
+          "kind": "repository",
           "title": "TensorLayer",
           "repo_info": {
             "archived": true,
@@ -814,6 +856,7 @@
         {
           "children": [],
           "description": "A platform that helps you build, manage and monitor deep learning models.",
+          "kind": "repository",
           "title": "Polyaxon",
           "repo_info": {
             "archived": false,
@@ -827,6 +870,7 @@
         {
           "children": [],
           "description": "A high-level framework for TensorFlow.",
+          "kind": "repository",
           "title": "TensorLight",
           "repo_info": {
             "archived": false,
@@ -840,6 +884,7 @@
         {
           "children": [],
           "description": "Deep learning library featuring a higher-level API for TensorFlow.",
+          "kind": "repository",
           "title": "TFLearn",
           "repo_info": {
             "archived": false,
@@ -853,6 +898,7 @@
         {
           "children": [],
           "description": "Keras + Hyperopt: A straightforward wrapper for a convenient hyperparameter.",
+          "kind": "repository",
           "title": "Hyperas",
           "repo_info": {
             "archived": false,
@@ -862,11 +908,6 @@
             "repo": "hyperas",
             "stars": 1451
           }
-        },
-        {
-          "children": [],
-          "description": "A high-level neural networks API running on top of TensorFlow.",
-          "title": "Keras"
         }
       ],
       "title": "TensorFlow"
@@ -877,6 +918,7 @@
         {
           "children": [],
           "description": "Composable transformations of Python+NumPy programs: differentiate, vectorize, JIT to GPU/TPU, and more.",
+          "kind": "repository",
           "title": "JAX",
           "repo_info": {
             "archived": false,
@@ -890,6 +932,7 @@
         {
           "children": [],
           "description": "A neural network library for JAX that is designed for flexibility.",
+          "kind": "repository",
           "title": "FLAX",
           "repo_info": {
             "archived": false,
@@ -903,6 +946,7 @@
         {
           "children": [],
           "description": "A gradient processing and optimization library for JAX.",
+          "kind": "repository",
           "title": "Optax",
           "repo_info": {
             "archived": true,
@@ -922,6 +966,7 @@
         {
           "children": [],
           "description": "Efficiently computes derivatives of numpy code.",
+          "kind": "repository",
           "title": "autograd",
           "repo_info": {
             "archived": true,
@@ -935,6 +980,7 @@
         {
           "children": [],
           "description": "A fast open framework for deep learning.",
+          "kind": "repository",
           "title": "Caffe",
           "repo_info": {
             "archived": false,
@@ -948,6 +994,7 @@
         {
           "children": [],
           "description": "Neural Network Libraries by Sony.",
+          "kind": "repository",
           "title": "nnabla",
           "repo_info": {
             "archived": false,
@@ -961,6 +1008,7 @@
         {
           "children": [],
           "description": "State-of-the-art Machine Learning for Pytorch, TensorFlow, and JAX.",
+          "kind": "repository",
           "title": "transformers",
           "repo_info": {
             "archived": false,
@@ -974,6 +1022,7 @@
         {
           "children": [],
           "description": "Source-to-Source Debuggable Derivatives in Pure Python.",
+          "kind": "repository",
           "title": "Tangent",
           "repo_info": {
             "archived": false,
@@ -993,6 +1042,7 @@
         {
           "children": [],
           "description": "AutoML tool that optimizes machine learning pipelines using genetic programming.",
+          "kind": "repository",
           "title": "TPOT",
           "repo_info": {
             "archived": false,
@@ -1006,6 +1056,7 @@
         {
           "children": [],
           "description": "A powerful Automated Machine Learning python library.",
+          "kind": "repository",
           "title": "MLBox",
           "repo_info": {
             "archived": false,
@@ -1019,6 +1070,7 @@
         {
           "children": [],
           "description": "AutoML library for deep learning.",
+          "kind": "repository",
           "title": "AutoKeras",
           "repo_info": {
             "archived": false,
@@ -1032,6 +1084,7 @@
         {
           "children": [],
           "description": "Automatic architecture search and hyperparameter optimization for PyTorch.",
+          "kind": "repository",
           "title": "Auto-PyTorch",
           "repo_info": {
             "archived": false,
@@ -1045,6 +1098,7 @@
         {
           "children": [],
           "description": "AutoML for Image, Text, Tabular, Time-Series, and MultiModal Data.",
+          "kind": "repository",
           "title": "AutoGluon",
           "repo_info": {
             "archived": false,
@@ -1058,6 +1112,7 @@
         {
           "children": [],
           "description": "An AutoML toolkit and a drop-in replacement for a scikit-learn estimator.",
+          "kind": "repository",
           "title": "auto-sklearn",
           "repo_info": {
             "archived": false,
@@ -1077,6 +1132,7 @@
         {
           "children": [],
           "description": "Simple text-to-phonemes converter for multiple languages.",
+          "kind": "repository",
           "title": "Phonemizer",
           "repo_info": {
             "archived": false,
@@ -1090,6 +1146,7 @@
         {
           "children": [],
           "description": "Very simple framework for state-of-the-art NLP.",
+          "kind": "repository",
           "title": "flair",
           "repo_info": {
             "archived": false,
@@ -1103,6 +1160,7 @@
         {
           "children": [],
           "description": "Modular Natural Language Processing workflows with Keras.",
+          "kind": "repository",
           "title": "KerasNLP",
           "repo_info": {
             "archived": false,
@@ -1116,6 +1174,7 @@
         {
           "children": [],
           "description": "Python binding for Morfologik.",
+          "kind": "repository",
           "title": "pyMorfologik",
           "repo_info": {
             "archived": false,
@@ -1129,6 +1188,7 @@
         {
           "children": [],
           "description": "The Classical Language Toolkik.",
+          "kind": "repository",
           "title": "CLTK",
           "repo_info": {
             "archived": false,
@@ -1142,6 +1202,7 @@
         {
           "children": [],
           "description": "Data loaders and abstractions for text and NLP.",
+          "kind": "repository",
           "title": "torchtext",
           "repo_info": {
             "archived": true,
@@ -1155,6 +1216,7 @@
         {
           "children": [],
           "description": "Scikit-learn wrappers for Python fastText.",
+          "kind": "repository",
           "title": "skift",
           "repo_info": {
             "archived": false,
@@ -1168,6 +1230,7 @@
         {
           "children": [],
           "description": "Modules, data sets, and tutorials supporting research and development in Natural Language Processing.",
+          "kind": "repository",
           "title": "NLTK",
           "repo_info": {
             "archived": false,
@@ -1177,16 +1240,6 @@
             "repo": "nltk",
             "stars": 1685
           }
-        },
-        {
-          "children": [],
-          "description": "Industrial-Strength Natural Language Processing.",
-          "title": "spaCy"
-        },
-        {
-          "children": [],
-          "description": "Topic Modelling for Humans.",
-          "title": "gensim"
         }
       ],
       "title": "Natural Language Processing"
@@ -1197,6 +1250,7 @@
         {
           "children": [],
           "description": "Python audio and music signal processing library.",
+          "kind": "repository",
           "title": "madmom",
           "repo_info": {
             "archived": false,
@@ -1210,6 +1264,7 @@
         {
           "children": [],
           "description": "Library for audio and music analysis, description, and synthesis.",
+          "kind": "repository",
           "title": "Essentia",
           "repo_info": {
             "archived": false,
@@ -1223,6 +1278,7 @@
         {
           "children": [],
           "description": "A simple, portable, lightweight library of audio feature extraction functions.",
+          "kind": "repository",
           "title": "LibXtract",
           "repo_info": {
             "archived": false,
@@ -1236,6 +1292,7 @@
         {
           "children": [],
           "description": "A library for audio and music analysis.",
+          "kind": "repository",
           "title": "aubio",
           "repo_info": {
             "archived": false,
@@ -1249,6 +1306,7 @@
         {
           "children": [],
           "description": "Python library for audio and music analysis.",
+          "kind": "repository",
           "title": "librosa",
           "repo_info": {
             "archived": false,
@@ -1262,6 +1320,7 @@
         {
           "children": [],
           "description": "An audio library for PyTorch.",
+          "kind": "repository",
           "title": "torchaudio",
           "repo_info": {
             "archived": false,
@@ -1275,6 +1334,7 @@
         {
           "children": [],
           "description": "Audio features extraction.",
+          "kind": "repository",
           "title": "Yaafe",
           "repo_info": {
             "archived": false,
@@ -1288,6 +1348,7 @@
         {
           "children": [],
           "description": "A library for augmenting annotated audio data.",
+          "kind": "repository",
           "title": "muda",
           "repo_info": {
             "archived": false,
@@ -1301,6 +1362,7 @@
         {
           "children": [],
           "description": "Music Analysis, Retrieval, and Synthesis for Audio Signals.",
+          "kind": "repository",
           "title": "Marsyas",
           "repo_info": {
             "archived": false,
@@ -1320,6 +1382,7 @@
         {
           "children": [],
           "description": "Additional augmentations for imgaug.",
+          "kind": "repository",
           "title": "imgaug_extension",
           "repo_info": {
             "archived": false,
@@ -1333,6 +1396,7 @@
         {
           "children": [],
           "description": "Image augmentation library in Python for machine learning.",
+          "kind": "repository",
           "title": "Augmentor",
           "repo_info": {
             "archived": false,
@@ -1346,6 +1410,7 @@
         {
           "children": [],
           "description": "OpenMMLab Foundational Library for Training Deep Learning Models.",
+          "kind": "repository",
           "title": "MMEngine",
           "repo_info": {
             "archived": false,
@@ -1359,6 +1424,7 @@
         {
           "children": [],
           "description": "Image augmentation for machine learning experiments.",
+          "kind": "repository",
           "title": "imgaug",
           "repo_info": {
             "archived": false,
@@ -1372,6 +1438,7 @@
         {
           "children": [],
           "description": "Datasets, Transforms, and Models specific to Computer Vision.",
+          "kind": "repository",
           "title": "torchvision",
           "repo_info": {
             "archived": false,
@@ -1385,6 +1452,7 @@
         {
           "children": [],
           "description": "PyTorch3D is FAIR's library of reusable components for deep learning with 3D data.",
+          "kind": "repository",
           "title": "PyTorch3D",
           "repo_info": {
             "archived": false,
@@ -1398,6 +1466,7 @@
         {
           "children": [],
           "description": "Industry-strength Computer Vision workflows with Keras.",
+          "kind": "repository",
           "title": "KerasCV",
           "repo_info": {
             "archived": false,
@@ -1411,6 +1480,7 @@
         {
           "children": [],
           "description": "Image Processing SciKit (Toolbox for SciPy).",
+          "kind": "repository",
           "title": "scikit-image",
           "repo_info": {
             "archived": false,
@@ -1424,6 +1494,7 @@
         {
           "children": [],
           "description": "A One-stop Library for Language-Vision Intelligence.",
+          "kind": "repository",
           "title": "LAVIS",
           "repo_info": {
             "archived": false,
@@ -1437,6 +1508,7 @@
         {
           "children": [],
           "description": "Open Source Computer Vision Library.",
+          "kind": "repository",
           "title": "OpenCV",
           "repo_info": {
             "archived": false,
@@ -1450,6 +1522,7 @@
         {
           "children": [],
           "description": "Fast image augmentation library and easy-to-use wrapper around other libraries.",
+          "kind": "repository",
           "title": "albumentations",
           "repo_info": {
             "archived": true,
@@ -1463,6 +1536,7 @@
         {
           "children": [],
           "description": "An efficient video loader for deep learning with smart shuffling that's super easy to digest.",
+          "kind": "repository",
           "title": "Decord",
           "repo_info": {
             "archived": false,
@@ -1482,6 +1556,7 @@
         {
           "children": [],
           "description": "Anomaly Detection and Correlation library.",
+          "kind": "repository",
           "title": "luminol",
           "repo_info": {
             "archived": false,
@@ -1495,6 +1570,7 @@
         {
           "children": [],
           "description": "Automatic Forecasting Procedure.",
+          "kind": "repository",
           "title": "Prophet",
           "repo_info": {
             "archived": false,
@@ -1508,6 +1584,7 @@
         {
           "children": [],
           "description": "Open source time series library for Python.",
+          "kind": "repository",
           "title": "PyFlux",
           "repo_info": {
             "archived": false,
@@ -1521,6 +1598,7 @@
         {
           "children": [],
           "description": "A flexible, intuitive, and fast forecasting library next.",
+          "kind": "repository",
           "title": "greykite",
           "repo_info": {
             "archived": false,
@@ -1534,6 +1612,7 @@
         {
           "children": [],
           "description": "makes it very easy to parse a string and for changing timezones",
+          "kind": "repository",
           "title": "maya",
           "repo_info": {
             "archived": false,
@@ -1547,6 +1626,7 @@
         {
           "children": [],
           "description": "Scalable machine learning-based time series forecasting.",
+          "kind": "repository",
           "title": "neuralforecast",
           "repo_info": {
             "archived": false,
@@ -1560,6 +1640,7 @@
         {
           "children": [],
           "description": "Time series forecasting with machine learning models",
+          "kind": "repository",
           "title": "skforecast",
           "repo_info": {
             "archived": false,
@@ -1573,6 +1654,7 @@
         {
           "children": [],
           "description": "Scalable machine learning-based time series forecasting.",
+          "kind": "repository",
           "title": "mlforecast",
           "repo_info": {
             "archived": false,
@@ -1586,6 +1668,7 @@
         {
           "children": [],
           "description": "Lightning fast forecasting with statistical and econometric models.",
+          "kind": "repository",
           "title": "statsforecast",
           "repo_info": {
             "archived": false,
@@ -1599,6 +1682,7 @@
         {
           "children": [],
           "description": "ML powered analytics engine for outlier/anomaly detection and root cause analysis",
+          "kind": "repository",
           "title": "Chaos Genius",
           "repo_info": {
             "archived": false,
@@ -1612,6 +1696,7 @@
         {
           "children": [],
           "description": "A unified framework for machine learning with time series.",
+          "kind": "repository",
           "title": "sktime",
           "repo_info": {
             "archived": false,
@@ -1625,6 +1710,7 @@
         {
           "children": [],
           "description": "A python library for easy manipulation and forecasting of time series.",
+          "kind": "repository",
           "title": "darts",
           "repo_info": {
             "archived": false,
@@ -1638,6 +1724,7 @@
         {
           "children": [],
           "description": "Machine learning toolkit dedicated to time-series data.",
+          "kind": "repository",
           "title": "tslearn",
           "repo_info": {
             "archived": false,
@@ -1651,6 +1738,7 @@
         {
           "children": [],
           "description": "Module for statistical learning, with a particular emphasis on time-dependent modeling.",
+          "kind": "repository",
           "title": "tick",
           "repo_info": {
             "archived": false,
@@ -1664,6 +1752,7 @@
         {
           "children": [],
           "description": "Probabilistic programming framework that facilitates objective model selection for time-varying parameter models.",
+          "kind": "repository",
           "title": "bayesloop",
           "repo_info": {
             "archived": false,
@@ -1673,11 +1762,6 @@
             "repo": "bayesloop",
             "stars": 358
           }
-        },
-        {
-          "children": [],
-          "description": "Powerful extensions to the standard datetime module",
-          "title": "dateutil"
         }
       ],
       "title": "Time Series"
@@ -1688,6 +1772,7 @@
         {
           "children": [],
           "description": "An API conversion tool for popular external reinforcement learning environments.",
+          "kind": "repository",
           "title": "Shimmy",
           "repo_info": {
             "archived": false,
@@ -1701,6 +1786,7 @@
         {
           "children": [],
           "description": "Reinforcement Learning in PyTorch.",
+          "kind": "repository",
           "title": "rlpyt",
           "repo_info": {
             "archived": true,
@@ -1714,6 +1800,7 @@
         {
           "children": [],
           "description": "TensorFlow Reinforcement Learning.",
+          "kind": "repository",
           "title": "TRFL",
           "repo_info": {
             "archived": false,
@@ -1727,6 +1814,7 @@
         {
           "children": [],
           "description": "An API standard for single-agent reinforcement learning environments, with popular reference environments and related utilities (formerly Gym).",
+          "kind": "repository",
           "title": "Gymnasium",
           "repo_info": {
             "archived": false,
@@ -1740,6 +1828,7 @@
         {
           "children": [],
           "description": "An engine for high performance multi-agent environments with very large numbers of agents, along with a set of reference environments.",
+          "kind": "repository",
           "title": "MAgent2",
           "repo_info": {
             "archived": false,
@@ -1753,6 +1842,7 @@
         {
           "children": [],
           "description": "An API standard for multi-agent reinforcement learning environments, with popular reference environments and related utilities.",
+          "kind": "repository",
           "title": "PettingZoo",
           "repo_info": {
             "archived": false,
@@ -1766,6 +1856,7 @@
         {
           "children": [],
           "description": "A research framework for fast prototyping of reinforcement learning algorithms.",
+          "kind": "repository",
           "title": "Dopamine",
           "repo_info": {
             "archived": false,
@@ -1779,6 +1870,7 @@
         {
           "children": [],
           "description": "A toolkit for reproducible reinforcement learning research.",
+          "kind": "repository",
           "title": "garage",
           "repo_info": {
             "archived": false,
@@ -1792,6 +1884,7 @@
         {
           "children": [],
           "description": "OpenDILab Decision AI Engine.",
+          "kind": "repository",
           "title": "DI-engine",
           "repo_info": {
             "archived": false,
@@ -1805,6 +1898,7 @@
         {
           "children": [],
           "description": "High-quality single file implementation of Deep Reinforcement Learning algorithms with research-friendly features (PPO, DQN, C51, DDPG, TD3, SAC, PPG).",
+          "kind": "repository",
           "title": "cleanrl",
           "repo_info": {
             "archived": false,
@@ -1818,6 +1912,7 @@
         {
           "children": [],
           "description": "A platform for Applied Reinforcement Learning.",
+          "kind": "repository",
           "title": "Horizon",
           "repo_info": {
             "archived": false,
@@ -1831,6 +1926,7 @@
         {
           "children": [],
           "description": "C++-based high-performance parallel environment execution engine (vectorized env) for general RL environments.",
+          "kind": "repository",
           "title": "EnvPool",
           "repo_info": {
             "archived": false,
@@ -1844,6 +1940,7 @@
         {
           "children": [],
           "description": "A library for Reinforcement Learning in TensorFlow.",
+          "kind": "repository",
           "title": "TF-Agents",
           "repo_info": {
             "archived": false,
@@ -1857,6 +1954,7 @@
         {
           "children": [],
           "description": "Clean PyTorch implementations of imitation and reward learning algorithms.",
+          "kind": "repository",
           "title": "Imitation",
           "repo_info": {
             "archived": false,
@@ -1870,6 +1968,7 @@
         {
           "children": [],
           "description": "A TensorFlow library for applied reinforcement learning.",
+          "kind": "repository",
           "title": "TensorForce",
           "repo_info": {
             "archived": false,
@@ -1883,6 +1982,7 @@
         {
           "children": [],
           "description": "An offline deep reinforcement learning library.",
+          "kind": "repository",
           "title": "d3rlpy",
           "repo_info": {
             "archived": true,
@@ -1896,6 +1996,7 @@
         {
           "children": [],
           "description": "A library of reinforcement learning components and agents.",
+          "kind": "repository",
           "title": "Acme",
           "repo_info": {
             "archived": false,
@@ -1909,6 +2010,7 @@
         {
           "children": [],
           "description": "Deep Reinforcement Learning for Keras.",
+          "kind": "repository",
           "title": "keras-rl",
           "repo_info": {
             "archived": false,
@@ -1922,6 +2024,7 @@
         {
           "children": [],
           "description": "A reinforcement library designed for pytorch.",
+          "kind": "repository",
           "title": "Machin",
           "repo_info": {
             "archived": false,
@@ -1935,6 +2038,7 @@
         {
           "children": [],
           "description": "A set of improved implementations of reinforcement learning algorithms based on OpenAI Baselines.",
+          "kind": "repository",
           "title": "Stable Baselines3",
           "repo_info": {
             "archived": false,
@@ -1948,6 +2052,7 @@
         {
           "children": [],
           "description": "PyTorch framework for RL research.",
+          "kind": "repository",
           "title": "Catalyst-RL",
           "repo_info": {
             "archived": false,
@@ -1961,6 +2066,7 @@
         {
           "children": [],
           "description": "Modular reinforcement learning library (on PyTorch and JAX) with support for NVIDIA Isaac Gym, Isaac Orbit and Omniverse Isaac Gym.",
+          "kind": "repository",
           "title": "SKRL",
           "repo_info": {
             "archived": false,
@@ -1974,6 +2080,7 @@
         {
           "children": [],
           "description": "An elegant PyTorch deep reinforcement learning library.",
+          "kind": "repository",
           "title": "Tianshou",
           "repo_info": {
             "archived": false,
@@ -1983,11 +2090,6 @@
             "repo": "tianshou",
             "stars": 245
           }
-        },
-        {
-          "children": [],
-          "description": "Scalable Reinforcement Learning.",
-          "title": "RLlib"
         }
       ],
       "title": "Reinforcement Learning"
@@ -1998,6 +2100,7 @@
         {
           "children": [],
           "description": "An unsupervised machine learning library for graph-structured data.",
+          "kind": "repository",
           "title": "Karate Club",
           "repo_info": {
             "archived": false,
@@ -2011,6 +2114,7 @@
         {
           "children": [],
           "description": "Geometric Deep Learning Extension Library for PyTorch.",
+          "kind": "repository",
           "title": "pytorch_geometric",
           "repo_info": {
             "archived": false,
@@ -2024,6 +2128,7 @@
         {
           "children": [],
           "description": "A library for sampling graph structured data.",
+          "kind": "repository",
           "title": "Little Ball of Fur",
           "repo_info": {
             "archived": false,
@@ -2037,6 +2142,7 @@
         {
           "children": [],
           "description": "Deep learning on graphs.",
+          "kind": "repository",
           "title": "Spektral",
           "repo_info": {
             "archived": false,
@@ -2050,6 +2156,7 @@
         {
           "children": [],
           "description": "Build Graph Nets in Tensorflow.",
+          "kind": "repository",
           "title": "Graph Nets",
           "repo_info": {
             "archived": false,
@@ -2063,6 +2170,7 @@
         {
           "children": [],
           "description": "A Graph Neural Network Library in Jax.",
+          "kind": "repository",
           "title": "Jraph",
           "repo_info": {
             "archived": false,
@@ -2076,6 +2184,7 @@
         {
           "children": [],
           "description": "An autoML framework & toolkit for machine learning on graphs.",
+          "kind": "repository",
           "title": "Auto Graph Learning",
           "repo_info": {
             "archived": false,
@@ -2089,6 +2198,7 @@
         {
           "children": [],
           "description": "An autoML framework & toolkit for machine learning on graphs.",
+          "kind": "repository",
           "title": "Auto Graph Learning",
           "repo_info": {
             "archived": false,
@@ -2102,6 +2212,7 @@
         {
           "children": [],
           "description": "A library to build Graph Neural Networks on the TensorFlow platform.",
+          "kind": "repository",
           "title": "TensorFlow GNN",
           "repo_info": {
             "archived": false,
@@ -2115,6 +2226,7 @@
         {
           "children": [],
           "description": "A signed/directed graph neural network extension library for PyTorch Geometric.",
+          "kind": "repository",
           "title": "PyTorch Geometric Signed Directed",
           "repo_info": {
             "archived": false,
@@ -2128,6 +2240,7 @@
         {
           "children": [],
           "description": "Generate embeddings from large-scale graph-structured data.",
+          "kind": "repository",
           "title": "PyTorch-BigGraph",
           "repo_info": {
             "archived": false,
@@ -2141,6 +2254,7 @@
         {
           "children": [],
           "description": "GRAPE is a Rust/Python Graph Representation Learning library for Predictions and Evaluations",
+          "kind": "repository",
           "title": "GRAPE",
           "repo_info": {
             "archived": false,
@@ -2154,6 +2268,7 @@
         {
           "children": [],
           "description": "Python package built to ease deep learning on graph, on top of existing DL frameworks.",
+          "kind": "repository",
           "title": "dgl",
           "repo_info": {
             "archived": true,
@@ -2167,6 +2282,7 @@
         {
           "children": [],
           "description": "Machine Learning on Graphs.",
+          "kind": "repository",
           "title": "StellarGraph",
           "repo_info": {
             "archived": true,
@@ -2180,6 +2296,7 @@
         {
           "children": [],
           "description": "Temporal Extension Library for PyTorch Geometric.",
+          "kind": "repository",
           "title": "pytorch_geometric_temporal",
           "repo_info": {
             "archived": false,
@@ -2193,6 +2310,7 @@
         {
           "children": [],
           "description": "A graph reliability toolbox based on PyTorch and PyTorch Geometric (PyG).",
+          "kind": "repository",
           "title": "GreatX",
           "repo_info": {
             "archived": false,
@@ -2212,6 +2330,7 @@
         {
           "children": [],
           "description": "Network Analysis in Python.",
+          "kind": "repository",
           "title": "Networkx",
           "repo_info": {
             "archived": false,
@@ -2225,6 +2344,7 @@
         {
           "children": [],
           "description": "Python interface for igraph.",
+          "kind": "repository",
           "title": "igraph",
           "repo_info": {
             "archived": false,
@@ -2238,6 +2358,7 @@
         {
           "children": [],
           "description": "A high performance Python graph library implemented in Rust.",
+          "kind": "repository",
           "title": "Rustworkx",
           "repo_info": {
             "archived": false,
@@ -2247,11 +2368,6 @@
             "repo": "rustworkx",
             "stars": 1311
           }
-        },
-        {
-          "children": [],
-          "description": "an efficient Python module for manipulation and statistical analysis of graphs (a.k.a. networks).",
-          "title": "graph-tool"
         }
       ],
       "title": "Graph Manipulation"
@@ -2262,6 +2378,7 @@
         {
           "children": [],
           "description": "A Python implementation of LightFM, a hybrid recommendation algorithm.",
+          "kind": "repository",
           "title": "LightFM",
           "repo_info": {
             "archived": false,
@@ -2275,6 +2392,7 @@
         {
           "children": [],
           "description": "A unified, comprehensive and efficient recommendation library.",
+          "kind": "repository",
           "title": "RecBole",
           "repo_info": {
             "archived": false,
@@ -2288,6 +2406,7 @@
         {
           "children": [],
           "description": "allRank is a framework for training learning-to-rank neural models based on PyTorch.",
+          "kind": "repository",
           "title": "allRank",
           "repo_info": {
             "archived": false,
@@ -2301,6 +2420,7 @@
         {
           "children": [],
           "description": "A Python scikit for building and analyzing recommender systems.",
+          "kind": "repository",
           "title": "Surprise",
           "repo_info": {
             "archived": false,
@@ -2314,6 +2434,7 @@
         {
           "children": [],
           "description": "Learning to Rank in TensorFlow.",
+          "kind": "repository",
           "title": "TensorFlow Ranking",
           "repo_info": {
             "archived": false,
@@ -2327,6 +2448,7 @@
         {
           "children": [],
           "description": "A library for building recommender system models using TensorFlow.",
+          "kind": "repository",
           "title": "TensorFlow Recommenders",
           "repo_info": {
             "archived": false,
@@ -2336,11 +2458,6 @@
             "repo": "recommenders",
             "stars": 6020
           }
-        },
-        {
-          "children": [],
-          "description": "Deep recommender models using PyTorch.",
-          "title": "Spotlight"
         }
       ],
       "title": "Learning-to-Rank & Recommender Systems"
@@ -2351,6 +2468,7 @@
         {
           "children": [],
           "description": "A python library for working with Probabilistic Graphical Models.",
+          "kind": "repository",
           "title": "pgmpy",
           "repo_info": {
             "archived": false,
@@ -2364,6 +2482,7 @@
         {
           "children": [],
           "description": "Probabilistic and graphical models for Python.",
+          "kind": "repository",
           "title": "pomegranate",
           "repo_info": {
             "archived": false,
@@ -2373,11 +2492,6 @@
             "repo": "pomegranate",
             "stars": 14191
           }
-        },
-        {
-          "children": [],
-          "description": "A GRaphical Universal Modeler.",
-          "title": "pyAgrum"
         }
       ],
       "title": "Probabilistic Graphical Models"
@@ -2388,6 +2502,7 @@
         {
           "children": [],
           "description": "Bayesian Deep Learning methods with Variational Inference for PyTorch.",
+          "kind": "repository",
           "title": "PyVarInf",
           "repo_info": {
             "archived": false,
@@ -2401,6 +2516,7 @@
         {
           "children": [],
           "description": "Bayesian inference using the No-U-Turn sampler (Python interface).",
+          "kind": "repository",
           "title": "PyStan",
           "repo_info": {
             "archived": false,
@@ -2414,6 +2530,7 @@
         {
           "children": [],
           "description": "Deep Probabilistic Modelling Made Easy.",
+          "kind": "repository",
           "title": "InferPy",
           "repo_info": {
             "archived": false,
@@ -2427,6 +2544,7 @@
         {
           "children": [],
           "description": "The Python ensemble sampling toolkit for affine-invariant MCMC.",
+          "kind": "repository",
           "title": "emcee",
           "repo_info": {
             "archived": false,
@@ -2440,6 +2558,7 @@
         {
           "children": [],
           "description": "A library for hidden semi-Markov models with explicit durations.",
+          "kind": "repository",
           "title": "hsmmlearn",
           "repo_info": {
             "archived": false,
@@ -2453,6 +2572,7 @@
         {
           "children": [],
           "description": "A scikit-learn-inspired API for CRFsuite.",
+          "kind": "repository",
           "title": "sklearn-crfsuite",
           "repo_info": {
             "archived": false,
@@ -2466,6 +2586,7 @@
         {
           "children": [],
           "description": "A flexible, scalable deep probabilistic programming library built on PyTorch.",
+          "kind": "repository",
           "title": "pyro",
           "repo_info": {
             "archived": false,
@@ -2479,6 +2600,7 @@
         {
           "children": [],
           "description": "A highly efficient and modular implementation of Gaussian Processes in PyTorch.",
+          "kind": "repository",
           "title": "GPyTorch",
           "repo_info": {
             "archived": false,
@@ -2492,6 +2614,7 @@
         {
           "children": [],
           "description": "Bayesian Stochastic Modelling in Python.",
+          "kind": "repository",
           "title": "PyMC",
           "repo_info": {
             "archived": false,
@@ -2505,6 +2628,7 @@
         {
           "children": [],
           "description": "Python package for Bayesian Machine Learning with scikit-learn API.",
+          "kind": "repository",
           "title": "sklearn-bayes",
           "repo_info": {
             "archived": false,
@@ -2518,6 +2642,7 @@
         {
           "children": [],
           "description": "Supervised domain-agnostic prediction framework for probabilistic modelling by The Alan Turing Institute.",
+          "kind": "repository",
           "title": "skpro",
           "repo_info": {
             "archived": false,
@@ -2531,6 +2656,7 @@
         {
           "children": [],
           "description": "Bayesian inference in HSMMs and HMMs.",
+          "kind": "repository",
           "title": "pyhsmm",
           "repo_info": {
             "archived": false,
@@ -2540,16 +2666,6 @@
             "repo": "pyhsmm",
             "stars": 2697
           }
-        },
-        {
-          "children": [],
-          "description": "Bayesian Deep Learning.",
-          "title": "ZhuSuan"
-        },
-        {
-          "children": [],
-          "description": "Gaussian processes in TensorFlow.",
-          "title": "GPflow"
         }
       ],
       "title": "Probabilistic Methods"
@@ -2560,6 +2676,7 @@
         {
           "children": [],
           "description": "Visualizer for deep learning and machine learning models (no Python code, but visualizes models from most Python Deep Learning frameworks).",
+          "kind": "repository",
           "title": "Netron",
           "repo_info": {
             "archived": false,
@@ -2573,6 +2690,7 @@
         {
           "children": [],
           "description": "Code for \"High-Precision Model-Agnostic Explanations\" paper.",
+          "kind": "repository",
           "title": "anchor",
           "repo_info": {
             "archived": false,
@@ -2586,6 +2704,7 @@
         {
           "children": [],
           "description": "A library that implements fairness-aware machine learning algorithms.",
+          "kind": "repository",
           "title": "themis-ml",
           "repo_info": {
             "archived": false,
@@ -2599,6 +2718,7 @@
         {
           "children": [],
           "description": "Explaining the predictions of any machine learning classifier.",
+          "kind": "repository",
           "title": "Lime",
           "repo_info": {
             "archived": false,
@@ -2612,6 +2732,7 @@
         {
           "children": [],
           "description": "Auralisation of learned features in CNN (for audio).",
+          "kind": "repository",
           "title": "Auralisation",
           "repo_info": {
             "archived": false,
@@ -2625,6 +2746,7 @@
         {
           "children": [],
           "description": "A visualization of the CapsNet layers to better understand how it works.",
+          "kind": "repository",
           "title": "CapsNet-Visualization",
           "repo_info": {
             "archived": false,
@@ -2638,6 +2760,7 @@
         {
           "children": [],
           "description": "Algorithms for monitoring and explaining machine learning models.",
+          "kind": "repository",
           "title": "Alibi",
           "repo_info": {
             "archived": false,
@@ -2651,6 +2774,7 @@
         {
           "children": [],
           "description": "Partial dependence plot toolbox.",
+          "kind": "repository",
           "title": "PDPbox",
           "repo_info": {
             "archived": false,
@@ -2664,6 +2788,7 @@
         {
           "children": [],
           "description": "Visualization Tool for your NeuralNetwork.",
+          "kind": "repository",
           "title": "FlashLight",
           "repo_info": {
             "archived": false,
@@ -2677,6 +2802,7 @@
         {
           "children": [],
           "description": "FairML is a python toolbox auditing the machine learning models for bias.",
+          "kind": "repository",
           "title": "FairML",
           "repo_info": {
             "archived": false,
@@ -2690,6 +2816,7 @@
         {
           "children": [],
           "description": "Visual analysis and diagnostic tools to facilitate machine learning model selection.",
+          "kind": "repository",
           "title": "yellowbrick",
           "repo_info": {
             "archived": false,
@@ -2703,6 +2830,7 @@
         {
           "children": [],
           "description": "Interpretability and explainability of data and machine learning models.",
+          "kind": "repository",
           "title": "AI Explainability 360",
           "repo_info": {
             "archived": false,
@@ -2716,6 +2844,7 @@
         {
           "children": [],
           "description": "A collection of infrastructure and tools for research in neural network interpretability.",
+          "kind": "repository",
           "title": "lucid",
           "repo_info": {
             "archived": false,
@@ -2729,6 +2858,7 @@
         {
           "children": [],
           "description": "A library for debugging/inspecting machine learning classifiers and explaining their predictions.",
+          "kind": "repository",
           "title": "ELI5",
           "repo_info": {
             "archived": false,
@@ -2742,6 +2872,7 @@
         {
           "children": [],
           "description": "A unified approach to explain the output of any machine learning model.",
+          "kind": "repository",
           "title": "shap",
           "repo_info": {
             "archived": false,
@@ -2755,6 +2886,7 @@
         {
           "children": [],
           "description": "InterpretML implements the Explainable Boosting Machine (EBM), a modern, fully interpretable machine learning model based on Generalized Additive Models (GAMs). This open-source package also provides visualization tools for EBMs, other glass-box models, and black-box explanations.",
+          "kind": "repository",
           "title": "InterpretML",
           "repo_info": {
             "archived": false,
@@ -2768,6 +2900,7 @@
         {
           "children": [],
           "description": "Contrastive Explanation (Foil Trees).",
+          "kind": "repository",
           "title": "Contrastive Explanation",
           "repo_info": {
             "archived": false,
@@ -2781,6 +2914,7 @@
         {
           "children": [],
           "description": "moDel Agnostic Language for Exploration and explanation.",
+          "kind": "repository",
           "title": "dalex",
           "repo_info": {
             "archived": false,
@@ -2794,6 +2928,7 @@
         {
           "children": [],
           "description": "An intuitive library to add plotting functionality to scikit-learn objects.",
+          "kind": "repository",
           "title": "scikit-plot",
           "repo_info": {
             "archived": false,
@@ -2807,6 +2942,7 @@
         {
           "children": [],
           "description": "Model analysis tools for TensorFlow.",
+          "kind": "repository",
           "title": "model-analysis",
           "repo_info": {
             "archived": false,
@@ -2820,6 +2956,7 @@
         {
           "children": [],
           "description": "Code for replicating the experiments in the paper Learning to Explain: An Information-Theoretic Perspective on Model Interpretation.",
+          "kind": "repository",
           "title": "L2X",
           "repo_info": {
             "archived": false,
@@ -2833,6 +2970,7 @@
         {
           "children": [],
           "description": "Interpreting scikit-learn's decision tree and random forest predictions.",
+          "kind": "repository",
           "title": "treeinterpreter",
           "repo_info": {
             "archived": false,
@@ -2846,6 +2984,7 @@
         {
           "children": [],
           "description": "A data-driven framework to quantify the value of classifiers in a machine learning ensemble.",
+          "kind": "repository",
           "title": "Shapley",
           "repo_info": {
             "archived": false,
@@ -2859,6 +2998,7 @@
         {
           "children": [],
           "description": "Bias and Fairness Audit Toolkit.",
+          "kind": "repository",
           "title": "aequitas",
           "repo_info": {
             "archived": false,
@@ -2872,6 +3012,7 @@
         {
           "children": [],
           "description": "Tensorboard for PyTorch (and chainer, mxnet, numpy, ...).",
+          "kind": "repository",
           "title": "tensorboard-pytorch",
           "repo_info": {
             "archived": false,
@@ -2885,6 +3026,7 @@
         {
           "children": [],
           "description": "Python Individual Conditional Expectation Plot Toolbox.",
+          "kind": "repository",
           "title": "PyCEbox",
           "repo_info": {
             "archived": false,
@@ -2898,6 +3040,7 @@
         {
           "children": [],
           "description": "Python Library for Model Interpretation.",
+          "kind": "repository",
           "title": "Skater",
           "repo_info": {
             "archived": true,
@@ -2917,6 +3060,7 @@
         {
           "children": [],
           "description": "A strongly-typed genetic programming framework for Python.",
+          "kind": "repository",
           "title": "monkeys",
           "repo_info": {
             "archived": false,
@@ -2930,6 +3074,7 @@
         {
           "children": [],
           "description": "Distributed Evolutionary Algorithms in Python.",
+          "kind": "repository",
           "title": "DEAP",
           "repo_info": {
             "archived": false,
@@ -2943,6 +3088,7 @@
         {
           "children": [],
           "description": "Genetic Programming in Python.",
+          "kind": "repository",
           "title": "gplearn",
           "repo_info": {
             "archived": false,
@@ -2956,6 +3102,7 @@
         {
           "children": [],
           "description": "Genetic feature selection module for scikit-learn.",
+          "kind": "repository",
           "title": "sklearn-genetic",
           "repo_info": {
             "archived": false,
@@ -2969,6 +3116,7 @@
         {
           "children": [],
           "description": "Genetic Algorithm in Python.",
+          "kind": "repository",
           "title": "PyGAD",
           "repo_info": {
             "archived": false,
@@ -2982,6 +3130,7 @@
         {
           "children": [],
           "description": "A Genetic Programming platform for Python with GPU support.",
+          "kind": "repository",
           "title": "karoo_gp",
           "repo_info": {
             "archived": false,
@@ -3001,6 +3150,7 @@
         {
           "children": [],
           "description": "Multi-objective Optimization in Python.",
+          "kind": "repository",
           "title": "pymoo",
           "repo_info": {
             "archived": true,
@@ -3014,6 +3164,7 @@
         {
           "children": [],
           "description": "Python Optimal Transport library.",
+          "kind": "repository",
           "title": "POT",
           "repo_info": {
             "archived": false,
@@ -3027,6 +3178,7 @@
         {
           "children": [],
           "description": "Library for nonlinear optimization (global and local, constrained or unconstrained).",
+          "kind": "repository",
           "title": "nlopt",
           "repo_info": {
             "archived": false,
@@ -3040,6 +3192,7 @@
         {
           "children": [],
           "description": "Heuristic Algorithms for optimization.",
+          "kind": "repository",
           "title": "scikit-opt",
           "repo_info": {
             "archived": false,
@@ -3053,6 +3206,7 @@
         {
           "children": [],
           "description": "Bayesian optimization.",
+          "kind": "repository",
           "title": "Spearmint",
           "repo_info": {
             "archived": false,
@@ -3066,6 +3220,7 @@
         {
           "children": [],
           "description": "Distributed Asynchronous Hyperparameter Optimization in Python.",
+          "kind": "repository",
           "title": "hyperopt",
           "repo_info": {
             "archived": true,
@@ -3079,6 +3234,7 @@
         {
           "children": [],
           "description": "A Python implementation of global optimization with gaussian processes.",
+          "kind": "repository",
           "title": "Bayesian Optimization",
           "repo_info": {
             "archived": false,
@@ -3092,6 +3248,7 @@
         {
           "children": [],
           "description": "A research toolkit for particle swarm optimization in Python.",
+          "kind": "repository",
           "title": "PySwarms",
           "repo_info": {
             "archived": false,
@@ -3105,6 +3262,7 @@
         {
           "children": [],
           "description": "Bayesian optimization in PyTorch.",
+          "kind": "repository",
           "title": "BoTorch",
           "repo_info": {
             "archived": false,
@@ -3118,6 +3276,7 @@
         {
           "children": [],
           "description": "Sequential Model-based Algorithm Configuration.",
+          "kind": "repository",
           "title": "SMAC3",
           "repo_info": {
             "archived": false,
@@ -3131,6 +3290,7 @@
         {
           "children": [],
           "description": "Bayesian Optimization using GPflow.",
+          "kind": "repository",
           "title": "GPflowOpt",
           "repo_info": {
             "archived": false,
@@ -3144,6 +3304,7 @@
         {
           "children": [],
           "description": "A comprehensive gradient-free optimization framework written in Python.",
+          "kind": "repository",
           "title": "Solid",
           "repo_info": {
             "archived": false,
@@ -3157,6 +3318,7 @@
         {
           "children": [],
           "description": "Python implementation of CMA-ES.",
+          "kind": "repository",
           "title": "pycma",
           "repo_info": {
             "archived": false,
@@ -3170,6 +3332,7 @@
         {
           "children": [],
           "description": "Sequential model-based optimization with a interface.",
+          "kind": "repository",
           "title": "scikit-optimize",
           "repo_info": {
             "archived": false,
@@ -3183,6 +3346,7 @@
         {
           "children": [],
           "description": "Hyperparameter Optimization for Keras Models.",
+          "kind": "repository",
           "title": "Talos",
           "repo_info": {
             "archived": false,
@@ -3196,6 +3360,7 @@
         {
           "children": [],
           "description": "A hyperparameter optimization framework.",
+          "kind": "repository",
           "title": "Optuna",
           "repo_info": {
             "archived": true,
@@ -3209,6 +3374,7 @@
         {
           "children": [],
           "description": "A Free and Open Source Python Library for Multiobjective Optimization.",
+          "kind": "repository",
           "title": "Platypus",
           "repo_info": {
             "archived": false,
@@ -3222,6 +3388,7 @@
         {
           "children": [],
           "description": "Is a library containing various optimizers for hyperparameter tuning.",
+          "kind": "repository",
           "title": "Optunity",
           "repo_info": {
             "archived": false,
@@ -3235,6 +3402,7 @@
         {
           "children": [],
           "description": "Hyperparameters tuning and feature selection using evolutionary algorithms.",
+          "kind": "repository",
           "title": "sklearn-genetic-opt",
           "repo_info": {
             "archived": false,
@@ -3248,6 +3416,7 @@
         {
           "children": [],
           "description": "SigOpt wrappers for scikit-learn methods.",
+          "kind": "repository",
           "title": "sigopt_sklearn",
           "repo_info": {
             "archived": false,
@@ -3261,6 +3430,7 @@
         {
           "children": [],
           "description": "Hyper-parameter optimization for sklearn.",
+          "kind": "repository",
           "title": "hyperopt-sklearn",
           "repo_info": {
             "archived": false,
@@ -3274,6 +3444,7 @@
         {
           "children": [],
           "description": "Use evolutionary algorithms instead of gridsearch in scikit-learn.",
+          "kind": "repository",
           "title": "sklearn-deap",
           "repo_info": {
             "archived": false,
@@ -3287,6 +3458,7 @@
         {
           "children": [],
           "description": "Safe Bayesian Optimization.",
+          "kind": "repository",
           "title": "SafeOpt",
           "repo_info": {
             "archived": false,
@@ -3296,11 +3468,6 @@
             "repo": "SafeOpt",
             "stars": 860
           }
-        },
-        {
-          "children": [],
-          "description": "An open-source software suite for optimization by Google; provides a unified programming interface to a half dozen solvers: SCIP, GLPK, GLOP, CP-SAT, CPLEX, and Gurobi.",
-          "title": "OR-Tools"
         }
       ],
       "title": "Optimization"
@@ -3316,6 +3483,7 @@
         {
           "children": [],
           "description": "A sklearn-compatible Python implementation of Multifactor Dimensionality Reduction (MDR) for feature construction.",
+          "kind": "repository",
           "title": "scikit-mdr",
           "repo_info": {
             "archived": false,
@@ -3329,6 +3497,7 @@
         {
           "children": [],
           "description": "A feature engineering wrapper for sklearn.",
+          "kind": "repository",
           "title": "few",
           "repo_info": {
             "archived": false,
@@ -3342,6 +3511,7 @@
         {
           "children": [],
           "description": "A scikit-learn addon to operate on set/\"group\"-based features.",
+          "kind": "repository",
           "title": "skl-groups",
           "repo_info": {
             "archived": false,
@@ -3355,6 +3525,7 @@
         {
           "children": [],
           "description": "Automated feature generation with expert-level performance.",
+          "kind": "repository",
           "title": "OpenFE",
           "repo_info": {
             "archived": false,
@@ -3368,6 +3539,7 @@
         {
           "children": [],
           "description": "Automatic extraction of relevant features from time series.",
+          "kind": "repository",
           "title": "tsfresh",
           "repo_info": {
             "archived": false,
@@ -3381,6 +3553,7 @@
         {
           "children": [],
           "description": "Feature engineering package with sklearn-like functionality.",
+          "kind": "repository",
           "title": "Feature Engine",
           "repo_info": {
             "archived": false,
@@ -3394,6 +3567,7 @@
         {
           "children": [],
           "description": "Moving window features.",
+          "kind": "repository",
           "title": "NitroFE",
           "repo_info": {
             "archived": false,
@@ -3407,6 +3581,7 @@
         {
           "children": [],
           "description": "Automated feature engineering.",
+          "kind": "repository",
           "title": "Featuretools",
           "repo_info": {
             "archived": false,
@@ -3420,6 +3595,7 @@
         {
           "children": [],
           "description": "Machine learning on dirty tabular data (especially: string-based variables for classifcation and regression).",
+          "kind": "repository",
           "title": "dirty_cat",
           "repo_info": {
             "archived": false,
@@ -3433,6 +3609,7 @@
         {
           "children": [],
           "description": "A collection of various pandas & scikit-learn compatible transformers for all kinds of preprocessing and feature engineering steps",
+          "kind": "repository",
           "title": "sk-transformer",
           "repo_info": {
             "archived": false,
@@ -3446,6 +3623,7 @@
         {
           "children": [],
           "description": "A set of tools for creating and testing machine learning features.",
+          "kind": "repository",
           "title": "Feature Forge",
           "repo_info": {
             "archived": false,
@@ -3465,6 +3643,7 @@
         {
           "children": [],
           "description": "Implementations of the Boruta all-relevant feature selection method.",
+          "kind": "repository",
           "title": "boruta_py",
           "repo_info": {
             "archived": false,
@@ -3478,6 +3657,7 @@
         {
           "children": [],
           "description": "A feature selection library based on evolutionary algorithms.",
+          "kind": "repository",
           "title": "zoofs",
           "repo_info": {
             "archived": false,
@@ -3491,6 +3671,7 @@
         {
           "children": [],
           "description": "A scikit-learn-compatible Python implementation of ReBATE, a suite of Relief-based feature selection algorithms for Machine Learning.",
+          "kind": "repository",
           "title": "scikit-rebate",
           "repo_info": {
             "archived": false,
@@ -3504,6 +3685,7 @@
         {
           "children": [],
           "description": "Feature selection repository in Python.",
+          "kind": "repository",
           "title": "scikit-feature",
           "repo_info": {
             "archived": false,
@@ -3517,6 +3699,7 @@
         {
           "children": [],
           "description": "A fast xgboost feature selection algorithm.",
+          "kind": "repository",
           "title": "BoostARoota",
           "repo_info": {
             "archived": false,
@@ -3541,6 +3724,7 @@
         {
           "children": [],
           "description": "Python library that makes it easy for data scientists to create charts.",
+          "kind": "repository",
           "title": "chartify",
           "repo_info": {
             "archived": false,
@@ -3554,6 +3738,7 @@
         {
           "children": [],
           "description": "Painlessly create beautiful matplotlib plots.",
+          "kind": "repository",
           "title": "prettyplotlib",
           "repo_info": {
             "archived": false,
@@ -3567,6 +3752,7 @@
         {
           "children": [],
           "description": "Plotting with Python.",
+          "kind": "repository",
           "title": "Matplotlib",
           "repo_info": {
             "archived": false,
@@ -3580,6 +3766,7 @@
         {
           "children": [],
           "description": "Improved histograms.",
+          "kind": "repository",
           "title": "physt",
           "repo_info": {
             "archived": false,
@@ -3593,6 +3780,7 @@
         {
           "children": [],
           "description": "Statistical data visualization using matplotlib.",
+          "kind": "repository",
           "title": "seaborn",
           "repo_info": {
             "archived": false,
@@ -3606,6 +3794,7 @@
         {
           "children": [],
           "description": "Missing data visualization module for Python.",
+          "kind": "repository",
           "title": "missingno",
           "repo_info": {
             "archived": false,
@@ -3619,6 +3808,7 @@
         {
           "children": [],
           "description": "Ternary plotting library for Python with matplotlib.",
+          "kind": "repository",
           "title": "python-ternary",
           "repo_info": {
             "archived": false,
@@ -3638,6 +3828,7 @@
         {
           "children": [],
           "description": "Interactive Web Plotting for Python.",
+          "kind": "repository",
           "title": "Bokeh",
           "repo_info": {
             "archived": false,
@@ -3651,6 +3842,7 @@
         {
           "children": [],
           "description": "Plotting library for IPython/Jupyter notebooks",
+          "kind": "repository",
           "title": "bqplot",
           "repo_info": {
             "archived": false,
@@ -3664,6 +3856,7 @@
         {
           "children": [],
           "description": "Migrated from Echarts, a charting and visualization library, to Python's interactive visual drawing library.",
+          "kind": "repository",
           "title": "pyecharts",
           "repo_info": {
             "archived": false,
@@ -3677,6 +3870,7 @@
         {
           "children": [],
           "description": "A python package for animating plots built on matplotlib.",
+          "kind": "repository",
           "title": "animatplot",
           "repo_info": {
             "archived": true,
@@ -3686,16 +3880,6 @@
             "repo": "animatplot",
             "stars": 7912
           }
-        },
-        {
-          "children": [],
-          "description": "A Python library that makes interactive and publication-quality graphs.",
-          "title": "plotly"
-        },
-        {
-          "children": [],
-          "description": "Declarative statistical visualization library for Python. Can easily do many data transformation within the code to create graph",
-          "title": "Altair"
         }
       ],
       "title": "Interactive plots"
@@ -3706,6 +3890,7 @@
         {
           "children": [],
           "description": "Visualize data automatically with 1 line of code (ideal for machine learning)",
+          "kind": "repository",
           "title": "AutoViz",
           "repo_info": {
             "archived": false,
@@ -3719,6 +3904,7 @@
         {
           "children": [],
           "description": "Visualize and compare datasets, target values and associations, with one line of code.",
+          "kind": "repository",
           "title": "SweetViz",
           "repo_info": {
             "archived": true,
@@ -3732,6 +3918,7 @@
         {
           "children": [],
           "description": "Stop plotting your data - annotate your data and let it visualize itself.",
+          "kind": "repository",
           "title": "HoloViews",
           "repo_info": {
             "archived": false,
@@ -3751,6 +3938,7 @@
         {
           "children": [],
           "description": "No-code in the front, Python in the back. An open-source framework for creating data apps.",
+          "kind": "repository",
           "title": "streamsync",
           "repo_info": {
             "archived": false,
@@ -3764,6 +3952,7 @@
         {
           "children": [],
           "description": "Deepnote is a drop-in replacement for Jupyter with an AI-first design, sleek UI, new blocks, and native data integrations. Use Python, R, and SQL locally in your favorite IDE, then scale to Deepnote cloud for real-time collaboration, Deepnote agent, and deployable data apps.",
+          "kind": "repository",
           "title": "Deepnote",
           "repo_info": {
             "archived": false,
@@ -3777,6 +3966,7 @@
         {
           "children": [],
           "description": "A toolkit for creating modular data visualization applications.",
+          "kind": "repository",
           "title": "Vizro",
           "repo_info": {
             "archived": true,
@@ -3790,6 +3980,7 @@
         {
           "children": [],
           "description": "Create UIs for your machine learning model in Python in 3 minutes.",
+          "kind": "repository",
           "title": "gradio",
           "repo_info": {
             "archived": false,
@@ -3799,26 +3990,6 @@
             "repo": "gradio",
             "stars": 4841
           }
-        },
-        {
-          "children": [],
-          "description": "Modern, fast (high-performance), a web framework for building APIs with Python",
-          "title": "fastapi"
-        },
-        {
-          "children": [],
-          "description": "Make it easy to deploy the machine learning model",
-          "title": "streamlit"
-        },
-        {
-          "children": [],
-          "description": "A collection of APIs to turn scripts and notebooks into interactive reports.",
-          "title": "datapane"
-        },
-        {
-          "children": [],
-          "description": "Enable sharing and execute Jupyter Notebooks",
-          "title": "binder"
         }
       ],
       "title": "Deployment"
@@ -3829,6 +4000,7 @@
         {
           "children": [],
           "description": "Pairwise Multiple Comparisons Post-hoc Tests.",
+          "kind": "repository",
           "title": "scikit-posthocs",
           "repo_info": {
             "archived": false,
@@ -3842,6 +4014,7 @@
         {
           "children": [],
           "description": "Extension to pandas dataframes describe function.",
+          "kind": "repository",
           "title": "pandas_summary",
           "repo_info": {
             "archived": false,
@@ -3855,6 +4028,7 @@
         {
           "children": [],
           "description": "Create HTML profiling reports from pandas DataFrame objects.",
+          "kind": "repository",
           "title": "Pandas Profiling",
           "repo_info": {
             "archived": false,
@@ -3868,6 +4042,7 @@
         {
           "children": [],
           "description": "Performance analysis of predictive (alpha) stock factors.",
+          "kind": "repository",
           "title": "Alphalens",
           "repo_info": {
             "archived": false,
@@ -3881,6 +4056,7 @@
         {
           "children": [],
           "description": "Statistical modeling and econometrics in Python.",
+          "kind": "repository",
           "title": "statsmodels",
           "repo_info": {
             "archived": false,
@@ -3894,6 +4070,7 @@
         {
           "children": [],
           "description": "A pandas-based utility to calculate weighted means, medians, distributions, standard deviations, and more.",
+          "kind": "repository",
           "title": "weightedcalcs",
           "repo_info": {
             "archived": false,
@@ -3907,6 +4084,7 @@
         {
           "children": [],
           "description": "Supply a wrapper based on the with inline stock statistics/indicators support.",
+          "kind": "repository",
           "title": "stockstats",
           "repo_info": {
             "archived": false,
@@ -3931,6 +4109,7 @@
         {
           "children": [],
           "description": "Out-of-Core DataFrames for Python, ML, visualize and explore big tabular data at a billion rows per second.",
+          "kind": "repository",
           "title": "vaex",
           "repo_info": {
             "archived": false,
@@ -3944,6 +4123,7 @@
         {
           "children": [],
           "description": "A package that allows providing feedback about basic pandas operations and finds both business logic and performance issues.",
+          "kind": "repository",
           "title": "pandas-log",
           "repo_info": {
             "archived": false,
@@ -3957,6 +4137,7 @@
         {
           "children": [],
           "description": "A fast multi-threaded, hybrid-out-of-core DataFrame library.",
+          "kind": "repository",
           "title": "polars",
           "repo_info": {
             "archived": false,
@@ -3970,6 +4151,7 @@
         {
           "children": [],
           "description": "Universal 1d/2d data containers with Transformers .functionality for data analysis by The Alan Turing Institute.",
+          "kind": "repository",
           "title": "xpandas",
           "repo_info": {
             "archived": false,
@@ -3983,6 +4165,7 @@
         {
           "children": [],
           "description": "A pure Python implementation of Apache Spark's RDD and DStream interfaces.",
+          "kind": "repository",
           "title": "pysparkling",
           "repo_info": {
             "archived": false,
@@ -3996,6 +4179,7 @@
         {
           "children": [],
           "description": "A package that efficiently applies any function to a pandas dataframe or series in the fastest available manner.",
+          "kind": "repository",
           "title": "swifter",
           "repo_info": {
             "archived": false,
@@ -4009,6 +4193,7 @@
         {
           "children": [],
           "description": "Create HTML profiling reports from pandas DataFrame objects",
+          "kind": "repository",
           "title": "pandas_profiling",
           "repo_info": {
             "archived": false,
@@ -4022,6 +4207,7 @@
         {
           "children": [],
           "description": "Xarray combines the best features of NumPy and pandas for multidimensional data selection by supplementing numerical axis labels with named dimensions for more intuitive, concise, and less error-prone indexing routines.",
+          "kind": "repository",
           "title": "xarray",
           "repo_info": {
             "archived": false,
@@ -4035,6 +4221,7 @@
         {
           "children": [],
           "description": "Speed up your pandas workflows by changing a single line of code.",
+          "kind": "repository",
           "title": "modin",
           "repo_info": {
             "archived": false,
@@ -4048,6 +4235,7 @@
         {
           "children": [],
           "description": "GPU DataFrame Library.",
+          "kind": "repository",
           "title": "cuDF",
           "repo_info": {
             "archived": true,
@@ -4061,6 +4249,7 @@
         {
           "children": [],
           "description": "Data.table for Python.",
+          "kind": "repository",
           "title": "datatable",
           "repo_info": {
             "archived": false,
@@ -4074,6 +4263,7 @@
         {
           "children": [],
           "description": "NumPy and pandas interface to Big Data.",
+          "kind": "repository",
           "title": "blaze",
           "repo_info": {
             "archived": false,
@@ -4087,6 +4277,7 @@
         {
           "children": [],
           "description": "Allows you to query pandas DataFrames using SQL syntax.",
+          "kind": "repository",
           "title": "pandasql",
           "repo_info": {
             "archived": true,
@@ -4100,6 +4291,7 @@
         {
           "children": [],
           "description": "pandas Google Big Query.",
+          "kind": "repository",
           "title": "pandas-gbq",
           "repo_info": {
             "archived": false,
@@ -4113,6 +4305,7 @@
         {
           "children": [],
           "description": "High-performance datastore for time series and tick data.",
+          "kind": "repository",
           "title": "Arctic",
           "repo_info": {
             "archived": false,
@@ -4122,11 +4315,6 @@
             "repo": "arctic",
             "stars": 6320
           }
-        },
-        {
-          "children": [],
-          "description": "Powerful Python data analysis toolkit.",
-          "title": "pandas"
         }
       ],
       "title": "Data Frames"
@@ -4137,6 +4325,7 @@
         {
           "children": [],
           "description": "A microframework for dataframe generation that applies Directed Acyclic Graphs specified by a flow of lazily evaluated Python functions.",
+          "kind": "repository",
           "title": "Hamilton",
           "repo_info": {
             "archived": false,
@@ -4150,6 +4339,7 @@
         {
           "children": [],
           "description": "Hints and tips for using pandas in an analysis environment.",
+          "kind": "repository",
           "title": "dopanda",
           "repo_info": {
             "archived": false,
@@ -4163,6 +4353,7 @@
         {
           "children": [],
           "description": "Functional data manipulation for pandas.",
+          "kind": "repository",
           "title": "pandas-ply",
           "repo_info": {
             "archived": false,
@@ -4176,6 +4367,7 @@
         {
           "children": [],
           "description": "Dplyr for Python.",
+          "kind": "repository",
           "title": "Dplython",
           "repo_info": {
             "archived": false,
@@ -4189,6 +4381,7 @@
         {
           "children": [],
           "description": "pandas integration with sklearn.",
+          "kind": "repository",
           "title": "sklearn-pandas",
           "repo_info": {
             "archived": false,
@@ -4202,6 +4395,7 @@
         {
           "children": [],
           "description": "Sasy pipelines for pandas DataFrames.",
+          "kind": "repository",
           "title": "pdpipe",
           "repo_info": {
             "archived": false,
@@ -4215,6 +4409,7 @@
         {
           "children": [],
           "description": "A Python toolkit for processing tabular data.",
+          "kind": "repository",
           "title": "meza",
           "repo_info": {
             "archived": false,
@@ -4228,6 +4423,7 @@
         {
           "children": [],
           "description": "Build system for data science pipelines.",
+          "kind": "repository",
           "title": "Prodmodel",
           "repo_info": {
             "archived": false,
@@ -4241,6 +4437,7 @@
         {
           "children": [],
           "description": "Clean APIs for data cleaning.",
+          "kind": "repository",
           "title": "pyjanitor",
           "repo_info": {
             "archived": false,
@@ -4254,6 +4451,7 @@
         {
           "children": [],
           "description": "Helps you conveniently work with random or sequential batches of your data and define data processing.",
+          "kind": "repository",
           "title": "Dataset",
           "repo_info": {
             "archived": false,
@@ -4263,11 +4461,6 @@
             "repo": "dataset",
             "stars": 4210
           }
-        },
-        {
-          "children": [],
-          "description": "Python pipe (|) operator with support for DataFrames and Numpy, and Pytorch.",
-          "title": "SSPipe"
         }
       ],
       "title": "Pipelines"
@@ -4278,6 +4471,7 @@
         {
           "children": [],
           "description": "A system for quickly generating training data with weak supervision.",
+          "kind": "repository",
           "title": "snorkel",
           "repo_info": {
             "archived": false,
@@ -4291,6 +4485,7 @@
         {
           "children": [],
           "description": "The standard data-centric AI package for data quality and machine learning with messy, real-world data and labels.",
+          "kind": "repository",
           "title": "cleanlab",
           "repo_info": {
             "archived": false,
@@ -4304,6 +4499,7 @@
         {
           "children": [],
           "description": "Collect, clean, and visualize your data in Python with a few lines of code.",
+          "kind": "repository",
           "title": "dataprep",
           "repo_info": {
             "archived": false,
@@ -4323,6 +4519,7 @@
         {
           "children": [],
           "description": "Distributed training framework for TensorFlow, Keras, PyTorch, and Apache MXNet.",
+          "kind": "repository",
           "title": "Horovod",
           "repo_info": {
             "archived": false,
@@ -4336,6 +4533,7 @@
         {
           "children": [],
           "description": "Distributed and parallel machine learning.",
+          "kind": "repository",
           "title": "dask-ml",
           "repo_info": {
             "archived": false,
@@ -4349,6 +4547,7 @@
         {
           "children": [],
           "description": "Microsoft Distributed Machine Learning Toolkit.",
+          "kind": "repository",
           "title": "DMTK",
           "repo_info": {
             "archived": true,
@@ -4362,6 +4561,7 @@
         {
           "children": [],
           "description": "Distributed machine learning platform.",
+          "kind": "repository",
           "title": "Veles",
           "repo_info": {
             "archived": false,
@@ -4375,6 +4575,7 @@
         {
           "children": [],
           "description": "Distributed computation in Python.",
+          "kind": "repository",
           "title": "Distributed",
           "repo_info": {
             "archived": false,
@@ -4388,6 +4589,7 @@
         {
           "children": [],
           "description": "PArallel Distributed Deep LEarning.",
+          "kind": "repository",
           "title": "PaddlePaddle",
           "repo_info": {
             "archived": false,
@@ -4401,6 +4603,7 @@
         {
           "children": [],
           "description": "Framework and Library for Distributed Online Machine Learning.",
+          "kind": "repository",
           "title": "Jubatus",
           "repo_info": {
             "archived": false,
@@ -4410,11 +4613,6 @@
             "repo": "jubatus",
             "stars": 589
           }
-        },
-        {
-          "children": [],
-          "description": "Exposes the Spark programming model to Python.",
-          "title": "PySpark"
         }
       ],
       "title": "Distributed Computing"
@@ -4425,6 +4623,7 @@
         {
           "children": [],
           "description": "Data Version Control | Git for Data & Models | ML Experiments Management.",
+          "kind": "repository",
           "title": "dvc",
           "repo_info": {
             "archived": false,
@@ -4438,6 +4637,7 @@
         {
           "children": [],
           "description": "Adaptive Experimentation Platform.",
+          "kind": "repository",
           "title": "Ax",
           "repo_info": {
             "archived": false,
@@ -4451,6 +4651,7 @@
         {
           "children": [],
           "description": "A tool to help you configure, organize, log, and reproduce experiments.",
+          "kind": "repository",
           "title": "Sacred",
           "repo_info": {
             "archived": false,
@@ -4464,6 +4665,7 @@
         {
           "children": [],
           "description": "🏕️ machine learning development environment for data science and AI/ML engineering teams.",
+          "kind": "repository",
           "title": "envd",
           "repo_info": {
             "archived": false,
@@ -4477,6 +4679,7 @@
         {
           "children": [],
           "description": "Open source platform for the machine learning lifecycle.",
+          "kind": "repository",
           "title": "mlflow",
           "repo_info": {
             "archived": false,
@@ -4486,11 +4689,6 @@
             "repo": "mlflow",
             "stars": 1489
           }
-        },
-        {
-          "children": [],
-          "description": "A lightweight ML experiment tracking, results visualization, and management tool.",
-          "title": "Neptune"
         }
       ],
       "title": "Experimentation"
@@ -4501,6 +4699,7 @@
         {
           "children": [],
           "description": "Always know what to expect from your data.",
+          "kind": "repository",
           "title": "great_expectations",
           "repo_info": {
             "archived": false,
@@ -4514,6 +4713,7 @@
         {
           "children": [],
           "description": "A library to compare Pandas, Polars, and Spark data frames. It provides stats and lets users adjust for match accuracy.",
+          "kind": "repository",
           "title": "DataComPy",
           "repo_info": {
             "archived": false,
@@ -4527,6 +4727,7 @@
         {
           "children": [],
           "description": "Validation & testing of ML models and data during model development, deployment, and production.",
+          "kind": "repository",
           "title": "deepchecks",
           "repo_info": {
             "archived": false,
@@ -4540,6 +4741,7 @@
         {
           "children": [],
           "description": "Evaluate and monitor ML models from validation to production.",
+          "kind": "repository",
           "title": "evidently",
           "repo_info": {
             "archived": false,
@@ -4553,6 +4755,7 @@
         {
           "children": [],
           "description": "Library for exploring and validating machine learning data.",
+          "kind": "repository",
           "title": "TensorFlow Data Validation",
           "repo_info": {
             "archived": false,
@@ -4566,6 +4769,7 @@
         {
           "children": [],
           "description": "A lightweight, flexible, and expressive statistical data testing library.",
+          "kind": "repository",
           "title": "pandera",
           "repo_info": {
             "archived": false,
@@ -4585,6 +4789,7 @@
         {
           "children": [],
           "description": "Library of useful metrics and plots for evaluating recommender systems.",
+          "kind": "repository",
           "title": "recmetrics",
           "repo_info": {
             "archived": false,
@@ -4598,6 +4803,7 @@
         {
           "children": [],
           "description": "Model evaluation made easy: plots, tables, and markdown reports.",
+          "kind": "repository",
           "title": "sklearn-evaluation",
           "repo_info": {
             "archived": false,
@@ -4611,6 +4817,7 @@
         {
           "children": [],
           "description": "Machine learning evaluation metric.",
+          "kind": "repository",
           "title": "Metrics",
           "repo_info": {
             "archived": false,
@@ -4624,6 +4831,7 @@
         {
           "children": [],
           "description": "Fairness metrics for datasets and ML models, explanations, and algorithms to mitigate bias in datasets and models.",
+          "kind": "repository",
           "title": "AI Fairness 360",
           "repo_info": {
             "archived": true,
@@ -4637,6 +4845,7 @@
         {
           "children": [],
           "description": "Algorithms for outlier, adversarial and drift detection.",
+          "kind": "repository",
           "title": "alibi-detect",
           "repo_info": {
             "archived": false,
@@ -4656,6 +4865,7 @@
         {
           "children": [],
           "description": "Fast NumPy array functions written in C.",
+          "kind": "repository",
           "title": "bottleneck",
           "repo_info": {
             "archived": false,
@@ -4669,6 +4879,7 @@
         {
           "children": [],
           "description": "Parallel computing with task scheduling.",
+          "kind": "repository",
           "title": "Dask",
           "repo_info": {
             "archived": false,
@@ -4682,6 +4893,7 @@
         {
           "children": [],
           "description": "Tools for adaptive and parallel samping of mathematical functions.",
+          "kind": "repository",
           "title": "adaptive",
           "repo_info": {
             "archived": false,
@@ -4695,6 +4907,7 @@
         {
           "children": [],
           "description": "Add built-in support for quaternions to numpy.",
+          "kind": "repository",
           "title": "quaternion",
           "repo_info": {
             "archived": false,
@@ -4708,6 +4921,7 @@
         {
           "children": [],
           "description": "NumPy-like API accelerated with CUDA.",
+          "kind": "repository",
           "title": "CuPy",
           "repo_info": {
             "archived": false,
@@ -4721,6 +4935,7 @@
         {
           "children": [],
           "description": "A fast numerical expression evaluator for NumPy that comes with an integrated computing virtual machine to speed calculations up by avoiding memory allocation for intermediate results.",
+          "kind": "repository",
           "title": "NumExpr",
           "repo_info": {
             "archived": false,
@@ -4734,6 +4949,7 @@
         {
           "children": [],
           "description": "Solve automatic numerical differentiation problems in one or more variables.",
+          "kind": "repository",
           "title": "numdifftools",
           "repo_info": {
             "archived": false,
@@ -4747,6 +4963,7 @@
         {
           "children": [],
           "description": "Python library for multilinear algebra and tensor factorizations.",
+          "kind": "repository",
           "title": "scikit-tensor",
           "repo_info": {
             "archived": false,
@@ -4756,11 +4973,6 @@
             "repo": "scikit-tensor",
             "stars": 4880
           }
-        },
-        {
-          "children": [],
-          "description": "The fundamental package for scientific computing with Python",
-          "title": "NumPy"
         }
       ],
       "title": "Computations"
@@ -4771,6 +4983,7 @@
         {
           "children": [],
           "description": "Efficient library to scrape Twitter",
+          "kind": "repository",
           "title": "twitterscraper",
           "repo_info": {
             "archived": false,
@@ -4784,6 +4997,7 @@
         {
           "children": [],
           "description": "High level scraping for well-establish websites such as Google, Twitter, and Wikipedia. Also has NLP, machine learning algorithms, and visualization",
+          "kind": "repository",
           "title": "Pattern",
           "repo_info": {
             "archived": false,
@@ -4793,21 +5007,6 @@
             "repo": "pattern",
             "stars": 13034
           }
-        },
-        {
-          "children": [],
-          "description": "The easiest library to scrape static websites for beginners",
-          "title": "BeautifulSoup"
-        },
-        {
-          "children": [],
-          "description": "Fast and extensible scraping library. Can write rules and create customized scraper without touching the core",
-          "title": "Scrapy"
-        },
-        {
-          "children": [],
-          "description": "Use Selenium Python API to access all functionalities of Selenium WebDriver in an intuitive way like a real user.",
-          "title": "Selenium"
         }
       ],
       "title": "Web Scraping"
@@ -4818,6 +5017,7 @@
         {
           "children": [],
           "description": "Python tools for geographic data.",
+          "kind": "repository",
           "title": "GeoPandas",
           "repo_info": {
             "archived": false,
@@ -4831,6 +5031,7 @@
         {
           "children": [],
           "description": "Python Spatial Analysis Library.",
+          "kind": "repository",
           "title": "PySal",
           "repo_info": {
             "archived": false,
@@ -4850,6 +5051,7 @@
         {
           "children": [],
           "description": "A Python Toolkit for Quantum Machine Learning.",
+          "kind": "repository",
           "title": "QML",
           "repo_info": {
             "archived": false,
@@ -4863,6 +5065,7 @@
         {
           "children": [],
           "description": "Qiskit is an open-source SDK for working with quantum computers at the level of circuits, algorithms, and application modules.",
+          "kind": "repository",
           "title": "qiskit",
           "repo_info": {
             "archived": false,
@@ -4876,6 +5079,7 @@
         {
           "children": [],
           "description": "A python framework for creating, editing, and invoking Noisy Intermediate Scale Quantum (NISQ) circuits.",
+          "kind": "repository",
           "title": "cirq",
           "repo_info": {
             "archived": false,
@@ -4889,6 +5093,7 @@
         {
           "children": [],
           "description": "Quantum machine learning, automatic differentiation, and optimization of hybrid quantum-classical computations.",
+          "kind": "repository",
           "title": "PennyLane",
           "repo_info": {
             "archived": false,
@@ -4908,6 +5113,7 @@
         {
           "children": [],
           "description": "Open Neural Network Exchange.",
+          "kind": "repository",
           "title": "ONNX",
           "repo_info": {
             "archived": false,
@@ -4921,6 +5127,7 @@
         {
           "children": [],
           "description": "Transpile trained scikit-learn estimators to C, Java, JavaScript, and others.",
+          "kind": "repository",
           "title": "sklearn-porter",
           "repo_info": {
             "archived": false,
@@ -4934,6 +5141,7 @@
         {
           "children": [],
           "description": "A set of tools to help users inter-operate among different deep learning frameworks.",
+          "kind": "repository",
           "title": "MMdnn",
           "repo_info": {
             "archived": true,
@@ -4947,6 +5155,7 @@
         {
           "children": [],
           "description": "Universal model exchange and serialization format for decision tree forests.",
+          "kind": "repository",
           "title": "treelite",
           "repo_info": {
             "archived": false,
@@ -4977,6 +5186,7 @@
     "original_repository_sha": "deadbeef",
     "enhanced_repository": "enhansome/enhansome-python-data-science",
     "enhanced_repository_description": "enhanced list",
+    "kind": "registry",
     "title": "Awesome python data science with stars"
   }
 }

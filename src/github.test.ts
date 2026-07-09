@@ -169,24 +169,24 @@ describe('github.ts', () => {
       expect(result).toEqual(mockRepoInfo);
     });
 
-    it('should return null on a non-retriable error and log the status', async () => {
+    it('should propagate the octokit error on failure (strict mode, D7)', async () => {
       const client = mockOctokit({
         'repos.get': () => {
           throw notFound(`${owner}/${repo}`);
         },
       });
 
-      const result = await getRepoInfo(client, owner, repo);
+      // Under strict mode getRepoInfo throws instead of returning null — no
+      // silent default, no internal logging; the caller surfaces the failure.
+      let caught: unknown;
+      try {
+        await getRepoInfo(client, owner, repo);
+      } catch (error) {
+        caught = error;
+      }
 
-      expect(result).toBeNull();
-      expect(core.error).toHaveBeenCalledWith(
-        expect.stringContaining(
-          `Failed to fetch repo info for ${owner}/${repo}`,
-        ),
-      );
-      expect(core.error).toHaveBeenCalledWith(
-        expect.stringContaining('(Status: 404)'),
-      );
+      expect(caught).toBeInstanceOf(RequestError);
+      expect((caught as RequestError).status).toBe(404);
     });
 
     it('should map undefined properties for partial API responses', async () => {
@@ -226,11 +226,6 @@ describe('github.ts', () => {
         'vscode',
       );
 
-      expect(result).not.toBeNull();
-      if (!result) {
-        throw new Error('Test failed: getRepoInfo returned null');
-      }
-
       expect(result.archived).toBe(false);
       expect(typeof result.stargazers_count).toBe('number');
       expect(result.stargazers_count).toBeGreaterThan(100000);
@@ -262,19 +257,23 @@ describe('github.ts', () => {
       );
     });
 
-    it('should return null when the repo has no README (404)', async () => {
+    it('should propagate the octokit error when the repo has no README (404)', async () => {
       const client = mockOctokit({
         'repos.getReadme': () => {
           throw notFound(`${owner}/${repo}`);
         },
       });
 
-      const result = await getReadme(client, owner, repo);
+      // Strict mode (D7): a missing README throws its 404 rather than null.
+      let caught: unknown;
+      try {
+        await getReadme(client, owner, repo);
+      } catch (error) {
+        caught = error;
+      }
 
-      expect(result).toBeNull();
-      expect(core.error).toHaveBeenCalledWith(
-        expect.stringContaining(`Failed to fetch README for ${owner}/${repo}`),
-      );
+      expect(caught).toBeInstanceOf(RequestError);
+      expect((caught as RequestError).status).toBe(404);
     });
   });
 

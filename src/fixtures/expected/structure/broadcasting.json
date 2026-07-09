@@ -6,6 +6,7 @@
         {
           "children": [],
           "description": "A network distributed media playback system.",
+          "kind": "repository",
           "title": "Aurena",
           "repo_info": {
             "archived": false,
@@ -19,6 +20,7 @@
         {
           "children": [],
           "description": "Simple TV studio player with SDI, NDI and MPEG TS outputs.",
+          "kind": "repository",
           "title": "Studio TV Player",
           "repo_info": {
             "archived": false,
@@ -32,6 +34,7 @@
         {
           "children": [],
           "description": "MOS-driven automation system for news casts, with many libraries for e.g. device control.",
+          "kind": "repository",
           "title": "Sofie - TV Automation",
           "repo_info": {
             "archived": false,
@@ -45,6 +48,7 @@
         {
           "children": [],
           "description": "Graphics control client for live video productions and live streams.",
+          "kind": "repository",
           "title": "SPX - Graphics Controller",
           "repo_info": {
             "archived": false,
@@ -58,6 +62,7 @@
         {
           "children": [],
           "description": "Web App to generate HTML-Graphics from Lottie.JSON files / from Adobe AfterEffects.",
+          "kind": "repository",
           "title": "StreamShapers - Ferryman",
           "repo_info": {
             "archived": false,
@@ -71,6 +76,7 @@
         {
           "children": [],
           "description": "Blackmagic Node.js bindings that support HTML/CSS (via Electron) and SVG (via Sevruga) graphics.",
+          "kind": "repository",
           "title": "Macadam",
           "repo_info": {
             "archived": false,
@@ -84,6 +90,7 @@
         {
           "children": [],
           "description": "Next generation graphics control software, with extension support.",
+          "kind": "repository",
           "title": "Bridge",
           "repo_info": {
             "archived": false,
@@ -97,6 +104,7 @@
         {
           "children": [],
           "description": "Rust and FFmpeg based playout from folder or playlists.",
+          "kind": "repository",
           "title": "ffplayout",
           "repo_info": {
             "archived": true,
@@ -110,6 +118,7 @@
         {
           "children": [],
           "description": "A CasparCG-based MCR play-out system.",
+          "kind": "repository",
           "title": "Open Playout Automation",
           "repo_info": {
             "archived": false,
@@ -119,31 +128,6 @@
             "repo": "PlayoutAutomation",
             "stars": 711
           }
-        },
-        {
-          "children": [],
-          "description": "3D creation suite supporting 3D modelling, animation, motion tracking, video editing, and more (overview here).",
-          "title": "Blender"
-        },
-        {
-          "children": [],
-          "description": "A professional graphics and video play-out software, proven in 24/7 broadcasts since 2006.",
-          "title": "CasparCG"
-        },
-        {
-          "children": [],
-          "description": "Media asset management and broadcast automation system.",
-          "title": "Nebula"
-        },
-        {
-          "children": [],
-          "description": "Broadcast graphics rendered in a browser using Node.js.",
-          "title": "NodeCG"
-        },
-        {
-          "children": [],
-          "description": "A free and open-source intermedia sequencer.",
-          "title": "ossia"
         }
       ],
       "title": "Animation, Graphics & Video Playout"
@@ -154,6 +138,7 @@
         {
           "children": [],
           "description": "Server Based Studio Clock and Tally system, supporting messaging, physical GPI's and OSC triggering.",
+          "kind": "repository",
           "title": "OATIS",
           "repo_info": {
             "archived": false,
@@ -167,6 +152,7 @@
         {
           "children": [],
           "description": "Improved version of PiRSClock-Full with changed layout, added timers and network capabilities.",
+          "kind": "repository",
           "title": "PiClock Advanced",
           "repo_info": {
             "archived": false,
@@ -180,6 +166,7 @@
         {
           "children": [],
           "description": "Cross-platform \"OnAir Lamp\" solution targeted for use in professional broadcast environments.",
+          "kind": "repository",
           "title": "OnAirScreen",
           "repo_info": {
             "archived": false,
@@ -193,6 +180,7 @@
         {
           "children": [],
           "description": "Customisable network based displays of clocks, on-air, mic live and other studio indicators.",
+          "kind": "repository",
           "title": "PiClock",
           "repo_info": {
             "archived": false,
@@ -206,6 +194,7 @@
         {
           "children": [],
           "description": "Radio Studio Clock with studio indicators for mics, telephones etc.",
+          "kind": "repository",
           "title": "PiRSClock-Full",
           "repo_info": {
             "archived": false,
@@ -225,6 +214,7 @@
         {
           "children": [],
           "description": "+ Intercom Frontend - Intercom system based on built by Eyevinn for SVT.",
+          "kind": "repository",
           "title": "Intercom Manager",
           "repo_info": {
             "archived": false,
@@ -238,6 +228,7 @@
         {
           "children": [],
           "description": "Hardware + software intercom solution built around Murmur server and headless Mumble clients based on Rasperry Pi.",
+          "kind": "repository",
           "title": "DYI intercom",
           "repo_info": {
             "archived": false,
@@ -257,6 +248,7 @@
         {
           "children": [],
           "description": "iOS libraries for companion screen applications that are synchronised frame-accurately to a TV.",
+          "kind": "repository",
           "title": "dvbcss-synckit-ios",
           "repo_info": {
             "archived": false,
@@ -270,6 +262,7 @@
         {
           "children": [],
           "description": "A library for the discovery of devices via the DIAL protocol on the iOS platform.",
+          "kind": "repository",
           "title": "dial-discovery-ios",
           "repo_info": {
             "archived": false,
@@ -283,6 +276,7 @@
         {
           "children": [],
           "description": "Implementation of the DVB Companion Screens and Streams protocols for synchronised media playback.",
+          "kind": "repository",
           "title": "pydvbcss",
           "repo_info": {
             "archived": false,
@@ -296,6 +290,7 @@
         {
           "children": [],
           "description": "A system for measuring how accurately a TV or companion are synchronised.",
+          "kind": "repository",
           "title": "dvbcss-synctiming",
           "repo_info": {
             "archived": false,
@@ -315,6 +310,7 @@
         {
           "children": [],
           "description": "An HbbTV and W3C specifications compliant application that can playback media from a URL.",
+          "kind": "repository",
           "title": "HbbPlayer",
           "repo_info": {
             "archived": false,
@@ -328,6 +324,7 @@
         {
           "children": [],
           "description": "Reference implementation for linking media devices with online identities (related repos here).",
+          "kind": "repository",
           "title": "CPA Authorization Provider",
           "repo_info": {
             "archived": false,
@@ -337,11 +334,6 @@
             "repo": "cpa-auth-provider",
             "stars": 19482
           }
-        },
-        {
-          "children": [],
-          "description": "The TV Application Layer (TAL) is an open source library for building applications for Connected TV devices.",
-          "title": "TAL"
         }
       ],
       "title": "Connected TVs"
@@ -352,6 +344,7 @@
         {
           "children": [],
           "description": "Ember Plus - open protocol for interfacing to / from broadcast control systems.",
+          "kind": "repository",
           "title": "Lawo EmberPlus",
           "repo_info": {
             "archived": false,
@@ -365,6 +358,7 @@
         {
           "children": [],
           "description": "Enables the Elgato Streamdeck and other controllers to be a shotbox surface for an increasing amount of broadcast equipment.",
+          "kind": "repository",
           "title": "Bitfocus Companion",
           "repo_info": {
             "archived": false,
@@ -378,6 +372,7 @@
         {
           "children": [],
           "description": "Lightweight adapter tool for common show control protocols.",
+          "kind": "repository",
           "title": "MIDIMonster",
           "repo_info": {
             "archived": false,
@@ -387,11 +382,6 @@
             "repo": "midimonster",
             "stars": 6841
           }
-        },
-        {
-          "children": [],
-          "description": "Broadcast Universal Gateway - Control a wide range of broadcast and network equipment from your browser.",
-          "title": "BUG"
         }
       ],
       "title": "Control Systems"
@@ -402,6 +392,7 @@
         {
           "children": [],
           "description": "A free and open source MPEG2 transport stream data generator and packet manipulator.",
+          "kind": "repository",
           "title": "Opencaster",
           "repo_info": {
             "archived": false,
@@ -415,6 +406,7 @@
         {
           "children": [],
           "description": "Broadcast to IP conversion for Wifi indoor coverage.",
+          "kind": "repository",
           "title": "DTT 2 IP",
           "repo_info": {
             "archived": false,
@@ -428,6 +420,7 @@
         {
           "children": [],
           "description": "Simple tool to extract MPEG Audio from a MPEG Transport Stream (TS).",
+          "kind": "repository",
           "title": "ts2mpa",
           "repo_info": {
             "archived": false,
@@ -441,6 +434,7 @@
         {
           "children": [],
           "description": "Tool to send DVB audio to a shoutcast server or a RTP stream.",
+          "kind": "repository",
           "title": "dvbshout",
           "repo_info": {
             "archived": false,
@@ -450,31 +444,6 @@
             "repo": "dvbshout",
             "stars": 2350
           }
-        },
-        {
-          "children": [],
-          "description": "An open-source DVB analyzer.",
-          "title": "DVB Inspector"
-        },
-        {
-          "children": [],
-          "description": "A simple and powerful MPEG-2/TS demux and streaming application.",
-          "title": "DVBlast"
-        },
-        {
-          "children": [],
-          "description": "DVB demux tool.",
-          "title": "Project X"
-        },
-        {
-          "children": [],
-          "description": "Extensible toolkit for MPEG/DVB transport streams testing, monitoring, integration, debugging, and more.",
-          "title": "TSDuck"
-        },
-        {
-          "children": [],
-          "description": "Analog-like transmission of live video data.",
-          "title": "WiFiBroadcast"
         }
       ],
       "title": "DVB & WiFi"
@@ -485,6 +454,7 @@
         {
           "children": [],
           "description": "RadioVIS STOMP server written in node.js.",
+          "kind": "repository",
           "title": "RadioVIS Stomp Server",
           "repo_info": {
             "archived": false,
@@ -498,6 +468,7 @@
         {
           "children": [],
           "description": "RadioVIS Player using WebSocket.",
+          "kind": "repository",
           "title": "RadioVIS Html Player",
           "repo_info": {
             "archived": false,
@@ -511,6 +482,7 @@
         {
           "children": [],
           "description": "RadioTag client library in JavaScript.",
+          "kind": "repository",
           "title": "RadioTag.js",
           "repo_info": {
             "archived": false,
@@ -524,6 +496,7 @@
         {
           "children": [],
           "description": "Perform RadioDNS resolutions and service lookups in node.js.",
+          "kind": "repository",
           "title": "RadioDNS for Node.js",
           "repo_info": {
             "archived": false,
@@ -537,6 +510,7 @@
         {
           "children": [],
           "description": "RadioVIS client application in Python.",
+          "kind": "repository",
           "title": "RadioVIS Demo",
           "repo_info": {
             "archived": false,
@@ -550,6 +524,7 @@
         {
           "children": [],
           "description": "Platform to manage Hybrid Radio services, e.g. RadioVIS, RadioEPG and Service Following.",
+          "kind": "repository",
           "title": "RadioDNS Manager",
           "repo_info": {
             "archived": false,
@@ -569,6 +544,7 @@
         {
           "children": [],
           "description": "A project founded in Sweden to publish Open Source software for professional radio broadcasts.",
+          "kind": "repository",
           "title": "IRIS Broadcast",
           "repo_info": {
             "archived": false,
@@ -582,6 +558,7 @@
         {
           "children": [],
           "description": "A Python package for automating VideoIPath configuration workflows.",
+          "kind": "repository",
           "title": "VideoIPath-Automation-Tool",
           "repo_info": {
             "archived": false,
@@ -595,6 +572,7 @@
         {
           "children": [],
           "description": "Live IP Software Toolkit to assist EBU members in the implementation of IP based facilities.",
+          "kind": "repository",
           "title": "EBU LIST",
           "repo_info": {
             "archived": false,
@@ -604,51 +582,6 @@
             "repo": "pi-list",
             "stars": 22681
           }
-        },
-        {
-          "children": [],
-          "description": "broadcast using this tool (butt) is an easy to use, multi OS streaming tool. It supports SHOUTcast and Icecast.",
-          "title": "butt"
-        },
-        {
-          "children": [],
-          "description": "Android audio livestreaming Icecast source client app.",
-          "title": "Cool Mic"
-        },
-        {
-          "children": [],
-          "description": "Live audio streamer that records and encodes from an audio interface and sends to a streaming server.",
-          "title": "DarkIce"
-        },
-        {
-          "children": [],
-          "description": "Streaming media (audio/video) server which supports Ogg (Vorbis and Theora), Opus, WebM and MP3.",
-          "title": "Icecast"
-        },
-        {
-          "children": [],
-          "description": "Open SIP server, commonly used for Audio contribution over IP using SIP (EBU ACIP).",
-          "title": "Kamailio"
-        },
-        {
-          "children": [],
-          "description": "list for the AMWA Networked Media Open Specifications and open source implementations and tools.",
-          "title": "See the NMOS"
-        },
-        {
-          "children": [],
-          "description": "Open Outside Broadcast project for radio contribution links and studio-transmitter links based on Opus.",
-          "title": "OpenOB"
-        },
-        {
-          "children": [],
-          "description": "Open Source multimedia library implementing SIP, SDP, RTP, STUN, TURN, and ICE.",
-          "title": "PJSIP"
-        },
-        {
-          "children": [],
-          "description": "A simple toolset for broadcasting live audio from Linux.",
-          "title": "trx"
         }
       ],
       "title": "LiveIP"
@@ -659,6 +592,7 @@
         {
           "children": [],
           "description": "HTML5/Javascript video player that supports MPEG-DASH and SmoothStreaming.",
+          "kind": "repository",
           "title": "rx-player",
           "repo_info": {
             "archived": true,
@@ -672,6 +606,7 @@
         {
           "children": [],
           "description": "A reference client implementation for the playback of MPEG DASH via Javascript and compliant browsers.",
+          "kind": "repository",
           "title": "Dash.js",
           "repo_info": {
             "archived": false,
@@ -685,6 +620,7 @@
         {
           "children": [],
           "description": "HTML5 player focused on accessibility.",
+          "kind": "repository",
           "title": "Media4DPlayer",
           "repo_info": {
             "archived": false,
@@ -698,6 +634,7 @@
         {
           "children": [],
           "description": "A software media player and entertainment hub for digital media.",
+          "kind": "repository",
           "title": "Kodi",
           "repo_info": {
             "archived": false,
@@ -707,41 +644,6 @@
             "repo": "xbmc",
             "stars": 4239
           }
-        },
-        {
-          "children": [],
-          "description": "Multimedia player, packager and tools.",
-          "title": "GPAC"
-        },
-        {
-          "children": [],
-          "description": "A GTK+ Shoutcast/Icecast client with two main media players.",
-          "title": "IDJC"
-        },
-        {
-          "children": [],
-          "description": "A flexible, powerful, server-side application for playing music.",
-          "title": "MPD"
-        },
-        {
-          "children": [],
-          "description": "A fast console MPEG Audio Player and decoder library.",
-          "title": "mpg123"
-        },
-        {
-          "children": [],
-          "description": "A free, open source DJ software.",
-          "title": "Mixxx"
-        },
-        {
-          "children": [],
-          "description": "Browser-based audio waveform visualisation.",
-          "title": "Peaks.js"
-        },
-        {
-          "children": [],
-          "description": "Simple, fast and powerful media player.",
-          "title": "VLC"
         }
       ],
       "title": "Media Players"
@@ -752,6 +654,7 @@
         {
           "children": [],
           "description": "Library and utilities to read and write broadcasting media files. Primarily supports the MXF file format.",
+          "kind": "repository",
           "title": "BMXlib",
           "repo_info": {
             "archived": true,
@@ -765,6 +668,7 @@
         {
           "children": [],
           "description": "The Github for maintenance of the EBUCore schema.",
+          "kind": "repository",
           "title": "EBUCore",
           "repo_info": {
             "archived": false,
@@ -778,6 +682,7 @@
         {
           "children": [],
           "description": "Audio Definition Model (ITU-R BS.2076) handling C++11 library.",
+          "kind": "repository",
           "title": "libadm",
           "repo_info": {
             "archived": false,
@@ -791,6 +696,7 @@
         {
           "children": [],
           "description": "C library for ancillary data extraction from SDI and SMPTE ST 2110-40 (CEA-708, AFD, SCTE-104, etc.).",
+          "kind": "repository",
           "title": "libklvanc",
           "repo_info": {
             "archived": false,
@@ -804,6 +710,7 @@
         {
           "children": [],
           "description": "Pure Java library for reading and writing MXF and AAF files.",
+          "kind": "repository",
           "title": "MAJ API",
           "repo_info": {
             "archived": false,
@@ -817,6 +724,7 @@
         {
           "children": [],
           "description": "The TV-Anytime schema github maintenance page.",
+          "kind": "repository",
           "title": "TV-Anytime",
           "repo_info": {
             "archived": false,
@@ -830,6 +738,7 @@
         {
           "children": [],
           "description": "Java port of EBU Tech 3293 EBU Core metadata, including the Audio Definition Model.",
+          "kind": "repository",
           "title": "jebu-core",
           "repo_info": {
             "archived": false,
@@ -843,6 +752,7 @@
         {
           "children": [],
           "description": "CLI tool and library for testing SMPTE ST2110 SDP files.",
+          "kind": "repository",
           "title": "SDPoker",
           "repo_info": {
             "archived": false,
@@ -862,6 +772,7 @@
         {
           "children": [],
           "description": "Implementation of the SMPTE Interoperable Master Format (IMF) standard.",
+          "kind": "repository",
           "title": "Photon",
           "repo_info": {
             "archived": false,
@@ -875,6 +786,7 @@
         {
           "children": [],
           "description": "Text console based DPM (Digital Peak Meter) for JACK.",
+          "kind": "repository",
           "title": "Jack Meter",
           "repo_info": {
             "archived": false,
@@ -888,6 +800,7 @@
         {
           "children": [],
           "description": "Recording of Transmissions / Audio Logger for JACK.",
+          "kind": "repository",
           "title": "Rotter",
           "repo_info": {
             "archived": false,
@@ -901,6 +814,7 @@
         {
           "children": [],
           "description": "A Windows tool to display the internal structure of an MXF (Material eXchange Format) file.",
+          "kind": "repository",
           "title": "MXF Inspect",
           "repo_info": {
             "archived": false,
@@ -914,6 +828,7 @@
         {
           "children": [],
           "description": "A web service for Visual Quality Assessment, which supports PSNR, SSIM, VQM, etc.",
+          "kind": "repository",
           "title": "Wisual",
           "repo_info": {
             "archived": false,
@@ -927,6 +842,7 @@
         {
           "children": [],
           "description": "A collection of tools to handle Linear Timecode (LTC) and convert to MIDI Timecode (MTC).",
+          "kind": "repository",
           "title": "LTC-tools",
           "repo_info": {
             "archived": false,
@@ -940,6 +856,7 @@
         {
           "children": [],
           "description": "Dead-air / Silence detector for JACK.",
+          "kind": "repository",
           "title": "SilentJack",
           "repo_info": {
             "archived": false,
@@ -953,6 +870,7 @@
         {
           "children": [],
           "description": "Audio Monitoring for Raspberry Pi, supports S/PDIF, AES3, AES67, Livewire and Ravenna.",
+          "kind": "repository",
           "title": "Pi Audio Monitor",
           "repo_info": {
             "archived": false,
@@ -966,6 +884,7 @@
         {
           "children": [],
           "description": "A framework to create browser based listening tests for subjective audio quality assessment.",
+          "kind": "repository",
           "title": "BeaqleJS",
           "repo_info": {
             "archived": false,
@@ -979,6 +898,7 @@
         {
           "children": [],
           "description": "A web based multiview for HLS and Youtube links.",
+          "kind": "repository",
           "title": "a_Multiview",
           "repo_info": {
             "archived": false,
@@ -992,6 +912,7 @@
         {
           "children": [],
           "description": "Quality Control tools for video preservation to analyse digitized video files.",
+          "kind": "repository",
           "title": "QCTools",
           "repo_info": {
             "archived": false,
@@ -1005,6 +926,7 @@
         {
           "children": [],
           "description": "Perceptual video quality assessment based on multi-method fusion.",
+          "kind": "repository",
           "title": "VMAF",
           "repo_info": {
             "archived": false,
@@ -1018,6 +940,7 @@
         {
           "children": [],
           "description": "Audiofile silence analyzer.",
+          "kind": "repository",
           "title": "silan",
           "repo_info": {
             "archived": true,
@@ -1027,26 +950,6 @@
             "repo": "silan",
             "stars": 1850
           }
-        },
-        {
-          "children": [],
-          "description": "A collection of graphical audio meters for JACK, including VU, PPM and EBU R 128 Loudness meters.",
-          "title": "Jmeters"
-        },
-        {
-          "children": [],
-          "description": "Implementation checker, policy checker, & reporter for Matroska, FFV1, & PCM.",
-          "title": "MediaConch"
-        },
-        {
-          "children": [],
-          "description": "A convenient unified display of the most relevant technical and tag data for video and audio files.",
-          "title": "MediaInfo"
-        },
-        {
-          "children": [],
-          "description": "An application for viewing and analysing the contents of music audio files.",
-          "title": "Sonic Visualiser"
         }
       ],
       "title": "Monitoring & Quality Control"
@@ -1057,6 +960,7 @@
         {
           "children": [],
           "description": "Node.js native bindings to FFmpeg, with support for asynchronous processing via promises and streams.",
+          "kind": "repository",
           "title": "Beam Coder",
           "repo_info": {
             "archived": false,
@@ -1070,6 +974,7 @@
         {
           "children": [],
           "description": "Node.JS pure Javascript module for streaming MXF files to and from JSON.",
+          "kind": "repository",
           "title": "Kelvinadon",
           "repo_info": {
             "archived": false,
@@ -1083,6 +988,7 @@
         {
           "children": [],
           "description": "A library that implements the EBU R 128 standard for loudness normalisation.",
+          "kind": "repository",
           "title": "Libebur128",
           "repo_info": {
             "archived": false,
@@ -1096,6 +1002,7 @@
         {
           "children": [],
           "description": "FFmpeg customized for broadcast and professional usage.",
+          "kind": "repository",
           "title": "FFmbc",
           "repo_info": {
             "archived": false,
@@ -1109,6 +1016,7 @@
         {
           "children": [],
           "description": "Server implementation of Adobe's RTMP 1.0 protocol in Go.",
+          "kind": "repository",
           "title": "rtmp",
           "repo_info": {
             "archived": false,
@@ -1122,6 +1030,7 @@
         {
           "children": [],
           "description": "Software for live streaming and screen recording.",
+          "kind": "repository",
           "title": "OBS-Studio",
           "repo_info": {
             "archived": false,
@@ -1135,6 +1044,7 @@
         {
           "children": [],
           "description": "Tools and Python3 library to read, write and calculate Replay Gain - fork of the original by Felix Krull.",
+          "kind": "repository",
           "title": "rgain3",
           "repo_info": {
             "archived": false,
@@ -1148,6 +1058,7 @@
         {
           "children": [],
           "description": "Primarily designed to be the core of a multimedia player, transcoder or streamer.",
+          "kind": "repository",
           "title": "UPipe",
           "repo_info": {
             "archived": false,
@@ -1161,6 +1072,7 @@
         {
           "children": [],
           "description": "A small browser-based MPEG-4 (ISOBMFF) parser.",
+          "kind": "repository",
           "title": "Codem-isoboxer",
           "repo_info": {
             "archived": false,
@@ -1174,6 +1086,7 @@
         {
           "children": [],
           "description": "Full-featured MP4 format and MPEG DASH C++ class library and tools.",
+          "kind": "repository",
           "title": "Bento4",
           "repo_info": {
             "archived": true,
@@ -1187,6 +1100,7 @@
         {
           "children": [],
           "description": "JavaScript library to process MP4 files in the browser (and in NodeJS).",
+          "kind": "repository",
           "title": "MP4Box.js",
           "repo_info": {
             "archived": false,
@@ -1200,6 +1114,7 @@
         {
           "children": [],
           "description": "Header-only Broadcast Wave 64 (ITU-R BS.2088) C++11 library.",
+          "kind": "repository",
           "title": "libbw64",
           "repo_info": {
             "archived": false,
@@ -1213,6 +1128,7 @@
         {
           "children": [],
           "description": "Selfhosted video transcoding platform, built around FFmpeg.",
+          "kind": "repository",
           "title": "SVT Encore",
           "repo_info": {
             "archived": false,
@@ -1226,6 +1142,7 @@
         {
           "children": [],
           "description": "FFmpeg/LibAV-based high-level API to re-wrap or transcode media, with bindings for Java and Python.",
+          "kind": "repository",
           "title": "AvTranscoder",
           "repo_info": {
             "archived": false,
@@ -1239,6 +1156,7 @@
         {
           "children": [],
           "description": "Reference implementation of the EBU ADM Renderer (EBU Tech 3388)",
+          "kind": "repository",
           "title": "EBU ADM Renderer",
           "repo_info": {
             "archived": false,
@@ -1252,6 +1170,7 @@
         {
           "children": [],
           "description": "Basic Real-time AV Editor - lets you preview, mix, and route live audio and video streams on the cloud.",
+          "kind": "repository",
           "title": "Brave",
           "repo_info": {
             "archived": false,
@@ -1265,6 +1184,7 @@
         {
           "children": [],
           "description": "A set of applications to analyse, visualise and correct the loudness.",
+          "kind": "repository",
           "title": "Loudness Validator",
           "repo_info": {
             "archived": false,
@@ -1278,6 +1198,7 @@
         {
           "children": [],
           "description": "Open source audio and video processing tools.",
+          "kind": "repository",
           "title": "LibAV",
           "repo_info": {
             "archived": false,
@@ -1291,6 +1212,7 @@
         {
           "children": [],
           "description": "An open source image processing framework based on OpenFX plugin standard.",
+          "kind": "repository",
           "title": "TuttleOFX",
           "repo_info": {
             "archived": false,
@@ -1304,6 +1226,7 @@
         {
           "children": [],
           "description": "A multitrack non-linear video editor.",
+          "kind": "repository",
           "title": "Flowblade",
           "repo_info": {
             "archived": false,
@@ -1317,6 +1240,7 @@
         {
           "children": [],
           "description": "IT swiss army knife - a Node-RED media pipeline builder, adding professional media processing nodes.",
+          "kind": "repository",
           "title": "Dynamorse",
           "repo_info": {
             "archived": false,
@@ -1330,6 +1254,7 @@
         {
           "children": [],
           "description": "A C++11 library to render ADM content according to Recommendation ITU-R BS.2127.",
+          "kind": "repository",
           "title": "libear",
           "repo_info": {
             "archived": false,
@@ -1343,6 +1268,7 @@
         {
           "children": [],
           "description": "Customizable conference recording/mixing/streaming software based on Python and GStreamer.",
+          "kind": "repository",
           "title": "Voctomix",
           "repo_info": {
             "archived": false,
@@ -1356,6 +1282,7 @@
         {
           "children": [],
           "description": "Experimental HTML5/WebGL library for creating interactive and responsive web videos.",
+          "kind": "repository",
           "title": "VideoContext",
           "repo_info": {
             "archived": false,
@@ -1369,6 +1296,7 @@
         {
           "children": [],
           "description": "A rigidly spec-compliant ISOBMFF library, which has full DASH muxing support.",
+          "kind": "repository",
           "title": "L-SMASH",
           "repo_info": {
             "archived": false,
@@ -1378,41 +1306,6 @@
             "repo": "l-smash",
             "stars": 2393
           }
-        },
-        {
-          "children": [],
-          "description": "A cross-platform solution to record, convert and stream audio and video. Supports SMPTE ST 2110.",
-          "title": "FFmpeg"
-        },
-        {
-          "children": [],
-          "description": "A library for constructing graphs of media-handling components.",
-          "title": "GStreamer"
-        },
-        {
-          "children": [],
-          "description": "Fast, modern C++ DSP framework, DFT/FFT, Audio resampling, FIR/IIR, Biquad, EBU R 128.",
-          "title": "KFR"
-        },
-        {
-          "children": [],
-          "description": "A multi-platform C++ library for reading and writing MXF files.",
-          "title": "MXFLib"
-        },
-        {
-          "children": [],
-          "description": "Broadcast encoder built from Open Source components.",
-          "title": "Open Broadcast Encoder"
-        },
-        {
-          "children": [],
-          "description": "Live Video Mixer.",
-          "title": "Snowmix"
-        },
-        {
-          "children": [],
-          "description": "The Swiss Army knife of sound processing programs.",
-          "title": "SoX"
         }
       ],
       "title": "Multimedia content processing"
@@ -1423,6 +1316,7 @@
         {
           "children": [],
           "description": "Flexible I/O Tester",
+          "kind": "repository",
           "title": "Fio",
           "repo_info": {
             "archived": false,
@@ -1436,6 +1330,7 @@
         {
           "children": [],
           "description": "Analyzers for TSL UMD (under-monitor display) protocol V3.1 and V4.",
+          "kind": "repository",
           "title": "Wireshark dissector for TSL UMD protocol V3.1, V4",
           "repo_info": {
             "archived": false,
@@ -1449,6 +1344,7 @@
         {
           "children": [],
           "description": null,
+          "kind": "repository",
           "title": "Examples of SMPTE ST 2110 pcap files",
           "repo_info": {
             "archived": false,
@@ -1462,6 +1358,7 @@
         {
           "children": [],
           "description": "Analyzer to inspect network packets generated in accordance with SMPTE ST 2110.",
+          "kind": "repository",
           "title": "SMPTE 2110-20 Analyzer",
           "repo_info": {
             "archived": false,
@@ -1475,6 +1372,7 @@
         {
           "children": [],
           "description": "Analyzers for various video router/matrix protocols.",
+          "kind": "repository",
           "title": "Wireshark dissectors for Video Routers",
           "repo_info": {
             "archived": false,
@@ -1484,16 +1382,6 @@
             "repo": "router_dissectors",
             "stars": 1345
           }
-        },
-        {
-          "children": [],
-          "description": "An application for the testing of network attached (professional media) storage.",
-          "title": "BBC Media Storage Meter"
-        },
-        {
-          "children": [],
-          "description": "The TCP, UDP and SCTP network bandwidth measurement tool.",
-          "title": "iPerf3"
         }
       ],
       "title": "Network & Storage Testing"
@@ -1504,6 +1392,7 @@
         {
           "children": [],
           "description": "A mock device implementation of the NMOS Control & Monitoring suite (IS-12, BCP-008-01, BCP-008-02), written in Typescript and running on the NodeJS stack.",
+          "kind": "repository",
           "title": "nmos-device-control-mock",
           "repo_info": {
             "archived": false,
@@ -1517,6 +1406,7 @@
         {
           "children": [],
           "description": "A starter kit that allows the user to launch a simple NMOS setup with minimal installation steps, composed of three Docker containers: an NMOS Registry, a virtual NMOS Node, and the AMWA NMOS Testing Tool.",
+          "kind": "repository",
           "title": "Easy-NMOS",
           "repo_info": {
             "archived": false,
@@ -1530,6 +1420,7 @@
         {
           "children": [],
           "description": "(NvNmos) - A simple-to-use C/C++ library for adding an NMOS Node to your application, with support for IS-04, IS-05, BCP-002-01, BCP-002-02, BCP-004-01, etc.",
+          "kind": "repository",
           "title": "NVIDIA NMOS Library",
           "repo_info": {
             "archived": false,
@@ -1543,6 +1434,7 @@
         {
           "children": [],
           "description": "A simple browser-based NMOS Client/Controller with an IS-04 Registry browser and IS-05 Connection Management.",
+          "kind": "repository",
           "title": "nmos-js",
           "repo_info": {
             "archived": true,
@@ -1556,6 +1448,7 @@
         {
           "children": [],
           "description": "A Vagrant provisioning to build 4 virtual machines, an IS-04/IS-05 Node, IS-04 Registry, BCP-003-02 Authorisation Server, and the NMOS Testing Tool.",
+          "kind": "repository",
           "title": "BBC NMOS Joint Reference Implementation",
           "repo_info": {
             "archived": false,
@@ -1569,6 +1462,7 @@
         {
           "children": [],
           "description": "A demonstration of the integration of several NMOS standards with the DELTACAST IP Virtual Card through nmos-cpp.",
+          "kind": "repository",
           "title": "DELTACAST IP Virtual Card NMOS samples",
           "repo_info": {
             "archived": false,
@@ -1582,6 +1476,7 @@
         {
           "children": [],
           "description": "An implementation of the AMWA Networked Media Open Specifications in C++, including an NMOS Registry and a toolkit and example of building an NMOS Node.",
+          "kind": "repository",
           "title": "nmos-cpp",
           "repo_info": {
             "archived": false,
@@ -1591,16 +1486,6 @@
             "repo": "nmos-cpp",
             "stars": 389
           }
-        },
-        {
-          "children": [],
-          "description": "Automated test suites for the AMWA NMOS family of specifications, as used in the JT-NM Tested programme",
-          "title": "AMWA NMOS Testing Tool"
-        },
-        {
-          "children": [],
-          "description": "Docker container with Registry and Controller, IS-04/05/08/07/09, BCP-003-01",
-          "title": "NVIDIA NMOS Docker"
         }
       ],
       "title": "NMOS"
@@ -1611,6 +1496,7 @@
         {
           "children": [],
           "description": "A podcast manager for Android (antennapod.org).",
+          "kind": "repository",
           "title": "AntennaPod",
           "repo_info": {
             "archived": true,
@@ -1624,6 +1510,7 @@
         {
           "children": [],
           "description": "Free and easy to use podcast player for Android and iOS (anytimeplayer.app).",
+          "kind": "repository",
           "title": "Anytime Podcast Player",
           "repo_info": {
             "archived": false,
@@ -1637,6 +1524,7 @@
         {
           "children": [],
           "description": "Podcast Hosting and Broadcasting (castopod.org).",
+          "kind": "repository",
           "title": "Castopod",
           "repo_info": {
             "archived": false,
@@ -1650,6 +1538,7 @@
         {
           "children": [],
           "description": "Podcast-optimized, HTML5-based video and audio player.",
+          "kind": "repository",
           "title": "Podlove Web Player",
           "repo_info": {
             "archived": false,
@@ -1663,6 +1552,7 @@
         {
           "children": [],
           "description": "Podcast Publisher for WordPress.",
+          "kind": "repository",
           "title": "Podlove Publisher",
           "repo_info": {
             "archived": false,
@@ -1672,16 +1562,6 @@
             "repo": "podlove-publisher",
             "stars": 1218
           }
-        },
-        {
-          "children": [],
-          "description": "Media aggregator and podcast client.",
-          "title": "gPodder"
-        },
-        {
-          "children": [],
-          "description": "Suite of Plugins and UI tweaks to use with the DAW Reaper tailored towards Podcasters (ultraschall.fm)",
-          "title": "Ultraschall"
         }
       ],
       "title": "Podcasting"
@@ -1692,6 +1572,7 @@
         {
           "children": [],
           "description": "A Swiss army knife for multimedia streaming (documentation).",
+          "kind": "repository",
           "title": "Liquidsoap",
           "repo_info": {
             "archived": false,
@@ -1705,6 +1586,7 @@
         {
           "children": [],
           "description": "Complete radio broadcast automation solution, translated to many languages and used worldwide.",
+          "kind": "repository",
           "title": "Rivendell",
           "repo_info": {
             "archived": false,
@@ -1718,6 +1600,7 @@
         {
           "children": [],
           "description": "A self-hosted web radio management suite.",
+          "kind": "repository",
           "title": "AzuraCast",
           "repo_info": {
             "archived": false,
@@ -1731,6 +1614,7 @@
         {
           "children": [],
           "description": "Radio management application for remote broadcast automation (via web-based schedule).",
+          "kind": "repository",
           "title": "Airtime",
           "repo_info": {
             "archived": false,
@@ -1744,6 +1628,7 @@
         {
           "children": [],
           "description": "A ruby application to manage and browse an audio archive.",
+          "kind": "repository",
           "title": "RAAR",
           "repo_info": {
             "archived": false,
@@ -1753,26 +1638,6 @@
             "repo": "raar",
             "stars": 14964
           }
-        },
-        {
-          "children": [],
-          "description": "A digital audio workstation.",
-          "title": "Ardour"
-        },
-        {
-          "children": [],
-          "description": "Cross-platform software for recording and editing sounds.",
-          "title": "Audacity"
-        },
-        {
-          "children": [],
-          "description": "Radio broadcast & automation platform (fork of Airtime).",
-          "title": "LibreTime"
-        },
-        {
-          "children": [],
-          "description": "Open Source LPFM IPTV Broadcast Automation. Server and Player code here.",
-          "title": "OpenBroadcaster"
         }
       ],
       "title": "Radio Production"
@@ -1783,6 +1648,7 @@
         {
           "children": [],
           "description": "Web based time keeping system for live events with a broadcast clock view.",
+          "kind": "repository",
           "title": "OnTime",
           "repo_info": {
             "archived": false,
@@ -1796,6 +1662,7 @@
         {
           "children": [],
           "description": "Rundown/playout controller for CasparCG Server, BMD ATEM, OBS Studio, vMix, OSC-compatible devices, HTTP (REST)-compatible devices among others.",
+          "kind": "repository",
           "title": "SuperConductor",
           "repo_info": {
             "archived": false,
@@ -1815,6 +1682,7 @@
         {
           "children": [],
           "description": "Adaptive Bit Rate HLS Segmenter and SCTE-35 Injector.",
+          "kind": "repository",
           "title": "x9k3",
           "repo_info": {
             "archived": false,
@@ -1828,6 +1696,7 @@
         {
           "children": [],
           "description": "SCTE-35 Parser and Encoder for MPEGTS.",
+          "kind": "repository",
           "title": "threefive",
           "repo_info": {
             "archived": false,
@@ -1847,6 +1716,7 @@
         {
           "children": [],
           "description": "ActivityPub-federated video streaming platform using P2P directly in your web browser. (https://joinpeertube.org/)",
+          "kind": "repository",
           "title": "PeerTube",
           "repo_info": {
             "archived": false,
@@ -1860,6 +1730,7 @@
         {
           "children": [],
           "description": "Selfhosted video streaming platform (https://owncast.online/)",
+          "kind": "repository",
           "title": "Owncast",
           "repo_info": {
             "archived": false,
@@ -1879,6 +1750,7 @@
         {
           "children": [],
           "description": "Tools that support/use the W3C Timed Text Markup Language (TTML).",
+          "kind": "repository",
           "title": "Timed Text Toolkit (ttt)",
           "repo_info": {
             "archived": false,
@@ -1892,6 +1764,7 @@
         {
           "children": [],
           "description": "EBU-TT-D sample files, PNG images and mp4 videos as rendering references.",
+          "kind": "repository",
           "title": "IRT EBU-TT-D Application Samples",
           "repo_info": {
             "archived": false,
@@ -1905,6 +1778,7 @@
         {
           "children": [],
           "description": "dash.js fork with EBU-TT-D subtitles in HTML/CSS overlay. Later added to dash.js.",
+          "kind": "repository",
           "title": "EBU-TT-D Subtitling within dash.js",
           "repo_info": {
             "archived": false,
@@ -1918,6 +1792,7 @@
         {
           "children": [],
           "description": "JavaScript library for rendering IMSC1 Text and Image Profile documents to HTML5.",
+          "kind": "repository",
           "title": "imscJS",
           "repo_info": {
             "archived": false,
@@ -1931,6 +1806,7 @@
         {
           "children": [],
           "description": "Components for generating, testing and distributing EBU-TT Live subtitles.",
+          "kind": "repository",
           "title": "EBU-TT Live Interoperability Toolkit",
           "repo_info": {
             "archived": false,
@@ -1944,6 +1820,7 @@
         {
           "children": [],
           "description": "A means for GStreamer pipelines to parse and render EBU-TT-D (TTML) subtitles.",
+          "kind": "repository",
           "title": "GStreamer TTML subtitling package",
           "repo_info": {
             "archived": false,
@@ -1957,6 +1834,7 @@
         {
           "children": [],
           "description": "Modules for converting subtitle formats, incl. EBU STL and EBU-TT files.",
+          "kind": "repository",
           "title": "Subtitling Conversion Framework (SCF)",
           "repo_info": {
             "archived": false,
@@ -1970,6 +1848,7 @@
         {
           "children": [],
           "description": "Informative EBU-TT-D XML Schema to support the implementation of EBU Tech 3380.",
+          "kind": "repository",
           "title": "EBU-TT-D W3C XML Schema",
           "repo_info": {
             "archived": false,
@@ -1979,16 +1858,6 @@
             "repo": "ebu-tt-d-xsd",
             "stars": 1533
           }
-        },
-        {
-          "children": [],
-          "description": "A tool that analyzes video files and produces stand-alone subtitle files.",
-          "title": "CCExtractor"
-        },
-        {
-          "children": [],
-          "description": "An editor for subtitles.",
-          "title": "Subtitle Edit"
         }
       ],
       "title": "Subtitling"
@@ -1999,6 +1868,7 @@
         {
           "children": [],
           "description": "Web-based control surface for ATEM vision mixers with automated camera switching, designed for visualised radio.",
+          "kind": "repository",
           "title": "AutoMix",
           "repo_info": {
             "archived": false,
@@ -2012,6 +1882,7 @@
         {
           "children": [],
           "description": "A JavaScript library for connection and MOS messaging either as MOS device or NRCS.",
+          "kind": "repository",
           "title": "MOS-connection",
           "repo_info": {
             "archived": false,
@@ -2025,6 +1896,7 @@
         {
           "children": [],
           "description": "vMix to EmberPlus gateway. Control vMix from any EmberPlus broadcast controller like Lawo's VSM or EVS's Cerebrum.",
+          "kind": "repository",
           "title": "vMix-EmberPlus",
           "repo_info": {
             "archived": false,
@@ -2034,26 +1906,6 @@
             "repo": "vMix-EmberPlus",
             "stars": 10169
           }
-        },
-        {
-          "children": [],
-          "description": "Travel adaptor for the lighting industry, for interconnecting DMX-512, IP and USB.",
-          "title": "Open Lighting Architecture (OLA)"
-        },
-        {
-          "children": [],
-          "description": "Cross-platform control of DMX or analogue lighting systems (heads, dimmers, etc.).",
-          "title": "Q Light Controller+ (QLC+)"
-        },
-        {
-          "children": [],
-          "description": "Convergent teleprompter software that works with studio teleprompters, tablet teleprompters, webcams, and phones.",
-          "title": "QPrompt Teleprompter App"
-        },
-        {
-          "children": [],
-          "description": "Cross-platform Tally interfacer & tally lights for any camera via phones or low-cost hardware.",
-          "title": "TallyArbiter"
         }
       ],
       "title": "Video Production"
@@ -2070,6 +1922,7 @@
     "original_repository_sha": "deadbeef",
     "enhanced_repository": "enhansome/enhansome-broadcasting",
     "enhanced_repository_description": "enhanced list",
+    "kind": "registry",
     "title": "Awesome Broadcasting with stars"
   }
 }

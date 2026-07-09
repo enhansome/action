@@ -7,7 +7,10 @@ import { unified } from 'unified';
 import { visit } from 'unist-util-visit';
 
 import {
+  formatRequestError,
+  getReadme,
   getRepoInfo,
+  GithubClient,
   makeOctokit,
   parseGitHubUrl,
   RepoInfoDetails,
@@ -45,28 +48,47 @@ export interface SortOptions {
   minLinks: number;
 }
 
+// --- KIND ---
+
+// A node's intrinsic kind: a `registry` is a directory that exists to enable
+// discovery (an awesome-list); a `repository` is a terminal, consumable
+// project. Every emitted node carries exactly one (PLAN.md §2/§5, D6).
+export type Kind = 'registry' | 'repository';
+
 // --- JSON OUTPUT STRUCTURE ---
-interface JsonItem {
-  children: JsonItem[];
-  description: null | string;
-  repo_info?: {
-    archived: boolean;
-    language: null | string;
-    last_commit: null | string;
-    owner: string;
-    repo: string;
-    stars: number;
-  };
+
+// The README-side projection of a repo: the subset of `RepoInfoDetails` that
+// the JSON output exposes. Field names are the *output* names (stars /
+// last_commit), renamed from the API fields (stargazers_count / pushed_at).
+export interface RepoInfo {
+  archived: boolean;
+  language: null | string;
+  last_commit: null | string;
+  owner: string;
+  repo: string;
+  stars: number;
+}
+
+// Shared base: every GitHub node has an intrinsic kind and a title. A section
+// is a category heading, NOT a GitHub node, so `JsonSection` does not extend
+// this and carries no kind (PLAN.md §5, D5).
+interface JsonNode {
+  kind: Kind;
   title: string;
 }
 
-interface JsonMetadata {
+interface JsonItem extends JsonNode {
+  children: JsonItem[];
+  description: null | string;
+  repo_info?: RepoInfo;
+}
+
+interface JsonMetadata extends JsonNode {
   enhanced_repository: null | string;
   enhanced_repository_description: null | string;
   last_updated: string;
   original_repository: string;
   original_repository_sha: null | string;
-  title: string;
 }
 
 interface JsonSection {
@@ -75,50 +97,105 @@ interface JsonSection {
   title: string;
 }
 
-export async function fetchAllRepoInfo(
-  urls: Set<string>,
-  token: string,
-): Promise<Map<string, RepoInfoDetails>> {
-  const repoInfoMap = new Map<string, RepoInfoDetails>();
-  const queue = Array.from(urls);
-  const CONCURRENCY_LIMIT = 10; // Process up to 10 requests in parallel
+export interface TargetData {
+  kindsMap: Map<string, Kind>;
+  repoInfoMap: Map<string, RepoInfoDetails>;
+}
 
-  // One shared client so the throttling plugin can coordinate rate limits
-  // across every lookup instead of per-request.
-  const octokit = makeOctokit(token);
+// Up to this many GitHub targets are processed in parallel. One shared
+// throttled client (see `fetchTargetData`) coordinates rate limits across the
+// whole pool rather than per request.
+const FETCH_CONCURRENCY = 10;
 
-  // A worker pulls a URL from the queue, processes it, and repeats
-  // until the queue is empty.
-  async function worker() {
-    while (queue.length > 0) {
-      const url = queue.shift();
-      if (!url) {
-        continue;
-      }
-
-      const details = parseGitHubUrl(url);
-      if (details) {
-        try {
-          const info = await getRepoInfo(octokit, details.owner, details.repo);
-          if (info) {
-            repoInfoMap.set(url, info);
-          }
-        } catch (error) {
-          // Log errors but don't stop the other workers
-          core.error(`Failed to process URL ${url}: ${error}`);
-        }
-      }
+/**
+ * Runs `task` over every item with at most `limit` invocations in flight. Task
+ * rejections propagate, so a caller that must not abort the batch on a single
+ * failure (e.g. a dead link) wraps its own per-item try/catch.
+ */
+async function forEachConcurrent<T>(
+  items: Iterable<T>,
+  limit: number,
+  task: (item: T) => Promise<void>,
+): Promise<void> {
+  const queue = Array.from(items);
+  async function worker(): Promise<void> {
+    for (let item = queue.shift(); item !== undefined; item = queue.shift()) {
+      await task(item);
     }
   }
+  await Promise.all(Array.from({ length: limit }, () => worker()));
+}
 
-  // Create and start the pool of workers.
-  const workers = Array(CONCURRENCY_LIMIT).fill(null).map(worker);
-  await Promise.all(workers);
+/**
+ * Fetches everything the JSON builder needs about the document's GitHub targets
+ * in one bounded-concurrency pass over a single shared throttled client:
+ *
+ *  - `repo_info` for every URL in `urls` — every github link is badged, so all
+ *    of them need stars/language/etc.
+ *  - `kind` only for URLs in `entryUrls` — the first github link of each list
+ *    item, i.e. the targets that become typed JsonItems. A README (the heaviest
+ *    call) is fetched only for these, never for prose/badge/secondary links.
+ *
+ * Both fetches are independently non-fatal per target (D7): a dead/inaccessible
+ * link is skipped with a warning and the run continues — its item is still
+ * emitted (without repo_info, kind defaulting to 'repository' downstream). Only
+ * the source README fetch (main.ts) can fail the run.
+ */
+export async function fetchTargetData(
+  urls: Set<string>,
+  entryUrls: Set<string>,
+  token: string,
+  minEntries: number,
+): Promise<TargetData> {
+  const repoInfoMap = new Map<string, RepoInfoDetails>();
+  const kindsMap = new Map<string, Kind>();
+
+  // One shared client so the throttling plugin coordinates rate limits across
+  // every request in the pool instead of per call.
+  const octokit = makeOctokit(token);
+
+  await forEachConcurrent(
+    new Set([...urls, ...entryUrls]),
+    FETCH_CONCURRENCY,
+    async url => {
+      const details = parseGitHubUrl(url);
+      if (!details) {
+        return;
+      }
+      if (urls.has(url)) {
+        try {
+          repoInfoMap.set(
+            url,
+            await getRepoInfo(octokit, details.owner, details.repo),
+          );
+        } catch (error) {
+          core.warning(
+            `Skipping repo info for ${url}: ${formatRequestError(error)}`,
+          );
+        }
+      }
+      if (entryUrls.has(url)) {
+        try {
+          const { kind } = await classifyKind(
+            octokit,
+            details.owner,
+            details.repo,
+            minEntries,
+          );
+          kindsMap.set(url, kind);
+        } catch (error) {
+          core.warning(
+            `Skipping kind for ${url}: ${formatRequestError(error)}`,
+          );
+        }
+      }
+    },
+  );
 
   core.debug(
-    `Fetched info for ${repoInfoMap.size} repositories using a concurrency of ${CONCURRENCY_LIMIT}.`,
+    `Fetched repo info for ${repoInfoMap.size} targets and classified ${kindsMap.size} entries (concurrency ${FETCH_CONCURRENCY}).`,
   );
-  return repoInfoMap;
+  return { kindsMap, repoInfoMap };
 }
 
 export async function processMarkdownContent(
@@ -142,11 +219,29 @@ export async function processMarkdownContent(
   const processor = unified().use(remarkParse).use(remarkGfm);
   const tree = processor.parse(contentAfterReplacements);
 
-  // 1. Collect all unique GitHub links from the plain document.
-  const githubUrls = collectGitHubLinks(tree);
+  // The source document is itself a node (D5). Classify it from the pristine
+  // parse — the same oracle applied to each target — *before* processTree sorts
+  // the tree in place, so the source's kind can never drift from how another
+  // mirror would classify this very repo from its raw README.
+  const sourceKind: Kind =
+    countListEntries(tree) >= REGISTRY_MIN_ENTRIES ? 'registry' : 'repository';
 
-  // 2. Fetch all required data in a single parallel batch.
-  const repoInfoMap = await fetchAllRepoInfo(githubUrls, token);
+  // 1. Collect GitHub links: every link is badged and needs repo info; the
+  //    first link of each list item is a typed entry that also needs a kind.
+  const githubUrls = collectGitHubLinks(tree);
+  const entryUrls = collectEntryGitHubUrls(tree);
+
+  // 2. Fetch repo info (all links) + classify each entry's kind (list items
+  //    only) in one bounded-concurrency pass over a shared throttled client.
+  //    Non-fatal per target: a dead link is skipped (warning), its item is
+  //    still emitted (no repo_info, kind defaults to 'repository'), and the run
+  //    succeeds. Only the source README fetch (main.ts) can fail the run.
+  const { kindsMap, repoInfoMap } = await fetchTargetData(
+    githubUrls,
+    entryUrls,
+    token,
+    REGISTRY_MIN_ENTRIES,
+  );
 
   // This single call now handles tree traversal, sorting, and JSON generation.
   // The title derives from the *source* repository (originalRepository), never
@@ -155,7 +250,7 @@ export async function processMarkdownContent(
     sections,
     title: rawTitle,
     titleHeadingIndex,
-  } = processTree(tree, repoInfoMap, sortOptions, originalRepository);
+  } = processTree(tree, repoInfoMap, kindsMap, sortOptions, originalRepository);
 
   // Single source of truth for the document title: brand it once and use the
   // same value for the markdown H1 and metadata.title (parity).
@@ -173,6 +268,9 @@ export async function processMarkdownContent(
       enhanced_repository: (enhancedRepository?.trim() ?? '') || null,
       enhanced_repository_description:
         (enhancedRepositoryDescription?.trim() ?? '') || null,
+      // The source document is itself a node (D5); classified above from the
+      // pristine parse (the same oracle applied to its own README).
+      kind: sourceKind,
       title,
     },
   };
@@ -295,7 +393,6 @@ function findFirstGitHubLink(node: Parent): string | undefined {
   });
   return linkUrl;
 }
-
 // Resolve the GitHub link that represents a list item: prefer a repo link in
 // the item's own paragraph (the project's repo). When there isn't one — e.g. a
 // "LeetCode" / "Spotify" category header whose links live in nested children —
@@ -328,6 +425,83 @@ function findItemGitHubLink(
   });
   return bestUrl;
 }
+
+/**
+ * Counts list items whose subtree contains at least one GitHub link — a link
+ * whose URL `parseGitHubUrl` accepts. Read-only: it neither mutates nor sorts,
+ * so it is safe to run on a tree before/after enhancement.
+ *
+ * This is the oracle's primitive (PLAN.md §4): a target README with at least
+ * `REGISTRY_MIN_ENTRIES` such items classifies as a `registry`, otherwise a
+ * `repository`. Every item is judged independently; an outer item that
+ * contains a nested list is counted once for itself plus once per nested item
+ * that has its own GitHub link.
+ */
+export function countListEntries(tree: Root): number {
+  let count = 0;
+  visit(tree, 'listItem', (item: ListItem) => {
+    // An item counts once iff its subtree contains at least one GitHub link.
+    // Reuses `findFirstGitHubLink` so the "is this a GitHub link?" semantics
+    // stay identical to the rest of the parser.
+    if (findFirstGitHubLink(item)) {
+      count++;
+    }
+  });
+  return count;
+}
+
+/**
+ * The GitHub URL that identifies each list item — the first github link in the
+ * item's subtree (`findFirstGitHubLink`) — for every list item that has one.
+ * This is exactly the set of targets that become typed JsonItems and therefore
+ * need a `kind`, so `fetchTargetData` fetches a README (the heaviest call) only
+ * for these — not for prose, badge, or secondary links.
+ */
+function collectEntryGitHubUrls(tree: Root): Set<string> {
+  const urls = new Set<string>();
+  visit(tree, 'listItem', (item: ListItem) => {
+    const url = findFirstGitHubLink(item);
+    if (url) {
+      urls.add(url);
+    }
+  });
+  return urls;
+}
+
+// Minimum number of GitHub-linked list items a target README must parse to for
+// the target to classify as a `registry` (PLAN.md §4/D2). Calibrated against
+// real READMEs: concrete projects top out at ~17 (chalk), bulk awesome-lists
+// start far higher, so 20 sits just above the project ceiling with margin.
+// Pinned as a constant — not an action input — so the action's emitted kind is
+// trustworthy standalone.
+export const REGISTRY_MIN_ENTRIES = 20;
+
+/**
+ * Classifies a GitHub target as a `registry` or `repository` by reading its
+ * README and counting GitHub-linked list items — the oracle (PLAN.md §4, D1).
+ *
+ * A target is a `registry` iff its README has at least `minEntries` such items,
+ * otherwise a `repository`. README fetch failures propagate (strict mode, D7):
+ * `getReadme` throws and this function does not swallow it.
+ *
+ * @returns The entry count alongside the kind so callers/tests can observe the
+ *   raw signal; only `kind` is emitted in the JSON output (D10).
+ */
+export async function classifyKind(
+  octokit: GithubClient,
+  owner: string,
+  repo: string,
+  minEntries: number,
+): Promise<{ entries: number; kind: Kind }> {
+  const readme = await getReadme(octokit, owner, repo);
+  const tree = unified().use(remarkParse).use(remarkGfm).parse(readme);
+  const entries = countListEntries(tree);
+  return {
+    entries,
+    kind: entries >= minEntries ? 'registry' : 'repository',
+  };
+}
+
 function fixRelativeLinks(tree: Root, relativeLinkPrefix: string) {
   if (!relativeLinkPrefix) {
     return;
@@ -407,6 +581,7 @@ function compareByRepoInfo(
 function processListRecursively(
   listNode: List,
   repoInfoMap: Map<string, RepoInfoDetails>,
+  kindsMap: Map<string, Kind>,
   sortOptions: SortOptions,
   isNested = false,
 ): JsonItem[] {
@@ -418,9 +593,11 @@ function processListRecursively(
   }
 
   // Zip each list item with its parsed JSON and resolved repo info so one sort
-  // orders both the rendered AST and the emitted JSON identically.
+  // orders both the rendered AST and the emitted JSON identically. `json` is
+  // null for non-GitHub entries (D9): they keep their AST slot so the enhanced
+  // markdown still renders them, but are dropped from the JSON output.
   const entries: {
-    json: JsonItem;
+    json: JsonItem | null;
     node: ListItem;
     repoInfo: null | RepoInfoDetails;
   }[] = [];
@@ -433,7 +610,13 @@ function processListRecursively(
       (child): child is List => child.type === 'list',
     );
     const childrenJson = nestedLists.flatMap(nestedList =>
-      processListRecursively(nestedList, repoInfoMap, sortOptions, true),
+      processListRecursively(
+        nestedList,
+        repoInfoMap,
+        kindsMap,
+        sortOptions,
+        true,
+      ),
     );
 
     let title = '';
@@ -460,20 +643,35 @@ function processListRecursively(
       }
     }
 
-    const jsonData: JsonItem = {
-      children: childrenJson,
-      description: description || null,
-      title,
-    };
-    if (repoInfo && githubUrl) {
-      jsonData.repo_info = {
-        archived: repoInfo.archived,
-        language: repoInfo.language,
-        last_commit: repoInfo.pushed_at,
-        owner: repoInfo.owner,
-        repo: repoInfo.repo,
-        stars: repoInfo.stargazers_count,
+    // D9: only GitHub-linked entries enter the typed JSON graph — every emitted
+    // JsonItem must be a GitHub node so it can carry a required kind (D6).
+    // Non-GitHub entries (books/papers/courses) and link-less notes are kept in
+    // the enhanced markdown (every item still drives `entries` for sorting/
+    // badges below) but omitted from `jsonData`.
+    // TODO(future): preserve non-GitHub entries in a separate shape (PLAN.md §11).
+    let jsonData: JsonItem | null = null;
+    if (githubUrl) {
+      // A missing kind means the target README was unreadable (dead link) and
+      // `fetchTargetData` skipped it. Default to 'repository' so the node still
+      // carries a real kind; the webapp membership backstop recovers any
+      // registry we mistyped (PLAN.md §5). Never let a dead link drop an item.
+      const kind = kindsMap.get(githubUrl) ?? 'repository';
+      jsonData = {
+        children: childrenJson,
+        description: description || null,
+        kind,
+        title,
       };
+      if (repoInfo) {
+        jsonData.repo_info = {
+          archived: repoInfo.archived,
+          language: repoInfo.language,
+          last_commit: repoInfo.pushed_at,
+          owner: repoInfo.owner,
+          repo: repoInfo.repo,
+          stars: repoInfo.stargazers_count,
+        };
+      }
     }
 
     entries.push({ json: jsonData, node: itemNode, repoInfo });
@@ -486,9 +684,12 @@ function processListRecursively(
   }
 
   // A single sort feeds both outputs — the AST (rendered markdown) and the JSON
-  // items — so they can never drift out of order.
+  // items — so they can never drift out of order. Non-GitHub items keep their
+  // AST slot (rendered markdown) but are dropped from the JSON (D9).
   listNode.children = entries.map(entry => entry.node);
-  return entries.map(entry => entry.json);
+  return entries
+    .map(entry => entry.json)
+    .filter((json): json is JsonItem => json !== null);
 }
 
 // Common section headers that should NOT be used as document titles
@@ -621,6 +822,7 @@ function applyBrandingToTree(
 function processTree(
   tree: Root,
   repoInfoMap: Map<string, RepoInfoDetails>,
+  kindsMap: Map<string, Kind>,
   sortOptions: SortOptions,
   originalRepository?: string,
 ): { sections: JsonSection[]; title: string; titleHeadingIndex: number } {
@@ -672,7 +874,12 @@ function processTree(
         }
       } else if (node.type === 'list') {
         // A list is the main content of a section. The `isNested` flag defaults to false here.
-        const items = processListRecursively(node, repoInfoMap, sortOptions);
+        const items = processListRecursively(
+          node,
+          repoInfoMap,
+          kindsMap,
+          sortOptions,
+        );
         // Only add the section if the list was valid and produced items
         if (items.length > 0) {
           currentSection.items = items;
@@ -684,7 +891,7 @@ function processTree(
       // No active section (a list before the first heading, or a second
       // consecutive list after the reset above). It isn't part of any JSON
       // section, but still sort its AST so the rendered markdown matches.
-      processListRecursively(node, repoInfoMap, sortOptions);
+      processListRecursively(node, repoInfoMap, kindsMap, sortOptions);
     }
   }
 

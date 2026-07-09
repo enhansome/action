@@ -6,6 +6,7 @@
         {
           "children": [],
           "description": "Faster reimplementation of Whisper using CTranslate2.",
+          "kind": "repository",
           "title": "faster-whisper",
           "repo_info": {
             "archived": false,
@@ -19,6 +20,7 @@
         {
           "children": [],
           "description": "Whisper running on OpenVINO.",
+          "kind": "repository",
           "title": "whisper-openvino",
           "repo_info": {
             "archived": false,
@@ -32,6 +34,7 @@
         {
           "children": [],
           "description": "Adds fast automatic speaker recognition with word-level timestamps and speaker diarization.",
+          "kind": "repository",
           "title": "WhisperX",
           "repo_info": {
             "archived": false,
@@ -47,6 +50,7 @@
             {
               "children": [],
               "description": null,
+              "kind": "repository",
               "title": "Bindings for many languages",
               "repo_info": {
                 "archived": true,
@@ -59,6 +63,7 @@
             }
           ],
           "description": "Port of Whisper in C++.",
+          "kind": "repository",
           "title": "Whisper.cpp",
           "repo_info": {
             "archived": true,
@@ -72,6 +77,7 @@
         {
           "children": [],
           "description": "Whisper running on TensorFlow Lite.",
+          "kind": "repository",
           "title": "whisper.tflite",
           "repo_info": {
             "archived": false,
@@ -85,6 +91,7 @@
         {
           "children": [],
           "description": "JAX implementation of Whisper for up to 70x speed-up on TPU.",
+          "kind": "repository",
           "title": "Whisper JAX",
           "repo_info": {
             "archived": false,
@@ -98,6 +105,7 @@
         {
           "children": [],
           "description": "Whisper that can recognize non-speech audio events in addition to speech.",
+          "kind": "repository",
           "title": "Whisper-AT",
           "repo_info": {
             "archived": false,
@@ -111,6 +119,7 @@
         {
           "children": [],
           "description": "Adds word-level timestamps and confidence scores.",
+          "kind": "repository",
           "title": "whisper-timestamped",
           "repo_info": {
             "archived": false,
@@ -120,11 +129,6 @@
             "repo": "whisper-timestamped",
             "stars": 1288
           }
-        },
-        {
-          "children": [],
-          "description": "Various Whisper variants on Hugging Faces.",
-          "title": "Whisper variants"
         }
       ],
       "title": "Model variants"
@@ -135,6 +139,7 @@
         {
           "children": [],
           "description": "Android app for transcription and translation. (FOSS)",
+          "kind": "repository",
           "title": "Whisper",
           "repo_info": {
             "archived": false,
@@ -148,6 +153,7 @@
         {
           "children": [],
           "description": "Dictation and transcription macOS app. (FOSS)",
+          "kind": "repository",
           "title": "VoiceInk",
           "repo_info": {
             "archived": false,
@@ -161,6 +167,7 @@
         {
           "children": [],
           "description": "AI voice dictation for Mac. (FOSS)",
+          "kind": "repository",
           "title": "Ito AI",
           "repo_info": {
             "archived": false,
@@ -174,6 +181,7 @@
         {
           "children": [],
           "description": "Audio transcription Linux app.",
+          "kind": "repository",
           "title": "Speech Note",
           "repo_info": {
             "archived": false,
@@ -187,6 +195,7 @@
         {
           "children": [],
           "description": "Dictation app for macOS. (FOSS)",
+          "kind": "repository",
           "title": "OpenSuperWhisper",
           "repo_info": {
             "archived": false,
@@ -200,6 +209,7 @@
         {
           "children": [],
           "description": "Local speech-to-text transcription for macOS and Windows with system-wide dictation.",
+          "kind": "repository",
           "title": "TypeWhisper",
           "repo_info": {
             "archived": false,
@@ -213,6 +223,7 @@
         {
           "children": [],
           "description": "Audio transcription and translation macOS app.",
+          "kind": "repository",
           "title": "Buzz",
           "repo_info": {
             "archived": false,
@@ -222,66 +233,6 @@
             "repo": "Buzz",
             "stars": 3053
           }
-        },
-        {
-          "children": [],
-          "description": "Audio transcription iOS and macOS app.",
-          "title": "Aiko"
-        },
-        {
-          "children": [],
-          "description": "Audio transcription macOS app. (Freemium)",
-          "title": "MacWhisper"
-        },
-        {
-          "children": [],
-          "description": "Audio transcription iOS app. (Freemium)",
-          "title": "Whisper Memos"
-        },
-        {
-          "children": [],
-          "description": "Audio journal iOS app.",
-          "title": "FourYou"
-        },
-        {
-          "children": [],
-          "description": "Audio transcription macOS app.",
-          "title": "Jojo Transcribe"
-        },
-        {
-          "children": [],
-          "description": "Audio transcription macOS app. (Freemium · Electron)",
-          "title": "WhisperScript"
-        },
-        {
-          "children": [],
-          "description": "Audio/video management macOS app.",
-          "title": "Audio Podium"
-        },
-        {
-          "children": [],
-          "description": "Global audio transcription macOS menu bar app.",
-          "title": "superwhisper"
-        },
-        {
-          "children": [],
-          "description": "Dictation macOS app powered by OpenAI API.",
-          "title": "FridayGPT"
-        },
-        {
-          "children": [],
-          "description": "Windows and macOS app for audio transcription and speaker diarization. (Freemium)",
-          "title": "EasyWhisper"
-        },
-        {
-          "children": [],
-          "description": "Real-time audio transcription on macOS and Windows. (Freemium · Electron)",
-          "title": "Audio Note"
-        },
-        {
-          "children": [],
-          "description": "24/7 local screen and audio recording with AI search. (FOSS)",
-          "title": "Screenpipe"
         }
       ],
       "title": "Apps"
@@ -297,6 +248,7 @@
         {
           "children": [],
           "description": "Subtitle generation.",
+          "kind": "repository",
           "title": "Subs AI",
           "repo_info": {
             "archived": false,
@@ -310,6 +262,7 @@
         {
           "children": [],
           "description": "Laravel app to transcribe and translate audio files.",
+          "kind": "repository",
           "title": "writeout.ai",
           "repo_info": {
             "archived": false,
@@ -323,6 +276,7 @@
         {
           "children": [],
           "description": "GUI and API for Whisper.",
+          "kind": "repository",
           "title": "WaaS",
           "repo_info": {
             "archived": false,
@@ -336,6 +290,7 @@
         {
           "children": [],
           "description": "Transcriptions, summary and more for meetings and any browser tab. (Chrome app)",
+          "kind": "repository",
           "title": "Meeper",
           "repo_info": {
             "archived": false,
@@ -355,6 +310,7 @@
         {
           "children": [],
           "description": "Automatic speech recognition with speaker diarization.",
+          "kind": "repository",
           "title": "whisper-diarization",
           "repo_info": {
             "archived": false,
@@ -368,6 +324,7 @@
         {
           "children": [],
           "description": "Generate captions for videos.",
+          "kind": "repository",
           "title": "phonix",
           "repo_info": {
             "archived": false,
@@ -381,6 +338,7 @@
         {
           "children": [],
           "description": "Whisper command-line tool based on CTranslate2, compatible with the original.",
+          "kind": "repository",
           "title": "whisper-ctranslate2",
           "repo_info": {
             "archived": false,
@@ -394,6 +352,7 @@
         {
           "children": [],
           "description": "Standalone Windows executable for Whisper and Faster Whisper.",
+          "kind": "repository",
           "title": "whisper-standalone-win",
           "repo_info": {
             "archived": false,
@@ -407,6 +366,7 @@
         {
           "children": [],
           "description": "Achieve transcription speeds near 30x real-time with several optimizations.",
+          "kind": "repository",
           "title": "insanely-fast-whisper-cli",
           "repo_info": {
             "archived": false,
@@ -420,6 +380,7 @@
         {
           "children": [],
           "description": "On-device speech-to-text CLI using faster-whisper with automatic clipboard copy.",
+          "kind": "repository",
           "title": "hns",
           "repo_info": {
             "archived": false,
@@ -433,6 +394,7 @@
         {
           "children": [],
           "description": "YouTube subtitle generation.",
+          "kind": "repository",
           "title": "yt-whisper",
           "repo_info": {
             "archived": false,
@@ -452,6 +414,7 @@
         {
           "children": [],
           "description": "Running on Colab.",
+          "kind": "repository",
           "title": "YouTube Video Transcription",
           "repo_info": {
             "archived": false,
@@ -465,6 +428,7 @@
         {
           "children": [],
           "description": "Whisper demo running on Monster API. (Source)",
+          "kind": "repository",
           "title": "Monster API",
           "repo_info": {
             "archived": false,
@@ -474,16 +438,6 @@
             "repo": "whisper-playground",
             "stars": 26236
           }
-        },
-        {
-          "children": [],
-          "description": "Whisper demo running on Hugging Faces. (Source)",
-          "title": "Hugging Faces"
-        },
-        {
-          "children": [],
-          "description": "Whisper demo by Pluja. (Source)",
-          "title": "Web Whisper"
         }
       ],
       "title": "Playgrounds"
@@ -500,6 +454,7 @@
     "original_repository_sha": "deadbeef",
     "enhanced_repository": "enhansome/enhansome-whisper",
     "enhanced_repository_description": "enhanced list",
+    "kind": "registry",
     "title": "Awesome whisper with stars"
   }
 }

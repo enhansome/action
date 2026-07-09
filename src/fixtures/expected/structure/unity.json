@@ -6,6 +6,7 @@
         {
           "children": [],
           "description": "An importer for Tiled maps.",
+          "kind": "repository",
           "title": "UnityTiled",
           "repo_info": {
             "archived": false,
@@ -19,6 +20,7 @@
         {
           "children": [],
           "description": "A simple pixel perfect camera with scaling options for 2D Games.",
+          "kind": "repository",
           "title": "Pixel Camera 2D",
           "repo_info": {
             "archived": false,
@@ -28,31 +30,6 @@
             "repo": "PixelCamera2D",
             "stars": 16404
           }
-        },
-        {
-          "children": [],
-          "description": "Scripts for creating any type of 2D ropes in the editor or during runtime.",
-          "title": "2D Rope System (Paid)"
-        },
-        {
-          "children": [],
-          "description": "Quickly create handcrafted 2D landscapes and levels.",
-          "title": "Ferr2D Terrain Tool (Paid)"
-        },
-        {
-          "children": [],
-          "description": "A skeletal animation editor with a Unity library.",
-          "title": "Spine (Paid)"
-        },
-        {
-          "children": [],
-          "description": "Takes your Tiled files and creates Unity prefabs from them that are easily placed into your Unity scene. Complex collision is supported through Unity’s PolygonCollider2D class.",
-          "title": "Tiled2Unity"
-        },
-        {
-          "children": [],
-          "description": "Advanced skeletal animation editor with support for both per-object and skinned mesh animation with an integrated in-editor skinning tool.",
-          "title": "Unity Anima2D"
         }
       ],
       "title": "2D"
@@ -63,6 +40,7 @@
         {
           "children": [],
           "description": "Makes it easy to recognize gestures and other touch input.",
+          "kind": "repository",
           "title": "TouchKit",
           "repo_info": {
             "archived": false,
@@ -76,6 +54,7 @@
         {
           "children": [],
           "description": "Makes handling complex gesture interactions on any touch surface much easier.",
+          "kind": "repository",
           "title": "TouchScript",
           "repo_info": {
             "archived": false,
@@ -89,6 +68,7 @@
         {
           "children": [],
           "description": "An input manager that tames makes handler cross-platform. controller input easy.",
+          "kind": "repository",
           "title": "InControl",
           "repo_info": {
             "archived": true,
@@ -102,6 +82,7 @@
         {
           "children": [],
           "description": "Bind game inputs to methods via code or using the inspector to add event driven input handling to your project.",
+          "kind": "repository",
           "title": "InputBinder",
           "repo_info": {
             "archived": false,
@@ -121,6 +102,7 @@
         {
           "children": [],
           "description": "UniRx (Reactive Extensions for Unity) is a reimplementation of the .NET Reactive Extensions. Rx cures the \"asynchronous blues\" without async/await.",
+          "kind": "repository",
           "title": "UniRx",
           "repo_info": {
             "archived": false,
@@ -134,6 +116,7 @@
         {
           "children": [],
           "description": "In-game debug console that displays output from .",
+          "kind": "repository",
           "title": "Consolation",
           "repo_info": {
             "archived": false,
@@ -147,6 +130,7 @@
         {
           "children": [],
           "description": "Collection of miscellaneous open source scripts and helpers for Unity 5.0.",
+          "kind": "repository",
           "title": "UnityToolbag",
           "repo_info": {
             "archived": false,
@@ -160,6 +144,7 @@
         {
           "children": [],
           "description": "Editor extension to bookmark and later recall scene views.",
+          "kind": "repository",
           "title": "Scene View Bookmarks",
           "repo_info": {
             "archived": false,
@@ -169,26 +154,6 @@
             "repo": "scene-view-bookmarks",
             "stars": 12043
           }
-        },
-        {
-          "children": [],
-          "description": "The new GitHub for Unity extension brings the GitHub workflow and more to Unity, providing support for large files with Git LFS and file locking.",
-          "title": "GitHub for Unity"
-        },
-        {
-          "children": [],
-          "description": "Easily group objects together",
-          "title": "Grouping Tool"
-        },
-        {
-          "children": [],
-          "description": "Makes it easy to manage positions of assets in the scene with easy to use snapping tools and many more features to improve the scene creation workflow.",
-          "title": "SnazzyGrid (Paid)"
-        },
-        {
-          "children": [],
-          "description": "Editor extension for merging scenes and prefabs, also integrates with VCS.",
-          "title": "UniMerge (Paid)"
         }
       ],
       "title": "Utilities"
@@ -200,6 +165,7 @@
     "original_repository_sha": "deadbeef",
     "enhanced_repository": "enhansome/enhansome-unity",
     "enhanced_repository_description": "enhanced list",
+    "kind": "repository",
     "title": "Awesome Unity with stars"
   }
 }

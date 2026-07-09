@@ -6,6 +6,7 @@
         {
           "children": [],
           "description": "Create front end projects from templates, add dependencies, and automate the resulting projects.",
+          "kind": "repository",
           "title": "volo",
           "repo_info": {
             "archived": false,
@@ -19,6 +20,7 @@
         {
           "children": [],
           "description": "The no-library library.",
+          "kind": "repository",
           "title": "Ender",
           "repo_info": {
             "archived": false,
@@ -32,6 +34,7 @@
         {
           "children": [],
           "description": "Frictionless browser package management.",
+          "kind": "repository",
           "title": "jspm",
           "repo_info": {
             "archived": false,
@@ -45,6 +48,7 @@
         {
           "children": [],
           "description": "A package manager using a browser-focused and RequireJS compatible repository.",
+          "kind": "repository",
           "title": "jam",
           "repo_info": {
             "archived": false,
@@ -58,6 +62,7 @@
         {
           "children": [],
           "description": "Brand new static package manager.",
+          "kind": "repository",
           "title": "spm",
           "repo_info": {
             "archived": false,
@@ -71,6 +76,7 @@
         {
           "children": [],
           "description": "Next-generation package manager that blends the best ideas from Component, Browserify and Go to make organizing and writing front-end code quick and painless.",
+          "kind": "repository",
           "title": "Duo",
           "repo_info": {
             "archived": false,
@@ -84,6 +90,7 @@
         {
           "children": [],
           "description": "A package manager for the web.",
+          "kind": "repository",
           "title": "Bower",
           "repo_info": {
             "archived": false,
@@ -97,6 +104,7 @@
         {
           "children": [],
           "description": "Client package management for building better web applications.",
+          "kind": "repository",
           "title": "component",
           "repo_info": {
             "archived": true,
@@ -106,26 +114,6 @@
             "repo": "component",
             "stars": 4184
           }
-        },
-        {
-          "children": [],
-          "description": "npm is the package manager for JavaScript.",
-          "title": "npm"
-        },
-        {
-          "children": [],
-          "description": "Fast, reliable, and secure dependency management.",
-          "title": "yarn"
-        },
-        {
-          "children": [],
-          "description": "Fast, disk space efficient package manager.",
-          "title": "pnpm"
-        },
-        {
-          "children": [],
-          "description": "Bun is a fast JavaScript all-in-one toolkit.",
-          "title": "bun"
         }
       ],
       "title": "Package Managers"
@@ -136,6 +124,7 @@
         {
           "children": [],
           "description": "The only script in your HEAD.",
+          "kind": "repository",
           "title": "HeadJS",
           "repo_info": {
             "archived": false,
@@ -149,6 +138,7 @@
         {
           "children": [],
           "description": "AMD, CJS & ES6 spec-compliant module loader.",
+          "kind": "repository",
           "title": "systemjs",
           "repo_info": {
             "archived": false,
@@ -162,6 +152,7 @@
         {
           "children": [],
           "description": "A file and module loader for JavaScript.",
+          "kind": "repository",
           "title": "RequireJS",
           "repo_info": {
             "archived": false,
@@ -175,6 +166,7 @@
         {
           "children": [],
           "description": "Lightweight JavaScript module system.",
+          "kind": "repository",
           "title": "modulejs",
           "repo_info": {
             "archived": false,
@@ -188,6 +180,7 @@
         {
           "children": [],
           "description": "Tiny, dependency-free async JavaScript and CSS loader.",
+          "kind": "repository",
           "title": "lazyload",
           "repo_info": {
             "archived": false,
@@ -201,6 +194,7 @@
         {
           "children": [],
           "description": "Module loader browser first, support lazy define and AMD.",
+          "kind": "repository",
           "title": "ESL",
           "repo_info": {
             "archived": false,
@@ -214,6 +208,7 @@
         {
           "children": [],
           "description": "A Module Loader for the Web.",
+          "kind": "repository",
           "title": "SeaJS",
           "repo_info": {
             "archived": true,
@@ -227,6 +222,7 @@
         {
           "children": [],
           "description": "Asynchronous JavaScript loader and dependency manager.",
+          "kind": "repository",
           "title": "script.js",
           "repo_info": {
             "archived": false,
@@ -240,6 +236,7 @@
         {
           "children": [],
           "description": "Module loader based on AMD.",
+          "kind": "repository",
           "title": "LodJS",
           "repo_info": {
             "archived": false,
@@ -253,6 +250,7 @@
         {
           "children": [],
           "description": "Browser-side require() the node.js way.",
+          "kind": "repository",
           "title": "browserify",
           "repo_info": {
             "archived": false,
@@ -272,6 +270,7 @@
         {
           "children": [],
           "description": "Fast front-end web app build tool with simple declarative config.",
+          "kind": "repository",
           "title": "Brunch",
           "repo_info": {
             "archived": false,
@@ -285,6 +284,7 @@
         {
           "children": [],
           "description": "Packs CommonJs/AMD modules for the browser.",
+          "kind": "repository",
           "title": "webpack",
           "repo_info": {
             "archived": false,
@@ -298,6 +298,7 @@
         {
           "children": [],
           "description": "Blazing fast, zero configuration web application bundler.",
+          "kind": "repository",
           "title": "Parcel",
           "repo_info": {
             "archived": false,
@@ -311,6 +312,7 @@
         {
           "children": [],
           "description": "Zero-configuration bundler for tiny modules.",
+          "kind": "repository",
           "title": "Microbundle",
           "repo_info": {
             "archived": false,
@@ -324,6 +326,7 @@
         {
           "children": [],
           "description": "Next-generation ES6 module bundler.",
+          "kind": "repository",
           "title": "Rollup",
           "repo_info": {
             "archived": false,
@@ -337,6 +340,7 @@
         {
           "children": [],
           "description": "A bundler that does it right",
+          "kind": "repository",
           "title": "FuseBox",
           "repo_info": {
             "archived": false,
@@ -346,21 +350,6 @@
             "repo": "fuse-box",
             "stars": 2969
           }
-        },
-        {
-          "children": [],
-          "description": "A lightning-fast frontend build tool, designed for the modern web.",
-          "title": "Snowpack"
-        },
-        {
-          "children": [],
-          "description": "A quick online npm package size checker.",
-          "title": "bundle"
-        },
-        {
-          "children": [],
-          "description": "Next Generation Frontend Tooling.",
-          "title": "Vite"
         }
       ],
       "title": "Bundlers"
@@ -371,6 +360,7 @@
         {
           "children": [],
           "description": "runtime type checking for JavaScript functions using Haskell-alike Hindley Milner type signatures.",
+          "kind": "repository",
           "title": "Hindley Milner Definitions",
           "repo_info": {
             "archived": false,
@@ -384,6 +374,7 @@
         {
           "children": [],
           "description": "the JavaScript Type Linter with a bias on type inference.",
+          "kind": "repository",
           "title": "TypL",
           "repo_info": {
             "archived": true,
@@ -397,6 +388,7 @@
         {
           "children": [],
           "description": "TypeScript-first schema validation with built-in static type inference.",
+          "kind": "repository",
           "title": "Zod",
           "repo_info": {
             "archived": false,
@@ -410,6 +402,7 @@
         {
           "children": [],
           "description": "JavaScript schema builder and validator.",
+          "kind": "repository",
           "title": "Yup",
           "repo_info": {
             "archived": false,
@@ -419,21 +412,6 @@
             "repo": "yup",
             "stars": 35410
           }
-        },
-        {
-          "children": [],
-          "description": "A typed superset of JavaScript that compiles to plain JavaScript.",
-          "title": "TypeScript"
-        },
-        {
-          "children": [],
-          "description": "A static type checker for JavaScript from Facebook.",
-          "title": "Flow.js"
-        },
-        {
-          "children": [],
-          "description": "A static type checker for JavaScript with a bias on type inference an strong type system.",
-          "title": "Hegel"
         }
       ],
       "title": "Type Checkers"
@@ -449,6 +427,7 @@
         {
           "children": [],
           "description": "Protractor is an end-to-end test framework for AngularJS applications.",
+          "kind": "repository",
           "title": "Protractor",
           "repo_info": {
             "archived": false,
@@ -462,6 +441,7 @@
         {
           "children": [],
           "description": "DOM-less simple JavaScript testing framework.",
+          "kind": "repository",
           "title": "jasmine",
           "repo_info": {
             "archived": false,
@@ -475,6 +455,7 @@
         {
           "children": [],
           "description": "Node & Browser test runner based on Tape and Browserify",
+          "kind": "repository",
           "title": "prova",
           "repo_info": {
             "archived": false,
@@ -488,6 +469,7 @@
         {
           "children": [],
           "description": "Automated browser testing for the modern web development stack.",
+          "kind": "repository",
           "title": "TestCafe",
           "repo_info": {
             "archived": false,
@@ -501,6 +483,7 @@
         {
           "children": [],
           "description": "An easy-to-use JavaScript Unit Testing framework.",
+          "kind": "repository",
           "title": "qunit",
           "repo_info": {
             "archived": false,
@@ -514,6 +497,7 @@
         {
           "children": [],
           "description": "Painless JavaScript Unit Testing.",
+          "kind": "repository",
           "title": "jest",
           "repo_info": {
             "archived": false,
@@ -527,6 +511,7 @@
         {
           "children": [],
           "description": "Tap-producing test harness for node and browsers.",
+          "kind": "repository",
           "title": "tape",
           "repo_info": {
             "archived": false,
@@ -540,6 +525,7 @@
         {
           "children": [],
           "description": "Automated cross browser functional testing with JavaScript",
+          "kind": "repository",
           "title": "DalekJS",
           "repo_info": {
             "archived": false,
@@ -553,6 +539,7 @@
         {
           "children": [],
           "description": "Simple, flexible, fun JavaScript test framework for node.js & the browser.",
+          "kind": "repository",
           "title": "mocha",
           "repo_info": {
             "archived": false,
@@ -566,6 +553,7 @@
         {
           "children": [],
           "description": "🚀 Futuristic JavaScript test runner",
+          "kind": "repository",
           "title": "ava",
           "repo_info": {
             "archived": false,
@@ -575,21 +563,6 @@
             "repo": "ava",
             "stars": 2984
           }
-        },
-        {
-          "children": [],
-          "description": "Complete end-to-end testing framework for anything that runs in a browser and beyond.",
-          "title": "Cypress"
-        },
-        {
-          "children": [],
-          "description": "Next-gen browser and mobile automation test framework for Node.js",
-          "title": "WebdriverI/O"
-        },
-        {
-          "children": [],
-          "description": "A unit-testing framework for backends working with inversion of control and dependency injection",
-          "title": "Suites"
         }
       ],
       "title": "Frameworks"
@@ -600,6 +573,7 @@
         {
           "children": [],
           "description": "BDD / TDD assertion framework for node.js and the browser that can be paired with any testing framework.",
+          "kind": "repository",
           "title": "chai",
           "repo_info": {
             "archived": false,
@@ -613,6 +587,7 @@
         {
           "children": [],
           "description": "In-browser visual network mocking tool, supports fetch/XHR interception.",
+          "kind": "repository",
           "title": "Pocket Mocker",
           "repo_info": {
             "archived": false,
@@ -626,6 +601,7 @@
         {
           "children": [],
           "description": "Simple and complete React DOM testing utilities that encourage good testing practices.",
+          "kind": "repository",
           "title": "react testing library",
           "repo_info": {
             "archived": false,
@@ -639,6 +615,7 @@
         {
           "children": [],
           "description": "Stub nodejs's require.",
+          "kind": "repository",
           "title": "proxyquire",
           "repo_info": {
             "archived": true,
@@ -652,6 +629,7 @@
         {
           "children": [],
           "description": "A popular HTTP assertion library for testing REST APIs, often used with other testing frameworks like Mocha or Jest",
+          "kind": "repository",
           "title": "Supertest",
           "repo_info": {
             "archived": false,
@@ -665,6 +643,7 @@
         {
           "children": [],
           "description": "Minimalistic BDD-style assertions for Node.JS and the browser.",
+          "kind": "repository",
           "title": "expect.js",
           "repo_info": {
             "archived": false,
@@ -678,6 +657,7 @@
         {
           "children": [],
           "description": "Test spies, stubs, and mocks for JavaScript.",
+          "kind": "repository",
           "title": "Sinon.JS",
           "repo_info": {
             "archived": false,
@@ -687,11 +667,6 @@
             "repo": "sinon",
             "stars": 9732
           }
-        },
-        {
-          "children": [],
-          "description": "Enzyme is a JavaScript Testing utility for React that makes it easier to assert, manipulate, and traverse your React Components' output.",
-          "title": "Enzyme"
         }
       ],
       "title": "Assertion"
@@ -702,6 +677,7 @@
         {
           "children": [],
           "description": "A simple code coverage library for JavaScript. Designed to be easy to install and use, for both browser and nodejs.",
+          "kind": "repository",
           "title": "blanket",
           "repo_info": {
             "archived": false,
@@ -715,6 +691,7 @@
         {
           "children": [],
           "description": "Yet another JS code coverage tool.",
+          "kind": "repository",
           "title": "istanbul",
           "repo_info": {
             "archived": false,
@@ -728,6 +705,7 @@
         {
           "children": [],
           "description": "JSCover is a tool that measures code coverage for JavaScript programs.",
+          "kind": "repository",
           "title": "JSCover",
           "repo_info": {
             "archived": false,
@@ -747,6 +725,7 @@
         {
           "children": [],
           "description": "Navigation scripting & testing utility for PhantomJS and SlimerJS.",
+          "kind": "repository",
           "title": "casperjs",
           "repo_info": {
             "archived": false,
@@ -760,6 +739,7 @@
         {
           "children": [],
           "description": "Next-gen WebDriver test automation framework for Node.js.",
+          "kind": "repository",
           "title": "webdriverio",
           "repo_info": {
             "archived": false,
@@ -773,6 +753,7 @@
         {
           "children": [],
           "description": "UI automated testing framework based on node.js and selenium webdriver.",
+          "kind": "repository",
           "title": "nightwatch",
           "repo_info": {
             "archived": false,
@@ -786,6 +767,7 @@
         {
           "children": [],
           "description": "A next-generation code testing stack for JavaScript.",
+          "kind": "repository",
           "title": "intern",
           "repo_info": {
             "archived": false,
@@ -799,6 +781,7 @@
         {
           "children": [],
           "description": "A Node.js library with a simple API to automate Chromium based browsers.",
+          "kind": "repository",
           "title": "taiko",
           "repo_info": {
             "archived": false,
@@ -812,6 +795,7 @@
         {
           "children": [],
           "description": "Spectacular Test Runner for JavaScript.",
+          "kind": "repository",
           "title": "karma",
           "repo_info": {
             "archived": false,
@@ -825,6 +809,7 @@
         {
           "children": [],
           "description": "Node.js library to automate Chromium, Firefox and WebKit with a single API.",
+          "kind": "repository",
           "title": "Playwright",
           "repo_info": {
             "archived": false,
@@ -838,6 +823,7 @@
         {
           "children": [],
           "description": "Insanely fast, full-stack, headless browser testing using node.js.",
+          "kind": "repository",
           "title": "zombie",
           "repo_info": {
             "archived": true,
@@ -851,6 +837,7 @@
         {
           "children": [],
           "description": "Scriptable Headless WebKit.",
+          "kind": "repository",
           "title": "phantomjs",
           "repo_info": {
             "archived": false,
@@ -864,6 +851,7 @@
         {
           "children": [],
           "description": "A PhantomJS-like tool running Gecko.",
+          "kind": "repository",
           "title": "slimerjs",
           "repo_info": {
             "archived": false,
@@ -877,6 +865,7 @@
         {
           "children": [],
           "description": "A simple and stable cross-browser testing tool.",
+          "kind": "repository",
           "title": "totoro",
           "repo_info": {
             "archived": false,
@@ -890,6 +879,7 @@
         {
           "children": [],
           "description": "Headless Chrome Node.js API by official Google Chrome team.",
+          "kind": "repository",
           "title": "puppeteer",
           "repo_info": {
             "archived": false,
@@ -909,6 +899,7 @@
         {
           "children": [],
           "description": "Pre-evaluate your front end javascript code at build-time",
+          "kind": "repository",
           "title": "Pre-evaluate code at buildtime",
           "repo_info": {
             "archived": false,
@@ -922,6 +913,7 @@
         {
           "children": [],
           "description": "Opinionated, no-configuration style guide, style checker, and formatter",
+          "kind": "repository",
           "title": "JavaScript Standard Style",
           "repo_info": {
             "archived": false,
@@ -935,6 +927,7 @@
         {
           "children": [],
           "description": "JavaScript Code Style checker.",
+          "kind": "repository",
           "title": "jscs",
           "repo_info": {
             "archived": false,
@@ -948,6 +941,7 @@
         {
           "children": [],
           "description": "A fully pluggable tool for identifying and reporting on patterns in JavaScript.",
+          "kind": "repository",
           "title": "ESLint",
           "repo_info": {
             "archived": false,
@@ -961,6 +955,7 @@
         {
           "children": [],
           "description": "Prevents bad git commit, git push and more.",
+          "kind": "repository",
           "title": "husky",
           "repo_info": {
             "archived": false,
@@ -974,6 +969,7 @@
         {
           "children": [],
           "description": "Detect copy-pasted and structurally similar code.",
+          "kind": "repository",
           "title": "jsinspect",
           "repo_info": {
             "archived": false,
@@ -987,6 +983,7 @@
         {
           "children": [],
           "description": "For formatting, searching, and rewriting JavaScript.",
+          "kind": "repository",
           "title": "jsfmt",
           "repo_info": {
             "archived": false,
@@ -1000,6 +997,7 @@
         {
           "children": [],
           "description": "Prettier is an opinionated code formatter.",
+          "kind": "repository",
           "title": "prettier",
           "repo_info": {
             "archived": true,
@@ -1013,6 +1011,7 @@
         {
           "children": [],
           "description": "JSHint is a tool that helps to detect errors and potential problems in your JavaScript code.",
+          "kind": "repository",
           "title": "JSHint",
           "repo_info": {
             "archived": false,
@@ -1026,6 +1025,7 @@
         {
           "children": [],
           "description": "High-standards, strict & opinionated code quality tool, aiming to keep only good parts of the language.",
+          "kind": "repository",
           "title": "JSLint",
           "repo_info": {
             "archived": false,
@@ -1039,6 +1039,7 @@
         {
           "children": [],
           "description": "Npm cli and library to format JS code.",
+          "kind": "repository",
           "title": "JS-Beautifier",
           "repo_info": {
             "archived": false,
@@ -1052,6 +1053,7 @@
         {
           "children": [],
           "description": "Magic number detection for JavaScript.",
+          "kind": "repository",
           "title": "buddy.js",
           "repo_info": {
             "archived": false,
@@ -1071,6 +1073,7 @@
         {
           "children": [],
           "description": "3kb library for tiny web apps.",
+          "kind": "repository",
           "title": "Lucia",
           "repo_info": {
             "archived": false,
@@ -1084,6 +1087,7 @@
         {
           "children": [],
           "description": "A modular framework for visual programming allows to create node based editor in browser.",
+          "kind": "repository",
           "title": "Rete.js",
           "repo_info": {
             "archived": false,
@@ -1097,6 +1101,7 @@
         {
           "children": [],
           "description": "Strengthening your Backbone.",
+          "kind": "repository",
           "title": "thorax",
           "repo_info": {
             "archived": false,
@@ -1110,6 +1115,7 @@
         {
           "children": [],
           "description": "Free and Open source Web Builder Framework. Next generation tool for building templates without coding.",
+          "kind": "repository",
           "title": "GrapesJS",
           "repo_info": {
             "archived": false,
@@ -1123,6 +1129,7 @@
         {
           "children": [],
           "description": "Svelte is a new way to build web applications. It's a compiler that takes your declarative components and converts them into efficient JavaScript that surgically updates the DOM.",
+          "kind": "repository",
           "title": "svelte",
           "repo_info": {
             "archived": false,
@@ -1136,6 +1143,7 @@
         {
           "children": [],
           "description": "A frontend framework for chillout-mode development 🥤. JSX components on generators, fast mobx-like state management and exclusive cssx style system.",
+          "kind": "repository",
           "title": "Whatsup",
           "repo_info": {
             "archived": false,
@@ -1149,6 +1157,7 @@
         {
           "children": [],
           "description": "A minimal JavaScript library for crafting user interfaces.",
+          "kind": "repository",
           "title": "espresso.js",
           "repo_info": {
             "archived": false,
@@ -1162,6 +1171,7 @@
         {
           "children": [],
           "description": "Knockout makes it easier to create rich, responsive UIs with JavaScript.",
+          "kind": "repository",
           "title": "knockout",
           "repo_info": {
             "archived": false,
@@ -1175,6 +1185,7 @@
         {
           "children": [],
           "description": "A JavaScript framework for creating ambitious web applications.",
+          "kind": "repository",
           "title": "ember.js",
           "repo_info": {
             "archived": false,
@@ -1188,6 +1199,7 @@
         {
           "children": [],
           "description": "A graph node engine and editor similar to PD or UDK Blueprints, comes with its own editor in HTML5 Canvas2D.",
+          "kind": "repository",
           "title": "litegraph.js",
           "repo_info": {
             "archived": false,
@@ -1201,6 +1213,7 @@
         {
           "children": [],
           "description": "Simple, lightweight, persistent two-way databinding.",
+          "kind": "repository",
           "title": "way.js",
           "repo_info": {
             "archived": false,
@@ -1214,6 +1227,7 @@
         {
           "children": [],
           "description": "Lightweight and powerful data binding + templating solution.",
+          "kind": "repository",
           "title": "rivets",
           "repo_info": {
             "archived": false,
@@ -1229,6 +1243,7 @@
             {
               "children": [],
               "description": "A collection of awesome derby components",
+              "kind": "repository",
               "title": "derby-awesome",
               "repo_info": {
                 "archived": false,
@@ -1241,6 +1256,7 @@
             }
           ],
           "description": "MVC framework making it easy to write realtime, collaborative applications that run in both Node.js and browsers.",
+          "kind": "repository",
           "title": "derby",
           "repo_info": {
             "archived": false,
@@ -1254,6 +1270,7 @@
         {
           "children": [],
           "description": "Functional stateless React components with Shadow DOM support.",
+          "kind": "repository",
           "title": "Keo",
           "repo_info": {
             "archived": false,
@@ -1267,6 +1284,7 @@
         {
           "children": [],
           "description": "Intuitive, fast & composable MVVM for building interactive interfaces.",
+          "kind": "repository",
           "title": "vue",
           "repo_info": {
             "archived": false,
@@ -1280,6 +1298,7 @@
         {
           "children": [],
           "description": "A library that adds a visual code editor to web and mobile apps by Google.",
+          "kind": "repository",
           "title": "Blockly",
           "repo_info": {
             "archived": true,
@@ -1293,6 +1312,7 @@
         {
           "children": [],
           "description": "A tiny foundation for building reactive views.",
+          "kind": "repository",
           "title": "ripple",
           "repo_info": {
             "archived": false,
@@ -1306,6 +1326,7 @@
         {
           "children": [],
           "description": "Build truly native cross-platform iOS and Android apps with JavaScript.",
+          "kind": "repository",
           "title": "nativescript",
           "repo_info": {
             "archived": false,
@@ -1319,6 +1340,7 @@
         {
           "children": [],
           "description": "A CRUD framework for full-stack TypeScript.",
+          "kind": "repository",
           "title": "Remult",
           "repo_info": {
             "archived": false,
@@ -1332,6 +1354,7 @@
         {
           "children": [],
           "description": "A minimalist real-time JavaScript framework for tomorrow's apps.",
+          "kind": "repository",
           "title": "feathers",
           "repo_info": {
             "archived": false,
@@ -1345,6 +1368,7 @@
         {
           "children": [],
           "description": "A framework for building native apps with React.",
+          "kind": "repository",
           "title": "react-native",
           "repo_info": {
             "archived": false,
@@ -1358,6 +1382,7 @@
         {
           "children": [],
           "description": "This allow you to create data flows easily and quickly.",
+          "kind": "repository",
           "title": "Drawflow",
           "repo_info": {
             "archived": false,
@@ -1371,6 +1396,7 @@
         {
           "children": [],
           "description": "React-like library, but with very small size.",
+          "kind": "repository",
           "title": "riot",
           "repo_info": {
             "archived": false,
@@ -1384,6 +1410,7 @@
         {
           "children": [],
           "description": "Lightweight MVC library for building JavaScript applications.",
+          "kind": "repository",
           "title": "spine",
           "repo_info": {
             "archived": false,
@@ -1397,6 +1424,7 @@
         {
           "children": [],
           "description": "Blazing fast Apple TV application development using pure JavaScript.",
+          "kind": "repository",
           "title": "atvjs",
           "repo_info": {
             "archived": false,
@@ -1410,6 +1438,7 @@
         {
           "children": [],
           "description": "Angular is a development platform for building mobile and desktop web applications using Typescript/JavaScript and other languages.",
+          "kind": "repository",
           "title": "angular",
           "repo_info": {
             "archived": false,
@@ -1423,6 +1452,7 @@
         {
           "children": [],
           "description": "1kb JavaScript library for building frontend applications.",
+          "kind": "repository",
           "title": "hyperapp",
           "repo_info": {
             "archived": false,
@@ -1436,6 +1466,7 @@
         {
           "children": [],
           "description": "jsblocks is better MV-ish framework.",
+          "kind": "repository",
           "title": "jsblocks",
           "repo_info": {
             "archived": false,
@@ -1449,6 +1480,7 @@
         {
           "children": [],
           "description": "An ultra-simple, database-everywhere, data-on-the-wire, pure-javascript web framework.",
+          "kind": "repository",
           "title": "meteor",
           "repo_info": {
             "archived": false,
@@ -1462,6 +1494,7 @@
         {
           "children": [],
           "description": "Fast 3kb React alternative with the same ES6 API. Components & Virtual DOM.",
+          "kind": "repository",
           "title": "preact",
           "repo_info": {
             "archived": false,
@@ -1475,6 +1508,7 @@
         {
           "children": [],
           "description": "Mithril is a client-side MVC framework (Light-weight, Robust, Fast).",
+          "kind": "repository",
           "title": "mithril.js",
           "repo_info": {
             "archived": false,
@@ -1488,6 +1522,7 @@
         {
           "children": [],
           "description": "HTML enhanced for web apps. (deprecated)",
+          "kind": "repository",
           "title": "angular.js",
           "repo_info": {
             "archived": false,
@@ -1501,6 +1536,7 @@
         {
           "children": [],
           "description": "offers you the reactive and declarative nature of big frameworks like Vue or React at a much lower cost.",
+          "kind": "repository",
           "title": "Alpine.js",
           "repo_info": {
             "archived": false,
@@ -1514,6 +1550,7 @@
         {
           "children": [],
           "description": "<1kb compiler-focused virtual DOM. It's fast!",
+          "kind": "repository",
           "title": "Million",
           "repo_info": {
             "archived": false,
@@ -1527,6 +1564,7 @@
         {
           "children": [],
           "description": "🔥 An extremely fast, React-like JavaScript library for building modern user interfaces.",
+          "kind": "repository",
           "title": "inferno",
           "repo_info": {
             "archived": false,
@@ -1540,6 +1578,7 @@
         {
           "children": [],
           "description": "A composite application library for Backbone.js that aims to simplify the construction of large scale JavaScript applications.",
+          "kind": "repository",
           "title": "marionette",
           "repo_info": {
             "archived": false,
@@ -1553,6 +1592,7 @@
         {
           "children": [],
           "description": "Next-generation DOM manipulation.",
+          "kind": "repository",
           "title": "ractive",
           "repo_info": {
             "archived": false,
@@ -1566,6 +1606,7 @@
         {
           "children": [],
           "description": "An architecture for JavaScript applications using the Backbone.js library.",
+          "kind": "repository",
           "title": "chaplin",
           "repo_info": {
             "archived": false,
@@ -1579,6 +1620,7 @@
         {
           "children": [],
           "description": "Can do JS, better, faster, easier.",
+          "kind": "repository",
           "title": "canjs",
           "repo_info": {
             "archived": false,
@@ -1592,6 +1634,7 @@
         {
           "children": [],
           "description": "Give your JS App some Backbone with Models, Views, Collections, and Events.",
+          "kind": "repository",
           "title": "backbone",
           "repo_info": {
             "archived": true,
@@ -1605,6 +1648,7 @@
         {
           "children": [],
           "description": "The Node.js Framework highly focused on developer ergonomics, stability and confidence.",
+          "kind": "repository",
           "title": "Adonis",
           "repo_info": {
             "archived": false,
@@ -1614,21 +1658,6 @@
             "repo": "core",
             "stars": 801
           }
-        },
-        {
-          "children": [],
-          "description": "A JavaScript client framework for mobile, desktop and web.",
-          "title": "aurelia"
-        },
-        {
-          "children": [],
-          "description": "A library for building user interfaces. It's declarative, efficient, and extremely flexible. Works with a Virtual DOM.",
-          "title": "react"
-        },
-        {
-          "children": [],
-          "description": "Elegant and all-inclusive Node.JS framework for building web applications (TypeScript).",
-          "title": "FoalTS"
         }
       ],
       "title": "MVC Frameworks and Libraries"
@@ -1639,6 +1668,7 @@
         {
           "children": [],
           "description": "CMS with content editing and essential services.",
+          "kind": "repository",
           "title": "Apostrophe",
           "repo_info": {
             "archived": true,
@@ -1652,6 +1682,7 @@
         {
           "children": [],
           "description": "The Javascript CMS",
+          "kind": "repository",
           "title": "Factor",
           "repo_info": {
             "archived": false,
@@ -1665,6 +1696,7 @@
         {
           "children": [],
           "description": "reactive CMS, real-time architecture and design.",
+          "kind": "repository",
           "title": "Reaction Commerce",
           "repo_info": {
             "archived": false,
@@ -1678,6 +1710,7 @@
         {
           "children": [],
           "description": "framework for real time apps, sites or blogs.",
+          "kind": "repository",
           "title": "We.js",
           "repo_info": {
             "archived": false,
@@ -1691,6 +1724,7 @@
         {
           "children": [],
           "description": "CMS for CoffeeScript lovers.",
+          "kind": "repository",
           "title": "Nodizecms",
           "repo_info": {
             "archived": false,
@@ -1704,6 +1738,7 @@
         {
           "children": [],
           "description": "CMS platform with social features.",
+          "kind": "repository",
           "title": "Hatch.js",
           "repo_info": {
             "archived": false,
@@ -1717,6 +1752,7 @@
         {
           "children": [],
           "description": "CMS and blogging platform.",
+          "kind": "repository",
           "title": "PencilBlue",
           "repo_info": {
             "archived": false,
@@ -1730,6 +1766,7 @@
         {
           "children": [],
           "description": "Open source Node.js Headless CMS to easily build customisable APIs.",
+          "kind": "repository",
           "title": "Strapi",
           "repo_info": {
             "archived": false,
@@ -1743,6 +1780,7 @@
         {
           "children": [],
           "description": "CMS with WSYWYG editor.",
+          "kind": "repository",
           "title": "Cody",
           "repo_info": {
             "archived": false,
@@ -1756,6 +1794,7 @@
         {
           "children": [],
           "description": "fast and minimalist CMS based on Node.js.",
+          "kind": "repository",
           "title": "TaracotJS",
           "repo_info": {
             "archived": false,
@@ -1769,6 +1808,7 @@
         {
           "children": [],
           "description": "simple, powerful publishing platform.",
+          "kind": "repository",
           "title": "Ghost",
           "repo_info": {
             "archived": false,
@@ -1782,6 +1822,7 @@
         {
           "children": [],
           "description": "powerful CMS and web app framework.",
+          "kind": "repository",
           "title": "KeystoneJS",
           "repo_info": {
             "archived": false,
@@ -1801,6 +1842,7 @@
         {
           "children": [],
           "description": "The fastest + concise JavaScript template engine for nodejs and browsers.",
+          "kind": "repository",
           "title": "doT",
           "repo_info": {
             "archived": false,
@@ -1814,6 +1856,7 @@
         {
           "children": [],
           "description": "Robust, elegant, feature rich template engine for nodejs. (formerly known as Jade)",
+          "kind": "repository",
           "title": "Pug",
           "repo_info": {
             "archived": false,
@@ -1827,6 +1870,7 @@
         {
           "children": [],
           "description": "A compiler for the Mustache templating language.",
+          "kind": "repository",
           "title": "hogan.js",
           "repo_info": {
             "archived": false,
@@ -1840,6 +1884,7 @@
         {
           "children": [],
           "description": "Effective JavaScript templating.",
+          "kind": "repository",
           "title": "EJS",
           "repo_info": {
             "archived": false,
@@ -1853,6 +1898,7 @@
         {
           "children": [],
           "description": "A fast, lightweight, HTML-based templating engine for Node.js and the browser with async, streaming, custom tags and CommonJS modules as compiled output.",
+          "kind": "repository",
           "title": "marko",
           "repo_info": {
             "archived": false,
@@ -1866,6 +1912,7 @@
         {
           "children": [],
           "description": "A tiny JavaScript templating framework in ~400 bytes gzipped.",
+          "kind": "repository",
           "title": "t.js",
           "repo_info": {
             "archived": false,
@@ -1879,6 +1926,7 @@
         {
           "children": [],
           "description": "An extension to the Mustache templating language.",
+          "kind": "repository",
           "title": "handlebars.js",
           "repo_info": {
             "archived": false,
@@ -1892,6 +1940,7 @@
         {
           "children": [],
           "description": "(Archived) A simple, powerful, and extendable Node.js and browser-based JavaScript template engine.",
+          "kind": "repository",
           "title": "swig",
           "repo_info": {
             "archived": false,
@@ -1905,6 +1954,7 @@
         {
           "children": [],
           "description": "eXtensible Template Engine lib for node and the browser",
+          "kind": "repository",
           "title": "xtemplate",
           "repo_info": {
             "archived": false,
@@ -1918,6 +1968,7 @@
         {
           "children": [],
           "description": "Asynchronous templates for the browser and node.js.",
+          "kind": "repository",
           "title": "dustjs",
           "repo_info": {
             "archived": false,
@@ -1931,6 +1982,7 @@
         {
           "children": [],
           "description": "Minimal templating with {{mustaches}} in JavaScript.",
+          "kind": "repository",
           "title": "mustache.js",
           "repo_info": {
             "archived": false,
@@ -1944,6 +1996,7 @@
         {
           "children": [],
           "description": "< 1KB lightweight, fast & powerful JavaScript templating engine with zero dependencies.",
+          "kind": "repository",
           "title": "JavaScript-Templates",
           "repo_info": {
             "archived": false,
@@ -1957,6 +2010,7 @@
         {
           "children": [],
           "description": "Embedded CoffeeScript templates.",
+          "kind": "repository",
           "title": "eco",
           "repo_info": {
             "archived": false,
@@ -1966,16 +2020,6 @@
             "repo": "eco",
             "stars": 12640
           }
-        },
-        {
-          "children": [],
-          "description": "A rich and powerful templating language for JavaScript from Mozilla.",
-          "title": "nunjucks"
-        },
-        {
-          "children": [],
-          "description": "Server-oriented customizable templating for JavaScript.",
-          "title": "hmpl"
         }
       ],
       "title": "Templating Engines"
@@ -1986,6 +2030,7 @@
         {
           "children": [],
           "description": "Dynamic HTML5 visualization.",
+          "kind": "repository",
           "title": "envisionjs",
           "repo_info": {
             "archived": false,
@@ -1999,6 +2044,7 @@
         {
           "children": [],
           "description": "JavaScript Library for HTML5 canvas based heatmaps.",
+          "kind": "repository",
           "title": "heatmap.js",
           "repo_info": {
             "archived": false,
@@ -2012,6 +2058,7 @@
         {
           "children": [],
           "description": "Simple HTML5 Charts using the <canvas> tag.",
+          "kind": "repository",
           "title": "Chart.js",
           "repo_info": {
             "archived": false,
@@ -2025,6 +2072,7 @@
         {
           "children": [],
           "description": "A visualization grammar.",
+          "kind": "repository",
           "title": "vega",
           "repo_info": {
             "archived": false,
@@ -2038,6 +2086,7 @@
         {
           "children": [],
           "description": "A graph visualization engine.",
+          "kind": "repository",
           "title": "G6",
           "repo_info": {
             "archived": true,
@@ -2051,6 +2100,7 @@
         {
           "children": [],
           "description": "A fully featured graph theory library.",
+          "kind": "repository",
           "title": "Cytoscape.js",
           "repo_info": {
             "archived": false,
@@ -2064,6 +2114,7 @@
         {
           "children": [],
           "description": "JavaScript toolkit for creating interactive real-time graphs.",
+          "kind": "repository",
           "title": "rickshaw",
           "repo_info": {
             "archived": false,
@@ -2077,6 +2128,7 @@
         {
           "children": [],
           "description": "Simple responsive charts.",
+          "kind": "repository",
           "title": "chartist-js",
           "repo_info": {
             "archived": false,
@@ -2090,6 +2142,7 @@
         {
           "children": [],
           "description": "The Swiss Army Knife of Vector Graphics Scripting – Scriptographer ported to JavaScript and the browser, using HTML5 Canvas.",
+          "kind": "repository",
           "title": "paper.js",
           "repo_info": {
             "archived": false,
@@ -2103,6 +2156,7 @@
         {
           "children": [],
           "description": "Create word clouds in JavaScript.",
+          "kind": "repository",
           "title": "d3-cloud",
           "repo_info": {
             "archived": false,
@@ -2116,6 +2170,7 @@
         {
           "children": [],
           "description": "An interactive and responsive charting library. Based on the grammar of graphics.",
+          "kind": "repository",
           "title": "G2Plot",
           "repo_info": {
             "archived": false,
@@ -2129,6 +2184,7 @@
         {
           "children": [],
           "description": "A lightweight JavaScript graphics library with the intuitive API, based on SVG/VML technology.",
+          "kind": "repository",
           "title": "GraphicsJS",
           "repo_info": {
             "archived": false,
@@ -2142,6 +2198,7 @@
         {
           "children": [],
           "description": "A JavaScript library dedicated to graph drawing.",
+          "kind": "repository",
           "title": "sigma.js",
           "repo_info": {
             "archived": true,
@@ -2155,6 +2212,7 @@
         {
           "children": [],
           "description": "A plugin for the jQuery JavaScript library to generate small sparkline charts directly in the browser.",
+          "kind": "repository",
           "title": "jquery.sparkline",
           "repo_info": {
             "archived": false,
@@ -2168,6 +2226,7 @@
         {
           "children": [],
           "description": "A JavaScript visualization library for HTML and SVG.",
+          "kind": "repository",
           "title": "d3",
           "repo_info": {
             "archived": false,
@@ -2181,6 +2240,7 @@
         {
           "children": [],
           "description": "JavaScript 3D library.",
+          "kind": "repository",
           "title": "three.js",
           "repo_info": {
             "archived": true,
@@ -2194,6 +2254,7 @@
         {
           "children": [],
           "description": "Pretty time-series line graphs.",
+          "kind": "repository",
           "title": "morris.js",
           "repo_info": {
             "archived": false,
@@ -2207,6 +2268,7 @@
         {
           "children": [],
           "description": "Attractive JavaScript charts for jQuery.",
+          "kind": "repository",
           "title": "flot",
           "repo_info": {
             "archived": false,
@@ -2220,6 +2282,7 @@
         {
           "children": [],
           "description": "GitHub-inspired simple and modern SVG charts for the web with zero dependencies.",
+          "kind": "repository",
           "title": "Frappe Charts",
           "repo_info": {
             "archived": false,
@@ -2233,6 +2296,7 @@
         {
           "children": [],
           "description": "A highly interactive data-driven visualization grammar for statistical charts.",
+          "kind": "repository",
           "title": "G2",
           "repo_info": {
             "archived": false,
@@ -2246,6 +2310,7 @@
         {
           "children": [],
           "description": "Low poly style background generator with d3.js.",
+          "kind": "repository",
           "title": "trianglify",
           "repo_info": {
             "archived": false,
@@ -2259,6 +2324,7 @@
         {
           "children": [],
           "description": "A general purpose real-time charting library.",
+          "kind": "repository",
           "title": "epoch",
           "repo_info": {
             "archived": false,
@@ -2272,6 +2338,7 @@
         {
           "children": [],
           "description": "A next-generation declarative infographic visualization engine.",
+          "kind": "repository",
           "title": "Infographic",
           "repo_info": {
             "archived": false,
@@ -2285,6 +2352,7 @@
         {
           "children": [],
           "description": "A simple, interactive, modern gantt chart library for the web.",
+          "kind": "repository",
           "title": "Frappe Gantt",
           "repo_info": {
             "archived": false,
@@ -2298,6 +2366,7 @@
         {
           "children": [],
           "description": "Multi-Dimensional charting built to work natively with crossfilter rendered with d3.js",
+          "kind": "repository",
           "title": "dc.js",
           "repo_info": {
             "archived": false,
@@ -2311,6 +2380,7 @@
         {
           "children": [],
           "description": "Charts for Raphaël.",
+          "kind": "repository",
           "title": "g.raphael",
           "repo_info": {
             "archived": true,
@@ -2324,6 +2394,7 @@
         {
           "children": [],
           "description": "Library for animated data visualizations and data stories.",
+          "kind": "repository",
           "title": "vizzu",
           "repo_info": {
             "archived": false,
@@ -2337,6 +2408,7 @@
         {
           "children": [],
           "description": "A library optimized for concise, principled data graphics and layouts.",
+          "kind": "repository",
           "title": "metrics-graphics",
           "repo_info": {
             "archived": false,
@@ -2350,6 +2422,7 @@
         {
           "children": [],
           "description": "Diagramming library that enables interactive graph and charting applications to be quickly created that run natively in any major browser that is supported by its vendor.",
+          "kind": "repository",
           "title": "mxGraph",
           "repo_info": {
             "archived": false,
@@ -2363,6 +2436,7 @@
         {
           "children": [],
           "description": "A friendly reusable charts DSL for D3.",
+          "kind": "repository",
           "title": "d4",
           "repo_info": {
             "archived": false,
@@ -2376,6 +2450,7 @@
         {
           "children": [],
           "description": "A lightweight library for manipulating and animating SVG.",
+          "kind": "repository",
           "title": "svg.js",
           "repo_info": {
             "archived": false,
@@ -2389,6 +2464,7 @@
         {
           "children": [],
           "description": "Redefined chart library built with React and D3.",
+          "kind": "repository",
           "title": "recharts",
           "repo_info": {
             "archived": false,
@@ -2402,6 +2478,7 @@
         {
           "children": [],
           "description": "A D3 plugin for visualizing time series.",
+          "kind": "repository",
           "title": "cubism",
           "repo_info": {
             "archived": false,
@@ -2415,6 +2492,7 @@
         {
           "children": [],
           "description": "Enterprise Charts.",
+          "kind": "repository",
           "title": "echarts",
           "repo_info": {
             "archived": false,
@@ -2428,6 +2506,7 @@
         {
           "children": [],
           "description": "JavaScript Vector Library.",
+          "kind": "repository",
           "title": "raphael",
           "repo_info": {
             "archived": false,
@@ -2441,6 +2520,7 @@
         {
           "children": [],
           "description": "Diagramming library to create static diagrams or fully interactive diagramming tools.",
+          "kind": "repository",
           "title": "jointjs",
           "repo_info": {
             "archived": false,
@@ -2454,6 +2534,7 @@
         {
           "children": [],
           "description": "A framework for building 3D games with HTML 5 and WebGL.",
+          "kind": "repository",
           "title": "BabylonJS",
           "repo_info": {
             "archived": false,
@@ -2467,6 +2548,7 @@
         {
           "children": [],
           "description": "Progressive bar, line and pie charts.",
+          "kind": "repository",
           "title": "peity",
           "repo_info": {
             "archived": false,
@@ -2480,6 +2562,7 @@
         {
           "children": [],
           "description": "D3-based reusable chart library.",
+          "kind": "repository",
           "title": "c3",
           "repo_info": {
             "archived": false,
@@ -2493,6 +2576,7 @@
         {
           "children": [],
           "description": "Build re-usable charts and chart components for d3.js.",
+          "kind": "repository",
           "title": "nvd3",
           "repo_info": {
             "archived": false,
@@ -2506,6 +2590,7 @@
         {
           "children": [],
           "description": "A graph visualization library using web workers and jQuery.",
+          "kind": "repository",
           "title": "arbor",
           "repo_info": {
             "archived": false,
@@ -2519,6 +2604,7 @@
         {
           "children": [],
           "description": "JavaScript Canvas Library, SVG-to-Canvas (& canvas-to-SVG) Parser.",
+          "kind": "repository",
           "title": "fabric.js",
           "repo_info": {
             "archived": false,
@@ -2532,6 +2618,7 @@
         {
           "children": [],
           "description": "A renderer agnostic two-dimensional drawing api for the web.",
+          "kind": "repository",
           "title": "two.js",
           "repo_info": {
             "archived": false,
@@ -2541,21 +2628,6 @@
             "repo": "two.js",
             "stars": 1343
           }
-        },
-        {
-          "children": [],
-          "description": "Multiple Libraries for dynamic, browser-based data visualization.",
-          "title": "visjs"
-        },
-        {
-          "children": [],
-          "description": "Easy charts for business analytics powered by d3.",
-          "title": "dimple.js"
-        },
-        {
-          "children": [],
-          "description": "library for arranging your HTML5 documents and diagrams using constraint-based optimization techniques",
-          "title": "cola.js"
         }
       ],
       "title": "Data Visualization"
@@ -2566,6 +2638,7 @@
         {
           "children": [],
           "description": "JavaScript library for simple HTML5 & CSS3 time sheets.",
+          "kind": "repository",
           "title": "timesheet.js",
           "repo_info": {
             "archived": false,
@@ -2579,6 +2652,7 @@
         {
           "children": [],
           "description": "A Storytelling Timeline built in JavaScript.",
+          "kind": "repository",
           "title": "TimelineJS v3",
           "repo_info": {
             "archived": false,
@@ -2598,6 +2672,7 @@
         {
           "children": [],
           "description": "RevoGrid is a fast, responsive excel like data grid library for modern web applications.",
+          "kind": "repository",
           "title": "RevoGrid",
           "repo_info": {
             "archived": false,
@@ -2611,6 +2686,7 @@
         {
           "children": [],
           "description": "Jspreadsheet is a lightweight vanilla javascript plugin to create amazing web-based interactive tables and spreadsheets compatible with other spreadsheet software.",
+          "kind": "repository",
           "title": "Jspreadsheet CE",
           "repo_info": {
             "archived": false,
@@ -2624,6 +2700,7 @@
         {
           "children": [],
           "description": "Frappe DataTable is a simple, modern and interactive datatable library for displaying tabular data.",
+          "kind": "repository",
           "title": "Frappe Datatable",
           "repo_info": {
             "archived": false,
@@ -2637,6 +2714,7 @@
         {
           "children": [],
           "description": "Handsontable is a JavaScript/HTML5 Spreadsheet Library for Developers",
+          "kind": "repository",
           "title": "HANDSONTABLE",
           "repo_info": {
             "archived": false,
@@ -2650,6 +2728,7 @@
         {
           "children": [],
           "description": "Luckysheet is an online spreadsheet like excel that is powerful, simple to configure, and completely open source.",
+          "kind": "repository",
           "title": "Luckysheet",
           "repo_info": {
             "archived": false,
@@ -2669,6 +2748,7 @@
         {
           "children": [],
           "description": "The JavaScript Rich Text editor.",
+          "kind": "repository",
           "title": "TinyMCE",
           "repo_info": {
             "archived": false,
@@ -2682,6 +2762,7 @@
         {
           "children": [],
           "description": "An embeddable JavaScript Markdown editor with split fullscreen editing, live previewing, automatic draft saving, offline support, and more.",
+          "kind": "repository",
           "title": "EpicEditor",
           "repo_info": {
             "archived": false,
@@ -2695,6 +2776,7 @@
         {
           "children": [],
           "description": "Open source rich text editor based on HTML5 and the progressive-enhancement approach. Uses a sophisticated security concept and aims to generate fully valid HTML5 markup by preventing unmaintainable tag soups and inline styles.",
+          "kind": "repository",
           "title": "wysihtml5",
           "repo_info": {
             "archived": false,
@@ -2708,6 +2790,7 @@
         {
           "children": [],
           "description": "A cross browser rich text editor with an API.",
+          "kind": "repository",
           "title": "quill",
           "repo_info": {
             "archived": false,
@@ -2721,6 +2804,7 @@
         {
           "children": [],
           "description": "Raptor, an HTML5 WYSIWYG content editor!",
+          "kind": "repository",
           "title": "raptor-editor",
           "repo_info": {
             "archived": false,
@@ -2734,6 +2818,7 @@
         {
           "children": [],
           "description": "Ace (Ajax.org Cloud9 Editor).",
+          "kind": "repository",
           "title": "ace",
           "repo_info": {
             "archived": false,
@@ -2747,6 +2832,7 @@
         {
           "children": [],
           "description": "ECMAScript parsing infrastructure for multipurpose analysis.",
+          "kind": "repository",
           "title": "esprima",
           "repo_info": {
             "archived": false,
@@ -2760,6 +2846,7 @@
         {
           "children": [],
           "description": "A web-based tool to view, edit and format JSON.",
+          "kind": "repository",
           "title": "jsoneditor",
           "repo_info": {
             "archived": false,
@@ -2773,6 +2860,7 @@
         {
           "children": [],
           "description": "A markdown editor. still on development.",
+          "kind": "repository",
           "title": "editor",
           "repo_info": {
             "archived": false,
@@ -2786,6 +2874,7 @@
         {
           "children": [],
           "description": "A lightweight and amazing WYSIWYG JavaScript editor.",
+          "kind": "repository",
           "title": "Trumbowyg",
           "repo_info": {
             "archived": false,
@@ -2799,6 +2888,7 @@
         {
           "children": [],
           "description": "In-browser code editor.",
+          "kind": "repository",
           "title": "CodeMirror",
           "repo_info": {
             "archived": false,
@@ -2812,6 +2902,7 @@
         {
           "children": [],
           "description": "Simple, beautiful wysiwyg editor",
+          "kind": "repository",
           "title": "bootstrap-wysihtml5",
           "repo_info": {
             "archived": false,
@@ -2825,6 +2916,7 @@
         {
           "children": [],
           "description": "A rich text editor for everyday writing. By Basecamp.",
+          "kind": "repository",
           "title": "trix",
           "repo_info": {
             "archived": false,
@@ -2838,6 +2930,7 @@
         {
           "children": [],
           "description": "enjoy live editing (+markdown).",
+          "kind": "repository",
           "title": "pen",
           "repo_info": {
             "archived": false,
@@ -2851,6 +2944,7 @@
         {
           "children": [],
           "description": "Popline is an HTML5 Rich-Text-Editor Toolbar.",
+          "kind": "repository",
           "title": "popline",
           "repo_info": {
             "archived": false,
@@ -2864,6 +2958,7 @@
         {
           "children": [],
           "description": "A simple, clean and elegant text editor. Inspired by the awesomeness of Medium.",
+          "kind": "repository",
           "title": "jquery-notebook",
           "repo_info": {
             "archived": false,
@@ -2877,6 +2972,7 @@
         {
           "children": [],
           "description": "A React framework for building text editors.",
+          "kind": "repository",
           "title": "Draft.js",
           "repo_info": {
             "archived": false,
@@ -2890,6 +2986,7 @@
         {
           "children": [],
           "description": "JavaScript port of Vim with a persistent .",
+          "kind": "repository",
           "title": "vim.js",
           "repo_info": {
             "archived": false,
@@ -2903,6 +3000,7 @@
         {
           "children": [],
           "description": "Tiny bootstrap-compatible WYSIWYG rich text editor.",
+          "kind": "repository",
           "title": "bootstrap-wysiwyg",
           "repo_info": {
             "archived": false,
@@ -2916,6 +3014,7 @@
         {
           "children": [],
           "description": "HTML5 rich text editor.",
+          "kind": "repository",
           "title": "Squire",
           "repo_info": {
             "archived": false,
@@ -2929,6 +3028,7 @@
         {
           "children": [],
           "description": "A visual drag-and-drop low-code form editor",
+          "kind": "repository",
           "title": "Everright-formEditor",
           "repo_info": {
             "archived": true,
@@ -2942,6 +3042,7 @@
         {
           "children": [],
           "description": "The best web text editor for everyone.",
+          "kind": "repository",
           "title": "ckeditor-releases",
           "repo_info": {
             "archived": false,
@@ -2955,6 +3056,7 @@
         {
           "children": [],
           "description": "Medium.com WYSIWYG editor clone.",
+          "kind": "repository",
           "title": "medium-editor",
           "repo_info": {
             "archived": false,
@@ -2968,6 +3070,7 @@
         {
           "children": [],
           "description": "Super simple WYSIWYG editor.",
+          "kind": "repository",
           "title": "Summernote",
           "repo_info": {
             "archived": false,
@@ -2987,6 +3090,7 @@
         {
           "children": [],
           "description": "is a good documentation generator for JavaScript.",
+          "kind": "repository",
           "title": "ESDoc",
           "repo_info": {
             "archived": false,
@@ -3000,6 +3104,7 @@
         {
           "children": [],
           "description": "is a visual tool for learning and documenting a codebase by putting breadcrumbs in source code.",
+          "kind": "repository",
           "title": "codecrumbs",
           "repo_info": {
             "archived": false,
@@ -3013,6 +3118,7 @@
         {
           "children": [],
           "description": "is a documentation viewer based on markdown files.",
+          "kind": "repository",
           "title": "Beautiful docs",
           "repo_info": {
             "archived": false,
@@ -3026,6 +3132,7 @@
         {
           "children": [],
           "description": "is a JavaScript documentation generator written with node. Dox no longer generates an opinionated structure or style for your docs, it simply gives you a JSON representation, allowing you to use markdown and JSDoc-style tags.",
+          "kind": "repository",
           "title": "dox",
           "repo_info": {
             "archived": false,
@@ -3039,6 +3146,7 @@
         {
           "children": [],
           "description": "is a JSDoc3 to Markdown documentation generator.",
+          "kind": "repository",
           "title": "jsdox",
           "repo_info": {
             "archived": true,
@@ -3052,6 +3160,7 @@
         {
           "children": [],
           "description": "API documentation generator made for Sencha JavaScript frameworks, but can be used for other frameworks too.",
+          "kind": "repository",
           "title": "jsduck",
           "repo_info": {
             "archived": false,
@@ -3065,6 +3174,7 @@
         {
           "children": [],
           "description": "builds manuals. It converts simple, human readable textfiles to roff for terminal display, and also to HTML for the web.",
+          "kind": "repository",
           "title": "Ronn",
           "repo_info": {
             "archived": false,
@@ -3074,41 +3184,6 @@
             "repo": "ronn",
             "stars": 4036
           }
-        },
-        {
-          "children": [],
-          "description": "is an all-in-one API documentation reader with a fast, organized, and consistent interface.",
-          "title": "DevDocs"
-        },
-        {
-          "children": [],
-          "description": "is a quick-and-dirty, hundred-line-long, literate-programming-style documentation generator.",
-          "title": "docco"
-        },
-        {
-          "children": [],
-          "description": "generates documentation and style guide documents from your stylesheets.",
-          "title": "styledocco"
-        },
-        {
-          "children": [],
-          "description": "is a Node.js application that generates API documentation from comments in source, using a syntax similar to tools like Javadoc and Doxygen.",
-          "title": "YUIDoc"
-        },
-        {
-          "children": [],
-          "description": "is a jsdoc parsing library. Coddoc is different in that it is easily extensible by allowing users to add tag and code parsers through the use of coddoc.addTagHandler and coddoc.addCodeHandler. coddoc also parses source code to be used in APIs.",
-          "title": "coddoc"
-        },
-        {
-          "children": [],
-          "description": "a tool that makes it easy to create intelligent and beautiful documentation",
-          "title": "sphinx"
-        },
-        {
-          "children": [],
-          "description": "API documentation generator with support for ES2015+ and flow annotation.",
-          "title": "documentation.js"
         }
       ],
       "title": "Documentation"
@@ -3119,6 +3194,7 @@
         {
           "children": [],
           "description": "Git diff output parser and pretty HTML generator.",
+          "kind": "repository",
           "title": "diff2html",
           "repo_info": {
             "archived": false,
@@ -3132,6 +3208,7 @@
         {
           "children": [],
           "description": "PDF Reader in JavaScript.",
+          "kind": "repository",
           "title": "PDF.js",
           "repo_info": {
             "archived": false,
@@ -3145,6 +3222,7 @@
         {
           "children": [],
           "description": "JavaScript PDF generation.",
+          "kind": "repository",
           "title": "jsPDF",
           "repo_info": {
             "archived": false,
@@ -3158,6 +3236,7 @@
         {
           "children": [],
           "description": "A powerful CSV library that supports parsing CSV files/strings and also exporting to CSV.",
+          "kind": "repository",
           "title": "Papa Parse",
           "repo_info": {
             "archived": false,
@@ -3171,6 +3250,7 @@
         {
           "children": [],
           "description": "High-level I/O (loading, parsing, manipulating, serializing, saving) for binary files with declarative syntax for describing file types and data structures.",
+          "kind": "repository",
           "title": "jBinary",
           "repo_info": {
             "archived": false,
@@ -3190,6 +3270,7 @@
         {
           "children": [],
           "description": "Object property paths with wildcards and regexps.",
+          "kind": "repository",
           "title": "wild-wild-path",
           "repo_info": {
             "archived": false,
@@ -3203,6 +3284,7 @@
         {
           "children": [],
           "description": "A JavaScript library for working with native objects.",
+          "kind": "repository",
           "title": "Sugar",
           "repo_info": {
             "archived": false,
@@ -3216,6 +3298,7 @@
         {
           "children": [],
           "description": "Lazy evaluation and concurrency.",
+          "kind": "repository",
           "title": "fxts",
           "repo_info": {
             "archived": false,
@@ -3229,6 +3312,7 @@
         {
           "children": [],
           "description": "JavaScript's utility _ belt.",
+          "kind": "repository",
           "title": "underscore",
           "repo_info": {
             "archived": true,
@@ -3242,6 +3326,7 @@
         {
           "children": [],
           "description": "Like Underscore, but lazier.",
+          "kind": "repository",
           "title": "lazy.js",
           "repo_info": {
             "archived": false,
@@ -3255,6 +3340,7 @@
         {
           "children": [],
           "description": "Modular JavaScript Utilities.",
+          "kind": "repository",
           "title": "mout",
           "repo_info": {
             "archived": false,
@@ -3268,6 +3354,7 @@
         {
           "children": [],
           "description": "A utility library delivering consistency, customization, performance, & extras.",
+          "kind": "repository",
           "title": "lodash",
           "repo_info": {
             "archived": false,
@@ -3281,6 +3368,7 @@
         {
           "children": [],
           "description": "A utility library containing popular monads and lazy iterators.",
+          "kind": "repository",
           "title": "sweet-monads",
           "repo_info": {
             "archived": false,
@@ -3294,6 +3382,7 @@
         {
           "children": [],
           "description": "Faster and smaller alternative to Ramda.",
+          "kind": "repository",
           "title": "rambda",
           "repo_info": {
             "archived": true,
@@ -3307,6 +3396,7 @@
         {
           "children": [],
           "description": "A practical functional library for JavaScript programmers.",
+          "kind": "repository",
           "title": "ramda",
           "repo_info": {
             "archived": false,
@@ -3320,6 +3410,7 @@
         {
           "children": [],
           "description": "Hardcore Functional Programming for JavaScript.",
+          "kind": "repository",
           "title": "preludejs",
           "repo_info": {
             "archived": false,
@@ -3339,6 +3430,7 @@
         {
           "children": [],
           "description": "A reactive programming library for JavaScript.",
+          "kind": "repository",
           "title": "RxJS",
           "repo_info": {
             "archived": false,
@@ -3352,6 +3444,7 @@
         {
           "children": [],
           "description": "FRP library for JavaScript inspired by Bacon.js and RxJS with focus on high performance and low memory consumption.",
+          "kind": "repository",
           "title": "Kefir",
           "repo_info": {
             "archived": false,
@@ -3365,6 +3458,7 @@
         {
           "children": [],
           "description": "A framework-agnostic state management library that keeps your app’s state clean and simple. It uses a fine-grained state model, breaking state into independent, manageable chunks.",
+          "kind": "repository",
           "title": "stunk",
           "repo_info": {
             "archived": false,
@@ -3378,6 +3472,7 @@
         {
           "children": [],
           "description": "Definitely the ❤️ simplest but ⚡️ strongest state management for react, it is predictable、progressive and efficient.",
+          "kind": "repository",
           "title": "concent",
           "repo_info": {
             "archived": false,
@@ -3391,6 +3486,7 @@
         {
           "children": [],
           "description": "FRP (functional reactive programming) library for JavaScript.",
+          "kind": "repository",
           "title": "Bacon",
           "repo_info": {
             "archived": false,
@@ -3404,6 +3500,7 @@
         {
           "children": [],
           "description": "high performance FRP library.",
+          "kind": "repository",
           "title": "Most.js",
           "repo_info": {
             "archived": false,
@@ -3417,6 +3514,7 @@
         {
           "children": [],
           "description": "TFRP library for simple, scalable state management.",
+          "kind": "repository",
           "title": "MobX",
           "repo_info": {
             "archived": false,
@@ -3426,16 +3524,6 @@
             "repo": "mobx",
             "stars": 508
           }
-        },
-        {
-          "children": [],
-          "description": "Re-thinking the JavaScript utility belt, Highland manages synchronous and asynchronous code easily, using nothing more than standard JavaScript and Node-like Streams.",
-          "title": "Highland"
-        },
-        {
-          "children": [],
-          "description": "A functional and reactive JavaScript library for cleaner code.",
-          "title": "Cycle.js"
         }
       ],
       "title": "Reactive Programming"
@@ -3446,6 +3534,7 @@
         {
           "children": [],
           "description": "Simple hashmap implementation that supports any kind of keys.",
+          "kind": "repository",
           "title": "hashmap",
           "repo_info": {
             "archived": true,
@@ -3459,6 +3548,7 @@
         {
           "children": [],
           "description": "Refer to the javascript standard data structure library implemented by c++ stl, which supports c++ bidirectional iterator mode.",
+          "kind": "repository",
           "title": "js-sdsl",
           "repo_info": {
             "archived": false,
@@ -3472,6 +3562,7 @@
         {
           "children": [],
           "description": "Immutable Data Collections including Sequence, Range, Repeat, Map, OrderedMap, Set and a sparse Vector.",
+          "kind": "repository",
           "title": "immutable-js",
           "repo_info": {
             "archived": false,
@@ -3485,6 +3576,7 @@
         {
           "children": [],
           "description": "A complete, fully tested and documented data structure library written in JavaScript.",
+          "kind": "repository",
           "title": "buckets",
           "repo_info": {
             "archived": false,
@@ -3498,6 +3590,7 @@
         {
           "children": [],
           "description": "Graph data structure in javascript.",
+          "kind": "repository",
           "title": "ngraph.graph",
           "repo_info": {
             "archived": false,
@@ -3511,6 +3604,7 @@
         {
           "children": [],
           "description": "A library for using ClojureScript's persistent data structures and supporting API from the comfort of vanilla JavaScript.",
+          "kind": "repository",
           "title": "mori",
           "repo_info": {
             "archived": false,
@@ -3530,6 +3624,7 @@
         {
           "children": [],
           "description": "Parsing, formatting, and timezones — Tempo is a small tree-shakable library for native Date objects.",
+          "kind": "repository",
           "title": "tempo",
           "repo_info": {
             "archived": false,
@@ -3543,6 +3638,7 @@
         {
           "children": [],
           "description": "Super simple countdowns.",
+          "kind": "repository",
           "title": "countdown.js",
           "repo_info": {
             "archived": false,
@@ -3556,6 +3652,7 @@
         {
           "children": [],
           "description": "Tiny millisecond conversion utility.",
+          "kind": "repository",
           "title": "ms.js",
           "repo_info": {
             "archived": false,
@@ -3569,6 +3666,7 @@
         {
           "children": [],
           "description": "Timezone-enabled JavaScript Date object. Uses Olson zoneinfo files for timezone data.",
+          "kind": "repository",
           "title": "timezone-js",
           "repo_info": {
             "archived": false,
@@ -3582,6 +3680,7 @@
         {
           "children": [],
           "description": "Simple library (less then 2kb) used to format date with statement.",
+          "kind": "repository",
           "title": "timeago.js",
           "repo_info": {
             "archived": false,
@@ -3595,6 +3694,7 @@
         {
           "children": [],
           "description": "Lightweight date formatting and parsing (~2KB). Meant to replace parsing and formatting functionality of moment.js.",
+          "kind": "repository",
           "title": "fecha",
           "repo_info": {
             "archived": false,
@@ -3608,6 +3708,7 @@
         {
           "children": [],
           "description": "A jQuery plugin that makes it easy to support automatically updating fuzzy timestamps (e.g. \"4 minutes ago\").",
+          "kind": "repository",
           "title": "jquery-timeago",
           "repo_info": {
             "archived": false,
@@ -3621,6 +3722,7 @@
         {
           "children": [],
           "description": "Modern JavaScript date utility library.",
+          "kind": "repository",
           "title": "date-fns",
           "repo_info": {
             "archived": false,
@@ -3634,6 +3736,7 @@
         {
           "children": [],
           "description": "Luxon is a library for working with dates and times in JavaScript.",
+          "kind": "repository",
           "title": "luxon",
           "repo_info": {
             "archived": true,
@@ -3647,6 +3750,7 @@
         {
           "children": [],
           "description": "Day.js 2KB immutable date library alternative to Moment.js with the same modern API.",
+          "kind": "repository",
           "title": "dayjs",
           "repo_info": {
             "archived": false,
@@ -3660,6 +3764,7 @@
         {
           "children": [],
           "description": "A browser countdown built on top of the Google Maps.",
+          "kind": "repository",
           "title": "map-countdown",
           "repo_info": {
             "archived": false,
@@ -3673,6 +3778,7 @@
         {
           "children": [],
           "description": "Date() for humans.",
+          "kind": "repository",
           "title": "date",
           "repo_info": {
             "archived": false,
@@ -3686,6 +3792,7 @@
         {
           "children": [],
           "description": "Timezone support for moment.js.",
+          "kind": "repository",
           "title": "moment-timezone",
           "repo_info": {
             "archived": false,
@@ -3699,6 +3806,7 @@
         {
           "children": [],
           "description": "Parse, validate, manipulate, and display dates in JavaScript.",
+          "kind": "repository",
           "title": "moment",
           "repo_info": {
             "archived": false,
@@ -3718,6 +3826,7 @@
         {
           "children": [],
           "description": "String manipulation extensions for Underscore.js JavaScript library.",
+          "kind": "repository",
           "title": "underscore.string",
           "repo_info": {
             "archived": false,
@@ -3731,6 +3840,7 @@
         {
           "children": [],
           "description": "Multiline strings in JavaScript.",
+          "kind": "repository",
           "title": "multiline",
           "repo_info": {
             "archived": false,
@@ -3744,6 +3854,7 @@
         {
           "children": [],
           "description": "JavaScript URL mutation library.",
+          "kind": "repository",
           "title": "URI.js",
           "repo_info": {
             "archived": true,
@@ -3757,6 +3868,7 @@
         {
           "children": [],
           "description": "Lightweight URL manipulation with JavaScript.",
+          "kind": "repository",
           "title": "jsurl",
           "repo_info": {
             "archived": false,
@@ -3770,6 +3882,7 @@
         {
           "children": [],
           "description": "A robust HTML entity encoder/decoder written in JavaScript.",
+          "kind": "repository",
           "title": "he",
           "repo_info": {
             "archived": false,
@@ -3783,6 +3896,7 @@
         {
           "children": [],
           "description": "Parse and stringify URL query strings.",
+          "kind": "repository",
           "title": "query-string",
           "repo_info": {
             "archived": false,
@@ -3796,6 +3910,7 @@
         {
           "children": [],
           "description": "The ultimate JavaScript string library",
+          "kind": "repository",
           "title": "voca",
           "repo_info": {
             "archived": false,
@@ -3809,6 +3924,7 @@
         {
           "children": [],
           "description": "Extra JavaScript string methods.",
+          "kind": "repository",
           "title": "string.js",
           "repo_info": {
             "archived": false,
@@ -3822,6 +3938,7 @@
         {
           "children": [],
           "description": "Lo-fi, powerful, community-driven string manipulation library.",
+          "kind": "repository",
           "title": "plexis",
           "repo_info": {
             "archived": false,
@@ -3835,6 +3952,7 @@
         {
           "children": [],
           "description": "A sprintf implementation.",
+          "kind": "repository",
           "title": "sprintf.js",
           "repo_info": {
             "archived": false,
@@ -3848,6 +3966,7 @@
         {
           "children": [],
           "description": "Easier than regex string matching patterns for urls and other strings. Turn strings into data or data into strings.",
+          "kind": "repository",
           "title": "url-pattern",
           "repo_info": {
             "archived": false,
@@ -3861,6 +3980,7 @@
         {
           "children": [],
           "description": "Super fast spec-compliant URL parser state machine for Node.js.",
+          "kind": "repository",
           "title": "url-state-machine",
           "repo_info": {
             "archived": false,
@@ -3874,6 +3994,7 @@
         {
           "children": [],
           "description": "A library that allows you to access the text selected by the user.",
+          "kind": "repository",
           "title": "selecting",
           "repo_info": {
             "archived": false,
@@ -3893,6 +4014,7 @@
         {
           "children": [],
           "description": "A rational number library for JavaScript.",
+          "kind": "repository",
           "title": "Fraction.js",
           "repo_info": {
             "archived": false,
@@ -3906,6 +4028,7 @@
         {
           "children": [],
           "description": "A complex number library for JavaScript.",
+          "kind": "repository",
           "title": "Complex.js",
           "repo_info": {
             "archived": false,
@@ -3919,6 +4042,7 @@
         {
           "children": [],
           "description": "Random generator helper in JavaScript. Can generate numbers, strings etc.",
+          "kind": "repository",
           "title": "chance.js",
           "repo_info": {
             "archived": false,
@@ -3932,6 +4056,7 @@
         {
           "children": [],
           "description": "Smoothly transitions numbers with ease.",
+          "kind": "repository",
           "title": "odometer",
           "repo_info": {
             "archived": false,
@@ -3945,6 +4070,7 @@
         {
           "children": [],
           "description": "A quaternion library for JavaScript",
+          "kind": "repository",
           "title": "Quaternion.js",
           "repo_info": {
             "archived": false,
@@ -3958,6 +4084,7 @@
         {
           "children": [],
           "description": "A lightweight JavaScript library for number, money and currency formatting - fully localisable, zero dependencies.",
+          "kind": "repository",
           "title": "accounting.js",
           "repo_info": {
             "archived": false,
@@ -3971,6 +4098,7 @@
         {
           "children": [],
           "description": "A JavaScript library for formatting and manipulating numbers.",
+          "kind": "repository",
           "title": "Numeral-js",
           "repo_info": {
             "archived": false,
@@ -3984,6 +4112,7 @@
         {
           "children": [],
           "description": "A tiny (1kb) JavaScript currency conversion library, for web & nodeJS.",
+          "kind": "repository",
           "title": "money.js",
           "repo_info": {
             "archived": false,
@@ -3997,6 +4126,7 @@
         {
           "children": [],
           "description": "A polynomials library for JavaScript.",
+          "kind": "repository",
           "title": "Polynomial.js",
           "repo_info": {
             "archived": false,
@@ -4016,6 +4146,7 @@
         {
           "children": [],
           "description": "Javascript db inspired by Apache CouchDB to run well within the browser.",
+          "kind": "repository",
           "title": "pouchdb",
           "repo_info": {
             "archived": false,
@@ -4029,6 +4160,7 @@
         {
           "children": [],
           "description": "jStorage is a simple key/value database to store data on browser side.",
+          "kind": "repository",
           "title": "jStorage",
           "repo_info": {
             "archived": false,
@@ -4042,6 +4174,7 @@
         {
           "children": [],
           "description": "Embedded Persistent database for Browsers, nw.js, electron.",
+          "kind": "repository",
           "title": "NeDB",
           "repo_info": {
             "archived": false,
@@ -4055,6 +4188,7 @@
         {
           "children": [],
           "description": "LocalStorage wrapper for all browsers without using cookies or flash. Uses localStorage, globalStorage, and userData behavior under the hood.",
+          "kind": "repository",
           "title": "store.js",
           "repo_info": {
             "archived": false,
@@ -4068,6 +4202,7 @@
         {
           "children": [],
           "description": "Offline storage, improved. Wraps IndexedDB, WebSQL, or localStorage using a simple but powerful API.",
+          "kind": "repository",
           "title": "localForage",
           "repo_info": {
             "archived": false,
@@ -4081,6 +4216,7 @@
         {
           "children": [],
           "description": "A simple, lightweight JavaScript API for handling browser cookies.",
+          "kind": "repository",
           "title": "js-cookie",
           "repo_info": {
             "archived": false,
@@ -4094,6 +4230,7 @@
         {
           "children": [],
           "description": "Cross domain local storage, with permissions.",
+          "kind": "repository",
           "title": "cross-storage",
           "repo_info": {
             "archived": false,
@@ -4107,6 +4244,7 @@
         {
           "children": [],
           "description": "A lightweight vanilla ES6 cookies and local storage JavaScript library.",
+          "kind": "repository",
           "title": "crumbsjs",
           "repo_info": {
             "archived": false,
@@ -4120,6 +4258,7 @@
         {
           "children": [],
           "description": "A caching script and resource loader, similar to basket.js, but with additional k/v interface and localStorage / websql / indexedDB support.",
+          "kind": "repository",
           "title": "bag.js",
           "repo_info": {
             "archived": false,
@@ -4133,6 +4272,7 @@
         {
           "children": [],
           "description": "Keep the type of storage value unchanged and change array and object directly. Supports listening to the changes and setting expires.",
+          "kind": "repository",
           "title": "proxy-web-storage",
           "repo_info": {
             "archived": false,
@@ -4146,6 +4286,7 @@
         {
           "children": [],
           "description": "Simple client-side JSON storage.",
+          "kind": "repository",
           "title": "lawnchair.js",
           "repo_info": {
             "archived": false,
@@ -4159,6 +4300,7 @@
         {
           "children": [],
           "description": "Dexie.js is a wrapper library for indexedDB.",
+          "kind": "repository",
           "title": "Dexie.js",
           "repo_info": {
             "archived": false,
@@ -4172,6 +4314,7 @@
         {
           "children": [],
           "description": "A simple, lightweight jQuery plugin for reading, writing and deleting cookies.",
+          "kind": "repository",
           "title": "jquery-cookie",
           "repo_info": {
             "archived": false,
@@ -4185,6 +4328,7 @@
         {
           "children": [],
           "description": "Browser PostgreSQL Playground, no server, just client and pglite (postgresql wasm)",
+          "kind": "repository",
           "title": "PostgreSQL Browser",
           "repo_info": {
             "archived": false,
@@ -4198,6 +4342,7 @@
         {
           "children": [],
           "description": "A small, fast, in-browser database engine written in JavaScript.",
+          "kind": "repository",
           "title": "datavore",
           "repo_info": {
             "archived": false,
@@ -4211,6 +4356,7 @@
         {
           "children": [],
           "description": "The missing JavaScript smart persistent layer.",
+          "kind": "repository",
           "title": "basil.js",
           "repo_info": {
             "archived": false,
@@ -4224,6 +4370,7 @@
         {
           "children": [],
           "description": "Everything you need to know about client-side storage.",
+          "kind": "repository",
           "title": "awesome-web-storage",
           "repo_info": {
             "archived": false,
@@ -4237,6 +4384,7 @@
         {
           "children": [],
           "description": "Promise based IndexDB Wrapper library.",
+          "kind": "repository",
           "title": "DB.js",
           "repo_info": {
             "archived": false,
@@ -4250,6 +4398,7 @@
         {
           "children": [],
           "description": "JavaScript Client-Side Cookie Manipulation Library.",
+          "kind": "repository",
           "title": "Cookies",
           "repo_info": {
             "archived": false,
@@ -4263,6 +4412,7 @@
         {
           "children": [],
           "description": "Offline First backend to work in browser without internet connectivity.",
+          "kind": "repository",
           "title": "Hoodie",
           "repo_info": {
             "archived": false,
@@ -4276,6 +4426,7 @@
         {
           "children": [],
           "description": "A script and resource loader for caching & loading scripts with localStorage.",
+          "kind": "repository",
           "title": "basket.js",
           "repo_info": {
             "archived": false,
@@ -4289,6 +4440,7 @@
         {
           "children": [],
           "description": "SQLite compiled to JavaScript through Emscripten.",
+          "kind": "repository",
           "title": "sql.js",
           "repo_info": {
             "archived": false,
@@ -4298,11 +4450,6 @@
             "repo": "sql.js",
             "stars": 980
           }
-        },
-        {
-          "children": [],
-          "description": "Lovefield is a relational database for web apps, By Google.",
-          "title": "Lovefield"
         }
       ],
       "title": "Storage"
@@ -4313,6 +4460,7 @@
         {
           "children": [],
           "description": "JavaScript library for all kinds of color manipulations.",
+          "kind": "repository",
           "title": "chroma.js",
           "repo_info": {
             "archived": false,
@@ -4326,6 +4474,7 @@
         {
           "children": [],
           "description": "JavaScript Library for creating random pleasing colors and color schemes.",
+          "kind": "repository",
           "title": "PleaseJS",
           "repo_info": {
             "archived": false,
@@ -4339,6 +4488,7 @@
         {
           "children": [],
           "description": "Fast, small color manipulation and conversion for JavaScript.",
+          "kind": "repository",
           "title": "TinyColor",
           "repo_info": {
             "archived": true,
@@ -4352,6 +4502,7 @@
         {
           "children": [],
           "description": "JavaScript color conversion and manipulation library.",
+          "kind": "repository",
           "title": "color",
           "repo_info": {
             "archived": false,
@@ -4365,6 +4516,7 @@
         {
           "children": [],
           "description": "A color generator for JavaScript.",
+          "kind": "repository",
           "title": "randomColor",
           "repo_info": {
             "archived": false,
@@ -4378,6 +4530,7 @@
         {
           "children": [],
           "description": "Smarter defaults for colors on the web.",
+          "kind": "repository",
           "title": "colors",
           "repo_info": {
             "archived": false,
@@ -4391,6 +4544,7 @@
         {
           "children": [],
           "description": "Extract prominent colors from an image.",
+          "kind": "repository",
           "title": "Vibrant.js",
           "repo_info": {
             "archived": false,
@@ -4410,6 +4564,7 @@
         {
           "children": [],
           "description": "internationalisation (i18n) with JavaScript the easy way.",
+          "kind": "repository",
           "title": "i18next",
           "repo_info": {
             "archived": false,
@@ -4423,6 +4578,7 @@
         {
           "children": [],
           "description": "tiny i18n helper library.",
+          "kind": "repository",
           "title": "polyglot",
           "repo_info": {
             "archived": false,
@@ -4436,6 +4592,7 @@
         {
           "children": [],
           "description": "Modern javascript i18n localization library based on ES6 tagged templates and the good old GNU gettext.",
+          "kind": "repository",
           "title": "ttag",
           "repo_info": {
             "archived": false,
@@ -4449,6 +4606,7 @@
         {
           "children": [],
           "description": "i18n with human friendly API and built in plurals support.",
+          "kind": "repository",
           "title": "babelfish",
           "repo_info": {
             "archived": false,
@@ -4462,6 +4620,7 @@
         {
           "children": [],
           "description": "A JavaScript-tool for synchronizing translation-files, including JSON/YAML/XML and other formats.",
+          "kind": "repository",
           "title": "attranslate",
           "repo_info": {
             "archived": false,
@@ -4481,6 +4640,7 @@
         {
           "children": [],
           "description": "Provide a prototype that add support to event listeners (with same behavior of EventTarget from DOMElements available on browsers).",
+          "kind": "repository",
           "title": "ObjectEventTarget",
           "repo_info": {
             "archived": false,
@@ -4494,6 +4654,7 @@
         {
           "children": [],
           "description": "Asynchronous flow control with a functional taste to it.",
+          "kind": "repository",
           "title": "contra",
           "repo_info": {
             "archived": false,
@@ -4507,6 +4668,7 @@
         {
           "children": [],
           "description": "An async control-flow library that makes stepping through logic easy.",
+          "kind": "repository",
           "title": "step",
           "repo_info": {
             "archived": false,
@@ -4520,6 +4682,7 @@
         {
           "children": [],
           "description": "A tool for making and composing asynchronous promises in JavaScript.",
+          "kind": "repository",
           "title": "q",
           "repo_info": {
             "archived": false,
@@ -4533,6 +4696,7 @@
         {
           "children": [],
           "description": "fully featured promise library with focus on innovative features and performance.",
+          "kind": "repository",
           "title": "Bluebird",
           "repo_info": {
             "archived": false,
@@ -4546,6 +4710,7 @@
         {
           "children": [],
           "description": "Composable concurrency abstractions (such as streams, coroutines and Go-like channels) on top of promises, for Node and browser engines.",
+          "kind": "repository",
           "title": "sporadic",
           "repo_info": {
             "archived": false,
@@ -4559,6 +4724,7 @@
         {
           "children": [],
           "description": "A solid, fast Promises/A+ and when() implementation, plus other async goodies.",
+          "kind": "repository",
           "title": "when",
           "repo_info": {
             "archived": false,
@@ -4572,6 +4738,7 @@
         {
           "children": [],
           "description": "Async utilities for node and the browser.",
+          "kind": "repository",
           "title": "async",
           "repo_info": {
             "archived": false,
@@ -4591,6 +4758,7 @@
         {
           "children": [],
           "description": "Simple, lightweight routing for web browsers.",
+          "kind": "repository",
           "title": "pathjs",
           "repo_info": {
             "archived": false,
@@ -4604,6 +4772,7 @@
         {
           "children": [],
           "description": "A tiny and isomorphic URL router for JavaScript.",
+          "kind": "repository",
           "title": "director",
           "repo_info": {
             "archived": false,
@@ -4617,6 +4786,7 @@
         {
           "children": [],
           "description": "A navigation aid (aka, router) for the browser in 850 bytes~!",
+          "kind": "repository",
           "title": "navaid",
           "repo_info": {
             "archived": false,
@@ -4630,6 +4800,7 @@
         {
           "children": [],
           "description": "JavaScript Routes.",
+          "kind": "repository",
           "title": "crossroads",
           "repo_info": {
             "archived": false,
@@ -4643,6 +4814,7 @@
         {
           "children": [],
           "description": "Micro client-side router inspired by the Express router (~1200 bytes).",
+          "kind": "repository",
           "title": "page.js",
           "repo_info": {
             "archived": false,
@@ -4656,6 +4828,7 @@
         {
           "children": [],
           "description": "RESTful degradable JavaScript routing using pushState.",
+          "kind": "repository",
           "title": "davis.js",
           "repo_info": {
             "archived": false,
@@ -4675,6 +4848,7 @@
         {
           "children": [],
           "description": "Sanitize untrusted HTML (to prevent XSS) with a configuration specified by a Whitelist.",
+          "kind": "repository",
           "title": "js-xss",
           "repo_info": {
             "archived": false,
@@ -4688,6 +4862,7 @@
         {
           "children": [],
           "description": "Secure XSS Filters by Yahoo.",
+          "kind": "repository",
           "title": "xss-filters",
           "repo_info": {
             "archived": true,
@@ -4701,6 +4876,7 @@
         {
           "children": [],
           "description": "A DOM-only, super-fast, uber-tolerant XSS sanitizer for HTML, MathML and SVG.",
+          "kind": "repository",
           "title": "DOMPurify",
           "repo_info": {
             "archived": false,
@@ -4714,6 +4890,7 @@
         {
           "children": [],
           "description": "sanitize-html provides a simple HTML sanitizer with a clear API.",
+          "kind": "repository",
           "title": "sanitize-html",
           "repo_info": {
             "archived": false,
@@ -4727,6 +4904,7 @@
         {
           "children": [],
           "description": "Fast file-upload malware scanning for Node.js.",
+          "kind": "repository",
           "title": "pompelmi",
           "repo_info": {
             "archived": false,
@@ -4746,6 +4924,7 @@
         {
           "children": [],
           "description": "Minimal lightweight logging for JavaScript, adding reliable log level methods to wrap any available console.log methods.",
+          "kind": "repository",
           "title": "loglevel",
           "repo_info": {
             "archived": false,
@@ -4759,6 +4938,7 @@
         {
           "children": [],
           "description": "Console.log with style.",
+          "kind": "repository",
           "title": "log",
           "repo_info": {
             "archived": false,
@@ -4772,6 +4952,7 @@
         {
           "children": [],
           "description": "Log to the console in any browser with clarity.",
+          "kind": "repository",
           "title": "console.log-wrapper",
           "repo_info": {
             "archived": false,
@@ -4785,6 +4966,7 @@
         {
           "children": [],
           "description": "A debug panel built in JavaScript that wraps JavaScript native console object methods and functionality in a panel displayed inside the page.",
+          "kind": "repository",
           "title": "Conzole",
           "repo_info": {
             "archived": false,
@@ -4794,21 +4976,6 @@
             "repo": "Conzole",
             "stars": 5961
           }
-        },
-        {
-          "children": [],
-          "description": "Lightweight client & server-side logging with Stream-API backends.",
-          "title": "minilog"
-        },
-        {
-          "children": [],
-          "description": "Universal logging library + Chrome extension; it lets you see all client and server tasks triggered by a user action in a single place.",
-          "title": "storyboard"
-        },
-        {
-          "children": [],
-          "description": "Simple logging library with zero dependencies for Deno, Node.js, Bun, browsers, and edge functions.",
-          "title": "LogTape"
         }
       ],
       "title": "Log"
@@ -4819,6 +4986,7 @@
         {
           "children": [],
           "description": "A JavaScript library for adding voice commands to your site, using speech recognition.",
+          "kind": "repository",
           "title": "annyang",
           "repo_info": {
             "archived": false,
@@ -4832,6 +5000,7 @@
         {
           "children": [],
           "description": "A JavaScript library to add voice commands to your sites, apps or games.",
+          "kind": "repository",
           "title": "voix.js",
           "repo_info": {
             "archived": false,
@@ -4851,6 +5020,7 @@
         {
           "children": [],
           "description": "Modern Fetch API wrapper for simplicity, with concise file uploading.",
+          "kind": "repository",
           "title": "FarFetch",
           "repo_info": {
             "archived": true,
@@ -4864,6 +5034,7 @@
         {
           "children": [],
           "description": "A powerful rate limiter that makes throttling easy.",
+          "kind": "repository",
           "title": "bottleneck",
           "repo_info": {
             "archived": false,
@@ -4877,6 +5048,7 @@
         {
           "children": [],
           "description": "A tiny wrapper built around fetch with an intuitive syntax.",
+          "kind": "repository",
           "title": "wretch",
           "repo_info": {
             "archived": false,
@@ -4890,6 +5062,7 @@
         {
           "children": [],
           "description": "Hooks for fetching, caching and updating asynchronous data in Vue.",
+          "kind": "repository",
           "title": "Vue Query",
           "repo_info": {
             "archived": false,
@@ -4903,6 +5076,7 @@
         {
           "children": [],
           "description": "Promise based HTTP client for the browser and node.js.",
+          "kind": "repository",
           "title": "axios",
           "repo_info": {
             "archived": false,
@@ -4916,6 +5090,7 @@
         {
           "children": [],
           "description": "An opinionated REST client for Ruby on Rails APIs.",
+          "kind": "repository",
           "title": "Rails Ranger",
           "repo_info": {
             "archived": true,
@@ -4929,6 +5104,7 @@
         {
           "children": [],
           "description": "Hooks for fetching, caching and updating asynchronous data in React.",
+          "kind": "repository",
           "title": "React Query",
           "repo_info": {
             "archived": false,
@@ -4942,6 +5118,7 @@
         {
           "children": [],
           "description": "Optic automatically documents and tests your APIs.",
+          "kind": "repository",
           "title": "Optic",
           "repo_info": {
             "archived": false,
@@ -4955,6 +5132,7 @@
         {
           "children": [],
           "description": "A jQuery plugin for easy consumption of RESTful APIs.",
+          "kind": "repository",
           "title": "jquery.rest",
           "repo_info": {
             "archived": false,
@@ -4968,6 +5146,7 @@
         {
           "children": [],
           "description": "JavaScript OAuth 1.0a signature generator for node and the browser.",
+          "kind": "repository",
           "title": "oauth-signature-js",
           "repo_info": {
             "archived": false,
@@ -4981,6 +5160,7 @@
         {
           "children": [],
           "description": "Stale-while-revalidate data fetching for Vue.",
+          "kind": "repository",
           "title": "SWRV",
           "repo_info": {
             "archived": false,
@@ -4994,6 +5174,7 @@
         {
           "children": [],
           "description": "RESTful HTTP client for JavaScript powered web applications.",
+          "kind": "repository",
           "title": "amygdala",
           "repo_info": {
             "archived": false,
@@ -5007,6 +5188,7 @@
         {
           "children": [],
           "description": "React Hooks library for remote data fetching.",
+          "kind": "repository",
           "title": "SWR",
           "repo_info": {
             "archived": false,
@@ -5026,6 +5208,7 @@
         {
           "children": [],
           "description": "OCR in JavaScript via Emscripten.",
+          "kind": "repository",
           "title": "ocrad.js",
           "repo_info": {
             "archived": false,
@@ -5039,6 +5222,7 @@
         {
           "children": [],
           "description": "A modern approach for Computer Vision on the web.",
+          "kind": "repository",
           "title": "tracking.js",
           "repo_info": {
             "archived": false,
@@ -5058,6 +5242,7 @@
         {
           "children": [],
           "description": "GPU accelerated PyTorch in JavaScript.",
+          "kind": "repository",
           "title": "JS-PyTorch",
           "repo_info": {
             "archived": true,
@@ -5071,6 +5256,7 @@
         {
           "children": [],
           "description": "Deep Learning in JavaScript. Train Convolutional Neural Networks (or ordinary ones) in your browser.",
+          "kind": "repository",
           "title": "ConvNetJS",
           "repo_info": {
             "archived": false,
@@ -5084,6 +5270,7 @@
         {
           "children": [],
           "description": "A flexible neural network library.",
+          "kind": "repository",
           "title": "Mind.js",
           "repo_info": {
             "archived": false,
@@ -5097,6 +5284,7 @@
         {
           "children": [],
           "description": "Neural networks in JavaScript.",
+          "kind": "repository",
           "title": "Brain.js",
           "repo_info": {
             "archived": false,
@@ -5110,6 +5298,7 @@
         {
           "children": [],
           "description": "Lightweight cross-platform Neural Network library.",
+          "kind": "repository",
           "title": "Synapses",
           "repo_info": {
             "archived": true,
@@ -5123,6 +5312,7 @@
         {
           "children": [],
           "description": "Digital Neural Networks Architecture.",
+          "kind": "repository",
           "title": "DN2A",
           "repo_info": {
             "archived": false,
@@ -5136,6 +5326,7 @@
         {
           "children": [],
           "description": "Architecture-free neural network library for node.js and the browser.",
+          "kind": "repository",
           "title": "Synaptic.js",
           "repo_info": {
             "archived": false,
@@ -5149,6 +5340,7 @@
         {
           "children": [],
           "description": "A CLI tool to transpile trained classic ML models into a native JavaScript code with zero dependencies.",
+          "kind": "repository",
           "title": "m2cgen",
           "repo_info": {
             "archived": false,
@@ -5158,16 +5350,6 @@
             "repo": "m2cgen",
             "stars": 31974
           }
-        },
-        {
-          "children": [],
-          "description": "A JavaScript library for training and deploying ML models in the browser and on Node.js.",
-          "title": "TensorFlow.js"
-        },
-        {
-          "children": [],
-          "description": "Friendly Machine Learning for the Web.",
-          "title": "ml5.js"
         }
       ],
       "title": "Machine Learning"
@@ -5178,6 +5360,7 @@
         {
           "children": [],
           "description": "A benchmarking library. As used on jsPerf.com.",
+          "kind": "repository",
           "title": "benchmark.js",
           "repo_info": {
             "archived": false,
@@ -5191,6 +5374,7 @@
         {
           "children": [],
           "description": "A caffeine driven, simplistic approach to benchmarking.",
+          "kind": "repository",
           "title": "matcha",
           "repo_info": {
             "archived": false,
@@ -5204,6 +5388,7 @@
         {
           "children": [],
           "description": "A suite of continuous benchmarking tools designed to catch performance regressions in CI.",
+          "kind": "repository",
           "title": "bencher",
           "repo_info": {
             "archived": false,
@@ -5223,6 +5408,7 @@
         {
           "children": [],
           "description": "Comlink is a tiny library (1.1kB), that removes the mental barrier of thinking about postMessage and hides the fact that you are working with workers.",
+          "kind": "repository",
           "title": "comlink",
           "repo_info": {
             "archived": false,
@@ -5236,6 +5422,7 @@
         {
           "children": [],
           "description": "Relocate resource intensive third-party scripts off of the main thread and into a web worker.",
+          "kind": "repository",
           "title": "partytown",
           "repo_info": {
             "archived": false,
@@ -5249,6 +5436,7 @@
         {
           "children": [],
           "description": "Offload tasks to a pool of workers on node.js and in the browser.",
+          "kind": "repository",
           "title": "workerpool",
           "repo_info": {
             "archived": false,
@@ -5262,6 +5450,7 @@
         {
           "children": [],
           "description": "Clooney is an actor library for the web. Use workers without thinking about workers.",
+          "kind": "repository",
           "title": "clooney",
           "repo_info": {
             "archived": false,
@@ -5275,6 +5464,7 @@
         {
           "children": [],
           "description": "An in-progress implementation of the DOM API intended to run within a Web Worker.",
+          "kind": "repository",
           "title": "worker-dom",
           "repo_info": {
             "archived": false,
@@ -5288,6 +5478,7 @@
         {
           "children": [],
           "description": "Offload CPU-intensive tasks to worker threads in node.js, web browsers and electron using one uniform API.",
+          "kind": "repository",
           "title": "threads.js",
           "repo_info": {
             "archived": false,
@@ -5301,6 +5492,7 @@
         {
           "children": [],
           "description": "A really simple way to move a function or class to a web worker.",
+          "kind": "repository",
           "title": "workly",
           "repo_info": {
             "archived": false,
@@ -5314,6 +5506,7 @@
         {
           "children": [],
           "description": "Offload your store management to a worker easily.",
+          "kind": "repository",
           "title": "stockroom",
           "repo_info": {
             "archived": false,
@@ -5327,6 +5520,7 @@
         {
           "children": [],
           "description": "Move an async function into its own thread.",
+          "kind": "repository",
           "title": "greenlet",
           "repo_info": {
             "archived": false,
@@ -5340,6 +5534,7 @@
         {
           "children": [],
           "description": "Moves a module into a Web Worker, automatically reflecting exported functions as asynchronous proxies.",
+          "kind": "repository",
           "title": "workerize",
           "repo_info": {
             "archived": false,
@@ -5359,6 +5554,7 @@
         {
           "children": [],
           "description": "JavaScript syntax highlighter.",
+          "kind": "repository",
           "title": "Highlight.js",
           "repo_info": {
             "archived": true,
@@ -5372,6 +5568,7 @@
         {
           "children": [],
           "description": "Code highlighter powered by VS Code TextMate grammars. Accurate, themeable, works in Node or browser, great for JS and TS.",
+          "kind": "repository",
           "title": "shiki",
           "repo_info": {
             "archived": false,
@@ -5385,6 +5582,7 @@
         {
           "children": [],
           "description": "Lightweight, robust, elegant syntax highlighting.",
+          "kind": "repository",
           "title": "PrismJS",
           "repo_info": {
             "archived": false,
@@ -5404,6 +5602,7 @@
         {
           "children": [],
           "description": "Very lightweight progress bars. No jQuery.",
+          "kind": "repository",
           "title": "nanobar",
           "repo_info": {
             "archived": false,
@@ -5417,6 +5616,7 @@
         {
           "children": [],
           "description": "Automatically add a progress bar to your site.",
+          "kind": "repository",
           "title": "pace",
           "repo_info": {
             "archived": false,
@@ -5430,6 +5630,7 @@
         {
           "children": [],
           "description": "Create and manage progress bar for every objects on the page.",
+          "kind": "repository",
           "title": "progress.js",
           "repo_info": {
             "archived": false,
@@ -5443,6 +5644,7 @@
         {
           "children": [],
           "description": "Beautiful and responsive progress bars with animated SVG paths.",
+          "kind": "repository",
           "title": "progressbar.js",
           "repo_info": {
             "archived": false,
@@ -5456,6 +5658,7 @@
         {
           "children": [],
           "description": "Tiny & beautiful site-wide progress indicator.",
+          "kind": "repository",
           "title": "topbar",
           "repo_info": {
             "archived": false,
@@ -5469,6 +5672,7 @@
         {
           "children": [],
           "description": "Create Google Material Design progress linear bars.",
+          "kind": "repository",
           "title": "Mprogress.js",
           "repo_info": {
             "archived": false,
@@ -5482,6 +5686,7 @@
         {
           "children": [],
           "description": "A collection of loading spinners animated with CSS",
+          "kind": "repository",
           "title": "css-loaders",
           "repo_info": {
             "archived": false,
@@ -5495,6 +5700,7 @@
         {
           "children": [],
           "description": "Buttons with built-in loading indicators.",
+          "kind": "repository",
           "title": "Ladda",
           "repo_info": {
             "archived": false,
@@ -5508,6 +5714,7 @@
         {
           "children": [],
           "description": "A collection of loading indicators animated with CSS.",
+          "kind": "repository",
           "title": "SpinKit",
           "repo_info": {
             "archived": false,
@@ -5521,6 +5728,7 @@
         {
           "children": [],
           "description": "A spinning activity indicator.",
+          "kind": "repository",
           "title": "Spin.js",
           "repo_info": {
             "archived": false,
@@ -5534,6 +5742,7 @@
         {
           "children": [],
           "description": "Modern ways of revealing new content using SVG animations.",
+          "kind": "repository",
           "title": "PageLoadingEffects",
           "repo_info": {
             "archived": false,
@@ -5543,11 +5752,6 @@
             "repo": "PageLoadingEffects",
             "stars": 1894
           }
-        },
-        {
-          "children": [],
-          "description": "Slim progress bars for Ajax'y applications.",
-          "title": "NProgress"
         }
       ],
       "title": "Loading Status"
@@ -5558,6 +5762,7 @@
         {
           "children": [],
           "description": "Check types, regexps, presence, time and more.",
+          "kind": "repository",
           "title": "is.js",
           "repo_info": {
             "archived": false,
@@ -5571,6 +5776,7 @@
         {
           "children": [],
           "description": "Lightweight JavaScript form validation library inspired by CodeIgniter.",
+          "kind": "repository",
           "title": "validate.js",
           "repo_info": {
             "archived": false,
@@ -5584,6 +5790,7 @@
         {
           "children": [],
           "description": "String validation and sanitization.",
+          "kind": "repository",
           "title": "validator.js",
           "repo_info": {
             "archived": false,
@@ -5597,6 +5804,7 @@
         {
           "children": [],
           "description": "🦺 Declarative form validation framework inspired by unit testing.",
+          "kind": "repository",
           "title": "vest",
           "repo_info": {
             "archived": false,
@@ -5610,6 +5818,7 @@
         {
           "children": [],
           "description": "Validate your forms, frontend, without writing a single line of JavaScript.",
+          "kind": "repository",
           "title": "Parsley.js",
           "repo_info": {
             "archived": false,
@@ -5623,6 +5832,7 @@
         {
           "children": [],
           "description": "jQuery Validation Plugin.",
+          "kind": "repository",
           "title": "jquery-validation",
           "repo_info": {
             "archived": false,
@@ -5636,6 +5846,7 @@
         {
           "children": [],
           "description": "Data validation using functions interfaces (support TypeScript).",
+          "kind": "repository",
           "title": "Funval",
           "repo_info": {
             "archived": false,
@@ -5649,6 +5860,7 @@
         {
           "children": [],
           "description": "Cross Browser HTML5 Form Validation.",
+          "kind": "repository",
           "title": "validatr",
           "repo_info": {
             "archived": false,
@@ -5662,6 +5874,7 @@
         {
           "children": [],
           "description": "multipurpose validation library. Supports both sync and async validation.",
+          "kind": "repository",
           "title": "FieldVal",
           "repo_info": {
             "archived": false,
@@ -5671,11 +5884,6 @@
             "repo": "fieldval-js",
             "stars": 5249
           }
-        },
-        {
-          "children": [],
-          "description": "The best jQuery plugin to validate form fields. Formerly BootstrapValidator.",
-          "title": "FormValidation"
         }
       ],
       "title": "Validation"
@@ -5686,6 +5894,7 @@
         {
           "children": [],
           "description": "jQuery Hotkeys lets you watch for keyboard events anywhere in your code supporting almost any key combination.",
+          "kind": "repository",
           "title": "jquery.hotkeys",
           "repo_info": {
             "archived": false,
@@ -5699,6 +5908,7 @@
         {
           "children": [],
           "description": "A keyboard input capturing utility in which any key can be a modifier key.",
+          "kind": "repository",
           "title": "Keypress",
           "repo_info": {
             "archived": false,
@@ -5712,6 +5922,7 @@
         {
           "children": [],
           "description": "Awesome handling of keyboard events.",
+          "kind": "repository",
           "title": "jwerty",
           "repo_info": {
             "archived": false,
@@ -5725,6 +5936,7 @@
         {
           "children": [],
           "description": "A JavaScript library for binding keyboard combos without the pain of key codes and key combo conflicts.",
+          "kind": "repository",
           "title": "KeyboardJS",
           "repo_info": {
             "archived": false,
@@ -5738,6 +5950,7 @@
         {
           "children": [],
           "description": "Simple library for handling keyboard shortcuts in JavaScript.",
+          "kind": "repository",
           "title": "mousetrap",
           "repo_info": {
             "archived": false,
@@ -5751,6 +5964,7 @@
         {
           "children": [],
           "description": "A simple micro-library for defining and dispatching keyboard shortcuts.",
+          "kind": "repository",
           "title": "keymaster",
           "repo_info": {
             "archived": false,
@@ -5770,6 +5984,7 @@
         {
           "children": [],
           "description": "Powerful yet light-weight, vanilla JavaScript engine to drive the user's focus across the page",
+          "kind": "repository",
           "title": "driver.js",
           "repo_info": {
             "archived": false,
@@ -5783,6 +5998,7 @@
         {
           "children": [],
           "description": "jQuery feature tour plugin.",
+          "kind": "repository",
           "title": "joyride",
           "repo_info": {
             "archived": false,
@@ -5796,6 +6012,7 @@
         {
           "children": [],
           "description": "Quick and easy product tours with Twitter Bootstrap Popovers.",
+          "kind": "repository",
           "title": "bootstrap-tour",
           "repo_info": {
             "archived": true,
@@ -5809,6 +6026,7 @@
         {
           "children": [],
           "description": "Set a spotlight focus on DOM element adding a overlay layer to the rest of the page.",
+          "kind": "repository",
           "title": "focusable",
           "repo_info": {
             "archived": false,
@@ -5822,6 +6040,7 @@
         {
           "children": [],
           "description": "Simple, flexible tours for your app.",
+          "kind": "repository",
           "title": "tourist",
           "repo_info": {
             "archived": false,
@@ -5835,6 +6054,7 @@
         {
           "children": [],
           "description": "Guide your users through a tour of your app.",
+          "kind": "repository",
           "title": "shepherd",
           "repo_info": {
             "archived": false,
@@ -5848,6 +6068,7 @@
         {
           "children": [],
           "description": "A better way for new feature introduction and step-by-step users guide for your website and project.",
+          "kind": "repository",
           "title": "intro.js",
           "repo_info": {
             "archived": false,
@@ -5861,6 +6082,7 @@
         {
           "children": [],
           "description": "A framework to make it easy for developers to add product tours to their pages.",
+          "kind": "repository",
           "title": "hopscotch",
           "repo_info": {
             "archived": false,
@@ -5880,6 +6102,7 @@
         {
           "children": [],
           "description": "Simple JavaScript toast notifications.",
+          "kind": "repository",
           "title": "toastr",
           "repo_info": {
             "archived": false,
@@ -5893,6 +6116,7 @@
         {
           "children": [],
           "description": "Elegant, responsive, flexible and lightweight notification plugin with no dependencies.",
+          "kind": "repository",
           "title": "iziToast",
           "repo_info": {
             "archived": false,
@@ -5906,6 +6130,7 @@
         {
           "children": [],
           "description": "jQuery notification plugin.",
+          "kind": "repository",
           "title": "noty",
           "repo_info": {
             "archived": false,
@@ -5919,6 +6144,7 @@
         {
           "children": [],
           "description": "Framework-agnostic styled alert system for JavaScript.",
+          "kind": "repository",
           "title": "smoke.js",
           "repo_info": {
             "archived": false,
@@ -5932,6 +6158,7 @@
         {
           "children": [],
           "description": "A simple, modern, browser notification system.",
+          "kind": "repository",
           "title": "humane-js",
           "repo_info": {
             "archived": false,
@@ -5945,6 +6172,7 @@
         {
           "children": [],
           "description": "JavaScript notifications for Bootstrap, jQuery UI, and the Web Notifications Draft.",
+          "kind": "repository",
           "title": "pnotify",
           "repo_info": {
             "archived": false,
@@ -5958,6 +6186,7 @@
         {
           "children": [],
           "description": "Pure JavaScript library for better notification messages.",
+          "kind": "repository",
           "title": "toastify-js",
           "repo_info": {
             "archived": false,
@@ -5971,6 +6200,7 @@
         {
           "children": [],
           "description": "Simple notifications and inputs with no dependencies.",
+          "kind": "repository",
           "title": "notie",
           "repo_info": {
             "archived": false,
@@ -5984,6 +6214,7 @@
         {
           "children": [],
           "description": "Growl-style alerts and messages for your app.",
+          "kind": "repository",
           "title": "messenger",
           "repo_info": {
             "archived": false,
@@ -5997,6 +6228,7 @@
         {
           "children": [],
           "description": "Open-source notification infrastructure for products.",
+          "kind": "repository",
           "title": "notifire",
           "repo_info": {
             "archived": false,
@@ -6016,6 +6248,7 @@
         {
           "children": [],
           "description": "CSS animation framework for creating responsive sliders, presentations, banners, and other step-based applications.",
+          "kind": "repository",
           "title": "Sequence",
           "repo_info": {
             "archived": false,
@@ -6029,6 +6262,7 @@
         {
           "children": [],
           "description": "JavaScript library for one-directional scrolling with item based navigation support.",
+          "kind": "repository",
           "title": "sly",
           "repo_info": {
             "archived": true,
@@ -6042,6 +6276,7 @@
         {
           "children": [],
           "description": "Strut - An Impress.js and Bespoke.js Presentation Editor",
+          "kind": "repository",
           "title": "Strut",
           "repo_info": {
             "archived": false,
@@ -6055,6 +6290,7 @@
         {
           "children": [],
           "description": "add some slide effects.",
+          "kind": "repository",
           "title": "slidr",
           "repo_info": {
             "archived": true,
@@ -6068,6 +6304,7 @@
         {
           "children": [],
           "description": "Responsive and touch-friendly jQuery slider. It's simple, lightweight and fast.",
+          "kind": "repository",
           "title": "Glide.js",
           "repo_info": {
             "archived": false,
@@ -6081,6 +6318,7 @@
         {
           "children": [],
           "description": "A framework for easily creating beautiful presentations using HTML.",
+          "kind": "repository",
           "title": "reveal.js",
           "repo_info": {
             "archived": false,
@@ -6094,6 +6332,7 @@
         {
           "children": [],
           "description": "Mobile touch slider and framework with hardware accelerated transitions.",
+          "kind": "repository",
           "title": "Swiper",
           "repo_info": {
             "archived": false,
@@ -6107,6 +6346,7 @@
         {
           "children": [],
           "description": "Touch, responsive, flickable galleries.",
+          "kind": "repository",
           "title": "Flickity",
           "repo_info": {
             "archived": false,
@@ -6120,6 +6360,7 @@
         {
           "children": [],
           "description": "DIY Presentation Micro-Framework",
+          "kind": "repository",
           "title": "bespoke.js",
           "repo_info": {
             "archived": false,
@@ -6133,6 +6374,7 @@
         {
           "children": [],
           "description": "Simple to use, simple to theme, simple to customise.",
+          "kind": "repository",
           "title": "basic-jquery-slider",
           "repo_info": {
             "archived": true,
@@ -6146,6 +6388,7 @@
         {
           "children": [],
           "description": "The last carousel you'll ever need.",
+          "kind": "repository",
           "title": "slick",
           "repo_info": {
             "archived": false,
@@ -6159,6 +6402,7 @@
         {
           "children": [],
           "description": "An awesome, fully responsive jQuery slider plugin.",
+          "kind": "repository",
           "title": "FlexSlider",
           "repo_info": {
             "archived": false,
@@ -6172,6 +6416,7 @@
         {
           "children": [],
           "description": "A responsive slider jQuery plugin with CSS animations.",
+          "kind": "repository",
           "title": "jcSlider",
           "repo_info": {
             "archived": false,
@@ -6185,6 +6430,7 @@
         {
           "children": [],
           "description": "JavaScript image gallery for mobile and desktop, modular, framework independent.",
+          "kind": "repository",
           "title": "PhotoSwipe",
           "repo_info": {
             "archived": false,
@@ -6198,6 +6444,7 @@
         {
           "children": [],
           "description": "A jQuery plugin to add beautiful fullscreen backgrounds to your webpages. It even allows Slideshows.",
+          "kind": "repository",
           "title": "vegas",
           "repo_info": {
             "archived": false,
@@ -6211,6 +6458,7 @@
         {
           "children": [],
           "description": "It's a presentation framework based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com.",
+          "kind": "repository",
           "title": "impress.js",
           "repo_info": {
             "archived": false,
@@ -6224,6 +6472,7 @@
         {
           "children": [],
           "description": "An extensible low level carousel for the web, written in TypeScript.",
+          "kind": "repository",
           "title": "Embla Carousel",
           "repo_info": {
             "archived": false,
@@ -6237,6 +6486,7 @@
         {
           "children": [],
           "description": "A jQuery plugin for a slider with adaptive colored figcaption and navigation.",
+          "kind": "repository",
           "title": "jQuery.adaptive-slider",
           "repo_info": {
             "archived": true,
@@ -6246,11 +6496,6 @@
             "repo": "jQuery.adaptive-slider",
             "stars": 1255
           }
-        },
-        {
-          "children": [],
-          "description": "Is a responsive slideshow plug-in for JQuery(1.7.1+) with features like touch and CSS3 transitions",
-          "title": "slidesJs"
         }
       ],
       "title": "Sliders"
@@ -6261,6 +6506,7 @@
         {
           "children": [],
           "description": "HTML5 input range slider element polyfill.",
+          "kind": "repository",
           "title": "rangeslider.js",
           "repo_info": {
             "archived": false,
@@ -6274,6 +6520,7 @@
         {
           "children": [],
           "description": "Powerful and easily customizable range slider with many options and skin support.",
+          "kind": "repository",
           "title": "Ion.RangeSlider",
           "repo_info": {
             "archived": false,
@@ -6287,6 +6534,7 @@
         {
           "children": [],
           "description": "A JavaScript slider selector that supports dates.",
+          "kind": "repository",
           "title": "jQRangeSlider",
           "repo_info": {
             "archived": false,
@@ -6300,6 +6548,7 @@
         {
           "children": [],
           "description": "A lightweight, highly customizable range slider without bloat.",
+          "kind": "repository",
           "title": "noUiSlider",
           "repo_info": {
             "archived": false,
@@ -6324,6 +6573,7 @@
         {
           "children": [],
           "description": "A fast and fully-featured autocomplete library.",
+          "kind": "repository",
           "title": "typeahead.js",
           "repo_info": {
             "archived": false,
@@ -6337,6 +6587,7 @@
         {
           "children": [],
           "description": "A JavaScript polyfill for the HTML5 placeholder attribute.",
+          "kind": "repository",
           "title": "Placeholders.js",
           "repo_info": {
             "archived": false,
@@ -6350,6 +6601,7 @@
         {
           "children": [],
           "description": "Magically convert a simple text input into a cool tag list with this jQuery plugin.",
+          "kind": "repository",
           "title": "jQuery-Tags-Input",
           "repo_info": {
             "archived": false,
@@ -6363,6 +6615,7 @@
         {
           "children": [],
           "description": "A jQuery UI plugin to handle multi-tag fields as well as tag suggestions/autocomplete.",
+          "kind": "repository",
           "title": "tag-it",
           "repo_info": {
             "archived": false,
@@ -6376,6 +6629,7 @@
         {
           "children": [],
           "description": "A pure JavaScript mask input.",
+          "kind": "repository",
           "title": "vanilla-masker",
           "repo_info": {
             "archived": false,
@@ -6389,6 +6643,7 @@
         {
           "children": [],
           "description": "Ultra lightweight, usable, beautiful autocomplete with zero dependencies. - https://projects.verou.me/awesomplete/",
+          "kind": "repository",
           "title": "awesomplete",
           "repo_info": {
             "archived": false,
@@ -6402,6 +6657,7 @@
         {
           "children": [],
           "description": "Add GitHub like mentions autocomplete to your application.",
+          "kind": "repository",
           "title": "At.js",
           "repo_info": {
             "archived": false,
@@ -6415,6 +6671,7 @@
         {
           "children": [],
           "description": "Makes typing in input fields fun with CSS3 effects.",
+          "kind": "repository",
           "title": "fancyInput",
           "repo_info": {
             "archived": false,
@@ -6428,6 +6685,7 @@
         {
           "children": [],
           "description": "jQuery plugin for styling checkboxes and radio-buttons. With skin support.",
+          "kind": "repository",
           "title": "Ion.CheckRadio",
           "repo_info": {
             "archived": false,
@@ -6447,6 +6705,7 @@
         {
           "children": [],
           "description": "A JavaScript schedule calendar that is full featured. Now your service just got the customizable calendar.",
+          "kind": "repository",
           "title": "tui.calendar",
           "repo_info": {
             "archived": false,
@@ -6460,6 +6719,7 @@
         {
           "children": [],
           "description": "Full-sized drag & drop event calendar (jQuery plugin).",
+          "kind": "repository",
           "title": "fullcalendar",
           "repo_info": {
             "archived": false,
@@ -6473,6 +6733,7 @@
         {
           "children": [],
           "description": "A customizable date (and time) picker. Dependency free, opt-in UI.",
+          "kind": "repository",
           "title": "rome",
           "repo_info": {
             "archived": false,
@@ -6486,6 +6747,7 @@
         {
           "children": [],
           "description": "open source version of Duet Design System’s accessible date picker, WCAG 2.1 accessibility complaint",
+          "kind": "repository",
           "title": "Duet Date Picker",
           "repo_info": {
             "archived": false,
@@ -6499,6 +6761,7 @@
         {
           "children": [],
           "description": "Material design event calendar. Features drag & drop, dark mode, multiple views and more.",
+          "kind": "repository",
           "title": "Schedule-X",
           "repo_info": {
             "archived": false,
@@ -6512,6 +6775,7 @@
         {
           "children": [],
           "description": "A refreshing JavaScript Datepicker — lightweight, no dependencies, modular CSS.",
+          "kind": "repository",
           "title": "Pikaday",
           "repo_info": {
             "archived": false,
@@ -6525,6 +6789,7 @@
         {
           "children": [],
           "description": "A datepicker for @twitter bootstrap forked from Stefan Petre's (of eyecon.ro), improvements by @eternicode.",
+          "kind": "repository",
           "title": "bootstrap-datepicker",
           "repo_info": {
             "archived": false,
@@ -6538,6 +6803,7 @@
         {
           "children": [],
           "description": "The mobile-friendly, responsive, and lightweight jQuery date & time input picker.",
+          "kind": "repository",
           "title": "pickadate.js",
           "repo_info": {
             "archived": false,
@@ -6551,6 +6817,7 @@
         {
           "children": [],
           "description": "creates a dropdown menu from which a user can select a range of dates.",
+          "kind": "repository",
           "title": "Date Range Picker",
           "repo_info": {
             "archived": false,
@@ -6570,6 +6837,7 @@
         {
           "children": [],
           "description": "Selectize is the hybrid of a textbox and box. It's jQuery based and it has autocomplete and native-feeling keyboard navigation; useful for tagging, contact lists, etc.",
+          "kind": "repository",
           "title": "selectize.js",
           "repo_info": {
             "archived": false,
@@ -6583,6 +6851,7 @@
         {
           "children": [],
           "description": "a jQuery based replacement for select boxes. It supports searching, remote data sets, and infinite scrolling of results.",
+          "kind": "repository",
           "title": "select2",
           "repo_info": {
             "archived": true,
@@ -6596,6 +6865,7 @@
         {
           "children": [],
           "description": "A library for making long, unwieldy select boxes more friendly.",
+          "kind": "repository",
           "title": "chosen",
           "repo_info": {
             "archived": false,
@@ -6615,6 +6885,7 @@
         {
           "children": [],
           "description": "A JavaScript API for dealing with file uploads it supports features like multiple file selection, file type filtering, request chunking, client side image scaling and it uses different runtimes to achieve this such as HTML 5, Silverlight and Flash.",
+          "kind": "repository",
           "title": "plupload",
           "repo_info": {
             "archived": false,
@@ -6628,6 +6899,7 @@
         {
           "children": [],
           "description": "A JavaScript library that can upload anything you throw at it, optimizes images for faster uploads, and offers a great, accessible, silky smooth user experience.",
+          "kind": "repository",
           "title": "filepond",
           "repo_info": {
             "archived": false,
@@ -6641,6 +6913,7 @@
         {
           "children": [],
           "description": "Multiple file upload plugin with progress-bar, drag-and-drop, direct-to-S3 uploading.",
+          "kind": "repository",
           "title": "fine-uploader",
           "repo_info": {
             "archived": false,
@@ -6654,6 +6927,7 @@
         {
           "children": [],
           "description": "A JavaScript library providing multiple simultaneous, stable, fault-tolerant and resumable/restartable file uploads via the HTML5 File API.",
+          "kind": "repository",
           "title": "flow.js",
           "repo_info": {
             "archived": false,
@@ -6667,6 +6941,7 @@
         {
           "children": [],
           "description": "File Upload widget with multiple file selection, drag&drop support, progress bar, validation and preview images, audio and video for jQuery.",
+          "kind": "repository",
           "title": "jQuery-File-Upload",
           "repo_info": {
             "archived": false,
@@ -6680,6 +6955,7 @@
         {
           "children": [],
           "description": "Dropzone is an easy to use drag'n'drop library. It supports image previews and shows nice progress bars.",
+          "kind": "repository",
           "title": "dropzone",
           "repo_info": {
             "archived": false,
@@ -6693,6 +6969,7 @@
         {
           "children": [],
           "description": "A set of JavaScript tools for working with files. Multiupload, drag'n'drop and chunked file upload. Images: crop, resize and auto orientation by EXIF.",
+          "kind": "repository",
           "title": "FileAPI",
           "repo_info": {
             "archived": false,
@@ -6712,6 +6989,7 @@
         {
           "children": [],
           "description": "Automatically persist your forms' text and select field values locally, until the form is submitted.",
+          "kind": "repository",
           "title": "Garlic.js",
           "repo_info": {
             "archived": false,
@@ -6725,6 +7003,7 @@
         {
           "children": [],
           "description": "jQuery Form Plugin.",
+          "kind": "repository",
           "title": "form",
           "repo_info": {
             "archived": false,
@@ -6738,6 +7017,7 @@
         {
           "children": [],
           "description": "A lightweight gui controller for changing variables in JavaScript.",
+          "kind": "repository",
           "title": "dat.GUI",
           "repo_info": {
             "archived": false,
@@ -6751,6 +7031,7 @@
         {
           "children": [],
           "description": "A lightweight, extendable analytics library designed to work with any third-party analytics provider to track page views, custom events, & identify users.",
+          "kind": "repository",
           "title": "analytics",
           "repo_info": {
             "archived": false,
@@ -6764,6 +7045,7 @@
         {
           "children": [],
           "description": "Make your credit card form better in one line of code.",
+          "kind": "repository",
           "title": "card",
           "repo_info": {
             "archived": false,
@@ -6777,6 +7059,7 @@
         {
           "children": [],
           "description": "A JavaScript function to add live paragraph-, word- and character-counting to an HTML element.",
+          "kind": "repository",
           "title": "Countable",
           "repo_info": {
             "archived": false,
@@ -6790,6 +7073,7 @@
         {
           "children": [],
           "description": "Form element autosizing, the way it should be.",
+          "kind": "repository",
           "title": "stretchy",
           "repo_info": {
             "archived": false,
@@ -6809,6 +7093,7 @@
         {
           "children": [],
           "description": "A tooltip library in CSS for your lovely websites.",
+          "kind": "repository",
           "title": "hint.css",
           "repo_info": {
             "archived": true,
@@ -6822,6 +7107,7 @@
         {
           "children": [],
           "description": "An open source JavaScript tooltip based on the prototype framework.",
+          "kind": "repository",
           "title": "opentip",
           "repo_info": {
             "archived": true,
@@ -6835,6 +7121,7 @@
         {
           "children": [],
           "description": "Facebook-style tooltips plugin for jQuery.",
+          "kind": "repository",
           "title": "tipsy",
           "repo_info": {
             "archived": false,
@@ -6848,6 +7135,7 @@
         {
           "children": [],
           "description": "A simple CSS tooltip made with Sass.",
+          "kind": "repository",
           "title": "simptip",
           "repo_info": {
             "archived": false,
@@ -6861,6 +7149,7 @@
         {
           "children": [],
           "description": "A jQuery tooltip plugin.",
+          "kind": "repository",
           "title": "tooltipster",
           "repo_info": {
             "archived": false,
@@ -6874,6 +7163,7 @@
         {
           "children": [],
           "description": "Pretty powerful tooltips.",
+          "kind": "repository",
           "title": "qTip2",
           "repo_info": {
             "archived": false,
@@ -6887,6 +7177,7 @@
         {
           "children": [],
           "description": "A tooltip style toolbar jQuery plugin",
+          "kind": "repository",
           "title": "toolbar",
           "repo_info": {
             "archived": false,
@@ -6906,6 +7197,7 @@
         {
           "children": [],
           "description": "jQuery PopBox UI Element.",
+          "kind": "repository",
           "title": "jquery-popbox",
           "repo_info": {
             "archived": false,
@@ -6919,6 +7211,7 @@
         {
           "children": [],
           "description": "A jQuery plugin with new modal concept for popups.",
+          "kind": "repository",
           "title": "jquery.avgrund.js",
           "repo_info": {
             "archived": false,
@@ -6932,6 +7225,7 @@
         {
           "children": [],
           "description": "An awesome replacement for JavaScript's alert.",
+          "kind": "repository",
           "title": "SweetAlert",
           "repo_info": {
             "archived": false,
@@ -6945,6 +7239,7 @@
         {
           "children": [],
           "description": "jQuery plugin for responsive and accessible modal windows and tooltips.",
+          "kind": "repository",
           "title": "jquery-popup-overlay",
           "repo_info": {
             "archived": false,
@@ -6958,6 +7253,7 @@
         {
           "children": [],
           "description": "jBox is a powerful and flexible jQuery plugin, taking care of all your popup windows, tooltips, notices and more.",
+          "kind": "repository",
           "title": "jBox",
           "repo_info": {
             "archived": false,
@@ -6971,6 +7267,7 @@
         {
           "children": [],
           "description": "A modal built out of pure CSS.",
+          "kind": "repository",
           "title": "css-modal",
           "repo_info": {
             "archived": false,
@@ -6984,6 +7281,7 @@
         {
           "children": [],
           "description": "A touchable jQuery lightbox",
+          "kind": "repository",
           "title": "swipebox",
           "repo_info": {
             "archived": false,
@@ -6997,6 +7295,7 @@
         {
           "children": [],
           "description": "A customizable, modular, responsive, lightbox gallery plugin for jQuery.",
+          "kind": "repository",
           "title": "lightGallery",
           "repo_info": {
             "archived": true,
@@ -7010,6 +7309,7 @@
         {
           "children": [],
           "description": "Extends the default Bootstrap Modal class. Responsive, stackable, ajax and more.",
+          "kind": "repository",
           "title": "bootstrap-modal",
           "repo_info": {
             "archived": false,
@@ -7023,6 +7323,7 @@
         {
           "children": [],
           "description": "A tool that offers a nice and elegant way to add zooming functionality for images, html content and multi-media on your webpages.",
+          "kind": "repository",
           "title": "fancyBox",
           "repo_info": {
             "archived": false,
@@ -7036,6 +7337,7 @@
         {
           "children": [],
           "description": "Light and responsive lightbox script with focus on performance.",
+          "kind": "repository",
           "title": "Magnific-Popup",
           "repo_info": {
             "archived": false,
@@ -7049,6 +7351,7 @@
         {
           "children": [],
           "description": "A light-weight, customizable lightbox plugin for jQuery.",
+          "kind": "repository",
           "title": "colorbox",
           "repo_info": {
             "archived": false,
@@ -7062,6 +7365,7 @@
         {
           "children": [],
           "description": "Lightweight, no dependencies, accessibility enabled TypeScript library for creating modal windows.",
+          "kind": "repository",
           "title": "keukenhof",
           "repo_info": {
             "archived": false,
@@ -7075,6 +7379,7 @@
         {
           "children": [],
           "description": "the JavaScript Fullscreen API, which lets you bring the page or any element into fullscreen. Smoothens out the browser implementation differences, so you don't have to.",
+          "kind": "repository",
           "title": "screenfull.js",
           "repo_info": {
             "archived": false,
@@ -7088,6 +7393,7 @@
         {
           "children": [],
           "description": "A modern dialog library which is highly configurable and easy to style.",
+          "kind": "repository",
           "title": "vex",
           "repo_info": {
             "archived": false,
@@ -7101,6 +7407,7 @@
         {
           "children": [],
           "description": "An awesome replacement for JavaScript's alert.",
+          "kind": "repository",
           "title": "SweetAlert2",
           "repo_info": {
             "archived": false,
@@ -7114,6 +7421,7 @@
         {
           "children": [],
           "description": "Simple and easy to use lightbox script written in pure JavaScript.",
+          "kind": "repository",
           "title": "baguetteBox.js",
           "repo_info": {
             "archived": false,
@@ -7133,6 +7441,7 @@
         {
           "children": [],
           "description": "Finally, a \"back to top\" button that behaves like a real elevator.",
+          "kind": "repository",
           "title": "elevator.js",
           "repo_info": {
             "archived": false,
@@ -7146,6 +7455,7 @@
         {
           "children": [],
           "description": "A simple and fast API to monitor elements as you scroll.",
+          "kind": "repository",
           "title": "scrollMonitor",
           "repo_info": {
             "archived": false,
@@ -7159,6 +7469,7 @@
         {
           "children": [],
           "description": "Tiny vanilla JS plugin to display large data sets easily.",
+          "kind": "repository",
           "title": "Clusterize.js",
           "repo_info": {
             "archived": true,
@@ -7172,6 +7483,7 @@
         {
           "children": [],
           "description": "iScroll is a high performance, small footprint, dependency free, multi-platform JavaScript scroller.",
+          "kind": "repository",
           "title": "iscroll",
           "repo_info": {
             "archived": false,
@@ -7185,6 +7497,7 @@
         {
           "children": [],
           "description": "A simple and easy to use plugin to create fullscreen scrolling websites (also known as single page websites).",
+          "kind": "repository",
           "title": "fullPage",
           "repo_info": {
             "archived": false,
@@ -7198,6 +7511,7 @@
         {
           "children": [],
           "description": "jQuery powered parallaxing.",
+          "kind": "repository",
           "title": "plax",
           "repo_info": {
             "archived": false,
@@ -7211,6 +7525,7 @@
         {
           "children": [],
           "description": "Parallax Engine that reacts to the orientation of a smart device.",
+          "kind": "repository",
           "title": "parallax",
           "repo_info": {
             "archived": false,
@@ -7224,6 +7539,7 @@
         {
           "children": [],
           "description": "Create an Apple-like one page scroller website (iPhone 5S website) with One Page Scroll plugin.",
+          "kind": "repository",
           "title": "onepage-scroll",
           "repo_info": {
             "archived": false,
@@ -7237,6 +7553,7 @@
         {
           "children": [],
           "description": "Give your pages some headroom. Hide your header until you need it.",
+          "kind": "repository",
           "title": "headroom",
           "repo_info": {
             "archived": false,
@@ -7250,6 +7567,7 @@
         {
           "children": [],
           "description": "A new interface to replace old boring scrollbar.",
+          "kind": "repository",
           "title": "ScrollMenu",
           "repo_info": {
             "archived": false,
@@ -7263,6 +7581,7 @@
         {
           "children": [],
           "description": "Detects the elements in viewport and smooth scrolling with parallax.",
+          "kind": "repository",
           "title": "locomotive-scroll",
           "repo_info": {
             "archived": false,
@@ -7276,6 +7595,7 @@
         {
           "children": [],
           "description": "jQuery plugin for creating interactive parallax effect.",
+          "kind": "repository",
           "title": "jparallax",
           "repo_info": {
             "archived": false,
@@ -7289,6 +7609,7 @@
         {
           "children": [],
           "description": "A collection of CSS List scroll effects bind to dom through javascript.",
+          "kind": "repository",
           "title": "stroll",
           "repo_info": {
             "archived": false,
@@ -7302,6 +7623,7 @@
         {
           "children": [],
           "description": "Buttery smooth, super lightweight, vanilla javascript parallax library.",
+          "kind": "repository",
           "title": "rellax",
           "repo_info": {
             "archived": false,
@@ -7315,6 +7637,7 @@
         {
           "children": [],
           "description": "A hybrid smooth scroll setup that combines the performance gains of virtual scroll with the reliability of native scroll.",
+          "kind": "repository",
           "title": "asscroll",
           "repo_info": {
             "archived": false,
@@ -7328,6 +7651,7 @@
         {
           "children": [],
           "description": "Simple and tiny JavaScript library to add parallax animations on any images",
+          "kind": "repository",
           "title": "simpleParallax",
           "repo_info": {
             "archived": false,
@@ -7341,6 +7665,7 @@
         {
           "children": [],
           "description": "Stand-alone parallax scrolling library for mobile (Android + iOS) and desktop. No jQuery.",
+          "kind": "repository",
           "title": "skrollr",
           "repo_info": {
             "archived": false,
@@ -7354,6 +7679,7 @@
         {
           "children": [],
           "description": "Parallax scrolling made easy.",
+          "kind": "repository",
           "title": "stellar.js",
           "repo_info": {
             "archived": false,
@@ -7373,6 +7699,7 @@
         {
           "children": [],
           "description": "jQuery plugin to fire events when user's cursor aims at particular dropdown menu items. For making responsive mega dropdowns like Amazon's.",
+          "kind": "repository",
           "title": "jQuery-menu-aim",
           "repo_info": {
             "archived": false,
@@ -7386,6 +7713,7 @@
         {
           "children": [],
           "description": "contextMenu manager.",
+          "kind": "repository",
           "title": "jQuery contextMenu",
           "repo_info": {
             "archived": false,
@@ -7399,6 +7727,7 @@
         {
           "children": [],
           "description": "A sliding swipe menu that works with touchSwipe library.",
+          "kind": "repository",
           "title": "Slide and swipe",
           "repo_info": {
             "archived": false,
@@ -7412,6 +7741,7 @@
         {
           "children": [],
           "description": "The best jQuery plugin for app look-alike on- and off-canvas menus with sliding submenus for your website and webapp.",
+          "kind": "repository",
           "title": "mmenu",
           "repo_info": {
             "archived": false,
@@ -7425,6 +7755,7 @@
         {
           "children": [],
           "description": "A responsive touch slideout navigation menu for mobile web apps.",
+          "kind": "repository",
           "title": "Slideout",
           "repo_info": {
             "archived": false,
@@ -7444,6 +7775,7 @@
         {
           "children": [],
           "description": "Grid based on CSS3 flexbox.",
+          "kind": "repository",
           "title": "flexboxgrid",
           "repo_info": {
             "archived": false,
@@ -7457,6 +7789,7 @@
         {
           "children": [],
           "description": "(jQuery plug-in) lock any table's header while scrolling within the body. Works on any table and requires no custom html or css.",
+          "kind": "repository",
           "title": "floatThead",
           "repo_info": {
             "archived": false,
@@ -7470,6 +7803,7 @@
         {
           "children": [],
           "description": "A jQuery plugin to create AJAX based CRUD tables.",
+          "kind": "repository",
           "title": "jTable",
           "repo_info": {
             "archived": false,
@@ -7479,36 +7813,6 @@
             "repo": "jtable",
             "stars": 3460
           }
-        },
-        {
-          "children": [],
-          "description": "(jQuery plug-in) It is a highly flexible tool, based upon the foundations of progressive enhancement, and will add advanced interaction controls to any HTML table.",
-          "title": "DataTables"
-        },
-        {
-          "children": [],
-          "description": "(jQuery plug-in) An extremely flexible library that create tables with a range of interactive features from any JSON data source or existing HTML table.",
-          "title": "Tabulator"
-        },
-        {
-          "children": [],
-          "description": "An Extension to the popular Bootstrap framework for creating tables that fit the style of your site with no need for additional markup.",
-          "title": "Bootstrap Table"
-        },
-        {
-          "children": [],
-          "description": "A cascading grid layout library.",
-          "title": "Masonry"
-        },
-        {
-          "children": [],
-          "description": "A grid layout library that uses a bin-packing algorithm. Useable for draggable layouts.",
-          "title": "Packery"
-        },
-        {
-          "children": [],
-          "description": "A filterable, sortable, grid layout library. Can implement Masonry, Packery, and other layouts.",
-          "title": "Isotope"
         }
       ],
       "title": "Table/Grid"
@@ -7519,6 +7823,7 @@
         {
           "children": [],
           "description": "HTML Framework that allows you not to write JavaScript code.",
+          "kind": "repository",
           "title": "EHTML",
           "repo_info": {
             "archived": false,
@@ -7532,6 +7837,7 @@
         {
           "children": [],
           "description": "A minimal JavaScript Framework and standalone components for rapid development of sites and SPA's.",
+          "kind": "repository",
           "title": "DataFormsJS",
           "repo_info": {
             "archived": false,
@@ -7545,6 +7851,7 @@
         {
           "children": [],
           "description": "The worlds smallest fully-responsive css framework.",
+          "kind": "repository",
           "title": "fluidity",
           "repo_info": {
             "archived": false,
@@ -7558,6 +7865,7 @@
         {
           "children": [],
           "description": "An HTML5/CSS3 framework used at SAPO for fast and efficient website design and prototyping.",
+          "kind": "repository",
           "title": "Ink",
           "repo_info": {
             "archived": false,
@@ -7567,16 +7875,6 @@
             "repo": "Ink",
             "stars": 7140
           }
-        },
-        {
-          "children": [],
-          "description": "UI Kit with lots of themes and elements.",
-          "title": "Semantic UI"
-        },
-        {
-          "children": [],
-          "description": "A set of jQuery plugins for front-end development of data-driven web applications.",
-          "title": "w2ui"
         }
       ],
       "title": "Frameworks"
@@ -7587,6 +7885,7 @@
         {
           "children": [],
           "description": "A front-end template that helps you build fast, modern mobile web apps.",
+          "kind": "repository",
           "title": "mobile-boilerplate",
           "repo_info": {
             "archived": false,
@@ -7600,6 +7899,7 @@
         {
           "children": [],
           "description": "A few simple, but solid patterns for responsive HTML emails. Even in Outlook.",
+          "kind": "repository",
           "title": "Cerberus",
           "repo_info": {
             "archived": false,
@@ -7613,6 +7913,7 @@
         {
           "children": [],
           "description": "A professional front-end template for building fast, robust, and adaptable web apps or sites.",
+          "kind": "repository",
           "title": "html5-boilerplate",
           "repo_info": {
             "archived": false,
@@ -7626,6 +7927,7 @@
         {
           "children": [],
           "description": "A fluid grid of square units.",
+          "kind": "repository",
           "title": "Fluid-Squares",
           "repo_info": {
             "archived": false,
@@ -7639,6 +7941,7 @@
         {
           "children": [],
           "description": "An example of a mobile-first responsive web design.",
+          "kind": "repository",
           "title": "Mobile-First-RWD",
           "repo_info": {
             "archived": false,
@@ -7652,6 +7955,7 @@
         {
           "children": [],
           "description": "An awesome front-end framework that lets you stay focused on building your site or app while remaining really easy to use.",
+          "kind": "repository",
           "title": "webplate",
           "repo_info": {
             "archived": false,
@@ -7665,6 +7969,7 @@
         {
           "children": [],
           "description": "This Is Responsive.",
+          "kind": "repository",
           "title": "this-is-responsive",
           "repo_info": {
             "archived": false,
@@ -7678,6 +7983,7 @@
         {
           "children": [],
           "description": "Wasp is a declarative domain-specific language for developing, building, and deploying modern Javascript full-stack web apps with less code.",
+          "kind": "repository",
           "title": "Wasp",
           "repo_info": {
             "archived": false,
@@ -7691,6 +7997,7 @@
         {
           "children": [],
           "description": "An intro page with a full width background image, a bold animated menu and an iOS-like blurred effect behind the navigation.",
+          "kind": "repository",
           "title": "full-page-intro-and-navigation",
           "repo_info": {
             "archived": false,
@@ -7700,11 +8007,6 @@
             "repo": "full-page-intro-and-navigation",
             "stars": 2677
           }
-        },
-        {
-          "children": [],
-          "description": "Task automation with NPM run-scripts.",
-          "title": "npm run-scripts"
         }
       ],
       "title": "Boilerplates"
@@ -7715,6 +8017,7 @@
         {
           "children": [],
           "description": "Zoom responsively, images & more, w/ jQuery.",
+          "kind": "repository",
           "title": "Magnificent.js",
           "repo_info": {
             "archived": false,
@@ -7728,6 +8031,7 @@
         {
           "children": [],
           "description": "Panolens.js is an event-driven and WebGL based panorama viewer. Lightweight and flexible",
+          "kind": "repository",
           "title": "Panolens.js",
           "repo_info": {
             "archived": false,
@@ -7741,6 +8045,7 @@
         {
           "children": [],
           "description": "Easily add \"zoom on hover\" functionality to your site's images. Lightweight, no-dependency JavaScript.",
+          "kind": "repository",
           "title": "Drift",
           "repo_info": {
             "archived": false,
@@ -7760,6 +8065,7 @@
         {
           "children": [],
           "description": "A JavaScript library for multi-touch gestures.",
+          "kind": "repository",
           "title": "hammer.js",
           "repo_info": {
             "archived": false,
@@ -7773,6 +8079,7 @@
         {
           "children": [],
           "description": "Emulate touch input on your desktop.",
+          "kind": "repository",
           "title": "touchemulator",
           "repo_info": {
             "archived": false,
@@ -7786,6 +8093,7 @@
         {
           "children": [],
           "description": "Drag and drop so simple it hurts.",
+          "kind": "repository",
           "title": "Dragula",
           "repo_info": {
             "archived": false,
@@ -7805,6 +8113,7 @@
         {
           "children": [],
           "description": "Open Source WebGL virtual globe and map engine.",
+          "kind": "repository",
           "title": "Cesium",
           "repo_info": {
             "archived": false,
@@ -7818,6 +8127,7 @@
         {
           "children": [],
           "description": "Mapbox JavaScript API, a Leaflet Plugin.",
+          "kind": "repository",
           "title": "mapbox.js",
           "repo_info": {
             "archived": false,
@@ -7831,6 +8141,7 @@
         {
           "children": [],
           "description": "Open source JavaScript renderer for Kartograph SVG maps.",
+          "kind": "repository",
           "title": "kartograph.js",
           "repo_info": {
             "archived": false,
@@ -7844,6 +8155,7 @@
         {
           "children": [],
           "description": "Hexagonal hierarchical geospatial indexing system ported to javascript by Uber for geospatial visualization.",
+          "kind": "repository",
           "title": "H3js",
           "repo_info": {
             "archived": false,
@@ -7857,6 +8169,7 @@
         {
           "children": [],
           "description": "The easiest way to use Google Maps.",
+          "kind": "repository",
           "title": "gmaps",
           "repo_info": {
             "archived": false,
@@ -7870,6 +8183,7 @@
         {
           "children": [],
           "description": "JavaScript library for mobile-friendly interactive maps.",
+          "kind": "repository",
           "title": "Leaflet",
           "repo_info": {
             "archived": false,
@@ -7883,6 +8197,7 @@
         {
           "children": [],
           "description": "A free JavaScript library for making dynamic, interactive maps in modern web browsers.",
+          "kind": "repository",
           "title": "polymaps",
           "repo_info": {
             "archived": true,
@@ -7896,6 +8211,7 @@
         {
           "children": [],
           "description": "jQuery Vector Map Library.",
+          "kind": "repository",
           "title": "jqvmap",
           "repo_info": {
             "archived": false,
@@ -7905,11 +8221,6 @@
             "repo": "jqvmap",
             "stars": 1617
           }
-        },
-        {
-          "children": [],
-          "description": "A high-performance, feature-packed library for all your mapping needs.",
-          "title": "OpenLayers3"
         }
       ],
       "title": "Maps"
@@ -7920,6 +8231,7 @@
         {
           "children": [],
           "description": "Prettier embeds for your YouTubes - with nice options like high-res preview images, advanced customization of embed options, and optional FitVids support.",
+          "kind": "repository",
           "title": "prettyembed.js",
           "repo_info": {
             "archived": false,
@@ -7933,6 +8245,7 @@
         {
           "children": [],
           "description": "The HTML5 video player for the web https://flowplayer.com/",
+          "kind": "repository",
           "title": "flowplayer",
           "repo_info": {
             "archived": false,
@@ -7946,6 +8259,7 @@
         {
           "children": [],
           "description": "A library for making interactive videos in React.js.",
+          "kind": "repository",
           "title": "ractive-player",
           "repo_info": {
             "archived": false,
@@ -7959,6 +8273,7 @@
         {
           "children": [],
           "description": "Simple sounds on any web page.",
+          "kind": "repository",
           "title": "Ion.Sound",
           "repo_info": {
             "archived": false,
@@ -7972,6 +8287,7 @@
         {
           "children": [],
           "description": "HTML5 or player with Flash and Silverlight shims that mimics the HTML5 MediaElement API, enabling a consistent UI in all browsers. http://www.mediaelementjs.com/",
+          "kind": "repository",
           "title": "mediaelement",
           "repo_info": {
             "archived": false,
@@ -7985,6 +8301,7 @@
         {
           "children": [],
           "description": "Video.js - open source HTML5 & Flash video player.",
+          "kind": "repository",
           "title": "video.js",
           "repo_info": {
             "archived": false,
@@ -7998,6 +8315,7 @@
         {
           "children": [],
           "description": "Play'em is a JavaScript component that manages a music/video track queue and plays a sequence of songs by embedding several players in a HTML DIV including Youtube, Soundcloud and Vimeo.",
+          "kind": "repository",
           "title": "Play-em JS",
           "repo_info": {
             "archived": false,
@@ -8011,6 +8329,7 @@
         {
           "children": [],
           "description": "A JavaScript library that implements an HTTP Live Streaming client. It relies on HTML5 video and MediaSource Extensions for playback.",
+          "kind": "repository",
           "title": "hls.js",
           "repo_info": {
             "archived": false,
@@ -8024,6 +8343,7 @@
         {
           "children": [],
           "description": "FFmpeg optimized for in-browser use: minimal size for faster loading, asm.js, performance tunings, etc.",
+          "kind": "repository",
           "title": "ffmpeg.js",
           "repo_info": {
             "archived": false,
@@ -8037,6 +8357,7 @@
         {
           "children": [],
           "description": "A lightweight, easy-to-use jQuery plugin for fluid width video embeds.",
+          "kind": "repository",
           "title": "FitVids.js",
           "repo_info": {
             "archived": false,
@@ -8050,6 +8371,7 @@
         {
           "children": [],
           "description": "A library to make working with audio on the web easier. It provides a consistent API for playing audio in different browsers.",
+          "kind": "repository",
           "title": "SoundJS",
           "repo_info": {
             "archived": false,
@@ -8063,6 +8385,7 @@
         {
           "children": [],
           "description": "Rule YouTube, Soundcloud and Vimeo player with one API.",
+          "kind": "repository",
           "title": "polyplayer",
           "repo_info": {
             "archived": false,
@@ -8076,6 +8399,7 @@
         {
           "children": [],
           "description": "An HTML5 Flash Video (FLV) Player written in pure JavaScript without Flash.",
+          "kind": "repository",
           "title": "flv.js",
           "repo_info": {
             "archived": false,
@@ -8089,6 +8413,7 @@
         {
           "children": [],
           "description": "A widget that allows users to take their avatar pictures on your site.",
+          "kind": "repository",
           "title": "photobooth-js",
           "repo_info": {
             "archived": false,
@@ -8102,6 +8427,7 @@
         {
           "children": [],
           "description": "an agnostic and easy-to-use library to work with the API.",
+          "kind": "repository",
           "title": "ts-audio",
           "repo_info": {
             "archived": false,
@@ -8115,6 +8441,7 @@
         {
           "children": [],
           "description": "An extensible media player for the web http://clappr.io",
+          "kind": "repository",
           "title": "clappr",
           "repo_info": {
             "archived": false,
@@ -8124,11 +8451,6 @@
             "repo": "clappr",
             "stars": 539
           }
-        },
-        {
-          "children": [],
-          "description": "Open Source HTML5 Web Audio Library. Design your web audio player, the way you want. No dependencies required.",
-          "title": "AmplitudeJS"
         }
       ],
       "title": "Video/Audio"
@@ -8139,6 +8461,7 @@
         {
           "children": [],
           "description": "Add a super simple rotating text to your website with little to no markup.",
+          "kind": "repository",
           "title": "simple-text-rotator",
           "repo_info": {
             "archived": false,
@@ -8152,6 +8475,7 @@
         {
           "children": [],
           "description": "Text Neon Golden effect jQuery plug-in.",
+          "kind": "repository",
           "title": "novacancy.js",
           "repo_info": {
             "archived": false,
@@ -8165,6 +8489,7 @@
         {
           "children": [],
           "description": "A jQuery plugin for inflating web type.",
+          "kind": "repository",
           "title": "FitText.js",
           "repo_info": {
             "archived": false,
@@ -8178,6 +8503,7 @@
         {
           "children": [],
           "description": "A jQuery plugin for producing big, bold & responsive headlines.",
+          "kind": "repository",
           "title": "slabText",
           "repo_info": {
             "archived": false,
@@ -8191,6 +8517,7 @@
         {
           "children": [],
           "description": "A lightweight, easy to use JavaScript injector for radical Web Typography.",
+          "kind": "repository",
           "title": "Lettering.js",
           "repo_info": {
             "archived": false,
@@ -8204,6 +8531,7 @@
         {
           "children": [],
           "description": "Make your text sizing responsive!",
+          "kind": "repository",
           "title": "jquery-responsive-text",
           "repo_info": {
             "archived": false,
@@ -8217,6 +8545,7 @@
         {
           "children": [],
           "description": "Web typography at its finest: font-size and line-height based on element width.",
+          "kind": "repository",
           "title": "FlowType.JS",
           "repo_info": {
             "archived": false,
@@ -8230,6 +8559,7 @@
         {
           "children": [],
           "description": "A jQuery plugin that lets you curve type on the web.",
+          "kind": "repository",
           "title": "circletype",
           "repo_info": {
             "archived": false,
@@ -8243,6 +8573,7 @@
         {
           "children": [],
           "description": "jQuery plugin, calculates the font-size and word-spacing needed to match a line of text to a specific width.",
+          "kind": "repository",
           "title": "BigText",
           "repo_info": {
             "archived": false,
@@ -8262,6 +8593,7 @@
         {
           "children": [],
           "description": "The Simplest Way to shuffle through images in a Creative Way.",
+          "kind": "repository",
           "title": "shuffle-images",
           "repo_info": {
             "archived": false,
@@ -8275,6 +8607,7 @@
         {
           "children": [],
           "description": "TransitionEnd is an agnostic and cross-browser library to work with transitioned event.",
+          "kind": "repository",
           "title": "TransitionEnd",
           "repo_info": {
             "archived": false,
@@ -8288,6 +8621,7 @@
         {
           "children": [],
           "description": "The Cube is an experiment with CSS3 transitions.",
+          "kind": "repository",
           "title": "the-cube",
           "repo_info": {
             "archived": false,
@@ -8301,6 +8635,7 @@
         {
           "children": [],
           "description": "A Performant Transitions and Animations Library.",
+          "kind": "repository",
           "title": "Effeckt.css",
           "repo_info": {
             "archived": false,
@@ -8314,6 +8649,7 @@
         {
           "children": [],
           "description": "A new and improved version of particles.js with bug fixes and many new features.",
+          "kind": "repository",
           "title": "tsParticles",
           "repo_info": {
             "archived": false,
@@ -8327,6 +8663,7 @@
         {
           "children": [],
           "description": "One property, two values, endless possibilities.",
+          "kind": "repository",
           "title": "animatable",
           "repo_info": {
             "archived": false,
@@ -8340,6 +8677,7 @@
         {
           "children": [],
           "description": "High-performance HTML5 animations that work in all major browsers.",
+          "kind": "repository",
           "title": "GreenSock-JS",
           "repo_info": {
             "archived": false,
@@ -8353,6 +8691,7 @@
         {
           "children": [],
           "description": "A lightweight React particles animation background component.",
+          "kind": "repository",
           "title": "particles-bg",
           "repo_info": {
             "archived": false,
@@ -8366,6 +8705,7 @@
         {
           "children": [],
           "description": "Animated typing in ~400 bytes 🐡 of JavaScript",
+          "kind": "repository",
           "title": "typicaljs",
           "repo_info": {
             "archived": false,
@@ -8379,6 +8719,7 @@
         {
           "children": [],
           "description": "Super-smooth CSS3 transformations and transitions for jQuery.",
+          "kind": "repository",
           "title": "jquery.transit",
           "repo_info": {
             "archived": false,
@@ -8392,6 +8733,7 @@
         {
           "children": [],
           "description": "Accelerated JavaScript animation.",
+          "kind": "repository",
           "title": "velocity",
           "repo_info": {
             "archived": false,
@@ -8405,6 +8747,7 @@
         {
           "children": [],
           "description": "Create tasty CSS3 powered animations in no time.",
+          "kind": "repository",
           "title": "bounce.js",
           "repo_info": {
             "archived": false,
@@ -8418,6 +8761,7 @@
         {
           "children": [],
           "description": "A simple plugin for CSS3 text animations.",
+          "kind": "repository",
           "title": "textillate",
           "repo_info": {
             "archived": false,
@@ -8431,6 +8775,7 @@
         {
           "children": [],
           "description": "JavaScript library to create physics-based CSS animations.",
+          "kind": "repository",
           "title": "Dynamic.js",
           "repo_info": {
             "archived": false,
@@ -8444,6 +8789,7 @@
         {
           "children": [],
           "description": "CSS3 backed JavaScript animation framework.",
+          "kind": "repository",
           "title": "move.js",
           "repo_info": {
             "archived": false,
@@ -8457,6 +8803,7 @@
         {
           "children": [],
           "description": "It helps you create fluid and smooth transitions between your website's pages.",
+          "kind": "repository",
           "title": "barbajs",
           "repo_info": {
             "archived": false,
@@ -8470,6 +8817,7 @@
         {
           "children": [],
           "description": "A lightweight JavaScript library for creating particles.",
+          "kind": "repository",
           "title": "particles.js",
           "repo_info": {
             "archived": false,
@@ -8483,6 +8831,7 @@
         {
           "children": [],
           "description": "A cross-browser library of CSS animations. As easy to use as an easy thing.",
+          "kind": "repository",
           "title": "animate.css",
           "repo_info": {
             "archived": false,
@@ -8496,6 +8845,7 @@
         {
           "children": [],
           "description": "Unobtrusive page transitions with jQuery.",
+          "kind": "repository",
           "title": "smoothState.js",
           "repo_info": {
             "archived": false,
@@ -8505,21 +8855,6 @@
             "repo": "smoothState.js",
             "stars": 3409
           }
-        },
-        {
-          "children": [],
-          "description": "A JavaScript animation engine.",
-          "title": "Anime.js"
-        },
-        {
-          "children": [],
-          "description": "Motion graphics toolbelt for the web.",
-          "title": "Mo.js"
-        },
-        {
-          "children": [],
-          "description": "Add motion to your apps with a single line of code.",
-          "title": "AutoAnimate"
         }
       ],
       "title": "Animations"
@@ -8530,6 +8865,7 @@
         {
           "children": [],
           "description": "A simple jQuery image cropping plugin.",
+          "kind": "repository",
           "title": "cropper",
           "repo_info": {
             "archived": true,
@@ -8543,6 +8879,7 @@
         {
           "children": [],
           "description": "A Library for image processing with filters and util functions.",
+          "kind": "repository",
           "title": "lena.js",
           "repo_info": {
             "archived": false,
@@ -8556,6 +8893,7 @@
         {
           "children": [],
           "description": "High quality image resize (with fast Lanczos filter, implemented in pure JS).",
+          "kind": "repository",
           "title": "pica",
           "repo_info": {
             "archived": false,
@@ -8575,6 +8913,7 @@
         {
           "children": [],
           "description": "ES2015 [ES6] cheatsheet containing tips, tricks, best practices and code snippets.",
+          "kind": "repository",
           "title": "es6-cheatsheet",
           "repo_info": {
             "archived": false,
@@ -8588,6 +8927,7 @@
         {
           "children": [],
           "description": "ECMAScript 6: Feature Overview & Comparison.",
+          "kind": "repository",
           "title": "es6-features",
           "repo_info": {
             "archived": false,
@@ -8601,6 +8941,7 @@
         {
           "children": [],
           "description": "ES6 features > ES5. Includes classes, generators, promises, destructuring patterns, default parameters & more.",
+          "kind": "repository",
           "title": "Traceur compiler",
           "repo_info": {
             "archived": false,
@@ -8614,6 +8955,7 @@
         {
           "children": [],
           "description": "Overview of ECMAScript 6 features.",
+          "kind": "repository",
           "title": "es6features",
           "repo_info": {
             "archived": false,
@@ -8627,6 +8969,7 @@
         {
           "children": [],
           "description": "Turn ES6+ code into vanilla ES5 with no runtime.",
+          "kind": "repository",
           "title": "Babel (Formerly 6to5)",
           "repo_info": {
             "archived": false,
@@ -8636,11 +8979,6 @@
             "repo": "babel",
             "stars": 10145
           }
-        },
-        {
-          "children": [],
-          "description": "Compatibility tables for all ECMAScript 6 features on a variety of environments.",
-          "title": "ECMAScript 6 compatibility table"
         }
       ],
       "title": "ES6"
@@ -8651,6 +8989,7 @@
         {
           "children": [],
           "description": "React powered static site generator, and they say \"All the tools you need to make the Web. Faster.\".",
+          "kind": "repository",
           "title": "Next.js",
           "repo_info": {
             "archived": false,
@@ -8664,6 +9003,7 @@
         {
           "children": [],
           "description": "Static site generator for Deno.",
+          "kind": "repository",
           "title": "Lume",
           "repo_info": {
             "archived": false,
@@ -8677,6 +9017,7 @@
         {
           "children": [],
           "description": "React-based static site generator by Facebook, ideal for content-centric websites.",
+          "kind": "repository",
           "title": "Docusaurus",
           "repo_info": {
             "archived": false,
@@ -8690,6 +9031,7 @@
         {
           "children": [],
           "description": "Vue-powered static site generator.",
+          "kind": "repository",
           "title": "Gridsome",
           "repo_info": {
             "archived": false,
@@ -8703,6 +9045,7 @@
         {
           "children": [],
           "description": "React-based static site generator.",
+          "kind": "repository",
           "title": "Gatsby.js",
           "repo_info": {
             "archived": false,
@@ -8716,6 +9059,7 @@
         {
           "children": [],
           "description": "The web framework for content-driven websites.",
+          "kind": "repository",
           "title": "Astro",
           "repo_info": {
             "archived": false,
@@ -8735,6 +9079,7 @@
         {
           "children": [],
           "description": "Entity oriented SDK to work with the Spotify Web API.",
+          "kind": "repository",
           "title": "Spotify SDK",
           "repo_info": {
             "archived": false,
@@ -8748,6 +9093,7 @@
         {
           "children": [],
           "description": "JavaScript SDK design guide extracted from work and personal experience.",
+          "kind": "repository",
           "title": "javascript-sdk-design",
           "repo_info": {
             "archived": false,
@@ -8761,6 +9107,7 @@
         {
           "children": [],
           "description": "Stripe Node.js SDK lets you integrate payments, subscriptions, and billing into your JavaScript/TypeScript apps.",
+          "kind": "repository",
           "title": "Stripe Node.js SDK",
           "repo_info": {
             "archived": false,
@@ -8774,6 +9121,7 @@
         {
           "children": [],
           "description": "Official JavaScript / TypeScript library for the OpenAI API.",
+          "kind": "repository",
           "title": "OpenAI SDK",
           "repo_info": {
             "archived": false,
@@ -8787,6 +9135,7 @@
         {
           "children": [],
           "description": "JavaScript client library for payments and other Square APIs.",
+          "kind": "repository",
           "title": "Square Node.js SDK",
           "repo_info": {
             "archived": false,
@@ -8806,6 +9155,7 @@
         {
           "children": [],
           "description": "Library for use in the browser and It indexes JSON documents and provides a simple search interface for retrieving documents that best match text queries.",
+          "kind": "repository",
           "title": "lunr",
           "repo_info": {
             "archived": false,
@@ -8819,6 +9169,7 @@
         {
           "children": [],
           "description": "This library is based on lunr.js, but more flexible and customized.",
+          "kind": "repository",
           "title": "Elasticlunr",
           "repo_info": {
             "archived": false,
@@ -8832,6 +9183,7 @@
         {
           "children": [],
           "description": "It is a Next-Generation full text search library for Browser and Node.js.",
+          "kind": "repository",
           "title": "flexsearch",
           "repo_info": {
             "archived": false,
@@ -8851,6 +9203,7 @@
         {
           "children": [],
           "description": "Feature-rich ORM for modern Node.js and TypeScript | PostgreSQL, MySQL, MariaDB, SQLite, MS SQL Server, Snowflake, Oracle DB...",
+          "kind": "repository",
           "title": "Sequelize",
           "repo_info": {
             "archived": false,
@@ -8864,6 +9217,7 @@
         {
           "children": [],
           "description": "ORM for TypeScript and JavaScript, Works in NodeJS, Browser, Ionic, Cordova and Electron platforms.",
+          "kind": "repository",
           "title": "TypeORM",
           "repo_info": {
             "archived": false,
@@ -8877,6 +9231,7 @@
         {
           "children": [],
           "description": "Next-generation ORM for Node.js & TypeScript | PostgreSQL, MySQL, MariaDB, SQL Server, SQLite, MongoDB and CockroachDB.",
+          "kind": "repository",
           "title": "Prisma",
           "repo_info": {
             "archived": false,
@@ -8890,6 +9245,7 @@
         {
           "children": [],
           "description": "TypeScript ORM for Node.js based on Data Mapper, Unit of Work and Identity Map patterns.",
+          "kind": "repository",
           "title": "MikroORM",
           "repo_info": {
             "archived": false,
@@ -8903,6 +9259,7 @@
         {
           "children": [],
           "description": "A query builder for PostgreSQL, MySQL, CockroachDB, SQL Server, SQLite3 and Oracle, designed to be flexible, portable, and fun to use.",
+          "kind": "repository",
           "title": "Knex",
           "repo_info": {
             "archived": false,
@@ -8916,6 +9273,7 @@
         {
           "children": [],
           "description": "MongoDB object modeling designed to work in an asynchronous environment.",
+          "kind": "repository",
           "title": "Mongoose",
           "repo_info": {
             "archived": false,
@@ -8929,6 +9287,7 @@
         {
           "children": [],
           "description": "Headless TypeScript ORM with a head. Runs on Node, Bun and Deno.",
+          "kind": "repository",
           "title": "Drizzle ORM",
           "repo_info": {
             "archived": false,
@@ -8942,6 +9301,7 @@
         {
           "children": [],
           "description": "A type-safe typescript SQL query builder.",
+          "kind": "repository",
           "title": "Kysely",
           "repo_info": {
             "archived": false,
@@ -8955,6 +9315,7 @@
         {
           "children": [],
           "description": "A SQL-friendly ORM for Node.js built on top of Knex.js, with powerful relational support.",
+          "kind": "repository",
           "title": "Objection.js",
           "repo_info": {
             "archived": false,
@@ -8974,6 +9335,7 @@
         {
           "children": [],
           "description": "Simple to use, blazing fast and thoroughly tested WebSocket client and server for Node.js.",
+          "kind": "repository",
           "title": "ws",
           "repo_info": {
             "archived": false,
@@ -8987,6 +9349,7 @@
         {
           "children": [],
           "description": "The most widely used WebSocket library for real-time applications. Supports auto-reconnection, rooms, and fallbacks (e.g., polling).",
+          "kind": "repository",
           "title": "Socket.io",
           "repo_info": {
             "archived": false,
@@ -9006,6 +9369,7 @@
         {
           "children": [],
           "description": "A modern JSON implementation compatible with nearly all JavaScript platforms.",
+          "kind": "repository",
           "title": "json3",
           "repo_info": {
             "archived": false,
@@ -9019,6 +9383,7 @@
         {
           "children": [],
           "description": "A responsive image polyfill for <picture>, srcset, sizes.",
+          "kind": "repository",
           "title": "picturefill",
           "repo_info": {
             "archived": false,
@@ -9032,6 +9397,7 @@
         {
           "children": [],
           "description": "A JavaScript Bit-Vector implementation.",
+          "kind": "repository",
           "title": "BitSet.js",
           "repo_info": {
             "archived": false,
@@ -9045,6 +9411,7 @@
         {
           "children": [],
           "description": "A platform detection library that works on nearly all JavaScript platforms.",
+          "kind": "repository",
           "title": "platform.js",
           "repo_info": {
             "archived": false,
@@ -9058,6 +9425,7 @@
         {
           "children": [],
           "description": "A simple parser generator for JavaScript that produces fast parsers with excellent error reporting. Usable from your browser, from the command line, or via JavaScript API.",
+          "kind": "repository",
           "title": "Peg.js",
           "repo_info": {
             "archived": false,
@@ -9071,6 +9439,7 @@
         {
           "children": [],
           "description": "Components for interactive scientific writing, reactive documents and explorable explanations.",
+          "kind": "repository",
           "title": "iooxa",
           "repo_info": {
             "archived": false,
@@ -9084,6 +9453,7 @@
         {
           "children": [],
           "description": "Drag and drop library for two-dimensional, resizable and responsive lists.",
+          "kind": "repository",
           "title": "grid",
           "repo_info": {
             "archived": false,
@@ -9097,6 +9467,7 @@
         {
           "children": [],
           "description": "Algorithms and data structures implemented in JavaScript with explanations and links to further readings.",
+          "kind": "repository",
           "title": "javascript-algorithms",
           "repo_info": {
             "archived": false,
@@ -9110,6 +9481,7 @@
         {
           "children": [],
           "description": "Lazy-loading images with data-* attributes.",
+          "kind": "repository",
           "title": "echo",
           "repo_info": {
             "archived": false,
@@ -9123,6 +9495,7 @@
         {
           "children": [],
           "description": "Makes a visitor identifier from a browser fingerprint that stays the same in incognito mode and when browser data is purged.",
+          "kind": "repository",
           "title": "FingerprintJS",
           "repo_info": {
             "archived": false,
@@ -9136,6 +9509,7 @@
         {
           "children": [],
           "description": "Vanilla JavaScript emoji picker component.",
+          "kind": "repository",
           "title": "emoji-button",
           "repo_info": {
             "archived": false,
@@ -9149,6 +9523,7 @@
         {
           "children": [],
           "description": "SPOILER ALERT! A happy little jquery plugin to hide spoilers on your site.",
+          "kind": "repository",
           "title": "spoiler-alert",
           "repo_info": {
             "archived": false,
@@ -9162,6 +9537,7 @@
         {
           "children": [],
           "description": "a responsive equal heights plugin for jQuery.",
+          "kind": "repository",
           "title": "jquery-match-height",
           "repo_info": {
             "archived": false,
@@ -9175,6 +9551,7 @@
         {
           "children": [],
           "description": "MixItUp - A Filter & Sort Plugin.",
+          "kind": "repository",
           "title": "mixitup",
           "repo_info": {
             "archived": false,
@@ -9188,6 +9565,7 @@
         {
           "children": [],
           "description": "Vibration API Wrappers",
+          "kind": "repository",
           "title": "jquery.vibrate.js",
           "repo_info": {
             "archived": false,
@@ -9201,6 +9579,7 @@
         {
           "children": [],
           "description": "and Object Explorer - Resources to help figure out what native JavaScript method would be best to use at any given time.",
+          "kind": "repository",
           "title": "Array Explorer",
           "repo_info": {
             "archived": false,
@@ -9214,6 +9593,7 @@
         {
           "children": [],
           "description": "Tiny and elegant HTTP client based on the browser Fetch API.",
+          "kind": "repository",
           "title": "ky",
           "repo_info": {
             "archived": true,
@@ -9227,6 +9607,7 @@
         {
           "children": [],
           "description": "SurveyJS is a JavaScript Survey and Form Library. https://surveyjs.io/",
+          "kind": "repository",
           "title": "SurveyJS",
           "repo_info": {
             "archived": false,
@@ -9240,6 +9621,7 @@
         {
           "children": [],
           "description": "Create explorable explanations and interactive storytelling essays. Can be embedded in HTML.",
+          "kind": "repository",
           "title": "Idyll",
           "repo_info": {
             "archived": false,
@@ -9253,6 +9635,7 @@
         {
           "children": [],
           "description": "Library to calculate the phases of the moon accurately.",
+          "kind": "repository",
           "title": "lune",
           "repo_info": {
             "archived": false,
@@ -9266,6 +9649,7 @@
         {
           "children": [],
           "description": "Adds search, sort, filters and flexibility to tables, lists and various HTML elements. Built to be invisible and work on existing HTML. https://listjs.com",
+          "kind": "repository",
           "title": "list.js",
           "repo_info": {
             "archived": false,
@@ -9279,6 +9663,7 @@
         {
           "children": [],
           "description": "A list of emulators written in the JavaScript programming language.",
+          "kind": "repository",
           "title": "jsemu",
           "repo_info": {
             "archived": false,
@@ -9292,6 +9677,7 @@
         {
           "children": [],
           "description": "Math expression evaluator.",
+          "kind": "repository",
           "title": "Fcal",
           "repo_info": {
             "archived": true,
@@ -9301,16 +9687,6 @@
             "repo": "fcal",
             "stars": 1975
           }
-        },
-        {
-          "children": [],
-          "description": "A game about JavaScript specificities.",
-          "title": "Logical Or Not"
-        },
-        {
-          "children": [],
-          "description": "\"Copy to clipboard\" without Flash or use of Frameworks.",
-          "title": "Clipboard.js"
         }
       ],
       "title": "Misc"
@@ -9322,6 +9698,7 @@
     "original_repository_sha": "deadbeef",
     "enhanced_repository": "enhansome/enhansome-javascript",
     "enhanced_repository_description": "enhanced list",
+    "kind": "registry",
     "title": "Awesome JavaScript with stars"
   }
 }

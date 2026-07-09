@@ -11,6 +11,7 @@
         {
           "children": [],
           "description": "A PHP extension installer.",
+          "kind": "repository",
           "title": "Pickle",
           "repo_info": {
             "archived": false,
@@ -24,6 +25,7 @@
         {
           "children": [],
           "description": "A multi-framework Composer library installer.",
+          "kind": "repository",
           "title": "Composer Installers",
           "repo_info": {
             "archived": true,
@@ -37,6 +39,7 @@
         {
           "children": [],
           "description": "The official PHP installer for extensions.",
+          "kind": "repository",
           "title": "Pie",
           "repo_info": {
             "archived": false,
@@ -46,16 +49,6 @@
             "repo": "pie",
             "stars": 37579
           }
-        },
-        {
-          "children": [],
-          "description": "A package and dependency manager.",
-          "title": "Composer"
-        },
-        {
-          "children": [],
-          "description": "A PHAR manager.",
-          "title": "Phive"
         }
       ],
       "title": "Dependency Management"
@@ -66,6 +59,7 @@
         {
           "children": [],
           "description": "A composer plugin to merge several files.",
+          "kind": "repository",
           "title": "Composer Merge Plugin",
           "repo_info": {
             "archived": false,
@@ -79,6 +73,7 @@
         {
           "children": [],
           "description": "A library to manage PHAR files in a project using Composer.",
+          "kind": "repository",
           "title": "Tooly",
           "repo_info": {
             "archived": false,
@@ -92,6 +87,7 @@
         {
           "children": [],
           "description": "A plugin to check if minimum dependencies can be installed and tested.",
+          "kind": "repository",
           "title": "Composer Prefer Lowest Validator",
           "repo_info": {
             "archived": false,
@@ -105,6 +101,7 @@
         {
           "children": [],
           "description": "A library to parse your project's Composer environment at runtime.",
+          "kind": "repository",
           "title": "Composed",
           "repo_info": {
             "archived": false,
@@ -118,6 +115,7 @@
         {
           "children": [],
           "description": "CLI tool to analyze composer dependencies and verify that no unknown symbols are used in the sources of a package.",
+          "kind": "repository",
           "title": "Composer Require Checker",
           "repo_info": {
             "archived": false,
@@ -131,6 +129,7 @@
         {
           "children": [],
           "description": "A plugin for Composer to apply patches.",
+          "kind": "repository",
           "title": "Composer Patches",
           "repo_info": {
             "archived": false,
@@ -144,6 +143,7 @@
         {
           "children": [],
           "description": "A static Composer repository generator.",
+          "kind": "repository",
           "title": "Satis",
           "repo_info": {
             "archived": false,
@@ -157,6 +157,7 @@
         {
           "children": [],
           "description": "A CLI Tool to scan for unused composer packages.",
+          "kind": "repository",
           "title": "Composer Unused",
           "repo_info": {
             "archived": false,
@@ -170,6 +171,7 @@
         {
           "children": [],
           "description": "A plugin for normalizing files.",
+          "kind": "repository",
           "title": "Composer Normalize",
           "repo_info": {
             "archived": false,
@@ -179,16 +181,6 @@
             "repo": "composer-normalize",
             "stars": 8780
           }
-        },
-        {
-          "children": [],
-          "description": "A private PHP package repository manager and Packagist proxy.",
-          "title": "Repman"
-        },
-        {
-          "children": [],
-          "description": "A Composer proxy for speed and reliability. (:warning: Toran Proxy is being phased out.)",
-          "title": "Toran Proxy"
         }
       ],
       "title": "Dependency Management Extras"
@@ -199,6 +191,7 @@
         {
           "children": [],
           "description": "An out-of-the-box adapter between Laravel/Lumen and Swoole.",
+          "kind": "repository",
           "title": "LaravelS",
           "repo_info": {
             "archived": false,
@@ -212,6 +205,7 @@
         {
           "children": [],
           "description": "A Rapid Application Development (RAD) plugin for CakePHP.",
+          "kind": "repository",
           "title": "CakePHP CRUD",
           "repo_info": {
             "archived": false,
@@ -221,16 +215,6 @@
             "repo": "crud",
             "stars": 29705
           }
-        },
-        {
-          "children": [],
-          "description": "A powerful open source UI framework for Laravel.",
-          "title": "Filament PHP"
-        },
-        {
-          "children": [],
-          "description": "Powerful, dynamic, front-end UIs without leaving PHP.",
-          "title": "Livewire"
         }
       ],
       "title": "Framework Extras"
@@ -241,6 +225,7 @@
         {
           "children": [],
           "description": "The most popular e-commerce platform.",
+          "kind": "repository",
           "title": "Magento",
           "repo_info": {
             "archived": false,
@@ -254,6 +239,7 @@
         {
           "children": [],
           "description": "Fork of EoL Magento 1 e-commerce platform.",
+          "kind": "repository",
           "title": "OpenMage",
           "repo_info": {
             "archived": false,
@@ -267,6 +253,7 @@
         {
           "children": [],
           "description": "A blogging platform and CMS.",
+          "kind": "repository",
           "title": "WordPress",
           "repo_info": {
             "archived": false,
@@ -280,6 +267,7 @@
         {
           "children": [],
           "description": "A modern flat-file CMS.",
+          "kind": "repository",
           "title": "Grav",
           "repo_info": {
             "archived": true,
@@ -293,6 +281,7 @@
         {
           "children": [],
           "description": "A flexible, user-friendly CMS for creating custom digital experiences on the web and beyond.",
+          "kind": "repository",
           "title": "CraftCMS",
           "repo_info": {
             "archived": false,
@@ -302,56 +291,6 @@
             "repo": "cms",
             "stars": 1141
           }
-        },
-        {
-          "children": [],
-          "description": "A CMS targeting small-to-medium-sized business and non-profits (a fork of Drupal).",
-          "title": "Backdrop"
-        },
-        {
-          "children": [],
-          "description": "A CMS targeting users with a minimum of technical skills.",
-          "title": "Concrete5"
-        },
-        {
-          "children": [],
-          "description": "An enterprise level CMS.",
-          "title": "Drupal"
-        },
-        {
-          "children": [],
-          "description": "Another leading CMS.",
-          "title": "Joomla"
-        },
-        {
-          "children": [],
-          "description": "A flat-file CMS that adapts to any project.",
-          "title": "Kirby"
-        },
-        {
-          "children": [],
-          "description": "An open-source learning platform.",
-          "title": "Moodle"
-        },
-        {
-          "children": [],
-          "description": "A stupidly simple, blazing fast, flat file CMS.",
-          "title": "Pico CMS"
-        },
-        {
-          "children": [],
-          "description": "Build beautiful, easy-to-manage websites.",
-          "title": "Statamic"
-        },
-        {
-          "children": [],
-          "description": "A user and developer friendly focused CMS and Platform based on the Symfony Framework.",
-          "title": "Sulu"
-        },
-        {
-          "children": [],
-          "description": "An enterprise level CMS.",
-          "title": "TYPO3"
         }
       ],
       "title": "Content Management Systems (CMS)"
@@ -362,6 +301,7 @@
         {
           "children": [],
           "description": "A micro-framework for CLI applications.",
+          "kind": "repository",
           "title": "Silly",
           "repo_info": {
             "archived": false,
@@ -375,6 +315,7 @@
         {
           "children": [],
           "description": "Minimalist, dependency-free framework for building CLI-centric PHP applications.",
+          "kind": "repository",
           "title": "Minicli",
           "repo_info": {
             "archived": false,
@@ -384,21 +325,6 @@
             "repo": "minicli",
             "stars": 2609
           }
-        },
-        {
-          "children": [],
-          "description": "A micro-framework for console applications.",
-          "title": "Laravel Zero"
-        },
-        {
-          "children": [],
-          "description": "A micro-framework by Laminas.",
-          "title": "Mezzio"
-        },
-        {
-          "children": [],
-          "description": "Another simple micro framework.",
-          "title": "Slim"
         }
       ],
       "title": "Micro Frameworks"
@@ -409,6 +335,7 @@
         {
           "children": [],
           "description": "A skeleton for Slim.",
+          "kind": "repository",
           "title": "Slim Skeleton",
           "repo_info": {
             "archived": false,
@@ -422,6 +349,7 @@
         {
           "children": [],
           "description": "Integrate Twig into Slim.",
+          "kind": "repository",
           "title": "Slim Twig View",
           "repo_info": {
             "archived": false,
@@ -435,6 +363,7 @@
         {
           "children": [],
           "description": "A simple PHP renderer for Slim.",
+          "kind": "repository",
           "title": "Slim PHP View",
           "repo_info": {
             "archived": false,
@@ -454,6 +383,7 @@
         {
           "children": [],
           "description": "A routing library built on top of Fast Route.",
+          "kind": "repository",
           "title": "Route",
           "repo_info": {
             "archived": false,
@@ -467,6 +397,7 @@
         {
           "children": [],
           "description": "Another fast routing library.",
+          "kind": "repository",
           "title": "Pux",
           "repo_info": {
             "archived": false,
@@ -480,6 +411,7 @@
         {
           "children": [],
           "description": "A fast routing library.",
+          "kind": "repository",
           "title": "Fast Route",
           "repo_info": {
             "archived": false,
@@ -493,6 +425,7 @@
         {
           "children": [],
           "description": "A full-featured routing library.",
+          "kind": "repository",
           "title": "Aura.Router",
           "repo_info": {
             "archived": false,
@@ -506,6 +439,7 @@
         {
           "children": [],
           "description": "A flexible router.",
+          "kind": "repository",
           "title": "Klein",
           "repo_info": {
             "archived": false,
@@ -525,6 +459,7 @@
         {
           "children": [],
           "description": "A PHP implementation of the Mustache template language.",
+          "kind": "repository",
           "title": "Mustache",
           "repo_info": {
             "archived": false,
@@ -538,6 +473,7 @@
         {
           "children": [],
           "description": "A PHP implementation of the HAML template language.",
+          "kind": "repository",
           "title": "MtHaml",
           "repo_info": {
             "archived": true,
@@ -547,31 +483,6 @@
             "repo": "MtHaml",
             "stars": 38504
           }
-        },
-        {
-          "children": [],
-          "description": "The safest and truly intuitive templates for PHP.",
-          "title": "Latte"
-        },
-        {
-          "children": [],
-          "description": "A PHP implementation of the TAL templating language.",
-          "title": "PHPTAL"
-        },
-        {
-          "children": [],
-          "description": "A native PHP templating library.",
-          "title": "Plates"
-        },
-        {
-          "children": [],
-          "description": "A template engine to complement PHP.",
-          "title": "Smarty"
-        },
-        {
-          "children": [],
-          "description": "A comprehensive templating language.",
-          "title": "Twig"
         }
       ],
       "title": "Templating"
@@ -582,6 +493,7 @@
         {
           "children": [],
           "description": "PSR-7 HTTP Message implementation.",
+          "kind": "repository",
           "title": "Laminas Diactoros",
           "repo_info": {
             "archived": false,
@@ -595,6 +507,7 @@
         {
           "children": [],
           "description": "A component to fetch HTTP resources synchronously or asynchronously.",
+          "kind": "repository",
           "title": "Symfony HTTP Client",
           "repo_info": {
             "archived": false,
@@ -608,6 +521,7 @@
         {
           "children": [],
           "description": "A library to ease creation of REST API clients.",
+          "kind": "repository",
           "title": "Retrofit",
           "repo_info": {
             "archived": false,
@@ -621,6 +535,7 @@
         {
           "children": [],
           "description": "A simple HTTP library.",
+          "kind": "repository",
           "title": "Requests",
           "repo_info": {
             "archived": false,
@@ -634,6 +549,7 @@
         {
           "children": [],
           "description": "Another HTTP client.",
+          "kind": "repository",
           "title": "Buzz",
           "repo_info": {
             "archived": true,
@@ -647,6 +563,7 @@
         {
           "children": [],
           "description": "A super lightweight PSR-7 implementation. Very strict and very fast.",
+          "kind": "repository",
           "title": "Nyholm PSR-7",
           "repo_info": {
             "archived": false,
@@ -660,6 +577,7 @@
         {
           "children": [],
           "description": "A comprehensive HTTP client.",
+          "kind": "repository",
           "title": "Guzzle",
           "repo_info": {
             "archived": false,
@@ -669,16 +587,6 @@
             "repo": "guzzle",
             "stars": 9329
           }
-        },
-        {
-          "children": [],
-          "description": "An HTTP client abstraction without binding to a specific implementation.",
-          "title": "HTTPlug"
-        },
-        {
-          "children": [],
-          "description": "A library for recording and replaying HTTP requests.",
-          "title": "PHP VCR"
         }
       ],
       "title": "HTTP"
@@ -689,6 +597,7 @@
         {
           "children": [],
           "description": "An information extractor from any web service or page.",
+          "kind": "repository",
           "title": "Embed",
           "repo_info": {
             "archived": false,
@@ -702,6 +611,7 @@
         {
           "children": [],
           "description": "A super-fast HTML scrapper and parser.",
+          "kind": "repository",
           "title": "DiDOM",
           "repo_info": {
             "archived": false,
@@ -715,6 +625,7 @@
         {
           "children": [],
           "description": "A configurable and extensible PHP web spider.",
+          "kind": "repository",
           "title": "PHP Spider",
           "repo_info": {
             "archived": false,
@@ -728,6 +639,7 @@
         {
           "children": [],
           "description": "Instrument headless Chrome/Chromium instances from PHP.",
+          "kind": "repository",
           "title": "Chrome PHP",
           "repo_info": {
             "archived": false,
@@ -741,6 +653,7 @@
         {
           "children": [],
           "description": "A browser testing and web crawling library for PHP and Symfony.",
+          "kind": "repository",
           "title": "Symfony Panther",
           "repo_info": {
             "archived": false,
@@ -754,6 +667,7 @@
         {
           "children": [],
           "description": "A PHP class for detecting bots/crawlers/spiders via the user agent.",
+          "kind": "repository",
           "title": "CrawlerDetect",
           "repo_info": {
             "archived": false,
@@ -773,6 +687,7 @@
         {
           "children": [],
           "description": "Inspiring collection of handy middlewares.",
+          "kind": "repository",
           "title": "PSR-15 Middlewares",
           "repo_info": {
             "archived": true,
@@ -786,6 +701,7 @@
         {
           "children": [],
           "description": "Middleware for PHP built on top of PSR-7.",
+          "kind": "repository",
           "title": "Laminas Stratigility",
           "repo_info": {
             "archived": false,
@@ -799,6 +715,7 @@
         {
           "children": [],
           "description": "A PHP 5.5 PSR-7 middleware dispatcher.",
+          "kind": "repository",
           "title": "Relay",
           "repo_info": {
             "archived": false,
@@ -808,11 +725,6 @@
             "repo": "Relay.Relay",
             "stars": 7988
           }
-        },
-        {
-          "children": [],
-          "description": "A library of stackable middleware for Symfony.",
-          "title": "Stack"
         }
       ],
       "title": "Middlewares"
@@ -823,6 +735,7 @@
         {
           "children": [],
           "description": "Another URL manipulation library.",
+          "kind": "repository",
           "title": "Uri",
           "repo_info": {
             "archived": false,
@@ -836,6 +749,7 @@
         {
           "children": [],
           "description": "A domain suffix parser library.",
+          "kind": "repository",
           "title": "PHP Domain Parser",
           "repo_info": {
             "archived": false,
@@ -849,6 +763,7 @@
         {
           "children": [],
           "description": "A functional URI manipulation library.",
+          "kind": "repository",
           "title": "sabre/uri",
           "repo_info": {
             "archived": false,
@@ -862,6 +777,7 @@
         {
           "children": [],
           "description": "A URL manipulation library.",
+          "kind": "repository",
           "title": "Purl",
           "repo_info": {
             "archived": false,
@@ -881,6 +797,7 @@
         {
           "children": [],
           "description": "A library for email services such as SendGrid, PostMark, MailGun and MailChimp.",
+          "kind": "repository",
           "title": "Stampie",
           "repo_info": {
             "archived": false,
@@ -894,6 +811,7 @@
         {
           "children": [],
           "description": "An email reply parser library.",
+          "kind": "repository",
           "title": "Email Reply Parser",
           "repo_info": {
             "archived": false,
@@ -907,6 +825,7 @@
         {
           "children": [],
           "description": "A powerful library for creating and sending emails.",
+          "kind": "repository",
           "title": "Symfony Mailer",
           "repo_info": {
             "archived": false,
@@ -920,6 +839,7 @@
         {
           "children": [],
           "description": "Another mailer solution.",
+          "kind": "repository",
           "title": "PHPMailer",
           "repo_info": {
             "archived": false,
@@ -933,6 +853,7 @@
         {
           "children": [],
           "description": "An IMAP library.",
+          "kind": "repository",
           "title": "Fetch",
           "repo_info": {
             "archived": false,
@@ -946,6 +867,7 @@
         {
           "children": [],
           "description": "A library to access mailboxes via POP3, IMAP and NNTP.",
+          "kind": "repository",
           "title": "PHP IMAP",
           "repo_info": {
             "archived": false,
@@ -959,6 +881,7 @@
         {
           "children": [],
           "description": "A library to inline CSS in email templates.",
+          "kind": "repository",
           "title": "CssToInlineStyles",
           "repo_info": {
             "archived": false,
@@ -972,6 +895,7 @@
         {
           "children": [],
           "description": "A small email address validation library.",
+          "kind": "repository",
           "title": "Email Validator",
           "repo_info": {
             "archived": false,
@@ -985,6 +909,7 @@
         {
           "children": [],
           "description": "Email marketing automation",
+          "kind": "repository",
           "title": "Mautic",
           "repo_info": {
             "archived": false,
@@ -994,11 +919,6 @@
             "repo": "mautic",
             "stars": 4417
           }
-        },
-        {
-          "children": [],
-          "description": "A mailer solution.",
-          "title": "SwiftMailer"
         }
       ],
       "title": "Email"
@@ -1009,6 +929,7 @@
         {
           "children": [],
           "description": "A wrapper for the FFmpeg video library.",
+          "kind": "repository",
           "title": "PHP FFmpeg",
           "repo_info": {
             "archived": false,
@@ -1022,6 +943,7 @@
         {
           "children": [],
           "description": "Abstraction for local and remote filesystems.",
+          "kind": "repository",
           "title": "Flysystem",
           "repo_info": {
             "archived": false,
@@ -1035,6 +957,7 @@
         {
           "children": [],
           "description": "A filesystem abstraction layer.",
+          "kind": "repository",
           "title": "Gaufrette",
           "repo_info": {
             "archived": false,
@@ -1048,6 +971,7 @@
         {
           "children": [],
           "description": "PHP implementation of Parquet file format",
+          "kind": "repository",
           "title": "Parquet",
           "repo_info": {
             "archived": false,
@@ -1061,6 +985,7 @@
         {
           "children": [],
           "description": "A CSV data manipulation library.",
+          "kind": "repository",
           "title": "CSV",
           "repo_info": {
             "archived": false,
@@ -1074,6 +999,7 @@
         {
           "children": [],
           "description": "A unified reader and writer of compressed archives.",
+          "kind": "repository",
           "title": "UnifiedArchive",
           "repo_info": {
             "archived": false,
@@ -1093,6 +1019,7 @@
         {
           "children": [],
           "description": "A tiny dependency injection container.",
+          "kind": "repository",
           "title": "Pimple",
           "repo_info": {
             "archived": false,
@@ -1106,6 +1033,7 @@
         {
           "children": [],
           "description": "A common interface to dependency injection containers and service locators.",
+          "kind": "repository",
           "title": "Acclimate",
           "repo_info": {
             "archived": false,
@@ -1119,6 +1047,7 @@
         {
           "children": [],
           "description": "A PSR-11 compatible, annotation-based dependency injection container.",
+          "kind": "repository",
           "title": "Disco",
           "repo_info": {
             "archived": false,
@@ -1132,6 +1061,7 @@
         {
           "children": [],
           "description": "A dependency injection container component.",
+          "kind": "repository",
           "title": "Symfony DI",
           "repo_info": {
             "archived": false,
@@ -1145,6 +1075,7 @@
         {
           "children": [],
           "description": "Another flexible dependency injection container.",
+          "kind": "repository",
           "title": "Container",
           "repo_info": {
             "archived": false,
@@ -1158,6 +1089,7 @@
         {
           "children": [],
           "description": "A recursive dependency injector.",
+          "kind": "repository",
           "title": "Auryn",
           "repo_info": {
             "archived": false,
@@ -1171,6 +1103,7 @@
         {
           "children": [],
           "description": "A serializable dependency injection container with constructor and setter injection, interface and trait awareness, configuration inheritance, and much more.",
+          "kind": "repository",
           "title": "Aura.Di",
           "repo_info": {
             "archived": false,
@@ -1180,11 +1113,6 @@
             "repo": "Aura.Di",
             "stars": 13454
           }
-        },
-        {
-          "children": [],
-          "description": "A dependency injection container that supports autowiring.",
-          "title": "PHP-DI"
         }
       ],
       "title": "Dependency Injection"
@@ -1195,6 +1123,7 @@
         {
           "children": [],
           "description": "Another image manipulation library.",
+          "kind": "repository",
           "title": "Intervention Image",
           "repo_info": {
             "archived": false,
@@ -1208,6 +1137,7 @@
         {
           "children": [],
           "description": "A library for optimizing images.",
+          "kind": "repository",
           "title": "Image Optimizer",
           "repo_info": {
             "archived": false,
@@ -1221,6 +1151,7 @@
         {
           "children": [],
           "description": "A library for generating perceptual image hashes.",
+          "kind": "repository",
           "title": "Image Hash",
           "repo_info": {
             "archived": false,
@@ -1234,6 +1165,7 @@
         {
           "children": [],
           "description": "QR Code generator and reader.",
+          "kind": "repository",
           "title": "PHP QR Code",
           "repo_info": {
             "archived": false,
@@ -1247,6 +1179,7 @@
         {
           "children": [],
           "description": "An on-demand image manipulation library.",
+          "kind": "repository",
           "title": "Glide",
           "repo_info": {
             "archived": false,
@@ -1260,6 +1193,7 @@
         {
           "children": [],
           "description": "A library for extracting colours from images.",
+          "kind": "repository",
           "title": "Color Extractor",
           "repo_info": {
             "archived": false,
@@ -1273,6 +1207,7 @@
         {
           "children": [],
           "description": "Another image manipulation library.",
+          "kind": "repository",
           "title": "PHP Image Workshop",
           "repo_info": {
             "archived": false,
@@ -1282,11 +1217,6 @@
             "repo": "ImageWorkshop",
             "stars": 3195
           }
-        },
-        {
-          "children": [],
-          "description": "An image manipulation library.",
-          "title": "Imagine"
         }
       ],
       "title": "Imagery"
@@ -1297,6 +1227,7 @@
         {
           "children": [],
           "description": "A design by specification unit testing library.",
+          "kind": "repository",
           "title": "PHPSpec",
           "repo_info": {
             "archived": false,
@@ -1310,6 +1241,7 @@
         {
           "children": [],
           "description": "A unit testing framework.",
+          "kind": "repository",
           "title": "PHPUnit",
           "repo_info": {
             "archived": false,
@@ -1323,6 +1255,7 @@
         {
           "children": [],
           "description": "A simple testing library.",
+          "kind": "repository",
           "title": "Atoum",
           "repo_info": {
             "archived": false,
@@ -1336,6 +1269,7 @@
         {
           "children": [],
           "description": "Simplifies running PHPUnit tests on multiple PHPUnit versions.",
+          "kind": "repository",
           "title": "PHPUnit Polyfills",
           "repo_info": {
             "archived": false,
@@ -1349,6 +1283,7 @@
         {
           "children": [],
           "description": "A virtual filesystem stream wrapper for testing.",
+          "kind": "repository",
           "title": "VFS Stream",
           "repo_info": {
             "archived": false,
@@ -1362,6 +1297,7 @@
         {
           "children": [],
           "description": "A productive and enjoyable parallel unit testing framework.",
+          "kind": "repository",
           "title": "Nette Tester",
           "repo_info": {
             "archived": false,
@@ -1375,6 +1311,7 @@
         {
           "children": [],
           "description": "An AST-based PHP Mutation testing framework.",
+          "kind": "repository",
           "title": "Infection",
           "repo_info": {
             "archived": false,
@@ -1388,6 +1325,7 @@
         {
           "children": [],
           "description": "A fixture factory generation library for Doctrine.",
+          "kind": "repository",
           "title": "Foundry",
           "repo_info": {
             "archived": false,
@@ -1401,6 +1339,7 @@
         {
           "children": [],
           "description": "A mock library for built-in PHP functions (e.g. time()).",
+          "kind": "repository",
           "title": "PHP-Mock",
           "repo_info": {
             "archived": false,
@@ -1414,6 +1353,7 @@
         {
           "children": [],
           "description": "A fake data generator library.",
+          "kind": "repository",
           "title": "Faker",
           "repo_info": {
             "archived": false,
@@ -1427,6 +1367,7 @@
         {
           "children": [],
           "description": "A MySQL engine written in pure PHP.",
+          "kind": "repository",
           "title": "PHP MySQL Engine",
           "repo_info": {
             "archived": false,
@@ -1440,6 +1381,7 @@
         {
           "children": [],
           "description": "An expressive fixture generation library.",
+          "kind": "repository",
           "title": "Alice",
           "repo_info": {
             "archived": false,
@@ -1453,6 +1395,7 @@
         {
           "children": [],
           "description": "A mock object library for testing.",
+          "kind": "repository",
           "title": "Mockery",
           "repo_info": {
             "archived": false,
@@ -1466,6 +1409,7 @@
         {
           "children": [],
           "description": "A parallel testing library for PHPUnit.",
+          "kind": "repository",
           "title": "ParaTest",
           "repo_info": {
             "archived": false,
@@ -1479,6 +1423,7 @@
         {
           "children": [],
           "description": "A full stack testing framework.",
+          "kind": "repository",
           "title": "Codeception",
           "repo_info": {
             "archived": false,
@@ -1492,6 +1437,7 @@
         {
           "children": [],
           "description": "Another mock object library for testing.",
+          "kind": "repository",
           "title": "Phake",
           "repo_info": {
             "archived": false,
@@ -1505,6 +1451,7 @@
         {
           "children": [],
           "description": "Full stack Unit/BDD testing framework with built-in stub, mock and code-coverage support.",
+          "kind": "repository",
           "title": "Kahlan",
           "repo_info": {
             "archived": false,
@@ -1518,6 +1465,7 @@
         {
           "children": [],
           "description": "A highly opinionated mocking framework.",
+          "kind": "repository",
           "title": "Prophecy",
           "repo_info": {
             "archived": false,
@@ -1527,26 +1475,6 @@
             "repo": "prophecy",
             "stars": 1544
           }
-        },
-        {
-          "children": [],
-          "description": "A behaviour driven development (BDD) testing framework.",
-          "title": "Behat"
-        },
-        {
-          "children": [],
-          "description": "Web acceptance testing.",
-          "title": "Mink"
-        },
-        {
-          "children": [],
-          "description": "A testing framework with a focus on simplicity.",
-          "title": "Pest"
-        },
-        {
-          "children": [],
-          "description": "A test tool used by PHP itself.",
-          "title": "PHPT"
         }
       ],
       "title": "Testing"
@@ -1557,6 +1485,7 @@
         {
           "children": [],
           "description": "An open-source continuous integration platform for PHP.",
+          "kind": "repository",
           "title": "PHPCI",
           "repo_info": {
             "archived": false,
@@ -1570,6 +1499,7 @@
         {
           "children": [],
           "description": "A continuous integration client written in PHP and powered by Docker.",
+          "kind": "repository",
           "title": "JoliCi",
           "repo_info": {
             "archived": false,
@@ -1583,6 +1513,7 @@
         {
           "children": [],
           "description": "A GitHub Action for PHP.",
+          "kind": "repository",
           "title": "Setup PHP",
           "repo_info": {
             "archived": false,
@@ -1592,31 +1523,6 @@
             "repo": "setup-php",
             "stars": 13590
           }
-        },
-        {
-          "children": [],
-          "description": "A continuous integration platform.",
-          "title": "CircleCI"
-        },
-        {
-          "children": [],
-          "description": "Let GitLab CI test, build, deploy your code. TravisCi like.",
-          "title": "GitlabCi"
-        },
-        {
-          "children": [],
-          "description": "A continuous integration platform with PHP support.",
-          "title": "Jenkins"
-        },
-        {
-          "children": [],
-          "description": "A continuous integration platform for open-source and private projects.",
-          "title": "SemaphoreCI"
-        },
-        {
-          "children": [],
-          "description": "A continuous integration platform.",
-          "title": "Travis CI"
         }
       ],
       "title": "Continuous Integration"
@@ -1627,6 +1533,7 @@
         {
           "children": [],
           "description": "Another API documentation generator.",
+          "kind": "repository",
           "title": "APIGen",
           "repo_info": {
             "archived": false,
@@ -1640,6 +1547,7 @@
         {
           "children": [],
           "description": "Generate OpenAPI documentation for your RESTful API.",
+          "kind": "repository",
           "title": "zircote/swagger-php",
           "repo_info": {
             "archived": false,
@@ -1653,6 +1561,7 @@
         {
           "children": [],
           "description": "A documentation generator that uses Markdown files.",
+          "kind": "repository",
           "title": "daux.io",
           "repo_info": {
             "archived": false,
@@ -1662,16 +1571,6 @@
             "repo": "daux.io",
             "stars": 16669
           }
-        },
-        {
-          "children": [],
-          "description": "A documentation generator.",
-          "title": "phpDocumentor"
-        },
-        {
-          "children": [],
-          "description": "A documentation generator for PHP projects (that is not limited to API documentation).",
-          "title": "phpDox"
         }
       ],
       "title": "Documentation"
@@ -1682,6 +1581,7 @@
         {
           "children": [],
           "description": "A simple library for encryption using libsodium.",
+          "kind": "repository",
           "title": "Halite",
           "repo_info": {
             "archived": false,
@@ -1695,6 +1595,7 @@
         {
           "children": [],
           "description": "A library of PHP unserializable payloads along with a tool to generate them.",
+          "kind": "repository",
           "title": "PHPGGC",
           "repo_info": {
             "archived": false,
@@ -1708,6 +1609,7 @@
         {
           "children": [],
           "description": "Secure PHP Encryption Library.",
+          "kind": "repository",
           "title": "PHP Encryption",
           "repo_info": {
             "archived": true,
@@ -1721,6 +1623,7 @@
         {
           "children": [],
           "description": "An integrated penetration testing tool for web applications.",
+          "kind": "repository",
           "title": "Zap",
           "repo_info": {
             "archived": false,
@@ -1734,6 +1637,7 @@
         {
           "children": [],
           "description": "A package that adds security related headers to HTTP response.",
+          "kind": "repository",
           "title": "Secure Headers",
           "repo_info": {
             "archived": false,
@@ -1747,6 +1651,7 @@
         {
           "children": [],
           "description": "A library that tries to preventing Cross-Site Scripting (XSS) attacks by blacklisting.",
+          "kind": "repository",
           "title": "AntiXSS",
           "repo_info": {
             "archived": false,
@@ -1760,6 +1665,7 @@
         {
           "children": [],
           "description": "This package ensures that your application doesn't have installed dependencies with known security vulnerabilities.",
+          "kind": "repository",
           "title": "Roave Security Advisories",
           "repo_info": {
             "archived": false,
@@ -1773,6 +1679,7 @@
         {
           "children": [],
           "description": "PHP 5.x support for and",
+          "kind": "repository",
           "title": "random_compat",
           "repo_info": {
             "archived": false,
@@ -1786,6 +1693,7 @@
         {
           "children": [],
           "description": "Id obfuscation based on Knuth's multiplicative hashing method.",
+          "kind": "repository",
           "title": "Optimus",
           "repo_info": {
             "archived": false,
@@ -1799,6 +1707,7 @@
         {
           "children": [],
           "description": "An automatic SQL injection and database takeover tool.",
+          "kind": "repository",
           "title": "SQLMap",
           "repo_info": {
             "archived": false,
@@ -1808,16 +1717,6 @@
             "repo": "sqlmap",
             "stars": 20
           }
-        },
-        {
-          "children": [],
-          "description": "Explore the world of cyber security.",
-          "title": "OWASP"
-        },
-        {
-          "children": [],
-          "description": "A pure PHP secure communications library.",
-          "title": "PHPSecLib"
         }
       ],
       "title": "Security"
@@ -1828,6 +1727,7 @@
         {
           "children": [],
           "description": "PHP library to generate random passwords.",
+          "kind": "repository",
           "title": "Password-Generator",
           "repo_info": {
             "archived": false,
@@ -1841,6 +1741,7 @@
         {
           "children": [],
           "description": "A library for generating secure random passphrases.",
+          "kind": "repository",
           "title": "GenPhrase",
           "repo_info": {
             "archived": false,
@@ -1854,6 +1755,7 @@
         {
           "children": [],
           "description": "A compatibility library for the new PHP 5.5 password functions.",
+          "kind": "repository",
           "title": "Password Compat",
           "repo_info": {
             "archived": false,
@@ -1867,6 +1769,7 @@
         {
           "children": [],
           "description": "A password policy library for PHP and JavaScript.",
+          "kind": "repository",
           "title": "Password Policy",
           "repo_info": {
             "archived": false,
@@ -1880,6 +1783,7 @@
         {
           "children": [],
           "description": "A realistic PHP password strength estimate library based on Zxcvbn JS.",
+          "kind": "repository",
           "title": "Zxcvbn PHP",
           "repo_info": {
             "archived": false,
@@ -1893,6 +1797,7 @@
         {
           "children": [],
           "description": "A library for validating and upgrading password hashes.",
+          "kind": "repository",
           "title": "Password Validator",
           "repo_info": {
             "archived": false,
@@ -1906,6 +1811,7 @@
         {
           "children": [],
           "description": "A library for generating and validating passwords.",
+          "kind": "repository",
           "title": "PHP Password Lib",
           "repo_info": {
             "archived": false,
@@ -1915,11 +1821,6 @@
             "repo": "PHP-PasswordLib",
             "stars": 3745
           }
-        },
-        {
-          "children": [],
-          "description": "A portable password hashing framework.",
-          "title": "phpass"
         }
       ],
       "title": "Passwords"
@@ -1930,6 +1831,7 @@
         {
           "children": [],
           "description": "AST-based reflection library that allows analysis and manipulation of code",
+          "kind": "repository",
           "title": "Better Reflection",
           "repo_info": {
             "archived": false,
@@ -1943,6 +1845,7 @@
         {
           "children": [],
           "description": "A tool for running QA tools (phploc, phpcpd, phpcs, pdepend, phpmd, phpmetrics).",
+          "kind": "repository",
           "title": "PHPQA",
           "repo_info": {
             "archived": false,
@@ -1956,6 +1859,7 @@
         {
           "children": [],
           "description": "PHP completion, refactoring and introspection tool.",
+          "kind": "repository",
           "title": "Phpactor",
           "repo_info": {
             "archived": false,
@@ -1969,6 +1873,7 @@
         {
           "children": [],
           "description": "A web tool to scrutinise PHP code.",
+          "kind": "repository",
           "title": "Scrutinizer",
           "repo_info": {
             "archived": false,
@@ -1982,6 +1887,7 @@
         {
           "children": [],
           "description": "A tool for quickly measuring the size of a PHP project.",
+          "kind": "repository",
           "title": "PHPLOC",
           "repo_info": {
             "archived": false,
@@ -1995,6 +1901,7 @@
         {
           "children": [],
           "description": "A simple micro-benchmark library.",
+          "kind": "repository",
           "title": "UBench",
           "repo_info": {
             "archived": false,
@@ -2008,6 +1915,7 @@
         {
           "children": [],
           "description": "A tool to upgrade and refactor code.",
+          "kind": "repository",
           "title": "Rector",
           "repo_info": {
             "archived": false,
@@ -2021,6 +1929,7 @@
         {
           "children": [],
           "description": "A library that detects magic numbers in code.",
+          "kind": "repository",
           "title": "PHP Magic Number Detector",
           "repo_info": {
             "archived": false,
@@ -2034,6 +1943,7 @@
         {
           "children": [],
           "description": "A command line utility that compares two source sets and determines the appropriate semantic versioning to apply.",
+          "kind": "repository",
           "title": "PHP Semantic Versioning Checker",
           "repo_info": {
             "archived": false,
@@ -2047,6 +1957,7 @@
         {
           "children": [],
           "description": "A PHP code-quality tool.",
+          "kind": "repository",
           "title": "GrumPHP",
           "repo_info": {
             "archived": false,
@@ -2060,6 +1971,7 @@
         {
           "children": [],
           "description": "A PHP parser written in PHP.",
+          "kind": "repository",
           "title": "PHP Parser",
           "repo_info": {
             "archived": false,
@@ -2073,6 +1985,7 @@
         {
           "children": [],
           "description": "A command line utility which verifies that your files implement your rules.",
+          "kind": "repository",
           "title": "Editorconfig-Checker",
           "repo_info": {
             "archived": false,
@@ -2082,16 +1995,6 @@
             "repo": "editorconfig-checker.php",
             "stars": 351
           }
-        },
-        {
-          "children": [],
-          "description": "An automated code review.",
-          "title": "Code Climate"
-        },
-        {
-          "children": [],
-          "description": "A tool for viewing the Abstract Syntax Tree of PHP code.",
-          "title": "PHP AST Viewer"
         }
       ],
       "title": "Code Analysis"
@@ -2102,6 +2005,7 @@
         {
           "children": [],
           "description": "A coding standards fixer library.",
+          "kind": "repository",
           "title": "PHP CS Fixer",
           "repo_info": {
             "archived": false,
@@ -2115,6 +2019,7 @@
         {
           "children": [],
           "description": "A coding standards fixer library for Laravel.",
+          "kind": "repository",
           "title": "Laravel Pint",
           "repo_info": {
             "archived": false,
@@ -2128,6 +2033,7 @@
         {
           "children": [],
           "description": "A library that scans code for bugs, sub-optimal code, unused parameters and more.",
+          "kind": "repository",
           "title": "PHP Mess Detector",
           "repo_info": {
             "archived": false,
@@ -2141,6 +2047,7 @@
         {
           "children": [],
           "description": "A library that detects and can auto-fix PHP, CSS and JS coding standard violations.",
+          "kind": "repository",
           "title": "PHP CodeSniffer",
           "repo_info": {
             "archived": false,
@@ -2154,6 +2061,7 @@
         {
           "children": [],
           "description": "A library that detects copied and pasted code.",
+          "kind": "repository",
           "title": "PHPCPD",
           "repo_info": {
             "archived": false,
@@ -2167,6 +2075,7 @@
         {
           "children": [],
           "description": "An easy-to-use and flexible Git hook library.",
+          "kind": "repository",
           "title": "CaptainHook",
           "repo_info": {
             "archived": false,
@@ -2180,6 +2089,7 @@
         {
           "children": [],
           "description": "A tool to help adhere to certain coding conventions.",
+          "kind": "repository",
           "title": "PHPCheckstyle",
           "repo_info": {
             "archived": false,
@@ -2189,11 +2099,6 @@
             "repo": "phpcheckstyle",
             "stars": 14457
           }
-        },
-        {
-          "children": [],
-          "description": "A web application to help configure PHP CS Fixer rule sets.",
-          "title": "PHP CS Fixer Configurator"
         }
       ],
       "title": "Code Quality"
@@ -2204,6 +2109,7 @@
         {
           "children": [],
           "description": "Next-gen phpDoc parser with support for intersection types and generics",
+          "kind": "repository",
           "title": "PHPDoc Parser",
           "repo_info": {
             "archived": false,
@@ -2217,6 +2123,7 @@
         {
           "children": [],
           "description": "A static code analysis tool that helps to enforce rules for dependencies between software layers.",
+          "kind": "repository",
           "title": "Deptrac",
           "repo_info": {
             "archived": false,
@@ -2230,6 +2137,7 @@
         {
           "children": [],
           "description": "A static metric library.",
+          "kind": "repository",
           "title": "PHP Metrics",
           "repo_info": {
             "archived": false,
@@ -2243,6 +2151,7 @@
         {
           "children": [],
           "description": "A static analysis tool for finding errors in PHP applications.",
+          "kind": "repository",
           "title": "Psalm",
           "repo_info": {
             "archived": false,
@@ -2256,6 +2165,7 @@
         {
           "children": [],
           "description": "A code analysis tool using Graph Theory.",
+          "kind": "repository",
           "title": "Mondrian",
           "repo_info": {
             "archived": false,
@@ -2269,6 +2179,7 @@
         {
           "children": [],
           "description": "A static analyzer for PHP version migration.",
+          "kind": "repository",
           "title": "PHP Migration",
           "repo_info": {
             "archived": false,
@@ -2282,6 +2193,7 @@
         {
           "children": [],
           "description": "A static analyzer based on PHP 7+ and the php-ast extension.",
+          "kind": "repository",
           "title": "phan",
           "repo_info": {
             "archived": true,
@@ -2295,6 +2207,7 @@
         {
           "children": [],
           "description": "A PHP Static Analysis Tool.",
+          "kind": "repository",
           "title": "PHPStan",
           "repo_info": {
             "archived": false,
@@ -2308,6 +2221,7 @@
         {
           "children": [],
           "description": "A PHP compatibility checker for PHP CodeSniffer.",
+          "kind": "repository",
           "title": "PHPCompatibility",
           "repo_info": {
             "archived": false,
@@ -2321,6 +2235,7 @@
         {
           "children": [],
           "description": "A tool to create customizable dependency graphs.",
+          "kind": "repository",
           "title": "PhpDependencyAnalysis",
           "repo_info": {
             "archived": false,
@@ -2334,6 +2249,7 @@
         {
           "children": [],
           "description": "Easy-to-use architecture testing tool for PHP.",
+          "kind": "repository",
           "title": "PHP Architecture Tester",
           "repo_info": {
             "archived": false,
@@ -2347,6 +2263,7 @@
         {
           "children": [],
           "description": "A static analysis engine for PHP.",
+          "kind": "repository",
           "title": "Exakat",
           "repo_info": {
             "archived": false,
@@ -2366,6 +2283,7 @@
         {
           "children": [],
           "description": "A functional programming library.",
+          "kind": "repository",
           "title": "Functional PHP",
           "repo_info": {
             "archived": false,
@@ -2379,6 +2297,7 @@
         {
           "children": [],
           "description": "A simple PHP finite state machine.",
+          "kind": "repository",
           "title": "Finite",
           "repo_info": {
             "archived": false,
@@ -2392,6 +2311,7 @@
         {
           "children": [],
           "description": "A library that provides iteration primitives using generators.",
+          "kind": "repository",
           "title": "Iter",
           "repo_info": {
             "archived": false,
@@ -2405,6 +2325,7 @@
         {
           "children": [],
           "description": "A library that provides functionality for working with iterable entities (similar to itertools library in Python).",
+          "kind": "repository",
           "title": "IterTools PHP",
           "repo_info": {
             "archived": false,
@@ -2418,6 +2339,7 @@
         {
           "children": [],
           "description": "A powerful rule engine and implementation of the Specification pattern.",
+          "kind": "repository",
           "title": "RulerZ",
           "repo_info": {
             "archived": false,
@@ -2431,6 +2353,7 @@
         {
           "children": [],
           "description": "Data import abstraction library for consuming Web APIs and other data sources.",
+          "kind": "repository",
           "title": "Porter",
           "repo_info": {
             "archived": false,
@@ -2444,6 +2367,7 @@
         {
           "children": [],
           "description": "A pipeline pattern implementation.",
+          "kind": "repository",
           "title": "Pipeline",
           "repo_info": {
             "archived": false,
@@ -2457,6 +2381,7 @@
         {
           "children": [],
           "description": "A repository of software patterns implemented in PHP.",
+          "kind": "repository",
           "title": "Design Patterns PHP",
           "repo_info": {
             "archived": false,
@@ -2476,6 +2401,7 @@
         {
           "children": [],
           "description": "A debug and profile tool for PHP.",
+          "kind": "repository",
           "title": "xDebug",
           "repo_info": {
             "archived": false,
@@ -2489,6 +2415,7 @@
         {
           "children": [],
           "description": "A simple error detection, logging and time measuring library.",
+          "kind": "repository",
           "title": "Tracy",
           "repo_info": {
             "archived": false,
@@ -2502,6 +2429,7 @@
         {
           "children": [],
           "description": "A self-contained code coverage compatible driver.",
+          "kind": "repository",
           "title": "PCOV",
           "repo_info": {
             "archived": false,
@@ -2515,6 +2443,7 @@
         {
           "children": [],
           "description": "A debugging and profiling tool.",
+          "kind": "repository",
           "title": "Kint",
           "repo_info": {
             "archived": true,
@@ -2528,6 +2457,7 @@
         {
           "children": [],
           "description": "A simple metrics API library.",
+          "kind": "repository",
           "title": "Metrics",
           "repo_info": {
             "archived": false,
@@ -2541,6 +2471,7 @@
         {
           "children": [],
           "description": "A web debugging console.",
+          "kind": "repository",
           "title": "PHP Console",
           "repo_info": {
             "archived": false,
@@ -2554,6 +2485,7 @@
         {
           "children": [],
           "description": "A profiling tool originally developed by Facebook.",
+          "kind": "repository",
           "title": "XHProf",
           "repo_info": {
             "archived": false,
@@ -2567,6 +2499,7 @@
         {
           "children": [],
           "description": "A variable dumper component.",
+          "kind": "repository",
           "title": "Symfony VarDumper",
           "repo_info": {
             "archived": false,
@@ -2580,6 +2513,7 @@
         {
           "children": [],
           "description": "A low-overhead sampling profiler.",
+          "kind": "repository",
           "title": "PHPSpy",
           "repo_info": {
             "archived": true,
@@ -2593,6 +2527,7 @@
         {
           "children": [],
           "description": "Another web debugging console using Google Chrome.",
+          "kind": "repository",
           "title": "Barbushin PHP Console",
           "repo_info": {
             "archived": false,
@@ -2606,6 +2541,7 @@
         {
           "children": [],
           "description": "A benchmarking Framework.",
+          "kind": "repository",
           "title": "PHPBench",
           "repo_info": {
             "archived": false,
@@ -2619,6 +2555,7 @@
         {
           "children": [],
           "description": "A pretty error-handling library.",
+          "kind": "repository",
           "title": "Whoops",
           "repo_info": {
             "archived": false,
@@ -2628,21 +2565,6 @@
             "repo": "whoops",
             "stars": 9382
           }
-        },
-        {
-          "children": [],
-          "description": "Monitoring extension collecting errors and statistics into SQLite/MySQL/StatsD.",
-          "title": "APM"
-        },
-        {
-          "children": [],
-          "description": "A debugging toolbar.",
-          "title": "PHP Debug Bar"
-        },
-        {
-          "children": [],
-          "description": "A debug and profile tool for Zend Server.",
-          "title": "Z-Ray"
         }
       ],
       "title": "Debugging and Profiling"
@@ -2653,6 +2575,7 @@
         {
           "children": [],
           "description": "A library for versioning and releasing software.",
+          "kind": "repository",
           "title": "RMT",
           "repo_info": {
             "archived": false,
@@ -2666,6 +2589,7 @@
         {
           "children": [],
           "description": "A utility to build PHAR files.",
+          "kind": "repository",
           "title": "Box",
           "repo_info": {
             "archived": false,
@@ -2679,6 +2603,7 @@
         {
           "children": [],
           "description": "A PHP project/micro-package generator.",
+          "kind": "repository",
           "title": "Construct",
           "repo_info": {
             "archived": false,
@@ -2688,11 +2613,6 @@
             "repo": "construct",
             "stars": 23052
           }
-        },
-        {
-          "children": [],
-          "description": "A PHP project build system inspired by Apache Ant.",
-          "title": "Phing"
         }
       ],
       "title": "Build Tools"
@@ -2703,6 +2623,7 @@
         {
           "children": [],
           "description": "A PHP cron job manager without modifying crontab.",
+          "kind": "repository",
           "title": "Jobby",
           "repo_info": {
             "archived": false,
@@ -2716,6 +2637,7 @@
         {
           "children": [],
           "description": "A PHP Task runner with object-orientated configurations.",
+          "kind": "repository",
           "title": "Robo",
           "repo_info": {
             "archived": false,
@@ -2725,16 +2647,6 @@
             "repo": "Robo",
             "stars": 277
           }
-        },
-        {
-          "children": [],
-          "description": "A PHP Task runner built on Symfony components.",
-          "title": "Bldr"
-        },
-        {
-          "children": [],
-          "description": "A pure PHP task runner inspired by Grunt and Gulp.",
-          "title": "Task"
         }
       ],
       "title": "Task Runners"
@@ -2745,6 +2657,7 @@
         {
           "children": [],
           "description": "A menu library.",
+          "kind": "repository",
           "title": "KnpMenu",
           "repo_info": {
             "archived": false,
@@ -2758,6 +2671,7 @@
         {
           "children": [],
           "description": "A flexible menu library with a fluent interface.",
+          "kind": "repository",
           "title": "Menu",
           "repo_info": {
             "archived": false,
@@ -2777,6 +2691,7 @@
         {
           "children": [],
           "description": "An elegant wrapper around Webpack for the 80% use case.",
+          "kind": "repository",
           "title": "Laravel Mix",
           "repo_info": {
             "archived": false,
@@ -2790,6 +2705,7 @@
         {
           "children": [],
           "description": "A simple but powerful API for processing and compiling assets built around Webpack.",
+          "kind": "repository",
           "title": "Symfony Encore",
           "repo_info": {
             "archived": false,
@@ -2803,6 +2719,7 @@
         {
           "children": [],
           "description": "A JavaScript minifier library.",
+          "kind": "repository",
           "title": "JShrink",
           "repo_info": {
             "archived": false,
@@ -2816,6 +2733,7 @@
         {
           "children": [],
           "description": "Manages URL generation and versioning of web assets.",
+          "kind": "repository",
           "title": "Symfony Asset",
           "repo_info": {
             "archived": false,
@@ -2835,6 +2753,7 @@
         {
           "children": [],
           "description": "A library of geo-related tools.",
+          "kind": "repository",
           "title": "GeoTools",
           "repo_info": {
             "archived": false,
@@ -2848,6 +2767,7 @@
         {
           "children": [],
           "description": "A simple geo library.",
+          "kind": "repository",
           "title": "PHPGeo",
           "repo_info": {
             "archived": false,
@@ -2861,6 +2781,7 @@
         {
           "children": [],
           "description": "A GeoJSON implementation.",
+          "kind": "repository",
           "title": "GeoJSON",
           "repo_info": {
             "archived": false,
@@ -2874,6 +2795,7 @@
         {
           "children": [],
           "description": "A list of all countries with names and ISO 3166-1 codes.",
+          "kind": "repository",
           "title": "Country List",
           "repo_info": {
             "archived": false,
@@ -2883,11 +2805,6 @@
             "repo": "country-list",
             "stars": 1614
           }
-        },
-        {
-          "children": [],
-          "description": "A geocoding library.",
-          "title": "GeoCoder"
         }
       ],
       "title": "Geolocation"
@@ -2898,6 +2815,7 @@
         {
           "children": [],
           "description": "A simple DateTime API extension.",
+          "kind": "repository",
           "title": "Carbon",
           "repo_info": {
             "archived": false,
@@ -2911,6 +2829,7 @@
         {
           "children": [],
           "description": "Moment.js inspired PHP DateTime handler with i18n support.",
+          "kind": "repository",
           "title": "Moment.php",
           "repo_info": {
             "archived": false,
@@ -2924,6 +2843,7 @@
         {
           "children": [],
           "description": "A library to help you calculate the dates and names of holidays.",
+          "kind": "repository",
           "title": "Yasumi",
           "repo_info": {
             "archived": false,
@@ -2937,6 +2857,7 @@
         {
           "children": [],
           "description": "A calendar management library.",
+          "kind": "repository",
           "title": "CalendR",
           "repo_info": {
             "archived": false,
@@ -2950,6 +2871,7 @@
         {
           "children": [],
           "description": "A DateTime API extension supporting both mutable and immutable date/time.",
+          "kind": "repository",
           "title": "Chronos",
           "repo_info": {
             "archived": false,
@@ -2969,6 +2891,7 @@
         {
           "children": [],
           "description": "Yet another web socket library.",
+          "kind": "repository",
           "title": "Elephant.io",
           "repo_info": {
             "archived": true,
@@ -2982,6 +2905,7 @@
         {
           "children": [],
           "description": "A client to make synchronous/asynchronous requests through php-fpm socket.",
+          "kind": "repository",
           "title": "Fast CGI Client",
           "repo_info": {
             "archived": false,
@@ -2995,6 +2919,7 @@
         {
           "children": [],
           "description": "An event library with a focus on domain events.",
+          "kind": "repository",
           "title": "Event",
           "repo_info": {
             "archived": false,
@@ -3008,6 +2933,7 @@
         {
           "children": [],
           "description": "An event driven non-blocking I/O library.",
+          "kind": "repository",
           "title": "Amp",
           "repo_info": {
             "archived": false,
@@ -3021,6 +2947,7 @@
         {
           "children": [],
           "description": "An asynchronous web socket client.",
+          "kind": "repository",
           "title": "Pawl",
           "repo_info": {
             "archived": false,
@@ -3034,6 +2961,7 @@
         {
           "children": [],
           "description": "An event dispatcher library.",
+          "kind": "repository",
           "title": "CakePHP Event",
           "repo_info": {
             "archived": false,
@@ -3047,6 +2975,7 @@
         {
           "children": [],
           "description": "An event-driven asynchronous and concurrent networking communication framework with high performance for PHP written in C.",
+          "kind": "repository",
           "title": "Swoole",
           "repo_info": {
             "archived": false,
@@ -3060,6 +2989,7 @@
         {
           "children": [],
           "description": "An event source component to persist event messages",
+          "kind": "repository",
           "title": "Prooph Event Store",
           "repo_info": {
             "archived": false,
@@ -3073,6 +3003,7 @@
         {
           "children": [],
           "description": "An event driven non-blocking I/O library.",
+          "kind": "repository",
           "title": "Workerman",
           "repo_info": {
             "archived": false,
@@ -3086,6 +3017,7 @@
         {
           "children": [],
           "description": "An event dispatcher library.",
+          "kind": "repository",
           "title": "Evenement",
           "repo_info": {
             "archived": false,
@@ -3099,6 +3031,7 @@
         {
           "children": [],
           "description": "A reactive extension library.",
+          "kind": "repository",
           "title": "RxPHP",
           "repo_info": {
             "archived": false,
@@ -3112,6 +3045,7 @@
         {
           "children": [],
           "description": "Golang's defer statement for PHP.",
+          "kind": "repository",
           "title": "PHP Defer",
           "repo_info": {
             "archived": false,
@@ -3125,6 +3059,7 @@
         {
           "children": [],
           "description": "A web socket library.",
+          "kind": "repository",
           "title": "Ratchet",
           "repo_info": {
             "archived": false,
@@ -3138,6 +3073,7 @@
         {
           "children": [],
           "description": "An event source and CQRS library.",
+          "kind": "repository",
           "title": "Broadway",
           "repo_info": {
             "archived": false,
@@ -3151,6 +3087,7 @@
         {
           "children": [],
           "description": "An event driven non-blocking I/O library.",
+          "kind": "repository",
           "title": "ReactPHP",
           "repo_info": {
             "archived": false,
@@ -3160,11 +3097,6 @@
             "repo": "reactphp",
             "stars": 257
           }
-        },
-        {
-          "children": [],
-          "description": "A modern PHP app server written in Go.",
-          "title": "FrankenPHP"
         }
       ],
       "title": "Event"
@@ -3175,6 +3107,7 @@
         {
           "children": [],
           "description": "A PHP implementation of Fowler's money pattern.",
+          "kind": "repository",
           "title": "Money",
           "repo_info": {
             "archived": false,
@@ -3188,6 +3121,7 @@
         {
           "children": [],
           "description": "An exchange rates library.",
+          "kind": "repository",
           "title": "Swap",
           "repo_info": {
             "archived": false,
@@ -3201,6 +3135,7 @@
         {
           "children": [],
           "description": "Highly customizable e-commerce software",
+          "kind": "repository",
           "title": "Shopware",
           "repo_info": {
             "archived": false,
@@ -3214,6 +3149,7 @@
         {
           "children": [],
           "description": "An open source e-commerce platform for in-house development teams.",
+          "kind": "repository",
           "title": "Shopsys Framework",
           "repo_info": {
             "archived": false,
@@ -3227,6 +3163,7 @@
         {
           "children": [],
           "description": "A framework agnostic multi-gateway payment processing library.",
+          "kind": "repository",
           "title": "OmniPay",
           "repo_info": {
             "archived": false,
@@ -3240,6 +3177,7 @@
         {
           "children": [],
           "description": "A payment abstraction library.",
+          "kind": "repository",
           "title": "Payum",
           "repo_info": {
             "archived": false,
@@ -3253,6 +3191,7 @@
         {
           "children": [],
           "description": "A money library for PHP, with support for contexts, cash roundings, currency conversion.",
+          "kind": "repository",
           "title": "Brick Money",
           "repo_info": {
             "archived": false,
@@ -3262,11 +3201,6 @@
             "repo": "money",
             "stars": 2822
           }
-        },
-        {
-          "children": [],
-          "description": "An open source e-commerce solution.",
-          "title": "Sylius"
         }
       ],
       "title": "E-commerce"
@@ -3277,6 +3211,7 @@
         {
           "children": [],
           "description": "A PDF and image generation library.",
+          "kind": "repository",
           "title": "Snappy",
           "repo_info": {
             "archived": false,
@@ -3290,6 +3225,7 @@
         {
           "children": [],
           "description": "A PHP client for interacting with Gotenberg.",
+          "kind": "repository",
           "title": "Gotenberg",
           "repo_info": {
             "archived": false,
@@ -3303,6 +3239,7 @@
         {
           "children": [],
           "description": "Convert HTML to an image, PDF or string.",
+          "kind": "repository",
           "title": "Browsershot",
           "repo_info": {
             "archived": true,
@@ -3316,6 +3253,7 @@
         {
           "children": [],
           "description": "A HTML to PDF converter.",
+          "kind": "repository",
           "title": "Dompdf",
           "repo_info": {
             "archived": false,
@@ -3325,11 +3263,6 @@
             "repo": "dompdf",
             "stars": 12983
           }
-        },
-        {
-          "children": [],
-          "description": "An open source PHP class for generating PDF documents.",
-          "title": "TCPDF"
         }
       ],
       "title": "PDF"
@@ -3340,6 +3273,7 @@
         {
           "children": [],
           "description": "A library for working with Microsoft PowerPoint Presentations.",
+          "kind": "repository",
           "title": "PHPPowerPoint",
           "repo_info": {
             "archived": false,
@@ -3353,6 +3287,7 @@
         {
           "children": [],
           "description": "A library for working with Microsoft Word documents.",
+          "kind": "repository",
           "title": "PHPWord",
           "repo_info": {
             "archived": false,
@@ -3366,6 +3301,7 @@
         {
           "children": [],
           "description": "A pure PHP library for reading and writing spreadsheet files (successor of PHPExcel).",
+          "kind": "repository",
           "title": "PHPSpreadsheet",
           "repo_info": {
             "archived": false,
@@ -3379,6 +3315,7 @@
         {
           "children": [],
           "description": "A community driven fork of , a PHP library to read and write spreadsheet files (CSV, XLSX and ODS), in a fast and scalable way.",
+          "kind": "repository",
           "title": "OpenSpout",
           "repo_info": {
             "archived": false,
@@ -3398,6 +3335,7 @@
         {
           "children": [],
           "description": "A simple ORM.",
+          "kind": "repository",
           "title": "Laravel Eloquent",
           "repo_info": {
             "archived": false,
@@ -3411,6 +3349,7 @@
         {
           "children": [],
           "description": "An Object Model Manager for PostgreSQL.",
+          "kind": "repository",
           "title": "Pomm",
           "repo_info": {
             "archived": false,
@@ -3424,6 +3363,7 @@
         {
           "children": [],
           "description": "PHP DataMapper, ORM.",
+          "kind": "repository",
           "title": "Cycle ORM",
           "repo_info": {
             "archived": false,
@@ -3437,6 +3377,7 @@
         {
           "children": [],
           "description": "Object-Relational Mapper, implemented using the DataMapper pattern.",
+          "kind": "repository",
           "title": "CakePHP ORM",
           "repo_info": {
             "archived": true,
@@ -3450,6 +3391,7 @@
         {
           "children": [],
           "description": "A nested set implementation for Eloquent.",
+          "kind": "repository",
           "title": "Baum",
           "repo_info": {
             "archived": false,
@@ -3463,6 +3405,7 @@
         {
           "children": [],
           "description": "A collection of Doctrine behavioural extensions.",
+          "kind": "repository",
           "title": "Doctrine Extensions",
           "repo_info": {
             "archived": false,
@@ -3476,6 +3419,7 @@
         {
           "children": [],
           "description": "A data mapper implementation for your persistence model in PHP.",
+          "kind": "repository",
           "title": "Atlas.Orm",
           "repo_info": {
             "archived": false,
@@ -3489,6 +3433,7 @@
         {
           "children": [],
           "description": "An easy dumper tool for MySQL.",
+          "kind": "repository",
           "title": "Slimdump",
           "repo_info": {
             "archived": false,
@@ -3502,6 +3447,7 @@
         {
           "children": [],
           "description": "Provides an extension to the native PDO along with a profiler and connection locator.",
+          "kind": "repository",
           "title": "Aura.Sql",
           "repo_info": {
             "archived": false,
@@ -3515,6 +3461,7 @@
         {
           "children": [],
           "description": "A set of utilities to generate proxy objects for data mappers.",
+          "kind": "repository",
           "title": "ProxyManager",
           "repo_info": {
             "archived": false,
@@ -3528,6 +3475,7 @@
         {
           "children": [],
           "description": "A MySQL datamapper ORM.",
+          "kind": "repository",
           "title": "Spot2",
           "repo_info": {
             "archived": false,
@@ -3541,6 +3489,7 @@
         {
           "children": [],
           "description": "Independent query builders for MySQL, PostgreSQL, SQLite, and Microsoft SQL Server.",
+          "kind": "repository",
           "title": "Aura.SqlQuery",
           "repo_info": {
             "archived": true,
@@ -3550,16 +3499,6 @@
             "repo": "Aura.SqlQuery",
             "stars": 3119
           }
-        },
-        {
-          "children": [],
-          "description": "A comprehensive DBAL and ORM.",
-          "title": "Doctrine"
-        },
-        {
-          "children": [],
-          "description": "A lightweight, configuration-less ORM.",
-          "title": "RedBean"
         }
       ],
       "title": "Database"
@@ -3570,6 +3509,7 @@
         {
           "children": [],
           "description": "Another database migration library.",
+          "kind": "repository",
           "title": "Phinx",
           "repo_info": {
             "archived": false,
@@ -3583,6 +3523,7 @@
         {
           "children": [],
           "description": "A migration management library.",
+          "kind": "repository",
           "title": "Migrations",
           "repo_info": {
             "archived": false,
@@ -3596,6 +3537,7 @@
         {
           "children": [],
           "description": "Another migration management library.",
+          "kind": "repository",
           "title": "PHPMig",
           "repo_info": {
             "archived": false,
@@ -3609,6 +3551,7 @@
         {
           "children": [],
           "description": "Database migrations for PHP ala ActiveRecord Migrations with support for MySQL, Postgres, SQLite.",
+          "kind": "repository",
           "title": "Ruckusing",
           "repo_info": {
             "archived": false,
@@ -3618,11 +3561,6 @@
             "repo": "ruckusing-migrations",
             "stars": 20131
           }
-        },
-        {
-          "children": [],
-          "description": "A migration library for Doctrine.",
-          "title": "Doctrine Migrations"
         }
       ],
       "title": "Migrations"
@@ -3633,6 +3571,7 @@
         {
           "children": [],
           "description": "A feature-complete Redis library.",
+          "kind": "repository",
           "title": "Predis",
           "repo_info": {
             "archived": false,
@@ -3646,6 +3585,7 @@
         {
           "children": [],
           "description": "A MongoDB ORM.",
+          "kind": "repository",
           "title": "PHPMongo",
           "repo_info": {
             "archived": false,
@@ -3659,6 +3599,7 @@
         {
           "children": [],
           "description": "MongoDB PHP Driver.",
+          "kind": "repository",
           "title": "MongoDB",
           "repo_info": {
             "archived": false,
@@ -3678,6 +3619,7 @@
         {
           "children": [],
           "description": "A multibackend abstraction library.",
+          "kind": "repository",
           "title": "Bernard",
           "repo_info": {
             "archived": false,
@@ -3691,6 +3633,7 @@
         {
           "children": [],
           "description": "A RabbitMQ pattern library.",
+          "kind": "repository",
           "title": "Thumper",
           "repo_info": {
             "archived": false,
@@ -3704,6 +3647,7 @@
         {
           "children": [],
           "description": "PHP bindings for Tarantool Queue.",
+          "kind": "repository",
           "title": "Tarantool Queue",
           "repo_info": {
             "archived": false,
@@ -3717,6 +3661,7 @@
         {
           "children": [],
           "description": "A message queue packages for PHP that supports RabbitMQ, AMQP, STOMP, Amazon SQS, Redis and Doctrine transports.",
+          "kind": "repository",
           "title": "Enqueue",
           "repo_info": {
             "archived": false,
@@ -3730,6 +3675,7 @@
         {
           "children": [],
           "description": "A performant pure-PHP AMQP (RabbitMQ) sync and also async (ReactPHP) library.",
+          "kind": "repository",
           "title": "BunnyPHP",
           "repo_info": {
             "archived": false,
@@ -3743,6 +3689,7 @@
         {
           "children": [],
           "description": "A pure PHP AMQP library.",
+          "kind": "repository",
           "title": "PHP AMQP",
           "repo_info": {
             "archived": false,
@@ -3756,6 +3703,7 @@
         {
           "children": [],
           "description": "A Beanstalkd client library.",
+          "kind": "repository",
           "title": "Pheanstalk",
           "repo_info": {
             "archived": false,
@@ -3775,6 +3723,7 @@
         {
           "children": [],
           "description": "A client library for ElasticSearch.",
+          "kind": "repository",
           "title": "Elastica",
           "repo_info": {
             "archived": false,
@@ -3788,6 +3737,7 @@
         {
           "children": [],
           "description": "The official client library for ElasticSearch.",
+          "kind": "repository",
           "title": "ElasticSearch PHP",
           "repo_info": {
             "archived": false,
@@ -3797,16 +3747,6 @@
             "repo": "elasticsearch-php",
             "stars": 4466
           }
-        },
-        {
-          "children": [],
-          "description": "A client library for Solr.",
-          "title": "Solarium"
-        },
-        {
-          "children": [],
-          "description": "A query library for the Sphinx and Manticore search engines.",
-          "title": "SphinxQL Query Builder"
         }
       ],
       "title": "Search"
@@ -3817,6 +3757,7 @@
         {
           "children": [],
           "description": "A simple command line wrapper library.",
+          "kind": "repository",
           "title": "ShellWrap",
           "repo_info": {
             "archived": false,
@@ -3830,6 +3771,7 @@
         {
           "children": [],
           "description": "A micro framework for building command line tools.",
+          "kind": "repository",
           "title": "Cilex",
           "repo_info": {
             "archived": false,
@@ -3843,6 +3785,7 @@
         {
           "children": [],
           "description": "Another simple command line opt parser.",
+          "kind": "repository",
           "title": "Commando",
           "repo_info": {
             "archived": false,
@@ -3856,6 +3799,7 @@
         {
           "children": [],
           "description": "A library to calculate cron run dates.",
+          "kind": "repository",
           "title": "Cron Expression",
           "repo_info": {
             "archived": false,
@@ -3869,6 +3813,7 @@
         {
           "children": [],
           "description": "A command-line framework supports zsh/bash completion generation, subcommands and option constraints. It also powers phpbrew.",
+          "kind": "repository",
           "title": "CLIFramework",
           "repo_info": {
             "archived": false,
@@ -3882,6 +3827,7 @@
         {
           "children": [],
           "description": "A command line opt parser.",
+          "kind": "repository",
           "title": "GetOpt",
           "repo_info": {
             "archived": false,
@@ -3895,6 +3841,7 @@
         {
           "children": [],
           "description": "Provides the equivalent of request ( Context ) and response ( Stdio ) objects for the command line interface, including Getopt support, and an independent Help object for describing commands.",
+          "kind": "repository",
           "title": "Aura.Cli",
           "repo_info": {
             "archived": false,
@@ -3908,6 +3855,7 @@
         {
           "children": [],
           "description": "A library for outputting colors and special formatting.",
+          "kind": "repository",
           "title": "CLImate",
           "repo_info": {
             "archived": false,
@@ -3921,6 +3869,7 @@
         {
           "children": [],
           "description": "A library for building CLI menus.",
+          "kind": "repository",
           "title": "CLI Menu",
           "repo_info": {
             "archived": false,
@@ -3934,6 +3883,7 @@
         {
           "children": [],
           "description": "Another command line opt parser.",
+          "kind": "repository",
           "title": "GetOptionKit",
           "repo_info": {
             "archived": false,
@@ -3947,6 +3897,7 @@
         {
           "children": [],
           "description": "Another PHP REPL.",
+          "kind": "repository",
           "title": "PsySH",
           "repo_info": {
             "archived": false,
@@ -3966,6 +3917,7 @@
         {
           "children": [],
           "description": "Provides authentication functionality and session tracking using various adapters.",
+          "kind": "repository",
           "title": "Aura.Auth",
           "repo_info": {
             "archived": false,
@@ -3979,6 +3931,7 @@
         {
           "children": [],
           "description": "Platform-Agnostic Security Tokens.",
+          "kind": "repository",
           "title": "Paseto",
           "repo_info": {
             "archived": false,
@@ -3992,6 +3945,7 @@
         {
           "children": [],
           "description": "Another OAuth library.",
+          "kind": "repository",
           "title": "PHP oAuthLib",
           "repo_info": {
             "archived": true,
@@ -4005,6 +3959,7 @@
         {
           "children": [],
           "description": "An OAuth 1.0 client library.",
+          "kind": "repository",
           "title": "OAuth 1.0 Client",
           "repo_info": {
             "archived": false,
@@ -4018,6 +3973,7 @@
         {
           "children": [],
           "description": "An open source social sign (OAuth1\\OAuth2\\OpenID\\OpenIDConnect).",
+          "kind": "repository",
           "title": "SocialConnect Auth",
           "repo_info": {
             "archived": false,
@@ -4031,6 +3987,7 @@
         {
           "children": [],
           "description": "A multi-provider authentication framework.",
+          "kind": "repository",
           "title": "Opauth",
           "repo_info": {
             "archived": false,
@@ -4044,6 +4001,7 @@
         {
           "children": [],
           "description": "A Twitter OAuth library.",
+          "kind": "repository",
           "title": "TwitterOAuth",
           "repo_info": {
             "archived": false,
@@ -4057,6 +4015,7 @@
         {
           "children": [],
           "description": "Json Tokens to authenticate and transmit information.",
+          "kind": "repository",
           "title": "Json Web Token",
           "repo_info": {
             "archived": false,
@@ -4070,6 +4029,7 @@
         {
           "children": [],
           "description": "An OAuth 2.0 client library.",
+          "kind": "repository",
           "title": "OAuth 2.0 Client",
           "repo_info": {
             "archived": false,
@@ -4079,26 +4039,6 @@
             "repo": "oauth2-client",
             "stars": 20316
           }
-        },
-        {
-          "children": [],
-          "description": "Another OAuth2 server implementation.",
-          "title": "OAuth2 Server"
-        },
-        {
-          "children": [],
-          "description": "An OAuth2 authentication server, resource server and client library.",
-          "title": "OAuth2 Server"
-        },
-        {
-          "children": [],
-          "description": "A library for social network authentication.",
-          "title": "Sentinel Social"
-        },
-        {
-          "children": [],
-          "description": "A framework agnostic authentication & authorisation library.",
-          "title": "Sentinel"
         }
       ],
       "title": "Authentication and Authorization"
@@ -4109,6 +4049,7 @@
         {
           "children": [],
           "description": "A Markdown parser.",
+          "kind": "repository",
           "title": "PHP Markdown",
           "repo_info": {
             "archived": false,
@@ -4122,6 +4063,7 @@
         {
           "children": [],
           "description": "A Shiki code highlighting package in PHP.",
+          "kind": "repository",
           "title": "Shiki PHP",
           "repo_info": {
             "archived": false,
@@ -4135,6 +4077,7 @@
         {
           "children": [],
           "description": "A PHP parser for Djot, a modern light markup language (successor of Markdown).",
+          "kind": "repository",
           "title": "Djot",
           "repo_info": {
             "archived": true,
@@ -4148,6 +4091,7 @@
         {
           "children": [],
           "description": "A fast and extensible Markdown parser.",
+          "kind": "repository",
           "title": "Cebe Markdown",
           "repo_info": {
             "archived": false,
@@ -4161,6 +4105,7 @@
         {
           "children": [],
           "description": "Highly-extensible Markdown parser which fully supports the CommonMark spec.",
+          "kind": "repository",
           "title": "CommonMark PHP",
           "repo_info": {
             "archived": false,
@@ -4174,6 +4119,7 @@
         {
           "children": [],
           "description": "An Oembed consumer library.",
+          "kind": "repository",
           "title": "Embera",
           "repo_info": {
             "archived": true,
@@ -4187,6 +4133,7 @@
         {
           "children": [],
           "description": "A Parser for CSS Files written in PHP.",
+          "kind": "repository",
           "title": "PHP CSS Parser",
           "repo_info": {
             "archived": false,
@@ -4200,6 +4147,7 @@
         {
           "children": [],
           "description": "An HTML5 parser and serializer library.",
+          "kind": "repository",
           "title": "HTML5 PHP",
           "repo_info": {
             "archived": false,
@@ -4213,6 +4161,7 @@
         {
           "children": [],
           "description": "Another Markdown parser.",
+          "kind": "repository",
           "title": "Parsedown",
           "repo_info": {
             "archived": false,
@@ -4226,6 +4175,7 @@
         {
           "children": [],
           "description": "A library for parsing VCard and iCalendar objects.",
+          "kind": "repository",
           "title": "VObject",
           "repo_info": {
             "archived": false,
@@ -4239,6 +4189,7 @@
         {
           "children": [],
           "description": "Converts HTML into Markdown.",
+          "kind": "repository",
           "title": "HTML to Markdown",
           "repo_info": {
             "archived": false,
@@ -4252,6 +4203,7 @@
         {
           "children": [],
           "description": "A library for extracting web media.",
+          "kind": "repository",
           "title": "Essence",
           "repo_info": {
             "archived": false,
@@ -4265,6 +4217,7 @@
         {
           "children": [],
           "description": "A lightweight markup parser library.",
+          "kind": "repository",
           "title": "Decoda",
           "repo_info": {
             "archived": false,
@@ -4284,6 +4237,7 @@
         {
           "children": [],
           "description": "A library for mapping JSON to PHP objects.",
+          "kind": "repository",
           "title": "JSONMapper",
           "repo_info": {
             "archived": false,
@@ -4297,6 +4251,7 @@
         {
           "children": [],
           "description": "A JSON lint utility.",
+          "kind": "repository",
           "title": "JSON Lint",
           "repo_info": {
             "archived": false,
@@ -4316,6 +4271,7 @@
         {
           "children": [],
           "description": "A library to convert strings to slugs.",
+          "kind": "repository",
           "title": "Slugify",
           "repo_info": {
             "archived": false,
@@ -4329,6 +4285,7 @@
         {
           "children": [],
           "description": "A library to convert strings to ASCII.",
+          "kind": "repository",
           "title": "Portable ASCII",
           "repo_info": {
             "archived": false,
@@ -4342,6 +4299,7 @@
         {
           "children": [],
           "description": "A portable library for working with UTF-8 strings.",
+          "kind": "repository",
           "title": "Patchwork UTF-8",
           "repo_info": {
             "archived": false,
@@ -4355,6 +4313,7 @@
         {
           "children": [],
           "description": "A PHP port of Django's URLify.js.",
+          "kind": "repository",
           "title": "URLify",
           "repo_info": {
             "archived": false,
@@ -4368,6 +4327,7 @@
         {
           "children": [],
           "description": "A string manipulation library with multibyte support.",
+          "kind": "repository",
           "title": "Stringy",
           "repo_info": {
             "archived": false,
@@ -4381,6 +4341,7 @@
         {
           "children": [],
           "description": "An ANSI to HTML5 converter library.",
+          "kind": "repository",
           "title": "ANSI to HTML5",
           "repo_info": {
             "archived": false,
@@ -4394,6 +4355,7 @@
         {
           "children": [],
           "description": "Text-Hyphenation based on the TeX-hyphenation Algorithm",
+          "kind": "repository",
           "title": "Hyphenation",
           "repo_info": {
             "archived": false,
@@ -4407,6 +4369,7 @@
         {
           "children": [],
           "description": "A library for manipulating and converting colors.",
+          "kind": "repository",
           "title": "Color Jizz",
           "repo_info": {
             "archived": false,
@@ -4420,6 +4383,7 @@
         {
           "children": [],
           "description": "A string manipulation library with UTF-8 safe replacement methods.",
+          "kind": "repository",
           "title": "Portable UTF-8",
           "repo_info": {
             "archived": false,
@@ -4433,6 +4397,7 @@
         {
           "children": [],
           "description": "A lightweight PHP class for detecting mobile devices (including tablets).",
+          "kind": "repository",
           "title": "Mobile-Detect",
           "repo_info": {
             "archived": false,
@@ -4446,6 +4411,7 @@
         {
           "children": [],
           "description": "A PHP desktop/mobile user agent parser, based on Mobiledetect.",
+          "kind": "repository",
           "title": "Agent",
           "repo_info": {
             "archived": false,
@@ -4459,6 +4425,7 @@
         {
           "children": [],
           "description": "A library for parsing user agent strings.",
+          "kind": "repository",
           "title": "UA Parser",
           "repo_info": {
             "archived": false,
@@ -4472,6 +4439,7 @@
         {
           "children": [],
           "description": "A library for parsing URLs from text and converting them into clickable links.",
+          "kind": "repository",
           "title": "Url highlight",
           "repo_info": {
             "archived": false,
@@ -4485,6 +4453,7 @@
         {
           "children": [],
           "description": "A library for formatting SQL statements.",
+          "kind": "repository",
           "title": "SQL Formatter",
           "repo_info": {
             "archived": false,
@@ -4498,6 +4467,7 @@
         {
           "children": [],
           "description": "Another library for parsing user agent strings.",
+          "kind": "repository",
           "title": "Device Detector",
           "repo_info": {
             "archived": false,
@@ -4511,6 +4481,7 @@
         {
           "children": [],
           "description": "A library for generating UUIDs.",
+          "kind": "repository",
           "title": "UUID",
           "repo_info": {
             "archived": false,
@@ -4524,6 +4495,7 @@
         {
           "children": [],
           "description": "A PHP port of Python's jieba. Chinese text segmentation for natural language processing.",
+          "kind": "repository",
           "title": "Jieba-PHP",
           "repo_info": {
             "archived": true,
@@ -4543,6 +4515,7 @@
         {
           "children": [],
           "description": "A math library for PHP.",
+          "kind": "repository",
           "title": "MathPHP",
           "repo_info": {
             "archived": false,
@@ -4556,6 +4529,7 @@
         {
           "children": [],
           "description": "A library for converting between units of measure.",
+          "kind": "repository",
           "title": "PHP Units of Measure",
           "repo_info": {
             "archived": false,
@@ -4569,6 +4543,7 @@
         {
           "children": [],
           "description": "An immutable value object for working with IPv4 and IPv6 addresses.",
+          "kind": "repository",
           "title": "IP",
           "repo_info": {
             "archived": false,
@@ -4582,6 +4557,7 @@
         {
           "children": [],
           "description": "A library to parse, format and convert byte units in binary and metric systems.",
+          "kind": "repository",
           "title": "ByteUnits",
           "repo_info": {
             "archived": false,
@@ -4595,6 +4571,7 @@
         {
           "children": [],
           "description": "A library providing large number support: , and .",
+          "kind": "repository",
           "title": "Brick Math",
           "repo_info": {
             "archived": false,
@@ -4608,6 +4585,7 @@
         {
           "children": [],
           "description": "A value object to handle decimals/floats easily and more precisely.",
+          "kind": "repository",
           "title": "DecimalObject",
           "repo_info": {
             "archived": false,
@@ -4621,6 +4599,7 @@
         {
           "children": [],
           "description": "Another library for converting between units of measure.",
+          "kind": "repository",
           "title": "PHP Conversion",
           "repo_info": {
             "archived": false,
@@ -4640,6 +4619,7 @@
         {
           "children": [],
           "description": "A schema validation library that supports YAML, JSON and XML.",
+          "kind": "repository",
           "title": "MetaYaml",
           "repo_info": {
             "archived": false,
@@ -4653,6 +4633,7 @@
         {
           "children": [],
           "description": "A PHP implementation of Google's phone number handling library.",
+          "kind": "repository",
           "title": "LibPhoneNumber for PHP",
           "repo_info": {
             "archived": false,
@@ -4666,6 +4647,7 @@
         {
           "children": [],
           "description": "A validation library with a rich set of assertions. Supports assertion chaining and lazy assertions.",
+          "kind": "repository",
           "title": "Assert",
           "repo_info": {
             "archived": false,
@@ -4679,6 +4661,7 @@
         {
           "children": [],
           "description": "A library for handling file uploads and validation.",
+          "kind": "repository",
           "title": "Upload",
           "repo_info": {
             "archived": false,
@@ -4692,6 +4675,7 @@
         {
           "children": [],
           "description": "A library for mapping to strongly typed value objects.",
+          "kind": "repository",
           "title": "Valinor",
           "repo_info": {
             "archived": false,
@@ -4705,6 +4689,7 @@
         {
           "children": [],
           "description": "A simple validation library.",
+          "kind": "repository",
           "title": "Respect Validation",
           "repo_info": {
             "archived": false,
@@ -4718,6 +4703,7 @@
         {
           "children": [],
           "description": "Provides tools to validate and sanitize objects and arrays.",
+          "kind": "repository",
           "title": "Aura.Filter",
           "repo_info": {
             "archived": false,
@@ -4731,6 +4717,7 @@
         {
           "children": [],
           "description": "A JSON Schema validation library.",
+          "kind": "repository",
           "title": "JSON Schema",
           "repo_info": {
             "archived": false,
@@ -4744,6 +4731,7 @@
         {
           "children": [],
           "description": "Another simplified validation library.",
+          "kind": "repository",
           "title": "Volan",
           "repo_info": {
             "archived": false,
@@ -4757,6 +4745,7 @@
         {
           "children": [],
           "description": "A library for validating inputs according to standards from ISO, International Finance, Public Administrations, GS1, Book Industry, Phone numbers & Zipcodes for many countries.",
+          "kind": "repository",
           "title": "ISO-codes",
           "repo_info": {
             "archived": false,
@@ -4770,6 +4759,7 @@
         {
           "children": [],
           "description": "Another validation library.",
+          "kind": "repository",
           "title": "Valitron",
           "repo_info": {
             "archived": true,
@@ -4783,6 +4773,7 @@
         {
           "children": [],
           "description": "Another validation library.",
+          "kind": "repository",
           "title": "CakePHP Validation",
           "repo_info": {
             "archived": false,
@@ -4796,6 +4787,7 @@
         {
           "children": [],
           "description": "A simple PHP filtering library.",
+          "kind": "repository",
           "title": "Filterus",
           "repo_info": {
             "archived": false,
@@ -4809,6 +4801,7 @@
         {
           "children": [],
           "description": "An HTML sanitizer library.",
+          "kind": "repository",
           "title": "Symfony HTML Sanitizer",
           "repo_info": {
             "archived": false,
@@ -4822,6 +4815,7 @@
         {
           "children": [],
           "description": "A standards compliant HTML filter.",
+          "kind": "repository",
           "title": "HTML Purifier",
           "repo_info": {
             "archived": false,
@@ -4841,6 +4835,7 @@
         {
           "children": [],
           "description": "A HATEOAS REST web service library.",
+          "kind": "repository",
           "title": "Hateoas",
           "repo_info": {
             "archived": false,
@@ -4854,6 +4849,7 @@
         {
           "children": [],
           "description": "A library for exposing Doctrine entities as REST resource endpoints.",
+          "kind": "repository",
           "title": "Drest",
           "repo_info": {
             "archived": false,
@@ -4867,6 +4863,7 @@
         {
           "children": [],
           "description": "An OpenApi client generator with validation support.",
+          "kind": "repository",
           "title": "Jane",
           "repo_info": {
             "archived": false,
@@ -4880,6 +4877,7 @@
         {
           "children": [],
           "description": "A content negotiation library.",
+          "kind": "repository",
           "title": "Negotiation",
           "repo_info": {
             "archived": false,
@@ -4893,6 +4891,7 @@
         {
           "children": [],
           "description": "Package Generator generates a PHP SDK from any WSDL.",
+          "kind": "repository",
           "title": "PackageGenerator",
           "repo_info": {
             "archived": false,
@@ -4906,6 +4905,7 @@
         {
           "children": [],
           "description": "An API builder built with the Laminas Framework.",
+          "kind": "repository",
           "title": "Laminas API Tool Skeleton",
           "repo_info": {
             "archived": false,
@@ -4919,6 +4919,7 @@
         {
           "children": [],
           "description": "A Hypertext Application Language (HAL) builder library.",
+          "kind": "repository",
           "title": "HAL",
           "repo_info": {
             "archived": false,
@@ -4932,6 +4933,7 @@
         {
           "children": [],
           "description": "A lightweight framework to expose PHP methods as RESTful web API.",
+          "kind": "repository",
           "title": "Restler",
           "repo_info": {
             "archived": false,
@@ -4941,11 +4943,6 @@
             "repo": "Restler",
             "stars": 3743
           }
-        },
-        {
-          "children": [],
-          "description": "Expose in minutes a hypermedia REST API that embraces JSON-LD, Hydra format.",
-          "title": "API Platform"
         }
       ],
       "title": "API"
@@ -4956,6 +4953,7 @@
         {
           "children": [],
           "description": "Cache slam defense using a semaphore to prevent dogpile effect.",
+          "kind": "repository",
           "title": "Metaphore",
           "repo_info": {
             "archived": false,
@@ -4969,6 +4967,7 @@
         {
           "children": [],
           "description": "Another caching library.",
+          "kind": "repository",
           "title": "Laminas Cache",
           "repo_info": {
             "archived": false,
@@ -4982,6 +4981,7 @@
         {
           "children": [],
           "description": "A thin PSR-6 cache wrapper to various caching backends emphasizing cache tagging and indexing.",
+          "kind": "repository",
           "title": "APIx Cache",
           "repo_info": {
             "archived": false,
@@ -4995,6 +4995,7 @@
         {
           "children": [],
           "description": "Another library for caching.",
+          "kind": "repository",
           "title": "Stash",
           "repo_info": {
             "archived": false,
@@ -5008,6 +5009,7 @@
         {
           "children": [],
           "description": "A caching library.",
+          "kind": "repository",
           "title": "Doctrine Cache",
           "repo_info": {
             "archived": false,
@@ -5021,6 +5023,7 @@
         {
           "children": [],
           "description": "A tool to clear APC/opcode caches from the command line.",
+          "kind": "repository",
           "title": "CacheTool",
           "repo_info": {
             "archived": false,
@@ -5034,6 +5037,7 @@
         {
           "children": [],
           "description": "A lock library to provide exclusive execution.",
+          "kind": "repository",
           "title": "Lock",
           "repo_info": {
             "archived": false,
@@ -5047,6 +5051,7 @@
         {
           "children": [],
           "description": "A caching library.",
+          "kind": "repository",
           "title": "CakePHP Cache",
           "repo_info": {
             "archived": false,
@@ -5066,6 +5071,7 @@
         {
           "children": [],
           "description": "Another library for serialising and de-serialising data.",
+          "kind": "repository",
           "title": "Laminas Serializer",
           "repo_info": {
             "archived": false,
@@ -5079,6 +5085,7 @@
         {
           "children": [],
           "description": "A library for converting complex data structures to JSON output.",
+          "kind": "repository",
           "title": "Fractal",
           "repo_info": {
             "archived": false,
@@ -5092,6 +5099,7 @@
         {
           "children": [],
           "description": "A PHP library based on .NET's LINQ (Language Integrated Query).",
+          "kind": "repository",
           "title": "PINQ",
           "repo_info": {
             "archived": false,
@@ -5105,6 +5113,7 @@
         {
           "children": [],
           "description": "A simple collections library.",
+          "kind": "repository",
           "title": "CakePHP Collection",
           "repo_info": {
             "archived": false,
@@ -5118,6 +5127,7 @@
         {
           "children": [],
           "description": "A library for serializing and de-serializing data.",
+          "kind": "repository",
           "title": "Serializer",
           "repo_info": {
             "archived": false,
@@ -5131,6 +5141,7 @@
         {
           "children": [],
           "description": "Collection library inspired by Clojure's sequences.",
+          "kind": "repository",
           "title": "Knapsack",
           "repo_info": {
             "archived": false,
@@ -5144,6 +5155,7 @@
         {
           "children": [],
           "description": "A pure PHP implementation of the MessagePack serialization format.",
+          "kind": "repository",
           "title": "msgpack.php",
           "repo_info": {
             "archived": false,
@@ -5157,6 +5169,7 @@
         {
           "children": [],
           "description": "A library that maps nested JSON structures onto PHP classes.",
+          "kind": "repository",
           "title": "JsonMapper",
           "repo_info": {
             "archived": false,
@@ -5170,6 +5183,7 @@
         {
           "children": [],
           "description": "Yet Another LINQ to Objects for PHP.",
+          "kind": "repository",
           "title": "YaLinqo",
           "repo_info": {
             "archived": false,
@@ -5183,6 +5197,7 @@
         {
           "children": [],
           "description": "Another PHP library based on .NET's LINQ.",
+          "kind": "repository",
           "title": "Ginq",
           "repo_info": {
             "archived": false,
@@ -5196,6 +5211,7 @@
         {
           "children": [],
           "description": "Provides iteration over huge JSONs using simple",
+          "kind": "repository",
           "title": "JSON Machine",
           "repo_info": {
             "archived": false,
@@ -5215,6 +5231,7 @@
         {
           "children": [],
           "description": "A cross-platform library for desktop notification (support for Growl, notify-send, toaster, etc)",
+          "kind": "repository",
           "title": "JoliNotif",
           "repo_info": {
             "archived": false,
@@ -5228,6 +5245,7 @@
         {
           "children": [],
           "description": "A lightweight notification library.",
+          "kind": "repository",
           "title": "Notificator",
           "repo_info": {
             "archived": false,
@@ -5241,6 +5259,7 @@
         {
           "children": [],
           "description": "A standalone library for device push notifications.",
+          "kind": "repository",
           "title": "Notification Pusher",
           "repo_info": {
             "archived": false,
@@ -5254,6 +5273,7 @@
         {
           "children": [],
           "description": "A PHP Library to easily send push notifications with the Pushwoosh REST Web Services.",
+          "kind": "repository",
           "title": "Php-pushwoosh",
           "repo_info": {
             "archived": false,
@@ -5267,6 +5287,7 @@
         {
           "children": [],
           "description": "A library for handling push notifications.",
+          "kind": "repository",
           "title": "Notificato",
           "repo_info": {
             "archived": false,
@@ -5286,6 +5307,7 @@
         {
           "children": [],
           "description": "A deployment tool.",
+          "kind": "repository",
           "title": "Deployer",
           "repo_info": {
             "archived": false,
@@ -5299,6 +5321,7 @@
         {
           "children": [],
           "description": "A fast and easy deployer for the PHP world.",
+          "kind": "repository",
           "title": "Rocketeer",
           "repo_info": {
             "archived": false,
@@ -5312,6 +5335,7 @@
         {
           "children": [],
           "description": "A tool to run SSH tasks with PHP.",
+          "kind": "repository",
           "title": "Envoy",
           "repo_info": {
             "archived": false,
@@ -5331,6 +5355,7 @@
         {
           "children": [],
           "description": "Message translation and localization for dates and numbers.",
+          "kind": "repository",
           "title": "CakePHP I18n",
           "repo_info": {
             "archived": false,
@@ -5344,6 +5369,7 @@
         {
           "children": [],
           "description": "Provides internationalization (I18N) tools, specifically package-oriented per-locale message translation.",
+          "kind": "repository",
           "title": "Aura.Intl",
           "repo_info": {
             "archived": false,
@@ -5363,6 +5389,7 @@
         {
           "children": [],
           "description": "Parse and load environment variables from files.",
+          "kind": "repository",
           "title": "Symfony Dotenv",
           "repo_info": {
             "archived": false,
@@ -5376,6 +5403,7 @@
         {
           "children": [],
           "description": "A PHP parser for TOML.",
+          "kind": "repository",
           "title": "Yo! Symfony TOML",
           "repo_info": {
             "archived": false,
@@ -5389,6 +5417,7 @@
         {
           "children": [],
           "description": "Parse and load environment variables from files.",
+          "kind": "repository",
           "title": "PHP Dotenv",
           "repo_info": {
             "archived": false,
@@ -5408,6 +5437,7 @@
         {
           "children": [],
           "description": "OpenAI PHP is a supercharged community-maintained PHP API client that allows you to interact with OpenAI API.",
+          "kind": "repository",
           "title": "OpenAI Client",
           "repo_info": {
             "archived": false,
@@ -5421,6 +5451,7 @@
         {
           "children": [],
           "description": "OpenAI PHP for Laravel is a supercharged PHP API client that allows you to interact with OpenAI API.",
+          "kind": "repository",
           "title": "OpenAI Client for Laravel",
           "repo_info": {
             "archived": false,
@@ -5434,6 +5465,7 @@
         {
           "children": [],
           "description": "A comprehensive PHP Generative AI Framework using OpenAI GPT 4. Inspired by Langchain.",
+          "kind": "repository",
           "title": "LLPhant",
           "repo_info": {
             "archived": true,
@@ -5447,6 +5479,7 @@
         {
           "children": [],
           "description": "A powerful and easy-to-use PHP SDK for the Mistral AI API, allowing seamless integration of advanced AI-powered features into your PHP projects.",
+          "kind": "repository",
           "title": "PHP Mistral AI SDK",
           "repo_info": {
             "archived": false,
@@ -5460,6 +5493,7 @@
         {
           "children": [],
           "description": "Structured data outputs with LLMs, in PHP.",
+          "kind": "repository",
           "title": "Instructor for PHP",
           "repo_info": {
             "archived": false,
@@ -5479,6 +5513,7 @@
         {
           "children": [],
           "description": "The official PHP AWS SDK library.",
+          "kind": "repository",
           "title": "Amazon Web Service SDK",
           "repo_info": {
             "archived": false,
@@ -5492,6 +5527,7 @@
         {
           "children": [],
           "description": "The official Square PHP SDK for payments and other Square APIs.",
+          "kind": "repository",
           "title": "Square",
           "repo_info": {
             "archived": false,
@@ -5505,6 +5541,7 @@
         {
           "children": [],
           "description": "A library to interface with the Github API.",
+          "kind": "repository",
           "title": "Github",
           "repo_info": {
             "archived": false,
@@ -5518,6 +5555,7 @@
         {
           "children": [],
           "description": "The official Stripe PHP library.",
+          "kind": "repository",
           "title": "Stripe",
           "repo_info": {
             "archived": false,
@@ -5531,6 +5569,7 @@
         {
           "children": [],
           "description": "The official Twilio PHP REST API.",
+          "kind": "repository",
           "title": "Twilio",
           "repo_info": {
             "archived": false,
@@ -5544,6 +5583,7 @@
         {
           "children": [],
           "description": "The official Mailgun PHP API.",
+          "kind": "repository",
           "title": "Mailgun",
           "repo_info": {
             "archived": false,
@@ -5553,16 +5593,6 @@
             "repo": "mailgun-php",
             "stars": 7894
           }
-        },
-        {
-          "children": [],
-          "description": "An unofficial asynchronous PHP AWS SDK.",
-          "title": "AsyncAWS"
-        },
-        {
-          "children": [],
-          "description": "The official Campaign Monitor PHP library.",
-          "title": "Campaign Monitor"
         }
       ],
       "title": "Third Party APIs"
@@ -5573,6 +5603,7 @@
         {
           "children": [],
           "description": "A framework agnostic PHP library to build cross-platform chatbots.",
+          "kind": "repository",
           "title": "BotMan",
           "repo_info": {
             "archived": false,
@@ -5586,6 +5617,7 @@
         {
           "children": [],
           "description": "A cross-language RPC.",
+          "kind": "repository",
           "title": "Hprose-PHP",
           "repo_info": {
             "archived": false,
@@ -5599,6 +5631,7 @@
         {
           "children": [],
           "description": "A pagination library.",
+          "kind": "repository",
           "title": "Pagerfanta",
           "repo_info": {
             "archived": false,
@@ -5612,6 +5645,7 @@
         {
           "children": [],
           "description": "A library that allows Closures to be serialized.",
+          "kind": "repository",
           "title": "Laravel Serializable Closure",
           "repo_info": {
             "archived": false,
@@ -5625,6 +5659,7 @@
         {
           "children": [],
           "description": "An annotation library (part of Doctrine).",
+          "kind": "repository",
           "title": "Annotations",
           "repo_info": {
             "archived": false,
@@ -5638,6 +5673,7 @@
         {
           "children": [],
           "description": "All PHP functions, rewritten to throw exceptions instead of returning false.",
+          "kind": "repository",
           "title": "Safe",
           "repo_info": {
             "archived": false,
@@ -5651,6 +5687,7 @@
         {
           "children": [],
           "description": "A PHP implementation of Circuit Breaker pattern.",
+          "kind": "repository",
           "title": "Ganesha",
           "repo_info": {
             "archived": false,
@@ -5664,6 +5701,7 @@
         {
           "children": [],
           "description": "A library for optimizing autoloading.",
+          "kind": "repository",
           "title": "ClassPreloader",
           "repo_info": {
             "archived": false,
@@ -5677,6 +5715,7 @@
         {
           "children": [],
           "description": "Helper for Google's noCAPTCHA (reCAPTCHA).",
+          "kind": "repository",
           "title": "noCAPTCHA",
           "repo_info": {
             "archived": false,
@@ -5696,6 +5735,7 @@
         {
           "children": [],
           "description": "Another PHP version installer.",
+          "kind": "repository",
           "title": "PHP Build",
           "repo_info": {
             "archived": false,
@@ -5709,6 +5749,7 @@
         {
           "children": [],
           "description": "Brew PHP switcher.",
+          "kind": "repository",
           "title": "Brew PHP Switcher",
           "repo_info": {
             "archived": false,
@@ -5722,6 +5763,7 @@
         {
           "children": [],
           "description": "A PHP version manager and installer.",
+          "kind": "repository",
           "title": "PHP Brew",
           "repo_info": {
             "archived": false,
@@ -5735,6 +5777,7 @@
         {
           "children": [],
           "description": "Build or download static versions of PHP CLI and FPM.",
+          "kind": "repository",
           "title": "Static PHP CLI",
           "repo_info": {
             "archived": false,
@@ -5744,11 +5787,6 @@
             "repo": "static-php-cli",
             "stars": 8235
           }
-        },
-        {
-          "children": [],
-          "description": "A package manager for OSX.",
-          "title": "HomeBrew"
         }
       ],
       "title": "PHP Installation"
@@ -5759,6 +5797,7 @@
         {
           "children": [],
           "description": "a local web development environment system for PHP.",
+          "kind": "repository",
           "title": "DDEV",
           "repo_info": {
             "archived": true,
@@ -5772,6 +5811,7 @@
         {
           "children": [],
           "description": "A Docker-based development-only dependency manager.",
+          "kind": "repository",
           "title": "Takeout",
           "repo_info": {
             "archived": false,
@@ -5785,6 +5825,7 @@
         {
           "children": [],
           "description": "An open-source PHP tunneling service.",
+          "kind": "repository",
           "title": "Expose",
           "repo_info": {
             "archived": false,
@@ -5798,6 +5839,7 @@
         {
           "children": [],
           "description": "Easily install PHP extensions in Docker containers.",
+          "kind": "repository",
           "title": "Docker PHP Extension Installer",
           "repo_info": {
             "archived": false,
@@ -5811,6 +5853,7 @@
         {
           "children": [],
           "description": "Unified, Docker :whale: powered web development environments for macOS, Windows, and Linux.",
+          "kind": "repository",
           "title": "Docksal",
           "repo_info": {
             "archived": false,
@@ -5820,51 +5863,6 @@
             "repo": "docksal",
             "stars": 5337
           }
-        },
-        {
-          "children": [],
-          "description": "A radically simple orchestration framework.",
-          "title": "Ansible"
-        },
-        {
-          "children": [],
-          "description": "A containerization platform.",
-          "title": "Docker"
-        },
-        {
-          "children": [],
-          "description": "Push-button development environments.",
-          "title": "Lando"
-        },
-        {
-          "children": [],
-          "description": "A local development environment for Laravel.",
-          "title": "Laravel Homestead"
-        },
-        {
-          "children": [],
-          "description": "A one click PHP development environment for macOS and Windows.",
-          "title": "Laravel Herd"
-        },
-        {
-          "children": [],
-          "description": "A full PHP development environment based on Docker.",
-          "title": "Laradock"
-        },
-        {
-          "children": [],
-          "description": "A macOS menu bar app for managing PHP installations (works with Laravel Valet).",
-          "title": "PHPMon"
-        },
-        {
-          "children": [],
-          "description": "A server automation framework and application.",
-          "title": "Puppet"
-        },
-        {
-          "children": [],
-          "description": "A portable development environment utility.",
-          "title": "Vagrant"
         }
       ],
       "title": "Development Environment"
@@ -5875,6 +5873,7 @@
         {
           "children": [],
           "description": "PHP compiler and runtime for .NET and .NET Core.",
+          "kind": "repository",
           "title": "PeachPie",
           "repo_info": {
             "archived": false,
@@ -5888,6 +5887,7 @@
         {
           "children": [],
           "description": "A Virtual Machine, Runtime and JIT for PHP by Facebook.",
+          "kind": "repository",
           "title": "HHVM",
           "repo_info": {
             "archived": false,
@@ -5897,11 +5897,6 @@
             "repo": "hhvm",
             "stars": 5356
           }
-        },
-        {
-          "children": [],
-          "description": "A programming language for HHVM.",
-          "title": "Hack"
         }
       ],
       "title": "Virtual Machines"
@@ -5912,6 +5907,7 @@
         {
           "children": [],
           "description": "A web interface for MySQL/MariaDB.",
+          "kind": "repository",
           "title": "phpMyAdmin",
           "repo_info": {
             "archived": false,
@@ -5925,6 +5921,7 @@
         {
           "children": [],
           "description": "A web tool for capturing and viewing emails.",
+          "kind": "repository",
           "title": "MailCatcher",
           "repo_info": {
             "archived": false,
@@ -5938,6 +5935,7 @@
         {
           "children": [],
           "description": "A database version control application.",
+          "kind": "repository",
           "title": "DBV",
           "repo_info": {
             "archived": false,
@@ -5951,6 +5949,7 @@
         {
           "children": [],
           "description": "An easy to use and great looking photo-management-system.",
+          "kind": "repository",
           "title": "Lychee",
           "repo_info": {
             "archived": false,
@@ -5964,6 +5963,7 @@
         {
           "children": [],
           "description": "A simple web interface to manage Redis databases.",
+          "kind": "repository",
           "title": "phpRedisAdmin",
           "repo_info": {
             "archived": false,
@@ -5977,6 +5977,7 @@
         {
           "children": [],
           "description": "The open source status page system.",
+          "kind": "repository",
           "title": "Cachet",
           "repo_info": {
             "archived": false,
@@ -5990,6 +5991,7 @@
         {
           "children": [],
           "description": "An application for managing queueing backends.",
+          "kind": "repository",
           "title": "PHP Queue",
           "repo_info": {
             "archived": false,
@@ -5999,21 +6001,6 @@
             "repo": "php-queue",
             "stars": 12218
           }
-        },
-        {
-          "children": [],
-          "description": "An online PHP & HHVM shell.",
-          "title": "3V4L"
-        },
-        {
-          "children": [],
-          "description": "Database management in a single PHP file.",
-          "title": "Adminer"
-        },
-        {
-          "children": [],
-          "description": "An online IDE for PHP in the browser.",
-          "title": "PHPSandbox"
         }
       ],
       "title": "Web Applications"
@@ -6024,6 +6011,7 @@
         {
           "children": [],
           "description": "A process manager, supercharger and load balancer for PHP applications.",
+          "kind": "repository",
           "title": "php-pm",
           "repo_info": {
             "archived": false,
@@ -6037,6 +6025,7 @@
         {
           "children": [],
           "description": "High-performance PHP application server, load-balancer and process manager.",
+          "kind": "repository",
           "title": "RoadRunner",
           "repo_info": {
             "archived": false,
@@ -6050,6 +6039,7 @@
         {
           "children": [],
           "description": "A multithreaded application server for PHP, written in PHP.",
+          "kind": "repository",
           "title": "appserver.io",
           "repo_info": {
             "archived": false,
@@ -6070,6 +6060,7 @@
     "original_repository_sha": "deadbeef",
     "enhanced_repository": "enhansome/enhansome-php",
     "enhanced_repository_description": "enhanced list",
+    "kind": "registry",
     "title": "Awesome PHP with stars"
   }
 }

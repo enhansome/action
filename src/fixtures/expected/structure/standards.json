@@ -6,6 +6,7 @@
         {
           "children": [],
           "description": "Structured Interface for Representing Entities, super-rad hypermedia, defines links and actions.",
+          "kind": "repository",
           "title": "Siren",
           "repo_info": {
             "archived": false,
@@ -19,6 +20,7 @@
         {
           "children": [],
           "description": "Checklist of the most important security countermeasures.",
+          "kind": "repository",
           "title": "API Security Checklist",
           "repo_info": {
             "archived": true,
@@ -32,6 +34,7 @@
         {
           "children": [],
           "description": "JSON-based read/write hypermedia-type designed, defines links and actions.",
+          "kind": "repository",
           "title": "Collection+JSON",
           "repo_info": {
             "archived": false,
@@ -45,6 +48,7 @@
         {
           "children": [],
           "description": "Vendor-neutral and language-independent, aimed to develop messaging and streaming applications across heterogeneous systems.",
+          "kind": "repository",
           "title": "OpenMessaging Spec",
           "repo_info": {
             "archived": false,
@@ -58,6 +62,7 @@
         {
           "children": [],
           "description": "A specification for describing event data in a common way.",
+          "kind": "repository",
           "title": "CloudEvents Spec",
           "repo_info": {
             "archived": false,
@@ -71,6 +76,7 @@
         {
           "children": [],
           "description": "Interface Definition Language and binary communication protocol used for defining and creating services for programming languages.",
+          "kind": "repository",
           "title": "Apache Thrift",
           "repo_info": {
             "archived": false,
@@ -84,6 +90,7 @@
         {
           "children": [],
           "description": "Repository contains a collection of documents and related materials.",
+          "kind": "repository",
           "title": "Microsoft REST API Guidelines",
           "repo_info": {
             "archived": false,
@@ -97,6 +104,7 @@
         {
           "children": [],
           "description": "Specification for a simple, no-frills, JSON based format for application-level communication.",
+          "kind": "repository",
           "title": "JSEND",
           "repo_info": {
             "archived": false,
@@ -110,6 +118,7 @@
         {
           "children": [],
           "description": "RESTful API Modeling Language is a YAML based language for describing static APIs (but not REST APIs).",
+          "kind": "repository",
           "title": "RAML Spec",
           "repo_info": {
             "archived": false,
@@ -123,6 +132,7 @@
         {
           "children": [],
           "description": "This document serves as a detailed description for an implementation of gRPC carried over HTTP2 framing.",
+          "kind": "repository",
           "title": "gRPC",
           "repo_info": {
             "archived": false,
@@ -132,106 +142,6 @@
             "repo": "grpc",
             "stars": 7847
           }
-        },
-        {
-          "children": [],
-          "description": "Specification for GraphQL, a query language and execution engine.",
-          "title": "GraphQL Spec"
-        },
-        {
-          "children": [],
-          "description": "Protocol Buffers are language-neutral, platform-neutral extensible mechanisms for serializing structured data.",
-          "title": "Protobuf Spec"
-        },
-        {
-          "children": [],
-          "description": "Remote procedure call protocol which uses XML to encode its calls and HTTP as a transport mechanism.",
-          "title": "XML-RPC"
-        },
-        {
-          "children": [],
-          "description": "Stateless, light-weight remote procedure call protocol.",
-          "title": "JSON-RPC"
-        },
-        {
-          "children": [],
-          "description": "Serialization format for record data, and first choice for streaming data pipelines.",
-          "title": "Apache Avro"
-        },
-        {
-          "children": [],
-          "description": "The OpenRPC Specification defines a standard, programming language-agnostic interface description for JSON-RPC 2.0 APIs.",
-          "title": "OpenRPC Spec"
-        },
-        {
-          "children": [],
-          "description": "The OpenAPI Specification (OAS) defines a standard, language-agnostic interface to HTTP APIs.",
-          "title": "OpenAPI Spec"
-        },
-        {
-          "children": [],
-          "description": "A markdown based language for describing APIs with interactive documentation support.",
-          "title": "API Blueprint Spec"
-        },
-        {
-          "children": [],
-          "description": "Standard providing a format for what JSON data is required for a given application and how to interact with it.",
-          "title": "JSON Schema"
-        },
-        {
-          "children": [],
-          "description": "This specification allows you to create machine-readable definitions of your asynchronous APIs.",
-          "title": "AsyncAPI Spec"
-        },
-        {
-          "children": [],
-          "description": "Hypermedia as the engine of application state is a constraint of the REST software architectural style.",
-          "title": "HATEOAS"
-        },
-        {
-          "children": [],
-          "description": "Convention for defining hypermedia such as links to external resources within JSON or XML code.",
-          "title": "HAL"
-        },
-        {
-          "children": [],
-          "description": "A specification for building APIs in JSON, defines links and actions.",
-          "title": "JSON:API"
-        },
-        {
-          "children": [],
-          "description": "JSON for Linked Data is a standard for hyperlinks in JSON, does not address actions.",
-          "title": "JSON-LD"
-        },
-        {
-          "children": [],
-          "description": "Simple and intuitive JSON-based hypermedia type for REST.",
-          "title": "Ion"
-        },
-        {
-          "children": [],
-          "description": "Builds on top of JSON-LD to add definition of actions.",
-          "title": "Hydra"
-        },
-        {
-          "children": [],
-          "description": "A protocol for querying and updating data using RESTful APIs, with rich query capabilities.",
-          "title": "Odata"
-        },
-        {
-          "children": [],
-          "description": "A general design guide for networked APIs provided by Google.",
-          "title": "Google API Design Guide"
-        },
-        {
-          "children": [],
-          "description": "A model set of guidelines for RESTful APIs and Events, created by Zalando.",
-          "title": "Zalando RESTful Guidelines"
-        },
-        {
-          "children": [],
-          "description": "Collections of resources for API Design from other companies guidelines.",
-          "title": "API Stylebook"
         }
       ],
       "title": "APIs"
@@ -242,6 +152,7 @@
         {
           "children": [],
           "description": "C# Language Design Proposals.",
+          "kind": "repository",
           "title": "C# Design",
           "repo_info": {
             "archived": false,
@@ -255,6 +166,7 @@
         {
           "children": [],
           "description": "D language Improvement Proposals.",
+          "kind": "repository",
           "title": "DIPs",
           "repo_info": {
             "archived": false,
@@ -268,6 +180,7 @@
         {
           "children": [],
           "description": "Kotlin Evolution and Enhancement Process.",
+          "kind": "repository",
           "title": "KEEP",
           "repo_info": {
             "archived": false,
@@ -281,6 +194,7 @@
         {
           "children": [],
           "description": "Design of the Dart language.",
+          "kind": "repository",
           "title": "Dart Design",
           "repo_info": {
             "archived": false,
@@ -294,6 +208,7 @@
         {
           "children": [],
           "description": "Compiler and language changes for Haskell/GHC.",
+          "kind": "repository",
           "title": "GHC Proposals",
           "repo_info": {
             "archived": false,
@@ -307,6 +222,7 @@
         {
           "children": [],
           "description": "Design discussions about the OCaml language.",
+          "kind": "repository",
           "title": "OCaml RFCs",
           "repo_info": {
             "archived": false,
@@ -320,6 +236,7 @@
         {
           "children": [],
           "description": "Design discussions for Go language evolution.",
+          "kind": "repository",
           "title": "Go Proposals",
           "repo_info": {
             "archived": false,
@@ -333,6 +250,7 @@
         {
           "children": [],
           "description": "Ecma TC39 (Technical Committee 39) is responsible for evolving the ECMAScript programming language and authoring the specification.",
+          "kind": "repository",
           "title": "ECMAScript Proposals",
           "repo_info": {
             "archived": false,
@@ -346,6 +264,7 @@
         {
           "children": [],
           "description": "Coq Enhancement Proposals.",
+          "kind": "repository",
           "title": "CEPs",
           "repo_info": {
             "archived": false,
@@ -359,6 +278,7 @@
         {
           "children": [],
           "description": "Proposed Perl Changes is proposals to change the Perl language.",
+          "kind": "repository",
           "title": "PPCs",
           "repo_info": {
             "archived": false,
@@ -372,6 +292,7 @@
         {
           "children": [],
           "description": "F# Language Design RFCs.",
+          "kind": "repository",
           "title": "F# Design",
           "repo_info": {
             "archived": false,
@@ -385,6 +306,7 @@
         {
           "children": [],
           "description": "Issues with Proposal label in Zig repository.",
+          "kind": "repository",
           "title": "Zig Proposals",
           "repo_info": {
             "archived": false,
@@ -398,6 +320,7 @@
         {
           "children": [],
           "description": "RFCs for changes to V lang.",
+          "kind": "repository",
           "title": "Vlang RFCs",
           "repo_info": {
             "archived": false,
@@ -407,81 +330,6 @@
             "repo": "rfcs",
             "stars": 5177
           }
-        },
-        {
-          "children": [],
-          "description": "Python Enhancement Proposals for language improvements.",
-          "title": "PEPs"
-        },
-        {
-          "children": [],
-          "description": "Standards proposed and approved by PHP Framework Interop Group.",
-          "title": "PHP FIG"
-        },
-        {
-          "children": [],
-          "description": "Proposals to evolve the Rust language.",
-          "title": "Rust RFCs"
-        },
-        {
-          "children": [],
-          "description": "Proposals for changes to the Swift language.",
-          "title": "Swift Evolution"
-        },
-        {
-          "children": [],
-          "description": "Scala Improvement Proposals.",
-          "title": "SIPs"
-        },
-        {
-          "children": [],
-          "description": "Erlang Enhancement Proposals.",
-          "title": "EEPs"
-        },
-        {
-          "children": [],
-          "description": "Java Specification Requests to standardize Java.",
-          "title": "JSR"
-        },
-        {
-          "children": [],
-          "description": "Java Language and JVM specifications for Java by Oracle.",
-          "title": "Java SE Specs"
-        },
-        {
-          "children": [],
-          "description": "The Go Programming Language Specification.",
-          "title": "GoLang Spec"
-        },
-        {
-          "children": [],
-          "description": "ISO/IEC standards for the C programming language.",
-          "title": "C Standards"
-        },
-        {
-          "children": [],
-          "description": "ISO/IEC standards for C++.",
-          "title": "C++ Standards"
-        },
-        {
-          "children": [],
-          "description": "Scheme Requests for Implementation.",
-          "title": "SRFI"
-        },
-        {
-          "children": [],
-          "description": "Revised Report on Scheme and other standards.",
-          "title": "Scheme Standards"
-        },
-        {
-          "children": [],
-          "description": "Common Lisp Document Repository.",
-          "title": "CDR"
-        },
-        {
-          "children": [],
-          "description": "Groovy Enhancement Proposals and Issues tracked in Jira.",
-          "title": "GEPs"
         }
       ],
       "title": "Programming Languages"
@@ -492,6 +340,7 @@
         {
           "children": [],
           "description": "Change requests for ESLint.",
+          "kind": "repository",
           "title": "ESLint RFCs",
           "repo_info": {
             "archived": false,
@@ -505,6 +354,7 @@
         {
           "children": [],
           "description": "Change proposals for npm.",
+          "kind": "repository",
           "title": "npm RFCs",
           "repo_info": {
             "archived": false,
@@ -518,6 +368,7 @@
         {
           "children": [],
           "description": "Suggestions for major changes to Vue.js.",
+          "kind": "repository",
           "title": "Vue RFCs",
           "repo_info": {
             "archived": false,
@@ -531,6 +382,7 @@
         {
           "children": [],
           "description": "Svelte framework enhancement discussions.",
+          "kind": "repository",
           "title": "Svelte RFCs",
           "repo_info": {
             "archived": false,
@@ -544,6 +396,7 @@
         {
           "children": [],
           "description": "Conda Enhancement Proposals.",
+          "kind": "repository",
           "title": "CEPs",
           "repo_info": {
             "archived": false,
@@ -557,6 +410,7 @@
         {
           "children": [],
           "description": "Django Enhancement Proposals.",
+          "kind": "repository",
           "title": "DEPs",
           "repo_info": {
             "archived": false,
@@ -570,6 +424,7 @@
         {
           "children": [],
           "description": "CLI autocomplete specification.",
+          "kind": "repository",
           "title": "OpenAutoComplete Spec",
           "repo_info": {
             "archived": false,
@@ -583,6 +438,7 @@
         {
           "children": [],
           "description": "SemVer compatible version specification that has {head}.{yearweek}.{build} system.",
+          "kind": "repository",
           "title": "HeadVer Spec",
           "repo_info": {
             "archived": false,
@@ -596,6 +452,7 @@
         {
           "children": [],
           "description": "Jenkins Enhancement Proposals.",
+          "kind": "repository",
           "title": "JEPs",
           "repo_info": {
             "archived": false,
@@ -609,6 +466,7 @@
         {
           "children": [],
           "description": "Proposals for improvements in Yarn package manager.",
+          "kind": "repository",
           "title": "Yarn RFCs",
           "repo_info": {
             "archived": false,
@@ -622,6 +480,7 @@
         {
           "children": [],
           "description": "Change requests for React.",
+          "kind": "repository",
           "title": "React RFCs",
           "repo_info": {
             "archived": false,
@@ -635,6 +494,7 @@
         {
           "children": [],
           "description": "The Compose Specification is developer focused for defining cloud and platform agnostic container-based applications.",
+          "kind": "repository",
           "title": "Compose Specification",
           "repo_info": {
             "archived": false,
@@ -648,6 +508,7 @@
         {
           "children": [],
           "description": "This repository contains the specification, the reference implementation of the parser and the documentation for Fluent.",
+          "kind": "repository",
           "title": "Fluent Specs",
           "repo_info": {
             "archived": false,
@@ -661,6 +522,7 @@
         {
           "children": [],
           "description": "OpenTelemetry Enhancement Proposals.",
+          "kind": "repository",
           "title": "OTEPs",
           "repo_info": {
             "archived": false,
@@ -674,6 +536,7 @@
         {
           "children": [],
           "description": "Helm Improvement Proposals.",
+          "kind": "repository",
           "title": "HIPs",
           "repo_info": {
             "archived": false,
@@ -687,6 +550,7 @@
         {
           "children": [],
           "description": "Index of all Bazel proposals and design documents.",
+          "kind": "repository",
           "title": "Bazel Proposals",
           "repo_info": {
             "archived": false,
@@ -700,6 +564,7 @@
         {
           "children": [],
           "description": "React Native enhancement discussions.",
+          "kind": "repository",
           "title": "React Native RFCs",
           "repo_info": {
             "archived": false,
@@ -713,6 +578,7 @@
         {
           "children": [],
           "description": "The Nix community RFCs.",
+          "kind": "repository",
           "title": "Nix RFCs",
           "repo_info": {
             "archived": false,
@@ -722,61 +588,6 @@
             "repo": "rfcs",
             "stars": 74
           }
-        },
-        {
-          "children": [],
-          "description": "Standards for Ember.js framework evolution.",
-          "title": "Ember RFCs"
-        },
-        {
-          "children": [],
-          "description": "Enhancement proposals for scikit-learn.",
-          "title": "SLEPs"
-        },
-        {
-          "children": [],
-          "description": "Jupyter Ecosystem Enhancement Proposals.",
-          "title": "JEPs"
-        },
-        {
-          "children": [],
-          "description": "Enhancement proposals for ROS robotics framework.",
-          "title": "REPs"
-        },
-        {
-          "children": [],
-          "description": "Kubernetes Enhancement Proposals.",
-          "title": "KEPs"
-        },
-        {
-          "children": [],
-          "description": "Godot (Multi-platform 2D and 3D game engine) Improvement Proposals.",
-          "title": "GIPs"
-        },
-        {
-          "children": [],
-          "description": "A specification for adding human and machine readable meaning to commit messages.",
-          "title": "Conventional Commits"
-        },
-        {
-          "children": [],
-          "description": "A plain-text file format for todos and check lists.",
-          "title": "[x]it!"
-        },
-        {
-          "children": [],
-          "description": "The System Package Data Exchange Specification.",
-          "title": "SPDX Spec"
-        },
-        {
-          "children": [],
-          "description": "Semantic Versioning Specification.",
-          "title": "SemVer Spec"
-        },
-        {
-          "children": [],
-          "description": "Calendar Versioning Specification.",
-          "title": "CalVer Spec"
         }
       ],
       "title": "Tools"
@@ -787,6 +598,7 @@
         {
           "children": [],
           "description": "BitTorrent Enhancement Proposals.",
+          "kind": "repository",
           "title": "BEPs",
           "repo_info": {
             "archived": false,
@@ -800,6 +612,7 @@
         {
           "children": [],
           "description": "Maker Improvement Proposals.",
+          "kind": "repository",
           "title": "MIPs",
           "repo_info": {
             "archived": false,
@@ -813,6 +626,7 @@
         {
           "children": [],
           "description": "Helium Improvement Proposals.",
+          "kind": "repository",
           "title": "HIPs",
           "repo_info": {
             "archived": false,
@@ -826,6 +640,7 @@
         {
           "children": [],
           "description": "SatoshiLabs Improvement Proposals.",
+          "kind": "repository",
           "title": "SLIPs",
           "repo_info": {
             "archived": false,
@@ -839,6 +654,7 @@
         {
           "children": [],
           "description": "Chain Agnostic Improvement Proposals.",
+          "kind": "repository",
           "title": "CAIPs",
           "repo_info": {
             "archived": false,
@@ -852,6 +668,7 @@
         {
           "children": [],
           "description": "Proposals, standards and documentations related to Nervos Network.",
+          "kind": "repository",
           "title": "Nervos Network RFCs",
           "repo_info": {
             "archived": false,
@@ -865,6 +682,7 @@
         {
           "children": [],
           "description": "NEAR Protocol Specifications and Standards.",
+          "kind": "repository",
           "title": "NEPs",
           "repo_info": {
             "archived": true,
@@ -878,6 +696,7 @@
         {
           "children": [],
           "description": "Starknet Improvement Proposals.",
+          "kind": "repository",
           "title": "SNIPs",
           "repo_info": {
             "archived": false,
@@ -891,6 +710,7 @@
         {
           "children": [],
           "description": "Technical specifications for the libp2p networking stack.",
+          "kind": "repository",
           "title": "LibP2P Specs",
           "repo_info": {
             "archived": false,
@@ -904,6 +724,7 @@
         {
           "children": [],
           "description": "Hiero Consensus Standards.",
+          "kind": "repository",
           "title": "HCS",
           "repo_info": {
             "archived": false,
@@ -917,6 +738,7 @@
         {
           "children": [],
           "description": "Basis of Lightning Technology (Lightning Network Specifications).",
+          "kind": "repository",
           "title": "BOLTs",
           "repo_info": {
             "archived": false,
@@ -930,6 +752,7 @@
         {
           "children": [],
           "description": "Polygon Improvement Proposals.",
+          "kind": "repository",
           "title": "PIPs",
           "repo_info": {
             "archived": false,
@@ -943,6 +766,7 @@
         {
           "children": [],
           "description": "Aave Improvement Proposals.",
+          "kind": "repository",
           "title": "AIPs",
           "repo_info": {
             "archived": false,
@@ -956,6 +780,7 @@
         {
           "children": [],
           "description": "Bitcoin Improvement Proposals.",
+          "kind": "repository",
           "title": "BIPs",
           "repo_info": {
             "archived": false,
@@ -969,6 +794,7 @@
         {
           "children": [],
           "description": "BitTorrent File System Improvement Proposals.",
+          "kind": "repository",
           "title": "BTIPs",
           "repo_info": {
             "archived": false,
@@ -978,61 +804,6 @@
             "repo": "BTIPs",
             "stars": 110
           }
-        },
-        {
-          "children": [],
-          "description": "Ethereum Improvement Proposals.",
-          "title": "EIPs"
-        },
-        {
-          "children": [],
-          "description": "Zcash Improvement Proposals.",
-          "title": "ZIPs"
-        },
-        {
-          "children": [],
-          "description": "Yearn Finance Improvement Proposals.",
-          "title": "YIPs"
-        },
-        {
-          "children": [],
-          "description": "Optimism Stack Specifications.",
-          "title": "Optimism Specs"
-        },
-        {
-          "children": [],
-          "description": "Synthetix Improvement Proposals.",
-          "title": "SIPs"
-        },
-        {
-          "children": [],
-          "description": "Specifications for the Fuel protocol and the FuelVM.",
-          "title": "Fuel Specs"
-        },
-        {
-          "children": [],
-          "description": "Filecoin protocol specification.",
-          "title": "Filecoin Specs"
-        },
-        {
-          "children": [],
-          "description": "Aptos Improvement Proposals.",
-          "title": "AIPs"
-        },
-        {
-          "children": [],
-          "description": "InterPlanetary Improvement Proposals, technical specifications for the IPFS protocol stack.",
-          "title": "IPIP"
-        },
-        {
-          "children": [],
-          "description": "Tor Specifications including proposals.",
-          "title": "Tor Specs"
-        },
-        {
-          "children": [],
-          "description": "I2P Specification Documents including proposals.",
-          "title": "I2P Specs"
         }
       ],
       "title": "Decentralized Systems"
@@ -1043,6 +814,7 @@
         {
           "children": [],
           "description": "Coding style conventions and standards.",
+          "kind": "repository",
           "title": "Awesome Guidelines",
           "repo_info": {
             "archived": false,
@@ -1056,6 +828,7 @@
         {
           "children": [],
           "description": "A collection of useful resources for building RESTful HTTP+JSON APIs.",
+          "kind": "repository",
           "title": "Awesome API Devtools",
           "repo_info": {
             "archived": false,
@@ -1076,6 +849,7 @@
     "original_repository_sha": "deadbeef",
     "enhanced_repository": "enhansome/enhansome-standards",
     "enhanced_repository_description": "enhanced list",
+    "kind": "registry",
     "title": "Awesome standards with stars"
   }
 }

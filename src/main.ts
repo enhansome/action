@@ -51,10 +51,8 @@ export async function run(): Promise<void> {
       getReadme(octokit, parsed.owner, parsed.repo),
       getLatestCommitSha(octokit, parsed.owner, parsed.repo),
     ]);
-    if (readme === null) {
-      core.setFailed(`No README found in ${parsed.owner}/${parsed.repo}`);
-      return;
-    }
+    // getReadme throws on failure (strict mode, PLAN.md §6/D7); the top-level
+    // catch surfaces it via setFailed, so there is no null branch to handle.
     if (originalRepositorySha === null) {
       core.warning(
         `Could not determine the latest commit SHA for ${parsed.owner}/${parsed.repo}; it will be omitted from the JSON output.`,

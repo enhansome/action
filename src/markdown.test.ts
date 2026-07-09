@@ -1,11 +1,16 @@
 import * as fs from 'fs';
 import * as path from 'path';
+import remarkGfm from 'remark-gfm';
+import remarkParse from 'remark-parse';
+import { unified } from 'unified';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 
 import * as github from './github.js';
 import { RepoInfoDetails } from './github.js';
 import {
-  fetchAllRepoInfo,
+  classifyKind,
+  countListEntries,
+  fetchTargetData,
   processMarkdownContent,
   ReplacementRule,
 } from './markdown.js';
@@ -34,7 +39,7 @@ function findItemByTitle(
   return undefined;
 }
 
-describe('fetchAllRepoInfo with Concurrency', () => {
+describe('fetchTargetData with Concurrency', () => {
   const token = 'test-token';
   const mockRepoData: RepoInfoDetails = {
     archived: false,
@@ -45,6 +50,15 @@ describe('fetchAllRepoInfo with Concurrency', () => {
     repo: 'test-repo',
     stargazers_count: 100,
   };
+
+  function githubUrls(count: number): Set<string> {
+    return new Set(
+      Array.from(
+        { length: count },
+        (_, i) => `https://github.com/user/repo-${i}`,
+      ),
+    );
+  }
 
   beforeEach(() => {
     // Reset mocks before each test
@@ -59,55 +73,50 @@ describe('fetchAllRepoInfo with Concurrency', () => {
       const owner = parts[parts.length - 2];
       return { owner, repo };
     });
+    vi.mocked(github.getRepoInfo).mockResolvedValue({ ...mockRepoData });
+    // A minimal README -> 0 entries -> every target classifies as a repository.
+    vi.mocked(github.getReadme).mockResolvedValue('# project\n');
   });
 
-  it('should respect the concurrency limit when fetching many URLs', async () => {
-    const CONCURRENCY_LIMIT = 10; // This must match the value in fetchAllRepoInfo
+  it('respects the concurrency limit across the shared pool', async () => {
+    const CONCURRENCY_LIMIT = 10; // must match FETCH_CONCURRENCY in markdown.ts
     const totalUrls = 25;
-    const urls = new Set(
-      Array.from(
-        { length: totalUrls },
-        (_, i) => `https://github.com/user/repo-${i}`,
-      ),
-    );
+    const urls = githubUrls(totalUrls);
 
+    // Every worker calls getRepoInfo first, so its active count is the pool's
+    // concurrency. Instrument it with a delay to observe the ceiling.
     let activeRequests = 0;
     let maxConcurrentRequests = 0;
-
-    // Mock getRepoInfo with a delay to simulate real network calls
     vi.mocked(github.getRepoInfo).mockImplementation(async () => {
       activeRequests++;
       maxConcurrentRequests = Math.max(maxConcurrentRequests, activeRequests);
-      await new Promise(resolve => setTimeout(resolve, 50)); // 50ms delay
+      await new Promise(resolve => setTimeout(resolve, 50));
       activeRequests--;
       return { ...mockRepoData };
     });
 
-    const result = await fetchAllRepoInfo(urls, token);
-
-    // 1. All URLs should have been processed successfully
-    expect(result.size).toBe(totalUrls);
-    expect(github.getRepoInfo).toHaveBeenCalledTimes(totalUrls);
-
-    // 2. The number of concurrent requests should never exceed the limit
-    expect(maxConcurrentRequests).toBe(CONCURRENCY_LIMIT);
-
-    // 3. All requests should be finished by the end
-    expect(activeRequests).toBe(0);
-  }, 1000); // Increase timeout for this time-based test
-
-  it('should use a concurrency level equal to the URL count if it is less than the limit', async () => {
-    const totalUrls = 4;
-    const urls = new Set(
-      Array.from(
-        { length: totalUrls },
-        (_, i) => `https://github.com/user/repo-${i}`,
-      ),
+    // urls === entryUrls: every target is both badged and classified.
+    const { kindsMap, repoInfoMap } = await fetchTargetData(
+      urls,
+      urls,
+      token,
+      20,
     );
+
+    expect(repoInfoMap.size).toBe(totalUrls);
+    expect(kindsMap.size).toBe(totalUrls);
+    expect(github.getRepoInfo).toHaveBeenCalledTimes(totalUrls);
+    expect(github.getReadme).toHaveBeenCalledTimes(totalUrls);
+    expect(maxConcurrentRequests).toBe(CONCURRENCY_LIMIT);
+    expect(activeRequests).toBe(0);
+  }, 1000);
+
+  it('uses a concurrency level equal to the URL count when below the limit', async () => {
+    const totalUrls = 4;
+    const urls = githubUrls(totalUrls);
 
     let activeRequests = 0;
     let maxConcurrentRequests = 0;
-
     vi.mocked(github.getRepoInfo).mockImplementation(async () => {
       activeRequests++;
       maxConcurrentRequests = Math.max(maxConcurrentRequests, activeRequests);
@@ -116,46 +125,100 @@ describe('fetchAllRepoInfo with Concurrency', () => {
       return { ...mockRepoData };
     });
 
-    const result = await fetchAllRepoInfo(urls, token);
+    const { repoInfoMap } = await fetchTargetData(urls, urls, token, 20);
 
-    expect(result.size).toBe(totalUrls);
-    // Max concurrency should be the number of URLs, not the hard limit of 10
+    expect(repoInfoMap.size).toBe(totalUrls);
     expect(maxConcurrentRequests).toBe(totalUrls);
   });
 
-  it('should continue processing the queue even if some fetches fail', async () => {
+  it('fetches a README only for entry URLs, never for every link', async () => {
+    // All three links are badged (repo info), but only `entry` is a list-item
+    // entry that needs a kind. The heavy README fetch must be scoped to it —
+    // prose/badge/secondary links must not pay for a classification.
     const urls = new Set([
-      'https://github.com/user/fail-1',
-      'https://github.com/user/fail-2',
-      'https://github.com/user/success-1',
-      'https://github.com/user/success-2',
-      'https://github.com/user/success-3',
+      'https://github.com/user/entry',
+      'https://github.com/user/prose',
+      'https://github.com/user/secondary',
     ]);
+    const entryUrls = new Set(['https://github.com/user/entry']);
 
+    const { kindsMap, repoInfoMap } = await fetchTargetData(
+      urls,
+      entryUrls,
+      token,
+      20,
+    );
+
+    expect(repoInfoMap.size).toBe(3);
+    expect(github.getRepoInfo).toHaveBeenCalledTimes(3);
+    // Exactly one README fetch — the entry — not one per link.
+    expect(github.getReadme).toHaveBeenCalledTimes(1);
+    expect([...kindsMap.keys()]).toEqual(['https://github.com/user/entry']);
+  });
+
+  it('skips a dead repo-info target yet still classifies it (independent failures)', async () => {
+    const urls = githubUrls(2); // repo-0, repo-1
     vi.mocked(github.getRepoInfo).mockImplementation(
       (_octokit, _owner: string, repo: string) => {
-        if (repo.startsWith('fail')) {
-          throw new Error(`API failed for ${repo}`);
+        if (repo === 'repo-0') {
+          throw new Error('Not Found (404)');
         }
         return Promise.resolve({ ...mockRepoData, language: repo });
       },
     );
 
-    const result = await fetchAllRepoInfo(urls, token);
+    const { kindsMap, repoInfoMap } = await fetchTargetData(
+      urls,
+      urls,
+      token,
+      20,
+    );
 
-    // It should attempt to fetch all URLs
-    expect(github.getRepoInfo).toHaveBeenCalledTimes(5);
-
-    // The final map should only contain the successful results
-    expect(result.size).toBe(3);
-    expect(result.has('https://github.com/user/success-1')).toBe(true);
-    expect(result.has('https://github.com/user/fail-1')).toBe(false);
+    // repo-0's /repos failed -> no repo_info, but its README still classified.
+    expect(repoInfoMap.has('https://github.com/user/repo-0')).toBe(false);
+    expect(kindsMap.get('https://github.com/user/repo-0')).toBe('repository');
+    // repo-1 is unaffected.
+    expect(repoInfoMap.has('https://github.com/user/repo-1')).toBe(true);
+    expect(kindsMap.get('https://github.com/user/repo-1')).toBe('repository');
   });
 
-  it('should handle an empty set of URLs gracefully', async () => {
-    const result = await fetchAllRepoInfo(new Set<string>(), token);
-    expect(result.size).toBe(0);
+  it('skips a dead README target yet still records its repo info (independent failures)', async () => {
+    const urls = githubUrls(2); // repo-0, repo-1
+    vi.mocked(github.getReadme).mockImplementation(
+      (_octokit, _owner: string, repo: string) => {
+        if (repo === 'repo-0') {
+          throw new Error('Not Found (404)');
+        }
+        return Promise.resolve('# project\n');
+      },
+    );
+
+    const { kindsMap, repoInfoMap } = await fetchTargetData(
+      urls,
+      urls,
+      token,
+      20,
+    );
+
+    // repo-0's README failed -> no kind, but its /repos still succeeded.
+    expect(kindsMap.has('https://github.com/user/repo-0')).toBe(false);
+    expect(repoInfoMap.has('https://github.com/user/repo-0')).toBe(true);
+    // repo-1 is unaffected.
+    expect(kindsMap.get('https://github.com/user/repo-1')).toBe('repository');
+    expect(repoInfoMap.has('https://github.com/user/repo-1')).toBe(true);
+  });
+
+  it('handles an empty set of URLs gracefully', async () => {
+    const { kindsMap, repoInfoMap } = await fetchTargetData(
+      new Set<string>(),
+      new Set<string>(),
+      token,
+      20,
+    );
+    expect(repoInfoMap.size).toBe(0);
+    expect(kindsMap.size).toBe(0);
     expect(github.getRepoInfo).not.toHaveBeenCalled();
+    expect(github.getReadme).not.toHaveBeenCalled();
   });
 });
 
@@ -190,6 +253,10 @@ describe('Branded titles from README fixtures', () => {
       repo: 'test-repo',
       stargazers_count: 100,
     });
+    // Mock getReadme so per-item classification (fetchTargetData) stays offline.
+    // A minimal README parses to 0 entries -> every item classifies as a
+    // repository (the common case; kind-specific coverage lives in step 9).
+    vi.mocked(github.getReadme).mockResolvedValue('# project\n');
     // Mock parseGitHubUrl
     vi.mocked(github.parseGitHubUrl).mockImplementation((url: string) => {
       if (!url.includes('github.com')) {
@@ -270,6 +337,10 @@ describe('Item titles and descriptions from README fixtures', () => {
       repo: 'test-repo',
       stargazers_count: 100,
     });
+    // Mock getReadme so per-item classification (fetchTargetData) stays offline.
+    // A minimal README parses to 0 entries -> every item classifies as a
+    // repository (the common case; kind-specific coverage lives in step 9).
+    vi.mocked(github.getReadme).mockResolvedValue('# project\n');
     vi.mocked(github.parseGitHubUrl).mockImplementation((url: string) => {
       if (!url.includes('github.com')) {
         return null;
@@ -305,4 +376,134 @@ describe('Item titles and descriptions from README fixtures', () => {
       expect(item?.description ?? null).toBe(description);
     },
   );
+});
+
+describe('countListEntries (fixture counts)', () => {
+  const fixturesDir = path.join(__dirname, 'fixtures', 'original');
+
+  function parseFixture(name: string) {
+    const content = fs.readFileSync(
+      path.join(fixturesDir, `${name}.md`),
+      'utf-8',
+    );
+    return unified().use(remarkParse).use(remarkGfm).parse(content);
+  }
+
+  function parseMarkdown(markdown: string) {
+    return unified().use(remarkParse).use(remarkGfm).parse(markdown);
+  }
+
+  // `countListEntries` (and the `findFirstGitHubLink` it reuses) calls
+  // `parseGitHubUrl`, which this file auto-mocks (vi.mock('./github.js')). A
+  // leaked permissive impl from a sibling describe would over-count URLs whose
+  // host is not exactly github.com (e.g. raw.githubusercontent.com), so pin the
+  // mock to the real implementation here. The asserted counts then reflect the
+  // production oracle, not mock contamination.
+  beforeEach(async () => {
+    const actual = await vi.importActual<typeof github>('./github.js');
+    vi.mocked(github.parseGitHubUrl).mockImplementation(actual.parseGitHubUrl);
+  });
+
+  // Calibration is pinned at K = 20 (PLAN.md §4). These counts are the ground
+  // truth that threshold sits against, so they are asserted exactly.
+  it.each([
+    { name: 'go', expected: 2570 },
+    { name: 'free-for-dev', expected: 13 },
+    { name: 'complex', expected: 7 },
+    { name: 'userscripts', expected: 0 },
+  ])(
+    'counts $name github-linked list items as $expected',
+    ({ name, expected }) => {
+      expect(countListEntries(parseFixture(name))).toBe(expected);
+    },
+  );
+
+  it('counts zero for a README with no github links', () => {
+    const tree = parseMarkdown(
+      '# Title\n\n- [book](https://example.com/book)\n- plain note\n',
+    );
+    expect(countListEntries(tree)).toBe(0);
+  });
+
+  it('counts an item once even when its subtree has multiple github links', () => {
+    const tree = parseMarkdown(
+      '- [a](https://github.com/o/a) and [b](https://github.com/o/b)\n- [c](https://example.com/c)\n',
+    );
+    expect(countListEntries(tree)).toBe(1);
+  });
+});
+
+describe('classifyKind', () => {
+  // getReadme is auto-mocked (vi.mock('./github.js')), so the octokit passed to
+  // classifyKind is never actually used.
+  const octokit = undefined as unknown as github.GithubClient;
+
+  function readmeWithItems(n: number): string {
+    const items = Array.from(
+      { length: n },
+      (_, i) => `- [repo-${i}](https://github.com/o/repo-${i})`,
+    ).join('\n');
+    return `# Some Repo\n\n${items}\n`;
+  }
+
+  beforeEach(() => {
+    vi.clearAllMocks();
+  });
+
+  it('classifies a README with >= minEntries github items as a registry (boundary inclusive)', async () => {
+    vi.mocked(github.getReadme).mockResolvedValue(readmeWithItems(20));
+    const result = await classifyKind(octokit, 'o', 'r', 20);
+    expect(result.kind).toBe('registry');
+    expect(result.entries).toBe(20);
+  });
+
+  it('classifies a README just below the threshold as a repository', async () => {
+    vi.mocked(github.getReadme).mockResolvedValue(readmeWithItems(19));
+    const result = await classifyKind(octokit, 'o', 'r', 20);
+    expect(result.kind).toBe('repository');
+    expect(result.entries).toBe(19);
+  });
+
+  it('classifies a sparse project README as a repository', async () => {
+    vi.mocked(github.getReadme).mockResolvedValue(
+      '# chalk\n\nTerminal string styling.\n',
+    );
+    const result = await classifyKind(octokit, 'chalk', 'chalk', 20);
+    expect(result.kind).toBe('repository');
+    expect(result.entries).toBe(0);
+  });
+
+  it('classifies a real registry README fixture as a registry', async () => {
+    const readme = fs.readFileSync(
+      path.join(__dirname, 'fixtures', 'original', 'kind-registry.md'),
+      'utf-8',
+    );
+    vi.mocked(github.getReadme).mockResolvedValue(readme);
+    const result = await classifyKind(
+      octokit,
+      'example',
+      'awesome-example',
+      20,
+    );
+    expect(result.kind).toBe('registry');
+    expect(result.entries).toBeGreaterThanOrEqual(20);
+  });
+
+  it('classifies a real project README fixture as a repository', async () => {
+    const readme = fs.readFileSync(
+      path.join(__dirname, 'fixtures', 'original', 'kind-repository.md'),
+      'utf-8',
+    );
+    vi.mocked(github.getReadme).mockResolvedValue(readme);
+    const result = await classifyKind(octokit, 'chalk', 'chalk', 20);
+    expect(result.kind).toBe('repository');
+    expect(result.entries).toBeLessThan(20);
+  });
+
+  it('throws on an unreadable README (the oracle; fetchTargetData catches it)', async () => {
+    vi.mocked(github.getReadme).mockRejectedValue(new Error('Not Found (404)'));
+    await expect(classifyKind(octokit, 'o', 'r', 20)).rejects.toThrow(
+      'Not Found (404)',
+    );
+  });
 });

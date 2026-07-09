@@ -56,6 +56,37 @@ The action fetches `NARKOZ/guides`'s README, enhances it, writes `README.md` +
 push is authored by `GITHUB_TOKEN`, which does not re-trigger workflows - so this is
 loop-safe even under a `push:` trigger.
 
+## Item kinds (`registry` / `repository`)
+
+Every node in `README.json` carries an intrinsic `kind` - either `registry` (a
+directory that exists to enable discovery, i.e. another awesome-list) or
+`repository` (a terminal, concrete project):
+
+- `metadata.kind` - the source document's own kind.
+- each item's `kind` - that linked target's kind.
+
+A target is a `registry` iff its README parses to **>= `REGISTRY_MIN_ENTRIES`
+(20)** GitHub-linked list items; otherwise a `repository`. The threshold is a
+pinned code constant (`src/markdown.ts`), calibrated against real READMEs:
+concrete projects top out at ~17 (`chalk`); bulk awesome-lists start far higher,
+so 20 sits just above the project ceiling with margin. It is **not** an action
+input - the emitted kind is trustworthy standalone.
+
+Two consequences worth knowing:
+
+- **Dead target links degrade, never fail the run.** A fetch failure on a linked
+  target (404 / 401 / 403 / throttle-exhausted / 5xx / network) is skipped with a
+  warning: the item is still emitted — without `repo_info`, and with `kind`
+  defaulting to `repository` — and the run continues. Awesome-lists carry endemic
+  dead links, so failing the whole run on the first one would make daily mirrors
+  unusable; the webapp membership backstop recovers any registry mistyped by the
+  default. (The *source* README fetch is still fatal — there is nothing to
+  enhance without it.)
+- **Non-GitHub entries are dropped from the JSON.** Books, papers, and link-less
+  notes are not GitHub nodes, so they carry no `kind` and are omitted from
+  `README.json` (they remain in the enhanced markdown). Preserving them in a
+  separate shape is a future enhancement.
+
 ## Development
 
 | command | what |

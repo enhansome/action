@@ -98,64 +98,65 @@ export function makeOctokit(token: string): GithubClient {
 /**
  * Fetches rich repository information. Retry / rate-limit handling is delegated
  * to the Octokit retry + throttling plugins on the injected client.
+ *
+ * Propagates any failure — 404/401/403/422, throttle exhaustion, 5xx, or a
+ * network error — as an octokit RequestError. The caller decides severity:
+ * `fetchTargetData` skips the dead target with a warning (the run continues),
+ * while `main.ts`'s source fetch lets it propagate to `setFailed` (nothing to
+ * enhance without the source README).
  * @param octokit A client from `makeOctokit`.
  * @param owner The repository owner.
  * @param repo The repository name.
- * @returns A RepoInfoDetails object or null if a non-retriable error occurs.
+ * @returns A RepoInfoDetails object.
  */
 export async function getRepoInfo(
   octokit: GithubClient,
   owner: string,
   repo: string,
-): Promise<null | RepoInfoDetails> {
-  try {
-    core.debug(`Fetching repository info for ${owner}/${repo}`);
-    const { data } = await octokit.rest.repos.get({ owner, repo });
+): Promise<RepoInfoDetails> {
+  core.debug(`Fetching repository info for ${owner}/${repo}`);
+  const { data } = await octokit.rest.repos.get({ owner, repo });
 
-    return {
-      archived: data.archived,
-      language: data.language,
-      open_issues_count: data.open_issues_count,
-      owner: data.owner.login,
-      pushed_at: data.pushed_at,
-      repo: data.name,
-      stargazers_count: data.stargazers_count,
-    };
-  } catch (error: unknown) {
-    logRequestError(`repo info for ${owner}/${repo}`, error);
-    return null;
-  }
+  return {
+    archived: data.archived,
+    language: data.language,
+    open_issues_count: data.open_issues_count,
+    owner: data.owner.login,
+    pushed_at: data.pushed_at,
+    repo: data.name,
+    stargazers_count: data.stargazers_count,
+  };
 }
 
 /**
  * Fetches the raw README markdown for a repository.
  * Uses the `raw` media type so the response body *is* the markdown text
  * (no base64 decode required).
+ *
+ * Propagates any failure as an octokit RequestError (e.g. a repo with no README
+ * throws a 404). The caller decides severity: `fetchTargetData` skips the dead
+ * target with a warning (the run continues, the item defaults to 'repository'),
+ * while `main.ts`'s source fetch lets it propagate to `setFailed`.
  * @param octokit A client from `makeOctokit`.
  * @param owner The repository owner.
  * @param repo The repository name.
- * @returns The README markdown, or null if none exists / a request fails.
+ * @returns The README markdown.
  */
 export async function getReadme(
   octokit: GithubClient,
   owner: string,
   repo: string,
-): Promise<null | string> {
-  try {
-    core.debug(`Fetching README for ${owner}/${repo}`);
-    const response = await octokit.rest.repos.getReadme({
-      mediaType: { format: 'raw' },
-      owner,
-      repo,
-    });
+): Promise<string> {
+  core.debug(`Fetching README for ${owner}/${repo}`);
+  const response = await octokit.rest.repos.getReadme({
+    mediaType: { format: 'raw' },
+    owner,
+    repo,
+  });
 
-    // With the `raw` media type the body is the markdown string, but the
-    // generated types still describe the JSON shape - cast to string.
-    return response.data as unknown as string;
-  } catch (error: unknown) {
-    logRequestError(`README for ${owner}/${repo}`, error);
-    return null;
-  }
+  // With the `raw` media type the body is the markdown string, but the
+  // generated types still describe the JSON shape - cast to string.
+  return response.data as unknown as string;
 }
 
 /**
@@ -246,24 +247,29 @@ export function parseGitHubUrl(url: string): null | RepoIdentifier {
 }
 
 /**
- * Logs a failed request, surfacing the HTTP status when the error is an
- * Octokit RequestError and falling back to a generic network-error message.
+ * Formats an unknown error as a short human message, prefixing the HTTP status
+ * when the error is an Octokit RequestError (e.g. "404: Not Found"). Falls back
+ * to the bare message for a network error with no status. Shared by every
+ * caller that reports a failed fetch, so status surfacing stays consistent.
+ */
+export function formatRequestError(error: unknown): string {
+  const message = error instanceof Error ? error.message : String(error);
+  const status = getErrorStatus(error);
+  return status === undefined ? message : `${status}: ${message}`;
+}
+
+/**
+ * Logs a failed request via `core.error`. Used for soft failures that degrade
+ * rather than abort (e.g. a missing latest-commit SHA).
  */
 function logRequestError(subject: string, error: unknown): void {
-  const status = getErrorStatus(error);
-  const message = error instanceof Error ? error.message : String(error);
-
-  if (status !== undefined) {
-    core.error(`Failed to fetch ${subject}: ${message} (Status: ${status})`);
-  } else {
-    core.error(`Network error fetching ${subject}: ${message}`);
-  }
+  core.error(`Failed to fetch ${subject}: ${formatRequestError(error)}`);
 }
 
 function getErrorStatus(error: unknown): number | undefined {
   if (!!error && typeof error === 'object' && 'status' in error) {
     const { status } = error;
-    return typeof status === 'number' ? status : undefined;
+    return typeof status === 'number' && status > 0 ? status : undefined;
   }
   return undefined;
 }
