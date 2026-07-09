@@ -1,0 +1,1292 @@
+{
+  "items": [
+    {
+      "description": "",
+      "items": [],
+      "title": "Text"
+    },
+    {
+      "description": "",
+      "items": [],
+      "title": "Video Generation"
+    },
+    {
+      "description": "",
+      "items": [
+        {
+          "children": [],
+          "description": "An open source ChatGPT UI. #opensource.",
+          "title": "Chatbot UI",
+          "repo_info": {
+            "archived": false,
+            "language": "Rust",
+            "last_commit": "2021-11-18T00:00:00.000Z",
+            "owner": "mckaywrigley",
+            "repo": "chatbot-ui",
+            "stars": 45775
+          }
+        },
+        {
+          "children": [],
+          "description": "LibreChat is a free and open-source chat interface for assistant AIs. #opensource.",
+          "title": "LibreChat",
+          "repo_info": {
+            "archived": false,
+            "language": "Java",
+            "last_commit": "2022-02-14T00:00:00.000Z",
+            "owner": "danny-avila",
+            "repo": "LibreChat",
+            "stars": 7687
+          }
+        }
+      ],
+      "title": "Custom interfaces"
+    },
+    {
+      "description": "",
+      "items": [
+        {
+          "children": [],
+          "description": "Ask questions to your documents without an internet connection, using the power of LLMs.",
+          "title": "privateGPT",
+          "repo_info": {
+            "archived": false,
+            "language": "C++",
+            "last_commit": "2022-07-05T00:00:00.000Z",
+            "owner": "imartinez",
+            "repo": "privateGPT",
+            "stars": 34546
+          }
+        },
+        {
+          "children": [],
+          "description": "Dump all your files and chat with it using your generative AI second brain using LLMs & embeddings.",
+          "title": "quivr",
+          "repo_info": {
+            "archived": false,
+            "language": "Go",
+            "last_commit": "2023-04-24T00:00:00.000Z",
+            "owner": "StanGirard",
+            "repo": "quivr",
+            "stars": 30253
+          }
+        }
+      ],
+      "title": "Local search engines"
+    },
+    {
+      "description": "",
+      "items": [
+        {
+          "children": [],
+          "description": "Open-source AI-powered tool for systematic reviews, helping researchers screen large volumes of academic literature efficiently. #opensource",
+          "title": "ASReview",
+          "repo_info": {
+            "archived": false,
+            "language": "Java",
+            "last_commit": "2021-07-29T00:00:00.000Z",
+            "owner": "asreview",
+            "repo": "asreview",
+            "stars": 42887
+          }
+        },
+        {
+          "children": [],
+          "description": "An LLM-powered knowledge curation system that researches a topic and generates a full-length report with citations. #opensource",
+          "title": "STORM",
+          "repo_info": {
+            "archived": true,
+            "language": "JavaScript",
+            "last_commit": "2023-01-25T00:00:00.000Z",
+            "owner": "stanford-oval",
+            "repo": "storm",
+            "stars": 36342
+          }
+        },
+        {
+          "children": [],
+          "description": "A large language model for science. Can summarize academic literature, solve math problems, generate Wiki articles, write scientific code, annotate molecules and proteins, and more. Model API.",
+          "title": "Galactica",
+          "repo_info": {
+            "archived": false,
+            "language": "Rust",
+            "last_commit": "2021-11-18T00:00:00.000Z",
+            "owner": "paperswithcode",
+            "repo": "galai",
+            "stars": 14775
+          }
+        },
+        {
+          "children": [],
+          "description": "Elicit uses language models to help you automate research workflows, like parts of literature review.",
+          "title": "Elicit"
+        },
+        {
+          "children": [],
+          "description": "Summarise academic articles in seconds and save 80% on your research times.",
+          "title": "genei"
+        },
+        {
+          "children": [],
+          "description": "A better way to read academic papers. Upload a paper, highlight confusing text, get an explanation.",
+          "title": "Explainpaper"
+        },
+        {
+          "children": [],
+          "description": "Consensus is a search engine that uses AI to find answers in scientific research.",
+          "title": "Consensus"
+        },
+        {
+          "children": [],
+          "description": "AI-powered collaborative research environment.",
+          "title": "Synthical"
+        },
+        {
+          "children": [],
+          "description": "A platform for discovering and evaluating scientific articles.",
+          "title": "scite"
+        },
+        {
+          "children": [],
+          "description": "An AI research assistant for understanding scientific literature.",
+          "title": "SciSpace"
+        },
+        {
+          "children": [],
+          "description": "Discuss, discover, and read arXiv papers.",
+          "title": "alphaXiv"
+        }
+      ],
+      "title": "Academia"
+    },
+    {
+      "description": "",
+      "items": [],
+      "title": "Coding"
+    },
+    {
+      "description": "",
+      "items": [
+        {
+          "children": [],
+          "description": "A self-hosted copilot clone which uses the library behind llama.cpp to run the 6 billion parameter Salesforce Codegen model in 4 GB of RAM.",
+          "title": "TurboPilot",
+          "repo_info": {
+            "archived": false,
+            "language": "C++",
+            "last_commit": "2021-08-09T00:00:00.000Z",
+            "owner": "ravenscroftj",
+            "repo": "turbopilot",
+            "stars": 44876
+          }
+        },
+        {
+          "children": [],
+          "description": "An AI-powered autonomous coding agent integrated directly into VS Code. #opensource",
+          "title": "RooCode",
+          "repo_info": {
+            "archived": false,
+            "language": "JavaScript",
+            "last_commit": "2022-07-09T00:00:00.000Z",
+            "owner": "RooCodeInc",
+            "repo": "Roo-Code",
+            "stars": 37542
+          }
+        },
+        {
+          "children": [],
+          "description": "An open source implementation of OpenAI's ChatGPT Code interpreter. #opensource",
+          "title": "GPT-Code UI",
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2022-04-08T00:00:00.000Z",
+            "owner": "ricklamers",
+            "repo": "gpt-code-ui",
+            "stars": 33634
+          }
+        },
+        {
+          "children": [],
+          "description": "AI-powered tool for automated PR analysis, feedback, suggestions and more.",
+          "title": "PR-Agent",
+          "repo_info": {
+            "archived": false,
+            "language": "Shell",
+            "last_commit": "2021-10-25T00:00:00.000Z",
+            "owner": "Codium-ai",
+            "repo": "pr-agent",
+            "stars": 28799
+          }
+        },
+        {
+          "children": [],
+          "description": "An AI-driven data analysis and visualization tool. #opensource",
+          "title": "DataLine",
+          "repo_info": {
+            "archived": false,
+            "language": "Java",
+            "last_commit": "2022-02-24T00:00:00.000Z",
+            "owner": "RamiAwar",
+            "repo": "dataline",
+            "stars": 21677
+          }
+        },
+        {
+          "children": [],
+          "description": "The Multi-Agent Framework: Given one line Requirement, return PRD, Design, Tasks, Repo",
+          "title": "MetaGPT",
+          "repo_info": {
+            "archived": false,
+            "language": "Ruby",
+            "last_commit": "2021-06-18T00:00:00.000Z",
+            "owner": "geekan",
+            "repo": "MetaGPT",
+            "stars": 18928
+          }
+        },
+        {
+          "children": [],
+          "description": "Open-source AI code assistant. Connect any model and any context to create custom autocomplete and chat experiences inside the IDE. #opensource",
+          "title": "Continue",
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2022-03-03T00:00:00.000Z",
+            "owner": "continuedev",
+            "repo": "continue",
+            "stars": 14670
+          }
+        },
+        {
+          "children": [],
+          "description": "GitHub Copilot uses the OpenAI Codex to suggest code and entire functions in real-time, right from your editor.",
+          "title": "GitHub Copilot",
+          "repo_info": {
+            "archived": false,
+            "language": "Ruby",
+            "last_commit": "2022-05-14T00:00:00.000Z",
+            "owner": "features",
+            "repo": "copilot",
+            "stars": 5598
+          }
+        },
+        {
+          "children": [],
+          "description": "OpenAI's Code Interpreter in your terminal, running locally.",
+          "title": "Open Interpreter",
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2023-03-18T00:00:00.000Z",
+            "owner": "KillianLucas",
+            "repo": "open-interpreter",
+            "stars": 5290
+          }
+        },
+        {
+          "children": [],
+          "description": "An open-source, configurable AI assistant in Jupyter Notebook and JupyterLab that supports 100+ LLMs, including locally-hosted models from Ollama and GPT4All. #opensource",
+          "title": "Jupyter AI",
+          "repo_info": {
+            "archived": false,
+            "language": "Shell",
+            "last_commit": "2023-12-24T00:00:00.000Z",
+            "owner": "jupyterlab",
+            "repo": "jupyter-ai",
+            "stars": 5009
+          }
+        },
+        {
+          "children": [],
+          "description": "Open source, terminal-based AI programming engine for complex tasks. #opensource",
+          "title": "Plandex",
+          "repo_info": {
+            "archived": false,
+            "language": "JavaScript",
+            "last_commit": "2022-08-28T00:00:00.000Z",
+            "owner": "plandex-ai",
+            "repo": "plandex",
+            "stars": 3492
+          }
+        },
+        {
+          "children": [],
+          "description": "An AI system by OpenAI that translates natural language to code.",
+          "title": "OpenAI Codex"
+        },
+        {
+          "children": [],
+          "description": "An AI-powered pair programmer by replit.",
+          "title": "Ghostwriter"
+        },
+        {
+          "children": [],
+          "description": "The AWS generative AI–powered assistant that helps answer questions, write code, and automate tasks.",
+          "title": "Amazon Q"
+        },
+        {
+          "children": [],
+          "description": "Code faster with whole-line & full-function code completions.",
+          "title": "tabnine"
+        },
+        {
+          "children": [],
+          "description": "Automatic code documentation.",
+          "title": "Stenography"
+        },
+        {
+          "children": [],
+          "description": "AI powered documentation writer.",
+          "title": "Mintlify"
+        },
+        {
+          "children": [],
+          "description": "AI-powered low-code tool for web apps.",
+          "title": "Debuild"
+        },
+        {
+          "children": [],
+          "description": "With AI2sql, engineers and non-engineers can easily write efficient, error-free SQL queries without knowing SQL.",
+          "title": "AI2sql"
+        },
+        {
+          "children": [],
+          "description": "With CodiumAI, you get non-trivial tests suggested right inside your IDE, so you stay confident when you push.",
+          "title": "CodiumAI"
+        },
+        {
+          "children": [],
+          "description": "AI Accelerated Software Development.",
+          "title": "MutableAI"
+        },
+        {
+          "children": [],
+          "description": "An AI-native IDE that combines code editing with advanced AI assistance throughout the development process.",
+          "title": "Windsurf"
+        },
+        {
+          "children": [],
+          "description": "Prompt-driven UI generation for React and Next.js, creating production-ready components.",
+          "title": "v0"
+        },
+        {
+          "children": [],
+          "description": "Conversational full-stack app generation, turning ideas into deployable code.",
+          "title": "Lovable"
+        }
+      ],
+      "title": "Coding Assistants"
+    },
+    {
+      "description": "",
+      "items": [
+        {
+          "children": [],
+          "description": "A chatbot trained on a massive collection of clean assistant data including code, stories and dialogue.",
+          "title": "gpt4all",
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2022-12-14T00:00:00.000Z",
+            "owner": "nomic-ai",
+            "repo": "gpt4all",
+            "stars": 48384
+          }
+        },
+        {
+          "children": [],
+          "description": "An open-source Python RAG framework for SQL generation and related functionality. #opensource",
+          "title": "Vanna.ai",
+          "repo_info": {
+            "archived": false,
+            "language": "JavaScript",
+            "last_commit": "2023-03-16T00:00:00.000Z",
+            "owner": "vanna-ai",
+            "repo": "vanna",
+            "stars": 41292
+          }
+        },
+        {
+          "children": [],
+          "description": "A neuro-symbolic framework for building applications with LLMs at the core.",
+          "title": "SymbolicAI",
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2022-05-12T00:00:00.000Z",
+            "owner": "Xpitfire",
+            "repo": "symbolicai",
+            "stars": 37600
+          }
+        },
+        {
+          "children": [],
+          "description": "A Python library for fine-tuning LLMs #opensource.",
+          "title": "Unsloth",
+          "repo_info": {
+            "archived": true,
+            "language": "TypeScript",
+            "last_commit": "2022-06-10T00:00:00.000Z",
+            "owner": "unslothai",
+            "repo": "unsloth",
+            "stars": 26571
+          }
+        },
+        {
+          "children": [],
+          "description": "An open-source end-to-end LLMOps platform for prompt engineering, evaluation, and deployment. #opensource",
+          "title": "agenta",
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2022-09-29T00:00:00.000Z",
+            "owner": "agenta-ai",
+            "repo": "agenta",
+            "stars": 26460
+          }
+        },
+        {
+          "children": [],
+          "description": "Official inference framework for 1-bit LLMs, by Microsoft. #opensource",
+          "title": "bitnet.cpp",
+          "repo_info": {
+            "archived": false,
+            "language": "Rust",
+            "last_commit": "2021-06-11T00:00:00.000Z",
+            "owner": "microsoft",
+            "repo": "BitNet",
+            "stars": 24935
+          }
+        },
+        {
+          "children": [],
+          "description": "A low-code framework for building custom AI models like LLMs and other deep neural networks. #opensource",
+          "title": "Ludwig",
+          "repo_info": {
+            "archived": false,
+            "language": "C++",
+            "last_commit": "2022-02-25T00:00:00.000Z",
+            "owner": "ludwig-ai",
+            "repo": "ludwig",
+            "stars": 16676
+          }
+        },
+        {
+          "children": [],
+          "description": "Open-source GenAI and LLM observability platform native to OpenTelemetry with traces and metrics. #opensource",
+          "title": "OpenLIT",
+          "repo_info": {
+            "archived": false,
+            "language": "Shell",
+            "last_commit": "2022-05-03T00:00:00.000Z",
+            "owner": "openlit",
+            "repo": "openlit",
+            "stars": 12609
+          }
+        },
+        {
+          "children": [],
+          "description": "Pack your codebase into AI-friendly formats. #opensource",
+          "title": "Repomix",
+          "repo_info": {
+            "archived": false,
+            "language": "C++",
+            "last_commit": "2022-02-15T00:00:00.000Z",
+            "owner": "yamadashy",
+            "repo": "repomix",
+            "stars": 11686
+          }
+        },
+        {
+          "children": [],
+          "description": "Inference of Meta's LLaMA model (and others) in pure C/C++. #opensource",
+          "title": "llama.cpp",
+          "repo_info": {
+            "archived": false,
+            "language": "Shell",
+            "last_commit": "2022-05-03T00:00:00.000Z",
+            "owner": "ggml-org",
+            "repo": "llama.cpp",
+            "stars": 2609
+          }
+        },
+        {
+          "children": [],
+          "description": "Open-source Python library to build real-time LLM-enabled data pipeline.",
+          "title": "LLM App",
+          "repo_info": {
+            "archived": false,
+            "language": "Rust",
+            "last_commit": "2023-05-02T00:00:00.000Z",
+            "owner": "pathwaycom",
+            "repo": "llm-app",
+            "stars": 2245
+          }
+        },
+        {
+          "children": [],
+          "description": "Turn any Git repository into a simple text digest of its codebase so it can be fed into any LLM. #opensource",
+          "title": "Gitingest",
+          "repo_info": {
+            "archived": false,
+            "language": "Go",
+            "last_commit": "2021-11-10T00:00:00.000Z",
+            "owner": "cyclotruc",
+            "repo": "gitingest",
+            "stars": 1783
+          }
+        },
+        {
+          "children": [],
+          "description": "Cohere provides access to advanced Large Language Models and NLP tools.",
+          "title": "co:here"
+        },
+        {
+          "children": [],
+          "description": "A framework for building NLP applications (e.g. agents, semantic search, question-answering) with language models.",
+          "title": "Haystack"
+        },
+        {
+          "children": [],
+          "description": "A framework for developing applications powered by language models.",
+          "title": "LangChain"
+        },
+        {
+          "children": [],
+          "description": "LMQL is a query language for large language models.",
+          "title": "LMQL"
+        },
+        {
+          "children": [],
+          "description": "A data framework for building LLM applications over external data.",
+          "title": "LlamaIndex"
+        },
+        {
+          "children": [],
+          "description": "Open-source tool for ML observability that runs in your notebook environment, by Arize. Monitor and fine tune LLM, CV and tabular models.",
+          "title": "Phoenix"
+        },
+        {
+          "children": [],
+          "description": "Cursor is the IDE of the future, built for pair-programming with Powerful AI.",
+          "title": "Cursor"
+        },
+        {
+          "children": [],
+          "description": "A full-stack LLMOps platform for LLM monitoring, caching, and management.",
+          "title": "Portkey"
+        },
+        {
+          "children": [],
+          "description": "Train, fine-tune-and run inference on AI models blazing fast, at low cost, and at production scale.",
+          "title": "Together AI"
+        },
+        {
+          "children": [],
+          "description": "A unified interface for LLMs. #opensource",
+          "title": "OpenRouter"
+        }
+      ],
+      "title": "Developer tools"
+    },
+    {
+      "description": "",
+      "items": [
+        {
+          "children": [],
+          "description": "Run LLMs like Mistral or Llama2 locally and offline on your computer, or connect to remote AI APIs. #opensource",
+          "title": "Jan",
+          "repo_info": {
+            "archived": false,
+            "language": "Ruby",
+            "last_commit": "2021-09-06T00:00:00.000Z",
+            "owner": "janhq",
+            "repo": "jan",
+            "stars": 48848
+          }
+        },
+        {
+          "children": [],
+          "description": "An extensible, feature-rich, and user-friendly self-hosted AI platform designed to operate entirely offline. #opensource",
+          "title": "Open WebUI",
+          "repo_info": {
+            "archived": false,
+            "language": "Java",
+            "last_commit": "2022-11-11T00:00:00.000Z",
+            "owner": "open-webui",
+            "repo": "open-webui",
+            "stars": 39417
+          }
+        },
+        {
+          "children": [],
+          "description": "A CLI utility and Python library for interacting with Large Language Models, remote and local. #opensource",
+          "title": "LLM",
+          "repo_info": {
+            "archived": false,
+            "language": "Java",
+            "last_commit": "2023-12-06T00:00:00.000Z",
+            "owner": "simonw",
+            "repo": "llm",
+            "stars": 38027
+          }
+        },
+        {
+          "children": [],
+          "description": "Get up and running with large language models locally.",
+          "title": "Ollama",
+          "repo_info": {
+            "archived": false,
+            "language": "Rust",
+            "last_commit": "2023-06-21T00:00:00.000Z",
+            "owner": "ollama",
+            "repo": "ollama",
+            "stars": 18195
+          }
+        },
+        {
+          "children": [],
+          "description": "A straightforward and powerful interface for local and online AI models.",
+          "title": "Msty"
+        },
+        {
+          "children": [],
+          "description": "Personal desktop AI assistant with chat, vision, agents, image generation, tools and commands, voice control and more. #opensource",
+          "title": "PyGPT"
+        },
+        {
+          "children": [],
+          "description": "Download and run local LLMs on your computer.",
+          "title": "LM Studio"
+        }
+      ],
+      "title": "Local LLM Deployment"
+    },
+    {
+      "description": "",
+      "items": [],
+      "title": "Agents"
+    },
+    {
+      "description": "",
+      "items": [
+        {
+          "children": [],
+          "description": "AutoGen is a framework that enables the development of LLM applications using multiple agents that can converse with each other to solve tasks.",
+          "title": "AutoGen",
+          "repo_info": {
+            "archived": false,
+            "language": "Ruby",
+            "last_commit": "2023-08-07T00:00:00.000Z",
+            "owner": "microsoft",
+            "repo": "autogen",
+            "stars": 45148
+          }
+        },
+        {
+          "children": [],
+          "description": "A personal AI assistant you run on your own devices. #opensource",
+          "title": "OpenClaw",
+          "repo_info": {
+            "archived": false,
+            "language": "Go",
+            "last_commit": "2022-08-17T00:00:00.000Z",
+            "owner": "clawdbot",
+            "repo": "clawdbot",
+            "stars": 39503
+          }
+        },
+        {
+          "children": [],
+          "description": "Dev tool that writes scalable apps from scratch while the developer oversees the implementation.",
+          "title": "GPT Pilot",
+          "repo_info": {
+            "archived": false,
+            "language": "Shell",
+            "last_commit": "2023-01-18T00:00:00.000Z",
+            "owner": "Pythagora-io",
+            "repo": "gpt-pilot",
+            "stars": 31349
+          }
+        },
+        {
+          "children": [],
+          "description": "An autonomous agent designed to navigate the complexities of software engineering. #opensource",
+          "title": "OpenDevin",
+          "repo_info": {
+            "archived": false,
+            "language": "Shell",
+            "last_commit": "2022-08-11T00:00:00.000Z",
+            "owner": "OpenDevin",
+            "repo": "OpenDevin",
+            "stars": 29509
+          }
+        },
+        {
+          "children": [],
+          "description": "An agentic AI software engineer. #opensource",
+          "title": "Davika",
+          "repo_info": {
+            "archived": true,
+            "language": "Go",
+            "last_commit": "2022-02-08T00:00:00.000Z",
+            "owner": "stitionai",
+            "repo": "devika",
+            "stars": 28693
+          }
+        },
+        {
+          "children": [],
+          "description": "An open-source AI agent that brings the power of Gemini directly into your terminal. #opensource",
+          "title": "Gemini CLI",
+          "repo_info": {
+            "archived": true,
+            "language": "Python",
+            "last_commit": "2021-10-20T00:00:00.000Z",
+            "owner": "google-gemini",
+            "repo": "gemini-cli",
+            "stars": 22804
+          }
+        },
+        {
+          "children": [],
+          "description": "An AI-powered task management system.",
+          "title": "babyagi",
+          "repo_info": {
+            "archived": false,
+            "language": "Ruby",
+            "last_commit": "2021-04-19T00:00:00.000Z",
+            "owner": "yoheinakajima",
+            "repo": "babyagi",
+            "stars": 21988
+          }
+        },
+        {
+          "children": [],
+          "description": "The Multi-Agent Framework: Given one line requirement, return PRD, design, tasks, repo.",
+          "title": "MetaGPT",
+          "repo_info": {
+            "archived": false,
+            "language": "Ruby",
+            "last_commit": "2021-06-18T00:00:00.000Z",
+            "owner": "geekan",
+            "repo": "MetaGPT",
+            "stars": 18928
+          }
+        },
+        {
+          "children": [],
+          "description": "Automated prompt engineering. It generates, tests, and ranks prompts to find the best ones.",
+          "title": "GPT Prompt Engineer",
+          "repo_info": {
+            "archived": true,
+            "language": "C++",
+            "last_commit": "2023-11-17T00:00:00.000Z",
+            "owner": "mshumer",
+            "repo": "gpt-prompt-engineer",
+            "stars": 16046
+          }
+        },
+        {
+          "children": [],
+          "description": "Specify what you want it to build, the AI asks for clarification, and then builds it.",
+          "title": "GPT Engineer",
+          "repo_info": {
+            "archived": false,
+            "language": "Shell",
+            "last_commit": "2023-08-26T00:00:00.000Z",
+            "owner": "AntonOsika",
+            "repo": "gpt-engineer",
+            "stars": 11129
+          }
+        },
+        {
+          "children": [],
+          "description": "An experimental open-source attempt to make GPT-4 fully autonomous.",
+          "title": "Auto-GPT",
+          "repo_info": {
+            "archived": false,
+            "language": "Java",
+            "last_commit": "2022-04-05T00:00:00.000Z",
+            "owner": "Torantulino",
+            "repo": "Auto-GPT",
+            "stars": 9637
+          }
+        },
+        {
+          "children": [],
+          "description": "Assemble, configure, and deploy autonomous AI Agents in your browser.",
+          "title": "AgentGPT",
+          "repo_info": {
+            "archived": false,
+            "language": "Rust",
+            "last_commit": "2022-04-07T00:00:00.000Z",
+            "owner": "reworkd",
+            "repo": "AgentGPT",
+            "stars": 9635
+          }
+        },
+        {
+          "children": [],
+          "description": "An autonomous AI software engineer by Cognition Labs.",
+          "title": "Devin"
+        },
+        {
+          "children": [],
+          "description": "A workflow automation platform that combines AI capabilities with business process automation.",
+          "title": "n8n"
+        },
+        {
+          "children": [],
+          "description": "An AI assistant built for compounding context. It learns your taste, detects hidden patterns, augments your brain context and works proactively.",
+          "title": "Sauna"
+        },
+        {
+          "children": [],
+          "description": "Anthropic's agentic coding tool that lives in your terminal and helps you turn ideas into code.",
+          "title": "Claude Code"
+        },
+        {
+          "children": [],
+          "description": "An all-in-one framework for building AI-powered applications and agents.",
+          "title": "Mastra"
+        },
+        {
+          "children": [],
+          "description": "A social network for AI agents.",
+          "title": "moltbook"
+        },
+        {
+          "children": [],
+          "description": "Email inboxes for AI agents.",
+          "title": "AgentMail"
+        },
+        {
+          "children": [],
+          "description": "AI agents hire each other, complete work, verify outcomes, and earn tokens.",
+          "title": "Openwork"
+        }
+      ],
+      "title": "Autonomous agents"
+    },
+    {
+      "description": "",
+      "items": [],
+      "title": "Image"
+    },
+    {
+      "description": "",
+      "items": [
+        {
+          "children": [],
+          "description": "Drag Your GAN: Interactive Point-based Manipulation on the Generative Image Manifold.",
+          "title": "DragGAN",
+          "repo_info": {
+            "archived": false,
+            "language": "C++",
+            "last_commit": "2023-01-01T00:00:00.000Z",
+            "owner": "XingangPan",
+            "repo": "DragGAN",
+            "stars": 42366
+          }
+        },
+        {
+          "children": [],
+          "description": "Text-to-image models by Black Forest Labs with high-quality photorealistic output. #opensource",
+          "title": "Flux",
+          "repo_info": {
+            "archived": false,
+            "language": "JavaScript",
+            "last_commit": "2023-12-11T00:00:00.000Z",
+            "owner": "black-forest-labs",
+            "repo": "flux",
+            "stars": 26022
+          }
+        },
+        {
+          "children": [],
+          "description": "DALL·E 2 by OpenAI is a new AI system that can create realistic images and art from a description in natural language.",
+          "title": "DALL·E 2"
+        },
+        {
+          "children": [],
+          "description": "Stable Diffusion by Stability AI is a state of the art text-to-image model that generates images from text. #opensource",
+          "title": "Stable Diffusion"
+        },
+        {
+          "children": [],
+          "description": "Midjourney is an independent research lab exploring new mediums of thought and expanding the imaginative powers of the human species.",
+          "title": "Midjourney"
+        },
+        {
+          "children": [],
+          "description": "Imagen by Google is a text-to-image diffusion model with an unprecedented degree of photorealism and a deep level of language understanding.",
+          "title": "Imagen"
+        },
+        {
+          "children": [],
+          "description": "Make-A-Scene by Meta is a multimodal generative AI method puts creative control in the hands of people who use it by allowing them to describe and illustrate their vision through both text descriptions and freeform sketches.",
+          "title": "Make-A-Scene"
+        }
+      ],
+      "title": "Models"
+    },
+    {
+      "description": "",
+      "items": [],
+      "title": "Audio"
+    },
+    {
+      "description": "",
+      "items": [
+        {
+          "children": [],
+          "description": "A transformer-based text-to-audio model. #opensource",
+          "title": "Bark",
+          "repo_info": {
+            "archived": false,
+            "language": "Shell",
+            "last_commit": "2023-11-04T00:00:00.000Z",
+            "owner": "suno-ai",
+            "repo": "bark",
+            "stars": 38059
+          }
+        },
+        {
+          "children": [],
+          "description": "A multi-voice text-to-speech system trained with an emphasis on quality. #opensource",
+          "title": "TorToiSe",
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2021-05-07T00:00:00.000Z",
+            "owner": "neonbjb",
+            "repo": "tortoise-tts",
+            "stars": 27970
+          }
+        },
+        {
+          "children": [],
+          "description": "AI voice generator.",
+          "title": "Eleven Labs"
+        },
+        {
+          "children": [],
+          "description": "AI voice generator and voice cloning for text to speech.",
+          "title": "Resemble AI"
+        },
+        {
+          "children": [],
+          "description": "Convert text to voice in real time.",
+          "title": "WellSaid"
+        },
+        {
+          "children": [],
+          "description": "AI Voice Generator. Generate realistic Text to Speech voice over online with AI. Convert text to audio.",
+          "title": "Play.ht"
+        },
+        {
+          "children": [],
+          "description": "A podcast that is entirely generated by artificial intelligence, powered by Play.ht text-to-voice AI.",
+          "title": "podcast.ai"
+        },
+        {
+          "children": [],
+          "description": "A cross-lingual neural codec language model for cross-lingual speech synthesis.",
+          "title": "VALL-E X"
+        }
+      ],
+      "title": "Text-to-speech"
+    },
+    {
+      "description": "",
+      "items": [
+        {
+          "children": [],
+          "description": "Robust speech recognition via large-scale weak supervision. #opensource",
+          "title": "Whisper",
+          "repo_info": {
+            "archived": false,
+            "language": "Shell",
+            "last_commit": "2023-09-05T00:00:00.000Z",
+            "owner": "openai",
+            "repo": "whisper",
+            "stars": 42119
+          }
+        },
+        {
+          "children": [],
+          "description": "Port of OpenAI's Whisper model in C/C++. #opensource",
+          "title": "whisper.cpp",
+          "repo_info": {
+            "archived": true,
+            "language": "C++",
+            "last_commit": "2023-12-27T00:00:00.000Z",
+            "owner": "ggerganov",
+            "repo": "whisper.cpp",
+            "stars": 37006
+          }
+        },
+        {
+          "children": [],
+          "description": "All-in-one solution for effortless audio and video transcription. #opensource",
+          "title": "Vibe Transcribe",
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2021-06-22T00:00:00.000Z",
+            "owner": "thewh1teagle",
+            "repo": "vibe",
+            "stars": 12924
+          }
+        },
+        {
+          "children": [],
+          "description": "Flow makes writing quick with seamless voice dictation for any application on your computer.",
+          "title": "Wispr Flow"
+        }
+      ],
+      "title": "Speech-to-text"
+    },
+    {
+      "description": "",
+      "items": [
+        {
+          "children": [],
+          "description": "Guide and resources for prompt engineering.",
+          "title": "Prompt Engineering Guide",
+          "repo_info": {
+            "archived": false,
+            "language": "Go",
+            "last_commit": "2021-08-22T00:00:00.000Z",
+            "owner": "dair-ai",
+            "repo": "Prompt-Engineering-Guide",
+            "stars": 33863
+          }
+        },
+        {
+          "children": [],
+          "description": "Examples and guides for using the OpenAI API.",
+          "title": "OpenAI Cookbook",
+          "repo_info": {
+            "archived": false,
+            "language": "Java",
+            "last_commit": "2021-08-08T00:00:00.000Z",
+            "owner": "openai",
+            "repo": "openai-cookbook",
+            "stars": 13877
+          }
+        },
+        {
+          "children": [],
+          "description": "Anthropic's educational courses.",
+          "title": "Anthropic courses",
+          "repo_info": {
+            "archived": false,
+            "language": "JavaScript",
+            "last_commit": "2023-05-05T00:00:00.000Z",
+            "owner": "anthropics",
+            "repo": "courses",
+            "stars": 11242
+          }
+        },
+        {
+          "children": [],
+          "description": "A free, open source course on communicating with artificial intelligence.",
+          "title": "Learn Prompting"
+        },
+        {
+          "children": [],
+          "description": "A short course by Isa Fulford (OpenAI) and Andrew Ng (DeepLearning.AI).",
+          "title": "ChatGPT prompt engineering for developers"
+        },
+        {
+          "children": [],
+          "description": "Strategies and tactics for getting better results from large language models.",
+          "title": "OpenAI Prompt Engineering Guide"
+        },
+        {
+          "children": [],
+          "description": "Tool for prompt engineering.",
+          "title": "PromptPerfect"
+        },
+        {
+          "children": [],
+          "description": "A guide to building your own working LLM, by Sebastian Raschka.",
+          "title": "Build a Large Language Model (From Scratch)"
+        },
+        {
+          "children": [],
+          "description": "A free DeepLearning.AI short course on how to prompt computer vision models with natural language, bounding boxes, segmentation masks, coordinate points, and other images.",
+          "title": "Prompt Engineering for Vision Models"
+        }
+      ],
+      "title": "Learning resources"
+    },
+    {
+      "description": "",
+      "items": [
+        {
+          "children": [],
+          "description": "A curated list of generative deep learning tools, works, models, etc. for artistic uses, by @filipecalegario.",
+          "title": "Generative Deep Art",
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2023-06-26T00:00:00.000Z",
+            "owner": "filipecalegario",
+            "repo": "awesome-generative-deep-art",
+            "stars": 40190
+          }
+        },
+        {
+          "children": [],
+          "description": "List of molecular design using Generative AI and Deep Learning.",
+          "title": "Molecular design",
+          "repo_info": {
+            "archived": true,
+            "language": "TypeScript",
+            "last_commit": "2023-11-12T00:00:00.000Z",
+            "owner": "AspirinCode",
+            "repo": "papers-for-molecular-design-using-DL",
+            "stars": 33051
+          }
+        },
+        {
+          "children": [],
+          "description": "A Collection of Awesome Generative AI Applications.",
+          "title": "The Generative AI Landscape",
+          "repo_info": {
+            "archived": false,
+            "language": "Rust",
+            "last_commit": "2021-09-09T00:00:00.000Z",
+            "owner": "ai-collection",
+            "repo": "ai-collection",
+            "stars": 10845
+          }
+        },
+        {
+          "children": [],
+          "description": "A list of open LLMs available for commercial use.",
+          "title": "Open LLMs",
+          "repo_info": {
+            "archived": false,
+            "language": "Rust",
+            "last_commit": "2022-12-03T00:00:00.000Z",
+            "owner": "eugeneyan",
+            "repo": "open-llms",
+            "stars": 395
+          }
+        },
+        {
+          "children": [],
+          "description": "A large list of Google Colab notebooks for generative AI, by @pharmapsychotic.",
+          "title": "Tools and Resources for AI Art"
+        },
+        {
+          "children": [],
+          "description": "An infographic that maps the generative AI ecosystem, by Sonya Huang of Sequioa Capital.",
+          "title": "The Generative AI Application Landscape"
+        },
+        {
+          "children": [],
+          "description": "An Airtable list by @builtwithgenai.",
+          "title": "Startups - @builtwithgenai"
+        },
+        {
+          "children": [],
+          "description": "An Airtable list by Scale Venture Partners.",
+          "title": "The Generative AI Index"
+        },
+        {
+          "children": [],
+          "description": "A market map of companies working on Generative AI for games, by a16z.",
+          "title": "Generative AI for Games"
+        },
+        {
+          "children": [],
+          "description": "Showcase with GPT-3 examples, demos, apps, showcase, and NLP use-cases.",
+          "title": "GPT-3 Demo"
+        },
+        {
+          "children": [],
+          "description": "GPT-4 apps and use-cases.",
+          "title": "GPT-4 Demo"
+        }
+      ],
+      "title": "More lists"
+    },
+    {
+      "description": "",
+      "items": [
+        {
+          "children": [],
+          "description": "A curated list of awesome tools, demos, docs for ChatGPT and GPT-3, by @jordn.",
+          "title": "Awesome ChatGPT",
+          "repo_info": {
+            "archived": false,
+            "language": "Shell",
+            "last_commit": "2022-03-14T00:00:00.000Z",
+            "owner": "humanloop",
+            "repo": "awesome-chatgpt",
+            "stars": 27659
+          }
+        },
+        {
+          "children": [],
+          "description": "Another awesome list for ChatGPT.",
+          "title": "Awesome ChatGPT",
+          "repo_info": {
+            "archived": false,
+            "language": "Shell",
+            "last_commit": "2022-07-22T00:00:00.000Z",
+            "owner": "sindresorhus",
+            "repo": "awesome-chatgpt",
+            "stars": 25529
+          }
+        },
+        {
+          "children": [],
+          "description": "A repository of useful data science prompts for ChatGPT.",
+          "title": "ChatGPT Prompts for Data Science",
+          "repo_info": {
+            "archived": false,
+            "language": "Go",
+            "last_commit": "2021-12-30T00:00:00.000Z",
+            "owner": "travistangvh",
+            "repo": "ChatGPT-Data-Science-Prompts",
+            "stars": 15733
+          }
+        },
+        {
+          "children": [],
+          "description": "A collection of prompt examples to be used with the ChatGPT model.",
+          "title": "Awesome ChatGPT Prompts",
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2023-06-06T00:00:00.000Z",
+            "owner": "f",
+            "repo": "awesome-chatgpt-prompts",
+            "stars": 210
+          }
+        },
+        {
+          "children": [],
+          "description": "Amplify your workflow with the best prompts.",
+          "title": "FlowGPT"
+        }
+      ],
+      "title": "Lists on ChatGPT"
+    }
+  ],
+  "metadata": {
+    "last_updated": "2025-01-01T00:00:00.000Z",
+    "original_repository": "steven2358/awesome-generative-ai",
+    "original_repository_sha": "deadbeef",
+    "enhanced_repository": "enhansome/enhansome-generative-ai",
+    "enhanced_repository_description": "enhanced list",
+    "title": "Awesome Generative AI with stars"
+  }
+}

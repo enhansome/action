@@ -441,22 +441,26 @@ A list of awesome Go frameworks.
         'Description for the first section.',
       );
       expect(firstSection.items).toHaveLength(3);
-      // **Crucially, check that JSON order is original order, not sorted order**
-      expect(firstSection.items[0].title).toBe('Repo C');
-      expect(firstSection.items[1].title).toBe('Repo B');
-      expect(firstSection.items[1].repo_info?.stars).toBe(300);
+      // JSON order now matches the rendered markdown: sorted by stars desc.
+      // Repo B (300) > Repo C (200) > Repo A (100).
+      expect(firstSection.items[0].title).toBe('Repo B');
+      expect(firstSection.items[0].repo_info?.stars).toBe(300);
+      expect(firstSection.items[1].title).toBe('Repo C');
+      expect(firstSection.items[2].title).toBe('Repo A');
 
-      // Check nested items
-      const nestedItems = firstSection.items[1].children;
+      // Nested items travel with their parent (Repo B).
+      const nestedItems = firstSection.items[0].children;
       expect(nestedItems).toHaveLength(1);
       expect(nestedItems[0].title).toBe('Nested 1');
       expect(nestedItems[0].repo_info?.language).toBe('JS');
 
-      // Check second valid section
+      // Check second valid section (sorted: Repo C 200 before Repo A 100)
       const thirdSection = jsonData.items[1];
       expect(thirdSection.title).toBe('Third Section');
       expect(thirdSection.description).toBe('Another valid section.');
       expect(thirdSection.items).toHaveLength(2);
+      expect(thirdSection.items[0].title).toBe('Repo C');
+      expect(thirdSection.items[1].title).toBe('Repo A');
     });
   });
 

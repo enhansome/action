@@ -1,0 +1,95 @@
+{
+  "items": [
+    {
+      "description": "Description for the first section.",
+      "items": [
+        {
+          "children": [],
+          "description": "100 stars",
+          "title": "Repo A",
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2021-07-06T00:00:00.000Z",
+            "owner": "user",
+            "repo": "repo-a",
+            "stars": 41910
+          }
+        },
+        {
+          "children": [],
+          "description": "200 stars",
+          "title": "Repo C",
+          "repo_info": {
+            "archived": false,
+            "language": "JavaScript",
+            "last_commit": "2022-03-01T00:00:00.000Z",
+            "owner": "user",
+            "repo": "repo-c",
+            "stars": 36672
+          }
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "description": "50 stars.",
+              "title": "Nested 1",
+              "repo_info": {
+                "archived": false,
+                "language": "Shell",
+                "last_commit": "2022-09-10T00:00:00.000Z",
+                "owner": "user",
+                "repo": "nested-1",
+                "stars": 42479
+              }
+            }
+          ],
+          "description": "300 stars",
+          "title": "Repo B"
+        }
+      ],
+      "title": "First Section"
+    },
+    {
+      "description": "Another valid section.",
+      "items": [
+        {
+          "children": [],
+          "description": "100 stars.",
+          "title": "Repo A",
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2021-07-06T00:00:00.000Z",
+            "owner": "user",
+            "repo": "repo-a",
+            "stars": 41910
+          }
+        },
+        {
+          "children": [],
+          "description": "200 stars.",
+          "title": "Repo C",
+          "repo_info": {
+            "archived": false,
+            "language": "JavaScript",
+            "last_commit": "2022-03-01T00:00:00.000Z",
+            "owner": "user",
+            "repo": "repo-c",
+            "stars": 36672
+          }
+        }
+      ],
+      "title": "Third Section"
+    }
+  ],
+  "metadata": {
+    "last_updated": "2025-01-01T00:00:00.000Z",
+    "original_repository": "example/complex-list",
+    "original_repository_sha": "deadbeef",
+    "enhanced_repository": "enhansome/enhansome-complex",
+    "enhanced_repository_description": "enhanced list",
+    "title": "My Awesome List with stars"
+  }
+}

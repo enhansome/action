@@ -1,0 +1,4920 @@
+{
+  "items": [
+    {
+      "description": "",
+      "items": [],
+      "title": "Container Operations"
+    },
+    {
+      "description": "",
+      "items": [
+        {
+          "children": [],
+          "description": "A CLI and companion app to effortlessly run LLM backends, APIs, frontends, and services with one command. By av.",
+          "title": "LLM Harbor",
+          "repo_info": {
+            "archived": false,
+            "language": "C++",
+            "last_commit": "2023-06-30T00:00:00.000Z",
+            "owner": "av",
+            "repo": "harbor",
+            "stars": 47186
+          }
+        },
+        {
+          "children": [],
+          "description": "A lightweight and fast command line utility for conveniently grouping your docker-compose multiple container services. By alexaandrov.",
+          "title": "Stitchocker",
+          "repo_info": {
+            "archived": false,
+            "language": "Shell",
+            "last_commit": "2021-05-28T00:00:00.000Z",
+            "owner": "alexaandrov",
+            "repo": "stitchocker",
+            "stars": 44949
+          }
+        },
+        {
+          "children": [],
+          "description": "A script to run docker-compose.yml using podman.",
+          "title": "podman-compose",
+          "repo_info": {
+            "archived": false,
+            "language": "TypeScript",
+            "last_commit": "2023-06-25T00:00:00.000Z",
+            "owner": "containers",
+            "repo": "podman-compose",
+            "stars": 41191
+          }
+        },
+        {
+          "children": [],
+          "description": "Dynamically configure applications that require static configuration in docker container. By roquie",
+          "title": "Smalte",
+          "repo_info": {
+            "archived": false,
+            "language": "C++",
+            "last_commit": "2023-03-02T00:00:00.000Z",
+            "owner": "roquie",
+            "repo": "smalte",
+            "stars": 40306
+          }
+        },
+        {
+          "children": [],
+          "description": "A Build Flow Tool for Docker.",
+          "title": "habitus",
+          "repo_info": {
+            "archived": false,
+            "language": "JavaScript",
+            "last_commit": "2022-04-20T00:00:00.000Z",
+            "owner": "cloud66-oss",
+            "repo": "habitus",
+            "stars": 36622
+          }
+        },
+        {
+          "children": [],
+          "description": "Tool for managing multiple Docker containers ( alternative).",
+          "title": "crowdr",
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2023-03-24T00:00:00.000Z",
+            "owner": "polonskiy",
+            "repo": "crowdr",
+            "stars": 35284
+          }
+        },
+        {
+          "children": [],
+          "description": "Visual composer for container based workloads. By corpulent.",
+          "title": "ctk",
+          "repo_info": {
+            "archived": false,
+            "language": "TypeScript",
+            "last_commit": "2023-08-04T00:00:00.000Z",
+            "owner": "ctk-hq",
+            "repo": "ctk",
+            "stars": 27151
+          }
+        },
+        {
+          "children": [],
+          "description": "An opinionated, multi-language, build tool based on Docker and Docker Compose.",
+          "title": "elsy",
+          "repo_info": {
+            "archived": false,
+            "language": "TypeScript",
+            "last_commit": "2023-05-26T00:00:00.000Z",
+            "owner": "cisco",
+            "repo": "elsy",
+            "stars": 22221
+          }
+        },
+        {
+          "children": [],
+          "description": "Go from Docker Compose to Kubernetes.",
+          "title": "kompose",
+          "repo_info": {
+            "archived": false,
+            "language": "Rust",
+            "last_commit": "2021-07-21T00:00:00.000Z",
+            "owner": "kubernetes",
+            "repo": "kompose",
+            "stars": 18895
+          }
+        },
+        {
+          "children": [],
+          "description": "A container run and build engine - runs inside docker.",
+          "title": "plash",
+          "repo_info": {
+            "archived": false,
+            "language": "JavaScript",
+            "last_commit": "2023-07-04T00:00:00.000Z",
+            "owner": "ihucos",
+            "repo": "plash",
+            "stars": 10182
+          }
+        },
+        {
+          "children": [],
+          "description": "Convert docker run commands into docker-compose files.",
+          "title": "Composerize",
+          "repo_info": {
+            "archived": false,
+            "language": "Java",
+            "last_commit": "2023-07-19T00:00:00.000Z",
+            "owner": "magicmark",
+            "repo": "composerize",
+            "stars": 8167
+          }
+        },
+        {
+          "children": [],
+          "description": "Utility to update docker configs and secrets for deploying in a compose file.",
+          "title": "docker-config-update",
+          "repo_info": {
+            "archived": true,
+            "language": "TypeScript",
+            "last_commit": "2022-05-31T00:00:00.000Z",
+            "owner": "sudo-bmitch",
+            "repo": "docker-config-update",
+            "stars": 3581
+          }
+        },
+        {
+          "children": [],
+          "description": "Composable docker orchestration with added scripting support by byrnedo.",
+          "title": "Capitan",
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2021-06-06T00:00:00.000Z",
+            "owner": "byrnedo",
+            "repo": "capitan",
+            "stars": 940
+          }
+        }
+      ],
+      "title": "Container Composition"
+    },
+    {
+      "description": "",
+      "items": [
+        {
+          "children": [],
+          "description": "A common API for metadata about containers, from image and build details to security vulnerabilities. By grafeas.",
+          "title": "Grafeas",
+          "repo_info": {
+            "archived": false,
+            "language": "Rust",
+            "last_commit": "2021-07-11T00:00:00.000Z",
+            "owner": "grafeas",
+            "repo": "grafeas",
+            "stars": 39905
+          }
+        },
+        {
+          "children": [],
+          "description": "Deploy 150+ open-source web apps with one Docker command.",
+          "title": "awesome-stacks",
+          "repo_info": {
+            "archived": false,
+            "language": "Rust",
+            "last_commit": "2022-02-26T00:00:00.000Z",
+            "owner": "ethibox",
+            "repo": "awesome-stacks",
+            "stars": 39675
+          }
+        },
+        {
+          "children": [],
+          "description": "Werf is a CI/CD tool for building Docker images efficiently and deploying them to Kubernetes using GitOps.",
+          "title": "werf",
+          "repo_info": {
+            "archived": false,
+            "language": "Rust",
+            "last_commit": "2022-04-07T00:00:00.000Z",
+            "owner": "werf",
+            "repo": "werf",
+            "stars": 36635
+          }
+        },
+        {
+          "children": [],
+          "description": "Swarm Management is a python application, installed with pip. The application makes it easy to manage a Docker Swarm by configuring a single yaml file describing which stacks to deploy, and which networks, configs or secrets to create.",
+          "title": "SwarmManagement",
+          "repo_info": {
+            "archived": false,
+            "language": "C++",
+            "last_commit": "2022-06-05T00:00:00.000Z",
+            "owner": "hansehe",
+            "repo": "SwarmManagement",
+            "stars": 36576
+          }
+        },
+        {
+          "children": [],
+          "description": "Experimental deployment system for Docker.",
+          "title": "Conduit",
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2022-05-22T00:00:00.000Z",
+            "owner": "ehazlett",
+            "repo": "conduit",
+            "stars": 28590
+          }
+        },
+        {
+          "children": [],
+          "description": "Clocker creates and manages a Docker cloud infrastructure. Clocker supports single-click deployments and runtime management of multi-node applications that run as containers distributed across multiple hosts, on both Docker and Marathon. It leverages Calico and Weave for networking and Brooklyn for application blueprints. By brooklyncentral.",
+          "title": "Clocker",
+          "repo_info": {
+            "archived": false,
+            "language": "Shell",
+            "last_commit": "2023-02-17T00:00:00.000Z",
+            "owner": "brooklyncentral",
+            "repo": "clocker",
+            "stars": 21319
+          }
+        },
+        {
+          "children": [],
+          "description": "Swarm-Ansible bootstraps a production-ready swarm cluster using ansible. Comes with tools to automate CI, help monitoring and traefik pre-configured for SSL certificates and simple-auth. Comes with a private registry and more!.",
+          "title": "swarm-ansible",
+          "repo_info": {
+            "archived": false,
+            "language": "Java",
+            "last_commit": "2022-01-05T00:00:00.000Z",
+            "owner": "LombardiDaniel",
+            "repo": "swarm-ansible",
+            "stars": 19727
+          }
+        },
+        {
+          "children": [],
+          "description": "Translate docker run and commit into Infrastructure as Code templates for AWS, Render.com and DigitalOcean.",
+          "title": "docker-to-iac",
+          "repo_info": {
+            "archived": false,
+            "language": "C++",
+            "last_commit": "2023-08-29T00:00:00.000Z",
+            "owner": "deploystackio",
+            "repo": "docker-to-iac",
+            "stars": 19126
+          }
+        },
+        {
+          "children": [],
+          "description": "Depcon is written in Go and allows you to easily deploy Docker containers to Apache Mesos/Marathon, Amazon ECS and Kubernetes. By ContainX.",
+          "title": "depcon",
+          "repo_info": {
+            "archived": false,
+            "language": "JavaScript",
+            "last_commit": "2021-07-14T00:00:00.000Z",
+            "owner": "ContainX",
+            "repo": "depcon",
+            "stars": 13902
+          }
+        },
+        {
+          "children": [],
+          "description": "Centurion is a mass deployment tool for Docker fleets. It takes containers from a Docker registry and runs them on a fleet of hosts with the correct environment variables, host volume mappings, and port mappings. By newrelic.",
+          "title": "Centurion",
+          "repo_info": {
+            "archived": false,
+            "language": "Java",
+            "last_commit": "2021-05-30T00:00:00.000Z",
+            "owner": "newrelic",
+            "repo": "centurion",
+            "stars": 9947
+          }
+        },
+        {
+          "children": [],
+          "description": "Gitkube is a tool for building and deploying docker images on Kubernetes using . By Hasura.",
+          "title": "gitkube",
+          "repo_info": {
+            "archived": false,
+            "language": "C++",
+            "last_commit": "2021-11-07T00:00:00.000Z",
+            "owner": "hasura",
+            "repo": "gitkube",
+            "stars": 5786
+          }
+        },
+        {
+          "children": [],
+          "description": "A CoreOS VM to build swarm clusters for Dev & Production.",
+          "title": "blackfish"
+        },
+        {
+          "children": [],
+          "description": "BosnD, the boatswain daemon - A dynamic configuration file writer & service reloader for dynamically changing container environments.",
+          "title": "BosnD"
+        }
+      ],
+      "title": "Deployment and Infrastructure"
+    },
+    {
+      "description": "",
+      "items": [
+        {
+          "children": [],
+          "description": "NexClipper is the container monitoring and performance management solution specialized in Docker, Apache Mesos, Marathon, DC/OS, Mesosphere, Kubernetes.",
+          "title": "NexClipper",
+          "repo_info": {
+            "archived": false,
+            "language": "Java",
+            "last_commit": "2022-02-14T00:00:00.000Z",
+            "owner": "NexClipper",
+            "repo": "NexClipper",
+            "stars": 44687
+          }
+        },
+        {
+          "children": [],
+          "description": "Checkmate is an open-source, self-hosted tool designed to track and monitor server hardware, uptime, response times, and incidents in real-time with beautiful visualizations.",
+          "title": "Checkmate",
+          "repo_info": {
+            "archived": false,
+            "language": "JavaScript",
+            "last_commit": "2022-07-29T00:00:00.000Z",
+            "owner": "bluewave-labs",
+            "repo": "checkmate",
+            "stars": 42522
+          }
+        },
+        {
+          "children": [],
+          "description": "Log routing for Docker container logs.",
+          "title": "Logspout",
+          "repo_info": {
+            "archived": false,
+            "language": "Java",
+            "last_commit": "2022-01-25T00:00:00.000Z",
+            "owner": "gliderlabs",
+            "repo": "logspout",
+            "stars": 41707
+          }
+        },
+        {
+          "children": [],
+          "description": "Monitor and restart unhealthy docker containers automatically.",
+          "title": "Autoheal",
+          "repo_info": {
+            "archived": false,
+            "language": "TypeScript",
+            "last_commit": "2022-10-28T00:00:00.000Z",
+            "owner": "willfarrell",
+            "repo": "docker-autoheal",
+            "stars": 41431
+          }
+        },
+        {
+          "children": [],
+          "description": "DLIA is an AI-powered Docker log monitoring agent that uses Large Language Models (LLMs) to intelligently analyze container logs, detect anomalies, and provide contextual insights over time. By zorak1103.",
+          "title": "DLIA",
+          "repo_info": {
+            "archived": false,
+            "language": "Java",
+            "last_commit": "2021-11-26T00:00:00.000Z",
+            "owner": "zorak1103",
+            "repo": "dlia",
+            "stars": 37767
+          }
+        },
+        {
+          "children": [],
+          "description": "Zabbix module that provides discovery of running containers, CPU/memory/blk IO/net container metrics. Systemd Docker and LXC execution driver is also supported. It's a dynamically linked shared object library, so its performance is (~10x) better, than any script solution.",
+          "title": "Zabbix Docker module",
+          "repo_info": {
+            "archived": true,
+            "language": "C++",
+            "last_commit": "2021-12-17T00:00:00.000Z",
+            "owner": "monitoringartist",
+            "repo": "Zabbix-Docker-Monitoring",
+            "stars": 35746
+          }
+        },
+        {
+          "children": [],
+          "description": "Monitor docker containers resources usage or status and execute docker commands or inside containers. [decryptus][decryptus].",
+          "title": "monit-docker",
+          "repo_info": {
+            "archived": false,
+            "language": "JavaScript",
+            "last_commit": "2023-11-01T00:00:00.000Z",
+            "owner": "decryptus",
+            "repo": "monit-docker",
+            "stars": 35062
+          }
+        },
+        {
+          "children": [],
+          "description": "A cross-platform curses-based system monitoring tool written in Python.",
+          "title": "Glances",
+          "repo_info": {
+            "archived": false,
+            "language": "C++",
+            "last_commit": "2021-11-27T00:00:00.000Z",
+            "owner": "nicolargo",
+            "repo": "glances",
+            "stars": 34766
+          }
+        },
+        {
+          "children": [],
+          "description": "Docker hosts and containers monitoring with Prometheus, Grafana, cAdvisor, NodeExporter and AlertManager.",
+          "title": "dockprom",
+          "repo_info": {
+            "archived": false,
+            "language": "Java",
+            "last_commit": "2022-06-04T00:00:00.000Z",
+            "owner": "stefanprodan",
+            "repo": "dockprom",
+            "stars": 30577
+          }
+        },
+        {
+          "children": [],
+          "description": "Analyzes resource usage and performance characteristics of running containers.",
+          "title": "cAdvisor",
+          "repo_info": {
+            "archived": false,
+            "language": "Go",
+            "last_commit": "2022-09-16T00:00:00.000Z",
+            "owner": "google",
+            "repo": "cadvisor",
+            "stars": 30473
+          }
+        },
+        {
+          "children": [],
+          "description": "An open-source real-time monitoring system with custom-monitor and agentless.",
+          "title": "HertzBeat",
+          "repo_info": {
+            "archived": false,
+            "language": "JavaScript",
+            "last_commit": "2021-05-15T00:00:00.000Z",
+            "owner": "dromara",
+            "repo": "hertzbeat",
+            "stars": 28962
+          }
+        },
+        {
+          "children": [],
+          "description": "Open source live application debugger like Chrome DevTools for your backend. Collect traces and generate logs on-demand without stopping & redeploying your applications.",
+          "title": "Sidekick",
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2021-05-27T00:00:00.000Z",
+            "owner": "runsidekick",
+            "repo": "sidekick",
+            "stars": 25950
+          }
+        },
+        {
+          "children": [],
+          "description": "Monitor containers automatically using zabbix LLD feature.",
+          "title": "Zabbix Docker",
+          "repo_info": {
+            "archived": false,
+            "language": "JavaScript",
+            "last_commit": "2022-02-09T00:00:00.000Z",
+            "owner": "gomex",
+            "repo": "docker-zabbix",
+            "stars": 25692
+          }
+        },
+        {
+          "children": [],
+          "description": "Reconfigures Prometheus when a new service is updated or deployed automatically.",
+          "title": "Docker-Flow-Monitor",
+          "repo_info": {
+            "archived": false,
+            "language": "C++",
+            "last_commit": "2023-11-07T00:00:00.000Z",
+            "owner": "docker-flow",
+            "repo": "docker-flow-monitor",
+            "stars": 25056
+          }
+        },
+        {
+          "children": [],
+          "description": "InfluxDB Time series DB in combination with Grafana and cAdvisor.",
+          "title": "InfluxDB, cAdvisor, Grafana",
+          "repo_info": {
+            "archived": false,
+            "language": "Go",
+            "last_commit": "2021-04-24T00:00:00.000Z",
+            "owner": "vegasbrianc",
+            "repo": "docker-monitoring",
+            "stars": 18983
+          }
+        },
+        {
+          "children": [],
+          "description": "Monitors a Docker Swarm and sends Pushover alerts when it finds a container with no healthy service task running.",
+          "title": "SwarmAlert",
+          "repo_info": {
+            "archived": true,
+            "language": "Rust",
+            "last_commit": "2022-02-06T00:00:00.000Z",
+            "owner": "gpulido",
+            "repo": "SwarmAlert",
+            "stars": 11695
+          }
+        },
+        {
+          "children": [],
+          "description": "Monitor and send alerts based on docker container resource usage/statistics.",
+          "title": "Docker-Alertd",
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2022-05-12T00:00:00.000Z",
+            "owner": "deltaskelta",
+            "repo": "docker-alertd",
+            "stars": 9600
+          }
+        },
+        {
+          "children": [],
+          "description": "Docker host and container monitoring, logging and alerting out of the box using cAdvisor, Prometheus, Grafana for monitoring, Elasticsearch, Kibana and Logstash for logging and elastalert and Alertmanager for alerting. Set up in 5 Minutes. Secure mode for production use with built-in Automated Nginx Reverse Proxy (jwilder's).",
+          "title": "Out-of-the-box Host/Container Monitoring/Logging/Alerting Stack",
+          "repo_info": {
+            "archived": false,
+            "language": "JavaScript",
+            "last_commit": "2022-09-17T00:00:00.000Z",
+            "owner": "uschtwill",
+            "repo": "docker_monitoring_logging_alerting",
+            "stars": 5472
+          }
+        },
+        {
+          "children": [],
+          "description": "Doku is a simple web-based application that allows you to monitor Docker disk usage. amerkurev.",
+          "title": "Doku",
+          "repo_info": {
+            "archived": false,
+            "language": "Ruby",
+            "last_commit": "2022-05-24T00:00:00.000Z",
+            "owner": "amerkurev",
+            "repo": "doku",
+            "stars": 2588
+          }
+        },
+        {
+          "children": [],
+          "description": "I/O monitoring for containers on processlevel.",
+          "title": "DockProc"
+        },
+        {
+          "children": [],
+          "description": "Monitor container logs in real-time with a browser or mobile device. amir20.",
+          "title": "Dozzle"
+        },
+        {
+          "children": [],
+          "description": ":heavy_dollar_sign: Monitor containerized applications without installing agents or modifying your Run commands.",
+          "title": "Dynatrace"
+        },
+        {
+          "children": [],
+          "description": "A template for your Docker, Grafana and Prometheus stack vegasbrianc.",
+          "title": "Grafana Docker Dashboard Template"
+        }
+      ],
+      "title": "Monitoring"
+    },
+    {
+      "description": "",
+      "items": [
+        {
+          "children": [],
+          "description": "Software-Defined Networking for Linux Containers, Pipework works with \"plain\" LXC containers, and with the awesome Docker. By jpetazzo.",
+          "title": "Pipework",
+          "repo_info": {
+            "archived": false,
+            "language": "Shell",
+            "last_commit": "2023-05-28T00:00:00.000Z",
+            "owner": "jpetazzo",
+            "repo": "pipework",
+            "stars": 48219
+          }
+        },
+        {
+          "children": [],
+          "description": "The netshoot container has a powerful set of networking tools to help troubleshoot Docker networking issues.",
+          "title": "netshoot",
+          "repo_info": {
+            "archived": false,
+            "language": "Shell",
+            "last_commit": "2023-06-27T00:00:00.000Z",
+            "owner": "nicolaka",
+            "repo": "netshoot",
+            "stars": 48189
+          }
+        },
+        {
+          "children": [],
+          "description": "High performance container overlay networks on Linux. Enabling RDMA (on both InfiniBand and RoCE) and accelerating TCP to bare metal performance. By Microsoft.",
+          "title": "Freeflow",
+          "repo_info": {
+            "archived": false,
+            "language": "Java",
+            "last_commit": "2023-12-06T00:00:00.000Z",
+            "owner": "Microsoft",
+            "repo": "Freeflow",
+            "stars": 47027
+          }
+        },
+        {
+          "children": [],
+          "description": "Flannel is a virtual network that gives a subnet to each host for use with container runtimes. By coreos.",
+          "title": "Flannel",
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2023-09-20T00:00:00.000Z",
+            "owner": "coreos",
+            "repo": "flannel",
+            "stars": 20104
+          }
+        },
+        {
+          "children": [],
+          "description": "All in one IP Toolbox. Easy to check all your IPs, IP geolocation, check for DNS leaks, examine WebRTC connections, speed test, ping test, MTR test, check website availability, whois search and more. By jason5ng32.",
+          "title": "MyIP",
+          "repo_info": {
+            "archived": false,
+            "language": "C++",
+            "last_commit": "2021-05-31T00:00:00.000Z",
+            "owner": "jason5ng32",
+            "repo": "MyIP",
+            "stars": 7946
+          }
+        },
+        {
+          "children": [],
+          "description": null,
+          "title": "Calico - Calico is a pure layer 3 virtual network that allows containers over multiple docker-hosts to talk to each other."
+        }
+      ],
+      "title": "Networking"
+    },
+    {
+      "description": "",
+      "items": [
+        {
+          "children": [],
+          "description": "An open source project that provides a complete platform for operating Docker in production.",
+          "title": "Rancher",
+          "repo_info": {
+            "archived": false,
+            "language": "Rust",
+            "last_commit": "2023-12-08T00:00:00.000Z",
+            "owner": "rancher",
+            "repo": "rancher",
+            "stars": 49025
+          }
+        },
+        {
+          "children": [],
+          "description": "CloudSlang is a workflow engine to create Docker process automation.",
+          "title": "CloudSlang",
+          "repo_info": {
+            "archived": false,
+            "language": "JavaScript",
+            "last_commit": "2022-07-09T00:00:00.000Z",
+            "owner": "CloudSlang",
+            "repo": "cloud-slang",
+            "stars": 48542
+          }
+        },
+        {
+          "children": [],
+          "description": "Control plane based on docker built-in swarm Dataman-Cloud.",
+          "title": "Crane",
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2023-07-16T00:00:00.000Z",
+            "owner": "Dataman-Cloud",
+            "repo": "crane",
+            "stars": 48170
+          }
+        },
+        {
+          "children": [],
+          "description": "Haven is a simplified container management platform that integrates container, application, cluster, image, and registry managements. By codeabovelab.",
+          "title": "Haven",
+          "repo_info": {
+            "archived": false,
+            "language": "Ruby",
+            "last_commit": "2022-12-20T00:00:00.000Z",
+            "owner": "codeabovelab",
+            "repo": "haven-platform",
+            "stars": 47378
+          }
+        },
+        {
+          "children": [],
+          "description": "Docker Flow Swarm Listener project is to listen to Docker Swarm events and send requests when a change occurs. By docker-flow.",
+          "title": "Docker Flow Swarm Listener",
+          "repo_info": {
+            "archived": false,
+            "language": "Rust",
+            "last_commit": "2023-07-21T00:00:00.000Z",
+            "owner": "docker-flow",
+            "repo": "docker-flow-swarm-listener",
+            "stars": 45165
+          }
+        },
+        {
+          "children": [],
+          "description": "Run Ansible from a Linux container. By Peco602.",
+          "title": "Ansible Linux Docker",
+          "repo_info": {
+            "archived": false,
+            "language": "JavaScript",
+            "last_commit": "2023-11-11T00:00:00.000Z",
+            "owner": "Peco602",
+            "repo": "ansible-linux-docker",
+            "stars": 42052
+          }
+        },
+        {
+          "children": [],
+          "description": "RedHerd is a collaborative and serverless framework for orchestrating a geographically distributed group of assets capable of simulating complex offensive cyberspace operations. By RedHerdProject.",
+          "title": "RedHerd Framework",
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2023-03-18T00:00:00.000Z",
+            "owner": "redherd-project",
+            "repo": "redherd-framework",
+            "stars": 40290
+          }
+        },
+        {
+          "children": [],
+          "description": "Create jobs on a time-based schedule on Swarm by crazy-max.",
+          "title": "Swarm-cronjob",
+          "repo_info": {
+            "archived": false,
+            "language": "Go",
+            "last_commit": "2023-05-14T00:00:00.000Z",
+            "owner": "crazy-max",
+            "repo": "swarm-cronjob",
+            "stars": 35233
+          }
+        },
+        {
+          "children": [],
+          "description": "An automation platform with a plugin architecture that allows you to easily create and share services.",
+          "title": "athena",
+          "repo_info": {
+            "archived": false,
+            "language": "Shell",
+            "last_commit": "2022-06-22T00:00:00.000Z",
+            "owner": "athena-oss",
+            "repo": "athena",
+            "stars": 33559
+          }
+        },
+        {
+          "children": [],
+          "description": "Open source orchestration system for Docker containers by Google.",
+          "title": "Kubernetes",
+          "repo_info": {
+            "archived": false,
+            "language": "Java",
+            "last_commit": "2021-05-10T00:00:00.000Z",
+            "owner": "kubernetes",
+            "repo": "kubernetes",
+            "stars": 30967
+          }
+        },
+        {
+          "children": [],
+          "description": "Docker container orchestration to enable the testing of long-running cluster deployments.",
+          "title": "clusterdock",
+          "repo_info": {
+            "archived": false,
+            "language": "Shell",
+            "last_commit": "2022-01-03T00:00:00.000Z",
+            "owner": "clusterdock",
+            "repo": "clusterdock",
+            "stars": 24729
+          }
+        },
+        {
+          "children": [],
+          "description": "Zero downtime deployment for Docker Compose services.",
+          "title": "docker rollout",
+          "repo_info": {
+            "archived": false,
+            "language": "Shell",
+            "last_commit": "2023-06-27T00:00:00.000Z",
+            "owner": "Wowu",
+            "repo": "docker-rollout",
+            "stars": 20189
+          }
+        },
+        {
+          "children": [],
+          "description": "Resource/Job scheduler for containers, VM's and physical hosts apache.",
+          "title": "Mesos",
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2021-06-12T00:00:00.000Z",
+            "owner": "apache",
+            "repo": "mesos",
+            "stars": 17934
+          }
+        },
+        {
+          "children": [],
+          "description": "Discover, optimize and control your hybrid IT. By ManageIQ.",
+          "title": "ManageIQ",
+          "repo_info": {
+            "archived": false,
+            "language": "Shell",
+            "last_commit": "2023-07-17T00:00:00.000Z",
+            "owner": "ManageIQ",
+            "repo": "manageiq",
+            "stars": 9169
+          }
+        },
+        {
+          "children": [],
+          "description": "Easily deploy applications at any scale. A Distributed, Highly Available, Datacenter-Aware Scheduler.",
+          "title": "Nomad",
+          "repo_info": {
+            "archived": false,
+            "language": "Rust",
+            "last_commit": "2021-06-01T00:00:00.000Z",
+            "owner": "hashicorp",
+            "repo": "nomad",
+            "stars": 7945
+          }
+        },
+        {
+          "children": [],
+          "description": "A Docker orchestration tool designed to manage massive scale distributed clusters.",
+          "title": "Nebula"
+        }
+      ],
+      "title": "Orchestration"
+    },
+    {
+      "description": "",
+      "items": [
+        {
+          "children": [],
+          "description": "Docker-compose SSH wrapper: a very poor man PaaS, exposing the docker-compose and custom-container commands defined in container labels.",
+          "title": "Dcw",
+          "repo_info": {
+            "archived": false,
+            "language": "C++",
+            "last_commit": "2021-06-30T00:00:00.000Z",
+            "owner": "pbertera",
+            "repo": "dcw",
+            "stars": 44916
+          }
+        },
+        {
+          "children": [],
+          "description": "Open source PaaS for Kubernetes that adds a developer-friendly layer to any Kubernetes cluster, making it easy to deploy and manage applications. Fork of Deis Workflow.",
+          "title": "Hephy Workflow",
+          "repo_info": {
+            "archived": false,
+            "language": "Rust",
+            "last_commit": "2023-04-02T00:00:00.000Z",
+            "owner": "teamhephy",
+            "repo": "workflow",
+            "stars": 32275
+          }
+        },
+        {
+          "children": [],
+          "description": "A self-hosted tool that allows simple one-command deployments using Docker.",
+          "title": "Exoframe",
+          "repo_info": {
+            "archived": true,
+            "language": null,
+            "last_commit": "2022-06-11T00:00:00.000Z",
+            "owner": "exoframejs",
+            "repo": "exoframe",
+            "stars": 18570
+          }
+        },
+        {
+          "children": [],
+          "description": "[Previously known as CaptainDuckDuck] Automated Scalable Webserver Package (automated Docker+nginx) - Heroku on Steroids.",
+          "title": "caprover",
+          "repo_info": {
+            "archived": false,
+            "language": "Shell",
+            "last_commit": "2021-04-28T00:00:00.000Z",
+            "owner": "caprover",
+            "repo": "caprover",
+            "stars": 17979
+          }
+        },
+        {
+          "children": [],
+          "description": "Docker powered mini-Heroku that helps you build and manage the lifecycle of applications (originally by progrium).",
+          "title": "Dokku",
+          "repo_info": {
+            "archived": false,
+            "language": "Shell",
+            "last_commit": "2021-11-04T00:00:00.000Z",
+            "owner": "dokku",
+            "repo": "dokku",
+            "stars": 16789
+          }
+        },
+        {
+          "children": [],
+          "description": "Toolset for managing container workloads on remote servers.",
+          "title": "Krane",
+          "repo_info": {
+            "archived": false,
+            "language": "Go",
+            "last_commit": "2023-07-13T00:00:00.000Z",
+            "owner": "krane",
+            "repo": "krane",
+            "stars": 13173
+          }
+        },
+        {
+          "children": [],
+          "description": "A PaaS built on top of Amazon EC2 Container Service (ECS).",
+          "title": "Empire",
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2022-02-07T00:00:00.000Z",
+            "owner": "remind101",
+            "repo": "empire",
+            "stars": 7694
+          }
+        },
+        {
+          "children": [],
+          "description": "Convox Rack is open source PaaS built on top of expert infrastructure automation and devops best practices.",
+          "title": "Convox Rack",
+          "repo_info": {
+            "archived": false,
+            "language": "Rust",
+            "last_commit": "2022-10-24T00:00:00.000Z",
+            "owner": "convox",
+            "repo": "rack",
+            "stars": 7435
+          }
+        },
+        {
+          "children": [],
+          "description": ":heavy_dollar_sign: An application development platform that creates local environments that can then be deployed and scaled in the cloud.",
+          "title": "Nanobox",
+          "repo_info": {
+            "archived": false,
+            "language": "JavaScript",
+            "last_commit": "2022-12-26T00:00:00.000Z",
+            "owner": "nanobox-io",
+            "repo": "nanobox",
+            "stars": 2372
+          }
+        },
+        {
+          "children": [],
+          "description": "Tsuru is an extensible and open source Platform as a Service software.",
+          "title": "Tsuru",
+          "repo_info": {
+            "archived": false,
+            "language": "Shell",
+            "last_commit": "2023-02-07T00:00:00.000Z",
+            "owner": "tsuru",
+            "repo": "tsuru",
+            "stars": 329
+          }
+        },
+        {
+          "children": [],
+          "description": null,
+          "title": "OpenShift - An open source PaaS built on Kubernetes and optimized for Dockerized app development and deployment by Red Hat"
+        }
+      ],
+      "title": "PaaS"
+    },
+    {
+      "description": "",
+      "items": [
+        {
+          "children": [],
+          "description": "Reconfigures proxy every time a new service is deployed, or when a service is scaled. By docker-flow.",
+          "title": "docker-flow-proxy",
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2023-09-10T00:00:00.000Z",
+            "owner": "docker-flow",
+            "repo": "docker-flow-proxy",
+            "stars": 49114
+          }
+        },
+        {
+          "children": [],
+          "description": "The easiest using, powerful and beautiful OpenResty Manager(Nginx Enhanced Version), open source alternative to OpenResty Edge. By Safe3.",
+          "title": "OpenResty Manager",
+          "repo_info": {
+            "archived": false,
+            "language": "Ruby",
+            "last_commit": "2021-07-18T00:00:00.000Z",
+            "owner": "Safe3",
+            "repo": "openresty-manager",
+            "stars": 47898
+          }
+        },
+        {
+          "children": [],
+          "description": "Open-source and next-gen Web Application Firewall (WAF). By Bunkerity.",
+          "title": "BunkerWeb",
+          "repo_info": {
+            "archived": false,
+            "language": "Rust",
+            "last_commit": "2021-12-08T00:00:00.000Z",
+            "owner": "bunkerity",
+            "repo": "bunkerweb",
+            "stars": 45755
+          }
+        },
+        {
+          "children": [],
+          "description": "Update a remote dnsmasq server with Docker container hostnames.",
+          "title": "Docker Dnsmasq Updater",
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2021-08-05T00:00:00.000Z",
+            "owner": "moonbuggy",
+            "repo": "docker-dnsmasq-updater",
+            "stars": 44880
+          }
+        },
+        {
+          "children": [],
+          "description": "Free domain(nsl.sh) provider for Docker containers with automatic HTTPS routing. Uses Wireguard VPN to securely route subdomain requests across networks. Ideal for self-hosted NAS and cloud deployments. By Yundera.",
+          "title": "mesh-router",
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2022-06-01T00:00:00.000Z",
+            "owner": "Yundera",
+            "repo": "mesh-router",
+            "stars": 38580
+          }
+        },
+        {
+          "children": [],
+          "description": "A fast, modern, zero-conf load balancing HTTP(S) router for deploying microservices managed by consul. By magiconair (Frank Schroeder).",
+          "title": "fabio",
+          "repo_info": {
+            "archived": false,
+            "language": "Java",
+            "last_commit": "2023-04-10T00:00:00.000Z",
+            "owner": "fabiolb",
+            "repo": "fabio",
+            "stars": 26267
+          }
+        },
+        {
+          "children": [],
+          "description": "A lightweight companion container for the nginx-proxy. It allow the creation/renewal of Let's Encrypt certificates automatically. By JrCs.",
+          "title": "Let's Encrypt Nginx-proxy Companion",
+          "repo_info": {
+            "archived": false,
+            "language": "Java",
+            "last_commit": "2023-08-08T00:00:00.000Z",
+            "owner": "nginx-proxy",
+            "repo": "docker-letsencrypt-nginx-proxy-companion",
+            "stars": 26147
+          }
+        },
+        {
+          "children": [],
+          "description": "A «zero config» service name based router for docker swarm mode with a fresh and more secure approach. By flavioaiello.",
+          "title": "Swarm Router",
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2022-11-18T00:00:00.000Z",
+            "owner": "flavioaiello",
+            "repo": "swarm-router",
+            "stars": 19410
+          }
+        },
+        {
+          "children": [],
+          "description": "Docker upstreams module for Caddy, configured with container labels. By invzhi.",
+          "title": "caddy-docker-upstreams",
+          "repo_info": {
+            "archived": false,
+            "language": "Ruby",
+            "last_commit": "2022-12-30T00:00:00.000Z",
+            "owner": "invzhi",
+            "repo": "caddy-docker-upstreams",
+            "stars": 13368
+          }
+        },
+        {
+          "children": [],
+          "description": "Caddy-based reverse proxy, configured with service or container labels. By lucaslorentz.",
+          "title": "caddy-docker-proxy",
+          "repo_info": {
+            "archived": false,
+            "language": "JavaScript",
+            "last_commit": "2021-05-15T00:00:00.000Z",
+            "owner": "lucaslorentz",
+            "repo": "caddy-docker-proxy",
+            "stars": 12962
+          }
+        },
+        {
+          "children": [],
+          "description": "A beautiful web interface for proxying web based services with SSL. By jc21.",
+          "title": "Nginx Proxy Manager",
+          "repo_info": {
+            "archived": false,
+            "language": "Ruby",
+            "last_commit": "2021-09-26T00:00:00.000Z",
+            "owner": "jc21",
+            "repo": "nginx-proxy-manager",
+            "stars": 1828
+          }
+        },
+        {
+          "children": [],
+          "description": "Automated reverse proxy and load-balancer for Docker, Mesos, Consul, Etcd... By EmileVauge.",
+          "title": "Træfɪk",
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2022-09-19T00:00:00.000Z",
+            "owner": "containous",
+            "repo": "traefik",
+            "stars": 470
+          }
+        },
+        {
+          "children": [],
+          "description": null,
+          "title": "nginx-proxy - Automated nginx proxy for Docker containers using docker-gen by jwilder"
+        }
+      ],
+      "title": "Reverse Proxy"
+    },
+    {
+      "description": "",
+      "items": [
+        {
+          "children": [],
+          "description": "LXC binary written in Rust.",
+          "title": "rlxc",
+          "repo_info": {
+            "archived": false,
+            "language": "TypeScript",
+            "last_commit": "2023-10-03T00:00:00.000Z",
+            "owner": "brauner",
+            "repo": "rlxc",
+            "stars": 45091
+          }
+        },
+        {
+          "children": [],
+          "description": "Open Container Initiative-based implementation of Kubernetes Container Runtime Interface by cri-o.",
+          "title": "cri-o",
+          "repo_info": {
+            "archived": false,
+            "language": "Go",
+            "last_commit": "2021-05-24T00:00:00.000Z",
+            "owner": "cri-o",
+            "repo": "cri-o",
+            "stars": 12953
+          }
+        },
+        {
+          "children": [],
+          "description": "LXC - Linux Containers.",
+          "title": "lxc",
+          "repo_info": {
+            "archived": false,
+            "language": "Rust",
+            "last_commit": "2023-01-02T00:00:00.000Z",
+            "owner": "lxc",
+            "repo": "lxc",
+            "stars": 9365
+          }
+        },
+        {
+          "children": [],
+          "description": "Libpod is a library used to create container pods. Home of Podman.",
+          "title": "podman",
+          "repo_info": {
+            "archived": false,
+            "language": "Rust",
+            "last_commit": "2023-05-22T00:00:00.000Z",
+            "owner": "containers",
+            "repo": "libpod",
+            "stars": 7225
+          }
+        },
+        {
+          "children": [],
+          "description": "Oci-runtime-tool is a collection of tools for working with the OCI runtime specification.",
+          "title": "runtime-tools",
+          "repo_info": {
+            "archived": false,
+            "language": "Java",
+            "last_commit": "2022-08-23T00:00:00.000Z",
+            "owner": "opencontainers",
+            "repo": "runtime-tools",
+            "stars": 5497
+          }
+        }
+      ],
+      "title": "Runtime"
+    },
+    {
+      "description": "",
+      "items": [
+        {
+          "children": [],
+          "description": "Script that checks for dozens of common best-practices around deploying Docker containers in production. By docker.",
+          "title": "docker-bench-security",
+          "repo_info": {
+            "archived": false,
+            "language": "TypeScript",
+            "last_commit": "2023-12-22T00:00:00.000Z",
+            "owner": "docker",
+            "repo": "docker-bench-security",
+            "stars": 49011
+          }
+        },
+        {
+          "children": [],
+          "description": "An infrastructure-as-code scanning tool, find security vulnerabilities, compliance issues, and infrastructure misconfigurations early in the development cycle. Can be extended for additional policies. By Checkmarx.",
+          "title": "KICS",
+          "repo_info": {
+            "archived": false,
+            "language": "Go",
+            "last_commit": "2022-05-29T00:00:00.000Z",
+            "owner": "checkmarx",
+            "repo": "kics",
+            "stars": 48583
+          }
+        },
+        {
+          "children": [],
+          "description": "Aqua Security's open source simple and comprehensive vulnerability scanner for containers (suitable for CI).",
+          "title": "Trivy",
+          "repo_info": {
+            "archived": false,
+            "language": "Java",
+            "last_commit": "2023-09-27T00:00:00.000Z",
+            "owner": "aquasecurity",
+            "repo": "trivy",
+            "stars": 46097
+          }
+        },
+        {
+          "children": [],
+          "description": "A server and a client for running and interacting with trusted collections. By TUF.",
+          "title": "notary",
+          "repo_info": {
+            "archived": false,
+            "language": "Ruby",
+            "last_commit": "2022-02-03T00:00:00.000Z",
+            "owner": "theupdateframework",
+            "repo": "notary",
+            "stars": 40698
+          }
+        },
+        {
+          "children": [],
+          "description": "Static analysis for infrastructure as code manifests (Terraform, Kubernetes, Cloudformation, Helm, Dockerfile, Kustomize) find security misconfiguration and fix them. By bridgecrew.",
+          "title": "Checkov",
+          "repo_info": {
+            "archived": true,
+            "language": "JavaScript",
+            "last_commit": "2023-12-01T00:00:00.000Z",
+            "owner": "bridgecrewio",
+            "repo": "checkov",
+            "stars": 40032
+          }
+        },
+        {
+          "children": [],
+          "description": "Clair is an open source project for the static analysis of vulnerabilities in appc and docker containers. By coreos.",
+          "title": "Clair",
+          "repo_info": {
+            "archived": false,
+            "language": "C++",
+            "last_commit": "2022-10-23T00:00:00.000Z",
+            "owner": "quay",
+            "repo": "clair",
+            "stars": 39436
+          }
+        },
+        {
+          "children": [],
+          "description": "Extracts network dependencies from Docker Compose, Kubernetes manifests, Helm charts, and other config files to generate Kubernetes NetworkPolicies with evidence tracing. By dormstern.",
+          "title": "segspec",
+          "repo_info": {
+            "archived": true,
+            "language": "TypeScript",
+            "last_commit": "2023-02-15T00:00:00.000Z",
+            "owner": "dormstern",
+            "repo": "segspec",
+            "stars": 39321
+          }
+        },
+        {
+          "children": [],
+          "description": "Restricts outbound network access during Docker builds to prevent supply chain attacks, working as a drop-in BuildKit remote driver for Docker Buildx, with ready-to-use GitHub Actions.",
+          "title": "buildcage",
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2021-11-29T00:00:00.000Z",
+            "owner": "dash14",
+            "repo": "buildcage",
+            "stars": 36764
+          }
+        },
+        {
+          "children": [],
+          "description": "A tool to ensure reproducible builds by pinning dependencies inside your Dockerfiles SongStitch.",
+          "title": "Anchor",
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2023-01-07T00:00:00.000Z",
+            "owner": "SongStitch",
+            "repo": "anchor",
+            "stars": 36360
+          }
+        },
+        {
+          "children": [],
+          "description": "CetusGuard is a tool that protects the Docker daemon socket by filtering calls to its API endpoints.",
+          "title": "CetusGuard",
+          "repo_info": {
+            "archived": false,
+            "language": "Ruby",
+            "last_commit": "2021-06-08T00:00:00.000Z",
+            "owner": "hectorm",
+            "repo": "cetusguard",
+            "stars": 34938
+          }
+        },
+        {
+          "children": [],
+          "description": "CLI tool and library for generating a Software Bill of Materials (SBOM) from container images and filesystems.",
+          "title": "Syft",
+          "repo_info": {
+            "archived": false,
+            "language": "Java",
+            "last_commit": "2021-06-19T00:00:00.000Z",
+            "owner": "anchore",
+            "repo": "syft",
+            "stars": 33927
+          }
+        },
+        {
+          "children": [],
+          "description": "SSL-enabled Damn Vulnerable Web App to test Web Application Firewalls. By Peco602.",
+          "title": "dvwassl",
+          "repo_info": {
+            "archived": false,
+            "language": "C++",
+            "last_commit": "2021-12-07T00:00:00.000Z",
+            "owner": "Peco602",
+            "repo": "dvwassl",
+            "stars": 33756
+          }
+        },
+        {
+          "children": [],
+          "description": "OpenSCAP provides oscap-docker tool which is used to scan Docker containers and images. By OpenSCAP.",
+          "title": "oscap-docker",
+          "repo_info": {
+            "archived": false,
+            "language": "Shell",
+            "last_commit": "2021-09-25T00:00:00.000Z",
+            "owner": "OpenSCAP",
+            "repo": "openscap",
+            "stars": 26829
+          }
+        },
+        {
+          "children": [],
+          "description": "AppArmor profile generator for Docker containers.",
+          "title": "bane",
+          "repo_info": {
+            "archived": false,
+            "language": "Java",
+            "last_commit": "2022-06-14T00:00:00.000Z",
+            "owner": "genuinetools",
+            "repo": "bane",
+            "stars": 25567
+          }
+        },
+        {
+          "children": [],
+          "description": "Powerful runtime vulnerability scanner for kubernetes, virtual machines and serverless. By deepfence.",
+          "title": "Deepfence Threat Mapper",
+          "repo_info": {
+            "archived": false,
+            "language": "TypeScript",
+            "last_commit": "2023-11-02T00:00:00.000Z",
+            "owner": "deepfence",
+            "repo": "ThreatMapper",
+            "stars": 22061
+          }
+        },
+        {
+          "children": [],
+          "description": "A cli-plugin for docker to automatically manage image digests by tracking them in a separate Lockfile. By safe-waters.",
+          "title": "docker-lock",
+          "repo_info": {
+            "archived": false,
+            "language": "Java",
+            "last_commit": "2022-10-22T00:00:00.000Z",
+            "owner": "safe-waters",
+            "repo": "docker-lock",
+            "stars": 21437
+          }
+        },
+        {
+          "children": [],
+          "description": "Dagda is a tool to perform static analysis of known vulnerabilities, trojans, viruses, malware & other malicious threats in docker images/containers and to monitor the docker daemon and running docker containers for detecting anomalous activities. By eliasgranderubio.",
+          "title": "Dagda",
+          "repo_info": {
+            "archived": false,
+            "language": "C++",
+            "last_commit": "2021-11-17T00:00:00.000Z",
+            "owner": "eliasgranderubio",
+            "repo": "dagda",
+            "stars": 17776
+          }
+        },
+        {
+          "children": [],
+          "description": "Aggregates 36 free threat intelligence feeds into 120k+ malicious IPs for CrowdSec bouncers, providing 10-20x more blocks than default lists. By wolffcatskyy.",
+          "title": "crowdsec-blocklist-import",
+          "repo_info": {
+            "archived": false,
+            "language": "TypeScript",
+            "last_commit": "2023-07-05T00:00:00.000Z",
+            "owner": "wolffcatskyy",
+            "repo": "crowdsec-blocklist-import",
+            "stars": 15181
+          }
+        },
+        {
+          "children": [],
+          "description": "Sysdig Falco is an open source container security monitor. It can monitor application, container, host, and network activity and alert on unauthorized activity.",
+          "title": "Sysdig Falco",
+          "repo_info": {
+            "archived": true,
+            "language": "Shell",
+            "last_commit": "2023-07-27T00:00:00.000Z",
+            "owner": "falcosecurity",
+            "repo": "falco",
+            "stars": 13159
+          }
+        },
+        {
+          "children": [],
+          "description": "A tool to help forensicate offline docker acquisitions.",
+          "title": "docker-explorer",
+          "repo_info": {
+            "archived": false,
+            "language": "C++",
+            "last_commit": "2021-10-18T00:00:00.000Z",
+            "owner": "google",
+            "repo": "docker-explorer",
+            "stars": 7806
+          }
+        },
+        {
+          "children": [],
+          "description": "This InSpec compliance profile implement the CIS Docker 1.12.0 Benchmark in an automated way to provide security best-practice tests around Docker daemon and containers in a production environment. By dev-sec.",
+          "title": "CIS Docker Benchmark",
+          "repo_info": {
+            "archived": false,
+            "language": "JavaScript",
+            "last_commit": "2021-07-04T00:00:00.000Z",
+            "owner": "dev-sec",
+            "repo": "cis-docker-benchmark",
+            "stars": 4912
+          }
+        },
+        {
+          "children": [],
+          "description": ":heavy_dollar_sign: Analyze images for CVE vulnerabilities and against custom security policies.",
+          "title": "Anchor Enterprise"
+        },
+        {
+          "children": [],
+          "description": ":heavy_dollar_sign: Securing container-based applications from Dev to Production on any platform.",
+          "title": "Aqua Security"
+        },
+        {
+          "children": [],
+          "description": ":heavy_dollar_sign: Full life cycle Cloud Native Workload Protection platform for kubernetes, virtual machines and serverless. By deepfence.",
+          "title": "Deepfence Enterprise"
+        },
+        {
+          "children": [],
+          "description": ":heavy_dollar_sign: (Previously Twistlock Security Suite) detects vulnerabilities, hardens container images, and enforces security policies across the lifecycle of applications.",
+          "title": "Prisma Cloud"
+        },
+        {
+          "children": [],
+          "description": ":heavy_dollar_sign: Sysdig Secure addresses run-time security through behavioral monitoring and defense, and provides deep forensics based on open source Sysdig for incident response.",
+          "title": "Sysdig Secure"
+        },
+        {
+          "children": [],
+          "description": ":heavy_dollar_sign: Trend Micro DeepSecurity offers runtime protection for container workloads and hosts as well as preruntime scanning of images to identify vulnerabilities, malware and content such as hardcoded secrets.",
+          "title": "Trend Micro DeepSecurity"
+        }
+      ],
+      "title": "Security"
+    },
+    {
+      "description": "",
+      "items": [
+        {
+          "children": [],
+          "description": "by progrium",
+          "title": "docker-consul",
+          "repo_info": {
+            "archived": false,
+            "language": "Java",
+            "last_commit": "2023-12-16T00:00:00.000Z",
+            "owner": "gliderlabs",
+            "repo": "docker-consul",
+            "stars": 38017
+          }
+        },
+        {
+          "children": [],
+          "description": "Distributed reliable key-value store for the most critical data of a distributed system by etcd-io (former part of CoreOS).",
+          "title": "etcd",
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2023-04-03T00:00:00.000Z",
+            "owner": "etcd-io",
+            "repo": "etcd",
+            "stars": 33274
+          }
+        },
+        {
+          "children": [],
+          "description": "Service registry bridge for Docker by gliderlabs and progrium.",
+          "title": "registrator",
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2021-11-09T00:00:00.000Z",
+            "owner": "gliderlabs",
+            "repo": "registrator",
+            "stars": 16784
+          }
+        },
+        {
+          "children": [],
+          "description": "Lightweight DNS forwarder for Docker containers, resolves container names with custom suffixes (e.g. ) on the host to simplify service discovery.",
+          "title": "docker-dns",
+          "repo_info": {
+            "archived": false,
+            "language": "TypeScript",
+            "last_commit": "2021-08-14T00:00:00.000Z",
+            "owner": "bytesharky",
+            "repo": "docker-dns",
+            "stars": 14871
+          }
+        },
+        {
+          "children": [],
+          "description": "An open platform to connect, manage, and secure microservices.",
+          "title": "istio",
+          "repo_info": {
+            "archived": true,
+            "language": "Shell",
+            "last_commit": "2023-09-15T00:00:00.000Z",
+            "owner": "istio",
+            "repo": "istio",
+            "stars": 5109
+          }
+        }
+      ],
+      "title": "Service Discovery"
+    },
+    {
+      "description": "",
+      "items": [
+        {
+          "children": [],
+          "description": "S3 compatible object storage server in Docker containers.",
+          "title": "Minio",
+          "repo_info": {
+            "archived": false,
+            "language": "TypeScript",
+            "last_commit": "2021-08-04T00:00:00.000Z",
+            "owner": "minio",
+            "repo": "minio",
+            "stars": 28881
+          }
+        },
+        {
+          "children": [],
+          "description": ":heavy_dollar_sign: Software-defined Persistent Storage for Kubernetes and Docker Swarm.",
+          "title": "Storidge",
+          "repo_info": {
+            "archived": false,
+            "language": "JavaScript",
+            "last_commit": "2022-11-16T00:00:00.000Z",
+            "owner": "Storidge",
+            "repo": "quick-start",
+            "stars": 21412
+          }
+        },
+        {
+          "children": [],
+          "description": "provides a vendor agnostic storage orchestration engine. The primary design goal is to provide persistent storage for Docker, Kubernetes, and Mesos. Bythecodeteam (DELL Technologies)",
+          "title": "REX-Ray",
+          "repo_info": {
+            "archived": false,
+            "language": "Rust",
+            "last_commit": "2023-04-12T00:00:00.000Z",
+            "owner": "rexray",
+            "repo": "rexray",
+            "stars": 14265
+          }
+        },
+        {
+          "children": [],
+          "description": "Backup Docker volumes locally or to any S3 compatible storage. By offen",
+          "title": "Docker Volume Backup",
+          "repo_info": {
+            "archived": false,
+            "language": "Shell",
+            "last_commit": "2023-05-18T00:00:00.000Z",
+            "owner": "offen",
+            "repo": "docker-volume-backup",
+            "stars": 14229
+          }
+        },
+        {
+          "children": [],
+          "description": "heavy_dollar_sign:- The Blockbridge plugin is a volume plugin that provides access to an extensible set of container-based persistent storage options. It supports single and multi-host Docker environments with features that include tenant isolation, automated provisioning, encryption, secure deletion, snapshots and QoS. By blockbridge",
+          "title": "Blockbridge",
+          "repo_info": {
+            "archived": false,
+            "language": "Rust",
+            "last_commit": "2023-04-12T00:00:00.000Z",
+            "owner": "blockbridge",
+            "repo": "blockbridge-docker-volume",
+            "stars": 13265
+          }
+        },
+        {
+          "children": [],
+          "description": "Docker NFS, AWS EFS, Ceph & Samba/CIFS Volume Plugin. By ContainX",
+          "title": "Netshare",
+          "repo_info": {
+            "archived": false,
+            "language": "TypeScript",
+            "last_commit": "2023-03-27T00:00:00.000Z",
+            "owner": "ContainX",
+            "repo": "docker-volume-netshare",
+            "stars": 10281
+          }
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "description": "A lightweight, Docker-aware backup agent that automatically discovers and backs up containerized databases (PostgreSQL, MySQL, MongoDB, Redis) based on Docker labels. Supports local storage and S3-compatible destinations with flexible scheduling via cron expressions.",
+              "title": "Label Backup",
+              "repo_info": {
+                "archived": false,
+                "language": "TypeScript",
+                "last_commit": "2023-12-12T00:00:00.000Z",
+                "owner": "resulgg",
+                "repo": "label-backup",
+                "stars": 2021
+              }
+            }
+          ],
+          "description": null,
+          "title": "",
+          "repo_info": {
+            "archived": false,
+            "language": "TypeScript",
+            "last_commit": "2023-12-12T00:00:00.000Z",
+            "owner": "resulgg",
+            "repo": "label-backup",
+            "stars": 2021
+          }
+        },
+        {
+          "children": [],
+          "description": ":heavy_dollar_sign: Decentralized storage solution for persistent, shared and replicated volumes.",
+          "title": "portworx"
+        },
+        {
+          "children": [],
+          "description": ":heavy_dollar_sign: Fully fault-tolerant distributed file system with a docker volume driver.",
+          "title": "quobyte"
+        }
+      ],
+      "title": "Volume Management / Data"
+    },
+    {
+      "description": "",
+      "items": [],
+      "title": "User Interface"
+    },
+    {
+      "description": "Native desktop applications for managing and monitoring docker hosts and clusters",
+      "items": [
+        {
+          "children": [],
+          "description": "Built on Electron. By felixgborrego.",
+          "title": "Simple Docker UI",
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2023-11-09T00:00:00.000Z",
+            "owner": "felixgborrego",
+            "repo": "simple-docker-ui",
+            "stars": 32054
+          }
+        },
+        {
+          "children": [],
+          "description": "Good Docker Desktop replacement for Windows. Both Linux and Windows Containers are supported. slonopotamus.",
+          "title": "Stevedore",
+          "repo_info": {
+            "archived": false,
+            "language": "C++",
+            "last_commit": "2023-12-27T00:00:00.000Z",
+            "owner": "slonopotamus",
+            "repo": "stevedore",
+            "stars": 21006
+          }
+        },
+        {
+          "children": [],
+          "description": "Desktop app for managing Docker database containers with visual interface and one-click operations.",
+          "title": "Docker DB Manager",
+          "repo_info": {
+            "archived": false,
+            "language": "JavaScript",
+            "last_commit": "2021-05-05T00:00:00.000Z",
+            "owner": "AbianS",
+            "repo": "docker-db-manager",
+            "stars": 20972
+          }
+        },
+        {
+          "children": [],
+          "description": "Official native app. Only for Windows and MacOS.",
+          "title": "Docker Desktop"
+        }
+      ],
+      "title": "Desktop"
+    },
+    {
+      "description": "",
+      "items": [],
+      "title": "Terminal"
+    },
+    {
+      "description": "",
+      "items": [
+        {
+          "children": [],
+          "description": "Lightweight terminal-based Docker and Podman manager with a text-based user interface,.",
+          "title": "DockMate",
+          "repo_info": {
+            "archived": false,
+            "language": "Ruby",
+            "last_commit": "2021-08-07T00:00:00.000Z",
+            "owner": "shubh-io",
+            "repo": "dockmate",
+            "stars": 46878
+          }
+        },
+        {
+          "children": [],
+          "description": "A fast, keyboard-driven terminal UI to manage Docker containers, Compose stacks, and Swarm services with the ergonomics of K9s.",
+          "title": "d4s",
+          "repo_info": {
+            "archived": false,
+            "language": "JavaScript",
+            "last_commit": "2021-07-24T00:00:00.000Z",
+            "owner": "jr-k",
+            "repo": "d4s",
+            "stars": 40892
+          }
+        },
+        {
+          "children": [],
+          "description": "A developer-focused TUI for managing Docker containers with real-time log streaming and container management. Built with Rust. By durableprogramming.",
+          "title": "dprs",
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2022-01-02T00:00:00.000Z",
+            "owner": "durableprogramming",
+            "repo": "dprs",
+            "stars": 36730
+          }
+        },
+        {
+          "children": [],
+          "description": "An interactive CLI for Docker containers.",
+          "title": "dry",
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2022-01-18T00:00:00.000Z",
+            "owner": "moncho",
+            "repo": "dry",
+            "stars": 22714
+          }
+        },
+        {
+          "children": [],
+          "description": "detailed stats. By byrnedo",
+          "title": "dockdash",
+          "repo_info": {
+            "archived": false,
+            "language": "Shell",
+            "last_commit": "2022-03-24T00:00:00.000Z",
+            "owner": "byrnedo",
+            "repo": "dockdash",
+            "stars": 22649
+          }
+        },
+        {
+          "children": [],
+          "description": "An interactive shell UI for managing Docker containers.",
+          "title": "dockly",
+          "repo_info": {
+            "archived": false,
+            "language": "Ruby",
+            "last_commit": "2021-12-25T00:00:00.000Z",
+            "owner": "lirantal",
+            "repo": "dockly",
+            "stars": 20738
+          }
+        },
+        {
+          "children": [],
+          "description": "A tool for exploring each layer in a docker image. By wagoodman.",
+          "title": "dive",
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2021-08-25T00:00:00.000Z",
+            "owner": "wagoodman",
+            "repo": "dive",
+            "stars": 19860
+          }
+        },
+        {
+          "children": [],
+          "description": "TUI tool to view and manage your docker objects blazingly fast with sensible keybindings, also supports VIM navigation out of the box.",
+          "title": "goManageDocker",
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2021-12-13T00:00:00.000Z",
+            "owner": "ajayd-san",
+            "repo": "gomanagedocker",
+            "stars": 18750
+          }
+        },
+        {
+          "children": [],
+          "description": "A interface for reading and filtering the logs output of Docker and Podman containers like Dozzle but for the terminal with support for fuzzy find, regex and output coloring.",
+          "title": "lazyjournal",
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2022-05-22T00:00:00.000Z",
+            "owner": "Lifailon",
+            "repo": "lazyjournal",
+            "stars": 17590
+          }
+        },
+        {
+          "children": [],
+          "description": "A simple tui to view & control docker containers. Written in Rust, making heavy use of ratatui & Bollard,.",
+          "title": "oxker",
+          "repo_info": {
+            "archived": false,
+            "language": "TypeScript",
+            "last_commit": "2022-01-01T00:00:00.000Z",
+            "owner": "mrjackwills",
+            "repo": "oxker",
+            "stars": 15731
+          }
+        },
+        {
+          "children": [],
+          "description": "The lazier way to manage everything docker. A simple terminal UI for both docker and docker-compose, written in Go with the gocui library. By jesseduffield.",
+          "title": "lazydocker",
+          "repo_info": {
+            "archived": false,
+            "language": "C++",
+            "last_commit": "2021-05-21T00:00:00.000Z",
+            "owner": "jesseduffield",
+            "repo": "lazydocker",
+            "stars": 8956
+          }
+        },
+        {
+          "children": [],
+          "description": "DockSTARTer helps you get started with home server apps running in Docker by GhostWriters.",
+          "title": "DockSTARTer",
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2022-09-15T00:00:00.000Z",
+            "owner": "GhostWriters",
+            "repo": "DockSTARTer",
+            "stars": 2474
+          }
+        }
+      ],
+      "title": "Terminal UI"
+    },
+    {
+      "description": "",
+      "items": [
+        {
+          "children": [],
+          "description": "The powerful and smallest binary size of template engine for docker command line environment. By Falldog.",
+          "title": "dcinja",
+          "repo_info": {
+            "archived": true,
+            "language": "Shell",
+            "last_commit": "2022-03-24T00:00:00.000Z",
+            "owner": "Falldog",
+            "repo": "dcinja",
+            "stars": 42649
+          }
+        },
+        {
+          "children": [],
+          "description": "A friendly CLI to manage multiple Docker Compose deployments with style — powered by Typer, Rich, questionary, and sh.",
+          "title": "docker-captain",
+          "repo_info": {
+            "archived": false,
+            "language": "Go",
+            "last_commit": "2022-10-26T00:00:00.000Z",
+            "owner": "lucabello",
+            "repo": "docker-captain",
+            "stars": 36433
+          }
+        },
+        {
+          "children": [],
+          "description": "A Docker CLI plugin that lets you push the README.md file from the current directory to Docker Hub. Also supports Quay and Harbor. By christian-korneck.",
+          "title": "docker pushrm",
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2022-03-09T00:00:00.000Z",
+            "owner": "christian-korneck",
+            "repo": "docker-pushrm",
+            "stars": 35664
+          }
+        },
+        {
+          "children": [],
+          "description": "Docker version manager.",
+          "title": "DVM",
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2021-08-25T00:00:00.000Z",
+            "owner": "howtowhale",
+            "repo": "dvm",
+            "stars": 33860
+          }
+        },
+        {
+          "children": [],
+          "description": "Proco will help you to organise and manage Docker, Docker-Compose, Kubernetes projects of any complexity using simple YAML config files to shorten the route from finding your project to initialising it in your local environment.",
+          "title": "proco",
+          "repo_info": {
+            "archived": false,
+            "language": "TypeScript",
+            "last_commit": "2023-01-16T00:00:00.000Z",
+            "owner": "shiwaforce",
+            "repo": "poco",
+            "stars": 32351
+          }
+        },
+        {
+          "children": [],
+          "description": "Work with remote images registries - retrieving information, images, signing content.",
+          "title": "skopeo",
+          "repo_info": {
+            "archived": true,
+            "language": "C++",
+            "last_commit": "2022-02-25T00:00:00.000Z",
+            "owner": "containers",
+            "repo": "skopeo",
+            "stars": 29676
+          }
+        },
+        {
+          "children": [],
+          "description": "A simple tool to manage and maintain Docker for personal projects.",
+          "title": "Pdocker",
+          "repo_info": {
+            "archived": false,
+            "language": "Java",
+            "last_commit": "2023-11-06T00:00:00.000Z",
+            "owner": "g31s",
+            "repo": "Pdocker",
+            "stars": 29057
+          }
+        },
+        {
+          "children": [],
+          "description": "Get inside a running docker container easily.",
+          "title": "goinside",
+          "repo_info": {
+            "archived": false,
+            "language": "Rust",
+            "last_commit": "2022-06-16T00:00:00.000Z",
+            "owner": "iamsoorena",
+            "repo": "goinside",
+            "stars": 26565
+          }
+        },
+        {
+          "children": [],
+          "description": "Allows for slightly more visual usage of Docker with an interactive prompt. By segersniels.",
+          "title": "supdock",
+          "repo_info": {
+            "archived": false,
+            "language": "C++",
+            "last_commit": "2023-11-07T00:00:00.000Z",
+            "owner": "segersniels",
+            "repo": "supdock",
+            "stars": 26056
+          }
+        },
+        {
+          "children": [],
+          "description": "A simple tool for copying files from container filesystems. By exdx.",
+          "title": "dcp",
+          "repo_info": {
+            "archived": false,
+            "language": "Go",
+            "last_commit": "2022-12-25T00:00:00.000Z",
+            "owner": "exdx",
+            "repo": "dcp",
+            "stars": 19373
+          }
+        },
+        {
+          "children": [],
+          "description": "Dctl is a Cli tool that helps developers by allowing them to execute all docker compose commands anywhere in the terminal, and more. By FabienD.",
+          "title": "dctl",
+          "repo_info": {
+            "archived": false,
+            "language": "Java",
+            "last_commit": "2023-10-07T00:00:00.000Z",
+            "owner": "FabienD",
+            "repo": "docker-stack",
+            "stars": 19087
+          }
+        },
+        {
+          "children": [],
+          "description": "Transparently use Docker containers to encapsulate software build environments,.",
+          "title": "scuba",
+          "repo_info": {
+            "archived": false,
+            "language": "Java",
+            "last_commit": "2021-05-30T00:00:00.000Z",
+            "owner": "JonathonReinhart",
+            "repo": "scuba",
+            "stars": 15947
+          }
+        },
+        {
+          "children": [],
+          "description": "CLI tools for browsing and manipulating docker registries.",
+          "title": "docker-ls",
+          "repo_info": {
+            "archived": false,
+            "language": "TypeScript",
+            "last_commit": "2024-01-01T00:00:00.000Z",
+            "owner": "mayflower",
+            "repo": "docker-ls",
+            "stars": 11001
+          }
+        },
+        {
+          "children": [],
+          "description": "Python based Assistance for Docker.",
+          "title": "tsaotun",
+          "repo_info": {
+            "archived": true,
+            "language": "TypeScript",
+            "last_commit": "2021-10-13T00:00:00.000Z",
+            "owner": "qazbnm456",
+            "repo": "tsaotun",
+            "stars": 4811
+          }
+        },
+        {
+          "children": [],
+          "description": "Reverse-engineering tool for docker environments. By s0rg.",
+          "title": "decompose",
+          "repo_info": {
+            "archived": true,
+            "language": "Python",
+            "last_commit": "2022-01-08T00:00:00.000Z",
+            "owner": "s0rg",
+            "repo": "decompose",
+            "stars": 3724
+          }
+        },
+        {
+          "children": [],
+          "description": "Easily start and stop docker compose projects from any directory. By jenssegers.",
+          "title": "captain",
+          "repo_info": {
+            "archived": false,
+            "language": "Ruby",
+            "last_commit": "2022-01-04T00:00:00.000Z",
+            "owner": "jenssegers",
+            "repo": "captain",
+            "stars": 1728
+          }
+        }
+      ],
+      "title": "CLI tools"
+    },
+    {
+      "description": "",
+      "items": [
+        {
+          "children": [],
+          "description": "SSH Server for Docker containers ~ Because every container should be accessible. By jeroenpeeters.",
+          "title": "docker-ssh",
+          "repo_info": {
+            "archived": false,
+            "language": "Go",
+            "last_commit": "2022-07-18T00:00:00.000Z",
+            "owner": "jeroenpeeters",
+            "repo": "docker-ssh",
+            "stars": 31533
+          }
+        },
+        {
+          "children": [],
+          "description": "An emacs mode for handling Dockerfiles by spotify",
+          "title": "dockerfile-mode",
+          "repo_info": {
+            "archived": false,
+            "language": "TypeScript",
+            "last_commit": "2021-12-22T00:00:00.000Z",
+            "owner": "spotify",
+            "repo": "dockerfile-mode",
+            "stars": 29741
+          }
+        },
+        {
+          "children": [],
+          "description": "Search the Docker Registry with the Dext smart launcher. By vutran.",
+          "title": "dext-docker-registry-plugin",
+          "repo_info": {
+            "archived": false,
+            "language": "Go",
+            "last_commit": "2022-12-25T00:00:00.000Z",
+            "owner": "vutran",
+            "repo": "dext-docker-registry-plugin",
+            "stars": 21373
+          }
+        },
+        {
+          "children": [],
+          "description": "Create a secure multi-user Docker machine, where each user is segregated into an indepentent container.",
+          "title": "MultiDocker",
+          "repo_info": {
+            "archived": false,
+            "language": "C++",
+            "last_commit": "2021-07-20T00:00:00.000Z",
+            "owner": "marty90",
+            "repo": "multidocker",
+            "stars": 1896
+          }
+        },
+        {
+          "children": [],
+          "description": "A Powerline segment for showing the status of Docker containers.",
+          "title": "Powerline-Docker",
+          "repo_info": {
+            "archived": false,
+            "language": "C++",
+            "last_commit": "2021-06-20T00:00:00.000Z",
+            "owner": "adrianmo",
+            "repo": "powerline-docker",
+            "stars": 926
+          }
+        }
+      ],
+      "title": "Other"
+    },
+    {
+      "description": "",
+      "items": [
+        {
+          "children": [],
+          "description": "Extensible platform to develop full-fledged multi-language Cloud & Desktop IDE-like products with state-of-the-art web technologies.",
+          "title": "Theia",
+          "repo_info": {
+            "archived": false,
+            "language": "Shell",
+            "last_commit": "2023-02-27T00:00:00.000Z",
+            "owner": "eclipse-theia",
+            "repo": "theia",
+            "stars": 49309
+          }
+        },
+        {
+          "children": [],
+          "description": "A complete and modern Docker management platform designed for sysadmin, devops with enterprise grade tools, cve scanner, ssh, rdp on web and much more. By fr4nsys.",
+          "title": "usulnet",
+          "repo_info": {
+            "archived": false,
+            "language": "Ruby",
+            "last_commit": "2022-01-24T00:00:00.000Z",
+            "owner": "fr4nsys",
+            "repo": "usulnet",
+            "stars": 48708
+          }
+        },
+        {
+          "children": [],
+          "description": "Friendly Web UI to monitor docker daemon.",
+          "title": "Seagull",
+          "repo_info": {
+            "archived": false,
+            "language": "C++",
+            "last_commit": "2023-01-31T00:00:00.000Z",
+            "owner": "tobegit3hub",
+            "repo": "seagull",
+            "stars": 44336
+          }
+        },
+        {
+          "children": [],
+          "description": "A highly visual web UI for Kubernetes which renders configuration and state in an application centric way.",
+          "title": "Kubevious",
+          "repo_info": {
+            "archived": false,
+            "language": "Rust",
+            "last_commit": "2022-03-28T00:00:00.000Z",
+            "owner": "kubevious",
+            "repo": "kubevious",
+            "stars": 38645
+          }
+        },
+        {
+          "children": [],
+          "description": "Minimalistic flexible homepage.",
+          "title": "Mafl",
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2023-07-06T00:00:00.000Z",
+            "owner": "hywax",
+            "repo": "mafl",
+            "stars": 35180
+          }
+        },
+        {
+          "children": [],
+          "description": "Visualizes Docker services on a Docker Swarm (for running demos).",
+          "title": "docker-swarm-visualizer",
+          "repo_info": {
+            "archived": false,
+            "language": "JavaScript",
+            "last_commit": "2022-03-21T00:00:00.000Z",
+            "owner": "dockersamples",
+            "repo": "docker-swarm-visualizer",
+            "stars": 34652
+          }
+        },
+        {
+          "children": [],
+          "description": "Easy-to-use and reactive self-hosted docker compose.yaml stack-oriented manager.",
+          "title": "dockge",
+          "repo_info": {
+            "archived": false,
+            "language": "Ruby",
+            "last_commit": "2022-11-20T00:00:00.000Z",
+            "owner": "louislam",
+            "repo": "dockge",
+            "stars": 34408
+          }
+        },
+        {
+          "children": [],
+          "description": "A tool to build and deploy software on many servers.",
+          "title": "Komodo",
+          "repo_info": {
+            "archived": false,
+            "language": "Shell",
+            "last_commit": "2022-03-04T00:00:00.000Z",
+            "owner": "mbecker20",
+            "repo": "komodo",
+            "stars": 29669
+          }
+        },
+        {
+          "children": [],
+          "description": "A simple query dashboard to use Docker Remote API.",
+          "title": "Rapid Dashboard",
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2022-05-12T00:00:00.000Z",
+            "owner": "ozlerhakan",
+            "repo": "rapid",
+            "stars": 25600
+          }
+        },
+        {
+          "children": [],
+          "description": "A browser extension for GitHub that makes the image name in a clickable and redirect you to the related Docker Hub page.",
+          "title": "OctoLinker",
+          "repo_info": {
+            "archived": false,
+            "language": "Rust",
+            "last_commit": "2023-02-01T00:00:00.000Z",
+            "owner": "OctoLinker",
+            "repo": "OctoLinker",
+            "stars": 25335
+          }
+        },
+        {
+          "children": [],
+          "description": "Swarmpit provides simple and easy to use interface for your Docker Swarm cluster. You can manage your stacks, services, secrets, volumes, networks etc.",
+          "title": "Swarmpit",
+          "repo_info": {
+            "archived": false,
+            "language": "Shell",
+            "last_commit": "2022-03-24T00:00:00.000Z",
+            "owner": "swarmpit",
+            "repo": "swarmpit",
+            "stars": 24649
+          }
+        },
+        {
+          "children": [],
+          "description": "Connect your containers via a web-tty wrfly.",
+          "title": "Container Web TTY",
+          "repo_info": {
+            "archived": false,
+            "language": "Shell",
+            "last_commit": "2021-11-24T00:00:00.000Z",
+            "owner": "wrfly",
+            "repo": "container-web-tty",
+            "stars": 22769
+          }
+        },
+        {
+          "children": [],
+          "description": "Web Interface for the Docker Registry HTTP API v2.",
+          "title": "Docker Registry Browser",
+          "repo_info": {
+            "archived": false,
+            "language": "JavaScript",
+            "last_commit": "2023-03-16T00:00:00.000Z",
+            "owner": "klausmeyer",
+            "repo": "docker-registry-browser",
+            "stars": 15292
+          }
+        },
+        {
+          "children": [],
+          "description": "Swirl is a web management tool for Docker, focused on swarm cluster By cuigh.",
+          "title": "Swirl",
+          "repo_info": {
+            "archived": false,
+            "language": "C++",
+            "last_commit": "2022-05-16T00:00:00.000Z",
+            "owner": "cuigh",
+            "repo": "swirl",
+            "stars": 8596
+          }
+        },
+        {
+          "children": [],
+          "description": "A lightweight management UI for managing your Docker hosts or Docker Swarm clusters.",
+          "title": "Portainer",
+          "repo_info": {
+            "archived": false,
+            "language": "TypeScript",
+            "last_commit": "2022-11-27T00:00:00.000Z",
+            "owner": "portainer",
+            "repo": "portainer",
+            "stars": 5401
+          }
+        },
+        {
+          "children": [],
+          "description": "Outsource the administration of a handful of containers to your co-workers,.",
+          "title": "CASA",
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2023-01-23T00:00:00.000Z",
+            "owner": "knrdl",
+            "repo": "casa",
+            "stars": 4344
+          }
+        },
+        {
+          "children": [],
+          "description": "Web UI, authentication service and event recorder for private docker registry v2.",
+          "title": "docker-registry-web",
+          "repo_info": {
+            "archived": false,
+            "language": "Go",
+            "last_commit": "2023-06-03T00:00:00.000Z",
+            "owner": "mkuchin",
+            "repo": "docker-registry-web",
+            "stars": 4213
+          }
+        },
+        {
+          "children": [],
+          "description": "Real-time performance monitoring.",
+          "title": "netdata",
+          "repo_info": {
+            "archived": false,
+            "language": "Go",
+            "last_commit": "2023-10-21T00:00:00.000Z",
+            "owner": "netdata",
+            "repo": "netdata",
+            "stars": 4073
+          }
+        },
+        {
+          "children": [],
+          "description": "Docker Container Management GUI.",
+          "title": "dockemon",
+          "repo_info": {
+            "archived": false,
+            "language": "Shell",
+            "last_commit": "2022-06-12T00:00:00.000Z",
+            "owner": "ProductiveOps",
+            "repo": "dokemon",
+            "stars": 569
+          }
+        }
+      ],
+      "title": "Web"
+    },
+    {
+      "description": "",
+      "items": [],
+      "title": "Docker Images"
+    },
+    {
+      "description": "Tools and applications that are either installed inside containers or designed to be run as a sidecar",
+      "items": [
+        {
+          "children": [],
+          "description": "A cron-style job scheduler for docker,.",
+          "title": "ckron",
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2021-06-16T00:00:00.000Z",
+            "owner": "nicomt",
+            "repo": "ckron",
+            "stars": 44930
+          }
+        },
+        {
+          "children": [],
+          "description": "Ofelia is a modern and low footprint job scheduler for docker environments, built on Go. Ofelia aims to be a replacement for the old fashioned cron. Supports configuration from container labels and/or configuration files.",
+          "title": "Ofelia",
+          "repo_info": {
+            "archived": false,
+            "language": "Java",
+            "last_commit": "2023-06-29T00:00:00.000Z",
+            "owner": "mcuadros",
+            "repo": "ofelia",
+            "stars": 44187
+          }
+        },
+        {
+          "children": [],
+          "description": "A single PID1 process designed for docker containers. Does user management, log management, startup, zombie reaping, all in one small package.",
+          "title": "Chaperone",
+          "repo_info": {
+            "archived": false,
+            "language": "TypeScript",
+            "last_commit": "2021-10-13T00:00:00.000Z",
+            "owner": "garywiz",
+            "repo": "chaperone",
+            "stars": 43811
+          }
+        },
+        {
+          "children": [],
+          "description": "Crontab-compatible job runner, designed specifically to run in containers.",
+          "title": "supercronic",
+          "repo_info": {
+            "archived": false,
+            "language": "Go",
+            "last_commit": "2023-10-21T00:00:00.000Z",
+            "owner": "aptible",
+            "repo": "supercronic",
+            "stars": 41073
+          }
+        },
+        {
+          "children": [],
+          "description": "Run this specific application as this specific user and get out of the pipeline (entrypoint script tool).",
+          "title": "GoSu",
+          "repo_info": {
+            "archived": false,
+            "language": "C++",
+            "last_commit": "2021-10-28T00:00:00.000Z",
+            "owner": "tianon",
+            "repo": "gosu",
+            "stars": 40796
+          }
+        },
+        {
+          "children": [],
+          "description": "This is a simple tool that will simply execute a program with different privileges. The program will be executed directly and not run as a child, like su and sudo does, which avoids TTY and signal issues. Why reinvent gosu? This does more or less exactly the same thing as gosu but it is only 10kb instead of 1.8MB. By ncopa.",
+          "title": "su-exec",
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2021-04-13T00:00:00.000Z",
+            "owner": "ncopa",
+            "repo": "su-exec",
+            "stars": 39994
+          }
+        },
+        {
+          "children": [],
+          "description": "Check if the process is running inside a Docker container.",
+          "title": "is-docker",
+          "repo_info": {
+            "archived": false,
+            "language": "TypeScript",
+            "last_commit": "2023-03-17T00:00:00.000Z",
+            "owner": "sindresorhus",
+            "repo": "is-docker",
+            "stars": 37291
+          }
+        },
+        {
+          "children": [],
+          "description": "Language focused docker images, minus the operating system,.",
+          "title": "distroless",
+          "repo_info": {
+            "archived": false,
+            "language": "JavaScript",
+            "last_commit": "2021-07-04T00:00:00.000Z",
+            "owner": "GoogleContainerTools",
+            "repo": "distroless",
+            "stars": 34912
+          }
+        },
+        {
+          "children": [],
+          "description": "Lightweight health check utilities for Docker containers (75 KB instead of 9.3 MB for httpcheck versus cURL) in pure C - http(s), port checks, and parallel execution are included.",
+          "title": "microcheck",
+          "repo_info": {
+            "archived": false,
+            "language": "Ruby",
+            "last_commit": "2023-06-28T00:00:00.000Z",
+            "owner": "tarampampam",
+            "repo": "microcheck",
+            "stars": 29188
+          }
+        },
+        {
+          "children": [],
+          "description": "Access VMs, desktops, servers or applications anytime and from anywhere, without complex and costly client roll-outs or user management.",
+          "title": "SparkView",
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2021-09-20T00:00:00.000Z",
+            "owner": "beyondssl",
+            "repo": "sparkview-container",
+            "stars": 27834
+          }
+        },
+        {
+          "children": [],
+          "description": "Utility to simplify running applications in docker containers by jwilder, powerman.",
+          "title": "dockerize",
+          "repo_info": {
+            "archived": false,
+            "language": "JavaScript",
+            "last_commit": "2023-10-22T00:00:00.000Z",
+            "owner": "powerman",
+            "repo": "dockerize",
+            "stars": 27072
+          }
+        },
+        {
+          "children": [],
+          "description": "Sync Docker images across registries.",
+          "title": "lstags",
+          "repo_info": {
+            "archived": false,
+            "language": "JavaScript",
+            "last_commit": "2021-07-24T00:00:00.000Z",
+            "owner": "ivanilves",
+            "repo": "lstags",
+            "stars": 26892
+          }
+        },
+        {
+          "children": [],
+          "description": "Container introspection tool. Find out what container runtime is being used as well as features available.",
+          "title": "amicontained",
+          "repo_info": {
+            "archived": false,
+            "language": "Shell",
+            "last_commit": "2021-05-08T00:00:00.000Z",
+            "owner": "genuinetools",
+            "repo": "amicontained",
+            "stars": 17969
+          }
+        },
+        {
+          "children": [],
+          "description": "Executes a program as a user different from the user running sue. This is a maintainable alternative to ncopa/su-exec, which is the better tianon/gosu. This one is far better (higher performance, smaller size), than the original gosu, however it is far easier to maintain, than su-exec, which is written in plain C. Made by Akito.",
+          "title": "sue",
+          "repo_info": {
+            "archived": false,
+            "language": "Shell",
+            "last_commit": "2021-07-17T00:00:00.000Z",
+            "owner": "theAkito",
+            "repo": "sue",
+            "stars": 15899
+          }
+        },
+        {
+          "children": [],
+          "description": "Generate files from docker container meta-data.",
+          "title": "docker-gen",
+          "repo_info": {
+            "archived": false,
+            "language": "Shell",
+            "last_commit": "2022-02-12T00:00:00.000Z",
+            "owner": "jwilder",
+            "repo": "docker-gen",
+            "stars": 7689
+          }
+        },
+        {
+          "children": [],
+          "description": "A minimalistic Runtime Configuration system and process manager for containers vorakl.",
+          "title": "TrivialRC",
+          "repo_info": {
+            "archived": false,
+            "language": "C++",
+            "last_commit": "2021-09-28T00:00:00.000Z",
+            "owner": "vorakl",
+            "repo": "TrivialRC",
+            "stars": 2826
+          }
+        },
+        {
+          "children": [],
+          "description": "A super small Docker base image (5MB) using Alpine Linux.",
+          "title": "docker-alpine",
+          "repo_info": {
+            "archived": false,
+            "language": "JavaScript",
+            "last_commit": "2022-09-17T00:00:00.000Z",
+            "owner": "gliderlabs",
+            "repo": "docker-alpine",
+            "stars": 1472
+          }
+        },
+        {
+          "children": [],
+          "description": null,
+          "title": "CoreOS - Linux for Massive Server Deployments"
+        }
+      ],
+      "title": "Base Tools"
+    },
+    {
+      "description": "Applications designed to help or simplify building new images",
+      "items": [
+        {
+          "children": [],
+          "description": "An advanced for your Alpine based Docker images. Made by Akito.",
+          "title": "userdef",
+          "repo_info": {
+            "archived": false,
+            "language": "C++",
+            "last_commit": "2023-06-20T00:00:00.000Z",
+            "owner": "theAkito",
+            "repo": "userdef",
+            "stars": 47196
+          }
+        },
+        {
+          "children": [],
+          "description": "Program to reverse Docker images into Dockerfiles.",
+          "title": "Whaler",
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2022-08-30T00:00:00.000Z",
+            "owner": "P3GLEG",
+            "repo": "Whaler",
+            "stars": 45490
+          }
+        },
+        {
+          "children": [],
+          "description": "Repacks a Docker image into a smaller, more efficient version that makes it significantly faster to pull. By orf.",
+          "title": "docker-repack",
+          "repo_info": {
+            "archived": false,
+            "language": "Java",
+            "last_commit": "2023-05-20T00:00:00.000Z",
+            "owner": "orf",
+            "repo": "docker-repack",
+            "stars": 45227
+          }
+        },
+        {
+          "children": [],
+          "description": "Build, tag,and push a bunch of related docker images via a single command.",
+          "title": "docker-make",
+          "repo_info": {
+            "archived": false,
+            "language": "Shell",
+            "last_commit": "2021-12-14T00:00:00.000Z",
+            "owner": "CtripCloud",
+            "repo": "docker-make",
+            "stars": 40749
+          }
+        },
+        {
+          "children": [],
+          "description": "Docker layer analyzer.",
+          "title": "dlayer",
+          "repo_info": {
+            "archived": false,
+            "language": "Go",
+            "last_commit": "2022-08-07T00:00:00.000Z",
+            "owner": "orisano",
+            "repo": "dlayer",
+            "stars": 33513
+          }
+        },
+        {
+          "children": [],
+          "description": "Boilerplate for Docker Based Projects: Essex is a CLI utility written in bash to quickly setup clean and consistent Docker projects with Makefile driven workflows. jamesbrink.",
+          "title": "essex",
+          "repo_info": {
+            "archived": false,
+            "language": "JavaScript",
+            "last_commit": "2023-12-11T00:00:00.000Z",
+            "owner": "utensils",
+            "repo": "essex",
+            "stars": 33022
+          }
+        },
+        {
+          "children": [],
+          "description": "Copy a Docker image between registries without a full Docker installation.",
+          "title": "copy-docker-image",
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2023-02-12T00:00:00.000Z",
+            "owner": "mdlavin",
+            "repo": "copy-docker-image",
+            "stars": 31324
+          }
+        },
+        {
+          "children": [],
+          "description": "Generate command and options from running containers. By bcicen.",
+          "title": "docker-replay",
+          "repo_info": {
+            "archived": true,
+            "language": "TypeScript",
+            "last_commit": "2022-11-17T00:00:00.000Z",
+            "owner": "bcicen",
+            "repo": "docker-replay",
+            "stars": 27411
+          }
+        },
+        {
+          "children": [],
+          "description": "A tool used by openshift to build base images using different build engines.",
+          "title": "cekit",
+          "repo_info": {
+            "archived": false,
+            "language": "Shell",
+            "last_commit": "2021-11-24T00:00:00.000Z",
+            "owner": "cekit",
+            "repo": "cekit",
+            "stars": 24769
+          }
+        },
+        {
+          "children": [],
+          "description": "A command line tool written in Golang to squash and unpack docker images.",
+          "title": "docker-companion",
+          "repo_info": {
+            "archived": false,
+            "language": "Go",
+            "last_commit": "2022-03-10T00:00:00.000Z",
+            "owner": "mudler",
+            "repo": "docker-companion",
+            "stars": 22663
+          }
+        },
+        {
+          "children": [],
+          "description": "A tool help you to automate the generation of Dockerfile and dockerize application by scanning the code. By alibaba.",
+          "title": "Derrick",
+          "repo_info": {
+            "archived": false,
+            "language": "Go",
+            "last_commit": "2021-07-23T00:00:00.000Z",
+            "owner": "alibaba",
+            "repo": "derrick",
+            "stars": 16893
+          }
+        },
+        {
+          "children": [],
+          "description": "A tool to automatically dockerize your applications.",
+          "title": "Whales",
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2022-08-26T00:00:00.000Z",
+            "owner": "Gueils",
+            "repo": "whales",
+            "stars": 13494
+          }
+        },
+        {
+          "children": [],
+          "description": "Dockly is a gem made to ease the pain of packaging an application in Docker.",
+          "title": "Dockly",
+          "repo_info": {
+            "archived": false,
+            "language": "Ruby",
+            "last_commit": "2022-02-13T00:00:00.000Z",
+            "owner": "swipely",
+            "repo": "dockly",
+            "stars": 12688
+          }
+        },
+        {
+          "children": [],
+          "description": "Generate command and options from running containers.",
+          "title": "runlike",
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2022-03-13T00:00:00.000Z",
+            "owner": "lavie",
+            "repo": "runlike",
+            "stars": 12660
+          }
+        },
+        {
+          "children": [],
+          "description": "Standalone, daemon-less, unprivileged Dockerfile and OCI compatible container image builder.",
+          "title": "img",
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2023-07-16T00:00:00.000Z",
+            "owner": "genuinetools",
+            "repo": "img",
+            "stars": 11170
+          }
+        },
+        {
+          "children": [],
+          "description": "Generates Dockerfiles from a high level Python recipe, including building blocks for High-Performance Computing components.",
+          "title": "HPC Container Maker",
+          "repo_info": {
+            "archived": false,
+            "language": "JavaScript",
+            "last_commit": "2021-09-22T00:00:00.000Z",
+            "owner": "NVIDIA",
+            "repo": "hpc-container-maker",
+            "stars": 10832
+          }
+        },
+        {
+          "children": [],
+          "description": "A tool that facilitates building OCI images.",
+          "title": "buildah",
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2021-12-23T00:00:00.000Z",
+            "owner": "containers",
+            "repo": "buildah",
+            "stars": 8740
+          }
+        },
+        {
+          "children": [],
+          "description": "shrinks fat Docker images creating the smallest possible images.",
+          "title": "DockerSlim",
+          "repo_info": {
+            "archived": false,
+            "language": "TypeScript",
+            "last_commit": "2023-01-26T00:00:00.000Z",
+            "owner": "docker-slim",
+            "repo": "docker-slim",
+            "stars": 8341
+          }
+        },
+        {
+          "children": [],
+          "description": "A tool to automatically update (and optionally push to Docker Hub) Docker Images for 3rd party software whenever theres is a new release/update/commit. By SecSI.",
+          "title": "RAUDI",
+          "repo_info": {
+            "archived": false,
+            "language": "Ruby",
+            "last_commit": "2023-01-19T00:00:00.000Z",
+            "owner": "cybersecsi",
+            "repo": "RAUDI",
+            "stars": 7348
+          }
+        },
+        {
+          "children": [],
+          "description": "Apache Mesos framework for building Docker images.",
+          "title": "portainer",
+          "repo_info": {
+            "archived": false,
+            "language": "Rust",
+            "last_commit": "2022-12-03T00:00:00.000Z",
+            "owner": "duedil-ltd",
+            "repo": "portainer",
+            "stars": 5395
+          }
+        },
+        {
+          "children": [],
+          "description": "Produces Docker images from tarballs of application source code.",
+          "title": "container-factory",
+          "repo_info": {
+            "archived": false,
+            "language": "Go",
+            "last_commit": "2022-03-30T00:00:00.000Z",
+            "owner": "mutable",
+            "repo": "container-factory",
+            "stars": 4643
+          }
+        },
+        {
+          "children": [],
+          "description": "Concurrent, cache-efficient, and Dockerfile-agnostic builder toolkit.",
+          "title": "BuildKit",
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2021-12-09T00:00:00.000Z",
+            "owner": "moby",
+            "repo": "buildkit",
+            "stars": 2754
+          }
+        },
+        {
+          "children": [],
+          "description": "A tool utilising and .",
+          "title": "ansible-bender",
+          "repo_info": {
+            "archived": false,
+            "language": "Ruby",
+            "last_commit": "2023-02-08T00:00:00.000Z",
+            "owner": "ansible-community",
+            "repo": "ansible-bender",
+            "stars": 328
+          }
+        },
+        {
+          "children": [],
+          "description": "Hashicorp tool to build machine images including docker image integrated with configuration management tools like chef, puppet, ansible.",
+          "title": "packer"
+        },
+        {
+          "children": [],
+          "description": "A template for creating production-ready Docker images for Python applications.",
+          "title": "Production-Ready Python Containers :heavy_dollar_sign:"
+        }
+      ],
+      "title": "Builder"
+    },
+    {
+      "description": "",
+      "items": [
+        {
+          "children": [],
+          "description": "Visualize your multi-stage Dockerfiles. By PatrickHoefler.",
+          "title": "dockerfilegraph",
+          "repo_info": {
+            "archived": false,
+            "language": "Ruby",
+            "last_commit": "2021-12-15T00:00:00.000Z",
+            "owner": "patrickhoefler",
+            "repo": "dockerfilegraph",
+            "stars": 40748
+          }
+        },
+        {
+          "children": [],
+          "description": "A set of images using the Chaperone process manager, including a lean Alpine image, LAMP, LEMP, and bare-bones base kits.",
+          "title": "chaperone-docker",
+          "repo_info": {
+            "archived": false,
+            "language": "C++",
+            "last_commit": "2023-10-08T00:00:00.000Z",
+            "owner": "garywiz",
+            "repo": "chaperone-docker",
+            "stars": 32086
+          }
+        },
+        {
+          "children": [],
+          "description": "is both a Go library and an executable that produces valid Dockerfiles using various input channels.",
+          "title": "Dockerfile Generator",
+          "repo_info": {
+            "archived": false,
+            "language": "Ruby",
+            "last_commit": "2022-12-30T00:00:00.000Z",
+            "owner": "ozankasikci",
+            "repo": "dockerfile-generator",
+            "stars": 15368
+          }
+        },
+        {
+          "children": [],
+          "description": "A repository that serves as a collector for docker recipes that are universal, efficient and slim. Images are updated, tested and published daily via a Travis cron job.",
+          "title": "Dockershelf",
+          "repo_info": {
+            "archived": false,
+            "language": "Java",
+            "last_commit": "2022-02-24T00:00:00.000Z",
+            "owner": "Dockershelf",
+            "repo": "dockershelf",
+            "stars": 3677
+          }
+        },
+        {
+          "children": [],
+          "description": "Trusted Automated Docker Builds. Dockerfile Project maintains a central repository of Dockerfile for various popular open source software services runnable on a Docker container.",
+          "title": "Dockerfile Project"
+        },
+        {
+          "children": [],
+          "description": "A collection of minimal, Alpine-based Docker images.",
+          "title": "Vektorcloud"
+        }
+      ],
+      "title": "Dockerfile"
+    },
+    {
+      "description": "",
+      "items": [
+        {
+          "children": [],
+          "description": "An opinionated Dockerfile linter.",
+          "title": "FROM:latest",
+          "repo_info": {
+            "archived": false,
+            "language": "C++",
+            "last_commit": "2021-12-27T00:00:00.000Z",
+            "owner": "replicatedhq",
+            "repo": "dockerfilelint",
+            "stars": 37736
+          }
+        },
+        {
+          "children": [],
+          "description": "The linter lets you verify Dockerfile syntax to make sure it follows the best practices for building efficient Docker images.",
+          "title": "Dockerfile Linter action",
+          "repo_info": {
+            "archived": false,
+            "language": "TypeScript",
+            "last_commit": "2023-12-12T00:00:00.000Z",
+            "owner": "buddy-works",
+            "repo": "dockerfile-linter",
+            "stars": 37021
+          }
+        },
+        {
+          "children": [],
+          "description": "Lightweight Dockerfile linter with 60+ rules, quality scoring, and security checks.",
+          "title": "Dockadvisor",
+          "repo_info": {
+            "archived": false,
+            "language": "JavaScript",
+            "last_commit": "2021-07-04T00:00:00.000Z",
+            "owner": "deckrun",
+            "repo": "dockadvisor",
+            "stars": 25912
+          }
+        },
+        {
+          "children": [],
+          "description": "A Dockerfile linter that checks for best practices, common mistakes, and is also able to lint any bash written in instructions;.",
+          "title": "Hadolint",
+          "repo_info": {
+            "archived": true,
+            "language": "Java",
+            "last_commit": "2023-02-19T00:00:00.000Z",
+            "owner": "hadolint",
+            "repo": "hadolint",
+            "stars": 16317
+          }
+        },
+        {
+          "children": [],
+          "description": "A tool to keep an eye on your docker images size.",
+          "title": "docker-image-size-limit",
+          "repo_info": {
+            "archived": false,
+            "language": "C++",
+            "last_commit": "2022-09-03T00:00:00.000Z",
+            "owner": "wemake-services",
+            "repo": "docker-image-size-limit",
+            "stars": 2486
+          }
+        }
+      ],
+      "title": "Linter"
+    },
+    {
+      "description": "Services to securely store your Docker images.",
+      "items": [
+        {
+          "children": [],
+          "description": "Private Docker registry (free and open source).",
+          "title": "Rescoyl",
+          "repo_info": {
+            "archived": false,
+            "language": "Rust",
+            "last_commit": "2023-07-31T00:00:00.000Z",
+            "owner": "noteed",
+            "repo": "rescoyl",
+            "stars": 49155
+          }
+        },
+        {
+          "children": [],
+          "description": "A light-weight, self-contained container registry that's easy to run and maintain.",
+          "title": "nscr",
+          "repo_info": {
+            "archived": false,
+            "language": "TypeScript",
+            "last_commit": "2023-09-13T00:00:00.000Z",
+            "owner": "jhstatewide",
+            "repo": "nscr",
+            "stars": 38111
+          }
+        },
+        {
+          "children": [],
+          "description": "Custom docker registry that allows for lightning fast deploys through bittorrent.",
+          "title": "Docket",
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2021-07-06T00:00:00.000Z",
+            "owner": "netvarun",
+            "repo": "docket",
+            "stars": 35910
+          }
+        },
+        {
+          "children": [],
+          "description": "A bare essential OS for running the Docker Engine on bare metal or Cloud. By RedCoolBeans.",
+          "title": "CargoOS",
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2021-08-31T00:00:00.000Z",
+            "owner": "RedCoolBeans",
+            "repo": "cargos-buildroot",
+            "stars": 33854
+          }
+        },
+        {
+          "children": [],
+          "description": "Provide efficient, stable and secure file distribution and image acceleration based on p2p technology.",
+          "title": "Dragonfly",
+          "repo_info": {
+            "archived": false,
+            "language": "Ruby",
+            "last_commit": "2022-06-23T00:00:00.000Z",
+            "owner": "dragonflyoss",
+            "repo": "Dragonfly2",
+            "stars": 30558
+          }
+        },
+        {
+          "children": [],
+          "description": "An open source trusted cloud native registry project that stores, signs, and scans content. Supports replication, user management, access control and activity auditing. By CNCF formerly VMWare",
+          "title": "Harbor",
+          "repo_info": {
+            "archived": false,
+            "language": "Go",
+            "last_commit": "2021-06-13T00:00:00.000Z",
+            "owner": "goharbor",
+            "repo": "harbor",
+            "stars": 27933
+          }
+        },
+        {
+          "children": [],
+          "description": "Uber's Highly scalable P2P docker registry, capable of distributing TBs of data in seconds.",
+          "title": "Kraken",
+          "repo_info": {
+            "archived": false,
+            "language": "TypeScript",
+            "last_commit": "2024-01-01T00:00:00.000Z",
+            "owner": "uber",
+            "repo": "kraken",
+            "stars": 23001
+          }
+        },
+        {
+          "children": [],
+          "description": "A small tool to delete image manifests from a Docker Registry implementing the API v2, dereferencing them for the GC.",
+          "title": "cleanreg",
+          "repo_info": {
+            "archived": false,
+            "language": "Go",
+            "last_commit": "2021-07-03T00:00:00.000Z",
+            "owner": "hcguersoy",
+            "repo": "cleanreg",
+            "stars": 12913
+          }
+        },
+        {
+          "children": [],
+          "description": "UI and token based authentication server for onpremise docker registry.",
+          "title": "Registryo",
+          "repo_info": {
+            "archived": false,
+            "language": "Shell",
+            "last_commit": "2023-01-08T00:00:00.000Z",
+            "owner": "inmagik",
+            "repo": "registryo",
+            "stars": 12359
+          }
+        },
+        {
+          "children": [],
+          "description": "Amazon Elastic Container Registry (ECR) is a fully-managed Docker container registry that makes it easy for developers to store, manage, and deploy Docker container images.",
+          "title": "Amazon Elastic Container Registry :heavy_dollar_sign:"
+        },
+        {
+          "children": [],
+          "description": "Manage a Docker private registry as a first-class Azure resource.",
+          "title": "Azure Container Registry :heavy_dollar_sign:"
+        },
+        {
+          "children": [],
+          "description": "A fully managed package management SaaS, with first-class support for public and private Docker registries (and many others, incl. Helm charts for the Kubernetes ecosystem). Has a generous free-tier and is also completely free for open-source.",
+          "title": "Cloudsmith :heavy_dollar_sign:"
+        },
+        {
+          "children": [],
+          "description": "Harbor based Container Management Solution as a Service for teams and organizations. Free tier offers 1 GB storage for private repositories.",
+          "title": "Container Registry Service :heavy_dollar_sign:"
+        },
+        {
+          "children": [],
+          "description": "Bare-metal container hosting.",
+          "title": "Cycle.io :heavy_dollar_sign:"
+        },
+        {
+          "children": [],
+          "description": "DigitalOcean Container Registry.",
+          "title": "DigitalOcean :heavy_dollar_sign:"
+        },
+        {
+          "children": [],
+          "description": "provided by Docker Inc.",
+          "title": "Docker Hub"
+        },
+        {
+          "children": [],
+          "description": null,
+          "title": "Docker Registry v2 - The Docker toolset to pack, ship, store, and deliver content"
+        },
+        {
+          "children": [],
+          "description": "Fast, private Docker image storage on Google Cloud Platform.",
+          "title": "GCP Artifact Registry :heavy_dollar_sign:"
+        },
+        {
+          "children": [],
+          "description": "Integrated Docker registry in Gitea, ideal for private, small-scale image hosting.",
+          "title": "Gitea Container Registry"
+        },
+        {
+          "children": [],
+          "description": "GitHub's solution for storing and managing Docker images, with tight integration into GitHub Actions.",
+          "title": "GitHub Container Registry"
+        },
+        {
+          "children": [],
+          "description": "Registry focused on using its images in GitLab CI.",
+          "title": "GitLab Container Registry"
+        },
+        {
+          "children": [],
+          "description": "Artifact Repository Manager, can be used as private Docker Registry as well.",
+          "title": "JFrog Artifactory :heavy_dollar_sign:"
+        },
+        {
+          "children": [],
+          "description": "Secure hosting for private Docker repositories.",
+          "title": "Quay.io :heavy_dollar_sign:"
+        },
+        {
+          "children": [],
+          "description": "A simple and easy-to-use package management platform with Docker support alongside other formats like PyPI, Maven, npm, and Helm. Includes smart search, built-in Docker image scanning, and a great free option for both self-hosted and cloud use.",
+          "title": "RepoFlow"
+        },
+        {
+          "children": [],
+          "description": "Manage binaries and build artifacts across your software supply chain.",
+          "title": "Sonatype Nexus Repository"
+        }
+      ],
+      "title": "Registry"
+    },
+    {
+      "description": "",
+      "items": [],
+      "title": "Development with Docker"
+    },
+    {
+      "description": "",
+      "items": [
+        {
+          "children": [],
+          "description": "An idiomatic, data-driven, REPL friendly Clojure client for OCI container engines. By lispyclouds.",
+          "title": "contajners",
+          "repo_info": {
+            "archived": false,
+            "language": "Rust",
+            "last_commit": "2021-08-30T00:00:00.000Z",
+            "owner": "lispyclouds",
+            "repo": "contajners",
+            "stars": 49855
+          }
+        },
+        {
+          "children": [],
+          "description": ".NET (C#) Client Library for interacting with a Docker Registry API (v2) rquackenbush.",
+          "title": "Docker.Registry.DotNet",
+          "repo_info": {
+            "archived": false,
+            "language": "Java",
+            "last_commit": "2023-04-20T00:00:00.000Z",
+            "owner": "ChangemakerStudios",
+            "repo": "Docker.Registry.DotNet",
+            "stars": 45257
+          }
+        },
+        {
+          "children": [],
+          "description": "A Docker remote api client library for the JVM, written in Groovy.",
+          "title": "Docker Client for JVM",
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2023-03-28T00:00:00.000Z",
+            "owner": "gesellix",
+            "repo": "docker-client",
+            "stars": 44280
+          }
+        },
+        {
+          "children": [],
+          "description": "Bash script to deploy/update/undeploy Docker stacks in a Portainer instance from a docker-compose yaml file. By greenled.",
+          "title": "Portainer stack utils",
+          "repo_info": {
+            "archived": true,
+            "language": "C++",
+            "last_commit": "2022-12-12T00:00:00.000Z",
+            "owner": "greenled",
+            "repo": "portainer-stack-utils",
+            "stars": 43386
+          }
+        },
+        {
+          "children": [],
+          "description": "Telegram bot to control docker containers. By dgongut.",
+          "title": "docker-controller-bot",
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2023-03-28T00:00:00.000Z",
+            "owner": "dgongut",
+            "repo": "docker-controller-bot",
+            "stars": 34280
+          }
+        },
+        {
+          "children": [],
+          "description": "A Maven plugin for running and creating Docker images.",
+          "title": "docker-maven-plugin",
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2023-02-22T00:00:00.000Z",
+            "owner": "fabric8io",
+            "repo": "docker-maven-plugin",
+            "stars": 28314
+          }
+        },
+        {
+          "children": [],
+          "description": "A Docker remote api plugin for Gradle.",
+          "title": "Gradle Docker plugin",
+          "repo_info": {
+            "archived": false,
+            "language": "C++",
+            "last_commit": "2021-06-10T00:00:00.000Z",
+            "owner": "gesellix",
+            "repo": "gradle-docker-plugin",
+            "stars": 24936
+          }
+        },
+        {
+          "children": [],
+          "description": "Create Docker images directly from sbt.",
+          "title": "sbt-docker",
+          "repo_info": {
+            "archived": false,
+            "language": "Java",
+            "last_commit": "2022-12-31T00:00:00.000Z",
+            "owner": "marcuslonnberg",
+            "repo": "sbt-docker",
+            "stars": 24367
+          }
+        },
+        {
+          "children": [],
+          "description": "Docker integration testing kit with Scala.",
+          "title": "docker-it-scala",
+          "repo_info": {
+            "archived": false,
+            "language": "C++",
+            "last_commit": "2022-04-16T00:00:00.000Z",
+            "owner": "whisklabs",
+            "repo": "docker-it-scala",
+            "stars": 22626
+          }
+        },
+        {
+          "children": [],
+          "description": "Lightweight, truly object-oriented, Java client for Docker's API. By amihaiemil.",
+          "title": "docker-java-api",
+          "repo_info": {
+            "archived": false,
+            "language": "Go",
+            "last_commit": "2023-12-30T00:00:00.000Z",
+            "owner": "amihaiemil",
+            "repo": "docker-java-api",
+            "stars": 17003
+          }
+        },
+        {
+          "children": [],
+          "description": "C#/.NET HTTP client for the Docker remote API.",
+          "title": "Docker.DotNet",
+          "repo_info": {
+            "archived": true,
+            "language": "Go",
+            "last_commit": "2021-07-03T00:00:00.000Z",
+            "owner": "Microsoft",
+            "repo": "Docker.DotNet",
+            "stars": 16913
+          }
+        },
+        {
+          "children": [],
+          "description": "Docker Remote API node.js module.",
+          "title": "dockerode",
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2022-03-13T00:00:00.000Z",
+            "owner": "apocas",
+            "repo": "dockerode",
+            "stars": 15660
+          }
+        },
+        {
+          "children": [],
+          "description": "Go HTTP client for the Docker remote API.",
+          "title": "go-dockerclient",
+          "repo_info": {
+            "archived": false,
+            "language": "Go",
+            "last_commit": "2022-07-08T00:00:00.000Z",
+            "owner": "fsouza",
+            "repo": "go-dockerclient",
+            "stars": 13543
+          }
+        },
+        {
+          "children": [],
+          "description": "Docker event handling with Python.",
+          "title": "ahab",
+          "repo_info": {
+            "archived": false,
+            "language": "C++",
+            "last_commit": "2022-07-05T00:00:00.000Z",
+            "owner": "instacart",
+            "repo": "ahab",
+            "stars": 8546
+          }
+        },
+        {
+          "children": [],
+          "description": "A simple Docker Monitoring wrapper For Docker API.",
+          "title": "DoMonit",
+          "repo_info": {
+            "archived": false,
+            "language": "JavaScript",
+            "last_commit": "2022-05-10T00:00:00.000Z",
+            "owner": "eon01",
+            "repo": "DoMonit",
+            "stars": 602
+          }
+        },
+        {
+          "children": [],
+          "description": "Docker API client for JavaScript, automatically generated from Swagger API definition from moby repository. By masaeedu.",
+          "title": "Docker Client TypeScript"
+        }
+      ],
+      "title": "API Client"
+    },
+    {
+      "description": "",
+      "items": [
+        {
+          "children": [],
+          "description": "The aim of the docker plugin is to be able to use a docker host to dynamically provision a slave, run a single build, then tear-down that slave.",
+          "title": "Docker plugin for Jenkins",
+          "repo_info": {
+            "archived": false,
+            "language": "Shell",
+            "last_commit": "2023-08-16T00:00:00.000Z",
+            "owner": "jenkinsci",
+            "repo": "docker-plugin",
+            "stars": 49139
+          }
+        },
+        {
+          "children": [],
+          "description": "Tool to configure CI/CD of your container applications via AWS CodePipeline, CodeBuild and ECS Stelligent.",
+          "title": "mu",
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2023-10-24T00:00:00.000Z",
+            "owner": "stelligent",
+            "repo": "mu",
+            "stars": 49070
+          }
+        },
+        {
+          "children": [],
+          "description": "Continuous integration server built on Docker and configured using YAML files.",
+          "title": "Drone",
+          "repo_info": {
+            "archived": false,
+            "language": "Shell",
+            "last_commit": "2022-08-11T00:00:00.000Z",
+            "owner": "drone",
+            "repo": "drone",
+            "stars": 48509
+          }
+        },
+        {
+          "children": [],
+          "description": "A script checking updates for docker images without pulling then auto-update selected/all containers. With notifications, pruning and more.",
+          "title": "dockcheck",
+          "repo_info": {
+            "archived": false,
+            "language": "Shell",
+            "last_commit": "2023-02-27T00:00:00.000Z",
+            "owner": "mag37",
+            "repo": "dockcheck",
+            "stars": 48309
+          }
+        },
+        {
+          "children": [],
+          "description": "Powerful workflow engine and end-to-end pipeline solutions implemented with native Kubernetes resources.",
+          "title": "Cyclone",
+          "repo_info": {
+            "archived": false,
+            "language": "C++",
+            "last_commit": "2021-10-28T00:00:00.000Z",
+            "owner": "caicloud",
+            "repo": "cyclone",
+            "stars": 41796
+          }
+        },
+        {
+          "children": [],
+          "description": "Convert your Git workflow to Docker containers ready for Continuous Delivery.",
+          "title": "Captain",
+          "repo_info": {
+            "archived": false,
+            "language": "TypeScript",
+            "last_commit": "2022-02-10T00:00:00.000Z",
+            "owner": "harbur",
+            "repo": "captain",
+            "stars": 40691
+          }
+        },
+        {
+          "children": [],
+          "description": "Continuous deployment of a microservices application.",
+          "title": "Microservices Continuous Deployment",
+          "repo_info": {
+            "archived": false,
+            "language": "Ruby",
+            "last_commit": "2022-11-10T00:00:00.000Z",
+            "owner": "francescou",
+            "repo": "docker-continuous-deployment",
+            "stars": 37418
+          }
+        },
+        {
+          "children": [],
+          "description": "Create a distributed, isolated task pipeline in your Docker Swarm.",
+          "title": "SwarmCI",
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2023-01-17T00:00:00.000Z",
+            "owner": "ghostsquad",
+            "repo": "swarmci",
+            "stars": 32350
+          }
+        },
+        {
+          "children": [],
+          "description": "Deploy Docker Compose to your favorite cloud in minutes.",
+          "title": "Defang",
+          "repo_info": {
+            "archived": false,
+            "language": "Rust",
+            "last_commit": "2021-07-31T00:00:00.000Z",
+            "owner": "DefangLabs",
+            "repo": "defang",
+            "stars": 30885
+          }
+        },
+        {
+          "children": [],
+          "description": "Open-source container update monitoring with web dashboard, 15 registries, 16 notification triggers, and security scanning. Drop-in WUD replacement. By CodesWhat.",
+          "title": "Drydock",
+          "repo_info": {
+            "archived": false,
+            "language": "Rust",
+            "last_commit": "2021-06-11T00:00:00.000Z",
+            "owner": "CodesWhat",
+            "repo": "drydock",
+            "stars": 27935
+          }
+        },
+        {
+          "children": [],
+          "description": "Github actions workflow (HCL syntax) execution engine.",
+          "title": "Popper",
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2022-03-13T00:00:00.000Z",
+            "owner": "systemslab",
+            "repo": "popper",
+            "stars": 23660
+          }
+        },
+        {
+          "children": [],
+          "description": "Receive notifications when an image or repository is updated on a Docker registry by crazy-max.",
+          "title": "Diun",
+          "repo_info": {
+            "archived": false,
+            "language": "Shell",
+            "last_commit": "2022-04-23T00:00:00.000Z",
+            "owner": "crazy-max",
+            "repo": "diun",
+            "stars": 22619
+          }
+        },
+        {
+          "children": [],
+          "description": "Simple, very flexible, powerful CI / CD / automation system configured in Python. Offline and local first.",
+          "title": "Jaypore CI",
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2022-01-08T00:00:00.000Z",
+            "owner": "theSage21",
+            "repo": "jaypore_ci",
+            "stars": 21724
+          }
+        },
+        {
+          "children": [],
+          "description": "Easily dockerize your Git repository.",
+          "title": "Skipper",
+          "repo_info": {
+            "archived": false,
+            "language": "C++",
+            "last_commit": "2021-10-18T00:00:00.000Z",
+            "owner": "Stratoscale",
+            "repo": "skipper",
+            "stars": 12806
+          }
+        },
+        {
+          "children": [],
+          "description": "Automatically update selected Docker swarm services.",
+          "title": "Gantry",
+          "repo_info": {
+            "archived": false,
+            "language": "Shell",
+            "last_commit": "2022-07-02T00:00:00.000Z",
+            "owner": "shizunge",
+            "repo": "gantry",
+            "stars": 7549
+          }
+        },
+        {
+          "children": [],
+          "description": "Modern CI/CD, open-source, on-premise system that is highly scalable and focused on testing. One of its executors is Docker. Developed.",
+          "title": "Kraken CI",
+          "repo_info": {
+            "archived": false,
+            "language": "Ruby",
+            "last_commit": "2022-02-03T00:00:00.000Z",
+            "owner": "Kraken-CI",
+            "repo": "kraken",
+            "stars": 2698
+          }
+        },
+        {
+          "children": [],
+          "description": "The best of Git, build & deployment tools combined into one powerful tool that supercharged our development.",
+          "title": "Buddy :heavy_dollar_sign:"
+        },
+        {
+          "children": [],
+          "description": "Build Docker images fast, in the cloud. Blazing fast compute, automatic intelligent caching, and zero configuration. Done in seconds.",
+          "title": "Depot :heavy_dollar_sign:"
+        },
+        {
+          "children": [],
+          "description": "GitLab has integrated CI to test, build and deploy your code with the use of GitLab runners.",
+          "title": "GitLab Runner"
+        },
+        {
+          "children": [],
+          "description": "Yahoo's OpenSource buildplatform designed for Continous Delivery.",
+          "title": "Screwdriver :heavy_dollar_sign:"
+        },
+        {
+          "children": [],
+          "description": "A cloud-native pipeline resource.",
+          "title": "Tekton CD"
+        }
+      ],
+      "title": "CI/CD"
+    },
+    {
+      "description": "",
+      "items": [
+        {
+          "children": [],
+          "description": "Lando is for developers who want to quickly specify and painlessly spin up the services and tools needed to develop their projects. By Tandem.",
+          "title": "Lando",
+          "repo_info": {
+            "archived": false,
+            "language": "Shell",
+            "last_commit": "2023-01-18T00:00:00.000Z",
+            "owner": "lando",
+            "repo": "lando",
+            "stars": 44349
+          }
+        },
+        {
+          "children": [],
+          "description": "Run your builds inside a Docker defined environment.",
+          "title": "construi",
+          "repo_info": {
+            "archived": false,
+            "language": "Java",
+            "last_commit": "2021-12-26T00:00:00.000Z",
+            "owner": "lstephen",
+            "repo": "construi",
+            "stars": 42737
+          }
+        },
+        {
+          "children": [],
+          "description": "Drastically improves performance (50-70x) when using Docker for development on Mac OS X/Windows and Linux while sharing code to the container. By EugenMayer.",
+          "title": "Docker-sync",
+          "repo_info": {
+            "archived": false,
+            "language": "Rust",
+            "last_commit": "2021-09-09T00:00:00.000Z",
+            "owner": "EugenMayer",
+            "repo": "docker-sync",
+            "stars": 39845
+          }
+        },
+        {
+          "children": [],
+          "description": "Developer workspace server with Docker runtimes, cloud IDE, next-generation Eclipse IDE.",
+          "title": "Eclipse Che",
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2022-09-09T00:00:00.000Z",
+            "owner": "eclipse",
+            "repo": "che",
+            "stars": 37480
+          }
+        },
+        {
+          "children": [],
+          "description": "Install Zsh, Oh-My-Zsh and plugins inside a Docker container with one line! By Deluan.",
+          "title": "Zsh-in-Docker",
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2023-11-03T00:00:00.000Z",
+            "owner": "deluan",
+            "repo": "zsh-in-docker",
+            "stars": 37060
+          }
+        },
+        {
+          "children": [],
+          "description": "Uni(versal)get, the installer and updater for container tools and beyond (formerly docker-setup). By nicholasdille.",
+          "title": "uniget",
+          "repo_info": {
+            "archived": false,
+            "language": "C++",
+            "last_commit": "2022-05-26T00:00:00.000Z",
+            "owner": "uniget-org",
+            "repo": "cli",
+            "stars": 36586
+          }
+        },
+        {
+          "children": [],
+          "description": "A set of bash commands to shortcut typical docker dev-ops. An alternative to creating typical helper scripts like \"build.sh\" and \"deploy.sh\" inside code repositories. By NandoQuintana.",
+          "title": "Docker Missing Tools",
+          "repo_info": {
+            "archived": false,
+            "language": "TypeScript",
+            "last_commit": "2023-04-06T00:00:00.000Z",
+            "owner": "nandoquintana",
+            "repo": "docker-missing-tools",
+            "stars": 32271
+          }
+        },
+        {
+          "children": [],
+          "description": "A tool that makes debugging of Dockerized Go applications super easy by enabling Debugger and Hot-Reload features, seamlessly.",
+          "title": "Gebug",
+          "repo_info": {
+            "archived": false,
+            "language": "Ruby",
+            "last_commit": "2022-01-14T00:00:00.000Z",
+            "owner": "moshebe",
+            "repo": "gebug",
+            "stars": 29718
+          }
+        },
+        {
+          "children": [],
+          "description": "Vagga is a containerisation tool without daemons. It is a fully-userspace container engine inspired by Vagrant and Docker, specialized for development environments.",
+          "title": "Vagga",
+          "repo_info": {
+            "archived": false,
+            "language": "JavaScript",
+            "last_commit": "2021-08-03T00:00:00.000Z",
+            "owner": "tailhook",
+            "repo": "vagga",
+            "stars": 28882
+          }
+        },
+        {
+          "children": [],
+          "description": "A portable and disposable Shell environment, based on Docker and Nix. By senges.",
+          "title": "Kitt",
+          "repo_info": {
+            "archived": false,
+            "language": "Ruby",
+            "last_commit": "2022-03-25T00:00:00.000Z",
+            "owner": "senges",
+            "repo": "kitt",
+            "stars": 28648
+          }
+        },
+        {
+          "children": [],
+          "description": "Local development environment toolset based on Docker. By whatwedo.",
+          "title": "dde",
+          "repo_info": {
+            "archived": false,
+            "language": "TypeScript",
+            "last_commit": "2021-04-16T00:00:00.000Z",
+            "owner": "whatwedo",
+            "repo": "dde",
+            "stars": 23991
+          }
+        },
+        {
+          "children": [],
+          "description": "CLI utility for straightforward provisioning and interacting with an application configured by docker-compose. By bibendi.",
+          "title": "DIP",
+          "repo_info": {
+            "archived": false,
+            "language": "TypeScript",
+            "last_commit": "2023-07-25T00:00:00.000Z",
+            "owner": "bibendi",
+            "repo": "dip",
+            "stars": 20161
+          }
+        },
+        {
+          "children": [],
+          "description": "Remote development machines powered by Terraform or Docker.",
+          "title": "coder",
+          "repo_info": {
+            "archived": false,
+            "language": "Rust",
+            "last_commit": "2022-01-07T00:00:00.000Z",
+            "owner": "coder",
+            "repo": "coder",
+            "stars": 17725
+          }
+        },
+        {
+          "children": [],
+          "description": "Container solution to compile Rust projects for Linux, macOS and Windows. By Peco602.",
+          "title": "Rust Universal Compiler",
+          "repo_info": {
+            "archived": false,
+            "language": "C++",
+            "last_commit": "2022-10-03T00:00:00.000Z",
+            "owner": "Peco602",
+            "repo": "rust-universal-compiler",
+            "stars": 17456
+          }
+        },
+        {
+          "children": [],
+          "description": "Simple and transparent alternative to boot2docker (backed by Vagrant).",
+          "title": "docker-vm",
+          "repo_info": {
+            "archived": false,
+            "language": "Ruby",
+            "last_commit": "2022-12-10T00:00:00.000Z",
+            "owner": "shyiko",
+            "repo": "docker-vm",
+            "stars": 16388
+          }
+        },
+        {
+          "children": [],
+          "description": "A build automation tool for Docker applications. By dnephin.",
+          "title": "dobi",
+          "repo_info": {
+            "archived": false,
+            "language": "Shell",
+            "last_commit": "2021-10-05T00:00:00.000Z",
+            "owner": "dnephin",
+            "repo": "dobi",
+            "stars": 11819
+          }
+        },
+        {
+          "children": [],
+          "description": "Replace your local installation of Node, Go, ... with project-specific docker containers. By EnvCLI.",
+          "title": "EnvCLI",
+          "repo_info": {
+            "archived": false,
+            "language": "Go",
+            "last_commit": "2023-01-14T00:00:00.000Z",
+            "owner": "EnvCLI",
+            "repo": "EnvCLI",
+            "stars": 11353
+          }
+        },
+        {
+          "children": [],
+          "description": "Deep Learning Docker Images. Don't waste time setting up a deep learning env when you can get a deep learning environment with everything pre-installed.",
+          "title": "DockerDL",
+          "repo_info": {
+            "archived": false,
+            "language": "C++",
+            "last_commit": "2021-08-09T00:00:00.000Z",
+            "owner": "matifali",
+            "repo": "dockerdl",
+            "stars": 10876
+          }
+        },
+        {
+          "children": [],
+          "description": "Generate Web/CLI projects Dockerized development environments, from 1 simple YAML file. By Ph3nol.",
+          "title": "Docker-Arch",
+          "repo_info": {
+            "archived": false,
+            "language": "C++",
+            "last_commit": "2023-01-31T00:00:00.000Z",
+            "owner": "Ph3nol",
+            "repo": "Docker-Arch",
+            "stars": 10336
+          }
+        },
+        {
+          "children": [],
+          "description": "Container solution to compile Linux and develop it for ESP32 microcontrollers - By Hpsaturn.",
+          "title": "ESP32 Linux - Docker builder",
+          "repo_info": {
+            "archived": false,
+            "language": "Ruby",
+            "last_commit": "2022-02-23T00:00:00.000Z",
+            "owner": "hpsaturn",
+            "repo": "esp32s3-linux",
+            "stars": 7678
+          }
+        },
+        {
+          "children": [],
+          "description": "Containerize your development workflow. (formerly DevLab by TechnologyAdvice).",
+          "title": "Binci",
+          "repo_info": {
+            "archived": false,
+            "language": "TypeScript",
+            "last_commit": "2022-08-19T00:00:00.000Z",
+            "owner": "binci",
+            "repo": "binci",
+            "stars": 3501
+          }
+        }
+      ],
+      "title": "Development Environment"
+    },
+    {
+      "description": "",
+      "items": [
+        {
+          "children": [],
+          "description": "Least recently used (LRU) eviction of Docker images.",
+          "title": "Docuum",
+          "repo_info": {
+            "archived": false,
+            "language": "JavaScript",
+            "last_commit": "2022-03-21T00:00:00.000Z",
+            "owner": "stepchowfun",
+            "repo": "docuum",
+            "stars": 37652
+          }
+        },
+        {
+          "children": [],
+          "description": "Image for automatic removing unused Docker Swarm objects. Also works just as Docker Service.",
+          "title": "docker_gc",
+          "repo_info": {
+            "archived": false,
+            "language": "C++",
+            "last_commit": "2023-05-11T00:00:00.000Z",
+            "owner": "pdacity",
+            "repo": "docker_gc",
+            "stars": 27236
+          }
+        },
+        {
+          "children": [],
+          "description": "A script that cleans Docker containers, images and volumes.",
+          "title": "Docker Clean",
+          "repo_info": {
+            "archived": false,
+            "language": "C++",
+            "last_commit": "2021-04-21T00:00:00.000Z",
+            "owner": "ZZROTDesign",
+            "repo": "docker-clean",
+            "stars": 23986
+          }
+        },
+        {
+          "children": [],
+          "description": "Keep docker hosts tidy. By Yelp.",
+          "title": "docker-custodian",
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2022-02-11T00:00:00.000Z",
+            "owner": "Yelp",
+            "repo": "docker-custodian",
+            "stars": 22690
+          }
+        },
+        {
+          "children": [],
+          "description": "A docker garbage collector cleaning stuff you did not use recently.",
+          "title": "caduc",
+          "repo_info": {
+            "archived": false,
+            "language": "JavaScript",
+            "last_commit": "2023-01-15T00:00:00.000Z",
+            "owner": "tjamet",
+            "repo": "caduc",
+            "stars": 5352
+          }
+        }
+      ],
+      "title": "Garbage Collection"
+    },
+    {
+      "description": "",
+      "items": [
+        {
+          "children": [],
+          "description": "Serverless Container-aware Architectures (SCAR) is a serverless framework that allows easy deployment and execution of containers (e.g. Docker) in Serverless environments (e.g. Lambda).",
+          "title": "SCAR",
+          "repo_info": {
+            "archived": false,
+            "language": "C++",
+            "last_commit": "2022-10-03T00:00:00.000Z",
+            "owner": "grycap",
+            "repo": "scar",
+            "stars": 28456
+          }
+        },
+        {
+          "children": [],
+          "description": "A complete serverless functions framework for Docker and Kubernetes. By OpenFaaS.",
+          "title": "OpenFaaS",
+          "repo_info": {
+            "archived": false,
+            "language": "Java",
+            "last_commit": "2021-04-10T00:00:00.000Z",
+            "owner": "openfaas",
+            "repo": "faas",
+            "stars": 27997
+          }
+        },
+        {
+          "children": [],
+          "description": "The serverless microservices platform FaaS (Functions as a Service) which uses Docker containers to run Any language or AWS Lambda functions.",
+          "title": "IronFunctions",
+          "repo_info": {
+            "archived": false,
+            "language": "TypeScript",
+            "last_commit": "2023-01-26T00:00:00.000Z",
+            "owner": "iron-io",
+            "repo": "functions",
+            "stars": 16341
+          }
+        },
+        {
+          "children": [],
+          "description": "A serverless, open source cloud platform that executes functions in response to events at any scale. By apache.",
+          "title": "Apache OpenWhisk",
+          "repo_info": {
+            "archived": false,
+            "language": "Rust",
+            "last_commit": "2022-05-07T00:00:00.000Z",
+            "owner": "apache",
+            "repo": "openwhisk",
+            "stars": 5605
+          }
+        },
+        {
+          "children": [],
+          "description": "Functions as Docker containers example voting app. By bfirsh.",
+          "title": "Funker",
+          "repo_info": {
+            "archived": false,
+            "language": "Rust",
+            "last_commit": "2021-05-22T00:00:00.000Z",
+            "owner": "bfirsh",
+            "repo": "funker-example-voting-app",
+            "stars": 955
+          }
+        },
+        {
+          "children": [],
+          "description": ":heavy_dollar_sign: Koyeb is a developer-friendly serverless platform to deploy apps globally. Seamlessly run Docker containers, web apps, and APIs with git-based deployment, native autoscaling, a global edge network, and built-in service mesh and discovery.",
+          "title": "Koyeb"
+        }
+      ],
+      "title": "Serverless"
+    },
+    {
+      "description": "",
+      "items": [
+        {
+          "children": [],
+          "description": "Golang test harness for easily setting up tests that rely on services in a docker-compose.yml. By byrnedo.",
+          "title": "EZDC",
+          "repo_info": {
+            "archived": false,
+            "language": "Shell",
+            "last_commit": "2021-06-27T00:00:00.000Z",
+            "owner": "lynchborg",
+            "repo": "ezdc",
+            "stars": 49919
+          }
+        },
+        {
+          "children": [],
+          "description": "A small Ruby Gem to run RSpec and Serverspec, Infrataster and Capybara tests against Dockerfiles or Docker images easily. By zuazo.",
+          "title": "DockerSpec",
+          "repo_info": {
+            "archived": false,
+            "language": "Shell",
+            "last_commit": "2022-02-02T00:00:00.000Z",
+            "owner": "zuazo",
+            "repo": "dockerspec",
+            "stars": 49699
+          }
+        },
+        {
+          "children": [],
+          "description": "A fast YAML based tool for validating docker containers.",
+          "title": "dgoss",
+          "repo_info": {
+            "archived": true,
+            "language": "Ruby",
+            "last_commit": "2022-03-05T00:00:00.000Z",
+            "owner": "goss-org",
+            "repo": "goss",
+            "stars": 41668
+          }
+        },
+        {
+          "children": [],
+          "description": "A GitHub app that automatically creates Docker-based test environments for your pull requests, from your docker-compose files. Not open source.",
+          "title": "Pull Dog",
+          "repo_info": {
+            "archived": false,
+            "language": "Java",
+            "last_commit": "2023-01-20T00:00:00.000Z",
+            "owner": "apps",
+            "repo": "pull-dog",
+            "stars": 35347
+          }
+        },
+        {
+          "children": [],
+          "description": "Chaos testing tool for Docker. Can be deployed on kubernetes and CoreOS cluster. By alexei-led.",
+          "title": "Pumba",
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2023-06-12T00:00:00.000Z",
+            "owner": "alexei-led",
+            "repo": "pumba",
+            "stars": 34204
+          }
+        },
+        {
+          "children": [],
+          "description": "A framework to validate the structure of an image by checking the outputs of commands or the contents of the filesystem. By GoogleContainerTools.",
+          "title": "Container Structure Test",
+          "repo_info": {
+            "archived": false,
+            "language": "JavaScript",
+            "last_commit": "2022-08-28T00:00:00.000Z",
+            "owner": "GoogleContainerTools",
+            "repo": "container-structure-test",
+            "stars": 8492
+          }
+        },
+        {
+          "children": [],
+          "description": "A composable build system for multi-container test environments that provides developers with: a powerful Python-like SDK for environment configuration, a compile-time validator to verify environment behavior & setup, and a runtime for environment execution, monitoring, & debugging capabilities. By Kurtosis.",
+          "title": "Kurtosis",
+          "repo_info": {
+            "archived": false,
+            "language": "JavaScript",
+            "last_commit": "2022-11-06T00:00:00.000Z",
+            "owner": "kurtosis-tech",
+            "repo": "kurtosis",
+            "stars": 8422
+          }
+        },
+        {
+          "children": [],
+          "description": null,
+          "title": "InSpec - InSpec is an open-source testing framework for infrastructure with a human- and machine-readable language for specifying compliance, security and policy requirements. By chef"
+        }
+      ],
+      "title": "Testing"
+    },
+    {
+      "description": "",
+      "items": [
+        {
+          "children": [],
+          "description": "Simple and Powerful utility for docker. By ramitsurana.",
+          "title": "Turbo",
+          "repo_info": {
+            "archived": true,
+            "language": null,
+            "last_commit": "2022-01-02T00:00:00.000Z",
+            "owner": "ramitsurana",
+            "repo": "turbo",
+            "stars": 48730
+          }
+        },
+        {
+          "children": [],
+          "description": "Good starting point is vagrant-docker-example.",
+          "title": "Vagrant - Docker provider",
+          "repo_info": {
+            "archived": false,
+            "language": "C++",
+            "last_commit": "2023-07-10T00:00:00.000Z",
+            "owner": "bubenkoff",
+            "repo": "vagrant-docker-example",
+            "stars": 43176
+          }
+        },
+        {
+          "children": [],
+          "description": "Makes it easy to securely and portably run graphical desktop applications in Docker.",
+          "title": "subuser",
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2023-06-22T00:00:00.000Z",
+            "owner": "subuser-security",
+            "repo": "subuser",
+            "stars": 33194
+          }
+        },
+        {
+          "children": [],
+          "description": "A tool to execute simple docker containers in batch or interactive systems without root privileges.",
+          "title": "udocker",
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2022-02-17T00:00:00.000Z",
+            "owner": "indigo-dc",
+            "repo": "udocker",
+            "stars": 31684
+          }
+        },
+        {
+          "children": [],
+          "description": "Tool for building and maintaining complex Docker deployments.",
+          "title": "Shutit",
+          "repo_info": {
+            "archived": false,
+            "language": "Java",
+            "last_commit": "2022-05-05T00:00:00.000Z",
+            "owner": "ianmiell",
+            "repo": "shutit",
+            "stars": 30607
+          }
+        },
+        {
+          "children": [],
+          "description": "Terraform module for deploying a single Docker image or file to any Cloud™ VM.",
+          "title": "Terraform cloud-init config",
+          "repo_info": {
+            "archived": false,
+            "language": "Ruby",
+            "last_commit": "2022-06-13T00:00:00.000Z",
+            "owner": "christippett",
+            "repo": "terraform-cloudinit-container-server",
+            "stars": 21568
+          }
+        },
+        {
+          "children": [],
+          "description": "Seamlessly execute commands in a container.",
+          "title": "dockerized",
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2023-11-03T00:00:00.000Z",
+            "owner": "benzaita",
+            "repo": "dockerized-cli",
+            "stars": 17060
+          }
+        },
+        {
+          "children": [],
+          "description": "Preview environments for Docker and Docker Compose projects. Test your changes and get feedback from devs and non-devs (Product/Design) by deploying pull requests to the your cloud provider as part of your CI pipeline.",
+          "title": "Preevy",
+          "repo_info": {
+            "archived": false,
+            "language": "C++",
+            "last_commit": "2023-05-01T00:00:00.000Z",
+            "owner": "livecycle",
+            "repo": "preevy",
+            "stars": 13246
+          }
+        },
+        {
+          "children": [],
+          "description": "Command line interface written in Go for running code with Docker Exec images.",
+          "title": "dexec",
+          "repo_info": {
+            "archived": false,
+            "language": "Ruby",
+            "last_commit": "2021-10-16T00:00:00.000Z",
+            "owner": "docker-exec",
+            "repo": "dexec",
+            "stars": 11808
+          }
+        },
+        {
+          "children": [],
+          "description": "A Docker + Kubernetes CLI for application developers; used to containerize an application and to manage its lifecycle throughout development, testing, and release cycles. From artsy.",
+          "title": "Hokusai",
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2021-11-19T00:00:00.000Z",
+            "owner": "artsy",
+            "repo": "hokusai",
+            "stars": 4774
+          }
+        },
+        {
+          "children": [],
+          "description": "An engine for managing the execution of container-based workflows.",
+          "title": "Dray",
+          "repo_info": {
+            "archived": false,
+            "language": "Go",
+            "last_commit": "2021-05-04T00:00:00.000Z",
+            "owner": "CenturyLinkLabs",
+            "repo": "dray",
+            "stars": 2973
+          }
+        },
+        {
+          "children": [],
+          "description": "Manage the life cycle of Docker containers. By RedHat.",
+          "title": "Ansible"
+        }
+      ],
+      "title": "Wrappers"
+    },
+    {
+      "description": "",
+      "items": [],
+      "title": "Services based on Docker (mostly :heavy_dollar_sign:)"
+    },
+    {
+      "description": "",
+      "items": [
+        {
+          "children": [],
+          "description": ":heavy_dollar_sign: Monitoring of host and container metrics, Docker events and logs. Automatic log parser. Anomaly Detection and alerting for metrics and logs. sematext.",
+          "title": "SPM for Docker",
+          "repo_info": {
+            "archived": false,
+            "language": "C++",
+            "last_commit": "2023-05-11T00:00:00.000Z",
+            "owner": "sematext",
+            "repo": "sematext-agent-docker",
+            "stars": 44236
+          }
+        },
+        {
+          "children": [],
+          "description": "Docker Monitoring extension gathers metrics from the Docker Remote API, either using Unix Socket or TCP.",
+          "title": "AppDynamics",
+          "repo_info": {
+            "archived": false,
+            "language": "TypeScript",
+            "last_commit": "2023-02-15T00:00:00.000Z",
+            "owner": "Appdynamics",
+            "repo": "docker-monitoring-extension",
+            "stars": 33321
+          }
+        },
+        {
+          "children": [],
+          "description": ":heavy_dollar_sign: A Docker-compatible observability stack that delivers robust log aggregation and uptime monitoring capabilities for various software application.",
+          "title": "Better Stack"
+        },
+        {
+          "children": [],
+          "description": ":heavy_dollar_sign: Agile Operations solutions from Broadcom deliver the modern Docker monitoring businesses need to accelerate and optimize the performance of microservices and the dynamic Docker environments running them. Monitor both the Docker environment and apps that run inside them. (former CA Technologies).",
+          "title": "Broadcom Docker Monitoring"
+        },
+        {
+          "children": [],
+          "description": null,
+          "title": "Collecting docker logs and stats with Splunk"
+        },
+        {
+          "children": [],
+          "description": ":heavy_dollar_sign: Datadog is a full-stack monitoring service for large-scale cloud environments that aggregates metrics/events from servers, databases, and applications. It includes support for Docker, Kubernetes, and Mesos.",
+          "title": "Datadog"
+        },
+        {
+          "children": [],
+          "description": ":heavy_dollar_sign: Open-source service monitoring system and time series database.",
+          "title": "Prometheus"
+        },
+        {
+          "children": [],
+          "description": ":heavy_dollar_sign: Docker Monitoring for DevOps and IT is a SaaS Pay per Host model.",
+          "title": "Site24x7"
+        },
+        {
+          "children": [],
+          "description": ":heavy_dollar_sign: Sysdig Monitor can be used as either software or a SaaS service to monitor, alert, and troubleshoot containers using system calls. It has container-specific features for Docker and Kubernetes.",
+          "title": "Sysdig Monitor"
+        }
+      ],
+      "title": "Monitoring Services"
+    },
+    {
+      "description": "",
+      "items": [
+        {
+          "children": [],
+          "description": "by n1trux",
+          "title": "Awesome Sysadmin",
+          "repo_info": {
+            "archived": false,
+            "language": "Go",
+            "last_commit": "2022-03-30T00:00:00.000Z",
+            "owner": "n1trux",
+            "repo": "awesome-sysadmin",
+            "stars": 49643
+          }
+        },
+        {
+          "children": [],
+          "description": "more general about container than this repo, by Friz-zy.",
+          "title": "Awesome Linux Container",
+          "repo_info": {
+            "archived": false,
+            "language": "Go",
+            "last_commit": "2022-08-17T00:00:00.000Z",
+            "owner": "Friz-zy",
+            "repo": "awesome-linux-containers",
+            "stars": 25503
+          }
+        },
+        {
+          "children": [],
+          "description": "list of Free Software network services and web applications which can be hosted locally by running in a classical way (setup local web server and run applications from there) or in a Docker container. By Kickball",
+          "title": "Awesome Selfhosted",
+          "repo_info": {
+            "archived": false,
+            "language": "TypeScript",
+            "last_commit": "2023-07-25T00:00:00.000Z",
+            "owner": "awesome-selfhosted",
+            "repo": "awesome-selfhosted",
+            "stars": 20161
+          }
+        },
+        {
+          "children": [],
+          "description": "Docker Compose samples.",
+          "title": "Awesome Compose",
+          "repo_info": {
+            "archived": false,
+            "language": "Shell",
+            "last_commit": "2023-12-04T00:00:00.000Z",
+            "owner": "docker",
+            "repo": "awesome-compose",
+            "stars": 14029
+          }
+        },
+        {
+          "children": [],
+          "description": "by ramitsurana",
+          "title": "Awesome Kubernetes",
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2022-08-10T00:00:00.000Z",
+            "owner": "ramitsurana",
+            "repo": "awesome-kubernetes",
+            "stars": 12510
+          }
+        },
+        {
+          "children": [],
+          "description": "Not specific to docker but relevant.",
+          "title": "Awesome CI/CD",
+          "repo_info": {
+            "archived": false,
+            "language": "JavaScript",
+            "last_commit": "2021-12-21T00:00:00.000Z",
+            "owner": "cicdops",
+            "repo": "awesome-ciandcd",
+            "stars": 10742
+          }
+        },
+        {
+          "children": [],
+          "description": "a list of SaaS and On premise applications by cjbarber",
+          "title": "ToolsOfTheTrade",
+          "repo_info": {
+            "archived": false,
+            "language": "Java",
+            "last_commit": "2022-04-05T00:00:00.000Z",
+            "owner": "cjbarber",
+            "repo": "ToolsOfTheTrade",
+            "stars": 4637
+          }
+        }
+      ],
+      "title": "Awesome Lists"
+    },
+    {
+      "description": "",
+      "items": [
+        {
+          "children": [],
+          "description": "a list of docker-compose samples for a lot of databases by alexmacarthur",
+          "title": "Local Docker DB",
+          "repo_info": {
+            "archived": false,
+            "language": "TypeScript",
+            "last_commit": "2023-07-25T00:00:00.000Z",
+            "owner": "alexmacarthur",
+            "repo": "local-docker-db",
+            "stars": 40161
+          }
+        },
+        {
+          "children": [],
+          "description": "Demo web app showing how Docker Compose might be used to set up an API Gateway, centralized authentication, background workers, and WebSockets as containerized services.",
+          "title": "Webstack-micro",
+          "repo_info": {
+            "archived": false,
+            "language": "JavaScript",
+            "last_commit": "2021-06-24T00:00:00.000Z",
+            "owner": "ferbs",
+            "repo": "webstack-micro",
+            "stars": 35922
+          }
+        },
+        {
+          "children": [],
+          "description": "A local development environment with Docker allows you to shrink-wrap the devops your project needs as config, making onboarding frictionless.",
+          "title": "An Annotated Docker Config for Frontend Web Development"
+        }
+      ],
+      "title": "Demos and Examples"
+    },
+    {
+      "description": "",
+      "items": [
+        {
+          "children": [],
+          "description": null,
+          "title": "Get Docker up and running on the RaspberryPi in three steps",
+          "repo_info": {
+            "archived": false,
+            "language": "Go",
+            "last_commit": "2021-12-30T00:00:00.000Z",
+            "owner": "umiddelb",
+            "repo": "armhf",
+            "stars": 44733
+          }
+        },
+        {
+          "children": [],
+          "description": null,
+          "title": "Installing, running, using Docker on armhf (ARMv7) devices",
+          "repo_info": {
+            "archived": false,
+            "language": "Go",
+            "last_commit": "2021-12-30T00:00:00.000Z",
+            "owner": "umiddelb",
+            "repo": "armhf",
+            "stars": 44733
+          }
+        },
+        {
+          "children": [],
+          "description": "Huge resource on clustering, swarm, docker, pre-installed image for SD card on Raspberry Pi",
+          "title": "Docker Pirates ARMed with explosive stuff"
+        },
+        {
+          "children": [],
+          "description": "Modern DevOps for IoT, leveraging git and Docker.",
+          "title": "git push docker containers to linux devices"
+        }
+      ],
+      "title": "Raspberry Pi & ARM"
+    },
+    {
+      "description": "",
+      "items": [
+        {
+          "children": [],
+          "description": "by tomwillfixit",
+          "title": "CVE Scanning Alpine images with Multi-stage builds in Docker 17.05",
+          "repo_info": {
+            "archived": false,
+            "language": "Rust",
+            "last_commit": "2021-06-11T00:00:00.000Z",
+            "owner": "tomwillfixit",
+            "repo": "alpine-cvecheck",
+            "stars": 41935
+          }
+        },
+        {
+          "children": [],
+          "description": null,
+          "title": "How CVE's are handled on Offical Docker Images",
+          "repo_info": {
+            "archived": false,
+            "language": "Go",
+            "last_commit": "2022-06-18T00:00:00.000Z",
+            "owner": "docker-library",
+            "repo": "official-images",
+            "stars": 26563
+          }
+        },
+        {
+          "children": [],
+          "description": null,
+          "title": "Docker Secure Deployment Guidelines",
+          "repo_info": {
+            "archived": false,
+            "language": "C++",
+            "last_commit": "2021-10-28T00:00:00.000Z",
+            "owner": "AonCyberLabs",
+            "repo": "Docker-Secure-Deployment-Guidelines",
+            "stars": 24796
+          }
+        },
+        {
+          "children": [],
+          "description": null,
+          "title": "Bringing new security features to Docker"
+        },
+        {
+          "children": [],
+          "description": null,
+          "title": "Docker Security - Quick Reference"
+        },
+        {
+          "children": [],
+          "description": null,
+          "title": "Docker Security: Are Your Containers Tightly Secured to the Ship? SlideShare"
+        },
+        {
+          "children": [],
+          "description": null,
+          "title": "Lynis is an open source security auditing tool including Docker auditing"
+        },
+        {
+          "children": [],
+          "description": null,
+          "title": "Security Best Practices for Building Docker Images"
+        },
+        {
+          "children": [],
+          "description": null,
+          "title": "Software Engineering Radio interview of Docker Security Team Lead (Diogo Mónica)"
+        },
+        {
+          "children": [],
+          "description": null,
+          "title": "Ten Docker Image Security Best Practices Cheat Sheet"
+        },
+        {
+          "children": [],
+          "description": null,
+          "title": "Top ten most popular docker images each contain at least 30 vulnerabilities"
+        },
+        {
+          "children": [],
+          "description": null,
+          "title": "Tuning Docker with the newest security enhancements"
+        },
+        {
+          "children": [],
+          "description": null,
+          "title": "10 best practices to containerize Node.js web applications with Docker"
+        }
+      ],
+      "title": "Security"
+    },
+    {
+      "description": "",
+      "items": [],
+      "title": "Stargazers over time"
+    }
+  ],
+  "metadata": {
+    "last_updated": "2025-01-01T00:00:00.000Z",
+    "original_repository": "veggiemonk/awesome-docker",
+    "original_repository_sha": "deadbeef",
+    "enhanced_repository": "enhansome/enhansome-docker",
+    "enhanced_repository_description": "enhanced list",
+    "title": "Awesome Docker with stars"
+  }
+}

@@ -1,0 +1,504 @@
+{
+  "items": [
+    {
+      "description": "",
+      "items": [
+        {
+          "children": [],
+          "description": "International Bank Account Numbers are not international.",
+          "title": "Falsehoods about IBANs",
+          "repo_info": {
+            "archived": false,
+            "language": "TypeScript",
+            "last_commit": "2022-01-31T00:00:00.000Z",
+            "owner": "globalcitizen",
+            "repo": "php-iban",
+            "stars": 25701
+          }
+        },
+        {
+          "children": [],
+          "description": "Currency validity date ranges overlap due to revolts, invasions, new constitutions, and slow planned adoption.",
+          "title": "CLDR currency definitions",
+          "repo_info": {
+            "archived": false,
+            "language": "C++",
+            "last_commit": "2023-05-01T00:00:00.000Z",
+            "owner": "unicode-org",
+            "repo": "cldr",
+            "stars": 14246
+          }
+        },
+        {
+          "children": [],
+          "description": "A PHP 5.4+ tax management library.",
+          "title": "",
+          "repo_info": {
+            "archived": false,
+            "language": "Go",
+            "last_commit": "2023-01-14T00:00:00.000Z",
+            "owner": "commerceguys",
+            "repo": "tax",
+            "stars": 6353
+          }
+        },
+        {
+          "children": [],
+          "description": "Covers prices, currencies and inventory.",
+          "title": "Falsehoods about Online Shopping"
+        },
+        {
+          "children": [],
+          "description": "Covers currencies, amounts and localization.",
+          "title": "Falsehoods about Prices"
+        },
+        {
+          "children": [],
+          "description": "Economics are not simple or rational.",
+          "title": "Falsehoods about Economics"
+        },
+        {
+          "children": [],
+          "description": "The importance of types in accounting software: missing the decimal point ends up with 100x over-charges.",
+          "title": "Decimal Point Error in Etsy's Accounting System"
+        },
+        {
+          "children": [],
+          "description": "Same error as above at Google Ads, or the danger of separating your pennies from your dollars, where $250 internal coupons turned into $25,000. My advice: get rid of integers and floats for monetary values. Use decimals. Or fallback to strings and parse them, don't validate.",
+          "title": "Twenty five thousand dollars of funny money"
+        },
+        {
+          "children": [],
+          "description": "Insane compensation at Meta in the middle of the AI-boom breaks ERPs.",
+          "title": "“The system can’t handle a billion dollars”"
+        },
+        {
+          "children": [],
+          "description": "Because UK allows companies to be registered with special characters, a hacker leveraged them to register , but also , and .",
+          "title": "Characters and in company names lead to XSS attacks"
+        },
+        {
+          "children": [],
+          "description": "How the rules of the State of Delaware and the IRS does not intersects.",
+          "title": "Minutiae of company names"
+        }
+      ],
+      "title": "Business"
+    },
+    {
+      "description": "On character encoding, string formatting, unicode and internationalization.",
+      "items": [
+        {
+          "children": [],
+          "description": "A huge corpus of strings which have a high probability of causing issues when used as user-input data. A must have set of practical edge-cases to test your software against.",
+          "title": "Big List of Naughty Strings",
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2023-03-08T00:00:00.000Z",
+            "owner": "minimaxir",
+            "repo": "big-list-of-naughty-strings",
+            "stars": 30300
+          }
+        },
+        {
+          "children": [],
+          "description": "Compilation of real-word international and diverse name data for unit testing and QA.",
+          "title": "i18n Testing Data",
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2022-06-17T00:00:00.000Z",
+            "owner": "patch",
+            "repo": "i18n-testing",
+            "stars": 22564
+          }
+        },
+        {
+          "children": [],
+          "description": "A curated list of delightful Unicode tidbits, packages and resources.",
+          "title": "Awesome Unicode",
+          "repo_info": {
+            "archived": false,
+            "language": "Rust",
+            "last_commit": "2023-07-01T00:00:00.000Z",
+            "owner": "Wisdom",
+            "repo": "Awesome-Unicode",
+            "stars": 14185
+          }
+        },
+        {
+          "children": [],
+          "description": "Translating a software from English is not as straightforward as it seems to be.",
+          "title": "Falsehoods about Language"
+        },
+        {
+          "children": [],
+          "description": "Additional cases to complement the previous article.",
+          "title": "Falsehoods about Language"
+        },
+        {
+          "children": [],
+          "description": "Plain text can't cut it, which makes Unicode even more incredible for its ability to just work well.",
+          "title": "Falsehoods about Plain Text"
+        },
+        {
+          "children": [],
+          "description": "A subset of the falsehoods from above, illustrated with some examples.",
+          "title": "Falsehoods about text"
+        },
+        {
+          "children": [],
+          "description": "A video about things you need to keep in mind when internationalizing your code.",
+          "title": "Internationalis(z)ing Code"
+        },
+        {
+          "children": [],
+          "description": "A good introduction to unicode, its historical context and origins, followed by an overview of its inner working.",
+          "title": "Minimum to Know About Unicode and Character Sets"
+        },
+        {
+          "children": [],
+          "description": "Unicode is extensive, here be dragons.",
+          "title": "Dark corners of Unicode"
+        },
+        {
+          "children": [],
+          "description": "Dives deeper in Unicode and dispels myths about code points.",
+          "title": "Let's Stop Ascribing Meaning to Code Points"
+        },
+        {
+          "children": [],
+          "description": "A collection of falsehoods on case, encodings, string length, and more.",
+          "title": "Unicode misconceptions"
+        },
+        {
+          "children": [],
+          "description": "Most programmers spend so much time with they forgets about other's scripts quirks.",
+          "title": "Breaking Our Assumptions"
+        },
+        {
+          "children": [],
+          "description": "Character encoding is hard, more so when each broken layer of data input adds its own spice.",
+          "title": "Ode to a shipping label"
+        },
+        {
+          "children": [],
+          "description": "You cannot localize temperature differences as-is.",
+          "title": "Localization Failure: Temperature is Hard"
+        }
+      ],
+      "title": "Internationalization"
+    },
+    {
+      "description": "",
+      "items": [
+        {
+          "children": [],
+          "description": "Covers phone numbers, their representation and meaning.",
+          "title": "Falsehoods about Phone Numbers",
+          "repo_info": {
+            "archived": false,
+            "language": "C++",
+            "last_commit": "2022-02-05T00:00:00.000Z",
+            "owner": "googlei18n",
+            "repo": "libphonenumber",
+            "stars": 24696
+          }
+        },
+        {
+          "children": [],
+          "description": "Google's common Java, C++ and JavaScript library for parsing, formatting, and validating international phone numbers. Also available for C#, Objective-C, Python, Ruby and PHP.",
+          "title": "",
+          "repo_info": {
+            "archived": false,
+            "language": "C++",
+            "last_commit": "2022-02-05T00:00:00.000Z",
+            "owner": "googlei18n",
+            "repo": "libphonenumber",
+            "stars": 24696
+          }
+        }
+      ],
+      "title": "Phone Numbers"
+    },
+    {
+      "description": "",
+      "items": [
+        {
+          "children": [],
+          "description": "A PHP 5.4+ addressing library, powered by Google's dataset.",
+          "title": "",
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2022-07-27T00:00:00.000Z",
+            "owner": "commerceguys",
+            "repo": "addressing",
+            "stars": 48524
+          }
+        },
+        {
+          "children": [],
+          "description": "Go library to validate and format addresses using Google's dataset.",
+          "title": "",
+          "repo_info": {
+            "archived": false,
+            "language": "TypeScript",
+            "last_commit": "2022-05-11T00:00:00.000Z",
+            "owner": "Boostport",
+            "repo": "address",
+            "stars": 46601
+          }
+        },
+        {
+          "children": [],
+          "description": "Python module to parse, normalize and render postal addresses.",
+          "title": "",
+          "repo_info": {
+            "archived": false,
+            "language": "Ruby",
+            "last_commit": "2023-02-28T00:00:00.000Z",
+            "owner": "scaleway",
+            "repo": "postal-address",
+            "stars": 33308
+          }
+        },
+        {
+          "children": [],
+          "description": "Google's common C++ and Java library for parsing, formatting, and validating international postal addresses.",
+          "title": "",
+          "repo_info": {
+            "archived": false,
+            "language": "Rust",
+            "last_commit": "2022-06-06T00:00:00.000Z",
+            "owner": "googlei18n",
+            "repo": "libaddressinput",
+            "stars": 3575
+          }
+        },
+        {
+          "children": [],
+          "description": "Covers streets, postal codes, buildings, cities and countries.",
+          "title": "Falsehoods about Addresses"
+        },
+        {
+          "children": [],
+          "description": "It's not only about the address itself, but the relationship between a person and its residence.",
+          "title": "Falsehoods about Residence"
+        },
+        {
+          "children": [],
+          "description": "Ultimate falsehood about postal addresses: you do not need one.",
+          "title": "Letter Delivered Despite No Name, No Address"
+        },
+        {
+          "children": [],
+          "description": "Quirks extracted from a list of most residential property sales in England and Wales since 1995.",
+          "title": "UK Address Oddities"
+        },
+        {
+          "children": [],
+          "description": "Smokey Bear has his own ZIP Code () because he gets so much mail.",
+          "title": "The Bear with Its Own ZIP Code"
+        },
+        {
+          "children": [],
+          "description": "Costa Rican uses an idiosyncratic system of addresses that relies on landmarks, history and quite a bit of guesswork.",
+          "title": "Why doesn't Costa Rica use real addresses?"
+        },
+        {
+          "children": [],
+          "description": "Why regular expressions and street addresses do not mix.",
+          "title": "Regex and Postal Addresses"
+        },
+        {
+          "children": [],
+          "description": "“I saw many horrors, but I've never seen this particular formatting choice anywhere else.”",
+          "title": "Parsing the Infamous Japanese Postal CSV"
+        },
+        {
+          "children": [],
+          "description": "Describes both standardized address formats and content.",
+          "title": "USPS Postal Addressing Standards"
+        }
+      ],
+      "title": "Postal Addresses"
+    },
+    {
+      "description": "",
+      "items": [
+        {
+          "children": [],
+          "description": "Common misconceptions about quantum technology and computers.",
+          "title": "Falsehoods about Quantum Technology",
+          "repo_info": {
+            "archived": false,
+            "language": "C++",
+            "last_commit": "2021-08-19T00:00:00.000Z",
+            "owner": "gottfriedsz",
+            "repo": "falsehoods-quantum",
+            "stars": 25866
+          }
+        },
+        {
+          "children": [],
+          "description": "Attributing an identity to a software release might be harder than thought.",
+          "title": "Falsehoods about Versions",
+          "repo_info": {
+            "archived": false,
+            "language": "Ruby",
+            "last_commit": "2022-06-03T00:00:00.000Z",
+            "owner": "xenoterracide",
+            "repo": "falsehoods",
+            "stars": 11578
+          }
+        },
+        {
+          "children": [],
+          "description": "Building software is hard. Building software that builds software is harder.",
+          "title": "Falsehoods about Build Systems"
+        },
+        {
+          "children": [],
+          "description": "Invoking undefined behavior can cause anything to happen, for a much broader definition of \"anything\" than one might think.",
+          "title": "Falsehoods about Undefined Behavior"
+        },
+        {
+          "children": [],
+          "description": "Misconceptions about caches often lead to false assertions, especially when it comes to concurrency and race conditions.",
+          "title": "Myths about CPU Caches"
+        },
+        {
+          "children": [],
+          "description": "Null pointers are even more cursed than pointers in general, and provenance already makes pointers quite complicated.",
+          "title": "Falsehoods about null pointers"
+        },
+        {
+          "children": [],
+          "description": "While RFC4180 to exists, it is far from definitive and goes largely ignored.",
+          "title": "Falsehoods about CSVs"
+        },
+        {
+          "children": [],
+          "description": "Covers package and their managers.",
+          "title": "Falsehoods about Package Managers"
+        },
+        {
+          "children": [],
+          "description": "An attempt to establish a list of falsehoods about testing.",
+          "title": "Falsehoods about Testing"
+        },
+        {
+          "children": [],
+          "description": "Why search (including analysis, tokenization, highlighting) is deceptively complex.",
+          "title": "Falsehoods about Search"
+        },
+        {
+          "children": [],
+          "description": "A better sourced article on the difficulty of implementing search engines.",
+          "title": "What every software engineer should know about search"
+        },
+        {
+          "children": [],
+          "description": "Why your pagination algorithm is giving someone (possibly you) a headache.",
+          "title": "Falsehoods about Pagination"
+        },
+        {
+          "children": [],
+          "description": "Misconceptions about the predictability and performance of garbage collection.",
+          "title": "Falsehoods about garbage collection"
+        },
+        {
+          "children": [],
+          "description": "Diversity of file-systems and OSes makes file paths a little harder than we might think of.",
+          "title": "Myths about File Paths"
+        },
+        {
+          "children": [],
+          "description": "“On any Unix-derived system, a path is an admirably simple thing: if it starts with a , it's a path. Not so on Windows.”",
+          "title": "The weird world of Windows file paths"
+        },
+        {
+          "children": [],
+          "description": "There are a few things about and that are repeated again and again. Still they are false.",
+          "title": "Myths about"
+        },
+        {
+          "children": [],
+          "description": "State machines are often misunderstood and under-applied.",
+          "title": "Facts about State Machines"
+        },
+        {
+          "children": [],
+          "description": "This talk could have been named falsehoods about usernames (and other identifiers).",
+          "title": "Hi! My name is…"
+        },
+        {
+          "children": [],
+          "description": "Part of a post on why file's comparison could be considered harmful.",
+          "title": "Popular misconceptions about"
+        },
+        {
+          "children": [],
+          "description": "Not falsehoods per se, but still a great list of good practices to implement autocompletion.",
+          "title": "Rules for Autocomplete"
+        },
+        {
+          "children": [],
+          "description": "“Your language isn't broken, it's doing floating point math. (…) This is why, more often than not, .”",
+          "title": "Floating Point Math"
+        },
+        {
+          "children": [],
+          "description": "YAML is full of obscure complexity like accidental numbers and non-string keys.",
+          "title": "The yaml document from hell"
+        },
+        {
+          "children": [],
+          "description": "There are edge-cases even in tagging systems which are supposed to be barebone.",
+          "title": "I am endlessly fascinated with content tagging systems"
+        },
+        {
+          "children": [],
+          "description": "Misconceptions about event driven systems and message passing.",
+          "title": "Falsehoods about Event-Driven Systems"
+        },
+        {
+          "children": [],
+          "description": "False conceptions about the identifiers that are used to identify and link research outputs (and a lot of other things).",
+          "title": "Falsehoods about Digital Object Identifiers (DOIs)"
+        },
+        {
+          "children": [],
+          "description": "CVE ≠ vulnerability (and 36 other confusions).",
+          "title": "Falsehoods about CVE"
+        },
+        {
+          "children": [],
+          "description": "Misconceptions about implementing permissions systems.",
+          "title": "Falsehoods about authorization"
+        }
+      ],
+      "title": "Software Engineering"
+    },
+    {
+      "description": "Your contributions are always welcome! Please take a look at the contribution guidelines first.",
+      "items": [],
+      "title": "Contributing"
+    },
+    {
+      "description": "This list gathered some popularity in social medias over the past few years. See it being discussed and mentioned elsewhere.\nThe header image is based on a modified photo taken in February 2010 by Iza Bella, distributed under a Creative Commons BY-SA 2.0 UK license.\n[1]: Notebooks, 1914-1916 (Liveright, 2022) - source: page 14e. [↑]",
+      "items": [],
+      "title": "Footnotes"
+    }
+  ],
+  "metadata": {
+    "last_updated": "2025-01-01T00:00:00.000Z",
+    "original_repository": "kdeldycke/awesome-falsehood",
+    "original_repository_sha": "deadbeef",
+    "enhanced_repository": "enhansome/enhansome-falsehood",
+    "enhanced_repository_description": "enhanced list",
+    "title": "Awesome falsehood with stars"
+  }
+}

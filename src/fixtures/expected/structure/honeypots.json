@@ -1,0 +1,3916 @@
+{
+  "items": [
+    {
+      "description": "",
+      "items": [
+        {
+          "children": [],
+          "description": "Useful in network traffic analysis.",
+          "title": "awesome-pcaptools",
+          "repo_info": {
+            "archived": true,
+            "language": "Go",
+            "last_commit": "2021-06-23T00:00:00.000Z",
+            "owner": "caesar0301",
+            "repo": "awesome-pcaptools",
+            "stars": 29923
+          }
+        },
+        {
+          "children": [],
+          "description": "Some overlap here for artifact analysis.",
+          "title": "awesome-malware-analysis",
+          "repo_info": {
+            "archived": false,
+            "language": "Java",
+            "last_commit": "2021-10-27T00:00:00.000Z",
+            "owner": "rshipp",
+            "repo": "awesome-malware-analysis",
+            "stars": 25797
+          }
+        }
+      ],
+      "title": "Related Lists"
+    },
+    {
+      "description": "",
+      "items": [
+        {
+          "children": [
+            {
+              "children": [],
+              "description": "Semi-Intelligent HoneyPot Network - HoneyNet Intelligent Virtual Environment.",
+              "title": "SIREN",
+              "repo_info": {
+                "archived": false,
+                "language": "TypeScript",
+                "last_commit": "2021-05-26T00:00:00.000Z",
+                "owner": "blaverick62",
+                "repo": "SIREN",
+                "stars": 49951
+              }
+            },
+            {
+              "children": [],
+              "description": "Low interaction honeypot.",
+              "title": "arctic-swallow",
+              "repo_info": {
+                "archived": false,
+                "language": "Ruby",
+                "last_commit": "2023-02-18T00:00:00.000Z",
+                "owner": "ajackal",
+                "repo": "arctic-swallow",
+                "stars": 44318
+              }
+            },
+            {
+              "children": [],
+              "description": "Low interaction Python honeypot designed to mimic services or ports that might get targeted by attackers.",
+              "title": "HoneyWRT",
+              "repo_info": {
+                "archived": false,
+                "language": "Rust",
+                "last_commit": "2023-10-29T00:00:00.000Z",
+                "owner": "CanadianJeff",
+                "repo": "honeywrt",
+                "stars": 43065
+              }
+            },
+            {
+              "children": [],
+              "description": "Open-source blue team tool designed to protect Linux and Windows operating systems through multiple methods.",
+              "title": "Artillery",
+              "repo_info": {
+                "archived": false,
+                "language": "TypeScript",
+                "last_commit": "2021-12-22T00:00:00.000Z",
+                "owner": "trustedsec",
+                "repo": "artillery",
+                "stars": 41741
+              }
+            },
+            {
+              "children": [],
+              "description": "Port listener in Rust with protocol guessing and safe string display.",
+              "title": "portlurker",
+              "repo_info": {
+                "archived": false,
+                "language": "JavaScript",
+                "last_commit": "2023-12-21T00:00:00.000Z",
+                "owner": "bartnv",
+                "repo": "portlurker",
+                "stars": 41012
+              }
+            },
+            {
+              "children": [],
+              "description": "Low interaction VNC honeypot.",
+              "title": "vnclowpot",
+              "repo_info": {
+                "archived": false,
+                "language": "TypeScript",
+                "last_commit": "2022-08-29T00:00:00.000Z",
+                "owner": "magisterquis",
+                "repo": "vnclowpot",
+                "stars": 40491
+              }
+            },
+            {
+              "children": [],
+              "description": "Simple low-interaction port monitoring honeypot.",
+              "title": "slipm-honeypot",
+              "repo_info": {
+                "archived": false,
+                "language": "Rust",
+                "last_commit": "2023-09-19T00:00:00.000Z",
+                "owner": "rshipp",
+                "repo": "slipm-honeypot",
+                "stars": 38105
+              }
+            },
+            {
+              "children": [],
+              "description": "Honeypot Golang emulators.",
+              "title": "go-emulators",
+              "repo_info": {
+                "archived": false,
+                "language": "Shell",
+                "last_commit": "2021-11-14T00:00:00.000Z",
+                "owner": "kingtuna",
+                "repo": "go-emulators",
+                "stars": 35779
+              }
+            },
+            {
+              "children": [],
+              "description": "Low-interaction honeypot and network security tool written to catch attacks against TCP and UDP services.",
+              "title": "honeytrap",
+              "repo_info": {
+                "archived": false,
+                "language": "Shell",
+                "last_commit": "2021-08-26T00:00:00.000Z",
+                "owner": "tillmannw",
+                "repo": "honeytrap",
+                "stars": 32859
+              }
+            },
+            {
+              "children": [],
+              "description": "Python telnet honeypot for catching botnet binaries.",
+              "title": "telnet-iot-honeypot",
+              "repo_info": {
+                "archived": false,
+                "language": "Shell",
+                "last_commit": "2023-01-08T00:00:00.000Z",
+                "owner": "Phype",
+                "repo": "telnet-iot-honeypot",
+                "stars": 30359
+              }
+            },
+            {
+              "children": [],
+              "description": "See honeyd tools.",
+              "title": "Honeyd",
+              "repo_info": {
+                "archived": false,
+                "language": "Shell",
+                "last_commit": "2022-12-09T00:00:00.000Z",
+                "owner": "provos",
+                "repo": "honeyd",
+                "stars": 27389
+              }
+            },
+            {
+              "children": [],
+              "description": "Highly scalable low- to medium-interaction SSH/TCP honeypot designed for OpenWrt/IoT devices leveraging several Linux kernel features, such as namespaces, seccomp and thread capabilities.",
+              "title": "potd",
+              "repo_info": {
+                "archived": false,
+                "language": "C++",
+                "last_commit": "2021-05-31T00:00:00.000Z",
+                "owner": "lnslbrty",
+                "repo": "potd",
+                "stars": 26946
+              }
+            },
+            {
+              "children": [],
+              "description": "Simple honeypot written in Go.",
+              "title": "Yet Another Fake Honeypot (YAFH)",
+              "repo_info": {
+                "archived": false,
+                "language": "Go",
+                "last_commit": "2022-09-26T00:00:00.000Z",
+                "owner": "fnzv",
+                "repo": "YAFH",
+                "stars": 25463
+              }
+            },
+            {
+              "children": [],
+              "description": "Honeypot server written in Go.",
+              "title": "go-HoneyPot",
+              "repo_info": {
+                "archived": false,
+                "language": "Ruby",
+                "last_commit": "2021-04-19T00:00:00.000Z",
+                "owner": "Mojachieee",
+                "repo": "go-HoneyPot",
+                "stars": 20988
+              }
+            },
+            {
+              "children": [],
+              "description": "Simple telnet honeypot.",
+              "title": "TelnetHoney",
+              "repo_info": {
+                "archived": false,
+                "language": null,
+                "last_commit": "2021-11-13T00:00:00.000Z",
+                "owner": "balte",
+                "repo": "TelnetHoney",
+                "stars": 19780
+              }
+            },
+            {
+              "children": [],
+              "description": "Automatic deploy bifrozt with ansible.",
+              "title": "Bifrozt",
+              "repo_info": {
+                "archived": false,
+                "language": "C++",
+                "last_commit": "2023-12-27T00:00:00.000Z",
+                "owner": "Ziemeck",
+                "repo": "bifrozt-ansible",
+                "stars": 19006
+              }
+            },
+            {
+              "children": [],
+              "description": "SMTP honeypot written in Golang.",
+              "title": "honeymail",
+              "repo_info": {
+                "archived": false,
+                "language": "Ruby",
+                "last_commit": "2023-06-08T00:00:00.000Z",
+                "owner": "sec51",
+                "repo": "honeymail",
+                "stars": 18208
+              }
+            },
+            {
+              "children": [],
+              "description": "IMAP honeypot written in Golang.",
+              "title": "imap-honey",
+              "repo_info": {
+                "archived": false,
+                "language": "Ruby",
+                "last_commit": "2021-04-29T00:00:00.000Z",
+                "owner": "yvesago",
+                "repo": "imap-honey",
+                "stars": 17978
+              }
+            },
+            {
+              "children": [],
+              "description": "Telnet Honeypot.",
+              "title": "Hontel",
+              "repo_info": {
+                "archived": false,
+                "language": null,
+                "last_commit": "2021-10-14T00:00:00.000Z",
+                "owner": "stamparm",
+                "repo": "hontel",
+                "stars": 17810
+              }
+            },
+            {
+              "children": [],
+              "description": "Telnet honeypot designed to track the Mirai botnet.",
+              "title": "telnetlogger",
+              "repo_info": {
+                "archived": false,
+                "language": "Rust",
+                "last_commit": "2021-07-11T00:00:00.000Z",
+                "owner": "robertdavidgraham",
+                "repo": "telnetlogger",
+                "stars": 14905
+              }
+            },
+            {
+              "children": [],
+              "description": "Open Source Telnet Honeypot, focused on Mirai malware.",
+              "title": "MTPot",
+              "repo_info": {
+                "archived": false,
+                "language": "Ruby",
+                "last_commit": "2023-06-18T00:00:00.000Z",
+                "owner": "Cymmetria",
+                "repo": "MTPot",
+                "stars": 13198
+              }
+            },
+            {
+              "children": [],
+              "description": "Credentials catching honeypot.",
+              "title": "Heralding",
+              "repo_info": {
+                "archived": false,
+                "language": "Python",
+                "last_commit": "2022-08-26T00:00:00.000Z",
+                "owner": "johnnykv",
+                "repo": "heralding",
+                "stars": 4494
+              }
+            },
+            {
+              "children": [],
+              "description": "Fake Protocol Server.",
+              "title": "fapro",
+              "repo_info": {
+                "archived": false,
+                "language": "Python",
+                "last_commit": "2023-04-03T00:00:00.000Z",
+                "owner": "fofapro",
+                "repo": "fapro",
+                "stars": 4274
+              }
+            },
+            {
+              "children": [],
+              "description": "Simple UDP/DNS honeypot scripts.",
+              "title": "UDPot Honeypot",
+              "repo_info": {
+                "archived": false,
+                "language": null,
+                "last_commit": "2023-05-27T00:00:00.000Z",
+                "owner": "jekil",
+                "repo": "UDPot",
+                "stars": 3220
+              }
+            },
+            {
+              "children": [],
+              "description": "All eating honeypot.",
+              "title": "glutton",
+              "repo_info": {
+                "archived": false,
+                "language": "Go",
+                "last_commit": "2022-12-15T00:00:00.000Z",
+                "owner": "mushorg",
+                "repo": "glutton",
+                "stars": 383
+              }
+            },
+            {
+              "children": [],
+              "description": "Vulnerability emulation honeypot.",
+              "title": "Amun"
+            },
+            {
+              "children": [],
+              "description": "Redirects all hostile traffic to a honeypot that is partially mirroring your production system.",
+              "title": "Bait and Switch"
+            },
+            {
+              "children": [],
+              "description": "Low interactive server side Industrial Control Systems honeypot.",
+              "title": "Conpot"
+            },
+            {
+              "children": [],
+              "description": "Open source network sinkhole that provides a mechanism for detection and prevention of malicious traffic on a given network.",
+              "title": "Honeysink"
+            },
+            {
+              "children": [],
+              "description": "Windows based honeypot Intrusion Detection System (IDS).",
+              "title": "KFSensor"
+            },
+            {
+              "children": [],
+              "description": "Takes over unused IP addresses, and creates virtual servers that are attractive to worms, hackers, and other denizens of the Internet.",
+              "title": "LaBrea"
+            },
+            {
+              "children": [],
+              "description": "Versatile malware collection daemon, uniting the best features of nepenthes and honeytrap.",
+              "title": "mwcollectd"
+            }
+          ],
+          "description": null,
+          "title": "Server",
+          "repo_info": {
+            "archived": false,
+            "language": "TypeScript",
+            "last_commit": "2021-05-26T00:00:00.000Z",
+            "owner": "blaverick62",
+            "repo": "SIREN",
+            "stars": 49951
+          }
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "description": "SSH tarpit that slowly sends an endless banner. (docker image)",
+              "title": "endlessh",
+              "repo_info": {
+                "archived": false,
+                "language": "Ruby",
+                "last_commit": "2021-06-28T00:00:00.000Z",
+                "owner": "skeeto",
+                "repo": "endlessh",
+                "stars": 49918
+              }
+            },
+            {
+              "children": [],
+              "description": "Parse cowrie honeypot logs into a neo4j database.",
+              "title": "cowrie2neo",
+              "repo_info": {
+                "archived": false,
+                "language": "TypeScript",
+                "last_commit": "2021-10-23T00:00:00.000Z",
+                "owner": "xlfe",
+                "repo": "cowrie2neo",
+                "stars": 49801
+              }
+            },
+            {
+              "children": [],
+              "description": "SSH Honeypot written in Go.",
+              "title": "honeypot.go",
+              "repo_info": {
+                "archived": false,
+                "language": "Ruby",
+                "last_commit": "2023-01-09T00:00:00.000Z",
+                "owner": "mdp",
+                "repo": "honeypot.go",
+                "stars": 49358
+              }
+            },
+            {
+              "children": [],
+              "description": "Modified version of the OpenSSH deamon that forwards commands to Cowrie where all commands are interpreted and returned.",
+              "title": "ssh-honeypot",
+              "repo_info": {
+                "archived": false,
+                "language": "Python",
+                "last_commit": "2021-07-02T00:00:00.000Z",
+                "owner": "amv42",
+                "repo": "sshd-honeypot",
+                "stars": 48914
+              }
+            },
+            {
+              "children": [],
+              "description": "SSH, FTP and Telnet honeypots based on Twisted.",
+              "title": "twisted-honeypots",
+              "repo_info": {
+                "archived": false,
+                "language": "Ruby",
+                "last_commit": "2022-05-04T00:00:00.000Z",
+                "owner": "lanjelot",
+                "repo": "twisted-honeypots",
+                "stars": 44608
+              }
+            },
+            {
+              "children": [],
+              "description": "Logs all SSH communications between a client and server.",
+              "title": "HonSSH",
+              "repo_info": {
+                "archived": false,
+                "language": "C++",
+                "last_commit": "2023-01-31T00:00:00.000Z",
+                "owner": "tnich",
+                "repo": "honssh",
+                "stars": 44336
+              }
+            },
+            {
+              "children": [],
+              "description": "Simple TCP/UDP honeypot implemented in Perl.",
+              "title": "Malbait",
+              "repo_info": {
+                "archived": false,
+                "language": "Rust",
+                "last_commit": "2021-06-21T00:00:00.000Z",
+                "owner": "batchmcnulty",
+                "repo": "Malbait",
+                "stars": 43925
+              }
+            },
+            {
+              "children": [],
+              "description": "Docker container running cowrie with DShield output enabled.",
+              "title": "DShield docker",
+              "repo_info": {
+                "archived": false,
+                "language": "Shell",
+                "last_commit": "2023-04-18T00:00:00.000Z",
+                "owner": "xme",
+                "repo": "dshield-docker",
+                "stars": 43259
+              }
+            },
+            {
+              "children": [],
+              "description": "Cowrie SSH Honeypot (based on kippo).",
+              "title": "Cowrie",
+              "repo_info": {
+                "archived": true,
+                "language": "TypeScript",
+                "last_commit": "2022-05-11T00:00:00.000Z",
+                "owner": "cowrie",
+                "repo": "cowrie",
+                "stars": 36601
+              }
+            },
+            {
+              "children": [],
+              "description": "Multi-head SSH honeypot system.",
+              "title": "Blacknet",
+              "repo_info": {
+                "archived": false,
+                "language": "Shell",
+                "last_commit": "2023-08-16T00:00:00.000Z",
+                "owner": "morian",
+                "repo": "blacknet",
+                "stars": 34139
+              }
+            },
+            {
+              "children": [],
+              "description": "SSH Honeypot.",
+              "title": "go-sshoney",
+              "repo_info": {
+                "archived": false,
+                "language": "TypeScript",
+                "last_commit": "2022-01-11T00:00:00.000Z",
+                "owner": "ashmckenzie",
+                "repo": "go-sshoney",
+                "stars": 33721
+              }
+            },
+            {
+              "children": [],
+              "description": "Tiny interaction SSH honeypot engineered in Python to log brute force attacks and, most importantly, the entire shell interaction performed by the attacker.",
+              "title": "HUDINX",
+              "repo_info": {
+                "archived": false,
+                "language": "Go",
+                "last_commit": "2022-12-25T00:00:00.000Z",
+                "owner": "Cryptix720",
+                "repo": "HUDINX",
+                "stars": 33373
+              }
+            },
+            {
+              "children": [],
+              "description": "Python based command line tool to analyze cowrie logs over time.",
+              "title": "Longitudinal Analysis of SSH Cowrie Honeypot Logs",
+              "repo_info": {
+                "archived": true,
+                "language": "Shell",
+                "last_commit": "2023-04-08T00:00:00.000Z",
+                "owner": "deroux",
+                "repo": "longitudinal-analysis-cowrie",
+                "stars": 32269
+              }
+            },
+            {
+              "children": [],
+              "description": "Fake SSH server that lets everyone in and logs their activity.",
+              "title": "sshesame",
+              "repo_info": {
+                "archived": false,
+                "language": "Python",
+                "last_commit": "2022-01-18T00:00:00.000Z",
+                "owner": "jaksi",
+                "repo": "sshesame",
+                "stars": 31714
+              }
+            },
+            {
+              "children": [],
+              "description": "Framework for a high interaction SSH honeypot.",
+              "title": "sshForShits",
+              "repo_info": {
+                "archived": false,
+                "language": "JavaScript",
+                "last_commit": "2022-03-21T00:00:00.000Z",
+                "owner": "traetox",
+                "repo": "sshForShits",
+                "stars": 31652
+              }
+            },
+            {
+              "children": [],
+              "description": "Mock an SSH server and define all commands it supports (Python, Twisted).",
+              "title": "MockSSH",
+              "repo_info": {
+                "archived": false,
+                "language": "Ruby",
+                "last_commit": "2022-08-12T00:00:00.000Z",
+                "owner": "ncouture",
+                "repo": "MockSSH",
+                "stars": 30508
+              }
+            },
+            {
+              "children": [],
+              "description": "Kippo configured to be a backdoored netscreen.",
+              "title": "Kippo_JunOS",
+              "repo_info": {
+                "archived": false,
+                "language": "Java",
+                "last_commit": "2022-07-14T00:00:00.000Z",
+                "owner": "gregcmartin",
+                "repo": "Kippo_JunOS",
+                "stars": 28537
+              }
+            },
+            {
+              "children": [],
+              "description": "Simple SSH Honeypot with features to capture terminal activity and upload to asciinema.org.",
+              "title": "sshsyrup",
+              "repo_info": {
+                "archived": false,
+                "language": null,
+                "last_commit": "2023-07-16T00:00:00.000Z",
+                "owner": "mkishere",
+                "repo": "sshsyrup",
+                "stars": 28170
+              }
+            },
+            {
+              "children": [],
+              "description": "Golang-based honeypot.",
+              "title": "hived",
+              "repo_info": {
+                "archived": false,
+                "language": "Go",
+                "last_commit": "2021-09-21T00:00:00.000Z",
+                "owner": "sahilm",
+                "repo": "hived",
+                "stars": 27833
+              }
+            },
+            {
+              "children": [],
+              "description": "Medium interaction SSH honeypot.",
+              "title": "Kippo",
+              "repo_info": {
+                "archived": false,
+                "language": "Go",
+                "last_commit": "2023-10-21T00:00:00.000Z",
+                "owner": "desaster",
+                "repo": "kippo",
+                "stars": 26073
+              }
+            },
+            {
+              "children": [],
+              "description": "Low/zero interaction SSH authentication logging honeypot.",
+              "title": "ssh-auth-logger",
+              "repo_info": {
+                "archived": false,
+                "language": "Ruby",
+                "last_commit": "2022-02-03T00:00:00.000Z",
+                "owner": "JustinAzoff",
+                "repo": "ssh-auth-logger",
+                "stars": 25698
+              }
+            },
+            {
+              "children": [],
+              "description": "SSH honeypot written in Go.",
+              "title": "gohoney",
+              "repo_info": {
+                "archived": false,
+                "language": "Shell",
+                "last_commit": "2023-02-07T00:00:00.000Z",
+                "owner": "PaulMaddox",
+                "repo": "gohoney",
+                "stars": 25329
+              }
+            },
+            {
+              "children": [],
+              "description": "Credential dumping SSH honeypot with statistics.",
+              "title": "honeyssh",
+              "repo_info": {
+                "archived": true,
+                "language": "Go",
+                "last_commit": "2021-06-23T00:00:00.000Z",
+                "owner": "ppacher",
+                "repo": "honeyssh",
+                "stars": 20923
+              }
+            },
+            {
+              "children": [],
+              "description": "Low interaction SSH honeypot written in Python and based on Kojoney by Jose Antonio Coret.",
+              "title": "Kojoney2",
+              "repo_info": {
+                "archived": false,
+                "language": "Rust",
+                "last_commit": "2022-01-07T00:00:00.000Z",
+                "owner": "madirish",
+                "repo": "kojoney2",
+                "stars": 11725
+              }
+            },
+            {
+              "children": [],
+              "description": "High-interaction MitM SSH honeypot.",
+              "title": "sshhipot",
+              "repo_info": {
+                "archived": false,
+                "language": "TypeScript",
+                "last_commit": "2022-04-11T00:00:00.000Z",
+                "owner": "magisterquis",
+                "repo": "sshhipot",
+                "stars": 7631
+              }
+            },
+            {
+              "children": [],
+              "description": "Yet another no-frills low-interaction SSH honeypot in Go.",
+              "title": "sshlowpot",
+              "repo_info": {
+                "archived": false,
+                "language": "Python",
+                "last_commit": "2021-05-23T00:00:00.000Z",
+                "owner": "magisterquis",
+                "repo": "sshlowpot",
+                "stars": 6954
+              }
+            },
+            {
+              "children": [],
+              "description": "Fake sshd that logs IP addresses, usernames, and passwords.",
+              "title": "ssh-honeypot",
+              "repo_info": {
+                "archived": false,
+                "language": "C++",
+                "last_commit": "2021-09-18T00:00:00.000Z",
+                "owner": "droberson",
+                "repo": "ssh-honeypot",
+                "stars": 5836
+              }
+            },
+            {
+              "children": [],
+              "description": "Medium interaction SSH honeypot that supports multiple virtual hosts.",
+              "title": "hornet",
+              "repo_info": {
+                "archived": false,
+                "language": "JavaScript",
+                "last_commit": "2022-11-06T00:00:00.000Z",
+                "owner": "czardoz",
+                "repo": "hornet",
+                "stars": 5422
+              }
+            },
+            {
+              "children": [],
+              "description": "SSH Server in Go that logs username and password combinations.",
+              "title": "hnypots-agent)",
+              "repo_info": {
+                "archived": false,
+                "language": "Shell",
+                "last_commit": "2021-05-28T00:00:00.000Z",
+                "owner": "joshrendek",
+                "repo": "hnypots-agent",
+                "stars": 4949
+              }
+            },
+            {
+              "children": [],
+              "description": "Low-interaction SSH honeypot written in C.",
+              "title": "ssh-honeypotd",
+              "repo_info": {
+                "archived": false,
+                "language": "C++",
+                "last_commit": "2022-03-17T00:00:00.000Z",
+                "owner": "sjinks",
+                "repo": "ssh-honeypotd",
+                "stars": 1656
+              }
+            },
+            {
+              "children": [],
+              "description": "Simple ssh honeypot in Golang.",
+              "title": "go0r",
+              "repo_info": {
+                "archived": false,
+                "language": "Ruby",
+                "last_commit": "2023-07-28T00:00:00.000Z",
+                "owner": "fzerorubigd",
+                "repo": "go0r",
+                "stars": 158
+              }
+            },
+            {
+              "children": [],
+              "description": "Python-based Low interaction honeypot that emulates an SSH server implemented with Twisted Conch.",
+              "title": "Kojoney"
+            },
+            {
+              "children": [],
+              "description": "Analyzed SSH honeypot logs.",
+              "title": "LongTail Log Analysis @ Marist College"
+            }
+          ],
+          "description": null,
+          "title": "SSH Honeypots",
+          "repo_info": {
+            "archived": false,
+            "language": "Ruby",
+            "last_commit": "2021-06-28T00:00:00.000Z",
+            "owner": "skeeto",
+            "repo": "endlessh",
+            "stars": 49918
+          }
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "description": "Automated Virtual Machine Generation and Cloaking for Cuckoo Sandbox.",
+              "title": "VMCloak",
+              "repo_info": {
+                "archived": false,
+                "language": "Ruby",
+                "last_commit": "2021-07-08T00:00:00.000Z",
+                "owner": "hatching",
+                "repo": "vmcloak",
+                "stars": 48908
+              }
+            },
+            {
+              "children": [],
+              "description": "Script to create templates to use with VirtualBox to make VM detection harder.",
+              "title": "Antivmdetect",
+              "repo_info": {
+                "archived": false,
+                "language": "Shell",
+                "last_commit": "2022-11-19T00:00:00.000Z",
+                "owner": "nsmfoo",
+                "repo": "antivmdetection",
+                "stars": 40409
+              }
+            },
+            {
+              "children": [],
+              "description": "C library with Python bindings that makes it easy to monitor the low-level details of a running virtual machine.",
+              "title": "vmitools"
+            }
+          ],
+          "description": null,
+          "title": "VM monitoring and tools",
+          "repo_info": {
+            "archived": false,
+            "language": "Ruby",
+            "last_commit": "2021-07-08T00:00:00.000Z",
+            "owner": "hatching",
+            "repo": "vmcloak",
+            "stars": 48908
+          }
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "description": "Multi-purpose modular honeypot based on Twisted.",
+              "title": "Honeygrove",
+              "repo_info": {
+                "archived": false,
+                "language": "Python",
+                "last_commit": "2022-06-17T00:00:00.000Z",
+                "owner": "UHH-ISS",
+                "repo": "honeygrove",
+                "stars": 48564
+              }
+            },
+            {
+              "children": [],
+              "description": "Simple Docker Honeypot server emulating small snippets of the Docker HTTP API.",
+              "title": "dhp",
+              "repo_info": {
+                "archived": false,
+                "language": "Shell",
+                "last_commit": "2021-07-27T00:00:00.000Z",
+                "owner": "ciscocsirt",
+                "repo": "dhp",
+                "stars": 46889
+              }
+            },
+            {
+              "children": [],
+              "description": "Printer honeypot.",
+              "title": "Honeyprint",
+              "repo_info": {
+                "archived": false,
+                "language": "JavaScript",
+                "last_commit": "2022-06-29T00:00:00.000Z",
+                "owner": "glaslos",
+                "repo": "honeyprint",
+                "stars": 45552
+              }
+            },
+            {
+              "children": [],
+              "description": "Low interaction honeypot to detect CVE-2018-2636 in the Oracle Hospitality Simphony component of Oracle Hospitality Applications (MICROS).",
+              "title": "MICROS honeypot",
+              "repo_info": {
+                "archived": false,
+                "language": "JavaScript",
+                "last_commit": "2023-11-21T00:00:00.000Z",
+                "owner": "Cymmetria",
+                "repo": "micros_honeypot",
+                "stars": 44042
+              }
+            },
+            {
+              "children": [],
+              "description": "K8s API Honeypot with Active Defense Capabilities.",
+              "title": "Helix",
+              "repo_info": {
+                "archived": false,
+                "language": "TypeScript",
+                "last_commit": "2022-09-08T00:00:00.000Z",
+                "owner": "Zeerg",
+                "repo": "helix-honeypot",
+                "stars": 39481
+              }
+            },
+            {
+              "children": [],
+              "description": "NTP, DNS, SSDP, Chargen and generic UDP-based amplification DDoS honeypot.",
+              "title": "ddospot",
+              "repo_info": {
+                "archived": false,
+                "language": null,
+                "last_commit": "2021-09-14T00:00:00.000Z",
+                "owner": "aelth",
+                "repo": "ddospot",
+                "stars": 38840
+              }
+            },
+            {
+              "children": [],
+              "description": "RDP man-in-the-middle and library for Python 3 with the ability to watch connections live or after the fact.",
+              "title": "pyrdp",
+              "repo_info": {
+                "archived": false,
+                "language": "Go",
+                "last_commit": "2023-09-21T00:00:00.000Z",
+                "owner": "gosecure",
+                "repo": "pyrdp",
+                "stars": 37103
+              }
+            },
+            {
+              "children": [],
+              "description": "RDP honeypot",
+              "title": "rdppot",
+              "repo_info": {
+                "archived": false,
+                "language": "Python",
+                "last_commit": "2023-05-03T00:00:00.000Z",
+                "owner": "kryptoslogic",
+                "repo": "rdppot",
+                "stars": 36244
+              }
+            },
+            {
+              "children": [],
+              "description": "Honeypot that runs each connection with the service within a separate LXC container.",
+              "title": "troje",
+              "repo_info": {
+                "archived": true,
+                "language": "Java",
+                "last_commit": "2022-09-02T00:00:00.000Z",
+                "owner": "dutchcoders",
+                "repo": "troje",
+                "stars": 32487
+              }
+            },
+            {
+              "children": [],
+              "description": "Low interaction honeypot.",
+              "title": "HoneyPy",
+              "repo_info": {
+                "archived": false,
+                "language": "Ruby",
+                "last_commit": "2023-10-06T00:00:00.000Z",
+                "owner": "foospidy",
+                "repo": "HoneyPy",
+                "stars": 28088
+              }
+            },
+            {
+              "children": [],
+              "description": "NTP logger/honeypot.",
+              "title": "honeyntp",
+              "repo_info": {
+                "archived": false,
+                "language": null,
+                "last_commit": "2023-08-05T00:00:00.000Z",
+                "owner": "fygrave",
+                "repo": "honeyntp",
+                "stars": 27150
+              }
+            },
+            {
+              "children": [],
+              "description": "Twisted based honeypot for WhiteFace.",
+              "title": "WhiteFace Honeypot",
+              "repo_info": {
+                "archived": false,
+                "language": "JavaScript",
+                "last_commit": "2021-09-22T00:00:00.000Z",
+                "owner": "csirtgadgets",
+                "repo": "csirtg-honeypot",
+                "stars": 25832
+              }
+            },
+            {
+              "children": [],
+              "description": "Observation camera honeypot.",
+              "title": "honeypot-camera",
+              "repo_info": {
+                "archived": false,
+                "language": "Go",
+                "last_commit": "2023-04-24T00:00:00.000Z",
+                "owner": "alexbredo",
+                "repo": "honeypot-camera",
+                "stars": 24253
+              }
+            },
+            {
+              "children": [],
+              "description": "Home of the dionaea honeypot.",
+              "title": "dionaea",
+              "repo_info": {
+                "archived": false,
+                "language": "Shell",
+                "last_commit": "2023-08-26T00:00:00.000Z",
+                "owner": "DinoTools",
+                "repo": "dionaea",
+                "stars": 24129
+              }
+            },
+            {
+              "children": [],
+              "description": "Low interaction honeypot to detect CVE-2017-10271 in the Oracle WebLogic Server component of Oracle Fusion Middleware.",
+              "title": "WebLogic honeypot",
+              "repo_info": {
+                "archived": false,
+                "language": "Rust",
+                "last_commit": "2021-10-09T00:00:00.000Z",
+                "owner": "Cymmetria",
+                "repo": "weblogic_honeypot",
+                "stars": 22815
+              }
+            },
+            {
+              "children": [],
+              "description": "Easy to deploy Ruby honeypot.",
+              "title": "Ensnare",
+              "repo_info": {
+                "archived": false,
+                "language": "Python",
+                "last_commit": "2022-01-08T00:00:00.000Z",
+                "owner": "ahoernecke",
+                "repo": "ensnare",
+                "stars": 22724
+              }
+            },
+            {
+              "children": [],
+              "description": "Microsoft Remote Desktop Protocol (RDP) honeypot implemented in Python.",
+              "title": "RDPy",
+              "repo_info": {
+                "archived": false,
+                "language": "Java",
+                "last_commit": "2022-07-14T00:00:00.000Z",
+                "owner": "citronneur",
+                "repo": "rdpy",
+                "stars": 22537
+              }
+            },
+            {
+              "children": [],
+              "description": "FTP server honeypot in JS.",
+              "title": "node-ftp-honeypot",
+              "repo_info": {
+                "archived": false,
+                "language": "C++",
+                "last_commit": "2021-07-30T00:00:00.000Z",
+                "owner": "christophe77",
+                "repo": "node-ftp-honeypot",
+                "stars": 21886
+              }
+            },
+            {
+              "children": [],
+              "description": "FTP Honeypot.",
+              "title": "honeypot-ftp",
+              "repo_info": {
+                "archived": false,
+                "language": "C++",
+                "last_commit": "2023-02-20T00:00:00.000Z",
+                "owner": "alexbredo",
+                "repo": "honeypot-ftp",
+                "stars": 14316
+              }
+            },
+            {
+              "children": [],
+              "description": "25 different honeypots in a single pypi package! (dns, ftp, httpproxy, http, https, imap, mysql, pop3, postgres, redis, smb, smtp, socks5, ssh, telnet, vnc, mssql, elastic, ldap, ntp, memcache, snmp, oracle, sip and irc).",
+              "title": "honeypots",
+              "repo_info": {
+                "archived": false,
+                "language": "Shell",
+                "last_commit": "2021-04-08T00:00:00.000Z",
+                "owner": "qeeqbox",
+                "repo": "honeypots",
+                "stars": 11999
+              }
+            },
+            {
+              "children": [],
+              "description": "Plugin repository for Honeycomb, the honeypot framework by Cymmetria.",
+              "title": "honeycomb_plugins",
+              "repo_info": {
+                "archived": false,
+                "language": "TypeScript",
+                "last_commit": "2024-01-01T00:00:00.000Z",
+                "owner": "Cymmetria",
+                "repo": "honeycomb_plugins",
+                "stars": 11001
+              }
+            },
+            {
+              "children": [],
+              "description": "Low interaction honeypot that simulates an Android device running Android Debug Bridge (ADB) server process.",
+              "title": "ADBHoney",
+              "repo_info": {
+                "archived": false,
+                "language": "Shell",
+                "last_commit": "2023-05-18T00:00:00.000Z",
+                "owner": "huuck",
+                "repo": "ADBHoney",
+                "stars": 10229
+              }
+            },
+            {
+              "children": [],
+              "description": "Advanced Honeypot framework written in Go that can be connected with other honeypot software.",
+              "title": "honeytrap",
+              "repo_info": {
+                "archived": false,
+                "language": "Shell",
+                "last_commit": "2022-02-12T00:00:00.000Z",
+                "owner": "honeytrap",
+                "repo": "honeytrap",
+                "stars": 9689
+              }
+            },
+            {
+              "children": [],
+              "description": "Modural and easy to install Python Honeypot, with comprehensive alerting",
+              "title": "Trapster Commmunity",
+              "repo_info": {
+                "archived": false,
+                "language": "TypeScript",
+                "last_commit": "2021-11-12T00:00:00.000Z",
+                "owner": "0xBallpoint",
+                "repo": "trapster-community",
+                "stars": 8781
+              }
+            },
+            {
+              "children": [],
+              "description": "The first A.I based open source honeypot. supports POP3 and SMTP protocols and generates content using A.I based on user description.",
+              "title": "GenAIPot",
+              "repo_info": {
+                "archived": false,
+                "language": "Shell",
+                "last_commit": "2021-12-24T00:00:00.000Z",
+                "owner": "ls1911",
+                "repo": "GenAIPot",
+                "stars": 8739
+              }
+            },
+            {
+              "children": [],
+              "description": "High interaction SMB service honeypot capable of capturing wannacry-like Malware.",
+              "title": "SMB Honeypot",
+              "repo_info": {
+                "archived": false,
+                "language": "Python",
+                "last_commit": "2023-08-21T00:00:00.000Z",
+                "owner": "r0hi7",
+                "repo": "HoneySMB",
+                "stars": 8134
+              }
+            },
+            {
+              "children": [],
+              "description": "Simple honeyport written in Bash and Python.",
+              "title": "Honeyport",
+              "repo_info": {
+                "archived": false,
+                "language": "Go",
+                "last_commit": "2023-08-12T00:00:00.000Z",
+                "owner": "securitygeneration",
+                "repo": "Honeyport",
+                "stars": 6143
+              }
+            },
+            {
+              "children": [],
+              "description": "Low interaction Python honeypot.",
+              "title": "Tom's Honeypot",
+              "repo_info": {
+                "archived": true,
+                "language": "JavaScript",
+                "last_commit": "2021-08-23T00:00:00.000Z",
+                "owner": "inguardians",
+                "repo": "toms_honeypot",
+                "stars": 3862
+              }
+            },
+            {
+              "children": [],
+              "description": "Honeypot for Intel's AMT Firmware Vulnerability CVE-2017-5689.",
+              "title": "AMTHoneypot",
+              "repo_info": {
+                "archived": false,
+                "language": "Rust",
+                "last_commit": "2021-08-20T00:00:00.000Z",
+                "owner": "packetflare",
+                "repo": "amthoneypot",
+                "stars": 865
+              }
+            },
+            {
+              "children": [],
+              "description": "SDN (software defined networking) honeypot.",
+              "title": "DolosHoneypot",
+              "repo_info": {
+                "archived": false,
+                "language": "Python",
+                "last_commit": "2022-06-27T00:00:00.000Z",
+                "owner": "Marist-Innovation-Lab",
+                "repo": "DolosHoneypot",
+                "stars": 554
+              }
+            },
+            {
+              "children": [],
+              "description": ") - Multi-service honeypot that is easy to deploy and configure. Can be configured to send interaction data to to HoneyDB's centralized collectors for access via REST API.",
+              "title": "[honeydb] (https://honeydb.io/downloads"
+            },
+            {
+              "children": [],
+              "description": "Modern high-interaction honeypot framework.",
+              "title": "Lyrebird"
+            }
+          ],
+          "description": null,
+          "title": "Service Honeypots",
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2022-06-17T00:00:00.000Z",
+            "owner": "UHH-ISS",
+            "repo": "honeygrove",
+            "stars": 48564
+          }
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "description": "Lightweight authenticated publish-subscribe protocol.",
+              "title": "HPFeeds",
+              "repo_info": {
+                "archived": false,
+                "language": "Rust",
+                "last_commit": "2022-06-26T00:00:00.000Z",
+                "owner": "rep",
+                "repo": "hpfeeds",
+                "stars": 48555
+              }
+            },
+            {
+              "children": [
+                {
+                  "children": [],
+                  "description": "Presentation about HPFriends feed system",
+                  "title": "hpfriends - real-time social data-sharing"
+                }
+              ],
+              "description": "Honeypot data-sharing platform.",
+              "title": "HPfriends"
+            }
+          ],
+          "description": null,
+          "title": "Data Collection / Data Sharing",
+          "repo_info": {
+            "archived": false,
+            "language": "Rust",
+            "last_commit": "2022-06-26T00:00:00.000Z",
+            "owner": "rep",
+            "repo": "hpfeeds",
+            "stars": 48555
+          }
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "description": "MongoDB honeypot proxy.",
+              "title": "MongoDB-HoneyProxy",
+              "repo_info": {
+                "archived": false,
+                "language": "JavaScript",
+                "last_commit": "2022-06-29T00:00:00.000Z",
+                "owner": "Plazmaz",
+                "repo": "MongoDB-HoneyProxy",
+                "stars": 48552
+              }
+            },
+            {
+              "children": [],
+              "description": "Medium interaction postgresql honeypot.",
+              "title": "sticky_elephant",
+              "repo_info": {
+                "archived": false,
+                "language": null,
+                "last_commit": "2023-10-04T00:00:00.000Z",
+                "owner": "betheroot",
+                "repo": "sticky_elephant",
+                "stars": 36090
+              }
+            },
+            {
+              "children": [],
+              "description": "Low-interaction Postgres Honeypot.",
+              "title": "pghoney",
+              "repo_info": {
+                "archived": false,
+                "language": "Java",
+                "last_commit": "2021-06-29T00:00:00.000Z",
+                "owner": "betheroot",
+                "repo": "pghoney",
+                "stars": 35917
+              }
+            },
+            {
+              "children": [],
+              "description": "Honeypot framework built on a NoSQL-style database.",
+              "title": "NoSQLpot",
+              "repo_info": {
+                "archived": false,
+                "language": "Java",
+                "last_commit": "2022-05-25T00:00:00.000Z",
+                "owner": "torque59",
+                "repo": "nosqlpot",
+                "stars": 33587
+              }
+            },
+            {
+              "children": [],
+              "description": "High Interaction Honeypot Solution for Redis protocol.",
+              "title": "RedisHoneyPot",
+              "repo_info": {
+                "archived": false,
+                "language": "Java",
+                "last_commit": "2023-10-17T00:00:00.000Z",
+                "owner": "cypwnpwnsocute",
+                "repo": "RedisHoneyPot",
+                "stars": 30077
+              }
+            },
+            {
+              "children": [],
+              "description": "Low interaction MySQL honeypot written in C.",
+              "title": "mysql-honeypotd",
+              "repo_info": {
+                "archived": false,
+                "language": "Python",
+                "last_commit": "2022-04-18T00:00:00.000Z",
+                "owner": "sjinks",
+                "repo": "mysql-honeypotd",
+                "stars": 27624
+              }
+            },
+            {
+              "children": [],
+              "description": "MySQL honeypot, still very early stage.",
+              "title": "MysqlPot",
+              "repo_info": {
+                "archived": false,
+                "language": "Go",
+                "last_commit": "2022-11-25T00:00:00.000Z",
+                "owner": "schmalle",
+                "repo": "MysqlPot",
+                "stars": 24403
+              }
+            },
+            {
+              "children": [],
+              "description": "Simple Elasticsearch Honeypot.",
+              "title": "Elastic honey",
+              "repo_info": {
+                "archived": false,
+                "language": "Java",
+                "last_commit": "2022-03-26T00:00:00.000Z",
+                "owner": "jordan-wright",
+                "repo": "elastichoney",
+                "stars": 23647
+              }
+            },
+            {
+              "children": [],
+              "description": "Elasticsearch honeypot written in NodeJS, to capture every attempts to exploit CVE-2014-3120.",
+              "title": "ESPot",
+              "repo_info": {
+                "archived": false,
+                "language": "Python",
+                "last_commit": "2023-07-12T00:00:00.000Z",
+                "owner": "mycert",
+                "repo": "ESPot",
+                "stars": 12174
+              }
+            },
+            {
+              "children": [],
+              "description": "Elasticsearch Honeypot written in Python (originally from Novetta).",
+              "title": "Delilah",
+              "repo_info": {
+                "archived": false,
+                "language": "Shell",
+                "last_commit": "2021-06-17T00:00:00.000Z",
+                "owner": "SecurityTW",
+                "repo": "delilah",
+                "stars": 7929
+              }
+            },
+            {
+              "children": [],
+              "description": "An Elasticsearch Honeypot.",
+              "title": "ElasticPot"
+            }
+          ],
+          "description": null,
+          "title": "Database Honeypots",
+          "repo_info": {
+            "archived": false,
+            "language": "JavaScript",
+            "last_commit": "2022-06-29T00:00:00.000Z",
+            "owner": "Plazmaz",
+            "repo": "MongoDB-HoneyProxy",
+            "stars": 48552
+          }
+        },
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [],
+                  "description": "WordPress plugin to reduce comment spam with a smarter honeypot.",
+                  "title": "wp-smart-honeypot",
+                  "repo_info": {
+                    "archived": false,
+                    "language": "Ruby",
+                    "last_commit": "2021-07-28T00:00:00.000Z",
+                    "owner": "freak3dot",
+                    "repo": "wp-smart-honeypot",
+                    "stars": 47888
+                  }
+                },
+                {
+                  "children": [],
+                  "description": "WordPress Honeypot.",
+                  "title": "wordpot",
+                  "repo_info": {
+                    "archived": false,
+                    "language": "TypeScript",
+                    "last_commit": "2023-02-05T00:00:00.000Z",
+                    "owner": "gbrindisi",
+                    "repo": "wordpot",
+                    "stars": 33331
+                  }
+                },
+                {
+                  "children": [],
+                  "description": "Python based WordPress honeypot in a Docker container.",
+                  "title": "HoneyPress",
+                  "repo_info": {
+                    "archived": false,
+                    "language": "Rust",
+                    "last_commit": "2022-11-13T00:00:00.000Z",
+                    "owner": "kungfuguapo",
+                    "repo": "HoneyPress",
+                    "stars": 29415
+                  }
+                },
+                {
+                  "children": [],
+                  "description": "WordPress login honeypot for collection and analysis of failed login attempts.",
+                  "title": "HonnyPotter",
+                  "repo_info": {
+                    "archived": false,
+                    "language": "TypeScript",
+                    "last_commit": "2023-07-05T00:00:00.000Z",
+                    "owner": "MartinIngesen",
+                    "repo": "HonnyPotter",
+                    "stars": 23181
+                  }
+                }
+              ],
+              "description": null,
+              "title": "WordPress honeypots",
+              "repo_info": {
+                "archived": false,
+                "language": "Ruby",
+                "last_commit": "2021-07-28T00:00:00.000Z",
+                "owner": "freak3dot",
+                "repo": "wp-smart-honeypot",
+                "stars": 47888
+              }
+            },
+            {
+              "children": [
+                {
+                  "children": [],
+                  "description": "Super Next generation Advanced Reactive honeypot.",
+                  "title": "Snare",
+                  "repo_info": {
+                    "archived": false,
+                    "language": "Shell",
+                    "last_commit": "2022-08-31T00:00:00.000Z",
+                    "owner": "mushorg",
+                    "repo": "snare",
+                    "stars": 47489
+                  }
+                },
+                {
+                  "children": [],
+                  "description": "Evaluating SNARE events.",
+                  "title": "Tanner",
+                  "repo_info": {
+                    "archived": false,
+                    "language": null,
+                    "last_commit": "2023-01-27T00:00:00.000Z",
+                    "owner": "mushorg",
+                    "repo": "tanner",
+                    "stars": 22340
+                  }
+                }
+              ],
+              "description": null,
+              "title": "Snare/Tanner - successors to Glastopf",
+              "repo_info": {
+                "archived": false,
+                "language": "Shell",
+                "last_commit": "2022-08-31T00:00:00.000Z",
+                "owner": "mushorg",
+                "repo": "snare",
+                "stars": 47489
+              }
+            },
+            {
+              "children": [],
+              "description": "Modpot is a modular web application honeypot framework and management application written in Golang and making use of gin framework.",
+              "title": "modpot",
+              "repo_info": {
+                "archived": false,
+                "language": null,
+                "last_commit": "2021-11-13T00:00:00.000Z",
+                "owner": "referefref",
+                "repo": "modpot",
+                "stars": 42780
+              }
+            },
+            {
+              "children": [],
+              "description": "A basic flask based Outlook Web Honey pot.",
+              "title": "owa-honeypot",
+              "repo_info": {
+                "archived": false,
+                "language": "Ruby",
+                "last_commit": "2023-05-19T00:00:00.000Z",
+                "owner": "joda32",
+                "repo": "owa-honeypot",
+                "stars": 39228
+              }
+            },
+            {
+              "children": [],
+              "description": "Distributed web application honeypot to interact with large scale exploitation attempts.",
+              "title": "Lophiid",
+              "repo_info": {
+                "archived": false,
+                "language": "JavaScript",
+                "last_commit": "2023-08-23T00:00:00.000Z",
+                "owner": "mrheinen",
+                "repo": "lophiid",
+                "stars": 38132
+              }
+            },
+            {
+              "children": [],
+              "description": "Simple spam prevention package for Laravel applications.",
+              "title": "Laravel Application Honeypot",
+              "repo_info": {
+                "archived": false,
+                "language": "Rust",
+                "last_commit": "2021-11-08T00:00:00.000Z",
+                "owner": "msurguy",
+                "repo": "Honeypot",
+                "stars": 36785
+              }
+            },
+            {
+              "children": [],
+              "description": "Cloud active defense lets you deploy decoys right into your cloud applications, putting adversaries into a dilemma: to hack or not to hack?",
+              "title": "Cloud Active Defense",
+              "repo_info": {
+                "archived": false,
+                "language": "C++",
+                "last_commit": "2021-06-30T00:00:00.000Z",
+                "owner": "SAP",
+                "repo": "cloud-active-defense",
+                "stars": 35916
+              }
+            },
+            {
+              "children": [],
+              "description": "RestAPI honeypot.",
+              "title": "PasitheaHoneypot",
+              "repo_info": {
+                "archived": false,
+                "language": null,
+                "last_commit": "2023-12-23T00:00:00.000Z",
+                "owner": "Marist-Innovation-Lab",
+                "repo": "PasitheaHoneypot",
+                "stars": 35010
+              }
+            },
+            {
+              "children": [],
+              "description": "Inserts a trap for spam bots into responses.",
+              "title": "stack-honeypot",
+              "repo_info": {
+                "archived": true,
+                "language": "TypeScript",
+                "last_commit": "2022-12-27T00:00:00.000Z",
+                "owner": "CHH",
+                "repo": "stack-honeypot",
+                "stars": 31371
+              }
+            },
+            {
+              "children": [],
+              "description": "Drupal Honeypot.",
+              "title": "drupo",
+              "repo_info": {
+                "archived": false,
+                "language": "Java",
+                "last_commit": "2021-12-26T00:00:00.000Z",
+                "owner": "d1str0",
+                "repo": "drupot",
+                "stars": 30737
+              }
+            },
+            {
+              "children": [],
+              "description": "An uploader honeypot designed to look like poor website security.",
+              "title": "honeyup",
+              "repo_info": {
+                "archived": false,
+                "language": "Ruby",
+                "last_commit": "2022-04-24T00:00:00.000Z",
+                "owner": "LogoiLab",
+                "repo": "honeyup",
+                "stars": 30618
+              }
+            },
+            {
+              "children": [],
+              "description": "PHP Script demonstrating a smart honey pot.",
+              "title": "smart-honeypot",
+              "repo_info": {
+                "archived": true,
+                "language": "Ruby",
+                "last_commit": "2023-02-08T00:00:00.000Z",
+                "owner": "freak3dot",
+                "repo": "smart-honeypot",
+                "stars": 30328
+              }
+            },
+            {
+              "children": [],
+              "description": "Python-based web server honeypot builder.",
+              "title": "honeyhttpd",
+              "repo_info": {
+                "archived": false,
+                "language": "Rust",
+                "last_commit": "2022-11-03T00:00:00.000Z",
+                "owner": "bocajspear1",
+                "repo": "honeyhttpd",
+                "stars": 28425
+              }
+            },
+            {
+              "children": [],
+              "description": "Honeypot that mimics Tomcat manager endpoints. Logs requests and saves attacker's WAR file for later study.",
+              "title": "tomcat-manager-honeypot",
+              "repo_info": {
+                "archived": false,
+                "language": "Rust",
+                "last_commit": "2023-10-29T00:00:00.000Z",
+                "owner": "helospark",
+                "repo": "tomcat-manager-honeypot",
+                "stars": 26065
+              }
+            },
+            {
+              "children": [],
+              "description": "Honeypot type for Symfony2 forms.",
+              "title": "EoHoneypotBundle",
+              "repo_info": {
+                "archived": false,
+                "language": "Java",
+                "last_commit": "2021-07-09T00:00:00.000Z",
+                "owner": "eymengunay",
+                "repo": "EoHoneypotBundle",
+                "stars": 25907
+              }
+            },
+            {
+              "children": [],
+              "description": "Designed to create deceptive webpages to deceive and redirect attackers away from real websites.",
+              "title": "WebTrap",
+              "repo_info": {
+                "archived": false,
+                "language": "Rust",
+                "last_commit": "2022-05-17T00:00:00.000Z",
+                "owner": "IllusiveNetworks-Labs",
+                "repo": "WebTrap",
+                "stars": 23595
+              }
+            },
+            {
+              "children": [],
+              "description": "Fake Django admin login screen to notify admins of attempted unauthorized access.",
+              "title": "django-admin-honeypot",
+              "repo_info": {
+                "archived": false,
+                "language": "Shell",
+                "last_commit": "2022-07-22T00:00:00.000Z",
+                "owner": "dmpayton",
+                "repo": "django-admin-honeypot",
+                "stars": 21529
+              }
+            },
+            {
+              "children": [],
+              "description": "Simple and effective phpMyAdmin honeypot.",
+              "title": "phpmyadmin_honeypot",
+              "repo_info": {
+                "archived": false,
+                "language": "Shell",
+                "last_commit": "2023-08-26T00:00:00.000Z",
+                "owner": "gfoss",
+                "repo": "phpmyadmin_honeypot",
+                "stars": 18129
+              }
+            },
+            {
+              "children": [],
+              "description": "Web Application Honeypot.",
+              "title": "Glastopf",
+              "repo_info": {
+                "archived": false,
+                "language": null,
+                "last_commit": "2021-10-04T00:00:00.000Z",
+                "owner": "mushorg",
+                "repo": "glastopf",
+                "stars": 16820
+              }
+            },
+            {
+              "children": [],
+              "description": "an LLM-powered web honeypot using the OpenAI API.",
+              "title": "galah",
+              "repo_info": {
+                "archived": false,
+                "language": "C++",
+                "last_commit": "2023-02-20T00:00:00.000Z",
+                "owner": "0x4D31",
+                "repo": "galah",
+                "stars": 15316
+              }
+            },
+            {
+              "children": [],
+              "description": "NodeJS web application honeypot.",
+              "title": "Nodepot",
+              "repo_info": {
+                "archived": false,
+                "language": "Go",
+                "last_commit": "2023-02-13T00:00:00.000Z",
+                "owner": "schmalle",
+                "repo": "Nodepot",
+                "stars": 14323
+              }
+            },
+            {
+              "children": [],
+              "description": "Honeypot that tries to crash the bots and clients that visit it's location.",
+              "title": "HellPot",
+              "repo_info": {
+                "archived": false,
+                "language": "Shell",
+                "last_commit": "2021-06-17T00:00:00.000Z",
+                "owner": "yunginnanet",
+                "repo": "HellPot",
+                "stars": 12929
+              }
+            },
+            {
+              "children": [],
+              "description": "HTTP Basic Authentication honeypot.",
+              "title": "basic-auth-pot (bap)",
+              "repo_info": {
+                "archived": false,
+                "language": "JavaScript",
+                "last_commit": "2023-03-06T00:00:00.000Z",
+                "owner": "bjeborn",
+                "repo": "basic-auth-pot",
+                "stars": 11302
+              }
+            },
+            {
+              "children": [],
+              "description": "Breakable Web applications honeyPot.",
+              "title": "bwpot",
+              "repo_info": {
+                "archived": false,
+                "language": "Shell",
+                "last_commit": "2022-01-13T00:00:00.000Z",
+                "owner": "graneed",
+                "repo": "bwpot",
+                "stars": 10719
+              }
+            },
+            {
+              "children": [],
+              "description": "Struts Apache 2 based honeypot as well as a detection module for Apache 2 servers.",
+              "title": "StrutsHoneypot",
+              "repo_info": {
+                "archived": false,
+                "language": "Go",
+                "last_commit": "2021-06-03T00:00:00.000Z",
+                "owner": "Cymmetria",
+                "repo": "StrutsHoneypot",
+                "stars": 5943
+              }
+            },
+            {
+              "children": [],
+              "description": "Web application Honeypot.",
+              "title": "Servletpot",
+              "repo_info": {
+                "archived": false,
+                "language": null,
+                "last_commit": "2023-03-28T00:00:00.000Z",
+                "owner": "schmalle",
+                "repo": "servletpot",
+                "stars": 4280
+              }
+            },
+            {
+              "children": [],
+              "description": "WebApp Honeypot for detecting Shell Shock exploit attempts.",
+              "title": "shockpot",
+              "repo_info": {
+                "archived": false,
+                "language": "C++",
+                "last_commit": "2023-05-11T00:00:00.000Z",
+                "owner": "threatstream",
+                "repo": "shockpot",
+                "stars": 4236
+              }
+            },
+            {
+              "children": [],
+              "description": "RFI & LFI honeypot using nodeJS and express.",
+              "title": "Express honeypot",
+              "repo_info": {
+                "archived": false,
+                "language": "Java",
+                "last_commit": "2022-05-05T00:00:00.000Z",
+                "owner": "christophe77",
+                "repo": "express-honeypot",
+                "stars": 607
+              }
+            },
+            {
+              "children": [],
+              "description": "OWASP Honeypot, Automated Deception Framework.",
+              "title": "Python-Honeypot",
+              "repo_info": {
+                "archived": false,
+                "language": "Python",
+                "last_commit": "2022-06-07T00:00:00.000Z",
+                "owner": "OWASP",
+                "repo": "Python-Honeypot",
+                "stars": 574
+              }
+            },
+            {
+              "children": [],
+              "description": "Designed to provide reconnaissance against attackers that use search engines as a hacking tool against your resources.",
+              "title": "Google Hack Honeypot"
+            },
+            {
+              "children": [],
+              "description": "Modular Web Application Firewall / High-Interaction Honeypot for PHP, Perl, and Python apps.",
+              "title": "Shadow Daemon"
+            }
+          ],
+          "description": null,
+          "title": "Web honeypots",
+          "repo_info": {
+            "archived": false,
+            "language": "Ruby",
+            "last_commit": "2021-07-28T00:00:00.000Z",
+            "owner": "freak3dot",
+            "repo": "wp-smart-honeypot",
+            "stars": 47888
+          }
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "description": "Reverse engineering, Malware and goodware analysis of Android applications and more.",
+              "title": "Androguard",
+              "repo_info": {
+                "archived": false,
+                "language": "TypeScript",
+                "last_commit": "2021-10-23T00:00:00.000Z",
+                "owner": "androguard",
+                "repo": "androguard",
+                "stars": 47801
+              }
+            },
+            {
+              "children": [],
+              "description": "Powerful GUI tool for analysts to analyze the Android applications.",
+              "title": "APKinspector",
+              "repo_info": {
+                "archived": false,
+                "language": "Python",
+                "last_commit": "2021-12-19T00:00:00.000Z",
+                "owner": "honeynet",
+                "repo": "apkinspector",
+                "stars": 32744
+              }
+            }
+          ],
+          "description": null,
+          "title": "Mobile Analysis Tool",
+          "repo_info": {
+            "archived": false,
+            "language": "TypeScript",
+            "last_commit": "2021-10-23T00:00:00.000Z",
+            "owner": "androguard",
+            "repo": "androguard",
+            "stars": 47801
+          }
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "description": "Botnet command and control monitor.",
+              "title": "Hale",
+              "repo_info": {
+                "archived": false,
+                "language": "JavaScript",
+                "last_commit": "2022-01-30T00:00:00.000Z",
+                "owner": "pjlantz",
+                "repo": "Hale",
+                "stars": 46702
+              }
+            },
+            {
+              "children": [],
+              "description": "Analyses DNS traffic and potentionaly detect botnet command and control server activity, along with infected hosts.",
+              "title": "dnsMole"
+            }
+          ],
+          "description": null,
+          "title": "Botnet C2 tools",
+          "repo_info": {
+            "archived": false,
+            "language": "JavaScript",
+            "last_commit": "2022-01-30T00:00:00.000Z",
+            "owner": "pjlantz",
+            "repo": "Hale",
+            "stars": 46702
+          }
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "description": "Honeypot for malware that propagates via USB storage devices.",
+              "title": "Ghost-usb",
+              "repo_info": {
+                "archived": false,
+                "language": "Ruby",
+                "last_commit": "2023-01-29T00:00:00.000Z",
+                "owner": "honeynet",
+                "repo": "ghost-usb-honeypot",
+                "stars": 46338
+              }
+            }
+          ],
+          "description": null,
+          "title": "Honeypot for USB-spreading malware",
+          "repo_info": {
+            "archived": false,
+            "language": "Ruby",
+            "last_commit": "2023-01-29T00:00:00.000Z",
+            "owner": "honeynet",
+            "repo": "ghost-usb-honeypot",
+            "stars": 46338
+          }
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "description": "Very simple but effective docker deployed honeypot to detect port scanning in your environment.",
+              "title": "honey_ports",
+              "repo_info": {
+                "archived": false,
+                "language": "Go",
+                "last_commit": "2023-03-05T00:00:00.000Z",
+                "owner": "run41",
+                "repo": "honey_ports",
+                "stars": 44303
+              }
+            },
+            {
+              "children": [],
+              "description": "Docker based honeypot (Dionaea and Kippo).",
+              "title": "Manuka",
+              "repo_info": {
+                "archived": false,
+                "language": "Rust",
+                "last_commit": "2023-06-21T00:00:00.000Z",
+                "owner": "andrewmichaelsmith",
+                "repo": "manuka",
+                "stars": 40195
+              }
+            },
+            {
+              "children": [],
+              "description": "Core elements of the Modern Honey Network implemented in Docker.",
+              "title": "mhn-core-docker",
+              "repo_info": {
+                "archived": false,
+                "language": "JavaScript",
+                "last_commit": "2023-09-22T00:00:00.000Z",
+                "owner": "MattCarothers",
+                "repo": "mhn-core-docker",
+                "stars": 9102
+              }
+            },
+            {
+              "children": [],
+              "description": "Several Honeynet tools set up for Docker containers.",
+              "title": "Docker honeynet",
+              "repo_info": {
+                "archived": true,
+                "language": null,
+                "last_commit": "2022-06-11T00:00:00.000Z",
+                "owner": "sreinhardt",
+                "repo": "Docker-Honeynet",
+                "stars": 6570
+              }
+            },
+            {
+              "children": [],
+              "description": "Dockerized Thug to analyze malicious web content.",
+              "title": "Dockerized Thug",
+              "repo_info": {
+                "archived": false,
+                "language": "TypeScript",
+                "last_commit": "2022-10-18T00:00:00.000Z",
+                "owner": "buffer",
+                "repo": "thug",
+                "stars": 6441
+              }
+            },
+            {
+              "children": [],
+              "description": "Docker based honeypot.",
+              "title": "Dockerpot",
+              "repo_info": {
+                "archived": false,
+                "language": "Go",
+                "last_commit": "2023-06-23T00:00:00.000Z",
+                "owner": "mrschyte",
+                "repo": "dockerpot",
+                "stars": 3193
+              }
+            }
+          ],
+          "description": null,
+          "title": "Dockerized Low Interaction packaging",
+          "repo_info": {
+            "archived": false,
+            "language": "Go",
+            "last_commit": "2023-03-05T00:00:00.000Z",
+            "owner": "run41",
+            "repo": "honey_ports",
+            "stars": 44303
+          }
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "description": "Veeder Root Gaurdian AST, common in the oil and gas industry.",
+              "title": "GasPot",
+              "repo_info": {
+                "archived": false,
+                "language": "Go",
+                "last_commit": "2021-05-24T00:00:00.000Z",
+                "owner": "sjhilt",
+                "repo": "GasPot",
+                "stars": 43953
+              }
+            },
+            {
+              "children": [],
+              "description": "Open source tools for realistic-behaving electric grid honeynets.",
+              "title": "gridpot",
+              "repo_info": {
+                "archived": false,
+                "language": "JavaScript",
+                "last_commit": "2023-07-24T00:00:00.000Z",
+                "owner": "sk4ld",
+                "repo": "gridpot",
+                "stars": 33162
+              }
+            },
+            {
+              "children": [],
+              "description": "ICS/SCADA honeypot.",
+              "title": "Conpot",
+              "repo_info": {
+                "archived": false,
+                "language": "Java",
+                "last_commit": "2022-08-03T00:00:00.000Z",
+                "owner": "mushorg",
+                "repo": "conpot",
+                "stars": 5517
+              }
+            },
+            {
+              "children": [],
+              "description": "Building Honeypots for Industrial Networks.",
+              "title": "SCADA honeynet"
+            },
+            {
+              "children": [],
+              "description": "Mimics many of the services from a popular PLC and better helps SCADA researchers understand potential risks of exposed control system devices.",
+              "title": "scada-honeynet"
+            }
+          ],
+          "description": null,
+          "title": "ICS/SCADA honeypots",
+          "repo_info": {
+            "archived": false,
+            "language": "Go",
+            "last_commit": "2021-05-24T00:00:00.000Z",
+            "owner": "sjhilt",
+            "repo": "GasPot",
+            "stars": 43953
+          }
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "description": "Low-interaction client honeypot designed to detect malicious websites through signature, anomaly, and pattern matching techniques.",
+              "title": "YALIH (Yet Another Low Interaction Honeyclient)",
+              "repo_info": {
+                "archived": false,
+                "language": "Java",
+                "last_commit": "2022-05-15T00:00:00.000Z",
+                "owner": "Masood-M",
+                "repo": "yalih",
+                "stars": 43597
+              }
+            },
+            {
+              "children": [],
+              "description": "Python honeyclient (later replaced by Thug).",
+              "title": "PhoneyC",
+              "repo_info": {
+                "archived": false,
+                "language": "Rust",
+                "last_commit": "2021-05-12T00:00:00.000Z",
+                "owner": "honeynet",
+                "repo": "phoneyc",
+                "stars": 40965
+              }
+            },
+            {
+              "children": [],
+              "description": "High Interaction Client Honeypot.",
+              "title": "Pwnypot",
+              "repo_info": {
+                "archived": false,
+                "language": null,
+                "last_commit": "2023-10-14T00:00:00.000Z",
+                "owner": "shjalayeri",
+                "repo": "pwnypot",
+                "stars": 36080
+              }
+            },
+            {
+              "children": [],
+              "description": "Highly-scalable system integrating multiple client honeypots to detect malicious websites.",
+              "title": "HoneySpider Network",
+              "repo_info": {
+                "archived": false,
+                "language": "Ruby",
+                "last_commit": "2021-04-29T00:00:00.000Z",
+                "owner": "CERT-Polska",
+                "repo": "hsn2-bundle",
+                "stars": 35978
+              }
+            },
+            {
+              "children": [],
+              "description": null,
+              "title": "Capture-HPC-NG",
+              "repo_info": {
+                "archived": false,
+                "language": "Python",
+                "last_commit": "2023-09-30T00:00:00.000Z",
+                "owner": "CERT-Polska",
+                "repo": "HSN-Capture-HPC-NG",
+                "stars": 3094
+              }
+            },
+            {
+              "children": [],
+              "description": null,
+              "title": "Jsunpack-n",
+              "repo_info": {
+                "archived": false,
+                "language": "Ruby",
+                "last_commit": "2022-05-24T00:00:00.000Z",
+                "owner": "urule99",
+                "repo": "jsunpack-n",
+                "stars": 588
+              }
+            },
+            {
+              "children": [],
+              "description": null,
+              "title": "CWSandbox / GFI Sandbox"
+            },
+            {
+              "children": [],
+              "description": null,
+              "title": "Capture-HPC-Linux"
+            },
+            {
+              "children": [],
+              "description": "High interaction client honeypot (also called honeyclient).",
+              "title": "Capture-HPC"
+            },
+            {
+              "children": [],
+              "description": null,
+              "title": "HoneyBOT"
+            },
+            {
+              "children": [],
+              "description": null,
+              "title": "HoneyC"
+            },
+            {
+              "children": [],
+              "description": "Web interface created to manage and remotely share Honeyclients resources.",
+              "title": "HoneyWeb"
+            },
+            {
+              "children": [],
+              "description": null,
+              "title": "MonkeySpider"
+            },
+            {
+              "children": [],
+              "description": "Thug's Rumāl: a Thug's dress and weapon.",
+              "title": "Rumal"
+            },
+            {
+              "children": [],
+              "description": "Client-side honeypot for attack detection.",
+              "title": "Shelia"
+            },
+            {
+              "children": [],
+              "description": "Python-based low-interaction honeyclient.",
+              "title": "Thug"
+            },
+            {
+              "children": [],
+              "description": null,
+              "title": "Thug Distributed Task Queuing"
+            },
+            {
+              "children": [],
+              "description": null,
+              "title": "Trigona"
+            },
+            {
+              "children": [],
+              "description": null,
+              "title": "URLQuery"
+            }
+          ],
+          "description": null,
+          "title": "Client",
+          "repo_info": {
+            "archived": false,
+            "language": "Java",
+            "last_commit": "2022-05-15T00:00:00.000Z",
+            "owner": "Masood-M",
+            "repo": "yalih",
+            "stars": 43597
+          }
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "description": "Tool for deploying and detecting use of Active Directory honeytokens.",
+              "title": "dcept",
+              "repo_info": {
+                "archived": false,
+                "language": null,
+                "last_commit": "2021-08-15T00:00:00.000Z",
+                "owner": "secureworks",
+                "repo": "dcept",
+                "stars": 41870
+              }
+            },
+            {
+              "children": [],
+              "description": "Simple tool designed to enhance the effectiveness of your traps by spreading breadcrumbs and honeytokens across your production servers and workstations to lure the attacker toward your honeypots.",
+              "title": "Honeybits",
+              "repo_info": {
+                "archived": false,
+                "language": "Ruby",
+                "last_commit": "2022-04-24T00:00:00.000Z",
+                "owner": "0x4D31",
+                "repo": "honeybits",
+                "stars": 31618
+              }
+            },
+            {
+              "children": [],
+              "description": "Self-hostable honeytoken generator and reporting dashboard; demo version available at CanaryTokens.org.",
+              "title": "CanaryTokens",
+              "repo_info": {
+                "archived": false,
+                "language": "Python",
+                "last_commit": "2021-10-20T00:00:00.000Z",
+                "owner": "thinkst",
+                "repo": "canarytokens",
+                "stars": 23804
+              }
+            },
+            {
+              "children": [],
+              "description": "Heroku-based web honeypot that can be used to create and monitor fake HTTP endpoints (i.e. honeytokens).",
+              "title": "honeyku",
+              "repo_info": {
+                "archived": false,
+                "language": "Python",
+                "last_commit": "2021-08-31T00:00:00.000Z",
+                "owner": "0x4D31",
+                "repo": "honeyku",
+                "stars": 12854
+              }
+            },
+            {
+              "children": [],
+              "description": "Simple, serverless application designed to create and monitor URL honeytokens, on top of AWS Lambda and Amazon API Gateway.",
+              "title": "Honeyλ (HoneyLambda)",
+              "repo_info": {
+                "archived": false,
+                "language": "TypeScript",
+                "last_commit": "2022-06-10T00:00:00.000Z",
+                "owner": "0x4D31",
+                "repo": "honeylambda",
+                "stars": 5571
+              }
+            }
+          ],
+          "description": null,
+          "title": "Honeytokens",
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2021-08-15T00:00:00.000Z",
+            "owner": "secureworks",
+            "repo": "dcept",
+            "stars": 41870
+          }
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "description": "Redirects traffic for unused IPs to a honeypot, built on POX.",
+              "title": "OpenFlow Honeypot (OFPot)",
+              "repo_info": {
+                "archived": false,
+                "language": "TypeScript",
+                "last_commit": "2022-11-07T00:00:00.000Z",
+                "owner": "upa",
+                "repo": "ofpot",
+                "stars": 41421
+              }
+            },
+            {
+              "children": [],
+              "description": "DICOM Honeypot.",
+              "title": "dicompot",
+              "repo_info": {
+                "archived": false,
+                "language": null,
+                "last_commit": "2022-08-20T00:00:00.000Z",
+                "owner": "nsmfoo",
+                "repo": "dicompot",
+                "stars": 40500
+              }
+            },
+            {
+              "children": [],
+              "description": "Detect and log CVE-2019-19781 scan and exploitation attempts.",
+              "title": "CitrixHoneypot",
+              "repo_info": {
+                "archived": false,
+                "language": "Java",
+                "last_commit": "2021-10-07T00:00:00.000Z",
+                "owner": "MalwareTech",
+                "repo": "CitrixHoneypot",
+                "stars": 39817
+              }
+            },
+            {
+              "children": [],
+              "description": "Honeypot framework with pluggable handlers.",
+              "title": "Damn Simple Honeypot (DSHP)",
+              "repo_info": {
+                "archived": false,
+                "language": "Ruby",
+                "last_commit": "2021-09-06T00:00:00.000Z",
+                "owner": "naorlivne",
+                "repo": "dshp",
+                "stars": 33848
+              }
+            },
+            {
+              "children": [],
+              "description": "Uses honeypots as detectors, looks like a complete system.",
+              "title": "NOVA",
+              "repo_info": {
+                "archived": false,
+                "language": "Go",
+                "last_commit": "2023-08-02T00:00:00.000Z",
+                "owner": "DataSoft",
+                "repo": "Nova",
+                "stars": 33153
+              }
+            },
+            {
+              "children": [],
+              "description": "HL7 / FHIR honeypot.",
+              "title": "medpot",
+              "repo_info": {
+                "archived": false,
+                "language": "Shell",
+                "last_commit": "2021-04-28T00:00:00.000Z",
+                "owner": "schmalle",
+                "repo": "medpot",
+                "stars": 23979
+              }
+            },
+            {
+              "children": [],
+              "description": "Modular and decentralised honeypot daemon that runs several canary versions of services that alerts when a service is (ab)used.",
+              "title": "OpenCanary",
+              "repo_info": {
+                "archived": false,
+                "language": "C++",
+                "last_commit": "2022-12-12T00:00:00.000Z",
+                "owner": "thinkst",
+                "repo": "opencanary",
+                "stars": 22386
+              }
+            },
+            {
+              "children": [],
+              "description": "Let's be scanned. A low-interaction honeypot focused on network scanners and bots. It integrates very well with IVRE to build a self-hosted alternative to GreyNoise.",
+              "title": "Masscanned",
+              "repo_info": {
+                "archived": false,
+                "language": "Python",
+                "last_commit": "2022-10-25T00:00:00.000Z",
+                "owner": "ivre",
+                "repo": "masscanned",
+                "stars": 19434
+              }
+            },
+            {
+              "children": [],
+              "description": "A low interaction honeypot for the Cisco ASA component capable of detecting CVE-2018-0101, a DoS and remote code execution vulnerability.",
+              "title": "ciscoasa_honeypot",
+              "repo_info": {
+                "archived": false,
+                "language": "TypeScript",
+                "last_commit": "2022-05-11T00:00:00.000Z",
+                "owner": "cymmetria",
+                "repo": "ciscoasa_honeypot",
+                "stars": 15601
+              }
+            },
+            {
+              "children": [],
+              "description": "A medium interaction printer honeypot.",
+              "title": "miniprint",
+              "repo_info": {
+                "archived": false,
+                "language": "C++",
+                "last_commit": "2022-11-22T00:00:00.000Z",
+                "owner": "sa7mon",
+                "repo": "miniprint",
+                "stars": 4406
+              }
+            },
+            {
+              "children": [],
+              "description": "A honeypot for the Log4Shell vulnerability (CVE-2021-44228).",
+              "title": "Log4Pot",
+              "repo_info": {
+                "archived": false,
+                "language": "Shell",
+                "last_commit": "2023-01-28T00:00:00.000Z",
+                "owner": "thomaspatzke",
+                "repo": "Log4Pot",
+                "stars": 1339
+              }
+            },
+            {
+              "children": [],
+              "description": "A honeypot for the Internet Printing Protocol.",
+              "title": "IPP Honey"
+            }
+          ],
+          "description": null,
+          "title": "Other/random",
+          "repo_info": {
+            "archived": false,
+            "language": "TypeScript",
+            "last_commit": "2022-11-07T00:00:00.000Z",
+            "owner": "upa",
+            "repo": "ofpot",
+            "stars": 41421
+          }
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "description": "Low interaction honeypot server.",
+              "title": "DemonHunter",
+              "repo_info": {
+                "archived": false,
+                "language": "Shell",
+                "last_commit": "2022-05-23T00:00:00.000Z",
+                "owner": "RevengeComing",
+                "repo": "DemonHunter",
+                "stars": 38589
+              }
+            }
+          ],
+          "description": null,
+          "title": "Distributed Honeypots",
+          "repo_info": {
+            "archived": false,
+            "language": "Shell",
+            "last_commit": "2022-05-23T00:00:00.000Z",
+            "owner": "RevengeComing",
+            "repo": "DemonHunter",
+            "stars": 38589
+          }
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "description": "A super simple SMTP Honeypot built using GPT3.5",
+              "title": "SMTPLLMPot",
+              "repo_info": {
+                "archived": false,
+                "language": "Rust",
+                "last_commit": "2022-01-17T00:00:00.000Z",
+                "owner": "referefref",
+                "repo": "SMTPLLMPot",
+                "stars": 37715
+              }
+            },
+            {
+              "children": [
+                {
+                  "children": [],
+                  "description": null,
+                  "title": "Shiva The Spam Honeypot Tips And Tricks For Getting It Up And Running"
+                }
+              ],
+              "description": "Spam Honeypot with Intelligent Virtual Analyzer.",
+              "title": "Shiva",
+              "repo_info": {
+                "archived": false,
+                "language": "C++",
+                "last_commit": "2022-09-23T00:00:00.000Z",
+                "owner": "shiva-spampot",
+                "repo": "shiva",
+                "stars": 27466
+              }
+            },
+            {
+              "children": [],
+              "description": "The Project Honey Pot un-official PHP SDK.",
+              "title": "honeypot",
+              "repo_info": {
+                "archived": false,
+                "language": "JavaScript",
+                "last_commit": "2023-09-02T00:00:00.000Z",
+                "owner": "jadb",
+                "repo": "honeypot",
+                "stars": 27122
+              }
+            },
+            {
+              "children": [],
+              "description": "Simple SMTP fetch all IDS and analyzer.",
+              "title": "SendMeSpamIDS.py",
+              "repo_info": {
+                "archived": false,
+                "language": "JavaScript",
+                "last_commit": "2023-02-24T00:00:00.000Z",
+                "owner": "johestephan",
+                "repo": "VerySimpleHoneypot",
+                "stars": 17312
+              }
+            },
+            {
+              "children": [],
+              "description": "Spam Honeypot Tool.",
+              "title": "SpamHAT",
+              "repo_info": {
+                "archived": false,
+                "language": "Ruby",
+                "last_commit": "2023-03-30T00:00:00.000Z",
+                "owner": "miguelraulb",
+                "repo": "spamhat",
+                "stars": 14278
+              }
+            },
+            {
+              "children": [],
+              "description": "SMTP honeypot written in python.",
+              "title": "Mailoney",
+              "repo_info": {
+                "archived": false,
+                "language": "Shell",
+                "last_commit": "2023-11-04T00:00:00.000Z",
+                "owner": "phin3has",
+                "repo": "mailoney",
+                "stars": 59
+              }
+            },
+            {
+              "children": [],
+              "description": "Perl module that appears to provide the functionality of a standard SMTP server.",
+              "title": "Mail::SMTP::Honeypot"
+            },
+            {
+              "children": [],
+              "description": null,
+              "title": "Spamhole"
+            },
+            {
+              "children": [],
+              "description": null,
+              "title": "spamd"
+            }
+          ],
+          "description": null,
+          "title": "Spamtrap",
+          "repo_info": {
+            "archived": false,
+            "language": "Rust",
+            "last_commit": "2022-01-17T00:00:00.000Z",
+            "owner": "referefref",
+            "repo": "SMTPLLMPot",
+            "stars": 37715
+          }
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "description": "Tool for exploration and tracing of the Windows kernel.",
+              "title": "Fibratus",
+              "repo_info": {
+                "archived": true,
+                "language": "Java",
+                "last_commit": "2023-04-20T00:00:00.000Z",
+                "owner": "rabbitstack",
+                "repo": "fibratus",
+                "stars": 35257
+              }
+            },
+            {
+              "children": [],
+              "description": "Open source, system-level exploration allows one to capture system state and activity from a running GNU/Linux instance, then save, filter, and analyze the results.",
+              "title": "Sysdig"
+            }
+          ],
+          "description": null,
+          "title": "System instrumentation",
+          "repo_info": {
+            "archived": true,
+            "language": "Java",
+            "last_commit": "2023-04-20T00:00:00.000Z",
+            "owner": "rabbitstack",
+            "repo": "fibratus",
+            "stars": 35257
+          }
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "description": "Signature based honeypot detector tool written in Golang",
+              "title": "honeydet",
+              "repo_info": {
+                "archived": false,
+                "language": "TypeScript",
+                "last_commit": "2023-12-12T00:00:00.000Z",
+                "owner": "referefref",
+                "repo": "honeydet",
+                "stars": 34021
+              }
+            },
+            {
+              "children": [],
+              "description": "Offensive component that detects the presence of the kippo honeypot.",
+              "title": "kippo_detect",
+              "repo_info": {
+                "archived": false,
+                "language": "JavaScript",
+                "last_commit": "2022-04-20T00:00:00.000Z",
+                "owner": "andrew-morris",
+                "repo": "kippo_detect",
+                "stars": 18622
+              }
+            },
+            {
+              "children": [],
+              "description": "Tool for detection and nullification of Thinkst CanaryTokens",
+              "title": "canarytokendetector",
+              "repo_info": {
+                "archived": false,
+                "language": "Ruby",
+                "last_commit": "2021-05-29T00:00:00.000Z",
+                "owner": "referefref",
+                "repo": "canarytokendetector",
+                "stars": 12948
+              }
+            }
+          ],
+          "description": null,
+          "title": "Anti-honeypot stuff",
+          "repo_info": {
+            "archived": false,
+            "language": "TypeScript",
+            "last_commit": "2023-12-12T00:00:00.000Z",
+            "owner": "referefref",
+            "repo": "honeydet",
+            "stars": 34021
+          }
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "description": "Debugger frontend.",
+              "title": "Hexgolems - Schem Debugger Frontend",
+              "repo_info": {
+                "archived": false,
+                "language": "Java",
+                "last_commit": "2022-09-12T00:00:00.000Z",
+                "owner": "hexgolems",
+                "repo": "schem",
+                "stars": 33477
+              }
+            },
+            {
+              "children": [],
+              "description": "Debugger backend and LUA wrapper for PIN.",
+              "title": "Hexgolems - Pint Debugger Backend",
+              "repo_info": {
+                "archived": false,
+                "language": "C++",
+                "last_commit": "2021-11-27T00:00:00.000Z",
+                "owner": "hexgolems",
+                "repo": "pint",
+                "stars": 19766
+              }
+            }
+          ],
+          "description": null,
+          "title": "Binary debugger",
+          "repo_info": {
+            "archived": false,
+            "language": "Java",
+            "last_commit": "2022-09-12T00:00:00.000Z",
+            "owner": "hexgolems",
+            "repo": "schem",
+            "stars": 33477
+          }
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "description": "Honeypot that can be used to observe traffic directed at home routers.",
+              "title": "WAPot",
+              "repo_info": {
+                "archived": false,
+                "language": "JavaScript",
+                "last_commit": "2022-05-20T00:00:00.000Z",
+                "owner": "lcashdol",
+                "repo": "WAPot",
+                "stars": 26592
+              }
+            },
+            {
+              "children": [],
+              "description": "Honeypot for router backdoor (TCP 32764).",
+              "title": "Honeypot-32764",
+              "repo_info": {
+                "archived": false,
+                "language": "Rust",
+                "last_commit": "2021-11-08T00:00:00.000Z",
+                "owner": "knalli",
+                "repo": "honeypot-for-tcp-32764",
+                "stars": 19785
+              }
+            }
+          ],
+          "description": null,
+          "title": "Low interaction honeypot (router back door)",
+          "repo_info": {
+            "archived": false,
+            "language": "JavaScript",
+            "last_commit": "2022-05-20T00:00:00.000Z",
+            "owner": "lcashdol",
+            "repo": "WAPot",
+            "stars": 26592
+          }
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "description": "TR-069 Honeypot.",
+              "title": "HoneyThing",
+              "repo_info": {
+                "archived": false,
+                "language": "Ruby",
+                "last_commit": "2021-05-29T00:00:00.000Z",
+                "owner": "omererdem",
+                "repo": "honeything",
+                "stars": 25948
+              }
+            },
+            {
+              "children": [],
+              "description": "Honeypots for a number of well known and deployed embedded device vulnerabilities.",
+              "title": "Kako",
+              "repo_info": {
+                "archived": false,
+                "language": "Java",
+                "last_commit": "2022-10-02T00:00:00.000Z",
+                "owner": "darkarnium",
+                "repo": "kako",
+                "stars": 3457
+              }
+            }
+          ],
+          "description": null,
+          "title": "IOT Honeypot",
+          "repo_info": {
+            "archived": false,
+            "language": "Ruby",
+            "last_commit": "2021-05-29T00:00:00.000Z",
+            "owner": "omererdem",
+            "repo": "honeything",
+            "stars": 25948
+          }
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "description": "All in one honeypot appliance from telecom provider T-Mobile",
+              "title": "T-Pot",
+              "repo_info": {
+                "archived": true,
+                "language": "Python",
+                "last_commit": "2021-12-19T00:00:00.000Z",
+                "owner": "dtag-dev-sec",
+                "repo": "tpotce",
+                "stars": 22744
+              }
+            },
+            {
+              "children": [],
+              "description": "A secure honeypot framework, extremely easy to configure by yaml 🚀",
+              "title": "beelzebub",
+              "repo_info": {
+                "archived": false,
+                "language": "Go",
+                "last_commit": "2021-04-24T00:00:00.000Z",
+                "owner": "mariocandela",
+                "repo": "beelzebub",
+                "stars": 21983
+              }
+            },
+            {
+              "children": [],
+              "description": "Honeypot software based in Perl with plugins developed for many functions like : wingates, telnet, squid, smtp, etc.",
+              "title": "Honeyperl"
+            }
+          ],
+          "description": null,
+          "title": "Low interaction honeypot",
+          "repo_info": {
+            "archived": true,
+            "language": "Python",
+            "last_commit": "2021-12-19T00:00:00.000Z",
+            "owner": "dtag-dev-sec",
+            "repo": "tpotce",
+            "stars": 22744
+          }
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "description": "Google Summer of Code 2012 project, supported by The Honeynet Project organization.",
+              "title": "ipv6-attack-detector",
+              "repo_info": {
+                "archived": false,
+                "language": "Rust",
+                "last_commit": "2021-11-28T00:00:00.000Z",
+                "owner": "mzweilin",
+                "repo": "ipv6-attack-detector",
+                "stars": 21765
+              }
+            }
+          ],
+          "description": null,
+          "title": "IPv6 attack detection tool",
+          "repo_info": {
+            "archived": false,
+            "language": "Rust",
+            "last_commit": "2021-11-28T00:00:00.000Z",
+            "owner": "mzweilin",
+            "repo": "ipv6-attack-detector",
+            "stars": 21765
+          }
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "description": null,
+              "title": "IMHoneypot",
+              "repo_info": {
+                "archived": false,
+                "language": "C++",
+                "last_commit": "2023-07-10T00:00:00.000Z",
+                "owner": "mushorg",
+                "repo": "imhoneypot",
+                "stars": 19176
+              }
+            },
+            {
+              "children": [],
+              "description": null,
+              "title": "Deception Toolkit"
+            }
+          ],
+          "description": null,
+          "title": "Honeypot",
+          "repo_info": {
+            "archived": false,
+            "language": "C++",
+            "last_commit": "2023-07-10T00:00:00.000Z",
+            "owner": "mushorg",
+            "repo": "imhoneypot",
+            "stars": 19176
+          }
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "description": "Framework that combines multiple passive and automated analysis techniques in order to provide a security assessment of network platforms.",
+              "title": "Passive Network Audit Framework (pnaf)",
+              "repo_info": {
+                "archived": false,
+                "language": "Shell",
+                "last_commit": "2021-08-06T00:00:00.000Z",
+                "owner": "jusafing",
+                "repo": "pnaf",
+                "stars": 18879
+              }
+            }
+          ],
+          "description": null,
+          "title": "Passive network audit framework parser",
+          "repo_info": {
+            "archived": false,
+            "language": "Shell",
+            "last_commit": "2021-08-06T00:00:00.000Z",
+            "owner": "jusafing",
+            "repo": "pnaf",
+            "stars": 18879
+          }
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "description": null,
+              "title": "Bluepot",
+              "repo_info": {
+                "archived": false,
+                "language": "Rust",
+                "last_commit": "2023-05-02T00:00:00.000Z",
+                "owner": "andrewmichaelsmith",
+                "repo": "bluepot",
+                "stars": 15245
+              }
+            }
+          ],
+          "description": null,
+          "title": "Server (Bluetooth)",
+          "repo_info": {
+            "archived": false,
+            "language": "Rust",
+            "last_commit": "2023-05-02T00:00:00.000Z",
+            "owner": "andrewmichaelsmith",
+            "repo": "bluepot",
+            "stars": 15245
+          }
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "description": "Multi-snort and honeypot sensor management, uses a network of VMs, small footprint SNORT installations, stealthy dionaeas, and a centralized server for management.",
+              "title": "Modern Honey Network",
+              "repo_info": {
+                "archived": false,
+                "language": "C++",
+                "last_commit": "2023-06-20T00:00:00.000Z",
+                "owner": "threatstream",
+                "repo": "mhn",
+                "stars": 12196
+              }
+            },
+            {
+              "children": [],
+              "description": "CHN aims to make deployments honeypots and honeypot management tools easy and flexible. The default deployment method uses Docker Compose and Docker to deploy with a few simple commands.",
+              "title": "Community Honey Network"
+            }
+          ],
+          "description": null,
+          "title": "Distributed sensor deployment",
+          "repo_info": {
+            "archived": false,
+            "language": "C++",
+            "last_commit": "2023-06-20T00:00:00.000Z",
+            "owner": "threatstream",
+            "repo": "mhn",
+            "stars": 12196
+          }
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "description": "Protect your SIP Servers from bad actors.",
+              "title": "SentryPeer",
+              "repo_info": {
+                "archived": false,
+                "language": "Java",
+                "last_commit": "2023-07-29T00:00:00.000Z",
+                "owner": "SentryPeer",
+                "repo": "SentryPeer",
+                "stars": 10157
+              }
+            }
+          ],
+          "description": null,
+          "title": "SIP",
+          "repo_info": {
+            "archived": false,
+            "language": "Java",
+            "last_commit": "2023-07-29T00:00:00.000Z",
+            "owner": "SentryPeer",
+            "repo": "SentryPeer",
+            "stars": 10157
+          }
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "description": "Powerful Python tool to analyze PDF documents.",
+              "title": "peepdf",
+              "repo_info": {
+                "archived": false,
+                "language": "Java",
+                "last_commit": "2021-11-06T00:00:00.000Z",
+                "owner": "jesparza",
+                "repo": "peepdf",
+                "stars": 7787
+              }
+            }
+          ],
+          "description": null,
+          "title": "PDF document inspector",
+          "repo_info": {
+            "archived": false,
+            "language": "Java",
+            "last_commit": "2021-11-06T00:00:00.000Z",
+            "owner": "jesparza",
+            "repo": "peepdf",
+            "stars": 7787
+          }
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "description": "Tool to create artificial file systems for medium/high interaction honeypots.",
+              "title": "honeyfs",
+              "repo_info": {
+                "archived": false,
+                "language": "Shell",
+                "last_commit": "2023-10-25T00:00:00.000Z",
+                "owner": "referefref",
+                "repo": "honeyfs",
+                "stars": 1069
+              }
+            },
+            {
+              "children": [],
+              "description": "Streamlines deployment and management of secure honeypots.",
+              "title": "Modern Honeynet Network"
+            }
+          ],
+          "description": null,
+          "title": "Honeypot deployment",
+          "repo_info": {
+            "archived": false,
+            "language": "Shell",
+            "last_commit": "2023-10-25T00:00:00.000Z",
+            "owner": "referefref",
+            "repo": "honeyfs",
+            "stars": 1069
+          }
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "description": "Inject JavaScript to explore native apps on Windows, Mac, Linux, iOS and Android.",
+              "title": "Frida"
+            }
+          ],
+          "description": null,
+          "title": "Dynamic code instrumentation toolkit"
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "description": "Transform arbitrary PHP applications into web-based high-interaction Honeypots.",
+              "title": "HIHAT"
+            }
+          ],
+          "description": null,
+          "title": "Tool to convert website to server honeypots"
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "description": "Python script that will download all malicious files stored as URLs in a Kippo SSH honeypot database.",
+              "title": "Kippo-Malware"
+            }
+          ],
+          "description": null,
+          "title": "Malware collector"
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "description": "Replay network packets.",
+              "title": "Tracexploit"
+            }
+          ],
+          "description": null,
+          "title": "Network Analysis Tool"
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "description": "Log anonymization library that helps having anonymous logs consistent between logs and network captures.",
+              "title": "LogAnon"
+            }
+          ],
+          "description": null,
+          "title": "Log anonymizer"
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "description": "Deploy multiple sensors that redirect traffic to a centralized collection of honeypots.",
+              "title": "Honeymole"
+            }
+          ],
+          "description": null,
+          "title": "honeynet farm traffic redirector"
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "description": "Allows traffic flows to be intercepted, inspected, modified, and replayed.",
+              "title": "mitmproxy"
+            }
+          ],
+          "description": null,
+          "title": "HTTPS Proxy"
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "description": "Extracts some very basic stats from Kippo’s text-based log files and inserts them in a MySQL database.",
+              "title": "Kippo2MySQL"
+            },
+            {
+              "children": [],
+              "description": "Python script to transfer data from a Kippo SSH honeypot MySQL database to an ElasticSearch instance (server or cluster).",
+              "title": "Kippo2ElasticSearch"
+            }
+          ],
+          "description": null,
+          "title": "Data Collection"
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "description": "Data coalesing tool for honeynet/network analysis.",
+              "title": "HFlow2"
+            }
+          ],
+          "description": null,
+          "title": "Honeynet data fusion"
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "description": "Automated signature creation using honeypots.",
+              "title": "Honeycomb"
+            }
+          ],
+          "description": null,
+          "title": "IDS signature generation"
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "description": "Simple lookup service for AS-numbers and prefixes belonging to any given country in the world.",
+              "title": "CC2ASN"
+            }
+          ],
+          "description": null,
+          "title": "Lookup service for AS-numbers and prefixes"
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "description": "Manage, report, and analyze your distributed Nepenthes instances.",
+              "title": "PHARM"
+            }
+          ],
+          "description": null,
+          "title": "Central management tool"
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "description": "Network security auditing tool designed to analyze the forensics behind compromised and/or vulnerable daemons.",
+              "title": "Impost"
+            }
+          ],
+          "description": null,
+          "title": "Network connection analyzer"
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "description": "Apply Snort IDS rules and signatures against packet capture files using Wireshark.",
+              "title": "Wireshark Extensions"
+            }
+          ],
+          "description": null,
+          "title": "Honeypot extensions to Wireshark"
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "description": null,
+              "title": "HoneyBrid"
+            }
+          ],
+          "description": null,
+          "title": "Hybrid low/high interaction honeypot"
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "description": null,
+              "title": "DShield Web Honeypot Project"
+            }
+          ],
+          "description": null,
+          "title": "Distributed sensor project"
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "description": null,
+              "title": "Honeysnap"
+            }
+          ],
+          "description": null,
+          "title": "A pcap analyzer"
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "description": null,
+              "title": "Honeywall"
+            }
+          ],
+          "description": null,
+          "title": "Network traffic redirector"
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "description": null,
+              "title": "HoneyDrive"
+            }
+          ],
+          "description": null,
+          "title": "Honeypot Distribution with mixed content"
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "description": "Honeypot sensor on a Raspberry Pi based on a customized Raspbian OS.",
+              "title": "Honeeepi"
+            }
+          ],
+          "description": null,
+          "title": "Honeypot sensor"
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "description": null,
+              "title": "TestDisk & PhotoRec"
+            }
+          ],
+          "description": null,
+          "title": "File carving"
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "description": null,
+              "title": "Capture BAT"
+            }
+          ],
+          "description": null,
+          "title": "Behavioral analysis tool for win32"
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "description": "The DAVIX Live CD.",
+              "title": "DAVIX"
+            }
+          ],
+          "description": null,
+          "title": "Live CD"
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "description": "Leads attackers away from real targets and creates a footprint of the attack.",
+              "title": "Cymmetria Mazerunner"
+            }
+          ],
+          "description": null,
+          "title": "Commercial honeynet"
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "description": null,
+              "title": "Droidbox"
+            }
+          ],
+          "description": null,
+          "title": "Dynamic analysis of Android apps"
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "description": null,
+              "title": "Quechua"
+            }
+          ],
+          "description": null,
+          "title": "Network analysis"
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "description": null,
+              "title": "Artemnesia VoIP"
+            }
+          ],
+          "description": null,
+          "title": "SIP Server"
+        }
+      ],
+      "title": "Honeypots"
+    },
+    {
+      "description": "",
+      "items": [
+        {
+          "children": [
+            {
+              "children": [],
+              "description": "Real-time websocket stream of GPS events on a fancy SVG world map.",
+              "title": "HoneyMap",
+              "repo_info": {
+                "archived": false,
+                "language": "Rust",
+                "last_commit": "2023-01-12T00:00:00.000Z",
+                "owner": "fw42",
+                "repo": "honeymap",
+                "stars": 49355
+              }
+            },
+            {
+              "children": [],
+              "description": "Visual analysis for network traffic.",
+              "title": "ovizart",
+              "repo_info": {
+                "archived": false,
+                "language": null,
+                "last_commit": "2023-01-07T00:00:00.000Z",
+                "owner": "oguzy",
+                "repo": "ovizart",
+                "stars": 43360
+              }
+            },
+            {
+              "children": [],
+              "description": "Network recon framework, published by @cea-sec & @ANSSI-FR. Build your own, self-hosted and fully-controlled alternatives to Criminalip / Shodan / ZoomEye / Censys and GreyNoise, run your Passive DNS service, collect and analyse network intelligence from your sensors, and much more!",
+              "title": "IVRE",
+              "repo_info": {
+                "archived": false,
+                "language": "Shell",
+                "last_commit": "2023-08-16T00:00:00.000Z",
+                "owner": "ivre",
+                "repo": "ivre",
+                "stars": 42139
+              }
+            },
+            {
+              "children": [],
+              "description": null,
+              "title": "Afterglow Cloud",
+              "repo_info": {
+                "archived": false,
+                "language": "JavaScript",
+                "last_commit": "2021-06-14T00:00:00.000Z",
+                "owner": "ayrus",
+                "repo": "afterglow-cloud",
+                "stars": 27932
+              }
+            },
+            {
+              "children": [],
+              "description": "Automated Attack Community Graph Construction.",
+              "title": "Acapulco",
+              "repo_info": {
+                "archived": false,
+                "language": "Ruby",
+                "last_commit": "2022-10-31T00:00:00.000Z",
+                "owner": "hgascon",
+                "repo": "acapulco",
+                "stars": 26428
+              }
+            },
+            {
+              "children": [],
+              "description": "Mojolicious app to display statistics for your kippo SSH honeypot.",
+              "title": "Kippo stats",
+              "repo_info": {
+                "archived": false,
+                "language": "Python",
+                "last_commit": "2023-09-30T00:00:00.000Z",
+                "owner": "mfontani",
+                "repo": "kippo-stats",
+                "stars": 22094
+              }
+            },
+            {
+              "children": [],
+              "description": "Easy honeypot statistics.",
+              "title": "Glastopf Analytics",
+              "repo_info": {
+                "archived": false,
+                "language": null,
+                "last_commit": "2021-12-23T00:00:00.000Z",
+                "owner": "katkad",
+                "repo": "Glastopf-Analytics",
+                "stars": 20740
+              }
+            },
+            {
+              "children": [],
+              "description": "Create actionable information from honeypots.",
+              "title": "The Intelligent HoneyNet",
+              "repo_info": {
+                "archived": false,
+                "language": "Go",
+                "last_commit": "2021-10-21T00:00:00.000Z",
+                "owner": "jpyorre",
+                "repo": "IntelligentHoneyNet",
+                "stars": 16803
+              }
+            },
+            {
+              "children": [],
+              "description": "Maltego tranforms for mapping Honeypot systems.",
+              "title": "HoneyMalt",
+              "repo_info": {
+                "archived": false,
+                "language": "Ruby",
+                "last_commit": "2022-09-11T00:00:00.000Z",
+                "owner": "SneakersInc",
+                "repo": "HoneyMalt",
+                "stars": 12478
+              }
+            },
+            {
+              "children": [],
+              "description": "Visualization app to visualize hpfeeds logs.",
+              "title": "HpfeedsHoneyGraph",
+              "repo_info": {
+                "archived": false,
+                "language": "Ruby",
+                "last_commit": "2022-05-04T00:00:00.000Z",
+                "owner": "yuchincheng",
+                "repo": "HpfeedsHoneyGraph",
+                "stars": 6608
+              }
+            },
+            {
+              "children": [],
+              "description": null,
+              "title": "Afterglow"
+            },
+            {
+              "children": [],
+              "description": "Statistical view of the recorded activity on a Honeynet.",
+              "title": "HoneyStats"
+            },
+            {
+              "children": [],
+              "description": "Full featured script to visualize statistics from a Kippo SSH honeypot.",
+              "title": "Kippo-Graph"
+            }
+          ],
+          "description": null,
+          "title": "Visualization",
+          "repo_info": {
+            "archived": false,
+            "language": "Rust",
+            "last_commit": "2023-01-12T00:00:00.000Z",
+            "owner": "fw42",
+            "repo": "honeymap",
+            "stars": 49355
+          }
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "description": "Front Web to Dionaea low-interaction honeypot.",
+              "title": "DionaeaFR",
+              "repo_info": {
+                "archived": false,
+                "language": "TypeScript",
+                "last_commit": "2021-06-15T00:00:00.000Z",
+                "owner": "rubenespadas",
+                "repo": "DionaeaFR",
+                "stars": 48931
+              }
+            },
+            {
+              "children": [],
+              "description": "Honeypot Intelligence with Splunk.",
+              "title": "Tango",
+              "repo_info": {
+                "archived": false,
+                "language": "Java",
+                "last_commit": "2022-08-23T00:00:00.000Z",
+                "owner": "aplura",
+                "repo": "Tango",
+                "stars": 41497
+              }
+            },
+            {
+              "children": [],
+              "description": "Full featured script to visualize statistics from a Wordpot honeypot.",
+              "title": "Wordpot-Frontend",
+              "repo_info": {
+                "archived": false,
+                "language": "Go",
+                "last_commit": "2022-02-28T00:00:00.000Z",
+                "owner": "GovCERT-CZ",
+                "repo": "Wordpot-Frontend",
+                "stars": 37673
+              }
+            },
+            {
+              "children": [],
+              "description": "Django App for kippo SSH Honeypot.",
+              "title": "Django-kippo",
+              "repo_info": {
+                "archived": false,
+                "language": "Shell",
+                "last_commit": "2022-05-23T00:00:00.000Z",
+                "owner": "jedie",
+                "repo": "django-kippo",
+                "stars": 35589
+              }
+            },
+            {
+              "children": [],
+              "description": "Simplified UI for showing honeypot alarms.",
+              "title": "honeyalarmg2",
+              "repo_info": {
+                "archived": false,
+                "language": "Java",
+                "last_commit": "2021-09-27T00:00:00.000Z",
+                "owner": "schmalle",
+                "repo": "honeyalarmg2",
+                "stars": 33827
+              }
+            },
+            {
+              "children": [],
+              "description": "Flask website which displays data gathered from an SSH Honeypot.",
+              "title": "honeypotDisplay",
+              "repo_info": {
+                "archived": false,
+                "language": "Java",
+                "last_commit": "2023-12-06T00:00:00.000Z",
+                "owner": "Joss-Steward",
+                "repo": "honeypotDisplay",
+                "stars": 29027
+              }
+            },
+            {
+              "children": [],
+              "description": "Full featured script to visualize statistics from a Shockpot honeypot.",
+              "title": "Shockpot-Frontend",
+              "repo_info": {
+                "archived": false,
+                "language": "Rust",
+                "last_commit": "2023-07-31T00:00:00.000Z",
+                "owner": "GovCERT-CZ",
+                "repo": "Shockpot-Frontend",
+                "stars": 6155
+              }
+            }
+          ],
+          "description": null,
+          "title": "Front Ends",
+          "repo_info": {
+            "archived": false,
+            "language": "TypeScript",
+            "last_commit": "2021-06-15T00:00:00.000Z",
+            "owner": "rubenespadas",
+            "repo": "DionaeaFR",
+            "stars": 48931
+          }
+        }
+      ],
+      "title": "Data Tools"
+    },
+    {
+      "description": "",
+      "items": [
+        {
+          "children": [],
+          "description": null,
+          "title": "Honeypot (Dionaea and kippo) setup script",
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2023-11-13T00:00:00.000Z",
+            "owner": "andrewmichaelsmith",
+            "repo": "honeypot-setup-script",
+            "stars": 36050
+          }
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "description": "PDFs of research papers on honeypots.",
+              "title": "Honeypot research papers",
+              "repo_info": {
+                "archived": false,
+                "language": "Go",
+                "last_commit": "2021-10-21T00:00:00.000Z",
+                "owner": "shbhmsingh72",
+                "repo": "Honeypot-Research-Papers",
+                "stars": 35803
+              }
+            },
+            {
+              "children": [],
+              "description": "Behavioral footprinting for self-propagating worm detection and profiling.",
+              "title": "vEYE"
+            }
+          ],
+          "description": null,
+          "title": "Research Papers",
+          "repo_info": {
+            "archived": false,
+            "language": "Go",
+            "last_commit": "2021-10-21T00:00:00.000Z",
+            "owner": "shbhmsingh72",
+            "repo": "Honeypot-Research-Papers",
+            "stars": 35803
+          }
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "description": "Script for turning a Raspberry Pi into a HoneyPot Pi.",
+              "title": "honeypotpi",
+              "repo_info": {
+                "archived": false,
+                "language": null,
+                "last_commit": "2022-07-21T00:00:00.000Z",
+                "owner": "free5ty1e",
+                "repo": "honeypotpi",
+                "stars": 17530
+              }
+            },
+            {
+              "children": [],
+              "description": "Tutorial on setting up Dionaea on an EC2 instance.",
+              "title": "Dionaea and EC2 in 20 Minutes"
+            },
+            {
+              "children": [],
+              "description": "The Raspberry Pi based system will allow us to maintain one code base that will make it easier to collect rich logs beyond firewall logs.",
+              "title": "Using a Raspberry Pi honeypot to contribute data to DShield/ISC"
+            }
+          ],
+          "description": null,
+          "title": "Deployment",
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2022-07-21T00:00:00.000Z",
+            "owner": "free5ty1e",
+            "repo": "honeypotpi",
+            "stars": 17530
+          }
+        },
+        {
+          "children": [],
+          "description": null,
+          "title": "T-Pot: A Multi-Honeypot Platform"
+        }
+      ],
+      "title": "Guides"
+    }
+  ],
+  "metadata": {
+    "last_updated": "2025-01-01T00:00:00.000Z",
+    "original_repository": "paralax/awesome-honeypots",
+    "original_repository_sha": "deadbeef",
+    "enhanced_repository": "enhansome/enhansome-honeypots",
+    "enhanced_repository_description": "enhanced list",
+    "title": "Awesome Honeypots with stars"
+  }
+}

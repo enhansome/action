@@ -13,7 +13,16 @@ import {
   RepoInfoDetails,
 } from './github.js';
 
-import type { Heading, Link, List, ListItem, Parent, Root, Text } from 'mdast';
+import type {
+  Heading,
+  Link,
+  List,
+  ListItem,
+  Paragraph,
+  Parent,
+  Root,
+  Text,
+} from 'mdast';
 import type { Node } from 'unist';
 
 // --- TYPE DEFINITIONS ---
@@ -34,11 +43,6 @@ export type ReplacementRule =
 export interface SortOptions {
   by: '' | 'last_commit' | 'stars';
   minLinks: number;
-}
-
-interface EnrichedListItem {
-  node: ListItem;
-  repoInfo: null | RepoInfoDetails;
 }
 
 // --- JSON OUTPUT STRUCTURE ---
@@ -69,11 +73,6 @@ interface JsonSection {
   description: null | string;
   items: JsonItem[];
   title: string;
-}
-
-interface ProcessedListItem {
-  node: ListItem;
-  repoInfo: null | RepoInfoDetails;
 }
 
 export async function fetchAllRepoInfo(
@@ -178,8 +177,9 @@ export async function processMarkdownContent(
     },
   };
 
-  // 3. Modify the AST by sorting lists and adding badges.
-  sortLists(tree, repoInfoMap, sortOptions);
+  // 3. Add badges + fix relative links. List sorting already happened inside
+  //    processTree, which is now the single sort authority for both the AST
+  //    (rendered markdown) and the JSON items.
   addInfoBadges(tree, repoInfoMap);
   fixRelativeLinks(tree, relativeLinkPrefix);
 
@@ -295,6 +295,39 @@ function findFirstGitHubLink(node: Parent): string | undefined {
   });
   return linkUrl;
 }
+
+// Resolve the GitHub link that represents a list item: prefer a repo link in
+// the item's own paragraph (the project's repo). When there isn't one — e.g. a
+// "LeetCode" / "Spotify" category header whose links live in nested children —
+// rank the category by its best (most-starred) nested repo instead of whichever
+// child happened to be listed first. Max is order-independent, so unlike a
+// "first link" lookup it cannot diverge between the JSON and markdown passes.
+function findItemGitHubLink(
+  itemNode: ListItem,
+  repoInfoMap: Map<string, RepoInfoDetails>,
+): string | undefined {
+  const paragraph = itemNode.children.find(
+    (child): child is Paragraph => child.type === 'paragraph',
+  );
+  const direct = paragraph ? findFirstGitHubLink(paragraph) : undefined;
+  if (direct) {
+    return direct;
+  }
+
+  let bestStars = -1;
+  let bestUrl: string | undefined;
+  visit(itemNode, 'link', (linkNode: Link) => {
+    if (!parseGitHubUrl(linkNode.url)) {
+      return;
+    }
+    const stars = repoInfoMap.get(linkNode.url)?.stargazers_count ?? -1;
+    if (stars > bestStars) {
+      bestStars = stars;
+      bestUrl = linkNode.url;
+    }
+  });
+  return bestUrl;
+}
 function fixRelativeLinks(tree: Root, relativeLinkPrefix: string) {
   if (!relativeLinkPrefix) {
     return;
@@ -345,6 +378,32 @@ function stripLeadingNoise(text: string): string {
   return text.replace(/^\s*[-–—·|:]\s*/, '').trim();
 }
 
+// Order two items by their repo info: higher stars / more-recent last commit
+// first; items with no repo info sink to the bottom. The single comparator
+// shared by the JSON builder and the AST sorter so both outputs agree on order.
+function compareByRepoInfo(
+  by: SortOptions['by'],
+  a: null | RepoInfoDetails,
+  b: null | RepoInfoDetails,
+): number {
+  if (!by) {
+    return 0;
+  }
+  if (!a) {
+    return 1;
+  }
+  if (!b) {
+    return -1;
+  }
+  if (by === 'stars') {
+    return b.stargazers_count - a.stargazers_count;
+  }
+  // `by` is narrowed to 'last_commit' here (the only remaining option).
+  const timeA = a.pushed_at ? new Date(a.pushed_at).getTime() : 0;
+  const timeB = b.pushed_at ? new Date(b.pushed_at).getTime() : 0;
+  return timeB - timeA;
+}
+
 function processListRecursively(
   listNode: List,
   repoInfoMap: Map<string, RepoInfoDetails>,
@@ -358,11 +417,16 @@ function processListRecursively(
     return [];
   }
 
-  const processedItems: ProcessedListItem[] = [];
-  const originalOrderJsonItems: JsonItem[] = [];
+  // Zip each list item with its parsed JSON and resolved repo info so one sort
+  // orders both the rendered AST and the emitted JSON identically.
+  const entries: {
+    json: JsonItem;
+    node: ListItem;
+    repoInfo: null | RepoInfoDetails;
+  }[] = [];
 
   for (const itemNode of listNode.children) {
-    const githubUrl = findFirstGitHubLink(itemNode);
+    const githubUrl = findItemGitHubLink(itemNode, repoInfoMap);
     const repoInfo = githubUrl ? (repoInfoMap.get(githubUrl) ?? null) : null;
 
     const nestedLists = itemNode.children.filter(
@@ -412,36 +476,19 @@ function processListRecursively(
       };
     }
 
-    originalOrderJsonItems.push(jsonData);
-    processedItems.push({ node: itemNode, repoInfo });
+    entries.push({ json: jsonData, node: itemNode, repoInfo });
   }
 
   if (sortOptions.by) {
-    processedItems.sort((a, b) => {
-      if (!a.repoInfo) {
-        return 1;
-      }
-      if (!b.repoInfo) {
-        return -1;
-      }
-      if (sortOptions.by === 'stars') {
-        return b.repoInfo.stargazers_count - a.repoInfo.stargazers_count;
-      }
-      if (sortOptions.by === 'last_commit') {
-        const dateA = a.repoInfo.pushed_at
-          ? new Date(a.repoInfo.pushed_at).getTime()
-          : 0;
-        const dateB = b.repoInfo.pushed_at
-          ? new Date(b.repoInfo.pushed_at).getTime()
-          : 0;
-        return dateB - dateA;
-      }
-      return 0;
-    });
+    entries.sort((a, b) =>
+      compareByRepoInfo(sortOptions.by, a.repoInfo, b.repoInfo),
+    );
   }
 
-  listNode.children = processedItems.map(p => p.node);
-  return originalOrderJsonItems;
+  // A single sort feeds both outputs — the AST (rendered markdown) and the JSON
+  // items — so they can never drift out of order.
+  listNode.children = entries.map(entry => entry.node);
+  return entries.map(entry => entry.json);
 }
 
 // Common section headers that should NOT be used as document titles
@@ -633,6 +680,11 @@ function processTree(
         }
         currentSection = null; // Reset after processing a list
       }
+    } else if (node.type === 'list') {
+      // No active section (a list before the first heading, or a second
+      // consecutive list after the reset above). It isn't part of any JSON
+      // section, but still sort its AST so the rendered markdown matches.
+      processListRecursively(node, repoInfoMap, sortOptions);
     }
   }
 
@@ -667,55 +719,4 @@ function appendEnhansomedFooter(content: string, now: Date): string {
   const footer = `***\n\n> _Enhansomed by [enhansome](https://github.com/enhansome) on ${date}._`;
   const body = content.replace(/\n+$/, '');
   return `${body}\n\n${footer}\n`;
-}
-
-function sortLists(
-  root: Root,
-  repoInfoMap: Map<string, RepoInfoDetails>,
-  options: SortOptions,
-) {
-  if (!options.by) {
-    return;
-  }
-
-  visit(root, 'list', (list: List) => {
-    const itemsWithLinks = list.children.filter(item =>
-      findFirstGitHubLink(item),
-    );
-    if (itemsWithLinks.length < options.minLinks) {
-      return;
-    }
-
-    const enrichedItems: EnrichedListItem[] = list.children.map(itemNode => {
-      const url = findFirstGitHubLink(itemNode);
-      const repoInfo = url ? (repoInfoMap.get(url) ?? null) : null;
-      return { node: itemNode, repoInfo };
-    });
-
-    enrichedItems.sort((a, b) => {
-      if (!a.repoInfo) {
-        return 1;
-      }
-      if (!b.repoInfo) {
-        return -1;
-      }
-      if (options.by === 'stars') {
-        return b.repoInfo.stargazers_count - a.repoInfo.stargazers_count;
-      }
-
-      if (options.by === 'last_commit') {
-        const dateA = a.repoInfo.pushed_at
-          ? new Date(a.repoInfo.pushed_at).getTime()
-          : 0;
-        const dateB = b.repoInfo.pushed_at
-          ? new Date(b.repoInfo.pushed_at).getTime()
-          : 0;
-        return dateB - dateA;
-      }
-
-      return 0;
-    });
-
-    list.children = enrichedItems.map(item => item.node);
-  });
 }

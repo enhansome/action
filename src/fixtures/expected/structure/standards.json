@@ -1,0 +1,1081 @@
+{
+  "items": [
+    {
+      "description": "",
+      "items": [
+        {
+          "children": [],
+          "description": "Structured Interface for Representing Entities, super-rad hypermedia, defines links and actions.",
+          "title": "Siren",
+          "repo_info": {
+            "archived": false,
+            "language": "Go",
+            "last_commit": "2023-10-11T00:00:00.000Z",
+            "owner": "kevinswiber",
+            "repo": "siren",
+            "stars": 47083
+          }
+        },
+        {
+          "children": [],
+          "description": "Checklist of the most important security countermeasures.",
+          "title": "API Security Checklist",
+          "repo_info": {
+            "archived": true,
+            "language": "Go",
+            "last_commit": "2022-05-09T00:00:00.000Z",
+            "owner": "shieldfy",
+            "repo": "API-Security-Checklist",
+            "stars": 46603
+          }
+        },
+        {
+          "children": [],
+          "description": "JSON-based read/write hypermedia-type designed, defines links and actions.",
+          "title": "Collection+JSON",
+          "repo_info": {
+            "archived": false,
+            "language": "Go",
+            "last_commit": "2022-12-25T00:00:00.000Z",
+            "owner": "collection-json",
+            "repo": "spec",
+            "stars": 43373
+          }
+        },
+        {
+          "children": [],
+          "description": "Vendor-neutral and language-independent, aimed to develop messaging and streaming applications across heterogeneous systems.",
+          "title": "OpenMessaging Spec",
+          "repo_info": {
+            "archived": false,
+            "language": "Ruby",
+            "last_commit": "2023-03-10T00:00:00.000Z",
+            "owner": "openmessaging",
+            "repo": "specification",
+            "stars": 41298
+          }
+        },
+        {
+          "children": [],
+          "description": "A specification for describing event data in a common way.",
+          "title": "CloudEvents Spec",
+          "repo_info": {
+            "archived": false,
+            "language": "JavaScript",
+            "last_commit": "2021-12-11T00:00:00.000Z",
+            "owner": "cloudevents",
+            "repo": "spec",
+            "stars": 40752
+          }
+        },
+        {
+          "children": [],
+          "description": "Interface Definition Language and binary communication protocol used for defining and creating services for programming languages.",
+          "title": "Apache Thrift",
+          "repo_info": {
+            "archived": false,
+            "language": "C++",
+            "last_commit": "2022-07-15T00:00:00.000Z",
+            "owner": "apache",
+            "repo": "thrift",
+            "stars": 38536
+          }
+        },
+        {
+          "children": [],
+          "description": "Repository contains a collection of documents and related materials.",
+          "title": "Microsoft REST API Guidelines",
+          "repo_info": {
+            "archived": false,
+            "language": "Shell",
+            "last_commit": "2021-09-25T00:00:00.000Z",
+            "owner": "Microsoft",
+            "repo": "api-guidelines",
+            "stars": 33829
+          }
+        },
+        {
+          "children": [],
+          "description": "Specification for a simple, no-frills, JSON based format for application-level communication.",
+          "title": "JSEND",
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2022-03-03T00:00:00.000Z",
+            "owner": "omniti-labs",
+            "repo": "jsend",
+            "stars": 24670
+          }
+        },
+        {
+          "children": [],
+          "description": "RESTful API Modeling Language is a YAML based language for describing static APIs (but not REST APIs).",
+          "title": "RAML Spec",
+          "repo_info": {
+            "archived": false,
+            "language": "C++",
+            "last_commit": "2023-10-28T00:00:00.000Z",
+            "owner": "raml-org",
+            "repo": "raml-spec",
+            "stars": 21066
+          }
+        },
+        {
+          "children": [],
+          "description": "This document serves as a detailed description for an implementation of gRPC carried over HTTP2 framing.",
+          "title": "gRPC",
+          "repo_info": {
+            "archived": false,
+            "language": "Java",
+            "last_commit": "2021-09-07T00:00:00.000Z",
+            "owner": "grpc",
+            "repo": "grpc",
+            "stars": 7847
+          }
+        },
+        {
+          "children": [],
+          "description": "Specification for GraphQL, a query language and execution engine.",
+          "title": "GraphQL Spec"
+        },
+        {
+          "children": [],
+          "description": "Protocol Buffers are language-neutral, platform-neutral extensible mechanisms for serializing structured data.",
+          "title": "Protobuf Spec"
+        },
+        {
+          "children": [],
+          "description": "Remote procedure call protocol which uses XML to encode its calls and HTTP as a transport mechanism.",
+          "title": "XML-RPC"
+        },
+        {
+          "children": [],
+          "description": "Stateless, light-weight remote procedure call protocol.",
+          "title": "JSON-RPC"
+        },
+        {
+          "children": [],
+          "description": "Serialization format for record data, and first choice for streaming data pipelines.",
+          "title": "Apache Avro"
+        },
+        {
+          "children": [],
+          "description": "The OpenRPC Specification defines a standard, programming language-agnostic interface description for JSON-RPC 2.0 APIs.",
+          "title": "OpenRPC Spec"
+        },
+        {
+          "children": [],
+          "description": "The OpenAPI Specification (OAS) defines a standard, language-agnostic interface to HTTP APIs.",
+          "title": "OpenAPI Spec"
+        },
+        {
+          "children": [],
+          "description": "A markdown based language for describing APIs with interactive documentation support.",
+          "title": "API Blueprint Spec"
+        },
+        {
+          "children": [],
+          "description": "Standard providing a format for what JSON data is required for a given application and how to interact with it.",
+          "title": "JSON Schema"
+        },
+        {
+          "children": [],
+          "description": "This specification allows you to create machine-readable definitions of your asynchronous APIs.",
+          "title": "AsyncAPI Spec"
+        },
+        {
+          "children": [],
+          "description": "Hypermedia as the engine of application state is a constraint of the REST software architectural style.",
+          "title": "HATEOAS"
+        },
+        {
+          "children": [],
+          "description": "Convention for defining hypermedia such as links to external resources within JSON or XML code.",
+          "title": "HAL"
+        },
+        {
+          "children": [],
+          "description": "A specification for building APIs in JSON, defines links and actions.",
+          "title": "JSON:API"
+        },
+        {
+          "children": [],
+          "description": "JSON for Linked Data is a standard for hyperlinks in JSON, does not address actions.",
+          "title": "JSON-LD"
+        },
+        {
+          "children": [],
+          "description": "Simple and intuitive JSON-based hypermedia type for REST.",
+          "title": "Ion"
+        },
+        {
+          "children": [],
+          "description": "Builds on top of JSON-LD to add definition of actions.",
+          "title": "Hydra"
+        },
+        {
+          "children": [],
+          "description": "A protocol for querying and updating data using RESTful APIs, with rich query capabilities.",
+          "title": "Odata"
+        },
+        {
+          "children": [],
+          "description": "A general design guide for networked APIs provided by Google.",
+          "title": "Google API Design Guide"
+        },
+        {
+          "children": [],
+          "description": "A model set of guidelines for RESTful APIs and Events, created by Zalando.",
+          "title": "Zalando RESTful Guidelines"
+        },
+        {
+          "children": [],
+          "description": "Collections of resources for API Design from other companies guidelines.",
+          "title": "API Stylebook"
+        }
+      ],
+      "title": "APIs"
+    },
+    {
+      "description": "",
+      "items": [
+        {
+          "children": [],
+          "description": "C# Language Design Proposals.",
+          "title": "C# Design",
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2023-01-07T00:00:00.000Z",
+            "owner": "dotnet",
+            "repo": "csharplang",
+            "stars": 47360
+          }
+        },
+        {
+          "children": [],
+          "description": "D language Improvement Proposals.",
+          "title": "DIPs",
+          "repo_info": {
+            "archived": false,
+            "language": "Rust",
+            "last_commit": "2021-07-21T00:00:00.000Z",
+            "owner": "dlang",
+            "repo": "DIPs",
+            "stars": 44895
+          }
+        },
+        {
+          "children": [],
+          "description": "Kotlin Evolution and Enhancement Process.",
+          "title": "KEEP",
+          "repo_info": {
+            "archived": false,
+            "language": "Shell",
+            "last_commit": "2022-01-23T00:00:00.000Z",
+            "owner": "Kotlin",
+            "repo": "KEEP",
+            "stars": 27709
+          }
+        },
+        {
+          "children": [],
+          "description": "Design of the Dart language.",
+          "title": "Dart Design",
+          "repo_info": {
+            "archived": false,
+            "language": "TypeScript",
+            "last_commit": "2022-07-20T00:00:00.000Z",
+            "owner": "dart-lang",
+            "repo": "language",
+            "stars": 25531
+          }
+        },
+        {
+          "children": [],
+          "description": "Compiler and language changes for Haskell/GHC.",
+          "title": "GHC Proposals",
+          "repo_info": {
+            "archived": false,
+            "language": "Shell",
+            "last_commit": "2022-04-13T00:00:00.000Z",
+            "owner": "ghc-proposals",
+            "repo": "ghc-proposals",
+            "stars": 22629
+          }
+        },
+        {
+          "children": [],
+          "description": "Design discussions about the OCaml language.",
+          "title": "OCaml RFCs",
+          "repo_info": {
+            "archived": false,
+            "language": "Java",
+            "last_commit": "2023-05-20T00:00:00.000Z",
+            "owner": "ocaml",
+            "repo": "RFCs",
+            "stars": 19227
+          }
+        },
+        {
+          "children": [],
+          "description": "Design discussions for Go language evolution.",
+          "title": "Go Proposals",
+          "repo_info": {
+            "archived": false,
+            "language": "TypeScript",
+            "last_commit": "2021-10-13T00:00:00.000Z",
+            "owner": "golang",
+            "repo": "proposal",
+            "stars": 11811
+          }
+        },
+        {
+          "children": [],
+          "description": "Ecma TC39 (Technical Committee 39) is responsible for evolving the ECMAScript programming language and authoring the specification.",
+          "title": "ECMAScript Proposals",
+          "repo_info": {
+            "archived": false,
+            "language": "Shell",
+            "last_commit": "2022-01-23T00:00:00.000Z",
+            "owner": "tc39",
+            "repo": "proposals",
+            "stars": 11709
+          }
+        },
+        {
+          "children": [],
+          "description": "Coq Enhancement Proposals.",
+          "title": "CEPs",
+          "repo_info": {
+            "archived": false,
+            "language": "TypeScript",
+            "last_commit": "2021-09-23T00:00:00.000Z",
+            "owner": "coq",
+            "repo": "ceps",
+            "stars": 9831
+          }
+        },
+        {
+          "children": [],
+          "description": "Proposed Perl Changes is proposals to change the Perl language.",
+          "title": "PPCs",
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2023-03-24T00:00:00.000Z",
+            "owner": "Perl",
+            "repo": "PPCs",
+            "stars": 8284
+          }
+        },
+        {
+          "children": [],
+          "description": "F# Language Design RFCs.",
+          "title": "F# Design",
+          "repo_info": {
+            "archived": false,
+            "language": "Rust",
+            "last_commit": "2023-09-19T00:00:00.000Z",
+            "owner": "fsharp",
+            "repo": "fslang-design",
+            "stars": 8105
+          }
+        },
+        {
+          "children": [],
+          "description": "Issues with Proposal label in Zig repository.",
+          "title": "Zig Proposals",
+          "repo_info": {
+            "archived": false,
+            "language": "Rust",
+            "last_commit": "2022-06-16T00:00:00.000Z",
+            "owner": "ziglang",
+            "repo": "zig",
+            "stars": 5565
+          }
+        },
+        {
+          "children": [],
+          "description": "RFCs for changes to V lang.",
+          "title": "Vlang RFCs",
+          "repo_info": {
+            "archived": false,
+            "language": "Java",
+            "last_commit": "2023-07-09T00:00:00.000Z",
+            "owner": "vlang",
+            "repo": "rfcs",
+            "stars": 5177
+          }
+        },
+        {
+          "children": [],
+          "description": "Python Enhancement Proposals for language improvements.",
+          "title": "PEPs"
+        },
+        {
+          "children": [],
+          "description": "Standards proposed and approved by PHP Framework Interop Group.",
+          "title": "PHP FIG"
+        },
+        {
+          "children": [],
+          "description": "Proposals to evolve the Rust language.",
+          "title": "Rust RFCs"
+        },
+        {
+          "children": [],
+          "description": "Proposals for changes to the Swift language.",
+          "title": "Swift Evolution"
+        },
+        {
+          "children": [],
+          "description": "Scala Improvement Proposals.",
+          "title": "SIPs"
+        },
+        {
+          "children": [],
+          "description": "Erlang Enhancement Proposals.",
+          "title": "EEPs"
+        },
+        {
+          "children": [],
+          "description": "Java Specification Requests to standardize Java.",
+          "title": "JSR"
+        },
+        {
+          "children": [],
+          "description": "Java Language and JVM specifications for Java by Oracle.",
+          "title": "Java SE Specs"
+        },
+        {
+          "children": [],
+          "description": "The Go Programming Language Specification.",
+          "title": "GoLang Spec"
+        },
+        {
+          "children": [],
+          "description": "ISO/IEC standards for the C programming language.",
+          "title": "C Standards"
+        },
+        {
+          "children": [],
+          "description": "ISO/IEC standards for C++.",
+          "title": "C++ Standards"
+        },
+        {
+          "children": [],
+          "description": "Scheme Requests for Implementation.",
+          "title": "SRFI"
+        },
+        {
+          "children": [],
+          "description": "Revised Report on Scheme and other standards.",
+          "title": "Scheme Standards"
+        },
+        {
+          "children": [],
+          "description": "Common Lisp Document Repository.",
+          "title": "CDR"
+        },
+        {
+          "children": [],
+          "description": "Groovy Enhancement Proposals and Issues tracked in Jira.",
+          "title": "GEPs"
+        }
+      ],
+      "title": "Programming Languages"
+    },
+    {
+      "description": "",
+      "items": [
+        {
+          "children": [],
+          "description": "Change requests for ESLint.",
+          "title": "ESLint RFCs",
+          "repo_info": {
+            "archived": false,
+            "language": "C++",
+            "last_commit": "2022-10-03T00:00:00.000Z",
+            "owner": "eslint",
+            "repo": "rfcs",
+            "stars": 47456
+          }
+        },
+        {
+          "children": [],
+          "description": "Change proposals for npm.",
+          "title": "npm RFCs",
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2022-10-25T00:00:00.000Z",
+            "owner": "npm",
+            "repo": "rfcs",
+            "stars": 45434
+          }
+        },
+        {
+          "children": [],
+          "description": "Suggestions for major changes to Vue.js.",
+          "title": "Vue RFCs",
+          "repo_info": {
+            "archived": false,
+            "language": "Ruby",
+            "last_commit": "2021-06-18T00:00:00.000Z",
+            "owner": "vuejs",
+            "repo": "rfcs",
+            "stars": 43928
+          }
+        },
+        {
+          "children": [],
+          "description": "Svelte framework enhancement discussions.",
+          "title": "Svelte RFCs",
+          "repo_info": {
+            "archived": false,
+            "language": "Java",
+            "last_commit": "2022-04-25T00:00:00.000Z",
+            "owner": "sveltejs",
+            "repo": "rfcs",
+            "stars": 32617
+          }
+        },
+        {
+          "children": [],
+          "description": "Conda Enhancement Proposals.",
+          "title": "CEPs",
+          "repo_info": {
+            "archived": false,
+            "language": "TypeScript",
+            "last_commit": "2022-04-01T00:00:00.000Z",
+            "owner": "conda",
+            "repo": "ceps",
+            "stars": 31641
+          }
+        },
+        {
+          "children": [],
+          "description": "Django Enhancement Proposals.",
+          "title": "DEPs",
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2021-10-14T00:00:00.000Z",
+            "owner": "django",
+            "repo": "deps",
+            "stars": 28810
+          }
+        },
+        {
+          "children": [],
+          "description": "CLI autocomplete specification.",
+          "title": "OpenAutoComplete Spec",
+          "repo_info": {
+            "archived": false,
+            "language": "Shell",
+            "last_commit": "2023-01-28T00:00:00.000Z",
+            "owner": "openautocomplete",
+            "repo": "openautocomplete",
+            "stars": 28339
+          }
+        },
+        {
+          "children": [],
+          "description": "SemVer compatible version specification that has {head}.{yearweek}.{build} system.",
+          "title": "HeadVer Spec",
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2022-04-22T00:00:00.000Z",
+            "owner": "line",
+            "repo": "headver",
+            "stars": 23620
+          }
+        },
+        {
+          "children": [],
+          "description": "Jenkins Enhancement Proposals.",
+          "title": "JEPs",
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2022-10-25T00:00:00.000Z",
+            "owner": "jenkinsci",
+            "repo": "jep",
+            "stars": 23434
+          }
+        },
+        {
+          "children": [],
+          "description": "Proposals for improvements in Yarn package manager.",
+          "title": "Yarn RFCs",
+          "repo_info": {
+            "archived": false,
+            "language": "TypeScript",
+            "last_commit": "2023-08-24T00:00:00.000Z",
+            "owner": "yarnpkg",
+            "repo": "rfcs",
+            "stars": 16131
+          }
+        },
+        {
+          "children": [],
+          "description": "Change requests for React.",
+          "title": "React RFCs",
+          "repo_info": {
+            "archived": false,
+            "language": "Rust",
+            "last_commit": "2023-06-21T00:00:00.000Z",
+            "owner": "reactjs",
+            "repo": "rfcs",
+            "stars": 15195
+          }
+        },
+        {
+          "children": [],
+          "description": "The Compose Specification is developer focused for defining cloud and platform agnostic container-based applications.",
+          "title": "Compose Specification",
+          "repo_info": {
+            "archived": false,
+            "language": "Shell",
+            "last_commit": "2023-09-25T00:00:00.000Z",
+            "owner": "compose-spec",
+            "repo": "compose-spec",
+            "stars": 14099
+          }
+        },
+        {
+          "children": [],
+          "description": "This repository contains the specification, the reference implementation of the parser and the documentation for Fluent.",
+          "title": "Fluent Specs",
+          "repo_info": {
+            "archived": false,
+            "language": "Ruby",
+            "last_commit": "2023-10-26T00:00:00.000Z",
+            "owner": "projectfluent",
+            "repo": "fluent",
+            "stars": 13068
+          }
+        },
+        {
+          "children": [],
+          "description": "OpenTelemetry Enhancement Proposals.",
+          "title": "OTEPs",
+          "repo_info": {
+            "archived": false,
+            "language": "C++",
+            "last_commit": "2023-04-01T00:00:00.000Z",
+            "owner": "open-telemetry",
+            "repo": "opentelemetry-specification",
+            "stars": 11276
+          }
+        },
+        {
+          "children": [],
+          "description": "Helm Improvement Proposals.",
+          "title": "HIPs",
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2022-01-12T00:00:00.000Z",
+            "owner": "helm",
+            "repo": "community",
+            "stars": 9720
+          }
+        },
+        {
+          "children": [],
+          "description": "Index of all Bazel proposals and design documents.",
+          "title": "Bazel Proposals",
+          "repo_info": {
+            "archived": false,
+            "language": "JavaScript",
+            "last_commit": "2022-06-19T00:00:00.000Z",
+            "owner": "bazelbuild",
+            "repo": "proposals",
+            "stars": 3562
+          }
+        },
+        {
+          "children": [],
+          "description": "React Native enhancement discussions.",
+          "title": "React Native RFCs",
+          "repo_info": {
+            "archived": false,
+            "language": "TypeScript",
+            "last_commit": "2021-06-05T00:00:00.000Z",
+            "owner": "react-native-community",
+            "repo": "discussions-and-proposals",
+            "stars": 941
+          }
+        },
+        {
+          "children": [],
+          "description": "The Nix community RFCs.",
+          "title": "Nix RFCs",
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2023-10-20T00:00:00.000Z",
+            "owner": "NixOS",
+            "repo": "rfcs",
+            "stars": 74
+          }
+        },
+        {
+          "children": [],
+          "description": "Standards for Ember.js framework evolution.",
+          "title": "Ember RFCs"
+        },
+        {
+          "children": [],
+          "description": "Enhancement proposals for scikit-learn.",
+          "title": "SLEPs"
+        },
+        {
+          "children": [],
+          "description": "Jupyter Ecosystem Enhancement Proposals.",
+          "title": "JEPs"
+        },
+        {
+          "children": [],
+          "description": "Enhancement proposals for ROS robotics framework.",
+          "title": "REPs"
+        },
+        {
+          "children": [],
+          "description": "Kubernetes Enhancement Proposals.",
+          "title": "KEPs"
+        },
+        {
+          "children": [],
+          "description": "Godot (Multi-platform 2D and 3D game engine) Improvement Proposals.",
+          "title": "GIPs"
+        },
+        {
+          "children": [],
+          "description": "A specification for adding human and machine readable meaning to commit messages.",
+          "title": "Conventional Commits"
+        },
+        {
+          "children": [],
+          "description": "A plain-text file format for todos and check lists.",
+          "title": "[x]it!"
+        },
+        {
+          "children": [],
+          "description": "The System Package Data Exchange Specification.",
+          "title": "SPDX Spec"
+        },
+        {
+          "children": [],
+          "description": "Semantic Versioning Specification.",
+          "title": "SemVer Spec"
+        },
+        {
+          "children": [],
+          "description": "Calendar Versioning Specification.",
+          "title": "CalVer Spec"
+        }
+      ],
+      "title": "Tools"
+    },
+    {
+      "description": "",
+      "items": [
+        {
+          "children": [],
+          "description": "BitTorrent Enhancement Proposals.",
+          "title": "BEPs",
+          "repo_info": {
+            "archived": false,
+            "language": "Rust",
+            "last_commit": "2023-04-12T00:00:00.000Z",
+            "owner": "bittorrent",
+            "repo": "bittorrent.org",
+            "stars": 45265
+          }
+        },
+        {
+          "children": [],
+          "description": "Maker Improvement Proposals.",
+          "title": "MIPs",
+          "repo_info": {
+            "archived": false,
+            "language": "C++",
+            "last_commit": "2021-04-21T00:00:00.000Z",
+            "owner": "makerdao",
+            "repo": "mips",
+            "stars": 40986
+          }
+        },
+        {
+          "children": [],
+          "description": "Helium Improvement Proposals.",
+          "title": "HIPs",
+          "repo_info": {
+            "archived": false,
+            "language": "Ruby",
+            "last_commit": "2023-07-08T00:00:00.000Z",
+            "owner": "helium",
+            "repo": "HIP",
+            "stars": 40178
+          }
+        },
+        {
+          "children": [],
+          "description": "SatoshiLabs Improvement Proposals.",
+          "title": "SLIPs",
+          "repo_info": {
+            "archived": false,
+            "language": "Shell",
+            "last_commit": "2021-12-04T00:00:00.000Z",
+            "owner": "satoshilabs",
+            "repo": "slips",
+            "stars": 37759
+          }
+        },
+        {
+          "children": [],
+          "description": "Chain Agnostic Improvement Proposals.",
+          "title": "CAIPs",
+          "repo_info": {
+            "archived": false,
+            "language": "Ruby",
+            "last_commit": "2023-04-09T00:00:00.000Z",
+            "owner": "ChainAgnostic",
+            "repo": "CAIPs",
+            "stars": 37268
+          }
+        },
+        {
+          "children": [],
+          "description": "Proposals, standards and documentations related to Nervos Network.",
+          "title": "Nervos Network RFCs",
+          "repo_info": {
+            "archived": false,
+            "language": "JavaScript",
+            "last_commit": "2021-09-02T00:00:00.000Z",
+            "owner": "nervosnetwork",
+            "repo": "rfcs",
+            "stars": 33852
+          }
+        },
+        {
+          "children": [],
+          "description": "NEAR Protocol Specifications and Standards.",
+          "title": "NEPs",
+          "repo_info": {
+            "archived": true,
+            "language": "Go",
+            "last_commit": "2022-11-15T00:00:00.000Z",
+            "owner": "near",
+            "repo": "NEPs",
+            "stars": 28413
+          }
+        },
+        {
+          "children": [],
+          "description": "Starknet Improvement Proposals.",
+          "title": "SNIPs",
+          "repo_info": {
+            "archived": false,
+            "language": "Shell",
+            "last_commit": "2022-06-02T00:00:00.000Z",
+            "owner": "starknet-io",
+            "repo": "SNIPs",
+            "stars": 26579
+          }
+        },
+        {
+          "children": [],
+          "description": "Technical specifications for the libp2p networking stack.",
+          "title": "LibP2P Specs",
+          "repo_info": {
+            "archived": false,
+            "language": "Ruby",
+            "last_commit": "2021-10-26T00:00:00.000Z",
+            "owner": "libp2p",
+            "repo": "specs",
+            "stars": 22798
+          }
+        },
+        {
+          "children": [],
+          "description": "Hiero Consensus Standards.",
+          "title": "HCS",
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2022-02-11T00:00:00.000Z",
+            "owner": "hiero-ledger",
+            "repo": "hiero-consensus-specifications",
+            "stars": 17690
+          }
+        },
+        {
+          "children": [],
+          "description": "Basis of Lightning Technology (Lightning Network Specifications).",
+          "title": "BOLTs",
+          "repo_info": {
+            "archived": false,
+            "language": "Go",
+            "last_commit": "2022-01-29T00:00:00.000Z",
+            "owner": "lightning",
+            "repo": "bolts",
+            "stars": 16703
+          }
+        },
+        {
+          "children": [],
+          "description": "Polygon Improvement Proposals.",
+          "title": "PIPs",
+          "repo_info": {
+            "archived": false,
+            "language": "JavaScript",
+            "last_commit": "2022-05-20T00:00:00.000Z",
+            "owner": "maticnetwork",
+            "repo": "Polygon-Improvement-Proposals",
+            "stars": 16592
+          }
+        },
+        {
+          "children": [],
+          "description": "Aave Improvement Proposals.",
+          "title": "AIPs",
+          "repo_info": {
+            "archived": false,
+            "language": "Ruby",
+            "last_commit": "2023-10-26T00:00:00.000Z",
+            "owner": "aave",
+            "repo": "aip",
+            "stars": 4068
+          }
+        },
+        {
+          "children": [],
+          "description": "Bitcoin Improvement Proposals.",
+          "title": "BIPs",
+          "repo_info": {
+            "archived": false,
+            "language": "Java",
+            "last_commit": "2021-07-09T00:00:00.000Z",
+            "owner": "bitcoin",
+            "repo": "bips",
+            "stars": 907
+          }
+        },
+        {
+          "children": [],
+          "description": "BitTorrent File System Improvement Proposals.",
+          "title": "BTIPs",
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2023-09-14T00:00:00.000Z",
+            "owner": "bittorrent",
+            "repo": "BTIPs",
+            "stars": 110
+          }
+        },
+        {
+          "children": [],
+          "description": "Ethereum Improvement Proposals.",
+          "title": "EIPs"
+        },
+        {
+          "children": [],
+          "description": "Zcash Improvement Proposals.",
+          "title": "ZIPs"
+        },
+        {
+          "children": [],
+          "description": "Yearn Finance Improvement Proposals.",
+          "title": "YIPs"
+        },
+        {
+          "children": [],
+          "description": "Optimism Stack Specifications.",
+          "title": "Optimism Specs"
+        },
+        {
+          "children": [],
+          "description": "Synthetix Improvement Proposals.",
+          "title": "SIPs"
+        },
+        {
+          "children": [],
+          "description": "Specifications for the Fuel protocol and the FuelVM.",
+          "title": "Fuel Specs"
+        },
+        {
+          "children": [],
+          "description": "Filecoin protocol specification.",
+          "title": "Filecoin Specs"
+        },
+        {
+          "children": [],
+          "description": "Aptos Improvement Proposals.",
+          "title": "AIPs"
+        },
+        {
+          "children": [],
+          "description": "InterPlanetary Improvement Proposals, technical specifications for the IPFS protocol stack.",
+          "title": "IPIP"
+        },
+        {
+          "children": [],
+          "description": "Tor Specifications including proposals.",
+          "title": "Tor Specs"
+        },
+        {
+          "children": [],
+          "description": "I2P Specification Documents including proposals.",
+          "title": "I2P Specs"
+        }
+      ],
+      "title": "Decentralized Systems"
+    },
+    {
+      "description": "",
+      "items": [
+        {
+          "children": [],
+          "description": "Coding style conventions and standards.",
+          "title": "Awesome Guidelines",
+          "repo_info": {
+            "archived": false,
+            "language": "TypeScript",
+            "last_commit": "2021-10-03T00:00:00.000Z",
+            "owner": "Kristories",
+            "repo": "awesome-guidelines",
+            "stars": 45821
+          }
+        },
+        {
+          "children": [],
+          "description": "A collection of useful resources for building RESTful HTTP+JSON APIs.",
+          "title": "Awesome API Devtools",
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2023-12-03T00:00:00.000Z",
+            "owner": "yosriady",
+            "repo": "awesome-api-devtools",
+            "stars": 19030
+          }
+        }
+      ],
+      "title": "Related Awesome Lists"
+    }
+  ],
+  "metadata": {
+    "last_updated": "2025-01-01T00:00:00.000Z",
+    "original_repository": "donBarbos/awesome-standards",
+    "original_repository_sha": "deadbeef",
+    "enhanced_repository": "enhansome/enhansome-standards",
+    "enhanced_repository_description": "enhanced list",
+    "title": "Awesome standards with stars"
+  }
+}
