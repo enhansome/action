@@ -59,8 +59,7 @@ describeLive(
     ])(
       'classifies the registry target %s/%s as a registry',
       async (owner, repo) => {
-        const { kind, entries } = await classifyKind(octokit, owner, repo, 20);
-        expect(entries).toBeGreaterThanOrEqual(20);
+        const { kind } = await classifyKind(octokit, owner, repo, 20);
         expect(kind).toBe('registry');
       },
       TIMEOUT,
@@ -71,13 +70,7 @@ describeLive(
     it(
       'classifies the concrete project liuliu/ccv as a repository',
       async () => {
-        const { kind, entries } = await classifyKind(
-          octokit,
-          'liuliu',
-          'ccv',
-          20,
-        );
-        expect(entries).toBeLessThan(20);
+        const { kind } = await classifyKind(octokit, 'liuliu', 'ccv', 20);
         expect(kind).toBe('repository');
       },
       TIMEOUT,
@@ -91,13 +84,12 @@ describeLive(
     it(
       'hits the GitHub-only blind spot: a paper-link registry (openMVG/awesome_3DReconstruction_list) classifies as a repository',
       async () => {
-        const { kind, entries } = await classifyKind(
+        const { kind } = await classifyKind(
           octokit,
           'openMVG',
           'awesome_3DReconstruction_list',
           20,
         );
-        expect(entries).toBeLessThan(20);
         expect(kind).toBe('repository');
       },
       TIMEOUT,

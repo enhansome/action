@@ -178,6 +178,38 @@ export async function fetchTargetData(
   // every request in the pool instead of per call.
   const octokit = makeOctokit(token);
 
+  // Per-canonical-repo memo: two distinct URLs that resolve to the same
+  // owner/repo (e.g. a README link and a deep `/tree/...` link into it) must
+  // share one `getRepoInfo` / `classifyKind` call. We store in-flight Promises
+  // keyed by `owner/repo`; the lookup-and-set is synchronous, so a concurrent
+  // worker hitting the same repo awaits the first worker's fetch instead of
+  // racing a duplicate. Results are written under every alias URL below, so
+  // consumers that look up by raw URL are unaffected.
+  const repoInfoByRepo = new Map<string, Promise<RepoInfoDetails>>();
+  const kindByRepo = new Map<string, Promise<{ kind: Kind }>>();
+
+  function repoInfoFor(owner: string, repo: string): Promise<RepoInfoDetails> {
+    const key = `${owner}/${repo}`;
+    const existing = repoInfoByRepo.get(key);
+    if (existing) {
+      return existing;
+    }
+    const pending = getRepoInfo(octokit, owner, repo);
+    repoInfoByRepo.set(key, pending);
+    return pending;
+  }
+
+  function kindFor(owner: string, repo: string): Promise<{ kind: Kind }> {
+    const key = `${owner}/${repo}`;
+    const existing = kindByRepo.get(key);
+    if (existing) {
+      return existing;
+    }
+    const pending = classifyKind(octokit, owner, repo, minEntries);
+    kindByRepo.set(key, pending);
+    return pending;
+  }
+
   await forEachConcurrent(
     new Set([...urls, ...entryUrls]),
     FETCH_CONCURRENCY,
@@ -188,10 +220,7 @@ export async function fetchTargetData(
       }
       if (urls.has(url)) {
         try {
-          repoInfoMap.set(
-            url,
-            await getRepoInfo(octokit, details.owner, details.repo),
-          );
+          repoInfoMap.set(url, await repoInfoFor(details.owner, details.repo));
         } catch (error) {
           core.warning(
             `Skipping repo info for ${url}: ${formatRequestError(error)}`,
@@ -200,12 +229,7 @@ export async function fetchTargetData(
       }
       if (entryUrls.has(url)) {
         try {
-          const { kind } = await classifyKind(
-            octokit,
-            details.owner,
-            details.repo,
-            minEntries,
-          );
+          const { kind } = await kindFor(details.owner, details.repo);
           kindsMap.set(url, kind);
         } catch (error) {
           core.warning(
@@ -489,6 +513,55 @@ function collectEntryGitHubUrls(tree: Root): Set<string> {
 // trustworthy standalone.
 export const REGISTRY_MIN_ENTRIES = 20;
 
+// A GFM list-item line — bullet or ordered, with 0–3 leading spaces (4+ is an
+// indented code block) — carrying an inline `[text](https://github.com/o/r…)`
+// link. Used by `countGitHubListLines` as a conservative lower bound, so it is
+// deliberately narrow: it requires the GitHub link on the marker line itself,
+// and a real `[...]` link (not a bare `](…)`), so it can only ever under-count
+// relative to `countListEntries`. It misses autolinks, reference-style links,
+// and links on continuation/nested-deeper-than-3-space lines — all safe misses.
+const GITHUB_LIST_ITEM_LINE =
+  /^\s{0,3}([-*+]|\d+\.)\s+.*\[[^\]]*\]\(https:\/\/github\.com\/[^/)\s]+\/[^/)\s]+[^)]*\)/;
+
+/**
+ * A cheap conservative lower bound on `countListEntries`, computed WITHOUT
+ * parsing the README into an AST. Counts lines that are GFM list items AND
+ * carry an inline `https://github.com/owner/repo…` link, skipping fenced code
+ * blocks (where such a line is literal text, not a list item) and stopping as
+ * soon as the count reaches `minEntries`.
+ *
+ * SOUNDNESS — the invariant that lets `classifyKind` short-circuit on this:
+ * every matched line is a list item whose subtree holds a GitHub link, so the
+ * result never exceeds `countListEntries`. Reaching `minEntries` here therefore
+ * proves the exact oracle would too. Anything below falls through to the AST
+ * parse, so borderline repos and links this regex misses are judged identically
+ * to before; worst case == the old behavior.
+ *
+ * @param minEntries Stop counting once this many matches are seen (pass a large
+ *   value to count the whole document).
+ */
+export function countGitHubListLines(
+  readme: string,
+  minEntries: number,
+): number {
+  let count = 0;
+  let inFence = false;
+  for (const line of readme.split('\n')) {
+    // A fenced code block opens/closes with a line of >= 3 backticks (CommonMark
+    // allows up to 3 leading spaces). The fence line itself is never content.
+    if (/^\s{0,3}`{3,}/.test(line)) {
+      inFence = !inFence;
+      continue;
+    }
+    if (!inFence && GITHUB_LIST_ITEM_LINE.test(line)) {
+      if (++count >= minEntries) {
+        return count;
+      }
+    }
+  }
+  return count;
+}
+
 /**
  * Classifies a GitHub target as a `registry` or `repository` by reading its
  * README and counting GitHub-linked list items — the oracle (PLAN.md §4, D1).
@@ -497,21 +570,27 @@ export const REGISTRY_MIN_ENTRIES = 20;
  * otherwise a `repository`. README fetch failures propagate (strict mode, D7):
  * `getReadme` throws and this function does not swallow it.
  *
- * @returns The entry count alongside the kind so callers/tests can observe the
- *   raw signal; only `kind` is emitted in the JSON output (D10).
+ * Fast path: a conservative line-scan (`countGitHubListLines`) first checks
+ * whether the README obviously clears `minEntries`; if so it returns `registry`
+ * without building the full AST — the win for multi-hundred-KB registry READMEs,
+ * which short-circuit after `minEntries` lines instead of being parsed whole.
+ *
+ * @returns Only `kind` — the raw entry count is not emitted (D10) and nothing
+ *   in production reads it, so it is not computed on the fast path.
  */
 export async function classifyKind(
   octokit: GithubClient,
   owner: string,
   repo: string,
   minEntries: number,
-): Promise<{ entries: number; kind: Kind }> {
+): Promise<{ kind: Kind }> {
   const readme = await getReadme(octokit, owner, repo);
+  if (countGitHubListLines(readme, minEntries) >= minEntries) {
+    return { kind: 'registry' };
+  }
   const tree = unified().use(remarkParse).use(remarkGfm).parse(readme);
-  const entries = countListEntries(tree);
   return {
-    entries,
-    kind: entries >= minEntries ? 'registry' : 'repository',
+    kind: countListEntries(tree) >= minEntries ? 'registry' : 'repository',
   };
 }
 
