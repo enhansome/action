@@ -51,12 +51,14 @@ function generateRepoInfo(owner: string, repo: string): RepoInfoDetails {
   const offsetDays = hash % 1000;
   return {
     archived: hash % 17 === 0,
+    description: null,
     language: LANGUAGES[hash % LANGUAGES.length],
     open_issues_count: hash % 100,
     owner,
     pushed_at: new Date(BASE_PUSHED_MS - offsetDays * MS_PER_DAY).toISOString(),
     repo,
     stargazers_count: 1 + (hash % 50_000),
+    topics: [],
   };
 }
 

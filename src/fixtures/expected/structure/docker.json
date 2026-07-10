@@ -14,6 +14,7 @@
           "title": "LLM Harbor",
           "description": "A CLI and companion app to effortlessly run LLM backends, APIs, frontends, and services with one command. By av.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -29,6 +30,7 @@
           "title": "Stitchocker",
           "description": "A lightweight and fast command line utility for conveniently grouping your docker-compose multiple container services. By alexaandrov.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -44,6 +46,7 @@
           "title": "podman-compose",
           "description": "A script to run docker-compose.yml using podman.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -59,6 +62,7 @@
           "title": "Smalte",
           "description": "Dynamically configure applications that require static configuration in docker container. By roquie",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -74,6 +78,7 @@
           "title": "habitus",
           "description": "A Build Flow Tool for Docker.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -89,6 +94,7 @@
           "title": "crowdr",
           "description": "Tool for managing multiple Docker containers ( alternative).",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -104,6 +110,7 @@
           "title": "ctk",
           "description": "Visual composer for container based workloads. By corpulent.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -119,6 +126,7 @@
           "title": "elsy",
           "description": "An opinionated, multi-language, build tool based on Docker and Docker Compose.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -134,6 +142,7 @@
           "title": "kompose",
           "description": "Go from Docker Compose to Kubernetes.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -149,6 +158,7 @@
           "title": "plash",
           "description": "A container run and build engine - runs inside docker.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -164,6 +174,7 @@
           "title": "Composerize",
           "description": "Convert docker run commands into docker-compose files.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -179,6 +190,7 @@
           "title": "docker-config-update",
           "description": "Utility to update docker configs and secrets for deploying in a compose file.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": true,
             "language": "TypeScript",
@@ -194,6 +206,7 @@
           "title": "Capitan",
           "description": "Composable docker orchestration with added scripting support by byrnedo.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": null,
@@ -215,6 +228,7 @@
           "title": "Grafeas",
           "description": "A common API for metadata about containers, from image and build details to security vulnerabilities. By grafeas.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -230,6 +244,7 @@
           "title": "awesome-stacks",
           "description": "Deploy 150+ open-source web apps with one Docker command.",
           "children": [],
+          "kind_provenance": "name",
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -245,6 +260,7 @@
           "title": "werf",
           "description": "Werf is a CI/CD tool for building Docker images efficiently and deploying them to Kubernetes using GitOps.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -260,6 +276,7 @@
           "title": "SwarmManagement",
           "description": "Swarm Management is a python application, installed with pip. The application makes it easy to manage a Docker Swarm by configuring a single yaml file describing which stacks to deploy, and which networks, configs or secrets to create.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -275,6 +292,7 @@
           "title": "Conduit",
           "description": "Experimental deployment system for Docker.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": null,
@@ -290,6 +308,7 @@
           "title": "Clocker",
           "description": "Clocker creates and manages a Docker cloud infrastructure. Clocker supports single-click deployments and runtime management of multi-node applications that run as containers distributed across multiple hosts, on both Docker and Marathon. It leverages Calico and Weave for networking and Brooklyn for application blueprints. By brooklyncentral.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -305,6 +324,7 @@
           "title": "swarm-ansible",
           "description": "Swarm-Ansible bootstraps a production-ready swarm cluster using ansible. Comes with tools to automate CI, help monitoring and traefik pre-configured for SSL certificates and simple-auth. Comes with a private registry and more!.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -320,6 +340,7 @@
           "title": "docker-to-iac",
           "description": "Translate docker run and commit into Infrastructure as Code templates for AWS, Render.com and DigitalOcean.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -335,6 +356,7 @@
           "title": "depcon",
           "description": "Depcon is written in Go and allows you to easily deploy Docker containers to Apache Mesos/Marathon, Amazon ECS and Kubernetes. By ContainX.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -350,6 +372,7 @@
           "title": "Centurion",
           "description": "Centurion is a mass deployment tool for Docker fleets. It takes containers from a Docker registry and runs them on a fleet of hosts with the correct environment variables, host volume mappings, and port mappings. By newrelic.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -365,6 +388,7 @@
           "title": "gitkube",
           "description": "Gitkube is a tool for building and deploying docker images on Kubernetes using . By Hasura.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -386,6 +410,7 @@
           "title": "NexClipper",
           "description": "NexClipper is the container monitoring and performance management solution specialized in Docker, Apache Mesos, Marathon, DC/OS, Mesosphere, Kubernetes.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -401,6 +426,7 @@
           "title": "Checkmate",
           "description": "Checkmate is an open-source, self-hosted tool designed to track and monitor server hardware, uptime, response times, and incidents in real-time with beautiful visualizations.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -416,6 +442,7 @@
           "title": "Logspout",
           "description": "Log routing for Docker container logs.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -431,6 +458,7 @@
           "title": "Autoheal",
           "description": "Monitor and restart unhealthy docker containers automatically.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -446,6 +474,7 @@
           "title": "DLIA",
           "description": "DLIA is an AI-powered Docker log monitoring agent that uses Large Language Models (LLMs) to intelligently analyze container logs, detect anomalies, and provide contextual insights over time. By zorak1103.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -461,6 +490,7 @@
           "title": "Zabbix Docker module",
           "description": "Zabbix module that provides discovery of running containers, CPU/memory/blk IO/net container metrics. Systemd Docker and LXC execution driver is also supported. It's a dynamically linked shared object library, so its performance is (~10x) better, than any script solution.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": true,
             "language": "C++",
@@ -476,6 +506,7 @@
           "title": "monit-docker",
           "description": "Monitor docker containers resources usage or status and execute docker commands or inside containers. [decryptus][decryptus].",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -491,6 +522,7 @@
           "title": "Glances",
           "description": "A cross-platform curses-based system monitoring tool written in Python.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -506,6 +538,7 @@
           "title": "dockprom",
           "description": "Docker hosts and containers monitoring with Prometheus, Grafana, cAdvisor, NodeExporter and AlertManager.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -521,6 +554,7 @@
           "title": "cAdvisor",
           "description": "Analyzes resource usage and performance characteristics of running containers.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -536,6 +570,7 @@
           "title": "HertzBeat",
           "description": "An open-source real-time monitoring system with custom-monitor and agentless.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -551,6 +586,7 @@
           "title": "Sidekick",
           "description": "Open source live application debugger like Chrome DevTools for your backend. Collect traces and generate logs on-demand without stopping & redeploying your applications.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": null,
@@ -566,6 +602,7 @@
           "title": "Zabbix Docker",
           "description": "Monitor containers automatically using zabbix LLD feature.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -581,6 +618,7 @@
           "title": "Docker-Flow-Monitor",
           "description": "Reconfigures Prometheus when a new service is updated or deployed automatically.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -596,6 +634,7 @@
           "title": "InfluxDB, cAdvisor, Grafana",
           "description": "InfluxDB Time series DB in combination with Grafana and cAdvisor.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -611,6 +650,7 @@
           "title": "SwarmAlert",
           "description": "Monitors a Docker Swarm and sends Pushover alerts when it finds a container with no healthy service task running.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": true,
             "language": "Rust",
@@ -626,6 +666,7 @@
           "title": "Docker-Alertd",
           "description": "Monitor and send alerts based on docker container resource usage/statistics.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": null,
@@ -641,6 +682,7 @@
           "title": "Out-of-the-box Host/Container Monitoring/Logging/Alerting Stack",
           "description": "Docker host and container monitoring, logging and alerting out of the box using cAdvisor, Prometheus, Grafana for monitoring, Elasticsearch, Kibana and Logstash for logging and elastalert and Alertmanager for alerting. Set up in 5 Minutes. Secure mode for production use with built-in Automated Nginx Reverse Proxy (jwilder's).",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -656,6 +698,7 @@
           "title": "Doku",
           "description": "Doku is a simple web-based application that allows you to monitor Docker disk usage. amerkurev.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -677,6 +720,7 @@
           "title": "Pipework",
           "description": "Software-Defined Networking for Linux Containers, Pipework works with \"plain\" LXC containers, and with the awesome Docker. By jpetazzo.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -692,6 +736,7 @@
           "title": "netshoot",
           "description": "The netshoot container has a powerful set of networking tools to help troubleshoot Docker networking issues.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -707,6 +752,7 @@
           "title": "Freeflow",
           "description": "High performance container overlay networks on Linux. Enabling RDMA (on both InfiniBand and RoCE) and accelerating TCP to bare metal performance. By Microsoft.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -722,6 +768,7 @@
           "title": "Flannel",
           "description": "Flannel is a virtual network that gives a subnet to each host for use with container runtimes. By coreos.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -737,6 +784,7 @@
           "title": "MyIP",
           "description": "All in one IP Toolbox. Easy to check all your IPs, IP geolocation, check for DNS leaks, examine WebRTC connections, speed test, ping test, MTR test, check website availability, whois search and more. By jason5ng32.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -758,6 +806,7 @@
           "title": "Rancher",
           "description": "An open source project that provides a complete platform for operating Docker in production.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -773,6 +822,7 @@
           "title": "CloudSlang",
           "description": "CloudSlang is a workflow engine to create Docker process automation.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -788,6 +838,7 @@
           "title": "Crane",
           "description": "Control plane based on docker built-in swarm Dataman-Cloud.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": null,
@@ -803,6 +854,7 @@
           "title": "Haven",
           "description": "Haven is a simplified container management platform that integrates container, application, cluster, image, and registry managements. By codeabovelab.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -818,6 +870,7 @@
           "title": "Docker Flow Swarm Listener",
           "description": "Docker Flow Swarm Listener project is to listen to Docker Swarm events and send requests when a change occurs. By docker-flow.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -833,6 +886,7 @@
           "title": "Ansible Linux Docker",
           "description": "Run Ansible from a Linux container. By Peco602.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -848,6 +902,7 @@
           "title": "RedHerd Framework",
           "description": "RedHerd is a collaborative and serverless framework for orchestrating a geographically distributed group of assets capable of simulating complex offensive cyberspace operations. By RedHerdProject.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": null,
@@ -863,6 +918,7 @@
           "title": "Swarm-cronjob",
           "description": "Create jobs on a time-based schedule on Swarm by crazy-max.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -878,6 +934,7 @@
           "title": "athena",
           "description": "An automation platform with a plugin architecture that allows you to easily create and share services.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -893,6 +950,7 @@
           "title": "Kubernetes",
           "description": "Open source orchestration system for Docker containers by Google.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -908,6 +966,7 @@
           "title": "clusterdock",
           "description": "Docker container orchestration to enable the testing of long-running cluster deployments.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -923,6 +982,7 @@
           "title": "docker rollout",
           "description": "Zero downtime deployment for Docker Compose services.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -938,6 +998,7 @@
           "title": "Mesos",
           "description": "Resource/Job scheduler for containers, VM's and physical hosts apache.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -953,6 +1014,7 @@
           "title": "ManageIQ",
           "description": "Discover, optimize and control your hybrid IT. By ManageIQ.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -968,6 +1030,7 @@
           "title": "Nomad",
           "description": "Easily deploy applications at any scale. A Distributed, Highly Available, Datacenter-Aware Scheduler.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -989,6 +1052,7 @@
           "title": "Dcw",
           "description": "Docker-compose SSH wrapper: a very poor man PaaS, exposing the docker-compose and custom-container commands defined in container labels.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -1004,6 +1068,7 @@
           "title": "Hephy Workflow",
           "description": "Open source PaaS for Kubernetes that adds a developer-friendly layer to any Kubernetes cluster, making it easy to deploy and manage applications. Fork of Deis Workflow.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -1019,6 +1084,7 @@
           "title": "Exoframe",
           "description": "A self-hosted tool that allows simple one-command deployments using Docker.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": true,
             "language": null,
@@ -1034,6 +1100,7 @@
           "title": "caprover",
           "description": "[Previously known as CaptainDuckDuck] Automated Scalable Webserver Package (automated Docker+nginx) - Heroku on Steroids.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -1049,6 +1116,7 @@
           "title": "Dokku",
           "description": "Docker powered mini-Heroku that helps you build and manage the lifecycle of applications (originally by progrium).",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -1064,6 +1132,7 @@
           "title": "Krane",
           "description": "Toolset for managing container workloads on remote servers.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -1079,6 +1148,7 @@
           "title": "Empire",
           "description": "A PaaS built on top of Amazon EC2 Container Service (ECS).",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -1094,6 +1164,7 @@
           "title": "Convox Rack",
           "description": "Convox Rack is open source PaaS built on top of expert infrastructure automation and devops best practices.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -1109,6 +1180,7 @@
           "title": "Nanobox",
           "description": ":heavy_dollar_sign: An application development platform that creates local environments that can then be deployed and scaled in the cloud.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -1124,6 +1196,7 @@
           "title": "Tsuru",
           "description": "Tsuru is an extensible and open source Platform as a Service software.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -1145,6 +1218,7 @@
           "title": "docker-flow-proxy",
           "description": "Reconfigures proxy every time a new service is deployed, or when a service is scaled. By docker-flow.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -1160,6 +1234,7 @@
           "title": "OpenResty Manager",
           "description": "The easiest using, powerful and beautiful OpenResty Manager(Nginx Enhanced Version), open source alternative to OpenResty Edge. By Safe3.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -1175,6 +1250,7 @@
           "title": "BunkerWeb",
           "description": "Open-source and next-gen Web Application Firewall (WAF). By Bunkerity.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -1190,6 +1266,7 @@
           "title": "Docker Dnsmasq Updater",
           "description": "Update a remote dnsmasq server with Docker container hostnames.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": null,
@@ -1205,6 +1282,7 @@
           "title": "mesh-router",
           "description": "Free domain(nsl.sh) provider for Docker containers with automatic HTTPS routing. Uses Wireguard VPN to securely route subdomain requests across networks. Ideal for self-hosted NAS and cloud deployments. By Yundera.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": null,
@@ -1220,6 +1298,7 @@
           "title": "fabio",
           "description": "A fast, modern, zero-conf load balancing HTTP(S) router for deploying microservices managed by consul. By magiconair (Frank Schroeder).",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -1235,6 +1314,7 @@
           "title": "Let's Encrypt Nginx-proxy Companion",
           "description": "A lightweight companion container for the nginx-proxy. It allow the creation/renewal of Let's Encrypt certificates automatically. By JrCs.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -1250,6 +1330,7 @@
           "title": "Swarm Router",
           "description": "A «zero config» service name based router for docker swarm mode with a fresh and more secure approach. By flavioaiello.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": null,
@@ -1265,6 +1346,7 @@
           "title": "caddy-docker-upstreams",
           "description": "Docker upstreams module for Caddy, configured with container labels. By invzhi.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -1280,6 +1362,7 @@
           "title": "caddy-docker-proxy",
           "description": "Caddy-based reverse proxy, configured with service or container labels. By lucaslorentz.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -1295,6 +1378,7 @@
           "title": "Nginx Proxy Manager",
           "description": "A beautiful web interface for proxying web based services with SSL. By jc21.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -1310,6 +1394,7 @@
           "title": "Træfɪk",
           "description": "Automated reverse proxy and load-balancer for Docker, Mesos, Consul, Etcd... By EmileVauge.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": null,
@@ -1331,6 +1416,7 @@
           "title": "rlxc",
           "description": "LXC binary written in Rust.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -1346,6 +1432,7 @@
           "title": "cri-o",
           "description": "Open Container Initiative-based implementation of Kubernetes Container Runtime Interface by cri-o.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -1361,6 +1448,7 @@
           "title": "lxc",
           "description": "LXC - Linux Containers.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -1376,6 +1464,7 @@
           "title": "podman",
           "description": "Libpod is a library used to create container pods. Home of Podman.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -1391,6 +1480,7 @@
           "title": "runtime-tools",
           "description": "Oci-runtime-tool is a collection of tools for working with the OCI runtime specification.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -1412,6 +1502,7 @@
           "title": "docker-bench-security",
           "description": "Script that checks for dozens of common best-practices around deploying Docker containers in production. By docker.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -1427,6 +1518,7 @@
           "title": "KICS",
           "description": "An infrastructure-as-code scanning tool, find security vulnerabilities, compliance issues, and infrastructure misconfigurations early in the development cycle. Can be extended for additional policies. By Checkmarx.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -1442,6 +1534,7 @@
           "title": "Trivy",
           "description": "Aqua Security's open source simple and comprehensive vulnerability scanner for containers (suitable for CI).",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -1457,6 +1550,7 @@
           "title": "notary",
           "description": "A server and a client for running and interacting with trusted collections. By TUF.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -1472,6 +1566,7 @@
           "title": "Checkov",
           "description": "Static analysis for infrastructure as code manifests (Terraform, Kubernetes, Cloudformation, Helm, Dockerfile, Kustomize) find security misconfiguration and fix them. By bridgecrew.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": true,
             "language": "JavaScript",
@@ -1487,6 +1582,7 @@
           "title": "Clair",
           "description": "Clair is an open source project for the static analysis of vulnerabilities in appc and docker containers. By coreos.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -1502,6 +1598,7 @@
           "title": "segspec",
           "description": "Extracts network dependencies from Docker Compose, Kubernetes manifests, Helm charts, and other config files to generate Kubernetes NetworkPolicies with evidence tracing. By dormstern.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": true,
             "language": "TypeScript",
@@ -1517,6 +1614,7 @@
           "title": "buildcage",
           "description": "Restricts outbound network access during Docker builds to prevent supply chain attacks, working as a drop-in BuildKit remote driver for Docker Buildx, with ready-to-use GitHub Actions.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -1532,6 +1630,7 @@
           "title": "Anchor",
           "description": "A tool to ensure reproducible builds by pinning dependencies inside your Dockerfiles SongStitch.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": null,
@@ -1547,6 +1646,7 @@
           "title": "CetusGuard",
           "description": "CetusGuard is a tool that protects the Docker daemon socket by filtering calls to its API endpoints.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -1562,6 +1662,7 @@
           "title": "Syft",
           "description": "CLI tool and library for generating a Software Bill of Materials (SBOM) from container images and filesystems.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -1577,6 +1678,7 @@
           "title": "dvwassl",
           "description": "SSL-enabled Damn Vulnerable Web App to test Web Application Firewalls. By Peco602.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -1592,6 +1694,7 @@
           "title": "oscap-docker",
           "description": "OpenSCAP provides oscap-docker tool which is used to scan Docker containers and images. By OpenSCAP.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -1607,6 +1710,7 @@
           "title": "bane",
           "description": "AppArmor profile generator for Docker containers.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -1622,6 +1726,7 @@
           "title": "Deepfence Threat Mapper",
           "description": "Powerful runtime vulnerability scanner for kubernetes, virtual machines and serverless. By deepfence.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -1637,6 +1742,7 @@
           "title": "docker-lock",
           "description": "A cli-plugin for docker to automatically manage image digests by tracking them in a separate Lockfile. By safe-waters.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -1652,6 +1758,7 @@
           "title": "Dagda",
           "description": "Dagda is a tool to perform static analysis of known vulnerabilities, trojans, viruses, malware & other malicious threats in docker images/containers and to monitor the docker daemon and running docker containers for detecting anomalous activities. By eliasgranderubio.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -1667,6 +1774,7 @@
           "title": "crowdsec-blocklist-import",
           "description": "Aggregates 36 free threat intelligence feeds into 120k+ malicious IPs for CrowdSec bouncers, providing 10-20x more blocks than default lists. By wolffcatskyy.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -1682,6 +1790,7 @@
           "title": "Sysdig Falco",
           "description": "Sysdig Falco is an open source container security monitor. It can monitor application, container, host, and network activity and alert on unauthorized activity.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": true,
             "language": "Shell",
@@ -1697,6 +1806,7 @@
           "title": "docker-explorer",
           "description": "A tool to help forensicate offline docker acquisitions.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -1712,6 +1822,7 @@
           "title": "CIS Docker Benchmark",
           "description": "This InSpec compliance profile implement the CIS Docker 1.12.0 Benchmark in an automated way to provide security best-practice tests around Docker daemon and containers in a production environment. By dev-sec.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -1733,6 +1844,7 @@
           "title": "docker-consul",
           "description": "by progrium",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -1748,6 +1860,7 @@
           "title": "etcd",
           "description": "Distributed reliable key-value store for the most critical data of a distributed system by etcd-io (former part of CoreOS).",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -1763,6 +1876,7 @@
           "title": "registrator",
           "description": "Service registry bridge for Docker by gliderlabs and progrium.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -1778,6 +1892,7 @@
           "title": "docker-dns",
           "description": "Lightweight DNS forwarder for Docker containers, resolves container names with custom suffixes (e.g. ) on the host to simplify service discovery.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -1793,6 +1908,7 @@
           "title": "istio",
           "description": "An open platform to connect, manage, and secure microservices.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": true,
             "language": "Shell",
@@ -1814,6 +1930,7 @@
           "title": "Minio",
           "description": "S3 compatible object storage server in Docker containers.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -1829,6 +1946,7 @@
           "title": "Storidge",
           "description": ":heavy_dollar_sign: Software-defined Persistent Storage for Kubernetes and Docker Swarm.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -1844,6 +1962,7 @@
           "title": "REX-Ray",
           "description": "provides a vendor agnostic storage orchestration engine. The primary design goal is to provide persistent storage for Docker, Kubernetes, and Mesos. Bythecodeteam (DELL Technologies)",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -1859,6 +1978,7 @@
           "title": "Docker Volume Backup",
           "description": "Backup Docker volumes locally or to any S3 compatible storage. By offen",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -1874,6 +1994,7 @@
           "title": "Blockbridge",
           "description": "heavy_dollar_sign:- The Blockbridge plugin is a volume plugin that provides access to an extensible set of container-based persistent storage options. It supports single and multi-host Docker environments with features that include tenant isolation, automated provisioning, encryption, secure deletion, snapshots and QoS. By blockbridge",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -1889,6 +2010,7 @@
           "title": "Netshare",
           "description": "Docker NFS, AWS EFS, Ceph & Samba/CIFS Volume Plugin. By ContainX",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -1909,6 +2031,7 @@
               "title": "Label Backup",
               "description": "A lightweight, Docker-aware backup agent that automatically discovers and backs up containerized databases (PostgreSQL, MySQL, MongoDB, Redis) based on Docker labels. Supports local storage and S3-compatible destinations with flexible scheduling via cron expressions.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "TypeScript",
@@ -1937,6 +2060,7 @@
           "title": "Simple Docker UI",
           "description": "Built on Electron. By felixgborrego.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -1952,6 +2076,7 @@
           "title": "Stevedore",
           "description": "Good Docker Desktop replacement for Windows. Both Linux and Windows Containers are supported. slonopotamus.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -1967,6 +2092,7 @@
           "title": "Docker DB Manager",
           "description": "Desktop app for managing Docker database containers with visual interface and one-click operations.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -1993,6 +2119,7 @@
           "title": "DockMate",
           "description": "Lightweight terminal-based Docker and Podman manager with a text-based user interface,.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -2008,6 +2135,7 @@
           "title": "d4s",
           "description": "A fast, keyboard-driven terminal UI to manage Docker containers, Compose stacks, and Swarm services with the ergonomics of K9s.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -2023,6 +2151,7 @@
           "title": "dprs",
           "description": "A developer-focused TUI for managing Docker containers with real-time log streaming and container management. Built with Rust. By durableprogramming.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": null,
@@ -2038,6 +2167,7 @@
           "title": "dry",
           "description": "An interactive CLI for Docker containers.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -2053,6 +2183,7 @@
           "title": "dockdash",
           "description": "detailed stats. By byrnedo",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -2068,6 +2199,7 @@
           "title": "dockly",
           "description": "An interactive shell UI for managing Docker containers.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -2083,6 +2215,7 @@
           "title": "dive",
           "description": "A tool for exploring each layer in a docker image. By wagoodman.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": null,
@@ -2098,6 +2231,7 @@
           "title": "goManageDocker",
           "description": "TUI tool to view and manage your docker objects blazingly fast with sensible keybindings, also supports VIM navigation out of the box.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": null,
@@ -2113,6 +2247,7 @@
           "title": "lazyjournal",
           "description": "A interface for reading and filtering the logs output of Docker and Podman containers like Dozzle but for the terminal with support for fuzzy find, regex and output coloring.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": null,
@@ -2128,6 +2263,7 @@
           "title": "oxker",
           "description": "A simple tui to view & control docker containers. Written in Rust, making heavy use of ratatui & Bollard,.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -2143,6 +2279,7 @@
           "title": "lazydocker",
           "description": "The lazier way to manage everything docker. A simple terminal UI for both docker and docker-compose, written in Go with the gocui library. By jesseduffield.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -2158,6 +2295,7 @@
           "title": "DockSTARTer",
           "description": "DockSTARTer helps you get started with home server apps running in Docker by GhostWriters.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -2179,6 +2317,7 @@
           "title": "dcinja",
           "description": "The powerful and smallest binary size of template engine for docker command line environment. By Falldog.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": true,
             "language": "Shell",
@@ -2194,6 +2333,7 @@
           "title": "docker-captain",
           "description": "A friendly CLI to manage multiple Docker Compose deployments with style — powered by Typer, Rich, questionary, and sh.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -2209,6 +2349,7 @@
           "title": "docker pushrm",
           "description": "A Docker CLI plugin that lets you push the README.md file from the current directory to Docker Hub. Also supports Quay and Harbor. By christian-korneck.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -2224,6 +2365,7 @@
           "title": "DVM",
           "description": "Docker version manager.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": null,
@@ -2239,6 +2381,7 @@
           "title": "proco",
           "description": "Proco will help you to organise and manage Docker, Docker-Compose, Kubernetes projects of any complexity using simple YAML config files to shorten the route from finding your project to initialising it in your local environment.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -2254,6 +2397,7 @@
           "title": "skopeo",
           "description": "Work with remote images registries - retrieving information, images, signing content.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": true,
             "language": "C++",
@@ -2269,6 +2413,7 @@
           "title": "Pdocker",
           "description": "A simple tool to manage and maintain Docker for personal projects.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -2284,6 +2429,7 @@
           "title": "goinside",
           "description": "Get inside a running docker container easily.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -2299,6 +2445,7 @@
           "title": "supdock",
           "description": "Allows for slightly more visual usage of Docker with an interactive prompt. By segersniels.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -2314,6 +2461,7 @@
           "title": "dcp",
           "description": "A simple tool for copying files from container filesystems. By exdx.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -2329,6 +2477,7 @@
           "title": "dctl",
           "description": "Dctl is a Cli tool that helps developers by allowing them to execute all docker compose commands anywhere in the terminal, and more. By FabienD.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -2344,6 +2493,7 @@
           "title": "scuba",
           "description": "Transparently use Docker containers to encapsulate software build environments,.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -2359,6 +2509,7 @@
           "title": "docker-ls",
           "description": "CLI tools for browsing and manipulating docker registries.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -2374,6 +2525,7 @@
           "title": "tsaotun",
           "description": "Python based Assistance for Docker.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": true,
             "language": "TypeScript",
@@ -2389,6 +2541,7 @@
           "title": "decompose",
           "description": "Reverse-engineering tool for docker environments. By s0rg.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": true,
             "language": "Python",
@@ -2404,6 +2557,7 @@
           "title": "captain",
           "description": "Easily start and stop docker compose projects from any directory. By jenssegers.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -2425,6 +2579,7 @@
           "title": "docker-ssh",
           "description": "SSH Server for Docker containers ~ Because every container should be accessible. By jeroenpeeters.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -2440,6 +2595,7 @@
           "title": "dockerfile-mode",
           "description": "An emacs mode for handling Dockerfiles by spotify",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -2455,6 +2611,7 @@
           "title": "dext-docker-registry-plugin",
           "description": "Search the Docker Registry with the Dext smart launcher. By vutran.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -2470,6 +2627,7 @@
           "title": "MultiDocker",
           "description": "Create a secure multi-user Docker machine, where each user is segregated into an indepentent container.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -2485,6 +2643,7 @@
           "title": "Powerline-Docker",
           "description": "A Powerline segment for showing the status of Docker containers.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -2506,6 +2665,7 @@
           "title": "Theia",
           "description": "Extensible platform to develop full-fledged multi-language Cloud & Desktop IDE-like products with state-of-the-art web technologies.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -2521,6 +2681,7 @@
           "title": "usulnet",
           "description": "A complete and modern Docker management platform designed for sysadmin, devops with enterprise grade tools, cve scanner, ssh, rdp on web and much more. By fr4nsys.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -2536,6 +2697,7 @@
           "title": "Seagull",
           "description": "Friendly Web UI to monitor docker daemon.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -2551,6 +2713,7 @@
           "title": "Kubevious",
           "description": "A highly visual web UI for Kubernetes which renders configuration and state in an application centric way.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -2566,6 +2729,7 @@
           "title": "Mafl",
           "description": "Minimalistic flexible homepage.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": null,
@@ -2581,6 +2745,7 @@
           "title": "docker-swarm-visualizer",
           "description": "Visualizes Docker services on a Docker Swarm (for running demos).",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -2596,6 +2761,7 @@
           "title": "dockge",
           "description": "Easy-to-use and reactive self-hosted docker compose.yaml stack-oriented manager.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -2611,6 +2777,7 @@
           "title": "Komodo",
           "description": "A tool to build and deploy software on many servers.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -2626,6 +2793,7 @@
           "title": "Rapid Dashboard",
           "description": "A simple query dashboard to use Docker Remote API.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": null,
@@ -2641,6 +2809,7 @@
           "title": "OctoLinker",
           "description": "A browser extension for GitHub that makes the image name in a clickable and redirect you to the related Docker Hub page.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -2656,6 +2825,7 @@
           "title": "Swarmpit",
           "description": "Swarmpit provides simple and easy to use interface for your Docker Swarm cluster. You can manage your stacks, services, secrets, volumes, networks etc.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -2671,6 +2841,7 @@
           "title": "Container Web TTY",
           "description": "Connect your containers via a web-tty wrfly.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -2686,6 +2857,7 @@
           "title": "Docker Registry Browser",
           "description": "Web Interface for the Docker Registry HTTP API v2.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -2701,6 +2873,7 @@
           "title": "Swirl",
           "description": "Swirl is a web management tool for Docker, focused on swarm cluster By cuigh.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -2716,6 +2889,7 @@
           "title": "Portainer",
           "description": "A lightweight management UI for managing your Docker hosts or Docker Swarm clusters.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -2731,6 +2905,7 @@
           "title": "CASA",
           "description": "Outsource the administration of a handful of containers to your co-workers,.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -2746,6 +2921,7 @@
           "title": "docker-registry-web",
           "description": "Web UI, authentication service and event recorder for private docker registry v2.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -2761,6 +2937,7 @@
           "title": "netdata",
           "description": "Real-time performance monitoring.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -2776,6 +2953,7 @@
           "title": "dockemon",
           "description": "Docker Container Management GUI.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -2802,6 +2980,7 @@
           "title": "ckron",
           "description": "A cron-style job scheduler for docker,.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": null,
@@ -2817,6 +2996,7 @@
           "title": "Ofelia",
           "description": "Ofelia is a modern and low footprint job scheduler for docker environments, built on Go. Ofelia aims to be a replacement for the old fashioned cron. Supports configuration from container labels and/or configuration files.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -2832,6 +3012,7 @@
           "title": "Chaperone",
           "description": "A single PID1 process designed for docker containers. Does user management, log management, startup, zombie reaping, all in one small package.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -2847,6 +3028,7 @@
           "title": "supercronic",
           "description": "Crontab-compatible job runner, designed specifically to run in containers.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -2862,6 +3044,7 @@
           "title": "GoSu",
           "description": "Run this specific application as this specific user and get out of the pipeline (entrypoint script tool).",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -2877,6 +3060,7 @@
           "title": "su-exec",
           "description": "This is a simple tool that will simply execute a program with different privileges. The program will be executed directly and not run as a child, like su and sudo does, which avoids TTY and signal issues. Why reinvent gosu? This does more or less exactly the same thing as gosu but it is only 10kb instead of 1.8MB. By ncopa.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -2892,6 +3076,7 @@
           "title": "is-docker",
           "description": "Check if the process is running inside a Docker container.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -2907,6 +3092,7 @@
           "title": "distroless",
           "description": "Language focused docker images, minus the operating system,.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -2922,6 +3108,7 @@
           "title": "microcheck",
           "description": "Lightweight health check utilities for Docker containers (75 KB instead of 9.3 MB for httpcheck versus cURL) in pure C - http(s), port checks, and parallel execution are included.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -2937,6 +3124,7 @@
           "title": "SparkView",
           "description": "Access VMs, desktops, servers or applications anytime and from anywhere, without complex and costly client roll-outs or user management.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -2952,6 +3140,7 @@
           "title": "dockerize",
           "description": "Utility to simplify running applications in docker containers by jwilder, powerman.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -2967,6 +3156,7 @@
           "title": "lstags",
           "description": "Sync Docker images across registries.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -2982,6 +3172,7 @@
           "title": "amicontained",
           "description": "Container introspection tool. Find out what container runtime is being used as well as features available.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -2997,6 +3188,7 @@
           "title": "sue",
           "description": "Executes a program as a user different from the user running sue. This is a maintainable alternative to ncopa/su-exec, which is the better tianon/gosu. This one is far better (higher performance, smaller size), than the original gosu, however it is far easier to maintain, than su-exec, which is written in plain C. Made by Akito.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -3012,6 +3204,7 @@
           "title": "docker-gen",
           "description": "Generate files from docker container meta-data.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -3027,6 +3220,7 @@
           "title": "TrivialRC",
           "description": "A minimalistic Runtime Configuration system and process manager for containers vorakl.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -3042,6 +3236,7 @@
           "title": "docker-alpine",
           "description": "A super small Docker base image (5MB) using Alpine Linux.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -3063,6 +3258,7 @@
           "title": "userdef",
           "description": "An advanced for your Alpine based Docker images. Made by Akito.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -3078,6 +3274,7 @@
           "title": "Whaler",
           "description": "Program to reverse Docker images into Dockerfiles.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": null,
@@ -3093,6 +3290,7 @@
           "title": "docker-repack",
           "description": "Repacks a Docker image into a smaller, more efficient version that makes it significantly faster to pull. By orf.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -3108,6 +3306,7 @@
           "title": "docker-make",
           "description": "Build, tag,and push a bunch of related docker images via a single command.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -3123,6 +3322,7 @@
           "title": "dlayer",
           "description": "Docker layer analyzer.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -3138,6 +3338,7 @@
           "title": "essex",
           "description": "Boilerplate for Docker Based Projects: Essex is a CLI utility written in bash to quickly setup clean and consistent Docker projects with Makefile driven workflows. jamesbrink.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -3153,6 +3354,7 @@
           "title": "copy-docker-image",
           "description": "Copy a Docker image between registries without a full Docker installation.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -3168,6 +3370,7 @@
           "title": "docker-replay",
           "description": "Generate command and options from running containers. By bcicen.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": true,
             "language": "TypeScript",
@@ -3183,6 +3386,7 @@
           "title": "cekit",
           "description": "A tool used by openshift to build base images using different build engines.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -3198,6 +3402,7 @@
           "title": "docker-companion",
           "description": "A command line tool written in Golang to squash and unpack docker images.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -3213,6 +3418,7 @@
           "title": "Derrick",
           "description": "A tool help you to automate the generation of Dockerfile and dockerize application by scanning the code. By alibaba.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -3228,6 +3434,7 @@
           "title": "Whales",
           "description": "A tool to automatically dockerize your applications.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -3243,6 +3450,7 @@
           "title": "Dockly",
           "description": "Dockly is a gem made to ease the pain of packaging an application in Docker.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -3258,6 +3466,7 @@
           "title": "runlike",
           "description": "Generate command and options from running containers.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": null,
@@ -3273,6 +3482,7 @@
           "title": "img",
           "description": "Standalone, daemon-less, unprivileged Dockerfile and OCI compatible container image builder.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": null,
@@ -3288,6 +3498,7 @@
           "title": "HPC Container Maker",
           "description": "Generates Dockerfiles from a high level Python recipe, including building blocks for High-Performance Computing components.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -3303,6 +3514,7 @@
           "title": "buildah",
           "description": "A tool that facilitates building OCI images.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": null,
@@ -3318,6 +3530,7 @@
           "title": "DockerSlim",
           "description": "shrinks fat Docker images creating the smallest possible images.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -3333,6 +3546,7 @@
           "title": "RAUDI",
           "description": "A tool to automatically update (and optionally push to Docker Hub) Docker Images for 3rd party software whenever theres is a new release/update/commit. By SecSI.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -3348,6 +3562,7 @@
           "title": "portainer",
           "description": "Apache Mesos framework for building Docker images.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -3363,6 +3578,7 @@
           "title": "container-factory",
           "description": "Produces Docker images from tarballs of application source code.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -3378,6 +3594,7 @@
           "title": "BuildKit",
           "description": "Concurrent, cache-efficient, and Dockerfile-agnostic builder toolkit.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -3393,6 +3610,7 @@
           "title": "ansible-bender",
           "description": "A tool utilising and .",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -3414,6 +3632,7 @@
           "title": "dockerfilegraph",
           "description": "Visualize your multi-stage Dockerfiles. By PatrickHoefler.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -3429,6 +3648,7 @@
           "title": "chaperone-docker",
           "description": "A set of images using the Chaperone process manager, including a lean Alpine image, LAMP, LEMP, and bare-bones base kits.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -3444,6 +3664,7 @@
           "title": "Dockerfile Generator",
           "description": "is both a Go library and an executable that produces valid Dockerfiles using various input channels.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -3459,6 +3680,7 @@
           "title": "Dockershelf",
           "description": "A repository that serves as a collector for docker recipes that are universal, efficient and slim. Images are updated, tested and published daily via a Travis cron job.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -3480,6 +3702,7 @@
           "title": "FROM:latest",
           "description": "An opinionated Dockerfile linter.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -3495,6 +3718,7 @@
           "title": "Dockerfile Linter action",
           "description": "The linter lets you verify Dockerfile syntax to make sure it follows the best practices for building efficient Docker images.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -3510,6 +3734,7 @@
           "title": "Dockadvisor",
           "description": "Lightweight Dockerfile linter with 60+ rules, quality scoring, and security checks.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -3525,6 +3750,7 @@
           "title": "Hadolint",
           "description": "A Dockerfile linter that checks for best practices, common mistakes, and is also able to lint any bash written in instructions;.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": true,
             "language": "Java",
@@ -3540,6 +3766,7 @@
           "title": "docker-image-size-limit",
           "description": "A tool to keep an eye on your docker images size.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -3561,6 +3788,7 @@
           "title": "Rescoyl",
           "description": "Private Docker registry (free and open source).",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -3576,6 +3804,7 @@
           "title": "nscr",
           "description": "A light-weight, self-contained container registry that's easy to run and maintain.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -3591,6 +3820,7 @@
           "title": "Docket",
           "description": "Custom docker registry that allows for lightning fast deploys through bittorrent.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": null,
@@ -3606,6 +3836,7 @@
           "title": "CargoOS",
           "description": "A bare essential OS for running the Docker Engine on bare metal or Cloud. By RedCoolBeans.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -3621,6 +3852,7 @@
           "title": "Dragonfly",
           "description": "Provide efficient, stable and secure file distribution and image acceleration based on p2p technology.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -3636,6 +3868,7 @@
           "title": "Harbor",
           "description": "An open source trusted cloud native registry project that stores, signs, and scans content. Supports replication, user management, access control and activity auditing. By CNCF formerly VMWare",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -3651,6 +3884,7 @@
           "title": "Kraken",
           "description": "Uber's Highly scalable P2P docker registry, capable of distributing TBs of data in seconds.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -3666,6 +3900,7 @@
           "title": "cleanreg",
           "description": "A small tool to delete image manifests from a Docker Registry implementing the API v2, dereferencing them for the GC.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -3681,6 +3916,7 @@
           "title": "Registryo",
           "description": "UI and token based authentication server for onpremise docker registry.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -3707,6 +3943,7 @@
           "title": "contajners",
           "description": "An idiomatic, data-driven, REPL friendly Clojure client for OCI container engines. By lispyclouds.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -3722,6 +3959,7 @@
           "title": "Docker.Registry.DotNet",
           "description": ".NET (C#) Client Library for interacting with a Docker Registry API (v2) rquackenbush.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -3737,6 +3975,7 @@
           "title": "Docker Client for JVM",
           "description": "A Docker remote api client library for the JVM, written in Groovy.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": null,
@@ -3752,6 +3991,7 @@
           "title": "Portainer stack utils",
           "description": "Bash script to deploy/update/undeploy Docker stacks in a Portainer instance from a docker-compose yaml file. By greenled.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": true,
             "language": "C++",
@@ -3767,6 +4007,7 @@
           "title": "docker-controller-bot",
           "description": "Telegram bot to control docker containers. By dgongut.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": null,
@@ -3782,6 +4023,7 @@
           "title": "docker-maven-plugin",
           "description": "A Maven plugin for running and creating Docker images.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -3797,6 +4039,7 @@
           "title": "Gradle Docker plugin",
           "description": "A Docker remote api plugin for Gradle.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -3812,6 +4055,7 @@
           "title": "sbt-docker",
           "description": "Create Docker images directly from sbt.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -3827,6 +4071,7 @@
           "title": "docker-it-scala",
           "description": "Docker integration testing kit with Scala.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -3842,6 +4087,7 @@
           "title": "docker-java-api",
           "description": "Lightweight, truly object-oriented, Java client for Docker's API. By amihaiemil.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -3857,6 +4103,7 @@
           "title": "Docker.DotNet",
           "description": "C#/.NET HTTP client for the Docker remote API.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": true,
             "language": "Go",
@@ -3872,6 +4119,7 @@
           "title": "dockerode",
           "description": "Docker Remote API node.js module.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": null,
@@ -3887,6 +4135,7 @@
           "title": "go-dockerclient",
           "description": "Go HTTP client for the Docker remote API.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -3902,6 +4151,7 @@
           "title": "ahab",
           "description": "Docker event handling with Python.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -3917,6 +4167,7 @@
           "title": "DoMonit",
           "description": "A simple Docker Monitoring wrapper For Docker API.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -3938,6 +4189,7 @@
           "title": "Docker plugin for Jenkins",
           "description": "The aim of the docker plugin is to be able to use a docker host to dynamically provision a slave, run a single build, then tear-down that slave.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -3953,6 +4205,7 @@
           "title": "mu",
           "description": "Tool to configure CI/CD of your container applications via AWS CodePipeline, CodeBuild and ECS Stelligent.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": null,
@@ -3968,6 +4221,7 @@
           "title": "Drone",
           "description": "Continuous integration server built on Docker and configured using YAML files.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -3983,6 +4237,7 @@
           "title": "dockcheck",
           "description": "A script checking updates for docker images without pulling then auto-update selected/all containers. With notifications, pruning and more.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -3998,6 +4253,7 @@
           "title": "Cyclone",
           "description": "Powerful workflow engine and end-to-end pipeline solutions implemented with native Kubernetes resources.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -4013,6 +4269,7 @@
           "title": "Captain",
           "description": "Convert your Git workflow to Docker containers ready for Continuous Delivery.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -4028,6 +4285,7 @@
           "title": "Microservices Continuous Deployment",
           "description": "Continuous deployment of a microservices application.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -4043,6 +4301,7 @@
           "title": "SwarmCI",
           "description": "Create a distributed, isolated task pipeline in your Docker Swarm.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": null,
@@ -4058,6 +4317,7 @@
           "title": "Defang",
           "description": "Deploy Docker Compose to your favorite cloud in minutes.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -4073,6 +4333,7 @@
           "title": "Drydock",
           "description": "Open-source container update monitoring with web dashboard, 15 registries, 16 notification triggers, and security scanning. Drop-in WUD replacement. By CodesWhat.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -4088,6 +4349,7 @@
           "title": "Popper",
           "description": "Github actions workflow (HCL syntax) execution engine.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": null,
@@ -4103,6 +4365,7 @@
           "title": "Diun",
           "description": "Receive notifications when an image or repository is updated on a Docker registry by crazy-max.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -4118,6 +4381,7 @@
           "title": "Jaypore CI",
           "description": "Simple, very flexible, powerful CI / CD / automation system configured in Python. Offline and local first.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -4133,6 +4397,7 @@
           "title": "Skipper",
           "description": "Easily dockerize your Git repository.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -4148,6 +4413,7 @@
           "title": "Gantry",
           "description": "Automatically update selected Docker swarm services.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -4163,6 +4429,7 @@
           "title": "Kraken CI",
           "description": "Modern CI/CD, open-source, on-premise system that is highly scalable and focused on testing. One of its executors is Docker. Developed.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -4184,6 +4451,7 @@
           "title": "Lando",
           "description": "Lando is for developers who want to quickly specify and painlessly spin up the services and tools needed to develop their projects. By Tandem.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -4199,6 +4467,7 @@
           "title": "construi",
           "description": "Run your builds inside a Docker defined environment.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -4214,6 +4483,7 @@
           "title": "Docker-sync",
           "description": "Drastically improves performance (50-70x) when using Docker for development on Mac OS X/Windows and Linux while sharing code to the container. By EugenMayer.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -4229,6 +4499,7 @@
           "title": "Eclipse Che",
           "description": "Developer workspace server with Docker runtimes, cloud IDE, next-generation Eclipse IDE.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": null,
@@ -4244,6 +4515,7 @@
           "title": "Zsh-in-Docker",
           "description": "Install Zsh, Oh-My-Zsh and plugins inside a Docker container with one line! By Deluan.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": null,
@@ -4259,6 +4531,7 @@
           "title": "uniget",
           "description": "Uni(versal)get, the installer and updater for container tools and beyond (formerly docker-setup). By nicholasdille.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -4274,6 +4547,7 @@
           "title": "Docker Missing Tools",
           "description": "A set of bash commands to shortcut typical docker dev-ops. An alternative to creating typical helper scripts like \"build.sh\" and \"deploy.sh\" inside code repositories. By NandoQuintana.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -4289,6 +4563,7 @@
           "title": "Gebug",
           "description": "A tool that makes debugging of Dockerized Go applications super easy by enabling Debugger and Hot-Reload features, seamlessly.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -4304,6 +4579,7 @@
           "title": "Vagga",
           "description": "Vagga is a containerisation tool without daemons. It is a fully-userspace container engine inspired by Vagrant and Docker, specialized for development environments.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -4319,6 +4595,7 @@
           "title": "Kitt",
           "description": "A portable and disposable Shell environment, based on Docker and Nix. By senges.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -4334,6 +4611,7 @@
           "title": "dde",
           "description": "Local development environment toolset based on Docker. By whatwedo.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -4349,6 +4627,7 @@
           "title": "DIP",
           "description": "CLI utility for straightforward provisioning and interacting with an application configured by docker-compose. By bibendi.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -4364,6 +4643,7 @@
           "title": "coder",
           "description": "Remote development machines powered by Terraform or Docker.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -4379,6 +4659,7 @@
           "title": "Rust Universal Compiler",
           "description": "Container solution to compile Rust projects for Linux, macOS and Windows. By Peco602.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -4394,6 +4675,7 @@
           "title": "docker-vm",
           "description": "Simple and transparent alternative to boot2docker (backed by Vagrant).",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -4409,6 +4691,7 @@
           "title": "dobi",
           "description": "A build automation tool for Docker applications. By dnephin.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -4424,6 +4707,7 @@
           "title": "EnvCLI",
           "description": "Replace your local installation of Node, Go, ... with project-specific docker containers. By EnvCLI.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -4439,6 +4723,7 @@
           "title": "DockerDL",
           "description": "Deep Learning Docker Images. Don't waste time setting up a deep learning env when you can get a deep learning environment with everything pre-installed.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -4454,6 +4739,7 @@
           "title": "Docker-Arch",
           "description": "Generate Web/CLI projects Dockerized development environments, from 1 simple YAML file. By Ph3nol.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -4469,6 +4755,7 @@
           "title": "ESP32 Linux - Docker builder",
           "description": "Container solution to compile Linux and develop it for ESP32 microcontrollers - By Hpsaturn.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -4484,6 +4771,7 @@
           "title": "Binci",
           "description": "Containerize your development workflow. (formerly DevLab by TechnologyAdvice).",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -4505,6 +4793,7 @@
           "title": "Docuum",
           "description": "Least recently used (LRU) eviction of Docker images.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -4520,6 +4809,7 @@
           "title": "docker_gc",
           "description": "Image for automatic removing unused Docker Swarm objects. Also works just as Docker Service.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -4535,6 +4825,7 @@
           "title": "Docker Clean",
           "description": "A script that cleans Docker containers, images and volumes.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -4550,6 +4841,7 @@
           "title": "docker-custodian",
           "description": "Keep docker hosts tidy. By Yelp.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": null,
@@ -4565,6 +4857,7 @@
           "title": "caduc",
           "description": "A docker garbage collector cleaning stuff you did not use recently.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -4586,6 +4879,7 @@
           "title": "SCAR",
           "description": "Serverless Container-aware Architectures (SCAR) is a serverless framework that allows easy deployment and execution of containers (e.g. Docker) in Serverless environments (e.g. Lambda).",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -4601,6 +4895,7 @@
           "title": "OpenFaaS",
           "description": "A complete serverless functions framework for Docker and Kubernetes. By OpenFaaS.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -4616,6 +4911,7 @@
           "title": "IronFunctions",
           "description": "The serverless microservices platform FaaS (Functions as a Service) which uses Docker containers to run Any language or AWS Lambda functions.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -4631,6 +4927,7 @@
           "title": "Apache OpenWhisk",
           "description": "A serverless, open source cloud platform that executes functions in response to events at any scale. By apache.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -4646,6 +4943,7 @@
           "title": "Funker",
           "description": "Functions as Docker containers example voting app. By bfirsh.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -4667,6 +4965,7 @@
           "title": "EZDC",
           "description": "Golang test harness for easily setting up tests that rely on services in a docker-compose.yml. By byrnedo.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -4682,6 +4981,7 @@
           "title": "DockerSpec",
           "description": "A small Ruby Gem to run RSpec and Serverspec, Infrataster and Capybara tests against Dockerfiles or Docker images easily. By zuazo.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -4697,6 +4997,7 @@
           "title": "dgoss",
           "description": "A fast YAML based tool for validating docker containers.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": true,
             "language": "Ruby",
@@ -4712,6 +5013,7 @@
           "title": "Pull Dog",
           "description": "A GitHub app that automatically creates Docker-based test environments for your pull requests, from your docker-compose files. Not open source.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -4727,6 +5029,7 @@
           "title": "Pumba",
           "description": "Chaos testing tool for Docker. Can be deployed on kubernetes and CoreOS cluster. By alexei-led.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -4742,6 +5045,7 @@
           "title": "Container Structure Test",
           "description": "A framework to validate the structure of an image by checking the outputs of commands or the contents of the filesystem. By GoogleContainerTools.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -4757,6 +5061,7 @@
           "title": "Kurtosis",
           "description": "A composable build system for multi-container test environments that provides developers with: a powerful Python-like SDK for environment configuration, a compile-time validator to verify environment behavior & setup, and a runtime for environment execution, monitoring, & debugging capabilities. By Kurtosis.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -4778,6 +5083,7 @@
           "title": "Turbo",
           "description": "Simple and Powerful utility for docker. By ramitsurana.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": true,
             "language": null,
@@ -4793,6 +5099,7 @@
           "title": "Vagrant - Docker provider",
           "description": "Good starting point is vagrant-docker-example.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -4808,6 +5115,7 @@
           "title": "subuser",
           "description": "Makes it easy to securely and portably run graphical desktop applications in Docker.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -4823,6 +5131,7 @@
           "title": "udocker",
           "description": "A tool to execute simple docker containers in batch or interactive systems without root privileges.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -4838,6 +5147,7 @@
           "title": "Shutit",
           "description": "Tool for building and maintaining complex Docker deployments.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -4853,6 +5163,7 @@
           "title": "Terraform cloud-init config",
           "description": "Terraform module for deploying a single Docker image or file to any Cloud™ VM.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -4868,6 +5179,7 @@
           "title": "dockerized",
           "description": "Seamlessly execute commands in a container.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": null,
@@ -4883,6 +5195,7 @@
           "title": "Preevy",
           "description": "Preview environments for Docker and Docker Compose projects. Test your changes and get feedback from devs and non-devs (Product/Design) by deploying pull requests to the your cloud provider as part of your CI pipeline.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -4898,6 +5211,7 @@
           "title": "dexec",
           "description": "Command line interface written in Go for running code with Docker Exec images.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -4913,6 +5227,7 @@
           "title": "Hokusai",
           "description": "A Docker + Kubernetes CLI for application developers; used to containerize an application and to manage its lifecycle throughout development, testing, and release cycles. From artsy.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -4928,6 +5243,7 @@
           "title": "Dray",
           "description": "An engine for managing the execution of container-based workflows.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -4954,6 +5270,7 @@
           "title": "SPM for Docker",
           "description": ":heavy_dollar_sign: Monitoring of host and container metrics, Docker events and logs. Automatic log parser. Anomaly Detection and alerting for metrics and logs. sematext.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -4969,6 +5286,7 @@
           "title": "AppDynamics",
           "description": "Docker Monitoring extension gathers metrics from the Docker Remote API, either using Unix Socket or TCP.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -4990,6 +5308,7 @@
           "title": "Awesome Sysadmin",
           "description": "by n1trux",
           "children": [],
+          "kind_provenance": "name",
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -5005,6 +5324,7 @@
           "title": "Awesome Linux Container",
           "description": "more general about container than this repo, by Friz-zy.",
           "children": [],
+          "kind_provenance": "name",
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -5020,6 +5340,7 @@
           "title": "Awesome Selfhosted",
           "description": "list of Free Software network services and web applications which can be hosted locally by running in a classical way (setup local web server and run applications from there) or in a Docker container. By Kickball",
           "children": [],
+          "kind_provenance": "name",
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -5035,6 +5356,7 @@
           "title": "Awesome Compose",
           "description": "Docker Compose samples.",
           "children": [],
+          "kind_provenance": "name",
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -5050,6 +5372,7 @@
           "title": "Awesome Kubernetes",
           "description": "by ramitsurana",
           "children": [],
+          "kind_provenance": "name",
           "repo_info": {
             "archived": false,
             "language": null,
@@ -5065,6 +5388,7 @@
           "title": "Awesome CI/CD",
           "description": "Not specific to docker but relevant.",
           "children": [],
+          "kind_provenance": "name",
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -5080,6 +5404,7 @@
           "title": "ToolsOfTheTrade",
           "description": "a list of SaaS and On premise applications by cjbarber",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -5101,6 +5426,7 @@
           "title": "Local Docker DB",
           "description": "a list of docker-compose samples for a lot of databases by alexmacarthur",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -5116,6 +5442,7 @@
           "title": "Webstack-micro",
           "description": "Demo web app showing how Docker Compose might be used to set up an API Gateway, centralized authentication, background workers, and WebSockets as containerized services.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -5137,6 +5464,7 @@
           "title": "Get Docker up and running on the RaspberryPi in three steps",
           "description": null,
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -5152,6 +5480,7 @@
           "title": "Installing, running, using Docker on armhf (ARMv7) devices",
           "description": null,
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -5173,6 +5502,7 @@
           "title": "CVE Scanning Alpine images with Multi-stage builds in Docker 17.05",
           "description": "by tomwillfixit",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -5188,6 +5518,7 @@
           "title": "How CVE's are handled on Offical Docker Images",
           "description": null,
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -5203,6 +5534,7 @@
           "title": "Docker Secure Deployment Guidelines",
           "description": null,
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -5228,6 +5560,7 @@
     "enhanced_repository": "enhansome/enhansome-docker",
     "enhanced_repository_description": "enhanced list",
     "kind": "registry",
+    "kind_provenance": "content",
     "title": "Awesome Docker with stars"
   }
 }

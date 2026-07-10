@@ -48,6 +48,7 @@ function enhanceResult(overrides: Partial<EnhanceResult> = {}): EnhanceResult {
       items: [],
       metadata: {
         kind: 'repository',
+        kind_provenance: 'default',
         last_updated: '2026-06-27T00:00:00.000Z',
         original_repository: 'NARKOZ/guides',
         original_repository_sha: 'abc123',

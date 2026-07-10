@@ -3,10 +3,12 @@ import remarkParse from 'remark-parse';
 import { unified } from 'unified';
 import { beforeAll, describe, expect, it } from 'vitest';
 
-import { getReadme, GithubClient, makeOctokit } from './github.js';
+import { getReadme, getRepoInfo, GithubClient, makeOctokit } from './github.js';
 import {
   classifyKind,
   countResourceLinks,
+  fetchAwesomeMembers,
+  REGISTRY_CONTENT_BACKSTOP_LINKS,
   REGISTRY_MIN_LINKS,
 } from './markdown.js';
 
@@ -34,13 +36,35 @@ const describeLive = token ? describe : describe.skip;
 const describeHeavy =
   token && process.env.RUN_KIND_AUDIT ? describe : describe.skip;
 
+// classifyKind now takes the target's repo info (description/topics) and the
+// sindresorhus membership set, so the live tests fetch both the way production
+// does rather than calling the classifier with empty inputs.
+async function classifyReal(
+  octokit: GithubClient,
+  members: Set<string>,
+  owner: string,
+  repo: string,
+) {
+  const info = await getRepoInfo(octokit, owner, repo).catch((): null => null);
+  return classifyKind(
+    octokit,
+    owner,
+    repo,
+    info,
+    members,
+    REGISTRY_CONTENT_BACKSTOP_LINKS,
+  );
+}
+
 describeLive(
   'Live classifier: jbhuang0604/awesome-computer-vision (real GitHub)',
   () => {
     let octokit: GithubClient;
+    let members: Set<string>;
 
-    beforeAll(() => {
+    beforeAll(async () => {
       octokit = makeOctokit(token);
+      members = await fetchAwesomeMembers(octokit);
     });
 
     // Each real target is classified independently; a generous timeout because
@@ -71,12 +95,7 @@ describeLive(
     ])(
       'classifies the registry target %s/%s as a registry',
       async (owner, repo) => {
-        const { kind } = await classifyKind(
-          octokit,
-          owner,
-          repo,
-          REGISTRY_MIN_LINKS,
-        );
+        const { kind } = await classifyReal(octokit, members, owner, repo);
         expect(kind).toBe('registry');
       },
       TIMEOUT,
@@ -94,12 +113,7 @@ describeLive(
     ])(
       'classifies the concrete project %s/%s as a repository',
       async (owner, repo) => {
-        const { kind } = await classifyKind(
-          octokit,
-          owner,
-          repo,
-          REGISTRY_MIN_LINKS,
-        );
+        const { kind } = await classifyReal(octokit, members, owner, repo);
         expect(kind).toBe('repository');
       },
       TIMEOUT,
@@ -117,12 +131,7 @@ describeLive(
     ])(
       'classifies the non-GitHub-link registry %s/%s as a registry',
       async (owner, repo) => {
-        const { kind } = await classifyKind(
-          octokit,
-          owner,
-          repo,
-          REGISTRY_MIN_LINKS,
-        );
+        const { kind } = await classifyReal(octokit, members, owner, repo);
         expect(kind).toBe('registry');
       },
       TIMEOUT,
@@ -134,11 +143,11 @@ describeLive(
     it(
       'classifies the reST-README registry awesomedata/awesome-public-datasets as a registry',
       async () => {
-        const { kind } = await classifyKind(
+        const { kind } = await classifyReal(
           octokit,
+          members,
           'awesomedata',
           'awesome-public-datasets',
-          REGISTRY_MIN_LINKS,
         );
         expect(kind).toBe('registry');
       },
@@ -154,9 +163,11 @@ describeHeavy(
   'Live classifier: every awesome-list target is a registry (full audit)',
   () => {
     let octokit: GithubClient;
+    let members: Set<string>;
 
-    beforeAll(() => {
+    beforeAll(async () => {
       octokit = makeOctokit(token);
+      members = await fetchAwesomeMembers(octokit);
     });
 
     const TIMEOUT = 60_000;
@@ -208,25 +219,17 @@ describeHeavy(
     ])(
       'audit: %s/%s is a registry',
       async (owner, repo) => {
-        const { kind } = await classifyKind(
-          octokit,
-          owner,
-          repo,
-          REGISTRY_MIN_LINKS,
-        );
+        const { kind } = await classifyReal(octokit, members, owner, repo);
         expect(kind).toBe('registry');
       },
       TIMEOUT,
     );
 
-    // DEFERRED — sparse-link registries the content counter cannot yet catch.
-    // Each is a genuine registry whose README carries too few outbound links to
-    // clear REGISTRY_MIN_LINKS (5-48), overlapping with verbose project READMEs
-    // (chalk ~37). No link threshold separates them; they need a non-content
-    // signal (repo name / "curated list" description) — the dedicated fine-tuning
-    // session. Skipped here so the audit stays a green baseline for the 43 above;
-    // un-skip each as the backstop brings it to `registry`.
-    it.skip.each([
+    // Sparse-link registries (5-48 outbound links) the old content-only
+    // classifier missed. The layered classifier catches them on non-content
+    // anchors — name (`awesome-*`) and the "curated list" description — so they
+    // are now part of the green audit rather than a deferred skip.
+    it.each([
       ['heyalexej', 'awesome-images'],
       ['jphall663', 'awesome-machine-learning-interpretability'],
       ['subeeshvasu', 'Awesome-ImageHarmonization'],
@@ -234,14 +237,9 @@ describeHeavy(
       ['weihaox', 'awesome-neural-rendering'],
       ['yenchenlin', 'awesome-adversarial-machine-learning'],
     ])(
-      'DEFERRED (fine-tuning): %s/%s should become a registry',
+      'sparse-link registry %s/%s is recovered by a non-content anchor',
       async (owner, repo) => {
-        const { kind } = await classifyKind(
-          octokit,
-          owner,
-          repo,
-          REGISTRY_MIN_LINKS,
-        );
+        const { kind } = await classifyReal(octokit, members, owner, repo);
         expect(kind).toBe('registry');
       },
       TIMEOUT,

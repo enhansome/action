@@ -9,6 +9,7 @@
           "title": "Falsehoods about IBANs",
           "description": "International Bank Account Numbers are not international.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -24,6 +25,7 @@
           "title": "CLDR currency definitions",
           "description": "Currency validity date ranges overlap due to revolts, invasions, new constitutions, and slow planned adoption.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -39,6 +41,7 @@
           "title": "",
           "description": "A PHP 5.4+ tax management library.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -60,6 +63,7 @@
           "title": "Big List of Naughty Strings",
           "description": "A huge corpus of strings which have a high probability of causing issues when used as user-input data. A must have set of practical edge-cases to test your software against.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": null,
@@ -75,6 +79,7 @@
           "title": "i18n Testing Data",
           "description": "Compilation of real-word international and diverse name data for unit testing and QA.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -90,6 +95,7 @@
           "title": "Awesome Unicode",
           "description": "A curated list of delightful Unicode tidbits, packages and resources.",
           "children": [],
+          "kind_provenance": "name",
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -111,6 +117,7 @@
           "title": "Falsehoods about Phone Numbers",
           "description": "Covers phone numbers, their representation and meaning.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -126,6 +133,7 @@
           "title": "",
           "description": "Google's common Java, C++ and JavaScript library for parsing, formatting, and validating international phone numbers. Also available for C#, Objective-C, Python, Ruby and PHP.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -147,6 +155,7 @@
           "title": "",
           "description": "A PHP 5.4+ addressing library, powered by Google's dataset.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -162,6 +171,7 @@
           "title": "",
           "description": "Go library to validate and format addresses using Google's dataset.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -177,6 +187,7 @@
           "title": "",
           "description": "Python module to parse, normalize and render postal addresses.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -192,6 +203,7 @@
           "title": "",
           "description": "Google's common C++ and Java library for parsing, formatting, and validating international postal addresses.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -213,6 +225,7 @@
           "title": "Falsehoods about Quantum Technology",
           "description": "Common misconceptions about quantum technology and computers.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -228,6 +241,7 @@
           "title": "Falsehoods about Versions",
           "description": "Attributing an identity to a software release might be harder than thought.",
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -257,7 +271,8 @@
     "original_repository_sha": "deadbeef",
     "enhanced_repository": "enhansome/enhansome-falsehood",
     "enhanced_repository_description": "enhanced list",
-    "kind": "repository",
+    "kind": "registry",
+    "kind_provenance": "content",
     "title": "Awesome falsehood with stars"
   }
 }

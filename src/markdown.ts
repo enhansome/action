@@ -51,6 +51,14 @@ export interface SortOptions {
 // project. Every genuine GitHub node carries exactly one.
 export type Kind = 'registry' | 'repository';
 
+// Which signal decided the kind. The layers differ sharply in reliability
+// (membership/name/topic ~0% error; description/content ~30-40%), so emitting
+// the deciding layer lets downstream treat the soft-derived kinds as lower
+// confidence than the anchor-derived ones — turning the binary kind into a
+// graded signal at no extra fetch cost.
+export type KindProvenance =
+  'content' | 'default' | 'description' | 'membership' | 'name' | 'topic';
+
 // Field names are the *output* names (stars / last_commit), renamed from the
 // API fields (stargazers_count / pushed_at).
 export interface RepoInfo {
@@ -69,6 +77,9 @@ export interface JsonItem {
   children: JsonNode[];
   description: null | string;
   kind: Kind;
+  // How `kind` was derived. Absent only on dead-link items that defaulted to
+  // 'repository' without a classification call.
+  kind_provenance?: KindProvenance;
   // Discriminator present on every node so any consumer (TS or not) can switch
   // cleanly without inferring from `kind`/`repo_info` presence (a dead-link
   // item has `kind` but no repo_info).
@@ -98,6 +109,7 @@ interface JsonMetadata {
   enhanced_repository: null | string;
   enhanced_repository_description: null | string;
   kind: Kind;
+  kind_provenance: KindProvenance;
   last_updated: string;
   original_repository: string;
   original_repository_sha: null | string;
@@ -111,6 +123,7 @@ interface JsonSection {
 }
 
 export interface TargetData {
+  kindProvenanceMap: Map<string, KindProvenance>;
   kindsMap: Map<string, Kind>;
   repoInfoMap: Map<string, RepoInfoDetails>;
 }
@@ -147,10 +160,12 @@ export async function fetchTargetData(
   urls: Set<string>,
   entryUrls: Set<string>,
   token: string,
-  minEntries: number,
+  contentBackstopMin: number,
+  members: Set<string>,
 ): Promise<TargetData> {
   const repoInfoMap = new Map<string, RepoInfoDetails>();
   const kindsMap = new Map<string, Kind>();
+  const kindProvenanceMap = new Map<string, KindProvenance>();
 
   const octokit = makeOctokit(token);
 
@@ -162,7 +177,10 @@ export async function fetchTargetData(
   // racing a duplicate. Results are written under every alias URL below, so
   // consumers that look up by raw URL are unaffected.
   const repoInfoByRepo = new Map<string, Promise<RepoInfoDetails>>();
-  const kindByRepo = new Map<string, Promise<{ kind: Kind }>>();
+  const kindByRepo = new Map<
+    string,
+    Promise<{ kind: Kind; kindProvenance: KindProvenance }>
+  >();
 
   function repoInfoFor(owner: string, repo: string): Promise<RepoInfoDetails> {
     const key = `${owner}/${repo}`;
@@ -175,13 +193,36 @@ export async function fetchTargetData(
     return pending;
   }
 
-  function kindFor(owner: string, repo: string): Promise<{ kind: Kind }> {
+  // classifyKind needs the repo's description/topics (from repoInfo), so this
+  // reuses the memoized repoInfoFor and tolerates its failure (null repoInfo
+  // just skips the topic/description anchors). The README fetch only happens
+  // when no anchor fires — most targets are caught by an anchor and skip it.
+  function kindFor(
+    owner: string,
+    repo: string,
+  ): Promise<{ kind: Kind; kindProvenance: KindProvenance }> {
     const key = `${owner}/${repo}`;
     const existing = kindByRepo.get(key);
     if (existing) {
       return existing;
     }
-    const pending = classifyKind(octokit, owner, repo, minEntries);
+    const pending = (async () => {
+      // A failed /repos fetch (dead link) still lets the other anchors fire.
+      let info: null | RepoInfoDetails;
+      try {
+        info = await repoInfoFor(owner, repo);
+      } catch {
+        info = null;
+      }
+      return classifyKind(
+        octokit,
+        owner,
+        repo,
+        info,
+        members,
+        contentBackstopMin,
+      );
+    })();
     kindByRepo.set(key, pending);
     return pending;
   }
@@ -208,8 +249,12 @@ export async function fetchTargetData(
       }
       if (entryUrls.has(url)) {
         try {
-          const { kind } = await kindFor(details.owner, details.repo);
+          const { kind, kindProvenance } = await kindFor(
+            details.owner,
+            details.repo,
+          );
           kindsMap.set(url, kind);
+          kindProvenanceMap.set(url, kindProvenance);
         } catch (error) {
           core.warning(
             `Skipping kind for ${url}: ${formatRequestError(error)}`,
@@ -224,7 +269,7 @@ export async function fetchTargetData(
   core.info(
     `Target fetch: ${repoInfoMap.size}/${urls.size} repo-info ok, ${kindsMap.size}/${entryUrls.size} kinds ok in ${Date.now() - fetchStart}ms (concurrency ${FETCH_CONCURRENCY}).`,
   );
-  return { kindsMap, repoInfoMap };
+  return { kindProvenanceMap, kindsMap, repoInfoMap };
 }
 
 export async function processMarkdownContent(
@@ -250,18 +295,29 @@ export async function processMarkdownContent(
 
   // Classify the source from the pristine parse — *before* processTree sorts
   // the tree in place — so the source's kind can never drift from how another
-  // mirror would classify this very repo from its raw README.
-  const sourceKind: Kind =
-    countResourceLinks(tree) >= REGISTRY_MIN_LINKS ? 'registry' : 'repository';
+  // mirror would classify this very repo from its raw README. The source is
+  // always Markdown, so it uses the mdast counter against the source threshold;
+  // its provenance is 'content' (or 'default' if it falls below).
+  const isSourceRegistry = countResourceLinks(tree) >= REGISTRY_MIN_LINKS;
+  const sourceKind: Kind = isSourceRegistry ? 'registry' : 'repository';
+  const sourceKindProvenance: KindProvenance = isSourceRegistry
+    ? 'content'
+    : 'default';
 
   const githubUrls = collectGitHubLinks(tree);
   const entryUrls = collectEntryGitHubUrls(tree);
 
-  const { kindsMap, repoInfoMap } = await fetchTargetData(
+  // Membership is fetched once for the whole run (the set is shared by every
+  // target) on the same throttled client; it degrades to empty on failure.
+  const octokit = makeOctokit(token);
+  const members = await fetchAwesomeMembers(octokit);
+
+  const { kindProvenanceMap, kindsMap, repoInfoMap } = await fetchTargetData(
     githubUrls,
     entryUrls,
     token,
-    REGISTRY_MIN_LINKS,
+    REGISTRY_CONTENT_BACKSTOP_LINKS,
+    members,
   );
 
   // The title derives from the *source* repository (originalRepository), never
@@ -270,7 +326,14 @@ export async function processMarkdownContent(
     sections,
     title: rawTitle,
     titleHeadingIndex,
-  } = processTree(tree, repoInfoMap, kindsMap, sortOptions, originalRepository);
+  } = processTree(
+    tree,
+    repoInfoMap,
+    kindsMap,
+    kindProvenanceMap,
+    sortOptions,
+    originalRepository,
+  );
 
   // Single source of truth for the document title: brand it once and use the
   // same value for the markdown H1 and metadata.title (parity).
@@ -289,6 +352,7 @@ export async function processMarkdownContent(
       enhanced_repository_description:
         (enhancedRepositoryDescription?.trim() ?? '') || null,
       kind: sourceKind,
+      kind_provenance: sourceKindProvenance,
       title,
     },
   };
@@ -482,31 +546,131 @@ function collectEntryGitHubUrls(tree: Root): Set<string> {
   return urls;
 }
 
-// Calibrated against real READMEs on the outbound-link counter: concrete
-// projects top out at 35 (chalk/chalk) and 17 (liuliu/ccv); the smallest
-// registries start at 88 (vsitzmann/awesome-implicit-representations). 50 sits
-// between them with double-digit margin on both sides. Hardcoded (not an action
-// input) so the emitted kind is trustworthy standalone.
+// SOURCE-README threshold: the source is always Markdown (the enhancer holds it
+// as a parsed tree), and is almost always an awesome-list by construction, so a
+// modest outbound-link count separates it from a project README. Hardcoded, not
+// an action input, so the emitted kind is trustworthy standalone.
 export const REGISTRY_MIN_LINKS = 50;
 
+// TARGET content backstop. Popular software has link-heavy READMEs
+// (nodejs/node ~662 anchors, webpack ~403), so a low threshold flips real
+// projects. The precision anchors (membership/topic/name/description) catch the
+// bulk of registries at ~0 false-positives; content is only the LAST-resort
+// backstop for dense convention-free lists no anchor signals (e.g. a CV list
+// titled "3D-Machine-Learning" with 800 anchors). 700 sits above virtually all
+// software (clean-project p90 ~106) while still catching those dense
+// registries; marked provenance='content' so downstream treats it as soft.
+export const REGISTRY_CONTENT_BACKSTOP_LINKS = 700;
+
+// The awesome-list naming convention, as a word-boundary token so it does NOT
+// fire on `awesome_print` (underscore is a word char, so no boundary lies
+// between `awesome` and `_print`). The `\bawsome\b` alternation covers the
+// common misspelling (e.g. HuaizhengZhang/Awsome-Deep-Learning-for-Video-Analysis).
+const AWESOME_NAME_PATTERN = /\bawesome\b|\bawsome\b/i;
+
+// Tight, list-proximate phrasing. Bare `collection of` / `curated` / `awesome`
+// are deliberately excluded: they flip popular real projects (gitignore,
+// PowerToys, iptv, SecLists, nerd-fonts via "Font Awesome") for ~0 recall gain.
+const REGISTRY_DESCRIPTION_PATTERN =
+  /(curated (?:list|collection)|a list of|collective list|cheat\s?sheet)/i;
+
+// The canonical "list of awesome-lists". Membership is FP-free in practice and
+// catches convention-free registries (papers-we-love, free-programming-books)
+// that no other anchor signals. Fetched once per run; a failure degrades to an
+// empty set (the layer is skipped) rather than failing classification.
+const AWESOME_REGISTRY = { owner: 'sindresorhus', repo: 'awesome' };
+
+// Parses markdown links to github.com/<owner>/<repo> out of the sindresorhus/awesome
+// README. Scoped to markdown `[..](url)` links only: that README opens with HTML
+// sponsor badges (<a href>), and sweeping those would import sponsor/author
+// links (e.g. sindresorhus/sponsors) and break the layer's 0%-FP property.
+// GitHub path prefixes that are not repositories, so a link like
+// github.com/topics/foo must not become a "member".
+const NON_REPO_OWNERS = new Set([
+  'blog',
+  'features',
+  'orgs',
+  'search',
+  'settings',
+  'topics',
+]);
+
+export function parseAwesomeMembers(markdown: string): Set<string> {
+  const members = new Set<string>();
+  const token = '[A-Za-z0-9](?:[A-Za-z0-9._-]*[A-Za-z0-9])?';
+  for (const m of markdown.matchAll(
+    new RegExp(`\\([^)]*github\\.com/(${token})/(${token})[^)]*\\)`, 'g'),
+  )) {
+    const owner = m[1];
+    let repo = m[2];
+    if (owner === AWESOME_REGISTRY.owner && repo === AWESOME_REGISTRY.repo) {
+      continue;
+    }
+    if (NON_REPO_OWNERS.has(owner)) {
+      continue;
+    }
+    if (repo.endsWith('.git')) {
+      repo = repo.slice(0, -4);
+    }
+    members.add(`${owner.toLowerCase()}/${repo.toLowerCase()}`);
+  }
+  return members;
+}
+
+export async function fetchAwesomeMembers(
+  octokit: GithubClient,
+): Promise<Set<string>> {
+  try {
+    const markdown = await getReadme(
+      octokit,
+      AWESOME_REGISTRY.owner,
+      AWESOME_REGISTRY.repo,
+      'raw',
+    );
+    return parseAwesomeMembers(markdown);
+  } catch (error) {
+    core.warning(
+      `sindresorhus/awesome membership unavailable; skipping that layer: ${formatRequestError(error)}`,
+    );
+    return new Set();
+  }
+}
+
 /**
- * README fetch failures propagate: `getReadme` throws and this does not swallow
- * it. Counts the target's RENDERED HTML so a non-Markdown README (reST,
- * AsciiDoc) is judged by the links a reader sees, not by what a Markdown parser
- * can recover from a format it does not understand. The source is counted from
- * Markdown (`countResourceLinks`) because it is always Markdown; both measure
- * outbound links against the same `REGISTRY_MIN_LINKS`. Returns only `kind`.
+ * Layered, precision-first. The anchors (membership/topic/name/description)
+ * are checked first — they are ~0% false-positive and need no README fetch, so a
+ * target they catch never pays for one. Only when every anchor misses do we
+ * fetch the rendered HTML and fall back to the high content threshold. Returns
+ * both `kind` and `kind_provenance` (the deciding layer) so downstream can grade
+ * confidence. README fetch failures propagate (fetchTargetData catches them and
+ * defaults the item to repository/default).
  */
 export async function classifyKind(
   octokit: GithubClient,
   owner: string,
   repo: string,
-  minEntries: number,
-): Promise<{ kind: Kind }> {
+  repoInfo: null | RepoInfoDetails,
+  members: Set<string>,
+  backstopMin: number,
+): Promise<{ kind: Kind; kindProvenance: KindProvenance }> {
+  if (members.has(`${owner.toLowerCase()}/${repo.toLowerCase()}`)) {
+    return { kind: 'registry', kindProvenance: 'membership' };
+  }
+  if (repoInfo?.topics.includes('awesome-list')) {
+    return { kind: 'registry', kindProvenance: 'topic' };
+  }
+  if (AWESOME_NAME_PATTERN.test(repo)) {
+    return { kind: 'registry', kindProvenance: 'name' };
+  }
+  const description = repoInfo?.description ?? '';
+  if (description && REGISTRY_DESCRIPTION_PATTERN.test(description)) {
+    return { kind: 'registry', kindProvenance: 'description' };
+  }
   const html = await getReadme(octokit, owner, repo, 'html');
-  return {
-    kind: countOutboundAnchors(html) >= minEntries ? 'registry' : 'repository',
-  };
+  if (countOutboundAnchors(html) >= backstopMin) {
+    return { kind: 'registry', kindProvenance: 'content' };
+  }
+  return { kind: 'repository', kindProvenance: 'default' };
 }
 
 function fixRelativeLinks(tree: Root, relativeLinkPrefix: string) {
@@ -586,6 +750,7 @@ function processListRecursively(
   listNode: List,
   repoInfoMap: Map<string, RepoInfoDetails>,
   kindsMap: Map<string, Kind>,
+  kindProvenanceMap: Map<string, KindProvenance>,
   sortOptions: SortOptions,
   isNested = false,
 ): JsonNode[] {
@@ -623,6 +788,7 @@ function processListRecursively(
         nestedList,
         repoInfoMap,
         kindsMap,
+        kindProvenanceMap,
         sortOptions,
         true,
       ),
@@ -657,9 +823,10 @@ function processListRecursively(
     let jsonData: JsonNode | null = null;
     if (githubUrl) {
       // A missing kind means the README was unreadable (dead link) and was
-      // skipped. Default to 'repository' so a dead link never drops an item; the
-      // webapp membership backstop recovers any registry we misclassified.
+      // skipped. Default to 'repository' (no provenance) so a dead link never
+      // drops an item.
       const kind = kindsMap.get(githubUrl) ?? 'repository';
+      const kindProvenance = kindProvenanceMap.get(githubUrl);
       const item: JsonItem = {
         node_type: 'item',
         kind,
@@ -667,6 +834,9 @@ function processListRecursively(
         description: description || null,
         children: childrenJson,
       };
+      if (kindProvenance) {
+        item.kind_provenance = kindProvenance;
+      }
       if (repoInfo) {
         item.repo_info = {
           archived: repoInfo.archived,
@@ -812,6 +982,7 @@ function processTree(
   tree: Root,
   repoInfoMap: Map<string, RepoInfoDetails>,
   kindsMap: Map<string, Kind>,
+  kindProvenanceMap: Map<string, KindProvenance>,
   sortOptions: SortOptions,
   originalRepository?: string,
 ): { sections: JsonSection[]; title: string; titleHeadingIndex: number } {
@@ -862,6 +1033,7 @@ function processTree(
           node,
           repoInfoMap,
           kindsMap,
+          kindProvenanceMap,
           sortOptions,
         );
         if (items.length > 0) {
@@ -873,7 +1045,13 @@ function processTree(
     } else if (node.type === 'list') {
       // No active section: not part of any JSON section, but still sort its AST
       // so the rendered markdown matches.
-      processListRecursively(node, repoInfoMap, kindsMap, sortOptions);
+      processListRecursively(
+        node,
+        repoInfoMap,
+        kindsMap,
+        kindProvenanceMap,
+        sortOptions,
+      );
     }
   }
 

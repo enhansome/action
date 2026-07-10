@@ -9,6 +9,7 @@
           "title": "awesome-pcaptools",
           "description": "Useful in network traffic analysis.",
           "children": [],
+          "kind_provenance": "name",
           "repo_info": {
             "archived": true,
             "language": "Go",
@@ -24,6 +25,7 @@
           "title": "awesome-malware-analysis",
           "description": "Some overlap here for artifact analysis.",
           "children": [],
+          "kind_provenance": "name",
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -50,6 +52,7 @@
               "title": "MongoDB-HoneyProxy",
               "description": "MongoDB honeypot proxy.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "JavaScript",
@@ -65,6 +68,7 @@
               "title": "sticky_elephant",
               "description": "Medium interaction postgresql honeypot.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": null,
@@ -80,6 +84,7 @@
               "title": "pghoney",
               "description": "Low-interaction Postgres Honeypot.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Java",
@@ -95,6 +100,7 @@
               "title": "NoSQLpot",
               "description": "Honeypot framework built on a NoSQL-style database.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Java",
@@ -110,6 +116,7 @@
               "title": "RedisHoneyPot",
               "description": "High Interaction Honeypot Solution for Redis protocol.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Java",
@@ -125,6 +132,7 @@
               "title": "mysql-honeypotd",
               "description": "Low interaction MySQL honeypot written in C.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Python",
@@ -140,6 +148,7 @@
               "title": "MysqlPot",
               "description": "MySQL honeypot, still very early stage.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Go",
@@ -155,6 +164,7 @@
               "title": "Elastic honey",
               "description": "Simple Elasticsearch Honeypot.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Java",
@@ -170,6 +180,7 @@
               "title": "ESPot",
               "description": "Elasticsearch honeypot written in NodeJS, to capture every attempts to exploit CVE-2014-3120.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Python",
@@ -185,6 +196,7 @@
               "title": "Delilah",
               "description": "Elasticsearch Honeypot written in Python (originally from Novetta).",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Shell",
@@ -207,6 +219,7 @@
               "title": "modpot",
               "description": "Modpot is a modular web application honeypot framework and management application written in Golang and making use of gin framework.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": null,
@@ -222,6 +235,7 @@
               "title": "owa-honeypot",
               "description": "A basic flask based Outlook Web Honey pot.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Ruby",
@@ -237,6 +251,7 @@
               "title": "Lophiid",
               "description": "Distributed web application honeypot to interact with large scale exploitation attempts.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "JavaScript",
@@ -252,6 +267,7 @@
               "title": "Laravel Application Honeypot",
               "description": "Simple spam prevention package for Laravel applications.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Rust",
@@ -267,6 +283,7 @@
               "title": "Cloud Active Defense",
               "description": "Cloud active defense lets you deploy decoys right into your cloud applications, putting adversaries into a dilemma: to hack or not to hack?",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "C++",
@@ -282,6 +299,7 @@
               "title": "PasitheaHoneypot",
               "description": "RestAPI honeypot.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": null,
@@ -297,6 +315,7 @@
               "title": "stack-honeypot",
               "description": "Inserts a trap for spam bots into responses.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": true,
                 "language": "TypeScript",
@@ -312,6 +331,7 @@
               "title": "drupo",
               "description": "Drupal Honeypot.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Java",
@@ -327,6 +347,7 @@
               "title": "honeyup",
               "description": "An uploader honeypot designed to look like poor website security.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Ruby",
@@ -342,6 +363,7 @@
               "title": "smart-honeypot",
               "description": "PHP Script demonstrating a smart honey pot.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": true,
                 "language": "Ruby",
@@ -357,6 +379,7 @@
               "title": "honeyhttpd",
               "description": "Python-based web server honeypot builder.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Rust",
@@ -372,6 +395,7 @@
               "title": "tomcat-manager-honeypot",
               "description": "Honeypot that mimics Tomcat manager endpoints. Logs requests and saves attacker's WAR file for later study.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Rust",
@@ -387,6 +411,7 @@
               "title": "EoHoneypotBundle",
               "description": "Honeypot type for Symfony2 forms.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Java",
@@ -402,6 +427,7 @@
               "title": "WebTrap",
               "description": "Designed to create deceptive webpages to deceive and redirect attackers away from real websites.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Rust",
@@ -417,6 +443,7 @@
               "title": "django-admin-honeypot",
               "description": "Fake Django admin login screen to notify admins of attempted unauthorized access.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Shell",
@@ -432,6 +459,7 @@
               "title": "phpmyadmin_honeypot",
               "description": "Simple and effective phpMyAdmin honeypot.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Shell",
@@ -447,6 +475,7 @@
               "title": "Glastopf",
               "description": "Web Application Honeypot.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": null,
@@ -462,6 +491,7 @@
               "title": "galah",
               "description": "an LLM-powered web honeypot using the OpenAI API.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "C++",
@@ -477,6 +507,7 @@
               "title": "Nodepot",
               "description": "NodeJS web application honeypot.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Go",
@@ -492,6 +523,7 @@
               "title": "HellPot",
               "description": "Honeypot that tries to crash the bots and clients that visit it's location.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Shell",
@@ -507,6 +539,7 @@
               "title": "basic-auth-pot (bap)",
               "description": "HTTP Basic Authentication honeypot.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "JavaScript",
@@ -522,6 +555,7 @@
               "title": "bwpot",
               "description": "Breakable Web applications honeyPot.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Shell",
@@ -537,6 +571,7 @@
               "title": "StrutsHoneypot",
               "description": "Struts Apache 2 based honeypot as well as a detection module for Apache 2 servers.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Go",
@@ -552,6 +587,7 @@
               "title": "Servletpot",
               "description": "Web application Honeypot.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": null,
@@ -567,6 +603,7 @@
               "title": "shockpot",
               "description": "WebApp Honeypot for detecting Shell Shock exploit attempts.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "C++",
@@ -582,6 +619,7 @@
               "title": "Express honeypot",
               "description": "RFI & LFI honeypot using nodeJS and express.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Java",
@@ -597,6 +635,7 @@
               "title": "Python-Honeypot",
               "description": "OWASP Honeypot, Automated Deception Framework.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Python",
@@ -617,6 +656,7 @@
                   "title": "Snare",
                   "description": "Super Next generation Advanced Reactive honeypot.",
                   "children": [],
+                  "kind_provenance": "default",
                   "repo_info": {
                     "archived": false,
                     "language": "Shell",
@@ -632,6 +672,7 @@
                   "title": "Tanner",
                   "description": "Evaluating SNARE events.",
                   "children": [],
+                  "kind_provenance": "default",
                   "repo_info": {
                     "archived": false,
                     "language": null,
@@ -654,6 +695,7 @@
                   "title": "wp-smart-honeypot",
                   "description": "WordPress plugin to reduce comment spam with a smarter honeypot.",
                   "children": [],
+                  "kind_provenance": "default",
                   "repo_info": {
                     "archived": false,
                     "language": "Ruby",
@@ -669,6 +711,7 @@
                   "title": "wordpot",
                   "description": "WordPress Honeypot.",
                   "children": [],
+                  "kind_provenance": "default",
                   "repo_info": {
                     "archived": false,
                     "language": "TypeScript",
@@ -684,6 +727,7 @@
                   "title": "HoneyPress",
                   "description": "Python based WordPress honeypot in a Docker container.",
                   "children": [],
+                  "kind_provenance": "default",
                   "repo_info": {
                     "archived": false,
                     "language": "Rust",
@@ -699,6 +743,7 @@
                   "title": "HonnyPotter",
                   "description": "WordPress login honeypot for collection and analysis of failed login attempts.",
                   "children": [],
+                  "kind_provenance": "default",
                   "repo_info": {
                     "archived": false,
                     "language": "TypeScript",
@@ -723,6 +768,7 @@
               "title": "Honeygrove",
               "description": "Multi-purpose modular honeypot based on Twisted.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Python",
@@ -738,6 +784,7 @@
               "title": "dhp",
               "description": "Simple Docker Honeypot server emulating small snippets of the Docker HTTP API.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Shell",
@@ -753,6 +800,7 @@
               "title": "Honeyprint",
               "description": "Printer honeypot.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "JavaScript",
@@ -768,6 +816,7 @@
               "title": "MICROS honeypot",
               "description": "Low interaction honeypot to detect CVE-2018-2636 in the Oracle Hospitality Simphony component of Oracle Hospitality Applications (MICROS).",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "JavaScript",
@@ -783,6 +832,7 @@
               "title": "Helix",
               "description": "K8s API Honeypot with Active Defense Capabilities.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "TypeScript",
@@ -798,6 +848,7 @@
               "title": "ddospot",
               "description": "NTP, DNS, SSDP, Chargen and generic UDP-based amplification DDoS honeypot.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": null,
@@ -813,6 +864,7 @@
               "title": "pyrdp",
               "description": "RDP man-in-the-middle and library for Python 3 with the ability to watch connections live or after the fact.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Go",
@@ -828,6 +880,7 @@
               "title": "rdppot",
               "description": "RDP honeypot",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Python",
@@ -843,6 +896,7 @@
               "title": "troje",
               "description": "Honeypot that runs each connection with the service within a separate LXC container.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": true,
                 "language": "Java",
@@ -858,6 +912,7 @@
               "title": "HoneyPy",
               "description": "Low interaction honeypot.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Ruby",
@@ -873,6 +928,7 @@
               "title": "honeyntp",
               "description": "NTP logger/honeypot.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": null,
@@ -888,6 +944,7 @@
               "title": "WhiteFace Honeypot",
               "description": "Twisted based honeypot for WhiteFace.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "JavaScript",
@@ -903,6 +960,7 @@
               "title": "honeypot-camera",
               "description": "Observation camera honeypot.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Go",
@@ -918,6 +976,7 @@
               "title": "dionaea",
               "description": "Home of the dionaea honeypot.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Shell",
@@ -933,6 +992,7 @@
               "title": "WebLogic honeypot",
               "description": "Low interaction honeypot to detect CVE-2017-10271 in the Oracle WebLogic Server component of Oracle Fusion Middleware.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Rust",
@@ -948,6 +1008,7 @@
               "title": "Ensnare",
               "description": "Easy to deploy Ruby honeypot.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Python",
@@ -963,6 +1024,7 @@
               "title": "RDPy",
               "description": "Microsoft Remote Desktop Protocol (RDP) honeypot implemented in Python.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Java",
@@ -978,6 +1040,7 @@
               "title": "node-ftp-honeypot",
               "description": "FTP server honeypot in JS.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "C++",
@@ -993,6 +1056,7 @@
               "title": "honeypot-ftp",
               "description": "FTP Honeypot.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "C++",
@@ -1008,6 +1072,7 @@
               "title": "honeypots",
               "description": "25 different honeypots in a single pypi package! (dns, ftp, httpproxy, http, https, imap, mysql, pop3, postgres, redis, smb, smtp, socks5, ssh, telnet, vnc, mssql, elastic, ldap, ntp, memcache, snmp, oracle, sip and irc).",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Shell",
@@ -1023,6 +1088,7 @@
               "title": "honeycomb_plugins",
               "description": "Plugin repository for Honeycomb, the honeypot framework by Cymmetria.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "TypeScript",
@@ -1038,6 +1104,7 @@
               "title": "ADBHoney",
               "description": "Low interaction honeypot that simulates an Android device running Android Debug Bridge (ADB) server process.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Shell",
@@ -1053,6 +1120,7 @@
               "title": "honeytrap",
               "description": "Advanced Honeypot framework written in Go that can be connected with other honeypot software.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Shell",
@@ -1068,6 +1136,7 @@
               "title": "Trapster Commmunity",
               "description": "Modural and easy to install Python Honeypot, with comprehensive alerting",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "TypeScript",
@@ -1083,6 +1152,7 @@
               "title": "GenAIPot",
               "description": "The first A.I based open source honeypot. supports POP3 and SMTP protocols and generates content using A.I based on user description.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Shell",
@@ -1098,6 +1168,7 @@
               "title": "SMB Honeypot",
               "description": "High interaction SMB service honeypot capable of capturing wannacry-like Malware.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Python",
@@ -1113,6 +1184,7 @@
               "title": "Honeyport",
               "description": "Simple honeyport written in Bash and Python.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Go",
@@ -1128,6 +1200,7 @@
               "title": "Tom's Honeypot",
               "description": "Low interaction Python honeypot.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": true,
                 "language": "JavaScript",
@@ -1143,6 +1216,7 @@
               "title": "AMTHoneypot",
               "description": "Honeypot for Intel's AMT Firmware Vulnerability CVE-2017-5689.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Rust",
@@ -1158,6 +1232,7 @@
               "title": "DolosHoneypot",
               "description": "SDN (software defined networking) honeypot.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Python",
@@ -1180,6 +1255,7 @@
               "title": "DemonHunter",
               "description": "Low interaction honeypot server.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Shell",
@@ -1202,6 +1278,7 @@
               "title": "honeydet",
               "description": "Signature based honeypot detector tool written in Golang",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "TypeScript",
@@ -1217,6 +1294,7 @@
               "title": "kippo_detect",
               "description": "Offensive component that detects the presence of the kippo honeypot.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "JavaScript",
@@ -1232,6 +1310,7 @@
               "title": "canarytokendetector",
               "description": "Tool for detection and nullification of Thinkst CanaryTokens",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Ruby",
@@ -1254,6 +1333,7 @@
               "title": "GasPot",
               "description": "Veeder Root Gaurdian AST, common in the oil and gas industry.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Go",
@@ -1269,6 +1349,7 @@
               "title": "gridpot",
               "description": "Open source tools for realistic-behaving electric grid honeynets.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "JavaScript",
@@ -1284,6 +1365,7 @@
               "title": "Conpot",
               "description": "ICS/SCADA honeypot.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Java",
@@ -1306,6 +1388,7 @@
               "title": "OpenFlow Honeypot (OFPot)",
               "description": "Redirects traffic for unused IPs to a honeypot, built on POX.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "TypeScript",
@@ -1321,6 +1404,7 @@
               "title": "dicompot",
               "description": "DICOM Honeypot.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": null,
@@ -1336,6 +1420,7 @@
               "title": "CitrixHoneypot",
               "description": "Detect and log CVE-2019-19781 scan and exploitation attempts.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Java",
@@ -1351,6 +1436,7 @@
               "title": "Damn Simple Honeypot (DSHP)",
               "description": "Honeypot framework with pluggable handlers.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Ruby",
@@ -1366,6 +1452,7 @@
               "title": "NOVA",
               "description": "Uses honeypots as detectors, looks like a complete system.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Go",
@@ -1381,6 +1468,7 @@
               "title": "medpot",
               "description": "HL7 / FHIR honeypot.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Shell",
@@ -1396,6 +1484,7 @@
               "title": "OpenCanary",
               "description": "Modular and decentralised honeypot daemon that runs several canary versions of services that alerts when a service is (ab)used.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "C++",
@@ -1411,6 +1500,7 @@
               "title": "Masscanned",
               "description": "Let's be scanned. A low-interaction honeypot focused on network scanners and bots. It integrates very well with IVRE to build a self-hosted alternative to GreyNoise.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Python",
@@ -1426,6 +1516,7 @@
               "title": "ciscoasa_honeypot",
               "description": "A low interaction honeypot for the Cisco ASA component capable of detecting CVE-2018-0101, a DoS and remote code execution vulnerability.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "TypeScript",
@@ -1441,6 +1532,7 @@
               "title": "miniprint",
               "description": "A medium interaction printer honeypot.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "C++",
@@ -1456,6 +1548,7 @@
               "title": "Log4Pot",
               "description": "A honeypot for the Log4Shell vulnerability (CVE-2021-44228).",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Shell",
@@ -1478,6 +1571,7 @@
               "title": "Hale",
               "description": "Botnet command and control monitor.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "JavaScript",
@@ -1500,6 +1594,7 @@
               "title": "ipv6-attack-detector",
               "description": "Google Summer of Code 2012 project, supported by The Honeynet Project organization.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Rust",
@@ -1522,6 +1617,7 @@
               "title": "Modern Honey Network",
               "description": "Multi-snort and honeypot sensor management, uses a network of VMs, small footprint SNORT installations, stealthy dionaeas, and a centralized server for management.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "C++",
@@ -1544,6 +1640,7 @@
               "title": "WAPot",
               "description": "Honeypot that can be used to observe traffic directed at home routers.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "JavaScript",
@@ -1559,6 +1656,7 @@
               "title": "Honeypot-32764",
               "description": "Honeypot for router backdoor (TCP 32764).",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Rust",
@@ -1581,6 +1679,7 @@
               "title": "Fibratus",
               "description": "Tool for exploration and tracing of the Windows kernel.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": true,
                 "language": "Java",
@@ -1603,6 +1702,7 @@
               "title": "Ghost-usb",
               "description": "Honeypot for malware that propagates via USB storage devices.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Ruby",
@@ -1625,6 +1725,7 @@
               "title": "Passive Network Audit Framework (pnaf)",
               "description": "Framework that combines multiple passive and automated analysis techniques in order to provide a security assessment of network platforms.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Shell",
@@ -1647,6 +1748,7 @@
               "title": "VMCloak",
               "description": "Automated Virtual Machine Generation and Cloaking for Cuckoo Sandbox.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Ruby",
@@ -1662,6 +1764,7 @@
               "title": "Antivmdetect",
               "description": "Script to create templates to use with VirtualBox to make VM detection harder.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Shell",
@@ -1684,6 +1787,7 @@
               "title": "Hexgolems - Schem Debugger Frontend",
               "description": "Debugger frontend.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Java",
@@ -1699,6 +1803,7 @@
               "title": "Hexgolems - Pint Debugger Backend",
               "description": "Debugger backend and LUA wrapper for PIN.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "C++",
@@ -1721,6 +1826,7 @@
               "title": "Androguard",
               "description": "Reverse engineering, Malware and goodware analysis of Android applications and more.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "TypeScript",
@@ -1736,6 +1842,7 @@
               "title": "APKinspector",
               "description": "Powerful GUI tool for analysts to analyze the Android applications.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Python",
@@ -1758,6 +1865,7 @@
               "title": "T-Pot",
               "description": "All in one honeypot appliance from telecom provider T-Mobile",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": true,
                 "language": "Python",
@@ -1773,6 +1881,7 @@
               "title": "beelzebub",
               "description": "A secure honeypot framework, extremely easy to configure by yaml 🚀",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Go",
@@ -1795,6 +1904,7 @@
               "title": "SIREN",
               "description": "Semi-Intelligent HoneyPot Network - HoneyNet Intelligent Virtual Environment.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "TypeScript",
@@ -1810,6 +1920,7 @@
               "title": "arctic-swallow",
               "description": "Low interaction honeypot.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Ruby",
@@ -1825,6 +1936,7 @@
               "title": "HoneyWRT",
               "description": "Low interaction Python honeypot designed to mimic services or ports that might get targeted by attackers.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Rust",
@@ -1840,6 +1952,7 @@
               "title": "Artillery",
               "description": "Open-source blue team tool designed to protect Linux and Windows operating systems through multiple methods.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "TypeScript",
@@ -1855,6 +1968,7 @@
               "title": "portlurker",
               "description": "Port listener in Rust with protocol guessing and safe string display.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "JavaScript",
@@ -1870,6 +1984,7 @@
               "title": "vnclowpot",
               "description": "Low interaction VNC honeypot.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "TypeScript",
@@ -1885,6 +2000,7 @@
               "title": "slipm-honeypot",
               "description": "Simple low-interaction port monitoring honeypot.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Rust",
@@ -1900,6 +2016,7 @@
               "title": "go-emulators",
               "description": "Honeypot Golang emulators.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Shell",
@@ -1915,6 +2032,7 @@
               "title": "honeytrap",
               "description": "Low-interaction honeypot and network security tool written to catch attacks against TCP and UDP services.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Shell",
@@ -1930,6 +2048,7 @@
               "title": "telnet-iot-honeypot",
               "description": "Python telnet honeypot for catching botnet binaries.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Shell",
@@ -1945,6 +2064,7 @@
               "title": "Honeyd",
               "description": "See honeyd tools.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Shell",
@@ -1960,6 +2080,7 @@
               "title": "potd",
               "description": "Highly scalable low- to medium-interaction SSH/TCP honeypot designed for OpenWrt/IoT devices leveraging several Linux kernel features, such as namespaces, seccomp and thread capabilities.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "C++",
@@ -1975,6 +2096,7 @@
               "title": "Yet Another Fake Honeypot (YAFH)",
               "description": "Simple honeypot written in Go.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Go",
@@ -1990,6 +2112,7 @@
               "title": "go-HoneyPot",
               "description": "Honeypot server written in Go.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Ruby",
@@ -2005,6 +2128,7 @@
               "title": "TelnetHoney",
               "description": "Simple telnet honeypot.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": null,
@@ -2020,6 +2144,7 @@
               "title": "Bifrozt",
               "description": "Automatic deploy bifrozt with ansible.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "C++",
@@ -2035,6 +2160,7 @@
               "title": "honeymail",
               "description": "SMTP honeypot written in Golang.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Ruby",
@@ -2050,6 +2176,7 @@
               "title": "imap-honey",
               "description": "IMAP honeypot written in Golang.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Ruby",
@@ -2065,6 +2192,7 @@
               "title": "Hontel",
               "description": "Telnet Honeypot.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": null,
@@ -2080,6 +2208,7 @@
               "title": "telnetlogger",
               "description": "Telnet honeypot designed to track the Mirai botnet.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Rust",
@@ -2095,6 +2224,7 @@
               "title": "MTPot",
               "description": "Open Source Telnet Honeypot, focused on Mirai malware.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Ruby",
@@ -2110,6 +2240,7 @@
               "title": "Heralding",
               "description": "Credentials catching honeypot.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Python",
@@ -2125,6 +2256,7 @@
               "title": "fapro",
               "description": "Fake Protocol Server.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Python",
@@ -2140,6 +2272,7 @@
               "title": "UDPot Honeypot",
               "description": "Simple UDP/DNS honeypot scripts.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": null,
@@ -2155,6 +2288,7 @@
               "title": "glutton",
               "description": "All eating honeypot.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Go",
@@ -2177,6 +2311,7 @@
               "title": "HPFeeds",
               "description": "Lightweight authenticated publish-subscribe protocol.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Rust",
@@ -2199,6 +2334,7 @@
               "title": "honeyfs",
               "description": "Tool to create artificial file systems for medium/high interaction honeypots.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Shell",
@@ -2221,6 +2357,7 @@
               "title": "YALIH (Yet Another Low Interaction Honeyclient)",
               "description": "Low-interaction client honeypot designed to detect malicious websites through signature, anomaly, and pattern matching techniques.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Java",
@@ -2236,6 +2373,7 @@
               "title": "PhoneyC",
               "description": "Python honeyclient (later replaced by Thug).",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Rust",
@@ -2251,6 +2389,7 @@
               "title": "Pwnypot",
               "description": "High Interaction Client Honeypot.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": null,
@@ -2266,6 +2405,7 @@
               "title": "HoneySpider Network",
               "description": "Highly-scalable system integrating multiple client honeypots to detect malicious websites.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Ruby",
@@ -2281,6 +2421,7 @@
               "title": "Capture-HPC-NG",
               "description": null,
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Python",
@@ -2296,6 +2437,7 @@
               "title": "Jsunpack-n",
               "description": null,
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Ruby",
@@ -2318,6 +2460,7 @@
               "title": "IMHoneypot",
               "description": null,
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "C++",
@@ -2340,6 +2483,7 @@
               "title": "peepdf",
               "description": "Powerful Python tool to analyze PDF documents.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Java",
@@ -2362,6 +2506,7 @@
               "title": "endlessh",
               "description": "SSH tarpit that slowly sends an endless banner. (docker image)",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Ruby",
@@ -2377,6 +2522,7 @@
               "title": "cowrie2neo",
               "description": "Parse cowrie honeypot logs into a neo4j database.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "TypeScript",
@@ -2392,6 +2538,7 @@
               "title": "honeypot.go",
               "description": "SSH Honeypot written in Go.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Ruby",
@@ -2407,6 +2554,7 @@
               "title": "ssh-honeypot",
               "description": "Modified version of the OpenSSH deamon that forwards commands to Cowrie where all commands are interpreted and returned.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Python",
@@ -2422,6 +2570,7 @@
               "title": "twisted-honeypots",
               "description": "SSH, FTP and Telnet honeypots based on Twisted.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Ruby",
@@ -2437,6 +2586,7 @@
               "title": "HonSSH",
               "description": "Logs all SSH communications between a client and server.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "C++",
@@ -2452,6 +2602,7 @@
               "title": "Malbait",
               "description": "Simple TCP/UDP honeypot implemented in Perl.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Rust",
@@ -2467,6 +2618,7 @@
               "title": "DShield docker",
               "description": "Docker container running cowrie with DShield output enabled.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Shell",
@@ -2482,6 +2634,7 @@
               "title": "Cowrie",
               "description": "Cowrie SSH Honeypot (based on kippo).",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": true,
                 "language": "TypeScript",
@@ -2497,6 +2650,7 @@
               "title": "Blacknet",
               "description": "Multi-head SSH honeypot system.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Shell",
@@ -2512,6 +2666,7 @@
               "title": "go-sshoney",
               "description": "SSH Honeypot.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "TypeScript",
@@ -2527,6 +2682,7 @@
               "title": "HUDINX",
               "description": "Tiny interaction SSH honeypot engineered in Python to log brute force attacks and, most importantly, the entire shell interaction performed by the attacker.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Go",
@@ -2542,6 +2698,7 @@
               "title": "Longitudinal Analysis of SSH Cowrie Honeypot Logs",
               "description": "Python based command line tool to analyze cowrie logs over time.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": true,
                 "language": "Shell",
@@ -2557,6 +2714,7 @@
               "title": "sshesame",
               "description": "Fake SSH server that lets everyone in and logs their activity.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Python",
@@ -2572,6 +2730,7 @@
               "title": "sshForShits",
               "description": "Framework for a high interaction SSH honeypot.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "JavaScript",
@@ -2587,6 +2746,7 @@
               "title": "MockSSH",
               "description": "Mock an SSH server and define all commands it supports (Python, Twisted).",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Ruby",
@@ -2602,6 +2762,7 @@
               "title": "Kippo_JunOS",
               "description": "Kippo configured to be a backdoored netscreen.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Java",
@@ -2617,6 +2778,7 @@
               "title": "sshsyrup",
               "description": "Simple SSH Honeypot with features to capture terminal activity and upload to asciinema.org.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": null,
@@ -2632,6 +2794,7 @@
               "title": "hived",
               "description": "Golang-based honeypot.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Go",
@@ -2647,6 +2810,7 @@
               "title": "Kippo",
               "description": "Medium interaction SSH honeypot.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Go",
@@ -2662,6 +2826,7 @@
               "title": "ssh-auth-logger",
               "description": "Low/zero interaction SSH authentication logging honeypot.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Ruby",
@@ -2677,6 +2842,7 @@
               "title": "gohoney",
               "description": "SSH honeypot written in Go.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Shell",
@@ -2692,6 +2858,7 @@
               "title": "honeyssh",
               "description": "Credential dumping SSH honeypot with statistics.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": true,
                 "language": "Go",
@@ -2707,6 +2874,7 @@
               "title": "Kojoney2",
               "description": "Low interaction SSH honeypot written in Python and based on Kojoney by Jose Antonio Coret.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Rust",
@@ -2722,6 +2890,7 @@
               "title": "sshhipot",
               "description": "High-interaction MitM SSH honeypot.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "TypeScript",
@@ -2737,6 +2906,7 @@
               "title": "sshlowpot",
               "description": "Yet another no-frills low-interaction SSH honeypot in Go.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Python",
@@ -2752,6 +2922,7 @@
               "title": "ssh-honeypot",
               "description": "Fake sshd that logs IP addresses, usernames, and passwords.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "C++",
@@ -2767,6 +2938,7 @@
               "title": "hornet",
               "description": "Medium interaction SSH honeypot that supports multiple virtual hosts.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "JavaScript",
@@ -2782,6 +2954,7 @@
               "title": "hnypots-agent)",
               "description": "SSH Server in Go that logs username and password combinations.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Shell",
@@ -2797,6 +2970,7 @@
               "title": "ssh-honeypotd",
               "description": "Low-interaction SSH honeypot written in C.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "C++",
@@ -2812,6 +2986,7 @@
               "title": "go0r",
               "description": "Simple ssh honeypot in Golang.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Ruby",
@@ -2834,6 +3009,7 @@
               "title": "SMTPLLMPot",
               "description": "A super simple SMTP Honeypot built using GPT3.5",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Rust",
@@ -2849,6 +3025,7 @@
               "title": "Shiva",
               "description": "Spam Honeypot with Intelligent Virtual Analyzer.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "C++",
@@ -2864,6 +3041,7 @@
               "title": "honeypot",
               "description": "The Project Honey Pot un-official PHP SDK.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "JavaScript",
@@ -2879,6 +3057,7 @@
               "title": "SendMeSpamIDS.py",
               "description": "Simple SMTP fetch all IDS and analyzer.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "JavaScript",
@@ -2894,6 +3073,7 @@
               "title": "SpamHAT",
               "description": "Spam Honeypot Tool.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Ruby",
@@ -2909,6 +3089,7 @@
               "title": "Mailoney",
               "description": "SMTP honeypot written in python.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Shell",
@@ -2931,6 +3112,7 @@
               "title": "Bluepot",
               "description": null,
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Rust",
@@ -2953,6 +3135,7 @@
               "title": "honey_ports",
               "description": "Very simple but effective docker deployed honeypot to detect port scanning in your environment.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Go",
@@ -2968,6 +3151,7 @@
               "title": "Manuka",
               "description": "Docker based honeypot (Dionaea and Kippo).",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Rust",
@@ -2983,6 +3167,7 @@
               "title": "mhn-core-docker",
               "description": "Core elements of the Modern Honey Network implemented in Docker.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "JavaScript",
@@ -2998,6 +3183,7 @@
               "title": "Docker honeynet",
               "description": "Several Honeynet tools set up for Docker containers.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": true,
                 "language": null,
@@ -3013,6 +3199,7 @@
               "title": "Dockerized Thug",
               "description": "Dockerized Thug to analyze malicious web content.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "TypeScript",
@@ -3028,6 +3215,7 @@
               "title": "Dockerpot",
               "description": "Docker based honeypot.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Go",
@@ -3050,6 +3238,7 @@
               "title": "SentryPeer",
               "description": "Protect your SIP Servers from bad actors.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Java",
@@ -3072,6 +3261,7 @@
               "title": "HoneyThing",
               "description": "TR-069 Honeypot.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Ruby",
@@ -3087,6 +3277,7 @@
               "title": "Kako",
               "description": "Honeypots for a number of well known and deployed embedded device vulnerabilities.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Java",
@@ -3109,6 +3300,7 @@
               "title": "dcept",
               "description": "Tool for deploying and detecting use of Active Directory honeytokens.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": null,
@@ -3124,6 +3316,7 @@
               "title": "Honeybits",
               "description": "Simple tool designed to enhance the effectiveness of your traps by spreading breadcrumbs and honeytokens across your production servers and workstations to lure the attacker toward your honeypots.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Ruby",
@@ -3139,6 +3332,7 @@
               "title": "CanaryTokens",
               "description": "Self-hostable honeytoken generator and reporting dashboard; demo version available at CanaryTokens.org.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Python",
@@ -3154,6 +3348,7 @@
               "title": "honeyku",
               "description": "Heroku-based web honeypot that can be used to create and monitor fake HTTP endpoints (i.e. honeytokens).",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Python",
@@ -3169,6 +3364,7 @@
               "title": "Honeyλ (HoneyLambda)",
               "description": "Simple, serverless application designed to create and monitor URL honeytokens, on top of AWS Lambda and Amazon API Gateway.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "TypeScript",
@@ -3197,6 +3393,7 @@
               "title": "DionaeaFR",
               "description": "Front Web to Dionaea low-interaction honeypot.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "TypeScript",
@@ -3212,6 +3409,7 @@
               "title": "Tango",
               "description": "Honeypot Intelligence with Splunk.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Java",
@@ -3227,6 +3425,7 @@
               "title": "Wordpot-Frontend",
               "description": "Full featured script to visualize statistics from a Wordpot honeypot.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Go",
@@ -3242,6 +3441,7 @@
               "title": "Django-kippo",
               "description": "Django App for kippo SSH Honeypot.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Shell",
@@ -3257,6 +3457,7 @@
               "title": "honeyalarmg2",
               "description": "Simplified UI for showing honeypot alarms.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Java",
@@ -3272,6 +3473,7 @@
               "title": "honeypotDisplay",
               "description": "Flask website which displays data gathered from an SSH Honeypot.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Java",
@@ -3287,6 +3489,7 @@
               "title": "Shockpot-Frontend",
               "description": "Full featured script to visualize statistics from a Shockpot honeypot.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Rust",
@@ -3309,6 +3512,7 @@
               "title": "HoneyMap",
               "description": "Real-time websocket stream of GPS events on a fancy SVG world map.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Rust",
@@ -3324,6 +3528,7 @@
               "title": "ovizart",
               "description": "Visual analysis for network traffic.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": null,
@@ -3339,6 +3544,7 @@
               "title": "IVRE",
               "description": "Network recon framework, published by @cea-sec & @ANSSI-FR. Build your own, self-hosted and fully-controlled alternatives to Criminalip / Shodan / ZoomEye / Censys and GreyNoise, run your Passive DNS service, collect and analyse network intelligence from your sensors, and much more!",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Shell",
@@ -3354,6 +3560,7 @@
               "title": "Afterglow Cloud",
               "description": null,
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "JavaScript",
@@ -3369,6 +3576,7 @@
               "title": "Acapulco",
               "description": "Automated Attack Community Graph Construction.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Ruby",
@@ -3384,6 +3592,7 @@
               "title": "Kippo stats",
               "description": "Mojolicious app to display statistics for your kippo SSH honeypot.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Python",
@@ -3399,6 +3608,7 @@
               "title": "Glastopf Analytics",
               "description": "Easy honeypot statistics.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": null,
@@ -3414,6 +3624,7 @@
               "title": "The Intelligent HoneyNet",
               "description": "Create actionable information from honeypots.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Go",
@@ -3429,6 +3640,7 @@
               "title": "HoneyMalt",
               "description": "Maltego tranforms for mapping Honeypot systems.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Ruby",
@@ -3444,6 +3656,7 @@
               "title": "HpfeedsHoneyGraph",
               "description": "Visualization app to visualize hpfeeds logs.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Ruby",
@@ -3467,6 +3680,7 @@
           "title": "Honeypot (Dionaea and kippo) setup script",
           "description": null,
           "children": [],
+          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": null,
@@ -3487,6 +3701,7 @@
               "title": "honeypotpi",
               "description": "Script for turning a Raspberry Pi into a HoneyPot Pi.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": null,
@@ -3509,6 +3724,7 @@
               "title": "Honeypot research papers",
               "description": "PDFs of research papers on honeypots.",
               "children": [],
+              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Go",
@@ -3531,6 +3747,7 @@
     "enhanced_repository": "enhansome/enhansome-honeypots",
     "enhanced_repository_description": "enhanced list",
     "kind": "registry",
+    "kind_provenance": "content",
     "title": "Awesome Honeypots with stars"
   }
 }
