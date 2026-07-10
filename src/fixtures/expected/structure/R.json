@@ -4,10 +4,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "2D and 3D data visualizations via rgl",
+          "node_type": "item",
           "kind": "repository",
           "title": "rayshader",
+          "description": "2D and 3D data visualizations via rgl",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -18,10 +19,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Fast reading of delimited files",
+          "node_type": "item",
           "kind": "repository",
           "title": "vroom",
+          "description": "Fast reading of delimited files",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -32,10 +34,11 @@
           }
         },
         {
-          "children": [],
-          "description": "ggplot2 extension framework",
+          "node_type": "item",
           "kind": "repository",
           "title": "ggforce",
+          "description": "ggplot2 extension framework",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -52,10 +55,11 @@
       "description": "Integrated Development Environment",
       "items": [
         {
-          "children": [],
-          "description": "Add-on package for Sublime Text 2/3.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Sublime Text + R-IDE",
+          "description": "Add-on package for Sublime Text 2/3.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -66,10 +70,11 @@
           }
         },
         {
-          "children": [],
-          "description": "R kernel for Jupyter.",
+          "node_type": "item",
           "kind": "repository",
           "title": "IRkernel",
+          "description": "R kernel for Jupyter.",
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": "Go",
@@ -80,10 +85,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Add-on package for TextMate 1/2.",
+          "node_type": "item",
           "kind": "repository",
           "title": "TextMate + r.tmblundle",
+          "description": "Add-on package for TextMate 1/2.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -94,10 +100,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Neovim plugin for R.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Nvim-R",
+          "description": "Neovim plugin for R.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -108,10 +115,11 @@
           }
         },
         {
-          "children": [],
-          "description": "(formerly rtichoke) - A modern R console with syntax highlighting.",
+          "node_type": "item",
           "kind": "repository",
           "title": "radian",
+          "description": "(formerly rtichoke) - A modern R console with syntax highlighting.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -128,10 +136,11 @@
       "description": "Packages change the way you use R.",
       "items": [
         {
-          "children": [],
-          "description": "Let's pipe it.",
+          "node_type": "item",
           "kind": "repository",
           "title": "magrittr",
+          "description": "Let's pipe it.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -142,10 +151,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Multi-paradigm Pipeline Implementation.",
+          "node_type": "item",
           "kind": "repository",
           "title": "pipeR",
+          "description": "Multi-paradigm Pipeline Implementation.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -156,10 +166,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A FP package for R in the spirit of underscore.js.",
+          "node_type": "item",
           "kind": "repository",
           "title": "purrr",
+          "description": "A FP package for R in the spirit of underscore.js.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -170,10 +181,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Functional programming and simple pattern matching in R.",
+          "node_type": "item",
           "kind": "repository",
           "title": "lambda.r",
+          "description": "Functional programming and simple pattern matching in R.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -190,10 +202,11 @@
       "description": "Packages for cooking data.",
       "items": [
         {
-          "children": [],
-          "description": "A set of functions to work with dates and times.",
+          "node_type": "item",
           "kind": "repository",
           "title": "lubridate",
+          "description": "A set of functions to work with dates and times.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -204,10 +217,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Fast data manipulation in a short and flexible syntax.",
+          "node_type": "item",
           "kind": "repository",
           "title": "data.table",
+          "description": "Fast data manipulation in a short and flexible syntax.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -218,10 +232,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A toolbox for non-tabular data manipulation with lists.",
+          "node_type": "item",
           "kind": "repository",
           "title": "rlist",
+          "description": "A toolbox for non-tabular data manipulation with lists.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -232,10 +247,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Easily tidy data with spread and gather functions.",
+          "node_type": "item",
           "kind": "repository",
           "title": "tidyr",
+          "description": "Easily tidy data with spread and gather functions.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -246,10 +262,11 @@
           }
         },
         {
-          "children": [],
-          "description": "ICU based string processing package.",
+          "node_type": "item",
           "kind": "repository",
           "title": "stringi",
+          "description": "ICU based string processing package.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -260,10 +277,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Fast exploratory data analysis with minimum code.",
+          "node_type": "item",
           "kind": "repository",
           "title": "DataExplorer",
+          "description": "Fast exploratory data analysis with minimum code.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -274,10 +292,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Automatically parse and convert strings into cases like snake or camel among others.",
+          "node_type": "item",
           "kind": "repository",
           "title": "snakecase",
+          "description": "Automatically parse and convert strings into cases like snake or camel among others.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -288,10 +307,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Convert statistical analysis objects into tidy data frames.",
+          "node_type": "item",
           "kind": "repository",
           "title": "broom",
+          "description": "Convert statistical analysis objects into tidy data frames.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -302,10 +322,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Join tables together on inexact matching.",
+          "node_type": "item",
           "kind": "repository",
           "title": "fuzzyjoin",
+          "description": "Join tables together on inexact matching.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -316,10 +337,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Consistent API for string processing, built on top of stringi.",
+          "node_type": "item",
           "kind": "repository",
           "title": "stringr",
+          "description": "Consistent API for string processing, built on top of stringi.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -330,10 +352,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Fast data frames manipulation and database query.",
+          "node_type": "item",
           "kind": "repository",
           "title": "dplyr",
+          "description": "Fast data frames manipulation and database query.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -344,10 +367,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Easily install and load packages from the tidyverse.",
+          "node_type": "item",
           "kind": "repository",
           "title": "tidyverse",
+          "description": "Easily install and load packages from the tidyverse.",
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": "Java",
@@ -358,10 +382,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Flexible rearrange, reshape and aggregate data.",
+          "node_type": "item",
           "kind": "repository",
           "title": "reshape2",
+          "description": "Flexible rearrange, reshape and aggregate data.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -372,10 +397,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Shared memory and memory-mapped matrices. The big* packages provide additional tools including linear models (biglm) and Random Forests (bigrf).",
+          "node_type": "item",
           "kind": "repository",
           "title": "bigmemory",
+          "description": "Shared memory and memory-mapped matrices. The big* packages provide additional tools including linear models (biglm) and Random Forests (bigrf).",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -392,10 +418,11 @@
       "description": "Packages for reading and writing data of different formats.",
       "items": [
         {
-          "children": [],
-          "description": "Read OpenDocument Spreadsheets into R as data.frames.",
+          "node_type": "item",
           "kind": "repository",
           "title": "readODS",
+          "description": "Read OpenDocument Spreadsheets into R as data.frames.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -406,10 +433,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Quick serialization of R objects.",
+          "node_type": "item",
           "kind": "repository",
           "title": "qs",
+          "description": "Quick serialization of R objects.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -420,10 +448,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A Swiss-Army Knife for Data I/O.",
+          "node_type": "item",
           "kind": "repository",
           "title": "rio",
+          "description": "A Swiss-Army Knife for Data I/O.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -434,10 +463,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A fast and friendly way to read tabular data into R.",
+          "node_type": "item",
           "kind": "repository",
           "title": "readr",
+          "description": "A fast and friendly way to read tabular data into R.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -448,10 +478,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A robust and quick way to parse JSON files in R.",
+          "node_type": "item",
           "kind": "repository",
           "title": "jsonlite",
+          "description": "A robust and quick way to parse JSON files in R.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -462,10 +493,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Rcpp Bindings to C++ parser for TOML files.",
+          "node_type": "item",
           "kind": "repository",
           "title": "RcppTOML",
+          "description": "Rcpp Bindings to C++ parser for TOML files.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -476,10 +508,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Improved methods to import SPSS, Stata and SAS files in R.",
+          "node_type": "item",
           "kind": "repository",
           "title": "haven",
+          "description": "Improved methods to import SPSS, Stata and SAS files in R.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -490,10 +523,11 @@
           }
         },
         {
-          "children": [],
-          "description": "R package for converting objects to and from YAML.",
+          "node_type": "item",
           "kind": "repository",
           "title": "yaml",
+          "description": "R package for converting objects to and from YAML.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -504,10 +538,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Fast reading of delimited files.",
+          "node_type": "item",
           "kind": "repository",
           "title": "vroom",
+          "description": "Fast reading of delimited files.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -518,10 +553,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Fast, interoperable binary data frame storage for Python, R, and more powered by Apache Arrow.",
+          "node_type": "item",
           "kind": "repository",
           "title": "feather",
+          "description": "Fast, interoperable binary data frame storage for Python, R, and more powered by Apache Arrow.",
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": "Ruby",
@@ -538,10 +574,11 @@
       "description": "Packages for showing data.",
       "items": [
         {
-          "children": [],
-          "description": "A powerful and elegant high-level data visualization system.",
+          "node_type": "item",
           "kind": "repository",
           "title": "lattice",
+          "description": "A powerful and elegant high-level data visualization system.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -552,10 +589,11 @@
           }
         },
         {
-          "children": [],
-          "description": "ggplot2 tech themes and scales",
+          "node_type": "item",
           "kind": "repository",
           "title": "ggtech",
+          "description": "ggplot2 tech themes and scales",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -566,10 +604,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A graphical display of a correlation matrix or general matrix. It also contains some algorithms to do matrix reordering.",
+          "node_type": "item",
           "kind": "repository",
           "title": "corrplot",
+          "description": "A graphical display of a correlation matrix or general matrix. It also contains some algorithms to do matrix reordering.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -580,10 +619,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A unified interface to ggplot2 popular statistical packages using one line of code.",
+          "node_type": "item",
           "kind": "repository",
           "title": "ggfortify",
+          "description": "A unified interface to ggplot2 popular statistical packages using one line of code.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -594,10 +634,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Enable R graphics device to show text using system fonts.",
+          "node_type": "item",
           "kind": "repository",
           "title": "showtext",
+          "description": "Enable R graphics device to show text using system fonts.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -608,10 +649,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Visualization and annotation of phylogenetic tree.",
+          "node_type": "item",
           "kind": "repository",
           "title": "ggtree",
+          "description": "Visualization and annotation of phylogenetic tree.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -622,10 +664,11 @@
           }
         },
         {
-          "children": [],
-          "description": "🍁 Make waffle (square pie) charts in R.",
+          "node_type": "item",
           "kind": "repository",
           "title": "waffle",
+          "description": "🍁 Make waffle (square pie) charts in R.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -636,10 +679,11 @@
           }
         },
         {
-          "children": [],
-          "description": "interactive exploration of dendrograms (trees of hierarchical clustering).",
+          "node_type": "item",
           "kind": "repository",
           "title": "idendro",
+          "description": "interactive exploration of dendrograms (trees of hierarchical clustering).",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -650,10 +694,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Asynchronous http server graphics device for R.",
+          "node_type": "item",
           "kind": "repository",
           "title": "httpgd",
+          "description": "Asynchronous http server graphics device for R.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -664,10 +709,11 @@
           }
         },
         {
-          "children": [],
-          "description": "ggplot2 Based Plots with Statistical Details",
+          "node_type": "item",
           "kind": "repository",
           "title": "ggstatsplot",
+          "description": "ggplot2 Based Plots with Statistical Details",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -678,10 +724,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Repel overlapping text labels away from each other.",
+          "node_type": "item",
           "kind": "repository",
           "title": "ggrepel",
+          "description": "Repel overlapping text labels away from each other.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -692,10 +739,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Extra Coordinate Systems, Geoms and Statistical Transformations for ggplot2.",
+          "node_type": "item",
           "kind": "repository",
           "title": "ggalt",
+          "description": "Extra Coordinate Systems, Geoms and Statistical Transformations for ggplot2.",
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": null,
@@ -706,10 +754,11 @@
           }
         },
         {
-          "children": [],
-          "description": "An implementation of the Grammar of Graphics.",
+          "node_type": "item",
           "kind": "repository",
           "title": "ggplot2",
+          "description": "An implementation of the Grammar of Graphics.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -720,10 +769,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Tools for using fonts in R graphics.",
+          "node_type": "item",
           "kind": "repository",
           "title": "extrafont",
+          "description": "Tools for using fonts in R graphics.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -734,10 +784,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Create easy animations with ggplot2.",
+          "node_type": "item",
           "kind": "repository",
           "title": "gganimate",
+          "description": "Create easy animations with ggplot2.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -748,10 +799,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Combine separate ggplots into the same graphic.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Patchwork",
+          "description": "Combine separate ggplots into the same graphic.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -762,10 +814,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A simple way to produce animated graphics in R, using ImageMagick.",
+          "node_type": "item",
           "kind": "repository",
           "title": "animation",
+          "description": "A simple way to produce animated graphics in R, using ImageMagick.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -776,10 +829,11 @@
           }
         },
         {
-          "children": [],
-          "description": "visualizing, adjusting and comparing trees of hierarchical clustering.",
+          "node_type": "item",
           "kind": "repository",
           "title": "dendextend",
+          "description": "visualizing, adjusting and comparing trees of hierarchical clustering.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -790,10 +844,11 @@
           }
         },
         {
-          "children": [],
-          "description": "🔏 Opinionated, typographic-centric ggplot2 themes and theme components.",
+          "node_type": "item",
           "kind": "repository",
           "title": "hrbrthemes",
+          "description": "🔏 Opinionated, typographic-centric ggplot2 themes and theme components.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -810,10 +865,11 @@
       "description": "Packages for interactive visualizations.",
       "items": [
         {
-          "children": [],
-          "description": "Create JS graph diagrams and flowcharts in R.",
+          "node_type": "item",
           "kind": "repository",
           "title": "DiagrammeR",
+          "description": "Create JS graph diagrams and flowcharts in R.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -824,10 +880,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Interactive heatmaps with D3.",
+          "node_type": "item",
           "kind": "repository",
           "title": "heatmaply",
+          "description": "Interactive heatmaps with D3.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -838,10 +895,11 @@
           }
         },
         {
-          "children": [],
-          "description": "R interface to wordcloud2.js.",
+          "node_type": "item",
           "kind": "repository",
           "title": "wordcloud2",
+          "description": "R interface to wordcloud2.js.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -852,10 +910,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Using vis.js library for network visualization.",
+          "node_type": "item",
           "kind": "repository",
           "title": "visNetwork",
+          "description": "Using vis.js library for network visualization.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -866,10 +925,11 @@
           }
         },
         {
-          "children": [],
-          "description": "R wrapper to Echarts version 4",
+          "node_type": "item",
           "kind": "repository",
           "title": "echarts4r",
+          "description": "R wrapper to Echarts version 4",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -880,10 +940,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Interactive 3D scatter plots and globes.",
+          "node_type": "item",
           "kind": "repository",
           "title": "threejs",
+          "description": "Interactive 3D scatter plots and globes.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -894,10 +955,11 @@
           }
         },
         {
-          "children": [],
-          "description": "R wrapper for highcharts based on htmlwidgets",
+          "node_type": "item",
           "kind": "repository",
           "title": "highcharter",
+          "description": "R wrapper for highcharts based on htmlwidgets",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -908,10 +970,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Formattable Data Structures.",
+          "node_type": "item",
           "kind": "repository",
           "title": "formattable",
+          "description": "Formattable Data Structures.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -922,10 +985,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Interactive ggplot2 and Shiny plotting with plot.ly.",
+          "node_type": "item",
           "kind": "repository",
           "title": "plotly",
+          "description": "Interactive ggplot2 and Shiny plotting with plot.ly.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -936,10 +1000,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Interactive scatterplots with D3.",
+          "node_type": "item",
           "kind": "repository",
           "title": "scatterD3",
+          "description": "Interactive scatterplots with D3.",
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": "C++",
@@ -950,10 +1015,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Interactive JS Charts from R.",
+          "node_type": "item",
           "kind": "repository",
           "title": "rCharts",
+          "description": "Interactive JS Charts from R.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -964,10 +1030,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Interactive grammar of graphics for R.",
+          "node_type": "item",
           "kind": "repository",
           "title": "ggvis",
+          "description": "Interactive grammar of graphics for R.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -978,10 +1045,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Charting time-series data in R.",
+          "node_type": "item",
           "kind": "repository",
           "title": "dygraphs",
+          "description": "Charting time-series data in R.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -992,10 +1060,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Interactive heatmaps with D3 (no longer maintained).",
+          "node_type": "item",
           "kind": "repository",
           "title": "d3heatmap",
+          "description": "Interactive heatmaps with D3 (no longer maintained).",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -1006,10 +1075,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Create fully interactive timeline visualizations.",
+          "node_type": "item",
           "kind": "repository",
           "title": "timevis",
+          "description": "Create fully interactive timeline visualizations.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -1026,10 +1096,11 @@
       "description": "Packages for literate programming and reproducible workflows.",
       "items": [
         {
-          "children": [],
-          "description": "Easy dynamic report generation in R.",
+          "node_type": "item",
           "kind": "repository",
           "title": "knitr",
+          "description": "Easy dynamic report generation in R.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -1040,10 +1111,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A lightweight and easy-to-maintain LaTeX distribution",
+          "node_type": "item",
           "kind": "repository",
           "title": "tinytex",
+          "description": "A lightweight and easy-to-maintain LaTeX distribution",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -1054,10 +1126,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Generate reproducible html5 slides from R markdown.",
+          "node_type": "item",
           "kind": "repository",
           "title": "slidify",
+          "description": "Generate reproducible html5 slides from R markdown.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -1068,10 +1141,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Install packages from snapshots on the checkpoint server.",
+          "node_type": "item",
           "kind": "repository",
           "title": "checkpoint",
+          "description": "Install packages from snapshots on the checkpoint server.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -1082,10 +1156,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Avoid the typical working directory pain when using 'knitr'",
+          "node_type": "item",
           "kind": "repository",
           "title": "ezknitr",
+          "description": "Avoid the typical working directory pain when using 'knitr'",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -1096,10 +1171,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Formatting statistical models in LaTex and HTML.",
+          "node_type": "item",
           "kind": "repository",
           "title": "texreg",
+          "description": "Formatting statistical models in LaTex and HTML.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -1110,10 +1186,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Reversible Reproducible Documents",
+          "node_type": "item",
           "kind": "repository",
           "title": "redoc",
+          "description": "Reversible Reproducible Documents",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -1130,10 +1207,11 @@
       "description": "Packages to surf the web.",
       "items": [
         {
-          "children": [],
-          "description": "User-friendly RCurl wrapper.",
+          "node_type": "item",
           "kind": "repository",
           "title": "httr",
+          "description": "User-friendly RCurl wrapper.",
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": "C++",
@@ -1144,10 +1222,11 @@
           }
         },
         {
-          "children": [],
-          "description": "R client library for the Adobe Analytics.",
+          "node_type": "item",
           "kind": "repository",
           "title": "RSiteCatalyst",
+          "description": "R client library for the Adobe Analytics.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -1158,10 +1237,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A library to expose existing R code as web API.",
+          "node_type": "item",
           "kind": "repository",
           "title": "plumber",
+          "description": "A library to expose existing R code as web API.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -1172,10 +1252,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A Modern and Flexible Web Client for R.",
+          "node_type": "item",
           "kind": "repository",
           "title": "curl",
+          "description": "A Modern and Flexible Web Client for R.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -1186,10 +1267,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Access to Facebook API via R.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Rfacebook",
+          "description": "Access to Facebook API via R.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -1200,10 +1282,11 @@
           }
         },
         {
-          "children": [],
-          "description": "HTTP and WebSocket server library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "httpuv",
+          "description": "HTTP and WebSocket server library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -1214,10 +1297,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Information about how to use R and the world wide web together.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Web Technologies List",
+          "description": "Information about how to use R and the world wide web together.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -1228,10 +1312,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Simple web scraping for R, using CSSSelect or XPath syntax.",
+          "node_type": "item",
           "kind": "repository",
           "title": "rvest",
+          "description": "Simple web scraping for R, using CSSSelect or XPath syntax.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -1242,10 +1327,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Easy interactive web applications with R. See also awesome-rshiny",
+          "node_type": "item",
           "kind": "repository",
           "title": "shiny",
+          "description": "Easy interactive web applications with R. See also awesome-rshiny",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -1256,10 +1342,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Easily improve the user interaction and user experience in your Shiny apps in seconds.",
+          "node_type": "item",
           "kind": "repository",
           "title": "shinyjs",
+          "description": "Easily improve the user interaction and user experience in your Shiny apps in seconds.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -1276,10 +1363,11 @@
       "description": "Packages for parallel computing.",
       "items": [
         {
-          "children": [],
-          "description": "A scalable high-performance platform from HP Vertica Analytics Team.",
+          "node_type": "item",
           "kind": "repository",
           "title": "DistributedR",
+          "description": "A scalable high-performance platform from HP Vertica Analytics Team.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -1290,10 +1378,11 @@
           }
         },
         {
-          "children": [],
-          "description": "R frontend for Spark.",
+          "node_type": "item",
           "kind": "repository",
           "title": "SparkR",
+          "description": "R frontend for Spark.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -1304,10 +1393,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Provides distributed data structures and simplifies distributed computing in R.",
+          "node_type": "item",
           "kind": "repository",
           "title": "ddR",
+          "description": "Provides distributed data structures and simplifies distributed computing in R.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -1324,10 +1414,11 @@
       "description": "Packages for making R faster.",
       "items": [
         {
-          "children": [],
-          "description": "cpp11 is a header-only R package that helps R package developers handle R objects with C++ code. It's similar to Rcpp but with different design trade-offs and features.",
+          "node_type": "item",
           "kind": "repository",
           "title": "cpp11",
+          "description": "cpp11 is a header-only R package that helps R package developers handle R objects with C++ code. It's similar to Rcpp but with different design trade-offs and features.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -1338,10 +1429,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Rcpp11 is a complete redesign of Rcpp, targetting C++11.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Rcpp11",
+          "description": "Rcpp11 is a complete redesign of Rcpp, targetting C++11.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -1358,10 +1450,11 @@
       "description": "Packages for other languages.",
       "items": [
         {
-          "children": [],
-          "description": "Embedded JavaScript Engine.",
+          "node_type": "item",
           "kind": "repository",
           "title": "V8",
+          "description": "Embedded JavaScript Engine.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -1372,10 +1465,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Run Julia and Bash from R.",
+          "node_type": "item",
           "kind": "repository",
           "title": "runr",
+          "description": "Run Julia and Bash from R.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -1386,10 +1480,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Seamless Integration Between R and Julia.",
+          "node_type": "item",
           "kind": "repository",
           "title": "JuliaCall",
+          "description": "Seamless Integration Between R and Julia.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -1400,10 +1495,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Seamless Interface to Octave and Matlab.",
+          "node_type": "item",
           "kind": "repository",
           "title": "RcppOctave",
+          "description": "Seamless Interface to Octave and Matlab.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -1414,10 +1510,11 @@
           }
         },
         {
-          "children": [],
-          "description": "R package Call Julia.",
+          "node_type": "item",
           "kind": "repository",
           "title": "RJulia",
+          "description": "R package Call Julia.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -1428,10 +1525,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Integration of R, Java, and Scala.",
+          "node_type": "item",
           "kind": "repository",
           "title": "jvmr",
+          "description": "Integration of R, Java, and Scala.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -1448,10 +1546,11 @@
       "description": "Packages for managing data.",
       "items": [
         {
-          "children": [],
-          "description": "R extension facilitating distributed computing via Apache Hive.",
+          "node_type": "item",
           "kind": "repository",
           "title": "RHive",
+          "description": "R extension facilitating distributed computing via Apache Hive.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -1462,10 +1561,11 @@
           }
         },
         {
-          "children": [],
-          "description": "R driver for MongoDB.",
+          "node_type": "item",
           "kind": "repository",
           "title": "rmongodb",
+          "description": "R driver for MongoDB.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -1476,10 +1576,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Connect to ODBC databases (using the DBI interface)",
+          "node_type": "item",
           "kind": "repository",
           "title": "odbc",
+          "description": "Connect to ODBC databases (using the DBI interface)",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -1490,10 +1591,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Defines a common interface between the R and database management systems.",
+          "node_type": "item",
           "kind": "repository",
           "title": "DBI",
+          "description": "Defines a common interface between the R and database management systems.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -1504,10 +1606,11 @@
           }
         },
         {
-          "children": [],
-          "description": "an DBI-compliant interface to the postgres database.",
+          "node_type": "item",
           "kind": "repository",
           "title": "RPostgres",
+          "description": "an DBI-compliant interface to the postgres database.",
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": "JavaScript",
@@ -1518,10 +1621,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Neo4j graph database driver.",
+          "node_type": "item",
           "kind": "repository",
           "title": "RNeo4j",
+          "description": "Neo4j graph database driver.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -1532,10 +1636,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Streaming Mongo Client for R",
+          "node_type": "item",
           "kind": "repository",
           "title": "mongolite",
+          "description": "Streaming Mongo Client for R",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -1546,10 +1651,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Redis client for R.",
+          "node_type": "item",
           "kind": "repository",
           "title": "redux",
+          "description": "Redis client for R.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -1560,10 +1666,11 @@
           }
         },
         {
-          "children": [],
-          "description": "R interface to PostGIS database and get spatial objects in R.",
+          "node_type": "item",
           "kind": "repository",
           "title": "rpostgis",
+          "description": "R interface to PostGIS database and get spatial objects in R.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -1574,10 +1681,11 @@
           }
         },
         {
-          "children": [],
-          "description": "An R interface to MariaDB (a replacement for the old RMySQL package)",
+          "node_type": "item",
           "kind": "repository",
           "title": "RMariaDB",
+          "description": "An R interface to MariaDB (a replacement for the old RMySQL package)",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -1588,10 +1696,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Wrapper for the Elasticsearch HTTP API",
+          "node_type": "item",
           "kind": "repository",
           "title": "elastic",
+          "description": "Wrapper for the Elasticsearch HTTP API",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -1608,10 +1717,11 @@
       "description": "Packages for making R cleverer.",
       "items": [
         {
-          "children": [],
-          "description": "a collection of commonly used univariate and multivariate time series forecasting models",
+          "node_type": "item",
           "kind": "repository",
           "title": "fable",
+          "description": "a collection of commonly used univariate and multivariate time series forecasting models",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -1622,10 +1732,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Extensible framework for classification, regression, survival analysis and clustering [DEPRECIATED]",
+          "node_type": "item",
           "kind": "repository",
           "title": "mlr",
+          "description": "Extensible framework for classification, regression, survival analysis and clustering [DEPRECIATED]",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -1636,10 +1747,11 @@
           }
         },
         {
-          "children": [],
-          "description": "and subsemble - Multi-algorithm ensemble learning packages.",
+          "node_type": "item",
           "kind": "repository",
           "title": "SuperLearner",
+          "description": "and subsemble - Multi-algorithm ensemble learning packages.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -1650,10 +1762,11 @@
           }
         },
         {
-          "children": [],
-          "description": "eXtreme Gradient Boosting Tree model, well known for its speed and performance.",
+          "node_type": "item",
           "kind": "repository",
           "title": "xgboost",
+          "description": "eXtreme Gradient Boosting Tree model, well known for its speed and performance.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -1664,10 +1777,11 @@
           }
         },
         {
-          "children": [],
-          "description": "MXNet brings flexible and efficient GPU computing and state-of-art deep learning to R.",
+          "node_type": "item",
           "kind": "repository",
           "title": "MXNet",
+          "description": "MXNet brings flexible and efficient GPU computing and state-of-art deep learning to R.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -1678,10 +1792,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Breakout Detection via Robust E-Statistics from Twitter.",
+          "node_type": "item",
           "kind": "repository",
           "title": "BreakoutDetection",
+          "description": "Breakout Detection via Robust E-Statistics from Twitter.",
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": "C++",
@@ -1692,10 +1807,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Tool for producing high quality forecasts for time series data that has multiple seasonality with linear or non-linear growth.",
+          "node_type": "item",
           "kind": "repository",
           "title": "prophet",
+          "description": "Tool for producing high quality forecasts for time series data that has multiple seasonality with linear or non-linear growth.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -1706,10 +1822,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A Fast Implementation of Random Forests.",
+          "node_type": "item",
           "kind": "repository",
           "title": "ranger",
+          "description": "A Fast Implementation of Random Forests.",
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": "Python",
@@ -1720,10 +1837,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Mixed-effects models",
+          "node_type": "item",
           "kind": "repository",
           "title": "lme4",
+          "description": "Mixed-effects models",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -1734,10 +1852,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Next generation extensible framework for classification, regression, survival analysis and clustering",
+          "node_type": "item",
           "kind": "repository",
           "title": "mlr3",
+          "description": "Next generation extensible framework for classification, regression, survival analysis and clustering",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -1748,10 +1867,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Survival Analysis & Visualization",
+          "node_type": "item",
           "kind": "repository",
           "title": "survminer",
+          "description": "Survival Analysis & Visualization",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -1762,10 +1882,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Causal inference using Bayesian structural time-series models.",
+          "node_type": "item",
           "kind": "repository",
           "title": "CausalImpact",
+          "description": "Causal inference using Bayesian structural time-series models.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -1776,10 +1897,11 @@
           }
         },
         {
-          "children": [],
-          "description": null,
+          "node_type": "item",
           "kind": "repository",
           "title": "Clever Algorithms For Machine Learning",
+          "description": null,
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -1790,10 +1912,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Tidy Anomaly Detection using Twitter's AnomalyDetection method.",
+          "node_type": "item",
           "kind": "repository",
           "title": "anomalize",
+          "description": "Tidy Anomaly Detection using Twitter's AnomalyDetection method.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -1804,10 +1927,11 @@
           }
         },
         {
-          "children": [],
-          "description": null,
+          "node_type": "item",
           "kind": "repository",
           "title": "Machine Learning For Hackers",
+          "description": null,
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -1818,10 +1942,11 @@
           }
         },
         {
-          "children": [],
-          "description": "AnomalyDetection R package from Twitter.",
+          "node_type": "item",
           "kind": "repository",
           "title": "AnomalyDetection",
+          "description": "AnomalyDetection R package from Twitter.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -1838,10 +1963,11 @@
       "description": "Packages for Natural Language Processing.",
       "items": [
         {
-          "children": [],
-          "description": "Topic Models learning and R related resources.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Topic Models Resources",
+          "description": "Topic Models learning and R related resources.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -1852,10 +1978,11 @@
           }
         },
         {
-          "children": [],
-          "description": "🐒 R package for text analysis with Monkeylearn 🐒.",
+          "node_type": "item",
           "kind": "repository",
           "title": "MonkeyLearn",
+          "description": "🐒 R package for text analysis with Monkeylearn 🐒.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -1866,10 +1993,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Fast Text Mining Framework for Vectorization and Word Embeddings.",
+          "node_type": "item",
           "kind": "repository",
           "title": "text2vec",
+          "description": "Fast Text Mining Framework for Vectorization and Word Embeddings.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -1880,10 +2008,11 @@
           }
         },
         {
-          "children": [],
-          "description": "R functions for Quantitative Analysis of Textual Data.",
+          "node_type": "item",
           "kind": "repository",
           "title": "quanteda",
+          "description": "R functions for Quantitative Analysis of Textual Data.",
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": null,
@@ -1894,10 +2023,11 @@
           }
         },
         {
-          "children": [],
-          "description": "NLP related resources in R. @Chinese",
+          "node_type": "item",
           "kind": "repository",
           "title": "NLP for",
+          "description": "NLP related resources in R. @Chinese",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -1908,10 +2038,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Interactive visualization of topic models.",
+          "node_type": "item",
           "kind": "repository",
           "title": "LDAvis",
+          "description": "Interactive visualization of topic models.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -1922,10 +2053,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Manipulating and printing UTF-8 text that fixes multiple bugs in R's UTF-8 handling.",
+          "node_type": "item",
           "kind": "repository",
           "title": "utf8",
+          "description": "Manipulating and printing UTF-8 text that fixes multiple bugs in R's UTF-8 handling.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -1942,10 +2074,11 @@
       "description": "Packages to construct, analyze and visualize network data.",
       "items": [
         {
-          "children": [],
-          "description": "Network Analysis related resources.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Network Analysis List",
+          "description": "Network Analysis related resources.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -1956,10 +2089,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A tidy API for graph manipulation",
+          "node_type": "item",
           "kind": "repository",
           "title": "tidygraph",
+          "description": "A tidy API for graph manipulation",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -1970,10 +2104,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Using vis.js library for network visualization.",
+          "node_type": "item",
           "kind": "repository",
           "title": "visNetwork",
+          "description": "Using vis.js library for network visualization.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -1984,10 +2119,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Tools for Analysis of Network Diffusion.",
+          "node_type": "item",
           "kind": "repository",
           "title": "netdiffuseR",
+          "description": "Tools for Analysis of Network Diffusion.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -2004,10 +2140,11 @@
       "description": "Packages to explore the earth.",
       "items": [
         {
-          "children": [],
-          "description": "R package for thematic maps",
+          "node_type": "item",
           "kind": "repository",
           "title": "tmap",
+          "description": "R package for thematic maps",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -2018,10 +2155,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Download and use Census TIGER/Line shapefiles in R",
+          "node_type": "item",
           "kind": "repository",
           "title": "tigris",
+          "description": "Download and use Census TIGER/Line shapefiles in R",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -2032,10 +2170,11 @@
           }
         },
         {
-          "children": [],
-          "description": "R interface to the JavaScript library ECharts for interactive map data visualization.",
+          "node_type": "item",
           "kind": "repository",
           "title": "REmap",
+          "description": "R interface to the JavaScript library ECharts for interactive map data visualization.",
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": "Shell",
@@ -2046,10 +2185,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Spatial Point Pattern Analysis, Model-Fitting, Simulation, Tests",
+          "node_type": "item",
           "kind": "repository",
           "title": "spatstat",
+          "description": "Spatial Point Pattern Analysis, Model-Fitting, Simulation, Tests",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -2060,10 +2200,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Plotting maps in R with ggplot2.",
+          "node_type": "item",
           "kind": "repository",
           "title": "ggmap",
+          "description": "Plotting maps in R with ggplot2.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -2074,10 +2215,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Spatial and spatio-temporal geostatistical modelling, prediction and simulation.",
+          "node_type": "item",
           "kind": "repository",
           "title": "gstat",
+          "description": "Spatial and spatio-temporal geostatistical modelling, prediction and simulation.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -2088,10 +2230,11 @@
           }
         },
         {
-          "children": [],
-          "description": "R classes and methods for spatio-temporal data.",
+          "node_type": "item",
           "kind": "repository",
           "title": "spacetime",
+          "description": "R classes and methods for spatio-temporal data.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -2108,10 +2251,11 @@
       "description": "Packages for packages.",
       "items": [
         {
-          "children": [],
-          "description": "Generate static html documentation for an R package.",
+          "node_type": "item",
           "kind": "repository",
           "title": "staticdocs",
+          "description": "Generate static html documentation for an R package.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -2122,10 +2266,11 @@
           }
         },
         {
-          "children": [],
-          "description": "List of RStudio addins.",
+          "node_type": "item",
           "kind": "repository",
           "title": "RStudio Addins",
+          "description": "List of RStudio addins.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -2136,10 +2281,11 @@
           }
         },
         {
-          "children": [],
-          "description": "simpler, faster, lighter-weight alternative to R's built-in classes.",
+          "node_type": "item",
           "kind": "repository",
           "title": "R6",
+          "description": "simpler, faster, lighter-weight alternative to R's built-in classes.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -2150,10 +2296,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Make your R projects more isolated, portable, and reproducible.",
+          "node_type": "item",
           "kind": "repository",
           "title": "renv",
+          "description": "Make your R projects more isolated, portable, and reproducible.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -2164,10 +2311,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Test coverage for your R package and (optionally) upload the results to coveralls or codecov.",
+          "node_type": "item",
           "kind": "repository",
           "title": "covr",
+          "description": "Test coverage for your R package and (optionally) upload the results to coveralls or codecov.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -2178,10 +2326,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A modern module system for R.",
+          "node_type": "item",
           "kind": "repository",
           "title": "box",
+          "description": "A modern module system for R.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -2192,10 +2341,11 @@
           }
         },
         {
-          "children": [],
-          "description": "An R package to make testing fun.",
+          "node_type": "item",
           "kind": "repository",
           "title": "testthat",
+          "description": "An R package to make testing fun.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -2206,10 +2356,11 @@
           }
         },
         {
-          "children": [],
-          "description": "An import mechanism for R.",
+          "node_type": "item",
           "kind": "repository",
           "title": "import",
+          "description": "An import mechanism for R.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -2220,10 +2371,11 @@
           }
         },
         {
-          "children": [],
-          "description": "R packages to improve package development.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Package Development List",
+          "description": "R packages to improve package development.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -2234,10 +2386,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Visualise line profiling results in R.",
+          "node_type": "item",
           "kind": "repository",
           "title": "lineprof",
+          "description": "Visualise line profiling results in R.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -2248,10 +2401,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Functions for installing softwares from within R (for Windows).",
+          "node_type": "item",
           "kind": "repository",
           "title": "installr",
+          "description": "Functions for installing softwares from within R (for Windows).",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -2262,10 +2416,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Tools to make an R developer's life easier.",
+          "node_type": "item",
           "kind": "repository",
           "title": "devtools",
+          "description": "Tools to make an R developer's life easier.",
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": "JavaScript",
@@ -2276,10 +2431,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Make it easier to understand what's going on in R.",
+          "node_type": "item",
           "kind": "repository",
           "title": "pryr",
+          "description": "Make it easier to understand what's going on in R.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -2290,10 +2446,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Describe your functions in comments next to their definitions.",
+          "node_type": "item",
           "kind": "repository",
           "title": "roxygen",
+          "description": "Describe your functions in comments next to their definitions.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -2304,10 +2461,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Static code analysis for R to enforce code style.",
+          "node_type": "item",
           "kind": "repository",
           "title": "lintr",
+          "description": "Static code analysis for R to enforce code style.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -2318,10 +2476,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Creation and use of R repositories on GitHub or other repos.",
+          "node_type": "item",
           "kind": "repository",
           "title": "drat",
+          "description": "Creation and use of R repositories on GitHub or other repos.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -2332,10 +2491,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Generate roxygen2 skeletons populated with information scraped from the function script.",
+          "node_type": "item",
           "kind": "repository",
           "title": "sinew",
+          "description": "Generate roxygen2 skeletons populated with information scraped from the function script.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -2352,10 +2512,11 @@
       "description": "Packages for Logging",
       "items": [
         {
-          "children": [],
-          "description": "A logging package in R similar to log4j",
+          "node_type": "item",
           "kind": "repository",
           "title": "futile.logger",
+          "description": "A logging package in R similar to log4j",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -2366,10 +2527,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A log4j derivative for R",
+          "node_type": "item",
           "kind": "repository",
           "title": "log4r",
+          "description": "A log4j derivative for R",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -2386,10 +2548,11 @@
       "description": "Handy Data Packages",
       "items": [
         {
-          "children": [],
-          "description": "complex systems & networks datasets from the Index of COmplex Networks (ICON) database webpage.",
+          "node_type": "item",
           "kind": "repository",
           "title": "ICON",
+          "description": "complex systems & networks datasets from the Index of COmplex Networks (ICON) database webpage.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -2400,10 +2563,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Import COBOL CopyBook data files directly into R as properly structured data frames. Package builds are available via Drat and DockerHub.",
+          "node_type": "item",
           "kind": "repository",
           "title": "RCOBOLDI",
+          "description": "Import COBOL CopyBook data files directly into R as properly structured data frames. Package builds are available via Drat and DockerHub.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -2414,10 +2578,11 @@
           }
         },
         {
-          "children": [],
-          "description": "English and European soccer results 1871-2016.",
+          "node_type": "item",
           "kind": "repository",
           "title": "engsoccerdata",
+          "description": "English and European soccer results 1871-2016.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -2428,10 +2593,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Excerpt from the Gapminder dataset (data about countries through the past 50 years).",
+          "node_type": "item",
           "kind": "repository",
           "title": "gapminder",
+          "description": "Excerpt from the Gapminder dataset (data about countries through the past 50 years).",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -2448,10 +2614,11 @@
       "description": "Alternative R engines.",
       "items": [
         {
-          "children": [],
-          "description": "Refactor the interpreter of the R language into a fully-compatible, efficient, VM for R.",
+          "node_type": "item",
           "kind": "repository",
           "title": "rho",
+          "description": "Refactor the interpreter of the R language into a fully-compatible, efficient, VM for R.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -2462,10 +2629,11 @@
           }
         },
         {
-          "children": [],
-          "description": "a fast interpreter and JIT for R.",
+          "node_type": "item",
           "kind": "repository",
           "title": "riposte",
+          "description": "a fast interpreter and JIT for R.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -2492,10 +2660,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "List of R Books.",
+          "node_type": "item",
           "kind": "repository",
           "title": "R Books List",
+          "description": "List of R Books.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -2506,10 +2675,11 @@
           }
         },
         {
-          "children": [],
-          "description": "These readings reflect Hadley's personal thoughts about applied data science.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Readings in Applied Data Science",
+          "description": "These readings reflect Hadley's personal thoughts about applied data science.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -2526,10 +2696,11 @@
       "description": "Great resources for learning domain knowledge.",
       "items": [
         {
-          "children": [],
-          "description": "Network Analysis related resources.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Network Analysis",
+          "description": "Network Analysis related resources.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -2540,10 +2711,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Topic Models learning and R related resources.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Topic Models",
+          "description": "Topic Models learning and R related resources.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -2554,10 +2726,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Great R blog posts or Rticles.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Posts",
+          "description": "Great R blog posts or Rticles.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -2568,10 +2741,11 @@
           }
         },
         {
-          "children": [],
-          "description": "List of R Books.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Books",
+          "description": "List of R Books.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -2582,10 +2756,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Information about how to use R and the world wide web together.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Web Technologies",
+          "description": "Information about how to use R and the world wide web together.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -2596,10 +2771,11 @@
           }
         },
         {
-          "children": [],
-          "description": "R packages to improve package development.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Package Development",
+          "description": "R packages to improve package development.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -2610,10 +2786,11 @@
           }
         },
         {
-          "children": [],
-          "description": "NLP related resources in R. @Chinese",
+          "node_type": "item",
           "kind": "repository",
           "title": "Natural Language Processing",
+          "description": "NLP related resources in R. @Chinese",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -2624,10 +2801,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Using R to obtain, parse, manipulate, create, and share open data.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Open Data",
+          "description": "Using R to obtain, parse, manipulate, create, and share open data.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -2638,10 +2816,11 @@
           }
         },
         {
-          "children": [],
-          "description": "List of RStudio addins.",
+          "node_type": "item",
           "kind": "repository",
           "title": "RStudio Addins",
+          "description": "List of RStudio addins.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -2652,10 +2831,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A guide to some of the most useful R packages, organized by workflow.",
+          "node_type": "item",
           "kind": "repository",
           "title": "RStartHere",
+          "description": "A guide to some of the most useful R packages, organized by workflow.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -2672,10 +2852,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "univariate and multivariate time series forecasting models",
+          "node_type": "item",
           "kind": "repository",
           "title": "fable",
+          "description": "univariate and multivariate time series forecasting models",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -2686,10 +2867,11 @@
           }
         },
         {
-          "children": [],
-          "description": "List of courses teaching R",
+          "node_type": "item",
           "kind": "repository",
           "title": "rstats-ed",
+          "description": "List of courses teaching R",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -2700,10 +2882,11 @@
           }
         },
         {
-          "children": [],
-          "description": "These readings reflect Hadley's personal thoughts about applied data science.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Readings in Applied Data Science",
+          "description": "These readings reflect Hadley's personal thoughts about applied data science.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -2720,10 +2903,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "TensorFlow for R",
+          "node_type": "item",
           "kind": "repository",
           "title": "tensorflow",
+          "description": "TensorFlow for R",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -2734,10 +2918,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Create Blogs and Websites with R Markdown",
+          "node_type": "item",
           "kind": "repository",
           "title": "blogdown",
+          "description": "Create Blogs and Websites with R Markdown",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -2748,10 +2933,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Test coverage reports for R",
+          "node_type": "item",
           "kind": "repository",
           "title": "covr",
+          "description": "Test coverage reports for R",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -2762,10 +2948,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Glue strings to data in R. Small, fast, dependency free interpreted string literals.",
+          "node_type": "item",
           "kind": "repository",
           "title": "glue",
+          "description": "Glue strings to data in R. Small, fast, dependency free interpreted string literals.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -2776,10 +2963,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Render bits of R code for sharing, e.g., on GitHub or StackOverflow.",
+          "node_type": "item",
           "kind": "repository",
           "title": "reprex",
+          "description": "Render bits of R code for sharing, e.g., on GitHub or StackOverflow.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -2790,10 +2978,11 @@
           }
         },
         {
-          "children": [],
-          "description": "R Interface to Python",
+          "node_type": "item",
           "kind": "repository",
           "title": "reticulate",
+          "description": "R Interface to Python",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -2804,10 +2993,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Tool for producing high quality forecasts for time series data that has multiple seasonality with linear or non-linear growth.",
+          "node_type": "item",
           "kind": "repository",
           "title": "prophet",
+          "description": "Tool for producing high quality forecasts for time series data that has multiple seasonality with linear or non-linear growth.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -2818,10 +3008,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Easily install and load packages from the tidyverse",
+          "node_type": "item",
           "kind": "repository",
           "title": "tidyverse",
+          "description": "Easily install and load packages from the tidyverse",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -2832,10 +3023,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Create HTML5 slides with R Markdown and the JavaScript library",
+          "node_type": "item",
           "kind": "repository",
           "title": "xaringan",
+          "description": "Create HTML5 slides with R Markdown and the JavaScript library",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -2846,10 +3038,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A functional programming toolkit for R",
+          "node_type": "item",
           "kind": "repository",
           "title": "purrr",
+          "description": "A functional programming toolkit for R",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -2860,10 +3053,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Static Code Analysis for R",
+          "node_type": "item",
           "kind": "repository",
           "title": "lintr",
+          "description": "Static Code Analysis for R",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -2874,10 +3068,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Manipulating and printing UTF-8 text that fixes multiple bugs in R's UTF-8 handling.",
+          "node_type": "item",
           "kind": "repository",
           "title": "utf8",
+          "description": "Manipulating and printing UTF-8 text that fixes multiple bugs in R's UTF-8 handling.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -2888,10 +3083,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Combine separate ggplots into the same graphic.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Patchwork",
+          "description": "Combine separate ggplots into the same graphic.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -2902,10 +3098,11 @@
           }
         },
         {
-          "children": [],
-          "description": "🔏 Opinionated, typographic-centric ggplot2 themes and theme components",
+          "node_type": "item",
           "kind": "repository",
           "title": "hrbrthemes",
+          "description": "🔏 Opinionated, typographic-centric ggplot2 themes and theme components",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",

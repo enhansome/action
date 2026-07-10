@@ -39,6 +39,34 @@ function findItemByTitle(
   return undefined;
 }
 
+// Any emitted node (item or group) for shape assertions in the Option B tests.
+// `node_type` discriminates: 'item' carries kind/repo_info, 'group' carries
+// neither — only children.
+interface AnyNode {
+  children?: AnyNode[];
+  description: null | string;
+  kind?: string;
+  node_type?: 'group' | 'item';
+  repo_info?: { owner: string; repo: string; stars: number };
+  title: string;
+}
+
+function findNode(
+  items: AnyNode[] | undefined,
+  title: string,
+): AnyNode | undefined {
+  for (const node of items ?? []) {
+    if (node.title === title) {
+      return node;
+    }
+    const nested = findNode(node.children, title);
+    if (nested) {
+      return nested;
+    }
+  }
+  return undefined;
+}
+
 describe('fetchTargetData with Concurrency', () => {
   const token = 'test-token';
   const mockRepoData: RepoInfoDetails = {
@@ -505,5 +533,214 @@ describe('classifyKind', () => {
     await expect(classifyKind(octokit, 'o', 'r', 20)).rejects.toThrow(
       'Not Found (404)',
     );
+  });
+});
+
+describe('Item identity: own-link only, categories become groups (Option B)', () => {
+  const token = 'test-token';
+  const sourceRepo = 'example/awesome-test';
+
+  beforeEach(() => {
+    vi.clearAllMocks();
+    vi.mocked(github.parseGitHubUrl).mockImplementation((url: string) => {
+      if (!url.includes('github.com')) {
+        return null;
+      }
+      const parts = url.split('/');
+      return { owner: parts[parts.length - 2], repo: parts[parts.length - 1] };
+    });
+    // Distinguishable repo info — owner/repo echo the parsed link, so a child's
+    // identity is checkable and any borrowing onto a group is detectable.
+    vi.mocked(github.getRepoInfo).mockImplementation((_ok, owner, repo) =>
+      Promise.resolve({
+        archived: false,
+        language: 'TypeScript',
+        open_issues_count: 1,
+        owner,
+        pushed_at: '2025-01-01T00:00:00Z',
+        repo,
+        stargazers_count: 100,
+      }),
+    );
+    // Minimal README -> every target classifies as a repository by default.
+    vi.mocked(github.getReadme).mockResolvedValue('# project\n');
+  });
+
+  async function process(md: string) {
+    const { jsonData } = await processMarkdownContent(
+      md,
+      token,
+      [],
+      // minLinks: 0 disables the section gate so these focused cases don't need
+      // a full list — identity/grouping is what's under test, not the gate.
+      { by: '', minLinks: 0 },
+      sourceRepo,
+      '',
+    );
+    return jsonData;
+  }
+
+  it('emits a category with nested GitHub children as a kind-less group', async () => {
+    const data = await process(
+      [
+        '# List',
+        '',
+        '## Section',
+        '',
+        '- [SBCL](http://www.sbcl.org/) - Steel Bank Common Lisp',
+        '  - [sbcl-librarian](https://github.com/quil-lang/sbcl-librarian) - lib',
+        '  - [sbcl-goodies](https://github.com/sionescu/sbcl-goodies) - goodies',
+        '',
+      ].join('\n'),
+    );
+
+    const section = data.items.find(s => s.title === 'Section');
+    expect(section, 'section "Section" should exist').toBeDefined();
+
+    const sbcl = findNode(section?.items, 'SBCL');
+    expect(sbcl, 'SBCL should be emitted').toBeDefined();
+    expect(sbcl?.node_type).toBe('group');
+    expect(sbcl?.kind).toBeUndefined();
+    expect(sbcl?.repo_info).toBeUndefined();
+
+    // The nested children are emitted as their own items, keyed by their OWN
+    // links — not hidden under a borrowed identity.
+    const lib = findNode(section?.items, 'sbcl-librarian');
+    expect(lib?.node_type).toBe('item');
+    expect(lib?.kind).toBe('repository');
+    expect(lib?.repo_info).toMatchObject({
+      owner: 'quil-lang',
+      repo: 'sbcl-librarian',
+    });
+    const goodies = findNode(section?.items, 'sbcl-goodies');
+    expect(goodies?.repo_info).toMatchObject({
+      owner: 'sionescu',
+      repo: 'sbcl-goodies',
+    });
+  });
+
+  it('does not borrow a nested child identity onto the group', async () => {
+    const data = await process(
+      [
+        '# List',
+        '',
+        '## Section',
+        '',
+        '- Category',
+        '  - [low](https://github.com/o/low)',
+        '  - [high](https://github.com/o/high)',
+        '',
+      ].join('\n'),
+    );
+
+    const section = data.items.find(s => s.title === 'Section');
+    const cat = findNode(section?.items, 'Category');
+    expect(cat).toBeDefined();
+    expect(cat?.node_type).toBe('group');
+    expect(cat?.repo_info).toBeUndefined();
+    expect(cat?.kind).toBeUndefined();
+    // Both children present as distinct items — no hidden borrowing/duplication.
+    expect(findNode(section?.items, 'low')?.repo_info).toMatchObject({
+      repo: 'low',
+    });
+    expect(findNode(section?.items, 'high')?.repo_info).toMatchObject({
+      repo: 'high',
+    });
+  });
+
+  it('preserves an item own-link identity even with nested children', async () => {
+    const data = await process(
+      [
+        '# List',
+        '',
+        '## Section',
+        '',
+        '- [parent](https://github.com/o/parent) - parent',
+        '  - [child](https://github.com/o/child) - child',
+        '',
+      ].join('\n'),
+    );
+
+    const section = data.items.find(s => s.title === 'Section');
+    const parent = findNode(section?.items, 'parent');
+    expect(parent).toBeDefined();
+    expect(parent?.node_type).toBe('item');
+    expect(parent?.repo_info).toMatchObject({ owner: 'o', repo: 'parent' });
+    expect(parent?.children?.some(c => c.title === 'child')).toBe(true);
+  });
+
+  it('keys an item by a secondary GitHub link in its own paragraph', async () => {
+    const data = await process(
+      [
+        '# List',
+        '',
+        '## Section',
+        '',
+        '- [Name](https://example.com/marketplace) - desc [On GitHub](https://github.com/o/repo)',
+        '',
+      ].join('\n'),
+    );
+
+    const section = data.items.find(s => s.title === 'Section');
+    const node = findNode(section?.items, 'Name');
+    expect(node).toBeDefined();
+    expect(node?.node_type).toBe('item');
+    expect(node?.repo_info).toMatchObject({ owner: 'o', repo: 'repo' });
+  });
+
+  it('drops a non-GitHub leaf with no children (D9)', async () => {
+    const data = await process(
+      [
+        '# List',
+        '',
+        '## Section',
+        '',
+        '- [Some Book](https://example.com/book) - a book',
+        '',
+      ].join('\n'),
+    );
+
+    const section = data.items.find(s => s.title === 'Section');
+    expect(section && findNode(section.items, 'Some Book')).toBeUndefined();
+  });
+
+  it('classifies a group nested child by its own README (kind parity)', async () => {
+    vi.mocked(github.getReadme).mockImplementation((_ok, _owner, repo) => {
+      if (repo === 'registry-child') {
+        return Promise.resolve(
+          '# reg\n\n' +
+            Array.from(
+              { length: 20 },
+              (_, i) => `- [r-${i}](https://github.com/o/r-${i})`,
+            ).join('\n') +
+            '\n',
+        );
+      }
+      return Promise.resolve('# project\n');
+    });
+
+    const data = await process(
+      [
+        '# List',
+        '',
+        '## Section',
+        '',
+        '- Editors',
+        '  - [registry-child](https://github.com/o/registry-child)',
+        '',
+      ].join('\n'),
+    );
+
+    const section = data.items.find(s => s.title === 'Section');
+    const group = findNode(section?.items, 'Editors');
+    expect(group).toBeDefined();
+    expect(group?.node_type).toBe('group');
+
+    // The child's kind is fetched for its OWN link and applied — proving the
+    // kind-fetch target (collectEntryGitHubUrls) and the consumer agree.
+    const child = findNode(section?.items, 'registry-child');
+    expect(child).toBeDefined();
+    expect(child?.node_type).toBe('item');
+    expect(child?.kind).toBe('registry');
   });
 });

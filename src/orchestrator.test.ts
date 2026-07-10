@@ -2,12 +2,21 @@ import * as fs from 'fs';
 import * as path from 'path';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 
+import type { JsonItem, JsonNode } from './markdown.js';
+
 import * as github from './github.js';
 import { RepoInfoDetails } from './github.js';
 import { enhance } from './orchestrator.js';
 
 // Mock the lowest-level dependency, which is the GitHub API client.
 vi.mock('./github.js');
+
+// Narrow a `JsonNode` (item | group) to a `JsonItem`. Section/children arrays
+// can now contain kind-less groups (Option B); the kind/repo_info assertions in
+// this file are all about genuine GitHub items, so they narrow first.
+function isItem(node: JsonNode): node is JsonItem {
+  return node.node_type === 'item';
+}
 
 describe('Orchestrator: enhance()', () => {
   const token = 'test-token';
@@ -458,16 +467,21 @@ A list of awesome Go frameworks.
       expect(firstSection.items).toHaveLength(3);
       // JSON order now matches the rendered markdown: sorted by stars desc.
       // Repo B (300) > Repo C (200) > Repo A (100).
-      expect(firstSection.items[0].title).toBe('Repo B');
-      expect(firstSection.items[0].repo_info?.stars).toBe(300);
+      const repoB = firstSection.items[0];
+      expect(repoB.title).toBe('Repo B');
+      expect(isItem(repoB)).toBe(true);
+      expect(isItem(repoB) ? repoB.repo_info?.stars : undefined).toBe(300);
       expect(firstSection.items[1].title).toBe('Repo C');
       expect(firstSection.items[2].title).toBe('Repo A');
 
       // Nested items travel with their parent (Repo B).
-      const nestedItems = firstSection.items[0].children;
+      const nestedItems = repoB.children;
       expect(nestedItems).toHaveLength(1);
-      expect(nestedItems[0].title).toBe('Nested 1');
-      expect(nestedItems[0].repo_info?.language).toBe('JS');
+      const nested1 = nestedItems[0];
+      expect(nested1.title).toBe('Nested 1');
+      expect(isItem(nested1) ? nested1.repo_info?.language : undefined).toBe(
+        'JS',
+      );
 
       // Check second valid section (sorted: Repo C 200 before Repo A 100)
       const thirdSection = jsonData.items[1];
@@ -640,7 +654,7 @@ Version: __VERSION__ | Last Updated: 2025-01-01
       const lists = jsonData.items.find(s => s.title === 'Lists');
       expect(lists).toBeDefined();
       const kindByTitle = Object.fromEntries(
-        lists?.items.map(i => [i.title, i.kind]) ?? [],
+        lists?.items.filter(isItem).map(i => [i.title, i.kind]) ?? [],
       );
       expect(kindByTitle['awesome-go']).toBe('registry');
       expect(kindByTitle.gin).toBe('repository');
@@ -661,7 +675,7 @@ Version: __VERSION__ | Last Updated: 2025-01-01
       expect(jsonData.metadata.kind).toBe('registry');
       // Sanity: items did get classified (all repositories here).
       for (const section of jsonData.items) {
-        for (const item of section.items) {
+        for (const item of section.items.filter(isItem)) {
           expect(item.kind).toBe('repository');
         }
       }
@@ -712,7 +726,7 @@ Version: __VERSION__ | Last Updated: 2025-01-01
       const tools = jsonData.items.find(s => s.title === 'Tools');
       expect(tools).toBeDefined();
       const byTitle = Object.fromEntries(
-        tools?.items.map(i => [i.title, i]) ?? [],
+        tools?.items.filter(isItem).map(i => [i.title, i]) ?? [],
       );
       // The dead link did not fail the run — its item is still in the graph...
       expect(byTitle.dead).toBeDefined();
@@ -837,7 +851,7 @@ Version: __VERSION__ | Last Updated: 2025-01-01
       ).toBeDefined();
       const items = awesomeLists?.items ?? [];
       expect(items.length).toBeGreaterThan(0);
-      for (const item of items) {
+      for (const item of items.filter(isItem)) {
         expect(item.kind, `"${item.title}" should be a registry`).toBe(
           'registry',
         );

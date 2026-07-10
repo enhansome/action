@@ -9,10 +9,11 @@
       "description": "For building, testing, and playing with regexes.",
       "items": [
         {
-          "children": [],
-          "description": "[GitHub] - Best tester for presentations (JavaScript).",
+          "node_type": "item",
           "kind": "repository",
           "title": "regexplained",
+          "description": "[GitHub] - Best tester for presentations (JavaScript).",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -23,10 +24,11 @@
           }
         },
         {
-          "children": [],
-          "description": "[GitHub] - Best open source tester.",
+          "node_type": "item",
           "kind": "repository",
           "title": "RegExr",
+          "description": "[GitHub] - Best open source tester.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -37,10 +39,11 @@
           }
         },
         {
-          "children": [],
-          "description": "[GitHub] - Best multilingual tester (JavaScript).",
+          "node_type": "item",
           "kind": "repository",
           "title": "RegexLearn",
+          "description": "[GitHub] - Best multilingual tester (JavaScript).",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -57,10 +60,11 @@
       "description": "Visualize how your regular expressions are structured or operate.",
       "items": [
         {
-          "children": [],
-          "description": "[GitHub] - Create railroad diagrams, with visual editor. Flavor: JavaScript.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Regex Vis",
+          "description": "[GitHub] - Create railroad diagrams, with visual editor. Flavor: JavaScript.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -71,10 +75,11 @@
           }
         },
         {
-          "children": [],
-          "description": "[GitHub] - Graphical editor with visual hierarchy. Flavor: .NET.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Nodexr",
+          "description": "[GitHub] - Graphical editor with visual hierarchy. Flavor: .NET.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -85,10 +90,11 @@
           }
         },
         {
-          "children": [],
-          "description": "[GitHub] - Create railroad diagrams. Flavor: JavaScript.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Regulex",
+          "description": "[GitHub] - Create railroad diagrams. Flavor: JavaScript.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -110,10 +116,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "Rename files uses regexes.",
+          "node_type": "item",
           "kind": "repository",
           "title": "nomino",
+          "description": "Rename files uses regexes.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -124,10 +131,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Better and faster grep. Recursively searches directories while respecting gitignore rules and skipping hidden/binary files.",
+          "node_type": "item",
           "kind": "repository",
           "title": "ripgrep",
+          "description": "Better and faster grep. Recursively searches directories while respecting gitignore rules and skipping hidden/binary files.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -159,10 +167,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": ".",
+          "node_type": "item",
           "kind": "repository",
           "title": "RE2: Syntax",
+          "description": ".",
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": "Rust",
@@ -173,10 +182,11 @@
           }
         },
         {
-          "children": [],
-          "description": ".",
+          "node_type": "item",
           "kind": "repository",
           "title": "Oniguruma: RE",
+          "description": ".",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -187,10 +197,11 @@
           }
         },
         {
-          "children": [],
-          "description": ".",
+          "node_type": "item",
           "kind": "repository",
           "title": "Onigmo: RE",
+          "description": ".",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -207,10 +218,11 @@
       "description": "Read or contribute to the code behind major regex implementations.",
       "items": [
         {
-          "children": [],
-          "description": "See perlreguts.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Perl",
+          "description": "See perlreguts.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -221,10 +233,11 @@
           }
         },
         {
-          "children": [],
-          "description": "JDK standard regexes.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Java: java.util.regex",
+          "description": "JDK standard regexes.",
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": "Java",
@@ -235,10 +248,11 @@
           }
         },
         {
-          "children": [],
-          "description": "C++ regex library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Boost.Regex",
+          "description": "C++ regex library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -249,53 +263,11 @@
           }
         },
         {
-          "children": [
-            {
-              "children": [],
-              "description": "Regex engine used by Safari.",
-              "kind": "repository",
-              "title": "JavaScriptCore: RegExp",
-              "repo_info": {
-                "archived": false,
-                "language": "TypeScript",
-                "last_commit": "2021-08-14T00:00:00.000Z",
-                "owner": "WebKit",
-                "repo": "WebKit",
-                "stars": 42871
-              }
-            },
-            {
-              "children": [],
-              "description": "Regex engine used by Chrome, Edge, Firefox, etc.",
-              "kind": "repository",
-              "title": "V8: Irregexp",
-              "repo_info": {
-                "archived": false,
-                "language": "TypeScript",
-                "last_commit": "2021-11-22T00:00:00.000Z",
-                "owner": "v8",
-                "repo": "v8",
-                "stars": 15771
-              }
-            }
-          ],
-          "description": null,
-          "kind": "repository",
-          "title": "JavaScript:",
-          "repo_info": {
-            "archived": false,
-            "language": "TypeScript",
-            "last_commit": "2021-08-14T00:00:00.000Z",
-            "owner": "WebKit",
-            "repo": "WebKit",
-            "stars": 42871
-          }
-        },
-        {
-          "children": [],
-          "description": "Popular C++ regex library used by Go, etc. Non-backtracking engine.",
+          "node_type": "item",
           "kind": "repository",
           "title": "RE2",
+          "description": "Popular C++ regex library used by Go, etc. Non-backtracking engine.",
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": "Rust",
@@ -306,10 +278,11 @@
           }
         },
         {
-          "children": [],
-          "description": "and regex - Standard and extended regex libraries.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Python: re",
+          "description": "and regex - Standard and extended regex libraries.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -320,10 +293,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Intel's high-performance library, used for DPI.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Hyperscan",
+          "description": "Intel's high-performance library, used for DPI.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -334,10 +308,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Shared by all .NET languages (C#, VB, etc.).",
+          "node_type": "item",
           "kind": "repository",
           "title": ".NET: System.Text.RegularExpressions",
+          "description": "Shared by all .NET languages (C#, VB, etc.).",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -348,10 +323,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Popular C regex library used by PHP, R, etc.",
+          "node_type": "item",
           "kind": "repository",
           "title": "PCRE2",
+          "description": "Popular C regex library used by PHP, R, etc.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -362,10 +338,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Unicode org's package with full Unicode support.",
+          "node_type": "item",
           "kind": "repository",
           "title": "ICU",
+          "description": "Unicode org's package with full Unicode support.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -376,10 +353,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Non-backtracking engine.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Rust: regex",
+          "description": "Non-backtracking engine.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -390,10 +368,11 @@
           }
         },
         {
-          "children": [],
-          "description": "C regex library used by Ruby 1.9, TextMate grammars, etc.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Oniguruma",
+          "description": "C regex library used by Ruby 1.9, TextMate grammars, etc.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -404,10 +383,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Forked from Oniguruma. Used by Ruby 2.0+.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Onigmo",
+          "description": "Forked from Oniguruma. Used by Ruby 2.0+.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -416,6 +396,43 @@
             "repo": "Onigmo",
             "stars": 1040
           }
+        },
+        {
+          "node_type": "group",
+          "title": "JavaScript:",
+          "description": null,
+          "children": [
+            {
+              "node_type": "item",
+              "kind": "repository",
+              "title": "JavaScriptCore: RegExp",
+              "description": "Regex engine used by Safari.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "language": "TypeScript",
+                "last_commit": "2021-08-14T00:00:00.000Z",
+                "owner": "WebKit",
+                "repo": "WebKit",
+                "stars": 42871
+              }
+            },
+            {
+              "node_type": "item",
+              "kind": "repository",
+              "title": "V8: Irregexp",
+              "description": "Regex engine used by Chrome, Edge, Firefox, etc.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "language": "TypeScript",
+                "last_commit": "2021-11-22T00:00:00.000Z",
+                "owner": "v8",
+                "repo": "v8",
+                "stars": 15771
+              }
+            }
+          ]
         }
       ],
       "title": "Source code"
@@ -429,10 +446,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "[home] - JavaScript and Scala library for detecting ReDoS vulnerability. Can be used as an ESLint plugin.",
+          "node_type": "item",
           "kind": "repository",
           "title": "recheck",
+          "description": "[home] - JavaScript and Scala library for detecting ReDoS vulnerability. Can be used as an ESLint plugin.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -443,10 +461,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Perl library for detecting ReDoS vulnerability.",
+          "node_type": "item",
           "kind": "repository",
           "title": "vuln-regex-detector",
+          "description": "Perl library for detecting ReDoS vulnerability.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -468,10 +487,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "Convert Oniguruma patterns to native JavaScript regexes.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Oniguruma-To-ES",
+          "description": "Convert Oniguruma patterns to native JavaScript regexes.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -482,10 +502,11 @@
           }
         },
         {
-          "children": [],
-          "description": "(RE2), rregex (Rust's ), vscode-oniguruma (Oniguruma).",
+          "node_type": "item",
           "kind": "repository",
           "title": "Use other engines via WebAssembly: node-re2",
+          "description": "(RE2), rregex (Rust's ), vscode-oniguruma (Oniguruma).",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -496,10 +517,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A template tag for extended, readable, high-performance JavaScript regexes.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Regex+",
+          "description": "A template tag for extended, readable, high-performance JavaScript regexes.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -516,10 +538,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "A template tag that uses structured syntax with variables and comments.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Rexx",
+          "description": "A template tag that uses structured syntax with variables and comments.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -530,10 +553,11 @@
           }
         },
         {
-          "children": [],
-          "description": ", VerbalExpressions (implementations for many languages), magic-regexp [home], Super Expressive [playground].",
+          "node_type": "item",
           "kind": "repository",
           "title": "Compose with functions: compose-regexp.js",
+          "description": ", VerbalExpressions (implementations for many languages), magic-regexp [home], Super Expressive [playground].",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -544,10 +568,11 @@
           }
         },
         {
-          "children": [],
-          "description": "[docs] - A language that compiles to regexes.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Melody",
+          "description": "[docs] - A language that compiles to regexes.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -564,10 +589,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": ", regex-to-strings.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Generate strings that match a given regex: randexp.js",
+          "description": ", regex-to-strings.",
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": "Rust",
@@ -578,10 +604,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Generate Mermaid diagrams to visualize regexes.",
+          "node_type": "item",
           "kind": "repository",
           "title": "regex-to-mermaid",
+          "description": "Generate Mermaid diagrams to visualize regexes.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -592,10 +619,11 @@
           }
         },
         {
-          "children": [],
-          "description": "[home] - ESLint plugin for finding regex mistakes, etc.",
+          "node_type": "item",
           "kind": "repository",
           "title": "eslint-plugin-regexp",
+          "description": "[home] - ESLint plugin for finding regex mistakes, etc.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -606,12 +634,17 @@
           }
         },
         {
+          "node_type": "item",
+          "kind": "repository",
+          "title": "AST builders: regexpp",
+          "description": ", regexp-tree, regjsparser/regjsgen, regexp-simple-parser.",
           "children": [
             {
-              "children": [],
-              "description": "[docs] - Analyze AST nodes produced by regexpp.",
+              "node_type": "item",
               "kind": "repository",
               "title": "regexp-ast-analysis",
+              "description": "[docs] - Analyze AST nodes produced by regexpp.",
+              "children": [],
               "repo_info": {
                 "archived": false,
                 "language": "Ruby",
@@ -622,9 +655,6 @@
               }
             }
           ],
-          "description": ", regexp-tree, regjsparser/regjsgen, regexp-simple-parser.",
-          "kind": "repository",
-          "title": "AST builders: regexpp",
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -635,10 +665,11 @@
           }
         },
         {
-          "children": [],
-          "description": "-equivalent constructor with TS types.",
+          "node_type": "item",
           "kind": "repository",
           "title": "arkregex",
+          "description": "-equivalent constructor with TS types.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -649,10 +680,11 @@
           }
         },
         {
-          "children": [],
-          "description": "[home] - Highlight regex syntax.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Regex Colorizer",
+          "description": "[home] - Highlight regex syntax.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -663,10 +695,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Generate a regex that matches a set of strings.",
+          "node_type": "item",
           "kind": "repository",
           "title": "regexgen",
+          "description": "Generate a regex that matches a set of strings.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -677,10 +710,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Add an execution timeout to regexes.",
+          "node_type": "item",
           "kind": "repository",
           "title": "super-regex",
+          "description": "Add an execution timeout to regexes.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -691,10 +725,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Check regex equivalence, build regex intersections, and other utilities.",
+          "node_type": "item",
           "kind": "repository",
           "title": "regex-utils",
+          "description": "Check regex equivalence, build regex intersections, and other utilities.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -705,10 +740,11 @@
           }
         },
         {
-          "children": [],
-          "description": ", incr-regex-package.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Partial regex matching: regex-partial-match",
+          "description": ", incr-regex-package.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -725,10 +761,11 @@
       "description": "The history of improvements to regular expressions in the JavaScript standard. Starting with ES2018, includes links to the TC39 proposals where features were developed and discussed.",
       "items": [
         {
-          "children": [],
-          "description": "(which returns an iterator), plus .",
+          "node_type": "item",
           "kind": "repository",
           "title": "ES2020 added string method",
+          "description": "(which returns an iterator), plus .",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -739,10 +776,11 @@
           }
         },
         {
-          "children": [],
-          "description": "like , duplicate named capturing groups in separate alternation paths, and .",
+          "node_type": "item",
           "kind": "repository",
           "title": "ES2025 added modifiers",
+          "description": "like , duplicate named capturing groups in separate alternation paths, and .",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -753,10 +791,11 @@
           }
         },
         {
-          "children": [],
-          "description": "(), which provides start/end indices for matched substrings.",
+          "node_type": "item",
           "kind": "repository",
           "title": "ES2022 added flag",
+          "description": "(), which provides start/end indices for matched substrings.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -767,10 +806,11 @@
           }
         },
         {
-          "children": [],
-          "description": "(), lookbehind, named capture, and Unicode properties (via and which require flag ; see list).",
+          "node_type": "item",
           "kind": "repository",
           "title": "ES2018 added flag",
+          "description": "(), lookbehind, named capture, and Unicode properties (via and which require flag ; see list).",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -781,10 +821,11 @@
           }
         },
         {
-          "children": [],
-          "description": "() [explainer] as an upgrade to flag , which adds a set of multicharacter \"properties of strings\" to , multicharacter elements within character classes via and , nested character classes, set operators and , and different escaping rules within character classes. It also fixes case-insensitive matching for and within negated .",
+          "node_type": "item",
           "kind": "repository",
           "title": "ES2024 added flag",
+          "description": "() [explainer] as an upgrade to flag , which adds a set of multicharacter \"properties of strings\" to , multicharacter elements within character classes via and , nested character classes, set operators and , and different escaping rules within character classes. It also fixes case-insensitive matching for and within negated .",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -795,12 +836,16 @@
           }
         },
         {
+          "node_type": "group",
+          "title": "ES6/ES2015 added: [explainer",
+          "description": "]",
           "children": [
             {
-              "children": [],
-              "description": "] [2016 spec fix], which adds Unicode code point escapes via , strict errors (for unreserved escapes, octal escapes, quantified lookahead, and unescaped special characters in some contexts), Unicode case-folding for flag , and code point matching (with impact on quantifiers, character classes, ranges, and built-in sets).",
+              "node_type": "item",
               "kind": "repository",
               "title": "Flag () [explainer",
+              "description": "] [2016 spec fix], which adds Unicode code point escapes via , strict errors (for unreserved escapes, octal escapes, quantified lookahead, and unescaped special characters in some contexts), Unicode case-folding for flag , and code point matching (with impact on quantifiers, character classes, ranges, and built-in sets).",
+              "children": [],
               "repo_info": {
                 "archived": false,
                 "language": "Ruby",
@@ -810,18 +855,7 @@
                 "stars": 2308
               }
             }
-          ],
-          "description": "]",
-          "kind": "repository",
-          "title": "ES6/ES2015 added: [explainer",
-          "repo_info": {
-            "archived": false,
-            "language": "Ruby",
-            "last_commit": "2023-02-28T00:00:00.000Z",
-            "owner": "tc39",
-            "repo": "ecma262",
-            "stars": 2308
-          }
+          ]
         }
       ],
       "title": "JavaScript regex evolution"

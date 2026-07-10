@@ -19,10 +19,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "Dependency analysis and optimization toolkit for modern JavaScript and TypeScript projects. Trace imports, identify circular dependencies, find unused code, clean node modules.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Rev-dep",
+          "description": "Dependency analysis and optimization toolkit for modern JavaScript and TypeScript projects. Trace imports, identify circular dependencies, find unused code, clean node modules.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -33,10 +34,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Statically generates a call graph image and displays it on screen.",
+          "node_type": "item",
           "kind": "repository",
           "title": "callGraph",
+          "description": "Statically generates a call graph image and displays it on screen.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -47,10 +49,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A classpath and module path scanner for querying or visualizing class metadata or class relatedness.",
+          "node_type": "item",
           "kind": "repository",
           "title": "ClassGraph",
+          "description": "A classpath and module path scanner for querying or visualizing class metadata or class relatedness.",
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": "TypeScript",
@@ -61,10 +64,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Pluggable and configurable code transformer with built-in eslint, babel plugins support for js, jsx typescript, flow, markdown, yaml and json.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Putout",
+          "description": "Pluggable and configurable code transformer with built-in eslint, babel plugins support for js, jsx typescript, flow, markdown, yaml and json.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -75,10 +79,11 @@
           }
         },
         {
-          "children": [],
-          "description": "OpenStaticAnalyzer is a source code analyzer tool, which can perform deep static analysis of the source code of complex systems.",
+          "node_type": "item",
           "kind": "repository",
           "title": "OpenStaticAnalyzer",
+          "description": "OpenStaticAnalyzer is a source code analyzer tool, which can perform deep static analysis of the source code of complex systems.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -89,10 +94,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A Simple and Comprehensive Vulnerability Scanner for Containers and other Artifacts, Suitable for CI. Trivy detects vulnerabilities of OS packages (Alpine, RHEL, CentOS, etc.) and application dependencies (Bundler, Composer, npm, yarn, etc.). Checks containers and filesystems.",
+          "node_type": "item",
           "kind": "repository",
           "title": "trivy",
+          "description": "A Simple and Comprehensive Vulnerability Scanner for Containers and other Artifacts, Suitable for CI. Trivy detects vulnerabilities of OS packages (Alpine, RHEL, CentOS, etc.) and application dependencies (Bundler, Composer, npm, yarn, etc.). Checks containers and filesystems.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -103,10 +109,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Automated translation platform for code comments and docstrings across 20+ file types. Eliminates language barriers in international software collaboration. Supports 100+ language pairs with syntax protection. Integrates into CI/CD pipelines like Ruff. 10-20x faster with concurrent processing.",
+          "node_type": "item",
           "kind": "repository",
           "title": "LangLint",
+          "description": "Automated translation platform for code comments and docstrings across 20+ file types. Eliminates language barriers in international software collaboration. Supports 100+ language pairs with syntax protection. Integrates into CI/CD pipelines like Ruff. 10-20x faster with concurrent processing.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -117,10 +124,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Analyses the comprehensive dependencies of code elements for Java, C/C++, Ruby.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Depends",
+          "description": "Analyses the comprehensive dependencies of code elements for Java, C/C++, Ruby.",
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": "Rust",
@@ -131,10 +139,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Performs static analysis on raw SQL queries in your Go code base to surface potential runtime errors. It checks for SQL syntax error, identifies unsafe queries that could potentially lead to SQL injections makes sure column count matches value count in INSERT statements and validates table- and column names.",
+          "node_type": "item",
           "kind": "repository",
           "title": "sqlvet",
+          "description": "Performs static analysis on raw SQL queries in your Go code base to surface potential runtime errors. It checks for SQL syntax error, identifies unsafe queries that could potentially lead to SQL injections makes sure column count matches value count in INSERT statements and validates table- and column names.",
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": "Java",
@@ -145,10 +154,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Facebook's tools for code analysis, visualizations, or style-preserving source transformation for many languages.",
+          "node_type": "item",
           "kind": "repository",
           "title": "pfff",
+          "description": "Facebook's tools for code analysis, visualizations, or style-preserving source transformation for many languages.",
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": "TypeScript",
@@ -159,10 +169,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Open-Source static code analysis tool to discover, filter and prioritize security risks and vulnerabilities leading to sensitive data exposures (PII, PHI, PD). Highly configurable and easily extensible, built for security and engineering teams.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Bearer",
+          "description": "Open-Source static code analysis tool to discover, filter and prioritize security risks and vulnerabilities leading to sensitive data exposures (PII, PHI, PD). Highly configurable and easily extensible, built for security and engineering teams.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -173,10 +184,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Creates reports of over 400 rule patterns for feature detection (e.g. the use of cryptography or version control in apps).",
+          "node_type": "item",
           "kind": "repository",
           "title": "ApplicationInspector",
+          "description": "Creates reports of over 400 rule patterns for feature detection (e.g. the use of cryptography or version control in apps).",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -187,10 +199,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Dead code detection, security scanning, secrets detection, and code quality analysis for Python, TypeScript, and Go. Framework-aware analysis with 98% recall. Includes CI/CD GitHub Action, VS Code extension, and MCP server for AI agent integration.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Skylos",
+          "description": "Dead code detection, security scanning, secrets detection, and code quality analysis for Python, TypeScript, and Go. Framework-aware analysis with 98% recall. Includes CI/CD GitHub Action, VS Code extension, and MCP server for AI agent integration.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -201,10 +214,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Linter for integrating annotated TODOs with your issue trackers",
+          "node_type": "item",
           "kind": "repository",
           "title": "todocheck",
+          "description": "Linter for integrating annotated TODOs with your issue trackers",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -215,10 +229,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A language-agnostic linter that keeps code, documentation, and configuration in sync and enforces strict formatting and validation rules.",
+          "node_type": "item",
           "kind": "repository",
           "title": "BlockWatch",
+          "description": "A language-agnostic linter that keeps code, documentation, and configuration in sync and enforces strict formatting and validation rules.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -229,10 +244,11 @@
           }
         },
         {
-          "children": [],
-          "description": "An extensible linter for JS, following the ECMAScript standard.",
+          "node_type": "item",
           "kind": "repository",
           "title": "ESLint",
+          "description": "An extensible linter for JS, following the ECMAScript standard.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -243,10 +259,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A fast and accurate static analysis solution for C/C++, C#, Lua codes provided by Tencent. Using GPLv3 license.",
+          "node_type": "item",
           "kind": "repository",
           "title": "TscanCode",
+          "description": "A fast and accurate static analysis solution for C/C++, C#, Lua codes provided by Tencent. Using GPLv3 license.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -257,10 +274,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Asynchronous Lint Engine for Vim and NeoVim with support for many languages.",
+          "node_type": "item",
           "kind": "repository",
           "title": "ale",
+          "description": "Asynchronous Lint Engine for Vim and NeoVim with support for many languages.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -271,10 +289,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A code formatter for .NET. Preferences will be read from an file, if present, otherwise a default set of preferences will be used. At this time dotnet-format is able to format C# and Visual Basic projects with a subset of supported options.",
+          "node_type": "item",
           "kind": "repository",
           "title": "dotnet-format",
+          "description": "A code formatter for .NET. Preferences will be read from an file, if present, otherwise a default set of preferences will be used. At this time dotnet-format is able to format C# and Visual Basic projects with a subset of supported options.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -285,10 +304,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Regex-based static analysis tool for Visual Studio, VS Code, and Sublime Text - C/C++, C#, PHP, ASP, Python, Ruby, Java, and others.",
+          "node_type": "item",
           "kind": "repository",
           "title": "DevSkim",
+          "description": "Regex-based static analysis tool for Visual Studio, VS Code, and Sublime Text - C/C++, C#, PHP, ASP, Python, Ruby, Java, and others.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -299,10 +319,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Roslyn-based implementation of FxCop analyzers.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Roslyn Analyzers",
+          "description": "Roslyn-based implementation of FxCop analyzers.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -313,10 +334,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Static analysis capabilities for Java bytecode and related languages and for JavaScript.",
+          "node_type": "item",
           "kind": "repository",
           "title": "WALA",
+          "description": "Static analysis capabilities for Java bytecode and related languages and for JavaScript.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -327,10 +349,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Lizard is an extensible Cyclomatic Complexity Analyzer for many programming languages including C/C++ (doesn't require all the header files or Java imports). It also does copy-paste detection (code clone detection/code duplicate detection) and many other forms of static code analysis. Counts lines of code without comments, CCN (cyclomatic complexity number), token count of functions, parameter count of functions.",
+          "node_type": "item",
           "kind": "repository",
           "title": "lizard",
+          "description": "Lizard is an extensible Cyclomatic Complexity Analyzer for many programming languages including C/C++ (doesn't require all the header files or Java imports). It also does copy-paste detection (code clone detection/code duplicate detection) and many other forms of static code analysis. Counts lines of code without comments, CCN (cyclomatic complexity number), token count of functions, parameter count of functions.",
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": "Java",
@@ -341,10 +364,11 @@
           }
         },
         {
-          "children": [],
-          "description": "The Oxidation Compiler is creating a suite of high-performance tools for the JavaScript / TypeScript language re-written in Rust.",
+          "node_type": "item",
           "kind": "repository",
           "title": "oxc",
+          "description": "The Oxidation Compiler is creating a suite of high-performance tools for the JavaScript / TypeScript language re-written in Rust.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -355,10 +379,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Deep code analysis - semantic queries and dataflow for several languages with VSCode plugin support.",
+          "node_type": "item",
           "kind": "repository",
           "title": "codeql",
+          "description": "Deep code analysis - semantic queries and dataflow for several languages with VSCode plugin support.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -369,10 +394,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A static file linter that allows you to write custom rules using regular expressions (RegEx).",
+          "node_type": "item",
           "kind": "repository",
           "title": "relint",
+          "description": "A static file linter that allows you to write custom rules using regular expressions (RegEx).",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -383,10 +409,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Vulnerability Scanner and Risk Evaluation for containers, serverless and hosts at runtime. ThreatMapper generates runtime BOMs from dependencies and operating system packages, matches against multiple threat feeds, scans for unprotected secrets, and scores issues based on severity and risk-of-exploit.",
+          "node_type": "item",
           "kind": "repository",
           "title": "ThreatMapper",
+          "description": "Vulnerability Scanner and Risk Evaluation for containers, serverless and hosts at runtime. ThreatMapper generates runtime BOMs from dependencies and operating system packages, matches against multiple threat feeds, scans for unprotected secrets, and scores issues based on severity and risk-of-exploit.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -397,10 +424,11 @@
           }
         },
         {
-          "children": [],
-          "description": "copyright: — A (conditionally free for FOSS and individual developers) static analysis of C, C++, C# and Java code. For advertising purposes you can propose a large FOSS project for analysis by PVS employees. Supports CWE mapping, OWASP ASVS, MISRA, AUTOSAR and SEI CERT coding standards.",
+          "node_type": "item",
           "kind": "repository",
           "title": "PVS-Studio",
+          "description": "copyright: — A (conditionally free for FOSS and individual developers) static analysis of C, C++, C# and Java code. For advertising purposes you can propose a large FOSS project for analysis by PVS employees. Supports CWE mapping, OWASP ASVS, MISRA, AUTOSAR and SEI CERT coding standards.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -411,10 +439,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Quick automated code review of your changes. Supports more than 40 runners for various languages, including Clang, Elixir, JavaScript, PHP, Ruby and more.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Pronto",
+          "description": "Quick automated code review of your changes. Supports more than 40 runners for various languages, including Clang, Elixir, JavaScript, PHP, Ruby and more.",
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": "Java",
@@ -425,10 +454,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A fast and robust semantic search tool for C and C++ codebases. It is designed to help security researchers identify interesting functionality in large codebases.",
+          "node_type": "item",
           "kind": "repository",
           "title": "weggli",
+          "description": "A fast and robust semantic search tool for C and C++ codebases. It is designed to help security researchers identify interesting functionality in large codebases.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -439,10 +469,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Language-independent tool for massive, automatic, programmable refactoring based on simple pattern definitions.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Undebt",
+          "description": "Language-independent tool for massive, automatic, programmable refactoring based on simple pattern definitions.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -459,10 +490,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "A collection of tools and libraries for working with Go code, including linters and static analysis",
+          "node_type": "item",
           "kind": "repository",
           "title": "go-tools",
+          "description": "A collection of tools and libraries for working with Go code, including linters and static analysis",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -473,10 +505,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A collection of PHP linters in github collections",
+          "node_type": "item",
           "kind": "repository",
           "title": "Code Quality Checker Tools For PHP Projects",
+          "description": "A collection of PHP linters in github collections",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -487,10 +520,11 @@
           }
         },
         {
-          "children": [],
-          "description": "An introduction to static code analysis",
+          "node_type": "item",
           "kind": "repository",
           "title": "linters",
+          "description": "An introduction to static code analysis",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -501,10 +535,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A reviewed list of useful PHP static analysis tools",
+          "node_type": "item",
           "kind": "repository",
           "title": "php-static-analysis-tools",
+          "description": "A reviewed list of useful PHP static analysis tools",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -515,10 +550,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A collection of linters in github collections",
+          "node_type": "item",
           "kind": "repository",
           "title": "Clean code linters",
+          "description": "A collection of linters in github collections",
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": "TypeScript",

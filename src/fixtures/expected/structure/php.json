@@ -9,10 +9,11 @@
       "description": "Libraries for dependency and package management.",
       "items": [
         {
-          "children": [],
-          "description": "A PHP extension installer.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Pickle",
+          "description": "A PHP extension installer.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -23,10 +24,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A multi-framework Composer library installer.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Composer Installers",
+          "description": "A multi-framework Composer library installer.",
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": null,
@@ -37,10 +39,11 @@
           }
         },
         {
-          "children": [],
-          "description": "The official PHP installer for extensions.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Pie",
+          "description": "The official PHP installer for extensions.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -57,10 +60,11 @@
       "description": "Extras related to dependency management.",
       "items": [
         {
-          "children": [],
-          "description": "A composer plugin to merge several files.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Composer Merge Plugin",
+          "description": "A composer plugin to merge several files.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -71,10 +75,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A library to manage PHAR files in a project using Composer.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Tooly",
+          "description": "A library to manage PHAR files in a project using Composer.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -85,10 +90,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A plugin to check if minimum dependencies can be installed and tested.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Composer Prefer Lowest Validator",
+          "description": "A plugin to check if minimum dependencies can be installed and tested.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -99,10 +105,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A library to parse your project's Composer environment at runtime.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Composed",
+          "description": "A library to parse your project's Composer environment at runtime.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -113,10 +120,11 @@
           }
         },
         {
-          "children": [],
-          "description": "CLI tool to analyze composer dependencies and verify that no unknown symbols are used in the sources of a package.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Composer Require Checker",
+          "description": "CLI tool to analyze composer dependencies and verify that no unknown symbols are used in the sources of a package.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -127,10 +135,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A plugin for Composer to apply patches.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Composer Patches",
+          "description": "A plugin for Composer to apply patches.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -141,10 +150,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A static Composer repository generator.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Satis",
+          "description": "A static Composer repository generator.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -155,10 +165,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A CLI Tool to scan for unused composer packages.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Composer Unused",
+          "description": "A CLI Tool to scan for unused composer packages.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -169,10 +180,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A plugin for normalizing files.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Composer Normalize",
+          "description": "A plugin for normalizing files.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -189,10 +201,11 @@
       "description": "Extras related to web development frameworks.",
       "items": [
         {
-          "children": [],
-          "description": "An out-of-the-box adapter between Laravel/Lumen and Swoole.",
+          "node_type": "item",
           "kind": "repository",
           "title": "LaravelS",
+          "description": "An out-of-the-box adapter between Laravel/Lumen and Swoole.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -203,10 +216,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A Rapid Application Development (RAD) plugin for CakePHP.",
+          "node_type": "item",
           "kind": "repository",
           "title": "CakePHP CRUD",
+          "description": "A Rapid Application Development (RAD) plugin for CakePHP.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -223,10 +237,11 @@
       "description": "Tools for managing digital content.",
       "items": [
         {
-          "children": [],
-          "description": "The most popular e-commerce platform.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Magento",
+          "description": "The most popular e-commerce platform.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -237,10 +252,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Fork of EoL Magento 1 e-commerce platform.",
+          "node_type": "item",
           "kind": "repository",
           "title": "OpenMage",
+          "description": "Fork of EoL Magento 1 e-commerce platform.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -251,10 +267,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A blogging platform and CMS.",
+          "node_type": "item",
           "kind": "repository",
           "title": "WordPress",
+          "description": "A blogging platform and CMS.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -265,10 +282,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A modern flat-file CMS.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Grav",
+          "description": "A modern flat-file CMS.",
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": "TypeScript",
@@ -279,10 +297,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A flexible, user-friendly CMS for creating custom digital experiences on the web and beyond.",
+          "node_type": "item",
           "kind": "repository",
           "title": "CraftCMS",
+          "description": "A flexible, user-friendly CMS for creating custom digital experiences on the web and beyond.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -299,10 +318,11 @@
       "description": "Micro frameworks and routers.",
       "items": [
         {
-          "children": [],
-          "description": "A micro-framework for CLI applications.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Silly",
+          "description": "A micro-framework for CLI applications.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -313,10 +333,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Minimalist, dependency-free framework for building CLI-centric PHP applications.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Minicli",
+          "description": "Minimalist, dependency-free framework for building CLI-centric PHP applications.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -333,10 +354,11 @@
       "description": "Extras related to micro frameworks and routers.",
       "items": [
         {
-          "children": [],
-          "description": "A skeleton for Slim.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Slim Skeleton",
+          "description": "A skeleton for Slim.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -347,10 +369,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Integrate Twig into Slim.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Slim Twig View",
+          "description": "Integrate Twig into Slim.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -361,10 +384,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A simple PHP renderer for Slim.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Slim PHP View",
+          "description": "A simple PHP renderer for Slim.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -381,10 +405,11 @@
       "description": "Libraries for handling application routing.",
       "items": [
         {
-          "children": [],
-          "description": "A routing library built on top of Fast Route.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Route",
+          "description": "A routing library built on top of Fast Route.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -395,10 +420,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Another fast routing library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Pux",
+          "description": "Another fast routing library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -409,10 +435,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A fast routing library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Fast Route",
+          "description": "A fast routing library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -423,10 +450,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A full-featured routing library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Aura.Router",
+          "description": "A full-featured routing library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -437,10 +465,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A flexible router.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Klein",
+          "description": "A flexible router.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -457,10 +486,11 @@
       "description": "Libraries and tools for templating and lexing.",
       "items": [
         {
-          "children": [],
-          "description": "A PHP implementation of the Mustache template language.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Mustache",
+          "description": "A PHP implementation of the Mustache template language.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -471,10 +501,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A PHP implementation of the HAML template language.",
+          "node_type": "item",
           "kind": "repository",
           "title": "MtHaml",
+          "description": "A PHP implementation of the HAML template language.",
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": "Python",
@@ -491,10 +522,11 @@
       "description": "Libraries for working with HTTP.",
       "items": [
         {
-          "children": [],
-          "description": "PSR-7 HTTP Message implementation.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Laminas Diactoros",
+          "description": "PSR-7 HTTP Message implementation.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -505,10 +537,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A component to fetch HTTP resources synchronously or asynchronously.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Symfony HTTP Client",
+          "description": "A component to fetch HTTP resources synchronously or asynchronously.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -519,10 +552,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A library to ease creation of REST API clients.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Retrofit",
+          "description": "A library to ease creation of REST API clients.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -533,10 +567,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A simple HTTP library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Requests",
+          "description": "A simple HTTP library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -547,10 +582,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Another HTTP client.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Buzz",
+          "description": "Another HTTP client.",
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": "Python",
@@ -561,10 +597,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A super lightweight PSR-7 implementation. Very strict and very fast.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Nyholm PSR-7",
+          "description": "A super lightweight PSR-7 implementation. Very strict and very fast.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -575,10 +612,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A comprehensive HTTP client.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Guzzle",
+          "description": "A comprehensive HTTP client.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -595,10 +633,11 @@
       "description": "Libraries for scraping websites and detecting crawlers.",
       "items": [
         {
-          "children": [],
-          "description": "An information extractor from any web service or page.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Embed",
+          "description": "An information extractor from any web service or page.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -609,10 +648,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A super-fast HTML scrapper and parser.",
+          "node_type": "item",
           "kind": "repository",
           "title": "DiDOM",
+          "description": "A super-fast HTML scrapper and parser.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -623,10 +663,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A configurable and extensible PHP web spider.",
+          "node_type": "item",
           "kind": "repository",
           "title": "PHP Spider",
+          "description": "A configurable and extensible PHP web spider.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -637,10 +678,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Instrument headless Chrome/Chromium instances from PHP.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Chrome PHP",
+          "description": "Instrument headless Chrome/Chromium instances from PHP.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -651,10 +693,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A browser testing and web crawling library for PHP and Symfony.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Symfony Panther",
+          "description": "A browser testing and web crawling library for PHP and Symfony.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -665,10 +708,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A PHP class for detecting bots/crawlers/spiders via the user agent.",
+          "node_type": "item",
           "kind": "repository",
           "title": "CrawlerDetect",
+          "description": "A PHP class for detecting bots/crawlers/spiders via the user agent.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -685,10 +729,11 @@
       "description": "Libraries for building application using middlewares.",
       "items": [
         {
-          "children": [],
-          "description": "Inspiring collection of handy middlewares.",
+          "node_type": "item",
           "kind": "repository",
           "title": "PSR-15 Middlewares",
+          "description": "Inspiring collection of handy middlewares.",
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": "Go",
@@ -699,10 +744,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Middleware for PHP built on top of PSR-7.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Laminas Stratigility",
+          "description": "Middleware for PHP built on top of PSR-7.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -713,10 +759,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A PHP 5.5 PSR-7 middleware dispatcher.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Relay",
+          "description": "A PHP 5.5 PSR-7 middleware dispatcher.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -733,10 +780,11 @@
       "description": "Libraries for parsing URLs.",
       "items": [
         {
-          "children": [],
-          "description": "Another URL manipulation library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Uri",
+          "description": "Another URL manipulation library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -747,10 +795,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A domain suffix parser library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "PHP Domain Parser",
+          "description": "A domain suffix parser library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -761,10 +810,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A functional URI manipulation library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "sabre/uri",
+          "description": "A functional URI manipulation library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -775,10 +825,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A URL manipulation library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Purl",
+          "description": "A URL manipulation library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -795,10 +846,11 @@
       "description": "Libraries for sending and parsing email.",
       "items": [
         {
-          "children": [],
-          "description": "A library for email services such as SendGrid, PostMark, MailGun and MailChimp.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Stampie",
+          "description": "A library for email services such as SendGrid, PostMark, MailGun and MailChimp.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -809,10 +861,11 @@
           }
         },
         {
-          "children": [],
-          "description": "An email reply parser library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Email Reply Parser",
+          "description": "An email reply parser library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -823,10 +876,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A powerful library for creating and sending emails.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Symfony Mailer",
+          "description": "A powerful library for creating and sending emails.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -837,10 +891,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Another mailer solution.",
+          "node_type": "item",
           "kind": "repository",
           "title": "PHPMailer",
+          "description": "Another mailer solution.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -851,10 +906,11 @@
           }
         },
         {
-          "children": [],
-          "description": "An IMAP library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Fetch",
+          "description": "An IMAP library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -865,10 +921,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A library to access mailboxes via POP3, IMAP and NNTP.",
+          "node_type": "item",
           "kind": "repository",
           "title": "PHP IMAP",
+          "description": "A library to access mailboxes via POP3, IMAP and NNTP.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -879,10 +936,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A library to inline CSS in email templates.",
+          "node_type": "item",
           "kind": "repository",
           "title": "CssToInlineStyles",
+          "description": "A library to inline CSS in email templates.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -893,10 +951,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A small email address validation library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Email Validator",
+          "description": "A small email address validation library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -907,10 +966,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Email marketing automation",
+          "node_type": "item",
           "kind": "repository",
           "title": "Mautic",
+          "description": "Email marketing automation",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -927,10 +987,11 @@
       "description": "Libraries for file manipulation and MIME type detection.",
       "items": [
         {
-          "children": [],
-          "description": "A wrapper for the FFmpeg video library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "PHP FFmpeg",
+          "description": "A wrapper for the FFmpeg video library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -941,10 +1002,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Abstraction for local and remote filesystems.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Flysystem",
+          "description": "Abstraction for local and remote filesystems.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -955,10 +1017,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A filesystem abstraction layer.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Gaufrette",
+          "description": "A filesystem abstraction layer.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -969,10 +1032,11 @@
           }
         },
         {
-          "children": [],
-          "description": "PHP implementation of Parquet file format",
+          "node_type": "item",
           "kind": "repository",
           "title": "Parquet",
+          "description": "PHP implementation of Parquet file format",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -983,10 +1047,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A CSV data manipulation library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "CSV",
+          "description": "A CSV data manipulation library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -997,10 +1062,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A unified reader and writer of compressed archives.",
+          "node_type": "item",
           "kind": "repository",
           "title": "UnifiedArchive",
+          "description": "A unified reader and writer of compressed archives.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -1017,10 +1083,11 @@
       "description": "Libraries that implement the dependency injection design pattern.",
       "items": [
         {
-          "children": [],
-          "description": "A tiny dependency injection container.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Pimple",
+          "description": "A tiny dependency injection container.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -1031,10 +1098,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A common interface to dependency injection containers and service locators.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Acclimate",
+          "description": "A common interface to dependency injection containers and service locators.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -1045,10 +1113,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A PSR-11 compatible, annotation-based dependency injection container.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Disco",
+          "description": "A PSR-11 compatible, annotation-based dependency injection container.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -1059,10 +1128,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A dependency injection container component.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Symfony DI",
+          "description": "A dependency injection container component.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -1073,10 +1143,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Another flexible dependency injection container.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Container",
+          "description": "Another flexible dependency injection container.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -1087,10 +1158,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A recursive dependency injector.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Auryn",
+          "description": "A recursive dependency injector.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -1101,10 +1173,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A serializable dependency injection container with constructor and setter injection, interface and trait awareness, configuration inheritance, and much more.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Aura.Di",
+          "description": "A serializable dependency injection container with constructor and setter injection, interface and trait awareness, configuration inheritance, and much more.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -1121,10 +1194,11 @@
       "description": "Libraries for manipulating images.",
       "items": [
         {
-          "children": [],
-          "description": "Another image manipulation library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Intervention Image",
+          "description": "Another image manipulation library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -1135,10 +1209,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A library for optimizing images.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Image Optimizer",
+          "description": "A library for optimizing images.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -1149,10 +1224,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A library for generating perceptual image hashes.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Image Hash",
+          "description": "A library for generating perceptual image hashes.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -1163,10 +1239,11 @@
           }
         },
         {
-          "children": [],
-          "description": "QR Code generator and reader.",
+          "node_type": "item",
           "kind": "repository",
           "title": "PHP QR Code",
+          "description": "QR Code generator and reader.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -1177,10 +1254,11 @@
           }
         },
         {
-          "children": [],
-          "description": "An on-demand image manipulation library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Glide",
+          "description": "An on-demand image manipulation library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -1191,10 +1269,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A library for extracting colours from images.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Color Extractor",
+          "description": "A library for extracting colours from images.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -1205,10 +1284,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Another image manipulation library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "PHP Image Workshop",
+          "description": "Another image manipulation library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -1225,10 +1305,11 @@
       "description": "Libraries for testing codebases and generating test data.",
       "items": [
         {
-          "children": [],
-          "description": "A design by specification unit testing library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "PHPSpec",
+          "description": "A design by specification unit testing library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -1239,10 +1320,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A unit testing framework.",
+          "node_type": "item",
           "kind": "repository",
           "title": "PHPUnit",
+          "description": "A unit testing framework.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -1253,10 +1335,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A simple testing library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Atoum",
+          "description": "A simple testing library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -1267,10 +1350,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Simplifies running PHPUnit tests on multiple PHPUnit versions.",
+          "node_type": "item",
           "kind": "repository",
           "title": "PHPUnit Polyfills",
+          "description": "Simplifies running PHPUnit tests on multiple PHPUnit versions.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -1281,10 +1365,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A virtual filesystem stream wrapper for testing.",
+          "node_type": "item",
           "kind": "repository",
           "title": "VFS Stream",
+          "description": "A virtual filesystem stream wrapper for testing.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -1295,10 +1380,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A productive and enjoyable parallel unit testing framework.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Nette Tester",
+          "description": "A productive and enjoyable parallel unit testing framework.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -1309,10 +1395,11 @@
           }
         },
         {
-          "children": [],
-          "description": "An AST-based PHP Mutation testing framework.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Infection",
+          "description": "An AST-based PHP Mutation testing framework.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -1323,10 +1410,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A fixture factory generation library for Doctrine.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Foundry",
+          "description": "A fixture factory generation library for Doctrine.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -1337,10 +1425,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A mock library for built-in PHP functions (e.g. time()).",
+          "node_type": "item",
           "kind": "repository",
           "title": "PHP-Mock",
+          "description": "A mock library for built-in PHP functions (e.g. time()).",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -1351,10 +1440,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A fake data generator library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Faker",
+          "description": "A fake data generator library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -1365,10 +1455,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A MySQL engine written in pure PHP.",
+          "node_type": "item",
           "kind": "repository",
           "title": "PHP MySQL Engine",
+          "description": "A MySQL engine written in pure PHP.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -1379,10 +1470,11 @@
           }
         },
         {
-          "children": [],
-          "description": "An expressive fixture generation library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Alice",
+          "description": "An expressive fixture generation library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -1393,10 +1485,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A mock object library for testing.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Mockery",
+          "description": "A mock object library for testing.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -1407,10 +1500,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A parallel testing library for PHPUnit.",
+          "node_type": "item",
           "kind": "repository",
           "title": "ParaTest",
+          "description": "A parallel testing library for PHPUnit.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -1421,10 +1515,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A full stack testing framework.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Codeception",
+          "description": "A full stack testing framework.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -1435,10 +1530,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Another mock object library for testing.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Phake",
+          "description": "Another mock object library for testing.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -1449,10 +1545,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Full stack Unit/BDD testing framework with built-in stub, mock and code-coverage support.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Kahlan",
+          "description": "Full stack Unit/BDD testing framework with built-in stub, mock and code-coverage support.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -1463,10 +1560,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A highly opinionated mocking framework.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Prophecy",
+          "description": "A highly opinionated mocking framework.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -1483,10 +1581,11 @@
       "description": "Libraries and applications for continuous integration.",
       "items": [
         {
-          "children": [],
-          "description": "An open-source continuous integration platform for PHP.",
+          "node_type": "item",
           "kind": "repository",
           "title": "PHPCI",
+          "description": "An open-source continuous integration platform for PHP.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -1497,10 +1596,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A continuous integration client written in PHP and powered by Docker.",
+          "node_type": "item",
           "kind": "repository",
           "title": "JoliCi",
+          "description": "A continuous integration client written in PHP and powered by Docker.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -1511,10 +1611,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A GitHub Action for PHP.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Setup PHP",
+          "description": "A GitHub Action for PHP.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -1531,10 +1632,11 @@
       "description": "Libraries for generating project documentation.",
       "items": [
         {
-          "children": [],
-          "description": "Another API documentation generator.",
+          "node_type": "item",
           "kind": "repository",
           "title": "APIGen",
+          "description": "Another API documentation generator.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -1545,10 +1647,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Generate OpenAPI documentation for your RESTful API.",
+          "node_type": "item",
           "kind": "repository",
           "title": "zircote/swagger-php",
+          "description": "Generate OpenAPI documentation for your RESTful API.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -1559,10 +1662,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A documentation generator that uses Markdown files.",
+          "node_type": "item",
           "kind": "repository",
           "title": "daux.io",
+          "description": "A documentation generator that uses Markdown files.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -1579,10 +1683,11 @@
       "description": "Libraries for generating secure random numbers, encrypting data and scanning and testing for vulnerabilities.",
       "items": [
         {
-          "children": [],
-          "description": "A simple library for encryption using libsodium.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Halite",
+          "description": "A simple library for encryption using libsodium.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -1593,10 +1698,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A library of PHP unserializable payloads along with a tool to generate them.",
+          "node_type": "item",
           "kind": "repository",
           "title": "PHPGGC",
+          "description": "A library of PHP unserializable payloads along with a tool to generate them.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -1607,10 +1713,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Secure PHP Encryption Library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "PHP Encryption",
+          "description": "Secure PHP Encryption Library.",
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": "Java",
@@ -1621,10 +1728,11 @@
           }
         },
         {
-          "children": [],
-          "description": "An integrated penetration testing tool for web applications.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Zap",
+          "description": "An integrated penetration testing tool for web applications.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -1635,10 +1743,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A package that adds security related headers to HTTP response.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Secure Headers",
+          "description": "A package that adds security related headers to HTTP response.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -1649,10 +1758,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A library that tries to preventing Cross-Site Scripting (XSS) attacks by blacklisting.",
+          "node_type": "item",
           "kind": "repository",
           "title": "AntiXSS",
+          "description": "A library that tries to preventing Cross-Site Scripting (XSS) attacks by blacklisting.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -1663,10 +1773,11 @@
           }
         },
         {
-          "children": [],
-          "description": "This package ensures that your application doesn't have installed dependencies with known security vulnerabilities.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Roave Security Advisories",
+          "description": "This package ensures that your application doesn't have installed dependencies with known security vulnerabilities.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -1677,10 +1788,11 @@
           }
         },
         {
-          "children": [],
-          "description": "PHP 5.x support for and",
+          "node_type": "item",
           "kind": "repository",
           "title": "random_compat",
+          "description": "PHP 5.x support for and",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -1691,10 +1803,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Id obfuscation based on Knuth's multiplicative hashing method.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Optimus",
+          "description": "Id obfuscation based on Knuth's multiplicative hashing method.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -1705,10 +1818,11 @@
           }
         },
         {
-          "children": [],
-          "description": "An automatic SQL injection and database takeover tool.",
+          "node_type": "item",
           "kind": "repository",
           "title": "SQLMap",
+          "description": "An automatic SQL injection and database takeover tool.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -1725,10 +1839,11 @@
       "description": "Libraries and tools for working with and storing passwords.",
       "items": [
         {
-          "children": [],
-          "description": "PHP library to generate random passwords.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Password-Generator",
+          "description": "PHP library to generate random passwords.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -1739,10 +1854,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A library for generating secure random passphrases.",
+          "node_type": "item",
           "kind": "repository",
           "title": "GenPhrase",
+          "description": "A library for generating secure random passphrases.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -1753,10 +1869,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A compatibility library for the new PHP 5.5 password functions.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Password Compat",
+          "description": "A compatibility library for the new PHP 5.5 password functions.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -1767,10 +1884,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A password policy library for PHP and JavaScript.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Password Policy",
+          "description": "A password policy library for PHP and JavaScript.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -1781,10 +1899,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A realistic PHP password strength estimate library based on Zxcvbn JS.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Zxcvbn PHP",
+          "description": "A realistic PHP password strength estimate library based on Zxcvbn JS.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -1795,10 +1914,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A library for validating and upgrading password hashes.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Password Validator",
+          "description": "A library for validating and upgrading password hashes.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -1809,10 +1929,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A library for generating and validating passwords.",
+          "node_type": "item",
           "kind": "repository",
           "title": "PHP Password Lib",
+          "description": "A library for generating and validating passwords.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -1829,10 +1950,11 @@
       "description": "Libraries and tools for analysing, parsing and manipulating codebases.",
       "items": [
         {
-          "children": [],
-          "description": "AST-based reflection library that allows analysis and manipulation of code",
+          "node_type": "item",
           "kind": "repository",
           "title": "Better Reflection",
+          "description": "AST-based reflection library that allows analysis and manipulation of code",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -1843,10 +1965,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A tool for running QA tools (phploc, phpcpd, phpcs, pdepend, phpmd, phpmetrics).",
+          "node_type": "item",
           "kind": "repository",
           "title": "PHPQA",
+          "description": "A tool for running QA tools (phploc, phpcpd, phpcs, pdepend, phpmd, phpmetrics).",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -1857,10 +1980,11 @@
           }
         },
         {
-          "children": [],
-          "description": "PHP completion, refactoring and introspection tool.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Phpactor",
+          "description": "PHP completion, refactoring and introspection tool.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -1871,10 +1995,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A web tool to scrutinise PHP code.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Scrutinizer",
+          "description": "A web tool to scrutinise PHP code.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -1885,10 +2010,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A tool for quickly measuring the size of a PHP project.",
+          "node_type": "item",
           "kind": "repository",
           "title": "PHPLOC",
+          "description": "A tool for quickly measuring the size of a PHP project.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -1899,10 +2025,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A simple micro-benchmark library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "UBench",
+          "description": "A simple micro-benchmark library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -1913,10 +2040,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A tool to upgrade and refactor code.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Rector",
+          "description": "A tool to upgrade and refactor code.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -1927,10 +2055,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A library that detects magic numbers in code.",
+          "node_type": "item",
           "kind": "repository",
           "title": "PHP Magic Number Detector",
+          "description": "A library that detects magic numbers in code.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -1941,10 +2070,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A command line utility that compares two source sets and determines the appropriate semantic versioning to apply.",
+          "node_type": "item",
           "kind": "repository",
           "title": "PHP Semantic Versioning Checker",
+          "description": "A command line utility that compares two source sets and determines the appropriate semantic versioning to apply.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -1955,10 +2085,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A PHP code-quality tool.",
+          "node_type": "item",
           "kind": "repository",
           "title": "GrumPHP",
+          "description": "A PHP code-quality tool.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -1969,10 +2100,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A PHP parser written in PHP.",
+          "node_type": "item",
           "kind": "repository",
           "title": "PHP Parser",
+          "description": "A PHP parser written in PHP.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -1983,10 +2115,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A command line utility which verifies that your files implement your rules.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Editorconfig-Checker",
+          "description": "A command line utility which verifies that your files implement your rules.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -2003,10 +2136,11 @@
       "description": "Libraries for managing code quality, formatting and linting.",
       "items": [
         {
-          "children": [],
-          "description": "A coding standards fixer library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "PHP CS Fixer",
+          "description": "A coding standards fixer library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -2017,10 +2151,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A coding standards fixer library for Laravel.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Laravel Pint",
+          "description": "A coding standards fixer library for Laravel.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -2031,10 +2166,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A library that scans code for bugs, sub-optimal code, unused parameters and more.",
+          "node_type": "item",
           "kind": "repository",
           "title": "PHP Mess Detector",
+          "description": "A library that scans code for bugs, sub-optimal code, unused parameters and more.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -2045,10 +2181,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A library that detects and can auto-fix PHP, CSS and JS coding standard violations.",
+          "node_type": "item",
           "kind": "repository",
           "title": "PHP CodeSniffer",
+          "description": "A library that detects and can auto-fix PHP, CSS and JS coding standard violations.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -2059,10 +2196,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A library that detects copied and pasted code.",
+          "node_type": "item",
           "kind": "repository",
           "title": "PHPCPD",
+          "description": "A library that detects copied and pasted code.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -2073,10 +2211,11 @@
           }
         },
         {
-          "children": [],
-          "description": "An easy-to-use and flexible Git hook library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "CaptainHook",
+          "description": "An easy-to-use and flexible Git hook library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -2087,10 +2226,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A tool to help adhere to certain coding conventions.",
+          "node_type": "item",
           "kind": "repository",
           "title": "PHPCheckstyle",
+          "description": "A tool to help adhere to certain coding conventions.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -2107,10 +2247,11 @@
       "description": "Libraries for performing static analysis of PHP code.",
       "items": [
         {
-          "children": [],
-          "description": "Next-gen phpDoc parser with support for intersection types and generics",
+          "node_type": "item",
           "kind": "repository",
           "title": "PHPDoc Parser",
+          "description": "Next-gen phpDoc parser with support for intersection types and generics",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -2121,10 +2262,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A static code analysis tool that helps to enforce rules for dependencies between software layers.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Deptrac",
+          "description": "A static code analysis tool that helps to enforce rules for dependencies between software layers.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -2135,10 +2277,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A static metric library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "PHP Metrics",
+          "description": "A static metric library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -2149,10 +2292,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A static analysis tool for finding errors in PHP applications.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Psalm",
+          "description": "A static analysis tool for finding errors in PHP applications.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -2163,10 +2307,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A code analysis tool using Graph Theory.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Mondrian",
+          "description": "A code analysis tool using Graph Theory.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -2177,10 +2322,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A static analyzer for PHP version migration.",
+          "node_type": "item",
           "kind": "repository",
           "title": "PHP Migration",
+          "description": "A static analyzer for PHP version migration.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -2191,10 +2337,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A static analyzer based on PHP 7+ and the php-ast extension.",
+          "node_type": "item",
           "kind": "repository",
           "title": "phan",
+          "description": "A static analyzer based on PHP 7+ and the php-ast extension.",
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": "TypeScript",
@@ -2205,10 +2352,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A PHP Static Analysis Tool.",
+          "node_type": "item",
           "kind": "repository",
           "title": "PHPStan",
+          "description": "A PHP Static Analysis Tool.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -2219,10 +2367,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A PHP compatibility checker for PHP CodeSniffer.",
+          "node_type": "item",
           "kind": "repository",
           "title": "PHPCompatibility",
+          "description": "A PHP compatibility checker for PHP CodeSniffer.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -2233,10 +2382,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A tool to create customizable dependency graphs.",
+          "node_type": "item",
           "kind": "repository",
           "title": "PhpDependencyAnalysis",
+          "description": "A tool to create customizable dependency graphs.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -2247,10 +2397,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Easy-to-use architecture testing tool for PHP.",
+          "node_type": "item",
           "kind": "repository",
           "title": "PHP Architecture Tester",
+          "description": "Easy-to-use architecture testing tool for PHP.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -2261,10 +2412,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A static analysis engine for PHP.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Exakat",
+          "description": "A static analysis engine for PHP.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -2281,10 +2433,11 @@
       "description": "Libraries related to design patterns, programming approaches and ways to organize code.",
       "items": [
         {
-          "children": [],
-          "description": "A functional programming library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Functional PHP",
+          "description": "A functional programming library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -2295,10 +2448,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A simple PHP finite state machine.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Finite",
+          "description": "A simple PHP finite state machine.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -2309,10 +2463,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A library that provides iteration primitives using generators.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Iter",
+          "description": "A library that provides iteration primitives using generators.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -2323,10 +2478,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A library that provides functionality for working with iterable entities (similar to itertools library in Python).",
+          "node_type": "item",
           "kind": "repository",
           "title": "IterTools PHP",
+          "description": "A library that provides functionality for working with iterable entities (similar to itertools library in Python).",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -2337,10 +2493,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A powerful rule engine and implementation of the Specification pattern.",
+          "node_type": "item",
           "kind": "repository",
           "title": "RulerZ",
+          "description": "A powerful rule engine and implementation of the Specification pattern.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -2351,10 +2508,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Data import abstraction library for consuming Web APIs and other data sources.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Porter",
+          "description": "Data import abstraction library for consuming Web APIs and other data sources.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -2365,10 +2523,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A pipeline pattern implementation.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Pipeline",
+          "description": "A pipeline pattern implementation.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -2379,10 +2538,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A repository of software patterns implemented in PHP.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Design Patterns PHP",
+          "description": "A repository of software patterns implemented in PHP.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -2399,10 +2559,11 @@
       "description": "Libraries and tools for debugging errors and profiling code.",
       "items": [
         {
-          "children": [],
-          "description": "A debug and profile tool for PHP.",
+          "node_type": "item",
           "kind": "repository",
           "title": "xDebug",
+          "description": "A debug and profile tool for PHP.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -2413,10 +2574,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A simple error detection, logging and time measuring library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Tracy",
+          "description": "A simple error detection, logging and time measuring library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -2427,10 +2589,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A self-contained code coverage compatible driver.",
+          "node_type": "item",
           "kind": "repository",
           "title": "PCOV",
+          "description": "A self-contained code coverage compatible driver.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -2441,10 +2604,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A debugging and profiling tool.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Kint",
+          "description": "A debugging and profiling tool.",
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": "C++",
@@ -2455,10 +2619,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A simple metrics API library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Metrics",
+          "description": "A simple metrics API library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -2469,10 +2634,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A web debugging console.",
+          "node_type": "item",
           "kind": "repository",
           "title": "PHP Console",
+          "description": "A web debugging console.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -2483,10 +2649,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A profiling tool originally developed by Facebook.",
+          "node_type": "item",
           "kind": "repository",
           "title": "XHProf",
+          "description": "A profiling tool originally developed by Facebook.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -2497,10 +2664,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A variable dumper component.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Symfony VarDumper",
+          "description": "A variable dumper component.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -2511,10 +2679,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A low-overhead sampling profiler.",
+          "node_type": "item",
           "kind": "repository",
           "title": "PHPSpy",
+          "description": "A low-overhead sampling profiler.",
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": "Java",
@@ -2525,10 +2694,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Another web debugging console using Google Chrome.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Barbushin PHP Console",
+          "description": "Another web debugging console using Google Chrome.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -2539,10 +2709,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A benchmarking Framework.",
+          "node_type": "item",
           "kind": "repository",
           "title": "PHPBench",
+          "description": "A benchmarking Framework.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -2553,10 +2724,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A pretty error-handling library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Whoops",
+          "description": "A pretty error-handling library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -2573,10 +2745,11 @@
       "description": "Project build and automation tools.",
       "items": [
         {
-          "children": [],
-          "description": "A library for versioning and releasing software.",
+          "node_type": "item",
           "kind": "repository",
           "title": "RMT",
+          "description": "A library for versioning and releasing software.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -2587,10 +2760,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A utility to build PHAR files.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Box",
+          "description": "A utility to build PHAR files.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -2601,10 +2775,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A PHP project/micro-package generator.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Construct",
+          "description": "A PHP project/micro-package generator.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -2621,10 +2796,11 @@
       "description": "Libraries for automating and running tasks.",
       "items": [
         {
-          "children": [],
-          "description": "A PHP cron job manager without modifying crontab.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Jobby",
+          "description": "A PHP cron job manager without modifying crontab.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -2635,10 +2811,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A PHP Task runner with object-orientated configurations.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Robo",
+          "description": "A PHP Task runner with object-orientated configurations.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -2655,10 +2832,11 @@
       "description": "Tools for building navigation structures.",
       "items": [
         {
-          "children": [],
-          "description": "A menu library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "KnpMenu",
+          "description": "A menu library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -2669,10 +2847,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A flexible menu library with a fluent interface.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Menu",
+          "description": "A flexible menu library with a fluent interface.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -2689,10 +2868,11 @@
       "description": "Tools for managing, compressing and minifying website assets.",
       "items": [
         {
-          "children": [],
-          "description": "An elegant wrapper around Webpack for the 80% use case.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Laravel Mix",
+          "description": "An elegant wrapper around Webpack for the 80% use case.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -2703,10 +2883,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A simple but powerful API for processing and compiling assets built around Webpack.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Symfony Encore",
+          "description": "A simple but powerful API for processing and compiling assets built around Webpack.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -2717,10 +2898,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A JavaScript minifier library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "JShrink",
+          "description": "A JavaScript minifier library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -2731,10 +2913,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Manages URL generation and versioning of web assets.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Symfony Asset",
+          "description": "Manages URL generation and versioning of web assets.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -2751,10 +2934,11 @@
       "description": "Libraries for geocoding addresses and working with latitudes and longitudes.",
       "items": [
         {
-          "children": [],
-          "description": "A library of geo-related tools.",
+          "node_type": "item",
           "kind": "repository",
           "title": "GeoTools",
+          "description": "A library of geo-related tools.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -2765,10 +2949,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A simple geo library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "PHPGeo",
+          "description": "A simple geo library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -2779,10 +2964,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A GeoJSON implementation.",
+          "node_type": "item",
           "kind": "repository",
           "title": "GeoJSON",
+          "description": "A GeoJSON implementation.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -2793,10 +2979,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A list of all countries with names and ISO 3166-1 codes.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Country List",
+          "description": "A list of all countries with names and ISO 3166-1 codes.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -2813,10 +3000,11 @@
       "description": "Libraries for working with dates and times.",
       "items": [
         {
-          "children": [],
-          "description": "A simple DateTime API extension.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Carbon",
+          "description": "A simple DateTime API extension.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -2827,10 +3015,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Moment.js inspired PHP DateTime handler with i18n support.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Moment.php",
+          "description": "Moment.js inspired PHP DateTime handler with i18n support.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -2841,10 +3030,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A library to help you calculate the dates and names of holidays.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Yasumi",
+          "description": "A library to help you calculate the dates and names of holidays.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -2855,10 +3045,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A calendar management library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "CalendR",
+          "description": "A calendar management library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -2869,10 +3060,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A DateTime API extension supporting both mutable and immutable date/time.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Chronos",
+          "description": "A DateTime API extension supporting both mutable and immutable date/time.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -2889,10 +3081,11 @@
       "description": "Libraries that are event-driven or implement non-blocking event loops.",
       "items": [
         {
-          "children": [],
-          "description": "Yet another web socket library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Elephant.io",
+          "description": "Yet another web socket library.",
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": "Shell",
@@ -2903,10 +3096,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A client to make synchronous/asynchronous requests through php-fpm socket.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Fast CGI Client",
+          "description": "A client to make synchronous/asynchronous requests through php-fpm socket.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -2917,10 +3111,11 @@
           }
         },
         {
-          "children": [],
-          "description": "An event library with a focus on domain events.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Event",
+          "description": "An event library with a focus on domain events.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -2931,10 +3126,11 @@
           }
         },
         {
-          "children": [],
-          "description": "An event driven non-blocking I/O library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Amp",
+          "description": "An event driven non-blocking I/O library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -2945,10 +3141,11 @@
           }
         },
         {
-          "children": [],
-          "description": "An asynchronous web socket client.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Pawl",
+          "description": "An asynchronous web socket client.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -2959,10 +3156,11 @@
           }
         },
         {
-          "children": [],
-          "description": "An event dispatcher library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "CakePHP Event",
+          "description": "An event dispatcher library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -2973,10 +3171,11 @@
           }
         },
         {
-          "children": [],
-          "description": "An event-driven asynchronous and concurrent networking communication framework with high performance for PHP written in C.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Swoole",
+          "description": "An event-driven asynchronous and concurrent networking communication framework with high performance for PHP written in C.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -2987,10 +3186,11 @@
           }
         },
         {
-          "children": [],
-          "description": "An event source component to persist event messages",
+          "node_type": "item",
           "kind": "repository",
           "title": "Prooph Event Store",
+          "description": "An event source component to persist event messages",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -3001,10 +3201,11 @@
           }
         },
         {
-          "children": [],
-          "description": "An event driven non-blocking I/O library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Workerman",
+          "description": "An event driven non-blocking I/O library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -3015,10 +3216,11 @@
           }
         },
         {
-          "children": [],
-          "description": "An event dispatcher library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Evenement",
+          "description": "An event dispatcher library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -3029,10 +3231,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A reactive extension library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "RxPHP",
+          "description": "A reactive extension library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -3043,10 +3246,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Golang's defer statement for PHP.",
+          "node_type": "item",
           "kind": "repository",
           "title": "PHP Defer",
+          "description": "Golang's defer statement for PHP.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -3057,10 +3261,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A web socket library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Ratchet",
+          "description": "A web socket library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -3071,10 +3276,11 @@
           }
         },
         {
-          "children": [],
-          "description": "An event source and CQRS library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Broadway",
+          "description": "An event source and CQRS library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -3085,10 +3291,11 @@
           }
         },
         {
-          "children": [],
-          "description": "An event driven non-blocking I/O library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "ReactPHP",
+          "description": "An event driven non-blocking I/O library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -3105,10 +3312,11 @@
       "description": "Libraries and applications for taking payments and building online e-commerce stores.",
       "items": [
         {
-          "children": [],
-          "description": "A PHP implementation of Fowler's money pattern.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Money",
+          "description": "A PHP implementation of Fowler's money pattern.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -3119,10 +3327,11 @@
           }
         },
         {
-          "children": [],
-          "description": "An exchange rates library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Swap",
+          "description": "An exchange rates library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -3133,10 +3342,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Highly customizable e-commerce software",
+          "node_type": "item",
           "kind": "repository",
           "title": "Shopware",
+          "description": "Highly customizable e-commerce software",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -3147,10 +3357,11 @@
           }
         },
         {
-          "children": [],
-          "description": "An open source e-commerce platform for in-house development teams.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Shopsys Framework",
+          "description": "An open source e-commerce platform for in-house development teams.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -3161,10 +3372,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A framework agnostic multi-gateway payment processing library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "OmniPay",
+          "description": "A framework agnostic multi-gateway payment processing library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -3175,10 +3387,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A payment abstraction library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Payum",
+          "description": "A payment abstraction library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -3189,10 +3402,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A money library for PHP, with support for contexts, cash roundings, currency conversion.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Brick Money",
+          "description": "A money library for PHP, with support for contexts, cash roundings, currency conversion.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -3209,10 +3423,11 @@
       "description": "Libraries and software for working with PDF files.",
       "items": [
         {
-          "children": [],
-          "description": "A PDF and image generation library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Snappy",
+          "description": "A PDF and image generation library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -3223,10 +3438,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A PHP client for interacting with Gotenberg.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Gotenberg",
+          "description": "A PHP client for interacting with Gotenberg.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -3237,10 +3453,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Convert HTML to an image, PDF or string.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Browsershot",
+          "description": "Convert HTML to an image, PDF or string.",
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": "TypeScript",
@@ -3251,10 +3468,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A HTML to PDF converter.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Dompdf",
+          "description": "A HTML to PDF converter.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -3271,10 +3489,11 @@
       "description": "Libraries for working with office suite documents.",
       "items": [
         {
-          "children": [],
-          "description": "A library for working with Microsoft PowerPoint Presentations.",
+          "node_type": "item",
           "kind": "repository",
           "title": "PHPPowerPoint",
+          "description": "A library for working with Microsoft PowerPoint Presentations.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -3285,10 +3504,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A library for working with Microsoft Word documents.",
+          "node_type": "item",
           "kind": "repository",
           "title": "PHPWord",
+          "description": "A library for working with Microsoft Word documents.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -3299,10 +3519,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A pure PHP library for reading and writing spreadsheet files (successor of PHPExcel).",
+          "node_type": "item",
           "kind": "repository",
           "title": "PHPSpreadsheet",
+          "description": "A pure PHP library for reading and writing spreadsheet files (successor of PHPExcel).",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -3313,10 +3534,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A community driven fork of , a PHP library to read and write spreadsheet files (CSV, XLSX and ODS), in a fast and scalable way.",
+          "node_type": "item",
           "kind": "repository",
           "title": "OpenSpout",
+          "description": "A community driven fork of , a PHP library to read and write spreadsheet files (CSV, XLSX and ODS), in a fast and scalable way.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -3333,10 +3555,11 @@
       "description": "Libraries for interacting with databases using object-relational mapping (ORM) or datamapping techniques.",
       "items": [
         {
-          "children": [],
-          "description": "A simple ORM.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Laravel Eloquent",
+          "description": "A simple ORM.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -3347,10 +3570,11 @@
           }
         },
         {
-          "children": [],
-          "description": "An Object Model Manager for PostgreSQL.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Pomm",
+          "description": "An Object Model Manager for PostgreSQL.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -3361,10 +3585,11 @@
           }
         },
         {
-          "children": [],
-          "description": "PHP DataMapper, ORM.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Cycle ORM",
+          "description": "PHP DataMapper, ORM.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -3375,10 +3600,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Object-Relational Mapper, implemented using the DataMapper pattern.",
+          "node_type": "item",
           "kind": "repository",
           "title": "CakePHP ORM",
+          "description": "Object-Relational Mapper, implemented using the DataMapper pattern.",
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": "Shell",
@@ -3389,10 +3615,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A nested set implementation for Eloquent.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Baum",
+          "description": "A nested set implementation for Eloquent.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -3403,10 +3630,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A collection of Doctrine behavioural extensions.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Doctrine Extensions",
+          "description": "A collection of Doctrine behavioural extensions.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -3417,10 +3645,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A data mapper implementation for your persistence model in PHP.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Atlas.Orm",
+          "description": "A data mapper implementation for your persistence model in PHP.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -3431,10 +3660,11 @@
           }
         },
         {
-          "children": [],
-          "description": "An easy dumper tool for MySQL.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Slimdump",
+          "description": "An easy dumper tool for MySQL.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -3445,10 +3675,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Provides an extension to the native PDO along with a profiler and connection locator.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Aura.Sql",
+          "description": "Provides an extension to the native PDO along with a profiler and connection locator.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -3459,10 +3690,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A set of utilities to generate proxy objects for data mappers.",
+          "node_type": "item",
           "kind": "repository",
           "title": "ProxyManager",
+          "description": "A set of utilities to generate proxy objects for data mappers.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -3473,10 +3705,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A MySQL datamapper ORM.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Spot2",
+          "description": "A MySQL datamapper ORM.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -3487,10 +3720,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Independent query builders for MySQL, PostgreSQL, SQLite, and Microsoft SQL Server.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Aura.SqlQuery",
+          "description": "Independent query builders for MySQL, PostgreSQL, SQLite, and Microsoft SQL Server.",
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": "Shell",
@@ -3507,10 +3741,11 @@
       "description": "Libraries to help manage database schemas and migrations.",
       "items": [
         {
-          "children": [],
-          "description": "Another database migration library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Phinx",
+          "description": "Another database migration library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -3521,10 +3756,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A migration management library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Migrations",
+          "description": "A migration management library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -3535,10 +3771,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Another migration management library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "PHPMig",
+          "description": "Another migration management library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -3549,10 +3786,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Database migrations for PHP ala ActiveRecord Migrations with support for MySQL, Postgres, SQLite.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Ruckusing",
+          "description": "Database migrations for PHP ala ActiveRecord Migrations with support for MySQL, Postgres, SQLite.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -3569,10 +3807,11 @@
       "description": "Libraries for working with \"NoSQL\" backends.",
       "items": [
         {
-          "children": [],
-          "description": "A feature-complete Redis library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Predis",
+          "description": "A feature-complete Redis library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -3583,10 +3822,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A MongoDB ORM.",
+          "node_type": "item",
           "kind": "repository",
           "title": "PHPMongo",
+          "description": "A MongoDB ORM.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -3597,10 +3837,11 @@
           }
         },
         {
-          "children": [],
-          "description": "MongoDB PHP Driver.",
+          "node_type": "item",
           "kind": "repository",
           "title": "MongoDB",
+          "description": "MongoDB PHP Driver.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -3617,10 +3858,11 @@
       "description": "Libraries for working with event and task queues.",
       "items": [
         {
-          "children": [],
-          "description": "A multibackend abstraction library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Bernard",
+          "description": "A multibackend abstraction library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -3631,10 +3873,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A RabbitMQ pattern library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Thumper",
+          "description": "A RabbitMQ pattern library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -3645,10 +3888,11 @@
           }
         },
         {
-          "children": [],
-          "description": "PHP bindings for Tarantool Queue.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Tarantool Queue",
+          "description": "PHP bindings for Tarantool Queue.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -3659,10 +3903,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A message queue packages for PHP that supports RabbitMQ, AMQP, STOMP, Amazon SQS, Redis and Doctrine transports.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Enqueue",
+          "description": "A message queue packages for PHP that supports RabbitMQ, AMQP, STOMP, Amazon SQS, Redis and Doctrine transports.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -3673,10 +3918,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A performant pure-PHP AMQP (RabbitMQ) sync and also async (ReactPHP) library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "BunnyPHP",
+          "description": "A performant pure-PHP AMQP (RabbitMQ) sync and also async (ReactPHP) library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -3687,10 +3933,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A pure PHP AMQP library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "PHP AMQP",
+          "description": "A pure PHP AMQP library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -3701,10 +3948,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A Beanstalkd client library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Pheanstalk",
+          "description": "A Beanstalkd client library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -3721,10 +3969,11 @@
       "description": "Libraries and software for indexing and performing search queries on data.",
       "items": [
         {
-          "children": [],
-          "description": "A client library for ElasticSearch.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Elastica",
+          "description": "A client library for ElasticSearch.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -3735,10 +3984,11 @@
           }
         },
         {
-          "children": [],
-          "description": "The official client library for ElasticSearch.",
+          "node_type": "item",
           "kind": "repository",
           "title": "ElasticSearch PHP",
+          "description": "The official client library for ElasticSearch.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -3755,10 +4005,11 @@
       "description": "Libraries related to the command line.",
       "items": [
         {
-          "children": [],
-          "description": "A simple command line wrapper library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "ShellWrap",
+          "description": "A simple command line wrapper library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -3769,10 +4020,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A micro framework for building command line tools.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Cilex",
+          "description": "A micro framework for building command line tools.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -3783,10 +4035,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Another simple command line opt parser.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Commando",
+          "description": "Another simple command line opt parser.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -3797,10 +4050,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A library to calculate cron run dates.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Cron Expression",
+          "description": "A library to calculate cron run dates.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -3811,10 +4065,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A command-line framework supports zsh/bash completion generation, subcommands and option constraints. It also powers phpbrew.",
+          "node_type": "item",
           "kind": "repository",
           "title": "CLIFramework",
+          "description": "A command-line framework supports zsh/bash completion generation, subcommands and option constraints. It also powers phpbrew.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -3825,10 +4080,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A command line opt parser.",
+          "node_type": "item",
           "kind": "repository",
           "title": "GetOpt",
+          "description": "A command line opt parser.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -3839,10 +4095,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Provides the equivalent of request ( Context ) and response ( Stdio ) objects for the command line interface, including Getopt support, and an independent Help object for describing commands.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Aura.Cli",
+          "description": "Provides the equivalent of request ( Context ) and response ( Stdio ) objects for the command line interface, including Getopt support, and an independent Help object for describing commands.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -3853,10 +4110,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A library for outputting colors and special formatting.",
+          "node_type": "item",
           "kind": "repository",
           "title": "CLImate",
+          "description": "A library for outputting colors and special formatting.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -3867,10 +4125,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A library for building CLI menus.",
+          "node_type": "item",
           "kind": "repository",
           "title": "CLI Menu",
+          "description": "A library for building CLI menus.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -3881,10 +4140,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Another command line opt parser.",
+          "node_type": "item",
           "kind": "repository",
           "title": "GetOptionKit",
+          "description": "Another command line opt parser.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -3895,10 +4155,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Another PHP REPL.",
+          "node_type": "item",
           "kind": "repository",
           "title": "PsySH",
+          "description": "Another PHP REPL.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -3915,10 +4176,11 @@
       "description": "Libraries for implementing user authentication and authorization.",
       "items": [
         {
-          "children": [],
-          "description": "Provides authentication functionality and session tracking using various adapters.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Aura.Auth",
+          "description": "Provides authentication functionality and session tracking using various adapters.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -3929,10 +4191,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Platform-Agnostic Security Tokens.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Paseto",
+          "description": "Platform-Agnostic Security Tokens.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -3943,10 +4206,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Another OAuth library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "PHP oAuthLib",
+          "description": "Another OAuth library.",
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": "Shell",
@@ -3957,10 +4221,11 @@
           }
         },
         {
-          "children": [],
-          "description": "An OAuth 1.0 client library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "OAuth 1.0 Client",
+          "description": "An OAuth 1.0 client library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -3971,10 +4236,11 @@
           }
         },
         {
-          "children": [],
-          "description": "An open source social sign (OAuth1\\OAuth2\\OpenID\\OpenIDConnect).",
+          "node_type": "item",
           "kind": "repository",
           "title": "SocialConnect Auth",
+          "description": "An open source social sign (OAuth1\\OAuth2\\OpenID\\OpenIDConnect).",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -3985,10 +4251,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A multi-provider authentication framework.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Opauth",
+          "description": "A multi-provider authentication framework.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -3999,10 +4266,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A Twitter OAuth library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "TwitterOAuth",
+          "description": "A Twitter OAuth library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -4013,10 +4281,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Json Tokens to authenticate and transmit information.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Json Web Token",
+          "description": "Json Tokens to authenticate and transmit information.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -4027,10 +4296,11 @@
           }
         },
         {
-          "children": [],
-          "description": "An OAuth 2.0 client library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "OAuth 2.0 Client",
+          "description": "An OAuth 2.0 client library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -4047,10 +4317,11 @@
       "description": "Libraries for working with markup and CSS formats.",
       "items": [
         {
-          "children": [],
-          "description": "A Markdown parser.",
+          "node_type": "item",
           "kind": "repository",
           "title": "PHP Markdown",
+          "description": "A Markdown parser.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -4061,10 +4332,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A Shiki code highlighting package in PHP.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Shiki PHP",
+          "description": "A Shiki code highlighting package in PHP.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -4075,10 +4347,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A PHP parser for Djot, a modern light markup language (successor of Markdown).",
+          "node_type": "item",
           "kind": "repository",
           "title": "Djot",
+          "description": "A PHP parser for Djot, a modern light markup language (successor of Markdown).",
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": "Ruby",
@@ -4089,10 +4362,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A fast and extensible Markdown parser.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Cebe Markdown",
+          "description": "A fast and extensible Markdown parser.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -4103,10 +4377,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Highly-extensible Markdown parser which fully supports the CommonMark spec.",
+          "node_type": "item",
           "kind": "repository",
           "title": "CommonMark PHP",
+          "description": "Highly-extensible Markdown parser which fully supports the CommonMark spec.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -4117,10 +4392,11 @@
           }
         },
         {
-          "children": [],
-          "description": "An Oembed consumer library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Embera",
+          "description": "An Oembed consumer library.",
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": "TypeScript",
@@ -4131,10 +4407,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A Parser for CSS Files written in PHP.",
+          "node_type": "item",
           "kind": "repository",
           "title": "PHP CSS Parser",
+          "description": "A Parser for CSS Files written in PHP.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -4145,10 +4422,11 @@
           }
         },
         {
-          "children": [],
-          "description": "An HTML5 parser and serializer library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "HTML5 PHP",
+          "description": "An HTML5 parser and serializer library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -4159,10 +4437,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Another Markdown parser.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Parsedown",
+          "description": "Another Markdown parser.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -4173,10 +4452,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A library for parsing VCard and iCalendar objects.",
+          "node_type": "item",
           "kind": "repository",
           "title": "VObject",
+          "description": "A library for parsing VCard and iCalendar objects.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -4187,10 +4467,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Converts HTML into Markdown.",
+          "node_type": "item",
           "kind": "repository",
           "title": "HTML to Markdown",
+          "description": "Converts HTML into Markdown.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -4201,10 +4482,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A library for extracting web media.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Essence",
+          "description": "A library for extracting web media.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -4215,10 +4497,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A lightweight markup parser library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Decoda",
+          "description": "A lightweight markup parser library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -4235,10 +4518,11 @@
       "description": "Libraries for working with JSON.",
       "items": [
         {
-          "children": [],
-          "description": "A library for mapping JSON to PHP objects.",
+          "node_type": "item",
           "kind": "repository",
           "title": "JSONMapper",
+          "description": "A library for mapping JSON to PHP objects.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -4249,10 +4533,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A JSON lint utility.",
+          "node_type": "item",
           "kind": "repository",
           "title": "JSON Lint",
+          "description": "A JSON lint utility.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -4269,10 +4554,11 @@
       "description": "Libraries for parsing and manipulating strings.",
       "items": [
         {
-          "children": [],
-          "description": "A library to convert strings to slugs.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Slugify",
+          "description": "A library to convert strings to slugs.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -4283,10 +4569,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A library to convert strings to ASCII.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Portable ASCII",
+          "description": "A library to convert strings to ASCII.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -4297,10 +4584,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A portable library for working with UTF-8 strings.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Patchwork UTF-8",
+          "description": "A portable library for working with UTF-8 strings.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -4311,10 +4599,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A PHP port of Django's URLify.js.",
+          "node_type": "item",
           "kind": "repository",
           "title": "URLify",
+          "description": "A PHP port of Django's URLify.js.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -4325,10 +4614,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A string manipulation library with multibyte support.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Stringy",
+          "description": "A string manipulation library with multibyte support.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -4339,10 +4629,11 @@
           }
         },
         {
-          "children": [],
-          "description": "An ANSI to HTML5 converter library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "ANSI to HTML5",
+          "description": "An ANSI to HTML5 converter library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -4353,10 +4644,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Text-Hyphenation based on the TeX-hyphenation Algorithm",
+          "node_type": "item",
           "kind": "repository",
           "title": "Hyphenation",
+          "description": "Text-Hyphenation based on the TeX-hyphenation Algorithm",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -4367,10 +4659,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A library for manipulating and converting colors.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Color Jizz",
+          "description": "A library for manipulating and converting colors.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -4381,10 +4674,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A string manipulation library with UTF-8 safe replacement methods.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Portable UTF-8",
+          "description": "A string manipulation library with UTF-8 safe replacement methods.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -4395,10 +4689,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A lightweight PHP class for detecting mobile devices (including tablets).",
+          "node_type": "item",
           "kind": "repository",
           "title": "Mobile-Detect",
+          "description": "A lightweight PHP class for detecting mobile devices (including tablets).",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -4409,10 +4704,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A PHP desktop/mobile user agent parser, based on Mobiledetect.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Agent",
+          "description": "A PHP desktop/mobile user agent parser, based on Mobiledetect.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -4423,10 +4719,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A library for parsing user agent strings.",
+          "node_type": "item",
           "kind": "repository",
           "title": "UA Parser",
+          "description": "A library for parsing user agent strings.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -4437,10 +4734,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A library for parsing URLs from text and converting them into clickable links.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Url highlight",
+          "description": "A library for parsing URLs from text and converting them into clickable links.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -4451,10 +4749,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A library for formatting SQL statements.",
+          "node_type": "item",
           "kind": "repository",
           "title": "SQL Formatter",
+          "description": "A library for formatting SQL statements.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -4465,10 +4764,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Another library for parsing user agent strings.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Device Detector",
+          "description": "Another library for parsing user agent strings.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -4479,10 +4779,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A library for generating UUIDs.",
+          "node_type": "item",
           "kind": "repository",
           "title": "UUID",
+          "description": "A library for generating UUIDs.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -4493,10 +4794,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A PHP port of Python's jieba. Chinese text segmentation for natural language processing.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Jieba-PHP",
+          "description": "A PHP port of Python's jieba. Chinese text segmentation for natural language processing.",
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": "Go",
@@ -4513,10 +4815,11 @@
       "description": "Libraries for working with numbers.",
       "items": [
         {
-          "children": [],
-          "description": "A math library for PHP.",
+          "node_type": "item",
           "kind": "repository",
           "title": "MathPHP",
+          "description": "A math library for PHP.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -4527,10 +4830,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A library for converting between units of measure.",
+          "node_type": "item",
           "kind": "repository",
           "title": "PHP Units of Measure",
+          "description": "A library for converting between units of measure.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -4541,10 +4845,11 @@
           }
         },
         {
-          "children": [],
-          "description": "An immutable value object for working with IPv4 and IPv6 addresses.",
+          "node_type": "item",
           "kind": "repository",
           "title": "IP",
+          "description": "An immutable value object for working with IPv4 and IPv6 addresses.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -4555,10 +4860,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A library to parse, format and convert byte units in binary and metric systems.",
+          "node_type": "item",
           "kind": "repository",
           "title": "ByteUnits",
+          "description": "A library to parse, format and convert byte units in binary and metric systems.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -4569,10 +4875,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A library providing large number support: , and .",
+          "node_type": "item",
           "kind": "repository",
           "title": "Brick Math",
+          "description": "A library providing large number support: , and .",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -4583,10 +4890,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A value object to handle decimals/floats easily and more precisely.",
+          "node_type": "item",
           "kind": "repository",
           "title": "DecimalObject",
+          "description": "A value object to handle decimals/floats easily and more precisely.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -4597,10 +4905,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Another library for converting between units of measure.",
+          "node_type": "item",
           "kind": "repository",
           "title": "PHP Conversion",
+          "description": "Another library for converting between units of measure.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -4617,10 +4926,11 @@
       "description": "Libraries for filtering, sanitizing and validating data.",
       "items": [
         {
-          "children": [],
-          "description": "A schema validation library that supports YAML, JSON and XML.",
+          "node_type": "item",
           "kind": "repository",
           "title": "MetaYaml",
+          "description": "A schema validation library that supports YAML, JSON and XML.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -4631,10 +4941,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A PHP implementation of Google's phone number handling library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "LibPhoneNumber for PHP",
+          "description": "A PHP implementation of Google's phone number handling library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -4645,10 +4956,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A validation library with a rich set of assertions. Supports assertion chaining and lazy assertions.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Assert",
+          "description": "A validation library with a rich set of assertions. Supports assertion chaining and lazy assertions.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -4659,10 +4971,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A library for handling file uploads and validation.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Upload",
+          "description": "A library for handling file uploads and validation.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -4673,10 +4986,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A library for mapping to strongly typed value objects.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Valinor",
+          "description": "A library for mapping to strongly typed value objects.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -4687,10 +5001,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A simple validation library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Respect Validation",
+          "description": "A simple validation library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -4701,10 +5016,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Provides tools to validate and sanitize objects and arrays.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Aura.Filter",
+          "description": "Provides tools to validate and sanitize objects and arrays.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -4715,10 +5031,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A JSON Schema validation library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "JSON Schema",
+          "description": "A JSON Schema validation library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -4729,10 +5046,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Another simplified validation library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Volan",
+          "description": "Another simplified validation library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -4743,10 +5061,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A library for validating inputs according to standards from ISO, International Finance, Public Administrations, GS1, Book Industry, Phone numbers & Zipcodes for many countries.",
+          "node_type": "item",
           "kind": "repository",
           "title": "ISO-codes",
+          "description": "A library for validating inputs according to standards from ISO, International Finance, Public Administrations, GS1, Book Industry, Phone numbers & Zipcodes for many countries.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -4757,10 +5076,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Another validation library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Valitron",
+          "description": "Another validation library.",
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": "JavaScript",
@@ -4771,10 +5091,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Another validation library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "CakePHP Validation",
+          "description": "Another validation library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -4785,10 +5106,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A simple PHP filtering library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Filterus",
+          "description": "A simple PHP filtering library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -4799,10 +5121,11 @@
           }
         },
         {
-          "children": [],
-          "description": "An HTML sanitizer library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Symfony HTML Sanitizer",
+          "description": "An HTML sanitizer library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -4813,10 +5136,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A standards compliant HTML filter.",
+          "node_type": "item",
           "kind": "repository",
           "title": "HTML Purifier",
+          "description": "A standards compliant HTML filter.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -4833,10 +5157,11 @@
       "description": "Libraries and web tools for developing APIs.",
       "items": [
         {
-          "children": [],
-          "description": "A HATEOAS REST web service library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Hateoas",
+          "description": "A HATEOAS REST web service library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -4847,10 +5172,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A library for exposing Doctrine entities as REST resource endpoints.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Drest",
+          "description": "A library for exposing Doctrine entities as REST resource endpoints.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -4861,10 +5187,11 @@
           }
         },
         {
-          "children": [],
-          "description": "An OpenApi client generator with validation support.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Jane",
+          "description": "An OpenApi client generator with validation support.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -4875,10 +5202,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A content negotiation library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Negotiation",
+          "description": "A content negotiation library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -4889,10 +5217,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Package Generator generates a PHP SDK from any WSDL.",
+          "node_type": "item",
           "kind": "repository",
           "title": "PackageGenerator",
+          "description": "Package Generator generates a PHP SDK from any WSDL.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -4903,10 +5232,11 @@
           }
         },
         {
-          "children": [],
-          "description": "An API builder built with the Laminas Framework.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Laminas API Tool Skeleton",
+          "description": "An API builder built with the Laminas Framework.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -4917,10 +5247,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A Hypertext Application Language (HAL) builder library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "HAL",
+          "description": "A Hypertext Application Language (HAL) builder library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -4931,10 +5262,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A lightweight framework to expose PHP methods as RESTful web API.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Restler",
+          "description": "A lightweight framework to expose PHP methods as RESTful web API.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -4951,10 +5283,11 @@
       "description": "Libraries for caching data and acquiring locks.",
       "items": [
         {
-          "children": [],
-          "description": "Cache slam defense using a semaphore to prevent dogpile effect.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Metaphore",
+          "description": "Cache slam defense using a semaphore to prevent dogpile effect.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -4965,10 +5298,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Another caching library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Laminas Cache",
+          "description": "Another caching library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -4979,10 +5313,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A thin PSR-6 cache wrapper to various caching backends emphasizing cache tagging and indexing.",
+          "node_type": "item",
           "kind": "repository",
           "title": "APIx Cache",
+          "description": "A thin PSR-6 cache wrapper to various caching backends emphasizing cache tagging and indexing.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -4993,10 +5328,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Another library for caching.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Stash",
+          "description": "Another library for caching.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -5007,10 +5343,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A caching library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Doctrine Cache",
+          "description": "A caching library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -5021,10 +5358,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A tool to clear APC/opcode caches from the command line.",
+          "node_type": "item",
           "kind": "repository",
           "title": "CacheTool",
+          "description": "A tool to clear APC/opcode caches from the command line.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -5035,10 +5373,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A lock library to provide exclusive execution.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Lock",
+          "description": "A lock library to provide exclusive execution.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -5049,10 +5388,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A caching library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "CakePHP Cache",
+          "description": "A caching library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -5069,10 +5409,11 @@
       "description": "Libraries that implement data structure or storage techniques.",
       "items": [
         {
-          "children": [],
-          "description": "Another library for serialising and de-serialising data.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Laminas Serializer",
+          "description": "Another library for serialising and de-serialising data.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -5083,10 +5424,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A library for converting complex data structures to JSON output.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Fractal",
+          "description": "A library for converting complex data structures to JSON output.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -5097,10 +5439,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A PHP library based on .NET's LINQ (Language Integrated Query).",
+          "node_type": "item",
           "kind": "repository",
           "title": "PINQ",
+          "description": "A PHP library based on .NET's LINQ (Language Integrated Query).",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -5111,10 +5454,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A simple collections library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "CakePHP Collection",
+          "description": "A simple collections library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -5125,10 +5469,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A library for serializing and de-serializing data.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Serializer",
+          "description": "A library for serializing and de-serializing data.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -5139,10 +5484,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Collection library inspired by Clojure's sequences.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Knapsack",
+          "description": "Collection library inspired by Clojure's sequences.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -5153,10 +5499,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A pure PHP implementation of the MessagePack serialization format.",
+          "node_type": "item",
           "kind": "repository",
           "title": "msgpack.php",
+          "description": "A pure PHP implementation of the MessagePack serialization format.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -5167,10 +5514,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A library that maps nested JSON structures onto PHP classes.",
+          "node_type": "item",
           "kind": "repository",
           "title": "JsonMapper",
+          "description": "A library that maps nested JSON structures onto PHP classes.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -5181,10 +5529,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Yet Another LINQ to Objects for PHP.",
+          "node_type": "item",
           "kind": "repository",
           "title": "YaLinqo",
+          "description": "Yet Another LINQ to Objects for PHP.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -5195,10 +5544,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Another PHP library based on .NET's LINQ.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Ginq",
+          "description": "Another PHP library based on .NET's LINQ.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -5209,10 +5559,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Provides iteration over huge JSONs using simple",
+          "node_type": "item",
           "kind": "repository",
           "title": "JSON Machine",
+          "description": "Provides iteration over huge JSONs using simple",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -5229,10 +5580,11 @@
       "description": "Libraries for working with notification software.",
       "items": [
         {
-          "children": [],
-          "description": "A cross-platform library for desktop notification (support for Growl, notify-send, toaster, etc)",
+          "node_type": "item",
           "kind": "repository",
           "title": "JoliNotif",
+          "description": "A cross-platform library for desktop notification (support for Growl, notify-send, toaster, etc)",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -5243,10 +5595,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A lightweight notification library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Notificator",
+          "description": "A lightweight notification library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -5257,10 +5610,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A standalone library for device push notifications.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Notification Pusher",
+          "description": "A standalone library for device push notifications.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -5271,10 +5625,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A PHP Library to easily send push notifications with the Pushwoosh REST Web Services.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Php-pushwoosh",
+          "description": "A PHP Library to easily send push notifications with the Pushwoosh REST Web Services.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -5285,10 +5640,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A library for handling push notifications.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Notificato",
+          "description": "A library for handling push notifications.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -5305,10 +5661,11 @@
       "description": "Libraries for project deployment.",
       "items": [
         {
-          "children": [],
-          "description": "A deployment tool.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Deployer",
+          "description": "A deployment tool.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -5319,10 +5676,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A fast and easy deployer for the PHP world.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Rocketeer",
+          "description": "A fast and easy deployer for the PHP world.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -5333,10 +5691,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A tool to run SSH tasks with PHP.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Envoy",
+          "description": "A tool to run SSH tasks with PHP.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -5353,10 +5712,11 @@
       "description": "Libraries for Internationalization (I18n) and Localization (L10n).",
       "items": [
         {
-          "children": [],
-          "description": "Message translation and localization for dates and numbers.",
+          "node_type": "item",
           "kind": "repository",
           "title": "CakePHP I18n",
+          "description": "Message translation and localization for dates and numbers.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -5367,10 +5727,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Provides internationalization (I18N) tools, specifically package-oriented per-locale message translation.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Aura.Intl",
+          "description": "Provides internationalization (I18N) tools, specifically package-oriented per-locale message translation.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -5387,10 +5748,11 @@
       "description": "Libraries and tools for configuration.",
       "items": [
         {
-          "children": [],
-          "description": "Parse and load environment variables from files.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Symfony Dotenv",
+          "description": "Parse and load environment variables from files.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -5401,10 +5763,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A PHP parser for TOML.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Yo! Symfony TOML",
+          "description": "A PHP parser for TOML.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -5415,10 +5778,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Parse and load environment variables from files.",
+          "node_type": "item",
           "kind": "repository",
           "title": "PHP Dotenv",
+          "description": "Parse and load environment variables from files.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -5435,10 +5799,11 @@
       "description": "Libraries for working with Large Language Models.",
       "items": [
         {
-          "children": [],
-          "description": "OpenAI PHP is a supercharged community-maintained PHP API client that allows you to interact with OpenAI API.",
+          "node_type": "item",
           "kind": "repository",
           "title": "OpenAI Client",
+          "description": "OpenAI PHP is a supercharged community-maintained PHP API client that allows you to interact with OpenAI API.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -5449,10 +5814,11 @@
           }
         },
         {
-          "children": [],
-          "description": "OpenAI PHP for Laravel is a supercharged PHP API client that allows you to interact with OpenAI API.",
+          "node_type": "item",
           "kind": "repository",
           "title": "OpenAI Client for Laravel",
+          "description": "OpenAI PHP for Laravel is a supercharged PHP API client that allows you to interact with OpenAI API.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -5463,10 +5829,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A comprehensive PHP Generative AI Framework using OpenAI GPT 4. Inspired by Langchain.",
+          "node_type": "item",
           "kind": "repository",
           "title": "LLPhant",
+          "description": "A comprehensive PHP Generative AI Framework using OpenAI GPT 4. Inspired by Langchain.",
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": "Java",
@@ -5477,10 +5844,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A powerful and easy-to-use PHP SDK for the Mistral AI API, allowing seamless integration of advanced AI-powered features into your PHP projects.",
+          "node_type": "item",
           "kind": "repository",
           "title": "PHP Mistral AI SDK",
+          "description": "A powerful and easy-to-use PHP SDK for the Mistral AI API, allowing seamless integration of advanced AI-powered features into your PHP projects.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -5491,10 +5859,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Structured data outputs with LLMs, in PHP.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Instructor for PHP",
+          "description": "Structured data outputs with LLMs, in PHP.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -5511,10 +5880,11 @@
       "description": "Libraries for accessing third party APIs.",
       "items": [
         {
-          "children": [],
-          "description": "The official PHP AWS SDK library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Amazon Web Service SDK",
+          "description": "The official PHP AWS SDK library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -5525,10 +5895,11 @@
           }
         },
         {
-          "children": [],
-          "description": "The official Square PHP SDK for payments and other Square APIs.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Square",
+          "description": "The official Square PHP SDK for payments and other Square APIs.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -5539,10 +5910,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A library to interface with the Github API.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Github",
+          "description": "A library to interface with the Github API.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -5553,10 +5925,11 @@
           }
         },
         {
-          "children": [],
-          "description": "The official Stripe PHP library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Stripe",
+          "description": "The official Stripe PHP library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -5567,10 +5940,11 @@
           }
         },
         {
-          "children": [],
-          "description": "The official Twilio PHP REST API.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Twilio",
+          "description": "The official Twilio PHP REST API.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -5581,10 +5955,11 @@
           }
         },
         {
-          "children": [],
-          "description": "The official Mailgun PHP API.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Mailgun",
+          "description": "The official Mailgun PHP API.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -5601,10 +5976,11 @@
       "description": "Useful libraries or utilities that don't fit into the categories above.",
       "items": [
         {
-          "children": [],
-          "description": "A framework agnostic PHP library to build cross-platform chatbots.",
+          "node_type": "item",
           "kind": "repository",
           "title": "BotMan",
+          "description": "A framework agnostic PHP library to build cross-platform chatbots.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -5615,10 +5991,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A cross-language RPC.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Hprose-PHP",
+          "description": "A cross-language RPC.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -5629,10 +6006,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A pagination library.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Pagerfanta",
+          "description": "A pagination library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -5643,10 +6021,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A library that allows Closures to be serialized.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Laravel Serializable Closure",
+          "description": "A library that allows Closures to be serialized.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -5657,10 +6036,11 @@
           }
         },
         {
-          "children": [],
-          "description": "An annotation library (part of Doctrine).",
+          "node_type": "item",
           "kind": "repository",
           "title": "Annotations",
+          "description": "An annotation library (part of Doctrine).",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -5671,10 +6051,11 @@
           }
         },
         {
-          "children": [],
-          "description": "All PHP functions, rewritten to throw exceptions instead of returning false.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Safe",
+          "description": "All PHP functions, rewritten to throw exceptions instead of returning false.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -5685,10 +6066,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A PHP implementation of Circuit Breaker pattern.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Ganesha",
+          "description": "A PHP implementation of Circuit Breaker pattern.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -5699,10 +6081,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A library for optimizing autoloading.",
+          "node_type": "item",
           "kind": "repository",
           "title": "ClassPreloader",
+          "description": "A library for optimizing autoloading.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -5713,10 +6096,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Helper for Google's noCAPTCHA (reCAPTCHA).",
+          "node_type": "item",
           "kind": "repository",
           "title": "noCAPTCHA",
+          "description": "Helper for Google's noCAPTCHA (reCAPTCHA).",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -5733,10 +6117,11 @@
       "description": "Tools to help install and manage PHP on your computer.",
       "items": [
         {
-          "children": [],
-          "description": "Another PHP version installer.",
+          "node_type": "item",
           "kind": "repository",
           "title": "PHP Build",
+          "description": "Another PHP version installer.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -5747,10 +6132,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Brew PHP switcher.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Brew PHP Switcher",
+          "description": "Brew PHP switcher.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -5761,10 +6147,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A PHP version manager and installer.",
+          "node_type": "item",
           "kind": "repository",
           "title": "PHP Brew",
+          "description": "A PHP version manager and installer.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -5775,10 +6162,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Build or download static versions of PHP CLI and FPM.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Static PHP CLI",
+          "description": "Build or download static versions of PHP CLI and FPM.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -5795,10 +6183,11 @@
       "description": "Software and tools for creating and sharing a development environment.",
       "items": [
         {
-          "children": [],
-          "description": "a local web development environment system for PHP.",
+          "node_type": "item",
           "kind": "repository",
           "title": "DDEV",
+          "description": "a local web development environment system for PHP.",
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": "Shell",
@@ -5809,10 +6198,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A Docker-based development-only dependency manager.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Takeout",
+          "description": "A Docker-based development-only dependency manager.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -5823,10 +6213,11 @@
           }
         },
         {
-          "children": [],
-          "description": "An open-source PHP tunneling service.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Expose",
+          "description": "An open-source PHP tunneling service.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -5837,10 +6228,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Easily install PHP extensions in Docker containers.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Docker PHP Extension Installer",
+          "description": "Easily install PHP extensions in Docker containers.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -5851,10 +6243,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Unified, Docker :whale: powered web development environments for macOS, Windows, and Linux.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Docksal",
+          "description": "Unified, Docker :whale: powered web development environments for macOS, Windows, and Linux.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -5871,10 +6264,11 @@
       "description": "Alternative PHP virtual machines.",
       "items": [
         {
-          "children": [],
-          "description": "PHP compiler and runtime for .NET and .NET Core.",
+          "node_type": "item",
           "kind": "repository",
           "title": "PeachPie",
+          "description": "PHP compiler and runtime for .NET and .NET Core.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -5885,10 +6279,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A Virtual Machine, Runtime and JIT for PHP by Facebook.",
+          "node_type": "item",
           "kind": "repository",
           "title": "HHVM",
+          "description": "A Virtual Machine, Runtime and JIT for PHP by Facebook.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -5905,10 +6300,11 @@
       "description": "Web-based applications and tools.",
       "items": [
         {
-          "children": [],
-          "description": "A web interface for MySQL/MariaDB.",
+          "node_type": "item",
           "kind": "repository",
           "title": "phpMyAdmin",
+          "description": "A web interface for MySQL/MariaDB.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -5919,10 +6315,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A web tool for capturing and viewing emails.",
+          "node_type": "item",
           "kind": "repository",
           "title": "MailCatcher",
+          "description": "A web tool for capturing and viewing emails.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -5933,10 +6330,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A database version control application.",
+          "node_type": "item",
           "kind": "repository",
           "title": "DBV",
+          "description": "A database version control application.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -5947,10 +6345,11 @@
           }
         },
         {
-          "children": [],
-          "description": "An easy to use and great looking photo-management-system.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Lychee",
+          "description": "An easy to use and great looking photo-management-system.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -5961,10 +6360,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A simple web interface to manage Redis databases.",
+          "node_type": "item",
           "kind": "repository",
           "title": "phpRedisAdmin",
+          "description": "A simple web interface to manage Redis databases.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -5975,10 +6375,11 @@
           }
         },
         {
-          "children": [],
-          "description": "The open source status page system.",
+          "node_type": "item",
           "kind": "repository",
           "title": "Cachet",
+          "description": "The open source status page system.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -5989,10 +6390,11 @@
           }
         },
         {
-          "children": [],
-          "description": "An application for managing queueing backends.",
+          "node_type": "item",
           "kind": "repository",
           "title": "PHP Queue",
+          "description": "An application for managing queueing backends.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -6009,10 +6411,11 @@
       "description": "Infrastructure for providing PHP applications and services.",
       "items": [
         {
-          "children": [],
-          "description": "A process manager, supercharger and load balancer for PHP applications.",
+          "node_type": "item",
           "kind": "repository",
           "title": "php-pm",
+          "description": "A process manager, supercharger and load balancer for PHP applications.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -6023,10 +6426,11 @@
           }
         },
         {
-          "children": [],
-          "description": "High-performance PHP application server, load-balancer and process manager.",
+          "node_type": "item",
           "kind": "repository",
           "title": "RoadRunner",
+          "description": "High-performance PHP application server, load-balancer and process manager.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -6037,10 +6441,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A multithreaded application server for PHP, written in PHP.",
+          "node_type": "item",
           "kind": "repository",
           "title": "appserver.io",
+          "description": "A multithreaded application server for PHP, written in PHP.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",

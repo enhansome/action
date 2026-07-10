@@ -52,7 +52,7 @@ export interface SortOptions {
 
 // A node's intrinsic kind: a `registry` is a directory that exists to enable
 // discovery (an awesome-list); a `repository` is a terminal, consumable
-// project. Every emitted node carries exactly one (PLAN.md §2/§5, D6).
+// project. Every genuine GitHub node carries exactly one (PLAN.md §2/§5, D6).
 export type Kind = 'registry' | 'repository';
 
 // --- JSON OUTPUT STRUCTURE ---
@@ -69,31 +69,55 @@ export interface RepoInfo {
   stars: number;
 }
 
-// Shared base: every GitHub node has an intrinsic kind and a title. A section
-// is a category heading, NOT a GitHub node, so `JsonSection` does not extend
-// this and carries no kind (PLAN.md §5, D5).
-interface JsonNode {
+// A genuine GitHub node: the item's OWN paragraph links to a GitHub repo, so it
+// has an intrinsic kind (D6) and, when the link resolves, `repo_info`. It may
+// still wrap nested GitHub items/groups in `children`.
+export interface JsonItem {
+  children: JsonNode[];
+  description: null | string;
   kind: Kind;
+  // Discriminator for the `JsonItem | JsonGroup` union — present on every node
+  // so any consumer (TS or not) can switch cleanly without inferring from
+  // `kind`/`repo_info` presence (a dead-link item has `kind` but no repo_info).
+  node_type: 'item';
+  repo_info?: RepoInfo;
   title: string;
 }
 
-interface JsonItem extends JsonNode {
-  children: JsonItem[];
+// A grouping/category with NO GitHub identity of its own — an editor
+// subheading, a "see also" cluster, a wrapper around linked resources whose own
+// link is non-GitHub (e.g. SBCL linked via its website). Carries `children` but
+// NEVER a `kind` or `repo_info`: those belong to genuine GitHub nodes only
+// (PLAN.md §5/§11, Option B).
+export interface JsonGroup {
+  children: JsonNode[];
   description: null | string;
-  repo_info?: RepoInfo;
+  node_type: 'group';
+  title: string;
 }
 
-interface JsonMetadata extends JsonNode {
+// Any node that can appear in `section.items` or `item.children`.
+export type JsonNode = JsonGroup | JsonItem;
+
+// The source document is itself a node (D5): it always carries a kind (computed
+// from its own README via the same oracle, independent of any item's identity).
+// `node_type` does not apply — `metadata` is a distinct top-level shape, not a
+// member of the items/children union.
+interface JsonMetadata {
   enhanced_repository: null | string;
   enhanced_repository_description: null | string;
+  kind: Kind;
   last_updated: string;
   original_repository: string;
   original_repository_sha: null | string;
+  title: string;
 }
 
 interface JsonSection {
   description: null | string;
-  items: JsonItem[];
+  // A section's direct children may be items (GitHub nodes) and/or groups
+  // (kind-less containers wrapping nested GitHub content).
+  items: JsonNode[];
   title: string;
 }
 
@@ -393,37 +417,22 @@ function findFirstGitHubLink(node: Parent): string | undefined {
   });
   return linkUrl;
 }
-// Resolve the GitHub link that represents a list item: prefer a repo link in
-// the item's own paragraph (the project's repo). When there isn't one — e.g. a
-// "LeetCode" / "Spotify" category header whose links live in nested children —
-// rank the category by its best (most-starred) nested repo instead of whichever
-// child happened to be listed first. Max is order-independent, so unlike a
-// "first link" lookup it cannot diverge between the JSON and markdown passes.
-function findItemGitHubLink(
-  itemNode: ListItem,
-  repoInfoMap: Map<string, RepoInfoDetails>,
-): string | undefined {
+
+// The GitHub link that represents a list item: the FIRST GitHub link in the
+// item's OWN paragraph only. A nested-descendant link is deliberately ignored
+// — it belongs to a child, not to this item. This is Option B (PLAN.md §5): an
+// item is a GitHub node iff its own paragraph links to a GitHub repo; an item
+// with no own GitHub link but nested GitHub children is a kind-less group, not
+// a node borrowing a child's identity.
+//
+// A GitHub link that is secondary within the paragraph (e.g.
+// `[name](marketplace) … [On GitHub](github)`) is still the item's own link, so
+// `findFirstGitHubLink` over the paragraph finds it correctly.
+function findOwnGitHubLink(itemNode: ListItem): string | undefined {
   const paragraph = itemNode.children.find(
     (child): child is Paragraph => child.type === 'paragraph',
   );
-  const direct = paragraph ? findFirstGitHubLink(paragraph) : undefined;
-  if (direct) {
-    return direct;
-  }
-
-  let bestStars = -1;
-  let bestUrl: string | undefined;
-  visit(itemNode, 'link', (linkNode: Link) => {
-    if (!parseGitHubUrl(linkNode.url)) {
-      return;
-    }
-    const stars = repoInfoMap.get(linkNode.url)?.stargazers_count ?? -1;
-    if (stars > bestStars) {
-      bestStars = stars;
-      bestUrl = linkNode.url;
-    }
-  });
-  return bestUrl;
+  return paragraph ? findFirstGitHubLink(paragraph) : undefined;
 }
 
 /**
@@ -451,16 +460,20 @@ export function countListEntries(tree: Root): number {
 }
 
 /**
- * The GitHub URL that identifies each list item — the first github link in the
- * item's subtree (`findFirstGitHubLink`) — for every list item that has one.
- * This is exactly the set of targets that become typed JsonItems and therefore
- * need a `kind`, so `fetchTargetData` fetches a README (the heaviest call) only
- * for these — not for prose, badge, or secondary links.
+ * The GitHub URL that identifies each list item — the first GitHub link in the
+ * item's OWN paragraph (`findOwnGitHubLink`) — for every list item that has
+ * one. This is exactly the set of targets that become typed JsonItems and
+ * therefore need a `kind`, so `fetchTargetData` fetches a README (the heaviest
+ * call) only for these — not for prose, badge, secondary, or nested-child links.
+ *
+ * Using the same own-paragraph resolver as the consumer (`processListRecursively`)
+ * guarantees parity: a kind is fetched iff the item will be emitted as a
+ * JsonItem keyed by that exact URL.
  */
 function collectEntryGitHubUrls(tree: Root): Set<string> {
   const urls = new Set<string>();
   visit(tree, 'listItem', (item: ListItem) => {
-    const url = findFirstGitHubLink(item);
+    const url = findOwnGitHubLink(item);
     if (url) {
       urls.add(url);
     }
@@ -584,7 +597,14 @@ function processListRecursively(
   kindsMap: Map<string, Kind>,
   sortOptions: SortOptions,
   isNested = false,
-): JsonItem[] {
+): JsonNode[] {
+  // The section-sparsity gate: count items whose SUBTREE contains a GitHub
+  // link (`findFirstGitHubLink`), not items with an own-paragraph link only.
+  // This is equivalent to "items that will yield an emitted node" — a category
+  // with no own link but nested GitHub children still counts (it becomes a
+  // group). Switching this to `findOwnGitHubLink` would silently drop purely
+  // categorical sections, so it deliberately diverges from the identity
+  // resolver below (Option B, PLAN.md §6a reconsidered).
   const itemsWithGitHubLinks = listNode.children.filter(
     item => !!findFirstGitHubLink(item),
   );
@@ -594,16 +614,17 @@ function processListRecursively(
 
   // Zip each list item with its parsed JSON and resolved repo info so one sort
   // orders both the rendered AST and the emitted JSON identically. `json` is
-  // null for non-GitHub entries (D9): they keep their AST slot so the enhanced
-  // markdown still renders them, but are dropped from the JSON output.
+  // null only for non-GitHub LEAVES (D9): a link-less item with no nested
+  // GitHub children. They keep their AST slot (rendered markdown) but are
+  // omitted from the JSON output.
   const entries: {
-    json: JsonItem | null;
+    json: JsonNode | null;
     node: ListItem;
     repoInfo: null | RepoInfoDetails;
   }[] = [];
 
   for (const itemNode of listNode.children) {
-    const githubUrl = findItemGitHubLink(itemNode, repoInfoMap);
+    const githubUrl = findOwnGitHubLink(itemNode);
     const repoInfo = githubUrl ? (repoInfoMap.get(githubUrl) ?? null) : null;
 
     const nestedLists = itemNode.children.filter(
@@ -643,27 +664,31 @@ function processListRecursively(
       }
     }
 
-    // D9: only GitHub-linked entries enter the typed JSON graph — every emitted
-    // JsonItem must be a GitHub node so it can carry a required kind (D6).
-    // Non-GitHub entries (books/papers/courses) and link-less notes are kept in
-    // the enhanced markdown (every item still drives `entries` for sorting/
-    // badges below) but omitted from `jsonData`.
-    // TODO(future): preserve non-GitHub entries in a separate shape (PLAN.md §11).
-    let jsonData: JsonItem | null = null;
+    // Option B — three cases for what an item becomes:
+    //   1. own GitHub link            → JsonItem (kind required; repo_info if
+    //                                  resolved). May still wrap children.
+    //   2. no own link, but ≥1 child  → JsonGroup (kind-less container). NEVER
+    //                                  a kind or repo_info — that would be the
+    //                                  very borrowing bug this fixes.
+    //   3. no own link, no children   → null (D9: non-GitHub leaf). Kept in the
+    //                                  rendered markdown, dropped from JSON.
+    // TODO(future): preserve non-GitHub LEAVES in a separate shape (PLAN.md §11).
+    let jsonData: JsonNode | null = null;
     if (githubUrl) {
       // A missing kind means the target README was unreadable (dead link) and
       // `fetchTargetData` skipped it. Default to 'repository' so the node still
       // carries a real kind; the webapp membership backstop recovers any
       // registry we mistyped (PLAN.md §5). Never let a dead link drop an item.
       const kind = kindsMap.get(githubUrl) ?? 'repository';
-      jsonData = {
-        children: childrenJson,
-        description: description || null,
+      const item: JsonItem = {
+        node_type: 'item',
         kind,
         title,
+        description: description || null,
+        children: childrenJson,
       };
       if (repoInfo) {
-        jsonData.repo_info = {
+        item.repo_info = {
           archived: repoInfo.archived,
           language: repoInfo.language,
           last_commit: repoInfo.pushed_at,
@@ -672,6 +697,14 @@ function processListRecursively(
           stars: repoInfo.stargazers_count,
         };
       }
+      jsonData = item;
+    } else if (childrenJson.length > 0) {
+      jsonData = {
+        node_type: 'group',
+        title,
+        description: description || null,
+        children: childrenJson,
+      };
     }
 
     entries.push({ json: jsonData, node: itemNode, repoInfo });
@@ -684,12 +717,14 @@ function processListRecursively(
   }
 
   // A single sort feeds both outputs — the AST (rendered markdown) and the JSON
-  // items — so they can never drift out of order. Non-GitHub items keep their
-  // AST slot (rendered markdown) but are dropped from the JSON (D9).
+  // nodes — so they can never drift out of order. A group has repoInfo=null, so
+  // a stars/last_commit sort sinks groups below items within their list (stable
+  // and deterministic; Option B, PLAN.md §6c). Non-GitHub leaves keep their AST
+  // slot (rendered markdown) but are dropped from the JSON (D9).
   listNode.children = entries.map(entry => entry.node);
   return entries
     .map(entry => entry.json)
-    .filter((json): json is JsonItem => json !== null);
+    .filter((json): json is JsonNode => json !== null);
 }
 
 // Common section headers that should NOT be used as document titles
