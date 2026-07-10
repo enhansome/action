@@ -9,9 +9,10 @@ import * as github from './github.js';
 import { RepoInfoDetails } from './github.js';
 import {
   classifyKind,
-  countListEntries,
+  countResourceLinks,
   fetchTargetData,
   processMarkdownContent,
+  REGISTRY_MIN_LINKS,
   ReplacementRule,
 } from './markdown.js';
 
@@ -126,7 +127,7 @@ describe('fetchTargetData with Concurrency', () => {
       urls,
       urls,
       token,
-      20,
+      REGISTRY_MIN_LINKS,
     );
 
     expect(repoInfoMap.size).toBe(totalUrls);
@@ -151,7 +152,12 @@ describe('fetchTargetData with Concurrency', () => {
       return { ...mockRepoData };
     });
 
-    const { repoInfoMap } = await fetchTargetData(urls, urls, token, 20);
+    const { repoInfoMap } = await fetchTargetData(
+      urls,
+      urls,
+      token,
+      REGISTRY_MIN_LINKS,
+    );
 
     expect(repoInfoMap.size).toBe(totalUrls);
     expect(maxConcurrentRequests).toBe(totalUrls);
@@ -172,7 +178,7 @@ describe('fetchTargetData with Concurrency', () => {
       urls,
       entryUrls,
       token,
-      20,
+      REGISTRY_MIN_LINKS,
     );
 
     expect(repoInfoMap.size).toBe(3);
@@ -197,7 +203,7 @@ describe('fetchTargetData with Concurrency', () => {
       urls,
       urls,
       token,
-      20,
+      REGISTRY_MIN_LINKS,
     );
 
     // repo-0's /repos failed -> no repo_info, but its README still classified.
@@ -223,7 +229,7 @@ describe('fetchTargetData with Concurrency', () => {
       urls,
       urls,
       token,
-      20,
+      REGISTRY_MIN_LINKS,
     );
 
     // repo-0's README failed -> no kind, but its /repos still succeeded.
@@ -239,7 +245,7 @@ describe('fetchTargetData with Concurrency', () => {
       new Set<string>(),
       new Set<string>(),
       token,
-      20,
+      REGISTRY_MIN_LINKS,
     );
     expect(repoInfoMap.size).toBe(0);
     expect(kindsMap.size).toBe(0);
@@ -262,7 +268,7 @@ describe('fetchTargetData with Concurrency', () => {
       urls,
       urls,
       token,
-      20,
+      REGISTRY_MIN_LINKS,
     );
 
     // One canonical repo -> one of each call, not two.
@@ -430,7 +436,7 @@ describe('Item titles and descriptions from README fixtures', () => {
   );
 });
 
-describe('countListEntries (fixture counts)', () => {
+describe('countResourceLinks (fixture counts)', () => {
   const fixturesDir = path.join(__dirname, 'fixtures', 'original');
 
   function parseFixture(name: string) {
@@ -445,43 +451,36 @@ describe('countListEntries (fixture counts)', () => {
     return unified().use(remarkParse).use(remarkGfm).parse(markdown);
   }
 
-  // `countListEntries` (and the `findFirstGitHubLink` it reuses) calls
-  // `parseGitHubUrl`, which this file auto-mocks (vi.mock('./github.js')). A
-  // leaked permissive impl from a sibling describe would over-count URLs whose
-  // host is not exactly github.com (e.g. raw.githubusercontent.com), so pin the
-  // mock to the real implementation here. The asserted counts then reflect the
-  // production oracle, not mock contamination.
-  beforeEach(async () => {
-    const actual = await vi.importActual<typeof github>('./github.js');
-    vi.mocked(github.parseGitHubUrl).mockImplementation(actual.parseGitHubUrl);
+  // Pinned against REGISTRY_MIN_LINKS (50). These counts are the ground truth the
+  // threshold sits against, so they are asserted exactly.
+  it.each([
+    { name: 'go', expected: 2965 },
+    { name: 'free-for-dev', expected: 1424 },
+    { name: 'complex', expected: 7 },
+    { name: 'userscripts', expected: 13 },
+  ])('counts $name outbound links as $expected', ({ name, expected }) => {
+    expect(countResourceLinks(parseFixture(name))).toBe(expected);
   });
 
-  // Calibration is pinned at K = 20. These counts are the ground
-  // truth that threshold sits against, so they are asserted exactly.
-  it.each([
-    { name: 'go', expected: 2570 },
-    { name: 'free-for-dev', expected: 13 },
-    { name: 'complex', expected: 7 },
-    { name: 'userscripts', expected: 0 },
-  ])(
-    'counts $name github-linked list items as $expected',
-    ({ name, expected }) => {
-      expect(countListEntries(parseFixture(name))).toBe(expected);
-    },
-  );
-
-  it('counts zero for a README with no github links', () => {
+  it('counts a non-GitHub linked entry (a registry of papers/sites, not repos)', () => {
     const tree = parseMarkdown(
       '# Title\n\n- [book](https://example.com/book)\n- plain note\n',
     );
-    expect(countListEntries(tree)).toBe(0);
+    expect(countResourceLinks(tree)).toBe(1);
   });
 
-  it('counts an item once even when its subtree has multiple github links', () => {
+  it('counts every outbound link, including several in one item', () => {
     const tree = parseMarkdown(
       '- [a](https://github.com/o/a) and [b](https://github.com/o/b)\n- [c](https://example.com/c)\n',
     );
-    expect(countListEntries(tree)).toBe(1);
+    expect(countResourceLinks(tree)).toBe(3);
+  });
+
+  it('ignores same-page anchor links (a project README ToC is not a registry)', () => {
+    const tree = parseMarkdown(
+      '# Project\n\n## Contents\n\n- [Install](#install)\n- [Usage](#usage)\n',
+    );
+    expect(countResourceLinks(tree)).toBe(0);
   });
 });
 
@@ -490,72 +489,73 @@ describe('classifyKind', () => {
   // classifyKind is never actually used.
   const octokit = undefined as unknown as github.GithubClient;
 
-  function readmeWithItems(n: number): string {
-    const items = Array.from(
+  // classifyKind counts anchors in the target's RENDERED HTML, so these mocks
+  // return HTML, not Markdown.
+  function readmeHtml(n: number): string {
+    const links = Array.from(
       { length: n },
-      (_, i) => `- [repo-${i}](https://github.com/o/repo-${i})`,
+      (_, i) => `<a href="https://example.com/item-${i}">item-${i}</a>`,
     ).join('\n');
-    return `# Some Repo\n\n${items}\n`;
+    return `<article><h1>Repo</h1>${links}</article>`;
   }
 
   beforeEach(() => {
     vi.clearAllMocks();
   });
 
-  // classifyKind returns only { kind }: the raw entry count is a debug signal
-  // nothing in production reads (fetchTargetData uses just `kind`), so it was
-  // dropped to let the fast path short-circuit without fabricating a count.
+  // classifyKind returns only { kind }: the raw count is a debug signal nothing
+  // in production reads (fetchTargetData uses just `kind`).
 
-  it('classifies a README with >= minEntries github items as a registry (boundary inclusive)', async () => {
-    vi.mocked(github.getReadme).mockResolvedValue(readmeWithItems(20));
-    const result = await classifyKind(octokit, 'o', 'r', 20);
+  it('classifies a README with >= REGISTRY_MIN_LINKS links as a registry (boundary inclusive)', async () => {
+    vi.mocked(github.getReadme).mockResolvedValue(
+      readmeHtml(REGISTRY_MIN_LINKS),
+    );
+    const result = await classifyKind(octokit, 'o', 'r', REGISTRY_MIN_LINKS);
     expect(result.kind).toBe('registry');
   });
 
   it('classifies a README just below the threshold as a repository', async () => {
-    vi.mocked(github.getReadme).mockResolvedValue(readmeWithItems(19));
-    const result = await classifyKind(octokit, 'o', 'r', 20);
+    vi.mocked(github.getReadme).mockResolvedValue(
+      readmeHtml(REGISTRY_MIN_LINKS - 1),
+    );
+    const result = await classifyKind(octokit, 'o', 'r', REGISTRY_MIN_LINKS);
     expect(result.kind).toBe('repository');
   });
 
   it('classifies a sparse project README as a repository', async () => {
     vi.mocked(github.getReadme).mockResolvedValue(
-      '# chalk\n\nTerminal string styling.\n',
+      '<article><h1>chalk</h1><p>Terminal string styling.</p></article>',
     );
-    const result = await classifyKind(octokit, 'chalk', 'chalk', 20);
+    const result = await classifyKind(
+      octokit,
+      'chalk',
+      'chalk',
+      REGISTRY_MIN_LINKS,
+    );
     expect(result.kind).toBe('repository');
   });
 
-  it('classifies a real registry README fixture as a registry', async () => {
-    const readme = fs.readFileSync(
-      path.join(__dirname, 'fixtures', 'original', 'kind-registry.md'),
-      'utf-8',
+  // Format-agnostic: this HTML stands in for a rendered reST/AsciiDoc README
+  // whose raw Markdown parse would find zero links. The counter must still reach
+  // `registry` from the anchors alone.
+  it('classifies a non-Markdown README by its rendered anchors', async () => {
+    vi.mocked(github.getReadme).mockResolvedValue(
+      readmeHtml(REGISTRY_MIN_LINKS + 10),
     );
-    vi.mocked(github.getReadme).mockResolvedValue(readme);
     const result = await classifyKind(
       octokit,
-      'example',
-      'awesome-example',
-      20,
+      'o',
+      'rst-list',
+      REGISTRY_MIN_LINKS,
     );
     expect(result.kind).toBe('registry');
   });
 
-  it('classifies a real project README fixture as a repository', async () => {
-    const readme = fs.readFileSync(
-      path.join(__dirname, 'fixtures', 'original', 'kind-repository.md'),
-      'utf-8',
-    );
-    vi.mocked(github.getReadme).mockResolvedValue(readme);
-    const result = await classifyKind(octokit, 'chalk', 'chalk', 20);
-    expect(result.kind).toBe('repository');
-  });
-
   it('throws on an unreadable README (fetchTargetData catches it)', async () => {
     vi.mocked(github.getReadme).mockRejectedValue(new Error('Not Found (404)'));
-    await expect(classifyKind(octokit, 'o', 'r', 20)).rejects.toThrow(
-      'Not Found (404)',
-    );
+    await expect(
+      classifyKind(octokit, 'o', 'r', REGISTRY_MIN_LINKS),
+    ).rejects.toThrow('Not Found (404)');
   });
 });
 
@@ -731,15 +731,13 @@ describe('Item identity: own-link only, categories become groups', () => {
     vi.mocked(github.getReadme).mockImplementation((_ok, _owner, repo) => {
       if (repo === 'registry-child') {
         return Promise.resolve(
-          '# reg\n\n' +
-            Array.from(
-              { length: 20 },
-              (_, i) => `- [r-${i}](https://github.com/o/r-${i})`,
-            ).join('\n') +
-            '\n',
+          Array.from(
+            { length: REGISTRY_MIN_LINKS },
+            (_, i) => `<a href="https://github.com/o/r-${i}">r-${i}</a>`,
+          ).join('\n'),
         );
       }
-      return Promise.resolve('# project\n');
+      return Promise.resolve('<p>project</p>');
     });
 
     const data = await process(

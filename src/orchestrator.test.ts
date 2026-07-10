@@ -18,6 +18,17 @@ function isItem(node: JsonNode): node is JsonItem {
   return node.node_type === 'item';
 }
 
+// classifyKind counts anchors in the target's rendered HTML, so target-README
+// mocks return HTML with `n` outbound anchors (n >= REGISTRY_MIN_LINKS => a
+// registry target; n = 0 => a project target).
+function targetReadmeHtml(n: number): string {
+  const links = Array.from(
+    { length: n },
+    (_, i) => `<a href="https://example.com/r${i}">r${i}</a>`,
+  ).join('');
+  return `<article><h1>repo</h1>${links}</article>`;
+}
+
 describe('Orchestrator: enhance()', () => {
   const token = 'test-token';
 
@@ -625,9 +636,9 @@ Version: __VERSION__ | Last Updated: 2025-01-01
       vi.mocked(github.getReadme).mockImplementation(
         (_octokit, _owner: string, repo: string) => {
           if (repo === 'awesome-go') {
-            return Promise.resolve(registryReadme);
+            return Promise.resolve(targetReadmeHtml(60));
           }
-          return Promise.resolve(repositoryReadme);
+          return Promise.resolve(targetReadmeHtml(0));
         },
       );
 
@@ -746,7 +757,7 @@ Version: __VERSION__ | Last Updated: 2025-01-01
     // "Awesome Lists" section links other registries, its "Software" section
     // links concrete repositories (and hides a registry among them), and its
     // "Books"/"Courses" sections are non-GitHub. The fixture is the *real*
-    // README; each target's README is mocked to a known-kind fixture so the
+    // README; each target's README is mocked to a known-kind HTML payload so the
     // assertion is about enhance()'s wiring (kind -> JsonItem), not the network.
     const content = fs.readFileSync(
       path.join(
@@ -755,14 +766,6 @@ Version: __VERSION__ | Last Updated: 2025-01-01
         'original',
         'awesome-computer-vision.md',
       ),
-      'utf-8',
-    );
-    const registryReadme = fs.readFileSync(
-      path.join(__dirname, 'fixtures', 'original', 'kind-registry.md'),
-      'utf-8',
-    );
-    const repositoryReadme = fs.readFileSync(
-      path.join(__dirname, 'fixtures', 'original', 'kind-repository.md'),
       'utf-8',
     );
 
@@ -814,14 +817,15 @@ Version: __VERSION__ | Last Updated: 2025-01-01
         repo: 'test-repo',
         stargazers_count: 100,
       });
-      // Mock the per-target oracle: a registry README (>= 20 entries) for targets
-      // whose name reads as an awesome-list, a project README otherwise.
+      // Mock the per-target oracle: a registry README (>= REGISTRY_MIN_LINKS
+      // anchors) for targets whose name reads as an awesome-list, a project
+      // README otherwise.
       vi.mocked(github.getReadme).mockImplementation(
         (_octokit, _owner: string, repo: string) =>
           Promise.resolve(
             /awesome|awsome/i.test(repo) || explicitRegistries.has(repo)
-              ? registryReadme
-              : repositoryReadme,
+              ? targetReadmeHtml(60)
+              : targetReadmeHtml(0),
           ),
       );
     });

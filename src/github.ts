@@ -100,16 +100,17 @@ export async function getReadme(
   octokit: GithubClient,
   owner: string,
   repo: string,
+  format: 'html' | 'raw' = 'raw',
 ): Promise<string> {
-  core.debug(`Fetching README for ${owner}/${repo}`);
+  core.debug(`Fetching ${format} README for ${owner}/${repo}`);
   const response = await octokit.rest.repos.getReadme({
-    mediaType: { format: 'raw' },
+    mediaType: { format },
     owner,
     repo,
   });
 
-  // With the `raw` media type the body is the markdown string, but the
-  // generated types still describe the JSON shape - cast to string.
+  // With `raw`/`html` media types the body is a string, but the generated types
+  // still describe the JSON shape - cast to string.
   return response.data as unknown as string;
 }
 

@@ -252,7 +252,7 @@ export async function processMarkdownContent(
   // the tree in place — so the source's kind can never drift from how another
   // mirror would classify this very repo from its raw README.
   const sourceKind: Kind =
-    countListEntries(tree) >= REGISTRY_MIN_ENTRIES ? 'registry' : 'repository';
+    countResourceLinks(tree) >= REGISTRY_MIN_LINKS ? 'registry' : 'repository';
 
   const githubUrls = collectGitHubLinks(tree);
   const entryUrls = collectEntryGitHubUrls(tree);
@@ -261,7 +261,7 @@ export async function processMarkdownContent(
     githubUrls,
     entryUrls,
     token,
-    REGISTRY_MIN_ENTRIES,
+    REGISTRY_MIN_LINKS,
   );
 
   // The title derives from the *source* repository (originalRepository), never
@@ -425,21 +425,43 @@ function findOwnGitHubLink(itemNode: ListItem): string | undefined {
 }
 
 /**
- * Read-only — neither mutates nor sorts, so safe to run before or after
- * enhancement. The classification primitive: a README with at least
- * `REGISTRY_MIN_ENTRIES` such items is a `registry`, otherwise a `repository`.
- * An item containing a nested list is counted once for itself plus once per
- * nested item that has its own GitHub link.
+ * Counts outbound links in the SOURCE README, which the enhancer always holds as
+ * parsed Markdown. Targets (see `classifyKind`) are counted from their rendered
+ * HTML instead, because a target README may be reStructuredText/AsciiDoc/etc.
+ * and Markdown-parsing those loses their links. Both counters measure the same
+ * thing — outbound resource links — so the one `REGISTRY_MIN_LINKS` threshold
+ * applies to both.
+ *
+ * Structure- and target-agnostic: a registry is a directory of resources, not a
+ * directory of GitHub repos in a bulleted list, so every outbound link counts
+ * regardless of where it sits (list, table, or prose) or what it points at (a
+ * GitHub repo, an arXiv paper, a dataset, a project page). Same-page `#` anchors
+ * are excluded so a project README's Table of Contents does not inflate the
+ * count.
  */
-export function countListEntries(tree: Root): number {
+export function countResourceLinks(tree: Root): number {
   let count = 0;
-  visit(tree, 'listItem', (item: ListItem) => {
-    // Reuses `findFirstGitHubLink` so "is this a GitHub link?" stays consistent
-    // with the rest of the parser.
-    if (findFirstGitHubLink(item)) {
+  visit(tree, 'link', (linkNode: Link) => {
+    if (linkNode.url && !linkNode.url.startsWith('#')) {
       count++;
     }
   });
+  return count;
+}
+
+// Counts outbound links in a target's RENDERED HTML README. Same exclusion and
+// intent as `countResourceLinks`, but operating on GitHub's HTML rendering so a
+// non-Markdown README (reST, AsciiDoc) — whose links Markdown parsing can't see
+// — is judged by the links a reader actually sees. GitHub's rendered HTML uses
+// double-quoted `href`, so a targeted scan is exact here without an HTML parser
+// dependency.
+export function countOutboundAnchors(html: string): number {
+  let count = 0;
+  for (const match of html.matchAll(/href\s*=\s*"([^"]*)"/g)) {
+    if (match[1] && !match[1].startsWith('#')) {
+      count++;
+    }
+  }
   return count;
 }
 
@@ -460,21 +482,20 @@ function collectEntryGitHubUrls(tree: Root): Set<string> {
   return urls;
 }
 
-// Calibrated against real READMEs: concrete projects top out at ~17 (chalk),
-// bulk awesome-lists start far higher, so 20 sits just above the project
-// ceiling with margin. Hardcoded (not an action input) so the emitted kind is
-// trustworthy standalone.
-export const REGISTRY_MIN_ENTRIES = 20;
+// Calibrated against real READMEs on the outbound-link counter: concrete
+// projects top out at 35 (chalk/chalk) and 17 (liuliu/ccv); the smallest
+// registries start at 88 (vsitzmann/awesome-implicit-representations). 50 sits
+// between them with double-digit margin on both sides. Hardcoded (not an action
+// input) so the emitted kind is trustworthy standalone.
+export const REGISTRY_MIN_LINKS = 50;
 
 /**
  * README fetch failures propagate: `getReadme` throws and this does not swallow
- * it. Uses `countListEntries` — the same counter the source is classified with
- * — so a target is judged identically whether it is the source or a link.
- *
- * No regex pre-scan: parsing even the largest known registry README is cheap
- * (<220ms; the network fetch dominates), and a line-scan approximation can't
- * model raw HTML blocks, so it could mislabel a `repository` a `registry`
- * without consulting the AST. Returns only `kind`; the raw count is not emitted.
+ * it. Counts the target's RENDERED HTML so a non-Markdown README (reST,
+ * AsciiDoc) is judged by the links a reader sees, not by what a Markdown parser
+ * can recover from a format it does not understand. The source is counted from
+ * Markdown (`countResourceLinks`) because it is always Markdown; both measure
+ * outbound links against the same `REGISTRY_MIN_LINKS`. Returns only `kind`.
  */
 export async function classifyKind(
   octokit: GithubClient,
@@ -482,10 +503,9 @@ export async function classifyKind(
   repo: string,
   minEntries: number,
 ): Promise<{ kind: Kind }> {
-  const readme = await getReadme(octokit, owner, repo);
-  const tree = unified().use(remarkParse).use(remarkGfm).parse(readme);
+  const html = await getReadme(octokit, owner, repo, 'html');
   return {
-    kind: countListEntries(tree) >= minEntries ? 'registry' : 'repository',
+    kind: countOutboundAnchors(html) >= minEntries ? 'registry' : 'repository',
   };
 }
 
