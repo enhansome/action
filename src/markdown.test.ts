@@ -9,7 +9,6 @@ import * as github from './github.js';
 import { RepoInfoDetails } from './github.js';
 import {
   classifyKind,
-  countGitHubListLines,
   countListEntries,
   fetchTargetData,
   processMarkdownContent,
@@ -564,79 +563,6 @@ describe('classifyKind', () => {
   });
 });
 
-describe('countGitHubListLines (lower-bound pre-scan)', () => {
-  const fixturesDir = path.join(__dirname, 'fixtures', 'original');
-
-  function parseMarkdown(markdown: string) {
-    return unified().use(remarkParse).use(remarkGfm).parse(markdown);
-  }
-
-  // The pre-scan uses the real parseGitHubUrl semantics, so pin the auto-mock
-  // to the real impl (as the countListEntries describe does) — otherwise a
-  // leaked permissive impl would make the soundness check meaningless.
-  beforeEach(async () => {
-    const actual = await vi.importActual<typeof github>('./github.js');
-    vi.mocked(github.parseGitHubUrl).mockImplementation(actual.parseGitHubUrl);
-  });
-
-  // SOUNDNESS — the invariant that lets classifyKind short-circuit on this
-  // count: the cheap line-scan must NEVER exceed the exact AST oracle. If it
-  // did, a repo could be misclassified a registry. Asserted across every real
-  // fixture so a regression in the regex surfaces immediately.
-  it.each([
-    'go',
-    'free-for-dev',
-    'complex',
-    'userscripts',
-    'kind-registry',
-    'kind-repository',
-  ])('is a lower bound on countListEntries for the %s fixture', name => {
-    const readme = fs.readFileSync(
-      path.join(fixturesDir, `${name}.md`),
-      'utf-8',
-    );
-    const exact = countListEntries(parseMarkdown(readme));
-    const lowerBound = countGitHubListLines(readme, Number.MAX_SAFE_INTEGER);
-    expect(lowerBound).toBeLessThanOrEqual(exact);
-  });
-
-  it('skips github links inside fenced code blocks (would otherwise over-count)', () => {
-    // 30 github-linked list lines, but all inside a ``` block — literal text,
-    // not list items. The pre-scan must report 0 so the fall-through (not the
-    // short-circuit) decides, matching the AST oracle (which also sees 0).
-    const fence = Array.from(
-      { length: 30 },
-      (_, i) => `- [r${i}](https://github.com/o/r${i})`,
-    ).join('\n');
-    const readme = '# r\n\n```\n' + fence + '\n```\n';
-    expect(countGitHubListLines(readme, Number.MAX_SAFE_INTEGER)).toBe(0);
-    expect(countListEntries(parseMarkdown(readme))).toBe(0);
-  });
-
-  it('early-exits as soon as it reaches minEntries', () => {
-    // A README with 100 github list items: asking for a floor of 20 returns
-    // exactly 20 (it stops), asking for the full count returns 100.
-    const items = Array.from(
-      { length: 100 },
-      (_, i) => `- [r${i}](https://github.com/o/r${i})`,
-    ).join('\n');
-    const readme = `# r\n\n${items}\n`;
-    expect(countGitHubListLines(readme, 20)).toBe(20);
-    expect(countGitHubListLines(readme, Number.MAX_SAFE_INTEGER)).toBe(100);
-  });
-
-  it('ignores non-github hosts and single-segment github paths', () => {
-    const readme = [
-      '- [a](https://example.com/a)',
-      '- [b](https://github.com/only-owner)',
-      '- [c](https://github.com/o/c)',
-    ].join('\n');
-    // Only `c` is a 2-segment github.com link; `only-owner` is rejected by
-    // parseGitHubUrl, so the lower bound is 1.
-    expect(countGitHubListLines(readme, Number.MAX_SAFE_INTEGER)).toBe(1);
-  });
-});
-
 describe('Item identity: own-link only, categories become groups (Option B)', () => {
   const token = 'test-token';
   const sourceRepo = 'example/awesome-test';
@@ -843,5 +769,34 @@ describe('Item identity: own-link only, categories become groups (Option B)', ()
     expect(child).toBeDefined();
     expect(child?.node_type).toBe('item');
     expect(child?.kind).toBe('registry');
+  });
+
+  it('sinks kind-less groups below starred items under a stars sort', async () => {
+    // Product invariant (README "Items vs. groups"): a stars/last-commit sort
+    // sinks groups (no repo_info of their own) below the starred items in their
+    // list, and groups among themselves keep source order. Pinned because it is
+    // user-visible rendered+JSON order and is exercised by no other test.
+    const { jsonData } = await processMarkdownContent(
+      [
+        '# List',
+        '',
+        '## Section',
+        '',
+        '- [starred](https://github.com/o/starred) - has stars',
+        '- First category',
+        '  - [a](https://github.com/o/a)',
+        '- Second category',
+        '  - [b](https://github.com/o/b)',
+        '',
+      ].join('\n'),
+      token,
+      [],
+      { by: 'stars', minLinks: 0 },
+      sourceRepo,
+      '',
+    );
+    const section = jsonData.items.find(s => s.title === 'Section');
+    const titles = section?.items.map(i => i.title) ?? [];
+    expect(titles).toEqual(['starred', 'First category', 'Second category']);
   });
 });

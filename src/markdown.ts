@@ -210,6 +210,10 @@ export async function fetchTargetData(
     return pending;
   }
 
+  // Iterate the union of both sets. `entryUrls` is a subset of `urls` in practice
+  // (every own-paragraph list link is a tree link), but the signature does not
+  // enforce that, so the union keeps this correct for any caller — not redundant.
+  const fetchStart = Date.now();
   await forEachConcurrent(
     new Set([...urls, ...entryUrls]),
     FETCH_CONCURRENCY,
@@ -240,8 +244,12 @@ export async function fetchTargetData(
     },
   );
 
-  core.debug(
-    `Fetched repo info for ${repoInfoMap.size} targets and classified ${kindsMap.size} entries (concurrency ${FETCH_CONCURRENCY}).`,
+  // One-line run summary at `info` (not per-request noise): the success/total
+  // ratio makes dead-link volume visible, and elapsed exposes the per-entry
+  // README-fetch cost that drives the deferred classification-manifest decision
+  // (PLAN.md §11). Concurrency is included so tuning it is observable too.
+  core.info(
+    `Target fetch: ${repoInfoMap.size}/${urls.size} repo-info ok, ${kindsMap.size}/${entryUrls.size} kinds ok in ${Date.now() - fetchStart}ms (concurrency ${FETCH_CONCURRENCY}).`,
   );
   return { kindsMap, repoInfoMap };
 }
@@ -513,55 +521,6 @@ function collectEntryGitHubUrls(tree: Root): Set<string> {
 // trustworthy standalone.
 export const REGISTRY_MIN_ENTRIES = 20;
 
-// A GFM list-item line — bullet or ordered, with 0–3 leading spaces (4+ is an
-// indented code block) — carrying an inline `[text](https://github.com/o/r…)`
-// link. Used by `countGitHubListLines` as a conservative lower bound, so it is
-// deliberately narrow: it requires the GitHub link on the marker line itself,
-// and a real `[...]` link (not a bare `](…)`), so it can only ever under-count
-// relative to `countListEntries`. It misses autolinks, reference-style links,
-// and links on continuation/nested-deeper-than-3-space lines — all safe misses.
-const GITHUB_LIST_ITEM_LINE =
-  /^\s{0,3}([-*+]|\d+\.)\s+.*\[[^\]]*\]\(https:\/\/github\.com\/[^/)\s]+\/[^/)\s]+[^)]*\)/;
-
-/**
- * A cheap conservative lower bound on `countListEntries`, computed WITHOUT
- * parsing the README into an AST. Counts lines that are GFM list items AND
- * carry an inline `https://github.com/owner/repo…` link, skipping fenced code
- * blocks (where such a line is literal text, not a list item) and stopping as
- * soon as the count reaches `minEntries`.
- *
- * SOUNDNESS — the invariant that lets `classifyKind` short-circuit on this:
- * every matched line is a list item whose subtree holds a GitHub link, so the
- * result never exceeds `countListEntries`. Reaching `minEntries` here therefore
- * proves the exact oracle would too. Anything below falls through to the AST
- * parse, so borderline repos and links this regex misses are judged identically
- * to before; worst case == the old behavior.
- *
- * @param minEntries Stop counting once this many matches are seen (pass a large
- *   value to count the whole document).
- */
-export function countGitHubListLines(
-  readme: string,
-  minEntries: number,
-): number {
-  let count = 0;
-  let inFence = false;
-  for (const line of readme.split('\n')) {
-    // A fenced code block opens/closes with a line of >= 3 backticks (CommonMark
-    // allows up to 3 leading spaces). The fence line itself is never content.
-    if (/^\s{0,3}`{3,}/.test(line)) {
-      inFence = !inFence;
-      continue;
-    }
-    if (!inFence && GITHUB_LIST_ITEM_LINE.test(line)) {
-      if (++count >= minEntries) {
-        return count;
-      }
-    }
-  }
-  return count;
-}
-
 /**
  * Classifies a GitHub target as a `registry` or `repository` by reading its
  * README and counting GitHub-linked list items — the oracle (PLAN.md §4, D1).
@@ -570,13 +529,16 @@ export function countGitHubListLines(
  * otherwise a `repository`. README fetch failures propagate (strict mode, D7):
  * `getReadme` throws and this function does not swallow it.
  *
- * Fast path: a conservative line-scan (`countGitHubListLines`) first checks
- * whether the README obviously clears `minEntries`; if so it returns `registry`
- * without building the full AST — the win for multi-hundred-KB registry READMEs,
- * which short-circuit after `minEntries` lines instead of being parsed whole.
+ * Uses the exact AST oracle (`countListEntries`) — the same parser and counter
+ * the source document is classified with — so a target is judged identically
+ * whether it is the source or a link. No regex pre-scan: parsing a target README
+ * costs <= 220ms even for the largest known registry README (the network fetch
+ * that precedes it dominates), and a line-scan approximation would only duplicate
+ * the parser's link semantics with an unsound lower bound — it cannot model raw
+ * HTML blocks, so a README could be misclassified a `registry` without ever
+ * consulting the AST it claims to bound.
  *
- * @returns Only `kind` — the raw entry count is not emitted (D10) and nothing
- *   in production reads it, so it is not computed on the fast path.
+ * @returns Only `kind` — the raw entry count is not emitted (D10).
  */
 export async function classifyKind(
   octokit: GithubClient,
@@ -585,9 +547,6 @@ export async function classifyKind(
   minEntries: number,
 ): Promise<{ kind: Kind }> {
   const readme = await getReadme(octokit, owner, repo);
-  if (countGitHubListLines(readme, minEntries) >= minEntries) {
-    return { kind: 'registry' };
-  }
   const tree = unified().use(remarkParse).use(remarkGfm).parse(readme);
   return {
     kind: countListEntries(tree) >= minEntries ? 'registry' : 'repository',
@@ -645,8 +604,11 @@ function stripLeadingNoise(text: string): string {
 }
 
 // Order two items by their repo info: higher stars / more-recent last commit
-// first; items with no repo info sink to the bottom. The single comparator
-// shared by the JSON builder and the AST sorter so both outputs agree on order.
+// first. A node with no repo info (a kind-less group, or a dead-link item whose
+// `/repos` failed) sinks below nodes that have one; two such nodes tie so a
+// stable sort keeps their source order. This is a valid weak ordering — the
+// single comparator shared by the JSON builder and the AST sorter so both
+// outputs agree on order.
 function compareByRepoInfo(
   by: SortOptions['by'],
   a: null | RepoInfoDetails,
@@ -655,11 +617,9 @@ function compareByRepoInfo(
   if (!by) {
     return 0;
   }
-  if (!a) {
-    return 1;
-  }
-  if (!b) {
-    return -1;
+  // Missing info sinks; two missing tie (stable). Must precede field access.
+  if (!a || !b) {
+    return a ? -1 : b ? 1 : 0;
   }
   if (by === 'stars') {
     return b.stargazers_count - a.stargazers_count;
