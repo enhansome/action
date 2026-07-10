@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://github.com/enhansome/action/compare/v1.2.2...v1.3.0) (2026-07-10)
+
+
+### Features
+
+* item kinds ([#5](https://github.com/enhansome/action/issues/5)) ([99fe942](https://github.com/enhansome/action/commit/99fe942fb9ffdbf95fc7cee76b055bebdd099f91))
+
 ## [1.2.2](https://github.com/enhansome/action/compare/v1.2.1...v1.2.2) (2026-07-09)
 
 
