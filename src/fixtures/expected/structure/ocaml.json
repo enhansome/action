@@ -4,9 +4,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "Library of YIQ NTSC transmission image difference alghoritm implemented in OCaml and ReasonML.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "ODiff",
+          "description": "Library of YIQ NTSC transmission image difference alghoritm implemented in OCaml and ReasonML.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -17,9 +19,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A pure OCaml implementation of Zlib.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Decompress",
+          "description": "A pure OCaml implementation of Zlib.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -30,9 +34,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Implementation of Rabin's fingerprint and delta compression by P. MacDonald in OCaml (same as libXdiff",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Duff",
+          "description": "Implementation of Rabin's fingerprint and delta compression by P. MacDonald in OCaml (same as libXdiff",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -43,9 +49,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Library of Raft consensus algorithm implemented in OCaml",
+          "node_type": "item",
+          "kind": "repository",
           "title": "ORaft",
+          "description": "Library of Raft consensus algorithm implemented in OCaml",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -56,9 +64,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A large collection of data structures and algorithms for OCaml.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "ods",
+          "description": "A large collection of data structures and algorithms for OCaml.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -69,9 +79,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Fast implementation of queue (FIFO) in OCaml.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Ke",
+          "description": "Fast implementation of queue (FIFO) in OCaml.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -82,9 +94,11 @@
           }
         },
         {
-          "children": [],
-          "description": "OCaml library for combinatorics https://www.lri.fr/~filliatr/combine/.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "combine",
+          "description": "OCaml library for combinatorics https://www.lri.fr/~filliatr/combine/.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -95,9 +109,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A generic graph library for OCaml.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "OCamlgraph",
+          "description": "A generic graph library for OCaml.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -106,11 +122,6 @@
             "repo": "ocamlgraph",
             "stars": 11549
           }
-        },
-        {
-          "children": [],
-          "description": null,
-          "title": "Comparing a Machine Learning Algorithm Implemented in F# and OCaml"
         }
       ],
       "title": "Algorithms and Data Structures"
@@ -119,9 +130,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "Pretty-printing library for OCaml.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "easy-format",
+          "description": "Pretty-printing library for OCaml.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -132,9 +145,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Jane Street Capital's dependency-free, quick-compiling, fully-portable across any environment that can run OCaml code standard library.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Base",
+          "description": "Jane Street Capital's dependency-free, quick-compiling, fully-portable across any environment that can run OCaml code standard library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -145,9 +160,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Jane Street Capital's full-fledged standard library overlay. A portable subset of Core is also available: Core_kernel.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Core",
+          "description": "Jane Street Capital's full-fledged standard library overlay. A portable subset of Core is also available: Core_kernel.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -158,9 +175,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Light library to deal with RPCs in OCaml.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "ocaml-rpc",
+          "description": "Light library to deal with RPCs in OCaml.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -171,9 +190,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A community-maintained foundation library for your OCaml projects.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Batteries Included",
+          "description": "A community-maintained foundation library for your OCaml projects.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -184,9 +205,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A lightweight, modular standard library extension, string library, and interfaces to various libraries (bigarrays, Unix, etc.) BSD license.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "ocaml-containers",
+          "description": "A lightweight, modular standard library extension, string library, and interfaces to various libraries (bigarrays, Unix, etc.) BSD license.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -197,9 +220,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Declarative definition of command line interfaces for OCaml.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Cmdliner",
+          "description": "Declarative definition of command line interfaces for OCaml.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -210,9 +235,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Minimalist library for command-line parsing.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Minicli",
+          "description": "Minimalist library for command-line parsing.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -221,11 +248,6 @@
             "repo": "minicli",
             "stars": 3688
           }
-        },
-        {
-          "children": [],
-          "description": "React is an OCaml module for functional reactive programming (FRP). It provides support for programs with time-varying values, declarative events, and signals.",
-          "title": "React"
         }
       ],
       "title": "Application Libraries"
@@ -234,9 +256,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "Micro-benchmarking library for OCaml by Jane Street. - Getting Started with Core_bench",
+          "node_type": "item",
+          "kind": "repository",
           "title": "core_bench",
+          "description": "Micro-benchmarking library for OCaml by Jane Street. - Getting Started with Core_bench",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -247,9 +271,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Benchmarking functions for measuring the run-time of functions using latency or throughput.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "benchmark",
+          "description": "Benchmarking functions for measuring the run-time of functions using latency or throughput.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -271,9 +297,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "SLAyer is an automatic formal verification tool that uses separation logic to verify memory safety of C programs.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "SLAyer",
+          "description": "SLAyer is an automatic formal verification tool that uses separation logic to verify memory safety of C programs.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -284,9 +312,11 @@
           }
         },
         {
-          "children": [],
-          "description": "MemCAD is an abstract interpreter for shape analysis. MemCAD can verify C programs manipulating complex data structures.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "MemCAD",
+          "description": "MemCAD is an abstract interpreter for shape analysis. MemCAD can verify C programs manipulating complex data structures.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -297,9 +327,11 @@
           }
         },
         {
-          "children": [],
-          "description": "flow is a static type checker for JavaScript.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "flow",
+          "description": "flow is a static type checker for JavaScript.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -310,9 +342,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Camelot is a modular and fully configurable OCaml linter and stylechecker.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Camelot",
+          "description": "Camelot is a modular and fully configurable OCaml linter and stylechecker.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -323,9 +357,11 @@
           }
         },
         {
-          "children": [],
-          "description": "pfff is a set of tools and APIs to perform some static analysis, dynamic analysis, code visualizations, code navigations, or style-preserving source-to-source transformations such as refactorings on source code.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "pfff",
+          "description": "pfff is a set of tools and APIs to perform some static analysis, dynamic analysis, code visualizations, code navigations, or style-preserving source-to-source transformations such as refactorings on source code.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -336,9 +372,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Infer is a static analyzer for Java, C and Objective-C",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Infer",
+          "description": "Infer is a static analyzer for Java, C and Objective-C",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -349,9 +387,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Translator from OCaml to Coq to formally verify OCaml code.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "coq-of-ocaml",
+          "description": "Translator from OCaml to Coq to formally verify OCaml code.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -360,21 +400,6 @@
             "repo": "coq-of-ocaml",
             "stars": 16294
           }
-        },
-        {
-          "children": [],
-          "description": "Mascot is a style-checker for OCaml sources.",
-          "title": "Mascot"
-        },
-        {
-          "children": [],
-          "description": "Frama-C is a static analysis and formal proof framework for C and C++.",
-          "title": "Frama-C"
-        },
-        {
-          "children": [],
-          "description": "MOPSA is a generic framework for building sound static analyzers based on the theory of abstract interpretation.",
-          "title": "MOPSA"
         }
       ],
       "title": "Code Analysis and Linters"
@@ -383,9 +408,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "Smt.ml is a frontend OCaml library that interfaces with multiple SMT solvers, enabling seamless integration of solvers like Z3, cvc5, Colibri2, Bitwuzla, and Alt-Ergo within OCaml programs.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Smt.ml",
+          "description": "Smt.ml is a frontend OCaml library that interfaces with multiple SMT solvers, enabling seamless integration of solvers like Z3, cvc5, Colibri2, Bitwuzla, and Alt-Ergo within OCaml programs.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -396,9 +423,11 @@
           }
         },
         {
-          "children": [],
-          "description": "cwe_checker finds vulnerable patterns in binary executables.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "cwe_checker",
+          "description": "cwe_checker finds vulnerable patterns in binary executables.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -409,9 +438,11 @@
           }
         },
         {
-          "children": [],
-          "description": "BAP is a reverse engineering and program analysis platform that targets binary programs.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "BAP",
+          "description": "BAP is a reverse engineering and program analysis platform that targets binary programs.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -422,9 +453,11 @@
           }
         },
         {
-          "children": [],
-          "description": "BinCat is a binary code static analysis toolkit.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "BinCat",
+          "description": "BinCat is a binary code static analysis toolkit.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -435,9 +468,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Owi is a toolchain for working with WebAssembly (Wasm) in OCaml, featuring a powerful, parallel symbolic execution engine for Wasm. It also provides frontends for compiling and analyzing C and Rust programs.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Owi",
+          "description": "Owi is a toolchain for working with WebAssembly (Wasm) in OCaml, featuring a powerful, parallel symbolic execution engine for Wasm. It also provides frontends for compiling and analyzing C and Rust programs.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -454,11 +489,16 @@
       "description": "",
       "items": [
         {
+          "node_type": "group",
+          "title": "Languages and Compilers:",
+          "description": null,
           "children": [
             {
-              "children": [],
-              "description": "It is now a dead project. Github Repo. Alternative website.",
+              "node_type": "item",
+              "kind": "repository",
               "title": "Quick C-- Target Language",
+              "description": "It is now a dead project. Github Repo. Alternative website.",
+              "children": [],
               "repo_info": {
                 "archived": false,
                 "language": "Rust",
@@ -469,9 +509,11 @@
               }
             },
             {
-              "children": [],
-              "description": "A Lisp on LLVM written in OCaml.",
+              "node_type": "item",
+              "kind": "repository",
               "title": "Rhine",
+              "description": "A Lisp on LLVM written in OCaml.",
+              "children": [],
               "repo_info": {
                 "archived": false,
                 "language": "Rust",
@@ -482,9 +524,11 @@
               }
             },
             {
-              "children": [],
-              "description": "Shopify's Liquid Templating language for OCaml.",
+              "node_type": "item",
+              "kind": "repository",
               "title": "Liquid ML",
+              "description": "Shopify's Liquid Templating language for OCaml.",
+              "children": [],
               "repo_info": {
                 "archived": false,
                 "language": "Java",
@@ -495,9 +539,11 @@
               }
             },
             {
-              "children": [],
-              "description": "A modern supercompiler for call-by-value functional languages.",
+              "node_type": "item",
+              "kind": "repository",
               "title": "Mazeppa",
+              "description": "A modern supercompiler for call-by-value functional languages.",
+              "children": [],
               "repo_info": {
                 "archived": false,
                 "language": "Java",
@@ -508,9 +554,11 @@
               }
             },
             {
-              "children": [],
-              "description": "An interpreter for finding subtle bugs in programs written in standard C",
+              "node_type": "item",
+              "kind": "repository",
               "title": "tis-interpreter",
+              "description": "An interpreter for finding subtle bugs in programs written in standard C",
+              "children": [],
               "repo_info": {
                 "archived": false,
                 "language": "Go",
@@ -519,90 +567,20 @@
                 "repo": "tis-interpreter",
                 "stars": 6643
               }
-            },
-            {
-              "children": [],
-              "description": "Caramel is a functional language for building type-safe, scalable, and maintainable applications.",
-              "title": "Caramel"
-            },
-            {
-              "children": [],
-              "description": "cDuce is a modern XML-oriented functional language with innovative features.",
-              "title": "cDuce"
-            },
-            {
-              "children": [],
-              "description": "It is a C Compiler supporting most of the ISO C90 and C99 / ANSI C features.",
-              "title": "Compcert C Compiler"
-            },
-            {
-              "children": [],
-              "description": "Eff is a functional language with handlers of not only exceptions, but also of other computational effects such as state or I/O.",
-              "title": "Eff Programming Language"
-            },
-            {
-              "children": [],
-              "description": null,
-              "title": "Hack Programming Language"
-            },
-            {
-              "children": [],
-              "description": null,
-              "title": "Haxe Programming Language"
-            },
-            {
-              "children": [],
-              "description": "Originally the compiler was written in OCaml.",
-              "title": "Neko Programming Language"
-            },
-            {
-              "children": [],
-              "description": "Mezzo is a programming language in the ML tradition, which places strong emphasis on the control of aliasing and access to mutable memory.",
-              "title": "Mezzo Programming Language"
-            },
-            {
-              "children": [],
-              "description": "OCaml to Java bytecode compiler.",
-              "title": "OCaml-Java"
-            },
-            {
-              "children": [],
-              "description": null,
-              "title": "Opa Programming Language"
-            },
-            {
-              "children": [],
-              "description": "Originally written in OCaml before bootstrapping.",
-              "title": "Rust Programming Language"
-            },
-            {
-              "children": [],
-              "description": "Friendly syntax & toolchain for OCaml by Facebook.",
-              "title": "Reason"
-            },
-            {
-              "children": [],
-              "description": "Resource Aware ML (RaML) is a tool that automatically and statically computes resource-use bounds for OCaml programs.",
-              "title": "RaML"
             }
-          ],
-          "description": null,
-          "title": "Languages and Compilers:",
-          "repo_info": {
-            "archived": false,
-            "language": "Rust",
-            "last_commit": "2022-01-07T00:00:00.000Z",
-            "owner": "nrnrnr",
-            "repo": "qc--",
-            "stars": 43725
-          }
+          ]
         },
         {
+          "node_type": "group",
+          "title": "Parser and Lexer Generators:",
+          "description": null,
           "children": [
             {
-              "children": [],
-              "description": "is a modern, encoding-agnostic (read: Unicode-supporting) lexer generator (the ppx-based successor to ulex.)",
+              "node_type": "item",
+              "kind": "repository",
               "title": "Sedlex",
+              "description": "is a modern, encoding-agnostic (read: Unicode-supporting) lexer generator (the ppx-based successor to ulex.)",
+              "children": [],
               "repo_info": {
                 "archived": false,
                 "language": "C++",
@@ -613,49 +591,11 @@
               }
             },
             {
-              "children": [
-                {
-                  "children": [],
-                  "description": ", a neat project to produce readable LaTeX, HTML, or plain-text EBNF-style documentation for your grammar.",
-                  "title": "... and Obelisk",
-                  "repo_info": {
-                    "archived": false,
-                    "language": "TypeScript",
-                    "last_commit": "2021-09-13T00:00:00.000Z",
-                    "owner": "Lelio-Brun",
-                    "repo": "Obelisk",
-                    "stars": 32841
-                  }
-                },
-                {
-                  "children": [],
-                  "description": "for a clearer example of using Menhir and Sedlex to produce a useful parser,",
-                  "title": "See ocaml-parsing",
-                  "repo_info": {
-                    "archived": false,
-                    "language": "Go",
-                    "last_commit": "2022-09-26T00:00:00.000Z",
-                    "owner": "smolkaj",
-                    "repo": "ocaml-parsing",
-                    "stars": 18463
-                  }
-                }
-              ],
-              "description": "Menhir is a LR(1) parser generator for OCaml.",
-              "title": "Menhir",
-              "repo_info": {
-                "archived": false,
-                "language": "TypeScript",
-                "last_commit": "2021-09-13T00:00:00.000Z",
-                "owner": "Lelio-Brun",
-                "repo": "Obelisk",
-                "stars": 32841
-              }
-            },
-            {
-              "children": [],
-              "description": "Self-contained monadic parser combinators for OCaml.",
+              "node_type": "item",
+              "kind": "repository",
               "title": "Opal",
+              "description": "Self-contained monadic parser combinators for OCaml.",
+              "children": [],
               "repo_info": {
                 "archived": false,
                 "language": "Java",
@@ -666,9 +606,11 @@
               }
             },
             {
-              "children": [],
-              "description": "Parser combinators built for speed and memory efficiency",
+              "node_type": "item",
+              "kind": "repository",
               "title": "Angstrom",
+              "description": "Parser combinators built for speed and memory efficiency",
+              "children": [],
               "repo_info": {
                 "archived": false,
                 "language": "Python",
@@ -679,32 +621,43 @@
               }
             },
             {
-              "children": [],
-              "description": "lex and yacc implementation for OCaml.",
-              "title": "ocamllex/ocamlyacc"
+              "node_type": "group",
+              "title": "Menhir",
+              "description": "Menhir is a LR(1) parser generator for OCaml.",
+              "children": [
+                {
+                  "node_type": "item",
+                  "kind": "repository",
+                  "title": "... and Obelisk",
+                  "description": ", a neat project to produce readable LaTeX, HTML, or plain-text EBNF-style documentation for your grammar.",
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "language": "TypeScript",
+                    "last_commit": "2021-09-13T00:00:00.000Z",
+                    "owner": "Lelio-Brun",
+                    "repo": "Obelisk",
+                    "stars": 32841
+                  }
+                },
+                {
+                  "node_type": "item",
+                  "kind": "repository",
+                  "title": "See ocaml-parsing",
+                  "description": "for a clearer example of using Menhir and Sedlex to produce a useful parser,",
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "language": "Go",
+                    "last_commit": "2022-09-26T00:00:00.000Z",
+                    "owner": "smolkaj",
+                    "repo": "ocaml-parsing",
+                    "stars": 18463
+                  }
+                }
+              ]
             }
-          ],
-          "description": null,
-          "title": "Parser and Lexer Generators:",
-          "repo_info": {
-            "archived": false,
-            "language": "C++",
-            "last_commit": "2023-01-21T00:00:00.000Z",
-            "owner": "ocaml-community",
-            "repo": "sedlex",
-            "stars": 41346
-          }
-        },
-        {
-          "children": [
-            {
-              "children": [],
-              "description": null,
-              "title": "Kaleidoscope: Implementing a Language with LLVM in Objective Caml¶"
-            }
-          ],
-          "description": null,
-          "title": "Articles:"
+          ]
         }
       ],
       "title": "Compilers and Compiler Tools"
@@ -713,148 +666,16 @@
       "description": "",
       "items": [
         {
-          "children": [
-            {
-              "children": [],
-              "description": "A distributed database that follows the same design principles as Git.",
-              "title": "Irmin",
-              "repo_info": {
-                "archived": false,
-                "language": "Shell",
-                "last_commit": "2022-07-02T00:00:00.000Z",
-                "owner": "mirage",
-                "repo": "irmin",
-                "stars": 48549
-              }
-            },
-            {
-              "children": [],
-              "description": "It is a WIP database server written in OCaml.",
-              "title": "RunOrg",
-              "repo_info": {
-                "archived": false,
-                "language": "Shell",
-                "last_commit": "2023-11-14T00:00:00.000Z",
-                "owner": "RunOrg",
-                "repo": "RunOrg",
-                "stars": 47049
-              }
-            },
-            {
-              "children": [],
-              "description": "dumb OCaml key-value store, string keys and string values. Optional on-the-fly LZ4 compression of values or tokyocabinet backend.",
-              "title": "dokeysto",
-              "repo_info": {
-                "archived": false,
-                "language": "Rust",
-                "last_commit": "2023-10-09T00:00:00.000Z",
-                "owner": "UnixJunkie",
-                "repo": "dokeysto",
-                "stars": 38085
-              }
-            },
-            {
-              "children": [],
-              "description": "A database with BigTable-like data model atop LevelDB.",
-              "title": "Obigstore"
-            }
-          ],
+          "node_type": "group",
+          "title": "Bindings",
           "description": null,
-          "title": "New Implementations",
-          "repo_info": {
-            "archived": false,
-            "language": "Shell",
-            "last_commit": "2022-07-02T00:00:00.000Z",
-            "owner": "mirage",
-            "repo": "irmin",
-            "stars": 48549
-          }
-        },
-        {
           "children": [
             {
-              "children": [],
-              "description": "ORM for SQLite.",
-              "title": "ORM",
-              "repo_info": {
-                "archived": false,
-                "language": "Python",
-                "last_commit": "2022-02-27T00:00:00.000Z",
-                "owner": "mirage",
-                "repo": "orm",
-                "stars": 47674
-              }
-            },
-            {
-              "children": [],
-              "description": "Cooperative-threaded access to relational data",
-              "title": "Caqti",
-              "repo_info": {
-                "archived": true,
-                "language": "TypeScript",
-                "last_commit": "2023-05-26T00:00:00.000Z",
-                "owner": "paurkedal",
-                "repo": "ocaml-caqti",
-                "stars": 46221
-              }
-            },
-            {
-              "children": [],
-              "description": "Sequoia is a type-safe query builder for MySQL/MariaDB and PostgreSQL",
-              "title": "Sequoia",
-              "repo_info": {
-                "archived": false,
-                "language": null,
-                "last_commit": "2023-08-25T00:00:00.000Z",
-                "owner": "andrenth",
-                "repo": "sequoia",
-                "stars": 39130
-              }
-            },
-            {
-              "children": [],
-              "description": null,
-              "title": "Caqti setence preparation, ppx_rapper",
-              "repo_info": {
-                "archived": false,
-                "language": "Python",
-                "last_commit": "2023-10-30T00:00:00.000Z",
-                "owner": "roddyyaga",
-                "repo": "ppx_rapper",
-                "stars": 7064
-              }
-            },
-            {
-              "children": [],
-              "description": "Macaque is a library for safe and flexible database queries using comprehensions on top of PG'OCaml.",
-              "title": "Macaque",
-              "repo_info": {
-                "archived": false,
-                "language": "JavaScript",
-                "last_commit": "2021-06-14T00:00:00.000Z",
-                "owner": "ocsigen",
-                "repo": "macaque",
-                "stars": 1932
-              }
-            }
-          ],
-          "description": null,
-          "title": "Overlays",
-          "repo_info": {
-            "archived": false,
-            "language": "Python",
-            "last_commit": "2022-02-27T00:00:00.000Z",
-            "owner": "mirage",
-            "repo": "orm",
-            "stars": 47674
-          }
-        },
-        {
-          "children": [
-            {
-              "children": [],
-              "description": "OCaml bindings to the SQLite3 database.",
+              "node_type": "item",
+              "kind": "repository",
               "title": "SQLite3",
+              "description": "OCaml bindings to the SQLite3 database.",
+              "children": [],
               "repo_info": {
                 "archived": false,
                 "language": null,
@@ -865,9 +686,11 @@
               }
             },
             {
-              "children": [],
-              "description": "Implementation of MySQL Protocol with the Bitstring library.",
+              "node_type": "item",
+              "kind": "repository",
               "title": "mysql_protocol",
+              "description": "Implementation of MySQL Protocol with the Bitstring library.",
+              "children": [],
               "repo_info": {
                 "archived": false,
                 "language": "Rust",
@@ -878,36 +701,11 @@
               }
             },
             {
-              "children": [
-                {
-                  "children": [],
-                  "description": "A syntax extension for embedded SQL queries using PG'OCaml.",
-                  "title": "ppx_pgsql",
-                  "repo_info": {
-                    "archived": false,
-                    "language": null,
-                    "last_commit": "2021-11-03T00:00:00.000Z",
-                    "owner": "tizoc",
-                    "repo": "ppx_pgsql",
-                    "stars": 23790
-                  }
-                }
-              ],
-              "description": "A type-safe interface to PostgreSQL in pure OCaml.",
-              "title": "PG'OCaml",
-              "repo_info": {
-                "archived": false,
-                "language": null,
-                "last_commit": "2021-11-03T00:00:00.000Z",
-                "owner": "tizoc",
-                "repo": "ppx_pgsql",
-                "stars": 23790
-              }
-            },
-            {
-              "children": [],
-              "description": "Bindings to MariaDB/MySQL, supporting the nonblocking API",
+              "node_type": "item",
+              "kind": "repository",
               "title": "mariadb",
+              "description": "Bindings to MariaDB/MySQL, supporting the nonblocking API",
+              "children": [],
               "repo_info": {
                 "archived": false,
                 "language": "JavaScript",
@@ -918,9 +716,11 @@
               }
             },
             {
-              "children": [],
-              "description": "Redis bindings for OCaml.",
+              "node_type": "item",
+              "kind": "repository",
               "title": "ocaml-redis",
+              "description": "Redis bindings for OCaml.",
+              "children": [],
               "repo_info": {
                 "archived": false,
                 "language": "Java",
@@ -931,9 +731,11 @@
               }
             },
             {
-              "children": [],
-              "description": "A pure OCaml PostgreSQL client library.",
+              "node_type": "item",
+              "kind": "repository",
               "title": "pgx",
+              "description": "A pure OCaml PostgreSQL client library.",
+              "children": [],
               "repo_info": {
                 "archived": false,
                 "language": null,
@@ -944,57 +746,162 @@
               }
             },
             {
-              "children": [],
-              "description": "A binding to the NDBM/GDBM Unix \"databases\".",
-              "title": "Dbm"
-            },
-            {
-              "children": [],
-              "description": "An OCaml driver for Mongodb",
-              "title": "Mongo.ml"
-            },
-            {
-              "children": [],
-              "description": "An interface to PostgreSQL through the C API ().",
-              "title": "PostgreSQL-OCaml"
-            },
-            {
-              "children": [],
-              "description": "Thin wrapper for SQLite3 with a simplified interface.",
-              "title": "Sqlite3EZ"
+              "node_type": "group",
+              "title": "PG'OCaml",
+              "description": "A type-safe interface to PostgreSQL in pure OCaml.",
+              "children": [
+                {
+                  "node_type": "item",
+                  "kind": "repository",
+                  "title": "ppx_pgsql",
+                  "description": "A syntax extension for embedded SQL queries using PG'OCaml.",
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "language": null,
+                    "last_commit": "2021-11-03T00:00:00.000Z",
+                    "owner": "tizoc",
+                    "repo": "ppx_pgsql",
+                    "stars": 23790
+                  }
+                }
+              ]
             }
-          ],
-          "description": null,
-          "title": "Bindings",
-          "repo_info": {
-            "archived": false,
-            "language": null,
-            "last_commit": "2023-07-26T00:00:00.000Z",
-            "owner": "mmottl",
-            "repo": "sqlite3-ocaml",
-            "stars": 44160
-          }
+          ]
         },
         {
+          "node_type": "group",
+          "title": "New Implementations",
+          "description": null,
           "children": [
             {
+              "node_type": "item",
+              "kind": "repository",
+              "title": "Irmin",
+              "description": "A distributed database that follows the same design principles as Git.",
               "children": [],
-              "description": null,
-              "title": "Implementing the Binary Memcached Protocol with Ocaml and Bitstring"
+              "repo_info": {
+                "archived": false,
+                "language": "Shell",
+                "last_commit": "2022-07-02T00:00:00.000Z",
+                "owner": "mirage",
+                "repo": "irmin",
+                "stars": 48549
+              }
             },
             {
+              "node_type": "item",
+              "kind": "repository",
+              "title": "RunOrg",
+              "description": "It is a WIP database server written in OCaml.",
               "children": [],
-              "description": null,
-              "title": "Interfacing OCaml and PostgreSQL with Caqti"
+              "repo_info": {
+                "archived": false,
+                "language": "Shell",
+                "last_commit": "2023-11-14T00:00:00.000Z",
+                "owner": "RunOrg",
+                "repo": "RunOrg",
+                "stars": 47049
+              }
             },
             {
+              "node_type": "item",
+              "kind": "repository",
+              "title": "dokeysto",
+              "description": "dumb OCaml key-value store, string keys and string values. Optional on-the-fly LZ4 compression of values or tokyocabinet backend.",
               "children": [],
-              "description": "by Oleg and Co. The proposed approach is to describe SQL queries in type-safe manner and optimize them (using term rewriting or normalization-by evaluation) before sending to database engine. It potentially could optimize O(n^2) queries to O(n) ones.",
-              "title": "Finally, Type-Safe, Extensible and Efficient Language Integrated Query"
+              "repo_info": {
+                "archived": false,
+                "language": "Rust",
+                "last_commit": "2023-10-09T00:00:00.000Z",
+                "owner": "UnixJunkie",
+                "repo": "dokeysto",
+                "stars": 38085
+              }
             }
-          ],
+          ]
+        },
+        {
+          "node_type": "group",
+          "title": "Overlays",
           "description": null,
-          "title": "Articles:"
+          "children": [
+            {
+              "node_type": "item",
+              "kind": "repository",
+              "title": "ORM",
+              "description": "ORM for SQLite.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "language": "Python",
+                "last_commit": "2022-02-27T00:00:00.000Z",
+                "owner": "mirage",
+                "repo": "orm",
+                "stars": 47674
+              }
+            },
+            {
+              "node_type": "item",
+              "kind": "repository",
+              "title": "Caqti",
+              "description": "Cooperative-threaded access to relational data",
+              "children": [],
+              "repo_info": {
+                "archived": true,
+                "language": "TypeScript",
+                "last_commit": "2023-05-26T00:00:00.000Z",
+                "owner": "paurkedal",
+                "repo": "ocaml-caqti",
+                "stars": 46221
+              }
+            },
+            {
+              "node_type": "item",
+              "kind": "repository",
+              "title": "Sequoia",
+              "description": "Sequoia is a type-safe query builder for MySQL/MariaDB and PostgreSQL",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "language": null,
+                "last_commit": "2023-08-25T00:00:00.000Z",
+                "owner": "andrenth",
+                "repo": "sequoia",
+                "stars": 39130
+              }
+            },
+            {
+              "node_type": "item",
+              "kind": "repository",
+              "title": "Caqti setence preparation, ppx_rapper",
+              "description": null,
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "language": "Python",
+                "last_commit": "2023-10-30T00:00:00.000Z",
+                "owner": "roddyyaga",
+                "repo": "ppx_rapper",
+                "stars": 7064
+              }
+            },
+            {
+              "node_type": "item",
+              "kind": "repository",
+              "title": "Macaque",
+              "description": "Macaque is a library for safe and flexible database queries using comprehensions on top of PG'OCaml.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "language": "JavaScript",
+                "last_commit": "2021-06-14T00:00:00.000Z",
+                "owner": "ocsigen",
+                "repo": "macaque",
+                "stars": 1932
+              }
+            }
+          ]
         }
       ],
       "title": "Databases"
@@ -1003,9 +910,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": null,
+          "node_type": "item",
+          "kind": "repository",
           "title": "odate",
+          "description": null,
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -1016,9 +925,11 @@
           }
         },
         {
-          "children": [],
-          "description": null,
+          "node_type": "item",
+          "kind": "repository",
           "title": "ISO8601",
+          "description": null,
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -1027,16 +938,6 @@
             "repo": "ISO8601.ml",
             "stars": 10717
           }
-        },
-        {
-          "children": [],
-          "description": null,
-          "title": "calendar"
-        },
-        {
-          "children": [],
-          "description": null,
-          "title": "ptime"
         }
       ],
       "title": "Datetime"
@@ -1045,9 +946,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "Yeoman generator to scaffold OCaml modules.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "OCaml Yeoman Generator",
+          "description": "Yeoman generator to scaffold OCaml modules.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -1058,205 +961,11 @@
           }
         },
         {
-          "children": [
-            {
-              "children": [],
-              "description": "extension that provides OCaml language support for VSCode",
-              "title": "vscode-ocaml",
-              "repo_info": {
-                "archived": false,
-                "language": "JavaScript",
-                "last_commit": "2023-09-12T00:00:00.000Z",
-                "owner": "hackwaly",
-                "repo": "vscode-ocaml",
-                "stars": 47112
-              }
-            },
-            {
-              "children": [],
-              "description": "OCaml mode for Emacs that can run the toplevel and the debugger within Emacs.",
-              "title": "tuareg",
-              "repo_info": {
-                "archived": false,
-                "language": "TypeScript",
-                "last_commit": "2021-06-25T00:00:00.000Z",
-                "owner": "ocaml",
-                "repo": "tuareg",
-                "stars": 35921
-              }
-            },
-            {
-              "children": [
-                {
-                  "children": [],
-                  "description": ".",
-                  "title": "Vim plugin",
-                  "repo_info": {
-                    "archived": false,
-                    "language": "Ruby",
-                    "last_commit": "2021-11-05T00:00:00.000Z",
-                    "owner": "def-lkb",
-                    "repo": "ocp-indent-vim",
-                    "stars": 33788
-                  }
-                }
-              ],
-              "description": "Indentation tool for OCaml, to be used from editors like Emacs and Vim.",
-              "title": "ocp-indent",
-              "repo_info": {
-                "archived": false,
-                "language": "Ruby",
-                "last_commit": "2021-11-05T00:00:00.000Z",
-                "owner": "def-lkb",
-                "repo": "ocp-indent-vim",
-                "stars": 33788
-              }
-            },
-            {
-              "children": [],
-              "description": "extension that provides OCaml Debugger for VSCode",
-              "title": "OCaml Debugger",
-              "repo_info": {
-                "archived": false,
-                "language": "Shell",
-                "last_commit": "2022-05-03T00:00:00.000Z",
-                "owner": "hackwaly",
-                "repo": "ocamlearlybird",
-                "stars": 26609
-              }
-            },
-            {
-              "children": [],
-              "description": "Context sensitive completion for OCaml in Vim and Emacs.",
-              "title": "merlin",
-              "repo_info": {
-                "archived": false,
-                "language": "Ruby",
-                "last_commit": "2022-03-05T00:00:00.000Z",
-                "owner": "ocaml",
-                "repo": "merlin",
-                "stars": 23668
-              }
-            },
-            {
-              "children": [],
-              "description": "Emacs package to provide merlin's features through eldoc.",
-              "title": "merlin-eldoc",
-              "repo_info": {
-                "archived": false,
-                "language": "Java",
-                "last_commit": "2021-10-07T00:00:00.000Z",
-                "owner": "Khady",
-                "repo": "merlin-eldoc",
-                "stars": 12817
-              }
-            },
-            {
-              "children": [
-                {
-                  "children": [],
-                  "description": "Toplevel directive for looking up documentation using ocp-index.",
-                  "title": "ocp-index-top",
-                  "repo_info": {
-                    "archived": false,
-                    "language": "Java",
-                    "last_commit": "2021-07-09T00:00:00.000Z",
-                    "owner": "reynir",
-                    "repo": "ocp-index-top",
-                    "stars": 6907
-                  }
-                },
-                {
-                  "children": [],
-                  "description": "Small ncurses-based API and documentation browser.",
-                  "title": "ocp-browser"
-                },
-                {
-                  "children": [],
-                  "description": null,
-                  "title": "Sublime text package"
-                }
-              ],
-              "description": "Easy access to the interface information of installed OCaml libraries. Provides standalone tools like and .",
-              "title": "ocp-index",
-              "repo_info": {
-                "archived": false,
-                "language": "Java",
-                "last_commit": "2021-07-09T00:00:00.000Z",
-                "owner": "reynir",
-                "repo": "ocp-index-top",
-                "stars": 6907
-              }
-            },
-            {
-              "children": [],
-              "description": "Minor mode for Emacs that extends Tuareg and Merlin with menus to change or reset the opam switch in the ambient Emacs session.",
-              "title": "opam-switch-mode",
-              "repo_info": {
-                "archived": false,
-                "language": "TypeScript",
-                "last_commit": "2021-10-03T00:00:00.000Z",
-                "owner": "ProofGeneral",
-                "repo": "opam-switch-mode",
-                "stars": 5821
-              }
-            },
-            {
-              "children": [
-                {
-                  "children": [],
-                  "description": null,
-                  "title": "Sublime text package",
-                  "repo_info": {
-                    "archived": false,
-                    "language": "TypeScript",
-                    "last_commit": "2022-02-20T00:00:00.000Z",
-                    "owner": "def-lkb",
-                    "repo": "sublime-text-merlin",
-                    "stars": 7681
-                  }
-                }
-              ],
-              "description": "Better OCaml mode for Sublime Text.",
-              "title": "Sublime better ocaml",
-              "repo_info": {
-                "archived": false,
-                "language": "Go",
-                "last_commit": "2023-01-14T00:00:00.000Z",
-                "owner": "whitequark",
-                "repo": "sublime-better-ocaml",
-                "stars": 4353
-              }
-            },
-            {
-              "children": [],
-              "description": "An LSP language server for OCaml that integrates with any editor that understands LSP like VSCode, Vim and Emacs.",
-              "title": "ocaml-lsp",
-              "repo_info": {
-                "archived": false,
-                "language": "Shell",
-                "last_commit": "2023-05-08T00:00:00.000Z",
-                "owner": "ocaml",
-                "repo": "ocaml-lsp",
-                "stars": 239
-              }
-            }
-          ],
-          "description": null,
-          "title": "Editor Integration:",
-          "repo_info": {
-            "archived": false,
-            "language": "JavaScript",
-            "last_commit": "2023-09-12T00:00:00.000Z",
-            "owner": "hackwaly",
-            "repo": "vscode-ocaml",
-            "stars": 47112
-          }
-        },
-        {
-          "children": [],
-          "description": "Universal toplevel for OCaml with support for multiline edition, history, real-time and context-sensitive completion, colors, and more.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "utop",
+          "description": "Universal toplevel for OCaml with support for multiline edition, history, real-time and context-sensitive completion, colors, and more.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -1267,94 +976,11 @@
           }
         },
         {
-          "children": [
-            {
-              "children": [],
-              "description": null,
-              "title": "Bisect_ppx",
-              "repo_info": {
-                "archived": false,
-                "language": "Java",
-                "last_commit": "2022-10-02T00:00:00.000Z",
-                "owner": "aantron",
-                "repo": "bisect_ppx",
-                "stars": 31457
-              }
-            }
-          ],
-          "description": null,
-          "title": "Code coverage:",
-          "repo_info": {
-            "archived": false,
-            "language": "Java",
-            "last_commit": "2022-10-02T00:00:00.000Z",
-            "owner": "aantron",
-            "repo": "bisect_ppx",
-            "stars": 31457
-          }
-        },
-        {
-          "children": [
-            {
-              "children": [],
-              "description": "Library for binding to C libraries using pure OCaml.",
-              "title": "ctypes",
-              "repo_info": {
-                "archived": false,
-                "language": "C++",
-                "last_commit": "2023-08-09T00:00:00.000Z",
-                "owner": "ocamllabs",
-                "repo": "ocaml-ctypes",
-                "stars": 26146
-              }
-            },
-            {
-              "children": [],
-              "description": "Example build system for making mixed C/Ocaml binaries where the main program is in C.",
-              "title": "ocaml-main-program-in-c",
-              "repo_info": {
-                "archived": false,
-                "language": "JavaScript",
-                "last_commit": "2023-11-21T00:00:00.000Z",
-                "owner": "johnwhitington",
-                "repo": "ocaml-main-program-in-c",
-                "stars": 11042
-              }
-            },
-            {
-              "children": [],
-              "description": "OCaml bindings for Python.",
-              "title": "Py.ml",
-              "repo_info": {
-                "archived": false,
-                "language": "Go",
-                "last_commit": "2023-04-24T00:00:00.000Z",
-                "owner": "thierry-martinez",
-                "repo": "pyml",
-                "stars": 7253
-              }
-            },
-            {
-              "children": [],
-              "description": null,
-              "title": "Modular foreign function bindings"
-            }
-          ],
-          "description": null,
-          "title": "Foreign Function Interface:",
-          "repo_info": {
-            "archived": false,
-            "language": "C++",
-            "last_commit": "2023-08-09T00:00:00.000Z",
-            "owner": "ocamllabs",
-            "repo": "ocaml-ctypes",
-            "stars": 26146
-          }
-        },
-        {
-          "children": [],
-          "description": ". Minor mode for Emacs that can display exercise topics and grade exercise solutions, after logging to a Learn-OCaml instance. MIT License.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "learn-ocaml.el",
+          "description": ". Minor mode for Emacs that can display exercise topics and grade exercise solutions, after logging to a Learn-OCaml instance. MIT License.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -1365,9 +991,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A PlantUML (.puml) to XML (.xmi) converter.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "puml2xml",
+          "description": "A PlantUML (.puml) to XML (.xmi) converter.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -1378,9 +1006,11 @@
           }
         },
         {
-          "children": [],
-          "description": ". Web app (written in OCaml) underlying the learn-ocaml-corpus. Can be customized to serve lectures (with Markdown slides), playgrounds (with a toplevel prelude), and interactive exercises (with OCaml tests). MIT License.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "learn-ocaml",
+          "description": ". Web app (written in OCaml) underlying the learn-ocaml-corpus. Can be customized to serve lectures (with Markdown slides), playgrounds (with a toplevel prelude), and interactive exercises (with OCaml tests). MIT License.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -1391,9 +1021,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A command-line tool to format OCaml code.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "ocamlformat",
+          "description": "A command-line tool to format OCaml code.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -1404,9 +1036,11 @@
           }
         },
         {
-          "children": [],
-          "description": "An OCaml kernel for the Jupyter notebook.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Jupyter",
+          "description": "An OCaml kernel for the Jupyter notebook.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -1417,9 +1051,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A command-line tool to manage Github Issues.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "ghim",
+          "description": "A command-line tool to manage Github Issues.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -1430,29 +1066,265 @@
           }
         },
         {
-          "children": [],
-          "description": "Try OCaml in your web browser.",
-          "title": "Try OCaml"
+          "node_type": "group",
+          "title": "Foreign Function Interface:",
+          "description": null,
+          "children": [
+            {
+              "node_type": "item",
+              "kind": "repository",
+              "title": "ctypes",
+              "description": "Library for binding to C libraries using pure OCaml.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "language": "C++",
+                "last_commit": "2023-08-09T00:00:00.000Z",
+                "owner": "ocamllabs",
+                "repo": "ocaml-ctypes",
+                "stars": 26146
+              }
+            },
+            {
+              "node_type": "item",
+              "kind": "repository",
+              "title": "ocaml-main-program-in-c",
+              "description": "Example build system for making mixed C/Ocaml binaries where the main program is in C.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "language": "JavaScript",
+                "last_commit": "2023-11-21T00:00:00.000Z",
+                "owner": "johnwhitington",
+                "repo": "ocaml-main-program-in-c",
+                "stars": 11042
+              }
+            },
+            {
+              "node_type": "item",
+              "kind": "repository",
+              "title": "Py.ml",
+              "description": "OCaml bindings for Python.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "language": "Go",
+                "last_commit": "2023-04-24T00:00:00.000Z",
+                "owner": "thierry-martinez",
+                "repo": "pyml",
+                "stars": 7253
+              }
+            }
+          ]
         },
         {
-          "children": [],
-          "description": "An efficient, intuitive, and cross-platform web IDE with your OCaml code interpreted and running in your browser!",
-          "title": "BetterOCaml"
+          "node_type": "group",
+          "title": "Editor Integration:",
+          "description": null,
+          "children": [
+            {
+              "node_type": "item",
+              "kind": "repository",
+              "title": "vscode-ocaml",
+              "description": "extension that provides OCaml language support for VSCode",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "language": "JavaScript",
+                "last_commit": "2023-09-12T00:00:00.000Z",
+                "owner": "hackwaly",
+                "repo": "vscode-ocaml",
+                "stars": 47112
+              }
+            },
+            {
+              "node_type": "item",
+              "kind": "repository",
+              "title": "tuareg",
+              "description": "OCaml mode for Emacs that can run the toplevel and the debugger within Emacs.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "language": "TypeScript",
+                "last_commit": "2021-06-25T00:00:00.000Z",
+                "owner": "ocaml",
+                "repo": "tuareg",
+                "stars": 35921
+              }
+            },
+            {
+              "node_type": "item",
+              "kind": "repository",
+              "title": "OCaml Debugger",
+              "description": "extension that provides OCaml Debugger for VSCode",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "language": "Shell",
+                "last_commit": "2022-05-03T00:00:00.000Z",
+                "owner": "hackwaly",
+                "repo": "ocamlearlybird",
+                "stars": 26609
+              }
+            },
+            {
+              "node_type": "item",
+              "kind": "repository",
+              "title": "merlin",
+              "description": "Context sensitive completion for OCaml in Vim and Emacs.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "language": "Ruby",
+                "last_commit": "2022-03-05T00:00:00.000Z",
+                "owner": "ocaml",
+                "repo": "merlin",
+                "stars": 23668
+              }
+            },
+            {
+              "node_type": "item",
+              "kind": "repository",
+              "title": "merlin-eldoc",
+              "description": "Emacs package to provide merlin's features through eldoc.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "language": "Java",
+                "last_commit": "2021-10-07T00:00:00.000Z",
+                "owner": "Khady",
+                "repo": "merlin-eldoc",
+                "stars": 12817
+              }
+            },
+            {
+              "node_type": "item",
+              "kind": "repository",
+              "title": "opam-switch-mode",
+              "description": "Minor mode for Emacs that extends Tuareg and Merlin with menus to change or reset the opam switch in the ambient Emacs session.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "language": "TypeScript",
+                "last_commit": "2021-10-03T00:00:00.000Z",
+                "owner": "ProofGeneral",
+                "repo": "opam-switch-mode",
+                "stars": 5821
+              }
+            },
+            {
+              "node_type": "item",
+              "kind": "repository",
+              "title": "Sublime better ocaml",
+              "description": "Better OCaml mode for Sublime Text.",
+              "children": [
+                {
+                  "node_type": "item",
+                  "kind": "repository",
+                  "title": "Sublime text package",
+                  "description": null,
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "language": "TypeScript",
+                    "last_commit": "2022-02-20T00:00:00.000Z",
+                    "owner": "def-lkb",
+                    "repo": "sublime-text-merlin",
+                    "stars": 7681
+                  }
+                }
+              ],
+              "repo_info": {
+                "archived": false,
+                "language": "Go",
+                "last_commit": "2023-01-14T00:00:00.000Z",
+                "owner": "whitequark",
+                "repo": "sublime-better-ocaml",
+                "stars": 4353
+              }
+            },
+            {
+              "node_type": "item",
+              "kind": "repository",
+              "title": "ocaml-lsp",
+              "description": "An LSP language server for OCaml that integrates with any editor that understands LSP like VSCode, Vim and Emacs.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "language": "Shell",
+                "last_commit": "2023-05-08T00:00:00.000Z",
+                "owner": "ocaml",
+                "repo": "ocaml-lsp",
+                "stars": 239
+              }
+            },
+            {
+              "node_type": "group",
+              "title": "ocp-index",
+              "description": "Easy access to the interface information of installed OCaml libraries. Provides standalone tools like and .",
+              "children": [
+                {
+                  "node_type": "item",
+                  "kind": "repository",
+                  "title": "ocp-index-top",
+                  "description": "Toplevel directive for looking up documentation using ocp-index.",
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "language": "Java",
+                    "last_commit": "2021-07-09T00:00:00.000Z",
+                    "owner": "reynir",
+                    "repo": "ocp-index-top",
+                    "stars": 6907
+                  }
+                }
+              ]
+            },
+            {
+              "node_type": "group",
+              "title": "ocp-indent",
+              "description": "Indentation tool for OCaml, to be used from editors like Emacs and Vim.",
+              "children": [
+                {
+                  "node_type": "item",
+                  "kind": "repository",
+                  "title": "Vim plugin",
+                  "description": ".",
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "language": "Ruby",
+                    "last_commit": "2021-11-05T00:00:00.000Z",
+                    "owner": "def-lkb",
+                    "repo": "ocp-indent-vim",
+                    "stars": 33788
+                  }
+                }
+              ]
+            }
+          ]
         },
         {
-          "children": [],
-          "description": "Compile and execute OCaml code online.",
-          "title": "codingground"
-        },
-        {
-          "children": [],
-          "description": "Learn and execute OCaml code from your iPhone/iPad/Mac.",
-          "title": "OCaml: Learn & Code iOS app"
-        },
-        {
-          "children": [],
-          "description": "A source and compiled interface browser, written using LablTk. Included in the standard distribution for ocaml <= 4.01 and with labltk for ocaml >= 4.02.",
-          "title": "ocamlbrowser"
+          "node_type": "group",
+          "title": "Code coverage:",
+          "description": null,
+          "children": [
+            {
+              "node_type": "item",
+              "kind": "repository",
+              "title": "Bisect_ppx",
+              "description": null,
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "language": "Java",
+                "last_commit": "2022-10-02T00:00:00.000Z",
+                "owner": "aantron",
+                "repo": "bisect_ppx",
+                "stars": 31457
+              }
+            }
+          ]
         }
       ],
       "title": "Developer Tools"
@@ -1461,9 +1333,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": ". 99% of the solutions are here.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "99 problems",
+          "description": ". 99% of the solutions are here.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -1474,9 +1348,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Exercism is your place to engage in thoughtful conversations about code. Explore simplicity, idiomatic language features, and expressive, readable code. Solutions.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "OCaml at Exercism",
+          "description": "Exercism is your place to engage in thoughtful conversations about code. Explore simplicity, idiomatic language features, and expressive, readable code. Solutions.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -1485,21 +1361,6 @@
             "repo": "xocaml",
             "stars": 5053
           }
-        },
-        {
-          "children": [],
-          "description": ". Corpus of beginner-to-advanced online exercises (including those from the OCaml MOOC) with automatic grading tests.",
-          "title": "learn-ocaml-corpus"
-        },
-        {
-          "children": [],
-          "description": null,
-          "title": "Rosetta Code"
-        },
-        {
-          "children": [],
-          "description": "The OCaml section of the book is a free reference for solving common programming problems using OCaml.",
-          "title": "Programming Language Examples Alike Cookbook"
         }
       ],
       "title": "Exercises and Short Examples"
@@ -1508,9 +1369,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "OCaml library for reading, writing and modifying PDF files.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "camlPDF",
+          "description": "OCaml library for reading, writing and modifying PDF files.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -1521,9 +1384,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A neat interface for Slack in OCaml.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "slacko",
+          "description": "A neat interface for Slack in OCaml.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -1532,61 +1397,6 @@
             "repo": "slacko",
             "stars": 2166
           }
-        },
-        {
-          "children": [],
-          "description": null,
-          "title": "Functional Programming with OCaml"
-        },
-        {
-          "children": [],
-          "description": null,
-          "title": "Python to OCaml: retrospective"
-        },
-        {
-          "children": [],
-          "description": null,
-          "title": "OCaml for the Masses"
-        },
-        {
-          "children": [],
-          "description": null,
-          "title": "Why We Use OCaml"
-        },
-        {
-          "children": [],
-          "description": null,
-          "title": "Xen – OCaml Coding Considerations"
-        },
-        {
-          "children": [],
-          "description": null,
-          "title": "Monads are a class of hard drugs"
-        },
-        {
-          "children": [],
-          "description": null,
-          "title": "Beginner's guide to OCaml"
-        },
-        {
-          "children": [],
-          "description": null,
-          "title": "Why OCaml, why now?"
-        },
-        {
-          "children": [],
-          "description": null,
-          "title": "A blog about game development in OCaml"
-        },
-        {
-          "children": [],
-          "description": null,
-          "title": "(Functional) Alternatives to inheritance"
-        },
-        {
-          "children": [],
-          "description": "Where X=OCaml.",
-          "title": "Learn X in Y minutes"
         }
       ],
       "title": "General"
@@ -1595,48 +1405,16 @@
       "description": "",
       "items": [
         {
-          "children": [
-            {
-              "children": [],
-              "description": "OpenGL bindings for OCaml. Provides an (experimental) functional API. (homepage)",
-              "title": "glMLite",
-              "repo_info": {
-                "archived": false,
-                "language": "JavaScript",
-                "last_commit": "2023-12-21T00:00:00.000Z",
-                "owner": "fccm",
-                "repo": "glMLite",
-                "stars": 27012
-              }
-            },
-            {
-              "children": [],
-              "description": "Interface to OpenGL. Integrates well with lablgtk.",
-              "title": "lablgl"
-            },
-            {
-              "children": [],
-              "description": "Thin bindings OpenGL 3.{2,3},4.{0,1,2,3,4} and OpenGL ES {2,3}.",
-              "title": "tgls"
-            }
-          ],
+          "node_type": "group",
+          "title": "2D",
           "description": null,
-          "title": "3D",
-          "repo_info": {
-            "archived": false,
-            "language": "JavaScript",
-            "last_commit": "2023-12-21T00:00:00.000Z",
-            "owner": "fccm",
-            "repo": "glMLite",
-            "stars": 27012
-          }
-        },
-        {
           "children": [
             {
-              "children": [],
-              "description": "Declarative 2D vector graphics for OCaml.",
+              "node_type": "item",
+              "kind": "repository",
               "title": "Vg",
+              "description": "Declarative 2D vector graphics for OCaml.",
+              "children": [],
               "repo_info": {
                 "archived": false,
                 "language": "Go",
@@ -1647,9 +1425,11 @@
               }
             },
             {
-              "children": [],
-              "description": "Binding to Cairo, a 2D Vector Graphics Library. Integrates well with lablgtk.",
+              "node_type": "item",
+              "kind": "repository",
               "title": "cairo2",
+              "description": "Binding to Cairo, a 2D Vector Graphics Library. Integrates well with lablgtk.",
+              "children": [],
               "repo_info": {
                 "archived": false,
                 "language": "Java",
@@ -1658,23 +1438,30 @@
                 "repo": "ocaml-cairo",
                 "stars": 19267
               }
-            },
-            {
-              "children": [],
-              "description": "2D plotting library.",
-              "title": "archimedes"
             }
-          ],
+          ]
+        },
+        {
+          "node_type": "group",
+          "title": "3D",
           "description": null,
-          "title": "2D",
-          "repo_info": {
-            "archived": false,
-            "language": "Go",
-            "last_commit": "2023-02-03T00:00:00.000Z",
-            "owner": "dbuenzli",
-            "repo": "vg",
-            "stars": 21333
-          }
+          "children": [
+            {
+              "node_type": "item",
+              "kind": "repository",
+              "title": "glMLite",
+              "description": "OpenGL bindings for OCaml. Provides an (experimental) functional API. (homepage)",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "language": "JavaScript",
+                "last_commit": "2023-12-21T00:00:00.000Z",
+                "owner": "fccm",
+                "repo": "glMLite",
+                "stars": 27012
+              }
+            }
+          ]
         }
       ],
       "title": "Graphics"
@@ -1683,9 +1470,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "Unicode text normalization for OCaml.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Uunf",
+          "description": "Unicode text normalization for OCaml.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -1696,9 +1485,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Non-blocking streaming Unicode codec for OCaml.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Uutf",
+          "description": "Non-blocking streaming Unicode codec for OCaml.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -1709,9 +1500,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Unicode character properties for OCaml.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Uucp",
+          "description": "Unicode character properties for OCaml.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -1722,9 +1515,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Unicode character database decoder for OCaml.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Uucd",
+          "description": "Unicode character database decoder for OCaml.",
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": "Shell",
@@ -1735,9 +1530,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Multilingualization for OCaml source code. Allows using Unicode identifiers in OCaml source code.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "ocaml-m17n",
+          "description": "Multilingualization for OCaml source code. Allows using Unicode identifiers in OCaml source code.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -1748,9 +1545,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Unicode text segmentation for OCaml.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Uuseg",
+          "description": "Unicode text segmentation for OCaml.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -1761,9 +1560,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A Unicode library for OCaml.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Camomile",
+          "description": "A Unicode library for OCaml.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -1780,9 +1581,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "QML Qt5 bindings for OCaml.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "lablqml",
+          "description": "QML Qt5 bindings for OCaml.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -1793,9 +1596,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Self-contained OCaml bindings to linenoise; easy high-level readline functionality in OCaml.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "ocaml-linenoise",
+          "description": "Self-contained OCaml bindings to linenoise; easy high-level readline functionality in OCaml.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -1806,9 +1611,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Notty is a declarative terminal library for OCaml, structured around the notion of composable images.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Notty",
+          "description": "Notty is a declarative terminal library for OCaml, structured around the notion of composable images.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -1819,9 +1626,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Lambda-Term is a cross-platform library for manipulating the terminal. It provides an abstraction for keys, mouse events, and colors, as well as a set of widgets to write curses-like applications.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Lambda-Term",
+          "description": "Lambda-Term is a cross-platform library for manipulating the terminal. It provides an abstraction for keys, mouse events, and colors, as well as a set of widgets to write curses-like applications.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -1830,21 +1639,6 @@
             "repo": "lambda-term",
             "stars": 633
           }
-        },
-        {
-          "children": [],
-          "description": "GTK2 and GTK3 bindings for OCaml with various higher-level facilities to define GUIs.",
-          "title": "lablgtk"
-        },
-        {
-          "children": [],
-          "description": "Interface to the Tcl/Tk GUI framework. In the standard distribution for ocaml <= 4.01.",
-          "title": "labltk"
-        },
-        {
-          "children": [],
-          "description": "Tsdl is an OCaml module providing thin bindings to the cross-platform SDL library.",
-          "title": "TSDL"
         }
       ],
       "title": "User Interface"
@@ -1853,9 +1647,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "library operating system that constructs unikernels for secure, high-performance network applications across a variety of cloud computing and mobile platforms",
+          "node_type": "item",
+          "kind": "repository",
           "title": "mirage",
+          "description": "library operating system that constructs unikernels for secure, high-performance network applications across a variety of cloud computing and mobile platforms",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -1866,9 +1662,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Standard library for OCaml",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Base",
+          "description": "Standard library for OCaml",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -1879,9 +1677,11 @@
           }
         },
         {
-          "children": [],
-          "description": "a swiss-army knife for multimedia streaming, notably used for netradios and webtvs",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Liquidsoap",
+          "description": "a swiss-army knife for multimedia streaming, notably used for netradios and webtvs",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -1892,9 +1692,11 @@
           }
         },
         {
-          "children": [],
-          "description": "library and tools for accessing and modifying virtual machine disk images",
+          "node_type": "item",
+          "kind": "repository",
           "title": "libguestfs",
+          "description": "library and tools for accessing and modifying virtual machine disk images",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -1905,9 +1707,11 @@
           }
         },
         {
-          "children": [],
-          "description": "formal proof management system",
+          "node_type": "item",
+          "kind": "repository",
           "title": "coq",
+          "description": "formal proof management system",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -1918,9 +1722,11 @@
           }
         },
         {
-          "children": [],
-          "description": "an OCaml API to write static analysis, dynamic analysis, code visualizations, code navigations, or style-preserving source-to-source transformations such as refactorings on source code.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "pfff",
+          "description": "an OCaml API to write static analysis, dynamic analysis, code visualizations, code navigations, or style-preserving source-to-source transformations such as refactorings on source code.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -1931,9 +1737,11 @@
           }
         },
         {
-          "children": [],
-          "description": "management stack that configures and controls Xen-enabled hosts and resource pools, and co-ordinates resources within the pool.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "xen-api",
+          "description": "management stack that configures and controls Xen-enabled hosts and resource pools, and co-ordinates resources within the pool.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -1944,9 +1752,11 @@
           }
         },
         {
-          "children": [],
-          "description": "cross-platform multi-network peer-to-peer daemon",
+          "node_type": "item",
+          "kind": "repository",
           "title": "MLDonkey",
+          "description": "cross-platform multi-network peer-to-peer daemon",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -1957,9 +1767,11 @@
           }
         },
         {
-          "children": [],
-          "description": "C Intermediate Language",
+          "node_type": "item",
+          "kind": "repository",
           "title": "cil",
+          "description": "C Intermediate Language",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -1970,9 +1782,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Native, lightweight modal code editor.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Oni2",
+          "description": "Native, lightweight modal code editor.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -1981,21 +1795,6 @@
             "repo": "oni2",
             "stars": 2169
           }
-        },
-        {
-          "children": [],
-          "description": "platform dedicated to the analysis of source code written in C",
-          "title": "frama-c"
-        },
-        {
-          "children": [],
-          "description": "a self-upgradable Proof of Stake blockchain",
-          "title": "Tezos"
-        },
-        {
-          "children": [],
-          "description": "platform for deductive program verification",
-          "title": "WHY3"
         }
       ],
       "title": "Large Source Code Examples"
@@ -2004,9 +1803,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "A dumb OCaml logger.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "dolog",
+          "description": "A dumb OCaml logger.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -2017,9 +1818,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A variant of the Bolt OCaml logging tool.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Volt",
+          "description": "A variant of the Bolt OCaml logging tool.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -2028,11 +1831,6 @@
             "repo": "volt",
             "stars": 24752
           }
-        },
-        {
-          "children": [],
-          "description": "Logs provides a logging infrastructure for OCaml.",
-          "title": "Logs"
         }
       ],
       "title": "Logging"
@@ -2041,9 +1839,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "OCaml bindings for Apache Kafka.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Kafka",
+          "description": "OCaml bindings for Apache Kafka.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -2054,9 +1854,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Message Passing Interface bindings for OCaml.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "MPI",
+          "description": "Message Passing Interface bindings for OCaml.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -2067,9 +1869,11 @@
           }
         },
         {
-          "children": [],
-          "description": "OCaml implementation of the MQTT pubsub protocol.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "MQTT",
+          "description": "OCaml implementation of the MQTT pubsub protocol.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -2080,9 +1884,11 @@
           }
         },
         {
-          "children": [],
-          "description": "nanomsg bindings for OCaml.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "onanomsg",
+          "description": "nanomsg bindings for OCaml.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -2093,9 +1899,11 @@
           }
         },
         {
-          "children": [],
-          "description": "OCaml code generator plugin for the Cap'n Proto serialization framework.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "capnp-ocaml",
+          "description": "OCaml code generator plugin for the Cap'n Proto serialization framework.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -2106,9 +1914,11 @@
           }
         },
         {
-          "children": [],
-          "description": "ZeroMQ bindings for OCaml with Async and Lwt wrappers.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "ocaml-zmq",
+          "description": "ZeroMQ bindings for OCaml with Async and Lwt wrappers.",
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": "Rust",
@@ -2119,9 +1929,11 @@
           }
         },
         {
-          "children": [],
-          "description": "AMQP client library for Async and Lwt.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "AMQP",
+          "description": "AMQP client library for Async and Lwt.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -2138,75 +1950,11 @@
       "description": "",
       "items": [
         {
-          "children": [
-            {
-              "children": [],
-              "description": "Client/server library for HTTP/1.X / HTTP/2 written entirely in OCaml.",
-              "title": "piaf",
-              "repo_info": {
-                "archived": false,
-                "language": "Shell",
-                "last_commit": "2022-04-23T00:00:00.000Z",
-                "owner": "anmonteiro",
-                "repo": "piaf",
-                "stars": 40619
-              }
-            },
-            {
-              "children": [],
-              "description": "OCaml bindings to libcurl.",
-              "title": "ocurl",
-              "repo_info": {
-                "archived": false,
-                "language": "Ruby",
-                "last_commit": "2022-02-03T00:00:00.000Z",
-                "owner": "ygrek",
-                "repo": "ocurl",
-                "stars": 21698
-              }
-            },
-            {
-              "children": [],
-              "description": "Very lightweight HTTP server using Lwt or Async.",
-              "title": "ocaml-cohttp",
-              "repo_info": {
-                "archived": false,
-                "language": "Go",
-                "last_commit": "2022-05-29T00:00:00.000Z",
-                "owner": "mirage",
-                "repo": "ocaml-cohttp",
-                "stars": 16583
-              }
-            },
-            {
-              "children": [],
-              "description": "A high performance, memory efficient, and scalable web server written in OCaml.",
-              "title": "httpaf",
-              "repo_info": {
-                "archived": false,
-                "language": null,
-                "last_commit": "2022-05-02T00:00:00.000Z",
-                "owner": "inhabitedtype",
-                "repo": "httpaf",
-                "stars": 10610
-              }
-            }
-          ],
-          "description": null,
-          "title": "HTTP Tools:",
-          "repo_info": {
-            "archived": false,
-            "language": "Shell",
-            "last_commit": "2022-04-23T00:00:00.000Z",
-            "owner": "anmonteiro",
-            "repo": "piaf",
-            "stars": 40619
-          }
-        },
-        {
-          "children": [],
-          "description": "A pure OCaml implementation of the DNS protocol.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "ocaml-dns",
+          "description": "A pure OCaml implementation of the DNS protocol.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -2217,9 +1965,11 @@
           }
         },
         {
-          "children": [],
-          "description": "charrua-unix is a Unix DHCP daemon based on charrua-core.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "charrua-unix",
+          "description": "charrua-unix is a Unix DHCP daemon based on charrua-core.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -2230,9 +1980,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Fluentd logger for OCaml.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "fluent-logger",
+          "description": "Fluentd logger for OCaml.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -2241,6 +1993,73 @@
             "repo": "fluent-logger-ocaml",
             "stars": 23741
           }
+        },
+        {
+          "node_type": "group",
+          "title": "HTTP Tools:",
+          "description": null,
+          "children": [
+            {
+              "node_type": "item",
+              "kind": "repository",
+              "title": "piaf",
+              "description": "Client/server library for HTTP/1.X / HTTP/2 written entirely in OCaml.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "language": "Shell",
+                "last_commit": "2022-04-23T00:00:00.000Z",
+                "owner": "anmonteiro",
+                "repo": "piaf",
+                "stars": 40619
+              }
+            },
+            {
+              "node_type": "item",
+              "kind": "repository",
+              "title": "ocurl",
+              "description": "OCaml bindings to libcurl.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "language": "Ruby",
+                "last_commit": "2022-02-03T00:00:00.000Z",
+                "owner": "ygrek",
+                "repo": "ocurl",
+                "stars": 21698
+              }
+            },
+            {
+              "node_type": "item",
+              "kind": "repository",
+              "title": "ocaml-cohttp",
+              "description": "Very lightweight HTTP server using Lwt or Async.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "language": "Go",
+                "last_commit": "2022-05-29T00:00:00.000Z",
+                "owner": "mirage",
+                "repo": "ocaml-cohttp",
+                "stars": 16583
+              }
+            },
+            {
+              "node_type": "item",
+              "kind": "repository",
+              "title": "httpaf",
+              "description": "A high performance, memory efficient, and scalable web server written in OCaml.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "language": null,
+                "last_commit": "2022-05-02T00:00:00.000Z",
+                "owner": "inhabitedtype",
+                "repo": "httpaf",
+                "stars": 10610
+              }
+            }
+          ]
         }
       ],
       "title": "Networking"
@@ -2249,11 +2068,16 @@
       "description": "",
       "items": [
         {
+          "node_type": "group",
+          "title": "Distribution:",
+          "description": null,
           "children": [
             {
-              "children": [],
-              "description": "package.json workflow for native development with Reason/OCaml.",
+              "node_type": "item",
+              "kind": "repository",
               "title": "esy",
+              "description": "package.json workflow for native development with Reason/OCaml.",
+              "children": [],
               "repo_info": {
                 "archived": false,
                 "language": "Rust",
@@ -2264,9 +2088,11 @@
               }
             },
             {
-              "children": [],
-              "description": "Diskuv OCaml distribution for Windows.",
+              "node_type": "item",
+              "kind": "repository",
               "title": "Diskuv OCaml",
+              "description": "Diskuv OCaml distribution for Windows.",
+              "children": [],
               "repo_info": {
                 "archived": false,
                 "language": "Rust",
@@ -2277,9 +2103,11 @@
               }
             },
             {
-              "children": [],
-              "description": "Release OPAM packages easily.",
+              "node_type": "item",
+              "kind": "repository",
               "title": "makorel",
+              "description": "Release OPAM packages easily.",
+              "children": [],
               "repo_info": {
                 "archived": false,
                 "language": "TypeScript",
@@ -2288,40 +2116,20 @@
                 "repo": "makorel",
                 "stars": 23951
               }
-            },
-            {
-              "children": [],
-              "description": "A flexible Git-friendly package manager with multiple compiler support.",
-              "title": "OPAM"
-            },
-            {
-              "children": [],
-              "description": "Local OCaml library manager. Used by most of the OCaml ecosystem.",
-              "title": "ocamlfind"
-            },
-            {
-              "children": [],
-              "description": "opam repository and experimental build for Windows (deprecated since 2021).",
-              "title": "OCaml for Windows"
             }
-          ],
-          "description": null,
-          "title": "Distribution:",
-          "repo_info": {
-            "archived": false,
-            "language": "Rust",
-            "last_commit": "2021-06-01T00:00:00.000Z",
-            "owner": "esy",
-            "repo": "esy",
-            "stars": 49945
-          }
+          ]
         },
         {
+          "node_type": "group",
+          "title": "Build Tools:",
+          "description": null,
           "children": [
             {
-              "children": [],
-              "description": "A composable and opinionated build system for OCaml (former jbuilder)",
+              "node_type": "item",
+              "kind": "repository",
               "title": "dune",
+              "description": "A composable and opinionated build system for OCaml (former jbuilder)",
+              "children": [],
               "repo_info": {
                 "archived": false,
                 "language": "TypeScript",
@@ -2332,9 +2140,11 @@
               }
             },
             {
-              "children": [],
-              "description": "Easy to use Makefile for small to medium-sized OCaml-projects.",
+              "node_type": "item",
+              "kind": "repository",
               "title": "ocaml-makefile",
+              "description": "Easy to use Makefile for small to medium-sized OCaml-projects.",
+              "children": [],
               "repo_info": {
                 "archived": true,
                 "language": "TypeScript",
@@ -2345,36 +2155,11 @@
               }
             },
             {
-              "children": [
-                {
-                  "children": [],
-                  "description": "Tool to convert OASIS metadata to OPAM package descriptions.",
-                  "title": "oasis2opam",
-                  "repo_info": {
-                    "archived": false,
-                    "language": "TypeScript",
-                    "last_commit": "2023-10-13T00:00:00.000Z",
-                    "owner": "ocaml",
-                    "repo": "oasis2opam",
-                    "stars": 12081
-                  }
-                }
-              ],
-              "description": "A tool to integrate a configure, build and install system in your OCaml project. It helps to create standard entry points in your build system and allows external tools to analyse your project easily.",
-              "title": "Oasis",
-              "repo_info": {
-                "archived": false,
-                "language": "TypeScript",
-                "last_commit": "2023-10-13T00:00:00.000Z",
-                "owner": "ocaml",
-                "repo": "oasis2opam",
-                "stars": 12081
-              }
-            },
-            {
-              "children": [],
-              "description": "Simple package build system for ocaml.",
+              "node_type": "item",
+              "kind": "repository",
               "title": "obuild",
+              "description": "Simple package build system for ocaml.",
+              "children": [],
               "repo_info": {
                 "archived": false,
                 "language": "C++",
@@ -2385,9 +2170,11 @@
               }
             },
             {
-              "children": [],
-              "description": "OCaml rules for Bazel, Google's multi-language and platform build tool.",
+              "node_type": "item",
+              "kind": "repository",
               "title": "Bazel",
+              "description": "OCaml rules for Bazel, Google's multi-language and platform build tool.",
+              "children": [],
               "repo_info": {
                 "archived": true,
                 "language": null,
@@ -2398,9 +2185,11 @@
               }
             },
             {
-              "children": [],
-              "description": "OPAM-aware packaging system using ocamlbuild.",
+              "node_type": "item",
+              "kind": "repository",
               "title": "topkg",
+              "description": "OPAM-aware packaging system using ocamlbuild.",
+              "children": [],
               "repo_info": {
                 "archived": false,
                 "language": "TypeScript",
@@ -2409,18 +2198,30 @@
                 "repo": "topkg",
                 "stars": 3161
               }
+            },
+            {
+              "node_type": "group",
+              "title": "Oasis",
+              "description": "A tool to integrate a configure, build and install system in your OCaml project. It helps to create standard entry points in your build system and allows external tools to analyse your project easily.",
+              "children": [
+                {
+                  "node_type": "item",
+                  "kind": "repository",
+                  "title": "oasis2opam",
+                  "description": "Tool to convert OASIS metadata to OPAM package descriptions.",
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "language": "TypeScript",
+                    "last_commit": "2023-10-13T00:00:00.000Z",
+                    "owner": "ocaml",
+                    "repo": "oasis2opam",
+                    "stars": 12081
+                  }
+                }
+              ]
             }
-          ],
-          "description": null,
-          "title": "Build Tools:",
-          "repo_info": {
-            "archived": false,
-            "language": "TypeScript",
-            "last_commit": "2023-02-05T00:00:00.000Z",
-            "owner": "ocaml",
-            "repo": "dune",
-            "stars": 43331
-          }
+          ]
         }
       ],
       "title": "Package Management"
@@ -2429,11 +2230,16 @@
       "description": "(Note: Sorted from the easier to use to the more flexible.)",
       "items": [
         {
+          "node_type": "group",
+          "title": "Libraries:",
+          "description": null,
           "children": [
             {
-              "children": [],
-              "description": "Parallelize computation over independent items, even if there is an infinite number of them.",
+              "node_type": "item",
+              "kind": "repository",
               "title": "Parany",
+              "description": "Parallelize computation over independent items, even if there is an infinite number of them.",
+              "children": [],
               "repo_info": {
                 "archived": false,
                 "language": "Ruby",
@@ -2444,9 +2250,11 @@
               }
             },
             {
-              "children": [],
-              "description": "Process pool implementation for OCaml.",
+              "node_type": "item",
+              "kind": "repository",
               "title": "Nproc",
+              "description": "Process pool implementation for OCaml.",
+              "children": [],
               "repo_info": {
                 "archived": false,
                 "language": "Rust",
@@ -2457,9 +2265,11 @@
               }
             },
             {
-              "children": [],
-              "description": "A simple library for forking child processes to perform work on multiple cores.",
+              "node_type": "item",
+              "kind": "repository",
               "title": "ForkWork",
+              "description": "A simple library for forking child processes to perform work on multiple cores.",
+              "children": [],
               "repo_info": {
                 "archived": true,
                 "language": "JavaScript",
@@ -2470,9 +2280,11 @@
               }
             },
             {
-              "children": [],
-              "description": "Libraries and syntax extensions to offload intensive computations to parallel accelerators (multicore CPUs, GPUs and other accelerators compatible with GPGPU frameworks).",
+              "node_type": "item",
+              "kind": "repository",
               "title": "SPOC",
+              "description": "Libraries and syntax extensions to offload intensive computations to parallel accelerators (multicore CPUs, GPUs and other accelerators compatible with GPGPU frameworks).",
+              "children": [],
               "repo_info": {
                 "archived": true,
                 "language": "Python",
@@ -2483,9 +2295,11 @@
               }
             },
             {
-              "children": [],
-              "description": "A library for spawning processes on a cluster of machines, and passing typed messages between them.",
+              "node_type": "item",
+              "kind": "repository",
               "title": "Rpc.Parallel",
+              "description": "A library for spawning processes on a cluster of machines, and passing typed messages between them.",
+              "children": [],
               "repo_info": {
                 "archived": false,
                 "language": "Java",
@@ -2494,45 +2308,20 @@
                 "repo": "rpc_parallel",
                 "stars": 24097
               }
-            },
-            {
-              "children": [],
-              "description": "Provides easy-to-use parallel map and fold functions.",
-              "title": "Parmap"
-            },
-            {
-              "children": [],
-              "description": "A distributed computing library which facilitates distributed execution of parallelizable computations in a seamless fashion.",
-              "title": "Functory"
-            },
-            {
-              "children": [],
-              "description": "An enhanced system platform library. Contains the library to compute tasks on as many cores of the machine as needed.",
-              "title": "Ocamlnet"
-            },
-            {
-              "children": [],
-              "description": "Functional parallel skeleton compiler and programming system for OCaml programs.",
-              "title": "Sklml"
             }
-          ],
-          "description": null,
-          "title": "Libraries:",
-          "repo_info": {
-            "archived": false,
-            "language": "Ruby",
-            "last_commit": "2021-10-16T00:00:00.000Z",
-            "owner": "UnixJunkie",
-            "repo": "parany",
-            "stars": 45808
-          }
+          ]
         },
         {
+          "node_type": "group",
+          "title": "Articles:",
+          "description": null,
           "children": [
             {
-              "children": [],
-              "description": ". A compilation of resources",
+              "node_type": "item",
+              "kind": "registry",
               "title": "Awesome multicore OCaml",
+              "description": ". A compilation of resources",
+              "children": [],
               "repo_info": {
                 "archived": false,
                 "language": "Go",
@@ -2543,9 +2332,11 @@
               }
             },
             {
-              "children": [],
-              "description": null,
+              "node_type": "item",
+              "kind": "repository",
               "title": "Parallel programming in multicore OCaml",
+              "description": null,
+              "children": [],
               "repo_info": {
                 "archived": true,
                 "language": "Rust",
@@ -2554,28 +2345,8 @@
                 "repo": "parallel-programming-in-multicore-ocaml",
                 "stars": 28065
               }
-            },
-            {
-              "children": [],
-              "description": null,
-              "title": "What is the state of OCaml's parallelization abilities?"
-            },
-            {
-              "children": [],
-              "description": "from the officiel OCaml manual",
-              "title": "Parallelism programming"
             }
-          ],
-          "description": null,
-          "title": "Articles:",
-          "repo_info": {
-            "archived": false,
-            "language": "Go",
-            "last_commit": "2022-04-19T00:00:00.000Z",
-            "owner": "ocaml-multicore",
-            "repo": "awesome-multicore-ocaml",
-            "stars": 37623
-          }
+          ]
         }
       ],
       "title": "Parallelism"
@@ -2584,9 +2355,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": null,
+          "node_type": "item",
+          "kind": "repository",
           "title": "OCaml@p",
+          "description": null,
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -2597,9 +2370,11 @@
           }
         },
         {
-          "children": [],
-          "description": "in Dune. It appears to also be fully manual.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "dyn",
+          "description": "in Dune. It appears to also be fully manual.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -2610,9 +2385,11 @@
           }
         },
         {
-          "children": [],
-          "description": "’s .",
+          "node_type": "item",
+          "kind": "repository",
           "title": "ppx_deriving",
+          "description": "’s .",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -2623,9 +2400,11 @@
           }
         },
         {
-          "children": [],
-          "description": null,
+          "node_type": "item",
+          "kind": "repository",
           "title": "Reason's native Console.log",
+          "description": null,
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -2636,9 +2415,11 @@
           }
         },
         {
-          "children": [],
-          "description": null,
+          "node_type": "item",
+          "kind": "repository",
           "title": "Inspect",
+          "description": null,
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -2649,9 +2430,11 @@
           }
         },
         {
-          "children": [],
-          "description": ", fully manual.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "cmon",
+          "description": ", fully manual.",
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": "Shell",
@@ -2662,9 +2445,11 @@
           }
         },
         {
-          "children": [],
-          "description": null,
+          "node_type": "item",
+          "kind": "repository",
           "title": "Genprint",
+          "description": null,
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -2675,9 +2460,11 @@
           }
         },
         {
-          "children": [],
-          "description": null,
+          "node_type": "item",
+          "kind": "repository",
           "title": "Dum",
+          "description": null,
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -2688,9 +2475,11 @@
           }
         },
         {
-          "children": [],
-          "description": ", another ppx_deriving-like.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "lrt",
+          "description": ", another ppx_deriving-like.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -2701,9 +2490,11 @@
           }
         },
         {
-          "children": [],
-          "description": ", a ppx_deriving-like.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "refl",
+          "description": ", a ppx_deriving-like.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -2714,9 +2505,11 @@
           }
         },
         {
-          "children": [],
-          "description": ", probably a ppx_deriving-like with ppx_typerep_conv.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "typerep",
+          "description": ", probably a ppx_deriving-like with ppx_typerep_conv.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -2727,9 +2520,11 @@
           }
         },
         {
-          "children": [],
-          "description": ", again a ppx_deriving-like.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "tpf",
+          "description": ", again a ppx_deriving-like.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -2738,16 +2533,6 @@
             "repo": "tpf",
             "stars": 3648
           }
-        },
-        {
-          "children": [],
-          "description": ", which appears to have the user build the type representation manually from combinators in addition to also having the user pass it where needed.",
-          "title": "repr"
-        },
-        {
-          "children": [],
-          "description": ", also fully manual.",
-          "title": "data-encoding"
         }
       ],
       "title": "Printers helpers"
@@ -2756,9 +2541,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "The drom tool is a wrapper over opam/dune in an attempt to provide a cargo-like user experience.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "drom",
+          "description": "The drom tool is a wrapper over opam/dune in an attempt to provide a cargo-like user experience.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -2769,9 +2556,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Template for an ocaml project with modern tooling",
+          "node_type": "item",
+          "kind": "repository",
           "title": "modern-ocaml",
+          "description": "Template for an ocaml project with modern tooling",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -2782,9 +2571,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Reason and Ocaml project generator",
+          "node_type": "item",
+          "kind": "repository",
           "title": "spin",
+          "description": "Reason and Ocaml project generator",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -2801,9 +2592,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "bindings to the PCRE library (perl-compatible regular expressions)",
+          "node_type": "item",
+          "kind": "repository",
           "title": "ocaml-pcre",
+          "description": "bindings to the PCRE library (perl-compatible regular expressions)",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -2814,9 +2607,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Tyre is a set of combinators to build type-safe regular expressions, allowing automatic extraction and modification of matched groups.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Tyre",
+          "description": "Tyre is a set of combinators to build type-safe regular expressions, allowing automatic extraction and modification of matched groups.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -2827,9 +2622,11 @@
           }
         },
         {
-          "children": [],
-          "description": "a pure OCaml regular expressions library with combinators, supporting several formats (glob, posix, str, etc.).",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Re",
+          "description": "a pure OCaml regular expressions library with combinators, supporting several formats (glob, posix, str, etc.).",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -2840,9 +2637,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Humane-re attempts to provide an easy interface for 90% of your regex needs. Courtesy of ocaml-re.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Humane-re",
+          "description": "Humane-re attempts to provide an easy interface for 90% of your regex needs. Courtesy of ocaml-re.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -2859,9 +2658,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "A Commitment scheme library for Multi-party computations such as online auctions and gambling.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "nocoiner",
+          "description": "A Commitment scheme library for Multi-party computations such as online auctions and gambling.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -2872,9 +2673,11 @@
           }
         },
         {
-          "children": [],
-          "description": "TLS in pure OCaml.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "ocaml-tls",
+          "description": "TLS in pure OCaml.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -2885,9 +2688,11 @@
           }
         },
         {
-          "children": [],
-          "description": "The Cryptokit library for OCaml provides a variety of cryptographic primitives that can be used to implement cryptographic protocols in security-sensitive applications.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "cryptokit",
+          "description": "The Cryptokit library for OCaml provides a variety of cryptographic primitives that can be used to implement cryptographic protocols in security-sensitive applications.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -2898,9 +2703,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A small cryptographic library behind the ocaml-tls project. It is built to be straightforward to use, adhere to functional programming principles, and able to run in a Xen-based unikernel.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "nocrypto",
+          "description": "A small cryptographic library behind the ocaml-tls project. It is built to be straightforward to use, adhere to functional programming principles, and able to run in a Xen-based unikernel.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -2911,9 +2718,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Hash algorithms (like SHA* or BLAKE2*) in OCaml and C.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Digestif",
+          "description": "Hash algorithms (like SHA* or BLAKE2*) in OCaml and C.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -2930,9 +2739,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "An optimized parsing and printing library for the JSON format.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "yojson",
+          "description": "An optimized parsing and printing library for the JSON format.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -2943,9 +2754,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Extensible binary data format, like JSON but faster.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "biniou",
+          "description": "Extensible binary data format, like JSON but faster.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -2956,9 +2769,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A serialization compiler for multiple languages (OCaml, Java, Python, Scala, Typescript) with a Binou or JSON format",
+          "node_type": "item",
+          "kind": "repository",
           "title": "atdgen",
+          "description": "A serialization compiler for multiple languages (OCaml, Java, Python, Scala, Typescript) with a Binou or JSON format",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -2969,9 +2784,11 @@
           }
         },
         {
-          "children": [],
-          "description": "OCaml native CBOR decoder/encoder.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "cbor",
+          "description": "OCaml native CBOR decoder/encoder.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -2982,9 +2799,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Bencode (.torrent file format) reader/writer.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "bencode",
+          "description": "Bencode (.torrent file format) reader/writer.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -2995,9 +2814,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A S-expression parser and printer",
+          "node_type": "item",
+          "kind": "repository",
           "title": "sexplib",
+          "description": "A S-expression parser and printer",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -3006,16 +2827,6 @@
             "repo": "sexplib",
             "stars": 1291
           }
-        },
-        {
-          "children": [],
-          "description": "Non-blocking streaming JSON codec for OCaml.",
-          "title": "jsonm"
-        },
-        {
-          "children": [],
-          "description": "A streaming codec to decode and encode the XML data format.",
-          "title": "xmlm"
         }
       ],
       "title": "Serialization"
@@ -3024,9 +2835,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "Read and write FAT-format filesystems from OCaml.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "ocaml-fat",
+          "description": "Read and write FAT-format filesystems from OCaml.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -3037,9 +2850,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Mirage is a programming framework for constructing secure, high-performance network applications across a variety of cloud computing and mobile platforms.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Mirage OS",
+          "description": "Mirage is a programming framework for constructing secure, high-performance network applications across a variety of cloud computing and mobile platforms.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -3050,9 +2865,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Pure OCaml low-level git bindings.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "ocaml-git",
+          "description": "Pure OCaml low-level git bindings.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -3063,11 +2880,31 @@
           }
         },
         {
+          "node_type": "item",
+          "kind": "repository",
+          "title": "ocaml-vchan",
+          "description": "Pure OCaml implementation of the \"vchan\" shared-memory communication protocol.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Java",
+            "last_commit": "2023-11-16T00:00:00.000Z",
+            "owner": "mirage",
+            "repo": "ocaml-vchan",
+            "stars": 17047
+          }
+        },
+        {
+          "node_type": "group",
+          "title": "Embedded systems",
+          "description": null,
           "children": [
             {
-              "children": [],
-              "description": "A compiler for ESP32 SoC.",
+              "node_type": "item",
+              "kind": "repository",
               "title": "ocaml-esp32",
+              "description": "A compiler for ESP32 SoC.",
+              "children": [],
               "repo_info": {
                 "archived": false,
                 "language": "Go",
@@ -3078,9 +2915,11 @@
               }
             },
             {
-              "children": [],
-              "description": "A virtual machine designed to run OCaml bytecode on AVR (Arduino for instance) micro-controlers.",
+              "node_type": "item",
+              "kind": "repository",
               "title": "OMicroB",
+              "description": "A virtual machine designed to run OCaml bytecode on AVR (Arduino for instance) micro-controlers.",
+              "children": [],
               "repo_info": {
                 "archived": false,
                 "language": null,
@@ -3089,36 +2928,8 @@
                 "repo": "omicrob",
                 "stars": 1200
               }
-            },
-            {
-              "children": [],
-              "description": "An OCaml virtual machine for PIC18 micro-controlers.",
-              "title": "OCaPIC"
             }
-          ],
-          "description": null,
-          "title": "Embedded systems",
-          "repo_info": {
-            "archived": false,
-            "language": "Go",
-            "last_commit": "2023-03-25T00:00:00.000Z",
-            "owner": "sadiqj",
-            "repo": "ocaml-esp32",
-            "stars": 17283
-          }
-        },
-        {
-          "children": [],
-          "description": "Pure OCaml implementation of the \"vchan\" shared-memory communication protocol.",
-          "title": "ocaml-vchan",
-          "repo_info": {
-            "archived": false,
-            "language": "Java",
-            "last_commit": "2023-11-16T00:00:00.000Z",
-            "owner": "mirage",
-            "repo": "ocaml-vchan",
-            "stars": 17047
-          }
+          ]
         }
       ],
       "title": "System Programming"
@@ -3127,9 +2938,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "(formerly known as qtest) — supports inline pragma's to generate tests.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "iTeML",
+          "description": "(formerly known as qtest) — supports inline pragma's to generate tests.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -3140,9 +2953,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A framework for writing tests in OCaml, similar to Cram, developed by JaneStreet.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "expect-test",
+          "description": "A framework for writing tests in OCaml, similar to Cram, developed by JaneStreet.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -3153,9 +2968,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A lightweight and colourful test framework.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Alcotest",
+          "description": "A lightweight and colourful test framework.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -3166,9 +2983,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A lightweight unit testing framework compatible with the Test Anything Protocol.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "TestSimple",
+          "description": "A lightweight unit testing framework compatible with the Test Anything Protocol.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -3179,9 +2998,11 @@
           }
         },
         {
-          "children": [],
-          "description": "QCheck is a property testing library inspired from Haskell's QuickCheck",
+          "node_type": "item",
+          "kind": "repository",
           "title": "QCheck",
+          "description": "QCheck is a property testing library inspired from Haskell's QuickCheck",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -3190,21 +3011,6 @@
             "repo": "qcheck",
             "stars": 23285
           }
-        },
-        {
-          "children": [],
-          "description": "OUnit is a unit test framework for OCaml. It allows one to easily create unit-tests for OCaml code. It is based on HUnit, a unit testing framework for Haskell.",
-          "title": "OUnit"
-        },
-        {
-          "children": [],
-          "description": "comprehensive testing framework.",
-          "title": "Kaputt"
-        },
-        {
-          "children": [],
-          "description": "General inline testing macro's.",
-          "title": "Pa_test"
         }
       ],
       "title": "Testing"
@@ -3213,9 +3019,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "PPX deriver designed to streamline the process of validating records.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Validate",
+          "description": "PPX deriver designed to streamline the process of validating records.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -3226,9 +3034,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Collision-resistant IDs for server scalability & database performance.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "ocaml-cuid",
+          "description": "Collision-resistant IDs for server scalability & database performance.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -3239,9 +3049,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Official OCaml port of Sqids. Generate short unique IDs from numbers.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "sqids-ocaml",
+          "description": "Official OCaml port of Sqids. Generate short unique IDs from numbers.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -3250,11 +3062,6 @@
             "repo": "sqids-ocaml",
             "stars": 11134
           }
-        },
-        {
-          "children": [],
-          "description": "Uuidm is an OCaml module implementing 128-bit universally unique identifiers version 3, 5 (name based with MD5, SHA-1 hashing) and 4 (random based) according to RFC 4122.",
-          "title": "Uuidm"
         }
       ],
       "title": "Utilities"
@@ -3263,223 +3070,16 @@
       "description": "",
       "items": [
         {
-          "children": [
-            {
-              "children": [],
-              "description": "Caml on the Web (COW) is a set of parsers and syntax extensions to let you manipulate HTML, CSS, XML, JSON and Markdown directly from OCaml code.",
-              "title": "COW",
-              "repo_info": {
-                "archived": false,
-                "language": "JavaScript",
-                "last_commit": "2023-08-23T00:00:00.000Z",
-                "owner": "mirage",
-                "repo": "ocaml-cow",
-                "stars": 49132
-              }
-            },
-            {
-              "children": [],
-              "description": "OCaml template engine almost compatible with jinja2.",
-              "title": "jingoo",
-              "repo_info": {
-                "archived": false,
-                "language": null,
-                "last_commit": "2022-05-22T00:00:00.000Z",
-                "owner": "tategakibunko",
-                "repo": "jingoo",
-                "stars": 46590
-              }
-            },
-            {
-              "children": [],
-              "description": "RSS and Atom feed parsing",
-              "title": "Syndic",
-              "repo_info": {
-                "archived": false,
-                "language": "Java",
-                "last_commit": "2022-07-14T00:00:00.000Z",
-                "owner": "Cumulus",
-                "repo": "Syndic",
-                "stars": 40537
-              }
-            },
-            {
-              "children": [],
-              "description": "RFC3986 URI parsing library.",
-              "title": "ocaml-uri",
-              "repo_info": {
-                "archived": false,
-                "language": "Rust",
-                "last_commit": "2023-09-29T00:00:00.000Z",
-                "owner": "mirage",
-                "repo": "ocaml-uri",
-                "stars": 38095
-              }
-            },
-            {
-              "children": [],
-              "description": "Typed routes for OCaml/ReasonML web applications.",
-              "title": "routes",
-              "repo_info": {
-                "archived": false,
-                "language": "Python",
-                "last_commit": "2023-10-20T00:00:00.000Z",
-                "owner": "anuragsoni",
-                "repo": "routes",
-                "stars": 33074
-              }
-            },
-            {
-              "children": [],
-              "description": "Error-recovering streaming HTML5 and XML parsers, serializers.",
-              "title": "Markup.ml",
-              "repo_info": {
-                "archived": false,
-                "language": "Go",
-                "last_commit": "2023-08-02T00:00:00.000Z",
-                "owner": "aantron",
-                "repo": "markup.ml",
-                "stars": 25153
-              }
-            },
-            {
-              "children": [],
-              "description": "atd code generator (serialization) for OCaml/js_of_ocaml.",
-              "title": "atdjs",
-              "repo_info": {
-                "archived": false,
-                "language": "C++",
-                "last_commit": "2021-07-20T00:00:00.000Z",
-                "owner": "barko",
-                "repo": "atdjs",
-                "stars": 24896
-              }
-            },
-            {
-              "children": [
-                {
-                  "children": [],
-                  "description": "Easily import and export CommonJS modules from a js_of_ocaml project.",
-                  "title": "commonjs_of_ocaml",
-                  "repo_info": {
-                    "archived": false,
-                    "language": "Go",
-                    "last_commit": "2021-12-30T00:00:00.000Z",
-                    "owner": "AngryLawyer",
-                    "repo": "commonjs_of_ocaml",
-                    "stars": 17733
-                  }
-                }
-              ],
-              "description": "Js_of_ocaml is a compiler of OCaml bytecode to Javascript. It makes it possible to run Ocaml programs in a Web browser.",
-              "title": "js_of_ocaml",
-              "repo_info": {
-                "archived": false,
-                "language": "Go",
-                "last_commit": "2021-12-30T00:00:00.000Z",
-                "owner": "AngryLawyer",
-                "repo": "commonjs_of_ocaml",
-                "stars": 17733
-              }
-            },
-            {
-              "children": [],
-              "description": "Path-based dispatching for client- and server-side applications.",
-              "title": "dispatch",
-              "repo_info": {
-                "archived": false,
-                "language": null,
-                "last_commit": "2023-12-13T00:00:00.000Z",
-                "owner": "inhabitedtype",
-                "repo": "ocaml-dispatch",
-                "stars": 13020
-              }
-            },
-            {
-              "children": [],
-              "description": "Functional HTML scraping and manipulation with CSS selectors, à la Python's Beautiful Soup.",
-              "title": "Lambda Soup",
-              "repo_info": {
-                "archived": false,
-                "language": "Go",
-                "last_commit": "2022-05-09T00:00:00.000Z",
-                "owner": "aantron",
-                "repo": "lambda-soup",
-                "stars": 9603
-              }
-            },
-            {
-              "children": [],
-              "description": "mustache.js logic-less templates in OCaml.",
-              "title": "ocaml-mustache",
-              "repo_info": {
-                "archived": false,
-                "language": null,
-                "last_commit": "2021-04-07T00:00:00.000Z",
-                "owner": "rgrinberg",
-                "repo": "ocaml-mustache",
-                "stars": 7000
-              }
-            },
-            {
-              "children": [],
-              "description": "An OCaml bindings generator for JavaScript libraries.",
-              "title": "Goji",
-              "repo_info": {
-                "archived": false,
-                "language": "Rust",
-                "last_commit": "2023-10-19T00:00:00.000Z",
-                "owner": "klakplok",
-                "repo": "goji",
-                "stars": 1075
-              }
-            },
-            {
-              "children": [],
-              "description": "gen_js_api aims at simplifying the creation of OCaml bindings for Javascript libraries.",
-              "title": "gen_js_api",
-              "repo_info": {
-                "archived": false,
-                "language": "Rust",
-                "last_commit": "2023-09-09T00:00:00.000Z",
-                "owner": "LexiFi",
-                "repo": "gen_js_api",
-                "stars": 115
-              }
-            },
-            {
-              "children": [],
-              "description": "has many relevant web libraries — Nethtml html parser, Netasn1 for ASN.1 parsing, Netencoding for Base64, Quoted Printable, URL encoding and HTML escaping, Netmime for MIME processing, etc. See the list of modules in Ocamlnet's manual.",
-              "title": "Ocamlnet"
-            },
-            {
-              "children": [],
-              "description": "Library to build valid (according to the W3C spec) Html and Svg trees.",
-              "title": "tyxml"
-            },
-            {
-              "children": [],
-              "description": "ReScript is a robustly typed language that compiles to efficient and human-readable JavaScript.",
-              "title": "ReScript"
-            }
-          ],
+          "node_type": "group",
+          "title": "Frameworks:",
           "description": null,
-          "title": "Tools:",
-          "repo_info": {
-            "archived": false,
-            "language": "JavaScript",
-            "last_commit": "2023-08-23T00:00:00.000Z",
-            "owner": "mirage",
-            "repo": "ocaml-cow",
-            "stars": 49132
-          }
-        },
-        {
           "children": [
             {
-              "children": [],
-              "description": "Sinatra like web toolkit for OCaml.",
+              "node_type": "item",
+              "kind": "repository",
               "title": "Opium",
+              "description": "Sinatra like web toolkit for OCaml.",
+              "children": [],
               "repo_info": {
                 "archived": false,
                 "language": "TypeScript",
@@ -3490,9 +3090,11 @@
               }
             },
             {
-              "children": [],
-              "description": "Elm architecture and (V)DOM for OCaml",
+              "node_type": "item",
+              "kind": "repository",
               "title": "ocaml-vdom",
+              "description": "Elm architecture and (V)DOM for OCaml",
+              "children": [],
               "repo_info": {
                 "archived": false,
                 "language": "Go",
@@ -3503,9 +3105,11 @@
               }
             },
             {
-              "children": [],
-              "description": "A REST toolkit for OCaml. OCaml webmachine is a layer on top of cohttp that implements a state-machine-based HTTP request processor. It's particularly well-suited for writing RESTful APIs. As the name suggests, this is an OCaml port of the webmachine project.",
+              "node_type": "item",
+              "kind": "repository",
               "title": "webmachine",
+              "description": "A REST toolkit for OCaml. OCaml webmachine is a layer on top of cohttp that implements a state-machine-based HTTP request processor. It's particularly well-suited for writing RESTful APIs. As the name suggests, this is an OCaml port of the webmachine project.",
+              "children": [],
               "repo_info": {
                 "archived": false,
                 "language": "Rust",
@@ -3516,9 +3120,11 @@
               }
             },
             {
-              "children": [],
-              "description": "A library for building dynamic webapps, using Js_of_ocaml",
+              "node_type": "item",
+              "kind": "repository",
               "title": "incr_dom",
+              "description": "A library for building dynamic webapps, using Js_of_ocaml",
+              "children": [],
               "repo_info": {
                 "archived": false,
                 "language": "Java",
@@ -3527,40 +3133,229 @@
                 "repo": "incr_dom",
                 "stars": 19867
               }
-            },
-            {
-              "children": [],
-              "description": "Eliom is a full-featured multi-tier framework, for developing multi-platform Web and mobile apps as 100% OCaml distributed applications. It can also be used for more traditional Web or mobile apps: Web sites, single page applications, REST API, etc.",
-              "title": "Ocsigen Eliom"
-            },
-            {
-              "children": [],
-              "description": "Tidy Web framework for OCaml and ReasonML",
-              "title": "Dream"
-            },
-            {
-              "children": [],
-              "description": "a library which helps to write web applications which run in the browser in a pure functional style.",
-              "title": "fmlib_browser"
             }
-          ],
-          "description": null,
-          "title": "Frameworks:",
-          "repo_info": {
-            "archived": false,
-            "language": "TypeScript",
-            "last_commit": "2022-09-18T00:00:00.000Z",
-            "owner": "rgrinberg",
-            "repo": "opium",
-            "stars": 40471
-          }
+          ]
         },
         {
+          "node_type": "group",
+          "title": "Tools:",
+          "description": null,
           "children": [
             {
+              "node_type": "item",
+              "kind": "repository",
+              "title": "COW",
+              "description": "Caml on the Web (COW) is a set of parsers and syntax extensions to let you manipulate HTML, CSS, XML, JSON and Markdown directly from OCaml code.",
               "children": [],
-              "description": "Hacker news like website with the OCaml framework Ocsigen",
+              "repo_info": {
+                "archived": false,
+                "language": "JavaScript",
+                "last_commit": "2023-08-23T00:00:00.000Z",
+                "owner": "mirage",
+                "repo": "ocaml-cow",
+                "stars": 49132
+              }
+            },
+            {
+              "node_type": "item",
+              "kind": "repository",
+              "title": "jingoo",
+              "description": "OCaml template engine almost compatible with jinja2.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "language": null,
+                "last_commit": "2022-05-22T00:00:00.000Z",
+                "owner": "tategakibunko",
+                "repo": "jingoo",
+                "stars": 46590
+              }
+            },
+            {
+              "node_type": "item",
+              "kind": "repository",
+              "title": "Syndic",
+              "description": "RSS and Atom feed parsing",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "language": "Java",
+                "last_commit": "2022-07-14T00:00:00.000Z",
+                "owner": "Cumulus",
+                "repo": "Syndic",
+                "stars": 40537
+              }
+            },
+            {
+              "node_type": "item",
+              "kind": "repository",
+              "title": "ocaml-uri",
+              "description": "RFC3986 URI parsing library.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "language": "Rust",
+                "last_commit": "2023-09-29T00:00:00.000Z",
+                "owner": "mirage",
+                "repo": "ocaml-uri",
+                "stars": 38095
+              }
+            },
+            {
+              "node_type": "item",
+              "kind": "repository",
+              "title": "routes",
+              "description": "Typed routes for OCaml/ReasonML web applications.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "language": "Python",
+                "last_commit": "2023-10-20T00:00:00.000Z",
+                "owner": "anuragsoni",
+                "repo": "routes",
+                "stars": 33074
+              }
+            },
+            {
+              "node_type": "item",
+              "kind": "repository",
+              "title": "Markup.ml",
+              "description": "Error-recovering streaming HTML5 and XML parsers, serializers.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "language": "Go",
+                "last_commit": "2023-08-02T00:00:00.000Z",
+                "owner": "aantron",
+                "repo": "markup.ml",
+                "stars": 25153
+              }
+            },
+            {
+              "node_type": "item",
+              "kind": "repository",
+              "title": "atdjs",
+              "description": "atd code generator (serialization) for OCaml/js_of_ocaml.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "language": "C++",
+                "last_commit": "2021-07-20T00:00:00.000Z",
+                "owner": "barko",
+                "repo": "atdjs",
+                "stars": 24896
+              }
+            },
+            {
+              "node_type": "item",
+              "kind": "repository",
+              "title": "dispatch",
+              "description": "Path-based dispatching for client- and server-side applications.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "language": null,
+                "last_commit": "2023-12-13T00:00:00.000Z",
+                "owner": "inhabitedtype",
+                "repo": "ocaml-dispatch",
+                "stars": 13020
+              }
+            },
+            {
+              "node_type": "item",
+              "kind": "repository",
+              "title": "Lambda Soup",
+              "description": "Functional HTML scraping and manipulation with CSS selectors, à la Python's Beautiful Soup.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "language": "Go",
+                "last_commit": "2022-05-09T00:00:00.000Z",
+                "owner": "aantron",
+                "repo": "lambda-soup",
+                "stars": 9603
+              }
+            },
+            {
+              "node_type": "item",
+              "kind": "repository",
+              "title": "ocaml-mustache",
+              "description": "mustache.js logic-less templates in OCaml.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "language": null,
+                "last_commit": "2021-04-07T00:00:00.000Z",
+                "owner": "rgrinberg",
+                "repo": "ocaml-mustache",
+                "stars": 7000
+              }
+            },
+            {
+              "node_type": "item",
+              "kind": "repository",
+              "title": "Goji",
+              "description": "An OCaml bindings generator for JavaScript libraries.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "language": "Rust",
+                "last_commit": "2023-10-19T00:00:00.000Z",
+                "owner": "klakplok",
+                "repo": "goji",
+                "stars": 1075
+              }
+            },
+            {
+              "node_type": "item",
+              "kind": "repository",
+              "title": "gen_js_api",
+              "description": "gen_js_api aims at simplifying the creation of OCaml bindings for Javascript libraries.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "language": "Rust",
+                "last_commit": "2023-09-09T00:00:00.000Z",
+                "owner": "LexiFi",
+                "repo": "gen_js_api",
+                "stars": 115
+              }
+            },
+            {
+              "node_type": "group",
+              "title": "js_of_ocaml",
+              "description": "Js_of_ocaml is a compiler of OCaml bytecode to Javascript. It makes it possible to run Ocaml programs in a Web browser.",
+              "children": [
+                {
+                  "node_type": "item",
+                  "kind": "repository",
+                  "title": "commonjs_of_ocaml",
+                  "description": "Easily import and export CommonJS modules from a js_of_ocaml project.",
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "language": "Go",
+                    "last_commit": "2021-12-30T00:00:00.000Z",
+                    "owner": "AngryLawyer",
+                    "repo": "commonjs_of_ocaml",
+                    "stars": 17733
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "node_type": "group",
+          "title": "Open Source Projects:",
+          "description": null,
+          "children": [
+            {
+              "node_type": "item",
+              "kind": "repository",
               "title": "Cumulus",
+              "description": "Hacker news like website with the OCaml framework Ocsigen",
+              "children": [],
               "repo_info": {
                 "archived": false,
                 "language": "TypeScript",
@@ -3570,17 +3365,7 @@
                 "stars": 36541
               }
             }
-          ],
-          "description": null,
-          "title": "Open Source Projects:",
-          "repo_info": {
-            "archived": false,
-            "language": "TypeScript",
-            "last_commit": "2022-07-10T00:00:00.000Z",
-            "owner": "Cumulus",
-            "repo": "Cumulus",
-            "stars": 36541
-          }
+          ]
         }
       ],
       "title": "Web Development"
@@ -3592,6 +3377,7 @@
     "original_repository_sha": "deadbeef",
     "enhanced_repository": "enhansome/enhansome-ocaml",
     "enhanced_repository_description": "enhanced list",
+    "kind": "registry",
     "title": "Awesome OCaml with stars"
   }
 }

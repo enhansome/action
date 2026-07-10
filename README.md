@@ -56,6 +56,56 @@ The action fetches `NARKOZ/guides`'s README, enhances it, writes `README.md` +
 push is authored by `GITHUB_TOKEN`, which does not re-trigger workflows - so this is
 loop-safe even under a `push:` trigger.
 
+## Item kinds (`registry` / `repository`)
+
+Every GitHub node in `README.json` carries an intrinsic `kind` - either `registry`
+(a directory that exists to enable discovery, i.e. another awesome-list) or
+`repository` (a terminal, concrete project):
+
+- `metadata.kind` - the source document's own kind.
+- each item's `kind` - that linked target's kind.
+
+A target is a `registry` iff its README parses to **>= `REGISTRY_MIN_ENTRIES`
+(20)** GitHub-linked list items; otherwise a `repository`. The threshold is a
+pinned code constant (`src/markdown.ts`), calibrated against real READMEs:
+concrete projects top out at ~17 (`chalk`); bulk awesome-lists start far higher,
+so 20 sits just above the project ceiling with margin. It is **not** an action
+input - the emitted kind is trustworthy standalone.
+
+### Items vs. groups (`node_type`)
+
+A list item's identity is its **own** paragraph's GitHub link only — a nested
+descendant's link belongs to a child, not to the item. So each emitted node is
+one of two shapes, discriminated by `node_type`:
+
+- `node_type: "item"` — a genuine GitHub node (its own paragraph links a repo).
+  Carries `kind` (always) and `repo_info` (when the link resolves); may wrap
+  `children`.
+- `node_type: "group"` — a kind-less **container**: an item whose own link is
+  non-GitHub or absent (an editor subheading, a "see also" cluster, an entry
+  linked via its website) but which wraps nested GitHub items. Carries
+  `children` only — never a `kind` or `repo_info`, which would amount to
+  borrowing a child's identity.
+
+Both `section.items` and `item.children` are arrays of `item | group`. Under a
+stars/last-commit sort, groups (which have no repo data of their own) sink below
+the items within their list.
+
+Two consequences worth knowing:
+
+- **Dead target links degrade, never fail the run.** A fetch failure on a linked
+  target (404 / 401 / 403 / throttle-exhausted / 5xx / network) is skipped with a
+  warning: the item is still emitted — without `repo_info`, and with `kind`
+  defaulting to `repository` — and the run continues. Awesome-lists carry endemic
+  dead links, so failing the whole run on the first one would make daily mirrors
+  unusable; the webapp membership backstop recovers any registry mistyped by the
+  default. (The *source* README fetch is still fatal — there is nothing to
+  enhance without it.)
+- **Non-GitHub leaves are dropped from the JSON.** A book/paper/note with no
+  GitHub link and no nested GitHub children is neither an item nor a group, so it
+  carries no `kind` and is omitted from `README.json` (it remains in the enhanced
+  markdown). Preserving these leaves in a separate shape is a future enhancement.
+
 ## Development
 
 | command | what |

@@ -4,9 +4,11 @@
       "description": "Description for the first section.",
       "items": [
         {
-          "children": [],
-          "description": "100 stars",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Repo A",
+          "description": "100 stars",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -17,9 +19,11 @@
           }
         },
         {
-          "children": [],
-          "description": "200 stars",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Repo C",
+          "description": "200 stars",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -30,11 +34,17 @@
           }
         },
         {
+          "node_type": "item",
+          "kind": "repository",
+          "title": "Repo B",
+          "description": "300 stars",
           "children": [
             {
-              "children": [],
-              "description": "50 stars.",
+              "node_type": "item",
+              "kind": "repository",
               "title": "Nested 1",
+              "description": "50 stars.",
+              "children": [],
               "repo_info": {
                 "archived": false,
                 "language": "Shell",
@@ -44,9 +54,7 @@
                 "stars": 42479
               }
             }
-          ],
-          "description": "300 stars",
-          "title": "Repo B"
+          ]
         }
       ],
       "title": "First Section"
@@ -55,9 +63,11 @@
       "description": "Another valid section.",
       "items": [
         {
-          "children": [],
-          "description": "100 stars.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Repo A",
+          "description": "100 stars.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -68,9 +78,11 @@
           }
         },
         {
-          "children": [],
-          "description": "200 stars.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Repo C",
+          "description": "200 stars.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -90,6 +102,7 @@
     "original_repository_sha": "deadbeef",
     "enhanced_repository": "enhansome/enhansome-complex",
     "enhanced_repository_description": "enhanced list",
+    "kind": "repository",
     "title": "My Awesome List with stars"
   }
 }

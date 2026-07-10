@@ -9,9 +9,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "[Cross-platform] - A web development environment for creative coding.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Fragment.tools",
+          "description": "[Cross-platform] - A web development environment for creative coding.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -22,9 +24,11 @@
           }
         },
         {
-          "children": [],
-          "description": "[Cross-platform] - Granular and multi-language (GLSL, HLSL, WGSL, MSL and CUDA) shader library designed for performance and flexibility.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Lygia",
+          "description": "[Cross-platform] - Granular and multi-language (GLSL, HLSL, WGSL, MSL and CUDA) shader library designed for performance and flexibility.",
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": null,
@@ -35,9 +39,11 @@
           }
         },
         {
-          "children": [],
-          "description": "[iOS, Mac] - Open source, live graphics, Swift framework, powered by Metal.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "PixelKit",
+          "description": "[iOS, Mac] - Open source, live graphics, Swift framework, powered by Metal.",
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": "Rust",
@@ -48,9 +54,11 @@
           }
         },
         {
-          "children": [],
-          "description": "[Cross-platform] - HTML5 framework for making generative artwork in JavaScript and the browser.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Canvas-sketch",
+          "description": "[Cross-platform] - HTML5 framework for making generative artwork in JavaScript and the browser.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -61,9 +69,11 @@
           }
         },
         {
-          "children": [],
-          "description": "[iOS, macOS] - Open source, live graphics, async / await, Swift package, powered by Metal.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "AsyncGraphics",
+          "description": "[iOS, macOS] - Open source, live graphics, async / await, Swift package, powered by Metal.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -72,76 +82,6 @@
             "repo": "AsyncGraphics",
             "stars": 1116
           }
-        },
-        {
-          "children": [],
-          "description": "[Cross-platform] - Computer programming language and IDE for visual arts.",
-          "title": "Processing"
-        },
-        {
-          "children": [],
-          "description": "[Cross-platform] - A library that integrates Processing into the Python 3 ecosystem.",
-          "title": "py5"
-        },
-        {
-          "children": [],
-          "description": "[Cross-platform] - Open source library for professional-quality creative coding in C++.",
-          "title": "Cinder"
-        },
-        {
-          "children": [],
-          "description": "[Cross-platform] - Open source C++ toolkit for creative coding.",
-          "title": "openFrameworks"
-        },
-        {
-          "children": [],
-          "description": "[Cross-platform] - Open source data-driven real-time control & visualization platform suited for professional installations in C++, incl. Vulkan renderer.",
-          "title": "NAP"
-        },
-        {
-          "children": [],
-          "description": "[iOS] - Open-source creative coding framework for iOS.",
-          "title": "C4"
-        },
-        {
-          "children": [],
-          "description": "[Mac, Win] - Game engine, but useful for creative coding and installations.",
-          "title": "Unity"
-        },
-        {
-          "children": [],
-          "description": "[Cross-platform] - Open source game engine, that can also be used for all sorts of things.",
-          "title": "Godot"
-        },
-        {
-          "children": [],
-          "description": "[Cross-platform] - Open source, realtime collaborative WebGL engine.",
-          "title": "PlayCanvas"
-        },
-        {
-          "children": [],
-          "description": "[Cross-platform] - GLSL library for building signed distance functions.",
-          "title": "hg_sdf"
-        },
-        {
-          "children": [],
-          "description": "[Cross-platform] - Open-source creative coding framework for the Rust language.",
-          "title": "nannou"
-        },
-        {
-          "children": [],
-          "description": "[Cross-platform] - Open source collection of computational design tools for JavaScript, TypeScript, Clojure and ClojureScript languages.",
-          "title": "thi.ng"
-        },
-        {
-          "children": [],
-          "description": "[Cross-platform] - Open source library for creative coding written in Kotlin.",
-          "title": "OPENRNDR"
-        },
-        {
-          "children": [],
-          "description": "[Cross-platform] - HTML5 framework for building games, uses both a Canvas and WebGL renderer.",
-          "title": "Phaser"
         }
       ],
       "title": "Frameworks • Libraries • Ecosystems"
@@ -150,9 +90,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "Motion design library with visual tools",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Theatre.js",
+          "description": "Motion design library with visual tools",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -163,9 +105,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A Tiny WebGL helper Library.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "twigl",
+          "description": "A Tiny WebGL helper Library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -176,9 +120,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Functional WebGL.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "regl",
+          "description": "Functional WebGL.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -189,9 +135,11 @@
           }
         },
         {
-          "children": [],
-          "description": "WebGL2 Components for Data Visualization.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "luma.gl",
+          "description": "WebGL2 Components for Data Visualization.",
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": "Java",
@@ -202,9 +150,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Lightweight 3d physics engine for javascript",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Oimo.js",
+          "description": "Lightweight 3d physics engine for javascript",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -215,9 +165,11 @@
           }
         },
         {
-          "children": [],
-          "description": "JavaScript 3D library.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "three.js",
+          "description": "JavaScript 3D library.",
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": "Rust",
@@ -228,9 +180,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A WebGL tool set.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Alfrid",
+          "description": "A WebGL tool set.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -241,9 +195,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Direct port of the Bullet physics engine to JavaScript using Emscripten.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Ammo.js",
+          "description": "Direct port of the Bullet physics engine to JavaScript using Emscripten.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -254,9 +210,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A minimal WebGL 2 rendering library.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "picogl.js",
+          "description": "A minimal WebGL 2 rendering library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -267,9 +225,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A lightweight WebGL library.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "lightgl.js",
+          "description": "A lightweight WebGL library.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -280,9 +240,11 @@
           }
         },
         {
-          "children": [],
-          "description": "JavaScript 3D library (WebGL).",
+          "node_type": "item",
+          "kind": "repository",
           "title": "OGL.js",
+          "description": "JavaScript 3D library (WebGL).",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -293,9 +255,11 @@
           }
         },
         {
-          "children": [],
-          "description": "complete JavaScript framework for building 3D games with HTML 5 and WebGL.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Babylon.js",
+          "description": "complete JavaScript framework for building 3D games with HTML 5 and WebGL.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -304,66 +268,6 @@
             "repo": "Babylon.js",
             "stars": 3769
           }
-        },
-        {
-          "children": [],
-          "description": "Open software ecosystem for WebGL, built on top of browserify and npm.",
-          "title": "Stackgl"
-        },
-        {
-          "children": [],
-          "description": "The swiss army knife of vector graphics scripting.",
-          "title": "Paper.js"
-        },
-        {
-          "children": [],
-          "description": "HTML 5 2D rendering engine that uses webGL with canvas fallback.",
-          "title": "Pixi.js"
-        },
-        {
-          "children": [],
-          "description": "JavaScript library that starts with the original goal of Processing.",
-          "title": "p5.js"
-        },
-        {
-          "children": [],
-          "description": "JavaScript library for visualization and creative-coding.",
-          "title": "Pts.js"
-        },
-        {
-          "children": [],
-          "description": "JavaScript canvas library, SVG-to-canvas parser.",
-          "title": "Fabric.js"
-        },
-        {
-          "children": [],
-          "description": "Parametric line drawing for SVG, CNC & laser cutters.",
-          "title": "Maker.js"
-        },
-        {
-          "children": [],
-          "description": "Programmatic 3D modeling in JavaScript.",
-          "title": "OpenJSCAD"
-        },
-        {
-          "children": [],
-          "description": "Minimal JavaScript creative coding framework.",
-          "title": "Sketch.js"
-        },
-        {
-          "children": [],
-          "description": "Two-dimensional drawing api geared towards modern web browsers.",
-          "title": "Two.js"
-        },
-        {
-          "children": [],
-          "description": "A web component for drawing patterns with CSS.",
-          "title": "css-doodle"
-        },
-        {
-          "children": [],
-          "description": "A pseudo-3D engine for canvas & SVG.",
-          "title": "Zdog"
         }
       ],
       "title": "Web Programming • Libraries"
@@ -372,9 +276,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "[Mac]- App to live code GLSL graphics.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Fragment",
+          "description": "[Mac]- App to live code GLSL graphics.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -385,9 +291,11 @@
           }
         },
         {
-          "children": [],
-          "description": "[Cross-platform] - A commandline tool to generate different scalable patterns as SVGs.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Konstrukt",
+          "description": "[Cross-platform] - A commandline tool to generate different scalable patterns as SVGs.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -398,9 +306,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A collection of scripts for creative coding with Unity.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Klak",
+          "description": "A collection of scripts for creative coding with Unity.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -409,56 +319,6 @@
             "repo": "Klak",
             "stars": 12145
           }
-        },
-        {
-          "children": [],
-          "description": "[Cross-platform] - Application for generating 3D structures by specifying a design grammar.",
-          "title": "Structure Synth"
-        },
-        {
-          "children": [],
-          "description": "[Mac] - Powerful 3D design app that enables you to live code 3D form.",
-          "title": "F3"
-        },
-        {
-          "children": [],
-          "description": "[Win] - Modern shader IDE for programmers and FX artists.",
-          "title": "ShaderTool"
-        },
-        {
-          "children": [],
-          "description": "[Mac] - Allows applications to share frames with one another in realtime.",
-          "title": "Syphon"
-        },
-        {
-          "children": [],
-          "description": "Real-time GPU shader editor, live-code performance tool and graphics prototyping sketchpad.",
-          "title": "KodeLife"
-        },
-        {
-          "children": [],
-          "description": "GLSL shaders for use in interactive applications.",
-          "title": "ISF"
-        },
-        {
-          "children": [],
-          "description": "Live-coding console tool that renders GLSL Shaders.",
-          "title": "glslViewer"
-        },
-        {
-          "children": [],
-          "description": "[Cross-platform] - Shoebot is a creative coding environment designed for making vector graphics and animations with Python.",
-          "title": "shoebot"
-        },
-        {
-          "children": [],
-          "description": "[Mac] - Education oriented 2d graphics programming environment based on Python.",
-          "title": "DrawBot"
-        },
-        {
-          "children": [],
-          "description": "Scripting (JS) in InDesign for designers and artists in the spirit of Processing.",
-          "title": "basil.js"
         }
       ],
       "title": "Other"
@@ -477,9 +337,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "example of post-processing effects in ThreeJS.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "ThreeJS post-process example",
+          "description": "example of post-processing effects in ThreeJS.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -490,9 +352,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Greg Tatum explains the basics of WebGL using Regl.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "WebGL Beyond Dom",
+          "description": "Greg Tatum explains the basics of WebGL using Regl.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -503,9 +367,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Using custom vertex and fragment shaders in ThreeJS.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "WebGL Lessons — ThreeJS Shaders",
+          "description": "Using custom vertex and fragment shaders in ThreeJS.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -516,9 +382,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Example on how to use three.js with glslify.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Three glslify example",
+          "description": "Example on how to use three.js with glslify.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -529,9 +397,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A brief introduction to fragment shaders.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "WebGL Lessons — Fragment Shaders",
+          "description": "A brief introduction to fragment shaders.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -542,9 +412,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Phong shading tutorial with glslify.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "GLSL lighting walkthrough",
+          "description": "Phong shading tutorial with glslify.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -555,9 +427,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Good introduction to some of the OpenGL terms.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Modern OpenGL Series",
+          "description": "Good introduction to some of the OpenGL terms.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -568,9 +442,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Shader tutorial in the context of lwjgl-basics.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "lwjgl: Shaders",
+          "description": "Shader tutorial in the context of lwjgl-basics.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -579,191 +455,6 @@
             "repo": "lwjgl-basics",
             "stars": 3163
           }
-        },
-        {
-          "children": [],
-          "description": "Part 1 of an introduction to shaders using threejs.",
-          "title": "Introduction to shaders"
-        },
-        {
-          "children": [],
-          "description": "Introduction to three.js from a creative coder perspective.",
-          "title": "Three.js 101"
-        },
-        {
-          "children": [],
-          "description": "A primer on shaders.",
-          "title": "Shaders: A primer"
-        },
-        {
-          "children": [],
-          "description": "The second part to the previous.",
-          "title": "Shaders: Second stage"
-        },
-        {
-          "children": [],
-          "description": "Introduction to ray tracing.",
-          "title": "Ray Marching and Signed Distance Functions"
-        },
-        {
-          "children": [],
-          "description": "A simple method for creating 3D images.",
-          "title": "Introduction to Ray Tracing"
-        },
-        {
-          "children": [],
-          "description": "Article about FBO/GPGPU particles by @nicoptere.",
-          "title": "FBO particles"
-        },
-        {
-          "children": [],
-          "description": "Article about ray marching with three.js by @nicoptere.",
-          "title": "Ray marching (with THREE.js)"
-        },
-        {
-          "children": [],
-          "description": "Introduction to custom shaders, uniforms, textures and lighting in three.js.",
-          "title": "Custom shaders with Three.JS"
-        },
-        {
-          "children": [],
-          "description": "First part of an introduction to modern OpenGL.",
-          "title": "An intro to modern OpenGL"
-        },
-        {
-          "children": [],
-          "description": "Article about the smooth based primitive union.",
-          "title": "Smooth minimum"
-        },
-        {
-          "children": [],
-          "description": "Collection of distance functions in one centralized place.",
-          "title": "Modeling with distance functions"
-        },
-        {
-          "children": [],
-          "description": "Explains how to create complex 3D shapes inside volumetric shaders.",
-          "title": "Volumetric rendering"
-        },
-        {
-          "children": [],
-          "description": "Book, blog and collection of resources regarding real-time rendering.",
-          "title": "Real-time Rendering"
-        },
-        {
-          "children": [],
-          "description": "Short and sweet introduction to OpenGL shaders by Anton Gerdelan.",
-          "title": "OpenGL 4 Shaders"
-        },
-        {
-          "children": [],
-          "description": "The title says it all. Introduction by Adok.",
-          "title": "On ray casting, ray tracing, ray marching and the like"
-        },
-        {
-          "children": [],
-          "description": "Really good introduction to how basic software rendering works.",
-          "title": "Writing a small software renderer"
-        },
-        {
-          "children": [],
-          "description": "Website with a really good collection of WebGL tutorials.",
-          "title": "WebGL Tutorials"
-        },
-        {
-          "children": [],
-          "description": ", 2, 3 - Beginner introduction on how to create geometry object.",
-          "title": "Generating Geometry: 1"
-        },
-        {
-          "children": [],
-          "description": "Series of tutorials about WebGL, Three.js, and Three.bas.",
-          "title": "Into Vertex Shaders"
-        },
-        {
-          "children": [],
-          "description": "Brief overview over the different coordinate systems throughout the 3D graphics pipeline.",
-          "title": "The Spaces of WebGL"
-        },
-        {
-          "children": [],
-          "description": "Short and sweet online introduction to WebGL.",
-          "title": "WebGL Workshop"
-        },
-        {
-          "children": [],
-          "description": "Fluffy predator with three.js and instanced geometry.",
-          "title": "THREE.js & instanced geometry"
-        },
-        {
-          "children": [],
-          "description": "How to create a particle effects with billboarding and WebGL.",
-          "title": "Particle Effects via Billboards"
-        },
-        {
-          "children": [],
-          "description": "How to create GPGPU particles with regl.",
-          "title": "Beautifully Animate Points with WebGL and regl"
-        },
-        {
-          "children": [],
-          "description": "Introduction to the concepts behind real time directional light shadow mapping.",
-          "title": "WebGL Tutorial: Directional Shadow Mapping without extensions"
-        },
-        {
-          "children": [],
-          "description": "A tutorial and a list of useful resources to use WebGL raymarching and distance functions easily.",
-          "title": "WebGL Quest"
-        },
-        {
-          "children": [],
-          "description": "Introduction to different bump mapping techniques.",
-          "title": "Exploring bump mapping with WebGL"
-        },
-        {
-          "children": [],
-          "description": "Deck on OpenGL/GLSL shader programming.",
-          "title": "OpenGL/GLSL Shader Programming"
-        },
-        {
-          "children": [],
-          "description": "Perlin noise flow field tutorial.",
-          "title": "Particles in a Simplex Noise Flow Field"
-        },
-        {
-          "children": [],
-          "description": "Introduction to flow fields also known as vector fields.",
-          "title": "Flow Fields, Part 1"
-        },
-        {
-          "children": [],
-          "description": "Introduction to flow fields also known as vector fields.",
-          "title": "Flow Fields, Part 2"
-        },
-        {
-          "children": [],
-          "description": "Introduction to 3D graphics programming including shaders, math post-processing etc. from Newcastle University.",
-          "title": "Graphics for Games"
-        },
-        {
-          "children": [],
-          "description": "Introduction to Three.js by Eric Haines.",
-          "title": "Three.js Basics"
-        },
-        {
-          "children": [],
-          "description": "Slides from the SIGGRAPH 2017 WebGL workshop.",
-          "title": "An Interactive Introduction to WebGL and three.js"
-        },
-        {
-          "children": [],
-          "description": "Advice and thoughts on how to get started by Eric Arnebäck.",
-          "title": "How to Start Learning Computer Graphics Programming"
-        },
-        {
-          "children": [],
-          "description": "Deep dive into the importance of gamma.",
-          "title": "What Every Coder Should Know About Gamma"
         }
       ],
       "title": "Shaders • OpenGL • WebGL"
@@ -772,9 +463,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "Workshop for GLSL shaders and graphics programming.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Shader-school",
+          "description": "Workshop for GLSL shaders and graphics programming.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -785,9 +478,11 @@
           }
         },
         {
-          "children": [],
-          "description": "The sequel to shader-school: Learn the WebGL API.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Webgl-workshop",
+          "description": "The sequel to shader-school: Learn the WebGL API.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -796,46 +491,6 @@
             "repo": "webgl-workshop",
             "stars": 14417
           }
-        },
-        {
-          "children": [],
-          "description": "Interactive fragment shader tutorial.",
-          "title": "Fragment-foundry"
-        },
-        {
-          "children": [],
-          "description": "Shadertoy tutorial on raytracing.",
-          "title": "SDF Tutorial 1: box & balloon"
-        },
-        {
-          "children": [],
-          "description": "Shadertoy tutorial on Ray Marching.",
-          "title": "HOWTO: Ray Marching"
-        },
-        {
-          "children": [],
-          "description": "Shadertoy raymarch tutorial.",
-          "title": "Raymarch Tutorial2"
-        },
-        {
-          "children": [],
-          "description": "Shadertoy GLSL 2D Tutorial.",
-          "title": "GLSL 2D Tutorials"
-        },
-        {
-          "children": [],
-          "description": "Shader breakdown by Perlin.",
-          "title": "Bubble Breakdown"
-        },
-        {
-          "children": [],
-          "description": "Interactive Shader-Toy on writing a ray marcher.",
-          "title": "Let's Make A Ray Marcher"
-        },
-        {
-          "children": [],
-          "description": "Interactive Shader-Toy raymarching tutorial.",
-          "title": "Raymarching"
         }
       ],
       "title": "Interactive"
@@ -849,9 +504,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "A Haskell package for L-systems.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "L-systems",
+          "description": "A Haskell package for L-systems.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -862,9 +519,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Grab-bag of modular easing equations.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Eases",
+          "description": "Grab-bag of modular easing equations.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -875,9 +534,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Cheat-sheet for mathematical notation in code form.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Math as code",
+          "description": "Cheat-sheet for mathematical notation in code form.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -888,9 +549,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Collection of JS and GLSL math snippets.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Learning Maths again",
+          "description": "Collection of JS and GLSL math snippets.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -901,9 +564,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Slides about the mathematics of animation (repo).",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Mathematics of Animation",
+          "description": "Slides about the mathematics of animation (repo).",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -914,9 +579,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Math snippets with graphic programming in mind.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Math snippets",
+          "description": "Math snippets with graphic programming in mind.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -925,151 +592,6 @@
             "repo": "math",
             "stars": 5397
           }
-        },
-        {
-          "children": [],
-          "description": "Teaches you the math you need to understand as a programmer.",
-          "title": "Coding Math"
-        },
-        {
-          "children": [],
-          "description": "The principles of painting with maths.",
-          "title": "Formula Animations"
-        },
-        {
-          "children": [],
-          "description": "Visualization of different motion equations.",
-          "title": "Math for Motion"
-        },
-        {
-          "children": [],
-          "description": "Matrix multiplication visualized.",
-          "title": "Matrix Multiplication"
-        },
-        {
-          "children": [],
-          "description": "The most useful rules of basic algebra.",
-          "title": "Algebra rules"
-        },
-        {
-          "children": [],
-          "description": "Fully interactive linear algebra.",
-          "title": "Immersive Math"
-        },
-        {
-          "children": [],
-          "description": "Interactive and visual introduction to image kernels.",
-          "title": "Image Kernels"
-        },
-        {
-          "children": [],
-          "description": "Interactive explanation of sine and cosine.",
-          "title": "Sine and Cosine"
-        },
-        {
-          "children": [],
-          "description": "Perlin noise explained in detail.",
-          "title": "Perlin Noise"
-        },
-        {
-          "children": [],
-          "description": "Tutorial on vector algebra and matrix algebra from the viewpoint of computer graphics.",
-          "title": "Vector Math for 3D Computer Graphics"
-        },
-        {
-          "children": [],
-          "description": "Graph functions, plot data, evaluate equations, explore transformations, and much more.",
-          "title": "Desmos"
-        },
-        {
-          "children": [],
-          "description": "Math for game developers YouTube playlist.",
-          "title": "MFGD"
-        },
-        {
-          "children": [],
-          "description": "Essence of linear algebra YouTube playlist.",
-          "title": "Essence of linear algebra"
-        },
-        {
-          "children": [],
-          "description": "Beautiful and visual introduction to math and quasi physics.",
-          "title": "Sketching with Math and Quasi Physics"
-        },
-        {
-          "children": [],
-          "description": "introduction to 2D and 3D perlin noise.",
-          "title": "Gene Kogan: Perlin Noise"
-        },
-        {
-          "children": [],
-          "description": "High level introduction to matrices.",
-          "title": "Matrix Math and You"
-        },
-        {
-          "children": [],
-          "description": "List of all mathematical symbols and signs.",
-          "title": "Mathematical Symbols"
-        },
-        {
-          "children": [],
-          "description": "Interactive tool to better understand transformation matrices.",
-          "title": "The magnificent 2d matrix"
-        },
-        {
-          "children": [],
-          "description": "JavaScript math snippets for movement.",
-          "title": "Game Dev Movement cheatsheet with examples"
-        },
-        {
-          "children": [],
-          "description": "Maths cheat-sheet for 2D and 3D game-makers.",
-          "title": "Maths & trigonometry cheat sheet for 2D & 3D games"
-        },
-        {
-          "children": [],
-          "description": "Introduction to matrices by Greg Tatum.",
-          "title": "Matrices for Creative Coding"
-        },
-        {
-          "children": [],
-          "description": "Talk by Steven Wittens about bezier curves, procedural generation, physics engines and fractals.",
-          "title": "Making Things With Maths"
-        },
-        {
-          "children": [],
-          "description": "Interactive real-time physics simulations, with formulas and code.",
-          "title": "MyPhysicsLab"
-        },
-        {
-          "children": [],
-          "description": "Explanations of fields like Linear Algebra and Geometry designed to help you develop a visual intuition for what is going on.",
-          "title": "Intuitive Math"
-        },
-        {
-          "children": [],
-          "description": "Introduction to linear interpolation (also known as mix/lerp).",
-          "title": "Linear Interpolation"
-        },
-        {
-          "children": [],
-          "description": "In-depth article on vectors for game math.",
-          "title": "Practical use of Vector Math in Games"
-        },
-        {
-          "children": [],
-          "description": "Tiny guide to shepherding random numbers.",
-          "title": "Shepherding random numbers"
-        },
-        {
-          "children": [],
-          "description": "Tiny guide to shepherding random grids.",
-          "title": "Shepherding random grids"
-        },
-        {
-          "children": [],
-          "description": "Tiny guide to shepherding random growth.",
-          "title": "Shepherding random growth"
         }
       ],
       "title": "Math"
@@ -1078,9 +600,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "Coding Train repo with links to machine learning resources.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Machine Learning",
+          "description": "Coding Train repo with links to machine learning resources.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -1091,9 +615,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Explore how machine learning works, live in the browser.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Teachable Machine",
+          "description": "Explore how machine learning works, live in the browser.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -1102,86 +628,6 @@
             "repo": "teachable-machine",
             "stars": 26589
           }
-        },
-        {
-          "children": [],
-          "description": "Machine learning for artists.",
-          "title": "ml4a"
-        },
-        {
-          "children": [],
-          "description": "Run Keras models (tensorflow backend) in the browser, with GPU support.",
-          "title": "Keras.js"
-        },
-        {
-          "children": [],
-          "description": "Pure JavaScript Multilingual OCR.",
-          "title": "Tesseract.js"
-        },
-        {
-          "children": [],
-          "description": "Cloud machine learning by Google.",
-          "title": "Google ML"
-        },
-        {
-          "children": [],
-          "description": "Open source software library for machine intelligence.",
-          "title": "TensorFlow"
-        },
-        {
-          "children": [],
-          "description": "Deep Learning in your browser.",
-          "title": "ConvNetJS"
-        },
-        {
-          "children": [],
-          "description": "Allows anyone to use machine learning.",
-          "title": "Wekinator"
-        },
-        {
-          "children": [],
-          "description": "Space to share creative Ai projects.",
-          "title": "CreativeAi.net"
-        },
-        {
-          "children": [],
-          "description": "Ai microsite intended to help newcomers get started.",
-          "title": "AI Playbook"
-        },
-        {
-          "children": [],
-          "description": "JavaScript library for training and deploying ML models in the browser and on Node.js.",
-          "title": "TensorFlow.js"
-        },
-        {
-          "children": [],
-          "description": "Fully commented TensorFlow.js demo.",
-          "title": "Hello TensorFlow"
-        },
-        {
-          "children": [],
-          "description": "Friendly machine learning for the web.",
-          "title": "ml5.js"
-        },
-        {
-          "children": [],
-          "description": "Discover open source deep learning code and pretrained models.",
-          "title": "Model Zoo"
-        },
-        {
-          "children": [],
-          "description": "Toolkit that adds artificial intelligence capabilities to design and creative platforms.",
-          "title": "Runway"
-        },
-        {
-          "children": [],
-          "description": "Build, train, and ship custom deep learning models using a simple visual interface.",
-          "title": "Lobe"
-        },
-        {
-          "children": [],
-          "description": "Platform for discovering, sharing, and discussing easy to use and pre-trained machine learning models.",
-          "title": "ModelDepot"
         }
       ],
       "title": "Machine learning • Computer Vision • AI"
@@ -1190,9 +636,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "A resource repository for 3D machine learning.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "3D Machine Learning",
+          "description": "A resource repository for 3D machine learning.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -1203,9 +651,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Curated list of public available datasets, mostly free resources.",
+          "node_type": "item",
+          "kind": "registry",
           "title": "Awesome public datasets",
+          "description": "Curated list of public available datasets, mostly free resources.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -1216,9 +666,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Curated list of Creative Technology groups, companies, studios, collectives and more.",
+          "node_type": "item",
+          "kind": "registry",
           "title": "Awesome creative technology",
+          "description": "Curated list of Creative Technology groups, companies, studios, collectives and more.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -1229,9 +681,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Curated list of livecoding languages and tools.",
+          "node_type": "item",
+          "kind": "registry",
           "title": "Awesome livecoding",
+          "description": "Curated list of livecoding languages and tools.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -1242,9 +696,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Curated list of awesome WebGL libraries, resources and much more.",
+          "node_type": "item",
+          "kind": "registry",
           "title": "Awesome webgl",
+          "description": "Curated list of awesome WebGL libraries, resources and much more.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -1255,9 +711,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Curated list of graphic programming resources.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Graphics resources",
+          "description": "Curated list of graphic programming resources.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -1268,9 +726,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Curated list of awesome HTML5 canvas with examples, related articles and posts.",
+          "node_type": "item",
+          "kind": "registry",
           "title": "Awesome canvas",
+          "description": "Curated list of awesome HTML5 canvas with examples, related articles and posts.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -1281,9 +741,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Curated list of awesome computer vision resources.",
+          "node_type": "item",
+          "kind": "registry",
           "title": "Awesome computer vision",
+          "description": "Curated list of awesome computer vision resources.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -1294,9 +756,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Curated list about Audio Visualization.",
+          "node_type": "item",
+          "kind": "registry",
           "title": "Awesome audio visualization",
+          "description": "Curated list about Audio Visualization.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -1307,9 +771,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Curated list of recommended research papers and other readings on data visualization.",
+          "node_type": "item",
+          "kind": "registry",
           "title": "Awesome visualization research",
+          "description": "Curated list of recommended research papers and other readings on data visualization.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -1320,9 +786,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Curated list of computer graphics tutorials and resources.",
+          "node_type": "item",
+          "kind": "registry",
           "title": "Awesome graphics",
+          "description": "Curated list of computer graphics tutorials and resources.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -1333,9 +801,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Curated list of game development resources to make magic happen.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Magic tools",
+          "description": "Curated list of game development resources to make magic happen.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -1346,9 +816,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Curated list of awesome OpenGL libraries, debuggers and resources.",
+          "node_type": "item",
+          "kind": "registry",
           "title": "Awesome opengl",
+          "description": "Curated list of awesome OpenGL libraries, debuggers and resources.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -1357,11 +829,6 @@
             "repo": "awesome-opengl",
             "stars": 429
           }
-        },
-        {
-          "children": [],
-          "description": "Curated list from 2013.",
-          "title": "Link collection of ray marching on the GPU"
         }
       ],
       "title": "Related"
@@ -1378,6 +845,7 @@
     "original_repository_sha": "deadbeef",
     "enhanced_repository": "enhansome/enhansome-creative-coding",
     "enhanced_repository_description": "enhanced list",
+    "kind": "registry",
     "title": "Awesome Creative Coding with stars"
   }
 }

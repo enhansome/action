@@ -14,9 +14,11 @@
       "description": "By targeting the right place to post your job offer to, you're increasing your chances of targeting the right candidates.",
       "items": [
         {
-          "children": [],
-          "description": "List of companies without the kind of CS trivia questions that are associated with bad interview practices.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Hiring Without Whiteboards",
+          "description": "List of companies without the kind of CS trivia questions that are associated with bad interview practices.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -27,9 +29,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Niche job boards by domains, technology, roles and area.",
+          "node_type": "item",
+          "kind": "registry",
           "title": "Awesome Job Boards",
+          "description": "Niche job boards by domains, technology, roles and area.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -46,9 +50,11 @@
       "description": "List of questions that can be used when vetting potential candidates, and topics to draw inspiration from to be used as conversation starters.",
       "items": [
         {
-          "children": [],
-          "description": "An outline on how to recruit for engineering manager roles.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Engineering Leadership Interviews",
+          "description": "An outline on how to recruit for engineering manager roles.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -59,9 +65,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Questions to ask the company during your interview. Be prepared to answer them as a manager.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Reverse interview",
+          "description": "Questions to ask the company during your interview. Be prepared to answer them as a manager.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -72,9 +80,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A great source of inspiration.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Back-End Developer Interview Questions",
+          "description": "A great source of inspiration.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -83,31 +93,6 @@
             "repo": "Back-End-Developer-Interview-Questions",
             "stars": 17757
           }
-        },
-        {
-          "children": [],
-          "description": "Starts with anecdote of developers using a job interview as a vehicle to demonstrate their superiority. Then the author details a reasonable interview process that is trying to not waste anyone's time.",
-          "title": "The Technical Interview is an Ego Trip"
-        },
-        {
-          "children": [],
-          "description": "“1) Cut-Through on Crappy Tasks; 2) Knowing How to Finish; 3) Knowing How to Start; 4) Giving (And Receiving) Diagonal Feedback; 5) Harnessing the Value of Intangibles.”",
-          "title": "The Intangible Skills You Can't Interview For"
-        },
-        {
-          "children": [],
-          "description": "A sample of question to ask in job interviews to try to understand the values of a company.",
-          "title": "Culture Queries"
-        },
-        {
-          "children": [],
-          "description": "The essential of Who, a popular book on recruiting executives.",
-          "title": "Book Summary of \"Who: The A Method for Hiring\""
-        },
-        {
-          "children": [],
-          "description": ") - Examples in which developers that might pass tough job interview just fine are bringing negative value later.",
-          "title": "“It's true that not all developers make positive contributions, however, I think that blaming \"lowering hiring standards\" (…) is a complete red herring.” (source"
         }
       ],
       "title": "Interview"
@@ -116,9 +101,11 @@
       "description": "The absence of coding exercise will left the door open to fraud. OTOH, if elitist challenges decrease the number of false-positive, you will pass on perfectly capable and great developers. Now it is your job as manager to find balance between these two extremes, and set the tone on how to have the candidate demonstrate coding skills.",
       "items": [
         {
-          "children": [],
-          "description": "A satire of over-engineering for the sake of enterprise-grade software.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "FizzBuzz Enterprise Edition",
+          "description": "A satire of over-engineering for the sake of enterprise-grade software.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -129,9 +116,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A huge database of questions sorted by topic to get inspiration from.",
+          "node_type": "item",
+          "kind": "registry",
           "title": "Awesome Interviews",
+          "description": "A huge database of questions sorted by topic to get inspiration from.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -140,31 +129,6 @@
             "repo": "awesome-interview-questions",
             "stars": 1599
           }
-        },
-        {
-          "children": [],
-          "description": "“Instead of writing code, consider having the candidate read existing code and talk about how it works. 1) Reading code is 95% of what a developer does as part of their job. 2) A candidate can tell you a lot about their programming skill in the first five minutes of reading. 3) Stress is your enemy because it raises adrenaline which lowers IQ by several points, causing you to miss good candidates.”",
-          "title": "How to Freaking Find Great Developers By Having Them Read Code"
-        },
-        {
-          "children": [],
-          "description": "“When it comes to writing code, the number one most important skill is how to keep a tangle of features from collapsing under the weight of its own complexity.”",
-          "title": "Organizational Skills Beat Algorithmic Wizardry"
-        },
-        {
-          "children": [],
-          "description": "The dark side on relying too much on algorithm challenges.",
-          "title": "The Horrifically Dystopian World of Software Engineering Interviews"
-        },
-        {
-          "children": [],
-          "description": "“Designed to help filter out the 99.5% of programming job candidates who can't seem to program their way out of a wet paper bag.”",
-          "title": "Fizz Buzz Test"
-        },
-        {
-          "children": [],
-          "description": "Five multiple-choice questions to easily separate the real software engineers from the rest.",
-          "title": "FizzBuzz 2.0: Pragmatic Programming Questions for Software Engineers"
         }
       ],
       "title": "Coding Challenge"
@@ -173,9 +137,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "Laws, Theories, Principles and Patterns that developers will find useful.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "hacker-laws",
+          "description": "Laws, Theories, Principles and Patterns that developers will find useful.",
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": "Shell",
@@ -186,9 +152,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A list of books, web pages, and videos about how to design better organizations, divided into 3 categories: organization and motivation, health and wellness, and software development specific.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "High Performance Organizations Reading List",
+          "description": "A list of books, web pages, and videos about how to design better organizations, divided into 3 categories: organization and motivation, health and wellness, and software development specific.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -197,56 +165,6 @@
             "repo": "High-Performance-Organizations-Reading-List",
             "stars": 2950
           }
-        },
-        {
-          "children": [],
-          "description": "There is a spectrum between perfect efficiency and being completely flexible. This article explores ecosystems and the flows of material and energy between different organisms within the ecosystem. (hinted by HN comment)",
-          "title": "Adaptation vs adaptability"
-        },
-        {
-          "children": [],
-          "description": "If you still doubt management culture could make or break an industry: “inefficient management practices have kept southern European firms from taking full advantage of the IT revolution”.",
-          "title": "The IT revolution and southern Europe's two lost decades"
-        },
-        {
-          "children": [],
-          "description": "“The people are smarter, your manager (and their manager) cares a lot about you and it's easy to move.”",
-          "title": "Meaningful differences that makes Google offices more productive"
-        },
-        {
-          "children": [],
-          "description": "“It's harder to be kind than clever”, or put another way by Abraham Joshua Heschel: “When I was young, I used to admire intelligent people; as I grow older, I admire kind people.”",
-          "title": "It's Not Enough to Be Right—You Also Have to Be Kind"
-        },
-        {
-          "children": [],
-          "description": ").",
-          "title": "“It is not your job to protect people (particularly senior management) from the consequences of their decisions. Make your decisions in your own best interest; it is up to the organization to make sure that your interest aligns with theirs.” (source"
-        },
-        {
-          "children": [],
-          "description": ") - At one point, even with the most unselfish of intentions, your attempts to elevate the culture might stall. It is not fair, but it's probably the time to leave.",
-          "title": "“If you cannot disrupt a perverted culture by introducing a new culture, the politics of the perverted culture will work against you until you break, align, or leave. It is not unwise to leave before you break and it is easier to leave before you align.” (source"
-        },
-        {
-          "children": [],
-          "description": "“1. Change you; 2. Change the other; 3. Fly; 4. Stay and suffer.” A more concise way of saying the same thing as above.",
-          "title": "You have only 4 options"
-        },
-        {
-          "children": [],
-          "description": "“The actual company values, as opposed to the nice-sounding values, are shown by who gets rewarded, promoted, or let go.”",
-          "title": "Netflix Culture"
-        },
-        {
-          "children": [],
-          "description": "Scaling systems is not only a technical challenge. It has to be about teams and culture too. One lesson learned from the early days of AWS: “Giving developers operational responsibilities has greatly enhanced the quality of the services, both from a customer and a technology point of view. (…) You build it, you run it.”",
-          "title": "A Conversation with Werner Vogels, Learning from the Amazon technology platform"
-        },
-        {
-          "children": [],
-          "description": "A compilation of anonymous sources from AWS which ehoes the interview above: “teams are ostensibly autonomous and can make any important decision needed to meet their goals.”",
-          "title": "The principles of Amazon service-oriented collaboration"
         }
       ],
       "title": "Culture"
@@ -265,9 +183,11 @@
       "description": "The Product Manager is supposed to be the voice of the market. Here are more links on the role and its reach.",
       "items": [
         {
-          "children": [],
-          "description": "A reference. All the missing pieces are found below.",
+          "node_type": "item",
+          "kind": "registry",
           "title": "Awesome Product Management",
+          "description": "A reference. All the missing pieces are found below.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -278,9 +198,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A satire with a grain of truth, especially the comparison between the basic vs experienced level.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "How to exit vim, the Product Manager way",
+          "description": "A satire with a grain of truth, especially the comparison between the basic vs experienced level.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -291,9 +213,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Resources, interviews, case studies, sample products & projects, communities, open source tools, free & paid services on product management, for technical people to learn the field.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Open Product Management",
+          "description": "Resources, interviews, case studies, sample products & projects, communities, open source tools, free & paid services on product management, for technical people to learn the field.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -302,26 +226,6 @@
             "repo": "open-product-management",
             "stars": 5080
           }
-        },
-        {
-          "children": [],
-          "description": ")",
-          "title": "“You're the broker for a lot of unstructured information and have to fend off all kinds of disruptive influences to land even close to where you're trying to go.” (source"
-        },
-        {
-          "children": [],
-          "description": "A set of heuristics on tech companies and the ecosystem they live in.",
-          "title": "Things Many People Find Too Obvious To Have Told You Already"
-        },
-        {
-          "children": [],
-          "description": "A simple set of question which helped DARPA evaluates research programs to generate big rewards by taking big risks.",
-          "title": "The Heilmeier Catechism"
-        },
-        {
-          "children": [],
-          "description": "Lots of wisdom about space program management.",
-          "title": "Akin's Laws of Spacecraft Design"
         }
       ],
       "title": "Product Management"
@@ -358,6 +262,7 @@
     "original_repository_sha": "deadbeef",
     "enhanced_repository": "enhansome/enhansome-engineering-team-management",
     "enhanced_repository_description": "enhanced list",
+    "kind": "registry",
     "title": "Awesome engineering team management with stars"
   }
 }

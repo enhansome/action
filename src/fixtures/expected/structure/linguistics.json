@@ -9,9 +9,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "Early linguistical analysis and natural language processing library for Haxe.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Haxe-linguistics",
+          "description": "Early linguistical analysis and natural language processing library for Haxe.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -22,9 +24,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A utility for finding Typo-Bridges.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "tyo",
+          "description": "A utility for finding Typo-Bridges.",
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": "Python",
@@ -35,9 +39,11 @@
           }
         },
         {
-          "children": [],
-          "description": "General natural language tools for Node.js.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Natural",
+          "description": "General natural language tools for Node.js.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -48,9 +54,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Nice alternative for spacy (see above).",
+          "node_type": "item",
+          "kind": "repository",
           "title": "textblob-de",
+          "description": "Nice alternative for spacy (see above).",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -61,9 +69,11 @@
           }
         },
         {
-          "children": [],
-          "description": "An open source Python library for processing morphologically rich and, for the most part, endangered Uralic languages. It can do morphological analysis, generation, lemmatization, disambiguation and lexical lookup for a great many Uralic languages.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "UralicNLP",
+          "description": "An open source Python library for processing morphologically rich and, for the most part, endangered Uralic languages. It can do morphological analysis, generation, lemmatization, disambiguation and lexical lookup for a great many Uralic languages.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -72,41 +82,6 @@
             "repo": "uralicNLP",
             "stars": 15490
           }
-        },
-        {
-          "children": [],
-          "description": "Tools for Analysing Research Data",
-          "title": "CLARIN-D web tools"
-        },
-        {
-          "children": [],
-          "description": "Software for corpus linguists and text/data mining enthusiasts. The CorpusExplorer combines over 50 interactive visualizations under a user-friendly interface.",
-          "title": "CorpusExplorer"
-        },
-        {
-          "children": [],
-          "description": "The most complete platform for building Python programs to work with human language data.",
-          "title": "Natural Language ToolKit (NLTK)"
-        },
-        {
-          "children": [],
-          "description": "Snowball is a language in which stemming algorithms can be easily represented.",
-          "title": "Snowball"
-        },
-        {
-          "children": [],
-          "description": "Industrial-strength National Language Processing in Python.",
-          "title": "Spacy"
-        },
-        {
-          "children": [],
-          "description": ", webservice via WebLicht",
-          "title": "Mate Tools"
-        },
-        {
-          "children": [],
-          "description": "Easy-to-use text annotation tool for teams with most comprehensive auto-annotation features. Supports NER, relations and document classification as well as OCR annotation for invoice labeling.",
-          "title": "UBIAI"
         }
       ],
       "title": "Platforms and toolkits"
@@ -115,9 +90,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "JSON formatted Pan-Romance word lists.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "EuroRomCom Data",
+          "description": "JSON formatted Pan-Romance word lists.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -128,9 +105,11 @@
           }
         },
         {
-          "children": [],
-          "description": null,
+          "node_type": "item",
+          "kind": "repository",
           "title": "OpinionSpam",
+          "description": null,
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -141,9 +120,11 @@
           }
         },
         {
-          "children": [],
-          "description": null,
+          "node_type": "item",
+          "kind": "repository",
           "title": "DysList (list of dyslexic errors)",
+          "description": null,
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -152,56 +133,6 @@
             "repo": "DysListGerman",
             "stars": 5589
           }
-        },
-        {
-          "children": [],
-          "description": null,
-          "title": "Araneum Germanicum"
-        },
-        {
-          "children": [],
-          "description": "German corpus based on CommonCrawl",
-          "title": "CEHugeWebCorpus"
-        },
-        {
-          "children": [],
-          "description": null,
-          "title": "Digitales Wörterbuch der deutschen Sprache (DWDS)"
-        },
-        {
-          "children": [],
-          "description": "(CommonCrawl)",
-          "title": "GC4 Corpus"
-        },
-        {
-          "children": [],
-          "description": "German Reference Corpus",
-          "title": "IDS Corpora"
-        },
-        {
-          "children": [],
-          "description": "sampled sentences in different languages.",
-          "title": "Leipzig Corpora Collection"
-        },
-        {
-          "children": [],
-          "description": "big german internet corpus",
-          "title": "SdeWaC"
-        },
-        {
-          "children": [],
-          "description": null,
-          "title": "C-WEP"
-        },
-        {
-          "children": [],
-          "description": null,
-          "title": "Falko"
-        },
-        {
-          "children": [],
-          "description": null,
-          "title": "Litkey"
         }
       ],
       "title": "Data sets"
@@ -210,9 +141,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": null,
+          "node_type": "item",
+          "kind": "repository",
           "title": "german-transformer-training",
+          "description": null,
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -223,9 +156,11 @@
           }
         },
         {
-          "children": [],
-          "description": null,
+          "node_type": "item",
+          "kind": "repository",
           "title": "Sentence Transformers",
+          "description": null,
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -236,9 +171,11 @@
           }
         },
         {
-          "children": [],
-          "description": null,
+          "node_type": "item",
+          "kind": "repository",
           "title": "GerPT2",
+          "description": null,
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -249,9 +186,11 @@
           }
         },
         {
-          "children": [],
-          "description": null,
+          "node_type": "item",
+          "kind": "repository",
           "title": "dbmdz BERT models",
+          "description": null,
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -262,9 +201,11 @@
           }
         },
         {
-          "children": [],
-          "description": "(NER exploration)",
+          "node_type": "item",
+          "kind": "repository",
           "title": "GermLM",
+          "description": "(NER exploration)",
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": "JavaScript",
@@ -275,9 +216,11 @@
           }
         },
         {
-          "children": [],
-          "description": null,
+          "node_type": "item",
+          "kind": "repository",
           "title": "Evaluating German Transformer Language Models with Syntactic Agreement Tests",
+          "description": null,
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -288,9 +231,11 @@
           }
         },
         {
-          "children": [],
-          "description": null,
+          "node_type": "item",
+          "kind": "repository",
           "title": "German ELMo Model",
+          "description": null,
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -299,11 +244,6 @@
             "repo": "german-elmo-model",
             "stars": 16466
           }
-        },
-        {
-          "children": [],
-          "description": null,
-          "title": "Deepset German BERT model"
         }
       ],
       "title": "Deep learning models and transformers"
@@ -317,9 +257,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": null,
+          "node_type": "item",
+          "kind": "registry",
           "title": "Awesome Community-Curated NLP List",
+          "description": null,
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -330,9 +272,11 @@
           }
         },
         {
-          "children": [],
-          "description": null,
+          "node_type": "item",
+          "kind": "repository",
           "title": "nlp-datasets",
+          "description": null,
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -343,9 +287,11 @@
           }
         },
         {
-          "children": [],
-          "description": null,
+          "node_type": "item",
+          "kind": "repository",
           "title": "Indonesian NLP",
+          "description": null,
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -356,9 +302,11 @@
           }
         },
         {
-          "children": [],
-          "description": null,
+          "node_type": "item",
+          "kind": "repository",
           "title": "Norwegian NLP resources",
+          "description": null,
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -369,9 +317,11 @@
           }
         },
         {
-          "children": [],
-          "description": null,
+          "node_type": "item",
+          "kind": "registry",
           "title": "awesome-spanish-nlp",
+          "description": null,
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": "Python",
@@ -382,9 +332,11 @@
           }
         },
         {
-          "children": [],
-          "description": null,
+          "node_type": "item",
+          "kind": "registry",
           "title": "awesome-hungarian-nlp",
+          "description": null,
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -395,9 +347,11 @@
           }
         },
         {
-          "children": [],
-          "description": "& nlp",
+          "node_type": "item",
+          "kind": "repository",
           "title": "GitHub topics corpus-linguistics",
+          "description": "& nlp",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -408,9 +362,11 @@
           }
         },
         {
-          "children": [],
-          "description": null,
+          "node_type": "item",
+          "kind": "repository",
           "title": "German NLP resources",
+          "description": null,
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -421,9 +377,11 @@
           }
         },
         {
-          "children": [],
-          "description": null,
+          "node_type": "item",
+          "kind": "registry",
           "title": "awesome-nlp-polish",
+          "description": null,
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -434,9 +392,11 @@
           }
         },
         {
-          "children": [],
-          "description": null,
+          "node_type": "item",
+          "kind": "registry",
           "title": "awesome-nlp",
+          "description": null,
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -447,9 +407,11 @@
           }
         },
         {
-          "children": [],
-          "description": null,
+          "node_type": "item",
+          "kind": "repository",
           "title": "NLP-progress",
+          "description": null,
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -460,9 +422,11 @@
           }
         },
         {
-          "children": [],
-          "description": null,
+          "node_type": "item",
+          "kind": "registry",
           "title": "awesome-danish",
+          "description": null,
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -473,9 +437,11 @@
           }
         },
         {
-          "children": [],
-          "description": null,
+          "node_type": "item",
+          "kind": "registry",
           "title": "awesome Information Retrieval",
+          "description": null,
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -486,9 +452,11 @@
           }
         },
         {
-          "children": [],
-          "description": null,
+          "node_type": "item",
+          "kind": "registry",
           "title": "awesome-chinese-nlp",
+          "description": null,
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -497,21 +465,6 @@
             "repo": "Awesome-Chinese-NLP",
             "stars": 3086
           }
-        },
-        {
-          "children": [],
-          "description": null,
-          "title": "15 most popular books on good reads"
-        },
-        {
-          "children": [],
-          "description": null,
-          "title": "/r/LanguageTechnology/"
-        },
-        {
-          "children": [],
-          "description": null,
-          "title": "M. Weisser's list of NLP/Computational Linguistics Resources"
         }
       ],
       "title": "Lists"
@@ -523,6 +476,7 @@
     "original_repository_sha": "deadbeef",
     "enhanced_repository": "enhansome/enhansome-linguistics",
     "enhanced_repository_description": "enhanced list",
+    "kind": "registry",
     "title": "Awesome linguistics with stars"
   }
 }

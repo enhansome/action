@@ -70,6 +70,7 @@ vi.mock('./github.js', async () => {
     ...actual,
     makeOctokit: (() => ({})) as unknown as typeof actual.makeOctokit,
     getRepoInfo: deterministicGetRepoInfo,
+    getReadme: deterministicGetReadme,
   };
 });
 
@@ -83,6 +84,30 @@ function deterministicGetRepoInfo(
   const info =
     `${owner}/${repo}` === 'user/repo-b' ? null : generateRepoInfo(owner, repo);
   return Promise.resolve(info);
+}
+
+// Deterministic per-item README so the golden suite stays offline AND exercises
+// the per-item `registry` classification path end-to-end. The unmocked getReadme
+// is called with the `{}` stand-in octokit, so it throws (`octokit.rest` is
+// undefined) and every kind fetch is skipped -> every item defaults to
+// `repository`, leaving `registry` only ever on metadata. To fix that, a repo
+// whose name contains "awesome" is treated as a registry (its README parses with
+// well over REGISTRY_MIN_ENTRIES GitHub-linked items); everything else is a plain
+// project README. Real awesome-lists overwhelmingly classify as registries, so
+// this also matches production behavior for the bulk of those targets.
+function deterministicGetReadme(
+  _octokit: unknown,
+  _owner: string,
+  repo: string,
+): Promise<string> {
+  if (/awesome/i.test(repo)) {
+    const lines = ['# Awesome\n'];
+    for (let i = 0; i < 30; i++) {
+      lines.push(`- [item-${i}](https://github.com/example/item-${i})`);
+    }
+    return Promise.resolve(lines.join('\n'));
+  }
+  return Promise.resolve('# project\n');
 }
 
 // --- fixture inputs ---------------------------------------------------------

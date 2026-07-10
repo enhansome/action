@@ -4,9 +4,11 @@
       "description": "Displaying data from external services in a pinned gist.",
       "items": [
         {
-          "children": [],
-          "description": "Update a pinned gist to show stack overflow stats.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "stackoverflow-stats-box",
+          "description": "Update a pinned gist to show stack overflow stats.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -17,9 +19,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Update a pinned gist to contain random IDE shortcut",
+          "node_type": "item",
+          "kind": "repository",
           "title": "shortcut-box",
+          "description": "Update a pinned gist to contain random IDE shortcut",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -30,62 +34,11 @@
           }
         },
         {
-          "children": [
-            {
-              "children": [],
-              "description": "Update a pinned gist to show your top leetcode skills.",
-              "title": "leetcode-skills-box",
-              "repo_info": {
-                "archived": false,
-                "language": "Rust",
-                "last_commit": "2021-05-02T00:00:00.000Z",
-                "owner": "tbeachill",
-                "repo": "leetcode-skills-box",
-                "stars": 46975
-              }
-            },
-            {
-              "children": [],
-              "description": "Update a pinned gist to show leetcode solved problem.",
-              "title": "leetcode-solved-box",
-              "repo_info": {
-                "archived": false,
-                "language": "Python",
-                "last_commit": "2021-08-01T00:00:00.000Z",
-                "owner": "Pudding124",
-                "repo": "leetcode-solved-box",
-                "stars": 41884
-              }
-            },
-            {
-              "children": [],
-              "description": "Update a pinned gist to show your LeetCode stats.",
-              "title": "leetcode-box",
-              "repo_info": {
-                "archived": false,
-                "language": "Ruby",
-                "last_commit": "2021-10-06T00:00:00.000Z",
-                "owner": "puiiyuen",
-                "repo": "leetcode-box",
-                "stars": 18818
-              }
-            }
-          ],
-          "description": ")",
-          "title": "LeetCode (https://leetcode.com/",
-          "repo_info": {
-            "archived": false,
-            "language": "Rust",
-            "last_commit": "2021-05-02T00:00:00.000Z",
-            "owner": "tbeachill",
-            "repo": "leetcode-skills-box",
-            "stars": 46975
-          }
-        },
-        {
-          "children": [],
-          "description": "Update a gist to contain global or country specific coronavirus stats.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "covid-box",
+          "description": "Update a gist to contain global or country specific coronavirus stats.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -96,9 +49,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Update a pinned gist to contain your Chess.com Ratings.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "chess-com-box-py",
+          "description": "Update a pinned gist to contain your Chess.com Ratings.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -109,9 +64,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Update a pinned gist to contain your Todoist productivity stats",
+          "node_type": "item",
+          "kind": "repository",
           "title": "todoist-box",
+          "description": "Update a pinned gist to contain your Todoist productivity stats",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -122,9 +79,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Update a pinned gist to show your latest YouTube videos",
+          "node_type": "item",
+          "kind": "repository",
           "title": "youtube-box",
+          "description": "Update a pinned gist to show your latest YouTube videos",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -135,9 +94,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Update a pinned gist to contain your media center stats from Trakt.tv.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "movie-box",
+          "description": "Update a pinned gist to contain your media center stats from Trakt.tv.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -148,9 +109,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Update a pinned gist to contain the latest user status about books/movies/music from Douban.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "douban-box",
+          "description": "Update a pinned gist to contain the latest user status about books/movies/music from Douban.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -161,9 +124,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Update a pinned gist to contain your latest reads from goodreads",
+          "node_type": "item",
+          "kind": "repository",
           "title": "book-box",
+          "description": "Update a pinned gist to contain your latest reads from goodreads",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -174,49 +139,11 @@
           }
         },
         {
-          "children": [
-            {
-              "children": [],
-              "description": "Update a pinned gist to contain your weekly WakaTime stats.",
-              "title": "waka-box",
-              "repo_info": {
-                "archived": false,
-                "language": "C++",
-                "last_commit": "2021-09-28T00:00:00.000Z",
-                "owner": "matchai",
-                "repo": "waka-box",
-                "stars": 37826
-              }
-            },
-            {
-              "children": [],
-              "description": "A Golang implementation of waka-box. Update a pinned gist to contain your weekly WakaTime stats.",
-              "title": "waka-box-go",
-              "repo_info": {
-                "archived": true,
-                "language": "Ruby",
-                "last_commit": "2023-08-07T00:00:00.000Z",
-                "owner": "YouEclipse",
-                "repo": "waka-box-go",
-                "stars": 5148
-              }
-            }
-          ],
-          "description": ")",
-          "title": "WakaTime (https://wakatime.com/",
-          "repo_info": {
-            "archived": false,
-            "language": "C++",
-            "last_commit": "2021-09-28T00:00:00.000Z",
-            "owner": "matchai",
-            "repo": "waka-box",
-            "stars": 37826
-          }
-        },
-        {
-          "children": [],
-          "description": "Update a pinned gist to contain your weekly listening report on Last.fm.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "music-box",
+          "description": "Update a pinned gist to contain your weekly listening report on Last.fm.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -227,9 +154,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Update a pinned gist to contain a random hitokoto.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "hitokoto-box",
+          "description": "Update a pinned gist to contain a random hitokoto.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -240,9 +169,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Update a pinned gist to display your osu! stats.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "osu-box",
+          "description": "Update a pinned gist to display your osu! stats.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -253,9 +184,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Update a pinned gist to show solved.ac profile.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "solvedac-box",
+          "description": "Update a pinned gist to show solved.ac profile.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -266,9 +199,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Update a pinned gist to contain your latest activity from MyAnimeList.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "mal-box",
+          "description": "Update a pinned gist to contain your latest activity from MyAnimeList.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -279,9 +214,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Update a pinned gist to show your Genshin Impact / Honkai: Star Rail play stats.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "hoyolab-box",
+          "description": "Update a pinned gist to show your Genshin Impact / Honkai: Star Rail play stats.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -292,9 +229,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Update a pinned gist with Monkeytype Personal Bests",
+          "node_type": "item",
+          "kind": "repository",
           "title": "monkeytype-box",
+          "description": "Update a pinned gist with Monkeytype Personal Bests",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -305,9 +244,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Update a pinned gist to contain your weekly listening report on Netease Cloud Music.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "netease-music-box",
+          "description": "Update a pinned gist to contain your weekly listening report on Netease Cloud Music.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -318,9 +259,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Update a pinned gist to show your latest dev.to blog post.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "blog-box",
+          "description": "Update a pinned gist to show your latest dev.to blog post.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -331,9 +274,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Update a pinned gist to contain your YTD exercise metrics from Strava.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "strava-box",
+          "description": "Update a pinned gist to contain your YTD exercise metrics from Strava.",
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": "Ruby",
@@ -344,9 +289,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Update a pinned gist to contain your weekly Toggl time tracking stats",
+          "node_type": "item",
+          "kind": "repository",
           "title": "toggl-box",
+          "description": "Update a pinned gist to contain your weekly Toggl time tracking stats",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -357,9 +304,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Update a pinned gist to show your medium stats and latest articles.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "medium-stat-box",
+          "description": "Update a pinned gist to show your medium stats and latest articles.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -370,62 +319,11 @@
           }
         },
         {
-          "children": [
-            {
-              "children": [],
-              "description": "Update a pinned gist to contain your weekly top tracks on Spotify.",
-              "title": "spotify-box",
-              "repo_info": {
-                "archived": false,
-                "language": "Python",
-                "last_commit": "2022-08-26T00:00:00.000Z",
-                "owner": "izayl",
-                "repo": "spotify-box",
-                "stars": 19494
-              }
-            },
-            {
-              "children": [],
-              "description": "Update a pinned gist to show your weekly/monthly/all-time top Spotify tracks/artists.",
-              "title": "spotify-box",
-              "repo_info": {
-                "archived": false,
-                "language": "Shell",
-                "last_commit": "2023-03-29T00:00:00.000Z",
-                "owner": "Aveek-Saha",
-                "repo": "spotify-box",
-                "stars": 14279
-              }
-            },
-            {
-              "children": [],
-              "description": "Update a pinned gist to contain your monthly top artist on Spotify.",
-              "title": "spotify-gist",
-              "repo_info": {
-                "archived": false,
-                "language": "JavaScript",
-                "last_commit": "2023-04-25T00:00:00.000Z",
-                "owner": "mporracindie",
-                "repo": "spotify-gist",
-                "stars": 6252
-              }
-            }
-          ],
-          "description": ")",
-          "title": "Spotify (https://spotify.com/",
-          "repo_info": {
-            "archived": false,
-            "language": "Python",
-            "last_commit": "2022-08-26T00:00:00.000Z",
-            "owner": "izayl",
-            "repo": "spotify-box",
-            "stars": 19494
-          }
-        },
-        {
-          "children": [],
-          "description": "Update a pinned gist to contain your latest Bilibili videos.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "bilibili-box",
+          "description": "Update a pinned gist to contain your latest Bilibili videos.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -436,9 +334,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Update a pinned gist to show your Bilibili stats and your latest videos.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "bilibili-gist-py",
+          "description": "Update a pinned gist to show your Bilibili stats and your latest videos.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -449,9 +349,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Update a pinned gist to contain your Steam playtime leaderboard.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "steam-box",
+          "description": "Update a pinned gist to contain your Steam playtime leaderboard.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -462,9 +364,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Update a pinned gist to contain the latest activity from AniList.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "neko-box",
+          "description": "Update a pinned gist to contain the latest activity from AniList.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -475,9 +379,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Update a pinned gist to contain your Nintendo Switch playtime leaderboard.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "nintendo-switch-box",
+          "description": "Update a pinned gist to contain your Nintendo Switch playtime leaderboard.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -488,9 +394,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Update a pinned gist containing the top used ports as observed by Shodan.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "shodan-exposure-box",
+          "description": "Update a pinned gist containing the top used ports as observed by Shodan.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -501,49 +409,11 @@
           }
         },
         {
-          "children": [
-            {
-              "children": [],
-              "description": "A Python implementation of codestats-box. Update a pinned gist to contain your Code::Stats stats.",
-              "title": "codestats-box-python",
-              "repo_info": {
-                "archived": false,
-                "language": "Rust",
-                "last_commit": "2021-07-31T00:00:00.000Z",
-                "owner": "aksh1618",
-                "repo": "codestats-box-python",
-                "stars": 11885
-              }
-            },
-            {
-              "children": [],
-              "description": "Update a pinned gist to contain your daily Code::Stats.",
-              "title": "codestats-box",
-              "repo_info": {
-                "archived": false,
-                "language": "Python",
-                "last_commit": "2022-06-07T00:00:00.000Z",
-                "owner": "Ancientwood",
-                "repo": "codestats-box",
-                "stars": 11574
-              }
-            }
-          ],
-          "description": ")",
-          "title": "Code::Stats (https://codestats.net/",
-          "repo_info": {
-            "archived": false,
-            "language": "Rust",
-            "last_commit": "2021-07-31T00:00:00.000Z",
-            "owner": "aksh1618",
-            "repo": "codestats-box-python",
-            "stars": 11885
-          }
-        },
-        {
-          "children": [],
-          "description": "Update a pinned gist to contain the latest tweets of a Twitter user.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "bird-box",
+          "description": "Update a pinned gist to contain the latest tweets of a Twitter user.",
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": "Shell",
@@ -554,9 +424,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Update a pinned gist to contain your latest TypeRacer races",
+          "node_type": "item",
+          "kind": "repository",
           "title": "typeracer-box",
+          "description": "Update a pinned gist to contain your latest TypeRacer races",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -567,9 +439,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Update a pinned gist to show your latest HackMD notes.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "hackmd-box",
+          "description": "Update a pinned gist to show your latest HackMD notes.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -580,9 +454,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Update a pinned gist with a daily trivia question from Open Trivia DB.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "trivia-box",
+          "description": "Update a pinned gist with a daily trivia question from Open Trivia DB.",
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": "TypeScript",
@@ -593,9 +469,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Update a pinned gist to contain your PlayStation playtime leaderboard.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "playstation-box",
+          "description": "Update a pinned gist to contain your PlayStation playtime leaderboard.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -606,9 +484,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Update a pinned gist to show your currently reading books and progress on Goodreads.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "goodreads-box",
+          "description": "Update a pinned gist to show your currently reading books and progress on Goodreads.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -619,9 +499,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Update a pinned gist to contain your daily productivity stats from RescueTime.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "rescue-box",
+          "description": "Update a pinned gist to contain your daily productivity stats from RescueTime.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -630,6 +512,184 @@
             "repo": "rescue-box",
             "stars": 638
           }
+        },
+        {
+          "node_type": "group",
+          "title": "Code::Stats (https://codestats.net/",
+          "description": ")",
+          "children": [
+            {
+              "node_type": "item",
+              "kind": "repository",
+              "title": "codestats-box-python",
+              "description": "A Python implementation of codestats-box. Update a pinned gist to contain your Code::Stats stats.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "language": "Rust",
+                "last_commit": "2021-07-31T00:00:00.000Z",
+                "owner": "aksh1618",
+                "repo": "codestats-box-python",
+                "stars": 11885
+              }
+            },
+            {
+              "node_type": "item",
+              "kind": "repository",
+              "title": "codestats-box",
+              "description": "Update a pinned gist to contain your daily Code::Stats.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "language": "Python",
+                "last_commit": "2022-06-07T00:00:00.000Z",
+                "owner": "Ancientwood",
+                "repo": "codestats-box",
+                "stars": 11574
+              }
+            }
+          ]
+        },
+        {
+          "node_type": "group",
+          "title": "LeetCode (https://leetcode.com/",
+          "description": ")",
+          "children": [
+            {
+              "node_type": "item",
+              "kind": "repository",
+              "title": "leetcode-skills-box",
+              "description": "Update a pinned gist to show your top leetcode skills.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "language": "Rust",
+                "last_commit": "2021-05-02T00:00:00.000Z",
+                "owner": "tbeachill",
+                "repo": "leetcode-skills-box",
+                "stars": 46975
+              }
+            },
+            {
+              "node_type": "item",
+              "kind": "repository",
+              "title": "leetcode-solved-box",
+              "description": "Update a pinned gist to show leetcode solved problem.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "language": "Python",
+                "last_commit": "2021-08-01T00:00:00.000Z",
+                "owner": "Pudding124",
+                "repo": "leetcode-solved-box",
+                "stars": 41884
+              }
+            },
+            {
+              "node_type": "item",
+              "kind": "repository",
+              "title": "leetcode-box",
+              "description": "Update a pinned gist to show your LeetCode stats.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "language": "Ruby",
+                "last_commit": "2021-10-06T00:00:00.000Z",
+                "owner": "puiiyuen",
+                "repo": "leetcode-box",
+                "stars": 18818
+              }
+            }
+          ]
+        },
+        {
+          "node_type": "group",
+          "title": "Spotify (https://spotify.com/",
+          "description": ")",
+          "children": [
+            {
+              "node_type": "item",
+              "kind": "repository",
+              "title": "spotify-box",
+              "description": "Update a pinned gist to contain your weekly top tracks on Spotify.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "language": "Python",
+                "last_commit": "2022-08-26T00:00:00.000Z",
+                "owner": "izayl",
+                "repo": "spotify-box",
+                "stars": 19494
+              }
+            },
+            {
+              "node_type": "item",
+              "kind": "repository",
+              "title": "spotify-box",
+              "description": "Update a pinned gist to show your weekly/monthly/all-time top Spotify tracks/artists.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "language": "Shell",
+                "last_commit": "2023-03-29T00:00:00.000Z",
+                "owner": "Aveek-Saha",
+                "repo": "spotify-box",
+                "stars": 14279
+              }
+            },
+            {
+              "node_type": "item",
+              "kind": "repository",
+              "title": "spotify-gist",
+              "description": "Update a pinned gist to contain your monthly top artist on Spotify.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "language": "JavaScript",
+                "last_commit": "2023-04-25T00:00:00.000Z",
+                "owner": "mporracindie",
+                "repo": "spotify-gist",
+                "stars": 6252
+              }
+            }
+          ]
+        },
+        {
+          "node_type": "group",
+          "title": "WakaTime (https://wakatime.com/",
+          "description": ")",
+          "children": [
+            {
+              "node_type": "item",
+              "kind": "repository",
+              "title": "waka-box",
+              "description": "Update a pinned gist to contain your weekly WakaTime stats.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "language": "C++",
+                "last_commit": "2021-09-28T00:00:00.000Z",
+                "owner": "matchai",
+                "repo": "waka-box",
+                "stars": 37826
+              }
+            },
+            {
+              "node_type": "item",
+              "kind": "repository",
+              "title": "waka-box-go",
+              "description": "A Golang implementation of waka-box. Update a pinned gist to contain your weekly WakaTime stats.",
+              "children": [],
+              "repo_info": {
+                "archived": true,
+                "language": "Ruby",
+                "last_commit": "2023-08-07T00:00:00.000Z",
+                "owner": "YouEclipse",
+                "repo": "waka-box-go",
+                "stars": 5148
+              }
+            }
+          ]
         }
       ],
       "title": "External Services"
@@ -638,11 +698,17 @@
       "description": "Displaying more detailed GitHub user data in a pinned gist.",
       "items": [
         {
+          "node_type": "item",
+          "kind": "repository",
+          "title": "activity-box",
+          "description": "Update a pinned gist to contain the latest activity of a GitHub user.",
           "children": [
             {
-              "children": [],
-              "description": "A TypeScript rewrite of activity-box, published on npm for easy GitHub Actions integration, with improved type safety, customizability, and using the GraphQL API to retrieve issues and PRs authored by the specified user.",
+              "node_type": "item",
+              "kind": "repository",
               "title": "github-activity-box",
+              "description": "A TypeScript rewrite of activity-box, published on npm for easy GitHub Actions integration, with improved type safety, customizability, and using the GraphQL API to retrieve issues and PRs authored by the specified user.",
+              "children": [],
               "repo_info": {
                 "archived": false,
                 "language": "JavaScript",
@@ -653,8 +719,6 @@
               }
             }
           ],
-          "description": "Update a pinned gist to contain the latest activity of a GitHub user.",
-          "title": "activity-box",
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -665,9 +729,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Update a pinned gist to contain your GitHub statistics.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "github-stats-box",
+          "description": "Update a pinned gist to contain your GitHub statistics.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -678,9 +744,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Update a pinned gist to contain your most productive hours during the day.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "productive-box",
+          "description": "Update a pinned gist to contain your most productive hours during the day.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -691,11 +759,17 @@
           }
         },
         {
+          "node_type": "item",
+          "kind": "repository",
+          "title": "lang-box",
+          "description": "Update a pinned gist to contain languages of your recent commits in GitHub",
           "children": [
             {
-              "children": [],
-              "description": "A TypeScript + Bun rewrite of lang-box that updates a pinned gist with your recent GitHub commit language statistics. It offers improved type safety, customizability, and uses a more scientific approach to sorting languages.",
+              "node_type": "item",
+              "kind": "repository",
               "title": "recent-languages-box",
+              "description": "A TypeScript + Bun rewrite of lang-box that updates a pinned gist with your recent GitHub commit language statistics. It offers improved type safety, customizability, and uses a more scientific approach to sorting languages.",
+              "children": [],
               "repo_info": {
                 "archived": false,
                 "language": "JavaScript",
@@ -706,9 +780,11 @@
               }
             },
             {
-              "children": [],
-              "description": "A TypeScript rewrite of lang-box, published on npm for easy GitHub Actions integration, with improved type safety, customizability, and private repository access.",
+              "node_type": "item",
+              "kind": "repository",
               "title": "github-lang-box",
+              "description": "A TypeScript rewrite of lang-box, published on npm for easy GitHub Actions integration, with improved type safety, customizability, and private repository access.",
+              "children": [],
               "repo_info": {
                 "archived": false,
                 "language": "Java",
@@ -719,8 +795,6 @@
               }
             }
           ],
-          "description": "Update a pinned gist to contain languages of your recent commits in GitHub",
-          "title": "lang-box",
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -737,9 +811,11 @@
       "description": "Displaying data from user-defined (e.g. configured in the GitHub Action input parameters) content in a pinned gist.",
       "items": [
         {
-          "children": [],
-          "description": "Update a pinned gist to contain your anniversaries and countdown days (or hours).",
+          "node_type": "item",
+          "kind": "repository",
           "title": "date-box",
+          "description": "Update a pinned gist to contain your anniversaries and countdown days (or hours).",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -750,9 +826,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Generate for grid-like images/gifs for a GitHub README.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "image2grid",
+          "description": "Generate for grid-like images/gifs for a GitHub README.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -782,6 +860,7 @@
     "original_repository_sha": "deadbeef",
     "enhanced_repository": "enhansome/enhansome-pinned-gists",
     "enhanced_repository_description": "enhanced list",
+    "kind": "registry",
     "title": "Awesome pinned gists with stars"
   }
 }

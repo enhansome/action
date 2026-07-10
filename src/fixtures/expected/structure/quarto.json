@@ -4,9 +4,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "A workshop in Spanish by Pedro J. Pérez to create a blog with Quarto (materials: https://github.com/perezp44/taller.primer.blog).",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Workshop: Mi primer blog con Quarto",
+          "description": "A workshop in Spanish by Pedro J. Pérez to create a blog with Quarto (materials: https://github.com/perezp44/taller.primer.blog).",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -17,9 +19,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Slides by Samantha Csik about using SASS and CSS to customise HTML Quarto websites (materials: https://github.com/UCSB-MEDS/customizing-quarto-websites).",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Tutorial: Customizing Quarto Websites - Make your website stand out using SASS & CSS",
+          "description": "Slides by Samantha Csik about using SASS and CSS to customise HTML Quarto websites (materials: https://github.com/UCSB-MEDS/customizing-quarto-websites).",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -30,9 +34,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Workshop at RSECon'22, led by Carlos Cámara, James Tripp and Cagatay Turkay (materials: https://github.com/WarwickCIM/quarto-workshop).",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Workshop: Quarto, a library to run them all?",
+          "description": "Workshop at RSECon'22, led by Carlos Cámara, James Tripp and Cagatay Turkay (materials: https://github.com/WarwickCIM/quarto-workshop).",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -43,9 +49,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A 2-hour code-along workshop to learn parameterized reporting with and to generate multiple format outputs (materials: https://github.com/jadeynryan/parameterized-quarto-workshop).",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Workshop: Parameterized Reports with Quarto",
+          "description": "A 2-hour code-along workshop to learn parameterized reporting with and to generate multiple format outputs (materials: https://github.com/jadeynryan/parameterized-quarto-workshop).",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -54,101 +62,6 @@
             "repo": "parameterized-quarto-workshop",
             "stars": 2300
           }
-        },
-        {
-          "children": [],
-          "description": "An in-depth guide on how to start blogging with Quarto.",
-          "title": "Tutorial: The ultimate guide to starting a Quarto blog"
-        },
-        {
-          "children": [],
-          "description": "A blog post introducing a new Quarto blog and the steps to create your own blog with Quarto.",
-          "title": "Tutorial: Creating a blog with Quarto in 10 steps"
-        },
-        {
-          "children": [],
-          "description": "A tutorial to make a website with Quarto.",
-          "title": "Tutorial: Making shareable docs with Quarto"
-        },
-        {
-          "children": [],
-          "description": "A workshop for those who want to take their R Markdown skills and expertise and apply them in Quarto, the next generation of R Markdown.",
-          "title": "Workshop: From R Markdown to Quarto"
-        },
-        {
-          "children": [],
-          "description": "\"Get started with Quarto\" workshop materials for rstudio::conf(2022).",
-          "title": "Workshop: Getting started with Quarto"
-        },
-        {
-          "children": [],
-          "description": "A step-by-step guide for setting up a personal website using Quarto by Samantha Csik.",
-          "title": "Tutorial: Creating your personal website using Quarto"
-        },
-        {
-          "children": [],
-          "description": "Using R and RStudio by Athanasia Mo Mowinckel covering basic markdown, html reports, citation & cross-refs, pdf and journal templates and Reveal.js presentations.",
-          "title": "Workshop: Quartaki — 6 hour introduction to Quarto"
-        },
-        {
-          "children": [],
-          "description": "An in-depth blog post detailing the process for converting journal LaTeX templates into Quarto templates.",
-          "title": "Tutorial: Creating Quarto Journal Article Templates"
-        },
-        {
-          "children": [],
-          "description": "A Python-oriented step-by-step tutorial on how to create a website using Quarto.",
-          "title": "Tutorial: Personal Website using Jupyter Notebook and Quarto"
-        },
-        {
-          "children": [],
-          "description": "A comprehensive blog post walking through how to create a Quarto website, connect it to GitHub, deploy & publish it with Netlify by Jadey Ryan.",
-          "title": "Tutorial: Publish a Quarto website with Netlify"
-        },
-        {
-          "children": [],
-          "description": "A YouTube playlist of short video tutorials for beginners to work with Quarto Visual Editor and RStudio by Andy Field.",
-          "title": "Tutorials: Quarto Visual Editor and RStudio"
-        },
-        {
-          "children": [],
-          "description": "Notes focused on addressing issues related to using amsmath LaTeX for numbered equations and fancy math in Quarto books, specifically for HTML and PDF rendering.",
-          "title": "Quarto for amsmath LaTeX users"
-        },
-        {
-          "children": [],
-          "description": "A walkthrough of how to use parameterized reporting with Quarto with videos.",
-          "title": "Tutorial: A step-by-step guide to parameterized reporting in R using Quarto"
-        },
-        {
-          "children": [],
-          "description": "A book about slidecrafting, the art of putting together slides that are functional and aesthetically pleasing by Emil Hvitfeldt.",
-          "title": "Slidecrafting"
-        },
-        {
-          "children": [],
-          "description": "posit::conf(2025) workshop materials on creating branded Quarto outputs, led by Isabella Velásquez and Sara Altman (materials available under CC BY-SA 4.0 license).",
-          "title": "Workshop: Branded Websites, Presentations, Dashboards, and PDFs with Quarto"
-        },
-        {
-          "children": [],
-          "description": "posit::conf(2025) workshop materials on developing custom extensions, formats, templates, and filters, led by Mine Çetinkaya-Rundel and Charlotte Wickham (materials available under CC BY-SA 4.0 license).",
-          "title": "Workshop: Extending Quarto"
-        },
-        {
-          "children": [],
-          "description": "Learn the basics of GitHub Codespaces and how to use them to make it easier to teach using Quarto by Mickaël Canouil.",
-          "title": "Tutorial: Using GitHub Codespaces to teach with Quarto"
-        },
-        {
-          "children": [],
-          "description": "A comprehensive step-by-step guide to setting up a Quarto blog with Netlify deployment in a single day by Eliott Kalfon.",
-          "title": "Tutorial: How to Get a Blog Up from Scratch in 1 Day Using Quarto and Netlify"
-        },
-        {
-          "children": [],
-          "description": "A detailed walkthrough of transforming an old course website made from RMarkdown documents into a polished e-book using Quarto by Stephen Turner.",
-          "title": "Tutorial: Writing a book with Quarto"
         }
       ],
       "title": "Tutorials & workshops"
@@ -157,9 +70,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "Keynote by Mine Çetinkaya-Rundel & Julia Stewart Lowndes highlighting how they leverage Quarto in open-science at RStudio::conf(2022) (materials: https://github.com/mine-cetinkaya-rundel/hello-quarto).",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Hello Quarto: Share • Collaborate • Teach • Reimagine",
+          "description": "Keynote by Mine Çetinkaya-Rundel & Julia Stewart Lowndes highlighting how they leverage Quarto in open-science at RStudio::conf(2022) (materials: https://github.com/mine-cetinkaya-rundel/hello-quarto).",
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": "JavaScript",
@@ -170,9 +85,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Talk by Hamel Husain at RStudio::conf(2022) describing the integration between Nbdev and Quarto (materials: https://github.com/fastai/nbdev-demo).",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Literate Programming With Jupyter Notebooks and Quarto",
+          "description": "Talk by Hamel Husain at RStudio::conf(2022) describing the integration between Nbdev and Quarto (materials: https://github.com/fastai/nbdev-demo).",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -183,9 +100,11 @@
           }
         },
         {
-          "children": [],
-          "description": "RStudio Meetup: Beautiful Reports and Presentations with Quarto by Tom Mock (materials: https://github.com/jthomasmock/quarto-reporting).",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Beautiful Reports and Presentations with Quarto",
+          "description": "RStudio Meetup: Beautiful Reports and Presentations with Quarto by Tom Mock (materials: https://github.com/jthomasmock/quarto-reporting).",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -196,9 +115,11 @@
           }
         },
         {
-          "children": [],
-          "description": "R-Ladies St. Louis: Introduction to Quarto by Isabella Velásquez (materials: https://github.com/ivelasq/2022-10-27_intro-to-quarto).",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Introduction to Quarto",
+          "description": "R-Ladies St. Louis: Introduction to Quarto by Isabella Velásquez (materials: https://github.com/ivelasq/2022-10-27_intro-to-quarto).",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -207,106 +128,6 @@
             "repo": "2022-10-27_intro-to-quarto",
             "stars": 26568
           }
-        },
-        {
-          "children": [],
-          "description": "2022 Toronto Workshop on Reproducibility with Mine Çetinkaya-Rundel (slides: https://mine-cetinkaya-rundel.github.io/2022-repro-toronto/).",
-          "title": "Reproducible authoring with Quarto"
-        },
-        {
-          "children": [],
-          "description": "JuliaCon 2022 with J.J. Allaire (slides: https://jjallaire.github.io/quarto-juliacon-2022).",
-          "title": "Reproducible Publications with Julia and Quarto"
-        },
-        {
-          "children": [],
-          "description": "Openscapes Community Talk: Hello Quarto!",
-          "title": "A Conversation about Quarto"
-        },
-        {
-          "children": [],
-          "description": "This is a video tutorial on styling your Quarto blog even if you lack a strong foundation of HTML/CSS.",
-          "title": "Tutorial: How to style your Quarto blog without knowing a lot of HTML/CSS"
-        },
-        {
-          "children": [],
-          "description": "RStudio Meetup: Welcome to Quarto 2-hour Workshop by Tom Mock (slides: https://jthomasmock.github.io/quarto-2hr-webinar/).",
-          "title": "Workshop: Welcome to Quarto 2-hour Workshop"
-        },
-        {
-          "children": [],
-          "description": "A Quarto overview given by Tom Mock at RStudio::conf(2022) (materials: https://thomasmock.quarto.pub/quarto-curious/).",
-          "title": "Quarto for the Curious"
-        },
-        {
-          "children": [],
-          "description": "Talk by Devin Pastoor at RStudio::conf(2022) showing some of the formats available in Quarto and how it is easy to focus on contents while Quarto takes care of the rest.",
-          "title": "Websites & Books & Blogs, oh my! Creating Rich Content with Quarto"
-        },
-        {
-          "children": [],
-          "description": "Talk by Tracy Teal at RStudio::conf(2022) highlighting some of the features of Quarto presentation, such as multiple columns, speaker notes and mode, transitions, etc.",
-          "title": "These are a few of my favorite things"
-        },
-        {
-          "children": [],
-          "description": "RStudio Meetup: Building a Blog with Quarto by Isabella Velásquez (materials: https://ivelasq.quarto.pub/building-a-blog-with-quarto/).",
-          "title": "Building a Blog with Quarto"
-        },
-        {
-          "children": [],
-          "description": "A YouTube playlist of videos about Quarto and Pandoc by Eli Holmes.",
-          "title": "Quarto YouTube Playlist"
-        },
-        {
-          "children": [],
-          "description": "In this video by Deepsha Menghani, learn how you can easily create a Data Science Portfolio website and deploy it instantly with the help of Quarto (materials: https://deepshamenghani.quarto.pub/portfolio-with-quarto-workshop/#/title-slide).",
-          "title": "Create your Data Science Portfolio with Quarto"
-        },
-        {
-          "children": [],
-          "description": "A YouTube playlist showing you how to use Quarto in Neovim by Jannik Buhr.",
-          "title": "A Coffee with Quarto and Neovim"
-        },
-        {
-          "children": [],
-          "description": "This is a video tutorial on styling your Quarto blog even if you lack a strong foundation of HTML/CSS by Albert Rapp.",
-          "title": "How to style your Quarto blog without knowing a lot of HTML/CSS?"
-        },
-        {
-          "children": [],
-          "description": "This video highlights some of Quarto's features that are especially useful for academics, as educators and as researchers by Mine Çetinkaya-Rundel.",
-          "title": "Quarto for Academics"
-        },
-        {
-          "children": [],
-          "description": "This video highlights the new dashboard feature arriving in Quarto 1.4 by Charles Teague.",
-          "title": "Quarto Dashboards"
-        },
-        {
-          "children": [],
-          "description": "posit::conf(2023) talk by Jadey Ryan provides an example workflow of creating parameterized reports with HTML and MS Word outputs (materials: https://jadeynryan.github.io/2023_posit-parameterized-quarto/).",
-          "title": "Parameterized Quarto reports improve understanding of soil health"
-        },
-        {
-          "children": [],
-          "description": "Videos of talks from posit::conf(2024) are posted, compiled playlist of Quarto talks available on YouTube.",
-          "title": "posit::conf(2024) Quarto talks"
-        },
-        {
-          "children": [],
-          "description": "Materials from three Quarto workshops at posit::conf(2024), including \"Hello Quarto\", \"Quarto Websites\" and \"Beautiful documents with Quarto\", all available to learn and teach from.",
-          "title": "posit::conf(2024) Quarto workshop materials"
-        },
-        {
-          "children": [],
-          "description": "Videos of talks from posit::conf(2025) showcasing Quarto, including talks on using Quarto for reports, election night reporting, business collaboration, and more.",
-          "title": "posit::conf(2025) Quarto talks"
-        },
-        {
-          "children": [],
-          "description": "Materials from Quarto workshops at posit::conf(2025), including \"Branded Websites, Presentations, Dashboards, and PDFs with Quarto\" and \"Extending Quarto\", all available to learn and teach from.",
-          "title": "posit::conf(2025) Quarto workshop materials"
         }
       ],
       "title": "Talks and videos"
@@ -315,9 +136,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "Tools for Neovim to work with Quarto.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Neovim",
+          "description": "Tools for Neovim to work with Quarto.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -328,9 +151,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Mode for Emacs to work with Quarto.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Emacs",
+          "description": "Mode for Emacs to work with Quarto.",
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": "Rust",
@@ -341,9 +166,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Plugin for Vim to work with Quarto.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Vim",
+          "description": "Plugin for Vim to work with Quarto.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -354,9 +181,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Extension for Visual Studio Code/Positron to work with Quarto.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Visual Studio Code/Positron",
+          "description": "Extension for Visual Studio Code/Positron to work with Quarto.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -367,9 +196,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A next-generation extensible, polyglot data science IDE built by Posit PBC (support via the Visual Studio Code extension for Quarto).",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Positron",
+          "description": "A next-generation extensible, polyglot data science IDE built by Posit PBC (support via the Visual Studio Code extension for Quarto).",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -380,9 +211,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Plugin for Sublime Text to work with Quarto.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Sublime Text",
+          "description": "Plugin for Sublime Text to work with Quarto.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -391,16 +224,6 @@
             "repo": "quarto-sublime",
             "stars": 7043
           }
-        },
-        {
-          "children": [],
-          "description": "Quarto support for Scrivener via Scrivener Template.",
-          "title": "Scrivener"
-        },
-        {
-          "children": [],
-          "description": "IDE by Posit PBC that natively supports Quarto.",
-          "title": "RStudio"
         }
       ],
       "title": "Supported editors"
@@ -414,9 +237,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "An R package containing an RStudio Addin to insert some useful divs and classes into your Quarto document.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "quartostamp",
+          "description": "An R package containing an RStudio Addin to insert some useful divs and classes into your Quarto document.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -427,9 +252,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Interface package for R to Quarto CLI.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "R",
+          "description": "Interface package for R to Quarto CLI.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -440,9 +267,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Alternative to pkgdown to document R packages.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "altdoc",
+          "description": "Alternative to pkgdown to document R packages.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -451,16 +280,6 @@
             "repo": "altdoc",
             "stars": 23383
           }
-        },
-        {
-          "children": [],
-          "description": "An R package to help set up and render multilingual Quarto books (see also babeldown).",
-          "title": "babelquarto"
-        },
-        {
-          "children": [],
-          "description": "A platform for making markdown-based surveys with Quarto, Shiny, and Supabase.",
-          "title": "surveydown"
         }
       ],
       "title": "R"
@@ -469,9 +288,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "A Julia package to generate documentation for Julia packages using Quarto and Documenter.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "DocumenterQuarto",
+          "description": "A Julia package to generate documentation for Julia packages using Quarto and Documenter.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -482,9 +303,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Interface package for Julia to Quarto CLI.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Julia",
+          "description": "Interface package for Julia to Quarto CLI.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -501,9 +324,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "Interface package for Python to Quarto CLI.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Python",
+          "description": "Interface package for Python to Quarto CLI.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -514,9 +339,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A Python module that lets you quickly generate Python package API reference documentation using Markdown and Quarto.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "quartodoc",
+          "description": "A Python module that lets you quickly generate Python package API reference documentation using Markdown and Quarto.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -533,9 +360,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "A Visual Studio Code extension that provides an interactive code cell configuration, improved Python syntax highlighting, intelligent token recognition, enhanced footnote display, and an inline code runner for R and Python, making it particularly useful for data exploration.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Quarto Wingman",
+          "description": "A Visual Studio Code extension that provides an interactive code cell configuration, improved Python syntax highlighting, intelligent token recognition, enhanced footnote display, and an inline code runner for R and Python, making it particularly useful for data exploration.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -546,9 +375,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A Visual Studio Code extension that assists you in managing Quarto projects, such as installing and updating extensions.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Quarto Wizard",
+          "description": "A Visual Studio Code extension that assists you in managing Quarto projects, such as installing and updating extensions.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -557,11 +388,6 @@
             "repo": "quarto-wizard",
             "stars": 2765
           }
-        },
-        {
-          "children": [],
-          "description": "Snippets for RStudio and VSCode to ease typesetting with Quarto.",
-          "title": "RStudio & VSCode snippets"
         }
       ],
       "title": "Editors"
@@ -570,9 +396,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "A little bot for the matrix-network that listens for some Quarto files and returns the PDF into the matrix channel.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "matrix BOT",
+          "description": "A little bot for the matrix-network that listens for some Quarto files and returns the PDF into the matrix channel.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -583,9 +411,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A Rust-based command line utility to turn any ObservableHQ notebook into a Quarto project.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "ohq2quarto",
+          "description": "A Rust-based command line utility to turn any ObservableHQ notebook into a Quarto project.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -596,9 +426,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A Chrome extension to transform any ObservableHQ notebook into a list of downloadable s and an in-page Quarto source document.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Quartize",
+          "description": "A Chrome extension to transform any ObservableHQ notebook into a list of downloadable s and an in-page Quarto source document.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -615,9 +447,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "A GitHub Action that automatically updates Quarto extensions in your repository, similar to how Dependabot manages dependencies.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Quarto Extensions Updater",
+          "description": "A GitHub Action that automatically updates Quarto extensions in your repository, similar to how Dependabot manages dependencies.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -628,9 +462,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Official Quarto GitHub Actions to set up, render, and deploy Quarto projects via GitHub Actions.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Quarto GitHub Actions",
+          "description": "Official Quarto GitHub Actions to set up, render, and deploy Quarto projects via GitHub Actions.",
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": "Shell",
@@ -641,9 +477,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Add Quarto CLI to your Development Containers as a feature.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Quarto Devcontainer Feature",
+          "description": "Add Quarto CLI to your Development Containers as a feature.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -652,21 +490,6 @@
             "repo": "devcontainer-features",
             "stars": 11990
           }
-        },
-        {
-          "children": [],
-          "description": "Publish a Quarto website automatically every time it is updated via GitHub Actions.",
-          "title": "Quarto Website with GitHub Actions"
-        },
-        {
-          "children": [],
-          "description": "A short video tutorial on how to publish a Quarto project to GitHub Pages with GitHub Actions without any local rendering.",
-          "title": "Publish a Quarto project in 6 minutes"
-        },
-        {
-          "children": [],
-          "description": "A small guide exploring various methods (manual and automated) to publish Quarto projects to GitHub Pages.",
-          "title": "Publishing to GitHub Pages"
         }
       ],
       "title": "Continuous integration / Continuous deployment"
@@ -680,9 +503,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "See slides.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "An anthology of experimental designs",
+          "description": "See slides.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -693,9 +518,11 @@
           }
         },
         {
-          "children": [],
-          "description": "See slides.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Quarto: Create Beautiful Documents with R, Python, Julia and Observable (Runapp 2022 talk)",
+          "description": "See slides.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -706,9 +533,11 @@
           }
         },
         {
-          "children": [],
-          "description": "See slides.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Outrageously efficient EDA",
+          "description": "See slides.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -719,9 +548,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A gallery of iframes that could be used in Quarto format.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Iframes Gallery",
+          "description": "A gallery of iframes that could be used in Quarto format.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -732,9 +563,11 @@
           }
         },
         {
-          "children": [],
-          "description": "See slides.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Streamlining with R",
+          "description": "See slides.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -745,9 +578,11 @@
           }
         },
         {
-          "children": [],
-          "description": "See slides.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Improvements in textrecipes",
+          "description": "See slides.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -758,9 +593,11 @@
           }
         },
         {
-          "children": [],
-          "description": "See slides.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "The untold story of palmerpenguins",
+          "description": "See slides.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -771,9 +608,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Slides for Victorian Biodiversity Conference 2023 (See slides).",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Continental-scale biodiversity data assessment using the Atlas of Living Australia",
+          "description": "Slides for Victorian Biodiversity Conference 2023 (See slides).",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -784,9 +623,11 @@
           }
         },
         {
-          "children": [],
-          "description": "See slides.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "An educator's perspective of the tidyverse",
+          "description": "See slides.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -797,9 +638,11 @@
           }
         },
         {
-          "children": [],
-          "description": "See slides.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Advanced Introduction to R (French)",
+          "description": "See slides.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -816,9 +659,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "R Manuals rewritten with Quarto.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "R-Manuals",
+          "description": "R Manuals rewritten with Quarto.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -829,9 +674,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A Quarto website for a workshop which includes Quarto Reveal JS presentations embedded in it.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "R for Social Scientists workshop",
+          "description": "A Quarto website for a workshop which includes Quarto Reveal JS presentations embedded in it.",
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": "C++",
@@ -842,9 +689,11 @@
           }
         },
         {
-          "children": [],
-          "description": "The Quarto documentation website.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "quarto.org",
+          "description": "The Quarto documentation website.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -855,9 +704,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A Quarto website with a custom theme adapted from flatly, integrating particles.js for a lightweight, interactive canvas background on the home page (see https://juan-torresmunguia.netlify.app/).",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Juan Torres Munguía's website",
+          "description": "A Quarto website with a custom theme adapted from flatly, integrating particles.js for a lightweight, interactive canvas background on the home page (see https://juan-torresmunguia.netlify.app/).",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -868,9 +719,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A multi-lingual (English/Spanish) website for a scientific research project using the babelquarto package.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "NASCENT-PERU website",
+          "description": "A multi-lingual (English/Spanish) website for a scientific research project using the babelquarto package.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -881,9 +734,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Website/blog highlighting a tip for Quarto every day.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Quarto tip a day",
+          "description": "Website/blog highlighting a tip for Quarto every day.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -894,9 +749,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Website with Bootstrap Grid card home page layout, CSS animation in navigation bar, and light/dark mode.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Ella Kaye's website",
+          "description": "Website with Bootstrap Grid card home page layout, CSS animation in navigation bar, and light/dark mode.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -907,9 +764,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Website with custom EJS format, footer, 404 page, (S)CSS, and many more customisations.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Andrew Heiss's website",
+          "description": "Website with custom EJS format, footer, 404 page, (S)CSS, and many more customisations.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -920,9 +779,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A research lab Quarto Blog/website using custom listing pages for people and publications.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "AffCom Lab Website",
+          "description": "A research lab Quarto Blog/website using custom listing pages for people and publications.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -933,9 +794,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Website for a graduate-level course on program evaluation and causal inference using R, built with Quarto.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Program Evaluation for Public Service (course)",
+          "description": "Website for a graduate-level course on program evaluation and causal inference using R, built with Quarto.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -946,9 +809,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Docusaurus website using computations via and and multiple languages (PRQL, SQL, R, Python, etc.).",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Quering with PRQL",
+          "description": "Docusaurus website using computations via and and multiple languages (PRQL, SQL, R, Python, etc.).",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -959,9 +824,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Quarto used to generate a website from a Jupyter notebook containing Python module documentation.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Documentation website from Jupyter Notebook",
+          "description": "Quarto used to generate a website from a Jupyter notebook containing Python module documentation.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -972,9 +839,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A Quarto Blog for the Bioconductor community.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Bioconductor Community Blog",
+          "description": "A Quarto Blog for the Bioconductor community.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -985,9 +854,11 @@
           }
         },
         {
-          "children": [],
-          "description": "The R Lille (R User Group) website using Quarto.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "rlille.fr",
+          "description": "The R Lille (R User Group) website using Quarto.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -998,9 +869,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A Quarto website / blog with a custom theme (adapted from flatly / darkly), day / night landing page and a novel 404 page.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Quantum Jitter",
+          "description": "A Quarto website / blog with a custom theme (adapted from flatly / darkly), day / night landing page and a novel 404 page.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -1009,31 +882,6 @@
             "repo": "quantumjitter",
             "stars": 3296
           }
-        },
-        {
-          "children": [],
-          "description": "The Royal Statistical Society website, built with Quarto, features a custom design (based on the Lux Bootswatch theme), with a customised navbar and homepage layout.",
-          "title": "Real World Data Science"
-        },
-        {
-          "children": [],
-          "description": "Website customised to match the style of the Hugo Apéro blogdown theme.",
-          "title": "Silvia Canelón's website"
-        },
-        {
-          "children": [],
-          "description": "rainbowR is a community for LGBTQ+ folks who code in R - its website has a rainbow colour theme, custom syntax highlighting for both light and dark modes, and some fun customisations in the navbar.",
-          "title": "rainbowR website"
-        },
-        {
-          "children": [],
-          "description": "Academic website of Marten Walk, using a custom theme inspired by the Financial Times, with a modern look and many customisations (i.e., custom fonts, custom graphs, etc.).",
-          "title": "Marten Walk's website"
-        },
-        {
-          "children": [],
-          "description": "Documentation made using .",
-          "title": "Skimpy documentation"
         }
       ],
       "title": "Websites formats"
@@ -1042,9 +890,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "\"R Packages\" book second edition (see https://r-pkgs.org/).",
+          "node_type": "item",
+          "kind": "repository",
           "title": "R Packages, 2E",
+          "description": "\"R Packages\" book second edition (see https://r-pkgs.org/).",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -1055,9 +905,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Undergraduate lecture notes in network science featuring custom CSS and companion live-coding notebooks via Google Colab. (see https://network-science-notes.github.io/).",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Network Science: Models, Mathematics, and Computation",
+          "description": "Undergraduate lecture notes in network science featuring custom CSS and companion live-coding notebooks via Google Colab. (see https://network-science-notes.github.io/).",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -1068,9 +920,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Book on the packages ecosystem (see https://mlr3book.mlr-org.com/).",
+          "node_type": "item",
+          "kind": "repository",
           "title": "mlr3book",
+          "description": "Book on the packages ecosystem (see https://mlr3book.mlr-org.com/).",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -1081,9 +935,11 @@
           }
         },
         {
-          "children": [],
-          "description": "\"Python for Data Analysis\" book third edition (see https://wesmckinney.com/book/).",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Python for Data Analysis, 3E",
+          "description": "\"Python for Data Analysis\" book third edition (see https://wesmckinney.com/book/).",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -1094,9 +950,11 @@
           }
         },
         {
-          "children": [],
-          "description": "\"R for Data Science\" book second edition (see https://r4ds.hadley.nz/).",
+          "node_type": "item",
+          "kind": "repository",
           "title": "R for Data Science, 2E",
+          "description": "\"R for Data Science\" book second edition (see https://r4ds.hadley.nz/).",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -1105,11 +963,6 @@
             "repo": "r4ds",
             "stars": 11399
           }
-        },
-        {
-          "children": [],
-          "description": "Introductory course with videos and lecture scripts as a Quarto book format.",
-          "title": "Introduction to Data Analysis with R"
         }
       ],
       "title": "Book formats"
@@ -1136,6 +989,7 @@
     "original_repository_sha": "deadbeef",
     "enhanced_repository": "enhansome/enhansome-quarto",
     "enhanced_repository_description": "enhanced list",
+    "kind": "registry",
     "title": "Awesome quarto with stars"
   }
 }

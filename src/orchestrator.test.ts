@@ -2,12 +2,21 @@ import * as fs from 'fs';
 import * as path from 'path';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 
+import type { JsonItem, JsonNode } from './markdown.js';
+
 import * as github from './github.js';
 import { RepoInfoDetails } from './github.js';
 import { enhance } from './orchestrator.js';
 
 // Mock the lowest-level dependency, which is the GitHub API client.
 vi.mock('./github.js');
+
+// Narrow a `JsonNode` (item | group) to a `JsonItem`. Section/children arrays
+// can now contain kind-less groups; the kind/repo_info assertions in
+// this file are all about genuine GitHub items, so they narrow first.
+function isItem(node: JsonNode): node is JsonItem {
+  return node.node_type === 'item';
+}
 
 describe('Orchestrator: enhance()', () => {
   const token = 'test-token';
@@ -46,6 +55,8 @@ describe('Orchestrator: enhance()', () => {
         repo: 'test-repo',
       });
       vi.mocked(github.getRepoInfo).mockResolvedValue(mockRepoData);
+      // Per-item classification stays offline; minimal README -> repository.
+      vi.mocked(github.getReadme).mockResolvedValue('# project\n');
 
       const { finalContent } = await enhance({
         content: originalContent,
@@ -85,6 +96,8 @@ describe('Orchestrator: enhance()', () => {
         repo: 'old-repo',
       });
       vi.mocked(github.getRepoInfo).mockResolvedValue(mockRepoData);
+      // Per-item classification stays offline; minimal README -> repository.
+      vi.mocked(github.getReadme).mockResolvedValue('# project\n');
 
       const { finalContent } = await enhance({
         content: originalContent,
@@ -113,8 +126,9 @@ describe('Orchestrator: enhance()', () => {
     }[];
 
     beforeEach(() => {
+      // parseGitHubUrl -> null ⇒ no GitHub links collected ⇒ getRepoInfo /
+      // (later) getReadme are never invoked, so enhancement is a no-op here.
       vi.mocked(github.parseGitHubUrl).mockReturnValue(null);
-      vi.mocked(github.getRepoInfo).mockResolvedValue(null);
     });
 
     it.each(replacementCases)(
@@ -137,8 +151,9 @@ describe('Orchestrator: enhance()', () => {
 
   describe('Branding', () => {
     beforeEach(() => {
+      // parseGitHubUrl -> null ⇒ no GitHub links collected ⇒ getRepoInfo /
+      // (later) getReadme are never invoked, so enhancement is a no-op here.
       vi.mocked(github.parseGitHubUrl).mockReturnValue(null);
-      vi.mocked(github.getRepoInfo).mockResolvedValue(null);
     });
 
     it('should apply the branding rule by default', async () => {
@@ -196,6 +211,9 @@ A list of awesome Go frameworks.
         repo: 'test-repo',
         stargazers_count: 100,
       });
+      // Mock getReadme so per-item classification (fetchTargetData) stays offline.
+      // A minimal README -> 0 entries -> repository (the common case).
+      vi.mocked(github.getReadme).mockResolvedValue('# project\n');
     });
 
     it('brands a generic-H1 list identically in markdown and JSON (guides)', async () => {
@@ -211,8 +229,8 @@ A list of awesome Go frameworks.
         token,
       });
 
-      // Every enhanced doc reads "Awesome <x> with stars" (req 5), and the
-      // markdown H1 and metadata.title must be identical (req 4).
+      // Every enhanced doc reads "Awesome <x> with stars", and the
+      // markdown H1 and metadata.title must be identical.
       expect(jsonData.metadata.title).toBe('Awesome guides with stars');
       const lines = finalContent.split('\n');
       expect(lines[0]).toBe(`# ${jsonData.metadata.title}`);
@@ -281,9 +299,12 @@ A list of awesome Go frameworks.
         repo: 'test-repo',
         stargazers_count: 100,
       });
+      // Mock getReadme so per-item classification (fetchTargetData) stays offline.
+      // A minimal README -> 0 entries -> repository (the common case).
+      vi.mocked(github.getReadme).mockResolvedValue('# project\n');
     });
 
-    it('gives a link-less item a null description instead of echoing its title', async () => {
+    it('drops a link-less item from the JSON graph but keeps it in the markdown', async () => {
       const content = [
         '# Awesome Foo',
         '',
@@ -295,7 +316,7 @@ A list of awesome Go frameworks.
         '',
       ].join('\n');
 
-      const { jsonData } = await enhance({
+      const { finalContent, jsonData } = await enhance({
         content,
         originalRepository: 'x/awesome-foo',
         token,
@@ -303,13 +324,13 @@ A list of awesome Go frameworks.
 
       const tools = jsonData.items.find(s => s.title === 'Tools');
       expect(tools).toBeDefined();
-      const note = tools?.items.find(
-        i => i.title === 'Note: a plain entry without any link',
-      );
-      expect(note, 'link-less item should still be emitted').toBeDefined();
-      // Description must not echo the title back when there is no link to split
-      // the prose on.
-      expect(note?.description).toBeNull();
+      // Every emitted JsonItem is a GitHub node: the link-less Note is
+      // omitted from the typed JSON graph...
+      const titles = tools?.items.map(i => i.title) ?? [];
+      expect(titles).toEqual(['a', 'b']);
+      expect(titles).not.toContain('Note: a plain entry without any link');
+      // ...but retained in the enhanced markdown (badges/sorting only).
+      expect(finalContent).toContain('a plain entry without any link');
     });
 
     it('preserves a leading non-separator character in a description', async () => {
@@ -339,10 +360,11 @@ A list of awesome Go frameworks.
     });
   });
 
-  describe('Footer marker (req 3 & 6)', () => {
+  describe('Footer marker', () => {
     beforeEach(() => {
+      // parseGitHubUrl -> null ⇒ no GitHub links collected ⇒ getRepoInfo /
+      // (later) getReadme are never invoked, so enhancement is a no-op here.
       vi.mocked(github.parseGitHubUrl).mockReturnValue(null);
-      vi.mocked(github.getRepoInfo).mockResolvedValue(null);
     });
 
     it('appends an enhansomed-on footer with an ISO date when branded', async () => {
@@ -379,6 +401,7 @@ A list of awesome Go frameworks.
         (_octokit, _owner: string, repo: string) =>
           Promise.resolve(repoMockDb.sorting[repo] ?? null),
       );
+      vi.mocked(github.getReadme).mockResolvedValue('# project\n');
     });
 
     it('should sort a list by stars', async () => {
@@ -420,6 +443,7 @@ A list of awesome Go frameworks.
         (_octokit, _owner: string, repo: string) =>
           Promise.resolve(repoMockDb.structure[repo] ?? null),
       );
+      vi.mocked(github.getReadme).mockResolvedValue('# project\n');
 
       const { jsonData } = await enhance({
         content: complexContent,
@@ -443,16 +467,21 @@ A list of awesome Go frameworks.
       expect(firstSection.items).toHaveLength(3);
       // JSON order now matches the rendered markdown: sorted by stars desc.
       // Repo B (300) > Repo C (200) > Repo A (100).
-      expect(firstSection.items[0].title).toBe('Repo B');
-      expect(firstSection.items[0].repo_info?.stars).toBe(300);
+      const repoB = firstSection.items[0];
+      expect(repoB.title).toBe('Repo B');
+      expect(isItem(repoB)).toBe(true);
+      expect(isItem(repoB) ? repoB.repo_info?.stars : undefined).toBe(300);
       expect(firstSection.items[1].title).toBe('Repo C');
       expect(firstSection.items[2].title).toBe('Repo A');
 
       // Nested items travel with their parent (Repo B).
-      const nestedItems = firstSection.items[0].children;
+      const nestedItems = repoB.children;
       expect(nestedItems).toHaveLength(1);
-      expect(nestedItems[0].title).toBe('Nested 1');
-      expect(nestedItems[0].repo_info?.language).toBe('JS');
+      const nested1 = nestedItems[0];
+      expect(nested1.title).toBe('Nested 1');
+      expect(isItem(nested1) ? nested1.repo_info?.language : undefined).toBe(
+        'JS',
+      );
 
       // Check second valid section (sorted: Repo C 200 before Repo A 100)
       const thirdSection = jsonData.items[1];
@@ -488,6 +517,7 @@ Version: __VERSION__ | Last Updated: 2025-01-01
         (_octokit, _owner: string, repo: string) =>
           Promise.resolve(repoMockDb.endToEnd[repo] ?? null),
       );
+      vi.mocked(github.getReadme).mockResolvedValue('# project\n');
 
       const { finalContent } = await enhance({
         content: originalContent,
@@ -505,8 +535,9 @@ Version: __VERSION__ | Last Updated: 2025-01-01
 
   describe('Original Repository in JSON Metadata', () => {
     beforeEach(() => {
+      // parseGitHubUrl -> null ⇒ no GitHub links collected ⇒ getRepoInfo /
+      // (later) getReadme are never invoked, so enhancement is a no-op here.
       vi.mocked(github.parseGitHubUrl).mockReturnValue(null);
-      vi.mocked(github.getRepoInfo).mockResolvedValue(null);
     });
 
     it('should include original_repository in JSON metadata when provided', async () => {
@@ -553,6 +584,310 @@ Version: __VERSION__ | Last Updated: 2025-01-01
       });
 
       expect(jsonData.metadata.original_repository_sha).toBeNull();
+    });
+  });
+
+  describe('Item kind classification (integration)', () => {
+    const registryReadme = fs.readFileSync(
+      path.join(__dirname, 'fixtures', 'original', 'kind-registry.md'),
+      'utf-8',
+    );
+    const repositoryReadme = fs.readFileSync(
+      path.join(__dirname, 'fixtures', 'original', 'kind-repository.md'),
+      'utf-8',
+    );
+
+    beforeEach(() => {
+      vi.clearAllMocks();
+      vi.mocked(github.parseGitHubUrl).mockImplementation((url: string) => {
+        if (!url.includes('github.com')) {
+          return null;
+        }
+        const parts = url.split('/');
+        return {
+          owner: parts[parts.length - 2],
+          repo: parts[parts.length - 1],
+        };
+      });
+      vi.mocked(github.getRepoInfo).mockResolvedValue({
+        archived: false,
+        language: 'TypeScript',
+        open_issues_count: 0,
+        owner: 'test-user',
+        pushed_at: '2025-01-01T00:00:00Z',
+        repo: 'test-repo',
+        stargazers_count: 100,
+      });
+    });
+
+    it('stamps metadata.kind from the source and per-item kind from each target README', async () => {
+      // awesome-go's target README is a registry; gin's is a single project.
+      vi.mocked(github.getReadme).mockImplementation(
+        (_octokit, _owner: string, repo: string) => {
+          if (repo === 'awesome-go') {
+            return Promise.resolve(registryReadme);
+          }
+          return Promise.resolve(repositoryReadme);
+        },
+      );
+
+      const content = [
+        '# Awesome Index',
+        '',
+        '## Lists',
+        '',
+        '* [awesome-go](https://github.com/avelino/awesome-go) - a registry target',
+        '* [gin](https://github.com/gin-gonic/gin) - a repository target',
+        '',
+      ].join('\n');
+
+      const { jsonData } = await enhance({
+        content,
+        disableBranding: true,
+        originalRepository: 'enhansome/awesome-index',
+        token,
+      });
+
+      // The source has 2 GitHub list items (< 20) -> repository.
+      expect(jsonData.metadata.kind).toBe('repository');
+
+      const lists = jsonData.items.find(s => s.title === 'Lists');
+      expect(lists).toBeDefined();
+      const kindByTitle = Object.fromEntries(
+        lists?.items.filter(isItem).map(i => [i.title, i.kind]) ?? [],
+      );
+      expect(kindByTitle['awesome-go']).toBe('registry');
+      expect(kindByTitle.gin).toBe('repository');
+    });
+
+    it('types a large source list as a registry (metadata.kind)', async () => {
+      // Every target README here is a project, so items stay repositories; the
+      // point is the *source* has >= 20 entries -> metadata.kind = registry.
+      vi.mocked(github.getReadme).mockResolvedValue(repositoryReadme);
+
+      const { jsonData } = await enhance({
+        content: registryReadme,
+        disableBranding: true,
+        originalRepository: 'example/awesome-example',
+        token,
+      });
+
+      expect(jsonData.metadata.kind).toBe('registry');
+      // Sanity: items did get classified (all repositories here).
+      for (const section of jsonData.items) {
+        for (const item of section.items.filter(isItem)) {
+          expect(item.kind).toBe('repository');
+        }
+      }
+    });
+
+    it('does not fail on a dead target link (non-fatal): item defaults to repository', async () => {
+      // One target is dead — both /repos and README 404. The run must still
+      // succeed; the item is emitted with kind 'repository' and no repo_info,
+      // while its live neighbour is enriched normally.
+      vi.mocked(github.getRepoInfo).mockImplementation(
+        (_octokit, _owner: string, repo: string) =>
+          repo === 'dead'
+            ? Promise.reject(new Error('Not Found (404)'))
+            : Promise.resolve({
+                archived: false,
+                language: 'TypeScript',
+                open_issues_count: 0,
+                owner: 'o',
+                pushed_at: '2025-01-01T00:00:00Z',
+                repo,
+                stargazers_count: 10,
+              }),
+      );
+      vi.mocked(github.getReadme).mockImplementation(
+        (_octokit, _owner: string, repo: string) =>
+          repo === 'dead'
+            ? Promise.reject(new Error('Not Found (404)'))
+            : Promise.resolve('# project\n'),
+      );
+
+      const content = [
+        '# Awesome Foo',
+        '',
+        '## Tools',
+        '',
+        '* [alive](https://github.com/o/alive) - lives',
+        '* [dead](https://github.com/o/dead) - dead link',
+        '',
+      ].join('\n');
+
+      const { jsonData } = await enhance({
+        content,
+        disableBranding: true,
+        originalRepository: 'o/awesome-foo',
+        token,
+      });
+
+      const tools = jsonData.items.find(s => s.title === 'Tools');
+      expect(tools).toBeDefined();
+      const byTitle = Object.fromEntries(
+        tools?.items.filter(isItem).map(i => [i.title, i]) ?? [],
+      );
+      // The dead link did not fail the run — its item is still in the graph...
+      expect(byTitle.dead).toBeDefined();
+      // ...defaulted to 'repository' (no README to classify it)...
+      expect(byTitle.dead.kind).toBe('repository');
+      // ...and without repo_info (no /repos either).
+      expect(byTitle.dead.repo_info).toBeUndefined();
+      // The live neighbour is unaffected.
+      expect(byTitle.alive.kind).toBe('repository');
+      expect(byTitle.alive.repo_info).toBeDefined();
+    });
+  });
+
+  describe('Item kinds: jbhuang0604/awesome-computer-vision (mixed meta+list)', () => {
+    // The real source is a genuinely mixed awesome-list — the case the per-item
+    // oracle exists for and no repo-level meta/list classifier could bin: its
+    // "Awesome Lists" section links other registries, its "Software" section
+    // links concrete repositories (and hides a registry among them), and its
+    // "Books"/"Courses" sections are non-GitHub. The fixture is the *real*
+    // README; each target's README is mocked to a known-kind fixture so the
+    // assertion is about enhance()'s wiring (kind -> JsonItem), not the network.
+    const content = fs.readFileSync(
+      path.join(
+        __dirname,
+        'fixtures',
+        'original',
+        'awesome-computer-vision.md',
+      ),
+      'utf-8',
+    );
+    const registryReadme = fs.readFileSync(
+      path.join(__dirname, 'fixtures', 'original', 'kind-registry.md'),
+      'utf-8',
+    );
+    const repositoryReadme = fs.readFileSync(
+      path.join(__dirname, 'fixtures', 'original', 'kind-repository.md'),
+      'utf-8',
+    );
+
+    // Awesome-list targets whose repo name lacks the "awesome"/"awsome" stem.
+    const explicitRegistries = new Set([
+      '3D-Machine-Learning',
+      'Deep-Learning-for-Tracking-and-Detection',
+    ]);
+
+    interface AnyItem {
+      children?: AnyItem[];
+      kind?: string;
+      title: string;
+    }
+
+    // Flatten every JsonItem (with its kind) across all sections, recursing into
+    // children, so assertions don't depend on which subsections clear minLinks.
+    function allItems(sections: { items: AnyItem[] }[]): AnyItem[] {
+      const out: AnyItem[] = [];
+      function walk(items: AnyItem[]) {
+        for (const it of items) {
+          out.push(it);
+          if (it.children) {
+            walk(it.children);
+          }
+        }
+      }
+      for (const s of sections) {
+        walk(s.items);
+      }
+      return out;
+    }
+
+    beforeEach(async () => {
+      vi.clearAllMocks();
+      // Use the REAL parseGitHubUrl so trailing-path GitHub URLs in the source
+      // (…/pulls, …/blob/master/…) resolve to the right owner/repo instead of
+      // the naive last-two-segments mock used by the simpler suites above.
+      const actual = await vi.importActual<typeof github>('./github.js');
+      vi.mocked(github.parseGitHubUrl).mockImplementation(
+        actual.parseGitHubUrl,
+      );
+      vi.mocked(github.getRepoInfo).mockResolvedValue({
+        archived: false,
+        language: 'C',
+        open_issues_count: 0,
+        owner: 'test-user',
+        pushed_at: '2025-01-01T00:00:00Z',
+        repo: 'test-repo',
+        stargazers_count: 100,
+      });
+      // Mock the per-target oracle: a registry README (>= 20 entries) for targets
+      // whose name reads as an awesome-list, a project README otherwise.
+      vi.mocked(github.getReadme).mockImplementation(
+        (_octokit, _owner: string, repo: string) =>
+          Promise.resolve(
+            /awesome|awsome/i.test(repo) || explicitRegistries.has(repo)
+              ? registryReadme
+              : repositoryReadme,
+          ),
+      );
+    });
+
+    function enhanceAcv() {
+      return enhance({
+        content,
+        disableBranding: true,
+        originalRepository: 'jbhuang0604/awesome-computer-vision',
+        token,
+      });
+    }
+
+    it('classifies the mixed source itself as a registry (>= 20 entries)', async () => {
+      const { jsonData } = await enhanceAcv();
+      expect(jsonData.metadata.kind).toBe('registry');
+    });
+
+    it('types every "Awesome Lists" entry as a registry', async () => {
+      const { jsonData } = await enhanceAcv();
+      const awesomeLists = jsonData.items.find(
+        s => s.title === 'Awesome Lists',
+      );
+      expect(
+        awesomeLists,
+        '"Awesome Lists" section should exist',
+      ).toBeDefined();
+      const items = awesomeLists?.items ?? [];
+      expect(items.length).toBeGreaterThan(0);
+      for (const item of items.filter(isItem)) {
+        expect(item.kind, `"${item.title}" should be a registry`).toBe(
+          'registry',
+        );
+      }
+    });
+
+    it('types concrete Software entries as repositories', async () => {
+      const { jsonData } = await enhanceAcv();
+      const ccv = allItems(jsonData.items).find(i =>
+        i.title.toLowerCase().includes('ccv'),
+      );
+      expect(ccv, 'ccv should be present in the JSON graph').toBeDefined();
+      expect(ccv?.kind).toBe('repository');
+    });
+
+    it('assigns kinds per item, not per source (mixed kinds in one pass)', async () => {
+      // The defining property of the per-item oracle: a single mixed source
+      // yields BOTH registries (its "Awesome Lists" entries) and repositories
+      // (its "Software" entries) in one enhance() pass — something a repo-level
+      // meta/list classifier could never produce.
+      const { jsonData } = await enhanceAcv();
+      const kinds = new Set(allItems(jsonData.items).map(i => i.kind));
+      expect(kinds.has('registry')).toBe(true);
+      expect(kinds.has('repository')).toBe(true);
+    });
+
+    it('drops non-GitHub entries from the JSON graph but keeps them in markdown', async () => {
+      const { finalContent, jsonData } = await enhanceAcv();
+      const bookTitle = 'Models, Learning, and Inference';
+      // A Books entry has no GitHub link -> never typed -> not a JsonItem.
+      expect(
+        allItems(jsonData.items).find(i => i.title.includes(bookTitle)),
+        'non-GitHub book must be absent from the typed JSON graph',
+      ).toBeUndefined();
+      // ...but it is retained in the enhanced markdown (badges/sorting only).
+      expect(finalContent).toContain(bookTitle);
     });
   });
 });

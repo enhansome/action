@@ -9,9 +9,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "Tests APIs with real-time collaboration features.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Hoppscotch",
+          "description": "Tests APIs with real-time collaboration features.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -22,9 +24,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Modern lightweight tauri based API testing application.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Yaak",
+          "description": "Modern lightweight tauri based API testing application.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -35,9 +39,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Tests APIs with Git version control integration.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Bruno",
+          "description": "Tests APIs with Git version control integration.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -46,21 +52,6 @@
             "repo": "bruno",
             "stars": 2780
           }
-        },
-        {
-          "children": [],
-          "description": "Intercepts and modifies HTTP traffic.",
-          "title": "HTTP Toolkit"
-        },
-        {
-          "children": [],
-          "description": "Tests APIs with GraphQL support.",
-          "title": "Insomnia"
-        },
-        {
-          "children": [],
-          "description": "Tests APIs with automated test scripts and monitoring.",
-          "title": "Postman"
         }
       ],
       "title": "API Development"
@@ -69,9 +60,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "Launches apps with web search integration.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Wox",
+          "description": "Launches apps with web search integration.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -82,9 +75,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Raycast/Alfred-like launcher with sandboxed extensions",
+          "node_type": "item",
+          "kind": "repository",
           "title": "kunkun",
+          "description": "Raycast/Alfred-like launcher with sandboxed extensions",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -95,9 +90,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Searches files and launches apps with plugin extensibility.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Flow Launcher",
+          "description": "Searches files and launches apps with plugin extensibility.",
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": "C++",
@@ -108,9 +105,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Powerful keystroke launcher.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "ueli",
+          "description": "Powerful keystroke launcher.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -119,21 +118,6 @@
             "repo": "ueli",
             "stars": 3219
           }
-        },
-        {
-          "children": [],
-          "description": "Launches apps through fuzzy search and keyboard shortcuts.",
-          "title": "Keypirinha"
-        },
-        {
-          "children": [],
-          "description": "Searches files with advanced filters and indexing.",
-          "title": "Listary"
-        },
-        {
-          "children": [],
-          "description": "A highly extensible, keyboard-driven productivity launcher and command palette designed for efficiency",
-          "title": "Raycast"
         }
       ],
       "title": "Application Launchers"
@@ -142,9 +126,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "Plays and manages music.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Nora",
+          "description": "Plays and manages music.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -155,9 +141,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Identifies and tags music files.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "MusicBrainz Picard",
+          "description": "Identifies and tags music files.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -168,9 +156,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Plays music through terminal.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "musikcube",
+          "description": "Plays music through terminal.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -181,9 +171,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A universal ASIO driver that delivers low-latency, high-quality sound.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "FlexASIO",
+          "description": "A universal ASIO driver that delivers low-latency, high-quality sound.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -194,9 +186,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Plays and organizes music.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Dopamine",
+          "description": "Plays and organizes music.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -207,9 +201,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Records and edits audio.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Audacity",
+          "description": "Records and edits audio.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -220,9 +216,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Mixes music for DJs.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Mixxx",
+          "description": "Mixes music for DJs.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -231,36 +229,6 @@
             "repo": "mixxx",
             "stars": 13679
           }
-        },
-        {
-          "children": [],
-          "description": "Fluid software for music creation and performance.",
-          "title": "Ableton Live"
-        },
-        {
-          "children": [],
-          "description": "Produces music with mixing, effects, MIDI and synthesis.",
-          "title": "AudioNodes"
-        },
-        {
-          "children": [],
-          "description": "Streams Apple Music.",
-          "title": "Cider"
-        },
-        {
-          "children": [],
-          "description": "Complete digital audio workstation (DAW) for composing, arranging, recording, and mastering.",
-          "title": "FL Studio"
-        },
-        {
-          "children": [],
-          "description": "Plays audio with customization options.",
-          "title": "Foobar2000"
-        },
-        {
-          "children": [],
-          "description": "Edits music metadata and tags.",
-          "title": "Mp3tag"
         }
       ],
       "title": "Audio"
@@ -269,9 +237,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "Stores encrypted backups online.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Duplicati",
+          "description": "Stores encrypted backups online.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -282,9 +252,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Backs up data to various storage types.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Restic",
+          "description": "Backs up data to various storage types.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -295,9 +267,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Creates incremental backups with client-side encryption and cloud support.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Kopia",
+          "description": "Creates incremental backups with client-side encryption and cloud support.",
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": "Shell",
@@ -314,9 +288,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "Browser based on Ungoogled Chromium with privacy, split-view, bangs and built-in ad-blocker.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Helium",
+          "description": "Browser based on Ungoogled Chromium with privacy, split-view, bangs and built-in ad-blocker.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -327,9 +303,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Removes Google integration and tracking.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Ungoogled Chromium",
+          "description": "Removes Google integration and tracking.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -340,9 +318,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Firefox-based with community modifications.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Zen Browser",
+          "description": "Firefox-based with community modifications.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -353,9 +333,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Privacy focused browser with built-in adblock.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Brave",
+          "description": "Privacy focused browser with built-in adblock.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -364,21 +346,6 @@
             "repo": "brave-browser",
             "stars": 666
           }
-        },
-        {
-          "children": [],
-          "description": "Browser with privacy and customization.",
-          "title": "Firefox"
-        },
-        {
-          "children": [],
-          "description": "A custom version of Firefox, focused on privacy, security and freedom.",
-          "title": "Librewolf"
-        },
-        {
-          "children": [],
-          "description": "Privacy browser routing traffic over the Tor network.",
-          "title": "Tor Browser"
         }
       ],
       "title": "Browsers"
@@ -387,9 +354,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "Official Windows package manager from Microsoft.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "winget",
+          "description": "Official Windows package manager from Microsoft.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -400,9 +369,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Windows port of the famous btop resource monitor.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "btop4win",
+          "description": "Windows port of the famous btop resource monitor.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -413,9 +384,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Sudo equivalent for Windows, allows you to run a command with elevated permissions.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "gsudo",
+          "description": "Sudo equivalent for Windows, allows you to run a command with elevated permissions.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -426,9 +399,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A feature-rich command-line audio/video downloader.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "yt-dlp",
+          "description": "A feature-rich command-line audio/video downloader.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -439,9 +414,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Command-line program to download image galleries and collections from several image hosting sites.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "gallery-dl",
+          "description": "Command-line program to download image galleries and collections from several image hosting sites.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -452,9 +429,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Command-line installer for Windows.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Scoop",
+          "description": "Command-line installer for Windows.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -463,11 +442,6 @@
             "repo": "scoop",
             "stars": 2723
           }
-        },
-        {
-          "children": [],
-          "description": "Package manager for Windows.",
-          "title": "Chocolatey"
         }
       ],
       "title": "Command Line Tools"
@@ -476,9 +450,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "Discord client with Vencord and shelter integration.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "LegCord",
+          "description": "Discord client with Vencord and shelter integration.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -489,9 +465,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Client for the Matrix protocol.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Element",
+          "description": "Client for the Matrix protocol.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -502,9 +480,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Combines multiple chat services into one app.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Franz",
+          "description": "Combines multiple chat services into one app.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -515,9 +495,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Fork of Vencord with additional plugins and features.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Equicord",
+          "description": "Fork of Vencord with additional plugins and features.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -528,9 +510,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Telegram client optimized for Windows.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Unigram",
+          "description": "Telegram client optimized for Windows.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -541,9 +525,11 @@
           }
         },
         {
-          "children": [],
-          "description": "The cutest Discord client mod with lots of plugins.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Vencord",
+          "description": "The cutest Discord client mod with lots of plugins.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -552,41 +538,6 @@
             "repo": "Vencord",
             "stars": 5493
           }
-        },
-        {
-          "children": [],
-          "description": "Combines WhatsApp, Slack, Telegram, Signal, X, Instagram, SMS into one app.",
-          "title": "Beeper"
-        },
-        {
-          "children": [],
-          "description": "Voice and text chat platform.",
-          "title": "Discord"
-        },
-        {
-          "children": [],
-          "description": "Network for secure, decentralized communication.",
-          "title": "Matrix"
-        },
-        {
-          "children": [],
-          "description": "Chat platform built with modern web tech.",
-          "title": "Stoat"
-        },
-        {
-          "children": [],
-          "description": "Messaging platform focused on speed and security.",
-          "title": "Telegram"
-        },
-        {
-          "children": [],
-          "description": "Swiss messaging platform with open source code.",
-          "title": "Threema"
-        },
-        {
-          "children": [],
-          "description": "WhatsApp Web client with extra features.",
-          "title": "Waow"
         }
       ],
       "title": "Communication"
@@ -595,9 +546,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "Windows-optimized 7-Zip variant.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "NanaZip",
+          "description": "Windows-optimized 7-Zip variant.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -608,9 +561,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Archive manager with compression format support.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "PeaZip",
+          "description": "Archive manager with compression format support.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -621,9 +576,11 @@
           }
         },
         {
-          "children": [],
-          "description": "File archiver with multiple format support.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "7-Zip",
+          "description": "File archiver with multiple format support.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -632,21 +589,6 @@
             "repo": "7zip",
             "stars": 7743
           }
-        },
-        {
-          "children": [],
-          "description": "Archive manager with multiple format support.",
-          "title": "Bandizip"
-        },
-        {
-          "children": [],
-          "description": "Compresses images with multiple optimization options.",
-          "title": "Riot"
-        },
-        {
-          "children": [],
-          "description": "Compresses, backs up and splits files.",
-          "title": "WinRAR"
         }
       ],
       "title": "Compression"
@@ -655,9 +597,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "A live wallpaper app, a free and opensource alternative to Wallpaper Engine.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Sucrose Wallpaper Engine",
+          "description": "A live wallpaper app, a free and opensource alternative to Wallpaper Engine.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -668,9 +612,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Displays customizable skins and widgets.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Rainmeter",
+          "description": "Displays customizable skins and widgets.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -681,9 +627,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A list of useful software Tweaks.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "WindHawk",
+          "description": "A list of useful software Tweaks.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -694,9 +642,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Restores traditional Start Menu interface.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "OpenShell",
+          "description": "Restores traditional Start Menu interface.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -707,9 +657,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Controls volume per application.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "EarTrumpet",
+          "description": "Controls volume per application.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -720,9 +672,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Creates customizable status bars.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "YASB",
+          "description": "Creates customizable status bars.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -733,9 +687,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Makes taskbar transparent.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "TranslucentTB",
+          "description": "Makes taskbar transparent.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -744,31 +700,6 @@
             "repo": "TranslucentTB",
             "stars": 7993
           }
-        },
-        {
-          "children": [],
-          "description": "Modifies Windows taskbar behavior.",
-          "title": "7+ Taskbar Tweaker"
-        },
-        {
-          "children": [],
-          "description": "Adds tabs to Explorer.",
-          "title": "QTTabBar"
-        },
-        {
-          "children": [],
-          "description": "Powerful, free, open source context menu manager",
-          "title": "Shell"
-        },
-        {
-          "children": [],
-          "description": "Animated wallpapers for you dekstop.",
-          "title": "Wallpaper Engine"
-        },
-        {
-          "children": [],
-          "description": "Manages taskbars across multiple monitors.",
-          "title": "ZBar"
         }
       ],
       "title": "Customization"
@@ -777,9 +708,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "Feature-rich, open-source administration and development platform for PostgreSQL.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "pgAdmin",
+          "description": "Feature-rich, open-source administration and development platform for PostgreSQL.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -790,9 +723,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Fast and stable Redis GUI client with cluster, sentinel, SSH support.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Another Redis Desktop Manager",
+          "description": "Fast and stable Redis GUI client with cluster, sentinel, SSH support.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -803,9 +738,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A modern, easy to use, and good looking SQL client for MySQL, Postgres, SQLite, SQL Server, and more.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Beekeeper Studio",
+          "description": "A modern, easy to use, and good looking SQL client for MySQL, Postgres, SQLite, SQL Server, and more.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -816,9 +753,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Free and open-source database management tool.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "DBeaver",
+          "description": "Free and open-source database management tool.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -827,16 +766,6 @@
             "repo": "dbeaver",
             "stars": 10965
           }
-        },
-        {
-          "children": [],
-          "description": "Modern, lightweight database GUI for SQLite, MySQL and PostgreSQL.",
-          "title": "DataFlare"
-        },
-        {
-          "children": [],
-          "description": "Visual tool for creating and editing SQLite database files.",
-          "title": "DB Browser for SQLite"
         }
       ],
       "title": "Databases Clients"
@@ -845,9 +774,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "Modern mail client with integrated calendar.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Wino Mail",
+          "description": "Modern mail client with integrated calendar.",
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": "Rust",
@@ -858,9 +789,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Modern email client built on web technologies.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Mailspring",
+          "description": "Modern email client built on web technologies.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -869,31 +802,6 @@
             "repo": "Mailspring",
             "stars": 13698
           }
-        },
-        {
-          "children": [],
-          "description": "Cross-platform email client with modern interface.",
-          "title": "BlueMail"
-        },
-        {
-          "children": [],
-          "description": "IMAP and POP3 email client with customization and multi-language support.",
-          "title": "Mailbird"
-        },
-        {
-          "children": [],
-          "description": "Advanced email management application.",
-          "title": "Postbox"
-        },
-        {
-          "children": [],
-          "description": "Encrypted email service with end-to-end encryption.",
-          "title": "ProtonMail"
-        },
-        {
-          "children": [],
-          "description": "Feature-rich email client with minimalist design.",
-          "title": "Thunderbird"
         }
       ],
       "title": "Email"
@@ -902,9 +810,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "SQL-like file search utility.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "fselect",
+          "description": "SQL-like file search utility.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -915,9 +825,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Cross-platform file manager with cloud integration.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Spacedrive",
+          "description": "Cross-platform file manager with cloud integration.",
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": "Ruby",
@@ -928,9 +840,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A simple tool to convert and compress files using the context menu in windows explorer.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "File Converter",
+          "description": "A simple tool to convert and compress files using the context menu in windows explorer.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -941,9 +855,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A modern file manager that helps users organize their files and folders.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Files",
+          "description": "A modern file manager that helps users organize their files and folders.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -952,51 +868,6 @@
             "repo": "Files",
             "stars": 16457
           }
-        },
-        {
-          "children": [],
-          "description": "Instant file search utility.",
-          "title": "Everything"
-        },
-        {
-          "children": [],
-          "description": "Next-gen file explorer. Engineered entirely from scratch for light-speed performance, featuring a modern and robust interface.",
-          "title": "File pilot"
-        },
-        {
-          "children": [],
-          "description": "Lossless file size optimizer for multiple formats.",
-          "title": "FileOptimizer"
-        },
-        {
-          "children": [],
-          "description": "FTP, FTPS and SFTP client.",
-          "title": "FileZilla"
-        },
-        {
-          "children": [],
-          "description": "File and folder backup with multiple sync modes.",
-          "title": "FreeFileSync"
-        },
-        {
-          "children": [],
-          "description": "Modern file manager with miller columns.",
-          "title": "One Commander"
-        },
-        {
-          "children": [],
-          "description": "Faster than windows file transfers.",
-          "title": "TeraCopy"
-        },
-        {
-          "children": [],
-          "description": "Free open source SFTP, FTP, WebDAV and SCP client.",
-          "title": "WinSCP"
-        },
-        {
-          "children": [],
-          "description": "Flexible SFTP/FTP client with advanced features for efficient file transfers.",
-          "title": "Xftp 7"
         }
       ],
       "title": "File Management"
@@ -1005,9 +876,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "Playnite is an open-source video game library manager that unifies game collections from various platforms.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Playnite",
+          "description": "Playnite is an open-source video game library manager that unifies game collections from various platforms.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -1018,9 +891,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Platform for discovering and distributing indie games.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Itch.io",
+          "description": "Platform for discovering and distributing indie games.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -1031,9 +906,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Free and open source game engine with beginner-friendly workflow.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Godot Engine",
+          "description": "Free and open source game engine with beginner-friendly workflow.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -1044,9 +921,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A game launcher that allows you to download, play, track your stats and manage your games all in one place.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Hydra Launcher",
+          "description": "A game launcher that allows you to download, play, track your stats and manage your games all in one place.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -1057,9 +936,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Modern and lightweight mod manager for Thunderstore.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Gale",
+          "description": "Modern and lightweight mod manager for Thunderstore.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -1070,9 +951,11 @@
           }
         },
         {
-          "children": [],
-          "description": "List of games hosted on GitHub.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Awesome Games",
+          "description": "List of games hosted on GitHub.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -1081,46 +964,6 @@
             "repo": "games",
             "stars": 10599
           }
-        },
-        {
-          "children": [],
-          "description": "Digital game storefront for PC and Mac.",
-          "title": "Epic Games"
-        },
-        {
-          "children": [],
-          "description": "Free empire-building strategy game inspired by human civilization.",
-          "title": "Freeciv"
-        },
-        {
-          "children": [],
-          "description": "DRM-free game store featuring classic and modern titles.",
-          "title": "GOG"
-        },
-        {
-          "children": [],
-          "description": "Free game development tool using Lua/LuaJIT with multi-platform export capabilities.",
-          "title": "LuaStudio"
-        },
-        {
-          "children": [],
-          "description": "EA's digital game distribution platform.",
-          "title": "Origin"
-        },
-        {
-          "children": [],
-          "description": "Leading digital game distribution platform with extensive library management.",
-          "title": "Steam"
-        },
-        {
-          "children": [],
-          "description": "Popular game engine with comprehensive learning resources.",
-          "title": "Unity"
-        },
-        {
-          "children": [],
-          "description": "Professional game engine with 5% revenue share model.",
-          "title": "Unreal Engine"
         }
       ],
       "title": "Game Stores"
@@ -1129,9 +972,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "Store and share your photos with absolute privacy.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Ente Photos",
+          "description": "Store and share your photos with absolute privacy.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -1142,9 +987,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Professional pixel art and animation tool.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Aseprite",
+          "description": "Professional pixel art and animation tool.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -1155,9 +1002,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Lightweight, fast and simple image viewer written in rust.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Oculante",
+          "description": "Lightweight, fast and simple image viewer written in rust.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -1166,56 +1015,6 @@
             "repo": "oculante",
             "stars": 3570
           }
-        },
-        {
-          "children": [],
-          "description": "Unified creative suite for photo editing, vector design, and desktop publishing",
-          "title": "Affinity"
-        },
-        {
-          "children": [],
-          "description": "Photo organizer with peer-to-peer synchronization.",
-          "title": "Aspect"
-        },
-        {
-          "children": [],
-          "description": "Professional 3D creation suite.",
-          "title": "Blender"
-        },
-        {
-          "children": [],
-          "description": "Collaborative interface design tool.",
-          "title": "Figma"
-        },
-        {
-          "children": [],
-          "description": "Feature-rich image editor.",
-          "title": "GIMP"
-        },
-        {
-          "children": [],
-          "description": "Professional vector graphics editor.",
-          "title": "Inkscape"
-        },
-        {
-          "children": [],
-          "description": "Professional digital painting program.",
-          "title": "Krita"
-        },
-        {
-          "children": [],
-          "description": "Free design tool with built-in resources.",
-          "title": "Lunacy"
-        },
-        {
-          "children": [],
-          "description": "Feature-rich image editing tool.",
-          "title": "Paint.NET"
-        },
-        {
-          "children": [],
-          "description": "Command-line PNG compression utility.",
-          "title": "pngquant"
         }
       ],
       "title": "Graphics"
@@ -1224,9 +1023,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "Open source AI code editor with curated integrations of multiple AI tools.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "PearAI",
+          "description": "Open source AI code editor with curated integrations of multiple AI tools.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -1237,9 +1038,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Customizes development with extensions.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Visual Studio Code",
+          "description": "Customizes development with extensions.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -1250,9 +1053,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Open-source Python IDE designed for scientific development and data analysis",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Spyder",
+          "description": "Open-source Python IDE designed for scientific development and data analysis",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -1263,9 +1068,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A high-performance, multiplayer code editor from the creators of Atom.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Zed",
+          "description": "A high-performance, multiplayer code editor from the creators of Atom.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -1276,9 +1083,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A VS Code fork without all the Microsoft bloat and telemetry.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "VSCodium",
+          "description": "A VS Code fork without all the Microsoft bloat and telemetry.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -1287,46 +1096,6 @@
             "repo": "vscodium",
             "stars": 15719
           }
-        },
-        {
-          "children": [],
-          "description": "Develops and tests Android applications.",
-          "title": "Android Studio"
-        },
-        {
-          "children": [],
-          "description": "AI-powered code editor with codebase understanding and natural language editing.",
-          "title": "Cursor"
-        },
-        {
-          "children": [],
-          "description": "Supports plugin-based development workflows.",
-          "title": "Eclipse"
-        },
-        {
-          "children": [],
-          "description": "Professional suite of developer tools (CLion, DataGrip, DataSpell, GoLand, IntelliJ IDEA, PhpStorm, PyCharm, Rider, RubyMine, Rust Rover, WebStorm).",
-          "title": "JetBrains IDEs"
-        },
-        {
-          "children": [],
-          "description": "Controls JetBrains IDE installations and updates.",
-          "title": "JetBrains Toolbox App"
-        },
-        {
-          "children": [],
-          "description": "Emphasizes modular Java development.",
-          "title": "NetBeans IDE"
-        },
-        {
-          "children": [],
-          "description": "Builds Windows and cloud applications.",
-          "title": "Visual Studio"
-        },
-        {
-          "children": [],
-          "description": "Agentic IDE with AI flows, multi-file editing and deep contextual awareness.",
-          "title": "Windsurf"
         }
       ],
       "title": "IDEs"
@@ -1335,9 +1104,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "Offline private AI assistant with CPU/GPU support.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Jan",
+          "description": "Offline private AI assistant with CPU/GPU support.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -1348,9 +1119,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Get up and running with large language models locally via command line.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Ollama",
+          "description": "Get up and running with large language models locally via command line.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -1359,11 +1132,6 @@
             "repo": "ollama",
             "stars": 18195
           }
-        },
-        {
-          "children": [],
-          "description": "Discover, download, and run local LLMs with a user-friendly interface.",
-          "title": "LM Studio"
         }
       ],
       "title": "Local AI"
@@ -1372,9 +1140,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "Network monitoring tool to help you easily keep track of your Internet traffic.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Sniffnet",
+          "description": "Network monitoring tool to help you easily keep track of your Internet traffic.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -1385,9 +1155,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A free, open-source network scanner used for discovering hosts, services, and vulnerabilities on computer networks through advanced port scanning and OS detection techniques.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Nmap",
+          "description": "A free, open-source network scanner used for discovering hosts, services, and vulnerabilities on computer networks through advanced port scanning and OS detection techniques.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -1396,16 +1168,6 @@
             "repo": "nmap",
             "stars": 13615
           }
-        },
-        {
-          "children": [],
-          "description": "Web debugging proxy.",
-          "title": "Fiddler"
-        },
-        {
-          "children": [],
-          "description": "Network protocol analyzer.",
-          "title": "Wireshark"
         }
       ],
       "title": "Networking"
@@ -1414,9 +1176,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "Privacy-first, open-source knowledge base that works on top of local plain-text Markdown and Org-mode files.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Logseq",
+          "description": "Privacy-first, open-source knowledge base that works on top of local plain-text Markdown and Org-mode files.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -1427,9 +1191,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Open-source note-taking app with Markdown support, cross-device sync and encryption.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Joplin",
+          "description": "Open-source note-taking app with Markdown support, cross-device sync and encryption.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -1438,36 +1204,6 @@
             "repo": "joplin",
             "stars": 13572
           }
-        },
-        {
-          "children": [],
-          "description": "A privacy focused offline encrypted Notion alternative with P2P syncing on local networks.",
-          "title": "Anytype"
-        },
-        {
-          "children": [],
-          "description": "Markdown-focused note-taking application.",
-          "title": "Inkdrop"
-        },
-        {
-          "children": [],
-          "description": "All-in-one workspace for notes, project management, documents, and collaboration.",
-          "title": "Notion"
-        },
-        {
-          "children": [],
-          "description": "A powerful knowledge base on top of a local folder of plain text Markdown files.",
-          "title": "Obsidian"
-        },
-        {
-          "children": [],
-          "description": "Cross-platform note taking app with cloud sync.",
-          "title": "Simplenote"
-        },
-        {
-          "children": [],
-          "description": "A free, secure note-taking app with powerful end-to-end encryption, unparalleled privacy features, and seamless cross-platform syncing on unlimited devices from the creators of ProtonVPN.",
-          "title": "Standard Notes"
         }
       ],
       "title": "Note-taking"
@@ -1476,9 +1212,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "Enables document co-editing with version control.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "OnlyOffice",
+          "description": "Enables document co-editing with version control.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -1489,9 +1227,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Opens documents instantly with minimal memory usage.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Sumatra PDF",
+          "description": "Opens documents instantly with minimal memory usage.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -1500,41 +1240,6 @@
             "repo": "sumatrapdf",
             "stars": 122
           }
-        },
-        {
-          "children": [],
-          "description": "Reads and writes Microsoft Office file formats with high compatibility.",
-          "title": "FreeOffice"
-        },
-        {
-          "children": [],
-          "description": "Handles complex document formatting and supports extensive file formats.",
-          "title": "LibreOffice"
-        },
-        {
-          "children": [],
-          "description": "Provides real-time collaboration and cloud integration across apps.",
-          "title": "Microsoft Office"
-        },
-        {
-          "children": [],
-          "description": "Converts and edits PDFs with OCR capabilities.",
-          "title": "NitroPDF"
-        },
-        {
-          "children": [],
-          "description": "Focuses on stability and legacy format support.",
-          "title": "OpenOffice"
-        },
-        {
-          "children": [],
-          "description": "Offers mobile-desktop sync with built-in PDF tools.",
-          "title": "WPS Office"
-        },
-        {
-          "children": [],
-          "description": "Full-featured and free PDF editor, which provides read, edit, annotation, page management, and print PDF documents.",
-          "title": "PDFGear"
         }
       ],
       "title": "Office Suites"
@@ -1543,9 +1248,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "Lightweight Bitwarden server implementation.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Vaultwarden",
+          "description": "Lightweight Bitwarden server implementation.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -1556,9 +1263,11 @@
           }
         },
         {
-          "children": [],
-          "description": "End-to-end encrypted password manager.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Padloc",
+          "description": "End-to-end encrypted password manager.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -1567,21 +1276,6 @@
             "repo": "padloc",
             "stars": 20457
           }
-        },
-        {
-          "children": [],
-          "description": "Premium password manager with secure vault and team features.",
-          "title": "1Password"
-        },
-        {
-          "children": [],
-          "description": "Open-source password manager with encrypted vault.",
-          "title": "Bitwarden"
-        },
-        {
-          "children": [],
-          "description": "Zero-knowledge encrypted password manager.",
-          "title": "Proton Pass"
         }
       ],
       "title": "Password Managers"
@@ -1590,9 +1284,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "Real-time keystroke visualization tool.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Keywiz",
+          "description": "Real-time keystroke visualization tool.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -1603,9 +1299,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Local speech-to-text transcription with privacy-first approach. System-wide dictation via global hotkey.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "TypeWhisper",
+          "description": "Local speech-to-text transcription with privacy-first approach. System-wide dictation via global hotkey.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -1616,9 +1314,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A ready-to-go translation ocr tool developed with WPF",
+          "node_type": "item",
+          "kind": "repository",
           "title": "STranslate",
+          "description": "A ready-to-go translation ocr tool developed with WPF",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -1629,9 +1329,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Feature-rich task management tool.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "ToDoList",
+          "description": "Feature-rich task management tool.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -1642,9 +1344,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Cross-platform time tracking software.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Timelens",
+          "description": "Cross-platform time tracking software.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -1655,9 +1359,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A Blazing-Fast and Extremely-Lightweight Internet Reader driven by AI.Supports fetching of search engine information and RSS.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Saga Reader",
+          "description": "A Blazing-Fast and Extremely-Lightweight Internet Reader driven by AI.Supports fetching of search engine information and RSS.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -1668,9 +1374,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Privacy-focused LLM client for multiple AI services.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Kaas",
+          "description": "Privacy-focused LLM client for multiple AI services.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -1681,9 +1389,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A lightweight Windows tray application that gently reminds you to follow the 20–20–20 rule: every 20 minutes, look at something 20 feet (~6 meters) away for at least 20 seconds.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "EyeRest",
+          "description": "A lightweight Windows tray application that gently reminds you to follow the 20–20–20 rule: every 20 minutes, look at something 20 feet (~6 meters) away for at least 20 seconds.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -1692,71 +1402,6 @@
             "repo": "EyeRest",
             "stars": 6768
           }
-        },
-        {
-          "children": [],
-          "description": "Automation scripting language for Windows.",
-          "title": "AutoHotkey"
-        },
-        {
-          "children": [],
-          "description": "Manages clipboard history with AI text transforms and OCR extraction.",
-          "title": "Beetroot"
-        },
-        {
-          "children": [],
-          "description": "Website blocker with strict enforcement mechanisms.",
-          "title": "Cold Turkey"
-        },
-        {
-          "children": [],
-          "description": "Fast application instance switcher.",
-          "title": "Easy Window Switcher"
-        },
-        {
-          "children": [],
-          "description": "Automatic screen color temperature adjustment.",
-          "title": "f.lux"
-        },
-        {
-          "children": [],
-          "description": "Automated file organization with smart actions and PDF parsing.",
-          "title": "File Juggler"
-        },
-        {
-          "children": [],
-          "description": "Universal scrolling utility for Windows.",
-          "title": "KatMouse"
-        },
-        {
-          "children": [],
-          "description": "Professional file manager.",
-          "title": "MultiCommander"
-        },
-        {
-          "children": [],
-          "description": "Fast AI translator that explains and refines your phrasing.",
-          "title": "Nani Translate"
-        },
-        {
-          "children": [],
-          "description": "Streamlined software installation utility.",
-          "title": "Ninite"
-        },
-        {
-          "children": [],
-          "description": "Expands text snippets with fuzzy search, usage-based prioritization, and local-only data storage.",
-          "title": "PhraseVault"
-        },
-        {
-          "children": [],
-          "description": "Collaborative task management with real-time sync.",
-          "title": "Taskade"
-        },
-        {
-          "children": [],
-          "description": "Comprehensive English dictionary.",
-          "title": "WordWeb"
         }
       ],
       "title": "Productivity"
@@ -1765,9 +1410,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "Open-source self-hosted game streaming server for use with Moonlight.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Sunshine",
+          "description": "Open-source self-hosted game streaming server for use with Moonlight.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -1778,9 +1425,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Open-source GameStream client for Windows, Mac, Linux, and Steam Link.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Moonlight",
+          "description": "Open-source GameStream client for Windows, Mac, Linux, and Steam Link.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -1791,9 +1440,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Open-source remote desktop software with a focus on simplicity and security.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "RustDesk",
+          "description": "Open-source remote desktop software with a focus on simplicity and security.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -1802,41 +1453,6 @@
             "repo": "rustdesk",
             "stars": 3509
           }
-        },
-        {
-          "children": [],
-          "description": "Free and lightweight remote access solution for ease of use.",
-          "title": "AnyDesk"
-        },
-        {
-          "children": [],
-          "description": "High-performance remote desktop solution with 4k streaming at 60fps and low latency.",
-          "title": "Parsec"
-        },
-        {
-          "children": [],
-          "description": "Secure remote access for desktop and mobile devices.",
-          "title": "RealVNC"
-        },
-        {
-          "children": [],
-          "description": "Remote access tool for IT professionals, supporting multiple protocols.",
-          "title": "RoyalTSX"
-        },
-        {
-          "children": [],
-          "description": "Play your Steam games across devices using the Steam Link app.",
-          "title": "Steam Link"
-        },
-        {
-          "children": [],
-          "description": "Popular remote control software for desktop sharing and file transfer.",
-          "title": "TeamViewer"
-        },
-        {
-          "children": [],
-          "description": "Multi-protocol remote connections manager.",
-          "title": "mRemoteNG"
         }
       ],
       "title": "Remote Access"
@@ -1845,9 +1461,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "Free and open source software for video recording and live streaming.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "OBS Studio",
+          "description": "Free and open source software for video recording and live streaming.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -1858,9 +1476,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Screenshot capture and editing tool.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Greenshot",
+          "description": "Screenshot capture and editing tool.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -1869,26 +1489,6 @@
             "repo": "greenshot",
             "stars": 19593
           }
-        },
-        {
-          "children": [],
-          "description": "DirectX/OpenGL game recording utility.",
-          "title": "Fraps"
-        },
-        {
-          "children": [],
-          "description": "Animated GIF screen capture tool.",
-          "title": "LICEcap"
-        },
-        {
-          "children": [],
-          "description": "Built-in Windows screenshot utility.",
-          "title": "Snipping Tool"
-        },
-        {
-          "children": [],
-          "description": "Screen zoom and annotation tool for presentations.",
-          "title": "ZoomIt"
         }
       ],
       "title": "Screen Capture"
@@ -1897,9 +1497,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "A simple screenshot tool made in rust.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Capter",
+          "description": "A simple screenshot tool made in rust.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -1910,9 +1512,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Customizable screenshot tool with an easy-to-use interface and built-in editor.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Flameshot",
+          "description": "Customizable screenshot tool with an easy-to-use interface and built-in editor.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -1923,9 +1527,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Powerful, open-source screenshot and screen recording tool with advanced editing options.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "ShareX",
+          "description": "Powerful, open-source screenshot and screen recording tool with advanced editing options.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -1936,9 +1542,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Greenshot is a light-weight screenshot software tool for Windows.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Greenshot",
+          "description": "Greenshot is a light-weight screenshot software tool for Windows.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -1947,11 +1555,6 @@
             "repo": "greenshot",
             "stars": 19593
           }
-        },
-        {
-          "children": [],
-          "description": "A fast and intuitive screenshot tool that allows capturing and editing images instantly.",
-          "title": "Lightshot"
         }
       ],
       "title": "Screenshot"
@@ -1960,9 +1563,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "cppcryptfs is an implementation of the gocryptfs encrypted overlay filesystem in C++ for Windows",
+          "node_type": "item",
+          "kind": "repository",
           "title": "cppcryptfs",
+          "description": "cppcryptfs is an implementation of the gocryptfs encrypted overlay filesystem in C++ for Windows",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -1973,9 +1578,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Open source 2FA authenticator, with E2EE backups.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Ente Auth",
+          "description": "Open source 2FA authenticator, with E2EE backups.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -1986,9 +1593,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Client-side encryption for cloud files.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Cryptomator",
+          "description": "Client-side encryption for cloud files.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -1997,71 +1606,6 @@
             "repo": "cryptomator",
             "stars": 937
           }
-        },
-        {
-          "children": [],
-          "description": "Removal tool for adware, PUP/LPI, toolbars and hijackers.",
-          "title": "AdwCleaner"
-        },
-        {
-          "children": [],
-          "description": "Comprehensive malware protection suite.",
-          "title": "Bitdefender"
-        },
-        {
-          "children": [],
-          "description": "File encryption utility.",
-          "title": "ENCRYPTO"
-        },
-        {
-          "children": [],
-          "description": "Network security monitoring and visualization tool.",
-          "title": "GlassWire"
-        },
-        {
-          "children": [],
-          "description": "Windows encryption protocol configuration utility.",
-          "title": "IIS Crypto"
-        },
-        {
-          "children": [],
-          "description": "Advanced threat protection and removal.",
-          "title": "Malwarebytes"
-        },
-        {
-          "children": [],
-          "description": "Internet traffic control and monitoring tool.",
-          "title": "NetLimiter"
-        },
-        {
-          "children": [],
-          "description": "Malware and spyware detection and removal.",
-          "title": "SpyBot"
-        },
-        {
-          "children": [],
-          "description": "Enhanced task manager with advanced system monitoring.",
-          "title": "System Explorer"
-        },
-        {
-          "children": [],
-          "description": "Anonymous communication network.",
-          "title": "Tor Project"
-        },
-        {
-          "children": [],
-          "description": "Automated unwanted software offer prevention.",
-          "title": "UnChecky"
-        },
-        {
-          "children": [],
-          "description": "Disk encryption software for multiple platforms.",
-          "title": "VeraCrypt"
-        },
-        {
-          "children": [],
-          "description": "Enterprise-ready OpenVPN client.",
-          "title": "Viscosity"
         }
       ],
       "title": "Security"
@@ -2070,9 +1614,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "Offline website browser and mirror utility.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "HTTrack",
+          "description": "Offline website browser and mirror utility.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -2083,9 +1629,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Free and reliable P2P Bittorrent client.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "qBittorrent",
+          "description": "Free and reliable P2P Bittorrent client.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -2096,9 +1644,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Open-source utility for monitoring S.M.A.R.T. data, disk temperature and more.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "CrystalDiskInfo",
+          "description": "Open-source utility for monitoring S.M.A.R.T. data, disk temperature and more.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -2109,9 +1659,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Free, open-source and cross-platform app that allows you to securely share files and messages with nearby devices over your local network without needing an internet connection.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "LocalSend",
+          "description": "Free, open-source and cross-platform app that allows you to securely share files and messages with nearby devices over your local network without needing an internet connection.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -2122,9 +1674,11 @@
           }
         },
         {
-          "children": [],
-          "description": "BleachBit is a free and open-source system cleaner designed to free up disk space.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "BleachBit",
+          "description": "BleachBit is a free and open-source system cleaner designed to free up disk space.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -2135,9 +1689,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Peer-to-peer file synchronization tool.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "SyncThing",
+          "description": "Peer-to-peer file synchronization tool.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -2148,9 +1704,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Bootable USB creation utility.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Rufus",
+          "description": "Bootable USB creation utility.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -2161,9 +1719,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A tool to turn any app into a native Windows service with powerful configuration and management options (a modern alternative to NSSM and WinSW).",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Servy",
+          "description": "A tool to turn any app into a native Windows service with powerful configuration and management options (a modern alternative to NSSM and WinSW).",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -2174,9 +1734,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Comprehensive system monitoring and management tool.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Process Hacker",
+          "description": "Comprehensive system monitoring and management tool.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -2187,9 +1749,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Modern system monitor built with Svelte and Rust.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "neohtop",
+          "description": "Modern system monitor built with Svelte and Rust.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -2200,9 +1764,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Microsoft's power user toolkit.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "PowerToys",
+          "description": "Microsoft's power user toolkit.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -2213,9 +1779,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Easily manage the brightness levels of multiple monitors.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Twinkle Tray",
+          "description": "Easily manage the brightness levels of multiple monitors.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -2226,9 +1794,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Flash OS images to SD cards & USB drives safely and easily.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "balenaEtcher",
+          "description": "Flash OS images to SD cards & USB drives safely and easily.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -2239,9 +1809,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A lightweight, software cache cleanup tool for Windows & Linux.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "CrunchyCleaner",
+          "description": "A lightweight, software cache cleanup tool for Windows & Linux.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -2252,9 +1824,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Adaptive screen brightness utility.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "LightBulb",
+          "description": "Adaptive screen brightness utility.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -2265,9 +1839,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Easily mirror and control your Android devices on computers via USB or WiFi.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "scrcpy",
+          "description": "Easily mirror and control your Android devices on computers via USB or WiFi.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -2276,76 +1852,6 @@
             "repo": "scrcpy",
             "stars": 1010
           }
-        },
-        {
-          "children": [],
-          "description": "Batch file renamer with support for metadata and regex.",
-          "title": "Advanced Renamer"
-        },
-        {
-          "children": [],
-          "description": "System cleanup and optimization utility.",
-          "title": "CleanMyPC"
-        },
-        {
-          "children": [],
-          "description": "CPU monitoring and information tool.",
-          "title": "CPU-Z"
-        },
-        {
-          "children": [],
-          "description": "Highly focused fan controlling software.",
-          "title": "Fan Control"
-        },
-        {
-          "children": [],
-          "description": "GPU monitoring and information tool.",
-          "title": "GPU-Z"
-        },
-        {
-          "children": [],
-          "description": "Comprehensive Hardware Analysis, Monitoring and Reporting for Windows and DOS.",
-          "title": "HWiNFO"
-        },
-        {
-          "children": [],
-          "description": "Hardware monitoring for temperatures, voltages, and fan speeds.",
-          "title": "HWMonitor"
-        },
-        {
-          "children": [],
-          "description": "Fast and compact image viewer and converter.",
-          "title": "IrfanView"
-        },
-        {
-          "children": [],
-          "description": "Collection of utility softwares.",
-          "title": "Nirsoft"
-        },
-        {
-          "children": [],
-          "description": "Secure file deletion command-line utility.",
-          "title": "SDelete"
-        },
-        {
-          "children": [],
-          "description": "Powerful scientific calculator.",
-          "title": "SpeedCrunch"
-        },
-        {
-          "children": [],
-          "description": "iOS media transfer utility without iTunes.",
-          "title": "Waltr"
-        },
-        {
-          "children": [],
-          "description": "Multi-term file and registry search utility.",
-          "title": "WinFindr"
-        },
-        {
-          "children": [],
-          "description": "Fast disk space analyzer.",
-          "title": "WizTree"
         }
       ],
       "title": "System Utilities"
@@ -2354,9 +1860,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "Configurable terminal built on web technologies.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Terminus",
+          "description": "Configurable terminal built on web technologies.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -2367,9 +1875,11 @@
           }
         },
         {
-          "children": [],
-          "description": "GPU-accelerated terminal emulator and multiplexer.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "WezTerm",
+          "description": "GPU-accelerated terminal emulator and multiplexer.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -2380,9 +1890,11 @@
           }
         },
         {
-          "children": [],
-          "description": "UWP-based modern terminal emulator.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "FluentTerminal",
+          "description": "UWP-based modern terminal emulator.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -2393,9 +1905,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Official Microsoft terminal.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Windows Terminal",
+          "description": "Official Microsoft terminal.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -2406,9 +1920,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Console emulator with clink shell integration.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Cmder",
+          "description": "Console emulator with clink shell integration.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -2419,9 +1935,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Cross-platform, GPU-accelerated terminal emulator.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Alacritty",
+          "description": "Cross-platform, GPU-accelerated terminal emulator.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -2432,9 +1950,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Customizable terminal with tabs, splits, and quake-style dropdown.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "ConEmu",
+          "description": "Customizable terminal with tabs, splits, and quake-style dropdown.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -2443,36 +1963,6 @@
             "repo": "ConEmu",
             "stars": 795
           }
-        },
-        {
-          "children": [],
-          "description": "Enhanced PuTTY with additional features.",
-          "title": "Kitty"
-        },
-        {
-          "children": [],
-          "description": "Enhanced terminal with X server and SSH client.",
-          "title": "MobaXterm"
-        },
-        {
-          "children": [],
-          "description": "Multi-tabbed PuTTY client.",
-          "title": "MTPuTTY"
-        },
-        {
-          "children": [],
-          "description": "SSH and telnet client.",
-          "title": "PuTTY"
-        },
-        {
-          "children": [],
-          "description": "Modern SSH Client built for productivity and collaboration.",
-          "title": "Termius"
-        },
-        {
-          "children": [],
-          "description": "AI-powered terminal with IDE-like features and team collaboration.",
-          "title": "Warp"
         }
       ],
       "title": "Terminal"
@@ -2481,9 +1971,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "Highly configurable text editor optimized for efficiency.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "GVim",
+          "description": "Highly configurable text editor optimized for efficiency.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -2494,9 +1986,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Feature-rich source code editor.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Notepad++",
+          "description": "Feature-rich source code editor.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -2507,9 +2001,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Modern, extensible terminal-based editor.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Neovim",
+          "description": "Modern, extensible terminal-based editor.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -2520,9 +2016,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Customizable Neovim configuration framework.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "LazyVim",
+          "description": "Customizable Neovim configuration framework.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -2531,21 +2029,6 @@
             "repo": "LazyVim",
             "stars": 16133
           }
-        },
-        {
-          "children": [],
-          "description": "Lightweight Notepad replacement with enhanced features.",
-          "title": "Notepad2"
-        },
-        {
-          "children": [],
-          "description": "Advanced text editor with extensive plugin ecosystem.",
-          "title": "Sublime Text"
-        },
-        {
-          "children": [],
-          "description": "Lighweight, hackable, and highly modular text & code editor.",
-          "title": "Text Forge"
         }
       ],
       "title": "Text Editors"
@@ -2554,9 +2037,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "Electron-based GitHub client.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "GitHub Desktop",
+          "description": "Electron-based GitHub client.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -2567,9 +2052,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Open-source GitHub & GitLab notifications client.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "GitLight",
+          "description": "Open-source GitHub & GitLab notifications client.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -2580,9 +2067,11 @@
           }
         },
         {
-          "children": [],
-          "description": "GitHub notifications on your desktop as a tray app.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "DevHub",
+          "description": "GitHub notifications on your desktop as a tray app.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -2593,9 +2082,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Powerful and user-friendly Git UI.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Git Extensions",
+          "description": "Powerful and user-friendly Git UI.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -2606,9 +2097,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Git client with full shell integration.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "TortoiseGit",
+          "description": "Git client with full shell integration.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -2617,31 +2110,6 @@
             "repo": "tortoisegit",
             "stars": 4485
           }
-        },
-        {
-          "children": [],
-          "description": "Fast and friendly Git client for Windows and Mac.",
-          "title": "Fork"
-        },
-        {
-          "children": [],
-          "description": "Cross-platform Git client with intuitive interface.",
-          "title": "GitKraken"
-        },
-        {
-          "children": [],
-          "description": "Visual diff and merge tool.",
-          "title": "Meld"
-        },
-        {
-          "children": [],
-          "description": "Free Git & Mercurial client.",
-          "title": "SourceTree"
-        },
-        {
-          "children": [],
-          "description": "Professional Git client with advanced features.",
-          "title": "Tower"
         }
       ],
       "title": "Version Control"
@@ -2650,9 +2118,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "Script-based media player with extensive keyboard controls.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "mpv",
+          "description": "Script-based media player with extensive keyboard controls.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -2663,9 +2133,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Records screen areas and saves as GIF or video.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "ScreenToGif",
+          "description": "Records screen areas and saves as GIF or video.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -2676,9 +2148,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Converts videos between formats with compression options.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "HandBrake",
+          "description": "Converts videos between formats with compression options.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -2689,9 +2163,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Video editor with native timeline filtering.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Shotcut",
+          "description": "Video editor with native timeline filtering.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -2702,9 +2178,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Plays damaged/incomplete media files and network streams.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "VLC",
+          "description": "Plays damaged/incomplete media files and network streams.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -2715,9 +2193,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Node-based video editor with real-time effects.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Olive Video Editor",
+          "description": "Node-based video editor with real-time effects.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -2726,26 +2206,6 @@
             "repo": "olive",
             "stars": 12183
           }
-        },
-        {
-          "children": [],
-          "description": "Complete video production suite with color grading, VFX, and audio tools.",
-          "title": "DaVinci Resolve"
-        },
-        {
-          "children": [],
-          "description": "Video editor focused on transitions and effects.",
-          "title": "Kdenlive"
-        },
-        {
-          "children": [],
-          "description": "Media player with hardware acceleration and streaming capabilities.",
-          "title": "PotPlayer"
-        },
-        {
-          "children": [],
-          "description": "Converts between hundreds of media formats with processing options.",
-          "title": "Shutter Encoder"
         }
       ],
       "title": "Video Utilities"
@@ -2754,9 +2214,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "Tool for building and managing virtual machines.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Vagrant",
+          "description": "Tool for building and managing virtual machines.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -2767,9 +2229,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Open source desktop containerization alternative to Docker.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Podman Desktop",
+          "description": "Open source desktop containerization alternative to Docker.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -2778,31 +2242,6 @@
             "repo": "podman-desktop",
             "stars": 31951
           }
-        },
-        {
-          "children": [],
-          "description": "Containerization for Desktop, built on top of WSL2.",
-          "title": "Docker Desktop"
-        },
-        {
-          "children": [],
-          "description": "Open-source emulator and virtualizer for hardware and system virtualization.",
-          "title": "QEMU"
-        },
-        {
-          "children": [],
-          "description": "Open-source application for managing containers and Kubernetes on the desktop.",
-          "title": "Rancher Desktop"
-        },
-        {
-          "children": [],
-          "description": "Powerful x86 and AMD64/Intel64 virtualization software for creating and managing virtual machines.",
-          "title": "VirtualBox"
-        },
-        {
-          "children": [],
-          "description": "The leading local virtualization platform for building, testing and demoing software using virtual machines.",
-          "title": "VMWare Workstation Pro"
         }
       ],
       "title": "Virtualization"
@@ -2811,9 +2250,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "Tiles windows dynamically.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Komorebi",
+          "description": "Tiles windows dynamically.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -2824,9 +2265,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Window snapping with keyboard shortcuts.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "AltSnap",
+          "description": "Window snapping with keyboard shortcuts.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -2837,9 +2280,11 @@
           }
         },
         {
-          "children": [],
-          "description": "PowerToys window manager for multi-monitor setups.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "FancyZones",
+          "description": "PowerToys window manager for multi-monitor setups.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -2850,9 +2295,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Rust-based tiling window manager.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "GlazeWM",
+          "description": "Rust-based tiling window manager.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -2877,6 +2324,7 @@
     "original_repository_sha": "deadbeef",
     "enhanced_repository": "enhansome/enhansome-windows",
     "enhanced_repository_description": "enhanced list",
+    "kind": "registry",
     "title": "Awesome windows with stars"
   }
 }

@@ -14,7 +14,6 @@ import { enhance } from './orchestrator.js';
 
 export async function run(): Promise<void> {
   try {
-    // 1. Get all inputs from the GitHub Actions environment
     const token = core.getInput('github_token');
     if (!token) {
       core.warning(
@@ -35,7 +34,7 @@ export async function run(): Promise<void> {
       return;
     }
 
-    // 2. The action always fetches the source list over the API:
+    // The action always fetches the source list over the API:
     // `original_repository` is required and `markdown_file` is the output path.
     const parsed = parseOwnerRepo(originalRepository);
     if (!parsed) {
@@ -51,10 +50,8 @@ export async function run(): Promise<void> {
       getReadme(octokit, parsed.owner, parsed.repo),
       getLatestCommitSha(octokit, parsed.owner, parsed.repo),
     ]);
-    if (readme === null) {
-      core.setFailed(`No README found in ${parsed.owner}/${parsed.repo}`);
-      return;
-    }
+    // getReadme throws on failure (strict mode); the top-level catch surfaces
+    // it via setFailed, so there is no null branch to handle.
     if (originalRepositorySha === null) {
       core.warning(
         `Could not determine the latest commit SHA for ${parsed.owner}/${parsed.repo}; it will be omitted from the JSON output.`,
@@ -62,7 +59,6 @@ export async function run(): Promise<void> {
     }
     const originalContent = readme;
 
-    // 3. Call the pure orchestrator function with all the data
     const { repo } = github.context;
     const enhancedRepository = `${repo.owner}/${repo.repo}`;
     const enhancedRepositoryDescription =
@@ -83,7 +79,6 @@ export async function run(): Promise<void> {
       token,
     });
 
-    // 4. Optionally, save a copy of the JSON data based on user's input
     if (jsonOutputFile) {
       let fullJsonPath: string;
 
@@ -110,8 +105,8 @@ export async function run(): Promise<void> {
       );
     }
 
-    // 5. Write the markdown output. `markdown_file` is the output path and the
-    // badged source always differs from upstream, so write unconditionally.
+    // `markdown_file` is the output path; the badged source always differs from
+    // upstream, so write unconditionally.
     await fs.writeFile(markdownFile, result.finalContent, 'utf-8');
     core.info(`Successfully wrote ${markdownFile}.`);
 

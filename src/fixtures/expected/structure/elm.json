@@ -4,9 +4,11 @@
       "description": "Learn what this awesome thing is.",
       "items": [
         {
-          "children": [],
-          "description": "Practice exercises for learning Elm.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Elm Koans",
+          "description": "Practice exercises for learning Elm.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -17,9 +19,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Useful resources for programming language theory & development in Elm.",
+          "node_type": "item",
+          "kind": "registry",
           "title": "Awesome Elm PLTD",
+          "description": "Useful resources for programming language theory & development in Elm.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -30,9 +34,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Discover the beautiful programming language that makes front-end web apps a joy to build and maintain!",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Learn Elm",
+          "description": "Discover the beautiful programming language that makes front-end web apps a joy to build and maintain!",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -43,9 +49,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Collection of examples on places where Elm is different to Haskell, targeted at Elm beginners coming from Haskell backgrounds.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Haskell to Elm",
+          "description": "Collection of examples on places where Elm is different to Haskell, targeted at Elm beginners coming from Haskell backgrounds.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -56,9 +64,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A list of README files by Evan.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Codings hints",
+          "description": "A list of README files by Evan.",
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": "JavaScript",
@@ -69,9 +79,11 @@
           }
         },
         {
-          "children": [],
-          "description": "How to create modular Elm code that scales nicely with your app.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Architecture Tutorial",
+          "description": "How to create modular Elm code that scales nicely with your app.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -82,9 +94,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Syntax and features overview.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Elm cheat sheet",
+          "description": "Syntax and features overview.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -93,101 +107,6 @@
             "repo": "elm-cheat-sheet",
             "stars": 5679
           }
-        },
-        {
-          "children": [],
-          "description": "General information and in-depth guide with examples.",
-          "title": "Official tutorial"
-        },
-        {
-          "children": [],
-          "description": "In-depth book for Elm beginners, from Manning Publications.",
-          "title": "Elm in Action"
-        },
-        {
-          "children": [],
-          "description": "Collection of Elm exercises.",
-          "title": "Exercism Elm Track"
-        },
-        {
-          "children": [],
-          "description": "Elm tutorial with exhaustive examples and descriptions.",
-          "title": "Learn you an Elm"
-        },
-        {
-          "children": [],
-          "description": "A gentle introduction to the Elm programming language.",
-          "title": "Beginning Elm"
-        },
-        {
-          "children": [],
-          "description": "A collection of common patterns in Elm.",
-          "title": "Elm patterns"
-        },
-        {
-          "children": [],
-          "description": "Syntax and features overview. The Elm page on learnxinyminutes.com",
-          "title": "Learn Elm in Y Minutes"
-        },
-        {
-          "children": [],
-          "description": "Working with the Maybe type, with nicely commented code examples.",
-          "title": "Elm Maybe - Dealing with null/Nothing"
-        },
-        {
-          "children": [],
-          "description": "Thorough book from The Pragmatic Programmers that covers basics and advanced concepts.",
-          "title": "Programming Elm"
-        },
-        {
-          "children": [],
-          "description": "Adaptations for Elm from Ninety-Nine Haskell Problems.",
-          "title": "Ninety-nine Problems, Solved in Elm"
-        },
-        {
-          "children": [],
-          "description": "Two tutorials on building web apps with Elm.",
-          "title": "Elm Tutorials on Codementor"
-        },
-        {
-          "children": [],
-          "description": "a brief overview of Elm as a programming language.",
-          "title": "Elm programming language"
-        },
-        {
-          "children": [],
-          "description": "Beginners' course to Elm and Data",
-          "title": "Elm: A Beginners' Guide to Elm and Data"
-        },
-        {
-          "children": [],
-          "description": "A non-beginner book about the practical aspects of developing Elm applications.",
-          "title": "Practical Elm for a Busy Developer"
-        },
-        {
-          "children": [],
-          "description": "An introduction to Elm",
-          "title": "A nice app on Elm street"
-        },
-        {
-          "children": [],
-          "description": "Building web applications in F# following The Elm Architecture from first principles.",
-          "title": "The Elmish Book"
-        },
-        {
-          "children": [],
-          "description": "A collection of coding patterns.",
-          "title": "Elm patterns"
-        },
-        {
-          "children": [],
-          "description": "A Collection of small example in Ellie.",
-          "title": "Ellies catalog"
-        },
-        {
-          "children": [],
-          "description": "A digital book about Elm.",
-          "title": "Elm Cookbook"
         }
       ],
       "title": "Learning Guides"
@@ -201,9 +120,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "A collection of notes for web developers looking into moving to Elm.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Elm for Web Developers",
+          "description": "A collection of notes for web developers looking into moving to Elm.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -214,9 +135,11 @@
           }
         },
         {
-          "children": [],
-          "description": "An article describing how to organize code that follows the Elm architecture into independent features, how to communicate between features, and how to group some of these features together to assemble larger features.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Composing Features and Behaviours in the Elm Architecture",
+          "description": "An article describing how to organize code that follows the Elm architecture into independent features, how to communicate between features, and how to group some of these features together to assemble larger features.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -225,21 +148,6 @@
             "repo": "adventures-reactive-web-dev",
             "stars": 9504
           }
-        },
-        {
-          "children": [],
-          "description": "A blog post describing a possible approach to reducing TEA boilerplate. Useful for component libraries and anyone interested in seeing the amazing things you can do with function types.",
-          "title": "Elm & Components"
-        },
-        {
-          "children": [],
-          "description": "Series of Elm education tutorials.",
-          "title": "Getting Started with Elm"
-        },
-        {
-          "children": [],
-          "description": "a realistic look at where Elm is and isn’t superior to other options.",
-          "title": "Elm & Guarantees"
         }
       ],
       "title": "Outdated articles (Not relevant for current Elm architecture)"
@@ -253,9 +161,11 @@
       "description": "Tools and libraries to test your Elm applications",
       "items": [
         {
-          "children": [],
-          "description": "Test complete Elm programs",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Elm Program test",
+          "description": "Test complete Elm programs",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -266,9 +176,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Describe the behavior of Elm programs.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Elm Spec",
+          "description": "Describe the behavior of Elm programs.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -279,9 +191,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Unit and fuzz tests",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Elm test",
+          "description": "Unit and fuzz tests",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -298,9 +212,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "Generate JSON decoders and encoders from JSON",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Quicktype",
+          "description": "Generate JSON decoders and encoders from JSON",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -311,9 +227,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Generate Protobuf En/Decoders from .proto files",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Protoc Gen Elm",
+          "description": "Generate Protobuf En/Decoders from .proto files",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -324,9 +242,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Build up Encoders/Decoders between Elm and TypeScript.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Elm TS Interop",
+          "description": "Build up Encoders/Decoders between Elm and TypeScript.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -337,9 +257,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Generate typesafe Elm code from translation files",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Travelm Agency",
+          "description": "Generate typesafe Elm code from translation files",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -350,9 +272,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Generate Elm types, encoders, and decoders from Haskell types",
+          "node_type": "item",
+          "kind": "repository",
           "title": "haskell-to-elm",
+          "description": "Generate Elm types, encoders, and decoders from Haskell types",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -363,9 +287,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Generate GraphQl client code from GraphQL schemas",
+          "node_type": "item",
+          "kind": "repository",
           "title": "elm-graphql",
+          "description": "Generate GraphQl client code from GraphQL schemas",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -376,9 +302,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Generate GraphQl client code from GraphQL queries",
+          "node_type": "item",
+          "kind": "repository",
           "title": "elm-gql",
+          "description": "Generate GraphQl client code from GraphQL queries",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -389,9 +317,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Put some Tailwind in your Elm",
+          "node_type": "item",
+          "kind": "repository",
           "title": "PostCSS Elm Tailwind",
+          "description": "Put some Tailwind in your Elm",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -402,9 +332,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Generate Elm types from Haskell",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Elm Bridge",
+          "description": "Generate Elm types from Haskell",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -415,9 +347,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Generate OpenApi types for Elm.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "OpenApi Generator",
+          "description": "Generate OpenApi types for Elm.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -428,9 +362,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Generate TypeScript definitions from Elm ( is an improved version of this).",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Elm TypeScript Interop",
+          "description": "Generate TypeScript definitions from Elm ( is an improved version of this).",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -441,9 +377,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Generates Elm types, JSON decoders, JSON encoders and fuzz tests from JSON schema specifications",
+          "node_type": "item",
+          "kind": "repository",
           "title": "JSON Schema to Elm",
+          "description": "Generates Elm types, JSON decoders, JSON encoders and fuzz tests from JSON schema specifications",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -454,9 +392,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Generate Elm code",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Elm CodeGen",
+          "description": "Generate Elm code",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -465,11 +405,6 @@
             "repo": "elm-codegen",
             "stars": 6693
           }
-        },
-        {
-          "children": [],
-          "description": "Convert HTML to Elm Html. Useful when porting an app to Elm.",
-          "title": "HTML to Elm"
         }
       ],
       "title": "Code generators"
@@ -478,9 +413,11 @@
       "description": "Good starting point for a new Elm project.",
       "items": [
         {
-          "children": [],
-          "description": "A flexible dev server for Elm. Live reload included.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "elm-live",
+          "description": "A flexible dev server for Elm. Live reload included.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -491,9 +428,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A project template and generator for Elm, Parcel, Cypress and Netlify",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Elm Batteries",
+          "description": "A project template and generator for Elm, Parcel, Cypress and Netlify",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -504,9 +443,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Elm webpack 4 starter template.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "elm-webpack-4-starter",
+          "description": "Elm webpack 4 starter template.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -517,9 +458,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Command Line Utility for creating an Elm boilerplate project easy to run, build and get deployed",
+          "node_type": "item",
+          "kind": "repository",
           "title": "elm-boil",
+          "description": "Command Line Utility for creating an Elm boilerplate project easy to run, build and get deployed",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -530,9 +473,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Example showing hot module reloading for Elm 0.19 and Webpack",
+          "node_type": "item",
+          "kind": "repository",
           "title": "example-elm-hot-webpack",
+          "description": "Example showing hot module reloading for Elm 0.19 and Webpack",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -543,9 +488,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Create Elm apps with no build configuration.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "create-elm-app",
+          "description": "Create Elm apps with no build configuration.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -554,11 +501,6 @@
             "repo": "create-elm-app",
             "stars": 867
           }
-        },
-        {
-          "children": [],
-          "description": "The IHP Haskell Framework provides a built-in Elm boilerplate, useful when working with elm in the frontend and haskell in the backend",
-          "title": "IHP + Elm"
         }
       ],
       "title": "Boilerplates"
@@ -567,9 +509,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "Yeoman generator for a simple elm application utilizing Material Design.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "generator-elm-mdl",
+          "description": "Yeoman generator for a simple elm application utilizing Material Design.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -580,9 +524,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A very very basic elm + webpack 4 template.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "elm-webpack-starter-kid",
+          "description": "A very very basic elm + webpack 4 template.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -593,9 +539,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A simple Makefile able to create Elm app.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "elm-boilerplate",
+          "description": "A simple Makefile able to create Elm app.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -606,9 +554,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A lightweight Brunch based setup for web app. Includes Brunch, Hot Module Replacement, Elm, Scss, Elm tests.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "elmkit",
+          "description": "A lightweight Brunch based setup for web app. Includes Brunch, Hot Module Replacement, Elm, Scss, Elm tests.",
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": "Shell",
@@ -619,9 +569,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A simple Webpack setup for writing Elm apps.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "elm-webpack-starter",
+          "description": "A simple Webpack setup for writing Elm apps.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -632,9 +584,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A fully-featured base project for Elm apps: Webpack, HMR, ES6, JS and Elm tests, Semantic UI, sample code and more.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "elm-app-boilerplate",
+          "description": "A fully-featured base project for Elm apps: Webpack, HMR, ES6, JS and Elm tests, Semantic UI, sample code and more.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -645,9 +599,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Interactive setup for new Elm projects.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "elm-init",
+          "description": "Interactive setup for new Elm projects.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -658,9 +614,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Generate initial project scaffolding based on a template.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "elm-new",
+          "description": "Generate initial project scaffolding based on a template.",
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": "Rust",
@@ -677,9 +635,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "Code reviewer for the Elm programming language.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Elm Review",
+          "description": "Code reviewer for the Elm programming language.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -690,9 +650,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Linter for the Elm programming language.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Elm Analyse",
+          "description": "Linter for the Elm programming language.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -709,9 +671,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "Run Elm code from the command line",
+          "node_type": "item",
+          "kind": "repository",
           "title": "run-elm",
+          "description": "Run Elm code from the command line",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -722,9 +686,11 @@
           }
         },
         {
-          "children": [],
-          "description": "in watch mode. Fast and reliable.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Elm Watch",
+          "description": "in watch mode. Fast and reliable.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -733,31 +699,6 @@
             "repo": "elm-watch",
             "stars": 3825
           }
-        },
-        {
-          "children": [],
-          "description": "The Elm Live Editor",
-          "title": "Ellie"
-        },
-        {
-          "children": [],
-          "description": "Advanced Elm Live Editor",
-          "title": "Elm Editor"
-        },
-        {
-          "children": [],
-          "description": "atom package to try your elm code from the editor. Provides a visual REPL and a preview pane.",
-          "title": "elm-instant"
-        },
-        {
-          "children": [],
-          "description": "Build fast, full-stack web apps in your browser.",
-          "title": "Glitch"
-        },
-        {
-          "children": [],
-          "description": "A flexible dev server for Elm. Live reload included!",
-          "title": "Elm Live"
         }
       ],
       "title": "Run Elm"
@@ -766,9 +707,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "Webpack loader Elm.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "elm-webpack-loader",
+          "description": "Webpack loader Elm.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -779,9 +722,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Vite plugin for Elm.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "vite-plugin-elm",
+          "description": "Vite plugin for Elm.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -792,9 +737,11 @@
           }
         },
         {
-          "children": [],
-          "description": "The official Elm compiler.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "elm-compiler",
+          "description": "The official Elm compiler.",
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": "JavaScript",
@@ -803,11 +750,6 @@
             "repo": "compiler",
             "stars": 18962
           }
-        },
-        {
-          "children": [],
-          "description": "Bundle Elm using Parcel.",
-          "title": "Parcel"
         }
       ],
       "title": "Compile and bundle"
@@ -816,9 +758,11 @@
       "description": "Useful tools related to Elm.",
       "items": [
         {
-          "children": [],
-          "description": "Write CLI programs using Elm",
+          "node_type": "item",
+          "kind": "repository",
           "title": "elm-posix",
+          "description": "Write CLI programs using Elm",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -829,9 +773,11 @@
           }
         },
         {
-          "children": [],
-          "description": "JS type systems interportability.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "type-o-rama",
+          "description": "JS type systems interportability.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -842,9 +788,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Automatic Elm code formatter adhering to Elm Style Guide.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Elm Format",
+          "description": "Automatic Elm code formatter adhering to Elm Style Guide.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -855,9 +803,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Install, upgrade and uninstall Elm dependencies",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Elm JSON",
+          "description": "Install, upgrade and uninstall Elm dependencies",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -868,9 +818,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Elm offline documentation previewer.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Elm Doc Preview",
+          "description": "Elm offline documentation previewer.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -881,9 +833,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Query for information about values in elm source files. Used by most editor plugins.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Elm Oracle",
+          "description": "Query for information about values in elm source files. Used by most editor plugins.",
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": "Go",
@@ -894,9 +848,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Literate Visualization with Elm",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Litvis",
+          "description": "Literate Visualization with Elm",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -905,21 +861,6 @@
             "repo": "litvis",
             "stars": 9679
           }
-        },
-        {
-          "children": [],
-          "description": "A catalog of Elm tools.",
-          "title": "Elm Catalog"
-        },
-        {
-          "children": [],
-          "description": "Automatic update PRs for your elm.json.",
-          "title": "Dependabot"
-        },
-        {
-          "children": [],
-          "description": "Convert HTML to Elm.",
-          "title": "Html to Elm"
         }
       ],
       "title": "Other tools"
@@ -933,9 +874,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "Sublime Text plugin to run elm-format on save.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Elm Format on Save",
+          "description": "Sublime Text plugin to run elm-format on save.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -946,9 +889,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Elm Language Server for Sublime (Recommended).",
+          "node_type": "item",
+          "kind": "repository",
           "title": "LSP-elm",
+          "description": "Elm Language Server for Sublime (Recommended).",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -959,9 +904,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Language server implementation for Elm",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Elm Language Server",
+          "description": "Language server implementation for Elm",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -970,11 +917,6 @@
             "repo": "elm-language-server",
             "stars": 3897
           }
-        },
-        {
-          "children": [],
-          "description": "Syntax Highlighting for Elm in Sublime Text.",
-          "title": "Elm Syntax Highlighting"
         }
       ],
       "title": "Sublime Text"
@@ -983,9 +925,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "Elm syntax highlighting. Use with ale or Neoformat for Neovim since ElmCast/elm-vim does not support Elm 0.19.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "theJian/elm.vim",
+          "description": "Elm syntax highlighting. Use with ale or Neoformat for Neovim since ElmCast/elm-vim does not support Elm 0.19.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -996,9 +940,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Elm 0.18 mode for Vim/Neovim.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "ElmCast/elm-vim",
+          "description": "Elm 0.18 mode for Vim/Neovim.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -1009,9 +955,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Markup expansion with elm support.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "emmet-vim",
+          "description": "Markup expansion with elm support.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -1022,9 +970,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Offline Elm documentation access in your editor.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "vim-elm-help",
+          "description": "Offline Elm documentation access in your editor.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -1041,9 +991,11 @@
       "description": "Some good apps written in Elm.",
       "items": [
         {
-          "children": [],
-          "description": "Minimal example of a custom element.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "<elm-ement>",
+          "description": "Minimal example of a custom element.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -1054,9 +1006,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A progressive web app built with Elm version 0.18, using the official Hacker-News API",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Elm Hacker News PWA",
+          "description": "A progressive web app built with Elm version 0.18, using the official Hacker-News API",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -1067,9 +1021,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Chrome extension built in Elm that shows the bitcoin value in all Brazilian exchanges.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Bitcoin BR Chrome Extension",
+          "description": "Chrome extension built in Elm that shows the bitcoin value in all Brazilian exchanges.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -1080,9 +1036,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A framework for building interactive fiction style stories in Elm. Detailed example elmnarrativeengine.com shows how to build a \"chose your own adventure\" game; perfect for beginners. Elm v.0.19",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Elm Narrative Engine",
+          "description": "A framework for building interactive fiction style stories in Elm. Detailed example elmnarrativeengine.com shows how to build a \"chose your own adventure\" game; perfect for beginners. Elm v.0.19",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -1093,9 +1051,11 @@
           }
         },
         {
-          "children": [],
-          "description": "JSON Web Token (JWT) authentication using Django (backend) and Elm (frontend).",
+          "node_type": "item",
+          "kind": "repository",
           "title": "JWT auth with Django + Elm",
+          "description": "JSON Web Token (JWT) authentication using Django (backend) and Elm (frontend).",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -1106,9 +1066,11 @@
           }
         },
         {
-          "children": [],
-          "description": "An example Android application implemented with the Elm Architecture using the Kotlin programming language and Anko library.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Elm Architecture in Android",
+          "description": "An example Android application implemented with the Elm Architecture using the Kotlin programming language and Anko library.",
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": null,
@@ -1119,9 +1081,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A recipe site built as an SPA that also makes use of the Elm parser.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Ari's Garden",
+          "description": "A recipe site built as an SPA that also makes use of the Elm parser.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -1132,9 +1096,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A kanban board (trello-alike) built with Elm and HTML5 Drag & Drop API",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Kanban Board in Elm",
+          "description": "A kanban board (trello-alike) built with Elm and HTML5 Drag & Drop API",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -1145,9 +1111,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Elm project consuming PokéAPI.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Pokelmon",
+          "description": "Elm project consuming PokéAPI.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -1158,9 +1126,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A Tinder-like application for gifs built with elm and firebase!",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Gipher",
+          "description": "A Tinder-like application for gifs built with elm and firebase!",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -1171,9 +1141,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Elm app integrated with Spotify Api to search and explore new artists.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Spotify Mapper",
+          "description": "Elm app integrated with Spotify Api to search and explore new artists.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -1184,9 +1156,11 @@
           }
         },
         {
-          "children": [],
-          "description": "An end-to-end encrypted journal app.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Bolster",
+          "description": "An end-to-end encrypted journal app.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -1197,9 +1171,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A small SPA example in Elm to learn the basics",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Elm Example App",
+          "description": "A small SPA example in Elm to learn the basics",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -1210,9 +1186,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Elm implementation of Conway's Game of Life. Elm v.0.19",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Conway's Game of Life",
+          "description": "Elm implementation of Conway's Game of Life. Elm v.0.19",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -1223,9 +1201,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Full stack Elm app w/ CRUD operations, Auth, routing, pagination and more. Code / Article / Video",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Elm SPA Example",
+          "description": "Full stack Elm app w/ CRUD operations, Auth, routing, pagination and more. Code / Article / Video",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -1236,9 +1216,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A node-based visual editor for fiddling with regular expressions, built with Elm.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Regex Nodes",
+          "description": "A node-based visual editor for fiddling with regular expressions, built with Elm.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -1249,9 +1231,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Bare-bones, modular, heavily-documented todo app with JSON API persistence.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "TodoMVC with JSON API",
+          "description": "Bare-bones, modular, heavily-documented todo app with JSON API persistence.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -1262,9 +1246,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Proper implementation of the TodoMVC app.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "TodoMVC",
+          "description": "Proper implementation of the TodoMVC app.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -1275,9 +1261,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Fork of TodoMVC demonstrating start-app, The Elm Architecture and Firebase as backend.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "TodoMVC/Firebase",
+          "description": "Fork of TodoMVC demonstrating start-app, The Elm Architecture and Firebase as backend.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -1288,9 +1276,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A collection of examples with advanced techniques for real-world Elm apps.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Collection of examples",
+          "description": "A collection of examples with advanced techniques for real-world Elm apps.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -1301,9 +1291,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A minimal Elm + Phoenix setup, using webpack instead of Brunch.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Elm + Phoenix + Webpack",
+          "description": "A minimal Elm + Phoenix setup, using webpack instead of Brunch.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -1314,9 +1306,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Documented and tested implementation of the Elm TodoMVC app in Electron.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "TodoMVC in Electron",
+          "description": "Documented and tested implementation of the Elm TodoMVC app in Electron.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -1327,9 +1321,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Basic UI Clone of Instagram / Articles - Part 1 Part 2 Part 3",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Elmstagram",
+          "description": "Basic UI Clone of Instagram / Articles - Part 1 Part 2 Part 3",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -1338,21 +1334,6 @@
             "repo": "Elmstagram",
             "stars": 87
           }
-        },
-        {
-          "children": [],
-          "description": "Web site built with elm with list of projects and apps built with Elm.",
-          "title": "Builtwithelm"
-        },
-        {
-          "children": [],
-          "description": "Tiny Elm projects implemented for the sake of learning by example.",
-          "title": "Elm Playground"
-        },
-        {
-          "children": [],
-          "description": "Pure SPA (with routing) exploring various aspects of Elm.",
-          "title": "Elm Playground"
         }
       ],
       "title": "Examples"
@@ -1361,9 +1342,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "An excellent list of games made in Elm",
+          "node_type": "item",
+          "kind": "repository",
           "title": "elm-games",
+          "description": "An excellent list of games made in Elm",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -1374,9 +1357,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A reddit place like DApp with blockchain and canvas(through port) integration in Elm.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "TheSpace App",
+          "description": "A reddit place like DApp with blockchain and canvas(through port) integration in Elm.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -1393,9 +1378,11 @@
       "description": "Some projects influenced by Elm",
       "items": [
         {
-          "children": [],
-          "description": "A language that targets WebAssembly and machine code inspired by Elm.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Roc",
+          "description": "A language that targets WebAssembly and machine code inspired by Elm.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -1406,9 +1393,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Write Elixir code using statically-typed Elm-like syntax",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Elchemy",
+          "description": "Write Elixir code using statically-typed Elm-like syntax",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -1419,9 +1408,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A library that provides The Elm Architecture in Gleam.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Lustre",
+          "description": "A library that provides The Elm Architecture in Gleam.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -1432,9 +1423,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A library that provides The Elm Architecture in Rust targeting the web.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Sauron",
+          "description": "A library that provides The Elm Architecture in Rust targeting the web.",
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": "TypeScript",
@@ -1445,9 +1438,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A cross-platform GUI library for Rust, inspired by Elm",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Iced",
+          "description": "A cross-platform GUI library for Rust, inspired by Elm",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -1458,9 +1453,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A thin library that provides The Elm Architecture in react, used by IBM.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "React-tea-cup",
+          "description": "A thin library that provides The Elm Architecture in react, used by IBM.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -1471,9 +1468,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Elm-like abstractions for android apps, created by Spotify.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Mobius",
+          "description": "Elm-like abstractions for android apps, created by Spotify.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -1484,9 +1483,11 @@
           }
         },
         {
-          "children": [],
-          "description": "F# Functional App Development, using declarative dynamic UI",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Fabulous",
+          "description": "F# Functional App Development, using declarative dynamic UI",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -1497,9 +1498,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Elm-like abstractions for F# apps",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Elmish",
+          "description": "Elm-like abstractions for F# apps",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -1510,9 +1513,11 @@
           }
         },
         {
-          "children": [],
-          "description": "The Elm Architecture based on OCaml / Reason and Bucklescript",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Bucklescript-TEA",
+          "description": "The Elm Architecture based on OCaml / Reason and Bucklescript",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -1523,9 +1528,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A library that provides The Elm Architecture in Haskell.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Miso",
+          "description": "A library that provides The Elm Architecture in Haskell.",
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": null,
@@ -1536,9 +1543,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A library that provide The Elm Architecture in JavaScript.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Hyperapp",
+          "description": "A library that provide The Elm Architecture in JavaScript.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -1549,9 +1558,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A library that provides The Elm Architecture in PureScript.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Flame",
+          "description": "A library that provides The Elm Architecture in PureScript.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -1560,41 +1571,6 @@
             "repo": "purescript-flame",
             "stars": 10497
           }
-        },
-        {
-          "children": [],
-          "description": "F# in WebAssembly using Elmish",
-          "title": "Bolero"
-        },
-        {
-          "children": [],
-          "description": "Indigo is an Elm-inspired game engine for Scala.js.",
-          "title": "Indigo"
-        },
-        {
-          "children": [],
-          "description": "A predictable state container for JavaScript apps.",
-          "title": "Redux"
-        },
-        {
-          "children": [],
-          "description": null,
-          "title": "SwiftUI"
-        },
-        {
-          "children": [],
-          "description": "Tyrian is an Elm-inspired frontend framework for Scala.js.",
-          "title": "Tyrian"
-        },
-        {
-          "children": [],
-          "description": ".NET Multi-platform App UI",
-          "title": "MAUI"
-        },
-        {
-          "children": [],
-          "description": "An Elm inspired Model-View-Update (MVU) implementation for Kotlin multiplatform.",
-          "title": "Oolong"
         }
       ],
       "title": "Inspired by Elm"
@@ -1603,9 +1579,11 @@
       "description": "At the moment Elm is heavily targeted towards the browser, here are some experiments on using Elm outside the DOM:",
       "items": [
         {
-          "children": [],
-          "description": "Run Elm 0.18 on Cloud Functions using the Serverless Frameworks",
+          "node_type": "item",
+          "kind": "repository",
           "title": "elm-serverless",
+          "description": "Run Elm 0.18 on Cloud Functions using the Serverless Frameworks",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -1616,9 +1594,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Write CLI programs using Elm",
+          "node_type": "item",
+          "kind": "repository",
           "title": "elm-posix",
+          "description": "Write CLI programs using Elm",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -1629,9 +1609,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A POC for compiling elm to Web Assembly",
+          "node_type": "item",
+          "kind": "repository",
           "title": "elmish-wasm",
+          "description": "A POC for compiling elm to Web Assembly",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -1642,9 +1624,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A POC for using Elm 0.18 for native iOS Applications",
+          "node_type": "item",
+          "kind": "repository",
           "title": "iOS",
+          "description": "A POC for using Elm 0.18 for native iOS Applications",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -1669,6 +1653,7 @@
     "original_repository_sha": "deadbeef",
     "enhanced_repository": "enhansome/enhansome-elm",
     "enhanced_repository_description": "enhanced list",
+    "kind": "registry",
     "title": "Awesome elm with stars"
   }
 }

@@ -34,9 +34,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "Collect performance metrics for your library/application using Chrome headless.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Speed Racer",
+          "description": "Collect performance metrics for your library/application using Chrome headless.",
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": "Shell",
@@ -47,9 +49,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A Grunt.js task for enforcing a performance budget (more on performance budgets).",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Grunt-perfbudget",
+          "description": "A Grunt.js task for enforcing a performance budget (more on performance budgets).",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -60,9 +64,11 @@
           }
         },
         {
-          "children": [],
-          "description": "An extensible open-source load testing tool for advanced Linux users which is especially good as a part of an automated load testing suite.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Yandex.Tank",
+          "description": "An extensible open-source load testing tool for advanced Linux users which is especially good as a part of an automated load testing suite.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -73,9 +79,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Web Tracing Framework is a set of libraries, tools, and visualizers for the tracing and investigation of complex web applications",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Web Tracing Framework",
+          "description": "Web Tracing Framework is a set of libraries, tools, and visualizers for the tracing and investigation of complex web applications",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -86,9 +94,11 @@
           }
         },
         {
-          "children": [],
-          "description": "YSlow analyzes web pages and suggests ways to improve their performance based on a set of rules for high-performance web pages.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "YSlow",
+          "description": "YSlow analyzes web pages and suggests ways to improve their performance based on a set of rules for high-performance web pages.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -99,9 +109,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Auditing and performance metrics tool for Progressive Web Applications.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Lighthouse",
+          "description": "Auditing and performance metrics tool for Progressive Web Applications.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -112,9 +124,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Uses PhantomJS to headlessly analyze web pages and generate manifests.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Confess",
+          "description": "Uses PhantomJS to headlessly analyze web pages and generate manifests.",
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": "TypeScript",
@@ -125,9 +139,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Grunt task for testing page performance using PhantomJS, a headless WebKit browser.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Grunt-yslow",
+          "description": "Grunt task for testing page performance using PhantomJS, a headless WebKit browser.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -138,9 +154,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Grunt plugin for continuous measurement of WebPageTest. (Demo)",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Grunt-WebPageTest",
+          "description": "Grunt plugin for continuous measurement of WebPageTest. (Demo)",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -149,51 +167,6 @@
             "repo": "grunt-wpt",
             "stars": 21202
           }
-        },
-        {
-          "children": [],
-          "description": "Get the web's modern capabilities on your own sites and apps with useful guidance and analysis from web.dev.",
-          "title": "Web.dev"
-        },
-        {
-          "children": [],
-          "description": "DebugBear is a site monitoring tool based on Lighthouse. See how your scores and metrics changed over time, with a focus on understanding what caused each change. DebugBear is a paid product with a free 30-day trial.",
-          "title": "DebugBear"
-        },
-        {
-          "children": [],
-          "description": "The PageSpeed family of tools is designed to help you optimize the performance of your site. PageSpeed Insights products will help you identify performance best practices that can be applied to your site, and PageSpeed optimization tools can help you automate the process.",
-          "title": "Page Speed"
-        },
-        {
-          "children": [],
-          "description": "AI-Based SEO Analysis & Monitoring Tool",
-          "title": "Screpy"
-        },
-        {
-          "children": [],
-          "description": "YSlow for PhantomJS also introduces new output formats for automated test frameworks: TAP (Test Anything Protocol) and JUnit.",
-          "title": "YSlow for PhantomJS"
-        },
-        {
-          "children": [],
-          "description": "Online quick and easy tool that audits frontend bad practices, reveals performance issues, and profiles JavaScript.",
-          "title": "Yellow Lab Tools"
-        },
-        {
-          "children": [],
-          "description": "A web performance optimization and analysis tool.",
-          "title": "Pagelocity"
-        },
-        {
-          "children": [],
-          "description": "Speedrank monitors the performance of your site in the background. It displays Lighthouse reports over time and delivers recommendations for improvement. Speedrank is a paid product with 14-day-trial.",
-          "title": "Speedrank"
-        },
-        {
-          "children": [],
-          "description": "Webpage load time is extremely important for conversion and revenue. Visualize web performance against competitors.",
-          "title": "Lightest App"
         }
       ],
       "title": "Analyzers"
@@ -202,9 +175,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "PageSpeed Insights for Node.js - with reporting.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "PSI",
+          "description": "PageSpeed Insights for Node.js - with reporting.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -215,9 +190,11 @@
           }
         },
         {
-          "children": [],
-          "description": "YSlow.js on Node.js is a simple Node.js wrapper for programmatically running phantomjs yslow.js.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Node-yslowjs",
+          "description": "YSlow.js on Node.js is a simple Node.js wrapper for programmatically running phantomjs yslow.js.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -234,9 +211,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "analyze and Visualise project bundles created by Lasso.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Lasso-analyzer",
+          "description": "analyze and Visualise project bundles created by Lasso.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -247,9 +226,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Generate bundle report(bundle size, assets, modules, packages) and compare the results between different builds",
+          "node_type": "item",
+          "kind": "repository",
           "title": "BundleStats",
+          "description": "Generate bundle report(bundle size, assets, modules, packages) and compare the results between different builds",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -260,9 +241,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Prepare compressed versions of assets to serve them with Content-Encoding.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Compression webpack plugin",
+          "description": "Prepare compressed versions of assets to serve them with Content-Encoding.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -273,9 +256,11 @@
           }
         },
         {
-          "children": [],
-          "description": "webpack plugin and CLI utility that represents bundle content as a convenient interactive zoomable treemap.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Webpack bundle analyzer",
+          "description": "webpack plugin and CLI utility that represents bundle content as a convenient interactive zoomable treemap.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -286,9 +271,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Analyze and debug bundle space usage through source maps.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "source-map-explorer",
+          "description": "Analyze and debug bundle space usage through source maps.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -299,9 +286,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Keep your bundle size in check.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Bundlesize",
+          "description": "Keep your bundle size in check.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -310,21 +299,6 @@
             "repo": "bundlesize",
             "stars": 806
           }
-        },
-        {
-          "children": [],
-          "description": "Helps you find the performance impact of adding an npm package to your frontend bundle.",
-          "title": "Bundlephobia"
-        },
-        {
-          "children": [],
-          "description": "Visualise the module tree of browserify project bundles and track down bloat.",
-          "title": "Disc"
-        },
-        {
-          "children": [],
-          "description": "Check your webpack bundle stats on every pull request, and track them over time.",
-          "title": "Packtracker.io"
         }
       ],
       "title": "Bundle Analyzer"
@@ -333,9 +307,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "Matcha allows you to design experiments that will measure the performance of your code. It is recommended that each bench focus on a specific point of impact in your application.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Matcha",
+          "description": "Matcha allows you to design experiments that will measure the performance of your code. It is recommended that each bench focus on a specific point of impact in your application.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -346,9 +322,11 @@
           }
         },
         {
-          "children": [],
-          "description": "minimal monitor for JS Heap Size via performance memory.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Memory-stats.js",
+          "description": "minimal monitor for JS Heap Size via performance memory.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -359,9 +337,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Timing.js is a small set of helpers for working with the Navigation Timing API to identify where your application is spending its time. Useful as a standalone script, DevTools Snippet, or bookmarklet.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Timing.js",
+          "description": "Timing.js is a small set of helpers for working with the Navigation Timing API to identify where your application is spending its time. Useful as a standalone script, DevTools Snippet, or bookmarklet.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -372,9 +352,11 @@
           }
         },
         {
-          "children": [],
-          "description": "This class provides a simple info box that will help you monitor your code performance.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Stats.js",
+          "description": "This class provides a simple info box that will help you monitor your code performance.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -385,9 +367,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Performance tests of JavaScript inheritance models.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "PerfTests",
+          "description": "Performance tests of JavaScript inheritance models.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -398,9 +382,11 @@
           }
         },
         {
-          "children": [],
-          "description": "JSLitmus is a lightweight tool for creating ad-hoc JavaScript benchmark tests.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "JSlitmus",
+          "description": "JSLitmus is a lightweight tool for creating ad-hoc JavaScript benchmark tests.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -409,16 +395,6 @@
             "repo": "jslitmus",
             "stars": 8813
           }
-        },
-        {
-          "children": [],
-          "description": "jsPerf aims to provide an easy way to create and share test cases, comparing the performance of different JavaScript snippets by running benchmarks.",
-          "title": "JSPerf"
-        },
-        {
-          "children": [],
-          "description": "A robust benchmarking library that works on nearly all JavaScript platforms, supports high-resolution timers, and returns statistically significant results.",
-          "title": "Benchmark.js"
         }
       ],
       "title": "Benchmark - JavaScript"
@@ -427,9 +403,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "Benchmark and profile PHP code blocks whilst measuring the performance footprint.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "php-bench",
+          "description": "Benchmark and profile PHP code blocks whilst measuring the performance footprint.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -440,9 +418,11 @@
           }
         },
         {
-          "children": [],
-          "description": "PHPench creates a graphical output for a PHP benchmark. Plot the runtime of any function in realtime with GnuPlot and create an image out of the result.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "PHPench",
+          "description": "PHPench creates a graphical output for a PHP benchmark. Plot the runtime of any function in realtime with GnuPlot and create an image out of the result.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -459,9 +439,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "A cross-platform, cross-browser bookmarklet that will analyze the DOM & other features of the page you're on, and give you its bill of health.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "DOM Monster",
+          "description": "A cross-platform, cross-browser bookmarklet that will analyze the DOM & other features of the page you're on, and give you its bill of health.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -472,9 +454,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Analyze the current page through the Resource Timing API, Navigation Timing API and User-Timing - Sort of a light live WebPageTest. As Chrome Extension and Firefox Add-on under the name Performance-Analyser.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Performance-Bookmarklet",
+          "description": "Analyze the current page through the Resource Timing API, Navigation Timing API and User-Timing - Sort of a light live WebPageTest. As Chrome Extension and Firefox Add-on under the name Performance-Analyser.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -485,9 +469,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A bookmarklet to create a frontend performance heatmap of resources loaded in the browser using the Resource Timing API.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "PerfMap",
+          "description": "A bookmarklet to create a frontend performance heatmap of resources loaded in the browser using the Resource Timing API.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -496,16 +482,6 @@
             "repo": "perfmap",
             "stars": 1781
           }
-        },
-        {
-          "children": [],
-          "description": "YSlow analyzes web pages and suggests ways to improve their performance based on a set of rules for high-performance web pages.",
-          "title": "Yahoo YSlow for Mobile/Bookmarklet"
-        },
-        {
-          "children": [],
-          "description": "CSS Stress is a Testing and Performance Profiling.",
-          "title": "CSS Stress"
         }
       ],
       "title": "Bookmarklets"
@@ -514,9 +490,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "gulp task for creating SVG sprites.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Gulp-svg-sprites",
+          "description": "gulp task for creating SVG sprites.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -527,9 +505,11 @@
           }
         },
         {
-          "children": [],
-          "description": "The sprite factory is a ruby library that can be used to generate CSS sprites. It combines individual image files from a directory into a single unified sprite image and creates an appropriate CSS style sheet for use in your web application.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Sprite Factory",
+          "description": "The sprite factory is a ruby library that can be used to generate CSS sprites. It combines individual image files from a directory into a single unified sprite image and creates an appropriate CSS style sheet for use in your web application.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -540,9 +520,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Spriter is a simple and flexible dynamic sprite generator for CSS, using Python. It can process CSS both synchronous and asynchronous as it provides classes to be used in your Python code and also a watcher that listens to your filesystem and changes CSS and sprite as soon as a static is changed.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Pitomba-spriter",
+          "description": "Spriter is a simple and flexible dynamic sprite generator for CSS, using Python. It can process CSS both synchronous and asynchronous as it provides classes to be used in your Python code and also a watcher that listens to your filesystem and changes CSS and sprite as soon as a static is changed.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -553,9 +535,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Assetgraph transform for auto-generating sprites based on the CSS dependency graph.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Assetgraph-sprite",
+          "description": "Assetgraph transform for auto-generating sprites based on the CSS dependency graph.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -566,9 +550,11 @@
           }
         },
         {
-          "children": [],
-          "description": "gulp task for creating an image sprite and the corresponding style sheets for Gulp.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Gulp-sprite",
+          "description": "gulp task for creating an image sprite and the corresponding style sheets for Gulp.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -579,9 +565,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Grunt task for converting a set of images into a sprite sheet and corresponding CSS variables.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Grunt-spritesmith",
+          "description": "Grunt task for converting a set of images into a sprite sheet and corresponding CSS variables.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -592,9 +580,11 @@
           }
         },
         {
-          "children": [],
-          "description": "JavaScript code generation tool that lets you write JavaScript that outputs JavaScript. Good for unrolling loops and writing libraries that compile away the runtime",
+          "node_type": "item",
+          "kind": "repository",
           "title": "AtBuild",
+          "description": "JavaScript code generation tool that lets you write JavaScript that outputs JavaScript. Good for unrolling loops and writing libraries that compile away the runtime",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -605,9 +595,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A modular image sprite generator with a lot of features: supports retina sprites, supports different output formats, generates sprites and proper style files out of a directory of images, etc...",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Sprity",
+          "description": "A modular image sprite generator with a lot of features: supports retina sprites, supports different output formats, generates sprites and proper style files out of a directory of images, etc...",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -618,9 +610,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Optimizes and renders SVG files in CSS / Sass sprites.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "SvgToCSS",
+          "description": "Optimizes and renders SVG files in CSS / Sass sprites.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -631,9 +625,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Glue is a simple command-line tool to generate sprites:",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Glue",
+          "description": "Glue is a simple command-line tool to generate sprites:",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -642,31 +638,6 @@
             "repo": "glue",
             "stars": 3039
           }
-        },
-        {
-          "children": [],
-          "description": "Grunt task that generates a sprite from images referenced in a style sheet and then updates the references with the new sprite image and positions.",
-          "title": "Grunt-sprite-css-replace"
-        },
-        {
-          "children": [],
-          "description": "SVG sprites & stacks galore — Grunt plugin wrapping around svg-sprite that reads in a bunch of SVG files, optimizes them and creates SVG sprites and CSS resources in various flavors.",
-          "title": "Grunt-svg-sprite"
-        },
-        {
-          "children": [],
-          "description": "Sprite Cow helps you get the background-position, width, and height of sprites within a spritesheet as a nice bit of copyable CSS.",
-          "title": "Sprite Cow"
-        },
-        {
-          "children": [],
-          "description": "ZeroSprites is a CSS sprites generator aimed at area minimization using algorithms used in the field of VLSI floorplanning.",
-          "title": "ZeroSprites"
-        },
-        {
-          "children": [],
-          "description": "CSS sprites allow you to combine multiple images into a single file.",
-          "title": "CSS Sprite Generator"
         }
       ],
       "title": "Generators"
@@ -675,9 +646,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "Convert your images to WebP format.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Grunt-WebP",
+          "description": "Convert your images to WebP format.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -688,9 +661,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Minify PNG and JPEG images for Grunt.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Grunt-contrib-imagemin",
+          "description": "Minify PNG and JPEG images for Grunt.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -701,9 +676,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Make ImageOptim, ImageAlpha, and JPEGmini part of your automated build process.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Grunt-imageoptim",
+          "description": "Make ImageOptim, ImageAlpha, and JPEGmini part of your automated build process.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -714,9 +691,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A command-line program to optimize PNG images.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "ZopfliPNG",
+          "description": "A command-line program to optimize PNG images.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -727,9 +706,11 @@
           }
         },
         {
-          "children": [],
-          "description": "The typical use case for this high-speed Node.js module is to convert large images of many formats to smaller, web-friendly JPEG, PNG, and WebP images of varying dimensions.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Sharp",
+          "description": "The typical use case for this high-speed Node.js module is to convert large images of many formats to smaller, web-friendly JPEG, PNG, and WebP images of varying dimensions.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -740,9 +721,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Gulp plugin to optimize PNG and JPG using Yahoo Smushit. Made on top of smosh.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Gulp-smushit",
+          "description": "Gulp plugin to optimize PNG and JPG using Yahoo Smushit. Made on top of smosh.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -753,9 +736,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Improved JPEG encoder.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "mozjpeg",
+          "description": "Improved JPEG encoder.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -766,9 +751,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Minify PNG, JPEG, GIF and SVG images with imagemin for Gulp.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Gulp-imagemin",
+          "description": "Minify PNG, JPEG, GIF and SVG images with imagemin for Gulp.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -779,9 +766,11 @@
           }
         },
         {
-          "children": [],
-          "description": "CLI image optimization tool. It can compress PNG, JPEG, GIF and SVG lossy and lossless, and also create AVIF and WebP versions for raster images.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Optimizt",
+          "description": "CLI image optimization tool. It can compress PNG, JPEG, GIF and SVG lossy and lossless, and also create AVIF and WebP versions for raster images.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -792,9 +781,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Grunt plugin to remove unnecessary bytes of PNG and JPG using Yahoo Smushit.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Grunt-smushit",
+          "description": "Grunt plugin to remove unnecessary bytes of PNG and JPG using Yahoo Smushit.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -805,9 +796,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Utility to optimize/compress JPEG files.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Jpegoptim",
+          "description": "Utility to optimize/compress JPEG files.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -818,9 +811,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Minify images seamlessly with Node.js.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Imagemin",
+          "description": "Minify images seamlessly with Node.js.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -831,9 +826,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Tapnesh is a CLI tool that will optimize all your images in parallel easily and efficiently!",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Tapnesh-CLI",
+          "description": "Tapnesh is a CLI tool that will optimize all your images in parallel easily and efficiently!",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -844,9 +841,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Lightweight lossless file minifier/optimizer.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Leanify",
+          "description": "Lightweight lossless file minifier/optimizer.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -857,9 +856,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Convert images to WebP for Gulp.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Gulp-WebP",
+          "description": "Convert images to WebP for Gulp.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -870,9 +871,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Pure elixir library to extract tiff and exif metadata from JPEG files.",
+          "node_type": "item",
+          "kind": "registry",
           "title": "Exexif",
+          "description": "Pure elixir library to extract tiff and exif metadata from JPEG files.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -883,9 +886,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Automates ImageOptim, ImageAlpha, and JPEGmini for Mac to make batch optimization of images part of your automated build process.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "ImageOptim-CLI",
+          "description": "Automates ImageOptim, ImageAlpha, and JPEGmini for Mac to make batch optimization of images part of your automated build process.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -896,9 +901,11 @@
           }
         },
         {
-          "children": [],
-          "description": "GraphicsMagick and ImageMagick for Node.js.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Gm",
+          "description": "GraphicsMagick and ImageMagick for Node.js.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -907,76 +914,6 @@
             "repo": "gm",
             "stars": 825
           }
-        },
-        {
-          "children": [],
-          "description": "Compress Your Image by removing unnecessary bytes of the image and Convert it into WebP/AVIF",
-          "title": "Shortpixel"
-        },
-        {
-          "children": [],
-          "description": "Smush it uses optimization techniques specific to image format to remove unnecessary bytes from image files. It is a \"lossless\" tool, which means it optimizes the images without changing their look or visual quality.",
-          "title": "Smush it"
-        },
-        {
-          "children": [],
-          "description": "GUI app to remove EXIF metadata from images and video files with drag and drop. Free and open source.",
-          "title": "ExifCleaner"
-        },
-        {
-          "children": [],
-          "description": "OptiPNG is a PNG optimizer that recompresses image files to a smaller size, without losing any information.",
-          "title": "OptiPNG"
-        },
-        {
-          "children": [],
-          "description": "Free app that makes images take up less disk space and load faster, without sacrificing quality. It optimizes compression parameters, and removes junk metadata and unnecessary color profiles.",
-          "title": "Imageoptim"
-        },
-        {
-          "children": [],
-          "description": "Advanced lossy compression for PNG images that preserves full alpha transparency.",
-          "title": "Tinypng"
-        },
-        {
-          "children": [],
-          "description": "Optimize your images and will be available for download for 12 hours.",
-          "title": "Kraken Web-interface"
-        },
-        {
-          "children": [],
-          "description": "Online image compressor for JPG, PNG, SVG and GIF.",
-          "title": "Compressor"
-        },
-        {
-          "children": [],
-          "description": "One-click optimization for images in your GitHub repos",
-          "title": "Shrinkray"
-        },
-        {
-          "children": [],
-          "description": "Recompress PNG files to get the smallest possible size.",
-          "title": "AdvPNG"
-        },
-        {
-          "children": [],
-          "description": "A cross-platform tool for losslessly optimizing PNG and JPG files.",
-          "title": "Trimage"
-        },
-        {
-          "children": [],
-          "description": "Cloud service for optimizing, resizing and caching images on the fly with great mobile support.",
-          "title": "ImageEngine"
-        },
-        {
-          "children": [],
-          "description": "Intelligent real-time image optimizations, image transformations with a global delivery network and storage.",
-          "title": "ImageKit.io"
-        },
-        {
-          "children": [],
-          "description": "Generate optimized images (WebP, AVIF) and LQIP placeholders using Vite or webpack plugins and render responsive image markup with an image component for multiple frameworks.",
-          "title": "ResponsiveImage"
         }
       ],
       "title": "Image Optimizers"
@@ -985,9 +922,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "Lazyload images, iframes, widgets with a standalone JavaScript lazyloader ~1kb",
+          "node_type": "item",
+          "kind": "repository",
           "title": "lazyload",
+          "description": "Lazyload images, iframes, widgets with a standalone JavaScript lazyloader ~1kb",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -998,9 +937,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Highly performant, light ~0.9kb, and configurable lazy loader in pure JS with no dependencies for responsive images, iframes, and more",
+          "node_type": "item",
+          "kind": "repository",
           "title": "lozad.js",
+          "description": "Highly performant, light ~0.9kb, and configurable lazy loader in pure JS with no dependencies for responsive images, iframes, and more",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -1017,9 +958,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "The only script in your HEAD. for Responsive Design, Feature Detections, and Resource Loading.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "HeadJS",
+          "description": "The only script in your HEAD. for Responsive Design, Feature Detections, and Resource Loading.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -1030,9 +973,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A JIT (Just In Time) plugin loader for Grunt. The load time of Grunt does not slow down even if there are many plugins.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "JIT",
+          "description": "A JIT (Just In Time) plugin loader for Grunt. The load time of Grunt does not slow down even if there are many plugins.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -1043,9 +988,11 @@
           }
         },
         {
-          "children": [],
-          "description": "InstantClick makes the following links in your site instant.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "InstantClick",
+          "description": "InstantClick makes the following links in your site instant.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -1056,9 +1003,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Async Everything: Make the meat of your pages load faster with this JS morsel.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Defer.js",
+          "description": "Async Everything: Make the meat of your pages load faster with this JS morsel.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -1067,16 +1016,6 @@
             "repo": "defer.js",
             "stars": 2300
           }
-        },
-        {
-          "children": [],
-          "description": "RequireJS is a JavaScript file and module loader. It is optimized for in-browser use, but it can be used in other JavaScript environments, like Rhino and Node.js.",
-          "title": "RequireJS"
-        },
-        {
-          "children": [],
-          "description": "is an open-source (MIT license) project supported by Getify Solutions. The core purpose of LABjs is to be an all-purpose, on-demand JavaScript loader, capable of loading any JavaScript resource, from any location, into any page, at any time.",
-          "title": "Labjs"
         }
       ],
       "title": "Loaders"
@@ -1085,9 +1024,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "PhantomJS-based web performance metrics collector and monitoring tool.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Phantomas",
+          "description": "PhantomJS-based web performance metrics collector and monitoring tool.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -1098,9 +1039,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Tool to monitor indicators related to the performance of a web page.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Keepfast",
+          "description": "Tool to monitor indicators related to the performance of a web page.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -1111,9 +1054,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Runtime Browser Performance regression suite (Demo).",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Perfjankie",
+          "description": "Runtime Browser Performance regression suite (Demo).",
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": "Ruby",
@@ -1124,9 +1069,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Grunt plugin wrapping phantomas to measure frontend performance.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Grunt-phantomas",
+          "description": "Grunt plugin wrapping phantomas to measure frontend performance.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -1137,9 +1084,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Using Phantomas (a PhantomJS-backed client performance metrics scrapper). Benchmark a page, store results in MongoDB, and display results via the built-in server.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Bench",
+          "description": "Using Phantomas (a PhantomJS-backed client performance metrics scrapper). Benchmark a page, store results in MongoDB, and display results via the built-in server.",
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": "Go",
@@ -1148,61 +1097,6 @@
             "repo": "bench",
             "stars": 223
           }
-        },
-        {
-          "children": [],
-          "description": "open source tool that helps monitor various site performance metrics over time. It captures the results of YSlow, Page Speed Insights, WebPageTest and dynaTrace Ajax Edition.",
-          "title": "Showslow"
-        },
-        {
-          "children": [],
-          "description": "GTmetrix uses Google Page Speed and Yahoo! YSlow to grade your site's performance and provides actionable recommendations to fix these issues.",
-          "title": "GTmetrix"
-        },
-        {
-          "children": [],
-          "description": "Free site and SSL Monitoring with response time alerting (on Slack, Twitter, Mattermost, Discord or custom Webhook).",
-          "title": "Pingbreak.com"
-        },
-        {
-          "children": [],
-          "description": "Test the load time of that page, analyze it, and find bottlenecks.",
-          "title": "Pingdom site Speed Test"
-        },
-        {
-          "children": [],
-          "description": "analyze your website's speed in real browsers from 20 locations worldwide.",
-          "title": "Dotcom-tools"
-        },
-        {
-          "children": [],
-          "description": "Run a free site speed test from multiple locations around the globe using real browsers (IE and Chrome) and at real consumer connection speeds. You can run simple tests or perform advanced testing including multi-step transactions, video capture, content blocking and much more. Your results will provide rich diagnostic information including resource-loading waterfall charts, Page Speed optimization checks and suggestions for improvements.",
-          "title": "WebPageTest"
-        },
-        {
-          "children": [],
-          "description": "Sitespeed.io is an open-source tool that will check your site against web performance best practice rules and use the Navigation Timing API to collect metrics. It will create XML & HTML output of the result.",
-          "title": "Sitespeed.io"
-        },
-        {
-          "children": [],
-          "description": "Continually checks web page load times in Internet Explorer, Chrome and Firefox from multiple points around the world.",
-          "title": "BrowserView Monitoring"
-        },
-        {
-          "children": [],
-          "description": "Monitor your browser-side applications in real time, with a focus on real end users’ experiences.",
-          "title": "New Relic Browser Monitoring"
-        },
-        {
-          "children": [],
-          "description": "Real Browser Monitoring. Offers complete reports about web performance and quality using YSlow, Page Speed and numerous custom tips.",
-          "title": "DareBoost"
-        },
-        {
-          "children": [],
-          "description": "Full featured Real User Monitoring solution. Free tier for smaller sites. Includes monitoring for Google's Core Web Vitals.",
-          "title": "Bytes Matter Real User Monitoring"
         }
       ],
       "title": "Metrics Monitor"
@@ -1211,9 +1105,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "Minimize is an HTML minifier based on the node-htmlparser,currently, HTML minifier is only usable server-side. Client-side minification will be added in a future release.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Minimize",
+          "description": "Minimize is an HTML minifier based on the node-htmlparser,currently, HTML minifier is only usable server-side. Client-side minification will be added in a future release.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -1224,9 +1120,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A simple Windows command-line tool to minify your HTML, Razor views & Web Forms views",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Html-minifier",
+          "description": "A simple Windows command-line tool to minify your HTML, Razor views & Web Forms views",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -1237,9 +1135,11 @@
           }
         },
         {
-          "children": [],
-          "description": "HTMLMinifier is a highly configurable, well-tested, Javascript-based HTML minifier, with lint-like capabilities.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "HTMLMinifier",
+          "description": "HTMLMinifier is a highly configurable, well-tested, Javascript-based HTML minifier, with lint-like capabilities.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -1250,9 +1150,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Grunt plugin for HTML compression, using htmlcompressor.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Grunt-htmlcompressor",
+          "description": "Grunt plugin for HTML compression, using htmlcompressor.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -1263,9 +1165,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A grunt plugin to minify HTML that uses HTMLMinifier.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Grunt-contrib-htmlmin",
+          "description": "A grunt plugin to minify HTML that uses HTMLMinifier.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -1276,9 +1180,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Middleware that minifies your HTML responses using html-minifier. It uses html-minifier's default options which are all turned off by default, so you have to set the options otherwise it's not going to do anything.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Koa HTML Minifier",
+          "description": "Middleware that minifies your HTML responses using html-minifier. It uses html-minifier's default options which are all turned off by default, so you have to set the options otherwise it's not going to do anything.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -1289,9 +1195,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A gulp plugin to minify HTML that uses HTMLMinifier.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Gulp-htmlmin",
+          "description": "A gulp plugin to minify HTML that uses HTMLMinifier.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -1302,9 +1210,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Ruby wrapper for kangax html-minifier.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "HTML_minifier",
+          "description": "Ruby wrapper for kangax html-minifier.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -1315,9 +1225,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Ruby gem for compressing html, that removes all whitespace junk, and leaves only HTML.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "HTML_press",
+          "description": "Ruby gem for compressing html, that removes all whitespace junk, and leaves only HTML.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -1328,9 +1240,11 @@
           }
         },
         {
-          "children": [],
-          "description": "django-html in an HTML minifier for Python with full support for HTML 5. It supports Django, Flask and any other Python web framework. It also provides a command-line tool that can be used for static sites or deployment scripts.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Django-htmlmin",
+          "description": "django-html in an HTML minifier for Python with full support for HTML 5. It supports Django, Flask and any other Python web framework. It also provides a command-line tool that can be used for static sites or deployment scripts.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -1339,16 +1253,6 @@
             "repo": "django-htmlmin",
             "stars": 8734
           }
-        },
-        {
-          "children": [],
-          "description": "HtmlCompressor is a small, fast, and very easy to use Java library that minifies given HTML or XML source by removing extra whitespaces, comments, and other unneeded characters without breaking the content structure. As a result page become smaller in size and load faster. A command-line version of the compressor is also available.",
-          "title": "HTMLCompressor"
-        },
-        {
-          "children": [],
-          "description": "A HTML min tool by kangax (HTMLMinifier Creator).",
-          "title": "HTML Minifier Online"
         }
       ],
       "title": "Minifiers - HTML"
@@ -1357,9 +1261,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "Pipeline is an asset packaging library for Django, providing both CSS and JavaScript concatenation and compression, built-in JavaScript template support, and optional data-URI image and font embedding.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Django-pipeline",
+          "description": "Pipeline is an asset packaging library for Django, providing both CSS and JavaScript concatenation and compression, built-in JavaScript template support, and optional data-URI image and font embedding.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -1370,9 +1276,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Compresses linked and inline JavaScript or CSS into a single cached file.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Django-compressor",
+          "description": "Compresses linked and inline JavaScript or CSS into a single cached file.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -1383,9 +1291,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A Grunt plugin to concatenate files.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Grunt-contrib-concat",
+          "description": "A Grunt plugin to concatenate files.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -1396,9 +1306,11 @@
           }
         },
         {
-          "children": [],
-          "description": "This is just a grunt wrapper for CSS Shrink.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Grunt-cssshrink",
+          "description": "This is just a grunt wrapper for CSS Shrink.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -1409,9 +1321,11 @@
           }
         },
         {
-          "children": [],
-          "description": "cssmin.js is a JavaScript port of YUICompressor's CSS minifier.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "CSSmin.js",
+          "description": "cssmin.js is a JavaScript port of YUICompressor's CSS minifier.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -1422,9 +1336,11 @@
           }
         },
         {
-          "children": [],
-          "description": "UglifyJS is a JavaScript parser, minifier, compressor or beautifier toolkit, written in JavaScript.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "UglifyJS2",
+          "description": "UglifyJS is a JavaScript parser, minifier, compressor or beautifier toolkit, written in JavaScript.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -1435,9 +1351,11 @@
           }
         },
         {
-          "children": [],
-          "description": "CSS Minifier for Grunt.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Grunt-contrib-cssmin",
+          "description": "CSS Minifier for Grunt.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -1448,9 +1366,11 @@
           }
         },
         {
-          "children": [],
-          "description": "CSS minimizer unlike others. In addition to usual minification techniques, it can perform structural optimization of CSS files, resulting in smaller file size compared to other minifiers.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "CSSO",
+          "description": "CSS minimizer unlike others. In addition to usual minification techniques, it can perform structural optimization of CSS files, resulting in smaller file size compared to other minifiers.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -1461,9 +1381,11 @@
           }
         },
         {
-          "children": [],
-          "description": "JavaScript compressor which, in addition to removing comments and white-spaces, obfuscates local variables using the smallest possible variable name. This obfuscation is safe, even when using constructs such as 'eval' or 'with' (although the compression is not optimal is those cases) Compared to jsmin, the average savings is around 20%.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "YUI Compressor",
+          "description": "JavaScript compressor which, in addition to removing comments and white-spaces, obfuscates local variables using the smallest possible variable name. This obfuscation is safe, even when using constructs such as 'eval' or 'with' (although the compression is not optimal is those cases) Compared to jsmin, the average savings is around 20%.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -1474,9 +1396,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A fast, efficient, and well-tested CSS minifier for node.js.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Clean-css",
+          "description": "A fast, efficient, and well-tested CSS minifier for node.js.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -1487,9 +1411,11 @@
           }
         },
         {
-          "children": [],
-          "description": "JShrink is a PHP class that minifies JavaScript so that it can be delivered to the client quicker.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "JShrink",
+          "description": "JShrink is a PHP class that minifies JavaScript so that it can be delivered to the client quicker.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -1500,9 +1426,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Uglify (strip spaces) or prettify (add consistent spaces) CSS code.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Prettyugly",
+          "description": "Uglify (strip spaces) or prettify (add consistent spaces) CSS code.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -1513,9 +1441,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Because CSS is ospon the critical path to rendering pages. It must be small! Or else!",
+          "node_type": "item",
+          "kind": "repository",
           "title": "CSSshrink",
+          "description": "Because CSS is ospon the critical path to rendering pages. It must be small! Or else!",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -1526,9 +1456,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Shrinks CSS files using cssshrink for Gulp.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Gulp-cssshrink",
+          "description": "Shrinks CSS files using cssshrink for Gulp.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -1539,9 +1471,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A grunt task for removing unused CSS from your projects.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Grunt-uncss",
+          "description": "A grunt task for removing unused CSS from your projects.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -1552,9 +1486,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A gulp task for removing unused CSS from your projects.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Gulp-uncss",
+          "description": "A gulp task for removing unused CSS from your projects.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -1565,9 +1501,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A Grunt plugin to concatenate and minify JavaScript files.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Grunt-contrib-uglify",
+          "description": "A Grunt plugin to concatenate and minify JavaScript files.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -1576,11 +1514,6 @@
             "repo": "grunt-contrib-uglify",
             "stars": 1817
           }
-        },
-        {
-          "children": [],
-          "description": "The most minimalistic online JS Compress tool.",
-          "title": "JSCompress"
         }
       ],
       "title": "Minifiers - JS & CSS"
@@ -1589,9 +1522,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "uCSS is made for crawling (large) sites to find unused CSS selectors, but not remove unused CSS.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "uCSS",
+          "description": "uCSS is made for crawling (large) sites to find unused CSS selectors, but not remove unused CSS.",
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": "Shell",
@@ -1602,9 +1537,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Extract & Inline Critical-path CSS in HTML pages (alpha).",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Critical",
+          "description": "Extract & Inline Critical-path CSS in HTML pages (alpha).",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -1615,9 +1552,11 @@
           }
         },
         {
-          "children": [],
-          "description": "TMI (Too Many Images) - discover your image weight on the web.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "TMI",
+          "description": "TMI (Too Many Images) - discover your image weight on the web.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -1628,9 +1567,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Utility that minifies CSS colors, example: min(\"white\"); // minifies to \"#fff\".",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Csscolormin",
+          "description": "Utility that minifies CSS colors, example: min(\"white\"); // minifies to \"#fff\".",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -1641,9 +1582,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A no-dependencies HTTP client library for browsers and Node.js with a promise-based or Node.js-style callback-based API to progress events, text, and binary file upload and download, partial response body, request and response headers, status code.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "HTTPinvoke",
+          "description": "A no-dependencies HTTP client library for browsers and Node.js with a promise-based or Node.js-style callback-based API to progress events, text, and binary file upload and download, partial response body, request and response headers, status code.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -1654,9 +1597,11 @@
           }
         },
         {
-          "children": [],
-          "description": "High-performance lazy loader for images (responsive and normal), iframes, and scripts, that detects any visibility changes triggered through user interaction, CSS or JavaScript without configuration.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Lazysizes",
+          "description": "High-performance lazy loader for images (responsive and normal), iframes, and scripts, that detects any visibility changes triggered through user interaction, CSS or JavaScript without configuration.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -1665,16 +1610,6 @@
             "repo": "lazysizes",
             "stars": 3762
           }
-        },
-        {
-          "children": [],
-          "description": "Socialite provides a very easy way to implement and activate a plethora of social sharing buttons — any time you wish. On document load, on article hover, on any event.",
-          "title": "Socialite.js"
-        },
-        {
-          "children": [],
-          "description": "Perf Tooling is a shared resource to keep track of new and existing performance tools.",
-          "title": "Perf-Tooling"
         }
       ],
       "title": "Miscellaneous"
@@ -1683,9 +1618,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "Minify SVG using SVGO for Grunt.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Grunt-svgmin",
+          "description": "Minify SVG using SVGO for Grunt.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -1696,9 +1633,11 @@
           }
         },
         {
-          "children": [],
-          "description": "SVG Cleaner could help you to clean up your SVG files from unnecessary data. It has a lot of options for cleanup and optimization, works in batch mode, and provides threaded processing on multicore processors.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "SVG Cleaner",
+          "description": "SVG Cleaner could help you to clean up your SVG files from unnecessary data. It has a lot of options for cleanup and optimization, works in batch mode, and provides threaded processing on multicore processors.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -1709,9 +1648,11 @@
           }
         },
         {
-          "children": [],
-          "description": "SVGO is a Nodejs-based tool for optimizing SVG vector graphics files.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "SVGO",
+          "description": "SVGO is a Nodejs-based tool for optimizing SVG vector graphics files.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": null,
@@ -1720,21 +1661,6 @@
             "repo": "svgo",
             "stars": 2750
           }
-        },
-        {
-          "children": [],
-          "description": "SVGOMG is SVGO's Missing GUI, aiming to expose the majority, if not all the configuration options of SVGO.",
-          "title": "SVG OMG"
-        },
-        {
-          "children": [],
-          "description": "Minify SVG with SVGO for Gulp.",
-          "title": "Gulp-svgmin"
-        },
-        {
-          "children": [],
-          "description": "Scour is an open-source Python script that aggressively cleans SVG files, removing a lot of 'cruft' that certain tools or authors embed into their documents.",
-          "title": "Scour"
         }
       ],
       "title": "SVG"
@@ -1743,9 +1669,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "Concatenate a set of Web Components into one file that use Vulcanize.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Gulp-vulcanize",
+          "description": "Concatenate a set of Web Components into one file that use Vulcanize.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -1756,9 +1684,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Polymer-bundler is a library for packaging project assets for production to minimize network round-trips.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Polymer Bundler",
+          "description": "Polymer-bundler is a library for packaging project assets for production to minimize network round-trips.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -1775,9 +1705,11 @@
       "description": "",
       "items": [
         {
-          "children": [],
-          "description": "Go Port of HTTPerf.rb.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Gohttperf",
+          "description": "Go Port of HTTPerf.rb.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -1788,9 +1720,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A HTTP benchmarking tool (with optional Lua scripting for request generation, response processing, and custom reporting)",
+          "node_type": "item",
+          "kind": "repository",
           "title": "wrk",
+          "description": "A HTTP benchmarking tool (with optional Lua scripting for request generation, response processing, and custom reporting)",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -1801,9 +1735,11 @@
           }
         },
         {
-          "children": [],
-          "description": "PHP Port of HTTPerf.rb.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "PHP-httperf",
+          "description": "PHP Port of HTTPerf.rb.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -1814,9 +1750,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Simple Ruby interface for httperf, written in Ruby.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "HTTPerf.rb",
+          "description": "Simple Ruby interface for httperf, written in Ruby.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -1827,9 +1765,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Autoperf is a ruby driver for httperf, designed to help you automate load and performance testing of any web application - for a single endpoint, or through log replay.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "Autoperf",
+          "description": "Autoperf is a ruby driver for httperf, designed to help you automate load and performance testing of any web application - for a single endpoint, or through log replay.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -1840,9 +1780,11 @@
           }
         },
         {
-          "children": [],
-          "description": "httperf is a tool for measuring web server performance. It provides a flexible facility for generating various HTTP workloads and for measuring server performance.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "HTTPerf",
+          "description": "httperf is a tool for measuring web server performance. It provides a flexible facility for generating various HTTP workloads and for measuring server performance.",
+          "children": [],
           "repo_info": {
             "archived": true,
             "language": "TypeScript",
@@ -1853,9 +1795,11 @@
           }
         },
         {
-          "children": [],
-          "description": "Python Port of HTTPerf.rb.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "HTTPerf.py",
+          "description": "Python Port of HTTPerf.rb.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -1866,9 +1810,11 @@
           }
         },
         {
-          "children": [],
-          "description": "JS Port of HTTPerf.rb.",
+          "node_type": "item",
+          "kind": "repository",
           "title": "HTTPerf.js",
+          "description": "JS Port of HTTPerf.rb.",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -1879,9 +1825,11 @@
           }
         },
         {
-          "children": [],
-          "description": "A utility for arming (creating) many bees (micro EC2 instances) to attack (load test) targets (web applications).",
+          "node_type": "item",
+          "kind": "repository",
           "title": "beeswithmachineguns",
+          "description": "A utility for arming (creating) many bees (micro EC2 instances) to attack (load test) targets (web applications).",
+          "children": [],
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -1890,21 +1838,6 @@
             "repo": "beeswithmachineguns",
             "stars": 1925
           }
-        },
-        {
-          "children": [],
-          "description": "Open source load testing tool: It is a Java platform application.",
-          "title": "Apache JMeter"
-        },
-        {
-          "children": [],
-          "description": "An open-source load testing tool. Define user behaviour with Python code, and swarm your system with millions of simultaneous users.",
-          "title": "Locust"
-        },
-        {
-          "children": [],
-          "description": "An open-source load testing tool built for developers. Easy to integrate into CI pipelines. Tests are written in ES6 JS and you can test APIs, microservices and sites using HTTP/1.1, HTTP/2 and WebSocket.",
-          "title": "k6"
         }
       ],
       "title": "Web server Benchmarks"
@@ -1916,6 +1849,7 @@
     "original_repository_sha": "deadbeef",
     "enhanced_repository": "enhansome/enhansome-wpo",
     "enhanced_repository_description": "enhanced list",
+    "kind": "registry",
     "title": "Awesome WPO with stars"
   }
 }
