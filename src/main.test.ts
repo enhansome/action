@@ -123,7 +123,7 @@ describe('main: run()', () => {
     expect(fs.writeFile).toHaveBeenCalledWith('README.md', 'enhanced', 'utf-8');
   });
 
-  it('fails when the source README cannot be fetched (strict mode, D7)', async () => {
+  it('fails when the source README cannot be fetched (strict mode)', async () => {
     vi.mocked(githubClient.getReadme).mockRejectedValue(
       new Error('Not Found (404)'),
     );

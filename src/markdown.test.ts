@@ -15,7 +15,6 @@ import {
   ReplacementRule,
 } from './markdown.js';
 
-// Mock the modules we depend on
 vi.mock('./github.js');
 
 function findItemByTitle(
@@ -39,7 +38,7 @@ function findItemByTitle(
   return undefined;
 }
 
-// Any emitted node (item or group) for shape assertions in the Option B tests.
+// Any emitted node (item or group) for shape assertions in the identity tests.
 // `node_type` discriminates: 'item' carries kind/repo_info, 'group' carries
 // neither — only children.
 interface AnyNode {
@@ -89,7 +88,6 @@ describe('fetchTargetData with Concurrency', () => {
   }
 
   beforeEach(() => {
-    // Reset mocks before each test
     vi.clearAllMocks();
 
     vi.mocked(github.parseGitHubUrl).mockImplementation((url: string) => {
@@ -289,7 +287,6 @@ describe('Branded titles from README fixtures', () => {
   const token = 'test-token';
   const brandingRules: ReplacementRule[] = [{ type: 'branding' }];
 
-  // Load expected titles and source repos
   const expectedTitles = JSON.parse(
     fs.readFileSync(expectedTitlesPath, 'utf-8'),
   ) as Record<string, Record<string, string>>;
@@ -311,9 +308,8 @@ describe('Branded titles from README fixtures', () => {
     });
     // Mock getReadme so per-item classification (fetchTargetData) stays offline.
     // A minimal README parses to 0 entries -> every item classifies as a
-    // repository (the common case; kind-specific coverage lives in step 9).
+    // repository (the common case; kind coverage is tested separately).
     vi.mocked(github.getReadme).mockResolvedValue('# project\n');
-    // Mock parseGitHubUrl
     vi.mocked(github.parseGitHubUrl).mockImplementation((url: string) => {
       if (!url.includes('github.com')) {
         return null;
@@ -395,7 +391,7 @@ describe('Item titles and descriptions from README fixtures', () => {
     });
     // Mock getReadme so per-item classification (fetchTargetData) stays offline.
     // A minimal README parses to 0 entries -> every item classifies as a
-    // repository (the common case; kind-specific coverage lives in step 9).
+    // repository (the common case; kind coverage is tested separately).
     vi.mocked(github.getReadme).mockResolvedValue('# project\n');
     vi.mocked(github.parseGitHubUrl).mockImplementation((url: string) => {
       if (!url.includes('github.com')) {
@@ -460,7 +456,7 @@ describe('countListEntries (fixture counts)', () => {
     vi.mocked(github.parseGitHubUrl).mockImplementation(actual.parseGitHubUrl);
   });
 
-  // Calibration is pinned at K = 20 (PLAN.md §4). These counts are the ground
+  // Calibration is pinned at K = 20. These counts are the ground
   // truth that threshold sits against, so they are asserted exactly.
   it.each([
     { name: 'go', expected: 2570 },
@@ -555,7 +551,7 @@ describe('classifyKind', () => {
     expect(result.kind).toBe('repository');
   });
 
-  it('throws on an unreadable README (the oracle; fetchTargetData catches it)', async () => {
+  it('throws on an unreadable README (fetchTargetData catches it)', async () => {
     vi.mocked(github.getReadme).mockRejectedValue(new Error('Not Found (404)'));
     await expect(classifyKind(octokit, 'o', 'r', 20)).rejects.toThrow(
       'Not Found (404)',
@@ -563,7 +559,7 @@ describe('classifyKind', () => {
   });
 });
 
-describe('Item identity: own-link only, categories become groups (Option B)', () => {
+describe('Item identity: own-link only, categories become groups', () => {
   const token = 'test-token';
   const sourceRepo = 'example/awesome-test';
 
@@ -715,7 +711,7 @@ describe('Item identity: own-link only, categories become groups (Option B)', ()
     expect(node?.repo_info).toMatchObject({ owner: 'o', repo: 'repo' });
   });
 
-  it('drops a non-GitHub leaf with no children (D9)', async () => {
+  it('drops a non-GitHub leaf with no children', async () => {
     const data = await process(
       [
         '# List',

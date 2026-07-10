@@ -12,7 +12,7 @@ import { enhance } from './orchestrator.js';
 vi.mock('./github.js');
 
 // Narrow a `JsonNode` (item | group) to a `JsonItem`. Section/children arrays
-// can now contain kind-less groups (Option B); the kind/repo_info assertions in
+// can now contain kind-less groups; the kind/repo_info assertions in
 // this file are all about genuine GitHub items, so they narrow first.
 function isItem(node: JsonNode): node is JsonItem {
   return node.node_type === 'item';
@@ -229,8 +229,8 @@ A list of awesome Go frameworks.
         token,
       });
 
-      // Every enhanced doc reads "Awesome <x> with stars" (req 5), and the
-      // markdown H1 and metadata.title must be identical (req 4).
+      // Every enhanced doc reads "Awesome <x> with stars", and the
+      // markdown H1 and metadata.title must be identical.
       expect(jsonData.metadata.title).toBe('Awesome guides with stars');
       const lines = finalContent.split('\n');
       expect(lines[0]).toBe(`# ${jsonData.metadata.title}`);
@@ -304,7 +304,7 @@ A list of awesome Go frameworks.
       vi.mocked(github.getReadme).mockResolvedValue('# project\n');
     });
 
-    it('drops a link-less item from the JSON graph but keeps it in the markdown (D9)', async () => {
+    it('drops a link-less item from the JSON graph but keeps it in the markdown', async () => {
       const content = [
         '# Awesome Foo',
         '',
@@ -324,7 +324,7 @@ A list of awesome Go frameworks.
 
       const tools = jsonData.items.find(s => s.title === 'Tools');
       expect(tools).toBeDefined();
-      // Every emitted JsonItem is a GitHub node (D9): the link-less Note is
+      // Every emitted JsonItem is a GitHub node: the link-less Note is
       // omitted from the typed JSON graph...
       const titles = tools?.items.map(i => i.title) ?? [];
       expect(titles).toEqual(['a', 'b']);
@@ -360,7 +360,7 @@ A list of awesome Go frameworks.
     });
   });
 
-  describe('Footer marker (req 3 & 6)', () => {
+  describe('Footer marker', () => {
     beforeEach(() => {
       // parseGitHubUrl -> null ⇒ no GitHub links collected ⇒ getRepoInfo /
       // (later) getReadme are never invoked, so enhancement is a no-op here.
@@ -648,7 +648,7 @@ Version: __VERSION__ | Last Updated: 2025-01-01
         token,
       });
 
-      // The source has 2 GitHub list items (< 20) -> repository by the oracle.
+      // The source has 2 GitHub list items (< 20) -> repository.
       expect(jsonData.metadata.kind).toBe('repository');
 
       const lists = jsonData.items.find(s => s.title === 'Lists');
@@ -878,7 +878,7 @@ Version: __VERSION__ | Last Updated: 2025-01-01
       expect(kinds.has('repository')).toBe(true);
     });
 
-    it('drops non-GitHub entries from the JSON graph but keeps them in markdown (D9)', async () => {
+    it('drops non-GitHub entries from the JSON graph but keeps them in markdown', async () => {
       const { finalContent, jsonData } = await enhanceAcv();
       const bookTitle = 'Models, Learning, and Inference';
       // A Books entry has no GitHub link -> never typed -> not a JsonItem.

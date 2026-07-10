@@ -6,7 +6,7 @@ import { beforeAll, describe, expect, it } from 'vitest';
 import { getReadme, GithubClient, makeOctokit } from './github.js';
 import { classifyKind, countListEntries } from './markdown.js';
 
-// Live (network) integration tests for the per-item kind oracle against real
+// Live (network) integration tests for the per-item kind classifier against real
 // GitHub data from jbhuang0604/awesome-computer-vision — the genuinely mixed
 // source this whole feature exists for.
 //
@@ -23,7 +23,7 @@ const token = process.env.GITHUB_TOKEN ?? process.env.GH_TOKEN ?? '';
 const describeLive = token ? describe : describe.skip;
 
 describeLive(
-  'Live oracle: jbhuang0604/awesome-computer-vision (real GitHub)',
+  'Live classifier: jbhuang0604/awesome-computer-vision (real GitHub)',
   () => {
     let octokit: GithubClient;
 
@@ -77,9 +77,9 @@ describeLive(
     );
 
     // openMVG/awesome_3DReconstruction_list is a curated list of *papers* — its
-    // entries are arXiv/paper links, not GitHub links. The GitHub-only oracle
+    // entries are arXiv/paper links, not GitHub links. The GitHub-only classifier
     // therefore counts 0 and classifies it a `repository`: the accepted blind
-    // spot of D1 (PLAN.md §4), recovered by the webapp membership backstop, not
+    // spot, recovered by the webapp membership backstop, not
     // by the action. Pinning this keeps the limitation honest and visible.
     it(
       'hits the GitHub-only blind spot: a paper-link registry (openMVG/awesome_3DReconstruction_list) classifies as a repository',

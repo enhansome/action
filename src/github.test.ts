@@ -169,7 +169,7 @@ describe('github.ts', () => {
       expect(result).toEqual(mockRepoInfo);
     });
 
-    it('should propagate the octokit error on failure (strict mode, D7)', async () => {
+    it('should propagate the octokit error on failure (strict mode)', async () => {
       const client = mockOctokit({
         'repos.get': () => {
           throw notFound(`${owner}/${repo}`);
@@ -264,7 +264,7 @@ describe('github.ts', () => {
         },
       });
 
-      // Strict mode (D7): a missing README throws its 404 rather than null.
+      // Strict mode: a missing README throws its 404 rather than null.
       let caught: unknown;
       try {
         await getReadme(client, owner, repo);

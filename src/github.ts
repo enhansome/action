@@ -6,14 +6,10 @@ import { throttling } from '@octokit/plugin-throttling';
 import type { OctokitOptions } from '@octokit/core';
 
 const MAX_RETRIES = 3,
-  MAX_WAIT_TIME_SECONDS = 300; // 5 minutes
+  MAX_WAIT_TIME_SECONDS = 300;
 
-// Octokit core (from @actions/github) hardened with the retry + throttling
-// plugins. The throttling plugin is the battle-tested replacement for the
-// hand-rolled `Retry-After` / `x-ratelimit-*` loop this module used to carry.
 const HardenedOctokit = GitHub.plugin(retry, throttling);
 
-/** A fully-wired Octokit client (rest endpoints + retry + throttling). */
 export type GithubClient = InstanceType<typeof HardenedOctokit>;
 
 export interface RepoInfoDetails {
@@ -31,15 +27,7 @@ interface RepoIdentifier {
   repo: string;
 }
 
-/**
- * Decides whether a rate-limited request should be retried and logs the
- * outcome. Preserves the old `MAX_WAIT_TIME_SECONDS` cap intent: a reset that
- * is further out than the cap is abandoned rather than waited on.
- *
- * Exported for unit testing - wired into the throttling plugin by `makeOctokit`.
- * @param kind 'primary' or 'secondary' rate limit (for log wording).
- * @returns true to retry, false to give up.
- */
+/** Exported for unit testing; wired into the throttling plugin by `makeOctokit`. */
 export function createRateLimitHandler(kind: 'primary' | 'secondary') {
   return (
     retryAfter: number,
@@ -70,12 +58,6 @@ export function createRateLimitHandler(kind: 'primary' | 'secondary') {
   };
 }
 
-/**
- * Builds an Octokit client wired with the retry + throttling plugins.
- * When `token` is non-empty the client is authenticated; when empty an
- * anonymous client is returned (public, lower rate limit).
- * @param token GitHub API token, or '' for anonymous access.
- */
 export function makeOctokit(token: string): GithubClient {
   const options: OctokitOptions = {
     // The throttling plugin owns rate-limit (403/429) retries, so keep them out
@@ -95,20 +77,6 @@ export function makeOctokit(token: string): GithubClient {
     : new HardenedOctokit(options);
 }
 
-/**
- * Fetches rich repository information. Retry / rate-limit handling is delegated
- * to the Octokit retry + throttling plugins on the injected client.
- *
- * Propagates any failure — 404/401/403/422, throttle exhaustion, 5xx, or a
- * network error — as an octokit RequestError. The caller decides severity:
- * `fetchTargetData` skips the dead target with a warning (the run continues),
- * while `main.ts`'s source fetch lets it propagate to `setFailed` (nothing to
- * enhance without the source README).
- * @param octokit A client from `makeOctokit`.
- * @param owner The repository owner.
- * @param repo The repository name.
- * @returns A RepoInfoDetails object.
- */
 export async function getRepoInfo(
   octokit: GithubClient,
   owner: string,
@@ -128,20 +96,6 @@ export async function getRepoInfo(
   };
 }
 
-/**
- * Fetches the raw README markdown for a repository.
- * Uses the `raw` media type so the response body *is* the markdown text
- * (no base64 decode required).
- *
- * Propagates any failure as an octokit RequestError (e.g. a repo with no README
- * throws a 404). The caller decides severity: `fetchTargetData` skips the dead
- * target with a warning (the run continues, the item defaults to 'repository'),
- * while `main.ts`'s source fetch lets it propagate to `setFailed`.
- * @param octokit A client from `makeOctokit`.
- * @param owner The repository owner.
- * @param repo The repository name.
- * @returns The README markdown.
- */
 export async function getReadme(
   octokit: GithubClient,
   owner: string,
@@ -159,15 +113,7 @@ export async function getReadme(
   return response.data as unknown as string;
 }
 
-/**
- * Fetches the SHA of the latest commit on a repository's default branch.
- * Used to stamp `README.json` with the exact source revision an enhanced list
- * was generated from.
- * @param octokit A client from `makeOctokit`.
- * @param owner The repository owner.
- * @param repo The repository name.
- * @returns The 40-char commit SHA, or null if it cannot be determined.
- */
+/** Source revision for the JSON output, so an enhanced list is traceable to its origin commit. */
 export async function getLatestCommitSha(
   octokit: GithubClient,
   owner: string,
@@ -188,14 +134,6 @@ export async function getLatestCommitSha(
   }
 }
 
-/**
- * Parses an `original_repository` input into owner/repo.
- * Accepts either `owner/repo` or a full GitHub URL
- * (`https://github.com/owner/repo`, with or without scheme). Strict: rejects
- * a bare owner, empty input, and anything that is not exactly two path parts.
- * @param value The raw input value.
- * @returns RepoIdentifier or null if it cannot be parsed.
- */
 export function parseOwnerRepo(value: string): null | RepoIdentifier {
   const trimmed = value.trim();
   if (!trimmed) {
@@ -215,16 +153,6 @@ export function parseOwnerRepo(value: string): null | RepoIdentifier {
   return { owner: parts[0], repo: parts[1].replace(/\.git$/, '') };
 }
 
-/**
- * Parses a GitHub repository URL to extract owner and repo name.
- * Supports URLs like:
- * - https://github.com/owner/repo
- * - https://github.com/owner/repo/
- * - https://github.com/owner/repo.git
- * - https://github.com/owner/repo/issues
- * @param url The GitHub URL.
- * @returns RepoIdentifier object or null if parsing fails.
- */
 export function parseGitHubUrl(url: string): null | RepoIdentifier {
   try {
     const parsedUrl = new URL(url);
@@ -236,7 +164,7 @@ export function parseGitHubUrl(url: string): null | RepoIdentifier {
       .filter(part => part.length > 0);
     if (pathParts.length >= 2) {
       const owner = pathParts[0],
-        repo = pathParts[1].replace(/\.git$/, ''); // Remove .git suffix if present
+        repo = pathParts[1].replace(/\.git$/, '');
       return { owner, repo };
     }
     return null;
@@ -246,22 +174,12 @@ export function parseGitHubUrl(url: string): null | RepoIdentifier {
   }
 }
 
-/**
- * Formats an unknown error as a short human message, prefixing the HTTP status
- * when the error is an Octokit RequestError (e.g. "404: Not Found"). Falls back
- * to the bare message for a network error with no status. Shared by every
- * caller that reports a failed fetch, so status surfacing stays consistent.
- */
 export function formatRequestError(error: unknown): string {
   const message = error instanceof Error ? error.message : String(error);
   const status = getErrorStatus(error);
   return status === undefined ? message : `${status}: ${message}`;
 }
 
-/**
- * Logs a failed request via `core.error`. Used for soft failures that degrade
- * rather than abort (e.g. a missing latest-commit SHA).
- */
 function logRequestError(subject: string, error: unknown): void {
   core.error(`Failed to fetch ${subject}: ${formatRequestError(error)}`);
 }
