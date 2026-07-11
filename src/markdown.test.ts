@@ -9,8 +9,10 @@ import * as github from './github.js';
 import { RepoInfoDetails } from './github.js';
 import {
   classifyKind,
+  countOutboundAnchors,
   countResourceLinks,
   fetchTargetData,
+  parseAwesomeMembers,
   processMarkdownContent,
   REGISTRY_CONTENT_BACKSTOP_LINKS,
   REGISTRY_MIN_LINKS,
@@ -495,6 +497,97 @@ describe('countResourceLinks (fixture counts)', () => {
       '# Project\n\n## Contents\n\n- [Install](#install)\n- [Usage](#usage)\n',
     );
     expect(countResourceLinks(tree)).toBe(0);
+  });
+});
+
+describe('countOutboundAnchors (rendered-HTML target counter)', () => {
+  it('counts each double-quoted href', () => {
+    const html =
+      '<a href="https://example.com/a">a</a><a href="https://example.com/b">b</a>';
+    expect(countOutboundAnchors(html)).toBe(2);
+  });
+
+  it('excludes same-page anchors, including heading permalinks', () => {
+    // GitHub prepends an octicon-link `<a href="#user-content-...">` before each
+    // heading; those must not inflate the count.
+    const html =
+      '<a href="#user-content-install"></a><a href="#usage">Usage</a>' +
+      '<a href="https://example.com/real">real</a>';
+    expect(countOutboundAnchors(html)).toBe(1);
+  });
+
+  it('ignores an empty href value', () => {
+    expect(countOutboundAnchors('<a href="">x</a>')).toBe(0);
+  });
+
+  it('tolerates whitespace around the equals sign', () => {
+    expect(
+      countOutboundAnchors('<a href = "https://example.com/a">a</a>'),
+    ).toBe(1);
+  });
+
+  it('does not count image src attributes (only href)', () => {
+    const html =
+      '<img src="https://example.com/logo.png">' +
+      '<a href="https://example.com/link">link</a>';
+    expect(countOutboundAnchors(html)).toBe(1);
+  });
+
+  it('does not count single-quoted href (GitHub renders double quotes)', () => {
+    // Documents the intended assumption: the scan targets GitHub's rendered
+    // HTML, which double-quotes attributes.
+    expect(countOutboundAnchors("<a href='https://example.com/a'>a</a>")).toBe(
+      0,
+    );
+  });
+
+  it('counts a linked badge wrapper (an <a> around an <img>)', () => {
+    const html =
+      '<a href="https://ci.example.com/build"><img src="badge.svg"></a>';
+    expect(countOutboundAnchors(html)).toBe(1);
+  });
+});
+
+describe('parseAwesomeMembers (sindresorhus/awesome membership set)', () => {
+  it('parses markdown links to github repos, lowercasing owner and repo', () => {
+    const md =
+      '- [Node.js](https://github.com/sindresorhus/awesome-nodejs)\n' +
+      '- [Go](https://github.com/Avelino/awesome-Go)\n';
+    expect(parseAwesomeMembers(md)).toEqual(
+      new Set(['avelino/awesome-go', 'sindresorhus/awesome-nodejs']),
+    );
+  });
+
+  it('excludes the sindresorhus/awesome registry itself', () => {
+    const md = '- [self](https://github.com/sindresorhus/awesome)\n';
+    expect(parseAwesomeMembers(md)).toEqual(new Set());
+  });
+
+  it('excludes non-repository GitHub path prefixes', () => {
+    const md =
+      '- [topic](https://github.com/topics/awesome)\n' +
+      '- [org](https://github.com/orgs/nodejs)\n' +
+      '- [real](https://github.com/o/r)\n';
+    expect(parseAwesomeMembers(md)).toEqual(new Set(['o/r']));
+  });
+
+  it('strips a trailing .git suffix from the repo', () => {
+    const md = '- [x](https://github.com/o/thing.git)\n';
+    expect(parseAwesomeMembers(md)).toEqual(new Set(['o/thing']));
+  });
+
+  it('captures the repo when a path or fragment follows it', () => {
+    const md =
+      '- [tree](https://github.com/o/r/tree/main)\n' +
+      '- [frag](https://github.com/a/b#readme)\n';
+    expect(parseAwesomeMembers(md)).toEqual(new Set(['a/b', 'o/r']));
+  });
+
+  it('ignores HTML anchor links (sponsor badges are not members)', () => {
+    // The README opens with HTML `<a href>` sponsor badges; only markdown
+    // `[..](url)` links inside parens are parsed, so those are skipped.
+    const md = '<a href="https://github.com/sindresorhus/sponsors">Sponsor</a>';
+    expect(parseAwesomeMembers(md)).toEqual(new Set());
   });
 });
 
