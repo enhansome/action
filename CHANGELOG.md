@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.1](https://github.com/enhansome/action/compare/v1.3.0...v1.3.1) (2026-07-11)
+
+
+### Bug Fixes
+
+* registry detection signal ([#7](https://github.com/enhansome/action/issues/7)) ([1d6fc6c](https://github.com/enhansome/action/commit/1d6fc6c758349e5451cca98764a0f6b90d425086))
+
 ## [1.3.0](https://github.com/enhansome/action/compare/v1.2.2...v1.3.0) (2026-07-10)
 
 
