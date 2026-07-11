@@ -6056,6 +6056,7 @@
           "title": "awesome-git-addons",
           "description": "Addons that extend git cli.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -6071,6 +6072,7 @@
           "title": "awesome-nodejs clis",
           "description": "Node.js modules and resources.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -6086,6 +6088,7 @@
           "title": "awesome-zsh-plugins",
           "description": "ZSH frameworks, plugins, tutorials & themes.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -6101,6 +6104,7 @@
           "title": "awesome-cli-apps-in-a-csv",
           "description": "Extensive list of cli apps.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -6116,6 +6120,7 @@
           "title": "awesome-shell",
           "description": "Command-line utilities and frameworks.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": null,
@@ -6171,6 +6176,7 @@
     "enhanced_repository": "enhansome/enhansome-cli-apps",
     "enhanced_repository_description": "enhanced list",
     "kind": "registry",
-    "title": "Awesome cli apps with stars"
+    "title": "Awesome cli apps with stars",
+    "registry_signal": "content"
   }
 }

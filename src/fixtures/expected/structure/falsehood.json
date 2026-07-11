@@ -90,6 +90,7 @@
           "title": "Awesome Unicode",
           "description": "A curated list of delightful Unicode tidbits, packages and resources.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -257,7 +258,8 @@
     "original_repository_sha": "deadbeef",
     "enhanced_repository": "enhansome/enhansome-falsehood",
     "enhanced_repository_description": "enhanced list",
-    "kind": "repository",
-    "title": "Awesome falsehood with stars"
+    "kind": "registry",
+    "title": "Awesome falsehood with stars",
+    "registry_signal": "content"
   }
 }

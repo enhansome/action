@@ -1770,7 +1770,7 @@
         },
         {
           "node_type": "item",
-          "kind": "registry",
+          "kind": "repository",
           "title": "Awesome Print",
           "description": "Pretty print your Ruby objects with style -- in full color and with proper indentation",
           "children": [],
@@ -9077,7 +9077,7 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "registry",
+              "kind": "repository",
               "title": "Awesome Nested Set",
               "description": "Awesome Nested Set is an implementation of the nested set pattern for ActiveRecord models.",
               "children": [],
@@ -11564,6 +11564,7 @@
               "title": "Awesome Jekyll",
               "description": "A collection of awesome Jekyll tools, plugins, themes, guides and much more.",
               "children": [],
+              "registry_signal": "name",
               "repo_info": {
                 "archived": false,
                 "language": "Rust",
@@ -13459,6 +13460,7 @@
     "enhanced_repository": "enhansome/enhansome-ruby",
     "enhanced_repository_description": "enhanced list",
     "kind": "registry",
-    "title": "Awesome ruby with stars"
+    "title": "Awesome ruby with stars",
+    "registry_signal": "content"
   }
 }

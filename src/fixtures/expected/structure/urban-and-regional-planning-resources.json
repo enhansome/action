@@ -595,6 +595,7 @@
           "title": "awesome-geojson",
           "description": "GeoJSON utilities that will make your life easier.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -655,6 +656,7 @@
           "title": "awesome-transit",
           "description": "A collection of transit data tools and resources.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -670,6 +672,7 @@
           "title": "awesome-gis",
           "description": "Awesome GIS is a collection of geospatial related sources, including cartographic tools, geoanalysis tools, developer tools, data, conference & communities, news, massive open online course, some amazing map sites, and more.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": true,
             "language": "Shell",
@@ -685,6 +688,7 @@
           "title": "awesome-agriculture",
           "description": "Open source technology for agriculture, farming, and gardening.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -725,6 +729,7 @@
     "enhanced_repository": "enhansome/enhansome-urban-and-regional-planning-resources",
     "enhanced_repository_description": "enhanced list",
     "kind": "registry",
-    "title": "Awesome Urban & Regional Planning Resources with stars"
+    "title": "Awesome Urban & Regional Planning Resources with stars",
+    "registry_signal": "content"
   }
 }

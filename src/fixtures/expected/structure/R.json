@@ -2079,6 +2079,7 @@
           "title": "Network Analysis List",
           "description": "Network Analysis related resources.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -2701,6 +2702,7 @@
           "title": "Network Analysis",
           "description": "Network Analysis related resources.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -2731,6 +2733,7 @@
           "title": "Posts",
           "description": "Great R blog posts or Rticles.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -3123,6 +3126,7 @@
     "enhanced_repository": "enhansome/enhansome-R",
     "enhanced_repository_description": "enhanced list",
     "kind": "registry",
-    "title": "Awesome R with stars"
+    "title": "Awesome R with stars",
+    "registry_signal": "content"
   }
 }

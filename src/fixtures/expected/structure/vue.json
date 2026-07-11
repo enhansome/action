@@ -44,6 +44,7 @@
           "title": "Awesome Vite",
           "description": null,
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -3655,6 +3656,7 @@
           "title": "vue-awesome-sidebar",
           "description": "A modern and fast sidebar menu component for vue(3x) capable with vue-router.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -8001,6 +8003,7 @@
     "enhanced_repository": "enhansome/enhansome-vue",
     "enhanced_repository_description": "enhanced list",
     "kind": "registry",
-    "title": "Awesome vue with stars"
+    "title": "Awesome vue with stars",
+    "registry_signal": "content"
   }
 }

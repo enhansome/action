@@ -9,6 +9,7 @@
           "title": "awesome-pcaptools",
           "description": "Useful in network traffic analysis.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": true,
             "language": "Go",
@@ -24,6 +25,7 @@
           "title": "awesome-malware-analysis",
           "description": "Some overlap here for artifact analysis.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -3531,6 +3533,7 @@
     "enhanced_repository": "enhansome/enhansome-honeypots",
     "enhanced_repository_description": "enhanced list",
     "kind": "registry",
-    "title": "Awesome Honeypots with stars"
+    "title": "Awesome Honeypots with stars",
+    "registry_signal": "content"
   }
 }

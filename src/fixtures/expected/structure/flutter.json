@@ -2240,7 +2240,7 @@
         },
         {
           "node_type": "item",
-          "kind": "registry",
+          "kind": "repository",
           "title": "CamerAwesome",
           "description": "[1117⭐] - Community camera plugin rework by Apparence.io studio.",
           "children": [],
@@ -5039,6 +5039,7 @@
           "title": "Awesome Flutter Desktop",
           "description": "[1658⭐] - A curated list of awesome things related to Flutter desktop by LeanFlutter.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -5134,6 +5135,7 @@
     "enhanced_repository": "enhansome/enhansome-flutter",
     "enhanced_repository_description": "enhanced list",
     "kind": "registry",
-    "title": "Awesome flutter with stars"
+    "title": "Awesome flutter with stars",
+    "registry_signal": "content"
   }
 }

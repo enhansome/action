@@ -24,6 +24,7 @@
           "title": "Awesome Elm PLTD",
           "description": "Useful resources for programming language theory & development in Elm.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -1654,6 +1655,7 @@
     "enhanced_repository": "enhansome/enhansome-elm",
     "enhanced_repository_description": "enhanced list",
     "kind": "registry",
-    "title": "Awesome elm with stars"
+    "title": "Awesome elm with stars",
+    "registry_signal": "content"
   }
 }

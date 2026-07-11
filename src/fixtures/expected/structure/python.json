@@ -406,6 +406,7 @@
               "title": "awesome-asyncio",
               "description": null,
               "children": [],
+              "registry_signal": "name",
               "repo_info": {
                 "archived": false,
                 "language": "Ruby",
@@ -1124,6 +1125,7 @@
               }
             }
           ],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -1247,6 +1249,7 @@
                   "title": "awesome-flake8-extensions",
                   "description": null,
                   "children": [],
+                  "registry_signal": "name",
                   "repo_info": {
                     "archived": false,
                     "language": "TypeScript",
@@ -2517,6 +2520,7 @@
               }
             }
           ],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -2548,6 +2552,7 @@
               }
             }
           ],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -3563,6 +3568,7 @@
               "title": "awesome-sphinxdoc",
               "description": null,
               "children": [],
+              "registry_signal": "name",
               "repo_info": {
                 "archived": false,
                 "language": "Ruby",
@@ -4932,6 +4938,7 @@
               "title": "awesome-jupyter",
               "description": null,
               "children": [],
+              "registry_signal": "name",
               "repo_info": {
                 "archived": false,
                 "language": "TypeScript",
@@ -5681,6 +5688,7 @@
                   "title": "awesome-sqlalchemy",
                   "description": null,
                   "children": [],
+                  "registry_signal": "name",
                   "repo_info": {
                     "archived": false,
                     "language": "Go",
@@ -7686,6 +7694,7 @@
               "title": "awesome-slugify",
               "description": "A Python slugify library that can preserve unicode.",
               "children": [],
+              "registry_signal": "name",
               "repo_info": {
                 "archived": false,
                 "language": "Shell",
@@ -8274,6 +8283,7 @@
                   "title": "awesome-fasthtml",
                   "description": null,
                   "children": [],
+                  "registry_signal": "name",
                   "repo_info": {
                     "archived": false,
                     "language": "Shell",
@@ -8305,6 +8315,7 @@
                   "title": "awesome-django",
                   "description": null,
                   "children": [],
+                  "registry_signal": "name",
                   "repo_info": {
                     "archived": false,
                     "language": "Ruby",
@@ -8336,6 +8347,7 @@
                   "title": "awesome-flask",
                   "description": null,
                   "children": [],
+                  "registry_signal": "name",
                   "repo_info": {
                     "archived": false,
                     "language": "TypeScript",
@@ -8366,6 +8378,7 @@
                   "title": "awesome-pyramid",
                   "description": null,
                   "children": [],
+                  "registry_signal": "name",
                   "repo_info": {
                     "archived": false,
                     "language": "Java",
@@ -8559,6 +8572,7 @@
     "enhanced_repository": "enhansome/enhansome-python",
     "enhanced_repository_description": "enhanced list",
     "kind": "registry",
-    "title": "Awesome Python with stars"
+    "title": "Awesome Python with stars",
+    "registry_signal": "content"
   }
 }

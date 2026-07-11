@@ -14436,6 +14436,7 @@
           "title": "awesome-cmake",
           "description": "A curated list of awesome CMake scripts, modules, and resources.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -15009,6 +15010,7 @@
           "title": "List of Free C or C++ Books",
           "description": null,
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -15198,6 +15200,7 @@
           "title": "awesome-ld-preload",
           "description": "A curated list of resources related to LD_PRELOAD.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -15273,6 +15276,7 @@
           "title": "awesome-static-analysis",
           "description": "A curated list of static analysis tools for all programming languages.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -15298,6 +15302,7 @@
     "enhanced_repository": "enhansome/enhansome-cpp",
     "enhanced_repository_description": "enhanced list",
     "kind": "registry",
-    "title": "Awesome C++ with stars"
+    "title": "Awesome C++ with stars",
+    "registry_signal": "content"
   }
 }

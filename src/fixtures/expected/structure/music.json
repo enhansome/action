@@ -1011,6 +1011,7 @@
           "title": "Awesome Music Production",
           "description": "A curated list of software and resources to create music.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -1026,6 +1027,7 @@
           "title": "Awesome sheet music",
           "description": "A curated list of awesome sheet music software, libraries and resources.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -1041,6 +1043,7 @@
           "title": "Awesome Music Programming",
           "description": "A curated collection of music programming languages, libraries, frameworks and tools.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -1056,6 +1059,7 @@
           "title": "Awesome Music Listening",
           "description": "Awesome list of websites dedicated to listening to music.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -1071,6 +1075,7 @@
           "title": "Awesome Audio Visualization",
           "description": "A curated list about Audio Visualization.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -1086,6 +1091,7 @@
           "title": "Awesome Audio DSP",
           "description": "A curated list of audio DSP and plugin development resources.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -1101,6 +1107,7 @@
           "title": "Awesome WebAudio",
           "description": "A curated list of awesome WebAudio packages and resources.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -1116,6 +1123,7 @@
           "title": "Awesome Python for Scientific Audio",
           "description": "A curated list of python software and packages related to scientific research in audio.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -1141,6 +1149,7 @@
     "enhanced_repository": "enhansome/enhansome-music",
     "enhanced_repository_description": "enhanced list",
     "kind": "registry",
-    "title": "Awesome Music with stars"
+    "title": "Awesome Music with stars",
+    "registry_signal": "content"
   }
 }

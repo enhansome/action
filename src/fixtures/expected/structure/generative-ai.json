@@ -945,6 +945,7 @@
           "title": "Generative Deep Art",
           "description": "A curated list of generative deep learning tools, works, models, etc. for artistic uses, by @filipecalegario.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": null,
@@ -1011,6 +1012,7 @@
           "title": "Awesome ChatGPT",
           "description": "A curated list of awesome tools, demos, docs for ChatGPT and GPT-3, by @jordn.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -1026,6 +1028,7 @@
           "title": "Awesome ChatGPT",
           "description": "Another awesome list for ChatGPT.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -1056,6 +1059,7 @@
           "title": "Awesome ChatGPT Prompts",
           "description": "A collection of prompt examples to be used with the ChatGPT model.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": null,
@@ -1076,6 +1080,7 @@
     "enhanced_repository": "enhansome/enhansome-generative-ai",
     "enhanced_repository_description": "enhanced list",
     "kind": "registry",
-    "title": "Awesome Generative AI with stars"
+    "title": "Awesome Generative AI with stars",
+    "registry_signal": "content"
   }
 }

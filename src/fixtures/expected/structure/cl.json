@@ -2272,6 +2272,7 @@
           "title": "awesome-lisp-companies",
           "description": null,
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -2287,6 +2288,7 @@
           "title": "cl-software",
           "description": null,
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -4883,6 +4885,7 @@
               "title": "dare we add: used in production by the author's company (ASTN Group, see awesome-lisp-companies",
               "description": ")",
               "children": [],
+              "registry_signal": "name",
               "repo_info": {
                 "archived": false,
                 "language": "JavaScript",
@@ -6012,6 +6015,7 @@
     "enhanced_repository": "enhansome/enhansome-cl",
     "enhanced_repository_description": "enhanced list",
     "kind": "registry",
-    "title": "Awesome Common Lisp with stars"
+    "title": "Awesome Common Lisp with stars",
+    "registry_signal": "content"
   }
 }

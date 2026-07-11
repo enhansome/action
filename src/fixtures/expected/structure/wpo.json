@@ -876,6 +876,7 @@
           "title": "Exexif",
           "description": "Pure elixir library to extract tiff and exif metadata from JPEG files.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": null,
@@ -1850,6 +1851,7 @@
     "enhanced_repository": "enhansome/enhansome-wpo",
     "enhanced_repository_description": "enhanced list",
     "kind": "registry",
-    "title": "Awesome WPO with stars"
+    "title": "Awesome WPO with stars",
+    "registry_signal": "content"
   }
 }

@@ -34,6 +34,7 @@
           "title": "Awesome Job Boards",
           "description": "Niche job boards by domains, technology, roles and area.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -121,6 +122,7 @@
           "title": "Awesome Interviews",
           "description": "A huge database of questions sorted by topic to get inspiration from.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -188,6 +190,7 @@
           "title": "Awesome Product Management",
           "description": "A reference. All the missing pieces are found below.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -263,6 +266,7 @@
     "enhanced_repository": "enhansome/enhansome-engineering-team-management",
     "enhanced_repository_description": "enhanced list",
     "kind": "registry",
-    "title": "Awesome engineering team management with stars"
+    "title": "Awesome engineering team management with stars",
+    "registry_signal": "content"
   }
 }

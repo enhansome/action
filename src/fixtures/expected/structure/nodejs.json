@@ -3329,6 +3329,7 @@
               "title": "More…",
               "description": null,
               "children": [],
+              "registry_signal": "name",
               "repo_info": {
                 "archived": false,
                 "language": "JavaScript",
@@ -8168,6 +8169,7 @@
           "title": "awesome-cross-platform-nodejs",
           "description": "Resources for writing and testing cross-platform code.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": null,
@@ -8183,6 +8185,7 @@
           "title": "awesome-npm",
           "description": "Resources and tips for using npm.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -8203,6 +8206,7 @@
     "enhanced_repository": "enhansome/enhansome-nodejs",
     "enhanced_repository_description": "enhanced list",
     "kind": "registry",
-    "title": "Awesome nodejs with stars"
+    "title": "Awesome nodejs with stars",
+    "registry_signal": "content"
   }
 }

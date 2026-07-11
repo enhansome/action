@@ -2322,6 +2322,7 @@
               "title": "Awesome multicore OCaml",
               "description": ". A compilation of resources",
               "children": [],
+              "registry_signal": "name",
               "repo_info": {
                 "archived": false,
                 "language": "Go",
@@ -3378,6 +3379,7 @@
     "enhanced_repository": "enhansome/enhansome-ocaml",
     "enhanced_repository_description": "enhanced list",
     "kind": "registry",
-    "title": "Awesome OCaml with stars"
+    "title": "Awesome OCaml with stars",
+    "registry_signal": "content"
   }
 }

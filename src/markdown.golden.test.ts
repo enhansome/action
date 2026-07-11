@@ -51,12 +51,14 @@ function generateRepoInfo(owner: string, repo: string): RepoInfoDetails {
   const offsetDays = hash % 1000;
   return {
     archived: hash % 17 === 0,
+    description: null,
     language: LANGUAGES[hash % LANGUAGES.length],
     open_issues_count: hash % 100,
     owner,
     pushed_at: new Date(BASE_PUSHED_MS - offsetDays * MS_PER_DAY).toISOString(),
     repo,
     stargazers_count: 1 + (hash % 50_000),
+    topics: [],
   };
 }
 
@@ -87,27 +89,25 @@ function deterministicGetRepoInfo(
 }
 
 // Deterministic per-item README so the golden suite stays offline AND exercises
-// the per-item `registry` classification path end-to-end. The unmocked getReadme
-// is called with the `{}` stand-in octokit, so it throws (`octokit.rest` is
-// undefined) and every kind fetch is skipped -> every item defaults to
-// `repository`, leaving `registry` only ever on metadata. To fix that, a repo
-// whose name contains "awesome" is treated as a registry (its README parses with
-// well over REGISTRY_MIN_ENTRIES GitHub-linked items); everything else is a plain
-// project README. Real awesome-lists overwhelmingly classify as registries, so
-// this also matches production behavior for the bulk of those targets.
+// the per-item `registry` classification path end-to-end. classifyKind counts
+// anchors in the target's rendered HTML, so these mocks return HTML: a repo
+// whose name contains "awesome" is treated as a registry (its HTML carries well
+// over REGISTRY_MIN_LINKS outbound anchors); everything else is a plain project
+// README. Real awesome-lists overwhelmingly classify as registries, so this also
+// matches production behavior for the bulk of those targets.
 function deterministicGetReadme(
   _octokit: unknown,
   _owner: string,
   repo: string,
 ): Promise<string> {
   if (/awesome/i.test(repo)) {
-    const lines = ['# Awesome\n'];
-    for (let i = 0; i < 30; i++) {
-      lines.push(`- [item-${i}](https://github.com/example/item-${i})`);
-    }
-    return Promise.resolve(lines.join('\n'));
+    const links = Array.from(
+      { length: 60 },
+      (_, i) => `<a href="https://github.com/example/item-${i}">item-${i}</a>`,
+    );
+    return Promise.resolve(`<article>${links.join('')}</article>`);
   }
-  return Promise.resolve('# project\n');
+  return Promise.resolve('<p>project</p>');
 }
 
 // --- fixture inputs ---------------------------------------------------------

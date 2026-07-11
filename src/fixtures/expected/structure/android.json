@@ -2422,6 +2422,7 @@
           "title": "Android Debug Bridge - ADB",
           "description": "a command-line tool to assist in debugging Android-powered devices",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -3619,6 +3620,7 @@
     "enhanced_repository": "enhansome/enhansome-android",
     "enhanced_repository_description": "enhanced list",
     "kind": "registry",
-    "title": "Awesome Android with stars"
+    "title": "Awesome Android with stars",
+    "registry_signal": "content"
   }
 }

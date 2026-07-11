@@ -38865,6 +38865,7 @@
           "title": "awesome-awesomeness",
           "description": "List of other amazingly awesome lists.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -38880,6 +38881,7 @@
           "title": "Awesome Golang Workshops",
           "description": "A curated list of awesome golang workshops.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -38895,6 +38897,7 @@
           "title": "Awesome Remote Job",
           "description": "Curated list of awesome remote jobs. A lot of them are looking for Go hackers.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -38925,6 +38928,7 @@
           "title": "awesome-go-extra",
           "description": "Parse awesome-go README file and generate a new README file with repo info.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": null,
@@ -39126,6 +39130,7 @@
     "enhanced_repository": "enhansome/enhansome-go",
     "enhanced_repository_description": "enhanced list",
     "kind": "registry",
-    "title": "Awesome Go with stars"
+    "title": "Awesome Go with stars",
+    "registry_signal": "content"
   }
 }

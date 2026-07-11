@@ -21318,6 +21318,7 @@
           "title": "Awesome Elixir and CQRS",
           "description": "A curated list of awesome Elixir and Command Query Responsibility Segregation (CQRS) and event sourcing resources.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": true,
             "language": "Ruby",
@@ -21333,6 +21334,7 @@
           "title": "Awesome Erlang",
           "description": "A curated list of awesome Erlang libraries, resources and shiny things.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": null,
@@ -21551,6 +21553,7 @@
     "enhanced_repository": "enhansome/enhansome-elixir",
     "enhanced_repository_description": "enhanced list",
     "kind": "registry",
-    "title": "Awesome Elixir with stars"
+    "title": "Awesome Elixir with stars",
+    "registry_signal": "content"
   }
 }

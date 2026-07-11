@@ -230,6 +230,7 @@
           "title": "awesome-stacks",
           "description": "Deploy 150+ open-source web apps with one Docker command.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -4990,6 +4991,7 @@
           "title": "Awesome Sysadmin",
           "description": "by n1trux",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -5005,6 +5007,7 @@
           "title": "Awesome Linux Container",
           "description": "more general about container than this repo, by Friz-zy.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -5020,6 +5023,7 @@
           "title": "Awesome Selfhosted",
           "description": "list of Free Software network services and web applications which can be hosted locally by running in a classical way (setup local web server and run applications from there) or in a Docker container. By Kickball",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -5035,6 +5039,7 @@
           "title": "Awesome Compose",
           "description": "Docker Compose samples.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -5050,6 +5055,7 @@
           "title": "Awesome Kubernetes",
           "description": "by ramitsurana",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": null,
@@ -5065,6 +5071,7 @@
           "title": "Awesome CI/CD",
           "description": "Not specific to docker but relevant.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -5228,6 +5235,7 @@
     "enhanced_repository": "enhansome/enhansome-docker",
     "enhanced_repository_description": "enhanced list",
     "kind": "registry",
-    "title": "Awesome Docker with stars"
+    "title": "Awesome Docker with stars",
+    "registry_signal": "content"
   }
 }

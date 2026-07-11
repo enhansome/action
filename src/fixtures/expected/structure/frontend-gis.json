@@ -380,6 +380,7 @@
           "title": "awesome-GeoJSON",
           "description": "Catalogue of GeoJSON tools.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -949,6 +950,7 @@
           "title": "awesome-public-datasets",
           "description": "An awesome repository full of open datasets from an abundance of different categories.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -1137,6 +1139,7 @@
           "title": "Filling a suggestion issue",
           "description": "(easier).",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -1152,6 +1155,7 @@
           "title": "Opening a pull request",
           "description": ".",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -1172,6 +1176,7 @@
     "enhanced_repository": "enhansome/enhansome-frontend-gis",
     "enhanced_repository_description": "enhanced list",
     "kind": "registry",
-    "title": "Awesome frontend gis with stars"
+    "title": "Awesome frontend gis with stars",
+    "registry_signal": "content"
   }
 }

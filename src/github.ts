@@ -14,12 +14,14 @@ export type GithubClient = InstanceType<typeof HardenedOctokit>;
 
 export interface RepoInfoDetails {
   archived: boolean;
+  description: null | string;
   language: null | string;
   open_issues_count: number;
   owner: string;
   pushed_at: null | string;
   repo: string;
   stargazers_count: number;
+  topics: string[];
 }
 
 interface RepoIdentifier {
@@ -87,12 +89,14 @@ export async function getRepoInfo(
 
   return {
     archived: data.archived,
+    description: data.description ?? null,
     language: data.language,
     open_issues_count: data.open_issues_count,
     owner: data.owner.login,
     pushed_at: data.pushed_at,
     repo: data.name,
     stargazers_count: data.stargazers_count,
+    topics: data.topics ?? [],
   };
 }
 
@@ -100,16 +104,17 @@ export async function getReadme(
   octokit: GithubClient,
   owner: string,
   repo: string,
+  format: 'html' | 'raw' = 'raw',
 ): Promise<string> {
-  core.debug(`Fetching README for ${owner}/${repo}`);
+  core.debug(`Fetching ${format} README for ${owner}/${repo}`);
   const response = await octokit.rest.repos.getReadme({
-    mediaType: { format: 'raw' },
+    mediaType: { format },
     owner,
     repo,
   });
 
-  // With the `raw` media type the body is the markdown string, but the
-  // generated types still describe the JSON shape - cast to string.
+  // With `raw`/`html` media types the body is a string, but the generated types
+  // still describe the JSON shape - cast to string.
   return response.data as unknown as string;
 }
 

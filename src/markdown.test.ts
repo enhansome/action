@@ -9,9 +9,13 @@ import * as github from './github.js';
 import { RepoInfoDetails } from './github.js';
 import {
   classifyKind,
-  countListEntries,
+  countOutboundAnchors,
+  countResourceLinks,
   fetchTargetData,
+  parseAwesomeMembers,
   processMarkdownContent,
+  REGISTRY_CONTENT_BACKSTOP_LINKS,
+  REGISTRY_MIN_LINKS,
   ReplacementRule,
 } from './markdown.js';
 
@@ -76,6 +80,8 @@ describe('fetchTargetData with Concurrency', () => {
     pushed_at: '2025-01-01T00:00:00Z',
     repo: 'test-repo',
     stargazers_count: 100,
+    topics: [],
+    description: null,
   };
 
   function githubUrls(count: number): Set<string> {
@@ -126,7 +132,8 @@ describe('fetchTargetData with Concurrency', () => {
       urls,
       urls,
       token,
-      20,
+      REGISTRY_MIN_LINKS,
+      new Set(),
     );
 
     expect(repoInfoMap.size).toBe(totalUrls);
@@ -151,7 +158,13 @@ describe('fetchTargetData with Concurrency', () => {
       return { ...mockRepoData };
     });
 
-    const { repoInfoMap } = await fetchTargetData(urls, urls, token, 20);
+    const { repoInfoMap } = await fetchTargetData(
+      urls,
+      urls,
+      token,
+      REGISTRY_MIN_LINKS,
+      new Set(),
+    );
 
     expect(repoInfoMap.size).toBe(totalUrls);
     expect(maxConcurrentRequests).toBe(totalUrls);
@@ -172,7 +185,8 @@ describe('fetchTargetData with Concurrency', () => {
       urls,
       entryUrls,
       token,
-      20,
+      REGISTRY_MIN_LINKS,
+      new Set(),
     );
 
     expect(repoInfoMap.size).toBe(3);
@@ -197,7 +211,8 @@ describe('fetchTargetData with Concurrency', () => {
       urls,
       urls,
       token,
-      20,
+      REGISTRY_MIN_LINKS,
+      new Set(),
     );
 
     // repo-0's /repos failed -> no repo_info, but its README still classified.
@@ -223,7 +238,8 @@ describe('fetchTargetData with Concurrency', () => {
       urls,
       urls,
       token,
-      20,
+      REGISTRY_MIN_LINKS,
+      new Set(),
     );
 
     // repo-0's README failed -> no kind, but its /repos still succeeded.
@@ -239,7 +255,8 @@ describe('fetchTargetData with Concurrency', () => {
       new Set<string>(),
       new Set<string>(),
       token,
-      20,
+      REGISTRY_MIN_LINKS,
+      new Set(),
     );
     expect(repoInfoMap.size).toBe(0);
     expect(kindsMap.size).toBe(0);
@@ -262,7 +279,8 @@ describe('fetchTargetData with Concurrency', () => {
       urls,
       urls,
       token,
-      20,
+      REGISTRY_MIN_LINKS,
+      new Set(),
     );
 
     // One canonical repo -> one of each call, not two.
@@ -305,6 +323,8 @@ describe('Branded titles from README fixtures', () => {
       pushed_at: '2025-01-01T00:00:00Z',
       repo: 'test-repo',
       stargazers_count: 100,
+      topics: [],
+      description: null,
     });
     // Mock getReadme so per-item classification (fetchTargetData) stays offline.
     // A minimal README parses to 0 entries -> every item classifies as a
@@ -388,6 +408,8 @@ describe('Item titles and descriptions from README fixtures', () => {
       pushed_at: '2025-01-01T00:00:00Z',
       repo: 'test-repo',
       stargazers_count: 100,
+      topics: [],
+      description: null,
     });
     // Mock getReadme so per-item classification (fetchTargetData) stays offline.
     // A minimal README parses to 0 entries -> every item classifies as a
@@ -430,7 +452,7 @@ describe('Item titles and descriptions from README fixtures', () => {
   );
 });
 
-describe('countListEntries (fixture counts)', () => {
+describe('countResourceLinks (fixture counts)', () => {
   const fixturesDir = path.join(__dirname, 'fixtures', 'original');
 
   function parseFixture(name: string) {
@@ -445,43 +467,127 @@ describe('countListEntries (fixture counts)', () => {
     return unified().use(remarkParse).use(remarkGfm).parse(markdown);
   }
 
-  // `countListEntries` (and the `findFirstGitHubLink` it reuses) calls
-  // `parseGitHubUrl`, which this file auto-mocks (vi.mock('./github.js')). A
-  // leaked permissive impl from a sibling describe would over-count URLs whose
-  // host is not exactly github.com (e.g. raw.githubusercontent.com), so pin the
-  // mock to the real implementation here. The asserted counts then reflect the
-  // production oracle, not mock contamination.
-  beforeEach(async () => {
-    const actual = await vi.importActual<typeof github>('./github.js');
-    vi.mocked(github.parseGitHubUrl).mockImplementation(actual.parseGitHubUrl);
+  // Pinned against REGISTRY_MIN_LINKS (50). These counts are the ground truth the
+  // threshold sits against, so they are asserted exactly.
+  it.each([
+    { name: 'go', expected: 2965 },
+    { name: 'free-for-dev', expected: 1424 },
+    { name: 'complex', expected: 7 },
+    { name: 'userscripts', expected: 13 },
+  ])('counts $name outbound links as $expected', ({ name, expected }) => {
+    expect(countResourceLinks(parseFixture(name))).toBe(expected);
   });
 
-  // Calibration is pinned at K = 20. These counts are the ground
-  // truth that threshold sits against, so they are asserted exactly.
-  it.each([
-    { name: 'go', expected: 2570 },
-    { name: 'free-for-dev', expected: 13 },
-    { name: 'complex', expected: 7 },
-    { name: 'userscripts', expected: 0 },
-  ])(
-    'counts $name github-linked list items as $expected',
-    ({ name, expected }) => {
-      expect(countListEntries(parseFixture(name))).toBe(expected);
-    },
-  );
-
-  it('counts zero for a README with no github links', () => {
+  it('counts a non-GitHub linked entry (a registry of papers/sites, not repos)', () => {
     const tree = parseMarkdown(
       '# Title\n\n- [book](https://example.com/book)\n- plain note\n',
     );
-    expect(countListEntries(tree)).toBe(0);
+    expect(countResourceLinks(tree)).toBe(1);
   });
 
-  it('counts an item once even when its subtree has multiple github links', () => {
+  it('counts every outbound link, including several in one item', () => {
     const tree = parseMarkdown(
       '- [a](https://github.com/o/a) and [b](https://github.com/o/b)\n- [c](https://example.com/c)\n',
     );
-    expect(countListEntries(tree)).toBe(1);
+    expect(countResourceLinks(tree)).toBe(3);
+  });
+
+  it('ignores same-page anchor links (a project README ToC is not a registry)', () => {
+    const tree = parseMarkdown(
+      '# Project\n\n## Contents\n\n- [Install](#install)\n- [Usage](#usage)\n',
+    );
+    expect(countResourceLinks(tree)).toBe(0);
+  });
+});
+
+describe('countOutboundAnchors (rendered-HTML target counter)', () => {
+  it('counts each double-quoted href', () => {
+    const html =
+      '<a href="https://example.com/a">a</a><a href="https://example.com/b">b</a>';
+    expect(countOutboundAnchors(html)).toBe(2);
+  });
+
+  it('excludes same-page anchors, including heading permalinks', () => {
+    // GitHub prepends an octicon-link `<a href="#user-content-...">` before each
+    // heading; those must not inflate the count.
+    const html =
+      '<a href="#user-content-install"></a><a href="#usage">Usage</a>' +
+      '<a href="https://example.com/real">real</a>';
+    expect(countOutboundAnchors(html)).toBe(1);
+  });
+
+  it('ignores an empty href value', () => {
+    expect(countOutboundAnchors('<a href="">x</a>')).toBe(0);
+  });
+
+  it('tolerates whitespace around the equals sign', () => {
+    expect(
+      countOutboundAnchors('<a href = "https://example.com/a">a</a>'),
+    ).toBe(1);
+  });
+
+  it('does not count image src attributes (only href)', () => {
+    const html =
+      '<img src="https://example.com/logo.png">' +
+      '<a href="https://example.com/link">link</a>';
+    expect(countOutboundAnchors(html)).toBe(1);
+  });
+
+  it('does not count single-quoted href (GitHub renders double quotes)', () => {
+    // Documents the intended assumption: the scan targets GitHub's rendered
+    // HTML, which double-quotes attributes.
+    expect(countOutboundAnchors("<a href='https://example.com/a'>a</a>")).toBe(
+      0,
+    );
+  });
+
+  it('counts a linked badge wrapper (an <a> around an <img>)', () => {
+    const html =
+      '<a href="https://ci.example.com/build"><img src="badge.svg"></a>';
+    expect(countOutboundAnchors(html)).toBe(1);
+  });
+});
+
+describe('parseAwesomeMembers (sindresorhus/awesome membership set)', () => {
+  it('parses markdown links to github repos, lowercasing owner and repo', () => {
+    const md =
+      '- [Node.js](https://github.com/sindresorhus/awesome-nodejs)\n' +
+      '- [Go](https://github.com/Avelino/awesome-Go)\n';
+    expect(parseAwesomeMembers(md)).toEqual(
+      new Set(['avelino/awesome-go', 'sindresorhus/awesome-nodejs']),
+    );
+  });
+
+  it('excludes the sindresorhus/awesome registry itself', () => {
+    const md = '- [self](https://github.com/sindresorhus/awesome)\n';
+    expect(parseAwesomeMembers(md)).toEqual(new Set());
+  });
+
+  it('excludes non-repository GitHub path prefixes', () => {
+    const md =
+      '- [topic](https://github.com/topics/awesome)\n' +
+      '- [org](https://github.com/orgs/nodejs)\n' +
+      '- [real](https://github.com/o/r)\n';
+    expect(parseAwesomeMembers(md)).toEqual(new Set(['o/r']));
+  });
+
+  it('strips a trailing .git suffix from the repo', () => {
+    const md = '- [x](https://github.com/o/thing.git)\n';
+    expect(parseAwesomeMembers(md)).toEqual(new Set(['o/thing']));
+  });
+
+  it('captures the repo when a path or fragment follows it', () => {
+    const md =
+      '- [tree](https://github.com/o/r/tree/main)\n' +
+      '- [frag](https://github.com/a/b#readme)\n';
+    expect(parseAwesomeMembers(md)).toEqual(new Set(['a/b', 'o/r']));
+  });
+
+  it('ignores HTML anchor links (sponsor badges are not members)', () => {
+    // The README opens with HTML `<a href>` sponsor badges; only markdown
+    // `[..](url)` links inside parens are parsed, so those are skipped.
+    const md = '<a href="https://github.com/sindresorhus/sponsors">Sponsor</a>';
+    expect(parseAwesomeMembers(md)).toEqual(new Set());
   });
 });
 
@@ -489,73 +595,160 @@ describe('classifyKind', () => {
   // getReadme is auto-mocked (vi.mock('./github.js')), so the octokit passed to
   // classifyKind is never actually used.
   const octokit = undefined as unknown as github.GithubClient;
+  const BACKSTOP = REGISTRY_CONTENT_BACKSTOP_LINKS;
 
-  function readmeWithItems(n: number): string {
-    const items = Array.from(
+  function repoInfo(
+    opts: { description?: null | string; topics?: string[] } = {},
+  ): RepoInfoDetails {
+    return {
+      archived: false,
+      description: opts.description ?? null,
+      language: 'TypeScript',
+      open_issues_count: 0,
+      owner: 'o',
+      pushed_at: '2025-01-01T00:00:00Z',
+      repo: 'r',
+      stargazers_count: 0,
+      topics: opts.topics ?? [],
+    };
+  }
+
+  // The content backstop counts anchors in the target's RENDERED HTML.
+  function readmeHtml(n: number): string {
+    const links = Array.from(
       { length: n },
-      (_, i) => `- [repo-${i}](https://github.com/o/repo-${i})`,
+      (_, i) => `<a href="https://example.com/item-${i}">item-${i}</a>`,
     ).join('\n');
-    return `# Some Repo\n\n${items}\n`;
+    return `<article><h1>Repo</h1>${links}</article>`;
   }
 
   beforeEach(() => {
     vi.clearAllMocks();
   });
 
-  // classifyKind returns only { kind }: the raw entry count is a debug signal
-  // nothing in production reads (fetchTargetData uses just `kind`), so it was
-  // dropped to let the fast path short-circuit without fabricating a count.
-
-  it('classifies a README with >= minEntries github items as a registry (boundary inclusive)', async () => {
-    vi.mocked(github.getReadme).mockResolvedValue(readmeWithItems(20));
-    const result = await classifyKind(octokit, 'o', 'r', 20);
-    expect(result.kind).toBe('registry');
-  });
-
-  it('classifies a README just below the threshold as a repository', async () => {
-    vi.mocked(github.getReadme).mockResolvedValue(readmeWithItems(19));
-    const result = await classifyKind(octokit, 'o', 'r', 20);
-    expect(result.kind).toBe('repository');
-  });
-
-  it('classifies a sparse project README as a repository', async () => {
-    vi.mocked(github.getReadme).mockResolvedValue(
-      '# chalk\n\nTerminal string styling.\n',
-    );
-    const result = await classifyKind(octokit, 'chalk', 'chalk', 20);
-    expect(result.kind).toBe('repository');
-  });
-
-  it('classifies a real registry README fixture as a registry', async () => {
-    const readme = fs.readFileSync(
-      path.join(__dirname, 'fixtures', 'original', 'kind-registry.md'),
-      'utf-8',
-    );
-    vi.mocked(github.getReadme).mockResolvedValue(readme);
+  // The precision anchors fire before any README fetch, so a target they catch
+  // must NOT pay for a README round-trip.
+  it('classifies a sindresorhus member as registry without fetching the README', async () => {
+    const members = new Set(['vsitzmann/awesome-implicit-representations']);
     const result = await classifyKind(
       octokit,
-      'example',
-      'awesome-example',
-      20,
+      'vsitzmann',
+      'awesome-implicit-representations',
+      repoInfo(),
+      members,
+      BACKSTOP,
     );
-    expect(result.kind).toBe('registry');
+    expect(result).toEqual({ kind: 'registry', registrySignal: 'membership' });
+    expect(github.getReadme).not.toHaveBeenCalled();
   });
 
-  it('classifies a real project README fixture as a repository', async () => {
-    const readme = fs.readFileSync(
-      path.join(__dirname, 'fixtures', 'original', 'kind-repository.md'),
-      'utf-8',
+  it('classifies by the awesome-list topic without fetching the README', async () => {
+    const result = await classifyKind(
+      octokit,
+      'openMVG',
+      'awesome_3DReconstruction_list',
+      repoInfo({ topics: ['awesome-list'] }),
+      new Set(),
+      BACKSTOP,
     );
-    vi.mocked(github.getReadme).mockResolvedValue(readme);
-    const result = await classifyKind(octokit, 'chalk', 'chalk', 20);
+    expect(result.registrySignal).toBe('topic');
+    expect(github.getReadme).not.toHaveBeenCalled();
+  });
+
+  it('classifies an awesome-* name (and the Awsome misspelling) by name', async () => {
+    for (const repo of ['awesome-foo', 'Awsome-Deep-Learning']) {
+      const result = await classifyKind(
+        octokit,
+        'o',
+        repo,
+        repoInfo(),
+        new Set(),
+        BACKSTOP,
+      );
+      expect(result.registrySignal).toBe('name');
+    }
+    expect(github.getReadme).not.toHaveBeenCalled();
+  });
+
+  // Word-boundary: awesome_print (underscore = word char) is a project, not a list.
+  it('does NOT fire the name layer for awesome_print', async () => {
+    vi.mocked(github.getReadme).mockResolvedValue(readmeHtml(0));
+    const result = await classifyKind(
+      octokit,
+      'awesome-print',
+      'awesome_print',
+      repoInfo({ description: 'Ruby pretty-printer' }),
+      new Set(),
+      BACKSTOP,
+    );
     expect(result.kind).toBe('repository');
   });
 
-  it('throws on an unreadable README (fetchTargetData catches it)', async () => {
-    vi.mocked(github.getReadme).mockRejectedValue(new Error('Not Found (404)'));
-    await expect(classifyKind(octokit, 'o', 'r', 20)).rejects.toThrow(
-      'Not Found (404)',
+  it('classifies a "curated list" description by the description layer', async () => {
+    // Non-awesome name + no topic, so only the description anchor can fire.
+    const result = await classifyKind(
+      octokit,
+      'jphall663',
+      'ml-interpretability-resources',
+      repoInfo({ description: 'A curated list of responsible ML resources' }),
+      new Set(),
+      BACKSTOP,
     );
+    expect(result.registrySignal).toBe('description');
+    expect(github.getReadme).not.toHaveBeenCalled();
+  });
+
+  // Content is the last-resort backstop: only fetched when no anchor fires.
+  it('falls back to content for a dense, convention-free README', async () => {
+    vi.mocked(github.getReadme).mockResolvedValue(readmeHtml(BACKSTOP));
+    const result = await classifyKind(
+      octokit,
+      'timzhang642',
+      '3D-Machine-Learning',
+      repoInfo({
+        description: 'A resource repository for 3D machine learning',
+      }),
+      new Set(),
+      BACKSTOP,
+    );
+    expect(result).toEqual({ kind: 'registry', registrySignal: 'content' });
+  });
+
+  it('defaults a sparse, anchor-less project to repository', async () => {
+    vi.mocked(github.getReadme).mockResolvedValue(
+      '<article><h1>chalk</h1><p>Terminal string styling.</p></article>',
+    );
+    const result = await classifyKind(
+      octokit,
+      'chalk',
+      'chalk',
+      repoInfo({ description: 'Terminal string styling' }),
+      new Set(),
+      BACKSTOP,
+    );
+    expect(result).toEqual({ kind: 'repository' });
+  });
+
+  // README is only fetched when the content backstop is reached, so its failure
+  // only surfaces there (fetchTargetData catches it and defaults the item).
+  it('throws on an unreadable README when content is needed', async () => {
+    vi.mocked(github.getReadme).mockRejectedValue(new Error('Not Found (404)'));
+    await expect(
+      classifyKind(octokit, 'o', 'r', repoInfo(), new Set(), BACKSTOP),
+    ).rejects.toThrow('Not Found (404)');
+  });
+
+  it('tolerates a null repoInfo (dead link) by skipping topic/description anchors', async () => {
+    vi.mocked(github.getReadme).mockResolvedValue(readmeHtml(0));
+    const result = await classifyKind(
+      octokit,
+      'o',
+      'some-project',
+      null,
+      new Set(),
+      BACKSTOP,
+    );
+    expect(result).toEqual({ kind: 'repository' });
   });
 });
 
@@ -583,6 +776,8 @@ describe('Item identity: own-link only, categories become groups', () => {
         pushed_at: '2025-01-01T00:00:00Z',
         repo,
         stargazers_count: 100,
+        topics: [],
+        description: null,
       }),
     );
     // Minimal README -> every target classifies as a repository by default.
@@ -731,15 +926,13 @@ describe('Item identity: own-link only, categories become groups', () => {
     vi.mocked(github.getReadme).mockImplementation((_ok, _owner, repo) => {
       if (repo === 'registry-child') {
         return Promise.resolve(
-          '# reg\n\n' +
-            Array.from(
-              { length: 20 },
-              (_, i) => `- [r-${i}](https://github.com/o/r-${i})`,
-            ).join('\n') +
-            '\n',
+          Array.from(
+            { length: REGISTRY_CONTENT_BACKSTOP_LINKS },
+            (_, i) => `<a href="https://github.com/o/r-${i}">r-${i}</a>`,
+          ).join('\n'),
         );
       }
-      return Promise.resolve('# project\n');
+      return Promise.resolve('<p>project</p>');
     });
 
     const data = await process(

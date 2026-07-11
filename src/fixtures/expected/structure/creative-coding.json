@@ -656,6 +656,7 @@
           "title": "Awesome public datasets",
           "description": "Curated list of public available datasets, mostly free resources.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -671,6 +672,7 @@
           "title": "Awesome creative technology",
           "description": "Curated list of Creative Technology groups, companies, studios, collectives and more.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -686,6 +688,7 @@
           "title": "Awesome livecoding",
           "description": "Curated list of livecoding languages and tools.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -701,6 +704,7 @@
           "title": "Awesome webgl",
           "description": "Curated list of awesome WebGL libraries, resources and much more.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -731,6 +735,7 @@
           "title": "Awesome canvas",
           "description": "Curated list of awesome HTML5 canvas with examples, related articles and posts.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -746,6 +751,7 @@
           "title": "Awesome computer vision",
           "description": "Curated list of awesome computer vision resources.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": null,
@@ -761,6 +767,7 @@
           "title": "Awesome audio visualization",
           "description": "Curated list about Audio Visualization.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -776,6 +783,7 @@
           "title": "Awesome visualization research",
           "description": "Curated list of recommended research papers and other readings on data visualization.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": null,
@@ -791,6 +799,7 @@
           "title": "Awesome graphics",
           "description": "Curated list of computer graphics tutorials and resources.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -821,6 +830,7 @@
           "title": "Awesome opengl",
           "description": "Curated list of awesome OpenGL libraries, debuggers and resources.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -846,6 +856,7 @@
     "enhanced_repository": "enhansome/enhansome-creative-coding",
     "enhanced_repository_description": "enhanced list",
     "kind": "registry",
-    "title": "Awesome Creative Coding with stars"
+    "title": "Awesome Creative Coding with stars",
+    "registry_signal": "content"
   }
 }

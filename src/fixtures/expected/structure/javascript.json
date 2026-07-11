@@ -1334,6 +1334,7 @@
               "title": "derby-awesome",
               "description": "A collection of awesome derby components",
               "children": [],
+              "registry_signal": "name",
               "repo_info": {
                 "archived": false,
                 "language": "Ruby",
@@ -4674,6 +4675,7 @@
           "title": "awesome-web-storage",
           "description": "Everything you need to know about client-side storage.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -10360,6 +10362,7 @@
     "enhanced_repository": "enhansome/enhansome-javascript",
     "enhanced_repository_description": "enhanced list",
     "kind": "registry",
-    "title": "Awesome JavaScript with stars"
+    "title": "Awesome JavaScript with stars",
+    "registry_signal": "content"
   }
 }

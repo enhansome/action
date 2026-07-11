@@ -635,6 +635,7 @@
           "title": "Awesome OpenID Connect",
           "description": "A curated list of providers, services, libraries, and resources for OpenID Connect.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -980,6 +981,7 @@
           "title": "Awesome Threat Intelligence",
           "description": "“A concise definition of Threat Intelligence: evidence-based knowledge, including context, mechanisms, indicators, implications and actionable advice, about an existing or emerging menace or hazard to assets that can be used to inform decisions regarding the subject's response to that menace or hazard.”",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -1061,6 +1063,7 @@
           "title": "Awesome Captcha",
           "description": "Reference all open-source captcha libraries, integration, alternatives and cracking tools.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -1331,6 +1334,7 @@
     "enhanced_repository": "enhansome/enhansome-iam",
     "enhanced_repository_description": "enhanced list",
     "kind": "registry",
-    "title": "Awesome iam with stars"
+    "title": "Awesome iam with stars",
+    "registry_signal": "content"
   }
 }

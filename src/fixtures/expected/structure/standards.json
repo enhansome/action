@@ -873,6 +873,7 @@
           "title": "Awesome Guidelines",
           "description": "Coding style conventions and standards.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -888,6 +889,7 @@
           "title": "Awesome API Devtools",
           "description": "A collection of useful resources for building RESTful HTTP+JSON APIs.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": null,
@@ -908,6 +910,7 @@
     "enhanced_repository": "enhansome/enhansome-standards",
     "enhanced_repository_description": "enhanced list",
     "kind": "registry",
-    "title": "Awesome standards with stars"
+    "title": "Awesome standards with stars",
+    "registry_signal": "content"
   }
 }

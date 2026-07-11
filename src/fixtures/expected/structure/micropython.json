@@ -11406,6 +11406,7 @@
           "title": "awesome-micropythons",
           "description": "The many forks & ports of MicroPython.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -12014,6 +12015,7 @@
     "enhanced_repository": "enhansome/enhansome-micropython",
     "enhanced_repository_description": "enhanced list",
     "kind": "registry",
-    "title": "Awesome micropython with stars"
+    "title": "Awesome micropython with stars",
+    "registry_signal": "content"
   }
 }

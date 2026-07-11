@@ -982,7 +982,7 @@
         },
         {
           "node_type": "item",
-          "kind": "registry",
+          "kind": "repository",
           "title": "Awesome Cache",
           "description": "Delightful on-disk cache (written in Swift).",
           "children": [],
@@ -9684,6 +9684,7 @@
           "title": "CoreML-Models",
           "description": "A collection of unique Core ML Models.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": true,
             "language": "JavaScript",
@@ -14434,6 +14435,7 @@
           "title": "awsome-ios-animation",
           "description": "A curated list of awesome iOS animation, including Objective-C and Swift libraries.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": null,
@@ -14494,6 +14496,7 @@
           "title": "awesome-awesomeness",
           "description": "list.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -14509,6 +14512,7 @@
           "title": "awesome-gists",
           "description": "A list of amazing gists (iOS section).",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -14524,6 +14528,7 @@
           "title": "Awesome-iOS-Twitter",
           "description": "A curated list of awesome iOS Twitter accounts.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -14539,6 +14544,7 @@
           "title": "Awesome ARKit",
           "description": "A curated list of awesome ARKit projects and resources.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -14599,6 +14605,7 @@
           "title": "awesome-ios-developer",
           "description": "Useful knowledges and stuff for ios developer.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": true,
             "language": "Shell",
@@ -14614,6 +14621,7 @@
           "title": "awesome-ios-books",
           "description": "A list of books for iOS developers.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -14629,6 +14637,7 @@
           "title": "Awesome iOS Interview question list",
           "description": "Guide for interviewers and interviewees. Review these iOS interview questions - and get some practical tips along the way.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -14644,6 +14653,7 @@
           "title": "awesome-interview-questions",
           "description": "A curated awesome list of lists of interview questions including iOS.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -21327,7 +21337,7 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "registry",
+          "kind": "repository",
           "title": "FontAwesomeKit",
           "description": "Icon font library for iOS. Currently supports Font-Awesome, Foundation icons, Zocial, and ionicons.",
           "children": [],
@@ -21372,7 +21382,7 @@
         },
         {
           "node_type": "item",
-          "kind": "registry",
+          "kind": "repository",
           "title": "FontAwesomeKit.Swift",
           "description": "A better choice for iOS Developer to use FontAwesome Icon.",
           "children": [],
@@ -21387,7 +21397,7 @@
         },
         {
           "node_type": "item",
-          "kind": "registry",
+          "kind": "repository",
           "title": "FontAwesome.swift",
           "description": "Use FontAwesome in your Swift projects.",
           "children": [],
@@ -21406,6 +21416,7 @@
           "title": "Font-Awesome-Swift",
           "description": "Font Awesome swift library for iOS.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -21522,7 +21533,7 @@
         },
         {
           "node_type": "item",
-          "kind": "registry",
+          "kind": "repository",
           "title": "ios-fontawesome",
           "description": "NSString+FontAwesome.",
           "children": [],
@@ -33197,7 +33208,7 @@
         },
         {
           "node_type": "item",
-          "kind": "registry",
+          "kind": "repository",
           "title": "AwesomeTextField",
           "description": "Awesome TextField is a nice and simple library for iOS. It's highly customisable and easy-to-use tool. Works perfectly for any registration or login forms in your app.",
           "children": [],
@@ -35528,7 +35539,7 @@
         },
         {
           "node_type": "item",
-          "kind": "registry",
+          "kind": "repository",
           "title": "AwesomeSpotlightView",
           "description": "Tool to create awesome tutorials or educate user to use application. Or just highlight something on screen. Written in Swift.",
           "children": [],
@@ -36936,6 +36947,7 @@
           "title": "Awesome-Swift-Playgrounds",
           "description": "A List of Awesome Swift Playgrounds!",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": null,
@@ -36981,6 +36993,7 @@
           "title": "Awesome-Swift-Education",
           "description": "All of the resources for Learning About Swift.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": true,
             "language": "Go",
@@ -37334,6 +37347,7 @@
           "title": "awesome-xcode-scripts",
           "description": "A curated list of useful xcode scripts.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -37394,6 +37408,7 @@
           "title": "awesome-gitignore-templates",
           "description": "A collection of swift, objective-c, android and many more langugages .gitignore templates.",
           "children": [],
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -37489,6 +37504,7 @@
     "enhanced_repository": "enhansome/enhansome-ios",
     "enhanced_repository_description": "enhanced list",
     "kind": "registry",
-    "title": "Awesome ios with stars"
+    "title": "Awesome ios with stars",
+    "registry_signal": "content"
   }
 }

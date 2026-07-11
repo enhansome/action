@@ -143,12 +143,14 @@ describe('github.ts', () => {
     const repo = 'test-repo';
     const mockRepoInfo: RepoInfoDetails = {
       archived: false,
+      description: null,
       language: 'TypeScript',
       open_issues_count: 42,
       owner: 'test-owner',
       pushed_at: '2025-06-29T10:00:00Z',
       repo: 'test-repo',
       stargazers_count: 1234,
+      topics: [],
     };
 
     const apiPayload = {
@@ -202,12 +204,14 @@ describe('github.ts', () => {
 
       expect(result).toEqual({
         archived: true,
+        description: null,
         language: undefined,
         open_issues_count: undefined,
         owner: 'test-owner',
         pushed_at: undefined,
         repo: 'test-repo',
         stargazers_count: undefined,
+        topics: [],
       });
       expect(core.warning).not.toHaveBeenCalled();
     });
