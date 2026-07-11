@@ -698,6 +698,24 @@ describe('classifyKind', () => {
     expect(github.getReadme).not.toHaveBeenCalled();
   });
 
+  // Pins the content-backstop boundary at a value between the two thresholds:
+  // 600 anchors is a registry by the SOURCE threshold (50) but must stay a
+  // repository as a TARGET, whose content backstop sits at 700. Guards against
+  // the source/target thresholds collapsing (no anchor fires, so only the
+  // backstop count decides).
+  it('classifies a sub-backstop README (600 anchors) as a repository', async () => {
+    vi.mocked(github.getReadme).mockResolvedValue(readmeHtml(600));
+    const result = await classifyKind(
+      octokit,
+      'o',
+      'some-project',
+      repoInfo({ description: 'A normal project' }),
+      new Set(),
+      BACKSTOP,
+    );
+    expect(result).toEqual({ kind: 'repository' });
+  });
+
   // Content is the last-resort backstop: only fetched when no anchor fires.
   it('falls back to content for a dense, convention-free README', async () => {
     vi.mocked(github.getReadme).mockResolvedValue(readmeHtml(BACKSTOP));

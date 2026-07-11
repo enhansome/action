@@ -104,9 +104,11 @@ export interface JsonGroup {
 export type JsonNode = JsonGroup | JsonItem;
 
 // The source document is itself a node: it always carries a kind, computed
-// from its own README the same way each target is classified, independent
-// of any item's identity. `node_type` does not apply — `metadata` is a distinct
-// top-level shape, not a member of the items/children union.
+// from its own README via the mdast link count (`REGISTRY_MIN_LINKS`) — NOT the
+// 5-layer path targets take, since the source is always Markdown and needs no
+// anchor probes — so a source registry's signal is always 'content'. This is
+// independent of any item's identity. `node_type` does not apply — `metadata`
+// is a distinct top-level shape, not a member of the items/children union.
 interface JsonMetadata {
   enhanced_repository: null | string;
   enhanced_repository_description: null | string;
@@ -502,9 +504,11 @@ function findOwnGitHubLink(itemNode: ListItem): string | undefined {
  * Counts outbound links in the SOURCE README, which the enhancer always holds as
  * parsed Markdown. Targets (see `classifyKind`) are counted from their rendered
  * HTML instead, because a target README may be reStructuredText/AsciiDoc/etc.
- * and Markdown-parsing those loses their links. Both counters measure the same
- * thing — outbound resource links — so the one `REGISTRY_MIN_LINKS` threshold
- * applies to both.
+ * and Markdown-parsing those loses their links. The two counters measure the
+ * same thing — outbound resource links — but feed different layers at different
+ * thresholds: this one against `REGISTRY_MIN_LINKS` (50) on the source;
+ * `countOutboundAnchors` against `REGISTRY_CONTENT_BACKSTOP_LINKS` (700) as the
+ * target's last-resort backstop behind four precision anchors.
  *
  * Structure- and target-agnostic: a registry is a directory of resources, not a
  * directory of GitHub repos in a bulleted list, so every outbound link counts

@@ -65,12 +65,30 @@ Every GitHub node in `README.json` carries an intrinsic `kind` - either `registr
 - `metadata.kind` - the source document's own kind.
 - each item's `kind` - that linked target's kind.
 
-A target is a `registry` iff its README parses to **>= `REGISTRY_MIN_ENTRIES`
-(20)** GitHub-linked list items; otherwise a `repository`. The threshold is a
-pinned code constant (`src/markdown.ts`), calibrated against real READMEs:
-concrete projects top out at ~17 (`chalk`); bulk awesome-lists start far higher,
-so 20 sits just above the project ceiling with margin. It is **not** an action
-input - the emitted kind is trustworthy standalone.
+The two are classified by different paths, because the source README is always
+Markdown (the enhancer holds it parsed) while a linked target's README may be
+reStructuredText/AsciiDoc/etc.
+
+- **Source** (`metadata.kind`): a `registry` iff the source README has **>=
+  `REGISTRY_MIN_LINKS` (50)** outbound links (mdast link nodes; same-page `#`
+  anchors excluded). Its `registry_signal` is then always `'content'`.
+- **Target** (each item's `kind`): a precision-first classifier checks five
+  layers in order and emits the first that fires as `registry_signal`:
+  `membership` (listed in `sindresorhus/awesome`, fetched once per run) → `topic`
+  (`awesome-list` GitHub topic) → `name` (matches `/\bawesome\b|\bawsome\b/i`) →
+  `description` (curated-list phrasing) → `content` (last-resort backstop: the
+  target's **rendered-HTML** anchor count is **>= `REGISTRY_CONTENT_BACKSTOP_LINKS`
+  (700)**). The first four anchors are ~0% false-positive and need no README
+  fetch; only the content backstop fetches one. If no layer fires, the target is
+  a `repository`.
+
+The deciding layer is emitted as **`registry_signal`** (`'membership'` |
+`'topic'` | `'name'` | `'description'` | `'content'`) on every registry - both
+`metadata.registry_signal` and each registry item's `registry_signal` - and is
+absent on every `repository`. The anchors are far more reliable than the content
+backstop, so the signal lets a consumer grade a registry's confidence. Both
+thresholds are pinned code constants (`src/markdown.ts`), **not** action inputs -
+the emitted `kind`/`registry_signal` are trustworthy standalone.
 
 ### Items vs. groups (`node_type`)
 

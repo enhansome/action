@@ -89,12 +89,13 @@ function deterministicGetRepoInfo(
 }
 
 // Deterministic per-item README so the golden suite stays offline AND exercises
-// the per-item `registry` classification path end-to-end. classifyKind counts
-// anchors in the target's rendered HTML, so these mocks return HTML: a repo
-// whose name contains "awesome" is treated as a registry (its HTML carries well
-// over REGISTRY_MIN_LINKS outbound anchors); everything else is a plain project
-// README. Real awesome-lists overwhelmingly classify as registries, so this also
-// matches production behavior for the bulk of those targets.
+// the per-item `registry` classification path end-to-end. classifyKind reads a
+// target's rendered HTML only at the content backstop — the precision anchors
+// (membership/topic/name/description) fire first, without a fetch — so an
+// awesome-list-named target classifies as a registry via the NAME layer before
+// its README is ever fetched; everything else gets a plain project README and
+// falls through to `repository`. Real awesome-lists overwhelmingly classify as
+// registries, so this matches production behavior for the bulk of those targets.
 function deterministicGetReadme(
   _octokit: unknown,
   _owner: string,
