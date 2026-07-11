@@ -9,7 +9,6 @@
           "title": "Repo A",
           "description": "100 stars",
           "children": [],
-          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": null,
@@ -25,7 +24,6 @@
           "title": "Repo C",
           "description": "200 stars",
           "children": [],
-          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -47,7 +45,6 @@
               "title": "Nested 1",
               "description": "50 stars.",
               "children": [],
-              "kind_provenance": "default",
               "repo_info": {
                 "archived": false,
                 "language": "Shell",
@@ -57,8 +54,7 @@
                 "stars": 42479
               }
             }
-          ],
-          "kind_provenance": "default"
+          ]
         }
       ],
       "title": "First Section"
@@ -72,7 +68,6 @@
           "title": "Repo A",
           "description": "100 stars.",
           "children": [],
-          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": null,
@@ -88,7 +83,6 @@
           "title": "Repo C",
           "description": "200 stars.",
           "children": [],
-          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -109,7 +103,6 @@
     "enhanced_repository": "enhansome/enhansome-complex",
     "enhanced_repository_description": "enhanced list",
     "kind": "repository",
-    "kind_provenance": "default",
     "title": "My Awesome List with stars"
   }
 }

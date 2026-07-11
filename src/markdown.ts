@@ -51,13 +51,14 @@ export interface SortOptions {
 // project. Every genuine GitHub node carries exactly one.
 export type Kind = 'registry' | 'repository';
 
-// Which signal decided the kind. The layers differ sharply in reliability
-// (membership/name/topic ~0% error; description/content ~30-40%), so emitting
-// the deciding layer lets downstream treat the soft-derived kinds as lower
-// confidence than the anchor-derived ones — turning the binary kind into a
-// graded signal at no extra fetch cost.
-export type KindProvenance =
-  'content' | 'default' | 'description' | 'membership' | 'name' | 'topic';
+// Which signal classified a node as a `registry`. Present only on registries
+// (every 'repository' is the signal-less fallthrough, so it carries none). The
+// layers differ sharply in reliability (membership/name/topic ~0% error;
+// description/content ~30-40%), so emitting the deciding layer lets downstream
+// treat the soft-derived registries as lower confidence than the anchor-derived
+// ones — turning the binary kind into a graded signal at no extra fetch cost.
+export type RegistrySignal =
+  'content' | 'description' | 'membership' | 'name' | 'topic';
 
 // Field names are the *output* names (stars / last_commit), renamed from the
 // API fields (stargazers_count / pushed_at).
@@ -77,13 +78,14 @@ export interface JsonItem {
   children: JsonNode[];
   description: null | string;
   kind: Kind;
-  // How `kind` was derived. Absent only on dead-link items that defaulted to
-  // 'repository' without a classification call.
-  kind_provenance?: KindProvenance;
   // Discriminator present on every node so any consumer (TS or not) can switch
   // cleanly without inferring from `kind`/`repo_info` presence (a dead-link
   // item has `kind` but no repo_info).
   node_type: 'item';
+  // Which signal made this a registry. Absent on every 'repository' (whether a
+  // dead link skipped classification or classification found no signal), so its
+  // presence coincides with `kind === 'registry'`.
+  registry_signal?: RegistrySignal;
   repo_info?: RepoInfo;
   title: string;
 }
@@ -109,10 +111,11 @@ interface JsonMetadata {
   enhanced_repository: null | string;
   enhanced_repository_description: null | string;
   kind: Kind;
-  kind_provenance: KindProvenance;
   last_updated: string;
   original_repository: string;
   original_repository_sha: null | string;
+  // Present only when the source is a registry, matching the items' convention.
+  registry_signal?: RegistrySignal;
   title: string;
 }
 
@@ -123,8 +126,8 @@ interface JsonSection {
 }
 
 export interface TargetData {
-  kindProvenanceMap: Map<string, KindProvenance>;
   kindsMap: Map<string, Kind>;
+  registrySignalMap: Map<string, RegistrySignal>;
   repoInfoMap: Map<string, RepoInfoDetails>;
 }
 
@@ -165,7 +168,7 @@ export async function fetchTargetData(
 ): Promise<TargetData> {
   const repoInfoMap = new Map<string, RepoInfoDetails>();
   const kindsMap = new Map<string, Kind>();
-  const kindProvenanceMap = new Map<string, KindProvenance>();
+  const registrySignalMap = new Map<string, RegistrySignal>();
 
   const octokit = makeOctokit(token);
 
@@ -179,7 +182,7 @@ export async function fetchTargetData(
   const repoInfoByRepo = new Map<string, Promise<RepoInfoDetails>>();
   const kindByRepo = new Map<
     string,
-    Promise<{ kind: Kind; kindProvenance: KindProvenance }>
+    Promise<{ kind: Kind; registrySignal?: RegistrySignal }>
   >();
 
   function repoInfoFor(owner: string, repo: string): Promise<RepoInfoDetails> {
@@ -200,7 +203,7 @@ export async function fetchTargetData(
   function kindFor(
     owner: string,
     repo: string,
-  ): Promise<{ kind: Kind; kindProvenance: KindProvenance }> {
+  ): Promise<{ kind: Kind; registrySignal?: RegistrySignal }> {
     const key = `${owner}/${repo}`;
     const existing = kindByRepo.get(key);
     if (existing) {
@@ -249,12 +252,14 @@ export async function fetchTargetData(
       }
       if (entryUrls.has(url)) {
         try {
-          const { kind, kindProvenance } = await kindFor(
+          const { kind, registrySignal } = await kindFor(
             details.owner,
             details.repo,
           );
           kindsMap.set(url, kind);
-          kindProvenanceMap.set(url, kindProvenance);
+          if (registrySignal) {
+            registrySignalMap.set(url, registrySignal);
+          }
         } catch (error) {
           core.warning(
             `Skipping kind for ${url}: ${formatRequestError(error)}`,
@@ -269,7 +274,7 @@ export async function fetchTargetData(
   core.info(
     `Target fetch: ${repoInfoMap.size}/${urls.size} repo-info ok, ${kindsMap.size}/${entryUrls.size} kinds ok in ${Date.now() - fetchStart}ms (concurrency ${FETCH_CONCURRENCY}).`,
   );
-  return { kindProvenanceMap, kindsMap, repoInfoMap };
+  return { registrySignalMap, kindsMap, repoInfoMap };
 }
 
 export async function processMarkdownContent(
@@ -297,12 +302,12 @@ export async function processMarkdownContent(
   // the tree in place — so the source's kind can never drift from how another
   // mirror would classify this very repo from its raw README. The source is
   // always Markdown, so it uses the mdast counter against the source threshold;
-  // its provenance is 'content' (or 'default' if it falls below).
+  // a registry's signal is 'content', a repository carries none.
   const isSourceRegistry = countResourceLinks(tree) >= REGISTRY_MIN_LINKS;
   const sourceKind: Kind = isSourceRegistry ? 'registry' : 'repository';
-  const sourceKindProvenance: KindProvenance = isSourceRegistry
+  const sourceRegistrySignal: RegistrySignal | undefined = isSourceRegistry
     ? 'content'
-    : 'default';
+    : undefined;
 
   const githubUrls = collectGitHubLinks(tree);
   const entryUrls = collectEntryGitHubUrls(tree);
@@ -312,7 +317,7 @@ export async function processMarkdownContent(
   const octokit = makeOctokit(token);
   const members = await fetchAwesomeMembers(octokit);
 
-  const { kindProvenanceMap, kindsMap, repoInfoMap } = await fetchTargetData(
+  const { registrySignalMap, kindsMap, repoInfoMap } = await fetchTargetData(
     githubUrls,
     entryUrls,
     token,
@@ -330,7 +335,7 @@ export async function processMarkdownContent(
     tree,
     repoInfoMap,
     kindsMap,
-    kindProvenanceMap,
+    registrySignalMap,
     sortOptions,
     originalRepository,
   );
@@ -342,19 +347,24 @@ export async function processMarkdownContent(
     applyBrandingToTree(tree, title, titleHeadingIndex);
   }
 
+  const metadata: JsonMetadata = {
+    last_updated: now.toISOString(),
+    original_repository: originalRepository.trim(),
+    original_repository_sha: (originalRepositorySha?.trim() ?? '') || null,
+    enhanced_repository: (enhancedRepository?.trim() ?? '') || null,
+    enhanced_repository_description:
+      (enhancedRepositoryDescription?.trim() ?? '') || null,
+    kind: sourceKind,
+    title,
+  };
+  // Present only when the source is a registry, matching the items' convention.
+  if (sourceRegistrySignal) {
+    metadata.registry_signal = sourceRegistrySignal;
+  }
+
   const jsonData: JsonOutput = {
     items: sections,
-    metadata: {
-      last_updated: now.toISOString(),
-      original_repository: originalRepository.trim(),
-      original_repository_sha: (originalRepositorySha?.trim() ?? '') || null,
-      enhanced_repository: (enhancedRepository?.trim() ?? '') || null,
-      enhanced_repository_description:
-        (enhancedRepositoryDescription?.trim() ?? '') || null,
-      kind: sourceKind,
-      kind_provenance: sourceKindProvenance,
-      title,
-    },
+    metadata,
   };
 
   addInfoBadges(tree, repoInfoMap);
@@ -559,7 +569,7 @@ export const REGISTRY_MIN_LINKS = 50;
 // backstop for dense convention-free lists no anchor signals (e.g. a CV list
 // titled "3D-Machine-Learning" with 800 anchors). 700 sits above virtually all
 // software (clean-project p90 ~106) while still catching those dense
-// registries; marked provenance='content' so downstream treats it as soft.
+// registries; marked registry_signal='content' so downstream treats it as soft.
 export const REGISTRY_CONTENT_BACKSTOP_LINKS = 700;
 
 // The awesome-list naming convention, as a word-boundary token so it does NOT
@@ -640,10 +650,11 @@ export async function fetchAwesomeMembers(
  * Layered, precision-first. The anchors (membership/topic/name/description)
  * are checked first — they are ~0% false-positive and need no README fetch, so a
  * target they catch never pays for one. Only when every anchor misses do we
- * fetch the rendered HTML and fall back to the high content threshold. Returns
- * both `kind` and `kind_provenance` (the deciding layer) so downstream can grade
- * confidence. README fetch failures propagate (fetchTargetData catches them and
- * defaults the item to repository/default).
+ * fetch the rendered HTML and fall back to the high content threshold. A
+ * registry carries the deciding layer as `registrySignal` (so downstream can
+ * grade confidence); a repository is the signal-less fallthrough and carries
+ * none. README fetch failures propagate (fetchTargetData catches them and
+ * defaults the item to repository).
  */
 export async function classifyKind(
   octokit: GithubClient,
@@ -652,25 +663,25 @@ export async function classifyKind(
   repoInfo: null | RepoInfoDetails,
   members: Set<string>,
   backstopMin: number,
-): Promise<{ kind: Kind; kindProvenance: KindProvenance }> {
+): Promise<{ kind: Kind; registrySignal?: RegistrySignal }> {
   if (members.has(`${owner.toLowerCase()}/${repo.toLowerCase()}`)) {
-    return { kind: 'registry', kindProvenance: 'membership' };
+    return { kind: 'registry', registrySignal: 'membership' };
   }
   if (repoInfo?.topics.includes('awesome-list')) {
-    return { kind: 'registry', kindProvenance: 'topic' };
+    return { kind: 'registry', registrySignal: 'topic' };
   }
   if (AWESOME_NAME_PATTERN.test(repo)) {
-    return { kind: 'registry', kindProvenance: 'name' };
+    return { kind: 'registry', registrySignal: 'name' };
   }
   const description = repoInfo?.description ?? '';
   if (description && REGISTRY_DESCRIPTION_PATTERN.test(description)) {
-    return { kind: 'registry', kindProvenance: 'description' };
+    return { kind: 'registry', registrySignal: 'description' };
   }
   const html = await getReadme(octokit, owner, repo, 'html');
   if (countOutboundAnchors(html) >= backstopMin) {
-    return { kind: 'registry', kindProvenance: 'content' };
+    return { kind: 'registry', registrySignal: 'content' };
   }
-  return { kind: 'repository', kindProvenance: 'default' };
+  return { kind: 'repository' };
 }
 
 function fixRelativeLinks(tree: Root, relativeLinkPrefix: string) {
@@ -750,7 +761,7 @@ function processListRecursively(
   listNode: List,
   repoInfoMap: Map<string, RepoInfoDetails>,
   kindsMap: Map<string, Kind>,
-  kindProvenanceMap: Map<string, KindProvenance>,
+  registrySignalMap: Map<string, RegistrySignal>,
   sortOptions: SortOptions,
   isNested = false,
 ): JsonNode[] {
@@ -788,7 +799,7 @@ function processListRecursively(
         nestedList,
         repoInfoMap,
         kindsMap,
-        kindProvenanceMap,
+        registrySignalMap,
         sortOptions,
         true,
       ),
@@ -823,10 +834,10 @@ function processListRecursively(
     let jsonData: JsonNode | null = null;
     if (githubUrl) {
       // A missing kind means the README was unreadable (dead link) and was
-      // skipped. Default to 'repository' (no provenance) so a dead link never
+      // skipped. Default to 'repository' (no signal) so a dead link never
       // drops an item.
       const kind = kindsMap.get(githubUrl) ?? 'repository';
-      const kindProvenance = kindProvenanceMap.get(githubUrl);
+      const registrySignal = registrySignalMap.get(githubUrl);
       const item: JsonItem = {
         node_type: 'item',
         kind,
@@ -834,8 +845,9 @@ function processListRecursively(
         description: description || null,
         children: childrenJson,
       };
-      if (kindProvenance) {
-        item.kind_provenance = kindProvenance;
+      // Present only on registries; a repository carries no signal.
+      if (registrySignal) {
+        item.registry_signal = registrySignal;
       }
       if (repoInfo) {
         item.repo_info = {
@@ -982,7 +994,7 @@ function processTree(
   tree: Root,
   repoInfoMap: Map<string, RepoInfoDetails>,
   kindsMap: Map<string, Kind>,
-  kindProvenanceMap: Map<string, KindProvenance>,
+  registrySignalMap: Map<string, RegistrySignal>,
   sortOptions: SortOptions,
   originalRepository?: string,
 ): { sections: JsonSection[]; title: string; titleHeadingIndex: number } {
@@ -1033,7 +1045,7 @@ function processTree(
           node,
           repoInfoMap,
           kindsMap,
-          kindProvenanceMap,
+          registrySignalMap,
           sortOptions,
         );
         if (items.length > 0) {
@@ -1049,7 +1061,7 @@ function processTree(
         node,
         repoInfoMap,
         kindsMap,
-        kindProvenanceMap,
+        registrySignalMap,
         sortOptions,
       );
     }

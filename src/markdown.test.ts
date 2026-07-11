@@ -638,7 +638,7 @@ describe('classifyKind', () => {
       members,
       BACKSTOP,
     );
-    expect(result).toEqual({ kind: 'registry', kindProvenance: 'membership' });
+    expect(result).toEqual({ kind: 'registry', registrySignal: 'membership' });
     expect(github.getReadme).not.toHaveBeenCalled();
   });
 
@@ -651,7 +651,7 @@ describe('classifyKind', () => {
       new Set(),
       BACKSTOP,
     );
-    expect(result.kindProvenance).toBe('topic');
+    expect(result.registrySignal).toBe('topic');
     expect(github.getReadme).not.toHaveBeenCalled();
   });
 
@@ -665,7 +665,7 @@ describe('classifyKind', () => {
         new Set(),
         BACKSTOP,
       );
-      expect(result.kindProvenance).toBe('name');
+      expect(result.registrySignal).toBe('name');
     }
     expect(github.getReadme).not.toHaveBeenCalled();
   });
@@ -694,7 +694,7 @@ describe('classifyKind', () => {
       new Set(),
       BACKSTOP,
     );
-    expect(result.kindProvenance).toBe('description');
+    expect(result.registrySignal).toBe('description');
     expect(github.getReadme).not.toHaveBeenCalled();
   });
 
@@ -711,7 +711,7 @@ describe('classifyKind', () => {
       new Set(),
       BACKSTOP,
     );
-    expect(result).toEqual({ kind: 'registry', kindProvenance: 'content' });
+    expect(result).toEqual({ kind: 'registry', registrySignal: 'content' });
   });
 
   it('defaults a sparse, anchor-less project to repository', async () => {
@@ -726,7 +726,7 @@ describe('classifyKind', () => {
       new Set(),
       BACKSTOP,
     );
-    expect(result).toEqual({ kind: 'repository', kindProvenance: 'default' });
+    expect(result).toEqual({ kind: 'repository' });
   });
 
   // README is only fetched when the content backstop is reached, so its failure
@@ -748,7 +748,7 @@ describe('classifyKind', () => {
       new Set(),
       BACKSTOP,
     );
-    expect(result.kindProvenance).toBe('default');
+    expect(result).toEqual({ kind: 'repository' });
   });
 });
 

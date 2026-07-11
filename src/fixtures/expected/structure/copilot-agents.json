@@ -34,7 +34,7 @@
           "title": "Azure Function App",
           "description": "Azure Function Apps using TypeScript Node.js.",
           "children": [],
-          "kind_provenance": "name",
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -50,7 +50,7 @@
           "title": "Express API",
           "description": "REST API development with Express.js and TypeScript Node.js.",
           "children": [],
-          "kind_provenance": "name",
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -87,7 +87,7 @@
           "title": "Standard Focus",
           "description": "Standard Terraform instructions.",
           "children": [],
-          "kind_provenance": "name",
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -103,7 +103,7 @@
           "title": "Atmos",
           "description": "Terraform workflow orchestration with Atmos framework.",
           "children": [],
-          "kind_provenance": "name",
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -130,7 +130,7 @@
           "title": "PRD Creation",
           "description": "Create detailed Product Requirements Documents.",
           "children": [],
-          "kind_provenance": "name",
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -146,7 +146,7 @@
           "title": "Task Generation",
           "description": "Break PRDs into actionable development tasks.",
           "children": [],
-          "kind_provenance": "name",
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -162,7 +162,7 @@
           "title": "Task Execution",
           "description": "Systematic task execution with proper testing and Git practices.",
           "children": [],
-          "kind_provenance": "name",
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -189,7 +189,7 @@
           "title": "PRD Creation Prompt",
           "description": "Create detailed Product Requirements Documents using prompt tasks.",
           "children": [],
-          "kind_provenance": "name",
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -205,7 +205,7 @@
           "title": "Task Generation Prompt",
           "description": "Break PRDs into actionable development tasks using prompt tasks.",
           "children": [],
-          "kind_provenance": "name",
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -221,7 +221,7 @@
           "title": "Task Execution Prompt",
           "description": "Systematic task execution with proper testing and Git practices using prompt tasks.",
           "children": [],
-          "kind_provenance": "name",
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -243,7 +243,7 @@
           "title": "Architect",
           "description": "Design and plan software systems.",
           "children": [],
-          "kind_provenance": "name",
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -259,7 +259,7 @@
           "title": "Clean Code",
           "description": "Write clean, readable, and maintainable code using clean code best practices.",
           "children": [],
-          "kind_provenance": "name",
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -275,7 +275,7 @@
           "title": "Debugger",
           "description": "Debug your application code to find a fix.",
           "children": [],
-          "kind_provenance": "name",
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -291,7 +291,7 @@
           "title": "PRD Creation",
           "description": "Build Product Requirements Document (PRD).",
           "children": [],
-          "kind_provenance": "name",
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -318,7 +318,7 @@
           "title": "Calculator",
           "description": "Performs arbitrary-precision arithmetic calculations including addition, subtraction, multiplication, division, and exponents.",
           "children": [],
-          "kind_provenance": "name",
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -334,7 +334,7 @@
           "title": "Jira CLI",
           "description": "Interact with Jira from the command line to create, list, view, edit, and transition issues, manage sprints and epics, and perform common Jira workflows.",
           "children": [],
-          "kind_provenance": "name",
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -356,7 +356,7 @@
           "title": "docx",
           "description": "Document creation, editing, and analysis with support for tracked changes, comments, formatting preservation, and text extraction.",
           "children": [],
-          "kind_provenance": "name",
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -372,7 +372,7 @@
           "title": "pdf",
           "description": "PDF manipulation toolkit for extracting text and tables, creating new PDFs, merging/splitting documents, and handling forms.",
           "children": [],
-          "kind_provenance": "name",
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -388,7 +388,7 @@
           "title": "pptx",
           "description": "Presentation creation, editing, and analysis.",
           "children": [],
-          "kind_provenance": "name",
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -404,7 +404,7 @@
           "title": "xlsx",
           "description": "Spreadsheet creation, editing, and analysis with support for formulas, formatting, data analysis, and visualization.",
           "children": [],
-          "kind_provenance": "name",
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -465,7 +465,6 @@
     "enhanced_repository": "enhansome/enhansome-copilot-agents",
     "enhanced_repository_description": "enhanced list",
     "kind": "repository",
-    "kind_provenance": "default",
     "title": "Awesome copilot agents with stars"
   }
 }

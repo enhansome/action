@@ -19,7 +19,6 @@
           "title": "Hiring Without Whiteboards",
           "description": "List of companies without the kind of CS trivia questions that are associated with bad interview practices.",
           "children": [],
-          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -35,7 +34,7 @@
           "title": "Awesome Job Boards",
           "description": "Niche job boards by domains, technology, roles and area.",
           "children": [],
-          "kind_provenance": "name",
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -57,7 +56,6 @@
           "title": "Engineering Leadership Interviews",
           "description": "An outline on how to recruit for engineering manager roles.",
           "children": [],
-          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -73,7 +71,6 @@
           "title": "Reverse interview",
           "description": "Questions to ask the company during your interview. Be prepared to answer them as a manager.",
           "children": [],
-          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -89,7 +86,6 @@
           "title": "Back-End Developer Interview Questions",
           "description": "A great source of inspiration.",
           "children": [],
-          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -111,7 +107,6 @@
           "title": "FizzBuzz Enterprise Edition",
           "description": "A satire of over-engineering for the sake of enterprise-grade software.",
           "children": [],
-          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -127,7 +122,7 @@
           "title": "Awesome Interviews",
           "description": "A huge database of questions sorted by topic to get inspiration from.",
           "children": [],
-          "kind_provenance": "name",
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -149,7 +144,6 @@
           "title": "hacker-laws",
           "description": "Laws, Theories, Principles and Patterns that developers will find useful.",
           "children": [],
-          "kind_provenance": "default",
           "repo_info": {
             "archived": true,
             "language": "Shell",
@@ -165,7 +159,6 @@
           "title": "High Performance Organizations Reading List",
           "description": "A list of books, web pages, and videos about how to design better organizations, divided into 3 categories: organization and motivation, health and wellness, and software development specific.",
           "children": [],
-          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": null,
@@ -197,7 +190,7 @@
           "title": "Awesome Product Management",
           "description": "A reference. All the missing pieces are found below.",
           "children": [],
-          "kind_provenance": "name",
+          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -213,7 +206,6 @@
           "title": "How to exit vim, the Product Manager way",
           "description": "A satire with a grain of truth, especially the comparison between the basic vs experienced level.",
           "children": [],
-          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": "C++",
@@ -229,7 +221,6 @@
           "title": "Open Product Management",
           "description": "Resources, interviews, case studies, sample products & projects, communities, open source tools, free & paid services on product management, for technical people to learn the field.",
           "children": [],
-          "kind_provenance": "default",
           "repo_info": {
             "archived": false,
             "language": null,
@@ -275,7 +266,7 @@
     "enhanced_repository": "enhansome/enhansome-engineering-team-management",
     "enhanced_repository_description": "enhanced list",
     "kind": "registry",
-    "kind_provenance": "content",
-    "title": "Awesome engineering team management with stars"
+    "title": "Awesome engineering team management with stars",
+    "registry_signal": "content"
   }
 }
