@@ -363,6 +363,23 @@ describe('createRepoLookup', () => {
     expect(github.getRepoInfo).toHaveBeenCalledTimes(1);
   });
 
+  // GitHub repo names are case-insensitive: ReactiveX/RxJS and reactivex/rxjs
+  // are one repo, answered with one canonical record. The memo must key on a
+  // case-normalized identity, not the literal casing, or a README linking both
+  // spellings pays for two /repos round-trips (the nodejs fixture does exactly
+  // this). The same-casing aliases above collapse today but prove nothing about
+  // casing; this pair is the case that actually crosses the seam.
+  it('collapses case-variant aliases of one repo into a single fetch', async () => {
+    const repos = lookup({ members: new Set() });
+    const [mixed, lower] = await Promise.all([
+      repos.getRepoInfo('ReactiveX/RxJS'),
+      repos.getRepoInfo('reactivex/rxjs'),
+    ]);
+
+    expect(github.getRepoInfo).toHaveBeenCalledTimes(1);
+    expect(mixed).toBe(lower);
+  });
+
   it('accepts a pre-resolved membership set instead of fetching one', async () => {
     const repos = lookup({ members: new Set(['o/hand-curated']) });
     const result = await repos.classify('o/hand-curated');

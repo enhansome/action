@@ -4,7 +4,7 @@ import { beforeEach, describe, expect, it, vi } from 'vitest';
 
 import { actionsLog } from './actions-log.js';
 import * as githubClient from './github.js';
-import { run } from './main.js';
+import { parseReplacementRules, run } from './main.js';
 import { enhance, EnhanceResult } from './orchestrator.js';
 
 let inputs: Record<string, string> = {};
@@ -163,5 +163,62 @@ describe('main: run()', () => {
     expect(core.setFailed).toHaveBeenCalled();
     expect(githubClient.getReadme).not.toHaveBeenCalled();
     expect(fs.writeFile).not.toHaveBeenCalled();
+  });
+
+  // The `:::`-separated Actions inputs are reshaped into structured rules at
+  // this boundary, so enhance() receives ReplacementRule[] (the library's own
+  // type), not the raw strings.
+  it('parses find_and_replace / regex_find_and_replace into structured replacements', async () => {
+    inputs.find_and_replace = 'foo:::bar';
+    inputs.regex_find_and_replace = '\\d+:::N';
+
+    await run();
+
+    expect(vi.mocked(enhance).mock.calls[0][0]).toMatchObject({
+      replacements: [
+        { find: 'foo', replace: 'bar', type: 'literal' },
+        { find: '\\d+', replace: 'N', type: 'regex' },
+      ],
+    });
+  });
+});
+
+describe('main: parseReplacementRules (Actions-input parsing)', () => {
+  it('parses literal find:::replace lines into literal rules', () => {
+    expect(parseReplacementRules('a:::1\nb:::2', '')).toEqual([
+      { find: 'a', replace: '1', type: 'literal' },
+      { find: 'b', replace: '2', type: 'literal' },
+    ]);
+  });
+
+  it('parses regex lines into regex rules', () => {
+    expect(parseReplacementRules('', '\\d+:::N')).toEqual([
+      { find: '\\d+', replace: 'N', type: 'regex' },
+    ]);
+  });
+
+  it('emits literal rules before regex rules', () => {
+    expect(parseReplacementRules('lit:::L', 'reg:::R')).toEqual([
+      { find: 'lit', replace: 'L', type: 'literal' },
+      { find: 'reg', replace: 'R', type: 'regex' },
+    ]);
+  });
+
+  it('skips blank lines and lines without the separator', () => {
+    expect(
+      parseReplacementRules('\nno-separator here\nkeep:::me\n   \n', ''),
+    ).toEqual([{ find: 'keep', replace: 'me', type: 'literal' }]);
+  });
+
+  // The replace side may legitimately contain `:::`; only the first split is
+  // the find, the rest is rejoined verbatim.
+  it('preserves `:::` in the replacement by joining the remainder', () => {
+    expect(parseReplacementRules('a:::b:::c', '')).toEqual([
+      { find: 'a', replace: 'b:::c', type: 'literal' },
+    ]);
+  });
+
+  it('returns no rules when both inputs are empty', () => {
+    expect(parseReplacementRules('', '')).toEqual([]);
   });
 });

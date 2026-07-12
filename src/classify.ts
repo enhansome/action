@@ -277,15 +277,15 @@ export async function classifyRepo(
 }
 
 /**
- * Collapses the refs naming one repo — a bare link and a deep `/tree/...` link —
- * into a single fetch. Stores the in-flight Promise rather than the settled
- * value: the lookup-and-set is synchronous, so a concurrent caller awaits the
- * first caller's fetch instead of racing a duplicate.
+ * Collapses the refs naming one repo — a bare link, a deep `/tree/...` link, or
+ * a differently-cased spelling — into a single fetch. Stores the in-flight
+ * Promise rather than the settled value: the lookup-and-set is synchronous, so
+ * a concurrent caller awaits the first caller's fetch instead of racing a
+ * duplicate.
  *
- * Keyed on the ref's own casing, so `ReactiveX/RxJS` and `reactivex/rxjs` each
- * pay their own round-trip. GitHub treats the two as one repo and answers both
- * with the same canonical record, so deduping them would be sound — and cheaper
- * — but it is a behavior change, not a memo detail, and is left alone here.
+ * GitHub repo names are case-insensitive, so the key is lowercased: the API
+ * answers `ReactiveX/RxJS` and `reactivex/rxjs` with the same canonical record,
+ * and a README linking both spellings must pay for it once, not twice.
  */
 function memoize<T>(
   store: Map<string, Promise<T>>,
@@ -293,7 +293,7 @@ function memoize<T>(
   repo: string,
   fetch: () => Promise<T>,
 ): Promise<T> {
-  const key = `${owner}/${repo}`;
+  const key = `${owner.toLowerCase()}/${repo.toLowerCase()}`;
   const existing = store.get(key);
   if (existing) {
     return existing;

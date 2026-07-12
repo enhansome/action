@@ -47,6 +47,12 @@ const LANGUAGES: (null | string)[] = [
   null,
 ];
 
+// Derives metadata from the literal requested casing. Case-variant aliases
+// (ReactiveX/RxJS vs reactivex/rxjs) collapse upstream in the lookup's
+// case-insensitive memo, so this runs once per canonical repo and both
+// spellings share a record — as the real API answers both. Lowercasing the
+// hash here would reshuffle every mixed-case repo's star-derived sort position
+// across the fixtures, not just aliased pairs.
 function generateRepoInfo(owner: string, repo: string): RepoInfoDetails {
   const hash = hashString(`${owner}/${repo}`);
   const offsetDays = hash % 1000;

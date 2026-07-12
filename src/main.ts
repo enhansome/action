@@ -4,6 +4,8 @@ import * as fs from 'fs/promises';
 import * as path from 'path';
 import { fileURLToPath } from 'url';
 
+import type { ReplacementRule } from './markdown.js';
+
 import { actionsLog } from './actions-log.js';
 import {
   getLatestCommitSha,
@@ -66,13 +68,17 @@ export async function run(): Promise<void> {
       (github.context.payload.repository?.description as string | undefined) ??
       '';
 
+    const replacements = parseReplacementRules(
+      findAndReplaceRaw,
+      regexFindAndReplaceRaw,
+    );
+
     const result = await enhance({
       content: originalContent,
       disableBranding,
-      findAndReplaceRaw,
       originalRepository,
       originalRepositorySha: originalRepositorySha ?? undefined,
-      regexFindAndReplaceRaw,
+      replacements,
       relativeLinkPrefix,
       sortBy,
       enhancedRepository,
@@ -120,6 +126,50 @@ export async function run(): Promise<void> {
       core.setFailed(`Action failed with an unknown error: ${error}`);
     }
   }
+}
+
+/**
+ * Parses the `find_and_replace` / `regex_find_and_replace` Actions inputs — each
+ * a newline-separated list of `find:::replace` lines — into the structured
+ * `ReplacementRule[]` the library consumes. Lives here, at the Actions-input
+ * boundary, so the library API takes structured rules directly.
+ */
+export function parseReplacementRules(
+  findAndReplaceRaw: string,
+  regexFindAndReplaceRaw: string,
+): ReplacementRule[] {
+  const rules: ReplacementRule[] = [];
+  const separator = ':::';
+
+  if (findAndReplaceRaw) {
+    findAndReplaceRaw
+      .split('\n')
+      .filter(line => line.trim() && line.includes(separator))
+      .forEach(line => {
+        const [find, ...rest] = line.split(separator);
+        rules.push({
+          find,
+          replace: rest.join(separator),
+          type: 'literal',
+        });
+      });
+  }
+
+  if (regexFindAndReplaceRaw) {
+    regexFindAndReplaceRaw
+      .split('\n')
+      .filter(line => line.trim() && line.includes(separator))
+      .forEach(line => {
+        const [find, ...rest] = line.split(separator);
+        rules.push({
+          find,
+          replace: rest.join(separator),
+          type: 'regex',
+        });
+      });
+  }
+
+  return rules;
 }
 
 // Only auto-run when invoked directly (e.g. `node dist/main.js`), not when

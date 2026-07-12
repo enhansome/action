@@ -12,14 +12,14 @@ export interface EnhanceOptions {
   disableBranding?: boolean;
   enhancedRepository?: string;
   enhancedRepositoryDescription?: string;
-  findAndReplaceRaw?: string;
   /** Defaults to the console sink; pass your own (e.g. an Actions workflow-command sink) to route diagnostics. */
   log?: Logger;
   now?: Date;
   originalRepository: string;
   originalRepositorySha?: string;
-  regexFindAndReplaceRaw?: string;
   relativeLinkPrefix?: string;
+  /** Text substitutions applied to the source before it is parsed. */
+  replacements?: ReplacementRule[];
   sortBy?: '' | 'last_commit' | 'stars';
   token: string;
 }
@@ -33,27 +33,22 @@ export async function enhance(options: EnhanceOptions): Promise<EnhanceResult> {
   const {
     content,
     disableBranding = false,
-    findAndReplaceRaw = '',
     log,
     now = new Date(),
     originalRepository,
     originalRepositorySha,
-    regexFindAndReplaceRaw = '',
     relativeLinkPrefix = '',
+    replacements = [],
     sortBy = '',
     enhancedRepository,
     enhancedRepositoryDescription,
     token,
   } = options;
 
-  const rules = parseReplacementRules(
-    findAndReplaceRaw,
-    regexFindAndReplaceRaw,
-  );
-
-  if (!disableBranding) {
-    rules.unshift({ type: 'branding' });
-  }
+  // Branding is an internal rule prepended to the caller's own; build a fresh
+  // array so the caller's `replacements` is never mutated.
+  const branding: ReplacementRule = { type: 'branding' };
+  const rules = disableBranding ? replacements : [branding, ...replacements];
 
   const sortOptions: SortOptions = {
     by: sortBy,
@@ -80,42 +75,4 @@ export async function enhance(options: EnhanceOptions): Promise<EnhanceResult> {
     finalContent,
     jsonData,
   };
-}
-
-function parseReplacementRules(
-  findAndReplaceRaw: string,
-  regexFindAndReplaceRaw: string,
-): ReplacementRule[] {
-  const rules: ReplacementRule[] = [];
-  const separator = ':::';
-
-  if (findAndReplaceRaw) {
-    findAndReplaceRaw
-      .split('\n')
-      .filter(line => line.trim() && line.includes(separator))
-      .forEach(line => {
-        const [find, ...rest] = line.split(separator);
-        rules.push({
-          find,
-          replace: rest.join(separator),
-          type: 'literal',
-        });
-      });
-  }
-
-  if (regexFindAndReplaceRaw) {
-    regexFindAndReplaceRaw
-      .split('\n')
-      .filter(line => line.trim() && line.includes(separator))
-      .forEach(line => {
-        const [find, ...rest] = line.split(separator);
-        rules.push({
-          find,
-          replace: rest.join(separator),
-          type: 'regex',
-        });
-      });
-  }
-
-  return rules;
 }

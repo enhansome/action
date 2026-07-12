@@ -36,6 +36,7 @@ export type {
   JsonNode,
   JsonOutput,
   JsonSection,
+  ReplacementRule,
   RepoInfo,
 } from './markdown.js';
 export { enhance } from './orchestrator.js';

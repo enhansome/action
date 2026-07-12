@@ -159,19 +159,42 @@ describe('Orchestrator: enhance()', () => {
     it.each(replacementCases)(
       '$type replace "$find" -> "$replace"',
       async ({ type, find, replace, input, expected }) => {
-        const raw = `${find}:::${replace}`;
         const { finalContent } = await enhance({
           content: input,
           disableBranding: true,
           originalRepository: 'owner/source-repo',
-          ...(type === 'literal'
-            ? { findAndReplaceRaw: raw }
-            : { regexFindAndReplaceRaw: raw }),
+          replacements: [{ find, replace, type }],
           token,
         });
         expect(finalContent).toBe(expected);
       },
     );
+  });
+
+  describe('Find and Replace (structured rules)', () => {
+    beforeEach(() => {
+      // parseGitHubUrl -> null ⇒ no GitHub links collected ⇒ getRepoInfo /
+      // (later) getReadme are never invoked, so enhancement is a no-op except
+      // for the replacement rules under test.
+      vi.mocked(github.parseGitHubUrl).mockReturnValue(null);
+    });
+
+    // A library caller (a webapp) holds structured rules, not the `:::`-separated
+    // Actions-input strings, so enhance() takes ReplacementRule[] directly. The
+    // Actions-input parsing lives one layer up, in main.ts.
+    it('applies structured literal and regex rules passed as replacements', async () => {
+      const { finalContent } = await enhance({
+        content: 'hello __VERSION__ 2025-01-01',
+        disableBranding: true,
+        originalRepository: 'owner/source-repo',
+        replacements: [
+          { find: '__VERSION__', replace: '1.5.0', type: 'literal' },
+          { find: '\\d{4}-\\d{2}-\\d{2}', replace: 'TBD', type: 'regex' },
+        ],
+        token,
+      });
+      expect(finalContent).toBe('hello 1.5.0 TBD');
+    });
   });
 
   describe('Branding', () => {
@@ -550,8 +573,10 @@ Version: __VERSION__ | Last Updated: 2025-01-01
 
       const { finalContent } = await enhance({
         content: originalContent,
-        findAndReplaceRaw: '__VERSION__:::1.5.0',
-        regexFindAndReplaceRaw: '\\d{4}-\\d{2}-\\d{2}:::TBD',
+        replacements: [
+          { find: '__VERSION__', replace: '1.5.0', type: 'literal' },
+          { find: '\\d{4}-\\d{2}-\\d{2}', replace: 'TBD', type: 'regex' },
+        ],
         originalRepository: 'owner/source-repo',
         sortBy: 'stars',
         token,

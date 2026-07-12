@@ -3311,6 +3311,21 @@
             {
               "node_type": "item",
               "kind": "repository",
+              "title": "RxJS",
+              "description": "Reactive programming.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "language": "Shell",
+                "last_commit": "2022-11-29T00:00:00.000Z",
+                "owner": "reactivex",
+                "repo": "rxjs",
+                "stars": 46399
+              }
+            },
+            {
+              "node_type": "item",
+              "kind": "repository",
               "title": "observable-to-promise",
               "description": "Convert an Observable to a Promise.",
               "children": [],
@@ -3337,21 +3352,6 @@
                 "owner": "sindresorhus",
                 "repo": "awesome-observables",
                 "stars": 11922
-              }
-            },
-            {
-              "node_type": "item",
-              "kind": "repository",
-              "title": "RxJS",
-              "description": "Reactive programming.",
-              "children": [],
-              "repo_info": {
-                "archived": false,
-                "language": "Java",
-                "last_commit": "2023-11-16T00:00:00.000Z",
-                "owner": "ReactiveX",
-                "repo": "RxJS",
-                "stars": 8047
               }
             }
           ]
