@@ -2,6 +2,7 @@ import * as core from '@actions/core';
 import * as fs from 'fs/promises';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 
+import { actionsLog } from './actions-log.js';
 import * as githubClient from './github.js';
 import { run } from './main.js';
 import { enhance, EnhanceResult } from './orchestrator.js';
@@ -81,7 +82,10 @@ describe('main: run()', () => {
     await run();
 
     expect(fs.readFile).not.toHaveBeenCalled();
-    expect(githubClient.makeOctokit).toHaveBeenCalledWith('test-token');
+    expect(githubClient.makeOctokit).toHaveBeenCalledWith(
+      'test-token',
+      actionsLog,
+    );
     expect(githubClient.getReadme).toHaveBeenCalledWith(
       { __client: true },
       'NARKOZ',
@@ -89,6 +93,7 @@ describe('main: run()', () => {
     );
     expect(vi.mocked(enhance).mock.calls[0][0]).toMatchObject({
       content: '# Source README',
+      log: actionsLog,
     });
   });
 

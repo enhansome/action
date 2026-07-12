@@ -4,6 +4,7 @@ import * as fs from 'fs';
 import * as path from 'path';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 
+import { actionsLog } from './actions-log.js';
 import {
   createRateLimitHandler,
   getLatestCommitSha,
@@ -15,7 +16,6 @@ import {
   parseOwnerRepo,
   RepoInfoDetails,
 } from './github.js';
-import { actionsLog } from './logger.js';
 
 vi.mock(import('@actions/core'), async importOriginal => {
   const mod = await importOriginal();
@@ -51,7 +51,7 @@ function mockOctokit(handlers: Record<string, Handler>): GithubClient {
 
   const client = {
     // The sink a real client carries, and the one the functions under test read
-    // back off it. `actionsLog` is what `makeOctokit` installs in the Action, so
+    // back off it. `actionsLog` is what the Action passes to `makeOctokit`, so
     // the `core.*` assertions below still observe what production would emit.
     log: actionsLog,
     rest: {
@@ -107,7 +107,7 @@ describe('github.ts', () => {
     const reqOptions = { method: 'GET', url: '/repos/o/r' };
 
     it('retries (returns true) while under the cap and within budget', () => {
-      const handler = createRateLimitHandler('primary');
+      const handler = createRateLimitHandler('primary', actionsLog);
       expect(handler(10, reqOptions, null, 0)).toBe(true);
       expect(core.warning).toHaveBeenCalledWith(
         expect.stringContaining('primary rate limit hit'),
@@ -115,7 +115,7 @@ describe('github.ts', () => {
     });
 
     it('aborts (returns false) when retry-after exceeds the max wait', () => {
-      const handler = createRateLimitHandler('primary');
+      const handler = createRateLimitHandler('primary', actionsLog);
       expect(handler(301, reqOptions, null, 0)).toBe(false);
       expect(core.error).toHaveBeenCalledWith(
         expect.stringContaining('exceeds the maximum wait time of 300s'),
@@ -123,7 +123,7 @@ describe('github.ts', () => {
     });
 
     it('gives up (returns false) once the retry budget is exhausted', () => {
-      const handler = createRateLimitHandler('secondary');
+      const handler = createRateLimitHandler('secondary', actionsLog);
       expect(handler(10, reqOptions, null, 3)).toBe(false);
       expect(core.error).toHaveBeenCalledWith(
         expect.stringContaining('after 3 secondary rate-limit retries'),

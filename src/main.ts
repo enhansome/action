@@ -4,6 +4,7 @@ import * as fs from 'fs/promises';
 import * as path from 'path';
 import { fileURLToPath } from 'url';
 
+import { actionsLog } from './actions-log.js';
 import {
   getLatestCommitSha,
   getReadme,
@@ -45,7 +46,7 @@ export async function run(): Promise<void> {
     }
 
     core.info(`Fetching source README from ${parsed.owner}/${parsed.repo}`);
-    const octokit = makeOctokit(token);
+    const octokit = makeOctokit(token, actionsLog);
     const [readme, originalRepositorySha] = await Promise.all([
       getReadme(octokit, parsed.owner, parsed.repo),
       getLatestCommitSha(octokit, parsed.owner, parsed.repo),
@@ -77,6 +78,7 @@ export async function run(): Promise<void> {
       enhancedRepository,
       enhancedRepositoryDescription,
       token,
+      log: actionsLog,
     });
 
     if (jsonOutputFile) {

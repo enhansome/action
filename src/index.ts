@@ -27,7 +27,7 @@ export type {
   RepoInfoDetails,
 } from './github.js';
 export type { Logger } from './logger.js';
-export { actionsLog, silentLog } from './logger.js';
+export { consoleLog, silentLog } from './logger.js';
 export { classifySource, REGISTRY_MIN_LINKS, toRepoInfo } from './markdown.js';
 export type {
   JsonGroup,

@@ -8,7 +8,7 @@ import {
   RepoIdentifier,
   RepoInfoDetails,
 } from './github.js';
-import { actionsLog, Logger } from './logger.js';
+import { consoleLog, Logger } from './logger.js';
 
 // A node's intrinsic kind: a `registry` is a directory that exists to enable
 // discovery (an awesome-list); a `repository` is a terminal, consumable
@@ -185,7 +185,7 @@ export interface RepoLookupOptions {
   client?: GithubClient;
   /** Rendered-README anchor count at or above which the content backstop fires. */
   contentBackstopMin?: number;
-  /** Where diagnostics go. Defaults to the Actions sink; ignored when `client` is supplied, which brings its own. */
+  /** Where diagnostics go. Defaults to the console sink; ignored when `client` is supplied, which brings its own. */
   log?: Logger;
   /** Pre-resolved sindresorhus/awesome membership; omit to fetch it once, on first use. */
   members?: Set<string>;
@@ -222,7 +222,7 @@ export function createRepoLookup(options: RepoLookupOptions = {}): RepoLookup {
   // that logs — so nothing below needs to carry one.
   const client =
     options.client ??
-    makeOctokit(options.token ?? '', options.log ?? actionsLog);
+    makeOctokit(options.token ?? '', options.log ?? consoleLog);
 
   const repoInfos = new Map<string, Promise<RepoInfoDetails>>();
   const classifications = new Map<string, Promise<Classification>>();

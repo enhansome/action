@@ -402,10 +402,9 @@ describe('createRepoLookup', () => {
     expect(github.getRepoInfo).toHaveBeenCalledTimes(1);
   });
 
-  // `@actions/core` writes `::warning::` / `::debug::` workflow commands to
-  // stdout unconditionally, so an embedder that supplies a sink must have the
-  // diagnostics land there instead. The sink rides on the client (`octokit.log`),
-  // which is the object already handed to everything that logs.
+  // Diagnostics ride on the client (`octokit.log`), the object already handed to
+  // everything that logs. An embedder that supplies its own sink must see them
+  // land there rather than on the library's console default.
   it('installs a caller-supplied sink on the client it builds', async () => {
     const lines: string[] = [];
     function collect(message: string): void {

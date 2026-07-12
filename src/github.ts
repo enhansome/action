@@ -2,7 +2,7 @@ import { getOctokitOptions, GitHub } from '@actions/github/lib/utils';
 import { retry } from '@octokit/plugin-retry';
 import { throttling } from '@octokit/plugin-throttling';
 
-import { actionsLog, Logger } from './logger.js';
+import { consoleLog, Logger } from './logger.js';
 
 import type { OctokitOptions } from '@octokit/core';
 
@@ -33,7 +33,7 @@ export interface RepoIdentifier {
 /** Exported for unit testing; wired into the throttling plugin by `makeOctokit`. */
 export function createRateLimitHandler(
   kind: 'primary' | 'secondary',
-  log: Logger = actionsLog,
+  log: Logger = consoleLog,
 ) {
   return (
     retryAfter: number,
@@ -71,7 +71,7 @@ export function createRateLimitHandler(
  */
 export function makeOctokit(
   token: string,
-  log: Logger = actionsLog,
+  log: Logger = consoleLog,
 ): GithubClient {
   const options: OctokitOptions = {
     log,

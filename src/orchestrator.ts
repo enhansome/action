@@ -13,7 +13,7 @@ export interface EnhanceOptions {
   enhancedRepository?: string;
   enhancedRepositoryDescription?: string;
   findAndReplaceRaw?: string;
-  /** Defaults to the GitHub Actions sink; pass your own to keep `::warning::` out of a non-runner's logs. */
+  /** Defaults to the console sink; pass your own (e.g. an Actions workflow-command sink) to route diagnostics. */
   log?: Logger;
   now?: Date;
   originalRepository: string;
