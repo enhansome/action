@@ -4,8 +4,17 @@
   "description": "GitHub Action to add star counts to README files.",
   "type": "module",
   "main": "dist/main.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
   "scripts": {
-    "build": "vite build",
+    "build": "vite build && npm run build:lib",
+    "build:lib": "tsc -p tsconfig.lib.json",
     "typecheck": "tsc --noEmit",
     "start": "node dist/main.js",
     "lint": "eslint .",
@@ -13,7 +22,8 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "test:update-goldens": "UPDATE_GOLDENS=1 vitest run",
-    "coverage": "vitest run --coverage"
+    "coverage": "vitest run --coverage",
+    "prepare": "npm run build:lib"
   },
   "keywords": [
     "github",

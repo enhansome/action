@@ -1,3 +1,5 @@
+import { createRepoLookup } from './classify.js';
+import { Logger } from './logger.js';
 import {
   JsonOutput,
   processMarkdownContent,
@@ -11,6 +13,8 @@ export interface EnhanceOptions {
   enhancedRepository?: string;
   enhancedRepositoryDescription?: string;
   findAndReplaceRaw?: string;
+  /** Defaults to the GitHub Actions sink; pass your own to keep `::warning::` out of a non-runner's logs. */
+  log?: Logger;
   now?: Date;
   originalRepository: string;
   originalRepositorySha?: string;
@@ -30,6 +34,7 @@ export async function enhance(options: EnhanceOptions): Promise<EnhanceResult> {
     content,
     disableBranding = false,
     findAndReplaceRaw = '',
+    log,
     now = new Date(),
     originalRepository,
     originalRepositorySha,
@@ -66,6 +71,9 @@ export async function enhance(options: EnhanceOptions): Promise<EnhanceResult> {
     enhancedRepositoryDescription,
     originalRepositorySha,
     now,
+    // One lookup for the run: it owns the single throttled client (and the sink
+    // everything below logs to), the membership set, and the per-repo memos.
+    createRepoLookup({ log, token }),
   );
 
   return {

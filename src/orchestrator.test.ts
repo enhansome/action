@@ -4,13 +4,22 @@ import { beforeEach, describe, expect, it, vi } from 'vitest';
 
 import type { JsonItem, JsonNode } from './markdown.js';
 
+import { REGISTRY_CONTENT_BACKSTOP_LINKS } from './classify.js';
 import * as github from './github.js';
 import { RepoInfoDetails } from './github.js';
-import { REGISTRY_CONTENT_BACKSTOP_LINKS } from './markdown.js';
+import { silentLog } from './logger.js';
 import { enhance } from './orchestrator.js';
 
 // Mock the lowest-level dependency, which is the GitHub API client.
 vi.mock('./github.js');
+
+// A real client always carries a `log` and the code reads its sink back off it
+// (`octokit.log`), so the auto-mocked `makeOctokit` has to return one too.
+beforeEach(() => {
+  vi.mocked(github.makeOctokit).mockReturnValue({
+    log: silentLog,
+  } as unknown as github.GithubClient);
+});
 
 // Narrow a `JsonNode` (item | group) to a `JsonItem`. Section/children arrays
 // can now contain kind-less groups; the kind/repo_info assertions in
@@ -79,10 +88,10 @@ describe('Orchestrator: enhance()', () => {
         token,
       });
 
-      // First arg is the injected Octokit client (auto-mocked → undefined);
-      // assert the meaningful owner/repo args.
+      // First arg is the injected Octokit client (a stub); assert the
+      // meaningful owner/repo args.
       expect(github.getRepoInfo).toHaveBeenCalledWith(
-        undefined,
+        expect.anything(),
         'test-user',
         'test-repo',
       );

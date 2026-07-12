@@ -1,7 +1,8 @@
-import * as core from '@actions/core';
 import { getOctokitOptions, GitHub } from '@actions/github/lib/utils';
 import { retry } from '@octokit/plugin-retry';
 import { throttling } from '@octokit/plugin-throttling';
+
+import { actionsLog, Logger } from './logger.js';
 
 import type { OctokitOptions } from '@octokit/core';
 
@@ -24,13 +25,16 @@ export interface RepoInfoDetails {
   topics: string[];
 }
 
-interface RepoIdentifier {
+export interface RepoIdentifier {
   owner: string;
   repo: string;
 }
 
 /** Exported for unit testing; wired into the throttling plugin by `makeOctokit`. */
-export function createRateLimitHandler(kind: 'primary' | 'secondary') {
+export function createRateLimitHandler(
+  kind: 'primary' | 'secondary',
+  log: Logger = actionsLog,
+) {
   return (
     retryAfter: number,
     reqOptions: { method: string; url: string },
@@ -40,28 +44,37 @@ export function createRateLimitHandler(kind: 'primary' | 'secondary') {
     const where = `${reqOptions.method} ${reqOptions.url}`;
 
     if (retryAfter > MAX_WAIT_TIME_SECONDS) {
-      core.error(
+      log.error(
         `${kind} rate limit retry-after (${retryAfter}s) exceeds the maximum wait time of ${MAX_WAIT_TIME_SECONDS}s. Aborting retries for ${where}.`,
       );
       return false;
     }
 
     if (retryCount >= MAX_RETRIES) {
-      core.error(
+      log.error(
         `Giving up on ${where} after ${MAX_RETRIES} ${kind} rate-limit retries.`,
       );
       return false;
     }
 
-    core.warning(
+    log.warn(
       `${kind} rate limit hit for ${where}. Waiting ${retryAfter}s before retry ${retryCount + 1}/${MAX_RETRIES}.`,
     );
     return true;
   };
 }
 
-export function makeOctokit(token: string): GithubClient {
+/**
+ * The client is where the sink lives: Octokit takes a `log` and exposes it as
+ * `octokit.log`, so every function below reaches it through the client it is
+ * already given, instead of taking a logger of its own.
+ */
+export function makeOctokit(
+  token: string,
+  log: Logger = actionsLog,
+): GithubClient {
   const options: OctokitOptions = {
+    log,
     // The throttling plugin owns rate-limit (403/429) retries, so keep them out
     // of the retry plugin to avoid double-handling.
     retry: {
@@ -69,8 +82,8 @@ export function makeOctokit(token: string): GithubClient {
       retries: MAX_RETRIES,
     },
     throttle: {
-      onRateLimit: createRateLimitHandler('primary'),
-      onSecondaryRateLimit: createRateLimitHandler('secondary'),
+      onRateLimit: createRateLimitHandler('primary', log),
+      onSecondaryRateLimit: createRateLimitHandler('secondary', log),
     },
   };
 
@@ -84,7 +97,7 @@ export async function getRepoInfo(
   owner: string,
   repo: string,
 ): Promise<RepoInfoDetails> {
-  core.debug(`Fetching repository info for ${owner}/${repo}`);
+  octokit.log.debug(`Fetching repository info for ${owner}/${repo}`);
   const { data } = await octokit.rest.repos.get({ owner, repo });
 
   return {
@@ -106,7 +119,7 @@ export async function getReadme(
   repo: string,
   format: 'html' | 'raw' = 'raw',
 ): Promise<string> {
-  core.debug(`Fetching ${format} README for ${owner}/${repo}`);
+  octokit.log.debug(`Fetching ${format} README for ${owner}/${repo}`);
   const response = await octokit.rest.repos.getReadme({
     mediaType: { format },
     owner,
@@ -125,7 +138,7 @@ export async function getLatestCommitSha(
   repo: string,
 ): Promise<null | string> {
   try {
-    core.debug(`Fetching latest commit SHA for ${owner}/${repo}`);
+    octokit.log.debug(`Fetching latest commit SHA for ${owner}/${repo}`);
     const { data } = await octokit.rest.repos.listCommits({
       owner,
       per_page: 1,
@@ -134,7 +147,9 @@ export async function getLatestCommitSha(
 
     return data[0]?.sha ?? null;
   } catch (error: unknown) {
-    logRequestError(`latest commit for ${owner}/${repo}`, error);
+    octokit.log.error(
+      `Failed to fetch latest commit for ${owner}/${repo}: ${formatRequestError(error)}`,
+    );
     return null;
   }
 }
@@ -173,8 +188,9 @@ export function parseGitHubUrl(url: string): null | RepoIdentifier {
       return { owner, repo };
     }
     return null;
-  } catch (error) {
-    core.debug(`Failed to parse URL ${url}: ${error}`);
+  } catch {
+    // A relative or malformed href is simply not a GitHub repo link, which is
+    // the routine case for most links in a README — not a diagnostic.
     return null;
   }
 }
@@ -183,10 +199,6 @@ export function formatRequestError(error: unknown): string {
   const message = error instanceof Error ? error.message : String(error);
   const status = getErrorStatus(error);
   return status === undefined ? message : `${status}: ${message}`;
-}
-
-function logRequestError(subject: string, error: unknown): void {
-  core.error(`Failed to fetch ${subject}: ${formatRequestError(error)}`);
 }
 
 function getErrorStatus(error: unknown): number | undefined {

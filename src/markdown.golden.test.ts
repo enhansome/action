@@ -4,6 +4,7 @@ import { describe, expect, it, vi } from 'vitest';
 
 import type { RepoInfoDetails } from './github.js';
 
+import { silentLog } from './logger.js';
 import { enhance } from './orchestrator.js';
 
 // Golden-file suite: pins the full `jsonData` (structure) for every fixture and
@@ -70,7 +71,11 @@ vi.mock('./github.js', async () => {
     await vi.importActual<typeof import('./github.js')>('./github.js');
   return {
     ...actual,
-    makeOctokit: (() => ({})) as unknown as typeof actual.makeOctokit,
+    // A real client always carries a `log`; the code under test reads its sink
+    // back off it (`octokit.log`), so the stand-in has to have one too.
+    makeOctokit: (() => ({
+      log: silentLog,
+    })) as unknown as typeof actual.makeOctokit,
     getRepoInfo: deterministicGetRepoInfo,
     getReadme: deterministicGetReadme,
   };

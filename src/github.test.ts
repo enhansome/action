@@ -15,6 +15,7 @@ import {
   parseOwnerRepo,
   RepoInfoDetails,
 } from './github.js';
+import { actionsLog } from './logger.js';
 
 vi.mock(import('@actions/core'), async importOriginal => {
   const mod = await importOriginal();
@@ -49,6 +50,10 @@ function mockOctokit(handlers: Record<string, Handler>): GithubClient {
   }
 
   const client = {
+    // The sink a real client carries, and the one the functions under test read
+    // back off it. `actionsLog` is what `makeOctokit` installs in the Action, so
+    // the `core.*` assertions below still observe what production would emit.
+    log: actionsLog,
     rest: {
       repos: {
         get: createMethod('repos', 'get'),

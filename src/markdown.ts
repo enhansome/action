@@ -1,4 +1,3 @@
-import * as core from '@actions/core';
 import * as path from 'path';
 import remarkGfm from 'remark-gfm';
 import remarkParse from 'remark-parse';
@@ -7,14 +6,18 @@ import { unified } from 'unified';
 import { visit } from 'unist-util-visit';
 
 import {
+  Classification,
+  createRepoLookup,
+  Kind,
+  RegistrySignal,
+  RepoLookup,
+} from './classify.js';
+import {
   formatRequestError,
-  getReadme,
-  getRepoInfo,
-  GithubClient,
-  makeOctokit,
   parseGitHubUrl,
   RepoInfoDetails,
 } from './github.js';
+import { Logger } from './logger.js';
 
 import type {
   Heading,
@@ -46,20 +49,6 @@ export interface SortOptions {
   minLinks: number;
 }
 
-// A node's intrinsic kind: a `registry` is a directory that exists to enable
-// discovery (an awesome-list); a `repository` is a terminal, consumable
-// project. Every genuine GitHub node carries exactly one.
-export type Kind = 'registry' | 'repository';
-
-// Which signal classified a node as a `registry`. Present only on registries
-// (every 'repository' is the signal-less fallthrough, so it carries none). The
-// layers differ sharply in reliability (membership/name/topic ~0% error;
-// description/content ~30-40%), so emitting the deciding layer lets downstream
-// treat the soft-derived registries as lower confidence than the anchor-derived
-// ones — turning the binary kind into a graded signal at no extra fetch cost.
-export type RegistrySignal =
-  'content' | 'description' | 'membership' | 'name' | 'topic';
-
 // Field names are the *output* names (stars / last_commit), renamed from the
 // API fields (stargazers_count / pushed_at).
 export interface RepoInfo {
@@ -69,6 +58,18 @@ export interface RepoInfo {
   owner: string;
   repo: string;
   stars: number;
+}
+
+/** The sole crossing from the API shape to the emitted one, so both agree on the renames. */
+export function toRepoInfo(details: RepoInfoDetails): RepoInfo {
+  return {
+    archived: details.archived,
+    language: details.language,
+    last_commit: details.pushed_at,
+    owner: details.owner,
+    repo: details.repo,
+    stars: details.stargazers_count,
+  };
 }
 
 // A genuine GitHub node: the item's OWN paragraph links to a GitHub repo, so it
@@ -109,7 +110,7 @@ export type JsonNode = JsonGroup | JsonItem;
 // anchor probes — so a source registry's signal is always 'content'. This is
 // independent of any item's identity. `node_type` does not apply — `metadata`
 // is a distinct top-level shape, not a member of the items/children union.
-interface JsonMetadata {
+export interface JsonMetadata {
   enhanced_repository: null | string;
   enhanced_repository_description: null | string;
   kind: Kind;
@@ -121,7 +122,7 @@ interface JsonMetadata {
   title: string;
 }
 
-interface JsonSection {
+export interface JsonSection {
   description: null | string;
   items: JsonNode[];
   title: string;
@@ -133,8 +134,8 @@ export interface TargetData {
   repoInfoMap: Map<string, RepoInfoDetails>;
 }
 
-// One shared throttled client (see `fetchTargetData`) coordinates rate limits
-// across the whole pool rather than per request.
+// The lookup's single throttled client coordinates rate limits across the whole
+// pool, so this bounds in-flight targets rather than requests.
 const FETCH_CONCURRENCY = 10;
 
 /** Task rejections propagate, so a caller that must not abort the batch on a single failure wraps its own per-item try/catch. */
@@ -153,9 +154,12 @@ async function forEachConcurrent<T>(
 }
 
 /**
- * `urls` are badged (every GitHub link needs repo_info); `entryUrls` are the
- * first GitHub link of each list item — the only targets that become typed
- * JsonItems, so the only ones a `kind` (a README fetch) is fetched for.
+ * Re-keys the lookup's per-repo results by URL, which is how the tree addresses
+ * them: `urls` are badged (every GitHub link needs repo_info); `entryUrls` are
+ * the first GitHub link of each list item — the only targets that become typed
+ * JsonItems, so the only ones a `kind` (and its possible README fetch) is
+ * resolved for. Aliased URLs pointing at one repo collapse to a single fetch
+ * inside the lookup, then fan back out to every alias here.
  *
  * Each target's failure is independent and non-fatal: a dead link is skipped
  * with a warning and its item is still emitted (no repo_info, kind defaults to
@@ -164,73 +168,12 @@ async function forEachConcurrent<T>(
 export async function fetchTargetData(
   urls: Set<string>,
   entryUrls: Set<string>,
-  token: string,
-  contentBackstopMin: number,
-  members: Set<string>,
+  repos: RepoLookup,
 ): Promise<TargetData> {
+  const log = repos.client.log;
   const repoInfoMap = new Map<string, RepoInfoDetails>();
   const kindsMap = new Map<string, Kind>();
   const registrySignalMap = new Map<string, RegistrySignal>();
-
-  const octokit = makeOctokit(token);
-
-  // Per-canonical-repo memo: two distinct URLs that resolve to the same
-  // owner/repo (e.g. a README link and a deep `/tree/...` link into it) must
-  // share one `getRepoInfo` / `classifyKind` call. We store in-flight Promises
-  // keyed by `owner/repo`; the lookup-and-set is synchronous, so a concurrent
-  // worker hitting the same repo awaits the first worker's fetch instead of
-  // racing a duplicate. Results are written under every alias URL below, so
-  // consumers that look up by raw URL are unaffected.
-  const repoInfoByRepo = new Map<string, Promise<RepoInfoDetails>>();
-  const kindByRepo = new Map<
-    string,
-    Promise<{ kind: Kind; registrySignal?: RegistrySignal }>
-  >();
-
-  function repoInfoFor(owner: string, repo: string): Promise<RepoInfoDetails> {
-    const key = `${owner}/${repo}`;
-    const existing = repoInfoByRepo.get(key);
-    if (existing) {
-      return existing;
-    }
-    const pending = getRepoInfo(octokit, owner, repo);
-    repoInfoByRepo.set(key, pending);
-    return pending;
-  }
-
-  // classifyKind needs the repo's description/topics (from repoInfo), so this
-  // reuses the memoized repoInfoFor and tolerates its failure (null repoInfo
-  // just skips the topic/description anchors). The README fetch only happens
-  // when no anchor fires — most targets are caught by an anchor and skip it.
-  function kindFor(
-    owner: string,
-    repo: string,
-  ): Promise<{ kind: Kind; registrySignal?: RegistrySignal }> {
-    const key = `${owner}/${repo}`;
-    const existing = kindByRepo.get(key);
-    if (existing) {
-      return existing;
-    }
-    const pending = (async () => {
-      // A failed /repos fetch (dead link) still lets the other anchors fire.
-      let info: null | RepoInfoDetails;
-      try {
-        info = await repoInfoFor(owner, repo);
-      } catch {
-        info = null;
-      }
-      return classifyKind(
-        octokit,
-        owner,
-        repo,
-        info,
-        members,
-        contentBackstopMin,
-      );
-    })();
-    kindByRepo.set(key, pending);
-    return pending;
-  }
 
   // `entryUrls` is a subset of `urls` in practice, but the signature does not
   // enforce that, so the union keeps this correct for any caller.
@@ -245,27 +188,22 @@ export async function fetchTargetData(
       }
       if (urls.has(url)) {
         try {
-          repoInfoMap.set(url, await repoInfoFor(details.owner, details.repo));
+          repoInfoMap.set(url, await repos.getRepoInfo(details));
         } catch (error) {
-          core.warning(
+          log.warn(
             `Skipping repo info for ${url}: ${formatRequestError(error)}`,
           );
         }
       }
       if (entryUrls.has(url)) {
         try {
-          const { kind, registrySignal } = await kindFor(
-            details.owner,
-            details.repo,
-          );
+          const { kind, registrySignal } = await repos.classify(details);
           kindsMap.set(url, kind);
           if (registrySignal) {
             registrySignalMap.set(url, registrySignal);
           }
         } catch (error) {
-          core.warning(
-            `Skipping kind for ${url}: ${formatRequestError(error)}`,
-          );
+          log.warn(`Skipping kind for ${url}: ${formatRequestError(error)}`);
         }
       }
     },
@@ -273,7 +211,7 @@ export async function fetchTargetData(
 
   // The success/total ratio makes dead-link volume visible, and elapsed exposes
   // the per-entry README-fetch cost that drives the deferred classification-manifest decision.
-  core.info(
+  log.info(
     `Target fetch: ${repoInfoMap.size}/${urls.size} repo-info ok, ${kindsMap.size}/${entryUrls.size} kinds ok in ${Date.now() - fetchStart}ms (concurrency ${FETCH_CONCURRENCY}).`,
   );
   return { registrySignalMap, kindsMap, repoInfoMap };
@@ -290,11 +228,13 @@ export async function processMarkdownContent(
   enhancedRepositoryDescription?: string,
   originalRepositorySha?: string,
   now: Date = new Date(),
+  repos: RepoLookup = createRepoLookup({ token }),
 ): Promise<{ finalContent: string; jsonData: JsonOutput }> {
   const brandingEnabled = replacements.some(rule => rule.type === 'branding');
   const contentAfterReplacements = applyTextReplacements(
     originalContent,
     replacements.filter(rule => rule.type !== 'branding'),
+    repos.client.log,
   );
 
   const processor = unified().use(remarkParse).use(remarkGfm);
@@ -302,29 +242,16 @@ export async function processMarkdownContent(
 
   // Classify the source from the pristine parse — *before* processTree sorts
   // the tree in place — so the source's kind can never drift from how another
-  // mirror would classify this very repo from its raw README. The source is
-  // always Markdown, so it uses the mdast counter against the source threshold;
-  // a registry's signal is 'content', a repository carries none.
-  const isSourceRegistry = countResourceLinks(tree) >= REGISTRY_MIN_LINKS;
-  const sourceKind: Kind = isSourceRegistry ? 'registry' : 'repository';
-  const sourceRegistrySignal: RegistrySignal | undefined = isSourceRegistry
-    ? 'content'
-    : undefined;
+  // mirror would classify this very repo from its raw README.
+  const source = classifySourceTree(tree);
 
   const githubUrls = collectGitHubLinks(tree);
   const entryUrls = collectEntryGitHubUrls(tree);
 
-  // Membership is fetched once for the whole run (the set is shared by every
-  // target) on the same throttled client; it degrades to empty on failure.
-  const octokit = makeOctokit(token);
-  const members = await fetchAwesomeMembers(octokit);
-
   const { registrySignalMap, kindsMap, repoInfoMap } = await fetchTargetData(
     githubUrls,
     entryUrls,
-    token,
-    REGISTRY_CONTENT_BACKSTOP_LINKS,
-    members,
+    repos,
   );
 
   // The title derives from the *source* repository (originalRepository), never
@@ -356,12 +283,12 @@ export async function processMarkdownContent(
     enhanced_repository: (enhancedRepository?.trim() ?? '') || null,
     enhanced_repository_description:
       (enhancedRepositoryDescription?.trim() ?? '') || null,
-    kind: sourceKind,
+    kind: source.kind,
     title,
   };
   // Present only when the source is a registry, matching the items' convention.
-  if (sourceRegistrySignal) {
-    metadata.registry_signal = sourceRegistrySignal;
+  if (source.registrySignal) {
+    metadata.registry_signal = source.registrySignal;
   }
 
   const jsonData: JsonOutput = {
@@ -418,24 +345,25 @@ function addInfoBadges(tree: Root, repoInfoMap: Map<string, RepoInfoDetails>) {
 function applyTextReplacements(
   content: string,
   rules: ReplacementRule[],
+  log: Logger,
 ): string {
   let processedContent = content;
 
   for (const rule of rules) {
     if (rule.type === 'literal') {
-      core.debug(
+      log.debug(
         `Applying literal replacement: '${rule.find}' -> '${rule.replace}'`,
       );
       processedContent = processedContent.replaceAll(rule.find, rule.replace);
     } else if (rule.type === 'regex') {
       try {
         const regex = new RegExp(rule.find, 'gm');
-        core.debug(
+        log.debug(
           `Applying regex replacement: /${rule.find}/gm -> '${rule.replace}'`,
         );
         processedContent = processedContent.replace(regex, rule.replace);
       } catch (e: unknown) {
-        core.warning(
+        log.warn(
           `Skipping invalid regex pattern '${rule.find}': ${e instanceof Error ? e.message : e}`,
         );
       }
@@ -527,20 +455,24 @@ export function countResourceLinks(tree: Root): number {
   return count;
 }
 
-// Counts outbound links in a target's RENDERED HTML README. Same exclusion and
-// intent as `countResourceLinks`, but operating on GitHub's HTML rendering so a
-// non-Markdown README (reST, AsciiDoc) — whose links Markdown parsing can't see
-// — is judged by the links a reader actually sees. GitHub's rendered HTML uses
-// double-quoted `href`, so a targeted scan is exact here without an HTML parser
-// dependency.
-export function countOutboundAnchors(html: string): number {
-  let count = 0;
-  for (const match of html.matchAll(/href\s*=\s*"([^"]*)"/g)) {
-    if (match[1] && !match[1].startsWith('#')) {
-      count++;
-    }
-  }
-  return count;
+/**
+ * The kind of a README the caller already holds, judged from the document alone
+ * — no network, no repo identity. This is how the enhancer classifies its own
+ * SOURCE: it is always Markdown, so it takes the mdast counter against
+ * `REGISTRY_MIN_LINKS` rather than the five-layer path a target takes
+ * (`createRepoLookup().classify`), whose anchors need a repo to probe. A
+ * registry decided this way always carries the 'content' signal; a repository
+ * carries none.
+ */
+export function classifySource(markdown: string): Classification {
+  const tree = unified().use(remarkParse).use(remarkGfm).parse(markdown);
+  return classifySourceTree(tree);
+}
+
+function classifySourceTree(tree: Root): Classification {
+  return countResourceLinks(tree) >= REGISTRY_MIN_LINKS
+    ? { kind: 'registry', registrySignal: 'content' }
+    : { kind: 'repository' };
 }
 
 /**
@@ -565,128 +497,6 @@ function collectEntryGitHubUrls(tree: Root): Set<string> {
 // modest outbound-link count separates it from a project README. Hardcoded, not
 // an action input, so the emitted kind is trustworthy standalone.
 export const REGISTRY_MIN_LINKS = 50;
-
-// TARGET content backstop. Popular software has link-heavy READMEs
-// (nodejs/node ~662 anchors, webpack ~403), so a low threshold flips real
-// projects. The precision anchors (membership/topic/name/description) catch the
-// bulk of registries at ~0 false-positives; content is only the LAST-resort
-// backstop for dense convention-free lists no anchor signals (e.g. a CV list
-// titled "3D-Machine-Learning" with 800 anchors). 700 sits above virtually all
-// software (clean-project p90 ~106) while still catching those dense
-// registries; marked registry_signal='content' so downstream treats it as soft.
-export const REGISTRY_CONTENT_BACKSTOP_LINKS = 700;
-
-// The awesome-list naming convention, as a word-boundary token so it does NOT
-// fire on `awesome_print` (underscore is a word char, so no boundary lies
-// between `awesome` and `_print`). The `\bawsome\b` alternation covers the
-// common misspelling (e.g. HuaizhengZhang/Awsome-Deep-Learning-for-Video-Analysis).
-const AWESOME_NAME_PATTERN = /\bawesome\b|\bawsome\b/i;
-
-// Tight, list-proximate phrasing. Bare `collection of` / `curated` / `awesome`
-// are deliberately excluded: they flip popular real projects (gitignore,
-// PowerToys, iptv, SecLists, nerd-fonts via "Font Awesome") for ~0 recall gain.
-const REGISTRY_DESCRIPTION_PATTERN =
-  /(curated (?:list|collection)|a list of|collective list|cheat\s?sheet)/i;
-
-// The canonical "list of awesome-lists". Membership is FP-free in practice and
-// catches convention-free registries (papers-we-love, free-programming-books)
-// that no other anchor signals. Fetched once per run; a failure degrades to an
-// empty set (the layer is skipped) rather than failing classification.
-const AWESOME_REGISTRY = { owner: 'sindresorhus', repo: 'awesome' };
-
-// Parses markdown links to github.com/<owner>/<repo> out of the sindresorhus/awesome
-// README. Scoped to markdown `[..](url)` links only: that README opens with HTML
-// sponsor badges (<a href>), and sweeping those would import sponsor/author
-// links (e.g. sindresorhus/sponsors) and break the layer's 0%-FP property.
-// GitHub path prefixes that are not repositories, so a link like
-// github.com/topics/foo must not become a "member".
-const NON_REPO_OWNERS = new Set([
-  'blog',
-  'features',
-  'orgs',
-  'search',
-  'settings',
-  'topics',
-]);
-
-export function parseAwesomeMembers(markdown: string): Set<string> {
-  const members = new Set<string>();
-  const token = '[A-Za-z0-9](?:[A-Za-z0-9._-]*[A-Za-z0-9])?';
-  for (const m of markdown.matchAll(
-    new RegExp(`\\([^)]*github\\.com/(${token})/(${token})[^)]*\\)`, 'g'),
-  )) {
-    const owner = m[1];
-    let repo = m[2];
-    if (owner === AWESOME_REGISTRY.owner && repo === AWESOME_REGISTRY.repo) {
-      continue;
-    }
-    if (NON_REPO_OWNERS.has(owner)) {
-      continue;
-    }
-    if (repo.endsWith('.git')) {
-      repo = repo.slice(0, -4);
-    }
-    members.add(`${owner.toLowerCase()}/${repo.toLowerCase()}`);
-  }
-  return members;
-}
-
-export async function fetchAwesomeMembers(
-  octokit: GithubClient,
-): Promise<Set<string>> {
-  try {
-    const markdown = await getReadme(
-      octokit,
-      AWESOME_REGISTRY.owner,
-      AWESOME_REGISTRY.repo,
-      'raw',
-    );
-    return parseAwesomeMembers(markdown);
-  } catch (error) {
-    core.warning(
-      `sindresorhus/awesome membership unavailable; skipping that layer: ${formatRequestError(error)}`,
-    );
-    return new Set();
-  }
-}
-
-/**
- * Layered, precision-first. The anchors (membership/topic/name/description)
- * are checked first — they are ~0% false-positive and need no README fetch, so a
- * target they catch never pays for one. Only when every anchor misses do we
- * fetch the rendered HTML and fall back to the high content threshold. A
- * registry carries the deciding layer as `registrySignal` (so downstream can
- * grade confidence); a repository is the signal-less fallthrough and carries
- * none. README fetch failures propagate (fetchTargetData catches them and
- * defaults the item to repository).
- */
-export async function classifyKind(
-  octokit: GithubClient,
-  owner: string,
-  repo: string,
-  repoInfo: null | RepoInfoDetails,
-  members: Set<string>,
-  backstopMin: number,
-): Promise<{ kind: Kind; registrySignal?: RegistrySignal }> {
-  if (members.has(`${owner.toLowerCase()}/${repo.toLowerCase()}`)) {
-    return { kind: 'registry', registrySignal: 'membership' };
-  }
-  if (repoInfo?.topics.includes('awesome-list')) {
-    return { kind: 'registry', registrySignal: 'topic' };
-  }
-  if (AWESOME_NAME_PATTERN.test(repo)) {
-    return { kind: 'registry', registrySignal: 'name' };
-  }
-  const description = repoInfo?.description ?? '';
-  if (description && REGISTRY_DESCRIPTION_PATTERN.test(description)) {
-    return { kind: 'registry', registrySignal: 'description' };
-  }
-  const html = await getReadme(octokit, owner, repo, 'html');
-  if (countOutboundAnchors(html) >= backstopMin) {
-    return { kind: 'registry', registrySignal: 'content' };
-  }
-  return { kind: 'repository' };
-}
 
 function fixRelativeLinks(tree: Root, relativeLinkPrefix: string) {
   if (!relativeLinkPrefix) {
@@ -854,14 +664,7 @@ function processListRecursively(
         item.registry_signal = registrySignal;
       }
       if (repoInfo) {
-        item.repo_info = {
-          archived: repoInfo.archived,
-          language: repoInfo.language,
-          last_commit: repoInfo.pushed_at,
-          owner: repoInfo.owner,
-          repo: repoInfo.repo,
-          stars: repoInfo.stargazers_count,
-        };
+        item.repo_info = toRepoInfo(repoInfo);
       }
       jsonData = item;
     } else if (childrenJson.length > 0) {
