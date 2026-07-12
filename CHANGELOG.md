@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.4.0](https://github.com/enhansome/action/compare/v1.3.1...v1.4.0) (2026-07-12)
+
+
+### Features
+
+* lib ([417c248](https://github.com/enhansome/action/commit/417c248c4e3b24537b763d2c9553ade61f777c00))
+
+
+### Bug Fixes
+
+* case normalization ([b830120](https://github.com/enhansome/action/commit/b830120525c4a631ef4edd06147d31b0bc0146e5))
+* default to console log ([7a5ccab](https://github.com/enhansome/action/commit/7a5ccabf1a92176803088f326cbbd9754fc7fc47))
+* docs ([a1ca133](https://github.com/enhansome/action/commit/a1ca133628cbd8e6642cebf5be6927c95e0c7fb1))
+
 ## [1.3.1](https://github.com/enhansome/action/compare/v1.3.0...v1.3.1) (2026-07-11)
 
 
