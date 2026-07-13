@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.1](https://github.com/enhansome/action/compare/v1.4.0...v1.4.1) (2026-07-13)
+
+
+### Bug Fixes
+
+* self reference in classify source ([4f70d77](https://github.com/enhansome/action/commit/4f70d779d3d9138c5df93e2327d82e8d1f17a047))
+
 ## [1.4.0](https://github.com/enhansome/action/compare/v1.3.1...v1.4.0) (2026-07-12)
 
 
