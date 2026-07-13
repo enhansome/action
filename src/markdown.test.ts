@@ -33,6 +33,15 @@ beforeEach(() => {
   } as unknown as github.GithubClient);
 });
 
+// `./github.js` is auto-mocked file-wide for the network-path tests.
+// countResourceLinks and classifySource are pure, but self-ref detection routes
+// through the real parseGitHubUrl — the auto-mock returns undefined and would
+// silently disable it, so the pure-function blocks restore it per test.
+async function restoreParseGitHubUrl() {
+  const real = await vi.importActual<typeof github>('./github.js');
+  vi.mocked(github.parseGitHubUrl).mockImplementation(real.parseGitHubUrl);
+}
+
 function findItemByTitle(
   items: { children?: unknown[]; title: string }[],
   title: string,
@@ -473,6 +482,10 @@ describe('countResourceLinks (fixture counts)', () => {
     return unified().use(remarkParse).use(remarkGfm).parse(markdown);
   }
 
+  beforeEach(async () => {
+    await restoreParseGitHubUrl();
+  });
+
   // Pinned against REGISTRY_MIN_LINKS (50). These counts are the ground truth the
   // threshold sits against, so they are asserted exactly.
   it.each([
@@ -504,10 +517,61 @@ describe('countResourceLinks (fixture counts)', () => {
     );
     expect(countResourceLinks(tree)).toBe(0);
   });
+
+  it('excludes links back into the source repo when selfRepo is given', () => {
+    const tree = parseMarkdown(
+      Array.from(
+        { length: 3 },
+        (_, i) => `- [f${i}](https://github.com/me/myrepo/blob/main/f${i}.md)`,
+      ).join('\n') + '\n- [out](https://github.com/other/repo)\n',
+    );
+    expect(countResourceLinks(tree, { owner: 'me', repo: 'myrepo' })).toBe(1);
+  });
+
+  it('keeps self-links counted when selfRepo is omitted', () => {
+    const tree = parseMarkdown(
+      '- [a](https://github.com/me/myrepo/blob/main/a.md)\n',
+    );
+    expect(countResourceLinks(tree)).toBe(1);
+  });
+
+  it('excludes a self-link only when owner AND repo match, case-insensitively', () => {
+    const tree = parseMarkdown(
+      '- [same-case](https://github.com/Me/MyRepo/blob/main/a.md)\n' +
+        '- [other-repo](https://github.com/me/different/blob/main/b.md)\n' +
+        '- [other-owner](https://github.com/you/myrepo/blob/main/c.md)\n',
+    );
+    // Only same-case matches both segments; the partial matches still count.
+    expect(countResourceLinks(tree, { owner: 'me', repo: 'myrepo' })).toBe(2);
+  });
+
+  it('excludes relative links (internal navigation) even without selfRepo', () => {
+    const tree = parseMarkdown(
+      '- [contributing](CONTRIBUTING.md)\n' +
+        '- [docs](./docs/guide.md)\n' +
+        '- [pages](content/PAGES.md)\n' +
+        '- [out](https://example.com/out)\n',
+    );
+    expect(countResourceLinks(tree)).toBe(1);
+  });
+
+  it('still counts schemeless www. links (external sites without a scheme)', () => {
+    const tree = parseMarkdown(
+      '- [fst](www.fstpackage.org/fst/)\n- [other](https://example.com/x)\n',
+    );
+    expect(countResourceLinks(tree)).toBe(2);
+  });
+
+  it('still counts mailto/tel scheme links', () => {
+    const tree = parseMarkdown(
+      '- [mail](mailto:a@b.com)\n- [tel](tel:+1555)\n- [out](https://example.com)\n',
+    );
+    expect(countResourceLinks(tree)).toBe(3);
+  });
 });
 
 // The offline, network-free counterpart to the target classifier: a caller with
-// a README in hand asks about it directly, without an mdast tree or a repo.
+// a README and its repo identity asks about it directly, without an mdast tree.
 describe('classifySource', () => {
   function listOf(links: number): string {
     return Array.from(
@@ -516,15 +580,22 @@ describe('classifySource', () => {
     ).join('\n');
   }
 
+  // These fixtures link example.com, so the repo identity never matches anything.
+  const anyRepo = { owner: 'any', repo: 'repo' };
+
+  beforeEach(async () => {
+    await restoreParseGitHubUrl();
+  });
+
   it('classifies a link-dense README as a content-signalled registry', () => {
-    expect(classifySource(listOf(REGISTRY_MIN_LINKS))).toEqual({
+    expect(classifySource(anyRepo, listOf(REGISTRY_MIN_LINKS))).toEqual({
       kind: 'registry',
       registrySignal: 'content',
     });
   });
 
   it('classifies a sparse README as a signal-less repository', () => {
-    expect(classifySource(listOf(REGISTRY_MIN_LINKS - 1))).toEqual({
+    expect(classifySource(anyRepo, listOf(REGISTRY_MIN_LINKS - 1))).toEqual({
       kind: 'repository',
     });
   });
@@ -547,9 +618,50 @@ describe('classifySource', () => {
       targets(),
     );
 
-    expect(classifySource(content)).toEqual({
+    expect(
+      classifySource({ owner: 'example', repo: 'awesome-things' }, content),
+    ).toEqual({
       kind: jsonData.metadata.kind,
       registrySignal: jsonData.metadata.registry_signal,
+    });
+  });
+
+  function githubSelfListOf(
+    owner: string,
+    repo: string,
+    links: number,
+  ): string {
+    return Array.from(
+      { length: links },
+      (_, i) =>
+        `- [item ${i}](https://github.com/${owner}/${repo}/blob/main/f${i}.md)`,
+    ).join('\n');
+  }
+
+  it('classifies a self-link-only README as a repository when selfRepo matches', () => {
+    const md = githubSelfListOf('me', 'myrepo', REGISTRY_MIN_LINKS + 10);
+    expect(classifySource({ owner: 'me', repo: 'myrepo' }, md)).toEqual({
+      kind: 'repository',
+    });
+  });
+
+  it('still classifies as registry when selfRepo names a different repo', () => {
+    const md = githubSelfListOf('me', 'myrepo', REGISTRY_MIN_LINKS + 10);
+    expect(classifySource({ owner: 'someone', repo: 'else' }, md)).toEqual({
+      kind: 'registry',
+      registrySignal: 'content',
+    });
+  });
+
+  it('classifies a relative-link-only README as a repository (unconditional)', () => {
+    const md = Array.from(
+      { length: REGISTRY_MIN_LINKS + 10 },
+      (_, i) => `- [doc ${i}](./docs/doc-${i}.md)`,
+    ).join('\n');
+    // Relative exclusion is identity-independent: a non-matching repo still
+    // discounts the self-relative links.
+    expect(classifySource({ owner: 'someone', repo: 'else' }, md)).toEqual({
+      kind: 'repository',
     });
   });
 });

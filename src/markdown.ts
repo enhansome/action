@@ -15,6 +15,8 @@ import {
 import {
   formatRequestError,
   parseGitHubUrl,
+  parseOwnerRepo,
+  RepoIdentifier,
   RepoInfoDetails,
 } from './github.js';
 import { Logger } from './logger.js';
@@ -243,7 +245,8 @@ export async function processMarkdownContent(
   // Classify the source from the pristine parse — *before* processTree sorts
   // the tree in place — so the source's kind can never drift from how another
   // mirror would classify this very repo from its raw README.
-  const source = classifySourceTree(tree);
+  const selfRepo = parseOwnerRepo(originalRepository) ?? undefined;
+  const source = classifySourceTree(tree, selfRepo);
 
   const githubUrls = collectGitHubLinks(tree);
   const entryUrls = collectEntryGitHubUrls(tree);
@@ -443,34 +446,78 @@ function findOwnGitHubLink(itemNode: ListItem): string | undefined {
  * regardless of where it sits (list, table, or prose) or what it points at (a
  * GitHub repo, an arXiv paper, a dataset, a project page). Same-page `#` anchors
  * are excluded so a project README's Table of Contents does not inflate the
- * count.
+ * count. Relative links — CONTRIBUTING.md, ./docs/x, content/pages.md — resolve
+ * within the source repo's own tree, so they are excluded too as internal
+ * navigation rather than outbound resources; schemeless `www.host/…` links stay
+ * counted (external sites written without an http(s):// scheme). Absolute
+ * github.com/<self>/… deep paths are excluded when `selfRepo` is given.
  */
-export function countResourceLinks(tree: Root): number {
+export function countResourceLinks(
+  tree: Root,
+  selfRepo?: RepoIdentifier,
+): number {
   let count = 0;
   visit(tree, 'link', (linkNode: Link) => {
-    if (linkNode.url && !linkNode.url.startsWith('#')) {
-      count++;
+    const url = linkNode.url;
+    if (!url || url.startsWith('#') || isRelative(url)) {
+      return;
     }
+    if (selfRepo && isSelfReference(url, selfRepo)) {
+      return;
+    }
+    count++;
   });
   return count;
 }
 
-/**
- * The kind of a README the caller already holds, judged from the document alone
- * — no network, no repo identity. This is how the enhancer classifies its own
- * SOURCE: it is always Markdown, so it takes the mdast counter against
- * `REGISTRY_MIN_LINKS` rather than the five-layer path a target takes
- * (`createRepoLookup().classify`), whose anchors need a repo to probe. A
- * registry decided this way always carries the 'content' signal; a repository
- * carries none.
- */
-export function classifySource(markdown: string): Classification {
-  const tree = unified().use(remarkParse).use(remarkGfm).parse(markdown);
-  return classifySourceTree(tree);
+// A relative link resolves within the source repo's own tree — CONTRIBUTING.md,
+// ./docs/x, content/pages.md — and is internal navigation, not an outbound
+// resource, so it is excluded like a #anchor. A scheme (http(s):, mailto:, …)
+// marks an absolute URL; a schemeless `www.host/…` is an external site the author
+// wrote without http(s):// and stays counted.
+function isRelative(url: string): boolean {
+  if (/^[a-z][a-z0-9+.-]*:/i.test(url)) {
+    return false;
+  }
+  return !url.toLowerCase().startsWith('www.');
 }
 
-function classifySourceTree(tree: Root): Classification {
-  return countResourceLinks(tree) >= REGISTRY_MIN_LINKS
+// A README often links back into its own repo — a doc path, a screenshot, a deep
+// link under /blob/ or /tree/ — and those are not outbound resource links. Deep
+// paths collapse to the same owner/repo because parseGitHubUrl keeps only the
+// first two pathname segments; matching is case-insensitive as GitHub is.
+function isSelfReference(url: string, self: RepoIdentifier): boolean {
+  const p = parseGitHubUrl(url);
+  return (
+    !!p &&
+    p.owner.toLowerCase() === self.owner.toLowerCase() &&
+    p.repo.toLowerCase() === self.repo.toLowerCase()
+  );
+}
+
+/**
+ * The kind of a README the caller already holds, judged from the document alone
+ * — no network. This is how the enhancer classifies its own SOURCE: it is always
+ * Markdown, so it takes the mdast counter against `REGISTRY_MIN_LINKS` rather
+ * than the five-layer path a target takes (`createRepoLookup().classify`),
+ * whose anchors need a repo to probe. A registry decided this way always carries
+ * the 'content' signal; a repository carries none. `selfRepo` is the repo the
+ * README belongs to, so links back into its own files — relative paths and
+ * github.com/<self>/… deep links — are discounted as internal, not outbound.
+ */
+export function classifySource(
+  selfRepo: RepoIdentifier,
+  markdown: string,
+): Classification {
+  const tree = unified().use(remarkParse).use(remarkGfm).parse(markdown);
+  return classifySourceTree(tree, selfRepo);
+}
+
+function classifySourceTree(
+  tree: Root,
+  selfRepo?: RepoIdentifier,
+): Classification {
+  return countResourceLinks(tree, selfRepo) >= REGISTRY_MIN_LINKS
     ? { kind: 'registry', registrySignal: 'content' }
     : { kind: 'repository' };
 }
