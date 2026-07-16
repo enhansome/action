@@ -4,7 +4,10 @@ import { beforeEach, describe, expect, it, vi } from 'vitest';
 
 import type { JsonItem, JsonNode } from './markdown.js';
 
-import { REGISTRY_CONTENT_BACKSTOP_LINKS } from './classify.js';
+import {
+  isAwesomeListName,
+  REGISTRY_CONTENT_BACKSTOP_LINKS,
+} from './classify.js';
 import * as github from './github.js';
 import { RepoInfoDetails } from './github.js';
 import { silentLog } from './logger.js';
@@ -29,12 +32,14 @@ function isItem(node: JsonNode): node is JsonItem {
 }
 
 // classifyKind counts anchors in the target's rendered HTML, so target-README
-// mocks return HTML with `n` outbound anchors (n >= REGISTRY_MIN_LINKS => a
-// registry target; n = 0 => a project target).
+// mocks return HTML with `n` outbound anchors pointing at DISTINCT github repos
+// (distinctTargets == n) — the shape of a real awesome-list, which a directory
+// of resources actually is. n >= REGISTRY_MIN_LINKS => a registry target; n = 0
+// => a project target.
 function targetReadmeHtml(n: number): string {
   const links = Array.from(
     { length: n },
-    (_, i) => `<a href="https://example.com/r${i}">r${i}</a>`,
+    (_, i) => `<a href="https://github.com/owner-${i}/repo-${i}">r${i}</a>`,
   ).join('');
   return `<article><h1>repo</h1>${links}</article>`;
 }
@@ -674,6 +679,8 @@ Version: __VERSION__ | Last Updated: 2025-01-01
         topics: [],
         description: null,
       });
+      // Empty root: outward candidates pass the compile-manifest gate unvetoed.
+      vi.mocked(github.getRootEntryNames).mockResolvedValue([]);
     });
 
     it('stamps metadata.kind from the source and per-item kind from each target README', async () => {
@@ -855,30 +862,39 @@ Version: __VERSION__ | Last Updated: 2025-01-01
       vi.mocked(github.parseGitHubUrl).mockImplementation(
         actual.parseGitHubUrl,
       );
-      vi.mocked(github.getRepoInfo).mockResolvedValue({
-        archived: false,
-        language: 'C',
-        open_issues_count: 0,
-        owner: 'test-user',
-        pushed_at: '2025-01-01T00:00:00Z',
-        repo: 'test-repo',
-        stargazers_count: 100,
-        topics: [],
-        description: null,
-      });
-      // Mock the per-target oracle: a dense registry README (>=
-      // REGISTRY_CONTENT_BACKSTOP_LINKS anchors) for targets whose name reads
-      // as an awesome-list, a project README otherwise. awesome-* names are
-      // caught by the name layer before any README fetch, so only the
-      // convention-free explicitRegistries actually reach this README mock.
+      // Echoes the target it was asked about: the classifier reads the repo's own
+      // name, so a mock that answers `test-repo` for everything would decide every
+      // target identically and hide exactly what these tests are for.
+      vi.mocked(github.getRepoInfo).mockImplementation(
+        (_octokit, owner: string, repo: string) =>
+          Promise.resolve({
+            archived: false,
+            description: null,
+            language: 'C',
+            open_issues_count: 0,
+            owner,
+            pushed_at: '2025-01-01T00:00:00Z',
+            repo,
+            stargazers_count: 100,
+            topics: [],
+          }),
+      );
+      // Mock the per-target oracle: every non-member target is fetched now, so
+      // this decides them all. A dense, outward-facing README (>=
+      // REGISTRY_CONTENT_BACKSTOP_LINKS anchors, all distinct github repos) for
+      // the name candidates — which both confirms their name anchor (clearing the
+      // breadth veto) and carries the convention-free explicitRegistries over the
+      // breadth-guarded content backstop — a link-less project README otherwise.
       vi.mocked(github.getReadme).mockImplementation(
         (_octokit, _owner: string, repo: string) =>
           Promise.resolve(
-            /awesome|awsome/i.test(repo) || explicitRegistries.has(repo)
+            isAwesomeListName(repo) || explicitRegistries.has(repo)
               ? targetReadmeHtml(REGISTRY_CONTENT_BACKSTOP_LINKS)
               : targetReadmeHtml(0),
           ),
       );
+      // Empty root: outward candidates pass the compile-manifest gate unvetoed.
+      vi.mocked(github.getRootEntryNames).mockResolvedValue([]);
     });
 
     function enhanceAcv() {
@@ -895,7 +911,17 @@ Version: __VERSION__ | Last Updated: 2025-01-01
       expect(jsonData.metadata.kind).toBe('registry');
     });
 
-    it('types every "Awesome Lists" entry as a registry', async () => {
+    // Every entry of this section is a genuine awesome-list, and the two layers
+    // that can say so are the name anchor (an `awesome-` PREFIX — the convention,
+    // not the word) and the content backstop (a dense outward-facing README, which
+    // is what carries the convention-free explicitRegistries).
+    //
+    // What is left over is the standing recall cost of a prefix-scoped name
+    // anchor: `gans-awesome-applications` and `Awsome_Delineation` carry the stem
+    // mid-name, so nothing proposes them as candidates and they land as
+    // repositories. Pinned rather than hidden, so retuning the pattern has to move
+    // this line.
+    it('types an "Awesome Lists" entry as a registry iff a layer can see it', async () => {
       const { jsonData } = await enhanceAcv();
       const awesomeLists = jsonData.items.find(
         s => s.title === 'Awesome Lists',
@@ -904,11 +930,19 @@ Version: __VERSION__ | Last Updated: 2025-01-01
         awesomeLists,
         '"Awesome Lists" section should exist',
       ).toBeDefined();
-      const items = awesomeLists?.items ?? [];
+      const items = awesomeLists?.items.filter(isItem) ?? [];
       expect(items.length).toBeGreaterThan(0);
-      for (const item of items.filter(isItem)) {
-        expect(item.kind, `"${item.title}" should be a registry`).toBe(
-          'registry',
+
+      function seenByALayer(item: JsonItem): boolean {
+        const repo = item.repo_info?.repo ?? '';
+        return isAwesomeListName(repo) || explicitRegistries.has(repo);
+      }
+      expect(items.some(seenByALayer)).toBe(true);
+      expect(items.some(i => !seenByALayer(i))).toBe(true);
+
+      for (const item of items) {
+        expect(item.kind, `"${item.title}" (${item.repo_info?.repo})`).toBe(
+          seenByALayer(item) ? 'registry' : 'repository',
         );
       }
     });

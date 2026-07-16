@@ -131,6 +131,25 @@ export async function getReadme(
   return response.data as unknown as string;
 }
 
+/** Root file/directory names — the compile-manifest gate reads them to tell a
+ * directory of resources from a repo that IS the deliverable. A `path: ''`
+ * listing is always an array; the single-entry branch defends against a file
+ * response. */
+export async function getRootEntryNames(
+  octokit: GithubClient,
+  owner: string,
+  repo: string,
+): Promise<string[]> {
+  octokit.log.debug(`Listing root directory for ${owner}/${repo}`);
+  const { data } = await octokit.rest.repos.getContent({
+    owner,
+    path: '',
+    repo,
+  });
+  const entries = Array.isArray(data) ? data : [data];
+  return entries.map(entry => entry.name);
+}
+
 /** Source revision for the JSON output, so an enhanced list is traceable to its origin commit. */
 export async function getLatestCommitSha(
   octokit: GithubClient,
@@ -193,6 +212,30 @@ export function parseGitHubUrl(url: string): null | RepoIdentifier {
     // the routine case for most links in a README — not a diagnostic.
     return null;
   }
+}
+
+/** Whether a URL points into `self`'s own tree — shared by the mdast and
+ * rendered-HTML link counters so both treat self-links as internal. Deep
+ * `/blob/`/`/tree/` paths collapse to owner/repo (parseGitHubUrl keeps two
+ * segments); GitHub is case-insensitive, so the match is too. */
+export function isSelfReference(url: string, self: RepoIdentifier): boolean {
+  const parsed = parseGitHubUrl(url);
+  return (
+    !!parsed &&
+    parsed.owner.toLowerCase() === self.owner.toLowerCase() &&
+    parsed.repo.toLowerCase() === self.repo.toLowerCase()
+  );
+}
+
+/** A relative link (CONTRIBUTING.md, ./docs/x) resolves within the source repo's
+ * own tree — internal, excluded like a #anchor. A scheme marks an absolute URL; a
+ * schemeless `www.host/…` stays counted. Shared with `isSelfReference` as the
+ * "is this link internal?" predicate. */
+export function isRelative(url: string): boolean {
+  if (/^[a-z][a-z0-9+.-]*:/i.test(url)) {
+    return false;
+  }
+  return !url.toLowerCase().startsWith('www.');
 }
 
 export function formatRequestError(error: unknown): string {

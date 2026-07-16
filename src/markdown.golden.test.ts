@@ -4,6 +4,7 @@ import { describe, expect, it, vi } from 'vitest';
 
 import type { RepoInfoDetails } from './github.js';
 
+import { isAwesomeListName } from './classify.js';
 import { silentLog } from './logger.js';
 import { enhance } from './orchestrator.js';
 
@@ -100,19 +101,19 @@ function deterministicGetRepoInfo(
 }
 
 // Deterministic per-item README so the golden suite stays offline AND exercises
-// the per-item `registry` classification path end-to-end. classifyKind reads a
-// target's rendered HTML only at the content backstop — the precision anchors
-// (membership/topic/name/description) fire first, without a fetch — so an
-// awesome-list-named target classifies as a registry via the NAME layer before
-// its README is ever fetched; everything else gets a plain project README and
-// falls through to `repository`. Real awesome-lists overwhelmingly classify as
-// registries, so this matches production behavior for the bulk of those targets.
+// the per-item `registry` classification path end-to-end. classifyKind fetches
+// every non-member target's rendered HTML to confirm a soft anchor (an
+// outward-facing README) or fall to the content backstop. A name candidate gets
+// an outward-facing README here and classifies as a registry via the NAME layer;
+// everything else gets a link-less project README and falls through to
+// `repository`. Real awesome-lists overwhelmingly classify as registries, so this
+// matches production behavior for the bulk of those targets.
 function deterministicGetReadme(
   _octokit: unknown,
   _owner: string,
   repo: string,
 ): Promise<string> {
-  if (/awesome/i.test(repo)) {
+  if (isAwesomeListName(repo)) {
     const links = Array.from(
       { length: 60 },
       (_, i) => `<a href="https://github.com/example/item-${i}">item-${i}</a>`,

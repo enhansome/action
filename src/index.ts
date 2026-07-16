@@ -1,13 +1,24 @@
 export {
   classifyKind,
   classifyRepo,
-  countOutboundAnchors,
+  COMPILE_PRODUCT_MANIFESTS,
+  countAnchors,
   createRepoLookup,
+  decideClassification,
+  DEFAULT_CLASSIFIER_CONFIG,
+  isAwesomeListName,
+  isCompileProductRepo,
   parseAwesomeMembers,
+  REGISTRY_CONFIRM_MIN_OUTBOUND,
+  REGISTRY_CONTENT_BACKSTOP_DISTINCT,
   REGISTRY_CONTENT_BACKSTOP_LINKS,
+  REGISTRY_NAME_BREADTH_MIN,
 } from './classify.js';
 export type {
+  AnchorCounts,
   Classification,
+  ClassifierConfig,
+  GateScope,
   Kind,
   RegistrySignal,
   RepoLookup,
@@ -17,6 +28,7 @@ export type {
 export {
   formatRequestError,
   getRepoInfo,
+  getRootEntryNames,
   makeOctokit,
   parseGitHubUrl,
   parseOwnerRepo,

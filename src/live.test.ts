@@ -219,3 +219,96 @@ describeHeavy(
     );
   },
 );
+
+// java-design-patterns is a topic candidate whose README clears the 0.5 outward
+// bar (418/787 ≈ 0.53) and whose root carries a pom.xml. The compile-manifest
+// gate fires at the outward-candidate admission, so the manifest vetoes it to
+// repository instead of confirming the topic anchor. (At the prior 0.6 bar the
+// same README was sub-ratio and the gate reached it via the sub-ratio admission;
+// lowering to 0.5 changed the path, not the verdict.)
+describeLive(
+  'Live classifier: iluwatar/java-design-patterns vetoes to repository',
+  () => {
+    let repos: RepoLookup;
+
+    beforeAll(() => {
+      repos = createRepoLookup({ token });
+    });
+
+    const TIMEOUT = 30_000;
+
+    it(
+      'ships iluwatar/java-design-patterns as repository (compile-manifest veto)',
+      async () => {
+        const { kind } = await repos.classify({
+          owner: 'iluwatar',
+          repo: 'java-design-patterns',
+        });
+        expect(kind).toBe('repository');
+      },
+      TIMEOUT,
+    );
+  },
+);
+
+// Real-data cover for the residual false-positives the final config still ships
+// as `registry` — pinned so a future change is honest about which lever moved
+// which case. Each escapes by a route the levers cannot reach: a confirmed topic
+// anchor on a manifest-less root, and terminal membership. (java-design-patterns,
+// the prior content-backstop FP, is now vetoed — see the block above.)
+describeLive(
+  'Live classifier: residual FPs that still ship as registry',
+  () => {
+    let repos: RepoLookup;
+
+    beforeAll(() => {
+      repos = createRepoLookup({ token });
+    });
+
+    const TIMEOUT = 30_000;
+
+    // Outward-facing content repos the veto confirms rather than refutes. None
+    // carries a compile manifest at root (prompts.chat's package.json is excluded
+    // from the gate), so the gate has nothing to veto. awesome-README-templates
+    // faces outward only at the 0.5 bar — it is the single FP the ratio relaxation
+    // admits.
+    it.each([
+      ['f', 'prompts.chat'],
+      ['Chalarangelo', '30-seconds-of-code'],
+      ['elangosundar', 'awesome-README-templates'],
+    ])(
+      'ships the outward-facing content repo %s/%s as registry (topic-confirmed)',
+      async (owner, repo) => {
+        const { kind } = await repos.classify({ owner, repo });
+        expect(kind).toBe('registry');
+      },
+      TIMEOUT,
+    );
+
+    // htaccess is a sindresorhus/awesome member, so membership is terminal and no
+    // README logic runs — the one route the FP-reduction levers cannot reach.
+    it(
+      'ships phanan/htaccess as registry via terminal membership',
+      async () => {
+        const { kind } = await repos.classify({
+          owner: 'phanan',
+          repo: 'htaccess',
+        });
+        expect(kind).toBe('registry');
+      },
+      TIMEOUT,
+    );
+
+    // Recall: a genuine awesome-list must still classify as registry.
+    it(
+      'keeps nashory/gans-awesome-applications as registry (recall)',
+      async () => {
+        const { kind } = await repos.classify(
+          'nashory/gans-awesome-applications',
+        );
+        expect(kind).toBe('registry');
+      },
+      TIMEOUT,
+    );
+  },
+);

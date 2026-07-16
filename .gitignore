@@ -3,7 +3,4 @@ dist/
 coverage/
 .act/
 
-# Kind-classification tuning artifacts (generated, large): the builder cache
-# and the materialized labeled dataset. The scripts themselves are tracked.
-tools/kind-tuning/cache/
-tools/kind-tuning/dataset.json
+tuning/

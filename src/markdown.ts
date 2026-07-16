@@ -14,6 +14,8 @@ import {
 } from './classify.js';
 import {
   formatRequestError,
+  isRelative,
+  isSelfReference,
   parseGitHubUrl,
   parseOwnerRepo,
   RepoIdentifier,
@@ -436,10 +438,11 @@ function findOwnGitHubLink(itemNode: ListItem): string | undefined {
  * parsed Markdown. Targets (see `classifyKind`) are counted from their rendered
  * HTML instead, because a target README may be reStructuredText/AsciiDoc/etc.
  * and Markdown-parsing those loses their links. The two counters measure the
- * same thing — outbound resource links — but feed different layers at different
- * thresholds: this one against `REGISTRY_MIN_LINKS` (50) on the source;
- * `countOutboundAnchors` against `REGISTRY_CONTENT_BACKSTOP_LINKS` (700) as the
- * target's last-resort backstop behind four precision anchors.
+ * same thing — outbound resource links, self-tree links excluded — but feed
+ * different layers: this one against `REGISTRY_MIN_LINKS` on the source;
+ * `countAnchors` against `REGISTRY_CONTENT_BACKSTOP_LINKS` as the target's
+ * last-resort backstop, and as a share of its total anchors to confirm a soft
+ * anchor from an outward-facing README.
  *
  * Structure- and target-agnostic: a registry is a directory of resources, not a
  * directory of GitHub repos in a bulleted list, so every outbound link counts
@@ -468,31 +471,6 @@ export function countResourceLinks(
     count++;
   });
   return count;
-}
-
-// A relative link resolves within the source repo's own tree — CONTRIBUTING.md,
-// ./docs/x, content/pages.md — and is internal navigation, not an outbound
-// resource, so it is excluded like a #anchor. A scheme (http(s):, mailto:, …)
-// marks an absolute URL; a schemeless `www.host/…` is an external site the author
-// wrote without http(s):// and stays counted.
-function isRelative(url: string): boolean {
-  if (/^[a-z][a-z0-9+.-]*:/i.test(url)) {
-    return false;
-  }
-  return !url.toLowerCase().startsWith('www.');
-}
-
-// A README often links back into its own repo — a doc path, a screenshot, a deep
-// link under /blob/ or /tree/ — and those are not outbound resource links. Deep
-// paths collapse to the same owner/repo because parseGitHubUrl keeps only the
-// first two pathname segments; matching is case-insensitive as GitHub is.
-function isSelfReference(url: string, self: RepoIdentifier): boolean {
-  const p = parseGitHubUrl(url);
-  return (
-    !!p &&
-    p.owner.toLowerCase() === self.owner.toLowerCase() &&
-    p.repo.toLowerCase() === self.repo.toLowerCase()
-  );
 }
 
 /**

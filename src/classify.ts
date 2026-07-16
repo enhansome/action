@@ -2,8 +2,12 @@ import {
   getRepoInfo as fetchRepoInfo,
   formatRequestError,
   getReadme,
+  getRootEntryNames,
   GithubClient,
+  isRelative,
+  isSelfReference,
   makeOctokit,
+  parseGitHubUrl,
   parseOwnerRepo,
   RepoIdentifier,
   RepoInfoDetails,
@@ -15,12 +19,11 @@ import { consoleLog, Logger } from './logger.js';
 // project. Every genuine GitHub node carries exactly one.
 export type Kind = 'registry' | 'repository';
 
-// Which signal classified a node as a `registry`. Present only on registries
-// (every 'repository' is the signal-less fallthrough, so it carries none). The
-// layers differ sharply in reliability (membership/name/topic ~0% error;
-// description/content ~30-40%), so emitting the deciding layer lets downstream
-// treat the soft-derived registries as lower confidence than the anchor-derived
-// ones — turning the binary kind into a graded signal at no extra fetch cost.
+// Which signal classified a node as a `registry`. Present only on registries; a
+// 'repository' is the signal-less fallthrough. The layers differ in reliability
+// (membership terminal; topic/name/description confirmed by the README; content
+// a last-resort backstop), so the deciding layer grades the binary kind for
+// downstream confidence.
 export type RegistrySignal =
   'content' | 'description' | 'membership' | 'name' | 'topic';
 
@@ -32,21 +35,87 @@ export interface Classification {
 /** Any way of naming a repo: `{ owner, repo }`, `owner/repo`, or a github.com URL. */
 export type RepoRef = RepoIdentifier | string;
 
-// TARGET content backstop. Popular software has link-heavy READMEs
-// (nodejs/node ~662 anchors, webpack ~403), so a low threshold flips real
-// projects. The precision anchors (membership/topic/name/description) catch the
-// bulk of registries at ~0 false-positives; content is only the LAST-resort
-// backstop for dense convention-free lists no anchor signals (e.g. a CV list
-// titled "3D-Machine-Learning" with 800 anchors). 700 sits above virtually all
-// software (clean-project p90 ~106) while still catching those dense
-// registries; marked registry_signal='content' so downstream treats it as soft.
-export const REGISTRY_CONTENT_BACKSTOP_LINKS = 700;
+// Last-resort backstop for dense, convention-free lists no anchor signals,
+// counted in OUTBOUND anchors so a repo can't backstop itself into `registry`.
+// 200 (not a stricter bar) is safe only because the breadth guard below applies.
+export const REGISTRY_CONTENT_BACKSTOP_LINKS = 200;
 
-// The awesome-list naming convention, as a word-boundary token so it does NOT
-// fire on `awesome_print` (underscore is a word char, so no boundary lies
-// between `awesome` and `_print`). The `\bawsome\b` alternation covers the
-// common misspelling (e.g. HuaizhengZhang/Awsome-Deep-Learning-for-Video-Analysis).
-const AWESOME_NAME_PATTERN = /\bawesome\b|\bawsome\b/i;
+// Backstop breadth guard: distinct external targets the outbound hrefs must
+// reach. Excludes the prompt-gallery shape (hundreds of hrefs on one CDN + one
+// social host, distinctTargets ~10) without losing genuine outward indices.
+export const REGISTRY_CONTENT_BACKSTOP_DISTINCT = 15;
+
+// Floor on outbound count: without it a lone CI badge is a 100%-outbound README
+// that would confirm any anchor.
+export const REGISTRY_CONFIRM_MIN_OUTBOUND = 5;
+
+// Name-anchor breadth veto: an `awesome-*` repo whose outbound links collapse to
+// few distinct targets is the content carrying the prefix, not a directory. Name
+// only — topic/description are stronger signals and need no veto. 20 separates
+// the name-only content FPs (well under 20) from genuine name-caught registries.
+export const REGISTRY_NAME_BREADTH_MIN = 20;
+
+// Root build manifests that mark a repo as the deliverable itself (runnable/
+// buildable source), so the compile-manifest gate vetoes its outward-README
+// confirmation — catching products the majority rule can't (a Java patterns repo
+// with a root pom.xml). package.json is deliberately excluded: net-negative
+// (9 FPs, 22 genuine registries carry it as tooling config).
+export const COMPILE_PRODUCT_MANIFESTS: ReadonlySet<string> = new Set([
+  'build.gradle',
+  'build.gradle.kts',
+  'CMakeLists.txt',
+  'go.mod',
+  'pom.xml',
+  'pyproject.toml',
+  'requirements.txt',
+  'setup.py',
+]);
+
+// Knobs surfaced so the decision can run offline (candidate + anchors + a lazy
+// root listing, no fetch). Defaults ARE the constants above — single source of
+// truth — so the default verdict is unchanged.
+export type GateScope =
+  'also-backstop' | 'any-admission' | 'any-candidate' | 'post-facesOutward';
+
+export interface ClassifierConfig {
+  compileManifests: ReadonlySet<string>;
+  confirmMinOutbound: number;
+  contentBackstopDistinct: number;
+  contentBackstopLinks: number;
+  // Where the compile-manifest product-veto runs (see decideClassification).
+  gateScope: GateScope;
+  nameBreadthMin: number;
+  outwardRatio: number;
+  // Topic-anchor breadth floor (mirrors nameBreadthMin). Default 0 = disabled; a
+  // topic is a stronger signal than a name prefix and needs no veto by default.
+  topicBreadthMin: number;
+}
+
+export const DEFAULT_CLASSIFIER_CONFIG: ClassifierConfig = {
+  compileManifests: COMPILE_PRODUCT_MANIFESTS,
+  confirmMinOutbound: REGISTRY_CONFIRM_MIN_OUTBOUND,
+  contentBackstopDistinct: REGISTRY_CONTENT_BACKSTOP_DISTINCT,
+  contentBackstopLinks: REGISTRY_CONTENT_BACKSTOP_LINKS,
+  // Product-veto at every non-membership admission: gating only outward
+  // candidates left sub-ratio/backstop products admitted as registries.
+  gateScope: 'any-admission',
+  nameBreadthMin: REGISTRY_NAME_BREADTH_MIN,
+  // ≥50%-outbound README faces outward. 0.5 (not 0.6) is the recall-favored knee:
+  // recovers registries in the 50–60% band for one low-star FP.
+  outwardRatio: 0.5,
+  topicBreadthMin: 0,
+};
+
+// The `awesome-` prefix (or the `awsome-` misspelling), not "awesome" as any word
+// token — skips products that merely contain the word (Font-Awesome,
+// vue-awesome-swiper, awesomeWM, awesome_print). Narrow recall cost: a genuine
+// list with the stem mid-name lands only via topic/description/density.
+const AWESOME_NAME_PATTERN = /^(?:awesome|awsome)-/i;
+
+/** The naming convention the name anchor reads, shared so tests exercise the real one. */
+export function isAwesomeListName(repo: string): boolean {
+  return AWESOME_NAME_PATTERN.test(repo);
+}
 
 // Tight, list-proximate phrasing. Bare `collection of` / `curated` / `awesome`
 // are deliberately excluded: they flip popular real projects (gitignore,
@@ -72,23 +141,59 @@ const NON_REPO_OWNERS = new Set([
   'topics',
 ]);
 
+export interface AnchorCounts {
+  /** Distinct external targets among OUTBOUND hrefs (github → owner/repo, others
+   * → hostname). The breadth signal — high `outbound` alone can't confirm a
+   * registry, since a content repo's links can collapse to a few hosts. */
+  distinctTargets: number;
+  /** Anchors pointing anywhere but back into the repo's own tree. */
+  outbound: number;
+  /** Every anchor that leads off the page, self-tree links included. */
+  total: number;
+}
+
 /**
- * Counts outbound links in a target's RENDERED HTML README, so a non-Markdown
- * README (reStructuredText, AsciiDoc) — whose links Markdown parsing cannot see
- * — is judged by the links a reader actually sees. Same-page `#` anchors are
- * excluded so a Table of Contents does not inflate the count.
- *
- * GitHub's rendered HTML double-quotes attributes, so this targeted scan is
- * exact without an HTML-parser dependency.
+ * Links in a target's RENDERED HTML README (the self-aware counterpart of
+ * `countResourceLinks`); the two must agree on what is internal, or a repo
+ * linking its own files inflates its outbound ratio and defeats `facesOutward`.
+ * Same-page `#` anchors and self-tree links (absolute github.com/<self>/… or
+ * relative `docs/x`) count in `total` but not `outbound`. GitHub double-quotes
+ * attributes, so the scan is exact without an HTML parser.
  */
-export function countOutboundAnchors(html: string): number {
-  let count = 0;
+export function countAnchors(html: string, self: RepoIdentifier): AnchorCounts {
+  let outbound = 0,
+    total = 0;
+  const ghTargets = new Set<string>();
+  const extHosts = new Set<string>();
   for (const match of html.matchAll(/href\s*=\s*"([^"]*)"/g)) {
-    if (match[1] && !match[1].startsWith('#')) {
-      count++;
+    const href = match[1];
+    if (!href || href.startsWith('#')) {
+      continue;
+    }
+    total++;
+    if (isRelative(href) || isSelfReference(href, self)) {
+      continue;
+    }
+    outbound++;
+    const gh = parseGitHubUrl(href);
+    if (gh) {
+      ghTargets.add(`${gh.owner.toLowerCase()}/${gh.repo.toLowerCase()}`);
+      continue;
+    }
+    try {
+      const url = new URL(href);
+      if (url.hostname !== 'github.com') {
+        extHosts.add(url.hostname.toLowerCase());
+      }
+    } catch {
+      // A schemeless or malformed href cannot name an external host; skip.
     }
   }
-  return count;
+  return {
+    distinctTargets: ghTargets.size + extHosts.size,
+    outbound,
+    total,
+  };
 }
 
 /**
@@ -140,17 +245,20 @@ export async function fetchAwesomeMembers(
 }
 
 /**
- * The layered decision itself, with every input explicit. Most callers want
- * `createRepoLookup`, which resolves and memoizes `repoInfo` and `members` for
- * them; this is the shared core it runs, exposed for callers that already hold
- * those inputs (a batch job, a replay over cached data).
+ * The layered decision, inputs explicit. Most callers want `createRepoLookup`,
+ * which resolves and memoizes `repoInfo`/`members`; this is the shared core.
  *
- * Precision-first: the anchors (membership/topic/name/description) are ~0%
- * false-positive and need no README fetch, so a target one of them catches never
- * pays for one. Only when every anchor misses do we fetch the rendered HTML and
- * fall back to the high content threshold. A registry carries the deciding layer
- * as `registrySignal` so downstream can grade confidence; a repository is the
- * signal-less fallthrough and carries none. A README fetch failure propagates.
+ * Membership is terminal; the soft anchors (topic/name/description) only make a
+ * repo a CANDIDATE — it can read as "awesome-list" yet be the content — so every
+ * non-member fetches its README once. An outward-facing README confirms the
+ * candidate; a low-breadth one is vetoed, and a root compile manifest gate-vetoes
+ * it (that fetch is paid only once the prior checks pass). Anchor-less targets
+ * fall to the breadth-guarded backstop.
+ *
+ * A README can confirm an anchor but never refute one: an unreadable README
+ * (none/404/rate-limited) is a fetch fact, not a repo fact, so a candidate keeps
+ * its verdict and only logs. An anchor-less target has no verdict to keep, so the
+ * backstop's failure propagates.
  */
 export async function classifyKind(
   octokit: GithubClient,
@@ -159,31 +267,235 @@ export async function classifyKind(
   repoInfo: null | RepoInfoDetails,
   members: Set<string>,
   backstopMin: number,
+  config?: Partial<ClassifierConfig>,
 ): Promise<Classification> {
   if (members.has(`${owner.toLowerCase()}/${repo.toLowerCase()}`)) {
     return { kind: 'registry', registrySignal: 'membership' };
   }
-  if (repoInfo?.topics.includes('awesome-list')) {
-    return { kind: 'registry', registrySignal: 'topic' };
+
+  const candidate = softRegistrySignal(repo, repoInfo);
+
+  let anchors: AnchorCounts;
+  try {
+    const html = await getReadme(octokit, owner, repo, 'html');
+    anchors = countAnchors(html, { owner, repo });
+  } catch (error) {
+    if (!candidate) {
+      throw error;
+    }
+    octokit.log.warn(
+      `README unreadable for ${owner}/${repo}; keeping its unconfirmed ${candidate} anchor: ${formatRequestError(error)}`,
+    );
+    return { kind: 'registry', registrySignal: candidate };
   }
-  if (AWESOME_NAME_PATTERN.test(repo)) {
-    return { kind: 'registry', registrySignal: 'name' };
+
+  // Lazy: paid only when decideClassification runs the gate. A failure reads as
+  // "no manifest" (warn + empty) so the outward verdict stays intact.
+  async function lazyRootNames(): Promise<string[]> {
+    try {
+      return await getRootEntryNames(octokit, owner, repo);
+    } catch (error: unknown) {
+      octokit.log.warn(
+        `root contents unreadable for ${owner}/${repo}; skipping the compile-manifest gate: ${formatRequestError(error)}`,
+      );
+      return [];
+    }
+  }
+
+  return decideClassification(
+    repo,
+    repoInfo,
+    members,
+    anchors,
+    lazyRootNames,
+    resolveConfig(backstopMin, config),
+  );
+}
+
+/**
+ * Merges a partial override onto the defaults. The positional `backstopMin`
+ * (the legacy single knob threaded from `RepoLookupOptions.contentBackstopMin`)
+ * stays the source for `contentBackstopLinks` unless the override sets it
+ * explicitly, so every existing 6-arg `classifyKind` call behaves identically.
+ */
+function resolveConfig(
+  backstopMin: number,
+  override?: Partial<ClassifierConfig>,
+): ClassifierConfig {
+  return {
+    ...DEFAULT_CLASSIFIER_CONFIG,
+    ...override,
+    contentBackstopLinks: override?.contentBackstopLinks ?? backstopMin,
+  };
+}
+
+/**
+ * The structural test a soft anchor must pass: the README points at other
+ * people's things, not its own tree. Outbound >= `outwardRatio` of total ⇒ a
+ * directory of resources; a README below that bar is about itself (its own
+ * code/patterns/docs) and the anchor is vetoed however awesome-list-shaped it
+ * reads. A floor stops a single CI badge (a 100%-outbound README) from
+ * confirming an anchor.
+ */
+function facesOutward(
+  { outbound, total }: AnchorCounts,
+  config: ClassifierConfig,
+): boolean {
+  return (
+    outbound >= config.confirmMinOutbound &&
+    outbound >= config.outwardRatio * total
+  );
+}
+
+/**
+ * The non-terminal registry anchors, in priority order. Unlike membership these
+ * misfire on products — a name/topic/description can read as "awesome-list" while
+ * the repo is itself the content — so the winner is returned as a candidate for
+ * `classifyKind` to confirm from the README rather than acted on here. `null`
+ * repoInfo (a dead link) simply skips the topic/description anchors.
+ */
+function softRegistrySignal(
+  repo: string,
+  repoInfo: null | RepoInfoDetails,
+): RegistrySignal | undefined {
+  if (repoInfo?.topics.includes('awesome-list')) {
+    return 'topic';
+  }
+  if (isAwesomeListName(repo)) {
+    return 'name';
   }
   const description = repoInfo?.description ?? '';
   if (description && REGISTRY_DESCRIPTION_PATTERN.test(description)) {
-    return { kind: 'registry', registrySignal: 'description' };
+    return 'description';
   }
-  const html = await getReadme(octokit, owner, repo, 'html');
-  if (countOutboundAnchors(html) >= backstopMin) {
+  return undefined;
+}
+
+/** Root carries a compile manifest (the gate signal). A `getContent` failure
+ * can't establish product-ness, so it warns and returns false — leaving the
+ * outward verdict intact. */
+export async function isCompileProductRepo(
+  octokit: GithubClient,
+  owner: string,
+  repo: string,
+): Promise<boolean> {
+  try {
+    const names = await getRootEntryNames(octokit, owner, repo);
+    return names.some(name => COMPILE_PRODUCT_MANIFESTS.has(name));
+  } catch (error) {
+    octokit.log.warn(
+      `root contents unreadable for ${owner}/${repo}; skipping the compile-manifest gate: ${formatRequestError(error)}`,
+    );
+    return false;
+  }
+}
+
+/**
+ * The pure decision core: a verdict from a candidate, its anchors, and (only if
+ * a gate fires) a lazy root listing. No fetch or logger here — the caller supplies
+ * `getRootNames` and encodes fetch failure at that boundary, keeping this pure.
+ * `classifyKind` is the production wrapper.
+ *
+ * Membership is keyed on `repoInfo.owner` (classifyKind pre-fetches it, so this
+ * only matters for direct callers). The compile gate's placement is `gateScope`:
+ * - `any-admission` (default) — gate every admission point (outward + sub-ratio +
+ *   backstop); a product-veto belongs at every non-membership admission.
+ * - `post-facesOutward` — only outward candidates; leaves sub-ratio/backstop
+ *   products ungated.
+ * - `any-candidate` — also gate a sub-ratio candidate (no manifest ⇒ fall through
+ *   to the backstop, no outright confirmation).
+ * - `also-backstop` — also gate inside the content-backstop branch.
+ */
+export async function decideClassification(
+  repo: string,
+  repoInfo: null | RepoInfoDetails,
+  members: Set<string>,
+  anchors: AnchorCounts,
+  getRootNames: () => Promise<string[]>,
+  config: ClassifierConfig = DEFAULT_CLASSIFIER_CONFIG,
+): Promise<Classification> {
+  if (
+    repoInfo &&
+    members.has(`${repoInfo.owner.toLowerCase()}/${repo.toLowerCase()}`)
+  ) {
+    return { kind: 'registry', registrySignal: 'membership' };
+  }
+
+  const candidate = softRegistrySignal(repo, repoInfo);
+  const outward = facesOutward(anchors, config);
+
+  if (candidate && outward) {
+    if (
+      candidate === 'name' &&
+      anchors.distinctTargets < config.nameBreadthMin
+    ) {
+      return { kind: 'repository' };
+    }
+    // The topic analog of the name-breadth veto, inert at the default 0 (see
+    // ClassifierConfig.topicBreadthMin). A topic candidate whose outward links
+    // collapse to a narrow target set is the content, not a directory of it.
+    if (
+      candidate === 'topic' &&
+      anchors.distinctTargets < config.topicBreadthMin
+    ) {
+      return { kind: 'repository' };
+    }
+    if (await hasCompileManifest(getRootNames, config)) {
+      return { kind: 'repository' };
+    }
+    return { kind: 'registry', registrySignal: candidate };
+  }
+
+  // Sub-ratio candidate gate: a candidate whose README is below the outward
+  // majority bar. Reached by the default `any-admission` and by `any-candidate`.
+  if (
+    candidate &&
+    !outward &&
+    (config.gateScope === 'any-candidate' ||
+      config.gateScope === 'any-admission')
+  ) {
+    if (await hasCompileManifest(getRootNames, config)) {
+      return { kind: 'repository' };
+    }
+    // No manifest: fall through to the content backstop rather than confirming
+    // a sub-ratio candidate outright.
+  }
+
+  if (
+    anchors.outbound >= config.contentBackstopLinks &&
+    anchors.distinctTargets >= config.contentBackstopDistinct
+  ) {
+    if (
+      (config.gateScope === 'also-backstop' ||
+        config.gateScope === 'any-admission') &&
+      (await hasCompileManifest(getRootNames, config))
+    ) {
+      return { kind: 'repository' };
+    }
     return { kind: 'registry', registrySignal: 'content' };
   }
   return { kind: 'repository' };
 }
 
+async function hasCompileManifest(
+  getRootNames: () => Promise<string[]>,
+  config: ClassifierConfig,
+): Promise<boolean> {
+  const names = await getRootNames();
+  return names.some(name => config.compileManifests.has(name));
+}
+
 export interface RepoLookupOptions {
+  /** Overrides the classifier's structural knobs; unset fields fall back to the defaults. */
+  classifierConfig?: Partial<ClassifierConfig>;
   /** Reuse an existing client, and its rate-limit budget, instead of building one from `token`. Carries its own `log`. */
   client?: GithubClient;
-  /** Rendered-README anchor count at or above which the content backstop fires. */
+  /**
+   * Rendered-README anchor count at or above which the content backstop fires.
+   * Predates {@link ClassifierConfig}; kept because callers already set it. When
+   * both are present this wins for `contentBackstopLinks` (the field it always
+   * controlled), while `classifierConfig` overrides every other knob.
+   */
   contentBackstopMin?: number;
   /** Where diagnostics go. Defaults to the console sink; ignored when `client` is supplied, which brings its own. */
   log?: Logger;
@@ -216,8 +528,17 @@ export interface RepoLookup {
  * `classifyRepo`.
  */
 export function createRepoLookup(options: RepoLookupOptions = {}): RepoLookup {
-  const contentBackstopMin =
-    options.contentBackstopMin ?? REGISTRY_CONTENT_BACKSTOP_LINKS;
+  // Fold the legacy contentBackstopMin into the config surface: it pins
+  // contentBackstopLinks (the field it always controlled) even when a
+  // classifierConfig override is also supplied, so existing callers behave
+  // identically while the new surface drives every other knob.
+  const classifierConfig: ClassifierConfig = {
+    ...DEFAULT_CLASSIFIER_CONFIG,
+    ...options.classifierConfig,
+    ...(options.contentBackstopMin !== undefined
+      ? { contentBackstopLinks: options.contentBackstopMin }
+      : {}),
+  };
   // The sink is installed on the client, which is already handed to everything
   // that logs — so nothing below needs to carry one.
   const client =
@@ -255,7 +576,8 @@ export function createRepoLookup(options: RepoLookupOptions = {}): RepoLookup {
         repo,
         info,
         await members(),
-        contentBackstopMin,
+        classifierConfig.contentBackstopLinks,
+        classifierConfig,
       );
     });
   }

@@ -35,11 +35,14 @@ beforeEach(() => {
 
 // `./github.js` is auto-mocked file-wide for the network-path tests.
 // countResourceLinks and classifySource are pure, but self-ref detection routes
-// through the real parseGitHubUrl — the auto-mock returns undefined and would
-// silently disable it, so the pure-function blocks restore it per test.
-async function restoreParseGitHubUrl() {
+// through real github helpers (`parseGitHubUrl`, `isSelfReference`) — the
+// auto-mock returns undefined and would silently disable it, so the
+// pure-function blocks restore them per test.
+async function restoreGithubPureHelpers() {
   const real = await vi.importActual<typeof github>('./github.js');
   vi.mocked(github.parseGitHubUrl).mockImplementation(real.parseGitHubUrl);
+  vi.mocked(github.isSelfReference).mockImplementation(real.isSelfReference);
+  vi.mocked(github.isRelative).mockImplementation(real.isRelative);
 }
 
 function findItemByTitle(
@@ -483,7 +486,7 @@ describe('countResourceLinks (fixture counts)', () => {
   }
 
   beforeEach(async () => {
-    await restoreParseGitHubUrl();
+    await restoreGithubPureHelpers();
   });
 
   // Pinned against REGISTRY_MIN_LINKS (50). These counts are the ground truth the
@@ -584,7 +587,7 @@ describe('classifySource', () => {
   const anyRepo = { owner: 'any', repo: 'repo' };
 
   beforeEach(async () => {
-    await restoreParseGitHubUrl();
+    await restoreGithubPureHelpers();
   });
 
   it('classifies a link-dense README as a content-signalled registry', () => {
@@ -873,6 +876,11 @@ describe('Item identity: own-link only, categories become groups', () => {
       }
       return Promise.resolve('<p>project</p>');
     });
+    // The default gateScope ('any-admission') runs the compile-manifest gate
+    // inside the content backstop, so a dense README's root is now listed —
+    // stub it to an empty root (no manifest) so the child backstops into
+    // registry as the test intends.
+    vi.mocked(github.getRootEntryNames).mockResolvedValue([]);
 
     const data = await process(
       [
