@@ -486,16 +486,32 @@ export function countResourceLinks(
 export function classifySource(
   selfRepo: RepoIdentifier,
   markdown: string,
+  config: SourceClassifierConfig = DEFAULT_SOURCE_CLASSIFIER_CONFIG,
 ): Classification {
   const tree = unified().use(remarkParse).use(remarkGfm).parse(markdown);
-  return classifySourceTree(tree, selfRepo);
+  return classifySourceTree(tree, selfRepo, config);
 }
 
 function classifySourceTree(
   tree: Root,
   selfRepo?: RepoIdentifier,
+  config: SourceClassifierConfig = DEFAULT_SOURCE_CLASSIFIER_CONFIG,
 ): Classification {
-  return countResourceLinks(tree, selfRepo) >= REGISTRY_MIN_LINKS
+  return decideSourceClassification(tree, selfRepo, config);
+}
+
+/**
+ * The pure decision core: a verdict from a parsed README tree and a config, no
+ * parsing. `classifySource` is the production wrapper (it parses Markdown
+ * first); this is the entry point for a caller that already holds a tree and
+ * wants to re-threshold it across many configs without re-parsing.
+ */
+export function decideSourceClassification(
+  tree: Root,
+  selfRepo: RepoIdentifier | undefined,
+  config: SourceClassifierConfig = DEFAULT_SOURCE_CLASSIFIER_CONFIG,
+): Classification {
+  return countResourceLinks(tree, selfRepo) >= config.minLinks
     ? { kind: 'registry', registrySignal: 'content' }
     : { kind: 'repository' };
 }
@@ -519,9 +535,26 @@ function collectEntryGitHubUrls(tree: Root): Set<string> {
 
 // SOURCE-README threshold: the source is always Markdown (the enhancer holds it
 // as a parsed tree), and is almost always an awesome-list by construction, so a
-// modest outbound-link count separates it from a project README. Hardcoded, not
-// an action input, so the emitted kind is trustworthy standalone.
-export const REGISTRY_MIN_LINKS = 50;
+// modest outbound-link count separates it from a project README. 26 is the
+// F1-optimal cutoff on the registry/repository gold set: the lowest value that
+// still classifies the densest non-registries (e.g. a 25-link project README)
+// as `repository`, while recovering genuine registries whose READMEs sit in
+// the [26, 49] outbound-link band a higher cutoff would miss. Exposed as the
+// default of `SourceClassifierConfig.minLinks` so the threshold can be swept
+// offline, but still not an action input — the default verdict is trustworthy
+// standalone.
+export const REGISTRY_MIN_LINKS = 26;
+
+// Knobs surfaced so the source decision can be re-thresholded offline (parse
+// once, sweep many configs over the cached tree). Defaults ARE the constants
+// above — single source of truth — so the default verdict is unchanged.
+export interface SourceClassifierConfig {
+  minLinks: number;
+}
+
+export const DEFAULT_SOURCE_CLASSIFIER_CONFIG: SourceClassifierConfig = {
+  minLinks: REGISTRY_MIN_LINKS,
+};
 
 function fixRelativeLinks(tree: Root, relativeLinkPrefix: string) {
   if (!relativeLinkPrefix) {

@@ -15,6 +15,8 @@ import { silentLog } from './logger.js';
 import {
   classifySource,
   countResourceLinks,
+  decideSourceClassification,
+  DEFAULT_SOURCE_CLASSIFIER_CONFIG,
   fetchTargetData,
   processMarkdownContent,
   REGISTRY_MIN_LINKS,
@@ -489,7 +491,7 @@ describe('countResourceLinks (fixture counts)', () => {
     await restoreGithubPureHelpers();
   });
 
-  // Pinned against REGISTRY_MIN_LINKS (50). These counts are the ground truth the
+  // Pinned against REGISTRY_MIN_LINKS. These counts are the ground truth the
   // threshold sits against, so they are asserted exactly.
   it.each([
     { name: 'go', expected: 2965 },
@@ -666,6 +668,30 @@ describe('classifySource', () => {
     expect(classifySource({ owner: 'someone', repo: 'else' }, md)).toEqual({
       kind: 'repository',
     });
+  });
+
+  // 20 outbound links sits below the default 26 (repository) but above 10, so a
+  // lowered minLinks must flip it to a registry — proves the knob drives the
+  // decision rather than the threshold being read off a constant the wrapper
+  // kept using after the config was threaded.
+  it('honors a non-default minLinks override (lower threshold flips the verdict)', () => {
+    const md = listOf(20);
+    expect(classifySource(anyRepo, md)).toEqual({ kind: 'repository' });
+    expect(classifySource(anyRepo, md, { minLinks: 10 })).toEqual({
+      kind: 'registry',
+      registrySignal: 'content',
+    });
+    expect(
+      decideSourceClassification(
+        unified().use(remarkParse).use(remarkGfm).parse(md),
+        anyRepo,
+        { minLinks: 10 },
+      ),
+    ).toEqual({ kind: 'registry', registrySignal: 'content' });
+  });
+
+  it('default config reads its threshold off REGISTRY_MIN_LINKS (single source of truth)', () => {
+    expect(DEFAULT_SOURCE_CLASSIFIER_CONFIG.minLinks).toBe(REGISTRY_MIN_LINKS);
   });
 });
 

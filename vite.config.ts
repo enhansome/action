@@ -24,6 +24,6 @@ export default defineConfig({
     // We are testing Node.js code, not browser code.
     environment: 'node',
     // Exclude the bundled output so vitest doesn't try to run it as a test.
-    exclude: [...configDefaults.exclude, 'dist/**', '.claude/**', 'tuning/**'],
+    exclude: [...configDefaults.exclude, 'dist/**', '.claude/**', 'tuning/**', 'precision/data/**', 'precision/harness/**', 'source/data/**', 'source/harness/**'],
   },
 });

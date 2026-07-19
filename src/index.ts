@@ -40,7 +40,13 @@ export type {
 } from './github.js';
 export type { Logger } from './logger.js';
 export { consoleLog, silentLog } from './logger.js';
-export { classifySource, REGISTRY_MIN_LINKS, toRepoInfo } from './markdown.js';
+export {
+  classifySource,
+  decideSourceClassification,
+  DEFAULT_SOURCE_CLASSIFIER_CONFIG,
+  REGISTRY_MIN_LINKS,
+  toRepoInfo,
+} from './markdown.js';
 export type {
   JsonGroup,
   JsonItem,
@@ -50,6 +56,7 @@ export type {
   JsonSection,
   ReplacementRule,
   RepoInfo,
+  SourceClassifierConfig,
 } from './markdown.js';
 export { enhance } from './orchestrator.js';
 export type { EnhanceOptions, EnhanceResult } from './orchestrator.js';
