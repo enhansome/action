@@ -15,7 +15,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "HStreamDB",
           "description": "[Haskell] - The streaming database built for IoT data storage and real-time processing.",
           "children": [],
@@ -30,7 +29,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "RisingWave",
           "description": "[Rust] - A PostgreSQL-compatible streaming database that is designed to build event-driven applications, real-time ETL pipelines, continuous analytics services, and feature stores for AI applications. It excels in extracting fresh and consistent insights from real-time event streams, database CDC, and time series data within sub-seconds. It unifies streaming and batch processing, enabling users to ingest, join, and analyze both live and historical data at a cloud scale.",
           "children": [],
@@ -45,7 +43,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "SPQR",
           "description": "[Java] - dynamic framework for processing high volumn data streams through pipelines.",
           "children": [],
@@ -60,7 +57,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Wallaroo",
           "description": "[Python] - A fast, stream-processing framework. Wallaroo makes it easy to react to data in real-time. By eliminating infrastructure complexity, going from prototype to production has never been simpler.",
           "children": [],
@@ -75,7 +71,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "SABER",
           "description": "[Java/C] - Window-Based Hybrid CPU/GPU Stream Processing Engine.",
           "children": [],
@@ -90,7 +85,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Onyx",
           "description": "[Clojure] - Distributed, masterless, high performance, fault tolerant data processing.",
           "children": [],
@@ -105,7 +99,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "ArkFlow",
           "description": "[Rust] - High-performance Rust stream processing engine, providing powerful data stream processing capabilities, supporting multiple input/output sources and processors.",
           "children": [],
@@ -120,7 +113,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Trill",
           "description": "[.NET/C#] - Trill is a high-performance one-pass in-memory streaming analytics engine from Microsoft Research.",
           "children": [],
@@ -135,7 +127,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Arroyo",
           "description": "[Rust] - a distributed stream processing engine. Supports SQL and Rust pipelines. Scales up to millions of events per second. Supports stateful operations like windows and joins, state checkpointing for fault-tolerance and recovery of pipelines. Uses the Timely Dataflow model.",
           "children": [],
@@ -150,7 +141,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "tigon",
           "description": "[C++/Java] - high throughput real-time streaming processing framework built on Hadoop and HBase.",
           "children": [],
@@ -165,7 +155,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Hazelcast Jet",
           "description": "[Java] - A general purpose distributed data processing engine, built on top of Hazelcast.",
           "children": [],
@@ -180,7 +169,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "s4",
           "description": "[Java] - general-purpose, distributed, scalable, fault-tolerant, pluggable platform that allows programmers to easily develop applications for processing continuous unbounded streams of data.",
           "children": [],
@@ -195,7 +183,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Apache Flink",
           "description": "[Java] - system for high-throughput, low-latency data stream processing that supports stateful computation, data-driven windowing semantics and iterative stream processing.",
           "children": [],
@@ -210,7 +197,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "CocoIndex",
           "description": "[Rust/Python] - ETL framework to build fresh index for AI, with realtime incremental updates.",
           "children": [],
@@ -225,7 +211,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Apache Heron (incubating)",
           "description": "[Java] - a realtime, distributed, fault-tolerant stream processing engine from Twitter.",
           "children": [],
@@ -240,7 +225,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "LightSaber",
           "description": "[C++] - Multi-core Window-Based Stream Processing Engine. LightSaber uses code generation for efficient window aggregation.",
           "children": [],
@@ -255,7 +239,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "AthenaX",
           "description": "[Java] - Uber's Stream Analytics Framework used in production",
           "children": [],
@@ -270,7 +253,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Teknek",
           "description": "[Java] - Simple elegant stream processing with interactive prototying shell SOL (Stream Operator Language) Mesos, designed for high performance data processing jobs that require flexibility & control.",
           "children": [],
@@ -285,7 +267,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Kuiper",
           "description": "[Golang] - An edge lightweight IoT data analytics/streaming software implemented by Golang, and it can be run at all kinds of resource-constrained edge devices.",
           "children": [],
@@ -300,7 +281,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Apache Spark Streaming",
           "description": "[Scala] - makes it easy to build scalable fault-tolerant streaming applications.",
           "children": [],
@@ -315,7 +295,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Pathway",
           "description": "[Python] - The fastest data processing engine supporting unified workflows for batch, streaming data, and LLM applications.",
           "children": [],
@@ -330,7 +309,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Gearpump",
           "description": "[Scala] - lightweight real-time distributed streaming engine built on Akka.",
           "children": [],
@@ -345,7 +323,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Faust",
           "description": "[Python] - stream processing library, porting the ideas from Kafka Streams to Python",
           "children": [],
@@ -360,7 +337,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Apache Ballista",
           "description": "[Rust] - distributed compute platform powered by Apache Arrow.",
           "children": [],
@@ -375,7 +351,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "mupd8(muppet)",
           "description": "[Scala/Java] - mapReduce-style framework for processing fast/streaming data.",
           "children": [],
@@ -390,7 +365,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "NebulaStream",
           "description": "[C++] - High-performance, general-purpose, end-to-end data-management system for cloud-edge-sensor environments.",
           "children": [],
@@ -405,7 +379,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "mantis",
           "description": "[Java] - Netflix's platform to build an ecosystem of realtime stream processing applications",
           "children": [],
@@ -420,7 +393,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Scramjet Cloud Platform",
           "description": "[Python/JavaScript/Node.js] - data processing engine for running multiple data processing apps (sequences) written in Python, JavaScript or TypeScript",
           "children": [],
@@ -435,7 +407,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Apache Storm",
           "description": "[Clojure/Java] - distributed real-time computation system. Storm is to stream processing what Hadoop is to batch processing.",
           "children": [],
@@ -450,7 +421,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Bytewax",
           "description": "[Python] - data parallel, distributed, stateful stream processing framework.",
           "children": [],
@@ -465,7 +435,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "hailstorm",
           "description": "[Haskell] - distributed stream processing with exactly-once semantics based on Storm.",
           "children": [],
@@ -480,7 +449,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Apache Samza",
           "description": "[Scala/Java] - distributed stream processing framework that build on Kafka(messaging, storage) and YARN(fault tolerance, processor isolation, security and resource management).",
           "children": [],
@@ -495,7 +463,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Apache Apex",
           "description": "[Java] - unified platform for big data stream and batch processing.",
           "children": [],
@@ -510,7 +477,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Numaflow",
           "description": "[Java/Python/Go/Rust] - Kubernetes native stream processing platform with language agnostic framework. Scalable and cost-efficient",
           "children": [],
@@ -525,7 +491,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Maki Nage",
           "description": "[Python] - A stream processing framework for data scientists, based on Kafka and ReactiveX.",
           "children": [],
@@ -546,7 +511,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "YoMo",
           "description": "[Go] - An open source Streaming Serverless Framework for building Low-latency Geo-distributed system. YoMo Built atop QUIC Transport Protocol and Functional Reactive Programming interface.",
           "children": [],
@@ -561,7 +525,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Streamline",
           "description": "[Java] - Stream Analytics Framework by Hortonworks, designed as a wrapper around existing streaming solutions like Storm. Aimed to allow users to drag-and-drop streaming components to focus on business logic.",
           "children": [],
@@ -576,7 +539,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "FastStream",
           "description": "[Python] - powerful and easy-to-use Python library simplifying the process of writing producers and consumers for message queues, handling all the parsing, networking and documentation generation automatically. Supports multiple protocols such as Apache Kafka, RabbitMQ and alike.",
           "children": [],
@@ -591,7 +553,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Streamz",
           "description": "[Python] - A lightweight library for building pipelines to manage continuous streams of data; supports complex pipelines that involve branching, joining, flow control, feedback, back pressure, and so on.",
           "children": [],
@@ -606,7 +567,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Scramjet C++",
           "description": "[C++] functional reactive stream programming framework written on top of Node.js object streams.",
           "children": [],
@@ -621,7 +581,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Scramjet Python",
           "description": "[Python] functional reactive stream programming framework written from scratch operating on object, string and buffer streams.",
           "children": [],
@@ -636,7 +595,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Streamiz",
           "description": "[C#] - a .Net Stream Processing Library for Apache Kafka",
           "children": [],
@@ -651,7 +609,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Swave",
           "description": "[Scala] - A lightweight Reactive Streams Infrastructure Toolkit for Scala.",
           "children": [],
@@ -666,7 +623,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Tributary",
           "description": "[Python] - A python library for constructing dataflow graphs. Supports synchronous, reactive data streams built using python generators that mimic complex event processors, as well as lazily-evaluated acyclic graphs and functional currying streams.",
           "children": [],
@@ -681,7 +637,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Mediapipe",
           "description": "Cross-platform, customizable ML solutions for live and streaming media.",
           "children": [],
@@ -696,7 +651,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Stream Ops",
           "description": "[Java] - A fully embeddable data streaming engine and stream processing API for Java.",
           "children": [],
@@ -711,7 +665,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "StreamAlert",
           "description": "[Python] - Airbnb's Real-time Data Analysis and Alerting.",
           "children": [],
@@ -726,7 +679,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "monix",
           "description": "[Scala] - high-performance Scala / Scala.js library for composing asynchronous and event-based programs.",
           "children": [],
@@ -741,7 +693,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Apache Kafka Streams",
           "description": "[Java] - lightweight stream processing library included in Apache Kafka (since 0.10 version).",
           "children": [],
@@ -756,7 +707,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Akka Streams",
           "description": "[Scala] - stream processing library on Akka Actors.",
           "children": [],
@@ -771,7 +721,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Benthos",
           "description": "[Go] - Benthos is a high performance and resilient message streaming service, able to connect various sources and sinks and perform arbitrary actions, transformations and filters on payloads",
           "children": [],
@@ -786,7 +735,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Quix Streams",
           "description": "[Python] - a streaming library originally designed for the McLaren Formula 1 racing team that can process high volumes of time-series data with up to nanosecond precision using Apache Kafka as a message broker.",
           "children": [],
@@ -801,7 +749,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "FS2(prev. 'Scalaz-Stream')",
           "description": "[Scala] - Compositional, streaming I/O library for Scala.",
           "children": [],
@@ -816,7 +763,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Scramjet Node.js",
           "description": "[Node.js] functional reactive stream programming framework written on top of Node.js object streams + the legacy Scramjet.js version",
           "children": [],
@@ -831,7 +777,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Substation",
           "description": "[Go] - Substation is a cloud native data pipeline and transformation toolkit written in Go.",
           "children": [],
@@ -846,7 +791,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Daggy",
           "description": "[C++] - real-time streams aggregation and catching.",
           "children": [],
@@ -867,7 +811,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Zilla",
           "description": "[Java] - Cross-platform, API gateway built for event-driven architectures and streaming that supports standard protocols such as HTTP, SSE, gRPC, MQTT and the native Kafka protocol.",
           "children": [],
@@ -882,7 +825,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "storm-crawler",
           "description": "[Java] - Web crawler SDK based on Apache Storm.",
           "children": [],
@@ -897,7 +839,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "straw",
           "description": "[Python/Java] - A platform for real-time streaming search.",
           "children": [],
@@ -912,7 +853,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "javactrl-kafka",
           "description": "[Java] - An application of a stateful stream processing for workflow as Java code (microservices orchestration, business process automation, and more).",
           "children": [],
@@ -933,7 +873,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "sensorbee",
           "description": "[Go] - lightweight stream processing engine for IoT.",
           "children": [],
@@ -948,7 +887,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Apache Edgent",
           "description": "[Java] - a programming model and runtime that enables continuous streaming analytics on gateways and edge devices which can work with centralized systems to provide efficient and timely analytics across the whole IoT ecosystem: from the center to the edge, opens sourced by IBM.",
           "children": [],
@@ -963,7 +901,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Apache StreamPipes",
           "description": "[Java] - a self-service (Industrial) IoT toolbox to enable non-technical users to connect, analyze and explore IoT data streams.",
           "children": [],
@@ -984,7 +921,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "summingbird",
           "description": "[Scala] - library that lets you write MapReduce programs that look like native Scala or Java collection transformations and execute them on a number of well-known distributed MapReduce platforms, including Storm and Scalding.",
           "children": [],
@@ -999,7 +935,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Esper",
           "description": "[Java] - component for complex event processing (CEP) and event series analysis.",
           "children": [],
@@ -1014,7 +949,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Streamparse",
           "description": "[Python] - lets you run Python code against real-time streams of data via Apache Storm.",
           "children": [],
@@ -1029,7 +963,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "coast",
           "description": "[Scala] - a DSL that builds DAGs on top of Samza and provides exactly-once semantics.",
           "children": [],
@@ -1044,7 +977,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Apache Beam",
           "description": "[Java, Python, SQL, Scala, Go] - unified model and set of language-specific SDKs for defining and executing data processing workflows, and also data ingestion and integration flows, supporting Enterprise Integration Patterns (EIPs) and Domain Specific Languages (DSLs), open sourced by Google.",
           "children": [],
@@ -1065,7 +997,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "databus",
           "description": "[Java] - Linkedin's source-agnostic distributed change data capture system.",
           "children": [],
@@ -1080,7 +1011,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "brooklin",
           "description": "[Java] - a distributed system intended for streaming data between various heterogeneous source and destination systems with high reliability and throughput at scale from Linkedin (replaced databus).",
           "children": [],
@@ -1095,7 +1025,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Redpanda",
           "description": "[C++] - Redpanda is Kafka compatible, ZooKeeper-free, JVM-free and source available.",
           "children": [],
@@ -1110,7 +1039,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Bruin",
           "description": "[Go] - End-to-end data pipeline tool combining ingestion from 50+ sources, SQL/Python transformations, and built-in data quality checks in a single CLI.",
           "children": [],
@@ -1125,7 +1053,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "AutoMQ",
           "description": "[Scala/Java] - cloud-first alternative to Kafka by decoupling durability to S3 and EBS. 100% Kafka compatible. 10x cost-effective. Autoscale in seconds. Single-digit ms latency.",
           "children": [],
@@ -1140,7 +1067,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "NATS streaming",
           "description": "[Go] - fast disk-backed messaging solution",
           "children": [],
@@ -1155,7 +1081,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Apache RocketMQ",
           "description": "[Java] - distributed messaging and streaming platform with low latency, high performance and reliability, trillion-level capacity and flexible scalability.",
           "children": [],
@@ -1170,7 +1095,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "ingestr",
           "description": "[Python] - CLI tool to copy data between any source and destination with a single command. Supports 50+ connectors including databases, SaaS apps, and data warehouses.",
           "children": [],
@@ -1185,7 +1109,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "metaq",
           "description": "[Java] - Taobao's high available, high performance distributed messaging system",
           "children": [],
@@ -1200,7 +1123,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "nsq",
           "description": "[Go] - realtime distributed messaging platform designed to operate at scale, handling billions of messages per day.",
           "children": [],
@@ -1215,7 +1137,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Apache Kafka",
           "description": "[Scala/Java] - distributed, partitioned, replicated commit log service, which provides the functionality of a messaging system, but with a unique design.",
           "children": [],
@@ -1230,7 +1151,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "suro",
           "description": "[Java] - data pipeline service for collecting, aggregating, and dispatching large volume of application events including log data.",
           "children": [],
@@ -1245,7 +1165,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "camus",
           "description": "[Java] - Linkedin's Kafka -> HDFS pipeline.",
           "children": [],
@@ -1260,7 +1179,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "RudderStack",
           "description": "[Go] - an open source customer data infrastructure (segment, mparticle alternative).",
           "children": [],
@@ -1275,7 +1193,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "fluvio",
           "description": "[Rust/WASM] - Real-time programmable data streaming platform with in-line computation capabilities.",
           "children": [],
@@ -1290,7 +1207,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "flume",
           "description": "[Java] - distributed, reliable, and available service for efficiently collecting, aggregating, and moving large amounts of log data.",
           "children": [],
@@ -1305,7 +1221,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Gazette",
           "description": "[golang] - Distributed streaming infrastructure built on cloud storage which makes it easy to mix and match batch and streaming paradigms.",
           "children": [],
@@ -1320,7 +1235,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Apache Pulsar",
           "description": "[Java] - distributed pub-sub messaging platform with a very flexible messaging model and an intuitive client API.",
           "children": [],
@@ -1341,7 +1255,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Apache Samoa",
           "description": "[Java] - distributed streaming machine learning (ML) framework that contains a programing abstraction for distributed streaming ML algorithms.",
           "children": [],
@@ -1356,7 +1269,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "River",
           "description": "[Python] - online machine learning library.",
           "children": [],
@@ -1371,7 +1283,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "yurita",
           "description": "[Scala] - Anomaly detection framework built on Spark Structured Streaming from Paypal.",
           "children": [],
@@ -1386,7 +1297,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "StreamingBandit",
           "description": "[Python] - Provides a webserver to quickly setup and evaluate possible solutions to contextual multi-armed bandit (cMAB) problems.",
           "children": [],
@@ -1401,7 +1311,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "StormCV",
           "description": "[Java] - enables the use of Apache Storm for video processing by adding computer vision (CV) specific operations and data model.",
           "children": [],
@@ -1416,7 +1325,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "trident-ml",
           "description": "[Java] - realtime online machine learning library based on Trident.",
           "children": [],
@@ -1431,7 +1339,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "[Numalogic] (https://github.com/numaproj/numalogic",
           "description": ") [Python] - Collection of ML models and libraries for real-time anomaly detection and forecasting on time series data. Built on Numaflow, a K8s native stream processing platform",
           "children": [],
@@ -1446,7 +1353,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "DataSketches",
           "description": "[Java] - sketches library from Yahoo!.",
           "children": [],
@@ -1461,7 +1367,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "streamDM",
           "description": "[Scala] - mining Big Data streams using Spark Streaming from Huawei.",
           "children": [],
@@ -1482,7 +1387,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Proton",
           "description": "[C++] - A unified streaming and historical data analytics database in a single binary, powered by ClickHouse.",
           "children": [],
@@ -1497,7 +1401,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "ksqlDB",
           "description": "[Java] - A cloud-native, source-available database purpose-built for stream processing applications",
           "children": [],
@@ -1512,7 +1415,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "pipelinedb",
           "description": "[C] - An open-source relational database that runs SQL queries continuously on streams, incrementally storing results in tables.",
           "children": [],
@@ -1527,7 +1429,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "StreamCQL",
           "description": "[Java] - Continuous Query Language on RealTime Computation System.",
           "children": [],
@@ -1542,7 +1443,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Siddhi",
           "description": "[Java] - A cloud native Streaming and Complex Event Processing engine that understands Streaming SQL queries in order to capture events from diverse data sources, process them, detect complex conditions, and publish output to various endpoints in real time.",
           "children": [],
@@ -1557,7 +1457,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "squall",
           "description": "[Java] - Squall executes SQL queries on top of Storm for doing online processing.",
           "children": [],
@@ -1578,7 +1477,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "flotilla",
           "description": "[Go] - Automated message queue orchestration for scaled-up benchmarking.",
           "children": [],
@@ -1593,7 +1491,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "storm-perf-test",
           "description": "[Java] - a simple storm performance/stress test.",
           "children": [],
@@ -1608,7 +1505,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "streaming-benchmarks",
           "description": "[Java] - Benchmarks for Low Latency (Streaming) solutions including Apache Storm, Apache Spark, Apache Flink, etc.",
           "children": [],
@@ -1629,7 +1525,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "StreamFlow",
           "description": "[Java] - stream processing tool designed to help build and monitor processing workflows.",
           "children": [],
@@ -1644,7 +1539,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Nussknacker",
           "description": "[Scala] - A visual tool to define and run real-time decision algorithms.",
           "children": [],
@@ -1659,7 +1553,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "pulsar",
           "description": "[Python] - Actor based event driven concurrent framework for Python.",
           "children": [],
@@ -1674,7 +1567,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "akka",
           "description": "[Scala] - toolkit and runtime for building highly concurrent, distributed, and resilient message-driven application on the JVM.",
           "children": [],
@@ -1689,7 +1581,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "samza-luwak",
           "description": "[Java] - uses Luwak, a stored-query engine built on Lucene, to implement full-text search on streams.",
           "children": [],
@@ -1704,7 +1595,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Turbine",
           "description": "[Java] - tool for aggregating streams of Server-Sent Event (SSE) JSON data into a single stream.",
           "children": [],
@@ -1719,7 +1609,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Apache Pekko",
           "description": "[Scala, Java] - Fork of Akka 2.6.x, prior to the Akka project's adoption of the Business Source License.",
           "children": [],
@@ -1734,7 +1623,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "aeron",
           "description": "[Java/C++] - efficient reliable unicast and multicast message transport.",
           "children": [],
@@ -1762,8 +1650,6 @@
     "original_repository_sha": "deadbeef",
     "enhanced_repository": "enhansome/enhansome-streaming",
     "enhanced_repository_description": "enhanced list",
-    "kind": "registry",
-    "title": "Awesome streaming with stars",
-    "registry_signal": "content"
+    "title": "Awesome streaming with stars"
   }
 }

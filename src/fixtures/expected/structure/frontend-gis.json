@@ -10,7 +10,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "ArcGIS REST JS",
           "description": "Compact, modular JavaScript wrappers for the ArcGIS REST API that run in Node.js and modern browsers.",
           "children": [],
@@ -25,7 +24,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "d3-geo-projection",
           "description": "Extended geographic projections.",
           "children": [],
@@ -40,7 +38,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Map Forecast API",
           "description": "Simple-to-use library based on Leaflet 1.4.x. It allows you to show wind maps.",
           "children": [],
@@ -55,7 +52,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "react-simple-maps",
           "description": "An SVG mapping component library for React, built on top of d3-geo.",
           "children": [],
@@ -70,7 +66,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "iTowns",
           "description": "A Three.js-based framework written in JavaScript/WebGL for visualizing 3D geospatial data.",
           "children": [],
@@ -85,7 +80,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Eurostat-map",
           "description": "Create and customise web maps showing Eurostat data using D3.js.",
           "children": [],
@@ -100,7 +94,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "d3-geo",
           "description": "A library for creating maps based on D3.js.",
           "children": [],
@@ -115,7 +108,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "TerriaJS",
           "description": "A library for building rich, web-based geospatial data explorers.",
           "children": [],
@@ -130,7 +122,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Wrld.js",
           "description": "Animated 3D city maps based on Leaflet.",
           "children": [],
@@ -145,7 +136,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Cesium.js",
           "description": "An open-source JavaScript library for world-class 3D mapping of geospatial data.",
           "children": [],
@@ -160,7 +150,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "antvis L7",
           "description": "Large-scale WebGL-powered Geospatial Data Visualization.",
           "children": [],
@@ -175,7 +164,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "gridviz",
           "description": "A package for visualizing gridded data.",
           "children": [],
@@ -190,7 +178,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "datamaps",
           "description": "Customizable map visualizations in one file.",
           "children": [],
@@ -205,7 +192,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Deck.GL",
           "description": "WebGL2 powered geospatial visualization layers.",
           "children": [],
@@ -220,7 +206,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "MapTalks.js",
           "description": "An open-source JavaScript library for integrated 2D/3D maps.",
           "children": [],
@@ -235,7 +220,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Bertin.js",
           "description": "A JavaScript library for visualizing geospatial data and making thematic maps for the web.",
           "children": [],
@@ -250,7 +234,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "globe.gl",
           "description": "This library is a convenience wrapper around the three-globe plugin, using ThreeJS/WebGL for 3D rendering.",
           "children": [],
@@ -265,7 +248,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "OpenLayers",
           "description": "A high-performance, feature-packed library for creating interactive maps on the web.",
           "children": [],
@@ -280,7 +262,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Tangram",
           "description": "WebGL map rendering engine for creative cartography.",
           "children": [],
@@ -295,7 +276,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Leaflet",
           "description": "The leading open-source JavaScript library for mobile-friendly interactive maps.",
           "children": [],
@@ -310,7 +290,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "maplibre",
           "description": "It originated as an open-source fork of mapbox-gl-js, before their switch to a non-OSS license in December 2020.",
           "children": [],
@@ -325,7 +304,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Mapbox GL JS",
           "description": "JavaScript library that uses WebGL to render interactive maps from vector tiles.",
           "children": [],
@@ -340,7 +318,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "d3-geo-voronoi",
           "description": "Voronoi diagrams and Delaunay triangulation for the sphere.",
           "children": [],
@@ -361,7 +338,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "koop",
           "description": "A JavaScript toolkit for connecting incompatible spatial APIs.",
           "children": [],
@@ -376,11 +352,9 @@
         },
         {
           "node_type": "item",
-          "kind": "registry",
           "title": "awesome-GeoJSON",
           "description": "Catalogue of GeoJSON tools.",
           "children": [],
-          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -392,7 +366,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "geobuf",
           "description": "A compact binary encoding for geographic data.",
           "children": [],
@@ -407,7 +380,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "geolib",
           "description": "Library to provide basic geospatial operations.",
           "children": [],
@@ -422,7 +394,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "statsbreaks",
           "description": "Split a quantitative dataset into classes for thematic mapping.",
           "children": [],
@@ -437,7 +408,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "geoblaze",
           "description": "A blazing fast JavaScript raster processing engine.",
           "children": [],
@@ -452,7 +422,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "gdal3.js",
           "description": "Convert raster and vector geospatial data to various formats.",
           "children": [],
@@ -467,7 +436,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Turf.js",
           "description": "A JavaScript library for spatial analysis.",
           "children": [],
@@ -482,7 +450,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "math.gl",
           "description": "JavaScript math library focused on Geospatial and 3D use cases.",
           "children": [],
@@ -497,7 +464,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "flatbush",
           "description": "A really fast static spatial index for 2D points and rectangles in JavaScript.",
           "children": [],
@@ -512,7 +478,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "geotoolbox",
           "description": "Provides several GIS operations for use with geojson properties.",
           "children": [],
@@ -527,7 +492,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Euclid.ts",
           "description": "2D Euclidean geometry classes, utilities, and drawing tools.",
           "children": [],
@@ -542,7 +506,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "geopackage-js",
           "description": "The GeoPackage JavaScript library provides the ability to read GeoPackage files.",
           "children": [],
@@ -557,7 +520,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "topoJSON",
           "description": "Convert GeoJSON to TopoJSON for use in D3 maps.",
           "children": [],
@@ -572,7 +534,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "rbush",
           "description": "A high-performance JavaScript library for 2D spatial indexing.",
           "children": [],
@@ -587,7 +548,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "flatten-js",
           "description": "For manipulating geometrical shapes, finding intersections, checking inclusion, calculating distance, transformations, and more.",
           "children": [],
@@ -602,7 +562,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "geojson-vt",
           "description": "A highly efficient JavaScript library for slicing GeoJSON data.",
           "children": [],
@@ -617,7 +576,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Geometric.js",
           "description": "A JavaScript library for doing geometry.",
           "children": [],
@@ -632,7 +590,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "spl.js",
           "description": "Makes it possible to use SpatiaLite functionality in JavaScript.",
           "children": [],
@@ -647,7 +604,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "GeoTiff.js",
           "description": "Parse TIFF files for visualization or analysis.",
           "children": [],
@@ -662,7 +618,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "JSTS",
           "description": "JavaScript Topology Suite.",
           "children": [],
@@ -677,7 +632,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Proj4js",
           "description": "Transform coordinates from one coordinate system to another.",
           "children": [],
@@ -692,7 +646,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Wicket",
           "description": "A modest library for moving between Well-Known Text (WKT) and various framework geometries.",
           "children": [],
@@ -707,7 +660,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "FlatGeoBuf",
           "description": "A performant binary encoding for geographic data based on flatbuffers.",
           "children": [],
@@ -722,7 +674,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "geoparquet",
           "description": "Encoding geospatial data in Apache Parquet.",
           "children": [],
@@ -737,7 +688,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "geojson-merge",
           "description": "Merge multiple GeoJSON files into one FeatureCollection.",
           "children": [],
@@ -752,7 +702,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Arc.js",
           "description": "Calculate great circles routes as lines in GeoJSON or WKT format.",
           "children": [],
@@ -767,7 +716,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Galton",
           "description": "Lightweight Node.js isochrone server.",
           "children": [],
@@ -788,7 +736,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Plasio",
           "description": "Drag-n-drop In-browser LAS/LAZ point cloud viewer.",
           "children": [],
@@ -803,7 +750,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Potree",
           "description": "WebGL point cloud viewer for large datasets.",
           "children": [],
@@ -824,7 +770,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "EOSDIS Worldview",
           "description": "Interactive interface for browsing global, full-resolution satellite imagery.",
           "children": [],
@@ -839,7 +784,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Sentinel Hub custom scripts",
           "description": "A repository of custom scripts to be used with Sentinel Hub.",
           "children": [],
@@ -854,7 +798,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "sentinelhub-js",
           "description": "Download and process satellite imagery using Sentinel Hub services.",
           "children": [],
@@ -880,7 +823,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "World Atlas TopoJSON",
           "description": "Natural Earth's vector data as TopoJSON.",
           "children": [],
@@ -895,7 +837,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Ookla internet speed data",
           "description": "Global network performance metrics.",
           "children": [],
@@ -910,7 +851,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Sentinel Hub custom scripts",
           "description": "Repository of custom scripts for Sentinel Hub.",
           "children": [],
@@ -931,7 +871,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Public APIs",
           "description": "A collective list of free APIs for use in software and web development.",
           "children": [],
@@ -946,11 +885,9 @@
         },
         {
           "node_type": "item",
-          "kind": "registry",
           "title": "awesome-public-datasets",
           "description": "An awesome repository full of open datasets from an abundance of different categories.",
           "children": [],
-          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Go",
@@ -973,7 +910,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Plasio",
           "description": "Drag-n-drop in-browser LAS/LAZ point cloud viewer.",
           "children": [],
@@ -988,7 +924,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Maputnik",
           "description": "Free and open visual editor for Mapbox GL styles.",
           "children": [],
@@ -1003,7 +938,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Datawrapper",
           "description": "Create charts, maps, and tables.",
           "children": [],
@@ -1018,7 +952,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Peak Map",
           "description": "Visualizes elevation of any area on the map with filled area charts.",
           "children": [],
@@ -1033,7 +966,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Fantasy Map Generator",
           "description": "Free web application for creating and editing fantasy maps.",
           "children": [],
@@ -1048,7 +980,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "uMap",
           "description": "Create maps with OpenStreetMap layers and embed them in your site.",
           "children": [],
@@ -1063,7 +994,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "mapus",
           "description": "Tool for collaboratively exploring and annotating maps.",
           "children": [],
@@ -1084,7 +1014,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Textures.js",
           "description": "JavaScript library for creating SVG patterns, designed for data visualization.",
           "children": [],
@@ -1099,7 +1028,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "CartoColor",
           "description": "A set of custom color palettes built on top of standards for color use on maps.",
           "children": [],
@@ -1114,7 +1042,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Dicopal.js",
           "description": "Discrete color palettes for JavaScript.",
           "children": [],
@@ -1135,11 +1062,9 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "registry",
           "title": "Filling a suggestion issue",
           "description": "(easier).",
           "children": [],
-          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -1151,11 +1076,9 @@
         },
         {
           "node_type": "item",
-          "kind": "registry",
           "title": "Opening a pull request",
           "description": ".",
           "children": [],
-          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Python",
@@ -1175,8 +1098,6 @@
     "original_repository_sha": "deadbeef",
     "enhanced_repository": "enhansome/enhansome-frontend-gis",
     "enhanced_repository_description": "enhanced list",
-    "kind": "registry",
-    "title": "Awesome frontend gis with stars",
-    "registry_signal": "content"
+    "title": "Awesome frontend gis with stars"
   }
 }

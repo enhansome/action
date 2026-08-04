@@ -6,22 +6,15 @@ import { unified } from 'unified';
 import { visit } from 'unist-util-visit';
 
 import {
-  Classification,
-  createRepoLookup,
-  Kind,
-  RegistrySignal,
-  RepoLookup,
-} from './classify.js';
-import {
   formatRequestError,
-  isRelative,
-  isSelfReference,
+  getRepoInfo as fetchRepoInfo,
+  makeOctokit,
   parseGitHubUrl,
-  parseOwnerRepo,
   RepoIdentifier,
   RepoInfoDetails,
 } from './github.js';
-import { Logger } from './logger.js';
+import type { GithubClient } from './github.js';
+import { consoleLog, Logger } from './logger.js';
 
 import type {
   Heading,
@@ -76,21 +69,16 @@ export function toRepoInfo(details: RepoInfoDetails): RepoInfo {
   };
 }
 
-// A genuine GitHub node: the item's OWN paragraph links to a GitHub repo, so it
-// has an intrinsic kind, and when the link resolves, `repo_info`. It may
-// still wrap nested GitHub items/groups in `children`.
+// A genuine GitHub node: the item's OWN paragraph links to a GitHub repo, so
+// when the link resolves it carries `repo_info`. It may still wrap nested
+// GitHub items/groups in `children`.
 export interface JsonItem {
   children: JsonNode[];
   description: null | string;
-  kind: Kind;
   // Discriminator present on every node so any consumer (TS or not) can switch
-  // cleanly without inferring from `kind`/`repo_info` presence (a dead-link
-  // item has `kind` but no repo_info).
+  // cleanly without inferring from `repo_info` presence (a dead-link item has
+  // no repo_info).
   node_type: 'item';
-  // Which signal made this a registry. Absent on every 'repository' (whether a
-  // dead link skipped classification or classification found no signal), so its
-  // presence coincides with `kind === 'registry'`.
-  registry_signal?: RegistrySignal;
   repo_info?: RepoInfo;
   title: string;
 }
@@ -98,7 +86,7 @@ export interface JsonItem {
 // A grouping/category with NO GitHub identity of its own — an editor
 // subheading, a "see also" cluster, a wrapper around linked resources whose own
 // link is non-GitHub (e.g. SBCL linked via its website). Carries `children` but
-// NEVER a `kind` or `repo_info`: those belong to genuine GitHub nodes only.
+// NEVER `repo_info`: that belongs to genuine GitHub nodes only.
 export interface JsonGroup {
   children: JsonNode[];
   description: null | string;
@@ -108,21 +96,14 @@ export interface JsonGroup {
 
 export type JsonNode = JsonGroup | JsonItem;
 
-// The source document is itself a node: it always carries a kind, computed
-// from its own README via the mdast link count (`REGISTRY_MIN_LINKS`) — NOT the
-// 5-layer path targets take, since the source is always Markdown and needs no
-// anchor probes — so a source registry's signal is always 'content'. This is
-// independent of any item's identity. `node_type` does not apply — `metadata`
-// is a distinct top-level shape, not a member of the items/children union.
+// Top-level document metadata. `node_type` does not apply — `metadata` is a
+// distinct top-level shape, not a member of the items/children union.
 export interface JsonMetadata {
   enhanced_repository: null | string;
   enhanced_repository_description: null | string;
-  kind: Kind;
   last_updated: string;
   original_repository: string;
   original_repository_sha: null | string;
-  // Present only when the source is a registry, matching the items' convention.
-  registry_signal?: RegistrySignal;
   title: string;
 }
 
@@ -130,12 +111,6 @@ export interface JsonSection {
   description: null | string;
   items: JsonNode[];
   title: string;
-}
-
-export interface TargetData {
-  kindsMap: Map<string, Kind>;
-  registrySignalMap: Map<string, RegistrySignal>;
-  repoInfoMap: Map<string, RepoInfoDetails>;
 }
 
 // The lookup's single throttled client coordinates rate limits across the whole
@@ -157,68 +132,65 @@ async function forEachConcurrent<T>(
   await Promise.all(Array.from({ length: limit }, () => worker()));
 }
 
+interface RepoInfoLookup {
+  client: GithubClient;
+  getRepoInfo(ref: RepoIdentifier): Promise<RepoInfoDetails>;
+}
+
+// One throttled client + a per-repo memo for the run: aliased refs (a bare link
+// and a deep `/tree/...` link into the same repo) collapse to a single fetch,
+// the same way a case-variant spelling of one repo costs one round-trip.
+function createRepoInfoLookup(token: string, log: Logger): RepoInfoLookup {
+  const client = makeOctokit(token, log);
+  const cache = new Map<string, Promise<RepoInfoDetails>>();
+  return {
+    client,
+    getRepoInfo(ref) {
+      const key = `${ref.owner.toLowerCase()}/${ref.repo.toLowerCase()}`;
+      let pending = cache.get(key);
+      if (!pending) {
+        pending = fetchRepoInfo(client, ref.owner, ref.repo);
+        cache.set(key, pending);
+      }
+      return pending;
+    },
+  };
+}
+
 /**
- * Re-keys the lookup's per-repo results by URL, which is how the tree addresses
- * them: `urls` are badged (every GitHub link needs repo_info); `entryUrls` are
- * the first GitHub link of each list item — the only targets that become typed
- * JsonItems, so the only ones a `kind` (and its possible README fetch) is
- * resolved for. Aliased URLs pointing at one repo collapse to a single fetch
- * inside the lookup, then fan back out to every alias here.
+ * Fetches repo info for every GitHub link the tree addresses by URL, keyed by
+ * URL so badge insertion can look each one up. Aliased URLs pointing at one repo
+ * collapse to a single fetch inside the lookup, then fan back out to every alias
+ * here.
  *
  * Each target's failure is independent and non-fatal: a dead link is skipped
- * with a warning and its item is still emitted (no repo_info, kind defaults to
- * 'repository'). Only the source README fetch in main.ts can fail the run.
+ * with a warning and its item is still emitted (no repo_info). Only the source
+ * README fetch in main.ts can fail the run.
  */
-export async function fetchTargetData(
+async function fetchTargetData(
   urls: Set<string>,
-  entryUrls: Set<string>,
-  repos: RepoLookup,
-): Promise<TargetData> {
+  repos: RepoInfoLookup,
+): Promise<Map<string, RepoInfoDetails>> {
   const log = repos.client.log;
   const repoInfoMap = new Map<string, RepoInfoDetails>();
-  const kindsMap = new Map<string, Kind>();
-  const registrySignalMap = new Map<string, RegistrySignal>();
 
-  // `entryUrls` is a subset of `urls` in practice, but the signature does not
-  // enforce that, so the union keeps this correct for any caller.
   const fetchStart = Date.now();
-  await forEachConcurrent(
-    new Set([...urls, ...entryUrls]),
-    FETCH_CONCURRENCY,
-    async url => {
-      const details = parseGitHubUrl(url);
-      if (!details) {
-        return;
-      }
-      if (urls.has(url)) {
-        try {
-          repoInfoMap.set(url, await repos.getRepoInfo(details));
-        } catch (error) {
-          log.warn(
-            `Skipping repo info for ${url}: ${formatRequestError(error)}`,
-          );
-        }
-      }
-      if (entryUrls.has(url)) {
-        try {
-          const { kind, registrySignal } = await repos.classify(details);
-          kindsMap.set(url, kind);
-          if (registrySignal) {
-            registrySignalMap.set(url, registrySignal);
-          }
-        } catch (error) {
-          log.warn(`Skipping kind for ${url}: ${formatRequestError(error)}`);
-        }
-      }
-    },
-  );
+  await forEachConcurrent(urls, FETCH_CONCURRENCY, async url => {
+    const details = parseGitHubUrl(url);
+    if (!details) {
+      return;
+    }
+    try {
+      repoInfoMap.set(url, await repos.getRepoInfo(details));
+    } catch (error) {
+      log.warn(`Skipping repo info for ${url}: ${formatRequestError(error)}`);
+    }
+  });
 
-  // The success/total ratio makes dead-link volume visible, and elapsed exposes
-  // the per-entry README-fetch cost that drives the deferred classification-manifest decision.
   log.info(
-    `Target fetch: ${repoInfoMap.size}/${urls.size} repo-info ok, ${kindsMap.size}/${entryUrls.size} kinds ok in ${Date.now() - fetchStart}ms (concurrency ${FETCH_CONCURRENCY}).`,
+    `Target fetch: ${repoInfoMap.size}/${urls.size} repo-info ok in ${Date.now() - fetchStart}ms (concurrency ${FETCH_CONCURRENCY}).`,
   );
-  return { registrySignalMap, kindsMap, repoInfoMap };
+  return repoInfoMap;
 }
 
 export async function processMarkdownContent(
@@ -232,32 +204,22 @@ export async function processMarkdownContent(
   enhancedRepositoryDescription?: string,
   originalRepositorySha?: string,
   now: Date = new Date(),
-  repos: RepoLookup = createRepoLookup({ token }),
+  log: Logger = consoleLog,
 ): Promise<{ finalContent: string; jsonData: JsonOutput }> {
+  const repos = createRepoInfoLookup(token, log);
   const brandingEnabled = replacements.some(rule => rule.type === 'branding');
   const contentAfterReplacements = applyTextReplacements(
     originalContent,
     replacements.filter(rule => rule.type !== 'branding'),
-    repos.client.log,
+    log,
   );
 
   const processor = unified().use(remarkParse).use(remarkGfm);
   const tree = processor.parse(contentAfterReplacements);
 
-  // Classify the source from the pristine parse — *before* processTree sorts
-  // the tree in place — so the source's kind can never drift from how another
-  // mirror would classify this very repo from its raw README.
-  const selfRepo = parseOwnerRepo(originalRepository) ?? undefined;
-  const source = classifySourceTree(tree, selfRepo);
-
   const githubUrls = collectGitHubLinks(tree);
-  const entryUrls = collectEntryGitHubUrls(tree);
 
-  const { registrySignalMap, kindsMap, repoInfoMap } = await fetchTargetData(
-    githubUrls,
-    entryUrls,
-    repos,
-  );
+  const repoInfoMap = await fetchTargetData(githubUrls, repos);
 
   // The title derives from the *source* repository (originalRepository), never
   // the enhanced/mirror repo — otherwise the org name doubles into the title.
@@ -265,14 +227,7 @@ export async function processMarkdownContent(
     sections,
     title: rawTitle,
     titleHeadingIndex,
-  } = processTree(
-    tree,
-    repoInfoMap,
-    kindsMap,
-    registrySignalMap,
-    sortOptions,
-    originalRepository,
-  );
+  } = processTree(tree, repoInfoMap, sortOptions, originalRepository);
 
   // Single source of truth for the document title: brand it once and use the
   // same value for the markdown H1 and metadata.title (parity).
@@ -288,13 +243,8 @@ export async function processMarkdownContent(
     enhanced_repository: (enhancedRepository?.trim() ?? '') || null,
     enhanced_repository_description:
       (enhancedRepositoryDescription?.trim() ?? '') || null,
-    kind: source.kind,
     title,
   };
-  // Present only when the source is a registry, matching the items' convention.
-  if (source.registrySignal) {
-    metadata.registry_signal = source.registrySignal;
-  }
 
   const jsonData: JsonOutput = {
     items: sections,
@@ -420,8 +370,7 @@ function findFirstGitHubLink(node: Parent): string | undefined {
 // item's OWN paragraph only. A nested-descendant link is deliberately ignored
 // — it belongs to a child, not to this item. An item is a GitHub node iff its
 // own paragraph links to a GitHub repo; an item with no own GitHub link but
-// nested GitHub children is a kind-less group, not a node borrowing a child's
-// identity.
+// nested GitHub children is a group, not a node borrowing a child's identity.
 //
 // A GitHub link that is secondary within the paragraph (e.g.
 // `[name](marketplace) … [On GitHub](github)`) is still the item's own link, so
@@ -432,129 +381,6 @@ function findOwnGitHubLink(itemNode: ListItem): string | undefined {
   );
   return paragraph ? findFirstGitHubLink(paragraph) : undefined;
 }
-
-/**
- * Counts outbound links in the SOURCE README, which the enhancer always holds as
- * parsed Markdown. Targets (see `classifyKind`) are counted from their rendered
- * HTML instead, because a target README may be reStructuredText/AsciiDoc/etc.
- * and Markdown-parsing those loses their links. The two counters measure the
- * same thing — outbound resource links, self-tree links excluded — but feed
- * different layers: this one against `REGISTRY_MIN_LINKS` on the source;
- * `countAnchors` against `REGISTRY_CONTENT_BACKSTOP_LINKS` as the target's
- * last-resort backstop, and as a share of its total anchors to confirm a soft
- * anchor from an outward-facing README.
- *
- * Structure- and target-agnostic: a registry is a directory of resources, not a
- * directory of GitHub repos in a bulleted list, so every outbound link counts
- * regardless of where it sits (list, table, or prose) or what it points at (a
- * GitHub repo, an arXiv paper, a dataset, a project page). Same-page `#` anchors
- * are excluded so a project README's Table of Contents does not inflate the
- * count. Relative links — CONTRIBUTING.md, ./docs/x, content/pages.md — resolve
- * within the source repo's own tree, so they are excluded too as internal
- * navigation rather than outbound resources; schemeless `www.host/…` links stay
- * counted (external sites written without an http(s):// scheme). Absolute
- * github.com/<self>/… deep paths are excluded when `selfRepo` is given.
- */
-export function countResourceLinks(
-  tree: Root,
-  selfRepo?: RepoIdentifier,
-): number {
-  let count = 0;
-  visit(tree, 'link', (linkNode: Link) => {
-    const url = linkNode.url;
-    if (!url || url.startsWith('#') || isRelative(url)) {
-      return;
-    }
-    if (selfRepo && isSelfReference(url, selfRepo)) {
-      return;
-    }
-    count++;
-  });
-  return count;
-}
-
-/**
- * The kind of a README the caller already holds, judged from the document alone
- * — no network. This is how the enhancer classifies its own SOURCE: it is always
- * Markdown, so it takes the mdast counter against `REGISTRY_MIN_LINKS` rather
- * than the five-layer path a target takes (`createRepoLookup().classify`),
- * whose anchors need a repo to probe. A registry decided this way always carries
- * the 'content' signal; a repository carries none. `selfRepo` is the repo the
- * README belongs to, so links back into its own files — relative paths and
- * github.com/<self>/… deep links — are discounted as internal, not outbound.
- */
-export function classifySource(
-  selfRepo: RepoIdentifier,
-  markdown: string,
-  config: SourceClassifierConfig = DEFAULT_SOURCE_CLASSIFIER_CONFIG,
-): Classification {
-  const tree = unified().use(remarkParse).use(remarkGfm).parse(markdown);
-  return classifySourceTree(tree, selfRepo, config);
-}
-
-function classifySourceTree(
-  tree: Root,
-  selfRepo?: RepoIdentifier,
-  config: SourceClassifierConfig = DEFAULT_SOURCE_CLASSIFIER_CONFIG,
-): Classification {
-  return decideSourceClassification(tree, selfRepo, config);
-}
-
-/**
- * The pure decision core: a verdict from a parsed README tree and a config, no
- * parsing. `classifySource` is the production wrapper (it parses Markdown
- * first); this is the entry point for a caller that already holds a tree and
- * wants to re-threshold it across many configs without re-parsing.
- */
-export function decideSourceClassification(
-  tree: Root,
-  selfRepo: RepoIdentifier | undefined,
-  config: SourceClassifierConfig = DEFAULT_SOURCE_CLASSIFIER_CONFIG,
-): Classification {
-  return countResourceLinks(tree, selfRepo) >= config.minLinks
-    ? { kind: 'registry', registrySignal: 'content' }
-    : { kind: 'repository' };
-}
-
-/**
- * The set of targets that become typed JsonItems, so the only ones
- * `fetchTargetData` fetches a README for. Uses the same own-paragraph resolver
- * as `processListRecursively` so a kind is fetched iff the item is emitted
- * keyed by that exact URL.
- */
-function collectEntryGitHubUrls(tree: Root): Set<string> {
-  const urls = new Set<string>();
-  visit(tree, 'listItem', (item: ListItem) => {
-    const url = findOwnGitHubLink(item);
-    if (url) {
-      urls.add(url);
-    }
-  });
-  return urls;
-}
-
-// SOURCE-README threshold: the source is always Markdown (the enhancer holds it
-// as a parsed tree), and is almost always an awesome-list by construction, so a
-// modest outbound-link count separates it from a project README. 26 is the
-// F1-optimal cutoff on the registry/repository gold set: the lowest value that
-// still classifies the densest non-registries (e.g. a 25-link project README)
-// as `repository`, while recovering genuine registries whose READMEs sit in
-// the [26, 49] outbound-link band a higher cutoff would miss. Exposed as the
-// default of `SourceClassifierConfig.minLinks` so the threshold can be swept
-// offline, but still not an action input — the default verdict is trustworthy
-// standalone.
-export const REGISTRY_MIN_LINKS = 26;
-
-// Knobs surfaced so the source decision can be re-thresholded offline (parse
-// once, sweep many configs over the cached tree). Defaults ARE the constants
-// above — single source of truth — so the default verdict is unchanged.
-export interface SourceClassifierConfig {
-  minLinks: number;
-}
-
-export const DEFAULT_SOURCE_CLASSIFIER_CONFIG: SourceClassifierConfig = {
-  minLinks: REGISTRY_MIN_LINKS,
-};
 
 function fixRelativeLinks(tree: Root, relativeLinkPrefix: string) {
   if (!relativeLinkPrefix) {
@@ -632,8 +458,6 @@ function compareByRepoInfo(
 function processListRecursively(
   listNode: List,
   repoInfoMap: Map<string, RepoInfoDetails>,
-  kindsMap: Map<string, Kind>,
-  registrySignalMap: Map<string, RegistrySignal>,
   sortOptions: SortOptions,
   isNested = false,
 ): JsonNode[] {
@@ -667,14 +491,7 @@ function processListRecursively(
       (child): child is List => child.type === 'list',
     );
     const childrenJson = nestedLists.flatMap(nestedList =>
-      processListRecursively(
-        nestedList,
-        repoInfoMap,
-        kindsMap,
-        registrySignalMap,
-        sortOptions,
-        true,
-      ),
+      processListRecursively(nestedList, repoInfoMap, sortOptions, true),
     );
 
     let title = '';
@@ -699,28 +516,18 @@ function processListRecursively(
       }
     }
 
-    // No-own-link items with children become kind-less groups — NEVER give them
-    // a `kind`/`repo_info`, that's the identity-borrowing bug. No-own-link,
-    // no-child items are non-GitHub leaves: kept in markdown, dropped from JSON.
+    // No-own-link items with children become groups — NEVER give them a
+    // `repo_info`, that's the identity-borrowing bug. No-own-link, no-child
+    // items are non-GitHub leaves: kept in markdown, dropped from JSON.
     // TODO(future): preserve non-GitHub leaves in a separate shape.
     let jsonData: JsonNode | null = null;
     if (githubUrl) {
-      // A missing kind means the README was unreadable (dead link) and was
-      // skipped. Default to 'repository' (no signal) so a dead link never
-      // drops an item.
-      const kind = kindsMap.get(githubUrl) ?? 'repository';
-      const registrySignal = registrySignalMap.get(githubUrl);
       const item: JsonItem = {
         node_type: 'item',
-        kind,
         title,
         description: description || null,
         children: childrenJson,
       };
-      // Present only on registries; a repository carries no signal.
-      if (registrySignal) {
-        item.registry_signal = registrySignal;
-      }
       if (repoInfo) {
         item.repo_info = toRepoInfo(repoInfo);
       }
@@ -858,8 +665,6 @@ function applyBrandingToTree(
 function processTree(
   tree: Root,
   repoInfoMap: Map<string, RepoInfoDetails>,
-  kindsMap: Map<string, Kind>,
-  registrySignalMap: Map<string, RegistrySignal>,
   sortOptions: SortOptions,
   originalRepository?: string,
 ): { sections: JsonSection[]; title: string; titleHeadingIndex: number } {
@@ -906,13 +711,7 @@ function processTree(
           }
         }
       } else if (node.type === 'list') {
-        const items = processListRecursively(
-          node,
-          repoInfoMap,
-          kindsMap,
-          registrySignalMap,
-          sortOptions,
-        );
+        const items = processListRecursively(node, repoInfoMap, sortOptions);
         if (items.length > 0) {
           currentSection.items = items;
           sections.push(currentSection);
@@ -922,13 +721,7 @@ function processTree(
     } else if (node.type === 'list') {
       // No active section: not part of any JSON section, but still sort its AST
       // so the rendered markdown matches.
-      processListRecursively(
-        node,
-        repoInfoMap,
-        kindsMap,
-        registrySignalMap,
-        sortOptions,
-      );
+      processListRecursively(node, repoInfoMap, sortOptions);
     }
   }
 

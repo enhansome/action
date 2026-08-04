@@ -5,7 +5,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "sql-tap",
           "description": "Real-time SQL traffic viewer.",
           "children": [],
@@ -20,7 +19,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "innodb-ruby",
           "description": "A parser for InnoDB file formats, in Ruby.",
           "children": [],
@@ -35,7 +33,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "pstop",
           "description": "a top-like program for MySQL, collecting, aggregating and displaying information from performance_schema.",
           "children": [],
@@ -50,7 +47,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "MySQLTuner-perl",
           "description": "A script that allows you to review a MySQL installation quickly and make adjustments to increase performance and stability.",
           "children": [],
@@ -65,7 +61,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Anemometer",
           "description": "Box SQL slow query monitor.",
           "children": [],
@@ -80,7 +75,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "MySQL Explain Analyzer",
           "description": "A web-based analyzer of output, providing comments, scalability analysis and permalinks for saved samples.",
           "children": [],
@@ -95,7 +89,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "mysql-statsd",
           "description": "A Python daemon to collect information from MySQL and send it via StatsD to Graphite.",
           "children": [],
@@ -110,7 +103,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Dolphie",
           "description": "a modern terminal tool for real-time analytics into MySQL/MariaDB & ProxySQL",
           "children": [],
@@ -125,7 +117,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "innotop",
           "description": "a 'top' clone for MySQL with many features and flexibility.",
           "children": [],
@@ -140,7 +131,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Prometheus",
           "description": "/mysqld_exporter - Time series database for real-time monitoring and alerting.",
           "children": [],
@@ -161,7 +151,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Percona Xtrabackup",
           "description": "an open-source hot backup utility for MySQL - based servers that doesn’t lock your database during the backup.",
           "children": [],
@@ -176,7 +165,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "MyDumper",
           "description": "Logical, parallel backup/dumper tool for MySQL",
           "children": [],
@@ -191,7 +179,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Portabase",
           "description": "Agent-based platform for MySQL backups and restores with decentralized execution and centralized orchestration.",
           "children": [],
@@ -206,7 +193,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Databasus",
           "description": "tool for scheduled MySQL backups via web UI with external storages (local, S3, FTP, Google Drive, etc.), notifications (webhook, Discord, Slack, etc.) and team management.",
           "children": [],
@@ -221,7 +207,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Dumpling",
           "description": "Logical, parallel backup/dumper tool for MySQL/TiDB written in GoLang - support csv format output and integrated as library",
           "children": [],
@@ -242,7 +227,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "go-tpc",
           "description": "A golang port of TPCC and TPCH benchmark for MySQL.",
           "children": [],
@@ -257,7 +241,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "iibench-mysql",
           "description": "Java based version of the Index Insertion Benchmark for MySQL/Percona/MariaDB.",
           "children": [],
@@ -272,7 +255,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Sysbench",
           "description": "a modular, cross-platform and multi-threaded benchmark tool.",
           "children": [],
@@ -287,7 +269,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "TPCC-MySQL",
           "description": "(archived) - A port of the popular TPCC benchmark for MySQL.",
           "children": [],
@@ -302,7 +283,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "HammerDB",
           "description": "An open-source database benchmark for MySQL/MariaDB and other open source and commercial databases.",
           "children": [],
@@ -323,7 +303,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "mysql-ripple",
           "description": "(archived) - Ripple, a server that can serve as a middleman in MySQL replication",
           "children": [],
@@ -338,7 +317,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Kingbus",
           "description": "A distributed MySQL binlog storage system built on Raft",
           "children": [],
@@ -353,7 +331,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "DM",
           "description": "A High-Availability data migration platform which supports migrating data from MySQL/MariaDB to TiDB and merging shard tables",
           "children": [],
@@ -374,7 +351,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "ballerinax/mysql",
           "description": "Official Ballerina connector for MySQL.",
           "children": [],
@@ -389,7 +365,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "DBD::MariaDB",
           "description": "MariaDB and MySQL driver for the Perl5 Database Interface.",
           "children": [],
@@ -404,7 +379,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Ruby Mysql2 gem",
           "description": "MySQL driver for Ruby and Rails projects.",
           "children": [],
@@ -419,7 +393,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "mysqlclient-python",
           "description": "MySQL database connector for Python.",
           "children": [],
@@ -434,7 +407,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "libAttachSQL",
           "description": "libAttachSQL is a lightweight, non-blocking C API for MySQL servers.",
           "children": [],
@@ -449,7 +421,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "MySQL Connector/J",
           "description": "a standardized database driver for the Java platforms and development.",
           "children": [],
@@ -464,7 +435,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "PyMySQL",
           "description": "MySQL database connector for Python.",
           "children": [],
@@ -479,7 +449,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "mex-mariadb",
           "description": "MIT licensed MariaDB/MySQL Client Library for GNU Octave and Matlab.",
           "children": [],
@@ -494,7 +463,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "MariaDB Connector/J",
           "description": "LGPL-licensed MariaDB Client Library for Java Applications.",
           "children": [],
@@ -509,7 +477,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "DBD::mysql",
           "description": "MySQL driver for the Perl5 Database Interface.",
           "children": [],
@@ -524,7 +491,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "MySQL Connector/C++",
           "description": "Official C/C++ driver for MySQL.",
           "children": [],
@@ -539,7 +505,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "MySQL Connector/Node.js",
           "description": "Official Node.js driver for MySQL.",
           "children": [],
@@ -554,7 +519,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "MySQL Connector/Python",
           "description": "a standardized database driver for Python platforms and development.",
           "children": [],
@@ -569,7 +533,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "MyZql",
           "description": "MySQL and MariaDB driver in native Zig.",
           "children": [],
@@ -584,7 +547,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "go-sql-driver",
           "description": "a lightweight and fast MySQL-Driver for Go's (golang) database/sql package.",
           "children": [],
@@ -599,7 +561,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "node-mysql",
           "description": "A pure Nodejs Javascript client implementing the MySQL protocol.",
           "children": [],
@@ -614,7 +575,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "wtx",
           "description": "Client for MySQL/MariaDB/Percona written in Rust",
           "children": [],
@@ -629,7 +589,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "MySQL Connector/NET",
           "description": "a standardized database driver for .Net platforms and development.",
           "children": [],
@@ -650,7 +609,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Flywaydb",
           "description": "Database migrations; Evolve your database schema easily and reliably across all your instances",
           "children": [],
@@ -665,7 +623,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "SQLE",
           "description": "SQLE is a SQL audit platform for DBA or developer",
           "children": [],
@@ -680,7 +637,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Shift",
           "description": "An application that helps you run schema migrations on MySQL databases",
           "children": [],
@@ -695,7 +651,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "dbsafe",
           "description": "Pre-execution safety analysis for MySQL DDL/DML operations",
           "children": [],
@@ -710,7 +665,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Skeema",
           "description": "Declarative pure-SQL schema management system for MySQL and MariaDB, with support for sharding and external online schema change tools",
           "children": [],
@@ -725,7 +679,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Test database",
           "description": "A sample MySQL database with an integrated test suite, used to test applications and servers",
           "children": [],
@@ -740,7 +693,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Liquibase",
           "description": "Source control for your database",
           "children": [],
@@ -761,7 +713,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "ILLA Cloud",
           "description": "Low-code internal tool builder integrated with Mysql, can be used as GUI for Mysql.",
           "children": [],
@@ -776,7 +727,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "SQLyog Community edition",
           "description": "SQLyog Community edition. For Windows, works fine under wine in Mac and Linux",
           "children": [],
@@ -791,7 +741,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "phpMyAdmin",
           "description": "a free software tool written in PHP, intended to handle the administration of MySQL over the Web.",
           "children": [],
@@ -806,7 +755,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "MySQL Shell",
           "description": "Advanced client and code editor for MySQL that supports development and administration for the MySQL Server and MySQL InnoDB cluster (AdminAPI) with an interactive JavaScript, Python, or SQL interface.",
           "children": [],
@@ -821,7 +769,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "WebDB",
           "description": "Open Source and Efficient Database IDE. Featuring Easy server connection, Modern ERD, Intelligent data generator, AI assistant, NoSQL structure manager, Time machine and Powerful query editor",
           "children": [],
@@ -836,7 +783,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "pspg",
           "description": "provides a pager with enhanced visualization and navigation for tabular data. Originally implemented for PostgreSQL, but also supports MySQL.",
           "children": [],
@@ -851,7 +797,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "OmniDB: Web tool for database management",
           "description": null,
           "children": [],
@@ -866,7 +811,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Ocelot GUI",
           "description": "GUI client for MySQL or MariaDB, including debugger.",
           "children": [],
@@ -881,7 +825,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Percona Monitoring and Management",
           "description": "An open-source platform for managing and monitoring MySQL performance.",
           "children": [],
@@ -896,7 +839,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Sequel Ace",
           "description": "a Mac database management application for working with MySQL databases.",
           "children": [],
@@ -911,7 +853,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "mycli",
           "description": "A Terminal Client for MySQL with AutoCompletion and Syntax Highlighting.",
           "children": [],
@@ -926,7 +867,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "HeidiSQL",
           "description": "MySQL GUI frontend for Windows.",
           "children": [],
@@ -941,7 +881,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Adminer",
           "description": "Database management in a single PHP file.",
           "children": [],
@@ -956,7 +895,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "DBeaver",
           "description": "A cross-platform SQL and NoSQL database client.",
           "children": [],
@@ -971,7 +909,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "MySQL Workbench",
           "description": "provides DBAs and developers an integrated tools environment for database design & modeling; SQL devleopment; database administration.",
           "children": [],
@@ -992,7 +929,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "replication-manager",
           "description": "a high availability solution to manage MariaDB 10.x and MySQL & Percona Server 5.7 GTID replication topologies.",
           "children": [],
@@ -1007,7 +943,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Orchestrator",
           "description": "(archived) - MySQL replication topology management and High Availability solution.",
           "children": [],
@@ -1022,7 +957,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Percona Replication Manager",
           "description": "Asynchronous MySQL replication manager agent for Pacemaker. Supports file and GTID based replication, geo-distributed clusters using booth.",
           "children": [],
@@ -1037,7 +971,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Galera Cluster",
           "description": "a true Multimaster Cluster based on synchronous replication.",
           "children": [],
@@ -1052,7 +985,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "mha4mysql-node",
           "description": "and mha4mysql-manager (both unmaintained) - Master High Availability Manager and tools for MySQL.",
           "children": [],
@@ -1073,7 +1005,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "MCP MariaDB Server",
           "description": "the official MariaDB MCP server.",
           "children": [],
@@ -1088,7 +1019,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "MySQL MCP Server",
           "description": "Advanced MCP server exposing MySQL via the Model Context Protocol",
           "children": [],
@@ -1109,7 +1039,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "sys",
           "description": "(archived) - A collection of views, functions and procedures to help MySQL administrators get insight in to MySQL Database usage. See sys schema docs",
           "children": [],
@@ -1124,7 +1053,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "common_schema",
           "description": "DBA's framework for MySQL, providing a function library, views library and QueryScript interpreter.",
           "children": [],
@@ -1145,7 +1073,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "myldapsync",
           "description": "Synchronize MySQL or MariaDB users with users in an LDAP directory.",
           "children": [],
@@ -1160,7 +1087,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "myanon",
           "description": "Streaming anonymizer for MySQL dump files, reading mysqldump output from stdin and writing anonymized data to stdout. Supports deterministic hashing, fixed values, JSON field anonymization, and Python extensions.",
           "children": [],
@@ -1175,7 +1101,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Acra",
           "description": "SQL database protection suite: strong selective encryption, SQL injections prevention, intrusion detection system.",
           "children": [],
@@ -1196,7 +1121,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Percona Server",
           "description": "An enhanced, drop-in MySQL replacement.",
           "children": [],
@@ -1211,7 +1135,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "MyVector",
           "description": "Native vector search plugin for MySQL, shipped as a server plugin.",
           "children": [],
@@ -1226,7 +1149,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "MySQL Server & MySQL Cluster",
           "description": "Official Oracle's MySQL server & MySQL Cluster distribution.",
           "children": [],
@@ -1241,7 +1163,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "MariaDB",
           "description": "Community developed fork of MySQL server.",
           "children": [],
@@ -1256,7 +1177,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "TiDB",
           "description": "A distributed HTAP database compatible with the MySQL protocol.",
           "children": [],
@@ -1277,7 +1197,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Jetpants",
           "description": "An automation suite for managing large range sharding clusters, by Tumblr.",
           "children": [],
@@ -1292,7 +1211,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Vitess",
           "description": "vitess provides servers and tools which facilitate scaling of MySQL databases for large scale web services.",
           "children": [],
@@ -1313,7 +1231,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "gh-ost",
           "description": "GitHub's online schema migration for MySQL.",
           "children": [],
@@ -1328,7 +1245,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Percona Toolkit",
           "description": "a collection of advanced command-line tools to perform a variety of MySQL server and system tasks that are too difficult or complex to perform manually.",
           "children": [],
@@ -1343,7 +1259,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "UnDROP",
           "description": "(archived) - a tool to recover data from dropped or corrupted InnoDB tables.",
           "children": [],
@@ -1358,7 +1273,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Swoof",
           "description": "Ultra fast MySQL table importer that stages swaps through temporary tables and supports file/clipboard targets.",
           "children": [],
@@ -1373,7 +1287,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "MySQL Utilities",
           "description": "(deprecated) - a collection of command-line utilities, written in Python, that are used for maintaining and administering MySQL servers, either individually, or within Replication hierarchies.",
           "children": [],
@@ -1388,7 +1301,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "sql-splitter",
           "description": "High-performance CLI for splitting, merging, converting, validating, and sampling mysqldump files.",
           "children": [],
@@ -1403,7 +1315,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "go-mysql",
           "description": "A pure go library to handle MySQL network protocol and replication.",
           "children": [],
@@ -1426,8 +1337,6 @@
     "original_repository_sha": "deadbeef",
     "enhanced_repository": "enhansome/enhansome-mysql",
     "enhanced_repository_description": "enhanced list",
-    "kind": "registry",
-    "title": "awesome-mysql with stars",
-    "registry_signal": "content"
+    "title": "awesome-mysql with stars"
   }
 }

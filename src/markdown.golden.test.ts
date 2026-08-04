@@ -4,7 +4,6 @@ import { describe, expect, it, vi } from 'vitest';
 
 import type { RepoInfoDetails } from './github.js';
 
-import { isAwesomeListName } from './classify.js';
 import { silentLog } from './logger.js';
 import { enhance } from './orchestrator.js';
 
@@ -84,7 +83,6 @@ vi.mock('./github.js', async () => {
       log: silentLog,
     })) as unknown as typeof actual.makeOctokit,
     getRepoInfo: deterministicGetRepoInfo,
-    getReadme: deterministicGetReadme,
   };
 });
 
@@ -98,29 +96,6 @@ function deterministicGetRepoInfo(
   const info =
     `${owner}/${repo}` === 'user/repo-b' ? null : generateRepoInfo(owner, repo);
   return Promise.resolve(info);
-}
-
-// Deterministic per-item README so the golden suite stays offline AND exercises
-// the per-item `registry` classification path end-to-end. classifyKind fetches
-// every non-member target's rendered HTML to confirm a soft anchor (an
-// outward-facing README) or fall to the content backstop. A name candidate gets
-// an outward-facing README here and classifies as a registry via the NAME layer;
-// everything else gets a link-less project README and falls through to
-// `repository`. Real awesome-lists overwhelmingly classify as registries, so this
-// matches production behavior for the bulk of those targets.
-function deterministicGetReadme(
-  _octokit: unknown,
-  _owner: string,
-  repo: string,
-): Promise<string> {
-  if (isAwesomeListName(repo)) {
-    const links = Array.from(
-      { length: 60 },
-      (_, i) => `<a href="https://github.com/example/item-${i}">item-${i}</a>`,
-    );
-    return Promise.resolve(`<article>${links.join('')}</article>`);
-  }
-  return Promise.resolve('<p>project</p>');
 }
 
 // --- fixture inputs ---------------------------------------------------------

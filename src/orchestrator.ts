@@ -1,4 +1,3 @@
-import { createRepoLookup } from './classify.js';
 import { Logger } from './logger.js';
 import {
   JsonOutput,
@@ -66,9 +65,7 @@ export async function enhance(options: EnhanceOptions): Promise<EnhanceResult> {
     enhancedRepositoryDescription,
     originalRepositorySha,
     now,
-    // One lookup for the run: it owns the single throttled client (and the sink
-    // everything below logs to), the membership set, and the per-repo memos.
-    createRepoLookup({ log, token }),
+    log,
   );
 
   return {

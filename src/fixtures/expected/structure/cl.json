@@ -5,7 +5,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cl-completions",
           "description": "LLM completions.",
           "children": [],
@@ -20,7 +19,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cl-embeddings",
           "description": "LLM embeddings.",
           "children": [],
@@ -35,7 +33,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "openai-openapi-client",
           "description": "semi-automatically generated Openapi client updated frequently from the official Openapi specification. AGPL-3.",
           "children": [],
@@ -50,7 +47,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cl-chroma",
           "description": "the vector DB interface.",
           "children": [],
@@ -71,7 +67,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "40ants-MCP",
           "description": "a framework for building Model Context Protocol servers in Common Lisp.",
           "children": [],
@@ -86,7 +81,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Lisply MCP",
           "description": "a generic Node.js wrapper meant to work with pretty much any language backend which can support \"eval\" and http .",
           "children": [],
@@ -101,7 +95,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cl-MCP",
           "description": "MCP for Common Lisp.",
           "children": [],
@@ -122,7 +115,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "clml",
           "description": "originally developed by Mathematicl Systems Inc., a Japanese company. With a tutorial. LLGPL.",
           "children": [],
@@ -137,7 +129,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "antik",
           "description": "a foundation for scientific and engineering computation in Common Lisp. GPL. Also mgl-mat and LLA.",
           "children": [],
@@ -152,13 +143,11 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "MGL",
           "description": "a machine learning library for backpropagation neural networks, boltzmann machines, gaussian processes and more. MIT.",
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "used by its author",
               "description": "to win the Higgs Boson Machine Learning Challenge.",
               "children": [],
@@ -189,7 +178,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "🚀 sparser",
           "description": "A natural language understanding system for English. Eclipse.",
           "children": [],
@@ -204,7 +192,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cl-nlp",
           "description": "Natural language processing toolset. Apache2.0.",
           "children": [],
@@ -219,7 +206,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "babel2",
           "description": "A Fluid Construction Grammar implementation, computational framework, and unification-based grammar formalism Apache2.0.",
           "children": [],
@@ -240,7 +226,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "WouldWork",
           "description": "solve classical planning and constraint satisfaction problems without extensive programming experience. BSD_3Clause.",
           "children": [],
@@ -255,7 +240,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Lisa",
           "description": "a production-quality, forward-chaining expert system shell featuring an optimized implementation of Charles Forgy's Rete algorithm, a highly efficient solution to the difficult many-to-many pattern matching problem. MIT.",
           "children": [],
@@ -276,7 +260,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "AIMA-lisp",
           "description": "Common Lisp implementation of algorithms from Russell and Norvig's \"Artificial Intelligence - A Modern Approach\".",
           "children": [],
@@ -291,7 +274,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "PAIP-lisp",
           "description": "Lisp code for the textbook \"Paradigms of Artificial Intelligence Programming\".",
           "children": [],
@@ -312,7 +294,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "with-c-syntax",
           "description": "a fun package which introduces the C language syntax into Common Lisp. (Yes, this package is not for practical coding, I think.) WTFPL Licence.",
           "children": [],
@@ -327,7 +308,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "C-mera",
           "description": "a source-to-source compiler that utilizes Lisp's macro system for meta programming of C-like languages. GPL3.",
           "children": [],
@@ -342,7 +322,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "vacietis",
           "description": "C to Common Lisp compiler. LGPL3.",
           "children": [],
@@ -357,7 +336,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "lispc",
           "description": "a powerful \"lispsy\" macrolanguage for C. MIT.",
           "children": [],
@@ -372,7 +350,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "NEW as of 2025 Cicili",
           "description": "C generator macro-driven language. GPL3.0.",
           "children": [],
@@ -387,7 +364,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Software-Evolution-Library",
           "description": "The SEL enables the programmatic modification and evaluation of software (C/C++ support using Clang, compiled assembler, and linked ELF binaries). GPL3.",
           "children": [],
@@ -408,7 +384,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "datafly",
           "description": "A lightweight database library. 3-clause BSD.",
           "children": [],
@@ -423,13 +398,11 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "👍 mito",
           "description": "An ORM for Common Lisp with migrations, relationships and PostgreSQL support BSD_3Clause.",
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "mitho-auth",
               "description": ", a mixin class for use authorization",
               "children": [],
@@ -444,7 +417,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "mito-attachment",
               "description": ", a mixin class for file management outside of RDBMS.",
               "children": [],
@@ -474,7 +446,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "dbd-oracle",
               "description": "an Oracle database driver for CL-DBI. LLGPL.",
               "children": [],
@@ -497,13 +468,11 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "bknr.datastore",
           "description": "a CLOS-based lisp-only database in RAM with transaction logging persistence. Manual. licence.",
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "an example web application using bknr.datastore: screenshotbot-oss",
               "description": ".",
               "children": [],
@@ -518,7 +487,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "See also bknr.cluster",
               "description": ", if you want a highly-available replicated version of bknr.datastore.",
               "children": [],
@@ -543,13 +511,11 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cl-prevalence",
           "description": "in-memory database system. Implementation of Object Prevalence, in which business objects are kept live in memory and transactions are journaled for system recovery. github fork. LLGPL.",
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "See also cl-prevalence-multimaster",
               "description": ", to syncronize multiple cl-prevalence systems state.",
               "children": [],
@@ -580,7 +546,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "vivace-graph",
           "description": "graph database & Prolog implementation. Takes design inspiration from CouchDB, neo4j and AllegroGraph. It implements an ACID-compliant object graph model with user-defined indexes and map-reduce views. It also implements a master / slave replication scheme for redundancy and horizontal read scaling. Querying the graph is accomplished via a number of Lisp methods or via a Prolog-like query language. MIT.",
           "children": [],
@@ -595,7 +560,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cl-agraph",
           "description": ", a minimal client for AllegroGraph.",
           "children": [],
@@ -615,7 +579,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "and maybe: cl-neo4j",
               "description": "a thin neo4j RESTFUL client interface.",
               "children": [],
@@ -638,7 +601,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cl-rethinkdb",
           "description": "RethinkDB client. Expat.",
           "children": [],
@@ -653,7 +615,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "lmdb",
           "description": "Bindings to LMDB, the Lightning Memory-mapped Database, an ACID key-value database with MultiVersion Concurrency Control.",
           "children": [],
@@ -668,7 +629,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cl-disque",
           "description": "Disque client. 3-clause BSD.",
           "children": [],
@@ -683,7 +643,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cl-memcached",
           "description": "Fast, thread-safe interface to the Memcached object caching system. Expat.",
           "children": [],
@@ -698,7 +657,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cl-mango",
           "description": "A minimalist CouchDB 2.x database client. BSD_3Clause.",
           "children": [],
@@ -713,7 +671,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cl-duckdb",
           "description": "Common Lisp CFFI wrapper around the DuckDB C API. MIT.",
           "children": [],
@@ -728,7 +685,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cl-ndbapi",
           "description": "bindings to the C++ NDB API of RonDB, \"the world's fastest key value store\", by Dydra. GPLv2.",
           "children": [],
@@ -743,7 +699,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cl-bunny",
           "description": "Common Lisp RabbitMQ client based on IOLib. MIT.",
           "children": [],
@@ -758,7 +713,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cl-redis",
           "description": "Redis client. Expat.",
           "children": [],
@@ -779,7 +733,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cl-migratum",
           "description": "a system which provides facilities for performing database schema migrations, designed to work with various databases. BSD_3Clause.",
           "children": [],
@@ -794,7 +747,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "postmodern-passenger-pigeon",
           "description": "a migration manager for postmodern. No licence specified.",
           "children": [],
@@ -815,7 +767,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cl-influxdb",
           "description": "an interface to the Time Series Database InfluxDB. MIT.",
           "children": [],
@@ -830,13 +781,11 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "coalton-zmq",
           "description": "ZeroMQ interface for Coalton.",
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "\"It's complete enough to be useful for building apps that use ZeroMQ\". Many of the official ZeroMQ examples",
               "description": "are implemented.",
               "children": [],
@@ -861,7 +810,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "dyna",
           "description": "an AWS DynamoDB ORM. MIT.",
           "children": [],
@@ -882,7 +830,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "auto-text",
           "description": "automatic (encoding, end of line, column width, csv delimiter etc) detection for text files. MIT. See also inquisitor for detection of asian and far eastern languages.",
           "children": [],
@@ -897,13 +844,11 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "⭐ cl-csv",
           "description": "A library for parsing CSV files. 3-clause BSD.",
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "documentation",
               "description": null,
               "children": [],
@@ -928,7 +873,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cl-decimals",
           "description": "Decimal number parser and formatter. Public domain.",
           "children": [],
@@ -943,7 +887,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "csv-validator",
           "description": "Validates tabular CSV data using predefined validations, inspired from its Python homologue \"Great Expectations\". BSD_3Clause.",
           "children": [],
@@ -964,7 +907,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cl-json",
           "description": "A highly customizable JSON encoder and decoder. MIT.",
           "children": [],
@@ -979,7 +921,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "parcom/json",
           "description": "An extension to for simple, fast, no-dependency JSON parsing.",
           "children": [],
@@ -994,7 +935,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "👍 jzon",
           "description": "a correct, safe and fast JSON parser. MIT.",
           "children": [],
@@ -1009,7 +949,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "shasht",
           "description": "Common Lisp JSON reading and writing for the Kzinti. MIT.",
           "children": [],
@@ -1030,7 +969,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "clop",
           "description": "A 1.0-compliant TOML parser.",
           "children": [],
@@ -1045,7 +983,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "parcom/toml",
           "description": "An extension to for simple, no-dependency TOML parsing.",
           "children": [],
@@ -1066,7 +1003,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Buildnode",
           "description": "A common lisp library to ease interaction with CXML-dom, such as building Excel spreadsheets. BSD.",
           "children": [],
@@ -1081,7 +1017,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "xpath",
           "description": "(homepage - Implementation of the XML Path Language (XPath) Version 1.0. BSD_2Clause.",
           "children": [],
@@ -1096,7 +1031,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "xmls",
           "description": "A small, simple, non-validating XML parser. 3-clause BSD.",
           "children": [],
@@ -1111,7 +1045,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cl-feedparser",
           "description": "A Common Lisp (RSS, Atom) feed parser. LLGPL",
           "children": [],
@@ -1126,7 +1059,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "parcom/xml",
           "description": "An extension to for simple, fast XML parsing.",
           "children": [],
@@ -1146,7 +1078,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "see the FXML",
               "description": "fork, with fixes and new features. You should use it if your are parsing potentially ill-formed or malicious XML, or if you need to use Klacks with namespaces.",
               "children": [],
@@ -1169,7 +1100,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "yamson",
           "description": "Fast YAML and JSON parsers for Common Lisp (not yet emitters). Apache2.0.",
           "children": [],
@@ -1184,7 +1114,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "👍 cl-yaml",
           "description": "a YAML parser and emitter built on top of libyaml. MIT.",
           "children": [],
@@ -1205,7 +1134,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cl-gobject-introspection",
           "description": "Gobject Introspection FFI. Automatic bindings to call into the C library. BSD. Generate a lisp interface with gir2cl. LGPL3.",
           "children": [],
@@ -1220,7 +1148,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "👍cl-autowrap",
           "description": "Automatically parses header files into CFFI definitions. FreeBSD.",
           "children": [],
@@ -1235,7 +1162,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cl-bindgen",
           "description": "A command line tool and library for creating Common Lisp language bindings from C header files. MIT.",
           "children": [],
@@ -1250,7 +1176,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cl-cxx-jit",
           "description": "Common Lisp and C++ interoperation with JIT. MIT.",
           "children": [],
@@ -1265,13 +1190,11 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "⭐ CFFI",
           "description": "Portable, easy-to-use C foreign function interface. Expat.",
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "cffi-ops",
               "description": "helps write concise CFFI-related code.",
               "children": [],
@@ -1286,7 +1209,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "cffi-objects",
               "description": "enables fast and convenient interoperation with foreign objects.",
               "children": [],
@@ -1317,7 +1239,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cl-nextstep",
           "description": "Cocoa binding for Common Lisp on macOS.",
           "children": [],
@@ -1332,7 +1253,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "objc-lisp-bridge",
           "description": "A portable reader and bridge for interacting with Objective-C and Cocoa. MIT.",
           "children": [],
@@ -1353,7 +1273,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cl4py",
           "description": "The library cl4py (pronounce as clappy) allows Python programs to call Common Lisp libraries. MIT.",
           "children": [],
@@ -1368,13 +1287,11 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "py4cl",
           "description": "A library that allows Common Lisp code to access Python libraries. It is basically the inverse of cl4py. MIT.",
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "py4cl2-cffi",
               "description": "CFFI based alternative to py4cl2.",
               "children": [],
@@ -1389,7 +1306,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "its fork py4cl2",
               "description": ", at first less stable, now more developped and faster.",
               "children": [],
@@ -1414,7 +1330,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "burgled-batteries",
           "description": "A bridge between Python and Common Lisp. The goal is that Lisp programs can use Python libraries. Not available on Quicklisp. MIT.",
           "children": [],
@@ -1435,7 +1350,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Eclector",
           "description": "A portable Common Lisp reader that is highly customizable, can recover from errors and can return concrete syntax trees.",
           "children": [],
@@ -1450,7 +1364,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "rewrite-cl",
           "description": "Read, modify, and write Common Lisp source code while preserving whitespace and comments. MIT. Built with LLMs.",
           "children": [],
@@ -1471,13 +1384,11 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cl-annot",
           "description": "Python-like annotations for Common Lisp. LLGPL.",
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "cl-annot-revisit",
               "description": "re-implementation of cl-annot. WTFPL.",
               "children": [],
@@ -1502,7 +1413,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cl-reader",
           "description": "A utility library intended at providing reader macros for lambdas, mapping, accessors, hash-tables and hash-sets. MIT.",
           "children": [],
@@ -1517,13 +1427,11 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "clamp",
           "description": "Arc language's brevity and conciseness to Common Lisp. Artistic License 2.0.",
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "also arc-compat",
               "description": "Arc compatible package. Perl Foundation's Artistic Licence 2.0.",
               "children": [],
@@ -1554,7 +1462,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "dynamic-mixins",
           "description": "simple, dynamic class combination. BSD_2Clause.",
           "children": [],
@@ -1569,7 +1476,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "static-dispatch",
           "description": "allows standard generic function dispatch to be performed statically (at compile time) rather than dynamically (runtime). This is similar to what is known as \"overloading\" in languages such as C++ and Java. MIT.",
           "children": [],
@@ -1584,7 +1490,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "polymorphic functions",
           "description": "A function type to dispatch on types instead of classes with partial support for dispatching on optional and keyword argument types. Still experimental (May, 2021). MIT.",
           "children": [],
@@ -1599,7 +1504,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "specialization-store",
           "description": "generic functions based on types. Simplified BSD License variant.",
           "children": [],
@@ -1614,7 +1518,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "filtered-functions",
           "description": "enable the use of arbitrary predicates for selecting and applying methods. MIT.",
           "children": [],
@@ -1629,7 +1532,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "fast-generic-functions",
           "description": "Seal your generic functions for an extra boost in performance. MIT.",
           "children": [],
@@ -1644,7 +1546,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "inlined-generic-function",
           "description": "Bringing the speed of Static Dispatch to CLOS. LLGPL.",
           "children": [],
@@ -1659,7 +1560,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "⭐ closer-mop",
           "description": "A compatibility layer that rectifies many absent or incorrect MOP features. Expat.",
           "children": [],
@@ -1680,7 +1580,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cl-hooks",
           "description": "Hooks extension point mechanism (as known, e.g., from GNU Emacs). LGPL.",
           "children": [],
@@ -1695,7 +1594,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "nhooks",
           "description": "an enhanced implementation of hooks (extension points) with crucial improvements.",
           "children": [],
@@ -1710,7 +1608,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cl-advice",
           "description": "an attempt of portable layer advice library for SBCL, CCL, LispWorks and Allegro. Not in Quicklisp.",
           "children": [],
@@ -1731,7 +1628,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "doplus",
           "description": "another extensible iteration library, similar to :for.",
           "children": [],
@@ -1746,7 +1642,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "picl",
           "description": "An (almost) complete port of Python's itertools package, complete with laziness where applicable, and not relying on cl-cont. MIT.",
           "children": [],
@@ -1761,7 +1656,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Khazern",
           "description": "An implementation of CL:LOOP that can be used in any CL implementation without replacing the core CL:LOOP, is extensible and has a \"batteries included\" extension system with many useful iteration constructs.",
           "children": [],
@@ -1776,7 +1670,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "trivial-do",
           "description": "Additional dolist style macros for Common Lisp. MIT.",
           "children": [],
@@ -1791,7 +1684,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "gmap",
           "description": "A concise and extensible iteration facility that has the advantage of integrating well with FSet (see the Data Structures section), as it was written by the same author. In Quicklisp as part of . Public domain.",
           "children": [],
@@ -1806,7 +1698,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cl-transducers",
           "description": "Ergonomic, efficient data processing. LGPL3.",
           "children": [],
@@ -1821,7 +1712,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "snakes",
           "description": "Python style generators for Common Lisp. Includes a port of itertools. Apache2.",
           "children": [],
@@ -1842,7 +1732,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cl-punch",
           "description": "Scala-like anonymous lambda literals. . MIT.",
           "children": [],
@@ -1857,7 +1746,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "fn",
           "description": "a couple of lambda shorthand macros. . Public domain.",
           "children": [],
@@ -1878,7 +1766,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Screamer+",
           "description": "increasing the expressiveness of SCREAMER. MIT.",
           "children": [],
@@ -1893,7 +1780,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Temperance",
           "description": "logic programming. MIT. A focus on performance, with General Game Playing in mind.",
           "children": [],
@@ -1908,7 +1794,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Screamer",
           "description": "augment Common Lisp with practically all of the functionality of both Prolog and constraint logic programming languages. Blog post solving Project Euler puzzles. MIT.",
           "children": [],
@@ -1923,7 +1808,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cl-prolog2",
           "description": "Common Interface to ISO Prolog implementations from Common Lisp. MIT.",
           "children": [],
@@ -1944,7 +1828,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "lwcells",
           "description": "Light Weight Cells.",
           "children": [],
@@ -1959,7 +1842,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Cells",
           "description": "an implementation of the dataflow programming paradigm, reactive spreadsheet-like expressiveness for CLOS. Used to build an algebra learning system. With documentation. Lisp LGPL.",
           "children": [],
@@ -1974,7 +1856,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "NEW (2025) · live-cells",
           "description": "A reactive programming library for Lisp. BSD_3Clause.",
           "children": [],
@@ -1995,7 +1876,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "algebraic-data-types",
           "description": "defining algebraic data types in a similar spirit to Haskell or Standard ML, as well as for operating on them. BSD_3Clause.",
           "children": [],
@@ -2010,7 +1890,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "👍 trivial-types",
           "description": "provides missing but important type definitions such as , , and . LLGPL.",
           "children": [],
@@ -2025,13 +1904,11 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "👍 Coalton",
           "description": "an efficient, statically typed functional programming language that supercharges Common Lisp. MIT.",
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "flime",
               "description": "Real-time, project-wide Coalton compilation with isolated processes for LSP integration. MIT.",
               "children": [],
@@ -2046,7 +1923,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "coalton-threads",
               "description": "primitive thread and concurrency operations for Coalton.",
               "children": [],
@@ -2061,7 +1937,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "coalton-io",
               "description": "Functional IO interfaces. Includes terminal IO, file system IO, random variables, mutable variables, multithreading, and safely sharing state between threads.",
               "children": [],
@@ -2076,7 +1951,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "tokyo-tojo-json",
               "description": "a JSON parser implemented in Coalton.",
               "children": [],
@@ -2107,7 +1981,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "NASA's PVS",
           "description": ", the Prototype Verification System, and NASAlib, a collection of formal development libraries.",
           "children": [],
@@ -2127,7 +2000,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "Proofpad",
               "description": ", an online IDE for ACL2.",
               "children": [],
@@ -2142,7 +2014,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "ACL2-kernel",
               "description": ", a Jupyter Kernel for ACL2.",
               "children": [],
@@ -2170,7 +2041,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "📹 Common Lisp Programming: from novice to effective developer",
           "description": "A learning video series on the Udemy platform (full content under paid access). By an active lisper and community contributor (@vindarel). Github home.",
           "children": [],
@@ -2190,7 +2060,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "better read with a Firefox add-on: Practical-cl beautified",
               "description": ".",
               "children": [],
@@ -2218,7 +2087,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "also dpans2texi",
               "description": "the standard draft converted to Texinfo and published as a well formatted PDF.",
               "children": [],
@@ -2240,7 +2108,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "CLtL2, in PDF format",
               "description": null,
               "children": [],
@@ -2268,11 +2135,9 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "registry",
           "title": "awesome-lisp-companies",
           "description": null,
           "children": [],
-          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -2284,11 +2149,9 @@
         },
         {
           "node_type": "item",
-          "kind": "registry",
           "title": "cl-software",
           "description": null,
           "children": [],
-          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Rust",
@@ -2306,7 +2169,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "alien-works-delivery",
           "description": "WIP system for delivering Common Lisp applications as executable bundles. For now it only supports AppImage format for Linux and MSIX for Windows, but .APK for Android and later MacOSX and iOS bundle formats are planned too.",
           "children": [],
@@ -2321,7 +2183,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cl-nix-lite",
           "description": "Common Lisp module for Nix, without Quicklisp. AGPL-3.0",
           "children": [],
@@ -2336,7 +2197,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "qldeb",
           "description": "Quicklisp systems to debian packages, along with deb-packager (simply create a debian package by defining an s-expression). Both MIT.",
           "children": [],
@@ -2351,7 +2211,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cl-brewer",
           "description": "Homebrew formula builder for (command line) common lisp applications. Public domain.",
           "children": [],
@@ -2366,7 +2225,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "ql-to-deb",
           "description": "Update cl-* debian packages from Quicklisp releases. WTFPL.",
           "children": [],
@@ -2381,7 +2239,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "dh-quicklisp-buildapp",
           "description": "debhelper utility to let you compile your quicklisp-based Common Lisp code into a buildapp binary in a .deb with almost no effort. MIT.",
           "children": [],
@@ -2402,7 +2259,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Carrier",
           "description": "A lightweight, async HTTP client built on top of cl-async and fast-http. MIT.",
           "children": [],
@@ -2417,7 +2273,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "👍 Dexador",
           "description": "An HTTP client, that aims at replacing Drakma. MIT.",
           "children": [],
@@ -2432,7 +2287,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "http2",
           "description": "HTTP/2 implementation in Common Lisp. MIT.",
           "children": [],
@@ -2447,7 +2301,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "fast-http",
           "description": "A fast HTTP request/response parser for Common Lisp. MIT.",
           "children": [],
@@ -2468,7 +2321,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "woo",
           "description": "A fast non-blocking HTTP server on top of libev. MIT.",
           "children": [],
@@ -2483,7 +2335,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "👍Clack",
           "description": "A web application environment inspired by Rack and WSGI. LLGPL. Provides a unified interface to a webserver of choice (default is Hunchentoot). With more getting started guide.",
           "children": [],
@@ -2498,7 +2349,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "wookie",
           "description": "Asynchronous HTTP server. Expat.",
           "children": [],
@@ -2519,7 +2369,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "👍 easy-routes",
           "description": "a routes handling system on top of Hunchentoot. It supports dispatch based on HTTP method, arguments extraction from the url path, decorators, url generation from route name, etc. MIT.",
           "children": [],
@@ -2534,7 +2383,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "hunchentoot-cgi",
           "description": "a library for executing CGI scripts from the hunchentoot webserver. BSD.",
           "children": [],
@@ -2549,7 +2397,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "hunchentoot-errors",
           "description": "Augments Hunchentoot error pages and logs with request and session information. MIT.",
           "children": [],
@@ -2564,7 +2411,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "hunchentoot-stuck-connection-monitor",
           "description": "Monitors hunchentoot connections and logs the connections stuck in the same state for a long time.",
           "children": [],
@@ -2579,7 +2425,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "hunchentoot-multi-acceptor",
           "description": "Route multiple domains (virtual hosts) on a single hunchentoot acceptor using a single port. Apache2.0.",
           "children": [],
@@ -2600,7 +2445,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "lack-expression-cache",
           "description": "lack middleware for compressing and caching static resources. MIT.",
           "children": [],
@@ -2615,7 +2459,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "clack-static-asset-middleware",
           "description": "a cache-busting static asset middleware for the clack. MIT.",
           "children": [],
@@ -2630,7 +2473,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "lack-rerouter",
           "description": "lack middleware to reroute URIs of requests. MIT.",
           "children": [],
@@ -2645,7 +2487,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "tiny-routes",
           "description": "A tiny routing library for Common Lisp targeting Clack. BSD_3Clause.",
           "children": [],
@@ -2660,7 +2501,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "hismetic",
           "description": "Security for Clack-based web applications. Expat.",
           "children": [],
@@ -2675,7 +2515,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "live-reload",
           "description": "Live reload prototype for clack. LLGPL.",
           "children": [],
@@ -2690,7 +2529,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "clack-pretend",
           "description": "a testing and debugging tool for clack. Apache2.0.",
           "children": [],
@@ -2705,7 +2543,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "clack-errors",
           "description": "Error page middleware for Clack. Unmaintained. LLGPL.",
           "children": [],
@@ -2720,7 +2557,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "clath",
           "description": "a single sign-on middleware for Clack. It allows basic login with OAuth1.0a, OAuth2 and OpenID. At the time of writing, it supports authentication from Google, Twitter, LinkedIn, StackExchange, Reddit and Github. Apache2.0.",
           "children": [],
@@ -2741,13 +2577,11 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "ningle",
           "description": "A super-micro web framework. LLGPL.",
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "jingle",
               "description": "based on ningle, adds bells and whistles, such as middlewares.",
               "children": [],
@@ -2772,7 +2606,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Caveman",
           "description": "A powerful web framework. LLGPL. Example projects: Quickdocs",
           "children": [],
@@ -2793,7 +2626,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Interactive SSR",
           "description": "ISSR allows you to make interactive web pages without writing client scripting. No knowledge about Javascript or DOM is necessary.",
           "children": [],
@@ -2808,13 +2640,11 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Weblocks (Reblocks)",
           "description": "A widgets-based framework with a built-in ajax update mechanism that \"solves the JavaScript problem\". LLGPL.",
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "example code bases: Ultralisp",
               "description": ", krasnodar, a dashboard made for a hackaton (2024) (demo video).",
               "children": [],
@@ -2839,7 +2669,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "CLOG",
           "description": "The Common Lisp Omnificent GUI. Uses web technology to produce graphical user interfaces for applications locally or remotely. BSD_3Clause.",
           "children": [],
@@ -2860,7 +2689,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "TEN",
           "description": "the completness of Djula with the full usability of Common Lisp code in templates. MIT.",
           "children": [],
@@ -2875,7 +2703,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "👍 spinneret",
           "description": "Common Lisp HTML5 generator. Expat.",
           "children": [],
@@ -2890,7 +2717,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "hsx",
           "description": "An easily composable HTML5 generation library with the most simplistic syntax. MIT.",
           "children": [],
@@ -2905,7 +2731,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "lsx",
           "description": "and markup - Two JSX-like templating engines, where HTML tags are Common Lisp code. comes with an Emacs package.",
           "children": [],
@@ -2920,7 +2745,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cl-closure-template",
           "description": "Implementation of Google's Closure templates, where compiling a template creates a function that generates the result. LLGPL.",
           "children": [],
@@ -2935,13 +2759,11 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "⭐ Djula",
           "description": "A port of Django's template engine to Common Lisp. Expat.",
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "djula-template-designer",
               "description": "a template designer tool.",
               "children": [],
@@ -2956,7 +2778,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "cl-djula-tailwind",
               "description": "use TailwindCSS classe in your Djula templates without any JavaScript or Node.js tooling.",
               "children": [],
@@ -2987,7 +2808,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cl-slug",
           "description": "a small library to make slugs, mainly for URIs, transform in CamelCase, remove accentuation and punctuation, for english and beyond. LLGPL.",
           "children": [],
@@ -3002,7 +2822,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "netaddr",
           "description": "A network address manipulation library for Common Lisp. MIT.",
           "children": [],
@@ -3017,7 +2836,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "quri",
           "description": "Another URI library for Common Lisp. Supports userinfo, IPv6 hostname, encoding/decoding utilities,… BSD_3Clause.",
           "children": [],
@@ -3038,13 +2856,11 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "JSCL",
           "description": "A CL-to-JS compiler designed to be self-hosting from day one. GPL3.0.",
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "full support of (pull request",
               "description": ")",
               "children": [],
@@ -3059,7 +2875,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "supports (tests",
               "description": ") and (tests)",
               "children": [],
@@ -3074,7 +2889,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "🔥 live JupyterLite playground",
               "description": "(Wasm powered Jupyter running in the browser). Project source: jscl-kernel.",
               "children": [],
@@ -3099,13 +2913,11 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "⭐ Parenscript",
           "description": "A translator from Common Lisp to Javascript. 3-clause BSD. See Trident-mode, an Emacs mode that provides live interaction with the browser.unlicence.",
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "paren-jquery",
               "description": "Jquery-style macros for Parenscript. MIT.",
               "children": [],
@@ -3120,7 +2932,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "paren6",
               "description": "a set of ES6 macros for Parenscript.",
               "children": [],
@@ -3135,7 +2946,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "paren-async",
               "description": "async/await for Parenscript.",
               "children": [],
@@ -3160,7 +2970,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "sigil",
           "description": "A Parenscript to Javascript command line compiler and REPL. MIT.",
           "children": [],
@@ -3175,7 +2984,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "remote-js",
           "description": "send JavaScript from Common Lisp to a browser. MIT.",
           "children": [],
@@ -3196,7 +3004,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "s2i-lisp",
           "description": "Source-to-Image builder image based on CentOS or alternatively RHEL7 for building Common LISP images for OpenShift (and also Docker). It features an up-to-date SBCL with Quicklisp installation, SLIME or SLY integration and allows customization via environment variables. Apache2",
           "children": [],
@@ -3211,7 +3018,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "make-common-lisp-program",
           "description": "GitHub action to build an executable Common Lisp program on Ubuntu, MacOS and Windows. MIT.",
           "children": [],
@@ -3226,7 +3032,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cl-aws-runtime-test",
           "description": "An example of using Common Lisp (SBCL) as a custom runtime on AWS lambda. WTFPL.",
           "children": [],
@@ -3241,7 +3046,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "40ants/ci",
           "description": "Highly opionated Github Actions workflow builder for Common Lisp projects.",
           "children": [],
@@ -3256,7 +3060,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "common-lisp-heroku-example",
           "description": "Example of Common Lisp server on Heroku using Docker.",
           "children": [],
@@ -3271,7 +3074,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cube",
           "description": "Kubernetes client library for Common LISP generated from the Swagger specification. MIT.",
           "children": [],
@@ -3292,13 +3094,11 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "prometheus.cl",
           "description": "Prometheus.io client. Grafana dashboard for SBCL and Hunchentoot metrics (memory, threads, requests per second,…). MIT.",
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "prometheus-g",
               "description": "Extension for prometheus.cl which collects metrics about garbage collector state.",
               "children": [],
@@ -3323,7 +3123,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cl-sentry-client",
           "description": "a Sentry client for Common Lisp, the cloud-based error monitoring system. MIT.",
           "children": [],
@@ -3338,7 +3137,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "rollbar.lisp",
           "description": "interface to Rollbar.com, an error tracking software.",
           "children": [],
@@ -3359,7 +3157,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "iolib",
           "description": "I/O library. Expat.",
           "children": [],
@@ -3374,7 +3171,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "clws",
           "description": "websockets server in CL, built on IOlib and libfixposix. MIT.",
           "children": [],
@@ -3389,7 +3185,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Hunchensocket",
           "description": "RFC6455 compliant WebSockets for Common Lisp, as an extension to Hunchentoot. MIT.",
           "children": [],
@@ -3404,7 +3199,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "websocket-driver",
           "description": "based on Clack.",
           "children": [],
@@ -3419,7 +3213,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Portal",
           "description": "Portable websockets for Common Lisp, using usocket. LLGPL.",
           "children": [],
@@ -3434,7 +3227,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "👍 usocket",
           "description": "A portable TCP and UDP socket interface. Expat.",
           "children": [],
@@ -3460,7 +3252,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cl-authentic",
           "description": "Password management for Common Lisp (web) applications. LLGPL.",
           "children": [],
@@ -3475,13 +3266,11 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cl-cas",
           "description": "A library to help CAS authenticaton to Common Lisp web applications. Not in Quicklisp.",
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "cas-middleware",
               "description": "CAS authenticaton middleware for Caveman.",
               "children": [],
@@ -3496,7 +3285,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "cas-demo",
               "description": "a demo project.",
               "children": [],
@@ -3521,7 +3309,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "mito-email-auth",
           "description": "Helper to authenticate a website's users by sending them unique code by email.",
           "children": [],
@@ -3542,7 +3329,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cl-webapp-seed",
           "description": "a simple web application boilerplate. Uses Hunchentoot, cl-who, deploys easily to Heroku. MIT.",
           "children": [],
@@ -3557,7 +3343,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cl-cookieweb",
           "description": "a Cookiecutter template to start a web project. BSD_3Clause. Not in Quicklisp.",
           "children": [],
@@ -3572,7 +3357,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "make-like",
           "description": "an application template builder for LIKE (Lisp In Kubernetes + Emacs) applications. Apache2.0.",
           "children": [],
@@ -3593,7 +3377,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "trivial-download",
           "description": "Download files.",
           "children": [],
@@ -3608,7 +3391,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "find-port",
           "description": "Programmatically find open ports. MIT.",
           "children": [],
@@ -3623,7 +3405,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "mobiledetect",
           "description": "System for detecting mobile devices (including tablets) in User-Agent strings. MIT.",
           "children": [],
@@ -3638,7 +3419,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "random-ua",
           "description": "Random User-Agent generator for Common Lisp. BSD_2Clause.",
           "children": [],
@@ -3653,7 +3433,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "css-lite",
           "description": "A CSS grammar. Expat.",
           "children": [],
@@ -3668,7 +3447,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cl-wget",
           "description": "Makes retrieving large files or mirroring entire websites easy. AGPL-3.0.",
           "children": [],
@@ -3683,7 +3461,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cl-cookie",
           "description": "HTTP Cookie (jar) manager: parse and write (set-)cookie headers, compare cookies, optional cookie attribute sanity check. MIT",
           "children": [],
@@ -3704,7 +3481,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "apispec",
           "description": "A Common Lisp library for handling Web API requests and responses. BSD_3Clause.",
           "children": [],
@@ -3719,7 +3495,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "OpenRPC",
           "description": "OpenRPC implementation for Common Lisp. BSD.",
           "children": [],
@@ -3734,7 +3509,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cl-odata-client",
           "description": "Common Lisp client library for accessing OData services. MIT.",
           "children": [],
@@ -3755,7 +3529,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "pirá",
           "description": "Unofficial AWS SDK for Common Lisp.",
           "children": [],
@@ -3770,7 +3543,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "aws-sdk-lisp",
           "description": "Provides interfaces for each AWS services as individual systems. BSD_2Clause.",
           "children": [],
@@ -3785,7 +3557,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "lunamech-matrix-api",
           "description": "A complete wrapper over the Client -> Server Matrix API. MIT.",
           "children": [],
@@ -3800,7 +3571,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "lisp-pay",
           "description": "Wrappers around various payment processors: Paypal, Stripe, Coinpayments and BTCPayServer. MIT.",
           "children": [],
@@ -3815,7 +3585,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Ciao",
           "description": "an easy-to-use Common Lisp OAuth 2.0 client library. It is a port of the Racket OAuth 2.0 Client to Common Lisp. LGPL3.",
           "children": [],
@@ -3830,7 +3599,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cl-mediawiki",
           "description": "a wrapper around the MediaWiki api. MIT.",
           "children": [],
@@ -3845,7 +3613,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "stripe",
           "description": "a client for the Stripe payment system. MIT.",
           "children": [],
@@ -3860,7 +3627,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cl-openid",
           "description": "An implementation of OpenID. LLGPL.",
           "children": [],
@@ -3875,7 +3641,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Aws-sign4",
           "description": "Common Lisp library for Amazon Web Services signing version 4. GNU GPL3.",
           "children": [],
@@ -3890,7 +3655,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cl-pushover",
           "description": "Common Lisp bindings to Pushover. MIT.",
           "children": [],
@@ -3905,7 +3669,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "zs3",
           "description": "A library for working with Amazon's Simple Storage Service (S3) and CloudFront service. BSD.",
           "children": [],
@@ -3925,7 +3688,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "cl-telegram-bot-auto-api",
               "description": "Alternative Telegram Bot API bindings, auto-generated from Telegram website. 3-clause BSD.",
               "children": [],
@@ -3948,7 +3710,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "magicl",
           "description": "Matrix Algebra proGrams In Common Lisp based on BLAS/LAPACK and Expokit, by Rigetti Computing. BSD_3Clause.",
           "children": [],
@@ -3963,7 +3724,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "clem",
           "description": "a matrix library. BSD_2Clause.",
           "children": [],
@@ -3978,7 +3738,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "LLA",
           "description": "Lisp Linear Algebra. MS-PL.",
           "children": [],
@@ -3993,7 +3752,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "lisp-matrix",
           "description": "A matrix package. FreeBSD.",
           "children": [],
@@ -4014,7 +3772,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "vgplot",
           "description": "an interface to the gnuplot plotting utility with the intention to resemble some of the plot commands of octave or matlab. GPL3.",
           "children": [],
@@ -4029,13 +3786,11 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "lisp-stat's plot (vega-lite)",
           "description": "a Vega-lite DSL. MS-PL.",
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "emacs-vega-view",
               "description": "an Emacs plugin that allows to display a Vega plot from a lisp-stat expression in a buffer.",
               "children": [],
@@ -4060,7 +3815,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "eazy-gnuplot",
           "description": "a lispy, structure-less Gnuplot library. With its cookbook. LLGPL",
           "children": [],
@@ -4075,7 +3829,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "kai",
           "description": "A high-level plotter library for Common Lisp. A wrapper around the Plotly JS library. MIT.",
           "children": [],
@@ -4096,7 +3849,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cl-nats",
           "description": "A full-featured NATS messaging client for Common Lisp. MIT. With LLM.",
           "children": [],
@@ -4111,7 +3863,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cl-flow",
           "description": "Data-flowish computation tree library for non-blocking concurrent Common Lisp. MIT.",
           "children": [],
@@ -4126,7 +3877,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "event-glue",
           "description": "simple eventing abstraction. No dependencies. It can be used anywhere you need a generic event handling system. MIT.",
           "children": [],
@@ -4147,7 +3897,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "psychiq",
           "description": "redis-based background job processing for Common Lisp applications. Inspired by Ruby's Sidekiq and compatible with its web UI. LLGPL.",
           "children": [],
@@ -4162,7 +3911,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cl-cron",
           "description": "A simple tool that provides cron like facilities. GPL3.",
           "children": [],
@@ -4177,7 +3925,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "clerk",
           "description": "a cron-like scheduler with sane DSL. MIT.",
           "children": [],
@@ -4198,7 +3945,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "kiln",
           "description": "an infrastructure (managing a hidden multicall binary) to make Lisp scripting efficient and ergonomic. MIT.",
           "children": [],
@@ -4213,7 +3959,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "CIEL",
           "description": "CIEL Is an Extended Lisp is a collection of dozens of libraries useful for mundane tasks (HTTP, JSON, regexps…). [unclear licence]",
           "children": [],
@@ -4228,7 +3973,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "ScriptL",
           "description": "Shell scripting made Lisp-like! Or, live-coding remote function calls for the shell. Write a command in the REPL, and run it instantly in the shell. LLGPL.",
           "children": [],
@@ -4249,7 +3993,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "👍 Clingon",
           "description": "a rich command-line options parser system.",
           "children": [],
@@ -4264,7 +4007,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Adopt",
           "description": "A Damn OPTion parsing library. MIT.",
           "children": [],
@@ -4285,7 +4027,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "uncursed",
           "description": "cross-platform library for writing terminal interfaces with minimal dependencies. BSD_3Clause.",
           "children": [],
@@ -4300,7 +4041,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "replic",
           "description": "helpers to turn existing code into a readline application, with a focus on defining the completion of the commands' arguments. Also comes as a ready to use executable, that transforms a user's lispy init file into readline commands. MIT.",
           "children": [],
@@ -4315,7 +4055,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cl-termbox2",
           "description": "Termbox2 bindings.",
           "children": [],
@@ -4330,7 +4069,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "old-norse",
           "description": "a low-latency, grid-based terminal graphics engine with an integrated event loop. MIT.",
           "children": [],
@@ -4345,7 +4083,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cl-readline",
           "description": "a set of functions to edit lines as they are typed in, to maintain a list of previously-entered command lines, to recall and reedit them and perform csh-like history expansion. Emacs and vi editing modes. GPL3.",
           "children": [],
@@ -4360,7 +4097,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cl-charms",
           "description": "an interface to in Common Lisp. It provides both a raw, low-level interface to libcurses via CFFI, and a more higher-level lispier interface. MIT.",
           "children": [],
@@ -4375,7 +4111,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "🔥 cl-tuition",
           "description": "A Common Lisp library for building rich, responsive TUIs. MIT.",
           "children": [],
@@ -4390,13 +4125,11 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cl-progress-bar",
           "description": "progress bars, just like in Quicklisp ! MIT.",
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "and progressons",
               "description": ", a progress bar on one line, for real an dumb terminals. MIT.",
               "children": [],
@@ -4421,7 +4154,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cl-ansi-term",
           "description": "print colorized text, horizontal lines, progress bars, (un)ordered lists and tables on ANSI-compliant terminals. GPL3.",
           "children": [],
@@ -4442,7 +4174,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "unix-in-lisp",
           "description": "Mount Unix system into Common Lisp image.",
           "children": [],
@@ -4457,7 +4188,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "shcl",
           "description": "a POSIX-like shell in Common Lisp. Apache2.0.",
           "children": [],
@@ -4478,7 +4208,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "clawk",
           "description": "an AWK implementation embedded into Common Lisp, to search files for lines and perform specified actions on its fields. BSD-style.",
           "children": [],
@@ -4493,7 +4222,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "lqn",
           "description": "query language and terminal utility for querying and transforming Lisp, JSON and other text files. written in Common Lisp. MIT.",
           "children": [],
@@ -4514,7 +4242,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "⭐ Slime",
           "description": "Superior Lisp Interaction Mode for Emacs; a full-blown environment for Common Lisp inside of Emacs. Public domain.",
           "children": [],
@@ -4529,7 +4256,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Sly",
           "description": "SLY is a fork of SLIME and contains multiple changes and new features, such as Sly stickers.",
           "children": [],
@@ -4550,7 +4276,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Vlime",
           "description": "VLIME: Vim plus Lisp Is Mostly Evil. A Common Lisp dev environment for Vim (and Neovim). MIT.",
           "children": [],
@@ -4565,7 +4290,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "SLIMV",
           "description": "Superior Lisp Interaction Mode for Vim; a full-blown environment for Common Lisp inside of Vim. No license specified.",
           "children": [],
@@ -4580,7 +4304,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Slimv_box",
           "description": "slimv in a Docker container.",
           "children": [],
@@ -4601,7 +4324,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "commonlisp-vscode",
           "description": "an extension to support syntax highlight, auto completion, documentation on hover, go to definition, compile & load file, REPL. It is On GitHub.",
           "children": [],
@@ -4616,7 +4338,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "alive",
           "description": "Common Lisp Extension for VSCode. Public domain.",
           "children": [],
@@ -4637,7 +4358,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cl-jupyter",
           "description": "A Common Lisp kernel for Jupyter notebooks custom licence.",
           "children": [],
@@ -4652,13 +4372,11 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "common-lisp-jupyter",
           "description": "A Common Lisp kernel for Jupyter along with a library for building Jupyter kernels, based on Maxima-Jupyter by Robert Dodier which was based on cl-jupyter by Frederic Peschanski. MIT.",
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "Kekule widget",
               "description": "Kekule.js widget for common-lisp-jupyter.",
               "children": [],
@@ -4673,7 +4391,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "ngl widget",
               "description": "A ngl widget (protein viewer) for common-lisp-jupyter.",
               "children": [],
@@ -4688,7 +4405,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "Cytoscape widget",
               "description": "Cytoscape.js widget for common-lisp-jupyter.",
               "children": [],
@@ -4703,7 +4419,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "sheet widget",
               "description": "Data grid widget for common-lisp-jupyter.",
               "children": [],
@@ -4734,7 +4449,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "icl",
           "description": "an enhanced REPL for the terminal. MIT.",
           "children": [],
@@ -4749,13 +4463,11 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cl-repl",
           "description": "an ipython-like REPL. With completion, shell commands, magic commands, debugger, etc. GPL3.",
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "colorthemes",
               "description": ".",
               "children": [],
@@ -4780,7 +4492,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "sbcli",
           "description": "a readline REPL for SBCL. With completion, quick commands, optional syntax highlighting (with pygments), and no interactive debugger. GPL3.",
           "children": [],
@@ -4795,7 +4506,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "magic-ed",
           "description": "a tiny editing facility, where you can directly load, edit, manipulate and evaluate file or file content from the REPL, when going to a full IDE is too much. MIT.",
           "children": [],
@@ -4816,7 +4526,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "🚀 cl-binary-store",
           "description": "A fast Common Lisp binary serializer/deserializer. BSD_3Clause. See reddit announce (2025).",
           "children": [],
@@ -4831,7 +4540,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "clache",
           "description": "General caching facility. Cache any Lisp object on disk or in memory. LLGPL.",
           "children": [],
@@ -4846,7 +4554,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "conspack",
           "description": "binary serialization.",
           "children": [],
@@ -4861,7 +4568,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cl-store",
           "description": "a portable serialization package which gives you the ability to store all common-lisp data types into streams. MIT.",
           "children": [],
@@ -4881,11 +4587,9 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "registry",
               "title": "dare we add: used in production by the author's company (ASTN Group, see awesome-lisp-companies",
               "description": ")",
               "children": [],
-              "registry_signal": "name",
               "repo_info": {
                 "archived": false,
                 "language": "JavaScript",
@@ -4905,7 +4609,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "archive",
           "description": "a library for reading and creating archive (tar, cpio) files. BSD_3Clause. A pure Common Lisp replacement for the program.",
           "children": [],
@@ -4920,7 +4623,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "chipz",
           "description": "A decompression library. 3-clause BSD.",
           "children": [],
@@ -4935,7 +4637,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "deoxybyte-gzip",
           "description": "Common Lisp interface to zlib via CFFI. GPL3.",
           "children": [],
@@ -4956,7 +4657,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "envy",
           "description": "Configuration switcher. FreeBSD.",
           "children": [],
@@ -4971,7 +4671,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "chameleon",
           "description": "a configuration management library shipped with profile support. MIT.",
           "children": [],
@@ -4992,7 +4691,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "periods",
           "description": "manipulating date/time objects at a higher level. With series-compatible data structure. BSD_3Clause.",
           "children": [],
@@ -5007,13 +4705,11 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "calendar-times",
           "description": "a calendar time library implemented on top of the LOCAL-TIME library. It features zoned calendar times and calculations.",
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "see also: calendar-date",
               "description": "a Gregorian calendar date library. MIT.",
               "children": [],
@@ -5038,13 +4734,11 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "local-time-duration",
           "description": "Duration processing library built on top of local-time. MIT.",
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "see this fork: humanize-duration",
               "description": ", that outputs only significant parts of a duration object. Has localization suport.",
               "children": [],
@@ -5069,7 +4763,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "chronicity",
           "description": "A natural language date and time parse, to parse strings like \"3 days from now\". BSD_3Clause.",
           "children": [],
@@ -5084,7 +4777,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "stopclock",
           "description": "a library for measuring time using (stop)clocks. It allows you to create a clock, pause it, resume it and change its speed. Apache2.0.",
           "children": [],
@@ -5099,7 +4791,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cl-date-time-parser",
           "description": "Parse date-time-string, liberally. Hides the difference between date-time formats, and enables to manage date and time as the one date-time format. MIT.",
           "children": [],
@@ -5120,7 +4811,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cl-semver",
           "description": "Implementation of the Semantic Versioning Specification. MIT",
           "children": [],
@@ -5135,7 +4825,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "sanity-clause",
           "description": "a data serialization/contract library for Common Lisp. Schemas can be property lists or class-based, allowing to check slots' types during . LLGPL.",
           "children": [],
@@ -5150,7 +4839,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "json-schema",
           "description": "A library for validating data against schemas of drafts 4, 6, 7, and 2019-09 of the JSON Schema standard. LLGPL.",
           "children": [],
@@ -5165,7 +4853,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "clavier",
           "description": "General purpose validation library for Common Lisp. MIT.",
           "children": [],
@@ -5186,7 +4873,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "flight-recorder",
           "description": "a robust REPL history facility.",
           "children": [],
@@ -5201,7 +4887,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "printv",
           "description": "A batteries-included tracing and debug-logging macro. Apache2.",
           "children": [],
@@ -5216,7 +4901,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "repl-utilities",
           "description": "Ease common tasks at the REPL (print documentation, print external symbols, call hooks when loading a package,…). BSD_2Clause.",
           "children": [],
@@ -5231,7 +4915,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "supertrace",
           "description": "Superior Common Lisp functionality for debugging/profiling. Trace many functions at once, use before and after hooks. BSD_2Clause.",
           "children": [],
@@ -5246,7 +4929,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "tracer",
           "description": "tracing profiler for Common Lisp, with output suitable for display in Chrome’s/Chromium’s Tracing Viewer. MIT.",
           "children": [],
@@ -5261,7 +4943,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "brake",
           "description": "An extended breakpoint facility for Common Lisp. MIT.",
           "children": [],
@@ -5276,7 +4957,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "journal",
           "description": "a library for logging, tracing, record-and-replay testing and persistence. MIT.",
           "children": [],
@@ -5291,7 +4971,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cl-flamegraph",
           "description": "A wrapper around SBCL's statistical profiler, to generate FlameGraph charts for Common Lisp programs. BSD.",
           "children": [],
@@ -5312,13 +4991,11 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "mgl-pax",
           "description": "Exploratory programming environment and documentation generator. one may accomplish similar effects as with Literate Programming, but documentation is generated from code, not vice versa. Code is first, code must look pretty, documentation is code. MIT.",
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "see this 40ants/doc",
               "description": "fork: a lighter core system, a JavaScript search index, multiple format output, HTML themes, RSS and Atom feed for the Changelog and more.",
               "children": [],
@@ -5343,7 +5020,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Codex",
           "description": "A beautiful documentation system for Common Lisp. MIT.",
           "children": [],
@@ -5358,7 +5034,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "QBook",
           "description": "generates HTML (or LaTeX) formatted code listings of Common Lisp source files. BSD_3Clause.",
           "children": [],
@@ -5373,7 +5048,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cl-bibtex",
           "description": "A compatible re-implementation of the BibTeX program in Common Lisp, with a BST-to-CL compiler. GNU LGPL2.1.",
           "children": [],
@@ -5388,7 +5062,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "adp",
           "description": "Common Lisp documentation generator using Scribble files. MIT.",
           "children": [],
@@ -5403,7 +5076,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Declt",
           "description": "Reference manual generator for Common Lisp libraries. Builds a texinfo document that can be further processed into various formats, such as HTML or PDF. BSD.",
           "children": [],
@@ -5424,7 +5096,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "docbrowser",
           "description": "a server that generates documentation for the loaded systems on the fly.",
           "children": [],
@@ -5439,13 +5110,11 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cl-docsearch",
           "description": "A tool to search documentation of lisp symbols in the current lisp image.",
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "docsearch-ollama",
               "description": "provides Common Lisp documentation search functionality through Ollama. It computes and caches embeddings corresponding to symbol documentation, and looks up user queries by comparing the cosine similarity of the query embedding with symbol documentation embeddings.",
               "children": [],
@@ -5470,7 +5139,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cl-livedocs",
           "description": "similar and newer, based on Webinfo.",
           "children": [],
@@ -5491,7 +5159,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "nfiles",
           "description": "File persistence, watching, data synchronization, (per user profile) path resolution, and structured data retrieval. Has pre-defined classes for configuration files, remote fetched files, data files, Lisp-readable files and many others. BSD.",
           "children": [],
@@ -5506,7 +5173,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "filepaths",
           "description": "Modern and consistent filepath manipulation for Common Lisp. LGPL3.",
           "children": [],
@@ -5521,7 +5187,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "file-finder",
           "description": "File-object finder Common Lisp library. Enable rapid file search, inspection and manipulation. GPL3.",
           "children": [],
@@ -5536,7 +5201,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "trivial-glob",
           "description": "Shell-style glob pattern matching and filesystem globbing for Common Lisp. MIT.",
           "children": [],
@@ -5557,7 +5221,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "fluent",
           "description": "implementation of Fluent, a modern localisation system. MPL-2.0.",
           "children": [],
@@ -5572,7 +5235,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "gettext",
           "description": "a port of the gettext runtime to Common Lisp. GPL3.",
           "children": [],
@@ -5593,7 +5255,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "trivial-formatter",
           "description": "code formatter for Common Lisp. MIT.",
           "children": [],
@@ -5608,7 +5269,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "mallet",
           "description": "A sensible Common Lisp linter that catches real mistakes, not style. MIT.",
           "children": [],
@@ -5623,7 +5283,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "ocicl",
           "description": "'s built-in linter and auto-fix feature.",
           "children": [],
@@ -5638,7 +5297,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "sblint",
           "description": "a linter for Common Lisp source code using SBCL, suited for Reviewdog (slides). BSD_2Clause.",
           "children": [],
@@ -5659,7 +5317,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "papyrus",
           "description": "Papyrus makes your markdown executable with the reader macro of Common Lisp.MIT",
           "children": [],
@@ -5674,7 +5331,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "literate-lisp",
           "description": "Load Common Lisp code blocks from Emacs' Org files. MIT.",
           "children": [],
@@ -5689,7 +5345,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "erudite",
           "description": "Literate Programming System built with interactive development in mind. MIT.",
           "children": [],
@@ -5710,7 +5365,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "a-cl-logger",
           "description": "Logging library providing context sensitive logging of more than just strings to more than just local files or output streams. Features logstash support, json support, logger hierarchies, context sensitive logging, objects printed as an inspectable presentation,…",
           "children": [],
@@ -5725,13 +5379,11 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "⭐ log4cl",
           "description": "Logging framework modelled after Log4J. Apache2.0. Advanced integration with Slime.",
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "log4cl-json",
               "description": "JSON appender extension. BSD.",
               "children": [],
@@ -5762,7 +5414,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "trivial-with-current-source-from",
           "description": "Helps macro writers produce better errors for macro users. GPL3.",
           "children": [],
@@ -5777,7 +5428,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "easy-macros",
           "description": "an easy way to write 90% of your macros. Apache2.0.",
           "children": [],
@@ -5798,7 +5448,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cl-project",
           "description": "General modern project skeletons. LLGPL.",
           "children": [],
@@ -5813,7 +5462,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cl-cookieproject",
           "description": "Generate a ready-to-use Common Lisp project. Not in Quicklisp. BSD_3Clause.",
           "children": [],
@@ -5828,7 +5476,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cookiecutter-lisp-game",
           "description": "An opinionated cookiecutter template for Common Lisp videogame projects. Allows to choose backend middleware library between liballegro, raylib and SDL2. Contains CI scripts using docker-lisp-gamedev to automatically build binaries for Windows, MacOS and Linux.",
           "children": [],
@@ -5843,7 +5490,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cl-project-with-docs",
           "description": "uses Sphinx and reStructured text to render nice and readable HTML documentation. BSD.",
           "children": [],
@@ -5864,13 +5510,11 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "secret-values",
           "description": "A Common Lisp library to reduce the risk of accidentally revealing secret values such as passwords.",
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "privacy-output-stream",
               "description": "an output stream that masks secret strings with , based on secret-values. MIT.",
               "children": [],
@@ -5895,7 +5539,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "safe-read",
           "description": "a variant of READ secure against internbombing, excessive input and macro characters. BSD_2Clause.",
           "children": [],
@@ -5910,7 +5553,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cl-isolated",
           "description": "A restricted environment for Common Lisp code evaluation AGPL-3.0.",
           "children": [],
@@ -5931,7 +5573,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "fast-io",
           "description": "Fast octet-vector/stream I/O. 3-clause BSD.",
           "children": [],
@@ -5946,7 +5587,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "trivial-garbage",
           "description": "A portable finalizer, weak hash-table and weak pointer API. Public domain.",
           "children": [],
@@ -5961,7 +5601,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "named-readtables",
           "description": "Provides a readtable namespace, akin to package namespaces. 3-clause BSD.",
           "children": [],
@@ -5976,7 +5615,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "simple-currency",
           "description": "A currency conversion library using daily information published by the ECB. FreeBSD.",
           "children": [],
@@ -5991,7 +5629,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "babel",
           "description": "A charset encoding/decoding library. Expat.",
           "children": [],
@@ -6014,8 +5651,6 @@
     "original_repository_sha": "deadbeef",
     "enhanced_repository": "enhansome/enhansome-cl",
     "enhanced_repository_description": "enhanced list",
-    "kind": "registry",
-    "title": "Awesome Common Lisp with stars",
-    "registry_signal": "content"
+    "title": "Awesome Common Lisp with stars"
   }
 }

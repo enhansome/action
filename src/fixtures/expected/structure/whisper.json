@@ -5,7 +5,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "faster-whisper",
           "description": "Faster reimplementation of Whisper using CTranslate2.",
           "children": [],
@@ -20,7 +19,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "whisper-openvino",
           "description": "Whisper running on OpenVINO.",
           "children": [],
@@ -35,7 +33,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "WhisperX",
           "description": "Adds fast automatic speaker recognition with word-level timestamps and speaker diarization.",
           "children": [],
@@ -50,13 +47,11 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Whisper.cpp",
           "description": "Port of Whisper in C++.",
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "Bindings for many languages",
               "description": null,
               "children": [],
@@ -81,7 +76,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "whisper.tflite",
           "description": "Whisper running on TensorFlow Lite.",
           "children": [],
@@ -96,7 +90,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Whisper JAX",
           "description": "JAX implementation of Whisper for up to 70x speed-up on TPU.",
           "children": [],
@@ -111,7 +104,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Whisper-AT",
           "description": "Whisper that can recognize non-speech audio events in addition to speech.",
           "children": [],
@@ -126,7 +118,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "whisper-timestamped",
           "description": "Adds word-level timestamps and confidence scores.",
           "children": [],
@@ -147,7 +138,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Whisper",
           "description": "Android app for transcription and translation. (FOSS)",
           "children": [],
@@ -162,7 +152,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "VoiceInk",
           "description": "Dictation and transcription macOS app. (FOSS)",
           "children": [],
@@ -177,7 +166,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Ito AI",
           "description": "AI voice dictation for Mac. (FOSS)",
           "children": [],
@@ -192,7 +180,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Speech Note",
           "description": "Audio transcription Linux app.",
           "children": [],
@@ -207,7 +194,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "OpenSuperWhisper",
           "description": "Dictation app for macOS. (FOSS)",
           "children": [],
@@ -222,7 +208,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "TypeWhisper",
           "description": "Local speech-to-text transcription for macOS and Windows with system-wide dictation.",
           "children": [],
@@ -237,7 +222,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Buzz",
           "description": "Audio transcription and translation macOS app.",
           "children": [],
@@ -263,7 +247,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Subs AI",
           "description": "Subtitle generation.",
           "children": [],
@@ -278,7 +261,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "writeout.ai",
           "description": "Laravel app to transcribe and translate audio files.",
           "children": [],
@@ -293,7 +275,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "WaaS",
           "description": "GUI and API for Whisper.",
           "children": [],
@@ -308,7 +289,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Meeper",
           "description": "Transcriptions, summary and more for meetings and any browser tab. (Chrome app)",
           "children": [],
@@ -329,7 +309,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "whisper-diarization",
           "description": "Automatic speech recognition with speaker diarization.",
           "children": [],
@@ -344,7 +323,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "phonix",
           "description": "Generate captions for videos.",
           "children": [],
@@ -359,7 +337,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "whisper-ctranslate2",
           "description": "Whisper command-line tool based on CTranslate2, compatible with the original.",
           "children": [],
@@ -374,7 +351,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "whisper-standalone-win",
           "description": "Standalone Windows executable for Whisper and Faster Whisper.",
           "children": [],
@@ -389,7 +365,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "insanely-fast-whisper-cli",
           "description": "Achieve transcription speeds near 30x real-time with several optimizations.",
           "children": [],
@@ -404,7 +379,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "hns",
           "description": "On-device speech-to-text CLI using faster-whisper with automatic clipboard copy.",
           "children": [],
@@ -419,7 +393,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "yt-whisper",
           "description": "YouTube subtitle generation.",
           "children": [],
@@ -440,7 +413,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "YouTube Video Transcription",
           "description": "Running on Colab.",
           "children": [],
@@ -455,7 +427,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Monster API",
           "description": "Whisper demo running on Monster API. (Source)",
           "children": [],
@@ -483,8 +454,6 @@
     "original_repository_sha": "deadbeef",
     "enhanced_repository": "enhansome/enhansome-whisper",
     "enhanced_repository_description": "enhanced list",
-    "kind": "registry",
-    "title": "Awesome whisper with stars",
-    "registry_signal": "content"
+    "title": "Awesome whisper with stars"
   }
 }

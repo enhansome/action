@@ -5,7 +5,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "ODiff",
           "description": "Library of YIQ NTSC transmission image difference alghoritm implemented in OCaml and ReasonML.",
           "children": [],
@@ -20,7 +19,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Decompress",
           "description": "A pure OCaml implementation of Zlib.",
           "children": [],
@@ -35,7 +33,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Duff",
           "description": "Implementation of Rabin's fingerprint and delta compression by P. MacDonald in OCaml (same as libXdiff",
           "children": [],
@@ -50,7 +47,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "ORaft",
           "description": "Library of Raft consensus algorithm implemented in OCaml",
           "children": [],
@@ -65,7 +61,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "ods",
           "description": "A large collection of data structures and algorithms for OCaml.",
           "children": [],
@@ -80,7 +75,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Ke",
           "description": "Fast implementation of queue (FIFO) in OCaml.",
           "children": [],
@@ -95,7 +89,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "combine",
           "description": "OCaml library for combinatorics https://www.lri.fr/~filliatr/combine/.",
           "children": [],
@@ -110,7 +103,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "OCamlgraph",
           "description": "A generic graph library for OCaml.",
           "children": [],
@@ -131,7 +123,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "easy-format",
           "description": "Pretty-printing library for OCaml.",
           "children": [],
@@ -146,7 +137,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Base",
           "description": "Jane Street Capital's dependency-free, quick-compiling, fully-portable across any environment that can run OCaml code standard library.",
           "children": [],
@@ -161,7 +151,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Core",
           "description": "Jane Street Capital's full-fledged standard library overlay. A portable subset of Core is also available: Core_kernel.",
           "children": [],
@@ -176,7 +165,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "ocaml-rpc",
           "description": "Light library to deal with RPCs in OCaml.",
           "children": [],
@@ -191,7 +179,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Batteries Included",
           "description": "A community-maintained foundation library for your OCaml projects.",
           "children": [],
@@ -206,7 +193,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "ocaml-containers",
           "description": "A lightweight, modular standard library extension, string library, and interfaces to various libraries (bigarrays, Unix, etc.) BSD license.",
           "children": [],
@@ -221,7 +207,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Cmdliner",
           "description": "Declarative definition of command line interfaces for OCaml.",
           "children": [],
@@ -236,7 +221,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Minicli",
           "description": "Minimalist library for command-line parsing.",
           "children": [],
@@ -257,7 +241,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "core_bench",
           "description": "Micro-benchmarking library for OCaml by Jane Street. - Getting Started with Core_bench",
           "children": [],
@@ -272,7 +255,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "benchmark",
           "description": "Benchmarking functions for measuring the run-time of functions using latency or throughput.",
           "children": [],
@@ -298,7 +280,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "SLAyer",
           "description": "SLAyer is an automatic formal verification tool that uses separation logic to verify memory safety of C programs.",
           "children": [],
@@ -313,7 +294,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "MemCAD",
           "description": "MemCAD is an abstract interpreter for shape analysis. MemCAD can verify C programs manipulating complex data structures.",
           "children": [],
@@ -328,7 +308,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "flow",
           "description": "flow is a static type checker for JavaScript.",
           "children": [],
@@ -343,7 +322,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Camelot",
           "description": "Camelot is a modular and fully configurable OCaml linter and stylechecker.",
           "children": [],
@@ -358,7 +336,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "pfff",
           "description": "pfff is a set of tools and APIs to perform some static analysis, dynamic analysis, code visualizations, code navigations, or style-preserving source-to-source transformations such as refactorings on source code.",
           "children": [],
@@ -373,7 +350,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Infer",
           "description": "Infer is a static analyzer for Java, C and Objective-C",
           "children": [],
@@ -388,7 +364,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "coq-of-ocaml",
           "description": "Translator from OCaml to Coq to formally verify OCaml code.",
           "children": [],
@@ -409,7 +384,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Smt.ml",
           "description": "Smt.ml is a frontend OCaml library that interfaces with multiple SMT solvers, enabling seamless integration of solvers like Z3, cvc5, Colibri2, Bitwuzla, and Alt-Ergo within OCaml programs.",
           "children": [],
@@ -424,7 +398,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cwe_checker",
           "description": "cwe_checker finds vulnerable patterns in binary executables.",
           "children": [],
@@ -439,7 +412,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "BAP",
           "description": "BAP is a reverse engineering and program analysis platform that targets binary programs.",
           "children": [],
@@ -454,7 +426,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "BinCat",
           "description": "BinCat is a binary code static analysis toolkit.",
           "children": [],
@@ -469,7 +440,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Owi",
           "description": "Owi is a toolchain for working with WebAssembly (Wasm) in OCaml, featuring a powerful, parallel symbolic execution engine for Wasm. It also provides frontends for compiling and analyzing C and Rust programs.",
           "children": [],
@@ -495,7 +465,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "Quick C-- Target Language",
               "description": "It is now a dead project. Github Repo. Alternative website.",
               "children": [],
@@ -510,7 +479,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "Rhine",
               "description": "A Lisp on LLVM written in OCaml.",
               "children": [],
@@ -525,7 +493,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "Liquid ML",
               "description": "Shopify's Liquid Templating language for OCaml.",
               "children": [],
@@ -540,7 +507,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "Mazeppa",
               "description": "A modern supercompiler for call-by-value functional languages.",
               "children": [],
@@ -555,7 +521,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "tis-interpreter",
               "description": "An interpreter for finding subtle bugs in programs written in standard C",
               "children": [],
@@ -577,7 +542,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "Sedlex",
               "description": "is a modern, encoding-agnostic (read: Unicode-supporting) lexer generator (the ppx-based successor to ulex.)",
               "children": [],
@@ -592,7 +556,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "Opal",
               "description": "Self-contained monadic parser combinators for OCaml.",
               "children": [],
@@ -607,7 +570,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "Angstrom",
               "description": "Parser combinators built for speed and memory efficiency",
               "children": [],
@@ -627,7 +589,6 @@
               "children": [
                 {
                   "node_type": "item",
-                  "kind": "repository",
                   "title": "... and Obelisk",
                   "description": ", a neat project to produce readable LaTeX, HTML, or plain-text EBNF-style documentation for your grammar.",
                   "children": [],
@@ -642,7 +603,6 @@
                 },
                 {
                   "node_type": "item",
-                  "kind": "repository",
                   "title": "See ocaml-parsing",
                   "description": "for a clearer example of using Menhir and Sedlex to produce a useful parser,",
                   "children": [],
@@ -672,7 +632,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "SQLite3",
               "description": "OCaml bindings to the SQLite3 database.",
               "children": [],
@@ -687,7 +646,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "mysql_protocol",
               "description": "Implementation of MySQL Protocol with the Bitstring library.",
               "children": [],
@@ -702,7 +660,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "mariadb",
               "description": "Bindings to MariaDB/MySQL, supporting the nonblocking API",
               "children": [],
@@ -717,7 +674,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "ocaml-redis",
               "description": "Redis bindings for OCaml.",
               "children": [],
@@ -732,7 +688,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "pgx",
               "description": "A pure OCaml PostgreSQL client library.",
               "children": [],
@@ -752,7 +707,6 @@
               "children": [
                 {
                   "node_type": "item",
-                  "kind": "repository",
                   "title": "ppx_pgsql",
                   "description": "A syntax extension for embedded SQL queries using PG'OCaml.",
                   "children": [],
@@ -776,7 +730,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "Irmin",
               "description": "A distributed database that follows the same design principles as Git.",
               "children": [],
@@ -791,7 +744,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "RunOrg",
               "description": "It is a WIP database server written in OCaml.",
               "children": [],
@@ -806,7 +758,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "dokeysto",
               "description": "dumb OCaml key-value store, string keys and string values. Optional on-the-fly LZ4 compression of values or tokyocabinet backend.",
               "children": [],
@@ -828,7 +779,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "ORM",
               "description": "ORM for SQLite.",
               "children": [],
@@ -843,7 +793,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "Caqti",
               "description": "Cooperative-threaded access to relational data",
               "children": [],
@@ -858,7 +807,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "Sequoia",
               "description": "Sequoia is a type-safe query builder for MySQL/MariaDB and PostgreSQL",
               "children": [],
@@ -873,7 +821,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "Caqti setence preparation, ppx_rapper",
               "description": null,
               "children": [],
@@ -888,7 +835,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "Macaque",
               "description": "Macaque is a library for safe and flexible database queries using comprehensions on top of PG'OCaml.",
               "children": [],
@@ -911,7 +857,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "odate",
           "description": null,
           "children": [],
@@ -926,7 +871,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "ISO8601",
           "description": null,
           "children": [],
@@ -947,7 +891,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "OCaml Yeoman Generator",
           "description": "Yeoman generator to scaffold OCaml modules.",
           "children": [],
@@ -962,7 +905,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "utop",
           "description": "Universal toplevel for OCaml with support for multiline edition, history, real-time and context-sensitive completion, colors, and more.",
           "children": [],
@@ -977,7 +919,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "learn-ocaml.el",
           "description": ". Minor mode for Emacs that can display exercise topics and grade exercise solutions, after logging to a Learn-OCaml instance. MIT License.",
           "children": [],
@@ -992,7 +933,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "puml2xml",
           "description": "A PlantUML (.puml) to XML (.xmi) converter.",
           "children": [],
@@ -1007,7 +947,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "learn-ocaml",
           "description": ". Web app (written in OCaml) underlying the learn-ocaml-corpus. Can be customized to serve lectures (with Markdown slides), playgrounds (with a toplevel prelude), and interactive exercises (with OCaml tests). MIT License.",
           "children": [],
@@ -1022,7 +961,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "ocamlformat",
           "description": "A command-line tool to format OCaml code.",
           "children": [],
@@ -1037,7 +975,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Jupyter",
           "description": "An OCaml kernel for the Jupyter notebook.",
           "children": [],
@@ -1052,7 +989,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "ghim",
           "description": "A command-line tool to manage Github Issues.",
           "children": [],
@@ -1072,7 +1008,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "ctypes",
               "description": "Library for binding to C libraries using pure OCaml.",
               "children": [],
@@ -1087,7 +1022,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "ocaml-main-program-in-c",
               "description": "Example build system for making mixed C/Ocaml binaries where the main program is in C.",
               "children": [],
@@ -1102,7 +1036,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "Py.ml",
               "description": "OCaml bindings for Python.",
               "children": [],
@@ -1124,7 +1057,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "vscode-ocaml",
               "description": "extension that provides OCaml language support for VSCode",
               "children": [],
@@ -1139,7 +1071,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "tuareg",
               "description": "OCaml mode for Emacs that can run the toplevel and the debugger within Emacs.",
               "children": [],
@@ -1154,7 +1085,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "OCaml Debugger",
               "description": "extension that provides OCaml Debugger for VSCode",
               "children": [],
@@ -1169,7 +1099,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "merlin",
               "description": "Context sensitive completion for OCaml in Vim and Emacs.",
               "children": [],
@@ -1184,7 +1113,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "merlin-eldoc",
               "description": "Emacs package to provide merlin's features through eldoc.",
               "children": [],
@@ -1199,7 +1127,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "opam-switch-mode",
               "description": "Minor mode for Emacs that extends Tuareg and Merlin with menus to change or reset the opam switch in the ambient Emacs session.",
               "children": [],
@@ -1214,13 +1141,11 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "Sublime better ocaml",
               "description": "Better OCaml mode for Sublime Text.",
               "children": [
                 {
                   "node_type": "item",
-                  "kind": "repository",
                   "title": "Sublime text package",
                   "description": null,
                   "children": [],
@@ -1245,7 +1170,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "ocaml-lsp",
               "description": "An LSP language server for OCaml that integrates with any editor that understands LSP like VSCode, Vim and Emacs.",
               "children": [],
@@ -1265,7 +1189,6 @@
               "children": [
                 {
                   "node_type": "item",
-                  "kind": "repository",
                   "title": "ocp-index-top",
                   "description": "Toplevel directive for looking up documentation using ocp-index.",
                   "children": [],
@@ -1287,7 +1210,6 @@
               "children": [
                 {
                   "node_type": "item",
-                  "kind": "repository",
                   "title": "Vim plugin",
                   "description": ".",
                   "children": [],
@@ -1311,7 +1233,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "Bisect_ppx",
               "description": null,
               "children": [],
@@ -1334,7 +1255,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "99 problems",
           "description": ". 99% of the solutions are here.",
           "children": [],
@@ -1349,7 +1269,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "OCaml at Exercism",
           "description": "Exercism is your place to engage in thoughtful conversations about code. Explore simplicity, idiomatic language features, and expressive, readable code. Solutions.",
           "children": [],
@@ -1370,7 +1289,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "camlPDF",
           "description": "OCaml library for reading, writing and modifying PDF files.",
           "children": [],
@@ -1385,7 +1303,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "slacko",
           "description": "A neat interface for Slack in OCaml.",
           "children": [],
@@ -1411,7 +1328,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "Vg",
               "description": "Declarative 2D vector graphics for OCaml.",
               "children": [],
@@ -1426,7 +1342,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "cairo2",
               "description": "Binding to Cairo, a 2D Vector Graphics Library. Integrates well with lablgtk.",
               "children": [],
@@ -1448,7 +1363,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "glMLite",
               "description": "OpenGL bindings for OCaml. Provides an (experimental) functional API. (homepage)",
               "children": [],
@@ -1471,7 +1385,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Uunf",
           "description": "Unicode text normalization for OCaml.",
           "children": [],
@@ -1486,7 +1399,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Uutf",
           "description": "Non-blocking streaming Unicode codec for OCaml.",
           "children": [],
@@ -1501,7 +1413,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Uucp",
           "description": "Unicode character properties for OCaml.",
           "children": [],
@@ -1516,7 +1427,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Uucd",
           "description": "Unicode character database decoder for OCaml.",
           "children": [],
@@ -1531,7 +1441,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "ocaml-m17n",
           "description": "Multilingualization for OCaml source code. Allows using Unicode identifiers in OCaml source code.",
           "children": [],
@@ -1546,7 +1455,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Uuseg",
           "description": "Unicode text segmentation for OCaml.",
           "children": [],
@@ -1561,7 +1469,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Camomile",
           "description": "A Unicode library for OCaml.",
           "children": [],
@@ -1582,7 +1489,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "lablqml",
           "description": "QML Qt5 bindings for OCaml.",
           "children": [],
@@ -1597,7 +1503,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "ocaml-linenoise",
           "description": "Self-contained OCaml bindings to linenoise; easy high-level readline functionality in OCaml.",
           "children": [],
@@ -1612,7 +1517,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Notty",
           "description": "Notty is a declarative terminal library for OCaml, structured around the notion of composable images.",
           "children": [],
@@ -1627,7 +1531,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Lambda-Term",
           "description": "Lambda-Term is a cross-platform library for manipulating the terminal. It provides an abstraction for keys, mouse events, and colors, as well as a set of widgets to write curses-like applications.",
           "children": [],
@@ -1648,7 +1551,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "mirage",
           "description": "library operating system that constructs unikernels for secure, high-performance network applications across a variety of cloud computing and mobile platforms",
           "children": [],
@@ -1663,7 +1565,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Base",
           "description": "Standard library for OCaml",
           "children": [],
@@ -1678,7 +1579,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Liquidsoap",
           "description": "a swiss-army knife for multimedia streaming, notably used for netradios and webtvs",
           "children": [],
@@ -1693,7 +1593,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "libguestfs",
           "description": "library and tools for accessing and modifying virtual machine disk images",
           "children": [],
@@ -1708,7 +1607,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "coq",
           "description": "formal proof management system",
           "children": [],
@@ -1723,7 +1621,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "pfff",
           "description": "an OCaml API to write static analysis, dynamic analysis, code visualizations, code navigations, or style-preserving source-to-source transformations such as refactorings on source code.",
           "children": [],
@@ -1738,7 +1635,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "xen-api",
           "description": "management stack that configures and controls Xen-enabled hosts and resource pools, and co-ordinates resources within the pool.",
           "children": [],
@@ -1753,7 +1649,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "MLDonkey",
           "description": "cross-platform multi-network peer-to-peer daemon",
           "children": [],
@@ -1768,7 +1663,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cil",
           "description": "C Intermediate Language",
           "children": [],
@@ -1783,7 +1677,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Oni2",
           "description": "Native, lightweight modal code editor.",
           "children": [],
@@ -1804,7 +1697,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "dolog",
           "description": "A dumb OCaml logger.",
           "children": [],
@@ -1819,7 +1711,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Volt",
           "description": "A variant of the Bolt OCaml logging tool.",
           "children": [],
@@ -1840,7 +1731,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Kafka",
           "description": "OCaml bindings for Apache Kafka.",
           "children": [],
@@ -1855,7 +1745,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "MPI",
           "description": "Message Passing Interface bindings for OCaml.",
           "children": [],
@@ -1870,7 +1759,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "MQTT",
           "description": "OCaml implementation of the MQTT pubsub protocol.",
           "children": [],
@@ -1885,7 +1773,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "onanomsg",
           "description": "nanomsg bindings for OCaml.",
           "children": [],
@@ -1900,7 +1787,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "capnp-ocaml",
           "description": "OCaml code generator plugin for the Cap'n Proto serialization framework.",
           "children": [],
@@ -1915,7 +1801,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "ocaml-zmq",
           "description": "ZeroMQ bindings for OCaml with Async and Lwt wrappers.",
           "children": [],
@@ -1930,7 +1815,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "AMQP",
           "description": "AMQP client library for Async and Lwt.",
           "children": [],
@@ -1951,7 +1835,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "ocaml-dns",
           "description": "A pure OCaml implementation of the DNS protocol.",
           "children": [],
@@ -1966,7 +1849,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "charrua-unix",
           "description": "charrua-unix is a Unix DHCP daemon based on charrua-core.",
           "children": [],
@@ -1981,7 +1863,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "fluent-logger",
           "description": "Fluentd logger for OCaml.",
           "children": [],
@@ -2001,7 +1882,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "piaf",
               "description": "Client/server library for HTTP/1.X / HTTP/2 written entirely in OCaml.",
               "children": [],
@@ -2016,7 +1896,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "ocurl",
               "description": "OCaml bindings to libcurl.",
               "children": [],
@@ -2031,7 +1910,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "ocaml-cohttp",
               "description": "Very lightweight HTTP server using Lwt or Async.",
               "children": [],
@@ -2046,7 +1924,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "httpaf",
               "description": "A high performance, memory efficient, and scalable web server written in OCaml.",
               "children": [],
@@ -2074,7 +1951,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "esy",
               "description": "package.json workflow for native development with Reason/OCaml.",
               "children": [],
@@ -2089,7 +1965,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "Diskuv OCaml",
               "description": "Diskuv OCaml distribution for Windows.",
               "children": [],
@@ -2104,7 +1979,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "makorel",
               "description": "Release OPAM packages easily.",
               "children": [],
@@ -2126,7 +2000,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "dune",
               "description": "A composable and opinionated build system for OCaml (former jbuilder)",
               "children": [],
@@ -2141,7 +2014,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "ocaml-makefile",
               "description": "Easy to use Makefile for small to medium-sized OCaml-projects.",
               "children": [],
@@ -2156,7 +2028,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "obuild",
               "description": "Simple package build system for ocaml.",
               "children": [],
@@ -2171,7 +2042,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "Bazel",
               "description": "OCaml rules for Bazel, Google's multi-language and platform build tool.",
               "children": [],
@@ -2186,7 +2056,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "topkg",
               "description": "OPAM-aware packaging system using ocamlbuild.",
               "children": [],
@@ -2206,7 +2075,6 @@
               "children": [
                 {
                   "node_type": "item",
-                  "kind": "repository",
                   "title": "oasis2opam",
                   "description": "Tool to convert OASIS metadata to OPAM package descriptions.",
                   "children": [],
@@ -2236,7 +2104,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "Parany",
               "description": "Parallelize computation over independent items, even if there is an infinite number of them.",
               "children": [],
@@ -2251,7 +2118,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "Nproc",
               "description": "Process pool implementation for OCaml.",
               "children": [],
@@ -2266,7 +2132,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "ForkWork",
               "description": "A simple library for forking child processes to perform work on multiple cores.",
               "children": [],
@@ -2281,7 +2146,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "SPOC",
               "description": "Libraries and syntax extensions to offload intensive computations to parallel accelerators (multicore CPUs, GPUs and other accelerators compatible with GPGPU frameworks).",
               "children": [],
@@ -2296,7 +2160,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "Rpc.Parallel",
               "description": "A library for spawning processes on a cluster of machines, and passing typed messages between them.",
               "children": [],
@@ -2318,11 +2181,9 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "registry",
               "title": "Awesome multicore OCaml",
               "description": ". A compilation of resources",
               "children": [],
-              "registry_signal": "name",
               "repo_info": {
                 "archived": false,
                 "language": "Go",
@@ -2334,7 +2195,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "Parallel programming in multicore OCaml",
               "description": null,
               "children": [],
@@ -2357,7 +2217,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "OCaml@p",
           "description": null,
           "children": [],
@@ -2372,7 +2231,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "dyn",
           "description": "in Dune. It appears to also be fully manual.",
           "children": [],
@@ -2387,7 +2245,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "ppx_deriving",
           "description": "’s .",
           "children": [],
@@ -2402,7 +2259,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Reason's native Console.log",
           "description": null,
           "children": [],
@@ -2417,7 +2273,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Inspect",
           "description": null,
           "children": [],
@@ -2432,7 +2287,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cmon",
           "description": ", fully manual.",
           "children": [],
@@ -2447,7 +2301,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Genprint",
           "description": null,
           "children": [],
@@ -2462,7 +2315,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Dum",
           "description": null,
           "children": [],
@@ -2477,7 +2329,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "lrt",
           "description": ", another ppx_deriving-like.",
           "children": [],
@@ -2492,7 +2343,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "refl",
           "description": ", a ppx_deriving-like.",
           "children": [],
@@ -2507,7 +2357,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "typerep",
           "description": ", probably a ppx_deriving-like with ppx_typerep_conv.",
           "children": [],
@@ -2522,7 +2371,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "tpf",
           "description": ", again a ppx_deriving-like.",
           "children": [],
@@ -2543,7 +2391,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "drom",
           "description": "The drom tool is a wrapper over opam/dune in an attempt to provide a cargo-like user experience.",
           "children": [],
@@ -2558,7 +2405,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "modern-ocaml",
           "description": "Template for an ocaml project with modern tooling",
           "children": [],
@@ -2573,7 +2419,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "spin",
           "description": "Reason and Ocaml project generator",
           "children": [],
@@ -2594,7 +2439,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "ocaml-pcre",
           "description": "bindings to the PCRE library (perl-compatible regular expressions)",
           "children": [],
@@ -2609,7 +2453,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Tyre",
           "description": "Tyre is a set of combinators to build type-safe regular expressions, allowing automatic extraction and modification of matched groups.",
           "children": [],
@@ -2624,7 +2467,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Re",
           "description": "a pure OCaml regular expressions library with combinators, supporting several formats (glob, posix, str, etc.).",
           "children": [],
@@ -2639,7 +2481,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Humane-re",
           "description": "Humane-re attempts to provide an easy interface for 90% of your regex needs. Courtesy of ocaml-re.",
           "children": [],
@@ -2660,7 +2501,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "nocoiner",
           "description": "A Commitment scheme library for Multi-party computations such as online auctions and gambling.",
           "children": [],
@@ -2675,7 +2515,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "ocaml-tls",
           "description": "TLS in pure OCaml.",
           "children": [],
@@ -2690,7 +2529,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cryptokit",
           "description": "The Cryptokit library for OCaml provides a variety of cryptographic primitives that can be used to implement cryptographic protocols in security-sensitive applications.",
           "children": [],
@@ -2705,7 +2543,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "nocrypto",
           "description": "A small cryptographic library behind the ocaml-tls project. It is built to be straightforward to use, adhere to functional programming principles, and able to run in a Xen-based unikernel.",
           "children": [],
@@ -2720,7 +2557,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Digestif",
           "description": "Hash algorithms (like SHA* or BLAKE2*) in OCaml and C.",
           "children": [],
@@ -2741,7 +2577,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "yojson",
           "description": "An optimized parsing and printing library for the JSON format.",
           "children": [],
@@ -2756,7 +2591,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "biniou",
           "description": "Extensible binary data format, like JSON but faster.",
           "children": [],
@@ -2771,7 +2605,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "atdgen",
           "description": "A serialization compiler for multiple languages (OCaml, Java, Python, Scala, Typescript) with a Binou or JSON format",
           "children": [],
@@ -2786,7 +2619,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cbor",
           "description": "OCaml native CBOR decoder/encoder.",
           "children": [],
@@ -2801,7 +2633,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "bencode",
           "description": "Bencode (.torrent file format) reader/writer.",
           "children": [],
@@ -2816,7 +2647,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "sexplib",
           "description": "A S-expression parser and printer",
           "children": [],
@@ -2837,7 +2667,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "ocaml-fat",
           "description": "Read and write FAT-format filesystems from OCaml.",
           "children": [],
@@ -2852,7 +2681,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Mirage OS",
           "description": "Mirage is a programming framework for constructing secure, high-performance network applications across a variety of cloud computing and mobile platforms.",
           "children": [],
@@ -2867,7 +2695,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "ocaml-git",
           "description": "Pure OCaml low-level git bindings.",
           "children": [],
@@ -2882,7 +2709,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "ocaml-vchan",
           "description": "Pure OCaml implementation of the \"vchan\" shared-memory communication protocol.",
           "children": [],
@@ -2902,7 +2728,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "ocaml-esp32",
               "description": "A compiler for ESP32 SoC.",
               "children": [],
@@ -2917,7 +2742,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "OMicroB",
               "description": "A virtual machine designed to run OCaml bytecode on AVR (Arduino for instance) micro-controlers.",
               "children": [],
@@ -2940,7 +2764,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "iTeML",
           "description": "(formerly known as qtest) — supports inline pragma's to generate tests.",
           "children": [],
@@ -2955,7 +2778,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "expect-test",
           "description": "A framework for writing tests in OCaml, similar to Cram, developed by JaneStreet.",
           "children": [],
@@ -2970,7 +2792,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Alcotest",
           "description": "A lightweight and colourful test framework.",
           "children": [],
@@ -2985,7 +2806,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "TestSimple",
           "description": "A lightweight unit testing framework compatible with the Test Anything Protocol.",
           "children": [],
@@ -3000,7 +2820,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "QCheck",
           "description": "QCheck is a property testing library inspired from Haskell's QuickCheck",
           "children": [],
@@ -3021,7 +2840,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Validate",
           "description": "PPX deriver designed to streamline the process of validating records.",
           "children": [],
@@ -3036,7 +2854,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "ocaml-cuid",
           "description": "Collision-resistant IDs for server scalability & database performance.",
           "children": [],
@@ -3051,7 +2868,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "sqids-ocaml",
           "description": "Official OCaml port of Sqids. Generate short unique IDs from numbers.",
           "children": [],
@@ -3077,7 +2893,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "Opium",
               "description": "Sinatra like web toolkit for OCaml.",
               "children": [],
@@ -3092,7 +2907,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "ocaml-vdom",
               "description": "Elm architecture and (V)DOM for OCaml",
               "children": [],
@@ -3107,7 +2921,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "webmachine",
               "description": "A REST toolkit for OCaml. OCaml webmachine is a layer on top of cohttp that implements a state-machine-based HTTP request processor. It's particularly well-suited for writing RESTful APIs. As the name suggests, this is an OCaml port of the webmachine project.",
               "children": [],
@@ -3122,7 +2935,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "incr_dom",
               "description": "A library for building dynamic webapps, using Js_of_ocaml",
               "children": [],
@@ -3144,7 +2956,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "COW",
               "description": "Caml on the Web (COW) is a set of parsers and syntax extensions to let you manipulate HTML, CSS, XML, JSON and Markdown directly from OCaml code.",
               "children": [],
@@ -3159,7 +2970,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "jingoo",
               "description": "OCaml template engine almost compatible with jinja2.",
               "children": [],
@@ -3174,7 +2984,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "Syndic",
               "description": "RSS and Atom feed parsing",
               "children": [],
@@ -3189,7 +2998,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "ocaml-uri",
               "description": "RFC3986 URI parsing library.",
               "children": [],
@@ -3204,7 +3012,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "routes",
               "description": "Typed routes for OCaml/ReasonML web applications.",
               "children": [],
@@ -3219,7 +3026,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "Markup.ml",
               "description": "Error-recovering streaming HTML5 and XML parsers, serializers.",
               "children": [],
@@ -3234,7 +3040,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "atdjs",
               "description": "atd code generator (serialization) for OCaml/js_of_ocaml.",
               "children": [],
@@ -3249,7 +3054,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "dispatch",
               "description": "Path-based dispatching for client- and server-side applications.",
               "children": [],
@@ -3264,7 +3068,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "Lambda Soup",
               "description": "Functional HTML scraping and manipulation with CSS selectors, à la Python's Beautiful Soup.",
               "children": [],
@@ -3279,7 +3082,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "ocaml-mustache",
               "description": "mustache.js logic-less templates in OCaml.",
               "children": [],
@@ -3294,7 +3096,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "Goji",
               "description": "An OCaml bindings generator for JavaScript libraries.",
               "children": [],
@@ -3309,7 +3110,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "gen_js_api",
               "description": "gen_js_api aims at simplifying the creation of OCaml bindings for Javascript libraries.",
               "children": [],
@@ -3329,7 +3129,6 @@
               "children": [
                 {
                   "node_type": "item",
-                  "kind": "repository",
                   "title": "commonjs_of_ocaml",
                   "description": "Easily import and export CommonJS modules from a js_of_ocaml project.",
                   "children": [],
@@ -3353,7 +3152,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "Cumulus",
               "description": "Hacker news like website with the OCaml framework Ocsigen",
               "children": [],
@@ -3378,8 +3176,6 @@
     "original_repository_sha": "deadbeef",
     "enhanced_repository": "enhansome/enhansome-ocaml",
     "enhanced_repository_description": "enhanced list",
-    "kind": "registry",
-    "title": "Awesome OCaml with stars",
-    "registry_signal": "content"
+    "title": "Awesome OCaml with stars"
   }
 }

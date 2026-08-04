@@ -48,7 +48,6 @@ function enhanceResult(overrides: Partial<EnhanceResult> = {}): EnhanceResult {
     jsonData: {
       items: [],
       metadata: {
-        kind: 'repository',
         last_updated: '2026-06-27T00:00:00.000Z',
         original_repository: 'NARKOZ/guides',
         original_repository_sha: 'abc123',

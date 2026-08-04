@@ -5,7 +5,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Synapse plugin",
           "description": "Expose your application functionality via MCP, with built-in tools and documentation search to help you discover and interact with your app's capabilities.",
           "children": [],
@@ -20,7 +19,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Crustum/OpenRouter plugin",
           "description": "Integration with OpenRouter service for unified LLM access, supporting multiple AI models with chat completions, streaming, tool calling, and web search.",
           "children": [],
@@ -41,7 +39,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "AssetCompress plugin",
           "description": "A complete asset manager for CakePHP.",
           "children": [],
@@ -56,7 +53,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "AssetMix plugin",
           "description": "Provides integration with Laravel Mix asset compilation.",
           "children": [],
@@ -71,7 +67,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "CakeVite plugin",
           "description": "A fully-featured Vite plugin (spiritual successor of brandcom/cakephp-vite).",
           "children": [],
@@ -92,7 +87,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "DatabaseLog plugin",
           "description": "Simple and stand-alone logging to database instead of files.",
           "children": [],
@@ -107,7 +101,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Version plugin",
           "description": "A plugin that facilitates versioned database entities.",
           "children": [],
@@ -122,7 +115,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Bouncer plugin",
           "description": "The pendant to AuditStash, allow moderation and approval of add/edit/delete actions before the actual change is applied.",
           "children": [],
@@ -137,7 +129,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Muffin/Footprint plugin",
           "description": "Plugin to allow passing currently logged in user to model layer.",
           "children": [],
@@ -152,7 +143,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "AuditStash plugin",
           "description": "Flexible and rock solid audit log tracking.",
           "children": [],
@@ -173,7 +163,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "TwoFactorAuth plugin",
           "description": "Allows two factor authentication using Google Authenticator or similar app to generate one-time codes. Based on RobThree/TwoFactorAuth library.",
           "children": [],
@@ -188,7 +177,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "ADmad/SocialAuth plugin",
           "description": "A plugin which allows you to authenticate using social providers like Facebook/Google/Twitter etc. using SocialConnect/auth social sign on library.",
           "children": [],
@@ -203,7 +191,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Authentication plugin",
           "description": "Official CakePHP authentication middleware plugin.",
           "children": [],
@@ -218,7 +205,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Tools:Passwordable",
           "description": "Containing Passwordable behavior for a DRY approach on password hashing.",
           "children": [],
@@ -233,7 +219,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "CakeDC/Users plugin",
           "description": "Complete user management (admin panel, remember me, etc), Social login (FB, Twitter, LinkedIn, Google, Instagram), RBAC, API and more.",
           "children": [],
@@ -248,7 +233,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Authorization plugin",
           "description": "Official CakePHP authorization stack.",
           "children": [],
@@ -263,7 +247,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "TinyAuth plugin",
           "description": "Authentication and role-based (single/multi) authorization as very light-weight approach.",
           "children": [],
@@ -278,7 +261,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "ApiTokenAuthenticator plugin",
           "description": "A simple token authentication plugin for CakePHP REST APIs.",
           "children": [],
@@ -293,7 +275,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "CakeVerification plugin",
           "description": "Two-factor verification supporting email OTP, email magic link, SMS OTP, and TOTP (Google Authenticator).",
           "children": [],
@@ -314,7 +295,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Cache plugin",
           "description": "For caching views (HTML, CSV, JSON, XML, ...) as static cache files.",
           "children": [],
@@ -329,7 +309,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "CakeDC/CachedRouting plugin",
           "description": "Provides a cached version of the RoutingMiddleware to improve the load time of routes.",
           "children": [],
@@ -350,7 +329,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "TestHelper plugin",
           "description": "Provides testing enhancements and TDD support as browser backend.",
           "children": [],
@@ -365,7 +343,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cakedc/cakephp-phpstan",
           "description": "A PHPStan extension to resolve CakePHP magic around getter return types for the static analyzer.",
           "children": [],
@@ -380,7 +357,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "lordsimal/cakephp-psalm",
           "description": "A Psalm extension to resolve CakePHP magic around getter return types for the static analyzer.",
           "children": [],
@@ -395,7 +371,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "IdeHelper plugin",
           "description": "Helps to make IDE support better by adding annotations to your existing code similar to what baking does to new code.",
           "children": [],
@@ -410,7 +385,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "IdeHelperExtra plugin",
           "description": "Useful IdeHelper addons for other plugins or custom use cases.",
           "children": [],
@@ -431,7 +405,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Scheduling plugin",
           "description": "The plugin provides task scheduling capabilities with sub-minute precision, allowing you to schedule tasks as frequently as every second, with single crontab entry point. It allows tasks monitoring.",
           "children": [],
@@ -446,7 +419,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "SignalHandler plugin",
           "description": "Cross-platform signal handling for CakePHP console commands with zero external dependencies. Supports Linux (pcntl), Windows (native API).",
           "children": [],
@@ -467,7 +439,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "AssociationsDebugger plugin",
           "description": "A plugin that draws your model associations as diagram.",
           "children": [],
@@ -482,7 +453,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Execution order",
           "description": "A demo app to display the execution order of files, methods and callbacks.",
           "children": [],
@@ -497,7 +467,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Setup plugin",
           "description": "A lightweight setup plugin containing healthcheck(s), debugging and maintenance tools.",
           "children": [],
@@ -512,7 +481,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "DebugKit plugin",
           "description": "The de-facto standard for debugging.",
           "children": [],
@@ -527,7 +495,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Sentry plugin",
           "description": "A plugin to seamlessly integrate Sentry for errors and exceptions.",
           "children": [],
@@ -542,7 +509,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "CakephpWhoops plugin",
           "description": "PHP errors and exceptions for cool kids with filp/whoops.",
           "children": [],
@@ -563,7 +529,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Queue plugin",
           "description": "A dependency-free queue-based mail solution using Mailer/Email class, allowing re-queue on (network) failure.",
           "children": [],
@@ -578,7 +543,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "SendGrid plugin",
           "description": "Email transport plugin for sending email via SendGrid API.",
           "children": [],
@@ -599,7 +563,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "FileStorage plugin",
           "description": "Flexible file storage and upload plugin.",
           "children": [],
@@ -614,7 +577,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Josegonzalez/Upload plugin",
           "description": "A customisable plugin that uses Flysystem to write to multiple backends (Dropbox, FTP, S3, Local, etc.).",
           "children": [],
@@ -635,7 +597,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Translate plugin",
           "description": "Translate your translations in the backend with ease.",
           "children": [],
@@ -650,7 +611,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "ADmad/I18n plugin",
           "description": "A plugin with I18n related tools.",
           "children": [],
@@ -665,7 +625,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Cake/Localized plugin",
           "description": "Localized validation and ready-to-use translation PO files.",
           "children": [],
@@ -686,7 +645,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "QrCodePlugin",
           "description": "Easily render SVG/PNG QR Codes for your app.",
           "children": [],
@@ -701,7 +659,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "ADmad/Glide plugin",
           "description": "A plugin for using Glide image manipulation library.",
           "children": [],
@@ -722,7 +679,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Composer Installers",
           "description": "A multi framework Composer library installer.",
           "children": [],
@@ -737,7 +693,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Graphviz",
           "description": "A Graphviz library.",
           "children": [],
@@ -752,7 +707,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Rocketeer",
           "description": "PHP task runner and deployment package.",
           "children": [],
@@ -767,7 +721,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Chronos",
           "description": "A simple standalone DateTime API extension (successor of Carbon).",
           "children": [],
@@ -788,7 +741,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Upgrade app",
           "description": "Official upgrade app for 3.x=>4.x and 4.x=>5.x.",
           "children": [],
@@ -803,7 +755,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Migrations plugin",
           "description": "(DB) Migration plugin.",
           "children": [],
@@ -818,7 +769,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Upgrade app (extended)",
           "description": "An extended upgrade app for 3.x=>4.x and some 5.x snippets.",
           "children": [],
@@ -839,7 +789,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Shim plugin",
           "description": "A plugin containing useful shims and improvements as basis for your application.",
           "children": [],
@@ -854,7 +803,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "OPCache Preloader",
           "description": "An OPCache Preloader for CakePHP applications.",
           "children": [],
@@ -869,7 +817,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "AttributeRegistry plugin",
           "description": "A powerful CakePHP plugin for discovering, caching, and querying PHP 8 attributes across your application and plugins.",
           "children": [],
@@ -884,7 +831,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "DatabaseBackup plugin",
           "description": "A plugin to to export, import and manage database backups. Currently, the plugin supports MySql, Postgres and Sqlite databases.",
           "children": [],
@@ -899,7 +845,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Calendar plugin",
           "description": "For generating basic calendars. Includes IcalView for ICS calendar file generation.",
           "children": [],
@@ -914,7 +859,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Feedback plugin",
           "description": "Allow visitors to send quick and easy feedback incl. a screenshot via sidebar form.",
           "children": [],
@@ -929,7 +873,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Ajax plugin",
           "description": "A plugin to ease handling AJAX requests.",
           "children": [],
@@ -944,7 +887,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Inertia plugin",
           "description": "Plugin for connecting a Vue 3 app and use an API interface using a middleware.",
           "children": [],
@@ -959,7 +901,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Flash plugin",
           "description": "More powerful flash messages for your application.",
           "children": [],
@@ -974,7 +915,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "CakeDto plugin",
           "description": "Quickly generate useful data transfer objects for your app (mutable/immutable), replacing messy arrays and leveraging your IDE through typehinting and autocomplete.",
           "children": [],
@@ -989,7 +929,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Tools plugin",
           "description": "Containing lots of useful helpers, behaviors, components, commands, helpers, libs and more.",
           "children": [],
@@ -1004,7 +943,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Setup:Maintenance",
           "description": "Maintenance shell to go into maintenance mode for all requests with optional IP whitelisting.",
           "children": [],
@@ -1019,7 +957,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "CakeHtmx plugin",
           "description": "CakePHP integration for htmx.",
           "children": [],
@@ -1034,7 +971,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "CakeDC/Enum plugin",
           "description": "A plugin to add enumeration list support to your app.",
           "children": [],
@@ -1055,7 +991,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Crustum/Broadcasting plugin",
           "description": "The Broadcasting plugin provides real-time event broadcasting for CakePHP applications using WebSocket connections compatible with the Pusher protocol or Redis pub/sub.",
           "children": [],
@@ -1070,7 +1005,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Crustum/Notification plugin",
           "description": "The Notification plugin provides support for sending notifications across a variety of delivery channels.",
           "children": [],
@@ -1085,7 +1019,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Mercure plugin",
           "description": "Push real-time updates to clients using the Mercure protocol.",
           "children": [],
@@ -1106,7 +1039,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "CakeUid",
           "description": "A collection of UID field types for your Tables (UUIDV4, UUIDV6, UUIDV7, ULID).",
           "children": [],
@@ -1121,7 +1053,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "ADmad/Sequence plugin",
           "description": "Behavior for maintaining ordered list of records.",
           "children": [],
@@ -1136,7 +1067,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Muffin/Orderly plugin",
           "description": "Allows setting default order for your tables.",
           "children": [],
@@ -1151,7 +1081,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Duplicatable plugin",
           "description": "Behavior for duplicating entities including related data.",
           "children": [],
@@ -1166,7 +1095,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "CakeDecimal plugin",
           "description": "A value object approach on handling decimals.",
           "children": [],
@@ -1181,7 +1109,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Muffin/Trash plugin",
           "description": "Soft-delete behavior for CakePHP.",
           "children": [],
@@ -1196,7 +1123,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Lampager/Cake plugin",
           "description": "Rapid pagination without using OFFSET.",
           "children": [],
@@ -1211,7 +1137,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Icings/Partitionable plugin",
           "description": "Partitionable associations allowing for basic limiting per group.",
           "children": [],
@@ -1226,7 +1151,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Itosho/EasyQuery plugin",
           "description": "Behavior for easily generating some complicated queries like (bulk) insert/upsert etc.",
           "children": [],
@@ -1247,7 +1171,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Cake/Enqueue plugin",
           "description": "Database-driven message queue integration using the Enqueue library for CakePHP Queue plugin.",
           "children": [],
@@ -1262,7 +1185,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Crustum/BatchQueue plugin",
           "description": "Unified system for managing batch job processing with parallel execution and sequential chains.",
           "children": [],
@@ -1277,7 +1199,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Queue plugin",
           "description": "CakePHP core queue system for the php-queue queue library.",
           "children": [],
@@ -1292,7 +1213,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Crustum/Temporal plugin",
           "description": "Workflow orchestration plugin for durable execution, reliable background jobs, and long-running processes with automatic retries.",
           "children": [],
@@ -1307,7 +1227,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Queue plugin",
           "description": "A minimal and dependency-free queue solution.",
           "children": [],
@@ -1322,7 +1241,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "QueueScheduler plugin",
           "description": "A dependency-free crontab-like scheduler as DB driven solution and addon to Queue (dereuromark) plugin.",
           "children": [],
@@ -1343,7 +1261,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "CakeDC/Api plugin",
           "description": "All-in-one solution to provide a complete API. It includes versioning, renderers, CRUD, authentication, extensions (paginate, filter, HATEOAS), and much more.",
           "children": [],
@@ -1358,7 +1275,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "SwaggerBake plugin",
           "description": "This plugin automatically builds OpenAPI from your existing models and routes for display in Swagger and Redoc.",
           "children": [],
@@ -1373,7 +1289,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "CRUD plugin",
           "description": "CakePHP Application development on steroids - rapid prototyping / scaffolding & production-ready code.",
           "children": [],
@@ -1388,7 +1303,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "FractalTransformerView plugin",
           "description": "A plugin which allows using Fractal transformers for your API output.",
           "children": [],
@@ -1409,7 +1323,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "CakeDC/SearchFilter plugin",
           "description": "Powerful and flexible solution for implementing advanced search functionality. Provides a robust set of tools for creating dynamic, user-friendly search interfaces with minimal effort.",
           "children": [],
@@ -1424,7 +1337,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Tags plugin",
           "description": "For tagging and finding tagged records.",
           "children": [],
@@ -1439,7 +1351,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "PlumSearch plugin",
           "description": "Implements custom, flexible and extendable search strategies. Implements PRG pattern.",
           "children": [],
@@ -1454,7 +1365,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Cake/ElasticSearch plugin",
           "description": "Alternative ORM using Elasticsearch as its backend.",
           "children": [],
@@ -1469,7 +1379,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Search plugin",
           "description": "Provides easy searching/filtering for paginated views using PRG pattern.",
           "children": [],
@@ -1490,7 +1399,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Muffin/Obfuscate plugin",
           "description": "Primary key obfuscation/shortening using UUIDs, HashIds, Optimus, Tiny and/or custom obfuscation strategies.",
           "children": [],
@@ -1505,7 +1413,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Captcha plugin",
           "description": "Simple, unobtrusive and extendable captcha solution providing by default an image based math captcha.",
           "children": [],
@@ -1520,7 +1427,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Muffin/Throttle plugin",
           "description": "A plugin for rate limiting (API) requests.",
           "children": [],
@@ -1535,7 +1441,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Recaptcha plugin",
           "description": "Simple, lightweight Google Recaptcha v2.",
           "children": [],
@@ -1550,7 +1455,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Expose plugin",
           "description": "Expose entities through additional UUIDs instead of their AIID primary keys to obfuscate those IDs and data associated with these numerically ordered values.",
           "children": [],
@@ -1571,7 +1475,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Muffin/Slug plugin",
           "description": "A plugin for generating slugs and finding records by slug. Uses a pluggable architecture which allows using your own slug generator class.",
           "children": [],
@@ -1586,7 +1489,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Tools:Slugged",
           "description": "Containing Slugged behavior to auto-generate URL-compatible slugs from titles.",
           "children": [],
@@ -1607,7 +1509,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "BS flavored App template",
           "description": "An empty CakePHP project with BS5 and FontAwesome out of the box.",
           "children": [],
@@ -1622,7 +1523,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "App template",
           "description": "An empty CakePHP project for use with composer.",
           "children": [],
@@ -1643,7 +1543,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Favorites plugin",
           "description": "Allows users to star/like/favor records.",
           "children": [],
@@ -1658,7 +1557,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Ratings plugin",
           "description": "Allows users to rate records and displays ratings.",
           "children": [],
@@ -1673,7 +1571,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Comments plugin",
           "description": "Allows users to comment records, supporting different formats.",
           "children": [],
@@ -1694,7 +1591,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Feed plugin",
           "description": "Containing an RssView class to easily generate (complex) RSS feeds.",
           "children": [],
@@ -1709,7 +1605,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Templating",
           "description": "HTML snippets as value objects, (Font) icons, and templating topics.",
           "children": [],
@@ -1724,7 +1619,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "CsvView plugin",
           "description": "A view class to easily generate CSV.",
           "children": [],
@@ -1739,7 +1633,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "TemplaterDefaults plugin",
           "description": "Allows the use of default HTML attributes within CakePHP's string template system.",
           "children": [],
@@ -1754,7 +1647,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Bake plugin",
           "description": "Provides code generation functionality.",
           "children": [],
@@ -1769,7 +1661,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "LatteView plugin",
           "description": "A plugin providing Latte template engine integration.",
           "children": [],
@@ -1784,7 +1675,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "TwigView plugin",
           "description": "A plugin to use the Twig Templating Language for views.",
           "children": [],
@@ -1799,7 +1689,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "BootstrapUI plugin",
           "description": "Bootstrap 4/5 integration.",
           "children": [],
@@ -1814,7 +1703,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Tools:Tree",
           "description": "Tree helper to work with Core Tree behavior and handle tree structure output.",
           "children": [],
@@ -1829,7 +1717,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Meta plugin",
           "description": "Makes handling meta tags and SEO-relevant HTML markup DRY and easy.",
           "children": [],
@@ -1844,7 +1731,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "XlsView plugin",
           "description": "A view class to easily generate XLS using PHPSpreadsheet.",
           "children": [],
@@ -1865,7 +1751,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "FriendsOfCake/Fixturize plugin",
           "description": "More efficient inserting fixtures when running test suites by decreasing amount of inserts (mysql only).",
           "children": [],
@@ -1880,7 +1765,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "CakephpFixtureFactories plugin",
           "description": "Create your fixtures dynamically on a test basis, accelerate the writing and maintenance of your tests.",
           "children": [],
@@ -1895,7 +1779,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "CakePHP CodeSniffer rules",
           "description": "The official CakePHP CS rules.",
           "children": [],
@@ -1921,7 +1804,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "CakePHP Docker Setup",
           "description": "Tool for spinning up multiple CakePHP vanilla dev environments using Docker.",
           "children": [],
@@ -1936,7 +1818,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "NetBeans",
           "description": "This package provides support for CakePHP in NetBeans 8.1+.",
           "children": [],
@@ -1951,7 +1832,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Docker",
           "description": "CakePHP in a docker container environment.",
           "children": [],
@@ -1966,7 +1846,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "CakePHP Docker",
           "description": "A cakephp/app template for docker.",
           "children": [],
@@ -1981,7 +1860,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "CakePHP Vagrant Setup",
           "description": "Tool for spinning up multiple CakePHP vanilla dev environments using Vagrant.",
           "children": [],
@@ -1996,7 +1874,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Oven",
           "description": "Setup your favorite framework with 1 file and 1 click.",
           "children": [],
@@ -2022,7 +1899,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "BlogMVC",
           "description": "A simple Blog example with CakePHP based on BlogMVC Project.",
           "children": [],
@@ -2037,7 +1913,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Xeta",
           "description": "A resource to help people starting with CakePHP.",
           "children": [],
@@ -2052,7 +1927,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Query Examples",
           "description": "Advanced query building examples.",
           "children": [],
@@ -2067,7 +1941,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Vue.js Demo App",
           "description": "A CakePHP + VueJS single page application skeleton.",
           "children": [],
@@ -2082,7 +1955,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Fluentd + Grafana Loki demo application",
           "description": "A demo application to send CakePHP docker container logs to Grafana Loki via Fluentd.",
           "children": [],
@@ -2097,7 +1969,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Bookmarkr",
           "description": "A bookmarking application built with the CRUD plugin.",
           "children": [],
@@ -2112,7 +1983,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "RealWorld",
           "description": "Example CakePHP codebase containing real world examples (CRUD, auth, advanced patterns and more) that adheres to the RealWorld spec and API.",
           "children": [],
@@ -2145,8 +2015,6 @@
     "original_repository_sha": "deadbeef",
     "enhanced_repository": "enhansome/enhansome-cakephp",
     "enhanced_repository_description": "enhanced list",
-    "kind": "registry",
-    "title": "Awesome CakePHP with stars",
-    "registry_signal": "content"
+    "title": "Awesome CakePHP with stars"
   }
 }

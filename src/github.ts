@@ -214,30 +214,6 @@ export function parseGitHubUrl(url: string): null | RepoIdentifier {
   }
 }
 
-/** Whether a URL points into `self`'s own tree — shared by the mdast and
- * rendered-HTML link counters so both treat self-links as internal. Deep
- * `/blob/`/`/tree/` paths collapse to owner/repo (parseGitHubUrl keeps two
- * segments); GitHub is case-insensitive, so the match is too. */
-export function isSelfReference(url: string, self: RepoIdentifier): boolean {
-  const parsed = parseGitHubUrl(url);
-  return (
-    !!parsed &&
-    parsed.owner.toLowerCase() === self.owner.toLowerCase() &&
-    parsed.repo.toLowerCase() === self.repo.toLowerCase()
-  );
-}
-
-/** A relative link (CONTRIBUTING.md, ./docs/x) resolves within the source repo's
- * own tree — internal, excluded like a #anchor. A scheme marks an absolute URL; a
- * schemeless `www.host/…` stays counted. Shared with `isSelfReference` as the
- * "is this link internal?" predicate. */
-export function isRelative(url: string): boolean {
-  if (/^[a-z][a-z0-9+.-]*:/i.test(url)) {
-    return false;
-  }
-  return !url.toLowerCase().startsWith('www.');
-}
-
 export function formatRequestError(error: unknown): string {
   const message = error instanceof Error ? error.message : String(error);
   const status = getErrorStatus(error);

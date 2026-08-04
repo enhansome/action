@@ -5,7 +5,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Repo A",
           "description": "100 stars",
           "children": [],
@@ -20,7 +19,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Repo C",
           "description": "200 stars",
           "children": [],
@@ -35,13 +33,11 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Repo B",
           "description": "300 stars",
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "Nested 1",
               "description": "50 stars.",
               "children": [],
@@ -64,7 +60,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Repo A",
           "description": "100 stars.",
           "children": [],
@@ -79,7 +74,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Repo C",
           "description": "200 stars.",
           "children": [],
@@ -102,7 +96,6 @@
     "original_repository_sha": "deadbeef",
     "enhanced_repository": "enhansome/enhansome-complex",
     "enhanced_repository_description": "enhanced list",
-    "kind": "repository",
     "title": "My Awesome List with stars"
   }
 }

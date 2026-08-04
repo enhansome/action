@@ -56,54 +56,18 @@ The action fetches `NARKOZ/guides`'s README, enhances it, writes `README.md` +
 push is authored by `GITHUB_TOKEN`, which does not re-trigger workflows - so this is
 loop-safe even under a `push:` trigger.
 
-## Item kinds (`registry` / `repository`)
-
-Every GitHub node in `README.json` carries an intrinsic `kind` - either `registry`
-(a directory that exists to enable discovery, i.e. another awesome-list) or
-`repository` (a terminal, concrete project):
-
-- `metadata.kind` - the source document's own kind.
-- each item's `kind` - that linked target's kind.
-
-The two are classified by different paths, because the source README is always
-Markdown (the enhancer holds it parsed) while a linked target's README may be
-reStructuredText/AsciiDoc/etc.
-
-- **Source** (`metadata.kind`): a `registry` iff the source README has **>=
-  `REGISTRY_MIN_LINKS` (50)** outbound links (mdast link nodes; same-page `#`
-  anchors excluded). Its `registry_signal` is then always `'content'`.
-- **Target** (each item's `kind`): a precision-first classifier checks five
-  layers in order and emits the first that fires as `registry_signal`:
-  `membership` (listed in `sindresorhus/awesome`, fetched once per run) → `topic`
-  (`awesome-list` GitHub topic) → `name` (matches `/\bawesome\b|\bawsome\b/i`) →
-  `description` (curated-list phrasing) → `content` (last-resort backstop: the
-  target's **rendered-HTML** anchor count is **>= `REGISTRY_CONTENT_BACKSTOP_LINKS`
-  (700)**). The first four anchors are ~0% false-positive and need no README
-  fetch; only the content backstop fetches one. If no layer fires, the target is
-  a `repository`.
-
-The deciding layer is emitted as **`registry_signal`** (`'membership'` |
-`'topic'` | `'name'` | `'description'` | `'content'`) on every registry - both
-`metadata.registry_signal` and each registry item's `registry_signal` - and is
-absent on every `repository`. The anchors are far more reliable than the content
-backstop, so the signal lets a consumer grade a registry's confidence. Both
-thresholds are pinned code constants (`src/markdown.ts`), **not** action inputs -
-the emitted `kind`/`registry_signal` are trustworthy standalone.
-
-### Items vs. groups (`node_type`)
+## Items vs. groups (`node_type`)
 
 A list item's identity is its **own** paragraph's GitHub link only — a nested
 descendant's link belongs to a child, not to the item. So each emitted node is
 one of two shapes, discriminated by `node_type`:
 
 - `node_type: "item"` — a genuine GitHub node (its own paragraph links a repo).
-  Carries `kind` (always) and `repo_info` (when the link resolves); may wrap
-  `children`.
-- `node_type: "group"` — a kind-less **container**: an item whose own link is
-  non-GitHub or absent (an editor subheading, a "see also" cluster, an entry
-  linked via its website) but which wraps nested GitHub items. Carries
-  `children` only — never a `kind` or `repo_info`, which would amount to
-  borrowing a child's identity.
+  Carries `repo_info` (when the link resolves); may wrap `children`.
+- `node_type: "group"` — a **container**: an item whose own link is non-GitHub or
+  absent (an editor subheading, a "see also" cluster, an entry linked via its
+  website) but which wraps nested GitHub items. Carries `children` only — never a
+  `repo_info`, which would amount to borrowing a child's identity.
 
 Both `section.items` and `item.children` are arrays of `item | group`. Under a
 stars/last-commit sort, groups (which have no repo data of their own) sink below
@@ -113,16 +77,14 @@ Two consequences worth knowing:
 
 - **Dead target links degrade, never fail the run.** A fetch failure on a linked
   target (404 / 401 / 403 / throttle-exhausted / 5xx / network) is skipped with a
-  warning: the item is still emitted — without `repo_info`, and with `kind`
-  defaulting to `repository` — and the run continues. Awesome-lists carry endemic
-  dead links, so failing the whole run on the first one would make daily mirrors
-  unusable; the webapp membership backstop recovers any registry mistyped by the
-  default. (The *source* README fetch is still fatal — there is nothing to
-  enhance without it.)
+  warning: the item is still emitted — without `repo_info` — and the run
+  continues. Awesome-lists carry endemic dead links, so failing the whole run on
+  the first one would make daily mirrors unusable. (The *source* README fetch is
+  still fatal — there is nothing to enhance without it.)
 - **Non-GitHub leaves are dropped from the JSON.** A book/paper/note with no
   GitHub link and no nested GitHub children is neither an item nor a group, so it
-  carries no `kind` and is omitted from `README.json` (it remains in the enhanced
-  markdown). Preserving these leaves in a separate shape is a future enhancement.
+  is omitted from `README.json` (it remains in the enhanced markdown). Preserving
+  these leaves in a separate shape is a future enhancement.
 
 ## Development
 

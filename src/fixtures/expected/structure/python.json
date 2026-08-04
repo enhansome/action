@@ -5,7 +5,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "flask-admin",
           "description": "Simple and extensible administrative interface framework for Flask.",
           "children": [],
@@ -20,7 +19,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "jet-bridge",
           "description": "Admin panel framework for any application with nice UI (ex Jet Django).",
           "children": [],
@@ -35,7 +33,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "streamlit",
           "description": "A framework which lets you build dashboards, generate reports, or create chat apps in minutes.",
           "children": [],
@@ -50,7 +47,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "django-unfold",
           "description": "Elevate your Django admin with a stunning modern interface, powerful features, and seamless user experience.",
           "children": [],
@@ -65,7 +61,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "django-grappelli",
           "description": "A jazzy skin for the Django Admin-Interface.",
           "children": [],
@@ -80,7 +75,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "flower",
           "description": "Real-time monitor and web admin for Celery.",
           "children": [],
@@ -95,7 +89,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "wooey",
           "description": "A Django app which creates automatic web UIs for Python scripts.",
           "children": [],
@@ -110,7 +103,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "func-to-web",
           "description": "Instantly create web UIs from Python functions using type hints. Zero frontend code required.",
           "children": [],
@@ -125,7 +117,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "ajenti",
           "description": "The admin panel your servers deserve.",
           "children": [],
@@ -151,7 +142,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "python-ds",
               "description": "A collection of data structure and algorithms for coding interviews.",
               "children": [],
@@ -166,7 +156,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "thealgorithms",
               "description": "All Algorithms implemented in Python.",
               "children": [],
@@ -181,7 +170,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "algorithms",
               "description": "Minimal examples of data structures and algorithms.",
               "children": [],
@@ -196,7 +184,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "sortedcontainers",
               "description": "Fast and pure-Python implementation of sorted collections.",
               "children": [],
@@ -218,7 +205,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "python-cqrs",
               "description": "Event-Driven Architecture Framework with CQRS/CQS, Transaction Outbox, Saga orchestration.",
               "children": [],
@@ -233,7 +219,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "transitions",
               "description": "A lightweight, object-oriented finite state machine implementation.",
               "children": [],
@@ -248,7 +233,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "python-patterns",
               "description": "A collection of design patterns in Python.",
               "children": [],
@@ -271,7 +255,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "uvicorn",
           "description": "A lightning-fast ASGI server implementation, using uvloop and httptools.",
           "children": [],
@@ -286,7 +269,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "hypercorn",
           "description": "An ASGI and WSGI Server based on Hyper libraries and inspired by Gunicorn.",
           "children": [],
@@ -301,7 +283,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "daphne",
           "description": "A HTTP, HTTP2 and WebSocket protocol server for ASGI and ASGI-HTTP.",
           "children": [],
@@ -316,7 +297,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "granian",
           "description": "A Rust HTTP server for Python applications built on top of Hyper and Tokio, supporting WSGI/ASGI/RSGI.",
           "children": [],
@@ -337,7 +317,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "gevent",
           "description": "A coroutine-based Python networking library that uses greenlet.",
           "children": [],
@@ -352,7 +331,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "trio",
           "description": "A friendly library for async concurrency and I/O.",
           "children": [],
@@ -367,7 +345,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "uvloop",
           "description": "Ultra fast asyncio event loop.",
           "children": [],
@@ -382,7 +359,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "twisted",
           "description": "An event-driven networking engine.",
           "children": [],
@@ -402,11 +378,9 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "registry",
               "title": "awesome-asyncio",
               "description": null,
               "children": [],
-              "registry_signal": "name",
               "repo_info": {
                 "archived": false,
                 "language": "Ruby",
@@ -431,7 +405,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "timeside",
               "description": "Open web audio processing framework.",
               "children": [],
@@ -446,7 +419,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "audioread",
               "description": "Cross-library (GStreamer + Core Audio + MAD + FFmpeg) audio decoding.",
               "children": [],
@@ -461,7 +433,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "librosa",
               "description": "Python library for audio and music analysis.",
               "children": [],
@@ -476,7 +447,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "dejavu",
               "description": "Audio fingerprinting and recognition.",
               "children": [],
@@ -491,7 +461,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "gTTS",
               "description": "Python library and CLI tool for converting text to speech using Google Translate TTS.",
               "children": [],
@@ -506,7 +475,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "audioFlux",
               "description": "A library for audio and music analysis, feature extraction.",
               "children": [],
@@ -521,7 +489,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "matchering",
               "description": "A library for automated reference audio mastering.",
               "children": [],
@@ -536,7 +503,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "pydub",
               "description": "Manipulate audio with a simple and easy high level interface.",
               "children": [],
@@ -551,7 +517,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "pyaudioanalysis",
               "description": "Audio feature extraction, classification, segmentation and applications.",
               "children": [],
@@ -566,7 +531,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "kapre",
               "description": "Keras Audio Preprocessors.",
               "children": [],
@@ -588,7 +552,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "tinytag",
               "description": "A library for reading music meta data of MP3, OGG, FLAC and Wave files.",
               "children": [],
@@ -603,7 +566,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "beets",
               "description": "A music library manager and MusicBrainz tagger.",
               "children": [],
@@ -618,7 +580,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "eyed3",
               "description": "A tool for working with audio files, specifically MP3 files containing ID3 metadata.",
               "children": [],
@@ -633,7 +594,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "mutagen",
               "description": "A Python module to handle audio metadata.",
               "children": [],
@@ -661,7 +621,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "authlib",
               "description": "JavaScript Object Signing and Encryption draft implementation.",
               "children": [],
@@ -676,7 +635,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "django-allauth",
               "description": "Authentication app for Django that \"just works.\"",
               "children": [],
@@ -691,7 +649,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "oauthlib",
               "description": "A generic and thorough implementation of the OAuth request-signing logic.",
               "children": [],
@@ -706,7 +663,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "django-oauth-toolkit",
               "description": "OAuth 2 goodies for Django.",
               "children": [],
@@ -728,7 +684,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "python-jose",
               "description": "A JOSE implementation in Python.",
               "children": [],
@@ -743,7 +698,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "pyjwt",
               "description": "JSON Web Token implementation in Python.",
               "children": [],
@@ -766,7 +720,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "scons",
           "description": "A software construction tool.",
           "children": [],
@@ -781,7 +734,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "pybuilder",
           "description": "A continuous build tool written in pure Python.",
           "children": [],
@@ -796,7 +748,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "platformio",
           "description": "A console tool to build code with different development platforms.",
           "children": [],
@@ -811,7 +762,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "buildout",
           "description": "A build system for creating, assembling and deploying applications from multiple parts.",
           "children": [],
@@ -826,7 +776,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "bitbake",
           "description": "A make-like build tool for embedded Linux.",
           "children": [],
@@ -847,7 +796,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "bidict",
           "description": "Efficient, Pythonic bidirectional map data structures and related functionality.",
           "children": [],
@@ -862,7 +810,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "box",
           "description": "Python dictionaries with advanced dot notation access.",
           "children": [],
@@ -877,7 +824,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "dotteddict",
           "description": "A library that provides a method of accessing lists and dicts with a dotted path notation.",
           "children": [],
@@ -892,7 +838,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "attrs",
           "description": "Replacement for , , , etc. boilerplate in class definitions.",
           "children": [],
@@ -913,7 +858,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "feincms",
           "description": "One of the most advanced Content Management Systems built on Django.",
           "children": [],
@@ -928,7 +872,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "indico",
           "description": "A feature-rich event management system, made @ CERN.",
           "children": [],
@@ -943,7 +886,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "wagtail",
           "description": "A Django content management system.",
           "children": [],
@@ -964,7 +906,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "beaker",
           "description": "A WSGI middleware for sessions and caching.",
           "children": [],
@@ -979,7 +920,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "dogpile.cache",
           "description": "dogpile.cache is a next generation replacement for Beaker made by the same authors.",
           "children": [],
@@ -994,7 +934,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "django-cacheops",
           "description": "A slick ORM cache with automatic granular event-driven invalidation.",
           "children": [],
@@ -1009,7 +948,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "pylibmc",
           "description": "A Python wrapper around the libmemcached interface.",
           "children": [],
@@ -1024,7 +962,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "django-cache-machine",
           "description": "Automatic caching and invalidation for Django models.",
           "children": [],
@@ -1039,7 +976,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "python-diskcache",
           "description": "SQLite and file backed cache backend with faster lookups than memcached and redis.",
           "children": [],
@@ -1060,13 +996,11 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "registry",
           "title": "Static Type Checkers, also see awesome-python-typing",
           "description": null,
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "mypy",
               "description": "Check variable types during compile time.",
               "children": [],
@@ -1081,7 +1015,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "typeshed",
               "description": "Collection of library stubs for Python, with static types.",
               "children": [],
@@ -1096,7 +1029,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "ty",
               "description": "An extremely fast Python type checker and language server.",
               "children": [],
@@ -1111,7 +1043,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "pyre-check",
               "description": "Performant type checking.",
               "children": [],
@@ -1125,7 +1056,6 @@
               }
             }
           ],
-          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "JavaScript",
@@ -1142,7 +1072,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "vulture",
               "description": "A tool for finding and analyzing dead Python code.",
               "children": [],
@@ -1157,7 +1086,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "code2flow",
               "description": "Turn your Python and JavaScript code into DOT flowcharts.",
               "children": [],
@@ -1172,7 +1100,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "code-graph-rag",
               "description": "Builds knowledge graphs from multi-language codebases using Tree-sitter and Memgraph, enabling natural language querying of code structure.",
               "children": [],
@@ -1187,7 +1114,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "prospector",
               "description": "A tool to analyze Python code.",
               "children": [],
@@ -1209,7 +1135,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "pylint",
               "description": "A fully customizable source code analyzer.",
               "children": [],
@@ -1224,7 +1149,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "ruff",
               "description": "An extremely fast Python linter and code formatter.",
               "children": [],
@@ -1239,17 +1163,14 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "flake8",
               "description": "A wrapper around , and McCabe.",
               "children": [
                 {
                   "node_type": "item",
-                  "kind": "registry",
                   "title": "awesome-flake8-extensions",
                   "description": null,
                   "children": [],
-                  "registry_signal": "name",
                   "repo_info": {
                     "archived": false,
                     "language": "TypeScript",
@@ -1278,7 +1199,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "isort",
               "description": "A Python utility / library to sort imports.",
               "children": [],
@@ -1293,7 +1213,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "yapf",
               "description": "Yet another Python code formatter from Google.",
               "children": [],
@@ -1308,7 +1227,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "black",
               "description": "The uncompromising Python code formatter.",
               "children": [],
@@ -1330,7 +1248,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "pytype",
               "description": "Pytype checks and infers types for Python code - without requiring type annotations.",
               "children": [],
@@ -1345,7 +1262,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "monkeytype",
               "description": "A system for Python that generates static type annotations by collecting runtime types.",
               "children": [],
@@ -1373,7 +1289,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "python-fire",
               "description": "A library for creating command line interfaces from absolutely any Python object.",
               "children": [],
@@ -1388,7 +1303,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "cliff",
               "description": "A framework for creating command-line programs with multi-level commands.",
               "children": [],
@@ -1403,7 +1317,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "Typer",
               "description": "Modern CLI framework that uses Python type hints. Built on Click and Pydantic.",
               "children": [],
@@ -1418,7 +1331,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "cement",
               "description": "CLI Application Framework for Python.",
               "children": [],
@@ -1433,7 +1345,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "click",
               "description": "A package for creating beautiful command line interfaces in a composable way.",
               "children": [],
@@ -1448,7 +1359,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "python-prompt-toolkit",
               "description": "A library for building powerful interactive command lines.",
               "children": [],
@@ -1470,7 +1380,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "tqdm",
               "description": "Fast, extensible progress bar for loops and CLI.",
               "children": [],
@@ -1485,7 +1394,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "asciimatics",
               "description": "A package to create full-screen text UIs (from interactive forms to ASCII animations).",
               "children": [],
@@ -1500,7 +1408,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "bashplotlib",
               "description": "Making basic plots in the terminal.",
               "children": [],
@@ -1515,7 +1422,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "rich",
               "description": "Python library for rich text and beautiful formatting in the terminal. Also provides a great log handler.",
               "children": [],
@@ -1530,7 +1436,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "colorama",
               "description": "Cross-platform colored terminal text.",
               "children": [],
@@ -1545,7 +1450,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "alive-progress",
               "description": "A new kind of Progress Bar, with real-time throughput, eta and very cool animations.",
               "children": [],
@@ -1560,7 +1464,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "textual",
               "description": "A framework for building interactive user interfaces that run in the terminal and the browser.",
               "children": [],
@@ -1588,7 +1491,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "tmuxp",
               "description": "A tmux session manager.",
               "children": [],
@@ -1603,7 +1505,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "howdoi",
               "description": "Instant coding answers via the command line.",
               "children": [],
@@ -1618,7 +1519,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "thefuck",
               "description": "Correcting your previous console command.",
               "children": [],
@@ -1633,7 +1533,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "cookiecutter",
               "description": "A command-line utility that creates projects from cookiecutters (project templates).",
               "children": [],
@@ -1648,7 +1547,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "pathpicker",
               "description": "Select files out of bash output.",
               "children": [],
@@ -1663,7 +1561,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "invoke",
               "description": "A tool for managing shell-oriented subprocesses and organizing executable Python code into CLI-invokable tasks.",
               "children": [],
@@ -1678,7 +1575,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "try",
               "description": "A dead simple CLI to try out python packages - it's never been easier.",
               "children": [],
@@ -1693,7 +1589,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "doitlive",
               "description": "A tool for live presentations in the terminal.",
               "children": [],
@@ -1708,7 +1603,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "copier",
               "description": "A library and command-line utility for rendering projects templates.",
               "children": [],
@@ -1723,7 +1617,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "ccb",
               "description": "A CLI tool to orchestrate multiple LLMs (Claude, Gemini, etc.) in Tmux panes with cross-agent interaction.",
               "children": [],
@@ -1745,7 +1638,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "iredis",
               "description": "Redis CLI with autocompletion and syntax highlighting.",
               "children": [],
@@ -1760,7 +1652,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "pgcli",
               "description": "PostgreSQL CLI with autocompletion and syntax highlighting.",
               "children": [],
@@ -1775,7 +1666,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "httpie",
               "description": "A command line HTTP client, a user-friendly cURL replacement.",
               "children": [],
@@ -1790,7 +1680,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "mycli",
               "description": "MySQL CLI with autocompletion and syntax highlighting.",
               "children": [],
@@ -1805,7 +1694,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "litecli",
               "description": "SQLite CLI with autocompletion and syntax highlighting.",
               "children": [],
@@ -1828,7 +1716,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "tesserocr",
           "description": "Another simple, Pillow-friendly, wrapper around the API for OCR.",
           "children": [],
@@ -1843,7 +1730,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "pytesseract",
           "description": "A wrapper for Google Tesseract OCR.",
           "children": [],
@@ -1858,7 +1744,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "kornia",
           "description": "Open Source Differentiable Computer Vision Library for PyTorch.",
           "children": [],
@@ -1873,7 +1758,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "easyocr",
           "description": "Ready-to-use OCR with 40+ languages supported.",
           "children": [],
@@ -1894,7 +1778,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "hydra",
           "description": "Hydra is a framework for elegantly configuring complex applications.",
           "children": [],
@@ -1909,7 +1792,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "configobj",
           "description": "INI file parser with validation.",
           "children": [],
@@ -1924,7 +1806,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "dynaconf",
           "description": "Dynaconf is a configuration manager with plugins for Django, Flask and FastAPI.",
           "children": [],
@@ -1939,7 +1820,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "python-decouple",
           "description": "Strict separation of settings from code.",
           "children": [],
@@ -1960,7 +1840,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cryptography",
           "description": "A package designed to expose cryptographic primitives and recipes to Python developers.",
           "children": [],
@@ -1975,7 +1854,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "pynacl",
           "description": "Python binding to the Networking and Cryptography (NaCl) library.",
           "children": [],
@@ -1990,7 +1868,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "paramiko",
           "description": "The leading native Python SSHv2 protocol library.",
           "children": [],
@@ -2011,7 +1888,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "docling",
           "description": "Library for converting documents into structured data.",
           "children": [],
@@ -2026,7 +1902,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "polars",
           "description": "A fast DataFrame library implemented in Rust with a Python API.",
           "children": [],
@@ -2041,7 +1916,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "datasette",
           "description": "An open source multi-tool for exploring and publishing data.",
           "children": [],
@@ -2056,7 +1930,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "desbordante",
           "description": "An open source data profiler for complex pattern discovery.",
           "children": [],
@@ -2071,7 +1944,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "pathway",
           "description": "Real-time data processing framework for Python with reactive dataflows.",
           "children": [],
@@ -2086,7 +1958,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "optimus",
           "description": "Agile Data Science Workflows made easy with PySpark.",
           "children": [],
@@ -2101,7 +1972,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "aws-sdk-pandas",
           "description": "Pandas on AWS.",
           "children": [],
@@ -2122,7 +1992,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "voluptuous",
           "description": "A Python data validation library.",
           "children": [],
@@ -2137,7 +2006,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "pydantic",
           "description": "Data validation using Python type hints.",
           "children": [],
@@ -2152,7 +2020,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "jsonschema",
           "description": "An implementation of JSON Schema for Python.",
           "children": [],
@@ -2167,7 +2034,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "schematics",
           "description": "Data Structure Validation.",
           "children": [],
@@ -2182,7 +2048,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cerberus",
           "description": "A lightweight and extensible data validation library.",
           "children": [],
@@ -2197,7 +2062,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "schema",
           "description": "A library for validating Python data structures.",
           "children": [],
@@ -2212,7 +2076,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "colander",
           "description": "Validating and deserializing data obtained via XML, JSON, an HTML form post.",
           "children": [],
@@ -2233,7 +2096,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "plotnine",
           "description": "A grammar of graphics for Python based on ggplot2.",
           "children": [],
@@ -2248,7 +2110,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cartopy",
           "description": "A cartographic python library with matplotlib support.",
           "children": [],
@@ -2263,7 +2124,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "pygraphviz",
           "description": "Python interface to Graphviz.",
           "children": [],
@@ -2278,7 +2138,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "diagrams",
           "description": "Diagram as Code.",
           "children": [],
@@ -2293,7 +2152,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "altair",
           "description": "Declarative statistical visualization library for Python.",
           "children": [],
@@ -2308,7 +2166,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "bokeh",
           "description": "Interactive Web Plotting for Python.",
           "children": [],
@@ -2323,7 +2180,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "bqplot",
           "description": "Interactive Plotting Library for the Jupyter Notebook.",
           "children": [],
@@ -2338,7 +2194,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "matplotlib",
           "description": "A Python 2D plotting library.",
           "children": [],
@@ -2353,7 +2208,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "vispy",
           "description": "High-performance scientific visualization based on OpenGL.",
           "children": [],
@@ -2368,7 +2222,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "pyqtgraph",
           "description": "Interactive and realtime 2D/3D/Image plotting and science/engineering widgets.",
           "children": [],
@@ -2383,7 +2236,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "pygal",
           "description": "A Python SVG Charts Creator.",
           "children": [],
@@ -2398,7 +2250,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "seaborn",
           "description": "Statistical data visualization using Matplotlib.",
           "children": [],
@@ -2413,7 +2264,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "UltraPlot",
           "description": "Matplotlib wrapper for publication-ready scientific figures with minimal code. Includes advanced subplot management, panel layouts, and batteries-included geoscience plotting.",
           "children": [],
@@ -2428,7 +2278,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "plotly",
           "description": "Interactive graphing library for Python.",
           "children": [],
@@ -2449,7 +2298,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "pickleDB",
           "description": "A simple and lightweight key-value store for Python.",
           "children": [],
@@ -2464,7 +2312,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "zodb",
           "description": "A native object database for Python. A key-value and object graph database.",
           "children": [],
@@ -2479,7 +2326,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "tinydb",
           "description": "A tiny, document-oriented database.",
           "children": [],
@@ -2500,13 +2346,11 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "registry",
           "title": "SQlite - awesome-sqlite",
           "description": null,
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "sqlite-utils",
               "description": "Python CLI utility and library for manipulating SQLite databases.",
               "children": [],
@@ -2520,7 +2364,6 @@
               }
             }
           ],
-          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -2532,13 +2375,11 @@
         },
         {
           "node_type": "item",
-          "kind": "registry",
           "title": "PostgreSQL - awesome-postgres",
           "description": null,
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "psycopg",
               "description": "The most popular PostgreSQL adapter for Python.",
               "children": [],
@@ -2552,7 +2393,6 @@
               }
             }
           ],
-          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
@@ -2569,7 +2409,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "mysqlclient",
               "description": "MySQL connector with Python 3 support (mysql-python fork).",
               "children": [],
@@ -2584,7 +2423,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "pymysql",
               "description": "A pure Python MySQL driver compatible to mysql-python.",
               "children": [],
@@ -2606,7 +2444,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "pymssql",
               "description": "A simple database interface to Microsoft SQL Server.",
               "children": [],
@@ -2621,7 +2458,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "clickhouse-driver",
               "description": "Python driver with native interface for ClickHouse.",
               "children": [],
@@ -2643,7 +2479,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "cassandra-driver",
               "description": "The Python Driver for Apache Cassandra.",
               "children": [],
@@ -2658,7 +2493,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "pymongo",
               "description": "The official Python client for MongoDB.",
               "children": [],
@@ -2673,7 +2507,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "Beanie",
               "description": "An asynchronous Python object-document mapper (ODM) for MongoDB.",
               "children": [],
@@ -2688,7 +2521,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "Django MongoDB Backend",
               "description": "Official MongoDB database backend for Django.",
               "children": [],
@@ -2703,7 +2535,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "kafka-python",
               "description": "The Python client for Apache Kafka.",
               "children": [],
@@ -2718,7 +2549,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "redis-py",
               "description": "The Python client for Redis.",
               "children": [],
@@ -2741,7 +2571,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "arrow",
           "description": "A Python library that offers a sensible and human-friendly approach to creating, manipulating, formatting and converting dates, times and timestamps.",
           "children": [],
@@ -2756,7 +2585,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "pendulum",
           "description": "Python datetimes made easy.",
           "children": [],
@@ -2771,7 +2599,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "dateutil",
           "description": "Extensions to the standard Python datetime module.",
           "children": [],
@@ -2797,7 +2624,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "ipdb",
               "description": "IPython-enabled pdb.",
               "children": [],
@@ -2812,7 +2638,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "pudb",
               "description": "A full-screen, console-based Python debugger.",
               "children": [],
@@ -2834,7 +2659,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "python-hunter",
               "description": "A flexible code tracing toolkit.",
               "children": [],
@@ -2849,7 +2673,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "manhole",
               "description": "Debugging UNIX socket connections and present the stacktraces for all threads and an interactive prompt.",
               "children": [],
@@ -2871,7 +2694,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "py-spy",
               "description": "A sampling profiler for Python programs. Written in Rust.",
               "children": [],
@@ -2886,7 +2708,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "vprof",
               "description": "Visual Python profiler.",
               "children": [],
@@ -2908,7 +2729,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "flask-debugtoolbar",
               "description": "A port of the django-debug-toolbar to flask.",
               "children": [],
@@ -2923,7 +2743,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "pyelftools",
               "description": "Parsing and analyzing ELF files and DWARF debugging information.",
               "children": [],
@@ -2938,7 +2757,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "memory-graph",
               "description": "Visualize Python data at runtime to debug references, mutability, and aliasing.",
               "children": [],
@@ -2953,7 +2771,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "django-debug-toolbar",
               "description": "Display various debug information for Django.",
               "children": [],
@@ -2968,7 +2785,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "icecream",
               "description": "Inspect variables, expressions, and program execution with a single, simple function call.",
               "children": [],
@@ -2991,7 +2807,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "tensorflow",
           "description": "The most popular Deep Learning framework created by Google.",
           "children": [],
@@ -3006,7 +2821,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "jax",
           "description": "a library for high-performance numerical computing with automatic differentiation and JIT compilation.",
           "children": [],
@@ -3021,7 +2835,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "keras",
           "description": "A high-level neural networks library and capable of running on top of either TensorFlow or Theano.",
           "children": [],
@@ -3036,7 +2849,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "vllm",
           "description": "A high-throughput and memory-efficient inference and serving engine for LLMs.",
           "children": [],
@@ -3051,7 +2863,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "pytorch",
           "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration.",
           "children": [],
@@ -3066,7 +2877,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "pytorch-lightning",
           "description": "Deep learning framework to train, deploy, and ship AI products Lightning fast.",
           "children": [],
@@ -3081,7 +2891,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "stable-baselines3",
           "description": "PyTorch implementations of Stable Baselines (deep) reinforcement learning algorithms.",
           "children": [],
@@ -3107,7 +2916,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "boto3",
               "description": "Python interface to Amazon Web Services.",
               "children": [],
@@ -3129,7 +2937,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "ansible",
               "description": "A radically simple IT automation platform.",
               "children": [],
@@ -3144,7 +2951,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "cloudinit",
               "description": "A multi-distribution package that handles early initialization of a cloud instance.",
               "children": [],
@@ -3159,7 +2965,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "pyinfra",
               "description": "A versatile CLI tools and python libraries to automate infrastructure.",
               "children": [],
@@ -3174,7 +2979,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "saltstack",
               "description": "Infrastructure automation and management system.",
               "children": [],
@@ -3196,7 +3000,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "cuisine",
               "description": "Chef-like functionality for Fabric.",
               "children": [],
@@ -3211,7 +3014,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "fabric",
               "description": "A simple, Pythonic tool for remote execution and deployment.",
               "children": [],
@@ -3233,7 +3035,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "supervisor",
               "description": "Supervisor process control system for UNIX.",
               "children": [],
@@ -3255,7 +3056,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "psutil",
               "description": "A cross-platform process and system utilities module.",
               "children": [],
@@ -3277,7 +3077,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "borg",
               "description": "A deduplicating archiver with compression and encryption.",
               "children": [],
@@ -3299,7 +3098,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "chaostoolkit",
               "description": "A Chaos Engineering toolkit & Orchestration for Developers.",
               "children": [],
@@ -3327,7 +3125,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "luigi",
               "description": "A module that helps you build complex pipelines of batch jobs.",
               "children": [],
@@ -3342,7 +3139,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "Ray",
               "description": "A system for parallel and distributed Python that unifies the machine learning ecosystem.",
               "children": [],
@@ -3357,7 +3153,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "dask",
               "description": "A flexible parallel computing library for analytic computing.",
               "children": [],
@@ -3372,7 +3167,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "PySpark",
               "description": "Apache Spark Python API.",
               "children": [],
@@ -3387,7 +3181,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "mpi4py",
               "description": "Python bindings for MPI.",
               "children": [],
@@ -3409,7 +3202,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "streamparse",
               "description": "Run Python code against real-time streams of data via Apache Storm.",
               "children": [],
@@ -3432,7 +3224,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "pyinstaller",
           "description": "Converts Python programs into stand-alone executables (cross-platform).",
           "children": [],
@@ -3447,7 +3238,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "py2app",
           "description": "Freezes Python scripts (Mac OS X).",
           "children": [],
@@ -3462,7 +3252,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "shiv",
           "description": "A command line utility for building fully self-contained zipapps (PEP 441), but with all their dependencies included.",
           "children": [],
@@ -3477,7 +3266,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "py2exe",
           "description": "Freezes Python scripts (Windows).",
           "children": [],
@@ -3492,7 +3280,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cx_freeze",
           "description": "It is a Python tool that converts Python scripts into standalone executables and installers for Windows, macOS, and Linux.",
           "children": [],
@@ -3507,7 +3294,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Nuitka",
           "description": "Compiles Python programs into high-performance standalone executables (cross-platform, supports all Python versions).",
           "children": [],
@@ -3522,7 +3308,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "pyarmor",
           "description": "A tool used to obfuscate python scripts, bind obfuscated scripts to fixed machine or expire obfuscated scripts.",
           "children": [],
@@ -3543,7 +3328,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "pdoc",
           "description": "Epydoc replacement to auto generate API documentation for Python libraries.",
           "children": [],
@@ -3558,17 +3342,14 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "sphinx",
           "description": "Python Documentation generator.",
           "children": [
             {
               "node_type": "item",
-              "kind": "registry",
               "title": "awesome-sphinxdoc",
               "description": null,
               "children": [],
-              "registry_signal": "name",
               "repo_info": {
                 "archived": false,
                 "language": "Ruby",
@@ -3596,7 +3377,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "s3cmd",
           "description": "A command line tool for managing Amazon S3 and CloudFront.",
           "children": [],
@@ -3611,7 +3391,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "edgartools",
           "description": "Library for downloading structured data from SEC EDGAR filings and XBRL financial statements.",
           "children": [],
@@ -3626,7 +3405,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "akshare",
           "description": "A financial data interface library, built for human beings!",
           "children": [],
@@ -3641,7 +3419,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "youtube-dl",
           "description": "A command-line program to download videos from YouTube and other video sites.",
           "children": [],
@@ -3656,7 +3433,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "yfinance",
           "description": "Easy Pythonic way to download market and financial data from Yahoo Finance.",
           "children": [],
@@ -3671,7 +3447,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "OpenBB",
           "description": "A financial data platform for analysts, quants and AI agents.",
           "children": [],
@@ -3697,7 +3472,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "elpy",
               "description": "Emacs Python Development Environment.",
               "children": [],
@@ -3719,7 +3493,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "jedi-vim",
               "description": "Vim bindings for the Jedi auto-completion library for Python.",
               "children": [],
@@ -3734,7 +3507,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "python-mode",
               "description": "An all in one plugin for turning Vim into a Python IDE.",
               "children": [],
@@ -3749,7 +3521,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "YouCompleteMe",
               "description": "Includes Jedi-based completion engine for Python.",
               "children": [],
@@ -3771,7 +3542,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "PTVS",
               "description": "Python Tools for Visual Studio.",
               "children": [],
@@ -3793,7 +3563,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "spyder",
               "description": "Open Source Python IDE.",
               "children": [],
@@ -3821,7 +3590,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "modoboa",
               "description": "A mail hosting and management platform including a modern Web UI.",
               "children": [],
@@ -3843,7 +3611,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "imbox",
               "description": "Python IMAP for Humans.",
               "children": [],
@@ -3858,7 +3625,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "yagmail",
               "description": "Yet another Gmail/SMTP client.",
               "children": [],
@@ -3880,7 +3646,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "flanker",
               "description": "An email address and Mime parsing library.",
               "children": [],
@@ -3895,7 +3660,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "mailer",
               "description": "High-performance extensible mail delivery framework.",
               "children": [],
@@ -3918,7 +3682,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "uv",
           "description": "An extremely fast Python package and project manager, written in Rust.",
           "children": [],
@@ -3933,7 +3696,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "pyenv",
           "description": "Simple Python version management.",
           "children": [],
@@ -3948,7 +3710,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "pyenv-win",
           "description": "Pyenv for Windows, Simple Python version management.",
           "children": [],
@@ -3963,7 +3724,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "virtualenv",
           "description": "A tool to create isolated Python environments.",
           "children": [],
@@ -3984,7 +3744,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "watchdog",
           "description": "API and shell utilities to monitor file system events.",
           "children": [],
@@ -3999,7 +3758,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "markitdown",
           "description": "Python tool for converting files and office documents to Markdown.",
           "children": [],
@@ -4014,7 +3772,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "watchfiles",
           "description": "Simple, modern and fast file watching and code reload in python.",
           "children": [],
@@ -4029,7 +3786,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "path.py",
           "description": "A module wrapper for os.path.",
           "children": [],
@@ -4044,7 +3800,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "python-magic",
           "description": "A Python interface to the libmagic file type identification library.",
           "children": [],
@@ -4065,7 +3820,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cytoolz",
           "description": "Cython implementation of : High performance functional utilities.",
           "children": [],
@@ -4080,7 +3834,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "funcy",
           "description": "A fancy and practical functional tools.",
           "children": [],
@@ -4095,7 +3848,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "returns",
           "description": "A set of type-safe monads, transformers, and composition utilities.",
           "children": [],
@@ -4110,7 +3862,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "more-itertools",
           "description": "More routines for operating on iterables, beyond .",
           "children": [],
@@ -4125,7 +3876,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "toolz",
           "description": "A collection of functional utilities for iterators, functions, and dictionaries.",
           "children": [],
@@ -4140,7 +3890,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "coconut",
           "description": "A variant of Python built for simple, elegant, Pythonic functional programming.",
           "children": [],
@@ -4161,7 +3910,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "enaml",
           "description": "Creating beautiful user-interfaces with Declarative Syntax like QML.",
           "children": [],
@@ -4176,7 +3924,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "pyglet",
           "description": "A cross-platform windowing and multimedia library for Python.",
           "children": [],
@@ -4191,7 +3938,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "pywebview",
           "description": "A lightweight cross-platform native wrapper around a webview component.",
           "children": [],
@@ -4206,7 +3952,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "DearPyGui",
           "description": "A Simple GPU accelerated Python GUI framework",
           "children": [],
@@ -4221,7 +3966,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "NiceGUI",
           "description": "An easy-to-use, Python-based UI framework, which shows up in your web browser.",
           "children": [],
@@ -4236,7 +3980,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Gooey",
           "description": "Turn command line programs into a full GUI application with one line.",
           "children": [],
@@ -4251,7 +3994,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Flexx",
           "description": "Flexx is a pure Python toolkit for creating GUI's, that uses web technology for its rendering.",
           "children": [],
@@ -4266,7 +4008,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "CustomTkinter",
           "description": "A modern and customizable python UI-library based on Tkinter.",
           "children": [],
@@ -4281,7 +4022,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Toga",
           "description": "A Python native, OS native GUI toolkit.",
           "children": [],
@@ -4302,7 +4042,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "strawberry-django",
           "description": "Strawberry GraphQL integration with Django.",
           "children": [],
@@ -4317,7 +4056,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "graphene",
           "description": "GraphQL framework for Python.",
           "children": [],
@@ -4338,7 +4076,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "geopandas",
           "description": "Python tools for geographic data (GeoSeries/GeoDataFrame) built on pandas.",
           "children": [],
@@ -4353,7 +4090,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "geopy",
           "description": "Python Geocoding Toolbox.",
           "children": [],
@@ -4368,7 +4104,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "geojson",
           "description": "Python bindings and utilities for GeoJSON.",
           "children": [],
@@ -4383,7 +4118,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "django-countries",
           "description": "A Django app that provides a country field for models and forms.",
           "children": [],
@@ -4404,7 +4138,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "pyquery",
           "description": "A jQuery-like library for parsing HTML.",
           "children": [],
@@ -4419,7 +4152,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "untangle",
           "description": "Converts XML documents to Python objects for easy access.",
           "children": [],
@@ -4434,7 +4166,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "html5lib",
           "description": "A standards-compliant library for parsing and serializing HTML documents and fragments.",
           "children": [],
@@ -4449,7 +4180,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "markupsafe",
           "description": "Implements a XML/HTML/XHTML Markup safe string for Python.",
           "children": [],
@@ -4464,7 +4194,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "JustHTML",
           "description": "A pure Python HTML5 parser that just works.",
           "children": [],
@@ -4479,7 +4208,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "xmltodict",
           "description": "Working with XML feel like you are working with JSON.",
           "children": [],
@@ -4500,7 +4228,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "httpx",
           "description": "A next generation HTTP client for Python.",
           "children": [],
@@ -4515,7 +4242,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "urllib3",
           "description": "A HTTP library with thread-safe connection pooling, file post support, sanity friendly.",
           "children": [],
@@ -4530,7 +4256,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "requests",
           "description": "HTTP Requests for Humans.",
           "children": [],
@@ -4545,7 +4270,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "treq",
           "description": "Python requests like API built on top of Twisted's HTTP client.",
           "children": [],
@@ -4566,7 +4290,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "pynput",
           "description": "A library to control and monitor input devices.",
           "children": [],
@@ -4581,7 +4304,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "mouse",
           "description": "Hook and simulate global mouse events on Windows and Linux.",
           "children": [],
@@ -4596,7 +4318,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "bleak",
           "description": "A cross platform Bluetooth Low Energy Client for Python using asyncio.",
           "children": [],
@@ -4611,7 +4332,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "scapy",
           "description": "A brilliant packet manipulation library.",
           "children": [],
@@ -4632,7 +4352,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "pillow",
           "description": "Pillow is the friendly PIL fork.",
           "children": [],
@@ -4647,7 +4366,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "pymatting",
           "description": "A library for alpha matting.",
           "children": [],
@@ -4662,7 +4380,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "thumbor",
           "description": "A smart imaging service. It enables on-demand crop, re-sizing and flipping of images.",
           "children": [],
@@ -4677,7 +4394,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "python-barcode",
           "description": "Create barcodes in Python with no extra dependencies.",
           "children": [],
@@ -4692,7 +4408,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "quads",
           "description": "Computer art based on quadtrees.",
           "children": [],
@@ -4707,7 +4422,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "python-qrcode",
           "description": "A pure Python QR Code generator.",
           "children": [],
@@ -4722,7 +4436,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "pyvips",
           "description": "A fast image processing library with low memory needs.",
           "children": [],
@@ -4737,7 +4450,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "wand",
           "description": "Python bindings for MagickWand, C API for ImageMagick.",
           "children": [],
@@ -4758,7 +4470,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "numba",
           "description": "Python JIT compiler to LLVM aimed at scientific Python.",
           "children": [],
@@ -4773,7 +4484,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "pyston",
           "description": "A Python implementation using JIT techniques.",
           "children": [],
@@ -4788,7 +4498,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "micropython",
           "description": "A lean and efficient Python programming language implementation.",
           "children": [],
@@ -4803,7 +4512,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "ironpython",
           "description": "Implementation of the Python programming language written in C#.",
           "children": [],
@@ -4818,7 +4526,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cpython",
           "description": "Default, most widely used implementation of the Python programming language written in C.",
           "children": [],
@@ -4833,7 +4540,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "cython",
           "description": "Optimizing Static Compiler for Python.",
           "children": [],
@@ -4848,7 +4554,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "clpython",
           "description": "Implementation of the Python programming language written in Common Lisp.",
           "children": [],
@@ -4863,7 +4568,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "peachpy",
           "description": "x86-64 assembler embedded in Python.",
           "children": [],
@@ -4884,7 +4588,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "ptpython",
           "description": "Advanced Python REPL built on top of the python-prompt-toolkit.",
           "children": [],
@@ -4899,7 +4602,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "bpython",
           "description": "A fancy interface to the Python interpreter.",
           "children": [],
@@ -4914,7 +4616,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "marimo",
           "description": "Transform data and train models, feels like a next-gen notebook, stored as Git-friendly Python.",
           "children": [],
@@ -4934,11 +4635,9 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "registry",
               "title": "awesome-jupyter",
               "description": null,
               "children": [],
-              "registry_signal": "name",
               "repo_info": {
                 "archived": false,
                 "language": "TypeScript",
@@ -4958,7 +4657,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Prefect",
           "description": "A modern workflow orchestration framework that makes it easy to build, schedule and monitor robust data pipelines.",
           "children": [],
@@ -4973,7 +4671,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Plan",
           "description": "Writing crontab file in Python like a charm.",
           "children": [],
@@ -4988,7 +4685,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Spiff",
           "description": "A powerful workflow engine implemented in pure Python.",
           "children": [],
@@ -5003,7 +4699,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "schedule",
           "description": "Python job scheduling for humans.",
           "children": [],
@@ -5018,7 +4713,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "django-schedule",
           "description": "A calendaring app for Django.",
           "children": [],
@@ -5039,7 +4733,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "sentry-python",
           "description": "Sentry SDK for Python.",
           "children": [],
@@ -5054,7 +4747,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "loguru",
           "description": "Library which aims to bring enjoyable logging in Python.",
           "children": [],
@@ -5075,7 +4767,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "pydantic-ai",
           "description": "A Python agent framework for building generative AI applications with structured schemas.",
           "children": [],
@@ -5090,7 +4781,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "gym",
           "description": "A toolkit for developing and comparing reinforcement learning algorithms.",
           "children": [],
@@ -5105,7 +4795,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "H2O",
           "description": "Open Source Fast Scalable Machine Learning Platform.",
           "children": [],
@@ -5120,7 +4809,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "diffusers",
           "description": "A library that provides pretrained diffusion models for generating and editing images, audio, and video.",
           "children": [],
@@ -5135,7 +4823,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Instructor",
           "description": "A library for extracting structured data from LLMs, powered by Pydantic.",
           "children": [],
@@ -5150,7 +4837,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "xgboost",
           "description": "A scalable, portable, and distributed gradient boosting library.",
           "children": [],
@@ -5165,7 +4851,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "MindsDB",
           "description": "MindsDB is an open source AI layer for existing databases that allows you to effortlessly develop, train and deploy state-of-the-art machine learning models using standard queries.",
           "children": [],
@@ -5180,7 +4865,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "rasa",
           "description": "An open-source machine learning framework for automated text and voice-based conversations.",
           "children": [],
@@ -5195,7 +4879,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Feature-engine",
           "description": "sklearn compatible API with the widest toolset for feature engineering and selection.",
           "children": [],
@@ -5210,7 +4893,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "RAGFlow",
           "description": "An open-source RAG engine for document understanding and question answering with LLMs.",
           "children": [],
@@ -5225,7 +4907,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Metrics",
           "description": "Machine learning evaluation metrics.",
           "children": [],
@@ -5240,7 +4921,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Transformers",
           "description": "A framework that lets you easily use pretrained transformer models for NLP, vision, and audio tasks.",
           "children": [],
@@ -5255,7 +4935,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "LangChain",
           "description": "Building applications with LLMs through composability.",
           "children": [],
@@ -5270,7 +4949,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "PraisonAI",
           "description": "Production-ready Multi-AI Agents framework with self-reflection, 100+ LLM support, MCP integration, and agentic workflows.",
           "children": [],
@@ -5285,7 +4963,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "LlamaIndex",
           "description": "A data framework for your LLM application.",
           "children": [],
@@ -5306,7 +4983,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "PythonNet",
           "description": "Python Integration with the .NET Common Language Runtime (CLR).",
           "children": [],
@@ -5321,7 +4997,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "PyWin32",
           "description": "Python Extensions for Windows.",
           "children": [],
@@ -5342,7 +5017,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "pluginbase",
           "description": "A simple but flexible plugin system for Python.",
           "children": [],
@@ -5357,7 +5031,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "itsdangerous",
           "description": "Various helpers to pass trusted data to untrusted environments.",
           "children": [],
@@ -5372,7 +5045,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "boltons",
           "description": "A set of pure-Python utilities.",
           "children": [],
@@ -5387,7 +5059,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "blinker",
           "description": "A fast Python in-process signal/event dispatching system.",
           "children": [],
@@ -5413,7 +5084,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "langid.py",
               "description": "Stand-alone language identification system.",
               "children": [],
@@ -5428,7 +5098,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "polyglot",
               "description": "Natural language pipeline supporting hundreds of languages.",
               "children": [],
@@ -5443,7 +5112,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "Stanza",
               "description": "The Stanford NLP Group's official Python library, supporting 60+ languages.",
               "children": [],
@@ -5458,7 +5126,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "pattern",
               "description": "A web mining module.",
               "children": [],
@@ -5473,7 +5140,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "gensim",
               "description": "Topic Modeling for Humans.",
               "children": [],
@@ -5495,7 +5161,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "snownlp",
               "description": "A library for processing Chinese text.",
               "children": [],
@@ -5510,7 +5175,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "jieba",
               "description": "The most popular Chinese text segmentation library.",
               "children": [],
@@ -5525,7 +5189,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "funNLP",
               "description": "A collection of tools and datasets for Chinese NLP.",
               "children": [],
@@ -5540,7 +5203,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "pkuseg-python",
               "description": "A toolkit for Chinese word segmentation in various domains.",
               "children": [],
@@ -5563,7 +5225,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "mininet",
           "description": "A popular network emulator and API written in Python.",
           "children": [],
@@ -5578,7 +5239,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "napalm",
           "description": "Cross-vendor API to manipulate network devices.",
           "children": [],
@@ -5593,7 +5253,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "pox",
           "description": "A Python-based SDN control applications, such as OpenFlow SDN controllers.",
           "children": [],
@@ -5619,7 +5278,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "dataset",
               "description": "Store Python dicts in a database - works with SQLite, MySQL, and PostgreSQL.",
               "children": [],
@@ -5634,7 +5292,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "pydal",
               "description": "A pure Python Database Abstraction Layer.",
               "children": [],
@@ -5649,7 +5306,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "pony",
               "description": "ORM that provides a generator-oriented interface to SQL.",
               "children": [],
@@ -5664,7 +5320,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "peewee",
               "description": "A small, expressive ORM.",
               "children": [],
@@ -5684,11 +5339,9 @@
               "children": [
                 {
                   "node_type": "item",
-                  "kind": "registry",
                   "title": "awesome-sqlalchemy",
                   "description": null,
                   "children": [],
-                  "registry_signal": "name",
                   "repo_info": {
                     "archived": false,
                     "language": "Go",
@@ -5709,7 +5362,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "ODMantic",
               "description": "Sync and Async ODM for MongoDB built on top of Pydantic for model definition and validation.",
               "children": [],
@@ -5724,7 +5376,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "PynamoDB",
               "description": "A Pythonic interface for Amazon DynamoDB.",
               "children": [],
@@ -5739,7 +5390,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "mongoengine",
               "description": "A Python Object-Document-Mapper for working with MongoDB.",
               "children": [],
@@ -5762,7 +5412,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "uv",
           "description": "An extremely fast Python package and project manager, written in Rust.",
           "children": [],
@@ -5777,7 +5426,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "poetry",
           "description": "Python dependency management and packaging made easy.",
           "children": [],
@@ -5792,7 +5440,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "conda",
           "description": "Cross-platform, Python-agnostic binary package manager.",
           "children": [],
@@ -5807,7 +5454,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "hatch",
           "description": "Modern, extensible Python project management.",
           "children": [],
@@ -5827,7 +5473,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "pip-tools",
               "description": "A set of tools to keep your pinned Python dependencies fresh.",
               "children": [],
@@ -5850,7 +5495,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "bandersnatch",
           "description": "PyPI mirroring tool provided by Python Packaging Authority (PyPA).",
           "children": [],
@@ -5865,7 +5509,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "warehouse",
           "description": "Next generation Python Package Repository (PyPI).",
           "children": [],
@@ -5880,7 +5523,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "devpi",
           "description": "PyPI server and packaging/testing/release tool.",
           "children": [],
@@ -5901,7 +5543,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "sherlock",
           "description": "Hunt down social media accounts by username across social networks.",
           "children": [],
@@ -5916,7 +5557,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "setoolkit",
           "description": "A toolkit for social engineering.",
           "children": [],
@@ -5931,7 +5571,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "fsociety",
           "description": "A Penetration testing framework.",
           "children": [],
@@ -5946,7 +5585,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "sqlmap",
           "description": "Automatic SQL injection and database takeover tool.",
           "children": [],
@@ -5967,7 +5605,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "django-guardian",
           "description": "Implementation of per object permissions for Django 1.2+",
           "children": [],
@@ -5982,7 +5619,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "django-rules",
           "description": "A tiny but powerful app providing object-level permissions to Django, without requiring a database.",
           "children": [],
@@ -6003,7 +5639,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "sh",
           "description": "A full-fledged subprocess replacement for Python.",
           "children": [],
@@ -6018,7 +5653,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "delegator.py",
           "description": "Subprocesses for Humans 2.0.",
           "children": [],
@@ -6039,7 +5673,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "PennyLane",
           "description": "A hybrid quantum-classical machine learning library with automatic differentiation support.",
           "children": [],
@@ -6054,7 +5687,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Qiskit",
           "description": "An IBM-backed quantum SDK for building, simulating, and running circuits on real quantum hardware.",
           "children": [],
@@ -6069,7 +5701,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Cirq",
           "description": "A Google-developed framework focused on hardware-aware quantum circuit design for NISQ devices.",
           "children": [],
@@ -6090,7 +5721,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "lightfm",
           "description": "A Python implementation of a number of popular recommendation algorithms.",
           "children": [],
@@ -6105,7 +5735,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "spotlight",
           "description": "Deep recommender models using PyTorch.",
           "children": [],
@@ -6120,7 +5749,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "fastFM",
           "description": "A library for Factorization Machines.",
           "children": [],
@@ -6135,7 +5763,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "tensorrec",
           "description": "A Recommendation Engine Framework in TensorFlow.",
           "children": [],
@@ -6150,7 +5777,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Surprise",
           "description": "A scikit for building and analyzing recommender systems.",
           "children": [],
@@ -6165,7 +5791,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "annoy",
           "description": "Approximate Nearest Neighbors in C++/Python optimized for memory usage.",
           "children": [],
@@ -6180,7 +5805,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "implicit",
           "description": "A fast Python implementation of collaborative filtering for implicit datasets.",
           "children": [],
@@ -6206,7 +5830,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "django-tastypie",
               "description": "Creating delicious APIs for Django apps.",
               "children": [],
@@ -6221,7 +5844,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "django-rest-framework",
               "description": "A powerful and flexible toolkit to build web APIs.",
               "children": [],
@@ -6243,7 +5865,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "flask-api",
               "description": "Browsable Web APIs for Flask.",
               "children": [],
@@ -6258,7 +5879,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "flask-restful",
               "description": "Quickly building REST APIs for Flask.",
               "children": [],
@@ -6273,7 +5893,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "eve",
               "description": "REST API framework powered by Flask, MongoDB and good intentions.",
               "children": [],
@@ -6295,7 +5914,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "cornice",
               "description": "A RESTful framework for Pyramid.",
               "children": [],
@@ -6317,7 +5935,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "sanic",
               "description": "A Python 3.6+ web server and web framework that's written to go fast.",
               "children": [],
@@ -6332,7 +5949,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "sandman2",
               "description": "Automated REST APIs for existing database-driven systems.",
               "children": [],
@@ -6347,7 +5963,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "falcon",
               "description": "A high-performance framework for building cloud APIs and web app backends.",
               "children": [],
@@ -6362,7 +5977,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "fastapi",
               "description": "A modern, fast, web framework for building APIs with Python 3.6+ based on standard Python type hints.",
               "children": [],
@@ -6377,7 +5991,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "hug",
               "description": "A Python 3 framework for cleanly exposing APIs.",
               "children": [],
@@ -6400,7 +6013,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "RPyC",
           "description": "(Remote Python Call) - A transparent and symmetric RPC library for Python",
           "children": [],
@@ -6415,7 +6027,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "zeroRPC",
           "description": "zerorpc is a flexible RPC implementation based on ZeroMQ and MessagePack.",
           "children": [],
@@ -6436,7 +6047,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Karate Club",
           "description": "Unsupervised machine learning toolbox for graph structured data.",
           "children": [],
@@ -6451,7 +6061,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "manim",
           "description": "An animation engine for explanatory math videos.",
           "children": [],
@@ -6466,7 +6075,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "bcbb",
           "description": "Collection of useful code related to biological analysis.",
           "children": [],
@@ -6481,7 +6089,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "PyMC",
           "description": "Markov Chain Monte Carlo sampling toolkit.",
           "children": [],
@@ -6496,7 +6103,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "ObsPy",
           "description": "A Python toolbox for seismology.",
           "children": [],
@@ -6511,7 +6117,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "bcbio-nextgen",
           "description": "Providing best-practice pipelines for fully automated high throughput sequencing analysis.",
           "children": [],
@@ -6526,7 +6131,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "PathSim",
           "description": "A block-based system modeling and simulation framework with a browser-based visual editor.",
           "children": [],
@@ -6541,7 +6145,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "statsmodels",
           "description": "Statistical modeling and econometrics in Python.",
           "children": [],
@@ -6556,7 +6159,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Zipline",
           "description": "A Pythonic algorithmic trading library.",
           "children": [],
@@ -6571,7 +6173,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "shapely",
           "description": "Manipulation and analysis of geometric objects in the Cartesian plane.",
           "children": [],
@@ -6586,7 +6187,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "SymPy",
           "description": "A Python library for symbolic mathematics.",
           "children": [],
@@ -6607,7 +6207,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "pysolr",
           "description": "A lightweight Python wrapper for Apache Solr.",
           "children": [],
@@ -6622,7 +6221,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "elasticsearch-dsl-py",
           "description": "The official high-level Python client for Elasticsearch.",
           "children": [],
@@ -6637,7 +6235,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "django-haystack",
           "description": "Modular search for Django.",
           "children": [],
@@ -6658,7 +6255,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "toonify",
           "description": "A compact, human-readable serialization format that reduces LLM token usage by 30-60% compared to JSON.",
           "children": [],
@@ -6673,7 +6269,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "marshmallow",
           "description": "A lightweight library for converting complex objects to and from simple Python datatypes.",
           "children": [],
@@ -6688,7 +6283,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "python-rapidjson",
           "description": "A Python wrapper around RapidJSON.",
           "children": [],
@@ -6703,7 +6297,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "ultrajson",
           "description": "A fast JSON decoder and encoder written in C with Python bindings.",
           "children": [],
@@ -6718,7 +6311,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "pysimdjson",
           "description": "A Python bindings for simdjson.",
           "children": [],
@@ -6733,7 +6325,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "orjson",
           "description": "Fast, correct JSON library.",
           "children": [],
@@ -6754,7 +6345,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "python-lambda",
           "description": "A toolkit for developing and deploying Python code in AWS Lambda.",
           "children": [],
@@ -6769,7 +6359,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Zappa",
           "description": "A tool for deploying WSGI applications on AWS Lambda and API Gateway.",
           "children": [],
@@ -6795,7 +6384,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "kreuzberg",
               "description": "High-performance document extraction library with a Rust core, supporting 62+ formats including PDF, Office, images with OCR, HTML, email, and archives.",
               "children": [],
@@ -6810,7 +6398,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "tablib",
               "description": "A module for Tabular Datasets in XLS, CSV, JSON, YAML.",
               "children": [],
@@ -6832,7 +6419,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "python-docx",
               "description": "Reads, queries and modifies Microsoft Word 2007/2008 docx files.",
               "children": [],
@@ -6847,7 +6433,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "docxtpl",
               "description": "Editing a docx document by jinja2 template",
               "children": [],
@@ -6862,7 +6447,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "XlsxWriter",
               "description": "A Python module for creating Excel .xlsx files.",
               "children": [],
@@ -6877,7 +6461,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "pyexcel",
               "description": "Providing one API for reading, manipulating and writing csv, ods, xls, xlsx and xlsm files.",
               "children": [],
@@ -6892,7 +6475,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "xlwings",
               "description": "A BSD-licensed library that makes it easy to call Python from Excel and vice versa.",
               "children": [],
@@ -6907,7 +6489,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "python-pptx",
               "description": "Python library for creating and updating PowerPoint (.pptx) files.",
               "children": [],
@@ -6929,7 +6510,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "PyPDF2",
               "description": "A library capable of splitting, merging and transforming PDF pages.",
               "children": [],
@@ -6944,7 +6524,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "pdf_oxide",
               "description": "A fast PDF library for text extraction, image extraction, and markdown conversion, powered by Rust.",
               "children": [],
@@ -6959,7 +6538,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "pdfminer.six",
               "description": "Pdfminer.six is a community maintained fork of the original PDFMiner.",
               "children": [],
@@ -6974,7 +6552,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "pikepdf",
               "description": "A powerful library for reading and editing PDF files, based on qpdf.",
               "children": [],
@@ -6996,7 +6573,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "Mistune",
               "description": "Fastest and full featured pure Python parsers of Markdown.",
               "children": [],
@@ -7011,7 +6587,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "Python-Markdown",
               "description": "A Python implementation of John Gruber’s Markdown.",
               "children": [],
@@ -7026,7 +6601,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "Jimmy",
               "description": "Convert your notes to Markdown.",
               "children": [],
@@ -7048,7 +6622,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "csvkit",
               "description": "Utilities for converting to and working with CSV.",
               "children": [],
@@ -7070,7 +6643,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "unp",
               "description": "A command line tool that can unpack archives easily.",
               "children": [],
@@ -7093,7 +6665,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "nikola",
           "description": "A static website and blog generator.",
           "children": [],
@@ -7108,7 +6679,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "makesite",
           "description": "Simple, lightweight, and magic-free static site/blog generator (< 130 lines).",
           "children": [],
@@ -7123,7 +6693,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "mkdocs",
           "description": "Markdown friendly documentation generator.",
           "children": [],
@@ -7138,7 +6707,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "lektor",
           "description": "An easy to use static CMS and blog engine.",
           "children": [],
@@ -7153,7 +6721,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "pelican",
           "description": "Static site generator that supports Markdown and reST syntax.",
           "children": [],
@@ -7174,7 +6741,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "huey",
           "description": "Little multi-threaded task queue.",
           "children": [],
@@ -7189,7 +6755,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "rq",
           "description": "Simple job queues for Python.",
           "children": [],
@@ -7204,7 +6769,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "dramatiq",
           "description": "A fast and reliable background task processing library for Python 3.",
           "children": [],
@@ -7219,7 +6783,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "mrq",
           "description": "A distributed worker task queue in Python using Redis & gevent.",
           "children": [],
@@ -7245,7 +6808,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "hypothesis",
               "description": "Hypothesis is an advanced Quickcheck style property based testing library.",
               "children": [],
@@ -7260,7 +6822,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "nose2",
               "description": "The successor to , based on `unittest2.",
               "children": [],
@@ -7275,7 +6836,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "Robot Framework",
               "description": "A generic test automation framework.",
               "children": [],
@@ -7297,7 +6857,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "green",
               "description": "A clean, colorful test runner.",
               "children": [],
@@ -7319,7 +6878,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "locust",
               "description": "Scalable user load testing tool written in Python.",
               "children": [],
@@ -7334,7 +6892,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "Schemathesis",
               "description": "A tool for automatic property-based testing of web applications built with Open API / Swagger specifications.",
               "children": [],
@@ -7349,7 +6906,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "splinter",
               "description": "Open source tool for testing web applications.",
               "children": [],
@@ -7364,7 +6920,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "PyAutoGUI",
               "description": "PyAutoGUI is a cross-platform GUI automation Python module for human beings.",
               "children": [],
@@ -7386,7 +6941,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "mocket",
               "description": "A socket mock framework with gevent/asyncio/SSL support.",
               "children": [],
@@ -7401,7 +6955,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "httmock",
               "description": "A mocking library for requests for Python 2.6+ and 3.2+.",
               "children": [],
@@ -7416,7 +6969,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "freezegun",
               "description": "Travel through time by mocking the datetime module.",
               "children": [],
@@ -7431,7 +6983,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "responses",
               "description": "A utility library for mocking out the requests Python library.",
               "children": [],
@@ -7446,7 +6997,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "VCR.py",
               "description": "Record and replay HTTP interactions on your tests.",
               "children": [],
@@ -7461,7 +7011,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "httpretty",
               "description": "HTTP request mock tool for Python.",
               "children": [],
@@ -7483,7 +7032,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "mixer",
               "description": "Another fixtures replacement. Supports Django, Flask, SQLAlchemy, Peewee and etc.",
               "children": [],
@@ -7498,7 +7046,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "factory_boy",
               "description": "A test fixtures replacement for Python.",
               "children": [],
@@ -7513,7 +7060,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "polyfactory",
               "description": "mock data generation library with support to classes (continuation of )",
               "children": [],
@@ -7535,7 +7081,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "mimesis",
               "description": "is a Python library that help you generate fake data.",
               "children": [],
@@ -7550,7 +7095,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "faker",
               "description": "A Python package that generates fake data.",
               "children": [],
@@ -7578,7 +7122,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "pyfiglet",
               "description": "An implementation of figlet written in Python.",
               "children": [],
@@ -7593,7 +7136,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "pangu.py",
               "description": "Paranoid text spacing.",
               "children": [],
@@ -7608,7 +7150,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "pypinyin",
               "description": "Convert Chinese hanzi (漢字) to pinyin (拼音).",
               "children": [],
@@ -7623,7 +7164,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "textdistance",
               "description": "Compute distance between sequences with 30+ algorithms.",
               "children": [],
@@ -7638,7 +7178,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "chardet",
               "description": "Python 2/3 compatible character encoding detector.",
               "children": [],
@@ -7653,7 +7192,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "Levenshtein",
               "description": "Fast computation of Levenshtein distance and string similarity.",
               "children": [],
@@ -7668,7 +7206,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "ftfy",
               "description": "Makes Unicode text less broken and more consistent automagically.",
               "children": [],
@@ -7690,11 +7227,9 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "registry",
               "title": "awesome-slugify",
               "description": "A Python slugify library that can preserve unicode.",
               "children": [],
-              "registry_signal": "name",
               "repo_info": {
                 "archived": false,
                 "language": "Shell",
@@ -7706,7 +7241,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "unicode-slugify",
               "description": "A slugifier that generates unicode slugs with Django as a dependency.",
               "children": [],
@@ -7721,7 +7255,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "python-slugify",
               "description": "A Python slugify library that translates unicode to ASCII.",
               "children": [],
@@ -7743,7 +7276,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "hashids",
               "description": "Implementation of hashids in Python.",
               "children": [],
@@ -7758,7 +7290,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "shortuuid",
               "description": "A generator library for concise, unambiguous and URL-safe UUIDs.",
               "children": [],
@@ -7780,7 +7311,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "python-phonenumbers",
               "description": "Parsing, formatting, storing and validating international phone numbers.",
               "children": [],
@@ -7795,7 +7325,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "sqlparse",
               "description": "A non-validating SQL parser.",
               "children": [],
@@ -7810,7 +7339,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "python-nameparser",
               "description": "Parsing human names into their individual components.",
               "children": [],
@@ -7825,7 +7353,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "pyparsing",
               "description": "A general purpose framework for generating parsers.",
               "children": [],
@@ -7840,7 +7367,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "python-user-agents",
               "description": "Browser user agent parser.",
               "children": [],
@@ -7863,7 +7389,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "purl",
           "description": "A simple, immutable URL class with a clean API for interrogation and manipulation.",
           "children": [],
@@ -7878,7 +7403,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "webargs",
           "description": "A friendly library for parsing HTTP request arguments with built-in support for popular web frameworks.",
           "children": [],
@@ -7893,7 +7417,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "furl",
           "description": "A small Python library that makes parsing and manipulating URLs easy.",
           "children": [],
@@ -7914,7 +7437,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "scikit-video",
           "description": "Video processing routines for SciPy.",
           "children": [],
@@ -7929,7 +7451,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "vidgear",
           "description": "Most Powerful multi-threaded Video Processing framework.",
           "children": [],
@@ -7950,7 +7471,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "django-pipeline",
           "description": "An asset packaging library for Django.",
           "children": [],
@@ -7965,7 +7485,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "flask-assets",
           "description": "Helps you integrate webassets into your Flask app.",
           "children": [],
@@ -7980,7 +7499,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "django-compressor",
           "description": "Compresses linked and inline JavaScript or CSS into a single cached file.",
           "children": [],
@@ -7995,7 +7513,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "django-storages",
           "description": "A collection of custom storage back ends for Django.",
           "children": [],
@@ -8010,7 +7527,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "webassets",
           "description": "Bundles, optimizes, and manages unique cache-busting URLs for static resources.",
           "children": [],
@@ -8031,7 +7547,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "newspaper",
           "description": "News extraction, article extraction and content curation in Python.",
           "children": [],
@@ -8046,7 +7561,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "textract",
           "description": "Extract text from any document, Word, PowerPoint, PDFs, etc.",
           "children": [],
@@ -8061,7 +7575,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "requests-html",
           "description": "Pythonic HTML Parsing for Humans.",
           "children": [],
@@ -8076,7 +7589,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "toapi",
           "description": "Every web site provides APIs.",
           "children": [],
@@ -8091,7 +7603,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "micawber",
           "description": "A small library for extracting rich content from URLs.",
           "children": [],
@@ -8106,7 +7617,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "python-readability",
           "description": "Fast Python port of arc90's readability tool.",
           "children": [],
@@ -8121,7 +7631,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "lassie",
           "description": "Web Content Retrieval for Humans.",
           "children": [],
@@ -8136,7 +7645,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "sumy",
           "description": "A module for automatic summarization of text documents and HTML pages.",
           "children": [],
@@ -8151,7 +7659,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "html2text",
           "description": "Convert HTML to Markdown-formatted text.",
           "children": [],
@@ -8172,7 +7679,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "scrapy",
           "description": "A fast high-level screen scraping and web crawling framework.",
           "children": [],
@@ -8187,7 +7693,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "mechanicalsoup",
           "description": "A Python library for automating interaction with websites.",
           "children": [],
@@ -8202,7 +7707,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "feedparser",
           "description": "Universal feed parser.",
           "children": [],
@@ -8217,7 +7721,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "browser-use",
           "description": "Make websites accessible for AI agents with easy browser automation.",
           "children": [],
@@ -8232,7 +7735,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "grab",
           "description": "Site scraping framework.",
           "children": [],
@@ -8258,7 +7760,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "masonite",
               "description": "The modern and developer centric Python web framework.",
               "children": [],
@@ -8273,17 +7774,14 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "fastHTML",
               "description": "The fastest way to create an HTML app.",
               "children": [
                 {
                   "node_type": "item",
-                  "kind": "registry",
                   "title": "awesome-fasthtml",
                   "description": null,
                   "children": [],
-                  "registry_signal": "name",
                   "repo_info": {
                     "archived": false,
                     "language": "Shell",
@@ -8305,17 +7803,14 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "django",
               "description": "The most popular web framework in Python.",
               "children": [
                 {
                   "node_type": "item",
-                  "kind": "registry",
                   "title": "awesome-django",
                   "description": null,
                   "children": [],
-                  "registry_signal": "name",
                   "repo_info": {
                     "archived": false,
                     "language": "Ruby",
@@ -8337,17 +7832,14 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "flask",
               "description": "A microframework for Python.",
               "children": [
                 {
                   "node_type": "item",
-                  "kind": "registry",
                   "title": "awesome-flask",
                   "description": null,
                   "children": [],
-                  "registry_signal": "name",
                   "repo_info": {
                     "archived": false,
                     "language": "TypeScript",
@@ -8374,11 +7866,9 @@
               "children": [
                 {
                   "node_type": "item",
-                  "kind": "registry",
                   "title": "awesome-pyramid",
                   "description": null,
                   "children": [],
-                  "registry_signal": "name",
                   "repo_info": {
                     "archived": false,
                     "language": "Java",
@@ -8399,7 +7889,6 @@
           "children": [
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "reflex",
               "description": "A framework for building reactive, full-stack web applications entirely with python .",
               "children": [],
@@ -8414,7 +7903,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "microdot",
               "description": "The impossibly small web framework for Python and MicroPython.",
               "children": [],
@@ -8429,7 +7917,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "tornado",
               "description": "A web framework and asynchronous networking library.",
               "children": [],
@@ -8444,7 +7931,6 @@
             },
             {
               "node_type": "item",
-              "kind": "repository",
               "title": "Litestar",
               "description": "Production-ready, capable and extensible ASGI Web framework.",
               "children": [],
@@ -8467,7 +7953,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "autobahn-python",
           "description": "WebSocket & WAMP for Python on Twisted and asyncio.",
           "children": [],
@@ -8482,7 +7967,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "channels",
           "description": "Developer-friendly asynchrony for Django.",
           "children": [],
@@ -8497,7 +7981,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "websockets",
           "description": "A library for building WebSocket servers and clients with a focus on correctness and simplicity.",
           "children": [],
@@ -8518,7 +8001,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "waitress",
           "description": "Multi-threaded, powers Pyramid.",
           "children": [],
@@ -8533,7 +8015,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "gunicorn",
           "description": "Pre-forked, ported from Ruby's Unicorn project.",
           "children": [],
@@ -8548,7 +8029,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "werkzeug",
           "description": "A WSGI utility library for Python that powers Flask and can easily be embedded into your own projects.",
           "children": [],
@@ -8571,8 +8051,6 @@
     "original_repository_sha": "deadbeef",
     "enhanced_repository": "enhansome/enhansome-python",
     "enhanced_repository_description": "enhanced list",
-    "kind": "registry",
-    "title": "Awesome Python with stars",
-    "registry_signal": "content"
+    "title": "Awesome Python with stars"
   }
 }

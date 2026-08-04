@@ -15,7 +15,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Hiring Without Whiteboards",
           "description": "List of companies without the kind of CS trivia questions that are associated with bad interview practices.",
           "children": [],
@@ -30,11 +29,9 @@
         },
         {
           "node_type": "item",
-          "kind": "registry",
           "title": "Awesome Job Boards",
           "description": "Niche job boards by domains, technology, roles and area.",
           "children": [],
-          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Ruby",
@@ -52,7 +49,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Engineering Leadership Interviews",
           "description": "An outline on how to recruit for engineering manager roles.",
           "children": [],
@@ -67,7 +63,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Reverse interview",
           "description": "Questions to ask the company during your interview. Be prepared to answer them as a manager.",
           "children": [],
@@ -82,7 +77,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Back-End Developer Interview Questions",
           "description": "A great source of inspiration.",
           "children": [],
@@ -103,7 +97,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "FizzBuzz Enterprise Edition",
           "description": "A satire of over-engineering for the sake of enterprise-grade software.",
           "children": [],
@@ -118,11 +111,9 @@
         },
         {
           "node_type": "item",
-          "kind": "registry",
           "title": "Awesome Interviews",
           "description": "A huge database of questions sorted by topic to get inspiration from.",
           "children": [],
-          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Shell",
@@ -140,7 +131,6 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "hacker-laws",
           "description": "Laws, Theories, Principles and Patterns that developers will find useful.",
           "children": [],
@@ -155,7 +145,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "High Performance Organizations Reading List",
           "description": "A list of books, web pages, and videos about how to design better organizations, divided into 3 categories: organization and motivation, health and wellness, and software development specific.",
           "children": [],
@@ -186,11 +175,9 @@
       "items": [
         {
           "node_type": "item",
-          "kind": "registry",
           "title": "Awesome Product Management",
           "description": "A reference. All the missing pieces are found below.",
           "children": [],
-          "registry_signal": "name",
           "repo_info": {
             "archived": false,
             "language": "Java",
@@ -202,7 +189,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "How to exit vim, the Product Manager way",
           "description": "A satire with a grain of truth, especially the comparison between the basic vs experienced level.",
           "children": [],
@@ -217,7 +203,6 @@
         },
         {
           "node_type": "item",
-          "kind": "repository",
           "title": "Open Product Management",
           "description": "Resources, interviews, case studies, sample products & projects, communities, open source tools, free & paid services on product management, for technical people to learn the field.",
           "children": [],
@@ -265,8 +250,6 @@
     "original_repository_sha": "deadbeef",
     "enhanced_repository": "enhansome/enhansome-engineering-team-management",
     "enhanced_repository_description": "enhanced list",
-    "kind": "registry",
-    "title": "Awesome engineering team management with stars",
-    "registry_signal": "content"
+    "title": "Awesome engineering team management with stars"
   }
 }
