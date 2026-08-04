@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.1](https://github.com/enhansome/action/compare/v1.5.0...v1.5.1) (2026-08-04)
+
+
+### Bug Fixes
+
+* export getReadme and getLatestCommitSha ([fc97f24](https://github.com/enhansome/action/commit/fc97f24441da418035a8a002b68f6bb5ca7eec4a))
+
 ## [1.5.0](https://github.com/enhansome/action/compare/v1.4.1...v1.5.0) (2026-08-04)
 
 
