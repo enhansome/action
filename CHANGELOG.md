@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.5.0](https://github.com/enhansome/action/compare/v1.4.1...v1.5.0) (2026-08-04)
+
+
+### Features
+
+* remove classify ([97064a5](https://github.com/enhansome/action/commit/97064a5aa165b118fd40df32796930f335f87224))
+
+
+### Bug Fixes
+
+* refine classifier ([b931d62](https://github.com/enhansome/action/commit/b931d623baf3aee769999e74581c0d96e5a84f06))
+* refine source classifier ([9108303](https://github.com/enhansome/action/commit/9108303b60d0ac5caf72cece96f2ea78466d80ba))
+
 ## [1.4.1](https://github.com/enhansome/action/compare/v1.4.0...v1.4.1) (2026-07-13)
 
 
