@@ -8,16 +8,16 @@ help: ## Show this help
 	@awk 'BEGIN {FS = ":.*##"; printf "\nUsage: make \033[36m<target>\033[0m\n"} /^[a-zA-Z0-9_-]+:.*?##/ {printf "  \033[36m%-12s\033[0m %s\n", $$1, $$2}' $(MAKEFILE_LIST)
 
 install: ## Install JS dependencies
-	npm ci
+	yarn install --immutable
 
 build: ## Build (vite)
-	npm run build
+	yarn build
 
 typecheck: ## Typecheck (tsc --noEmit)
-	npm run typecheck
+	yarn typecheck
 
 test: ## Run the vitest unit suite
-	npm test
+	yarn test
 
 e2e: ## Run the e2e job locally with act
 	act $(ACT_FLAGS) --job e2e

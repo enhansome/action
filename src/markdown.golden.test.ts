@@ -16,7 +16,7 @@ import { enhance } from './orchestrator.js';
 //     are genuinely exercised without depending on live GitHub data that drifts weekly.
 //
 // Regenerate the on-disk goldens after an intentional parser change:
-//   UPDATE_GOLDENS=1 npm test      (or:  npm run test:update-goldens)
+//   UPDATE_GOLDENS=1 yarn test      (or:  yarn test:update-goldens)
 
 // --- deterministic repo-info generator -------------------------------------
 
@@ -136,7 +136,7 @@ function expectGolden(filePath: string, actual: string): void {
   expect(
     actual,
     `golden mismatch for ${path.relative(__dirname, filePath)}.\n` +
-      `If this is intentional, regenerate with:  UPDATE_GOLDENS=1 npm test`,
+      `If this is intentional, regenerate with:  UPDATE_GOLDENS=1 yarn test`,
   ).toBe(expected);
 }
 

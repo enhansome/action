@@ -13,7 +13,7 @@
     "./package.json": "./package.json"
   },
   "scripts": {
-    "build": "vite build && npm run build:lib",
+    "build": "vite build && yarn build:lib",
     "build:lib": "tsc -p tsconfig.lib.json",
     "typecheck": "tsc --noEmit",
     "start": "node dist/main.js",
@@ -23,7 +23,8 @@
     "test:watch": "vitest",
     "test:update-goldens": "UPDATE_GOLDENS=1 vitest run",
     "coverage": "vitest run --coverage",
-    "prepare": "npm run build:lib"
+    "prepare": "yarn build:lib",
+    "packageManager": "yarn@4.17.1+sha512.ccbfabf7d7b6b32075088be9386fb9a2e00bb6887ef07fa56effabc890a56d53da1ccc4128d62db245fcbd3961b236d75335bdf7d5320ed6eafb7588b7ad4697"
   },
   "keywords": [
     "github",

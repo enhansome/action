@@ -71,7 +71,7 @@ runs:
       run: |
         hash=$(find \
           "${{ github.action_path }}/src" \
-          "${{ github.action_path }}/package-lock.json" \
+          "${{ github.action_path }}/yarn.lock" \
           "${{ github.action_path }}/vite.config.ts" \
           "${{ github.action_path }}/tsconfig.json" \
           -type f -print0 | sort -z | xargs -0 sha256sum | sha256sum | cut -d' ' -f1)
@@ -91,8 +91,9 @@ runs:
       shell: bash
       working-directory: ${{ github.action_path }}
       run: |
-        npm ci
-        npm run build
+        corepack enable
+        yarn install --immutable
+        yarn build
 
     - name: Enhance markdown
       shell: bash

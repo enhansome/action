@@ -17,14 +17,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
+      - run: corepack enable
       - uses: actions/setup-node@v6
         with:
           node-version: '24.12.0'
-          cache: npm
-      - run: npm ci
-      - run: npm run typecheck      # tsc --noEmit
-      - run: npm run build          # vite build
-      - run: npm test               # vitest (hermetic; mocks the GitHub API)
+          cache: yarn
+      - run: yarn install --immutable
+      - run: yarn typecheck
+      - run: yarn build
+      - run: yarn test
 
   e2e:
     runs-on: ubuntu-latest

@@ -111,7 +111,7 @@ Releases are cut from **`main`** by [release-please][rp], driven by
 
 1. Conventional-commit pushes to `main` accumulate.
 2. release-please opens a *release PR* bumping `package.json` /
-   `package-lock.json` and staging `CHANGELOG.md`.
+   `yarn.lock` and staging `CHANGELOG.md`.
 3. Merging it creates the `vX.Y.Z` tag + GitHub Release, then the `release`
    workflow moves the `vN` / `vN.M` tags so `enhansome/action@v1` / `@v1.0`
    resolve to the latest release.
