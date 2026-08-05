@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.0](https://github.com/enhansome/action/compare/v1.5.1...v1.6.0) (2026-08-05)
+
+
+### Features
+
+* migrate to yarn ([3c58194](https://github.com/enhansome/action/commit/3c5819484f0f4d6332fc3867899ef6cb5e842115))
+
 ## [1.5.1](https://github.com/enhansome/action/compare/v1.5.0...v1.5.1) (2026-08-04)
 
 
