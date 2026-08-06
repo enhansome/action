@@ -57,3 +57,32 @@ jobs:
           git tag -a "$MINOR" -m "Release $MINOR"
           git push origin "$MAJOR"
           git push origin "$MINOR"
+
+  publish-core:
+    needs: release-please
+    if: ${{ needs.release-please.outputs.release_created == 'true' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - uses: actions/checkout@v7
+      - run: corepack enable
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24.12.0'
+          registry-url: 'https://registry.npmjs.org'
+          cache: yarn
+      - run: yarn install --immutable
+      - name: Sync version to @enhansome/core
+        run: |
+          v=$(jq -r .version package.json)
+          jq --arg v "$v" '.version = $v' packages/core/package.json > t && mv t packages/core/package.json
+      - run: yarn build
+      - name: Verify core tarball contains dist
+        run: |
+          yarn workspace @enhansome/core pack -o /tmp/core.tgz
+          tar -tzf /tmp/core.tgz | grep -q 'package/dist/index.js' \
+            || (echo "core tarball missing dist/index.js" && exit 1)
+      - name: Publish @enhansome/core
+        run: yarn workspace @enhansome/core npm publish --provenance --access public

@@ -1,10 +1,8 @@
-import * as core from '@actions/core';
 import { RequestError } from '@octokit/request-error';
 import * as fs from 'fs';
 import * as path from 'path';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 
-import { actionsLog } from './actions-log.js';
 import {
   createRateLimitHandler,
   getLatestCommitSha,
@@ -16,17 +14,14 @@ import {
   parseOwnerRepo,
   RepoInfoDetails,
 } from './github.js';
+import type { Logger } from './logger.js';
 
-vi.mock(import('@actions/core'), async importOriginal => {
-  const mod = await importOriginal();
-  return {
-    ...mod,
-
-    debug: vi.fn(),
-    error: vi.fn(),
-    warning: vi.fn(),
-  };
-});
+const log: Logger = {
+  debug: vi.fn(),
+  error: vi.fn(),
+  info: vi.fn(),
+  warn: vi.fn(),
+};
 
 // --- Tiny fake Octokit -----------------------------------------------------
 // Dispatches by REST method name (e.g. 'repos.get'); each handler returns the
@@ -50,10 +45,7 @@ function mockOctokit(handlers: Record<string, Handler>): GithubClient {
   }
 
   const client = {
-    // The sink a real client carries, and the one the functions under test read
-    // back off it. `actionsLog` is what the Action passes to `makeOctokit`, so
-    // the `core.*` assertions below still observe what production would emit.
-    log: actionsLog,
+    log,
     rest: {
       repos: {
         get: createMethod('repos', 'get'),
@@ -107,47 +99,47 @@ describe('github.ts', () => {
     const reqOptions = { method: 'GET', url: '/repos/o/r' };
 
     it('retries (returns true) while under the cap and within budget', () => {
-      const handler = createRateLimitHandler('primary', actionsLog);
+      const handler = createRateLimitHandler('primary', log);
       expect(handler(10, reqOptions, null, 0)).toBe(true);
-      expect(core.warning).toHaveBeenCalledWith(
+      expect(log.warn).toHaveBeenCalledWith(
         expect.stringContaining('primary rate limit hit'),
       );
     });
 
     it('aborts (returns false) when retry-after exceeds the max wait', () => {
-      const handler = createRateLimitHandler('primary', actionsLog);
+      const handler = createRateLimitHandler('primary', log);
       expect(handler(301, reqOptions, null, 0)).toBe(false);
-      expect(core.error).toHaveBeenCalledWith(
+      expect(log.error).toHaveBeenCalledWith(
         expect.stringContaining('exceeds the maximum wait time of 300s'),
       );
     });
 
     it('honors a raised maxWaitSeconds (waits through a reset it would otherwise abort)', () => {
-      const handler = createRateLimitHandler('primary', actionsLog, 4000);
+      const handler = createRateLimitHandler('primary', log, 4000);
       // A retry-after the default 300s cap would reject now waits under 4000s.
       expect(handler(3000, reqOptions, null, 0)).toBe(true);
       // ...but the raised cap still rejects anything above it.
       expect(handler(4001, reqOptions, null, 0)).toBe(false);
-      expect(core.error).toHaveBeenCalledWith(
+      expect(log.error).toHaveBeenCalledWith(
         expect.stringContaining('exceeds the maximum wait time of 4000s'),
       );
     });
 
     it('honors a raised maxRetries budget', () => {
-      const handler = createRateLimitHandler('primary', actionsLog, 300, 5);
+      const handler = createRateLimitHandler('primary', log, 300, 5);
       // A retry count the default 3 budget would reject still retries under 5.
       expect(handler(10, reqOptions, null, 4)).toBe(true);
       // ...and the budget gate fires at the raised value, not the default.
       expect(handler(10, reqOptions, null, 5)).toBe(false);
-      expect(core.error).toHaveBeenCalledWith(
+      expect(log.error).toHaveBeenCalledWith(
         expect.stringContaining('after 5 primary rate-limit retries'),
       );
     });
 
     it('gives up (returns false) once the retry budget is exhausted', () => {
-      const handler = createRateLimitHandler('secondary', actionsLog);
+      const handler = createRateLimitHandler('secondary', log);
       expect(handler(10, reqOptions, null, 3)).toBe(false);
-      expect(core.error).toHaveBeenCalledWith(
+      expect(log.error).toHaveBeenCalledWith(
         expect.stringContaining('after 3 secondary rate-limit retries'),
       );
     });
@@ -249,13 +241,13 @@ describe('github.ts', () => {
         stargazers_count: undefined,
         topics: [],
       });
-      expect(core.warning).not.toHaveBeenCalled();
+      expect(log.warn).not.toHaveBeenCalled();
     });
 
     it('should fetch real repository info from GitHub API for a sanity check', async () => {
       const realToken = process.env.GITHUB_TOKEN ?? '';
       if (!realToken) {
-        core.warning(
+        console.warn(
           'Running integration test without a GITHUB_TOKEN. This may be rate-limited.',
         );
       }
@@ -352,7 +344,7 @@ describe('github.ts', () => {
       const result = await getLatestCommitSha(client, owner, repo);
 
       expect(result).toBeNull();
-      expect(core.error).toHaveBeenCalledWith(
+      expect(log.error).toHaveBeenCalledWith(
         expect.stringContaining(
           `Failed to fetch latest commit for ${owner}/${repo}`,
         ),

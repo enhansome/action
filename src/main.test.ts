@@ -1,11 +1,11 @@
 import * as core from '@actions/core';
+import * as githubClient from '@enhansome/core';
+import { enhance, type EnhanceResult } from '@enhansome/core';
 import * as fs from 'fs/promises';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 
 import { actionsLog } from './actions-log.js';
-import * as githubClient from './github.js';
 import { parseReplacementRules, run } from './main.js';
-import { enhance, EnhanceResult } from './orchestrator.js';
 
 let inputs: Record<string, string> = {};
 
@@ -31,15 +31,12 @@ vi.mock('fs/promises', () => ({
   writeFile: vi.fn(),
 }));
 
-vi.mock('./github.js', () => ({
+vi.mock('@enhansome/core', () => ({
+  enhance: vi.fn(),
   getLatestCommitSha: vi.fn(),
   getReadme: vi.fn(),
   makeOctokit: vi.fn(() => ({ __client: true })),
   parseOwnerRepo: vi.fn(),
-}));
-
-vi.mock('./orchestrator.js', () => ({
-  enhance: vi.fn(),
 }));
 
 function enhanceResult(overrides: Partial<EnhanceResult> = {}): EnhanceResult {
