@@ -10,8 +10,10 @@ export {
 } from './github.js';
 export type {
   GithubClient,
+  MakeOctokitOptions,
   RepoIdentifier,
   RepoInfoDetails,
+  ThrottleOptions,
 } from './github.js';
 export type { Logger } from './logger.js';
 export { consoleLog, silentLog } from './logger.js';

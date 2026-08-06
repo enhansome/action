@@ -81,10 +81,9 @@ describe('main: run()', () => {
     await run();
 
     expect(fs.readFile).not.toHaveBeenCalled();
-    expect(githubClient.makeOctokit).toHaveBeenCalledWith(
-      'test-token',
-      actionsLog,
-    );
+    expect(githubClient.makeOctokit).toHaveBeenCalledWith('test-token', {
+      log: actionsLog,
+    });
     expect(githubClient.getReadme).toHaveBeenCalledWith(
       { __client: true },
       'NARKOZ',

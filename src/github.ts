@@ -5,9 +5,10 @@ import { throttling } from '@octokit/plugin-throttling';
 import { consoleLog, Logger } from './logger.js';
 
 import type { OctokitOptions } from '@octokit/core';
+import type { ThrottlingOptions } from '@octokit/plugin-throttling';
 
-const MAX_RETRIES = 3,
-  MAX_WAIT_TIME_SECONDS = 300;
+const DEFAULT_MAX_WAIT_TIME_SECONDS = 300,
+  MAX_RETRIES = 3;
 
 const HardenedOctokit = GitHub.plugin(retry, throttling);
 
@@ -30,10 +31,22 @@ export interface RepoIdentifier {
   repo: string;
 }
 
-/** Exported for unit testing; wired into the throttling plugin by `makeOctokit`. */
+/**
+ * Exported for unit testing; wired into the throttling plugin by `makeOctokit`.
+ *
+ * `maxWaitSeconds` caps how long a single retry will wait for a rate-limit
+ * reset. It defaults to 300s: the Action must self-bound its run time so a
+ * workflow never hangs on a limit it cannot service. Longer-lived callers raise
+ * it to wait out a reset instead of aborting into an unrecoverable 403.
+ *
+ * `maxRetries` bounds the rate-limit retry budget reported here and matches the
+ * transport-retry count set in `makeOctokit`, so the two budgets stay aligned.
+ */
 export function createRateLimitHandler(
   kind: 'primary' | 'secondary',
   log: Logger = consoleLog,
+  maxWaitSeconds: number = DEFAULT_MAX_WAIT_TIME_SECONDS,
+  maxRetries: number = MAX_RETRIES,
 ) {
   return (
     retryAfter: number,
@@ -43,25 +56,65 @@ export function createRateLimitHandler(
   ): boolean => {
     const where = `${reqOptions.method} ${reqOptions.url}`;
 
-    if (retryAfter > MAX_WAIT_TIME_SECONDS) {
+    if (retryAfter > maxWaitSeconds) {
       log.error(
-        `${kind} rate limit retry-after (${retryAfter}s) exceeds the maximum wait time of ${MAX_WAIT_TIME_SECONDS}s. Aborting retries for ${where}.`,
+        `${kind} rate limit retry-after (${retryAfter}s) exceeds the maximum wait time of ${maxWaitSeconds}s. Aborting retries for ${where}.`,
       );
       return false;
     }
 
-    if (retryCount >= MAX_RETRIES) {
+    if (retryCount >= maxRetries) {
       log.error(
-        `Giving up on ${where} after ${MAX_RETRIES} ${kind} rate-limit retries.`,
+        `Giving up on ${where} after ${maxRetries} ${kind} rate-limit retries.`,
       );
       return false;
     }
 
     log.warn(
-      `${kind} rate limit hit for ${where}. Waiting ${retryAfter}s before retry ${retryCount + 1}/${MAX_RETRIES}.`,
+      `${kind} rate limit hit for ${where}. Waiting ${retryAfter}s before retry ${retryCount + 1}/${maxRetries}.`,
     );
     return true;
   };
+}
+
+// All throttling groups share Bottleneck's Group type. The plugin only types
+// `write`/`search`/`notifications`, but `global` and `auth` are honored at
+// runtime too, so reuse the typed member as the Group token for all five —
+// `bottleneck` stays a transitive concern, not a public one.
+type ThrottleGroup = NonNullable<ThrottlingOptions['write']>;
+
+/**
+ * Pass-through overrides for `@octokit/plugin-throttling`. The plugin's groups
+ * are process-wide singletons by default; supplying your own detaches this
+ * client so its limits apply per-instance instead of being shared across every
+ * Octokit in the process.
+ */
+export interface ThrottleOptions {
+  auth?: ThrottleGroup;
+  /** Secondary-rate-limit retry wait in seconds when the response carries no retry-after header (plugin default 60). */
+  fallbackSecondaryRateRetryAfter?: number;
+  global?: ThrottleGroup;
+  notifications?: ThrottleGroup;
+  search?: ThrottleGroup;
+  /** Per-request Bottleneck timeout in ms (plugin default 120_000). */
+  timeout?: number;
+  write?: ThrottleGroup;
+}
+
+/**
+ * Tuning for the hardened client built by `makeOctokit`. All fields optional;
+ * omitting the bag yields the Action defaults — `consoleLog`, 3 retries, a 300s
+ * rate-limit cap, and the throttling plugin's built-in limits.
+ */
+export interface MakeOctokitOptions {
+  /** Sink for debug/warn/error; defaults to `consoleLog`. */
+  log?: Logger;
+  /** Transport and rate-limit retry budget (default 3). */
+  maxRetries?: number;
+  /** Rate-limit retry-wait cap in seconds (default 300); see `createRateLimitHandler`. */
+  maxWaitSeconds?: number;
+  /** Throttling overrides forwarded into the plugin's `throttle` config. */
+  throttle?: ThrottleOptions;
 }
 
 /**
@@ -71,7 +124,12 @@ export function createRateLimitHandler(
  */
 export function makeOctokit(
   token: string,
-  log: Logger = consoleLog,
+  {
+    log = consoleLog,
+    maxRetries = MAX_RETRIES,
+    maxWaitSeconds,
+    throttle,
+  }: MakeOctokitOptions = {},
 ): GithubClient {
   const options: OctokitOptions = {
     log,
@@ -79,11 +137,24 @@ export function makeOctokit(
     // of the retry plugin to avoid double-handling.
     retry: {
       doNotRetry: [400, 401, 403, 404, 410, 422, 429, 451],
-      retries: MAX_RETRIES,
+      retries: maxRetries,
     },
+    // `throttle` spreads first so the rate-limit handlers below always win — a
+    // caller can tune Bottleneck, never replace the hardened retry policy.
     throttle: {
-      onRateLimit: createRateLimitHandler('primary', log),
-      onSecondaryRateLimit: createRateLimitHandler('secondary', log),
+      ...throttle,
+      onRateLimit: createRateLimitHandler(
+        'primary',
+        log,
+        maxWaitSeconds,
+        maxRetries,
+      ),
+      onSecondaryRateLimit: createRateLimitHandler(
+        'secondary',
+        log,
+        maxWaitSeconds,
+        maxRetries,
+      ),
     },
   };
 

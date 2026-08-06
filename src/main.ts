@@ -48,7 +48,7 @@ export async function run(): Promise<void> {
     }
 
     core.info(`Fetching source README from ${parsed.owner}/${parsed.repo}`);
-    const octokit = makeOctokit(token, actionsLog);
+    const octokit = makeOctokit(token, { log: actionsLog });
     const [readme, originalRepositorySha] = await Promise.all([
       getReadme(octokit, parsed.owner, parsed.repo),
       getLatestCommitSha(octokit, parsed.owner, parsed.repo),

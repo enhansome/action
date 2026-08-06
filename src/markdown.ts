@@ -141,7 +141,7 @@ interface RepoInfoLookup {
 // and a deep `/tree/...` link into the same repo) collapse to a single fetch,
 // the same way a case-variant spelling of one repo costs one round-trip.
 function createRepoInfoLookup(token: string, log: Logger): RepoInfoLookup {
-  const client = makeOctokit(token, log);
+  const client = makeOctokit(token, { log });
   const cache = new Map<string, Promise<RepoInfoDetails>>();
   return {
     client,

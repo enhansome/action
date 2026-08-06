@@ -122,6 +122,28 @@ describe('github.ts', () => {
       );
     });
 
+    it('honors a raised maxWaitSeconds (waits through a reset it would otherwise abort)', () => {
+      const handler = createRateLimitHandler('primary', actionsLog, 4000);
+      // A retry-after the default 300s cap would reject now waits under 4000s.
+      expect(handler(3000, reqOptions, null, 0)).toBe(true);
+      // ...but the raised cap still rejects anything above it.
+      expect(handler(4001, reqOptions, null, 0)).toBe(false);
+      expect(core.error).toHaveBeenCalledWith(
+        expect.stringContaining('exceeds the maximum wait time of 4000s'),
+      );
+    });
+
+    it('honors a raised maxRetries budget', () => {
+      const handler = createRateLimitHandler('primary', actionsLog, 300, 5);
+      // A retry count the default 3 budget would reject still retries under 5.
+      expect(handler(10, reqOptions, null, 4)).toBe(true);
+      // ...and the budget gate fires at the raised value, not the default.
+      expect(handler(10, reqOptions, null, 5)).toBe(false);
+      expect(core.error).toHaveBeenCalledWith(
+        expect.stringContaining('after 5 primary rate-limit retries'),
+      );
+    });
+
     it('gives up (returns false) once the retry budget is exhausted', () => {
       const handler = createRateLimitHandler('secondary', actionsLog);
       expect(handler(10, reqOptions, null, 3)).toBe(false);
@@ -139,6 +161,15 @@ describe('github.ts', () => {
 
     it('builds an anonymous client when token is empty', () => {
       const client = makeOctokit('');
+      expect(typeof client.rest.repos.get).toBe('function');
+    });
+
+    it('builds a client from a full options bag without throwing', () => {
+      const client = makeOctokit('test-token', {
+        maxRetries: 5,
+        maxWaitSeconds: 4000,
+        throttle: { fallbackSecondaryRateRetryAfter: 30, timeout: 5000 },
+      });
       expect(typeof client.rest.repos.get).toBe('function');
     });
   });
