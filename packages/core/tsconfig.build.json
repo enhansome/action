@@ -6,7 +6,11 @@
     "emitDeclarationOnly": false,
     "outDir": "dist",
     "rootDir": "src",
-    "types": ["node"]
+    "types": [
+      "node"
+    ]
   },
-  "include": ["src/index.ts"]
+  "include": [
+    "src/index.ts"
+  ]
 }

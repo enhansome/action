@@ -13,11 +13,6 @@
     "moduleResolution": "nodenext",
     "resolveJsonModule": true,
     "noEmit": true,
-    "paths": {
-      "@enhansome/core": [
-        "./packages/core/src/index.ts"
-      ]
-    },
     "types": [
       "node",
       "vitest"
@@ -28,7 +23,6 @@
   ],
   "exclude": [
     "node_modules",
-    "packages",
     "dist"
   ]
 }

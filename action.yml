@@ -71,6 +71,10 @@ runs:
       run: |
         hash=$(find \
           "${{ github.action_path }}/src" \
+          "${{ github.action_path }}/packages/core/src" \
+          "${{ github.action_path }}/packages/core/tsconfig.json" \
+          "${{ github.action_path }}/packages/core/tsconfig.build.json" \
+          "${{ github.action_path }}/packages/core/package.json" \
           "${{ github.action_path }}/yarn.lock" \
           "${{ github.action_path }}/vite.config.ts" \
           "${{ github.action_path }}/tsconfig.json" \

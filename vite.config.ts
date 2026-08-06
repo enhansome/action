@@ -17,6 +17,12 @@ export default defineConfig({
     // browser compatibility" stubs. ESM output matches `"type": "module"`.
     ssr: 'src/main.ts',
   },
+  // Bundle @enhansome/core into dist/main.js (other deps stay externalized)
+  // so the runner needs only dist/main.js at runtime — never a restored
+  // packages/core/dist. Avoids the cache-hit restore failure mode.
+  ssr: {
+    noExternal: ['@enhansome/core'],
+  },
   test: {
     // Vitest automatically provides globals like describe, it, expect
     // so you don't have to import them every time.

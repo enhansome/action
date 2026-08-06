@@ -1,6 +1,6 @@
 import * as core from '@actions/core';
 
-import type { Logger } from './logger.js';
+import type { Logger } from '@enhansome/core';
 
 /**
  * The GitHub Actions runner's sink: emits `::debug::` / `::warning::` workflow

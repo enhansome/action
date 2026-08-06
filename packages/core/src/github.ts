@@ -1,16 +1,30 @@
-import { getOctokitOptions, GitHub } from '@actions/github/lib/utils';
+import { Octokit, type OctokitOptions } from '@octokit/core';
+import { paginateRest } from '@octokit/plugin-paginate-rest';
+import { restEndpointMethods } from '@octokit/plugin-rest-endpoint-methods';
 import { retry } from '@octokit/plugin-retry';
 import { throttling } from '@octokit/plugin-throttling';
 
 import { consoleLog, Logger } from './logger.js';
 
-import type { OctokitOptions } from '@octokit/core';
 import type { ThrottlingOptions } from '@octokit/plugin-throttling';
 
 const DEFAULT_MAX_WAIT_TIME_SECONDS = 300,
   MAX_RETRIES = 3;
 
-const HardenedOctokit = GitHub.plugin(retry, throttling);
+// `@actions/github`'s `GitHub` is `Octokit.plugin(restEndpointMethods,
+// paginateRest).defaults(...)` — it pre-applies REST endpoint methods
+// (`octokit.rest.*`) and pagination. We dropped `@actions/github` to keep core
+// free of the Actions runtime, so re-apply those two plugins here alongside the
+// retry/throttling hardening, on a bare `Octokit`. Note this drops
+// `@actions/github`'s `.defaults` (GHE baseUrl + proxy agent/fetch) — acceptable
+// for the github.com + GITHUB_TOKEN path the action uses; self-hosted runners
+// behind a proxy or GHE installs would regress.
+const HardenedOctokit = Octokit.plugin(
+  restEndpointMethods,
+  paginateRest,
+  retry,
+  throttling,
+);
 
 export type GithubClient = InstanceType<typeof HardenedOctokit>;
 
@@ -159,7 +173,7 @@ export function makeOctokit(
   };
 
   return token
-    ? new HardenedOctokit(getOctokitOptions(token, options))
+    ? new HardenedOctokit({ ...options, auth: token })
     : new HardenedOctokit(options);
 }
 

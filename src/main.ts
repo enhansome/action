@@ -1,19 +1,18 @@
 import * as core from '@actions/core';
 import * as github from '@actions/github';
-import * as fs from 'fs/promises';
-import * as path from 'path';
-import { fileURLToPath } from 'url';
-
-import type { ReplacementRule } from './markdown.js';
-
-import { actionsLog } from './actions-log.js';
 import {
+  enhance,
   getLatestCommitSha,
   getReadme,
   makeOctokit,
   parseOwnerRepo,
-} from './github.js';
-import { enhance } from './orchestrator.js';
+  type ReplacementRule,
+} from '@enhansome/core';
+import * as fs from 'fs/promises';
+import * as path from 'path';
+import { fileURLToPath } from 'url';
+
+import { actionsLog } from './actions-log.js';
 
 export async function run(): Promise<void> {
   try {
