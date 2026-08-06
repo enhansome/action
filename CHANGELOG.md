@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.0](https://github.com/enhansome/action/compare/v1.6.1...v1.7.0) (2026-08-06)
+
+
+### Features
+
+* split library into @enhansome/core workspace package ([#15](https://github.com/enhansome/action/issues/15)) ([9f4a323](https://github.com/enhansome/action/commit/9f4a3237322dc067774c32e85fbe83a63fc70fb3))
+
 ## [1.6.1](https://github.com/enhansome/action/compare/v1.6.0...v1.6.1) (2026-08-06)
 
 
