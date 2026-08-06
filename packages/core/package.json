@@ -2,6 +2,11 @@
   "name": "@enhansome/core",
   "version": "1.6.1",
   "description": "Library core for enhansome — enhance markdown with GitHub star counts.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enhansome/action.git",
+    "directory": "packages/core"
+  },
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
