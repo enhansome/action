@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.1](https://github.com/enhansome/action/compare/v1.7.0...v1.7.1) (2026-08-06)
+
+
+### Bug Fixes
+
+* **core:** add repository field for npm provenance ([60608f9](https://github.com/enhansome/action/commit/60608f97f985e69ef561c3bbf0c8470534dd547a))
+
 ## [1.7.0](https://github.com/enhansome/action/compare/v1.6.1...v1.7.0) (2026-08-06)
 
 
