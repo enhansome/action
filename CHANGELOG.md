@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.1](https://github.com/enhansome/action/compare/v1.6.0...v1.6.1) (2026-08-06)
+
+
+### Bug Fixes
+
+* expose octokit options ([3c98f2d](https://github.com/enhansome/action/commit/3c98f2d9e6d6f0f7795e96453b0c9e08ccb6a78a))
+
 ## [1.6.0](https://github.com/enhansome/action/compare/v1.5.1...v1.6.0) (2026-08-05)
 
 
