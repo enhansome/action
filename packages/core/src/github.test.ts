@@ -172,6 +172,7 @@ describe('github.ts', () => {
     const mockRepoInfo: RepoInfoDetails = {
       archived: false,
       description: null,
+      id: 421879,
       language: 'TypeScript',
       open_issues_count: 42,
       owner: 'test-owner',
@@ -183,6 +184,7 @@ describe('github.ts', () => {
 
     const apiPayload = {
       archived: mockRepoInfo.archived,
+      id: mockRepoInfo.id,
       language: mockRepoInfo.language,
       name: mockRepoInfo.repo,
       open_issues_count: mockRepoInfo.open_issues_count,

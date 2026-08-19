@@ -31,6 +31,7 @@ export type GithubClient = InstanceType<typeof HardenedOctokit>;
 export interface RepoInfoDetails {
   archived: boolean;
   description: null | string;
+  id: number;
   language: null | string;
   open_issues_count: number;
   owner: string;
@@ -188,6 +189,7 @@ export async function getRepoInfo(
   return {
     archived: data.archived,
     description: data.description ?? null,
+    id: data.id,
     language: data.language,
     open_issues_count: data.open_issues_count,
     owner: data.owner.login,

@@ -59,6 +59,7 @@ function generateRepoInfo(owner: string, repo: string): RepoInfoDetails {
   return {
     archived: hash % 17 === 0,
     description: null,
+    id: hash,
     language: LANGUAGES[hash % LANGUAGES.length],
     open_issues_count: hash % 100,
     owner,

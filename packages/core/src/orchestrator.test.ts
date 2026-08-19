@@ -51,6 +51,7 @@ describe('Orchestrator: enhance()', () => {
 
       const mockRepoData: github.RepoInfoDetails = {
         archived: false,
+        id: 1,
         language: 'TypeScript',
         open_issues_count: 42,
         owner: 'test-user',
@@ -92,6 +93,7 @@ describe('Orchestrator: enhance()', () => {
 
       const mockRepoData: github.RepoInfoDetails = {
         archived: true,
+        id: 2,
         language: 'JavaScript',
         open_issues_count: 1,
         owner: 'test-user',
@@ -236,6 +238,7 @@ A list of awesome Go frameworks.
       });
       vi.mocked(github.getRepoInfo).mockResolvedValue({
         archived: false,
+        id: 1,
         language: 'TypeScript',
         open_issues_count: 0,
         owner: 'test-user',
@@ -323,6 +326,7 @@ A list of awesome Go frameworks.
       });
       vi.mocked(github.getRepoInfo).mockResolvedValue({
         archived: false,
+        id: 1,
         language: 'TypeScript',
         open_issues_count: 0,
         owner: 'test-user',

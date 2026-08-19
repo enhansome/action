@@ -7,20 +7,13 @@
 >
 > Trivial tasks skip `progress/` (TODO line → `archive/completed.md` on done). **One home per fact** — measured numbers and evidence live in the progress file that verified them; don't duplicate. Created 2026-08-17, seeded from the webapp indexer triage (`webapp/progress/indexer-perf.md`, log entry 2026-08-16e).
 
-## P0 — critical path (pick in listed order; both gate webapp's index rebuild)
+## P0 — critical path (gates webapp's index rebuild)
 
-> **Fresh session:** pick the FIRST unchecked line below; when both are done,
-> released, and cron-verified (see each item's progress file), archive them and
-> switch to `../webapp/TODO.md` — its registry-rebuild line (step 3 of this
-> path) unblocks.
+> **Fresh session:** pick the first unchecked line below. Once it is done,
+> released, and cron-verified (see its progress file), archive it and switch to
+> `../webapp/TODO.md` — its registry-rebuild line (step 3 of this path) unblocks.
 
-- [ ] **Emit numeric GitHub `id` in `repo_info`** [P0 · 1st] — `toRepoInfo`
-  (`packages/core/src/github.ts`) already receives the numeric id from
-  `rest.repos.get` and drops it. Add the field + test; ships in the next
-  release-please cycle. This is what lets webapp get `gh-{id}` node ids
-  straight from mirrors and retire its scratch-map bridge. Trivial — do it
-  first so it's never blocked behind the big change below.
-- [ ] **README.json tree-shape overhaul** [P0 · 2nd] [NEXT] → `progress/tree-shape.md` — the parser destroys document structure and loses repos: all H2–H6 flattened to one level (`markdown.ts:693`), link-headings (`#### [Repo](github…)`) become empty section titles instead of items, empty sections emitted (47% of indexed groups are empty noise), dead links emitted. Measured: `awesome-snapmaker` 44 GitHub links → **0 items**; `awesome-machine-learning` → 25 identical sibling sections; DB-wide 935 same-parent-same-title clusters. Fix = nested sections by heading depth, link-headings → items, no empty sections, no dead links, contract + goldens in the same release. **Blocks webapp's schema-reset step** (user ordering decision 2026-08-17: action first).
+- [ ] **README.json tree-shape overhaul** [P0] → `progress/tree-shape.md` — the parser destroys document structure and loses repos: all H2–H6 flattened to one level (`markdown.ts:693`), link-headings (`#### [Repo](github…)`) become empty section titles instead of items, empty sections emitted (47% of indexed groups are empty noise), dead links emitted. Measured: `awesome-snapmaker` 44 GitHub links → **0 items**; `awesome-machine-learning` → 25 identical sibling sections; DB-wide 935 same-parent-same-title clusters. Fix = nested sections by heading depth, link-headings → items, no empty sections, no dead links, contract + goldens in the same release. **Blocks webapp's schema-reset step** (user ordering decision 2026-08-17: action first).
 
 ## Later / parked
 

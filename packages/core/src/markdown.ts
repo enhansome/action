@@ -50,6 +50,7 @@ export interface SortOptions {
 // API fields (stargazers_count / pushed_at).
 export interface RepoInfo {
   archived: boolean;
+  id: number;
   language: null | string;
   last_commit: null | string;
   owner: string;
@@ -61,6 +62,7 @@ export interface RepoInfo {
 export function toRepoInfo(details: RepoInfoDetails): RepoInfo {
   return {
     archived: details.archived,
+    id: details.id,
     language: details.language,
     last_commit: details.pushed_at,
     owner: details.owner,

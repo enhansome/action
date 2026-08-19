@@ -2,7 +2,8 @@
 
 **Goal:** `README.json` trees that preserve heading hierarchy, capture every
 repo link (including link-headings), contain no empty sections and no dead
-links, and carry the numeric GitHub `id` in `repo_info`.
+links. (The `repo_info.id` half of the original goal landed separately —
+2026-08-19, root cause 5 below.)
 
 **Current state:** not started. Root causes fully diagnosed 2026-08-16 from
 the webapp side (mirror JSON + local DB measurements); evidence and fix design
@@ -42,10 +43,10 @@ rewrite `buildSections` in `packages/core/src/markdown.ts`.
    index with structural noise — entire registries of nothing.
 4. **Dead links are emitted** (contract §2.8), including the "dead link as
    parent of its resolved children" shape (8 such cases in the DB).
-5. **Numeric id dropped.** `toRepoInfo` (`packages/core/src/github.ts`)
-   receives the numeric GitHub id from `rest.repos.get` and discards it —
-   `repo_info` has no `id` field. (Tracked as its own TODO line; smallest
-   change, biggest unlock for webapp.)
+5. **Numeric id dropped.** ~~`repo_info` has no `id` field.~~ **Landed
+   2026-08-19** — `RepoInfoDetails.id` / `RepoInfo.id` + goldens; entry in
+   `archive/completed.md`. Ships in the same release-please cycle as this
+   overhaul, so the post-cron check below covers both.
 
 ## Fix design
 
@@ -102,3 +103,6 @@ hierarchy/link extraction is pure parsing.
 - **2026-08-17:** this file + `../TODO.md` created; user ordering decision —
   action overhaul lands BEFORE webapp's schema reset; scratch-map bridge on
   the webapp side becomes conditional on mirror coverage after the cron pass.
+- **2026-08-19:** root cause 5 (`repo_info.id`) landed on main — test-first,
+  goldens regenerated (diff verified: only `"id": <n>` lines added); TODO line
+  closed to `archive/completed.md`. Tree-shape work (root causes 1–4) remains.

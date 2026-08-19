@@ -93,6 +93,7 @@ describe('Branded titles from README fixtures', () => {
     // Mock getRepoInfo to return basic data (not needed for title extraction)
     vi.mocked(github.getRepoInfo).mockResolvedValue({
       archived: false,
+      id: 1,
       language: 'TypeScript',
       open_issues_count: 0,
       owner: 'test-user',
@@ -174,6 +175,7 @@ describe('Item titles and descriptions from README fixtures', () => {
     vi.clearAllMocks();
     vi.mocked(github.getRepoInfo).mockResolvedValue({
       archived: false,
+      id: 1,
       language: 'TypeScript',
       open_issues_count: 0,
       owner: 'test-user',
@@ -225,6 +227,7 @@ describe('toRepoInfo', () => {
     const details: RepoInfoDetails = {
       archived: true,
       description: 'ignored by the emitted shape',
+      id: 991823,
       language: 'Rust',
       open_issues_count: 7,
       owner: 'o',
@@ -236,6 +239,7 @@ describe('toRepoInfo', () => {
 
     expect(toRepoInfo(details)).toEqual({
       archived: true,
+      id: 991823,
       language: 'Rust',
       last_commit: '2025-01-01T00:00:00Z',
       owner: 'o',
@@ -263,6 +267,7 @@ describe('Item identity: own-link only, categories become groups', () => {
     vi.mocked(github.getRepoInfo).mockImplementation((_ok, owner, repo) =>
       Promise.resolve({
         archived: false,
+        id: 1,
         language: 'TypeScript',
         open_issues_count: 1,
         owner,
