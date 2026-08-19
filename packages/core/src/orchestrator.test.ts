@@ -618,6 +618,31 @@ Version: __VERSION__ | Last Updated: 2025-01-01
 
       expect(jsonData.metadata.original_repository_sha).toBeNull();
     });
+
+    it('should include the source repo numeric id in JSON metadata when provided', async () => {
+      const originalContent = '# Awesome Test List';
+
+      const { jsonData } = await enhance({
+        content: originalContent,
+        originalRepository: 'jorgebucaran/awsm.fish',
+        originalRepositoryId: 123456,
+        token,
+      });
+
+      expect(jsonData.metadata.original_repository_id).toBe(123456);
+    });
+
+    it('should set the source repo numeric id to null when not provided', async () => {
+      const originalContent = '# Awesome Test List';
+
+      const { jsonData } = await enhance({
+        content: originalContent,
+        originalRepository: 'jorgebucaran/awsm.fish',
+        token,
+      });
+
+      expect(jsonData.metadata.original_repository_id).toBeNull();
+    });
   });
 
 });

@@ -107,6 +107,10 @@ export interface JsonMetadata {
   enhanced_repository_description: null | string;
   last_updated: string;
   original_repository: string;
+  // The source repo's numeric GitHub id — the identity consumers key nodes on.
+  // Null only when the lookup failed (transport error); the name above stays
+  // authoritative for display.
+  original_repository_id: null | number;
   original_repository_sha: null | string;
   title: string;
 }
@@ -207,6 +211,7 @@ export async function processMarkdownContent(
   enhancedRepository?: string,
   enhancedRepositoryDescription?: string,
   originalRepositorySha?: string,
+  originalRepositoryId?: number,
   now: Date = new Date(),
   log: Logger = consoleLog,
 ): Promise<{ finalContent: string; jsonData: JsonOutput }> {
@@ -243,6 +248,7 @@ export async function processMarkdownContent(
   const metadata: JsonMetadata = {
     last_updated: now.toISOString(),
     original_repository: originalRepository.trim(),
+    original_repository_id: originalRepositoryId ?? null,
     original_repository_sha: (originalRepositorySha?.trim() ?? '') || null,
     enhanced_repository: (enhancedRepository?.trim() ?? '') || null,
     enhanced_repository_description:

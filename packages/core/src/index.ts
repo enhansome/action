@@ -2,6 +2,7 @@ export {
   formatRequestError,
   getLatestCommitSha,
   getReadme,
+  getRepoId,
   getRepoInfo,
   getRootEntryNames,
   makeOctokit,

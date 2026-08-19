@@ -35,6 +35,7 @@ vi.mock('@enhansome/core', () => ({
   enhance: vi.fn(),
   getLatestCommitSha: vi.fn(),
   getReadme: vi.fn(),
+  getRepoId: vi.fn(),
   makeOctokit: vi.fn(() => ({ __client: true })),
   parseOwnerRepo: vi.fn(),
 }));
@@ -47,6 +48,7 @@ function enhanceResult(overrides: Partial<EnhanceResult> = {}): EnhanceResult {
       metadata: {
         last_updated: '2026-06-27T00:00:00.000Z',
         original_repository: 'NARKOZ/guides',
+        original_repository_id: 4242,
         original_repository_sha: 'abc123',
         enhanced_repository: 'me/my-list',
         enhanced_repository_description: 'enhanced list',
@@ -72,6 +74,7 @@ describe('main: run()', () => {
     });
     vi.mocked(githubClient.getReadme).mockResolvedValue('# Source README');
     vi.mocked(githubClient.getLatestCommitSha).mockResolvedValue('abc123');
+    vi.mocked(githubClient.getRepoId).mockResolvedValue(4242);
   });
 
   it('fetches the source README rather than reading the local file', async () => {
@@ -113,6 +116,31 @@ describe('main: run()', () => {
     expect(core.warning).toHaveBeenCalled();
     expect(vi.mocked(enhance).mock.calls[0][0]).toMatchObject({
       originalRepositorySha: undefined,
+    });
+    expect(fs.writeFile).toHaveBeenCalledWith('README.md', 'enhanced', 'utf-8');
+  });
+
+  it('passes the source repo id through to enhance()', async () => {
+    await run();
+
+    expect(githubClient.getRepoId).toHaveBeenCalledWith(
+      { __client: true },
+      'NARKOZ',
+      'guides',
+    );
+    expect(vi.mocked(enhance).mock.calls[0][0]).toMatchObject({
+      originalRepositoryId: 4242,
+    });
+  });
+
+  it('proceeds (with a warning) when the repo id cannot be determined', async () => {
+    vi.mocked(githubClient.getRepoId).mockResolvedValue(null);
+
+    await run();
+
+    expect(core.warning).toHaveBeenCalled();
+    expect(vi.mocked(enhance).mock.calls[0][0]).toMatchObject({
+      originalRepositoryId: undefined,
     });
     expect(fs.writeFile).toHaveBeenCalledWith('README.md', 'enhanced', 'utf-8');
   });

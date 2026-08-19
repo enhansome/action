@@ -7,6 +7,7 @@ import {
   createRateLimitHandler,
   getLatestCommitSha,
   getReadme,
+  getRepoId,
   getRepoInfo,
   GithubClient,
   makeOctokit,
@@ -350,6 +351,47 @@ describe('github.ts', () => {
         expect.stringContaining(
           `Failed to fetch latest commit for ${owner}/${repo}`,
         ),
+      );
+    });
+  });
+
+  describe('getRepoId', () => {
+    const owner = 'test-owner';
+    const repo = 'test-repo';
+
+    it('should return the repo numeric id', async () => {
+      const client = mockOctokit({
+        'repos.get': () => ({
+          archived: false,
+          description: null,
+          id: 4242,
+          language: null,
+          name: repo,
+          open_issues_count: 0,
+          owner: { login: owner },
+          pushed_at: null,
+          stargazers_count: 0,
+          topics: [],
+        }),
+      });
+
+      const result = await getRepoId(client, owner, repo);
+
+      expect(result).toBe(4242);
+    });
+
+    it('should return null and log the status on a request error', async () => {
+      const client = mockOctokit({
+        'repos.get': () => {
+          throw notFound(`${owner}/${repo}`);
+        },
+      });
+
+      const result = await getRepoId(client, owner, repo);
+
+      expect(result).toBeNull();
+      expect(log.error).toHaveBeenCalledWith(
+        expect.stringContaining(`Failed to fetch repo id for ${owner}/${repo}`),
       );
     });
   });

@@ -9,8 +9,8 @@
 
 ## P0 — critical path (gates webapp's index rebuild)
 
-> **Both P0 steps are done and released** (`repo_info.id` in 1.7.1, tree-shape
-> in 1.8.0 — verified live 2026-08-19, see `archive/tree-shape.md` and
+> **Both P0 steps are done and released in 1.8.0** (`repo_info.id` + tree-shape
+> — verified live 2026-08-19, see `archive/tree-shape.md` and
 > `archive/completed.md`). The path continues in `../webapp/TODO.md`: its
 > registry-rebuild line (step 3) is unblocked — pick that up next.
 

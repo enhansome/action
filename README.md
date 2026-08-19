@@ -101,6 +101,13 @@ Three consequences worth knowing:
   is omitted from `README.json` (it remains in the enhanced markdown). Preserving
   these leaves in a separate shape is a future enhancement.
 
+## Root identity
+
+`metadata.original_repository_id` is the source repo's numeric GitHub id — the
+stable identity consumers key a tree's root node on (items carry theirs in
+`repo_info.id`). It is `null` only when the lookup failed; the run continues and
+`original_repository` ("owner/name") stays authoritative for display.
+
 ## Development
 
 | command | what |

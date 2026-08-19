@@ -200,6 +200,26 @@ export async function getRepoInfo(
   };
 }
 
+/**
+ * The repo's numeric GitHub id, for the JSON metadata — consumers key stable
+ * node ids on it. Returns null (logged) instead of failing the run: the id is
+ * metadata, not a gate; consumers fall back when it is missing.
+ */
+export async function getRepoId(
+  octokit: GithubClient,
+  owner: string,
+  repo: string,
+): Promise<null | number> {
+  try {
+    return (await getRepoInfo(octokit, owner, repo)).id;
+  } catch (error: unknown) {
+    octokit.log.error(
+      `Failed to fetch repo id for ${owner}/${repo}: ${formatRequestError(error)}`,
+    );
+    return null;
+  }
+}
+
 export async function getReadme(
   octokit: GithubClient,
   owner: string,

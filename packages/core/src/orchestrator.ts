@@ -15,6 +15,7 @@ export interface EnhanceOptions {
   log?: Logger;
   now?: Date;
   originalRepository: string;
+  originalRepositoryId?: number;
   originalRepositorySha?: string;
   relativeLinkPrefix?: string;
   /** Text substitutions applied to the source before it is parsed. */
@@ -35,6 +36,7 @@ export async function enhance(options: EnhanceOptions): Promise<EnhanceResult> {
     log,
     now = new Date(),
     originalRepository,
+    originalRepositoryId,
     originalRepositorySha,
     relativeLinkPrefix = '',
     replacements = [],
@@ -64,6 +66,7 @@ export async function enhance(options: EnhanceOptions): Promise<EnhanceResult> {
     enhancedRepository,
     enhancedRepositoryDescription,
     originalRepositorySha,
+    originalRepositoryId,
     now,
     log,
   );

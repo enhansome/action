@@ -158,6 +158,7 @@ describe('golden: structure + raw output for README fixtures', () => {
       enhancedRepositoryDescription: 'enhanced list',
       now: FIXED_NOW,
       originalRepository,
+      originalRepositoryId: 4242,
       originalRepositorySha: 'deadbeef',
       sortBy: 'stars',
       token: 'test-token',
