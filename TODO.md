@@ -9,11 +9,10 @@
 
 ## P0 — critical path (gates webapp's index rebuild)
 
-> **Fresh session:** pick the first unchecked line below. Once it is done,
-> released, and cron-verified (see its progress file), archive it and switch to
-> `../webapp/TODO.md` — its registry-rebuild line (step 3 of this path) unblocks.
-
-- [ ] **README.json tree-shape overhaul** [P0] → `progress/tree-shape.md` — the parser destroys document structure and loses repos: all H2–H6 flattened to one level (`markdown.ts:693`), link-headings (`#### [Repo](github…)`) become empty section titles instead of items, empty sections emitted (47% of indexed groups are empty noise), dead links emitted. Measured: `awesome-snapmaker` 44 GitHub links → **0 items**; `awesome-machine-learning` → 25 identical sibling sections; DB-wide 935 same-parent-same-title clusters. Fix = nested sections by heading depth, link-headings → items, no empty sections, no dead links, contract + goldens in the same release. **Blocks webapp's schema-reset step** (user ordering decision 2026-08-17: action first).
+> **Both P0 steps are done and released** (`repo_info.id` in 1.7.1, tree-shape
+> in 1.8.0 — verified live 2026-08-19, see `archive/tree-shape.md` and
+> `archive/completed.md`). The path continues in `../webapp/TODO.md`: its
+> registry-rebuild line (step 3) is unblocked — pick that up next.
 
 ## Later / parked
 

@@ -5,12 +5,12 @@ repo link (including link-headings), contain no empty sections and no dead
 links. (The `repo_info.id` half of the original goal landed separately —
 2026-08-19, root cause 5 below.)
 
-**Current state:** implemented 2026-08-19, on `main` uncommitted — 12 new
-`Tree shape` unit tests, 60 goldens regenerated and audited, `make ci` green.
-Awaiting commit → release-please → cron spot checks (below), then archive.
+**Current state:** **done — released in 1.8.0 and verified live 2026-08-19**
+(manual `workflow_dispatch` of the five offender mirrors' enhance workflows;
+all green, numbers in the last log entry). Archived.
 
-**Next step:** commit + release; after the 04:54 UTC cron pass, run the
-Verification spot checks.
+**Next step:** none here. Webapp's P0-3 registry rebuild is unblocked
+(`../webapp/TODO.md`).
 
 ## Root causes (all verified against live mirrors + webapp's local DB mirror)
 
@@ -163,3 +163,15 @@ hierarchy/link extraction is pure parsing.
   free-for.dev), and NOT skipping INVALID_TITLE_PATTERNS beyond TOC (`##
   Tools` is content — caught by two orchestrator tests failing). Results in
   the Measured results section above.
+- **2026-08-19 (c):** released in **1.8.0** (commit fbfc33c; `v1`/`v1.8` tags
+  verified → 4f147b7) and verified live by dispatching the five offender
+  mirrors' `enhance.yml` (runs 32226450092, …4175, …8259, …1579, …5577 — all
+  success; same workflow the daily cron runs). Regenerated README.json at each
+  new HEAD, all checks green across all five: **0 empty sections/groups, 0
+  duplicate same-parent titles, every item has `repo_info.id`**. Numbers:
+  machine-learning 875 items / 834 distinct (section `C` > group
+  `General-Purpose Machine Learning` > items with id+stars, depth 4); snapmaker
+  89 items / 37 distinct repos (57/57 repo-info ok — 0 dead there; was 0
+  items); toptout 70 items / 52 distinct, apps as items with template-heading
+  children, depth 5; agent-memory 252 items; AI-for-time-series-papers 180
+  items. Archived → `archive/tree-shape.md`; webapp P0-3 unblocked.
