@@ -1,2142 +1,2162 @@
 {
   "items": [
     {
-      "description": "Plugins and libraries for integrating artificial intelligence and machine learning tools.",
+      "description": null,
       "items": [
         {
-          "node_type": "item",
-          "title": "Synapse plugin",
-          "description": "Expose your application functionality via MCP, with built-in tools and documentation search to help you discover and interact with your app's capabilities.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 205483764,
-            "language": "Rust",
-            "last_commit": "2021-11-28T00:00:00.000Z",
-            "owner": "josbeir",
-            "repo": "cakephp-synapse",
-            "stars": 33765
-          }
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Synapse plugin",
+              "description": "Expose your application functionality via MCP, with built-in tools and documentation search to help you discover and interact with your app's capabilities.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 205483764,
+                "language": "Rust",
+                "last_commit": "2021-11-28T00:00:00.000Z",
+                "owner": "josbeir",
+                "repo": "cakephp-synapse",
+                "stars": 33765
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Crustum/OpenRouter plugin",
+              "description": "Integration with OpenRouter service for unified LLM access, supporting multiple AI models with chat completions, streaming, tool calling, and web search.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1751051282,
+                "language": "Go",
+                "last_commit": "2023-03-25T00:00:00.000Z",
+                "owner": "crustum",
+                "repo": "cakephp-open-router",
+                "stars": 1283
+              }
+            }
+          ],
+          "description": "Plugins and libraries for integrating artificial intelligence and machine learning tools.",
+          "node_type": "group",
+          "title": "AI Tools"
         },
         {
-          "node_type": "item",
-          "title": "Crustum/OpenRouter plugin",
-          "description": "Integration with OpenRouter service for unified LLM access, supporting multiple AI models with chat completions, streaming, tool calling, and web search.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1751051282,
-            "language": "Go",
-            "last_commit": "2023-03-25T00:00:00.000Z",
-            "owner": "crustum",
-            "repo": "cakephp-open-router",
-            "stars": 1283
-          }
+          "children": [
+            {
+              "node_type": "item",
+              "title": "AssetCompress plugin",
+              "description": "A complete asset manager for CakePHP.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1230390267,
+                "language": "Ruby",
+                "last_commit": "2023-04-09T00:00:00.000Z",
+                "owner": "markstory",
+                "repo": "asset_compress",
+                "stars": 40268
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "AssetMix plugin",
+              "description": "Provides integration with Laravel Mix asset compilation.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 285438689,
+                "language": null,
+                "last_commit": "2022-02-11T00:00:00.000Z",
+                "owner": "ishanvyas22",
+                "repo": "asset-mix",
+                "stars": 38690
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "CakeVite plugin",
+              "description": "A fully-featured Vite plugin (spiritual successor of brandcom/cakephp-vite).",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1590750455,
+                "language": "C++",
+                "last_commit": "2022-10-03T00:00:00.000Z",
+                "owner": "josbeir",
+                "repo": "cakephp-vite",
+                "stars": 456
+              }
+            }
+          ],
+          "description": "Managing, compressing and minifying website assets.",
+          "node_type": "group",
+          "title": "Asset Management"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "DatabaseLog plugin",
+              "description": "Simple and stand-alone logging to database instead of files.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1387624931,
+                "language": "JavaScript",
+                "last_commit": "2021-06-14T00:00:00.000Z",
+                "owner": "dereuromark",
+                "repo": "CakePHP-DatabaseLog",
+                "stars": 24932
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Version plugin",
+              "description": "A plugin that facilitates versioned database entities.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1473072696,
+                "language": "Java",
+                "last_commit": "2022-02-04T00:00:00.000Z",
+                "owner": "josegonzalez",
+                "repo": "cakephp-version",
+                "stars": 22697
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Bouncer plugin",
+              "description": "The pendant to AuditStash, allow moderation and approval of add/edit/delete actions before the actual change is applied.",
+              "children": [],
+              "repo_info": {
+                "archived": true,
+                "id": 2487516772,
+                "language": "Go",
+                "last_commit": "2021-11-20T00:00:00.000Z",
+                "owner": "dereuromark",
+                "repo": "cakephp-bouncer",
+                "stars": 16773
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Muffin/Footprint plugin",
+              "description": "Plugin to allow passing currently logged in user to model layer.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2101713669,
+                "language": null,
+                "last_commit": "2022-03-03T00:00:00.000Z",
+                "owner": "UseMuffin",
+                "repo": "Footprint",
+                "stars": 13670
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "AuditStash plugin",
+              "description": "Flexible and rock solid audit log tracking.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3523450541,
+                "language": "JavaScript",
+                "last_commit": "2022-07-09T00:00:00.000Z",
+                "owner": "dereuromark",
+                "repo": "cakephp-audit-stash",
+                "stars": 542
+              }
+            }
+          ],
+          "description": "Tracking changes and events in your app.",
+          "node_type": "group",
+          "title": "Auditing / Logging"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "TwoFactorAuth plugin",
+              "description": "Allows two factor authentication using Google Authenticator or similar app to generate one-time codes. Based on RobThree/TwoFactorAuth library.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 568098230,
+                "language": "TypeScript",
+                "last_commit": "2023-05-16T00:00:00.000Z",
+                "owner": "andrej-griniuk",
+                "repo": "cakephp-two-factor-auth",
+                "stars": 48231
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "ADmad/SocialAuth plugin",
+              "description": "A plugin which allows you to authenticate using social providers like Facebook/Google/Twitter etc. using SocialConnect/auth social sign on library.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2854091588,
+                "language": "Shell",
+                "last_commit": "2022-05-23T00:00:00.000Z",
+                "owner": "ADmad",
+                "repo": "cakephp-social-auth",
+                "stars": 41589
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Authentication plugin",
+              "description": "Official CakePHP authentication middleware plugin.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2537536240,
+                "language": "TypeScript",
+                "last_commit": "2023-05-06T00:00:00.000Z",
+                "owner": "cakephp",
+                "repo": "authentication",
+                "stars": 36241
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Tools:Passwordable",
+              "description": "Containing Passwordable behavior for a DRY approach on password hashing.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 520965265,
+                "language": "C++",
+                "last_commit": "2023-04-11T00:00:00.000Z",
+                "owner": "dereuromark",
+                "repo": "cakephp-tools",
+                "stars": 15266
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "CakeDC/Users plugin",
+              "description": "Complete user management (admin panel, remember me, etc), Social login (FB, Twitter, LinkedIn, Google, Instagram), RBAC, API and more.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2406561775,
+                "language": "C++",
+                "last_commit": "2021-11-17T00:00:00.000Z",
+                "owner": "CakeDC",
+                "repo": "users",
+                "stars": 11776
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Authorization plugin",
+              "description": "Official CakePHP authorization stack.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2437557341,
+                "language": "JavaScript",
+                "last_commit": "2023-01-25T00:00:00.000Z",
+                "owner": "cakephp",
+                "repo": "authorization",
+                "stars": 7342
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "TinyAuth plugin",
+              "description": "Authentication and role-based (single/multi) authorization as very light-weight approach.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3017406662,
+                "language": "Go",
+                "last_commit": "2022-03-10T00:00:00.000Z",
+                "owner": "dereuromark",
+                "repo": "cakephp-tinyauth",
+                "stars": 6663
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "ApiTokenAuthenticator plugin",
+              "description": "A simple token authentication plugin for CakePHP REST APIs.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2789550747,
+                "language": "Ruby",
+                "last_commit": "2021-12-15T00:00:00.000Z",
+                "owner": "rrd108",
+                "repo": "api-token-authenticator",
+                "stars": 748
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "CakeVerification plugin",
+              "description": "Two-factor verification supporting email OTP, email magic link, SMS OTP, and TOTP (Google Authenticator).",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3094800029,
+                "language": null,
+                "last_commit": "2023-12-03T00:00:00.000Z",
+                "owner": "salines",
+                "repo": "cakephp-verification",
+                "stars": 30
+              }
+            }
+          ],
+          "description": "Plugins and libraries for implementing authentication and authorization.",
+          "node_type": "group",
+          "title": "Authentication and Authorization"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Cache plugin",
+              "description": "For caching views (HTML, CSV, JSON, XML, ...) as static cache files.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 417593980,
+                "language": "TypeScript",
+                "last_commit": "2021-04-26T00:00:00.000Z",
+                "owner": "dereuromark",
+                "repo": "cakephp-cache",
+                "stars": 43981
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "CakeDC/CachedRouting plugin",
+              "description": "Provides a cached version of the RoutingMiddleware to improve the load time of routes.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2799839663,
+                "language": "Python",
+                "last_commit": "2022-03-09T00:00:00.000Z",
+                "owner": "CakeDC",
+                "repo": "cakephp-cached-routing",
+                "stars": 39664
+              }
+            }
+          ],
+          "description": "Storing data for faster retrieval.",
+          "node_type": "group",
+          "title": "Caching"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "TestHelper plugin",
+              "description": "Provides testing enhancements and TDD support as browser backend.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1072148065,
+                "language": "C++",
+                "last_commit": "2023-10-28T00:00:00.000Z",
+                "owner": "dereuromark",
+                "repo": "cakephp-test-helper",
+                "stars": 48066
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "cakedc/cakephp-phpstan",
+              "description": "A PHPStan extension to resolve CakePHP magic around getter return types for the static analyzer.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 155732014,
+                "language": "Rust",
+                "last_commit": "2023-12-18T00:00:00.000Z",
+                "owner": "CakeDC",
+                "repo": "cakephp-phpstan",
+                "stars": 32015
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "lordsimal/cakephp-psalm",
+              "description": "A Psalm extension to resolve CakePHP magic around getter return types for the static analyzer.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2545980209,
+                "language": null,
+                "last_commit": "2023-06-06T00:00:00.000Z",
+                "owner": "LordSimal",
+                "repo": "cakephp-psalm",
+                "stars": 30210
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "IdeHelper plugin",
+              "description": "Helps to make IDE support better by adding annotations to your existing code similar to what baking does to new code.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3355523957,
+                "language": "Ruby",
+                "last_commit": "2021-05-19T00:00:00.000Z",
+                "owner": "dereuromark",
+                "repo": "cakephp-ide-helper",
+                "stars": 23958
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "IdeHelperExtra plugin",
+              "description": "Useful IdeHelper addons for other plugins or custom use cases.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 568761422,
+                "language": "Go",
+                "last_commit": "2022-11-05T00:00:00.000Z",
+                "owner": "dereuromark",
+                "repo": "cakephp-ide-helper-extra",
+                "stars": 11423
+              }
+            }
+          ],
+          "description": "Analyzing, parsing and manipulation codebases.",
+          "node_type": "group",
+          "title": "Code Analysis"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Scheduling plugin",
+              "description": "The plugin provides task scheduling capabilities with sub-minute precision, allowing you to schedule tasks as frequently as every second, with single crontab entry point. It allows tasks monitoring.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 843280063,
+                "language": "Python",
+                "last_commit": "2023-10-30T00:00:00.000Z",
+                "owner": "skie",
+                "repo": "cakephp-scheduling",
+                "stars": 30064
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "SignalHandler plugin",
+              "description": "Cross-platform signal handling for CakePHP console commands with zero external dependencies. Supports Linux (pcntl), Windows (native API).",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1000555514,
+                "language": "Rust",
+                "last_commit": "2022-08-05T00:00:00.000Z",
+                "owner": "skie",
+                "repo": "SignalHandler",
+                "stars": 5515
+              }
+            }
+          ],
+          "description": "Command-line tools and improvements.",
+          "node_type": "group",
+          "title": "Console"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "AssociationsDebugger plugin",
+              "description": "A plugin that draws your model associations as diagram.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2960290312,
+                "language": "Go",
+                "last_commit": "2023-02-23T00:00:00.000Z",
+                "owner": "zunnu",
+                "repo": "associations-debugger",
+                "stars": 40313
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Execution order",
+              "description": "A demo app to display the execution order of files, methods and callbacks.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 4023427963,
+                "language": "Python",
+                "last_commit": "2021-05-13T00:00:00.000Z",
+                "owner": "dereuromark",
+                "repo": "executionorder",
+                "stars": 27964
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Setup plugin",
+              "description": "A lightweight setup plugin containing healthcheck(s), debugging and maintenance tools.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2111864571,
+                "language": "JavaScript",
+                "last_commit": "2022-06-09T00:00:00.000Z",
+                "owner": "dereuromark",
+                "repo": "cakephp-setup",
+                "stars": 14572
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "DebugKit plugin",
+              "description": "The de-facto standard for debugging.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2918961776,
+                "language": "Java",
+                "last_commit": "2021-11-16T00:00:00.000Z",
+                "owner": "cakephp",
+                "repo": "debug_kit",
+                "stars": 11777
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Sentry plugin",
+              "description": "A plugin to seamlessly integrate Sentry for errors and exceptions.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1794060433,
+                "language": "Python",
+                "last_commit": "2022-10-25T00:00:00.000Z",
+                "owner": "lordsimal",
+                "repo": "cakephp-sentry",
+                "stars": 10434
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "CakephpWhoops plugin",
+              "description": "PHP errors and exceptions for cool kids with filp/whoops.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1916158722,
+                "language": "Go",
+                "last_commit": "2022-01-09T00:00:00.000Z",
+                "owner": "dereuromark",
+                "repo": "cakephp-whoops",
+                "stars": 8723
+              }
+            }
+          ],
+          "description": "Debugging and local development.",
+          "node_type": "group",
+          "title": "Debugging"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Queue plugin",
+              "description": "A dependency-free queue-based mail solution using Mailer/Email class, allowing re-queue on (network) failure.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2800555081,
+                "language": "JavaScript",
+                "last_commit": "2023-10-12T00:00:00.000Z",
+                "owner": "dereuromark",
+                "repo": "cakephp-queue",
+                "stars": 5082
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "SendGrid plugin",
+              "description": "Email transport plugin for sending email via SendGrid API.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1548102248,
+                "language": "Shell",
+                "last_commit": "2023-04-28T00:00:00.000Z",
+                "owner": "sprintcube",
+                "repo": "cakephp-sendgrid",
+                "stars": 2249
+              }
+            }
+          ],
+          "description": "Transports and tools for email handling.",
+          "node_type": "group",
+          "title": "Email"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "FileStorage plugin",
+              "description": "Flexible file storage and upload plugin.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3041249892,
+                "language": "Go",
+                "last_commit": "2021-07-23T00:00:00.000Z",
+                "owner": "dereuromark",
+                "repo": "cakephp-file-storage",
+                "stars": 49893
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Josegonzalez/Upload plugin",
+              "description": "A customisable plugin that uses Flysystem to write to multiple backends (Dropbox, FTP, S3, Local, etc.).",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3873698606,
+                "language": "Java",
+                "last_commit": "2022-05-05T00:00:00.000Z",
+                "owner": "FriendsOfCake",
+                "repo": "cakephp-upload",
+                "stars": 48607
+              }
+            }
+          ],
+          "description": "Upload, storage, and file handling.",
+          "node_type": "group",
+          "title": "File Manipulation"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Translate plugin",
+              "description": "Translate your translations in the backend with ease.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1927695724,
+                "language": "Rust",
+                "last_commit": "2022-01-07T00:00:00.000Z",
+                "owner": "dereuromark",
+                "repo": "cakephp-translate",
+                "stars": 45725
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "ADmad/I18n plugin",
+              "description": "A plugin with I18n related tools.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1367478320,
+                "language": "TypeScript",
+                "last_commit": "2023-02-15T00:00:00.000Z",
+                "owner": "ADmad",
+                "repo": "cakephp-i18n",
+                "stars": 28321
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Cake/Localized plugin",
+              "description": "Localized validation and ready-to-use translation PO files.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2546817825,
+                "language": "C++",
+                "last_commit": "2021-09-28T00:00:00.000Z",
+                "owner": "cakephp",
+                "repo": "localized",
+                "stars": 17826
+              }
+            }
+          ],
+          "description": "I18n (Internationalization) and L10n (Localization).",
+          "node_type": "group",
+          "title": "I18n"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "QrCodePlugin",
+              "description": "Easily render SVG/PNG QR Codes for your app.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1307040764,
+                "language": "Rust",
+                "last_commit": "2021-11-28T00:00:00.000Z",
+                "owner": "dereuromark",
+                "repo": "cakephp-qrcode",
+                "stars": 40765
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "ADmad/Glide plugin",
+              "description": "A plugin for using Glide image manipulation library.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 199315301,
+                "language": "JavaScript",
+                "last_commit": "2023-03-06T00:00:00.000Z",
+                "owner": "ADmad",
+                "repo": "cakephp-glide",
+                "stars": 15302
+              }
+            }
+          ],
+          "description": "Image processing and manipulation libraries.",
+          "node_type": "group",
+          "title": "Imagery"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Composer Installers",
+              "description": "A multi framework Composer library installer.",
+              "children": [],
+              "repo_info": {
+                "archived": true,
+                "id": 1454493429,
+                "language": null,
+                "last_commit": "2022-10-29T00:00:00.000Z",
+                "owner": "composer",
+                "repo": "installers",
+                "stars": 43430
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Graphviz",
+              "description": "A Graphviz library.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3566070072,
+                "language": "Go",
+                "last_commit": "2023-10-21T00:00:00.000Z",
+                "owner": "alexandresalome",
+                "repo": "graphviz",
+                "stars": 20073
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Rocketeer",
+              "description": "PHP task runner and deployment package.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3560712235,
+                "language": "C++",
+                "last_commit": "2023-05-11T00:00:00.000Z",
+                "owner": "rocketeers",
+                "repo": "rocketeer",
+                "stars": 12236
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Chronos",
+              "description": "A simple standalone DateTime API extension (successor of Carbon).",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2589005676,
+                "language": "Java",
+                "last_commit": "2022-02-24T00:00:00.000Z",
+                "owner": "cakephp",
+                "repo": "chronos",
+                "stars": 5677
+              }
+            }
+          ],
+          "description": "Useful libraries or tools that don't fit in any of the other categories.",
+          "node_type": "group",
+          "title": "Libs"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Upgrade app",
+              "description": "Official upgrade app for 3.x=>4.x and 4.x=>5.x.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3389539712,
+                "language": "Go",
+                "last_commit": "2022-01-19T00:00:00.000Z",
+                "owner": "cakephp",
+                "repo": "upgrade",
+                "stars": 39713
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Migrations plugin",
+              "description": "(DB) Migration plugin.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2152483673,
+                "language": "Python",
+                "last_commit": "2022-02-27T00:00:00.000Z",
+                "owner": "cakephp",
+                "repo": "migrations",
+                "stars": 33674
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Upgrade app (extended)",
+              "description": "An extended upgrade app for 3.x=>4.x and some 5.x snippets.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2448623867,
+                "language": "Ruby",
+                "last_commit": "2021-08-17T00:00:00.000Z",
+                "owner": "dereuromark",
+                "repo": "upgrade",
+                "stars": 23868
+              }
+            }
+          ],
+          "description": "Plugins and resources around migration and upgrading.",
+          "node_type": "group",
+          "title": "Migration"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Shim plugin",
+              "description": "A plugin containing useful shims and improvements as basis for your application.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2892849235,
+                "language": "C++",
+                "last_commit": "2023-05-11T00:00:00.000Z",
+                "owner": "dereuromark",
+                "repo": "cakephp-shim",
+                "stars": 49236
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "OPCache Preloader",
+              "description": "An OPCache Preloader for CakePHP applications.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1102847918,
+                "language": "Shell",
+                "last_commit": "2021-06-27T00:00:00.000Z",
+                "owner": "cnizzardini",
+                "repo": "cakephp-preloader",
+                "stars": 47919
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "AttributeRegistry plugin",
+              "description": "A powerful CakePHP plugin for discovering, caching, and querying PHP 8 attributes across your application and plugins.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1758141857,
+                "language": "Ruby",
+                "last_commit": "2021-08-27T00:00:00.000Z",
+                "owner": "josbeir",
+                "repo": "cakephp-attribute-registry",
+                "stars": 41858
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "DatabaseBackup plugin",
+              "description": "A plugin to to export, import and manage database backups. Currently, the plugin supports MySql, Postgres and Sqlite databases.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 899741097,
+                "language": "Ruby",
+                "last_commit": "2023-09-26T00:00:00.000Z",
+                "owner": "mirko-pagliai",
+                "repo": "cakephp-database-backup",
+                "stars": 41098
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Calendar plugin",
+              "description": "For generating basic calendars. Includes IcalView for ICS calendar file generation.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 937789408,
+                "language": "Shell",
+                "last_commit": "2022-11-19T00:00:00.000Z",
+                "owner": "dereuromark",
+                "repo": "cakephp-calendar",
+                "stars": 39409
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Feedback plugin",
+              "description": "Allow visitors to send quick and easy feedback incl. a screenshot via sidebar form.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1711238341,
+                "language": "JavaScript",
+                "last_commit": "2023-01-25T00:00:00.000Z",
+                "owner": "dereuromark",
+                "repo": "cakephp-feedback",
+                "stars": 38342
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Ajax plugin",
+              "description": "A plugin to ease handling AJAX requests.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 453887580,
+                "language": "TypeScript",
+                "last_commit": "2022-05-31T00:00:00.000Z",
+                "owner": "dereuromark",
+                "repo": "cakephp-ajax",
+                "stars": 37581
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Inertia plugin",
+              "description": "Plugin for connecting a Vue 3 app and use an API interface using a middleware.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2858770096,
+                "language": "Java",
+                "last_commit": "2023-09-27T00:00:00.000Z",
+                "owner": "CakeDC",
+                "repo": "cakephp-inertia",
+                "stars": 20097
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Flash plugin",
+              "description": "More powerful flash messages for your application.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1811419756,
+                "language": "Java",
+                "last_commit": "2021-12-06T00:00:00.000Z",
+                "owner": "dereuromark",
+                "repo": "cakephp-flash",
+                "stars": 19757
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "CakeDto plugin",
+              "description": "Quickly generate useful data transfer objects for your app (mutable/immutable), replacing messy arrays and leveraging your IDE through typehinting and autocomplete.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3676567443,
+                "language": "Python",
+                "last_commit": "2022-10-15T00:00:00.000Z",
+                "owner": "dereuromark",
+                "repo": "cakephp-dto",
+                "stars": 17444
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Tools plugin",
+              "description": "Containing lots of useful helpers, behaviors, components, commands, helpers, libs and more.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 520965265,
+                "language": "C++",
+                "last_commit": "2023-04-11T00:00:00.000Z",
+                "owner": "dereuromark",
+                "repo": "cakephp-tools",
+                "stars": 15266
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Setup:Maintenance",
+              "description": "Maintenance shell to go into maintenance mode for all requests with optional IP whitelisting.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2111864571,
+                "language": "JavaScript",
+                "last_commit": "2022-06-09T00:00:00.000Z",
+                "owner": "dereuromark",
+                "repo": "cakephp-setup",
+                "stars": 14572
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "CakeHtmx plugin",
+              "description": "CakePHP integration for htmx.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1785300894,
+                "language": "Rust",
+                "last_commit": "2021-07-21T00:00:00.000Z",
+                "owner": "zunnu",
+                "repo": "cake-htmx",
+                "stars": 895
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "CakeDC/Enum plugin",
+              "description": "A plugin to add enumeration list support to your app.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1513550020,
+                "language": "TypeScript",
+                "last_commit": "2023-12-12T00:00:00.000Z",
+                "owner": "CakeDC",
+                "repo": "enum",
+                "stars": 21
+              }
+            }
+          ],
+          "description": "Misc plugins and libraries.",
+          "node_type": "group",
+          "title": "Miscellaneous"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Crustum/Broadcasting plugin",
+              "description": "The Broadcasting plugin provides real-time event broadcasting for CakePHP applications using WebSocket connections compatible with the Pusher protocol or Redis pub/sub.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2322589350,
+                "language": "TypeScript",
+                "last_commit": "2023-01-16T00:00:00.000Z",
+                "owner": "crustum",
+                "repo": "broadcasting",
+                "stars": 39351
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Crustum/Notification plugin",
+              "description": "The Notification plugin provides support for sending notifications across a variety of delivery channels.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3694386932,
+                "language": "Go",
+                "last_commit": "2021-06-13T00:00:00.000Z",
+                "owner": "crustum",
+                "repo": "notification",
+                "stars": 36933
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Mercure plugin",
+              "description": "Push real-time updates to clients using the Mercure protocol.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1196565470,
+                "language": "TypeScript",
+                "last_commit": "2022-09-18T00:00:00.000Z",
+                "owner": "josbeir",
+                "repo": "cakephp-mercure",
+                "stars": 15471
+              }
+            }
+          ],
+          "description": "Working with notification software.",
+          "node_type": "group",
+          "title": "Notifications and Real-time Communication"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "CakeUid",
+              "description": "A collection of UID field types for your Tables (UUIDV4, UUIDV6, UUIDV7, ULID).",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 254797049,
+                "language": null,
+                "last_commit": "2023-11-13T00:00:00.000Z",
+                "owner": "josbeir",
+                "repo": "cakephp-uid",
+                "stars": 47050
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "ADmad/Sequence plugin",
+              "description": "Behavior for maintaining ordered list of records.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1988434745,
+                "language": "C++",
+                "last_commit": "2021-12-17T00:00:00.000Z",
+                "owner": "ADmad",
+                "repo": "cakephp-sequence",
+                "stars": 34746
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Muffin/Orderly plugin",
+              "description": "Allows setting default order for your tables.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 32130257,
+                "language": "Ruby",
+                "last_commit": "2023-04-19T00:00:00.000Z",
+                "owner": "usemuffin",
+                "repo": "orderly",
+                "stars": 30258
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Duplicatable plugin",
+              "description": "Behavior for duplicating entities including related data.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3409630103,
+                "language": "Python",
+                "last_commit": "2023-09-20T00:00:00.000Z",
+                "owner": "riesenia",
+                "repo": "cakephp-duplicatable",
+                "stars": 30104
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "CakeDecimal plugin",
+              "description": "A value object approach on handling decimals.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2964772525,
+                "language": "C++",
+                "last_commit": "2022-07-25T00:00:00.000Z",
+                "owner": "dereuromark",
+                "repo": "cakephp-decimal",
+                "stars": 22526
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Muffin/Trash plugin",
+              "description": "Soft-delete behavior for CakePHP.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 481970072,
+                "language": "Go",
+                "last_commit": "2023-10-21T00:00:00.000Z",
+                "owner": "usemuffin",
+                "repo": "trash",
+                "stars": 20073
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Lampager/Cake plugin",
+              "description": "Rapid pagination without using OFFSET.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2591965025,
+                "language": "C++",
+                "last_commit": "2023-12-07T00:00:00.000Z",
+                "owner": "lampager",
+                "repo": "lampager-cakephp",
+                "stars": 15026
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Icings/Partitionable plugin",
+              "description": "Partitionable associations allowing for basic limiting per group.",
+              "children": [],
+              "repo_info": {
+                "archived": true,
+                "id": 1689957641,
+                "language": "JavaScript",
+                "last_commit": "2022-03-31T00:00:00.000Z",
+                "owner": "icings",
+                "repo": "partitionable",
+                "stars": 7642
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Itosho/EasyQuery plugin",
+              "description": "Behavior for easily generating some complicated queries like (bulk) insert/upsert etc.",
+              "children": [],
+              "repo_info": {
+                "archived": true,
+                "id": 4177050195,
+                "language": "C++",
+                "last_commit": "2023-06-20T00:00:00.000Z",
+                "owner": "itosho",
+                "repo": "easy-query",
+                "stars": 196
+              }
+            }
+          ],
+          "description": "Plugins that implement object-relational mapping or data-mapping techniques.",
+          "node_type": "group",
+          "title": "ORM / Database / Datamapping"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Cake/Enqueue plugin",
+              "description": "Database-driven message queue integration using the Enqueue library for CakePHP Queue plugin.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2824947432,
+                "language": "Go",
+                "last_commit": "2022-10-26T00:00:00.000Z",
+                "owner": "CakeDC",
+                "repo": "cakephp-enqueue",
+                "stars": 47433
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Crustum/BatchQueue plugin",
+              "description": "Unified system for managing batch job processing with parallel execution and sequential chains.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1222968895,
+                "language": "C++",
+                "last_commit": "2021-07-20T00:00:00.000Z",
+                "owner": "crustum",
+                "repo": "batch-queue",
+                "stars": 18896
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Queue plugin",
+              "description": "CakePHP core queue system for the php-queue queue library.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1103818691,
+                "language": "JavaScript",
+                "last_commit": "2022-02-09T00:00:00.000Z",
+                "owner": "cakephp",
+                "repo": "queue",
+                "stars": 18692
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Crustum/Temporal plugin",
+              "description": "Workflow orchestration plugin for durable execution, reliable background jobs, and long-running processes with automatic retries.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3915565990,
+                "language": "TypeScript",
+                "last_commit": "2021-04-16T00:00:00.000Z",
+                "owner": "crustum",
+                "repo": "cakephp-temporal",
+                "stars": 15991
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Queue plugin",
+              "description": "A minimal and dependency-free queue solution.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2800555081,
+                "language": "JavaScript",
+                "last_commit": "2023-10-12T00:00:00.000Z",
+                "owner": "dereuromark",
+                "repo": "cakephp-queue",
+                "stars": 5082
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "QueueScheduler plugin",
+              "description": "A dependency-free crontab-like scheduler as DB driven solution and addon to Queue (dereuromark) plugin.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1920304825,
+                "language": "C++",
+                "last_commit": "2021-09-28T00:00:00.000Z",
+                "owner": "dereuromark",
+                "repo": "cakephp-queue-scheduler",
+                "stars": 4826
+              }
+            }
+          ],
+          "description": "Working with event and task queues.",
+          "node_type": "group",
+          "title": "Queue"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "CakeDC/Api plugin",
+              "description": "All-in-one solution to provide a complete API. It includes versioning, renderers, CRUD, authentication, extensions (paginate, filter, HATEOAS), and much more.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3602248882,
+                "language": "Go",
+                "last_commit": "2021-08-02T00:00:00.000Z",
+                "owner": "CakeDC",
+                "repo": "cakephp-api",
+                "stars": 48883
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "SwaggerBake plugin",
+              "description": "This plugin automatically builds OpenAPI from your existing models and routes for display in Swagger and Redoc.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3768643382,
+                "language": "Go",
+                "last_commit": "2022-12-15T00:00:00.000Z",
+                "owner": "cnizzardini",
+                "repo": "cakephp-swagger-bake",
+                "stars": 43383
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "CRUD plugin",
+              "description": "CakePHP Application development on steroids - rapid prototyping / scaffolding & production-ready code.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3056926968,
+                "language": "Shell",
+                "last_commit": "2021-05-08T00:00:00.000Z",
+                "owner": "FriendsOfCake",
+                "repo": "crud",
+                "stars": 26969
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "FractalTransformerView plugin",
+              "description": "A plugin which allows using Fractal transformers for your API output.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1262363520,
+                "language": "TypeScript",
+                "last_commit": "2022-07-30T00:00:00.000Z",
+                "owner": "andrej-griniuk",
+                "repo": "cakephp-fractal-transformer-view",
+                "stars": 13521
+              }
+            }
+          ],
+          "description": "Plugins and web tools for developing REST-ful APIs.",
+          "node_type": "group",
+          "title": "REST and API"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "CakeDC/SearchFilter plugin",
+              "description": "Powerful and flexible solution for implementing advanced search functionality. Provides a robust set of tools for creating dynamic, user-friendly search interfaces with minimal effort.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1616395050,
+                "language": "TypeScript",
+                "last_commit": "2023-11-12T00:00:00.000Z",
+                "owner": "CakeDC",
+                "repo": "search-filter",
+                "stars": 45051
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Tags plugin",
+              "description": "For tagging and finding tagged records.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 373229143,
+                "language": "Python",
+                "last_commit": "2023-08-11T00:00:00.000Z",
+                "owner": "dereuromark",
+                "repo": "cakephp-tags",
+                "stars": 29144
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "PlumSearch plugin",
+              "description": "Implements custom, flexible and extendable search strategies. Implements PRG pattern.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 762027709,
+                "language": null,
+                "last_commit": "2022-01-22T00:00:00.000Z",
+                "owner": "skie",
+                "repo": "plum_search",
+                "stars": 27710
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Cake/ElasticSearch plugin",
+              "description": "Alternative ORM using Elasticsearch as its backend.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3967607334,
+                "language": "Rust",
+                "last_commit": "2023-02-01T00:00:00.000Z",
+                "owner": "cakephp",
+                "repo": "elastic-search",
+                "stars": 7335
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Search plugin",
+              "description": "Provides easy searching/filtering for paginated views using PRG pattern.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 265107260,
+                "language": "TypeScript",
+                "last_commit": "2023-04-16T00:00:00.000Z",
+                "owner": "FriendsOfCake",
+                "repo": "search",
+                "stars": 7261
+              }
+            }
+          ],
+          "description": "Plugins and software for indexing and performing search queries on data.",
+          "node_type": "group",
+          "title": "Search"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Muffin/Obfuscate plugin",
+              "description": "Primary key obfuscation/shortening using UUIDs, HashIds, Optimus, Tiny and/or custom obfuscation strategies.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1977992888,
+                "language": "Shell",
+                "last_commit": "2021-07-27T00:00:00.000Z",
+                "owner": "usemuffin",
+                "repo": "obfuscate",
+                "stars": 42889
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Captcha plugin",
+              "description": "Simple, unobtrusive and extendable captcha solution providing by default an image based math captcha.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3751686252,
+                "language": "Go",
+                "last_commit": "2023-04-24T00:00:00.000Z",
+                "owner": "dereuromark",
+                "repo": "cakephp-captcha",
+                "stars": 36253
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Muffin/Throttle plugin",
+              "description": "A plugin for rate limiting (API) requests.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1745132406,
+                "language": "Java",
+                "last_commit": "2022-11-21T00:00:00.000Z",
+                "owner": "usemuffin",
+                "repo": "throttle",
+                "stars": 32407
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Recaptcha plugin",
+              "description": "Simple, lightweight Google Recaptcha v2.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2096528275,
+                "language": "C++",
+                "last_commit": "2023-04-01T00:00:00.000Z",
+                "owner": "ctlabvn",
+                "repo": "Recaptcha",
+                "stars": 28276
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Expose plugin",
+              "description": "Expose entities through additional UUIDs instead of their AIID primary keys to obfuscate those IDs and data associated with these numerically ordered values.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2910455146,
+                "language": "Java",
+                "last_commit": "2023-08-08T00:00:00.000Z",
+                "owner": "dereuromark",
+                "repo": "cakephp-expose",
+                "stars": 5147
+              }
+            }
+          ],
+          "description": "Plugins and information around security, preventing vulnerabilities and protection against XSS and alike.",
+          "node_type": "group",
+          "title": "Security"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Muffin/Slug plugin",
+              "description": "A plugin for generating slugs and finding records by slug. Uses a pluggable architecture which allows using your own slug generator class.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1358074621,
+                "language": "JavaScript",
+                "last_commit": "2022-04-20T00:00:00.000Z",
+                "owner": "UseMuffin",
+                "repo": "Slug",
+                "stars": 24622
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Tools:Slugged",
+              "description": "Containing Slugged behavior to auto-generate URL-compatible slugs from titles.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 520965265,
+                "language": "C++",
+                "last_commit": "2023-04-11T00:00:00.000Z",
+                "owner": "dereuromark",
+                "repo": "cakephp-tools",
+                "stars": 15266
+              }
+            }
+          ],
+          "description": "Search Engine Optimization.",
+          "node_type": "group",
+          "title": "SEO"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "BS flavored App template",
+              "description": "An empty CakePHP project with BS5 and FontAwesome out of the box.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 189749205,
+                "language": "C++",
+                "last_commit": "2023-06-10T00:00:00.000Z",
+                "owner": "dereuromark",
+                "repo": "cakephp-app",
+                "stars": 49206
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "App template",
+              "description": "An empty CakePHP project for use with composer.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3303397359,
+                "language": null,
+                "last_commit": "2023-01-07T00:00:00.000Z",
+                "owner": "cakephp",
+                "repo": "app",
+                "stars": 47360
+              }
+            }
+          ],
+          "description": "Plugins and repositories around app skeletons.",
+          "node_type": "group",
+          "title": "Skeleton"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Favorites plugin",
+              "description": "Allows users to star/like/favor records.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1980832547,
+                "language": "Ruby",
+                "last_commit": "2022-07-03T00:00:00.000Z",
+                "owner": "dereuromark",
+                "repo": "cakephp-favorites",
+                "stars": 32548
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Ratings plugin",
+              "description": "Allows users to rate records and displays ratings.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 450881876,
+                "language": "Java",
+                "last_commit": "2021-08-08T00:00:00.000Z",
+                "owner": "dereuromark",
+                "repo": "cakephp-ratings",
+                "stars": 31877
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Comments plugin",
+              "description": "Allows users to comment records, supporting different formats.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 227280096,
+                "language": "Java",
+                "last_commit": "2023-09-27T00:00:00.000Z",
+                "owner": "dereuromark",
+                "repo": "cakephp-comments",
+                "stars": 30097
+              }
+            }
+          ],
+          "description": "Plugins around social features.",
+          "node_type": "group",
+          "title": "Social"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Feed plugin",
+              "description": "Containing an RssView class to easily generate (complex) RSS feeds.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3126248342,
+                "language": "Go",
+                "last_commit": "2023-01-24T00:00:00.000Z",
+                "owner": "dereuromark",
+                "repo": "cakephp-feed",
+                "stars": 48343
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Templating",
+              "description": "HTML snippets as value objects, (Font) icons, and templating topics.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 53295115,
+                "language": "C++",
+                "last_commit": "2023-09-08T00:00:00.000Z",
+                "owner": "dereuromark",
+                "repo": "cakephp-templating",
+                "stars": 45116
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "CsvView plugin",
+              "description": "A view class to easily generate CSV.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 399493384,
+                "language": "Rust",
+                "last_commit": "2022-12-13T00:00:00.000Z",
+                "owner": "FriendsOfCake",
+                "repo": "cakephp-csvview",
+                "stars": 43385
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "TemplaterDefaults plugin",
+              "description": "Allows the use of default HTML attributes within CakePHP's string template system.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2423743216,
+                "language": "Java",
+                "last_commit": "2023-05-30T00:00:00.000Z",
+                "owner": "josbeir",
+                "repo": "cakephp-templater-defaults",
+                "stars": 43217
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Bake plugin",
+              "description": "Provides code generation functionality.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1009889425,
+                "language": "C++",
+                "last_commit": "2022-11-02T00:00:00.000Z",
+                "owner": "cakephp",
+                "repo": "bake",
+                "stars": 39426
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "LatteView plugin",
+              "description": "A plugin providing Latte template engine integration.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3116329873,
+                "language": "Python",
+                "last_commit": "2021-08-11T00:00:00.000Z",
+                "owner": "josbeir",
+                "repo": "cakephp-latte-view",
+                "stars": 29874
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "TwigView plugin",
+              "description": "A plugin to use the Twig Templating Language for views.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2010826157,
+                "language": "Ruby",
+                "last_commit": "2023-07-28T00:00:00.000Z",
+                "owner": "cakephp",
+                "repo": "twig-view",
+                "stars": 26158
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "BootstrapUI plugin",
+              "description": "Bootstrap 4/5 integration.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 781272543,
+                "language": "Python",
+                "last_commit": "2022-07-07T00:00:00.000Z",
+                "owner": "friendsofcake",
+                "repo": "bootstrap-ui",
+                "stars": 22544
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Tools:Tree",
+              "description": "Tree helper to work with Core Tree behavior and handle tree structure output.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 520965265,
+                "language": "C++",
+                "last_commit": "2023-04-11T00:00:00.000Z",
+                "owner": "dereuromark",
+                "repo": "cakephp-tools",
+                "stars": 15266
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Meta plugin",
+              "description": "Makes handling meta tags and SEO-relevant HTML markup DRY and easy.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 4236959107,
+                "language": "Ruby",
+                "last_commit": "2023-09-16T00:00:00.000Z",
+                "owner": "dereuromark",
+                "repo": "cakephp-meta",
+                "stars": 9108
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "XlsView plugin",
+              "description": "A view class to easily generate XLS using PHPSpreadsheet.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3824353429,
+                "language": null,
+                "last_commit": "2022-10-29T00:00:00.000Z",
+                "owner": "impronta48",
+                "repo": "cakephp-xlsview",
+                "stars": 3430
+              }
+            }
+          ],
+          "description": "Template engines and view generation.",
+          "node_type": "group",
+          "title": "Templating"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "FriendsOfCake/Fixturize plugin",
+              "description": "More efficient inserting fixtures when running test suites by decreasing amount of inserts (mysql only).",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 4201627144,
+                "language": "Rust",
+                "last_commit": "2023-08-10T00:00:00.000Z",
+                "owner": "FriendsOfCake",
+                "repo": "fixturize",
+                "stars": 27145
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "CakephpFixtureFactories plugin",
+              "description": "Create your fixtures dynamically on a test basis, accelerate the writing and maintenance of your tests.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2311674440,
+                "language": "TypeScript",
+                "last_commit": "2022-10-18T00:00:00.000Z",
+                "owner": "dereuromark",
+                "repo": "cakephp-fixture-factories",
+                "stars": 24441
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "CakePHP CodeSniffer rules",
+              "description": "The official CakePHP CS rules.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1187113821,
+                "language": "JavaScript",
+                "last_commit": "2021-10-02T00:00:00.000Z",
+                "owner": "cakephp",
+                "repo": "cakephp-codesniffer",
+                "stars": 13822
+              }
+            }
+          ],
+          "description": "Plugins/Tools for testing codebases and generating test data.",
+          "node_type": "group",
+          "title": "Testing"
         }
       ],
-      "title": "AI Tools"
+      "title": "Plugins"
     },
     {
-      "description": "Managing, compressing and minifying website assets.",
+      "description": "Software for creating a development environment.",
       "items": [
         {
-          "node_type": "item",
-          "title": "AssetCompress plugin",
-          "description": "A complete asset manager for CakePHP.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1230390267,
-            "language": "Ruby",
-            "last_commit": "2023-04-09T00:00:00.000Z",
-            "owner": "markstory",
-            "repo": "asset_compress",
-            "stars": 40268
-          }
+          "children": [
+            {
+              "node_type": "item",
+              "title": "CakePHP Docker Setup",
+              "description": "Tool for spinning up multiple CakePHP vanilla dev environments using Docker.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3294845772,
+                "language": "Go",
+                "last_commit": "2021-11-20T00:00:00.000Z",
+                "owner": "cpierce",
+                "repo": "cakephp-docker-setup",
+                "stars": 45773
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "NetBeans",
+              "description": "This package provides support for CakePHP in NetBeans 8.1+.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2648887630,
+                "language": "TypeScript",
+                "last_commit": "2022-04-11T00:00:00.000Z",
+                "owner": "junichi11",
+                "repo": "cakephp3-netbeans",
+                "stars": 37631
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Docker",
+              "description": "CakePHP in a docker container environment.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1800582071,
+                "language": "JavaScript",
+                "last_commit": "2023-10-22T00:00:00.000Z",
+                "owner": "stefanvangastel",
+                "repo": "docker-cakephp",
+                "stars": 32072
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "CakePHP Docker",
+              "description": "A cakephp/app template for docker.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 499667020,
+                "language": "TypeScript",
+                "last_commit": "2023-12-12T00:00:00.000Z",
+                "owner": "cnizzardini",
+                "repo": "cakephp-docker",
+                "stars": 17021
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "CakePHP Vagrant Setup",
+              "description": "Tool for spinning up multiple CakePHP vanilla dev environments using Vagrant.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1581264913,
+                "language": "Python",
+                "last_commit": "2021-07-02T00:00:00.000Z",
+                "owner": "cpierce",
+                "repo": "cakephp-vagrant-setup",
+                "stars": 14914
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Oven",
+              "description": "Setup your favorite framework with 1 file and 1 click.",
+              "children": [],
+              "repo_info": {
+                "archived": true,
+                "id": 9114703,
+                "language": "Python",
+                "last_commit": "2022-01-28T00:00:00.000Z",
+                "owner": "CakeDC",
+                "repo": "oven",
+                "stars": 14704
+              }
+            }
+          ],
+          "description": "Software and tools for creating a sandboxed development environment.\nIDE specific compatibility information and tips can be found here.",
+          "node_type": "group",
+          "title": "Development Environment"
         },
         {
-          "node_type": "item",
-          "title": "AssetMix plugin",
-          "description": "Provides integration with Laravel Mix asset compilation.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 285438689,
-            "language": null,
-            "last_commit": "2022-02-11T00:00:00.000Z",
-            "owner": "ishanvyas22",
-            "repo": "asset-mix",
-            "stars": 38690
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "CakeVite plugin",
-          "description": "A fully-featured Vite plugin (spiritual successor of brandcom/cakephp-vite).",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1590750455,
-            "language": "C++",
-            "last_commit": "2022-10-03T00:00:00.000Z",
-            "owner": "josbeir",
-            "repo": "cakephp-vite",
-            "stars": 456
-          }
+          "children": [
+            {
+              "node_type": "item",
+              "title": "BlogMVC",
+              "description": "A simple Blog example with CakePHP based on BlogMVC Project.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2512247393,
+                "language": "Python",
+                "last_commit": "2022-12-04T00:00:00.000Z",
+                "owner": "Kareylo",
+                "repo": "BlogMVC-CakePHP3",
+                "stars": 47394
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Xeta",
+              "description": "A resource to help people starting with CakePHP.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1643794802,
+                "language": "Go",
+                "last_commit": "2021-10-21T00:00:00.000Z",
+                "owner": "XetaIO",
+                "repo": "Xeta",
+                "stars": 44803
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Query Examples",
+              "description": "Advanced query building examples.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 4018842138,
+                "language": "Shell",
+                "last_commit": "2023-08-16T00:00:00.000Z",
+                "owner": "lorenzo",
+                "repo": "cakephp3-examples",
+                "stars": 42139
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Vue.js Demo App",
+              "description": "A CakePHP + VueJS single page application skeleton.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1409338033,
+                "language": "Python",
+                "last_commit": "2023-11-29T00:00:00.000Z",
+                "owner": "ishanvyas22",
+                "repo": "cakephpvue-spa",
+                "stars": 38034
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Fluentd + Grafana Loki demo application",
+              "description": "A demo application to send CakePHP docker container logs to Grafana Loki via Fluentd.",
+              "children": [],
+              "repo_info": {
+                "archived": true,
+                "id": 770687180,
+                "language": "TypeScript",
+                "last_commit": "2023-07-05T00:00:00.000Z",
+                "owner": "ishanvyas22",
+                "repo": "cakephp-loki-demo",
+                "stars": 37181
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Bookmarkr",
+              "description": "A bookmarking application built with the CRUD plugin.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2225868261,
+                "language": "JavaScript",
+                "last_commit": "2023-04-15T00:00:00.000Z",
+                "owner": "lorenzo",
+                "repo": "cakephp3-bookmarkr",
+                "stars": 18262
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "RealWorld",
+              "description": "Example CakePHP codebase containing real world examples (CRUD, auth, advanced patterns and more) that adheres to the RealWorld spec and API.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 784366194,
+                "language": "Rust",
+                "last_commit": "2023-06-21T00:00:00.000Z",
+                "owner": "gothinkster",
+                "repo": "cakephp-realworld-example-app",
+                "stars": 16195
+              }
+            }
+          ],
+          "description": "Web-based (demo) applications and tools.",
+          "node_type": "group",
+          "title": "Demo"
         }
       ],
-      "title": "Asset Management"
-    },
-    {
-      "description": "Tracking changes and events in your app.",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "DatabaseLog plugin",
-          "description": "Simple and stand-alone logging to database instead of files.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1387624931,
-            "language": "JavaScript",
-            "last_commit": "2021-06-14T00:00:00.000Z",
-            "owner": "dereuromark",
-            "repo": "CakePHP-DatabaseLog",
-            "stars": 24932
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Version plugin",
-          "description": "A plugin that facilitates versioned database entities.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1473072696,
-            "language": "Java",
-            "last_commit": "2022-02-04T00:00:00.000Z",
-            "owner": "josegonzalez",
-            "repo": "cakephp-version",
-            "stars": 22697
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Bouncer plugin",
-          "description": "The pendant to AuditStash, allow moderation and approval of add/edit/delete actions before the actual change is applied.",
-          "children": [],
-          "repo_info": {
-            "archived": true,
-            "id": 2487516772,
-            "language": "Go",
-            "last_commit": "2021-11-20T00:00:00.000Z",
-            "owner": "dereuromark",
-            "repo": "cakephp-bouncer",
-            "stars": 16773
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Muffin/Footprint plugin",
-          "description": "Plugin to allow passing currently logged in user to model layer.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2101713669,
-            "language": null,
-            "last_commit": "2022-03-03T00:00:00.000Z",
-            "owner": "UseMuffin",
-            "repo": "Footprint",
-            "stars": 13670
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "AuditStash plugin",
-          "description": "Flexible and rock solid audit log tracking.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3523450541,
-            "language": "JavaScript",
-            "last_commit": "2022-07-09T00:00:00.000Z",
-            "owner": "dereuromark",
-            "repo": "cakephp-audit-stash",
-            "stars": 542
-          }
-        }
-      ],
-      "title": "Auditing / Logging"
-    },
-    {
-      "description": "Plugins and libraries for implementing authentication and authorization.",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "TwoFactorAuth plugin",
-          "description": "Allows two factor authentication using Google Authenticator or similar app to generate one-time codes. Based on RobThree/TwoFactorAuth library.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 568098230,
-            "language": "TypeScript",
-            "last_commit": "2023-05-16T00:00:00.000Z",
-            "owner": "andrej-griniuk",
-            "repo": "cakephp-two-factor-auth",
-            "stars": 48231
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "ADmad/SocialAuth plugin",
-          "description": "A plugin which allows you to authenticate using social providers like Facebook/Google/Twitter etc. using SocialConnect/auth social sign on library.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2854091588,
-            "language": "Shell",
-            "last_commit": "2022-05-23T00:00:00.000Z",
-            "owner": "ADmad",
-            "repo": "cakephp-social-auth",
-            "stars": 41589
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Authentication plugin",
-          "description": "Official CakePHP authentication middleware plugin.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2537536240,
-            "language": "TypeScript",
-            "last_commit": "2023-05-06T00:00:00.000Z",
-            "owner": "cakephp",
-            "repo": "authentication",
-            "stars": 36241
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Tools:Passwordable",
-          "description": "Containing Passwordable behavior for a DRY approach on password hashing.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 520965265,
-            "language": "C++",
-            "last_commit": "2023-04-11T00:00:00.000Z",
-            "owner": "dereuromark",
-            "repo": "cakephp-tools",
-            "stars": 15266
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "CakeDC/Users plugin",
-          "description": "Complete user management (admin panel, remember me, etc), Social login (FB, Twitter, LinkedIn, Google, Instagram), RBAC, API and more.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2406561775,
-            "language": "C++",
-            "last_commit": "2021-11-17T00:00:00.000Z",
-            "owner": "CakeDC",
-            "repo": "users",
-            "stars": 11776
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Authorization plugin",
-          "description": "Official CakePHP authorization stack.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2437557341,
-            "language": "JavaScript",
-            "last_commit": "2023-01-25T00:00:00.000Z",
-            "owner": "cakephp",
-            "repo": "authorization",
-            "stars": 7342
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "TinyAuth plugin",
-          "description": "Authentication and role-based (single/multi) authorization as very light-weight approach.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3017406662,
-            "language": "Go",
-            "last_commit": "2022-03-10T00:00:00.000Z",
-            "owner": "dereuromark",
-            "repo": "cakephp-tinyauth",
-            "stars": 6663
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "ApiTokenAuthenticator plugin",
-          "description": "A simple token authentication plugin for CakePHP REST APIs.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2789550747,
-            "language": "Ruby",
-            "last_commit": "2021-12-15T00:00:00.000Z",
-            "owner": "rrd108",
-            "repo": "api-token-authenticator",
-            "stars": 748
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "CakeVerification plugin",
-          "description": "Two-factor verification supporting email OTP, email magic link, SMS OTP, and TOTP (Google Authenticator).",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3094800029,
-            "language": null,
-            "last_commit": "2023-12-03T00:00:00.000Z",
-            "owner": "salines",
-            "repo": "cakephp-verification",
-            "stars": 30
-          }
-        }
-      ],
-      "title": "Authentication and Authorization"
-    },
-    {
-      "description": "Storing data for faster retrieval.",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "Cache plugin",
-          "description": "For caching views (HTML, CSV, JSON, XML, ...) as static cache files.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 417593980,
-            "language": "TypeScript",
-            "last_commit": "2021-04-26T00:00:00.000Z",
-            "owner": "dereuromark",
-            "repo": "cakephp-cache",
-            "stars": 43981
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "CakeDC/CachedRouting plugin",
-          "description": "Provides a cached version of the RoutingMiddleware to improve the load time of routes.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2799839663,
-            "language": "Python",
-            "last_commit": "2022-03-09T00:00:00.000Z",
-            "owner": "CakeDC",
-            "repo": "cakephp-cached-routing",
-            "stars": 39664
-          }
-        }
-      ],
-      "title": "Caching"
-    },
-    {
-      "description": "Analyzing, parsing and manipulation codebases.",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "TestHelper plugin",
-          "description": "Provides testing enhancements and TDD support as browser backend.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1072148065,
-            "language": "C++",
-            "last_commit": "2023-10-28T00:00:00.000Z",
-            "owner": "dereuromark",
-            "repo": "cakephp-test-helper",
-            "stars": 48066
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "cakedc/cakephp-phpstan",
-          "description": "A PHPStan extension to resolve CakePHP magic around getter return types for the static analyzer.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 155732014,
-            "language": "Rust",
-            "last_commit": "2023-12-18T00:00:00.000Z",
-            "owner": "CakeDC",
-            "repo": "cakephp-phpstan",
-            "stars": 32015
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "lordsimal/cakephp-psalm",
-          "description": "A Psalm extension to resolve CakePHP magic around getter return types for the static analyzer.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2545980209,
-            "language": null,
-            "last_commit": "2023-06-06T00:00:00.000Z",
-            "owner": "LordSimal",
-            "repo": "cakephp-psalm",
-            "stars": 30210
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "IdeHelper plugin",
-          "description": "Helps to make IDE support better by adding annotations to your existing code similar to what baking does to new code.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3355523957,
-            "language": "Ruby",
-            "last_commit": "2021-05-19T00:00:00.000Z",
-            "owner": "dereuromark",
-            "repo": "cakephp-ide-helper",
-            "stars": 23958
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "IdeHelperExtra plugin",
-          "description": "Useful IdeHelper addons for other plugins or custom use cases.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 568761422,
-            "language": "Go",
-            "last_commit": "2022-11-05T00:00:00.000Z",
-            "owner": "dereuromark",
-            "repo": "cakephp-ide-helper-extra",
-            "stars": 11423
-          }
-        }
-      ],
-      "title": "Code Analysis"
-    },
-    {
-      "description": "Command-line tools and improvements.",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "Scheduling plugin",
-          "description": "The plugin provides task scheduling capabilities with sub-minute precision, allowing you to schedule tasks as frequently as every second, with single crontab entry point. It allows tasks monitoring.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 843280063,
-            "language": "Python",
-            "last_commit": "2023-10-30T00:00:00.000Z",
-            "owner": "skie",
-            "repo": "cakephp-scheduling",
-            "stars": 30064
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "SignalHandler plugin",
-          "description": "Cross-platform signal handling for CakePHP console commands with zero external dependencies. Supports Linux (pcntl), Windows (native API).",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1000555514,
-            "language": "Rust",
-            "last_commit": "2022-08-05T00:00:00.000Z",
-            "owner": "skie",
-            "repo": "SignalHandler",
-            "stars": 5515
-          }
-        }
-      ],
-      "title": "Console"
-    },
-    {
-      "description": "Debugging and local development.",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "AssociationsDebugger plugin",
-          "description": "A plugin that draws your model associations as diagram.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2960290312,
-            "language": "Go",
-            "last_commit": "2023-02-23T00:00:00.000Z",
-            "owner": "zunnu",
-            "repo": "associations-debugger",
-            "stars": 40313
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Execution order",
-          "description": "A demo app to display the execution order of files, methods and callbacks.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 4023427963,
-            "language": "Python",
-            "last_commit": "2021-05-13T00:00:00.000Z",
-            "owner": "dereuromark",
-            "repo": "executionorder",
-            "stars": 27964
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Setup plugin",
-          "description": "A lightweight setup plugin containing healthcheck(s), debugging and maintenance tools.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2111864571,
-            "language": "JavaScript",
-            "last_commit": "2022-06-09T00:00:00.000Z",
-            "owner": "dereuromark",
-            "repo": "cakephp-setup",
-            "stars": 14572
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "DebugKit plugin",
-          "description": "The de-facto standard for debugging.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2918961776,
-            "language": "Java",
-            "last_commit": "2021-11-16T00:00:00.000Z",
-            "owner": "cakephp",
-            "repo": "debug_kit",
-            "stars": 11777
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Sentry plugin",
-          "description": "A plugin to seamlessly integrate Sentry for errors and exceptions.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1794060433,
-            "language": "Python",
-            "last_commit": "2022-10-25T00:00:00.000Z",
-            "owner": "lordsimal",
-            "repo": "cakephp-sentry",
-            "stars": 10434
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "CakephpWhoops plugin",
-          "description": "PHP errors and exceptions for cool kids with filp/whoops.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1916158722,
-            "language": "Go",
-            "last_commit": "2022-01-09T00:00:00.000Z",
-            "owner": "dereuromark",
-            "repo": "cakephp-whoops",
-            "stars": 8723
-          }
-        }
-      ],
-      "title": "Debugging"
-    },
-    {
-      "description": "Transports and tools for email handling.",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "Queue plugin",
-          "description": "A dependency-free queue-based mail solution using Mailer/Email class, allowing re-queue on (network) failure.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2800555081,
-            "language": "JavaScript",
-            "last_commit": "2023-10-12T00:00:00.000Z",
-            "owner": "dereuromark",
-            "repo": "cakephp-queue",
-            "stars": 5082
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "SendGrid plugin",
-          "description": "Email transport plugin for sending email via SendGrid API.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1548102248,
-            "language": "Shell",
-            "last_commit": "2023-04-28T00:00:00.000Z",
-            "owner": "sprintcube",
-            "repo": "cakephp-sendgrid",
-            "stars": 2249
-          }
-        }
-      ],
-      "title": "Email"
-    },
-    {
-      "description": "Upload, storage, and file handling.",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "FileStorage plugin",
-          "description": "Flexible file storage and upload plugin.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3041249892,
-            "language": "Go",
-            "last_commit": "2021-07-23T00:00:00.000Z",
-            "owner": "dereuromark",
-            "repo": "cakephp-file-storage",
-            "stars": 49893
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Josegonzalez/Upload plugin",
-          "description": "A customisable plugin that uses Flysystem to write to multiple backends (Dropbox, FTP, S3, Local, etc.).",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3873698606,
-            "language": "Java",
-            "last_commit": "2022-05-05T00:00:00.000Z",
-            "owner": "FriendsOfCake",
-            "repo": "cakephp-upload",
-            "stars": 48607
-          }
-        }
-      ],
-      "title": "File Manipulation"
-    },
-    {
-      "description": "I18n (Internationalization) and L10n (Localization).",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "Translate plugin",
-          "description": "Translate your translations in the backend with ease.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1927695724,
-            "language": "Rust",
-            "last_commit": "2022-01-07T00:00:00.000Z",
-            "owner": "dereuromark",
-            "repo": "cakephp-translate",
-            "stars": 45725
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "ADmad/I18n plugin",
-          "description": "A plugin with I18n related tools.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1367478320,
-            "language": "TypeScript",
-            "last_commit": "2023-02-15T00:00:00.000Z",
-            "owner": "ADmad",
-            "repo": "cakephp-i18n",
-            "stars": 28321
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Cake/Localized plugin",
-          "description": "Localized validation and ready-to-use translation PO files.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2546817825,
-            "language": "C++",
-            "last_commit": "2021-09-28T00:00:00.000Z",
-            "owner": "cakephp",
-            "repo": "localized",
-            "stars": 17826
-          }
-        }
-      ],
-      "title": "I18n"
-    },
-    {
-      "description": "Image processing and manipulation libraries.",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "QrCodePlugin",
-          "description": "Easily render SVG/PNG QR Codes for your app.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1307040764,
-            "language": "Rust",
-            "last_commit": "2021-11-28T00:00:00.000Z",
-            "owner": "dereuromark",
-            "repo": "cakephp-qrcode",
-            "stars": 40765
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "ADmad/Glide plugin",
-          "description": "A plugin for using Glide image manipulation library.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 199315301,
-            "language": "JavaScript",
-            "last_commit": "2023-03-06T00:00:00.000Z",
-            "owner": "ADmad",
-            "repo": "cakephp-glide",
-            "stars": 15302
-          }
-        }
-      ],
-      "title": "Imagery"
-    },
-    {
-      "description": "Useful libraries or tools that don't fit in any of the other categories.",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "Composer Installers",
-          "description": "A multi framework Composer library installer.",
-          "children": [],
-          "repo_info": {
-            "archived": true,
-            "id": 1454493429,
-            "language": null,
-            "last_commit": "2022-10-29T00:00:00.000Z",
-            "owner": "composer",
-            "repo": "installers",
-            "stars": 43430
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Graphviz",
-          "description": "A Graphviz library.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3566070072,
-            "language": "Go",
-            "last_commit": "2023-10-21T00:00:00.000Z",
-            "owner": "alexandresalome",
-            "repo": "graphviz",
-            "stars": 20073
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Rocketeer",
-          "description": "PHP task runner and deployment package.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3560712235,
-            "language": "C++",
-            "last_commit": "2023-05-11T00:00:00.000Z",
-            "owner": "rocketeers",
-            "repo": "rocketeer",
-            "stars": 12236
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Chronos",
-          "description": "A simple standalone DateTime API extension (successor of Carbon).",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2589005676,
-            "language": "Java",
-            "last_commit": "2022-02-24T00:00:00.000Z",
-            "owner": "cakephp",
-            "repo": "chronos",
-            "stars": 5677
-          }
-        }
-      ],
-      "title": "Libs"
-    },
-    {
-      "description": "Plugins and resources around migration and upgrading.",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "Upgrade app",
-          "description": "Official upgrade app for 3.x=>4.x and 4.x=>5.x.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3389539712,
-            "language": "Go",
-            "last_commit": "2022-01-19T00:00:00.000Z",
-            "owner": "cakephp",
-            "repo": "upgrade",
-            "stars": 39713
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Migrations plugin",
-          "description": "(DB) Migration plugin.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2152483673,
-            "language": "Python",
-            "last_commit": "2022-02-27T00:00:00.000Z",
-            "owner": "cakephp",
-            "repo": "migrations",
-            "stars": 33674
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Upgrade app (extended)",
-          "description": "An extended upgrade app for 3.x=>4.x and some 5.x snippets.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2448623867,
-            "language": "Ruby",
-            "last_commit": "2021-08-17T00:00:00.000Z",
-            "owner": "dereuromark",
-            "repo": "upgrade",
-            "stars": 23868
-          }
-        }
-      ],
-      "title": "Migration"
-    },
-    {
-      "description": "Misc plugins and libraries.",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "Shim plugin",
-          "description": "A plugin containing useful shims and improvements as basis for your application.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2892849235,
-            "language": "C++",
-            "last_commit": "2023-05-11T00:00:00.000Z",
-            "owner": "dereuromark",
-            "repo": "cakephp-shim",
-            "stars": 49236
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "OPCache Preloader",
-          "description": "An OPCache Preloader for CakePHP applications.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1102847918,
-            "language": "Shell",
-            "last_commit": "2021-06-27T00:00:00.000Z",
-            "owner": "cnizzardini",
-            "repo": "cakephp-preloader",
-            "stars": 47919
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "AttributeRegistry plugin",
-          "description": "A powerful CakePHP plugin for discovering, caching, and querying PHP 8 attributes across your application and plugins.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1758141857,
-            "language": "Ruby",
-            "last_commit": "2021-08-27T00:00:00.000Z",
-            "owner": "josbeir",
-            "repo": "cakephp-attribute-registry",
-            "stars": 41858
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "DatabaseBackup plugin",
-          "description": "A plugin to to export, import and manage database backups. Currently, the plugin supports MySql, Postgres and Sqlite databases.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 899741097,
-            "language": "Ruby",
-            "last_commit": "2023-09-26T00:00:00.000Z",
-            "owner": "mirko-pagliai",
-            "repo": "cakephp-database-backup",
-            "stars": 41098
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Calendar plugin",
-          "description": "For generating basic calendars. Includes IcalView for ICS calendar file generation.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 937789408,
-            "language": "Shell",
-            "last_commit": "2022-11-19T00:00:00.000Z",
-            "owner": "dereuromark",
-            "repo": "cakephp-calendar",
-            "stars": 39409
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Feedback plugin",
-          "description": "Allow visitors to send quick and easy feedback incl. a screenshot via sidebar form.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1711238341,
-            "language": "JavaScript",
-            "last_commit": "2023-01-25T00:00:00.000Z",
-            "owner": "dereuromark",
-            "repo": "cakephp-feedback",
-            "stars": 38342
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Ajax plugin",
-          "description": "A plugin to ease handling AJAX requests.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 453887580,
-            "language": "TypeScript",
-            "last_commit": "2022-05-31T00:00:00.000Z",
-            "owner": "dereuromark",
-            "repo": "cakephp-ajax",
-            "stars": 37581
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Inertia plugin",
-          "description": "Plugin for connecting a Vue 3 app and use an API interface using a middleware.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2858770096,
-            "language": "Java",
-            "last_commit": "2023-09-27T00:00:00.000Z",
-            "owner": "CakeDC",
-            "repo": "cakephp-inertia",
-            "stars": 20097
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Flash plugin",
-          "description": "More powerful flash messages for your application.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1811419756,
-            "language": "Java",
-            "last_commit": "2021-12-06T00:00:00.000Z",
-            "owner": "dereuromark",
-            "repo": "cakephp-flash",
-            "stars": 19757
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "CakeDto plugin",
-          "description": "Quickly generate useful data transfer objects for your app (mutable/immutable), replacing messy arrays and leveraging your IDE through typehinting and autocomplete.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3676567443,
-            "language": "Python",
-            "last_commit": "2022-10-15T00:00:00.000Z",
-            "owner": "dereuromark",
-            "repo": "cakephp-dto",
-            "stars": 17444
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Tools plugin",
-          "description": "Containing lots of useful helpers, behaviors, components, commands, helpers, libs and more.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 520965265,
-            "language": "C++",
-            "last_commit": "2023-04-11T00:00:00.000Z",
-            "owner": "dereuromark",
-            "repo": "cakephp-tools",
-            "stars": 15266
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Setup:Maintenance",
-          "description": "Maintenance shell to go into maintenance mode for all requests with optional IP whitelisting.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2111864571,
-            "language": "JavaScript",
-            "last_commit": "2022-06-09T00:00:00.000Z",
-            "owner": "dereuromark",
-            "repo": "cakephp-setup",
-            "stars": 14572
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "CakeHtmx plugin",
-          "description": "CakePHP integration for htmx.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1785300894,
-            "language": "Rust",
-            "last_commit": "2021-07-21T00:00:00.000Z",
-            "owner": "zunnu",
-            "repo": "cake-htmx",
-            "stars": 895
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "CakeDC/Enum plugin",
-          "description": "A plugin to add enumeration list support to your app.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1513550020,
-            "language": "TypeScript",
-            "last_commit": "2023-12-12T00:00:00.000Z",
-            "owner": "CakeDC",
-            "repo": "enum",
-            "stars": 21
-          }
-        }
-      ],
-      "title": "Miscellaneous"
-    },
-    {
-      "description": "Working with notification software.",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "Crustum/Broadcasting plugin",
-          "description": "The Broadcasting plugin provides real-time event broadcasting for CakePHP applications using WebSocket connections compatible with the Pusher protocol or Redis pub/sub.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2322589350,
-            "language": "TypeScript",
-            "last_commit": "2023-01-16T00:00:00.000Z",
-            "owner": "crustum",
-            "repo": "broadcasting",
-            "stars": 39351
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Crustum/Notification plugin",
-          "description": "The Notification plugin provides support for sending notifications across a variety of delivery channels.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3694386932,
-            "language": "Go",
-            "last_commit": "2021-06-13T00:00:00.000Z",
-            "owner": "crustum",
-            "repo": "notification",
-            "stars": 36933
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Mercure plugin",
-          "description": "Push real-time updates to clients using the Mercure protocol.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1196565470,
-            "language": "TypeScript",
-            "last_commit": "2022-09-18T00:00:00.000Z",
-            "owner": "josbeir",
-            "repo": "cakephp-mercure",
-            "stars": 15471
-          }
-        }
-      ],
-      "title": "Notifications and Real-time Communication"
-    },
-    {
-      "description": "Plugins that implement object-relational mapping or data-mapping techniques.",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "CakeUid",
-          "description": "A collection of UID field types for your Tables (UUIDV4, UUIDV6, UUIDV7, ULID).",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 254797049,
-            "language": null,
-            "last_commit": "2023-11-13T00:00:00.000Z",
-            "owner": "josbeir",
-            "repo": "cakephp-uid",
-            "stars": 47050
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "ADmad/Sequence plugin",
-          "description": "Behavior for maintaining ordered list of records.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1988434745,
-            "language": "C++",
-            "last_commit": "2021-12-17T00:00:00.000Z",
-            "owner": "ADmad",
-            "repo": "cakephp-sequence",
-            "stars": 34746
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Muffin/Orderly plugin",
-          "description": "Allows setting default order for your tables.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 32130257,
-            "language": "Ruby",
-            "last_commit": "2023-04-19T00:00:00.000Z",
-            "owner": "usemuffin",
-            "repo": "orderly",
-            "stars": 30258
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Duplicatable plugin",
-          "description": "Behavior for duplicating entities including related data.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3409630103,
-            "language": "Python",
-            "last_commit": "2023-09-20T00:00:00.000Z",
-            "owner": "riesenia",
-            "repo": "cakephp-duplicatable",
-            "stars": 30104
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "CakeDecimal plugin",
-          "description": "A value object approach on handling decimals.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2964772525,
-            "language": "C++",
-            "last_commit": "2022-07-25T00:00:00.000Z",
-            "owner": "dereuromark",
-            "repo": "cakephp-decimal",
-            "stars": 22526
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Muffin/Trash plugin",
-          "description": "Soft-delete behavior for CakePHP.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 481970072,
-            "language": "Go",
-            "last_commit": "2023-10-21T00:00:00.000Z",
-            "owner": "usemuffin",
-            "repo": "trash",
-            "stars": 20073
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Lampager/Cake plugin",
-          "description": "Rapid pagination without using OFFSET.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2591965025,
-            "language": "C++",
-            "last_commit": "2023-12-07T00:00:00.000Z",
-            "owner": "lampager",
-            "repo": "lampager-cakephp",
-            "stars": 15026
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Icings/Partitionable plugin",
-          "description": "Partitionable associations allowing for basic limiting per group.",
-          "children": [],
-          "repo_info": {
-            "archived": true,
-            "id": 1689957641,
-            "language": "JavaScript",
-            "last_commit": "2022-03-31T00:00:00.000Z",
-            "owner": "icings",
-            "repo": "partitionable",
-            "stars": 7642
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Itosho/EasyQuery plugin",
-          "description": "Behavior for easily generating some complicated queries like (bulk) insert/upsert etc.",
-          "children": [],
-          "repo_info": {
-            "archived": true,
-            "id": 4177050195,
-            "language": "C++",
-            "last_commit": "2023-06-20T00:00:00.000Z",
-            "owner": "itosho",
-            "repo": "easy-query",
-            "stars": 196
-          }
-        }
-      ],
-      "title": "ORM / Database / Datamapping"
-    },
-    {
-      "description": "Working with event and task queues.",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "Cake/Enqueue plugin",
-          "description": "Database-driven message queue integration using the Enqueue library for CakePHP Queue plugin.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2824947432,
-            "language": "Go",
-            "last_commit": "2022-10-26T00:00:00.000Z",
-            "owner": "CakeDC",
-            "repo": "cakephp-enqueue",
-            "stars": 47433
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Crustum/BatchQueue plugin",
-          "description": "Unified system for managing batch job processing with parallel execution and sequential chains.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1222968895,
-            "language": "C++",
-            "last_commit": "2021-07-20T00:00:00.000Z",
-            "owner": "crustum",
-            "repo": "batch-queue",
-            "stars": 18896
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Queue plugin",
-          "description": "CakePHP core queue system for the php-queue queue library.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1103818691,
-            "language": "JavaScript",
-            "last_commit": "2022-02-09T00:00:00.000Z",
-            "owner": "cakephp",
-            "repo": "queue",
-            "stars": 18692
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Crustum/Temporal plugin",
-          "description": "Workflow orchestration plugin for durable execution, reliable background jobs, and long-running processes with automatic retries.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3915565990,
-            "language": "TypeScript",
-            "last_commit": "2021-04-16T00:00:00.000Z",
-            "owner": "crustum",
-            "repo": "cakephp-temporal",
-            "stars": 15991
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Queue plugin",
-          "description": "A minimal and dependency-free queue solution.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2800555081,
-            "language": "JavaScript",
-            "last_commit": "2023-10-12T00:00:00.000Z",
-            "owner": "dereuromark",
-            "repo": "cakephp-queue",
-            "stars": 5082
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "QueueScheduler plugin",
-          "description": "A dependency-free crontab-like scheduler as DB driven solution and addon to Queue (dereuromark) plugin.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1920304825,
-            "language": "C++",
-            "last_commit": "2021-09-28T00:00:00.000Z",
-            "owner": "dereuromark",
-            "repo": "cakephp-queue-scheduler",
-            "stars": 4826
-          }
-        }
-      ],
-      "title": "Queue"
-    },
-    {
-      "description": "Plugins and web tools for developing REST-ful APIs.",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "CakeDC/Api plugin",
-          "description": "All-in-one solution to provide a complete API. It includes versioning, renderers, CRUD, authentication, extensions (paginate, filter, HATEOAS), and much more.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3602248882,
-            "language": "Go",
-            "last_commit": "2021-08-02T00:00:00.000Z",
-            "owner": "CakeDC",
-            "repo": "cakephp-api",
-            "stars": 48883
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "SwaggerBake plugin",
-          "description": "This plugin automatically builds OpenAPI from your existing models and routes for display in Swagger and Redoc.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3768643382,
-            "language": "Go",
-            "last_commit": "2022-12-15T00:00:00.000Z",
-            "owner": "cnizzardini",
-            "repo": "cakephp-swagger-bake",
-            "stars": 43383
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "CRUD plugin",
-          "description": "CakePHP Application development on steroids - rapid prototyping / scaffolding & production-ready code.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3056926968,
-            "language": "Shell",
-            "last_commit": "2021-05-08T00:00:00.000Z",
-            "owner": "FriendsOfCake",
-            "repo": "crud",
-            "stars": 26969
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "FractalTransformerView plugin",
-          "description": "A plugin which allows using Fractal transformers for your API output.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1262363520,
-            "language": "TypeScript",
-            "last_commit": "2022-07-30T00:00:00.000Z",
-            "owner": "andrej-griniuk",
-            "repo": "cakephp-fractal-transformer-view",
-            "stars": 13521
-          }
-        }
-      ],
-      "title": "REST and API"
-    },
-    {
-      "description": "Plugins and software for indexing and performing search queries on data.",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "CakeDC/SearchFilter plugin",
-          "description": "Powerful and flexible solution for implementing advanced search functionality. Provides a robust set of tools for creating dynamic, user-friendly search interfaces with minimal effort.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1616395050,
-            "language": "TypeScript",
-            "last_commit": "2023-11-12T00:00:00.000Z",
-            "owner": "CakeDC",
-            "repo": "search-filter",
-            "stars": 45051
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Tags plugin",
-          "description": "For tagging and finding tagged records.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 373229143,
-            "language": "Python",
-            "last_commit": "2023-08-11T00:00:00.000Z",
-            "owner": "dereuromark",
-            "repo": "cakephp-tags",
-            "stars": 29144
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "PlumSearch plugin",
-          "description": "Implements custom, flexible and extendable search strategies. Implements PRG pattern.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 762027709,
-            "language": null,
-            "last_commit": "2022-01-22T00:00:00.000Z",
-            "owner": "skie",
-            "repo": "plum_search",
-            "stars": 27710
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Cake/ElasticSearch plugin",
-          "description": "Alternative ORM using Elasticsearch as its backend.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3967607334,
-            "language": "Rust",
-            "last_commit": "2023-02-01T00:00:00.000Z",
-            "owner": "cakephp",
-            "repo": "elastic-search",
-            "stars": 7335
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Search plugin",
-          "description": "Provides easy searching/filtering for paginated views using PRG pattern.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 265107260,
-            "language": "TypeScript",
-            "last_commit": "2023-04-16T00:00:00.000Z",
-            "owner": "FriendsOfCake",
-            "repo": "search",
-            "stars": 7261
-          }
-        }
-      ],
-      "title": "Search"
-    },
-    {
-      "description": "Plugins and information around security, preventing vulnerabilities and protection against XSS and alike.",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "Muffin/Obfuscate plugin",
-          "description": "Primary key obfuscation/shortening using UUIDs, HashIds, Optimus, Tiny and/or custom obfuscation strategies.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1977992888,
-            "language": "Shell",
-            "last_commit": "2021-07-27T00:00:00.000Z",
-            "owner": "usemuffin",
-            "repo": "obfuscate",
-            "stars": 42889
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Captcha plugin",
-          "description": "Simple, unobtrusive and extendable captcha solution providing by default an image based math captcha.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3751686252,
-            "language": "Go",
-            "last_commit": "2023-04-24T00:00:00.000Z",
-            "owner": "dereuromark",
-            "repo": "cakephp-captcha",
-            "stars": 36253
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Muffin/Throttle plugin",
-          "description": "A plugin for rate limiting (API) requests.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1745132406,
-            "language": "Java",
-            "last_commit": "2022-11-21T00:00:00.000Z",
-            "owner": "usemuffin",
-            "repo": "throttle",
-            "stars": 32407
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Recaptcha plugin",
-          "description": "Simple, lightweight Google Recaptcha v2.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2096528275,
-            "language": "C++",
-            "last_commit": "2023-04-01T00:00:00.000Z",
-            "owner": "ctlabvn",
-            "repo": "Recaptcha",
-            "stars": 28276
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Expose plugin",
-          "description": "Expose entities through additional UUIDs instead of their AIID primary keys to obfuscate those IDs and data associated with these numerically ordered values.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2910455146,
-            "language": "Java",
-            "last_commit": "2023-08-08T00:00:00.000Z",
-            "owner": "dereuromark",
-            "repo": "cakephp-expose",
-            "stars": 5147
-          }
-        }
-      ],
-      "title": "Security"
-    },
-    {
-      "description": "Search Engine Optimization.",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "Muffin/Slug plugin",
-          "description": "A plugin for generating slugs and finding records by slug. Uses a pluggable architecture which allows using your own slug generator class.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1358074621,
-            "language": "JavaScript",
-            "last_commit": "2022-04-20T00:00:00.000Z",
-            "owner": "UseMuffin",
-            "repo": "Slug",
-            "stars": 24622
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Tools:Slugged",
-          "description": "Containing Slugged behavior to auto-generate URL-compatible slugs from titles.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 520965265,
-            "language": "C++",
-            "last_commit": "2023-04-11T00:00:00.000Z",
-            "owner": "dereuromark",
-            "repo": "cakephp-tools",
-            "stars": 15266
-          }
-        }
-      ],
-      "title": "SEO"
-    },
-    {
-      "description": "Plugins and repositories around app skeletons.",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "BS flavored App template",
-          "description": "An empty CakePHP project with BS5 and FontAwesome out of the box.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 189749205,
-            "language": "C++",
-            "last_commit": "2023-06-10T00:00:00.000Z",
-            "owner": "dereuromark",
-            "repo": "cakephp-app",
-            "stars": 49206
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "App template",
-          "description": "An empty CakePHP project for use with composer.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3303397359,
-            "language": null,
-            "last_commit": "2023-01-07T00:00:00.000Z",
-            "owner": "cakephp",
-            "repo": "app",
-            "stars": 47360
-          }
-        }
-      ],
-      "title": "Skeleton"
-    },
-    {
-      "description": "Plugins around social features.",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "Favorites plugin",
-          "description": "Allows users to star/like/favor records.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1980832547,
-            "language": "Ruby",
-            "last_commit": "2022-07-03T00:00:00.000Z",
-            "owner": "dereuromark",
-            "repo": "cakephp-favorites",
-            "stars": 32548
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Ratings plugin",
-          "description": "Allows users to rate records and displays ratings.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 450881876,
-            "language": "Java",
-            "last_commit": "2021-08-08T00:00:00.000Z",
-            "owner": "dereuromark",
-            "repo": "cakephp-ratings",
-            "stars": 31877
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Comments plugin",
-          "description": "Allows users to comment records, supporting different formats.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 227280096,
-            "language": "Java",
-            "last_commit": "2023-09-27T00:00:00.000Z",
-            "owner": "dereuromark",
-            "repo": "cakephp-comments",
-            "stars": 30097
-          }
-        }
-      ],
-      "title": "Social"
-    },
-    {
-      "description": "Template engines and view generation.",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "Feed plugin",
-          "description": "Containing an RssView class to easily generate (complex) RSS feeds.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3126248342,
-            "language": "Go",
-            "last_commit": "2023-01-24T00:00:00.000Z",
-            "owner": "dereuromark",
-            "repo": "cakephp-feed",
-            "stars": 48343
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Templating",
-          "description": "HTML snippets as value objects, (Font) icons, and templating topics.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 53295115,
-            "language": "C++",
-            "last_commit": "2023-09-08T00:00:00.000Z",
-            "owner": "dereuromark",
-            "repo": "cakephp-templating",
-            "stars": 45116
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "CsvView plugin",
-          "description": "A view class to easily generate CSV.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 399493384,
-            "language": "Rust",
-            "last_commit": "2022-12-13T00:00:00.000Z",
-            "owner": "FriendsOfCake",
-            "repo": "cakephp-csvview",
-            "stars": 43385
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "TemplaterDefaults plugin",
-          "description": "Allows the use of default HTML attributes within CakePHP's string template system.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2423743216,
-            "language": "Java",
-            "last_commit": "2023-05-30T00:00:00.000Z",
-            "owner": "josbeir",
-            "repo": "cakephp-templater-defaults",
-            "stars": 43217
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Bake plugin",
-          "description": "Provides code generation functionality.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1009889425,
-            "language": "C++",
-            "last_commit": "2022-11-02T00:00:00.000Z",
-            "owner": "cakephp",
-            "repo": "bake",
-            "stars": 39426
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "LatteView plugin",
-          "description": "A plugin providing Latte template engine integration.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3116329873,
-            "language": "Python",
-            "last_commit": "2021-08-11T00:00:00.000Z",
-            "owner": "josbeir",
-            "repo": "cakephp-latte-view",
-            "stars": 29874
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "TwigView plugin",
-          "description": "A plugin to use the Twig Templating Language for views.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2010826157,
-            "language": "Ruby",
-            "last_commit": "2023-07-28T00:00:00.000Z",
-            "owner": "cakephp",
-            "repo": "twig-view",
-            "stars": 26158
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "BootstrapUI plugin",
-          "description": "Bootstrap 4/5 integration.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 781272543,
-            "language": "Python",
-            "last_commit": "2022-07-07T00:00:00.000Z",
-            "owner": "friendsofcake",
-            "repo": "bootstrap-ui",
-            "stars": 22544
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Tools:Tree",
-          "description": "Tree helper to work with Core Tree behavior and handle tree structure output.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 520965265,
-            "language": "C++",
-            "last_commit": "2023-04-11T00:00:00.000Z",
-            "owner": "dereuromark",
-            "repo": "cakephp-tools",
-            "stars": 15266
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Meta plugin",
-          "description": "Makes handling meta tags and SEO-relevant HTML markup DRY and easy.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 4236959107,
-            "language": "Ruby",
-            "last_commit": "2023-09-16T00:00:00.000Z",
-            "owner": "dereuromark",
-            "repo": "cakephp-meta",
-            "stars": 9108
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "XlsView plugin",
-          "description": "A view class to easily generate XLS using PHPSpreadsheet.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3824353429,
-            "language": null,
-            "last_commit": "2022-10-29T00:00:00.000Z",
-            "owner": "impronta48",
-            "repo": "cakephp-xlsview",
-            "stars": 3430
-          }
-        }
-      ],
-      "title": "Templating"
-    },
-    {
-      "description": "Plugins/Tools for testing codebases and generating test data.",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "FriendsOfCake/Fixturize plugin",
-          "description": "More efficient inserting fixtures when running test suites by decreasing amount of inserts (mysql only).",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 4201627144,
-            "language": "Rust",
-            "last_commit": "2023-08-10T00:00:00.000Z",
-            "owner": "FriendsOfCake",
-            "repo": "fixturize",
-            "stars": 27145
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "CakephpFixtureFactories plugin",
-          "description": "Create your fixtures dynamically on a test basis, accelerate the writing and maintenance of your tests.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2311674440,
-            "language": "TypeScript",
-            "last_commit": "2022-10-18T00:00:00.000Z",
-            "owner": "dereuromark",
-            "repo": "cakephp-fixture-factories",
-            "stars": 24441
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "CakePHP CodeSniffer rules",
-          "description": "The official CakePHP CS rules.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1187113821,
-            "language": "JavaScript",
-            "last_commit": "2021-10-02T00:00:00.000Z",
-            "owner": "cakephp",
-            "repo": "cakephp-codesniffer",
-            "stars": 13822
-          }
-        }
-      ],
-      "title": "Testing"
-    },
-    {
-      "description": "Accessing third party APIs.\nSoftware for creating a development environment.",
-      "items": [],
-      "title": "Third Party APIs"
-    },
-    {
-      "description": "Software and tools for creating a sandboxed development environment.",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "CakePHP Docker Setup",
-          "description": "Tool for spinning up multiple CakePHP vanilla dev environments using Docker.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3294845772,
-            "language": "Go",
-            "last_commit": "2021-11-20T00:00:00.000Z",
-            "owner": "cpierce",
-            "repo": "cakephp-docker-setup",
-            "stars": 45773
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "NetBeans",
-          "description": "This package provides support for CakePHP in NetBeans 8.1+.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2648887630,
-            "language": "TypeScript",
-            "last_commit": "2022-04-11T00:00:00.000Z",
-            "owner": "junichi11",
-            "repo": "cakephp3-netbeans",
-            "stars": 37631
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Docker",
-          "description": "CakePHP in a docker container environment.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1800582071,
-            "language": "JavaScript",
-            "last_commit": "2023-10-22T00:00:00.000Z",
-            "owner": "stefanvangastel",
-            "repo": "docker-cakephp",
-            "stars": 32072
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "CakePHP Docker",
-          "description": "A cakephp/app template for docker.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 499667020,
-            "language": "TypeScript",
-            "last_commit": "2023-12-12T00:00:00.000Z",
-            "owner": "cnizzardini",
-            "repo": "cakephp-docker",
-            "stars": 17021
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "CakePHP Vagrant Setup",
-          "description": "Tool for spinning up multiple CakePHP vanilla dev environments using Vagrant.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1581264913,
-            "language": "Python",
-            "last_commit": "2021-07-02T00:00:00.000Z",
-            "owner": "cpierce",
-            "repo": "cakephp-vagrant-setup",
-            "stars": 14914
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Oven",
-          "description": "Setup your favorite framework with 1 file and 1 click.",
-          "children": [],
-          "repo_info": {
-            "archived": true,
-            "id": 9114703,
-            "language": "Python",
-            "last_commit": "2022-01-28T00:00:00.000Z",
-            "owner": "CakeDC",
-            "repo": "oven",
-            "stars": 14704
-          }
-        }
-      ],
-      "title": "Development Environment"
-    },
-    {
-      "description": "",
-      "items": [],
-      "title": "Web Applications"
-    },
-    {
-      "description": "Web-based (demo) applications and tools.",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "BlogMVC",
-          "description": "A simple Blog example with CakePHP based on BlogMVC Project.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2512247393,
-            "language": "Python",
-            "last_commit": "2022-12-04T00:00:00.000Z",
-            "owner": "Kareylo",
-            "repo": "BlogMVC-CakePHP3",
-            "stars": 47394
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Xeta",
-          "description": "A resource to help people starting with CakePHP.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1643794802,
-            "language": "Go",
-            "last_commit": "2021-10-21T00:00:00.000Z",
-            "owner": "XetaIO",
-            "repo": "Xeta",
-            "stars": 44803
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Query Examples",
-          "description": "Advanced query building examples.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 4018842138,
-            "language": "Shell",
-            "last_commit": "2023-08-16T00:00:00.000Z",
-            "owner": "lorenzo",
-            "repo": "cakephp3-examples",
-            "stars": 42139
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Vue.js Demo App",
-          "description": "A CakePHP + VueJS single page application skeleton.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1409338033,
-            "language": "Python",
-            "last_commit": "2023-11-29T00:00:00.000Z",
-            "owner": "ishanvyas22",
-            "repo": "cakephpvue-spa",
-            "stars": 38034
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Fluentd + Grafana Loki demo application",
-          "description": "A demo application to send CakePHP docker container logs to Grafana Loki via Fluentd.",
-          "children": [],
-          "repo_info": {
-            "archived": true,
-            "id": 770687180,
-            "language": "TypeScript",
-            "last_commit": "2023-07-05T00:00:00.000Z",
-            "owner": "ishanvyas22",
-            "repo": "cakephp-loki-demo",
-            "stars": 37181
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Bookmarkr",
-          "description": "A bookmarking application built with the CRUD plugin.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2225868261,
-            "language": "JavaScript",
-            "last_commit": "2023-04-15T00:00:00.000Z",
-            "owner": "lorenzo",
-            "repo": "cakephp3-bookmarkr",
-            "stars": 18262
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "RealWorld",
-          "description": "Example CakePHP codebase containing real world examples (CRUD, auth, advanced patterns and more) that adheres to the RealWorld spec and API.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 784366194,
-            "language": "Rust",
-            "last_commit": "2023-06-21T00:00:00.000Z",
-            "owner": "gothinkster",
-            "repo": "cakephp-realworld-example-app",
-            "stars": 16195
-          }
-        }
-      ],
-      "title": "Demo"
-    },
-    {
-      "description": "Fantastic CakePHP-related (e)books and other reading material.",
-      "items": [],
-      "title": "CakePHP Books and Articles"
-    },
-    {
-      "description": "awesome-cakephp has been created by dereuromark and is currently maintained by him and the FriendsOfCake group. Thank you to all contributors, too.",
-      "items": [],
-      "title": "Credits"
+      "title": "Software"
     }
   ],
   "metadata": {

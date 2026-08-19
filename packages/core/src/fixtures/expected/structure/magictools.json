@@ -2,1174 +2,1179 @@
   "items": [
     {
       "description": "Great graphics placeholders and tools to turn that squared game into a picasso painting",
-      "items": [],
+      "items": [
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": ":tada: Tilesplit",
+              "description": "CLI text-based tilesheet splitter and namer. Turn a spritesheet into many separate files with names you pick, or not if you don't care. Support templates and textures that are not all the same size.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2389537362,
+                "language": "Go",
+                "last_commit": "2023-01-04T00:00:00.000Z",
+                "owner": "AlexPoulsen",
+                "repo": "tilesplit",
+                "stars": 37363
+              }
+            },
+            {
+              "node_type": "item",
+              "title": ":tada: EzSpriteSheet",
+              "description": "Creates sprite sheets from animated GIFs and more",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 571476391,
+                "language": "JavaScript",
+                "last_commit": "2022-12-06T00:00:00.000Z",
+                "owner": "z64me",
+                "repo": "EzSpriteSheet",
+                "stars": 26392
+              }
+            },
+            {
+              "node_type": "item",
+              "title": ":tada: Cheetah-Texture-Packer",
+              "description": "High efficient and fast 2D bin packing tool",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2679061396,
+                "language": "Java",
+                "last_commit": "2022-12-01T00:00:00.000Z",
+                "owner": "scriptum",
+                "repo": "Cheetah-Texture-Packer",
+                "stars": 11397
+              }
+            },
+            {
+              "node_type": "item",
+              "title": ":tada: Libgdx Texture Packer",
+              "description": "Texture Packer built into Libgdx",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1106651234,
+                "language": "Rust",
+                "last_commit": "2023-05-12T00:00:00.000Z",
+                "owner": "libgdx",
+                "repo": "libgdx",
+                "stars": 1235
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Spritesheet Tools"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": ":tada: Material Maker",
+              "description": "procedural texture creator made in Godot",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2382259466,
+                "language": "Java",
+                "last_commit": "2022-09-22T00:00:00.000Z",
+                "owner": "RodZill4",
+                "repo": "material-maker",
+                "stars": 9467
+              }
+            },
+            {
+              "node_type": "item",
+              "title": ":tada: Overlap2D",
+              "description": "a 2D level and UI editor with an engine agnostic philosophy.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1281302582,
+                "language": "Go",
+                "last_commit": "2022-05-29T00:00:00.000Z",
+                "owner": "UnderwaterApps",
+                "repo": "overlap2d",
+                "stars": 2583
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Tile/Level Editors"
+        }
+      ],
       "title": "Graphics"
     },
     {
-      "description": "",
-      "items": [
-        {
-          "node_type": "item",
-          "title": ":tada: Tilesplit",
-          "description": "CLI text-based tilesheet splitter and namer. Turn a spritesheet into many separate files with names you pick, or not if you don't care. Support templates and textures that are not all the same size.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2389537362,
-            "language": "Go",
-            "last_commit": "2023-01-04T00:00:00.000Z",
-            "owner": "AlexPoulsen",
-            "repo": "tilesplit",
-            "stars": 37363
-          }
-        },
-        {
-          "node_type": "item",
-          "title": ":tada: EzSpriteSheet",
-          "description": "Creates sprite sheets from animated GIFs and more",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 571476391,
-            "language": "JavaScript",
-            "last_commit": "2022-12-06T00:00:00.000Z",
-            "owner": "z64me",
-            "repo": "EzSpriteSheet",
-            "stars": 26392
-          }
-        },
-        {
-          "node_type": "item",
-          "title": ":tada: Cheetah-Texture-Packer",
-          "description": "High efficient and fast 2D bin packing tool",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2679061396,
-            "language": "Java",
-            "last_commit": "2022-12-01T00:00:00.000Z",
-            "owner": "scriptum",
-            "repo": "Cheetah-Texture-Packer",
-            "stars": 11397
-          }
-        },
-        {
-          "node_type": "item",
-          "title": ":tada: Libgdx Texture Packer",
-          "description": "Texture Packer built into Libgdx",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1106651234,
-            "language": "Rust",
-            "last_commit": "2023-05-12T00:00:00.000Z",
-            "owner": "libgdx",
-            "repo": "libgdx",
-            "stars": 1235
-          }
-        }
-      ],
-      "title": "Spritesheet Tools"
-    },
-    {
-      "description": "",
-      "items": [
-        {
-          "node_type": "item",
-          "title": ":tada: Material Maker",
-          "description": "procedural texture creator made in Godot",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2382259466,
-            "language": "Java",
-            "last_commit": "2022-09-22T00:00:00.000Z",
-            "owner": "RodZill4",
-            "repo": "material-maker",
-            "stars": 9467
-          }
-        },
-        {
-          "node_type": "item",
-          "title": ":tada: Overlap2D",
-          "description": "a 2D level and UI editor with an engine agnostic philosophy.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1281302582,
-            "language": "Go",
-            "last_commit": "2022-05-29T00:00:00.000Z",
-            "owner": "UnderwaterApps",
-            "repo": "overlap2d",
-            "stars": 2583
-          }
-        }
-      ],
-      "title": "Tile/Level Editors"
-    },
-    {
       "description": "Set of game frameworks, engines and platforms",
-      "items": [],
+      "items": [
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": ":tada: ecs-lib",
+              "description": "ecs-lib is a tiny and easy to use ECS (Entity Component System) library for game programming. It's written in Typescript but you can use on node.js and web browser too.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2140349675,
+                "language": "C++",
+                "last_commit": "2022-02-25T00:00:00.000Z",
+                "owner": "nidorx",
+                "repo": "ecs-lib",
+                "stars": 49676
+              }
+            },
+            {
+              "node_type": "item",
+              "title": ":tada: nuklear",
+              "description": "A single-header ANSI C immediate mode cross-platform GUI library.",
+              "children": [],
+              "repo_info": {
+                "archived": true,
+                "id": 2523998670,
+                "language": "TypeScript",
+                "last_commit": "2022-03-02T00:00:00.000Z",
+                "owner": "Immediate-Mode-UI",
+                "repo": "Nuklear",
+                "stars": 48671
+              }
+            },
+            {
+              "node_type": "item",
+              "title": ":tada: WhiteStorm.js",
+              "description": "3d javacript framework for building apps and games",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 27648388,
+                "language": "Shell",
+                "last_commit": "2022-12-09T00:00:00.000Z",
+                "owner": "WhitestormJS",
+                "repo": "whitestorm.js",
+                "stars": 48389
+              }
+            },
+            {
+              "node_type": "item",
+              "title": ":tada: OpenXRay",
+              "description": "a community-modified X-Ray engine used in S.T.A.L.K.E.R. game series.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3716948354,
+                "language": "Rust",
+                "last_commit": "2023-01-12T00:00:00.000Z",
+                "owner": "OpenXRay",
+                "repo": "xray-16",
+                "stars": 48355
+              }
+            },
+            {
+              "node_type": "item",
+              "title": ":tada: Juno",
+              "description": "Clean and lightweight 2D game framework written in TypeScript",
+              "children": [],
+              "repo_info": {
+                "archived": true,
+                "id": 1031247693,
+                "language": "Python",
+                "last_commit": "2022-02-07T00:00:00.000Z",
+                "owner": "digitsensitive",
+                "repo": "juno",
+                "stars": 47694
+              }
+            },
+            {
+              "node_type": "item",
+              "title": ":tada: vectarine",
+              "description": "Vectarine is a cross-platform game engine focusing on fast prototyping and having fun. Write games using Luau and extend the engine with Rust modules.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1815496756,
+                "language": "Java",
+                "last_commit": "2021-12-06T00:00:00.000Z",
+                "owner": "vanyle",
+                "repo": "vectarine",
+                "stars": 46757
+              }
+            },
+            {
+              "node_type": "item",
+              "title": ":tada: MINX",
+              "description": "Open Source 2D game framework written in C++ (to the style of XNA)",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3938745506,
+                "language": "Java",
+                "last_commit": "2022-08-13T00:00:00.000Z",
+                "owner": "GearChicken",
+                "repo": "MINX",
+                "stars": 45507
+              }
+            },
+            {
+              "node_type": "item",
+              "title": ":tada: Juno",
+              "description": "Framework for making 2D games with chunky pixels in Lua",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1679043821,
+                "language": "JavaScript",
+                "last_commit": "2021-10-02T00:00:00.000Z",
+                "owner": "rxi",
+                "repo": "juno",
+                "stars": 43822
+              }
+            },
+            {
+              "node_type": "item",
+              "title": ":tada: is::Engine",
+              "description": "C++, SDL 2 and SFML game engine that allows to create games on Nintendo Switch, Web (HTML 5), Mobile and PC.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1485243458,
+                "language": "Shell",
+                "last_commit": "2022-09-30T00:00:00.000Z",
+                "owner": "Is-Daouda",
+                "repo": "is-Engine",
+                "stars": 43459
+              }
+            },
+            {
+              "node_type": "item",
+              "title": ":tada: Nakama",
+              "description": "Distributed server for social and realtime games and apps.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 231741317,
+                "language": "Ruby",
+                "last_commit": "2023-02-18T00:00:00.000Z",
+                "owner": "heroiclabs",
+                "repo": "nakama",
+                "stars": 41318
+              }
+            },
+            {
+              "node_type": "item",
+              "title": ":tada: 6502 Unit Test executor",
+              "description": "A cross-platform unit testing tool for MOS 6502 assembly. (i.e. NES)",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3582639222,
+                "language": "Go",
+                "last_commit": "2023-05-24T00:00:00.000Z",
+                "owner": "AsaiYusuke",
+                "repo": "6502_test_executor",
+                "stars": 39223
+              }
+            },
+            {
+              "node_type": "item",
+              "title": ":tada: Carimbo",
+              "description": "A 2D game engine developed in modern C++ using SDL, an Entity-Component-System (ECS) architecture, and Box2D. It features Lua scripting and is designed for web portability via WebAssembly.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3684437218,
+                "language": "Shell",
+                "last_commit": "2023-05-28T00:00:00.000Z",
+                "owner": "willtobyte",
+                "repo": "carimbo",
+                "stars": 37219
+              }
+            },
+            {
+              "node_type": "item",
+              "title": ":tada: Bladecoder",
+              "description": "Classic point and click adventure game engine and editor.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1605584286,
+                "language": "Java",
+                "last_commit": "2023-03-21T00:00:00.000Z",
+                "owner": "bladecoder",
+                "repo": "bladecoder-adventure-engine",
+                "stars": 34287
+              }
+            },
+            {
+              "node_type": "item",
+              "title": ":tada: bgfx",
+              "description": "Cross-platform, graphics API agnostic, \"Bring Your Own Engine/Framework\" style rendering library.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3138333442,
+                "language": "Go",
+                "last_commit": "2022-10-16T00:00:00.000Z",
+                "owner": "bkaradzic",
+                "repo": "bgfx",
+                "stars": 33443
+              }
+            },
+            {
+              "node_type": "item",
+              "title": ":tada: Cocos2D",
+              "description": "graphic library for games and multimedia, for python language",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 390483099,
+                "language": null,
+                "last_commit": "2023-09-24T00:00:00.000Z",
+                "owner": "los-cocos",
+                "repo": "cocos",
+                "stars": 33100
+              }
+            },
+            {
+              "node_type": "item",
+              "title": ":free: :tada: Folded Paper Engine",
+              "description": "Blender to Godot game mechanics engine/plug-ins. Just a few clicks. Super easy. Featuring: 2.5D/first-person/third-person controls, trigger commands/events, inventory, holdable items and all kinds of stuff.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3367733081,
+                "language": "JavaScript",
+                "last_commit": "2023-10-12T00:00:00.000Z",
+                "owner": "papercraftgames",
+                "repo": "folded-paper-engine",
+                "stars": 33082
+              }
+            },
+            {
+              "node_type": "item",
+              "title": ":tada: Rajawali",
+              "description": "Android OpenGL ES 2.0/3.0 Engine",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 154832832,
+                "language": "Go",
+                "last_commit": "2021-09-21T00:00:00.000Z",
+                "owner": "Rajawali",
+                "repo": "Rajawali",
+                "stars": 32833
+              }
+            },
+            {
+              "node_type": "item",
+              "title": ":tada: Dear Imgui",
+              "description": "A bloat-free immediate mode GUI for C++ with minimal dependencies.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3800082751,
+                "language": "JavaScript",
+                "last_commit": "2021-12-11T00:00:00.000Z",
+                "owner": "ocornut",
+                "repo": "imgui",
+                "stars": 32752
+              }
+            },
+            {
+              "node_type": "item",
+              "title": ":tada: Flame",
+              "description": "a minimalist game engine for Flutter",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 264682429,
+                "language": null,
+                "last_commit": "2022-10-29T00:00:00.000Z",
+                "owner": "flame-engine",
+                "repo": "flame",
+                "stars": 32430
+              }
+            },
+            {
+              "node_type": "item",
+              "title": ":tada: asimov-ts",
+              "description": "A type safe (as much as possible) engine for the web written in TypeScript.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1824479628,
+                "language": "Shell",
+                "last_commit": "2022-04-13T00:00:00.000Z",
+                "owner": "pedrozaalex",
+                "repo": "asimov-ts",
+                "stars": 29629
+              }
+            },
+            {
+              "node_type": "item",
+              "title": ":tada: DotRecast",
+              "description": "A port of Recast & Detour, navigation mesh toolset for games, Unity3D, servers, C#.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3681028896,
+                "language": "Java",
+                "last_commit": "2021-07-19T00:00:00.000Z",
+                "owner": "ikpil",
+                "repo": "DotRecast",
+                "stars": 28897
+              }
+            },
+            {
+              "node_type": "item",
+              "title": ":tada: FXGL",
+              "description": "A JavaFX/Kotlin game engine for Win/Mac/Linux.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 635178881,
+                "language": "JavaScript",
+                "last_commit": "2021-08-03T00:00:00.000Z",
+                "owner": "AlmasB",
+                "repo": "FXGL",
+                "stars": 28882
+              }
+            },
+            {
+              "node_type": "item",
+              "title": ":tada: axys",
+              "description": "A fork of Cocos2d-x-4.0, it has Full Support OpenAL for all platforms, single texture multi GPU texture handler and C++ 17.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2642875473,
+                "language": "Python",
+                "last_commit": "2022-09-15T00:00:00.000Z",
+                "owner": "axys1",
+                "repo": "axys",
+                "stars": 25474
+              }
+            },
+            {
+              "node_type": "item",
+              "title": ":tada: LumixEngine",
+              "description": "3D Game engine built on C++.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2134175175,
+                "language": "C++",
+                "last_commit": "2023-07-10T00:00:00.000Z",
+                "owner": "nem0",
+                "repo": "LumixEngine",
+                "stars": 25176
+              }
+            },
+            {
+              "node_type": "item",
+              "title": ":tada: Box2D.NET",
+              "description": "A port of Box2D, is a 2D physics engine for games, .NET C#, Unity3D, servers.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 134374267,
+                "language": "Ruby",
+                "last_commit": "2023-04-09T00:00:00.000Z",
+                "owner": "ikpil",
+                "repo": "Box2D.NET",
+                "stars": 24268
+              }
+            },
+            {
+              "node_type": "item",
+              "title": ":tada: JNGL",
+              "description": "a 2D open-source game engine. Develop on Linux, Windows, OS X. Deploy to Nintendo Switch, Xbox, Linux, Windows, OS X, Web, Android, iOS and more.",
+              "children": [],
+              "repo_info": {
+                "archived": true,
+                "id": 3548622211,
+                "language": "JavaScript",
+                "last_commit": "2023-06-04T00:00:00.000Z",
+                "owner": "jhasse",
+                "repo": "jngl",
+                "stars": 22212
+              }
+            },
+            {
+              "node_type": "item",
+              "title": ":tada: EnTT",
+              "description": "Gaming meets modern C++, a fast and reliable entity-component system (ECS) and much more",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2436220609,
+                "language": null,
+                "last_commit": "2022-05-02T00:00:00.000Z",
+                "owner": "skypjack",
+                "repo": "entt",
+                "stars": 20610
+              }
+            },
+            {
+              "node_type": "item",
+              "title": ":tada: iio.js",
+              "description": "A javascript library that speeds the creation and deployment of HTML5 Canvas applications",
+              "children": [],
+              "repo_info": {
+                "archived": true,
+                "id": 1808819941,
+                "language": "JavaScript",
+                "last_commit": "2021-06-04T00:00:00.000Z",
+                "owner": "iioinc",
+                "repo": "iio.js",
+                "stars": 19942
+              }
+            },
+            {
+              "node_type": "item",
+              "title": ":tada: Screen 13",
+              "description": "An easy-to-use Vulkan rendering engine. Provides a render graph for Rust.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1862219930,
+                "language": "TypeScript",
+                "last_commit": "2021-06-15T00:00:00.000Z",
+                "owner": "attackgoat",
+                "repo": "screen-13",
+                "stars": 19931
+              }
+            },
+            {
+              "node_type": "item",
+              "title": ":tada: Grid",
+              "description": "A multiplayer-first game engine for Lua.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2100569015,
+                "language": "C++",
+                "last_commit": "2023-12-17T00:00:00.000Z",
+                "owner": "Planimeter",
+                "repo": "game-engine-2d",
+                "stars": 19016
+              }
+            },
+            {
+              "node_type": "item",
+              "title": ":tada: ENGi",
+              "description": "A multi-platform 2D game library for Go.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2318517905,
+                "language": "C++",
+                "last_commit": "2021-07-10T00:00:00.000Z",
+                "owner": "ajhager",
+                "repo": "engi",
+                "stars": 17906
+              }
+            },
+            {
+              "node_type": "item",
+              "title": ":tada: Foster",
+              "description": "A small cross-platform 2D game framework in C#.",
+              "children": [],
+              "repo_info": {
+                "archived": true,
+                "id": 28916048,
+                "language": "Shell",
+                "last_commit": "2023-11-14T00:00:00.000Z",
+                "owner": "FosterFramework",
+                "repo": "Foster",
+                "stars": 16049
+              }
+            },
+            {
+              "node_type": "item",
+              "title": ":tada: Pixel Vision 8",
+              "description": "Pixel Vision 8's core philosophy is to teach retro game development with streamlined workflows. PV8 is also a platform that standardizes 8-bit fantasy console limitations built on top of the open-source C# game engine based on MonoGame.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1782765002,
+                "language": "Go",
+                "last_commit": "2023-12-30T00:00:00.000Z",
+                "owner": "PixelVision8",
+                "repo": "PixelVision8",
+                "stars": 15003
+              }
+            },
+            {
+              "node_type": "item",
+              "title": ":tada: Dash",
+              "description": "A free and open 3D game engine written in D.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1446264963,
+                "language": "Python",
+                "last_commit": "2021-05-13T00:00:00.000Z",
+                "owner": "Circular-Studios",
+                "repo": "Dash",
+                "stars": 14964
+              }
+            },
+            {
+              "node_type": "item",
+              "title": ":tada: Astera",
+              "description": "2D C99 Cross Platform Game Library / Framework",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1393314871,
+                "language": "JavaScript",
+                "last_commit": "2021-08-13T00:00:00.000Z",
+                "owner": "tek256",
+                "repo": "astera",
+                "stars": 14872
+              }
+            },
+            {
+              "node_type": "item",
+              "title": ":tada: DEM Net Elevation API C#",
+              "description": "Terrain generation from real data with textures, normal maps, glTF, OBJ, STL support",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1732214091,
+                "language": "JavaScript",
+                "last_commit": "2023-10-02T00:00:00.000Z",
+                "owner": "dem-net",
+                "repo": "DEM.Net",
+                "stars": 14092
+              }
+            },
+            {
+              "node_type": "item",
+              "title": ":tada: macroquad",
+              "description": "The cross-platform game engine in Rust.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1377862952,
+                "language": "Go",
+                "last_commit": "2021-05-24T00:00:00.000Z",
+                "owner": "not-fl3",
+                "repo": "macroquad",
+                "stars": 12953
+              }
+            },
+            {
+              "node_type": "item",
+              "title": ":tada: Pyxel",
+              "description": "a retro game engine for Python.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 4250060896,
+                "language": "Java",
+                "last_commit": "2021-07-19T00:00:00.000Z",
+                "owner": "kitao",
+                "repo": "pyxel",
+                "stars": 10897
+              }
+            },
+            {
+              "node_type": "item",
+              "title": ":tada: Jitter",
+              "description": "a fast and lightweight physics engine written in C#.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2100810617,
+                "language": "Ruby",
+                "last_commit": "2022-04-24T00:00:00.000Z",
+                "owner": "mattleibow",
+                "repo": "jitterphysics",
+                "stars": 10618
+              }
+            },
+            {
+              "node_type": "item",
+              "title": ":tada: Blitz3D",
+              "description": "3D basic-like programming language for fast 3D desktop games.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1718960533,
+                "language": "Python",
+                "last_commit": "2022-07-17T00:00:00.000Z",
+                "owner": "blitz-research",
+                "repo": "blitz3d",
+                "stars": 10534
+              }
+            },
+            {
+              "node_type": "item",
+              "title": ":tada: Farseer",
+              "description": "a collision detection system with realistic physics responses.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 661060468,
+                "language": "Shell",
+                "last_commit": "2022-09-20T00:00:00.000Z",
+                "owner": "VelcroPhysics",
+                "repo": "VelcroPhysics",
+                "stars": 10469
+              }
+            },
+            {
+              "node_type": "item",
+              "title": ":tada: boardgame.io",
+              "description": "State management and multiplayer networking for turn-based games.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2174857710,
+                "language": "TypeScript",
+                "last_commit": "2022-01-21T00:00:00.000Z",
+                "owner": "boardgameio",
+                "repo": "boardgame.io",
+                "stars": 7711
+              }
+            },
+            {
+              "node_type": "item",
+              "title": ":tada: Glide Engine",
+              "description": "Engine for making 2d games on iOS, macOS and tvOS in Swift programming language, with practical examples and tutorials.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 288407254,
+                "language": "Rust",
+                "last_commit": "2023-04-22T00:00:00.000Z",
+                "owner": "cocoatoucher",
+                "repo": "Glide",
+                "stars": 7255
+              }
+            },
+            {
+              "node_type": "item",
+              "title": ":tada: Chipmunk C#",
+              "description": "C# implementation of the Chipmunk2D lib.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 450155238,
+                "language": "Shell",
+                "last_commit": "2023-05-08T00:00:00.000Z",
+                "owner": "netonjm",
+                "repo": "ChipmunkSharp",
+                "stars": 5239
+              }
+            },
+            {
+              "node_type": "item",
+              "title": ":tada: Diligent Engine",
+              "description": "A modern cross-platform low-level graphics library that supports Direct3D11, Direct3D12, OpenGL/GLES, and Vulkan.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 4243305167,
+                "language": "Ruby",
+                "last_commit": "2023-07-18T00:00:00.000Z",
+                "owner": "DiligentGraphics",
+                "repo": "DiligentEngine",
+                "stars": 5168
+              }
+            },
+            {
+              "node_type": "item",
+              "title": ":tada: ÖbEngine",
+              "description": "2D Game Engine with Lua Scripting made on top of SFML !",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3290004471,
+                "language": "JavaScript",
+                "last_commit": "2022-09-17T00:00:00.000Z",
+                "owner": "Sygmei",
+                "repo": "ObEngine",
+                "stars": 4472
+              }
+            },
+            {
+              "node_type": "item",
+              "title": ":tada: Lums",
+              "description": "A 2D / 3D framework written in C++11. Very efficient and modern. Still under heavy development.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1209453108,
+                "language": "Shell",
+                "last_commit": "2023-09-15T00:00:00.000Z",
+                "owner": "lums-proj",
+                "repo": "Lums",
+                "stars": 3109
+              }
+            },
+            {
+              "node_type": "item",
+              "title": ":tada: RGFW",
+              "description": "Lightweight multi-platform single-header library for creating windows, supports many graphics contexts and software rendering.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3436852534,
+                "language": "Rust",
+                "last_commit": "2022-07-16T00:00:00.000Z",
+                "owner": "ColleagueRiley",
+                "repo": "RGFW",
+                "stars": 2535
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Engines and Frameworks"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": ":tada: Fluent Behaviour Tree",
+              "description": "C# behaviour tree library with a fluent API released under MIT.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3811037588,
+                "language": "Shell",
+                "last_commit": "2022-05-23T00:00:00.000Z",
+                "owner": "codecapers",
+                "repo": "Fluent-Behaviour-Tree",
+                "stars": 37589
+              }
+            },
+            {
+              "node_type": "item",
+              "title": ":tada: SimpleAI",
+              "description": "C++11 behaviour tree based library with a QT5 based remote debugger (and with optional LUA bindings) released under MIT.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 876713207,
+                "language": "Ruby",
+                "last_commit": "2023-06-08T00:00:00.000Z",
+                "owner": "mgerhardy",
+                "repo": "simpleai",
+                "stars": 13208
+              }
+            },
+            {
+              "node_type": "item",
+              "title": ":tada: AI Game Developer",
+              "description": "and AI integration. Unit Test, Coding, C# Roslyn, Reflection, Assets. Helps to create games with AI. And helps to run AI logic during gameplay.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2872661628,
+                "language": "Shell",
+                "last_commit": "2022-04-13T00:00:00.000Z",
+                "owner": "IvanMurzak",
+                "repo": "Unity-MCP",
+                "stars": 11629
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "AI"
+        }
+      ],
       "title": "Code"
     },
     {
-      "description": "",
-      "items": [
-        {
-          "node_type": "item",
-          "title": ":tada: ecs-lib",
-          "description": "ecs-lib is a tiny and easy to use ECS (Entity Component System) library for game programming. It's written in Typescript but you can use on node.js and web browser too.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2140349675,
-            "language": "C++",
-            "last_commit": "2022-02-25T00:00:00.000Z",
-            "owner": "nidorx",
-            "repo": "ecs-lib",
-            "stars": 49676
-          }
-        },
-        {
-          "node_type": "item",
-          "title": ":tada: nuklear",
-          "description": "A single-header ANSI C immediate mode cross-platform GUI library.",
-          "children": [],
-          "repo_info": {
-            "archived": true,
-            "id": 2523998670,
-            "language": "TypeScript",
-            "last_commit": "2022-03-02T00:00:00.000Z",
-            "owner": "Immediate-Mode-UI",
-            "repo": "Nuklear",
-            "stars": 48671
-          }
-        },
-        {
-          "node_type": "item",
-          "title": ":tada: WhiteStorm.js",
-          "description": "3d javacript framework for building apps and games",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 27648388,
-            "language": "Shell",
-            "last_commit": "2022-12-09T00:00:00.000Z",
-            "owner": "WhitestormJS",
-            "repo": "whitestorm.js",
-            "stars": 48389
-          }
-        },
-        {
-          "node_type": "item",
-          "title": ":tada: OpenXRay",
-          "description": "a community-modified X-Ray engine used in S.T.A.L.K.E.R. game series.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3716948354,
-            "language": "Rust",
-            "last_commit": "2023-01-12T00:00:00.000Z",
-            "owner": "OpenXRay",
-            "repo": "xray-16",
-            "stars": 48355
-          }
-        },
-        {
-          "node_type": "item",
-          "title": ":tada: Juno",
-          "description": "Clean and lightweight 2D game framework written in TypeScript",
-          "children": [],
-          "repo_info": {
-            "archived": true,
-            "id": 1031247693,
-            "language": "Python",
-            "last_commit": "2022-02-07T00:00:00.000Z",
-            "owner": "digitsensitive",
-            "repo": "juno",
-            "stars": 47694
-          }
-        },
-        {
-          "node_type": "item",
-          "title": ":tada: vectarine",
-          "description": "Vectarine is a cross-platform game engine focusing on fast prototyping and having fun. Write games using Luau and extend the engine with Rust modules.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1815496756,
-            "language": "Java",
-            "last_commit": "2021-12-06T00:00:00.000Z",
-            "owner": "vanyle",
-            "repo": "vectarine",
-            "stars": 46757
-          }
-        },
-        {
-          "node_type": "item",
-          "title": ":tada: MINX",
-          "description": "Open Source 2D game framework written in C++ (to the style of XNA)",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3938745506,
-            "language": "Java",
-            "last_commit": "2022-08-13T00:00:00.000Z",
-            "owner": "GearChicken",
-            "repo": "MINX",
-            "stars": 45507
-          }
-        },
-        {
-          "node_type": "item",
-          "title": ":tada: Juno",
-          "description": "Framework for making 2D games with chunky pixels in Lua",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1679043821,
-            "language": "JavaScript",
-            "last_commit": "2021-10-02T00:00:00.000Z",
-            "owner": "rxi",
-            "repo": "juno",
-            "stars": 43822
-          }
-        },
-        {
-          "node_type": "item",
-          "title": ":tada: is::Engine",
-          "description": "C++, SDL 2 and SFML game engine that allows to create games on Nintendo Switch, Web (HTML 5), Mobile and PC.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1485243458,
-            "language": "Shell",
-            "last_commit": "2022-09-30T00:00:00.000Z",
-            "owner": "Is-Daouda",
-            "repo": "is-Engine",
-            "stars": 43459
-          }
-        },
-        {
-          "node_type": "item",
-          "title": ":tada: Nakama",
-          "description": "Distributed server for social and realtime games and apps.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 231741317,
-            "language": "Ruby",
-            "last_commit": "2023-02-18T00:00:00.000Z",
-            "owner": "heroiclabs",
-            "repo": "nakama",
-            "stars": 41318
-          }
-        },
-        {
-          "node_type": "item",
-          "title": ":tada: 6502 Unit Test executor",
-          "description": "A cross-platform unit testing tool for MOS 6502 assembly. (i.e. NES)",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3582639222,
-            "language": "Go",
-            "last_commit": "2023-05-24T00:00:00.000Z",
-            "owner": "AsaiYusuke",
-            "repo": "6502_test_executor",
-            "stars": 39223
-          }
-        },
-        {
-          "node_type": "item",
-          "title": ":tada: Carimbo",
-          "description": "A 2D game engine developed in modern C++ using SDL, an Entity-Component-System (ECS) architecture, and Box2D. It features Lua scripting and is designed for web portability via WebAssembly.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3684437218,
-            "language": "Shell",
-            "last_commit": "2023-05-28T00:00:00.000Z",
-            "owner": "willtobyte",
-            "repo": "carimbo",
-            "stars": 37219
-          }
-        },
-        {
-          "node_type": "item",
-          "title": ":tada: Bladecoder",
-          "description": "Classic point and click adventure game engine and editor.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1605584286,
-            "language": "Java",
-            "last_commit": "2023-03-21T00:00:00.000Z",
-            "owner": "bladecoder",
-            "repo": "bladecoder-adventure-engine",
-            "stars": 34287
-          }
-        },
-        {
-          "node_type": "item",
-          "title": ":tada: bgfx",
-          "description": "Cross-platform, graphics API agnostic, \"Bring Your Own Engine/Framework\" style rendering library.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3138333442,
-            "language": "Go",
-            "last_commit": "2022-10-16T00:00:00.000Z",
-            "owner": "bkaradzic",
-            "repo": "bgfx",
-            "stars": 33443
-          }
-        },
-        {
-          "node_type": "item",
-          "title": ":tada: Cocos2D",
-          "description": "graphic library for games and multimedia, for python language",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 390483099,
-            "language": null,
-            "last_commit": "2023-09-24T00:00:00.000Z",
-            "owner": "los-cocos",
-            "repo": "cocos",
-            "stars": 33100
-          }
-        },
-        {
-          "node_type": "item",
-          "title": ":free: :tada: Folded Paper Engine",
-          "description": "Blender to Godot game mechanics engine/plug-ins. Just a few clicks. Super easy. Featuring: 2.5D/first-person/third-person controls, trigger commands/events, inventory, holdable items and all kinds of stuff.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3367733081,
-            "language": "JavaScript",
-            "last_commit": "2023-10-12T00:00:00.000Z",
-            "owner": "papercraftgames",
-            "repo": "folded-paper-engine",
-            "stars": 33082
-          }
-        },
-        {
-          "node_type": "item",
-          "title": ":tada: Rajawali",
-          "description": "Android OpenGL ES 2.0/3.0 Engine",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 154832832,
-            "language": "Go",
-            "last_commit": "2021-09-21T00:00:00.000Z",
-            "owner": "Rajawali",
-            "repo": "Rajawali",
-            "stars": 32833
-          }
-        },
-        {
-          "node_type": "item",
-          "title": ":tada: Dear Imgui",
-          "description": "A bloat-free immediate mode GUI for C++ with minimal dependencies.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3800082751,
-            "language": "JavaScript",
-            "last_commit": "2021-12-11T00:00:00.000Z",
-            "owner": "ocornut",
-            "repo": "imgui",
-            "stars": 32752
-          }
-        },
-        {
-          "node_type": "item",
-          "title": ":tada: Flame",
-          "description": "a minimalist game engine for Flutter",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 264682429,
-            "language": null,
-            "last_commit": "2022-10-29T00:00:00.000Z",
-            "owner": "flame-engine",
-            "repo": "flame",
-            "stars": 32430
-          }
-        },
-        {
-          "node_type": "item",
-          "title": ":tada: asimov-ts",
-          "description": "A type safe (as much as possible) engine for the web written in TypeScript.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1824479628,
-            "language": "Shell",
-            "last_commit": "2022-04-13T00:00:00.000Z",
-            "owner": "pedrozaalex",
-            "repo": "asimov-ts",
-            "stars": 29629
-          }
-        },
-        {
-          "node_type": "item",
-          "title": ":tada: DotRecast",
-          "description": "A port of Recast & Detour, navigation mesh toolset for games, Unity3D, servers, C#.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3681028896,
-            "language": "Java",
-            "last_commit": "2021-07-19T00:00:00.000Z",
-            "owner": "ikpil",
-            "repo": "DotRecast",
-            "stars": 28897
-          }
-        },
-        {
-          "node_type": "item",
-          "title": ":tada: FXGL",
-          "description": "A JavaFX/Kotlin game engine for Win/Mac/Linux.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 635178881,
-            "language": "JavaScript",
-            "last_commit": "2021-08-03T00:00:00.000Z",
-            "owner": "AlmasB",
-            "repo": "FXGL",
-            "stars": 28882
-          }
-        },
-        {
-          "node_type": "item",
-          "title": ":tada: axys",
-          "description": "A fork of Cocos2d-x-4.0, it has Full Support OpenAL for all platforms, single texture multi GPU texture handler and C++ 17.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2642875473,
-            "language": "Python",
-            "last_commit": "2022-09-15T00:00:00.000Z",
-            "owner": "axys1",
-            "repo": "axys",
-            "stars": 25474
-          }
-        },
-        {
-          "node_type": "item",
-          "title": ":tada: LumixEngine",
-          "description": "3D Game engine built on C++.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2134175175,
-            "language": "C++",
-            "last_commit": "2023-07-10T00:00:00.000Z",
-            "owner": "nem0",
-            "repo": "LumixEngine",
-            "stars": 25176
-          }
-        },
-        {
-          "node_type": "item",
-          "title": ":tada: Box2D.NET",
-          "description": "A port of Box2D, is a 2D physics engine for games, .NET C#, Unity3D, servers.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 134374267,
-            "language": "Ruby",
-            "last_commit": "2023-04-09T00:00:00.000Z",
-            "owner": "ikpil",
-            "repo": "Box2D.NET",
-            "stars": 24268
-          }
-        },
-        {
-          "node_type": "item",
-          "title": ":tada: JNGL",
-          "description": "a 2D open-source game engine. Develop on Linux, Windows, OS X. Deploy to Nintendo Switch, Xbox, Linux, Windows, OS X, Web, Android, iOS and more.",
-          "children": [],
-          "repo_info": {
-            "archived": true,
-            "id": 3548622211,
-            "language": "JavaScript",
-            "last_commit": "2023-06-04T00:00:00.000Z",
-            "owner": "jhasse",
-            "repo": "jngl",
-            "stars": 22212
-          }
-        },
-        {
-          "node_type": "item",
-          "title": ":tada: EnTT",
-          "description": "Gaming meets modern C++, a fast and reliable entity-component system (ECS) and much more",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2436220609,
-            "language": null,
-            "last_commit": "2022-05-02T00:00:00.000Z",
-            "owner": "skypjack",
-            "repo": "entt",
-            "stars": 20610
-          }
-        },
-        {
-          "node_type": "item",
-          "title": ":tada: iio.js",
-          "description": "A javascript library that speeds the creation and deployment of HTML5 Canvas applications",
-          "children": [],
-          "repo_info": {
-            "archived": true,
-            "id": 1808819941,
-            "language": "JavaScript",
-            "last_commit": "2021-06-04T00:00:00.000Z",
-            "owner": "iioinc",
-            "repo": "iio.js",
-            "stars": 19942
-          }
-        },
-        {
-          "node_type": "item",
-          "title": ":tada: Screen 13",
-          "description": "An easy-to-use Vulkan rendering engine. Provides a render graph for Rust.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1862219930,
-            "language": "TypeScript",
-            "last_commit": "2021-06-15T00:00:00.000Z",
-            "owner": "attackgoat",
-            "repo": "screen-13",
-            "stars": 19931
-          }
-        },
-        {
-          "node_type": "item",
-          "title": ":tada: Grid",
-          "description": "A multiplayer-first game engine for Lua.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2100569015,
-            "language": "C++",
-            "last_commit": "2023-12-17T00:00:00.000Z",
-            "owner": "Planimeter",
-            "repo": "game-engine-2d",
-            "stars": 19016
-          }
-        },
-        {
-          "node_type": "item",
-          "title": ":tada: ENGi",
-          "description": "A multi-platform 2D game library for Go.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2318517905,
-            "language": "C++",
-            "last_commit": "2021-07-10T00:00:00.000Z",
-            "owner": "ajhager",
-            "repo": "engi",
-            "stars": 17906
-          }
-        },
-        {
-          "node_type": "item",
-          "title": ":tada: Foster",
-          "description": "A small cross-platform 2D game framework in C#.",
-          "children": [],
-          "repo_info": {
-            "archived": true,
-            "id": 28916048,
-            "language": "Shell",
-            "last_commit": "2023-11-14T00:00:00.000Z",
-            "owner": "FosterFramework",
-            "repo": "Foster",
-            "stars": 16049
-          }
-        },
-        {
-          "node_type": "item",
-          "title": ":tada: Pixel Vision 8",
-          "description": "Pixel Vision 8's core philosophy is to teach retro game development with streamlined workflows. PV8 is also a platform that standardizes 8-bit fantasy console limitations built on top of the open-source C# game engine based on MonoGame.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1782765002,
-            "language": "Go",
-            "last_commit": "2023-12-30T00:00:00.000Z",
-            "owner": "PixelVision8",
-            "repo": "PixelVision8",
-            "stars": 15003
-          }
-        },
-        {
-          "node_type": "item",
-          "title": ":tada: Dash",
-          "description": "A free and open 3D game engine written in D.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1446264963,
-            "language": "Python",
-            "last_commit": "2021-05-13T00:00:00.000Z",
-            "owner": "Circular-Studios",
-            "repo": "Dash",
-            "stars": 14964
-          }
-        },
-        {
-          "node_type": "item",
-          "title": ":tada: Astera",
-          "description": "2D C99 Cross Platform Game Library / Framework",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1393314871,
-            "language": "JavaScript",
-            "last_commit": "2021-08-13T00:00:00.000Z",
-            "owner": "tek256",
-            "repo": "astera",
-            "stars": 14872
-          }
-        },
-        {
-          "node_type": "item",
-          "title": ":tada: DEM Net Elevation API C#",
-          "description": "Terrain generation from real data with textures, normal maps, glTF, OBJ, STL support",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1732214091,
-            "language": "JavaScript",
-            "last_commit": "2023-10-02T00:00:00.000Z",
-            "owner": "dem-net",
-            "repo": "DEM.Net",
-            "stars": 14092
-          }
-        },
-        {
-          "node_type": "item",
-          "title": ":tada: macroquad",
-          "description": "The cross-platform game engine in Rust.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1377862952,
-            "language": "Go",
-            "last_commit": "2021-05-24T00:00:00.000Z",
-            "owner": "not-fl3",
-            "repo": "macroquad",
-            "stars": 12953
-          }
-        },
-        {
-          "node_type": "item",
-          "title": ":tada: Pyxel",
-          "description": "a retro game engine for Python.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 4250060896,
-            "language": "Java",
-            "last_commit": "2021-07-19T00:00:00.000Z",
-            "owner": "kitao",
-            "repo": "pyxel",
-            "stars": 10897
-          }
-        },
-        {
-          "node_type": "item",
-          "title": ":tada: Jitter",
-          "description": "a fast and lightweight physics engine written in C#.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2100810617,
-            "language": "Ruby",
-            "last_commit": "2022-04-24T00:00:00.000Z",
-            "owner": "mattleibow",
-            "repo": "jitterphysics",
-            "stars": 10618
-          }
-        },
-        {
-          "node_type": "item",
-          "title": ":tada: Blitz3D",
-          "description": "3D basic-like programming language for fast 3D desktop games.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1718960533,
-            "language": "Python",
-            "last_commit": "2022-07-17T00:00:00.000Z",
-            "owner": "blitz-research",
-            "repo": "blitz3d",
-            "stars": 10534
-          }
-        },
-        {
-          "node_type": "item",
-          "title": ":tada: Farseer",
-          "description": "a collision detection system with realistic physics responses.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 661060468,
-            "language": "Shell",
-            "last_commit": "2022-09-20T00:00:00.000Z",
-            "owner": "VelcroPhysics",
-            "repo": "VelcroPhysics",
-            "stars": 10469
-          }
-        },
-        {
-          "node_type": "item",
-          "title": ":tada: boardgame.io",
-          "description": "State management and multiplayer networking for turn-based games.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2174857710,
-            "language": "TypeScript",
-            "last_commit": "2022-01-21T00:00:00.000Z",
-            "owner": "boardgameio",
-            "repo": "boardgame.io",
-            "stars": 7711
-          }
-        },
-        {
-          "node_type": "item",
-          "title": ":tada: Glide Engine",
-          "description": "Engine for making 2d games on iOS, macOS and tvOS in Swift programming language, with practical examples and tutorials.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 288407254,
-            "language": "Rust",
-            "last_commit": "2023-04-22T00:00:00.000Z",
-            "owner": "cocoatoucher",
-            "repo": "Glide",
-            "stars": 7255
-          }
-        },
-        {
-          "node_type": "item",
-          "title": ":tada: Chipmunk C#",
-          "description": "C# implementation of the Chipmunk2D lib.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 450155238,
-            "language": "Shell",
-            "last_commit": "2023-05-08T00:00:00.000Z",
-            "owner": "netonjm",
-            "repo": "ChipmunkSharp",
-            "stars": 5239
-          }
-        },
-        {
-          "node_type": "item",
-          "title": ":tada: Diligent Engine",
-          "description": "A modern cross-platform low-level graphics library that supports Direct3D11, Direct3D12, OpenGL/GLES, and Vulkan.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 4243305167,
-            "language": "Ruby",
-            "last_commit": "2023-07-18T00:00:00.000Z",
-            "owner": "DiligentGraphics",
-            "repo": "DiligentEngine",
-            "stars": 5168
-          }
-        },
-        {
-          "node_type": "item",
-          "title": ":tada: ÖbEngine",
-          "description": "2D Game Engine with Lua Scripting made on top of SFML !",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3290004471,
-            "language": "JavaScript",
-            "last_commit": "2022-09-17T00:00:00.000Z",
-            "owner": "Sygmei",
-            "repo": "ObEngine",
-            "stars": 4472
-          }
-        },
-        {
-          "node_type": "item",
-          "title": ":tada: Lums",
-          "description": "A 2D / 3D framework written in C++11. Very efficient and modern. Still under heavy development.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1209453108,
-            "language": "Shell",
-            "last_commit": "2023-09-15T00:00:00.000Z",
-            "owner": "lums-proj",
-            "repo": "Lums",
-            "stars": 3109
-          }
-        },
-        {
-          "node_type": "item",
-          "title": ":tada: RGFW",
-          "description": "Lightweight multi-platform single-header library for creating windows, supports many graphics contexts and software rendering.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3436852534,
-            "language": "Rust",
-            "last_commit": "2022-07-16T00:00:00.000Z",
-            "owner": "ColleagueRiley",
-            "repo": "RGFW",
-            "stars": 2535
-          }
-        }
-      ],
-      "title": "Engines and Frameworks"
-    },
-    {
-      "description": "",
-      "items": [
-        {
-          "node_type": "item",
-          "title": ":tada: Fluent Behaviour Tree",
-          "description": "C# behaviour tree library with a fluent API released under MIT.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3811037588,
-            "language": "Shell",
-            "last_commit": "2022-05-23T00:00:00.000Z",
-            "owner": "codecapers",
-            "repo": "Fluent-Behaviour-Tree",
-            "stars": 37589
-          }
-        },
-        {
-          "node_type": "item",
-          "title": ":tada: SimpleAI",
-          "description": "C++11 behaviour tree based library with a QT5 based remote debugger (and with optional LUA bindings) released under MIT.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 876713207,
-            "language": "Ruby",
-            "last_commit": "2023-06-08T00:00:00.000Z",
-            "owner": "mgerhardy",
-            "repo": "simpleai",
-            "stars": 13208
-          }
-        },
-        {
-          "node_type": "item",
-          "title": ":tada: AI Game Developer",
-          "description": "and AI integration. Unit Test, Coding, C# Roslyn, Reflection, Assets. Helps to create games with AI. And helps to run AI logic during gameplay.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2872661628,
-            "language": "Shell",
-            "last_commit": "2022-04-13T00:00:00.000Z",
-            "owner": "IvanMurzak",
-            "repo": "Unity-MCP",
-            "stars": 11629
-          }
-        }
-      ],
-      "title": "AI"
-    },
-    {
       "description": "Audio editors, sounds collections and more.",
-      "items": [],
+      "items": [
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": ":free: FamiTracker",
+              "description": "free windows tracker for producing music for the NES/Famicom-systems.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2088349902,
+                "language": "Go",
+                "last_commit": "2021-07-13T00:00:00.000Z",
+                "owner": "Dn-Programming-Core-Management",
+                "repo": "Dn-FamiTracker",
+                "stars": 49903
+              }
+            },
+            {
+              "node_type": "item",
+              "title": ":free: Famistudio",
+              "description": "FamiStudio NES Music Editor.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 972820943,
+                "language": "Python",
+                "last_commit": "2021-06-02T00:00:00.000Z",
+                "owner": "BleuBleu",
+                "repo": "FamiStudio",
+                "stars": 20944
+              }
+            },
+            {
+              "node_type": "item",
+              "title": ":tada: MilkyTracker",
+              "description": "open source tracker for Mac/Linux/Windows platforms.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1385162710,
+                "language": "TypeScript",
+                "last_commit": "2022-01-21T00:00:00.000Z",
+                "owner": "milkytracker",
+                "repo": "MilkyTracker",
+                "stars": 12711
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Music and Audio Editors"
+        }
+      ],
       "title": "Audio"
     },
     {
-      "description": "",
-      "items": [
-        {
-          "node_type": "item",
-          "title": ":free: FamiTracker",
-          "description": "free windows tracker for producing music for the NES/Famicom-systems.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2088349902,
-            "language": "Go",
-            "last_commit": "2021-07-13T00:00:00.000Z",
-            "owner": "Dn-Programming-Core-Management",
-            "repo": "Dn-FamiTracker",
-            "stars": 49903
-          }
-        },
-        {
-          "node_type": "item",
-          "title": ":free: Famistudio",
-          "description": "FamiStudio NES Music Editor.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 972820943,
-            "language": "Python",
-            "last_commit": "2021-06-02T00:00:00.000Z",
-            "owner": "BleuBleu",
-            "repo": "FamiStudio",
-            "stars": 20944
-          }
-        },
-        {
-          "node_type": "item",
-          "title": ":tada: MilkyTracker",
-          "description": "open source tracker for Mac/Linux/Windows platforms.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1385162710,
-            "language": "TypeScript",
-            "last_commit": "2022-01-21T00:00:00.000Z",
-            "owner": "milkytracker",
-            "repo": "MilkyTracker",
-            "stars": 12711
-          }
-        }
-      ],
-      "title": "Music and Audio Editors"
-    },
-    {
       "description": "Blogs, portals, magazines and more",
-      "items": [],
-      "title": "Must see"
-    },
-    {
-      "description": "",
       "items": [
         {
-          "node_type": "item",
-          "title": ":tada: OpenRA",
+          "children": [
+            {
+              "node_type": "item",
+              "title": ":tada: OpenRA",
+              "description": null,
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 339743960,
+                "language": "TypeScript",
+                "last_commit": "2021-05-16T00:00:00.000Z",
+                "owner": "OpenRA",
+                "repo": "OpenRA",
+                "stars": 43961
+              }
+            },
+            {
+              "node_type": "item",
+              "title": ":tada: OpenTTD",
+              "description": null,
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 971239012,
+                "language": "Go",
+                "last_commit": "2023-12-20T00:00:00.000Z",
+                "owner": "OpenTTD",
+                "repo": "OpenTTD",
+                "stars": 39013
+              }
+            },
+            {
+              "node_type": "item",
+              "title": ":tada: NetHack",
+              "description": null,
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 153387136,
+                "language": "Java",
+                "last_commit": "2023-08-18T00:00:00.000Z",
+                "owner": "NetHack",
+                "repo": "NetHack",
+                "stars": 37137
+              }
+            },
+            {
+              "node_type": "item",
+              "title": ":free: VVVVVV",
+              "description": null,
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 958682087,
+                "language": "Ruby",
+                "last_commit": "2023-10-06T00:00:00.000Z",
+                "owner": "TerryCavanagh",
+                "repo": "VVVVVV",
+                "stars": 32088
+              }
+            },
+            {
+              "node_type": "item",
+              "title": ":tada: Wolfenstein 3D",
+              "description": null,
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3870176204,
+                "language": "Rust",
+                "last_commit": "2023-06-11T00:00:00.000Z",
+                "owner": "id-Software",
+                "repo": "wolf3d",
+                "stars": 26205
+              }
+            },
+            {
+              "node_type": "item",
+              "title": ":tada: Doom 3",
+              "description": null,
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1712123930,
+                "language": "TypeScript",
+                "last_commit": "2021-06-15T00:00:00.000Z",
+                "owner": "id-Software",
+                "repo": "DOOM-3",
+                "stars": 23931
+              }
+            },
+            {
+              "node_type": "item",
+              "title": ":tada: Quake",
+              "description": null,
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1721970124,
+                "language": "Rust",
+                "last_commit": "2023-08-30T00:00:00.000Z",
+                "owner": "id-Software",
+                "repo": "Quake",
+                "stars": 20125
+              }
+            },
+            {
+              "node_type": "item",
+              "title": ":tada: SimCity",
+              "description": null,
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2145316576,
+                "language": "Java",
+                "last_commit": "2022-06-04T00:00:00.000Z",
+                "owner": "simhacker",
+                "repo": "micropolis",
+                "stars": 16577
+              }
+            },
+            {
+              "node_type": "item",
+              "title": ":tada: Doom",
+              "description": null,
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1028966002,
+                "language": "Go",
+                "last_commit": "2023-12-30T00:00:00.000Z",
+                "owner": "id-Software",
+                "repo": "DOOM",
+                "stars": 16003
+              }
+            },
+            {
+              "node_type": "item",
+              "title": ":tada: Quake III Arena",
+              "description": null,
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2265513842,
+                "language": "Go",
+                "last_commit": "2021-09-11T00:00:00.000Z",
+                "owner": "id-Software",
+                "repo": "Quake-III-Arena",
+                "stars": 13843
+              }
+            },
+            {
+              "node_type": "item",
+              "title": ":tada: Quake 2",
+              "description": null,
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1821162643,
+                "language": "Python",
+                "last_commit": "2022-03-29T00:00:00.000Z",
+                "owner": "id-Software",
+                "repo": "Quake-2",
+                "stars": 12644
+              }
+            },
+            {
+              "node_type": "item",
+              "title": ":tada: Prince of Persia",
+              "description": null,
+              "children": [],
+              "repo_info": {
+                "archived": true,
+                "id": 682955518,
+                "language": "Shell",
+                "last_commit": "2022-08-01T00:00:00.000Z",
+                "owner": "jmechner",
+                "repo": "Prince-of-Persia-Apple-II",
+                "stars": 5519
+              }
+            },
+            {
+              "node_type": "item",
+              "title": ":tada: Canabalt iOS",
+              "description": null,
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1128004018,
+                "language": "Shell",
+                "last_commit": "2023-12-14T00:00:00.000Z",
+                "owner": "ericjohnson",
+                "repo": "canabalt-ios",
+                "stars": 4019
+              }
+            },
+            {
+              "node_type": "item",
+              "title": ":tada: Barotrauma",
+              "description": null,
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3062953843,
+                "language": "Python",
+                "last_commit": "2021-09-10T00:00:00.000Z",
+                "owner": "Regalis11",
+                "repo": "Barotrauma",
+                "stars": 3844
+              }
+            }
+          ],
           "description": null,
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 339743960,
-            "language": "TypeScript",
-            "last_commit": "2021-05-16T00:00:00.000Z",
-            "owner": "OpenRA",
-            "repo": "OpenRA",
-            "stars": 43961
-          }
-        },
-        {
-          "node_type": "item",
-          "title": ":tada: OpenTTD",
-          "description": null,
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 971239012,
-            "language": "Go",
-            "last_commit": "2023-12-20T00:00:00.000Z",
-            "owner": "OpenTTD",
-            "repo": "OpenTTD",
-            "stars": 39013
-          }
-        },
-        {
-          "node_type": "item",
-          "title": ":tada: NetHack",
-          "description": null,
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 153387136,
-            "language": "Java",
-            "last_commit": "2023-08-18T00:00:00.000Z",
-            "owner": "NetHack",
-            "repo": "NetHack",
-            "stars": 37137
-          }
-        },
-        {
-          "node_type": "item",
-          "title": ":free: VVVVVV",
-          "description": null,
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 958682087,
-            "language": "Ruby",
-            "last_commit": "2023-10-06T00:00:00.000Z",
-            "owner": "TerryCavanagh",
-            "repo": "VVVVVV",
-            "stars": 32088
-          }
-        },
-        {
-          "node_type": "item",
-          "title": ":tada: Wolfenstein 3D",
-          "description": null,
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3870176204,
-            "language": "Rust",
-            "last_commit": "2023-06-11T00:00:00.000Z",
-            "owner": "id-Software",
-            "repo": "wolf3d",
-            "stars": 26205
-          }
-        },
-        {
-          "node_type": "item",
-          "title": ":tada: Doom 3",
-          "description": null,
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1712123930,
-            "language": "TypeScript",
-            "last_commit": "2021-06-15T00:00:00.000Z",
-            "owner": "id-Software",
-            "repo": "DOOM-3",
-            "stars": 23931
-          }
-        },
-        {
-          "node_type": "item",
-          "title": ":tada: Quake",
-          "description": null,
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1721970124,
-            "language": "Rust",
-            "last_commit": "2023-08-30T00:00:00.000Z",
-            "owner": "id-Software",
-            "repo": "Quake",
-            "stars": 20125
-          }
-        },
-        {
-          "node_type": "item",
-          "title": ":tada: SimCity",
-          "description": null,
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2145316576,
-            "language": "Java",
-            "last_commit": "2022-06-04T00:00:00.000Z",
-            "owner": "simhacker",
-            "repo": "micropolis",
-            "stars": 16577
-          }
-        },
-        {
-          "node_type": "item",
-          "title": ":tada: Doom",
-          "description": null,
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1028966002,
-            "language": "Go",
-            "last_commit": "2023-12-30T00:00:00.000Z",
-            "owner": "id-Software",
-            "repo": "DOOM",
-            "stars": 16003
-          }
-        },
-        {
-          "node_type": "item",
-          "title": ":tada: Quake III Arena",
-          "description": null,
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2265513842,
-            "language": "Go",
-            "last_commit": "2021-09-11T00:00:00.000Z",
-            "owner": "id-Software",
-            "repo": "Quake-III-Arena",
-            "stars": 13843
-          }
-        },
-        {
-          "node_type": "item",
-          "title": ":tada: Quake 2",
-          "description": null,
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1821162643,
-            "language": "Python",
-            "last_commit": "2022-03-29T00:00:00.000Z",
-            "owner": "id-Software",
-            "repo": "Quake-2",
-            "stars": 12644
-          }
-        },
-        {
-          "node_type": "item",
-          "title": ":tada: Prince of Persia",
-          "description": null,
-          "children": [],
-          "repo_info": {
-            "archived": true,
-            "id": 682955518,
-            "language": "Shell",
-            "last_commit": "2022-08-01T00:00:00.000Z",
-            "owner": "jmechner",
-            "repo": "Prince-of-Persia-Apple-II",
-            "stars": 5519
-          }
-        },
-        {
-          "node_type": "item",
-          "title": ":tada: Canabalt iOS",
-          "description": null,
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1128004018,
-            "language": "Shell",
-            "last_commit": "2023-12-14T00:00:00.000Z",
-            "owner": "ericjohnson",
-            "repo": "canabalt-ios",
-            "stars": 4019
-          }
-        },
-        {
-          "node_type": "item",
-          "title": ":tada: Barotrauma",
-          "description": null,
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3062953843,
-            "language": "Python",
-            "last_commit": "2021-09-10T00:00:00.000Z",
-            "owner": "Regalis11",
-            "repo": "Barotrauma",
-            "stars": 3844
-          }
+          "node_type": "group",
+          "title": "Complete Game Sources"
         }
       ],
-      "title": "Complete Game Sources"
-    },
-    {
-      "description": "Online courses, tutorials, screencasts",
-      "items": [],
-      "title": "Learn"
+      "title": "Must see"
     }
   ],
   "metadata": {

@@ -113,49 +113,46 @@
     },
     {
       "description": "Read the essentials. Check the official Elm blog: elm-lang.org/blog",
-      "items": [],
-      "title": "Articles"
-    },
-    {
-      "description": "",
       "items": [
         {
-          "node_type": "item",
-          "title": "Elm for Web Developers",
-          "description": "A collection of notes for web developers looking into moving to Elm.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 4071299956,
-            "language": "Java",
-            "last_commit": "2021-05-20T00:00:00.000Z",
-            "owner": "eeue56",
-            "repo": "elm-for-web-developers",
-            "stars": 49957
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Composing Features and Behaviours in the Elm Architecture",
-          "description": "An article describing how to organize code that follows the Elm architecture into independent features, how to communicate between features, and how to group some of these features together to assemble larger features.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2516059503,
-            "language": "Python",
-            "last_commit": "2022-08-16T00:00:00.000Z",
-            "owner": "foxdonut",
-            "repo": "adventures-reactive-web-dev",
-            "stars": 9504
-          }
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Elm for Web Developers",
+              "description": "A collection of notes for web developers looking into moving to Elm.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 4071299956,
+                "language": "Java",
+                "last_commit": "2021-05-20T00:00:00.000Z",
+                "owner": "eeue56",
+                "repo": "elm-for-web-developers",
+                "stars": 49957
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Composing Features and Behaviours in the Elm Architecture",
+              "description": "An article describing how to organize code that follows the Elm architecture into independent features, how to communicate between features, and how to group some of these features together to assemble larger features.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2516059503,
+                "language": "Python",
+                "last_commit": "2022-08-16T00:00:00.000Z",
+                "owner": "foxdonut",
+                "repo": "adventures-reactive-web-dev",
+                "stars": 9504
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Outdated articles (Not relevant for current Elm architecture)"
         }
       ],
-      "title": "Outdated articles (Not relevant for current Elm architecture)"
-    },
-    {
-      "description": "Watch great talks about Elm\nThese are mostly conference talks, for videos about learning Elm look at the Learning Videos section.",
-      "items": [],
-      "title": "Conference Videos"
+      "title": "Articles"
     },
     {
       "description": "Tools and libraries to test your Elm applications",
@@ -209,7 +206,7 @@
       "title": "Testing"
     },
     {
-      "description": "",
+      "description": null,
       "items": [
         {
           "node_type": "item",
@@ -501,138 +498,139 @@
             "repo": "create-elm-app",
             "stars": 867
           }
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "generator-elm-mdl",
+              "description": "Yeoman generator for a simple elm application utilizing Material Design.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2974287790,
+                "language": "TypeScript",
+                "last_commit": "2021-11-02T00:00:00.000Z",
+                "owner": "ashellwig",
+                "repo": "generator-elm-mdl",
+                "stars": 37791
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "elm-webpack-starter-kid",
+              "description": "A very very basic elm + webpack 4 template.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3871183035,
+                "language": "C++",
+                "last_commit": "2023-11-27T00:00:00.000Z",
+                "owner": "FranzSkuffka",
+                "repo": "elm-webpack-starter-kid",
+                "stars": 33036
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "elm-boilerplate",
+              "description": "A simple Makefile able to create Elm app.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1329481955,
+                "language": "C++",
+                "last_commit": "2021-05-21T00:00:00.000Z",
+                "owner": "guillaumearm",
+                "repo": "elm-boilerplate",
+                "stars": 31956
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "elmkit",
+              "description": "A lightweight Brunch based setup for web app. Includes Brunch, Hot Module Replacement, Elm, Scss, Elm tests.",
+              "children": [],
+              "repo_info": {
+                "archived": true,
+                "id": 616427378,
+                "language": "Shell",
+                "last_commit": "2022-12-19T00:00:00.000Z",
+                "owner": "khusnetdinov",
+                "repo": "elmkit",
+                "stars": 27379
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "elm-webpack-starter",
+              "description": "A simple Webpack setup for writing Elm apps.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1020520299,
+                "language": null,
+                "last_commit": "2023-03-08T00:00:00.000Z",
+                "owner": "moarwick",
+                "repo": "elm-webpack-starter",
+                "stars": 20300
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "elm-app-boilerplate",
+              "description": "A fully-featured base project for Elm apps: Webpack, HMR, ES6, JS and Elm tests, Semantic UI, sample code and more.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 647111432,
+                "language": "Go",
+                "last_commit": "2022-10-26T00:00:00.000Z",
+                "owner": "gkubisa",
+                "repo": "elm-app-boilerplate",
+                "stars": 11433
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "elm-init",
+              "description": "Interactive setup for new Elm projects.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2104302060,
+                "language": "TypeScript",
+                "last_commit": "2023-11-02T00:00:00.000Z",
+                "owner": "JustusAdam",
+                "repo": "elm-init",
+                "stars": 2061
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "elm-new",
+              "description": "Generate initial project scaffolding based on a template.",
+              "children": [],
+              "repo_info": {
+                "archived": true,
+                "id": 1337351444,
+                "language": "Rust",
+                "last_commit": "2022-10-14T00:00:00.000Z",
+                "owner": "simonewebdesign",
+                "repo": "elm-new",
+                "stars": 1445
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Outdated Boilerplates"
         }
       ],
       "title": "Boilerplates"
     },
     {
-      "description": "",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "generator-elm-mdl",
-          "description": "Yeoman generator for a simple elm application utilizing Material Design.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2974287790,
-            "language": "TypeScript",
-            "last_commit": "2021-11-02T00:00:00.000Z",
-            "owner": "ashellwig",
-            "repo": "generator-elm-mdl",
-            "stars": 37791
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "elm-webpack-starter-kid",
-          "description": "A very very basic elm + webpack 4 template.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3871183035,
-            "language": "C++",
-            "last_commit": "2023-11-27T00:00:00.000Z",
-            "owner": "FranzSkuffka",
-            "repo": "elm-webpack-starter-kid",
-            "stars": 33036
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "elm-boilerplate",
-          "description": "A simple Makefile able to create Elm app.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1329481955,
-            "language": "C++",
-            "last_commit": "2021-05-21T00:00:00.000Z",
-            "owner": "guillaumearm",
-            "repo": "elm-boilerplate",
-            "stars": 31956
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "elmkit",
-          "description": "A lightweight Brunch based setup for web app. Includes Brunch, Hot Module Replacement, Elm, Scss, Elm tests.",
-          "children": [],
-          "repo_info": {
-            "archived": true,
-            "id": 616427378,
-            "language": "Shell",
-            "last_commit": "2022-12-19T00:00:00.000Z",
-            "owner": "khusnetdinov",
-            "repo": "elmkit",
-            "stars": 27379
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "elm-webpack-starter",
-          "description": "A simple Webpack setup for writing Elm apps.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1020520299,
-            "language": null,
-            "last_commit": "2023-03-08T00:00:00.000Z",
-            "owner": "moarwick",
-            "repo": "elm-webpack-starter",
-            "stars": 20300
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "elm-app-boilerplate",
-          "description": "A fully-featured base project for Elm apps: Webpack, HMR, ES6, JS and Elm tests, Semantic UI, sample code and more.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 647111432,
-            "language": "Go",
-            "last_commit": "2022-10-26T00:00:00.000Z",
-            "owner": "gkubisa",
-            "repo": "elm-app-boilerplate",
-            "stars": 11433
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "elm-init",
-          "description": "Interactive setup for new Elm projects.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2104302060,
-            "language": "TypeScript",
-            "last_commit": "2023-11-02T00:00:00.000Z",
-            "owner": "JustusAdam",
-            "repo": "elm-init",
-            "stars": 2061
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "elm-new",
-          "description": "Generate initial project scaffolding based on a template.",
-          "children": [],
-          "repo_info": {
-            "archived": true,
-            "id": 1337351444,
-            "language": "Rust",
-            "last_commit": "2022-10-14T00:00:00.000Z",
-            "owner": "simonewebdesign",
-            "repo": "elm-new",
-            "stars": 1445
-          }
-        }
-      ],
-      "title": "Outdated Boilerplates"
-    },
-    {
-      "description": "",
+      "description": null,
       "items": [
         {
           "node_type": "item",
@@ -668,7 +666,7 @@
       "title": "Static analysis"
     },
     {
-      "description": "",
+      "description": null,
       "items": [
         {
           "node_type": "item",
@@ -704,7 +702,7 @@
       "title": "Run Elm"
     },
     {
-      "description": "",
+      "description": null,
       "items": [
         {
           "node_type": "item",
@@ -867,125 +865,128 @@
     },
     {
       "description": "Tools to support Elm in code editors.",
-      "items": [],
+      "items": [
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Elm Format on Save",
+              "description": "Sublime Text plugin to run elm-format on save.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3028886541,
+                "language": "JavaScript",
+                "last_commit": "2022-07-09T00:00:00.000Z",
+                "owner": "evancz",
+                "repo": "elm-format-on-save",
+                "stars": 36542
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "LSP-elm",
+              "description": "Elm Language Server for Sublime (Recommended).",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2019071490,
+                "language": "TypeScript",
+                "last_commit": "2022-08-29T00:00:00.000Z",
+                "owner": "sublimelsp",
+                "repo": "LSP-elm",
+                "stars": 21491
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Elm Language Server",
+              "description": "Language server implementation for Elm",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2237953896,
+                "language": "Java",
+                "last_commit": "2021-07-19T00:00:00.000Z",
+                "owner": "elm-tooling",
+                "repo": "elm-language-server",
+                "stars": 3897
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Sublime Text"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "theJian/elm.vim",
+              "description": "Elm syntax highlighting. Use with ale or Neoformat for Neovim since ElmCast/elm-vim does not support Elm 0.19.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2098292479,
+                "language": null,
+                "last_commit": "2022-09-09T00:00:00.000Z",
+                "owner": "theJian",
+                "repo": "elm.vim",
+                "stars": 42480
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "ElmCast/elm-vim",
+              "description": "Elm 0.18 mode for Vim/Neovim.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1536287818,
+                "language": "Shell",
+                "last_commit": "2021-10-05T00:00:00.000Z",
+                "owner": "ElmCast",
+                "repo": "elm-vim",
+                "stars": 37819
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "emmet-vim",
+              "description": "Markup expansion with elm support.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1438461857,
+                "language": "Ruby",
+                "last_commit": "2021-08-27T00:00:00.000Z",
+                "owner": "mattn",
+                "repo": "emmet-vim",
+                "stars": 11858
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "vim-elm-help",
+              "description": "Offline Elm documentation access in your editor.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 4219755868,
+                "language": "Shell",
+                "last_commit": "2021-08-16T00:00:00.000Z",
+                "owner": "hoelzro",
+                "repo": "vim-elm-help",
+                "stars": 5869
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Vim/Neovim"
+        }
+      ],
       "title": "Editor plugins"
-    },
-    {
-      "description": "",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "Elm Format on Save",
-          "description": "Sublime Text plugin to run elm-format on save.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3028886541,
-            "language": "JavaScript",
-            "last_commit": "2022-07-09T00:00:00.000Z",
-            "owner": "evancz",
-            "repo": "elm-format-on-save",
-            "stars": 36542
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "LSP-elm",
-          "description": "Elm Language Server for Sublime (Recommended).",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2019071490,
-            "language": "TypeScript",
-            "last_commit": "2022-08-29T00:00:00.000Z",
-            "owner": "sublimelsp",
-            "repo": "LSP-elm",
-            "stars": 21491
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Elm Language Server",
-          "description": "Language server implementation for Elm",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2237953896,
-            "language": "Java",
-            "last_commit": "2021-07-19T00:00:00.000Z",
-            "owner": "elm-tooling",
-            "repo": "elm-language-server",
-            "stars": 3897
-          }
-        }
-      ],
-      "title": "Sublime Text"
-    },
-    {
-      "description": "",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "theJian/elm.vim",
-          "description": "Elm syntax highlighting. Use with ale or Neoformat for Neovim since ElmCast/elm-vim does not support Elm 0.19.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2098292479,
-            "language": null,
-            "last_commit": "2022-09-09T00:00:00.000Z",
-            "owner": "theJian",
-            "repo": "elm.vim",
-            "stars": 42480
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "ElmCast/elm-vim",
-          "description": "Elm 0.18 mode for Vim/Neovim.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1536287818,
-            "language": "Shell",
-            "last_commit": "2021-10-05T00:00:00.000Z",
-            "owner": "ElmCast",
-            "repo": "elm-vim",
-            "stars": 37819
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "emmet-vim",
-          "description": "Markup expansion with elm support.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1438461857,
-            "language": "Ruby",
-            "last_commit": "2021-08-27T00:00:00.000Z",
-            "owner": "mattn",
-            "repo": "emmet-vim",
-            "stars": 11858
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "vim-elm-help",
-          "description": "Offline Elm documentation access in your editor.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 4219755868,
-            "language": "Shell",
-            "last_commit": "2021-08-16T00:00:00.000Z",
-            "owner": "hoelzro",
-            "repo": "vim-elm-help",
-            "stars": 5869
-          }
-        }
-      ],
-      "title": "Vim/Neovim"
     },
     {
       "description": "Some good apps written in Elm.",
@@ -1334,45 +1335,46 @@
             "repo": "Elmstagram",
             "stars": 87
           }
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "elm-games",
+              "description": "An excellent list of games made in Elm",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 4187613224,
+                "language": "Rust",
+                "last_commit": "2023-05-22T00:00:00.000Z",
+                "owner": "rofrol",
+                "repo": "elm-games",
+                "stars": 13225
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "TheSpace App",
+              "description": "A reddit place like DApp with blockchain and canvas(through port) integration in Elm.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 445255226,
+                "language": "Java",
+                "last_commit": "2023-05-20T00:00:00.000Z",
+                "owner": "thematters",
+                "repo": "thespace-app",
+                "stars": 5227
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Games"
         }
       ],
       "title": "Examples"
-    },
-    {
-      "description": "",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "elm-games",
-          "description": "An excellent list of games made in Elm",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 4187613224,
-            "language": "Rust",
-            "last_commit": "2023-05-22T00:00:00.000Z",
-            "owner": "rofrol",
-            "repo": "elm-games",
-            "stars": 13225
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "TheSpace App",
-          "description": "A reddit place like DApp with blockchain and canvas(through port) integration in Elm.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 445255226,
-            "language": "Java",
-            "last_commit": "2023-05-20T00:00:00.000Z",
-            "owner": "thematters",
-            "repo": "thespace-app",
-            "stars": 5227
-          }
-        }
-      ],
-      "title": "Games"
     },
     {
       "description": "Some projects influenced by Elm",
@@ -1640,11 +1642,6 @@
         }
       ],
       "title": "Beyond the DOM"
-    },
-    {
-      "description": "",
-      "items": [],
-      "title": "License"
     }
   ],
   "metadata": {

@@ -1,970 +1,973 @@
 {
   "items": [
     {
-      "description": "",
-      "items": [],
+      "description": null,
+      "items": [
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "ArcGIS REST JS",
+              "description": "Compact, modular JavaScript wrappers for the ArcGIS REST API that run in Node.js and modern browsers.",
+              "children": [],
+              "repo_info": {
+                "archived": true,
+                "id": 1995296239,
+                "language": null,
+                "last_commit": "2023-05-07T00:00:00.000Z",
+                "owner": "Esri",
+                "repo": "arcgis-rest-js",
+                "stars": 46240
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "d3-geo-projection",
+              "description": "Extended geographic projections.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3924045402,
+                "language": "Go",
+                "last_commit": "2022-11-25T00:00:00.000Z",
+                "owner": "d3",
+                "repo": "d3-geo-projection",
+                "stars": 45403
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Map Forecast API",
+              "description": "Simple-to-use library based on Leaflet 1.4.x. It allows you to show wind maps.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 112595260,
+                "language": "TypeScript",
+                "last_commit": "2023-04-16T00:00:00.000Z",
+                "owner": "windycom",
+                "repo": "API",
+                "stars": 45261
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "react-simple-maps",
+              "description": "An SVG mapping component library for React, built on top of d3-geo.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 796993463,
+                "language": "Python",
+                "last_commit": "2022-09-25T00:00:00.000Z",
+                "owner": "zcreativelabs",
+                "repo": "react-simple-maps",
+                "stars": 43464
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "iTowns",
+              "description": "A Three.js-based framework written in JavaScript/WebGL for visualizing 3D geospatial data.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1580990102,
+                "language": "Go",
+                "last_commit": "2023-09-21T00:00:00.000Z",
+                "owner": "iTowns",
+                "repo": "itowns",
+                "stars": 40103
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Eurostat-map",
+              "description": "Create and customise web maps showing Eurostat data using D3.js.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1882090024,
+                "language": "Rust",
+                "last_commit": "2023-12-08T00:00:00.000Z",
+                "owner": "eurostat",
+                "repo": "eurostat-map.js",
+                "stars": 40025
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "d3-geo",
+              "description": "A library for creating maps based on D3.js.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1589838680,
+                "language": "TypeScript",
+                "last_commit": "2022-02-20T00:00:00.000Z",
+                "owner": "d3",
+                "repo": "d3-geo",
+                "stars": 38681
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "TerriaJS",
+              "description": "A library for building rich, web-based geospatial data explorers.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 960584182,
+                "language": "Go",
+                "last_commit": "2023-07-03T00:00:00.000Z",
+                "owner": "TerriaJS",
+                "repo": "terriajs",
+                "stars": 34183
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Wrld.js",
+              "description": "Animated 3D city maps based on Leaflet.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1435573970,
+                "language": "TypeScript",
+                "last_commit": "2021-05-06T00:00:00.000Z",
+                "owner": "wrld3d",
+                "repo": "wrld.js",
+                "stars": 23971
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Cesium.js",
+              "description": "An open-source JavaScript library for world-class 3D mapping of geospatial data.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1904923872,
+                "language": "Go",
+                "last_commit": "2021-08-12T00:00:00.000Z",
+                "owner": "CesiumGS",
+                "repo": "cesium",
+                "stars": 23873
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "antvis L7",
+              "description": "Large-scale WebGL-powered Geospatial Data Visualization.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 436667380,
+                "language": "TypeScript",
+                "last_commit": "2022-12-17T00:00:00.000Z",
+                "owner": "antvis",
+                "repo": "L7",
+                "stars": 17381
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "gridviz",
+              "description": "A package for visualizing gridded data.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3194616648,
+                "language": "Shell",
+                "last_commit": "2022-03-24T00:00:00.000Z",
+                "owner": "eurostat",
+                "repo": "gridviz",
+                "stars": 16649
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "datamaps",
+              "description": "Customizable map visualizations in one file.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3982215600,
+                "language": "TypeScript",
+                "last_commit": "2022-05-11T00:00:00.000Z",
+                "owner": "markmarkoh",
+                "repo": "datamaps",
+                "stars": 15601
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Deck.GL",
+              "description": "WebGL2 powered geospatial visualization layers.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2020914775,
+                "language": "C++",
+                "last_commit": "2021-11-17T00:00:00.000Z",
+                "owner": "visgl",
+                "repo": "deck.gl",
+                "stars": 14776
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "MapTalks.js",
+              "description": "An open-source JavaScript library for integrated 2D/3D maps.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3895563041,
+                "language": "JavaScript",
+                "last_commit": "2023-11-21T00:00:00.000Z",
+                "owner": "maptalks",
+                "repo": "maptalks.js",
+                "stars": 13042
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Bertin.js",
+              "description": "A JavaScript library for visualizing geospatial data and making thematic maps for the web.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3573411877,
+                "language": "Ruby",
+                "last_commit": "2021-08-07T00:00:00.000Z",
+                "owner": "neocarto",
+                "repo": "bertin",
+                "stars": 11878
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "globe.gl",
+              "description": "This library is a convenience wrapper around the three-globe plugin, using ThreeJS/WebGL for 3D rendering.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 4282861672,
+                "language": "Go",
+                "last_commit": "2022-02-28T00:00:00.000Z",
+                "owner": "vasturiano",
+                "repo": "globe.gl",
+                "stars": 11673
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "OpenLayers",
+              "description": "A high-performance, feature-packed library for creating interactive maps on the web.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3080661366,
+                "language": "Java",
+                "last_commit": "2022-12-31T00:00:00.000Z",
+                "owner": "openlayers",
+                "repo": "openlayers",
+                "stars": 11367
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Tangram",
+              "description": "WebGL map rendering engine for creative cartography.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 893210251,
+                "language": "JavaScript",
+                "last_commit": "2023-04-25T00:00:00.000Z",
+                "owner": "tangrams",
+                "repo": "tangram",
+                "stars": 10252
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Leaflet",
+              "description": "The leading open-source JavaScript library for mobile-friendly interactive maps.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 746457484,
+                "language": "Rust",
+                "last_commit": "2022-09-04T00:00:00.000Z",
+                "owner": "Leaflet",
+                "repo": "Leaflet",
+                "stars": 7485
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "maplibre",
+              "description": "It originated as an open-source fork of mapbox-gl-js, before their switch to a non-OSS license in December 2020.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2655705862,
+                "language": "Go",
+                "last_commit": "2021-08-22T00:00:00.000Z",
+                "owner": "maplibre",
+                "repo": "maplibre-gl-js",
+                "stars": 5863
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Mapbox GL JS",
+              "description": "JavaScript library that uses WebGL to render interactive maps from vector tiles.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 4050754484,
+                "language": "Rust",
+                "last_commit": "2022-09-04T00:00:00.000Z",
+                "owner": "mapbox",
+                "repo": "mapbox-gl-js",
+                "stars": 4485
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "d3-geo-voronoi",
+              "description": "Voronoi diagrams and Delaunay triangulation for the sphere.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1324401827,
+                "language": "Ruby",
+                "last_commit": "2021-09-26T00:00:00.000Z",
+                "owner": "Fil",
+                "repo": "d3-geo-voronoi",
+                "stars": 1828
+              }
+            }
+          ],
+          "description": "Libraries for creating web maps:",
+          "node_type": "group",
+          "title": "Mapping"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "koop",
+              "description": "A JavaScript toolkit for connecting incompatible spatial APIs.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3451448869,
+                "language": null,
+                "last_commit": "2021-08-15T00:00:00.000Z",
+                "owner": "koopjs",
+                "repo": "koop",
+                "stars": 48870
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "awesome-GeoJSON",
+              "description": "Catalogue of GeoJSON tools.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2864547882,
+                "language": "Go",
+                "last_commit": "2021-08-02T00:00:00.000Z",
+                "owner": "tmcw",
+                "repo": "awesome-geojson",
+                "stars": 47883
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "geobuf",
+              "description": "A compact binary encoding for geographic data.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1591495793,
+                "language": "Python",
+                "last_commit": "2021-10-30T00:00:00.000Z",
+                "owner": "mapbox",
+                "repo": "geobuf",
+                "stars": 45794
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "geolib",
+              "description": "Library to provide basic geospatial operations.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1854595564,
+                "language": "Rust",
+                "last_commit": "2022-06-16T00:00:00.000Z",
+                "owner": "manuelbieh",
+                "repo": "geolib",
+                "stars": 45565
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "statsbreaks",
+              "description": "Split a quantitative dataset into classes for thematic mapping.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 4123444963,
+                "language": "Python",
+                "last_commit": "2021-05-13T00:00:00.000Z",
+                "owner": "riatelab",
+                "repo": "statsbreaks",
+                "stars": 44964
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "geoblaze",
+              "description": "A blazing fast JavaScript raster processing engine.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1975644461,
+                "language": "JavaScript",
+                "last_commit": "2022-09-27T00:00:00.000Z",
+                "owner": "GeoTIFF",
+                "repo": "geoblaze",
+                "stars": 44462
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "gdal3.js",
+              "description": "Convert raster and vector geospatial data to various formats.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1174643840,
+                "language": "TypeScript",
+                "last_commit": "2021-09-13T00:00:00.000Z",
+                "owner": "bugra9",
+                "repo": "gdal3.js",
+                "stars": 43841
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Turf.js",
+              "description": "A JavaScript library for spatial analysis.",
+              "children": [],
+              "repo_info": {
+                "archived": true,
+                "id": 4190837841,
+                "language": "JavaScript",
+                "last_commit": "2021-09-12T00:00:00.000Z",
+                "owner": "Turfjs",
+                "repo": "turf",
+                "stars": 37842
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "math.gl",
+              "description": "JavaScript math library focused on Geospatial and 3D use cases.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 199087294,
+                "language": "Rust",
+                "last_commit": "2023-03-13T00:00:00.000Z",
+                "owner": "uber-web",
+                "repo": "math.gl",
+                "stars": 37295
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "flatbush",
+              "description": "A really fast static spatial index for 2D points and rectangles in JavaScript.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1734233813,
+                "language": "Python",
+                "last_commit": "2021-10-10T00:00:00.000Z",
+                "owner": "mourner",
+                "repo": "flatbush",
+                "stars": 33814
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "geotoolbox",
+              "description": "Provides several GIS operations for use with geojson properties.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2953932521,
+                "language": "JavaScript",
+                "last_commit": "2022-07-29T00:00:00.000Z",
+                "owner": "neocarto",
+                "repo": "geotoolbox",
+                "stars": 32522
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Euclid.ts",
+              "description": "2D Euclidean geometry classes, utilities, and drawing tools.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2612630364,
+                "language": "Rust",
+                "last_commit": "2023-01-02T00:00:00.000Z",
+                "owner": "mathigon",
+                "repo": "euclid.js",
+                "stars": 30365
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "geopackage-js",
+              "description": "The GeoPackage JavaScript library provides the ability to read GeoPackage files.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1460778113,
+                "language": "Python",
+                "last_commit": "2023-09-10T00:00:00.000Z",
+                "owner": "ngageoint",
+                "repo": "geopackage-js",
+                "stars": 28114
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "topoJSON",
+              "description": "Convert GeoJSON to TopoJSON for use in D3 maps.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1528775094,
+                "language": "Rust",
+                "last_commit": "2023-09-29T00:00:00.000Z",
+                "owner": "topojson",
+                "repo": "topojson",
+                "stars": 25095
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "rbush",
+              "description": "A high-performance JavaScript library for 2D spatial indexing.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2120970960,
+                "language": "TypeScript",
+                "last_commit": "2021-05-16T00:00:00.000Z",
+                "owner": "mourner",
+                "repo": "rbush",
+                "stars": 20961
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "flatten-js",
+              "description": "For manipulating geometrical shapes, finding intersections, checking inclusion, calculating distance, transformations, and more.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2742170463,
+                "language": "Python",
+                "last_commit": "2022-09-25T00:00:00.000Z",
+                "owner": "alexbol99",
+                "repo": "flatten-js",
+                "stars": 20464
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "geojson-vt",
+              "description": "A highly efficient JavaScript library for slicing GeoJSON data.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2823868459,
+                "language": null,
+                "last_commit": "2022-09-29T00:00:00.000Z",
+                "owner": "mapbox",
+                "repo": "geojson-vt",
+                "stars": 18460
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Geometric.js",
+              "description": "A JavaScript library for doing geometry.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3581667081,
+                "language": "JavaScript",
+                "last_commit": "2023-10-12T00:00:00.000Z",
+                "owner": "HarryStevens",
+                "repo": "geometric",
+                "stars": 17082
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "spl.js",
+              "description": "Makes it possible to use SpatiaLite functionality in JavaScript.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3298116996,
+                "language": "Java",
+                "last_commit": "2021-04-10T00:00:00.000Z",
+                "owner": "jvail",
+                "repo": "spl.js",
+                "stars": 16997
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "GeoTiff.js",
+              "description": "Parse TIFF files for visualization or analysis.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 4050065748,
+                "language": "Shell",
+                "last_commit": "2021-12-14T00:00:00.000Z",
+                "owner": "geotiffjs",
+                "repo": "geotiff.js",
+                "stars": 15749
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "JSTS",
+              "description": "JavaScript Topology Suite.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1948210181,
+                "language": "JavaScript",
+                "last_commit": "2023-07-04T00:00:00.000Z",
+                "owner": "bjornharrtell",
+                "repo": "jsts",
+                "stars": 10182
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Proj4js",
+              "description": "Transform coordinates from one coordinate system to another.",
+              "children": [],
+              "repo_info": {
+                "archived": true,
+                "id": 3596409840,
+                "language": "TypeScript",
+                "last_commit": "2021-09-13T00:00:00.000Z",
+                "owner": "proj4js",
+                "repo": "proj4js",
+                "stars": 9841
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Wicket",
+              "description": "A modest library for moving between Well-Known Text (WKT) and various framework geometries.",
+              "children": [],
+              "repo_info": {
+                "archived": true,
+                "id": 1700059415,
+                "language": "C++",
+                "last_commit": "2022-11-12T00:00:00.000Z",
+                "owner": "arthur-e",
+                "repo": "Wicket",
+                "stars": 9416
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "FlatGeoBuf",
+              "description": "A performant binary encoding for geographic data based on flatbuffers.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2264457792,
+                "language": "Go",
+                "last_commit": "2021-10-31T00:00:00.000Z",
+                "owner": "flatgeobuf",
+                "repo": "flatgeobuf",
+                "stars": 7793
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "geoparquet",
+              "description": "Encoding geospatial data in Apache Parquet.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2752104436,
+                "language": "Java",
+                "last_commit": "2022-10-22T00:00:00.000Z",
+                "owner": "opengeospatial",
+                "repo": "geoparquet",
+                "stars": 4437
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "geojson-merge",
+              "description": "Merge multiple GeoJSON files into one FeatureCollection.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 4090703379,
+                "language": null,
+                "last_commit": "2022-12-18T00:00:00.000Z",
+                "owner": "mapbox",
+                "repo": "geojson-merge",
+                "stars": 3380
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Arc.js",
+              "description": "Calculate great circles routes as lines in GeoJSON or WKT format.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3031502786,
+                "language": "Java",
+                "last_commit": "2021-11-06T00:00:00.000Z",
+                "owner": "springmeyer",
+                "repo": "arc.js",
+                "stars": 2787
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Galton",
+              "description": "Lightweight Node.js isochrone server.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 579450341,
+                "language": "JavaScript",
+                "last_commit": "2023-01-25T00:00:00.000Z",
+                "owner": "urbica",
+                "repo": "galton",
+                "stars": 342
+              }
+            }
+          ],
+          "description": "Libraries that help you analyse and process geospatial data:",
+          "node_type": "group",
+          "title": "Data Processing"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Plasio",
+              "description": "Drag-n-drop In-browser LAS/LAZ point cloud viewer.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2991346513,
+                "language": "Python",
+                "last_commit": "2022-08-06T00:00:00.000Z",
+                "owner": "verma",
+                "repo": "plasio",
+                "stars": 46514
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Potree",
+              "description": "WebGL point cloud viewer for large datasets.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 55164008,
+                "language": "Shell",
+                "last_commit": "2023-12-24T00:00:00.000Z",
+                "owner": "potree",
+                "repo": "potree",
+                "stars": 14009
+              }
+            }
+          ],
+          "description": "Tools for visualizing point clouds with web browsers:",
+          "node_type": "group",
+          "title": "LiDAR"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "EOSDIS Worldview",
+              "description": "Interactive interface for browsing global, full-resolution satellite imagery.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3667938718,
+                "language": "Shell",
+                "last_commit": "2022-01-13T00:00:00.000Z",
+                "owner": "nasa-gibs",
+                "repo": "worldview",
+                "stars": 38719
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Sentinel Hub custom scripts",
+              "description": "A repository of custom scripts to be used with Sentinel Hub.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2527928910,
+                "language": "TypeScript",
+                "last_commit": "2021-07-05T00:00:00.000Z",
+                "owner": "sentinel-hub",
+                "repo": "custom-scripts",
+                "stars": 28911
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "sentinelhub-js",
+              "description": "Download and process satellite imagery using Sentinel Hub services.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2502551829,
+                "language": null,
+                "last_commit": "2021-09-24T00:00:00.000Z",
+                "owner": "sentinel-hub",
+                "repo": "sentinelhub-js",
+                "stars": 1830
+              }
+            }
+          ],
+          "description": "Resources for frontend earth observation and remote sensing:",
+          "node_type": "group",
+          "title": "Remote Sensing"
+        }
+      ],
       "title": "👨‍💻 JavaScript Libraries"
     },
     {
-      "description": "Libraries for creating web maps:",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "ArcGIS REST JS",
-          "description": "Compact, modular JavaScript wrappers for the ArcGIS REST API that run in Node.js and modern browsers.",
-          "children": [],
-          "repo_info": {
-            "archived": true,
-            "id": 1995296239,
-            "language": null,
-            "last_commit": "2023-05-07T00:00:00.000Z",
-            "owner": "Esri",
-            "repo": "arcgis-rest-js",
-            "stars": 46240
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "d3-geo-projection",
-          "description": "Extended geographic projections.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3924045402,
-            "language": "Go",
-            "last_commit": "2022-11-25T00:00:00.000Z",
-            "owner": "d3",
-            "repo": "d3-geo-projection",
-            "stars": 45403
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Map Forecast API",
-          "description": "Simple-to-use library based on Leaflet 1.4.x. It allows you to show wind maps.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 112595260,
-            "language": "TypeScript",
-            "last_commit": "2023-04-16T00:00:00.000Z",
-            "owner": "windycom",
-            "repo": "API",
-            "stars": 45261
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "react-simple-maps",
-          "description": "An SVG mapping component library for React, built on top of d3-geo.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 796993463,
-            "language": "Python",
-            "last_commit": "2022-09-25T00:00:00.000Z",
-            "owner": "zcreativelabs",
-            "repo": "react-simple-maps",
-            "stars": 43464
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "iTowns",
-          "description": "A Three.js-based framework written in JavaScript/WebGL for visualizing 3D geospatial data.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1580990102,
-            "language": "Go",
-            "last_commit": "2023-09-21T00:00:00.000Z",
-            "owner": "iTowns",
-            "repo": "itowns",
-            "stars": 40103
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Eurostat-map",
-          "description": "Create and customise web maps showing Eurostat data using D3.js.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1882090024,
-            "language": "Rust",
-            "last_commit": "2023-12-08T00:00:00.000Z",
-            "owner": "eurostat",
-            "repo": "eurostat-map.js",
-            "stars": 40025
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "d3-geo",
-          "description": "A library for creating maps based on D3.js.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1589838680,
-            "language": "TypeScript",
-            "last_commit": "2022-02-20T00:00:00.000Z",
-            "owner": "d3",
-            "repo": "d3-geo",
-            "stars": 38681
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "TerriaJS",
-          "description": "A library for building rich, web-based geospatial data explorers.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 960584182,
-            "language": "Go",
-            "last_commit": "2023-07-03T00:00:00.000Z",
-            "owner": "TerriaJS",
-            "repo": "terriajs",
-            "stars": 34183
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Wrld.js",
-          "description": "Animated 3D city maps based on Leaflet.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1435573970,
-            "language": "TypeScript",
-            "last_commit": "2021-05-06T00:00:00.000Z",
-            "owner": "wrld3d",
-            "repo": "wrld.js",
-            "stars": 23971
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Cesium.js",
-          "description": "An open-source JavaScript library for world-class 3D mapping of geospatial data.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1904923872,
-            "language": "Go",
-            "last_commit": "2021-08-12T00:00:00.000Z",
-            "owner": "CesiumGS",
-            "repo": "cesium",
-            "stars": 23873
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "antvis L7",
-          "description": "Large-scale WebGL-powered Geospatial Data Visualization.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 436667380,
-            "language": "TypeScript",
-            "last_commit": "2022-12-17T00:00:00.000Z",
-            "owner": "antvis",
-            "repo": "L7",
-            "stars": 17381
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "gridviz",
-          "description": "A package for visualizing gridded data.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3194616648,
-            "language": "Shell",
-            "last_commit": "2022-03-24T00:00:00.000Z",
-            "owner": "eurostat",
-            "repo": "gridviz",
-            "stars": 16649
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "datamaps",
-          "description": "Customizable map visualizations in one file.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3982215600,
-            "language": "TypeScript",
-            "last_commit": "2022-05-11T00:00:00.000Z",
-            "owner": "markmarkoh",
-            "repo": "datamaps",
-            "stars": 15601
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Deck.GL",
-          "description": "WebGL2 powered geospatial visualization layers.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2020914775,
-            "language": "C++",
-            "last_commit": "2021-11-17T00:00:00.000Z",
-            "owner": "visgl",
-            "repo": "deck.gl",
-            "stars": 14776
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "MapTalks.js",
-          "description": "An open-source JavaScript library for integrated 2D/3D maps.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3895563041,
-            "language": "JavaScript",
-            "last_commit": "2023-11-21T00:00:00.000Z",
-            "owner": "maptalks",
-            "repo": "maptalks.js",
-            "stars": 13042
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Bertin.js",
-          "description": "A JavaScript library for visualizing geospatial data and making thematic maps for the web.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3573411877,
-            "language": "Ruby",
-            "last_commit": "2021-08-07T00:00:00.000Z",
-            "owner": "neocarto",
-            "repo": "bertin",
-            "stars": 11878
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "globe.gl",
-          "description": "This library is a convenience wrapper around the three-globe plugin, using ThreeJS/WebGL for 3D rendering.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 4282861672,
-            "language": "Go",
-            "last_commit": "2022-02-28T00:00:00.000Z",
-            "owner": "vasturiano",
-            "repo": "globe.gl",
-            "stars": 11673
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "OpenLayers",
-          "description": "A high-performance, feature-packed library for creating interactive maps on the web.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3080661366,
-            "language": "Java",
-            "last_commit": "2022-12-31T00:00:00.000Z",
-            "owner": "openlayers",
-            "repo": "openlayers",
-            "stars": 11367
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Tangram",
-          "description": "WebGL map rendering engine for creative cartography.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 893210251,
-            "language": "JavaScript",
-            "last_commit": "2023-04-25T00:00:00.000Z",
-            "owner": "tangrams",
-            "repo": "tangram",
-            "stars": 10252
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Leaflet",
-          "description": "The leading open-source JavaScript library for mobile-friendly interactive maps.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 746457484,
-            "language": "Rust",
-            "last_commit": "2022-09-04T00:00:00.000Z",
-            "owner": "Leaflet",
-            "repo": "Leaflet",
-            "stars": 7485
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "maplibre",
-          "description": "It originated as an open-source fork of mapbox-gl-js, before their switch to a non-OSS license in December 2020.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2655705862,
-            "language": "Go",
-            "last_commit": "2021-08-22T00:00:00.000Z",
-            "owner": "maplibre",
-            "repo": "maplibre-gl-js",
-            "stars": 5863
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Mapbox GL JS",
-          "description": "JavaScript library that uses WebGL to render interactive maps from vector tiles.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 4050754484,
-            "language": "Rust",
-            "last_commit": "2022-09-04T00:00:00.000Z",
-            "owner": "mapbox",
-            "repo": "mapbox-gl-js",
-            "stars": 4485
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "d3-geo-voronoi",
-          "description": "Voronoi diagrams and Delaunay triangulation for the sphere.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1324401827,
-            "language": "Ruby",
-            "last_commit": "2021-09-26T00:00:00.000Z",
-            "owner": "Fil",
-            "repo": "d3-geo-voronoi",
-            "stars": 1828
-          }
-        }
-      ],
-      "title": "Mapping"
-    },
-    {
-      "description": "Libraries that help you analyse and process geospatial data:",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "koop",
-          "description": "A JavaScript toolkit for connecting incompatible spatial APIs.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3451448869,
-            "language": null,
-            "last_commit": "2021-08-15T00:00:00.000Z",
-            "owner": "koopjs",
-            "repo": "koop",
-            "stars": 48870
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "awesome-GeoJSON",
-          "description": "Catalogue of GeoJSON tools.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2864547882,
-            "language": "Go",
-            "last_commit": "2021-08-02T00:00:00.000Z",
-            "owner": "tmcw",
-            "repo": "awesome-geojson",
-            "stars": 47883
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "geobuf",
-          "description": "A compact binary encoding for geographic data.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1591495793,
-            "language": "Python",
-            "last_commit": "2021-10-30T00:00:00.000Z",
-            "owner": "mapbox",
-            "repo": "geobuf",
-            "stars": 45794
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "geolib",
-          "description": "Library to provide basic geospatial operations.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1854595564,
-            "language": "Rust",
-            "last_commit": "2022-06-16T00:00:00.000Z",
-            "owner": "manuelbieh",
-            "repo": "geolib",
-            "stars": 45565
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "statsbreaks",
-          "description": "Split a quantitative dataset into classes for thematic mapping.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 4123444963,
-            "language": "Python",
-            "last_commit": "2021-05-13T00:00:00.000Z",
-            "owner": "riatelab",
-            "repo": "statsbreaks",
-            "stars": 44964
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "geoblaze",
-          "description": "A blazing fast JavaScript raster processing engine.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1975644461,
-            "language": "JavaScript",
-            "last_commit": "2022-09-27T00:00:00.000Z",
-            "owner": "GeoTIFF",
-            "repo": "geoblaze",
-            "stars": 44462
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "gdal3.js",
-          "description": "Convert raster and vector geospatial data to various formats.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1174643840,
-            "language": "TypeScript",
-            "last_commit": "2021-09-13T00:00:00.000Z",
-            "owner": "bugra9",
-            "repo": "gdal3.js",
-            "stars": 43841
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Turf.js",
-          "description": "A JavaScript library for spatial analysis.",
-          "children": [],
-          "repo_info": {
-            "archived": true,
-            "id": 4190837841,
-            "language": "JavaScript",
-            "last_commit": "2021-09-12T00:00:00.000Z",
-            "owner": "Turfjs",
-            "repo": "turf",
-            "stars": 37842
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "math.gl",
-          "description": "JavaScript math library focused on Geospatial and 3D use cases.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 199087294,
-            "language": "Rust",
-            "last_commit": "2023-03-13T00:00:00.000Z",
-            "owner": "uber-web",
-            "repo": "math.gl",
-            "stars": 37295
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "flatbush",
-          "description": "A really fast static spatial index for 2D points and rectangles in JavaScript.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1734233813,
-            "language": "Python",
-            "last_commit": "2021-10-10T00:00:00.000Z",
-            "owner": "mourner",
-            "repo": "flatbush",
-            "stars": 33814
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "geotoolbox",
-          "description": "Provides several GIS operations for use with geojson properties.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2953932521,
-            "language": "JavaScript",
-            "last_commit": "2022-07-29T00:00:00.000Z",
-            "owner": "neocarto",
-            "repo": "geotoolbox",
-            "stars": 32522
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Euclid.ts",
-          "description": "2D Euclidean geometry classes, utilities, and drawing tools.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2612630364,
-            "language": "Rust",
-            "last_commit": "2023-01-02T00:00:00.000Z",
-            "owner": "mathigon",
-            "repo": "euclid.js",
-            "stars": 30365
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "geopackage-js",
-          "description": "The GeoPackage JavaScript library provides the ability to read GeoPackage files.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1460778113,
-            "language": "Python",
-            "last_commit": "2023-09-10T00:00:00.000Z",
-            "owner": "ngageoint",
-            "repo": "geopackage-js",
-            "stars": 28114
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "topoJSON",
-          "description": "Convert GeoJSON to TopoJSON for use in D3 maps.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1528775094,
-            "language": "Rust",
-            "last_commit": "2023-09-29T00:00:00.000Z",
-            "owner": "topojson",
-            "repo": "topojson",
-            "stars": 25095
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "rbush",
-          "description": "A high-performance JavaScript library for 2D spatial indexing.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2120970960,
-            "language": "TypeScript",
-            "last_commit": "2021-05-16T00:00:00.000Z",
-            "owner": "mourner",
-            "repo": "rbush",
-            "stars": 20961
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "flatten-js",
-          "description": "For manipulating geometrical shapes, finding intersections, checking inclusion, calculating distance, transformations, and more.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2742170463,
-            "language": "Python",
-            "last_commit": "2022-09-25T00:00:00.000Z",
-            "owner": "alexbol99",
-            "repo": "flatten-js",
-            "stars": 20464
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "geojson-vt",
-          "description": "A highly efficient JavaScript library for slicing GeoJSON data.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2823868459,
-            "language": null,
-            "last_commit": "2022-09-29T00:00:00.000Z",
-            "owner": "mapbox",
-            "repo": "geojson-vt",
-            "stars": 18460
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Geometric.js",
-          "description": "A JavaScript library for doing geometry.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3581667081,
-            "language": "JavaScript",
-            "last_commit": "2023-10-12T00:00:00.000Z",
-            "owner": "HarryStevens",
-            "repo": "geometric",
-            "stars": 17082
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "spl.js",
-          "description": "Makes it possible to use SpatiaLite functionality in JavaScript.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3298116996,
-            "language": "Java",
-            "last_commit": "2021-04-10T00:00:00.000Z",
-            "owner": "jvail",
-            "repo": "spl.js",
-            "stars": 16997
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "GeoTiff.js",
-          "description": "Parse TIFF files for visualization or analysis.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 4050065748,
-            "language": "Shell",
-            "last_commit": "2021-12-14T00:00:00.000Z",
-            "owner": "geotiffjs",
-            "repo": "geotiff.js",
-            "stars": 15749
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "JSTS",
-          "description": "JavaScript Topology Suite.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1948210181,
-            "language": "JavaScript",
-            "last_commit": "2023-07-04T00:00:00.000Z",
-            "owner": "bjornharrtell",
-            "repo": "jsts",
-            "stars": 10182
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Proj4js",
-          "description": "Transform coordinates from one coordinate system to another.",
-          "children": [],
-          "repo_info": {
-            "archived": true,
-            "id": 3596409840,
-            "language": "TypeScript",
-            "last_commit": "2021-09-13T00:00:00.000Z",
-            "owner": "proj4js",
-            "repo": "proj4js",
-            "stars": 9841
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Wicket",
-          "description": "A modest library for moving between Well-Known Text (WKT) and various framework geometries.",
-          "children": [],
-          "repo_info": {
-            "archived": true,
-            "id": 1700059415,
-            "language": "C++",
-            "last_commit": "2022-11-12T00:00:00.000Z",
-            "owner": "arthur-e",
-            "repo": "Wicket",
-            "stars": 9416
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "FlatGeoBuf",
-          "description": "A performant binary encoding for geographic data based on flatbuffers.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2264457792,
-            "language": "Go",
-            "last_commit": "2021-10-31T00:00:00.000Z",
-            "owner": "flatgeobuf",
-            "repo": "flatgeobuf",
-            "stars": 7793
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "geoparquet",
-          "description": "Encoding geospatial data in Apache Parquet.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2752104436,
-            "language": "Java",
-            "last_commit": "2022-10-22T00:00:00.000Z",
-            "owner": "opengeospatial",
-            "repo": "geoparquet",
-            "stars": 4437
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "geojson-merge",
-          "description": "Merge multiple GeoJSON files into one FeatureCollection.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 4090703379,
-            "language": null,
-            "last_commit": "2022-12-18T00:00:00.000Z",
-            "owner": "mapbox",
-            "repo": "geojson-merge",
-            "stars": 3380
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Arc.js",
-          "description": "Calculate great circles routes as lines in GeoJSON or WKT format.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3031502786,
-            "language": "Java",
-            "last_commit": "2021-11-06T00:00:00.000Z",
-            "owner": "springmeyer",
-            "repo": "arc.js",
-            "stars": 2787
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Galton",
-          "description": "Lightweight Node.js isochrone server.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 579450341,
-            "language": "JavaScript",
-            "last_commit": "2023-01-25T00:00:00.000Z",
-            "owner": "urbica",
-            "repo": "galton",
-            "stars": 342
-          }
-        }
-      ],
-      "title": "Data Processing"
-    },
-    {
-      "description": "Tools for visualizing point clouds with web browsers:",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "Plasio",
-          "description": "Drag-n-drop In-browser LAS/LAZ point cloud viewer.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2991346513,
-            "language": "Python",
-            "last_commit": "2022-08-06T00:00:00.000Z",
-            "owner": "verma",
-            "repo": "plasio",
-            "stars": 46514
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Potree",
-          "description": "WebGL point cloud viewer for large datasets.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 55164008,
-            "language": "Shell",
-            "last_commit": "2023-12-24T00:00:00.000Z",
-            "owner": "potree",
-            "repo": "potree",
-            "stars": 14009
-          }
-        }
-      ],
-      "title": "LiDAR"
-    },
-    {
-      "description": "Resources for frontend earth observation and remote sensing:",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "EOSDIS Worldview",
-          "description": "Interactive interface for browsing global, full-resolution satellite imagery.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3667938718,
-            "language": "Shell",
-            "last_commit": "2022-01-13T00:00:00.000Z",
-            "owner": "nasa-gibs",
-            "repo": "worldview",
-            "stars": 38719
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Sentinel Hub custom scripts",
-          "description": "A repository of custom scripts to be used with Sentinel Hub.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2527928910,
-            "language": "TypeScript",
-            "last_commit": "2021-07-05T00:00:00.000Z",
-            "owner": "sentinel-hub",
-            "repo": "custom-scripts",
-            "stars": 28911
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "sentinelhub-js",
-          "description": "Download and process satellite imagery using Sentinel Hub services.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2502551829,
-            "language": null,
-            "last_commit": "2021-09-24T00:00:00.000Z",
-            "owner": "sentinel-hub",
-            "repo": "sentinelhub-js",
-            "stars": 1830
-          }
-        }
-      ],
-      "title": "Remote Sensing"
-    },
-    {
       "description": "A collection of geospatial open data sources:",
-      "items": [],
+      "items": [
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "World Atlas TopoJSON",
+              "description": "Natural Earth's vector data as TopoJSON.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2324195594,
+                "language": "Rust",
+                "last_commit": "2022-05-17T00:00:00.000Z",
+                "owner": "topojson",
+                "repo": "world-atlas",
+                "stars": 45595
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Ookla internet speed data",
+              "description": "Global network performance metrics.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1606086485,
+                "language": "C++",
+                "last_commit": "2022-09-03T00:00:00.000Z",
+                "owner": "teamookla",
+                "repo": "ookla-open-data",
+                "stars": 36486
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Sentinel Hub custom scripts",
+              "description": "Repository of custom scripts for Sentinel Hub.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2527928910,
+                "language": "TypeScript",
+                "last_commit": "2021-07-05T00:00:00.000Z",
+                "owner": "sentinel-hub",
+                "repo": "custom-scripts",
+                "stars": 28911
+              }
+            }
+          ],
+          "description": "Data available for download:",
+          "node_type": "group",
+          "title": "Downloads"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Public APIs",
+              "description": "A collective list of free APIs for use in software and web development.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 4181872494,
+                "language": "Rust",
+                "last_commit": "2022-08-25T00:00:00.000Z",
+                "owner": "public-apis-dev",
+                "repo": "public-apis",
+                "stars": 22495
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "awesome-public-datasets",
+              "description": "An awesome repository full of open datasets from an abundance of different categories.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2157454032,
+                "language": "Go",
+                "last_commit": "2023-11-30T00:00:00.000Z",
+                "owner": "awesomedata",
+                "repo": "awesome-public-datasets",
+                "stars": 4033
+              }
+            }
+          ],
+          "description": "Compilations and repositories of open geospatial datasets:",
+          "node_type": "group",
+          "title": "Collections"
+        }
+      ],
       "title": "💾 Data sources"
-    },
-    {
-      "description": "Data available for download:",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "World Atlas TopoJSON",
-          "description": "Natural Earth's vector data as TopoJSON.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2324195594,
-            "language": "Rust",
-            "last_commit": "2022-05-17T00:00:00.000Z",
-            "owner": "topojson",
-            "repo": "world-atlas",
-            "stars": 45595
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Ookla internet speed data",
-          "description": "Global network performance metrics.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1606086485,
-            "language": "C++",
-            "last_commit": "2022-09-03T00:00:00.000Z",
-            "owner": "teamookla",
-            "repo": "ookla-open-data",
-            "stars": 36486
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Sentinel Hub custom scripts",
-          "description": "Repository of custom scripts for Sentinel Hub.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2527928910,
-            "language": "TypeScript",
-            "last_commit": "2021-07-05T00:00:00.000Z",
-            "owner": "sentinel-hub",
-            "repo": "custom-scripts",
-            "stars": 28911
-          }
-        }
-      ],
-      "title": "Downloads"
-    },
-    {
-      "description": "Compilations and repositories of open geospatial datasets:",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "Public APIs",
-          "description": "A collective list of free APIs for use in software and web development.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 4181872494,
-            "language": "Rust",
-            "last_commit": "2022-08-25T00:00:00.000Z",
-            "owner": "public-apis-dev",
-            "repo": "public-apis",
-            "stars": 22495
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "awesome-public-datasets",
-          "description": "An awesome repository full of open datasets from an abundance of different categories.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2157454032,
-            "language": "Go",
-            "last_commit": "2023-11-30T00:00:00.000Z",
-            "owner": "awesomedata",
-            "repo": "awesome-public-datasets",
-            "stars": 4033
-          }
-        }
-      ],
-      "title": "Collections"
-    },
-    {
-      "description": "Some JavaScript notebooks to help you code:",
-      "items": [],
-      "title": "📒 Notebooks"
     },
     {
       "description": "Plug-and-play geospatial web apps:",
@@ -1129,7 +1132,7 @@
       "title": "🎨 Colour advice"
     },
     {
-      "description": "Contributions of any kind are welcome, just follow the guidelines by either:",
+      "description": "Contributions of any kind are welcome, just follow the guidelines by either:\nIf you have any questions about this list, please don't hesitate to contact me @joewdavies on X (formerly Twitter) or open a GitHub issue.",
       "items": [
         {
           "node_type": "item",

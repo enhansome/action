@@ -256,345 +256,358 @@
       "title": "Multi-factor auth"
     },
     {
-      "description": "",
+      "description": null,
       "items": [
         {
-          "node_type": "item",
-          "title": "OpenSK",
-          "description": "Open-source implementation for security keys written in Rust that supports both FIDO U2F and FIDO2 standards.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2325727173,
-            "language": "Python",
-            "last_commit": "2023-07-12T00:00:00.000Z",
-            "owner": "google",
-            "repo": "OpenSK",
-            "stars": 27174
-          }
+          "children": [
+            {
+              "node_type": "item",
+              "title": "OpenSK",
+              "description": "Open-source implementation for security keys written in Rust that supports both FIDO U2F and FIDO2 standards.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2325727173,
+                "language": "Python",
+                "last_commit": "2023-07-12T00:00:00.000Z",
+                "owner": "google",
+                "repo": "OpenSK",
+                "stars": 27174
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "YubiKey Guide",
+              "description": "Guide to using YubiKey as a SmartCard for storing GPG encryption, signing and authentication keys, which can also be used for SSH. Many of the principles in this document are applicable to other smart card devices.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1869310272,
+                "language": "Go",
+                "last_commit": "2023-04-04T00:00:00.000Z",
+                "owner": "drduh",
+                "repo": "YubiKey-Guide",
+                "stars": 10273
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Security key"
         },
         {
-          "node_type": "item",
-          "title": "YubiKey Guide",
-          "description": "Guide to using YubiKey as a SmartCard for storing GPG encryption, signing and authentication keys, which can also be used for SSH. Many of the principles in this document are applicable to other smart card devices.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1869310272,
-            "language": "Go",
-            "last_commit": "2023-04-04T00:00:00.000Z",
-            "owner": "drduh",
-            "repo": "YubiKey-Guide",
-            "stars": 10273
-          }
+          "children": [
+            {
+              "node_type": "item",
+              "title": "",
+              "description": "Acts as a broker between CAs and environments, providing a central portal for developers to issue TLS certificates with 'sane' defaults.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3355591473,
+                "language": "Python",
+                "last_commit": "2022-09-15T00:00:00.000Z",
+                "owner": "Netflix",
+                "repo": "lemur",
+                "stars": 41474
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "JA4+",
+              "description": "A suite of network fingerprinting methods to facilitate threat-hunting and analysis.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2796534078,
+                "language": "Shell",
+                "last_commit": "2023-10-15T00:00:00.000Z",
+                "owner": "FoxIO-LLC",
+                "repo": "ja4",
+                "stars": 34079
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "CFSSL",
+              "description": "A swiss army knife for PKI/TLS by CloudFlare. Command line tool and an HTTP API server for signing, verifying, and bundling TLS certificates.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1181531444,
+                "language": "Rust",
+                "last_commit": "2022-10-14T00:00:00.000Z",
+                "owner": "cloudflare",
+                "repo": "cfssl",
+                "stars": 31445
+              }
+            }
+          ],
+          "description": "Certificate-based authentication.",
+          "node_type": "group",
+          "title": "Public-Key Infrastructure (PKI)"
         }
       ],
-      "title": "Security key"
-    },
-    {
-      "description": "Certificate-based authentication.",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "",
-          "description": "Acts as a broker between CAs and environments, providing a central portal for developers to issue TLS certificates with 'sane' defaults.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3355591473,
-            "language": "Python",
-            "last_commit": "2022-09-15T00:00:00.000Z",
-            "owner": "Netflix",
-            "repo": "lemur",
-            "stars": 41474
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "JA4+",
-          "description": "A suite of network fingerprinting methods to facilitate threat-hunting and analysis.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2796534078,
-            "language": "Shell",
-            "last_commit": "2023-10-15T00:00:00.000Z",
-            "owner": "FoxIO-LLC",
-            "repo": "ja4",
-            "stars": 34079
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "CFSSL",
-          "description": "A swiss army knife for PKI/TLS by CloudFlare. Command line tool and an HTTP API server for signing, verifying, and bundling TLS certificates.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1181531444,
-            "language": "Rust",
-            "last_commit": "2022-10-14T00:00:00.000Z",
-            "owner": "cloudflare",
-            "repo": "cfssl",
-            "stars": 31445
-          }
-        }
-      ],
-      "title": "Public-Key Infrastructure (PKI)"
+      "title": "Password-less auth"
     },
     {
       "description": "Now we know you are you. But are you allowed to do what you want to do?\nPolicy specification is the science, enforcement is the art.",
-      "items": [],
+      "items": [
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Cerbos",
+              "description": "An authorization endpoint to write context-aware access control policies.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3710636306,
+                "language": "Java",
+                "last_commit": "2023-03-01T00:00:00.000Z",
+                "owner": "cerbos",
+                "repo": "cerbos",
+                "stars": 36307
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "FerrisKey",
+              "description": "Self-hosted, open-source, RBAC system written in Rust.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2432585748,
+                "language": "Shell",
+                "last_commit": "2021-12-14T00:00:00.000Z",
+                "owner": "ferriskey",
+                "repo": "ferriskey",
+                "stars": 35749
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Athenz",
+              "description": "Set of services and libraries supporting service authentication and role-based authorization for provisioning and configuration.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3342078706,
+                "language": "Java",
+                "last_commit": "2022-01-25T00:00:00.000Z",
+                "owner": "yahoo",
+                "repo": "athenz",
+                "stars": 28707
+              }
+            }
+          ],
+          "description": "Role-Based Access Control is the classical model to map users to permissions by the way of roles.",
+          "node_type": "group",
+          "title": "RBAC frameworks"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Keto",
+              "description": "Policy decision point. It uses a set of access control policies, similar to AWS policies, in order to determine whether a subject is authorized to perform a certain action on a resource.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1517479629,
+                "language": null,
+                "last_commit": "2022-04-12T00:00:00.000Z",
+                "owner": "ory",
+                "repo": "keto",
+                "stars": 29630
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Open Policy Agent",
+              "description": "An open-source general-purpose decision engine to create and enforce ABAC policies.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3813619699,
+                "language": null,
+                "last_commit": "2022-02-01T00:00:00.000Z",
+                "owner": "open-policy-agent",
+                "repo": "opa",
+                "stars": 19700
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Ladon",
+              "description": "Access control library, inspired by AWS.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1937462756,
+                "language": "Java",
+                "last_commit": "2021-12-06T00:00:00.000Z",
+                "owner": "ory",
+                "repo": "ladon",
+                "stars": 12757
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Casbin",
+              "description": "Open-source access control library for Golang projects.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2369601518,
+                "language": "Shell",
+                "last_commit": "2022-08-01T00:00:00.000Z",
+                "owner": "casbin",
+                "repo": "casbin",
+                "stars": 1519
+              }
+            }
+          ],
+          "description": "Attribute-Based Access Control is an evolution of RBAC, in which roles are replaced by attributes, allowing the implementation of more complex policy-based access control.",
+          "node_type": "group",
+          "title": "ABAC frameworks"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Permify",
+              "description": "Another open-source authorization as a service inspired by Google Zanzibar, and see how it compares to other Zanzibar-inspired tools.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 636997516,
+                "language": "Java",
+                "last_commit": "2022-08-03T00:00:00.000Z",
+                "owner": "Permify",
+                "repo": "permify",
+                "stars": 47517
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Warrant",
+              "description": "A relationship based access control (ReBAC) engine (inspired by Google Zanzibar) also capable of enforcing any authorization paradigm, including RBAC and ABAC.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2943317462,
+                "language": "Go",
+                "last_commit": "2022-09-26T00:00:00.000Z",
+                "owner": "warrant-dev",
+                "repo": "warrant",
+                "stars": 17463
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "SpiceDB",
+              "description": "An open source database system for managing security-critical application permissions inspired by Zanzibar.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2753260689,
+                "language": null,
+                "last_commit": "2022-02-11T00:00:00.000Z",
+                "owner": "authzed",
+                "repo": "spicedb",
+                "stars": 10690
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Topaz",
+              "description": "An open-source project which combines the policy-as-code and decision logging of OPA with a Zanzibar-modeled directory.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 917257194,
+                "language": "Rust",
+                "last_commit": "2023-06-21T00:00:00.000Z",
+                "owner": "aserto-dev",
+                "repo": "topaz",
+                "stars": 7195
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Open Policy Administration Layer",
+              "description": "Open Source administration layer for OPA, detecting changes to both policy and policy data in realtime and pushing live updates to OPA agents. OPAL brings open-policy up to the speed needed by live applications.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3544300825,
+                "language": "C++",
+                "last_commit": "2021-09-28T00:00:00.000Z",
+                "owner": "permitio",
+                "repo": "opal",
+                "stars": 826
+              }
+            }
+          ],
+          "description": "The Relationship-Based Access Control model is a more flexible and powerful version of RBAC and is the preferred one for cloud systems.",
+          "node_type": "group",
+          "title": "ReBAC frameworks"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "IAM Floyd",
+              "description": "AWS IAM policy statement generator with fluent interface. Helps with creating type safe IAM policies and writing more restrictive/secure statements by offering conditions and ARN generation via IntelliSense. Available for Node.js, Python, .Net and Java.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 70770257,
+                "language": "Ruby",
+                "last_commit": "2023-04-19T00:00:00.000Z",
+                "owner": "udondan",
+                "repo": "iam-floyd",
+                "stars": 20258
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Policy Sentry",
+              "description": "Writing security-conscious IAM Policies by hand can be very tedious and inefficient. Policy Sentry helps users to create least-privilege policies in a matter of seconds.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1001970045,
+                "language": "C++",
+                "last_commit": "2023-11-17T00:00:00.000Z",
+                "owner": "salesforce",
+                "repo": "policy_sentry",
+                "stars": 20046
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "IAMbic",
+              "description": "GitOps for IAM. The Terraform of Cloud IAM. IAMbic is a multi-cloud identity and access management (IAM) control plane that centralizes and simplifies cloud access and permissions. It maintains an eventually consistent, human-readable, bi-directional representation of IAM in version control.",
+              "children": [],
+              "repo_info": {
+                "archived": true,
+                "id": 1895804980,
+                "language": "TypeScript",
+                "last_commit": "2021-04-26T00:00:00.000Z",
+                "owner": "noqdev",
+                "repo": "iambic",
+                "stars": 4981
+              }
+            }
+          ],
+          "description": "Tools and resources exclusively targeting the AWS IAM policies ecosystem.",
+          "node_type": "group",
+          "title": "AWS policy tools"
+        }
+      ],
       "title": "Authorization"
-    },
-    {
-      "description": "Role-Based Access Control is the classical model to map users to permissions by the way of roles.",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "Cerbos",
-          "description": "An authorization endpoint to write context-aware access control policies.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3710636306,
-            "language": "Java",
-            "last_commit": "2023-03-01T00:00:00.000Z",
-            "owner": "cerbos",
-            "repo": "cerbos",
-            "stars": 36307
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "FerrisKey",
-          "description": "Self-hosted, open-source, RBAC system written in Rust.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2432585748,
-            "language": "Shell",
-            "last_commit": "2021-12-14T00:00:00.000Z",
-            "owner": "ferriskey",
-            "repo": "ferriskey",
-            "stars": 35749
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Athenz",
-          "description": "Set of services and libraries supporting service authentication and role-based authorization for provisioning and configuration.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3342078706,
-            "language": "Java",
-            "last_commit": "2022-01-25T00:00:00.000Z",
-            "owner": "yahoo",
-            "repo": "athenz",
-            "stars": 28707
-          }
-        }
-      ],
-      "title": "RBAC frameworks"
-    },
-    {
-      "description": "Attribute-Based Access Control is an evolution of RBAC, in which roles are replaced by attributes, allowing the implementation of more complex policy-based access control.",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "Keto",
-          "description": "Policy decision point. It uses a set of access control policies, similar to AWS policies, in order to determine whether a subject is authorized to perform a certain action on a resource.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1517479629,
-            "language": null,
-            "last_commit": "2022-04-12T00:00:00.000Z",
-            "owner": "ory",
-            "repo": "keto",
-            "stars": 29630
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Open Policy Agent",
-          "description": "An open-source general-purpose decision engine to create and enforce ABAC policies.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3813619699,
-            "language": null,
-            "last_commit": "2022-02-01T00:00:00.000Z",
-            "owner": "open-policy-agent",
-            "repo": "opa",
-            "stars": 19700
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Ladon",
-          "description": "Access control library, inspired by AWS.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1937462756,
-            "language": "Java",
-            "last_commit": "2021-12-06T00:00:00.000Z",
-            "owner": "ory",
-            "repo": "ladon",
-            "stars": 12757
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Casbin",
-          "description": "Open-source access control library for Golang projects.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2369601518,
-            "language": "Shell",
-            "last_commit": "2022-08-01T00:00:00.000Z",
-            "owner": "casbin",
-            "repo": "casbin",
-            "stars": 1519
-          }
-        }
-      ],
-      "title": "ABAC frameworks"
-    },
-    {
-      "description": "The Relationship-Based Access Control model is a more flexible and powerful version of RBAC and is the preferred one for cloud systems.",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "Permify",
-          "description": "Another open-source authorization as a service inspired by Google Zanzibar, and see how it compares to other Zanzibar-inspired tools.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 636997516,
-            "language": "Java",
-            "last_commit": "2022-08-03T00:00:00.000Z",
-            "owner": "Permify",
-            "repo": "permify",
-            "stars": 47517
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Warrant",
-          "description": "A relationship based access control (ReBAC) engine (inspired by Google Zanzibar) also capable of enforcing any authorization paradigm, including RBAC and ABAC.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2943317462,
-            "language": "Go",
-            "last_commit": "2022-09-26T00:00:00.000Z",
-            "owner": "warrant-dev",
-            "repo": "warrant",
-            "stars": 17463
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "SpiceDB",
-          "description": "An open source database system for managing security-critical application permissions inspired by Zanzibar.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2753260689,
-            "language": null,
-            "last_commit": "2022-02-11T00:00:00.000Z",
-            "owner": "authzed",
-            "repo": "spicedb",
-            "stars": 10690
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Topaz",
-          "description": "An open-source project which combines the policy-as-code and decision logging of OPA with a Zanzibar-modeled directory.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 917257194,
-            "language": "Rust",
-            "last_commit": "2023-06-21T00:00:00.000Z",
-            "owner": "aserto-dev",
-            "repo": "topaz",
-            "stars": 7195
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Open Policy Administration Layer",
-          "description": "Open Source administration layer for OPA, detecting changes to both policy and policy data in realtime and pushing live updates to OPA agents. OPAL brings open-policy up to the speed needed by live applications.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3544300825,
-            "language": "C++",
-            "last_commit": "2021-09-28T00:00:00.000Z",
-            "owner": "permitio",
-            "repo": "opal",
-            "stars": 826
-          }
-        }
-      ],
-      "title": "ReBAC frameworks"
-    },
-    {
-      "description": "Tools and resources exclusively targeting the AWS IAM policies ecosystem.",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "IAM Floyd",
-          "description": "AWS IAM policy statement generator with fluent interface. Helps with creating type safe IAM policies and writing more restrictive/secure statements by offering conditions and ARN generation via IntelliSense. Available for Node.js, Python, .Net and Java.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 70770257,
-            "language": "Ruby",
-            "last_commit": "2023-04-19T00:00:00.000Z",
-            "owner": "udondan",
-            "repo": "iam-floyd",
-            "stars": 20258
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Policy Sentry",
-          "description": "Writing security-conscious IAM Policies by hand can be very tedious and inefficient. Policy Sentry helps users to create least-privilege policies in a matter of seconds.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1001970045,
-            "language": "C++",
-            "last_commit": "2023-11-17T00:00:00.000Z",
-            "owner": "salesforce",
-            "repo": "policy_sentry",
-            "stars": 20046
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "IAMbic",
-          "description": "GitOps for IAM. The Terraform of Cloud IAM. IAMbic is a multi-cloud identity and access management (IAM) control plane that centralizes and simplifies cloud access and permissions. It maintains an eventually consistent, human-readable, bi-directional representation of IAM in version control.",
-          "children": [],
-          "repo_info": {
-            "archived": true,
-            "id": 1895804980,
-            "language": "TypeScript",
-            "last_commit": "2021-04-26T00:00:00.000Z",
-            "owner": "noqdev",
-            "repo": "iambic",
-            "stars": 4981
-          }
-        }
-      ],
-      "title": "AWS policy tools"
     },
     {
       "description": "OAuth 2.0 is a delegated authorization framework. OpenID Connect (OIDC) is an authentication layer on top of it.\nThe old OpenID is dead; the new OpenID Connect is very much not-dead.",
@@ -814,432 +827,452 @@
             "repo": "sops",
             "stars": 1040
           }
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Keystone",
+              "description": "Open-source project for building trusted execution environments (TEE) with secure hardware enclaves, based on the RISC-V architecture.",
+              "children": [],
+              "repo_info": {
+                "archived": true,
+                "id": 2757586031,
+                "language": "JavaScript",
+                "last_commit": "2023-12-01T00:00:00.000Z",
+                "owner": "keystone-enclave",
+                "repo": "keystone",
+                "stars": 36032
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Project Oak",
+              "description": "A specification and a reference implementation for the secure transfer, storage and processing of data.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1305667124,
+                "language": "Rust",
+                "last_commit": "2023-08-30T00:00:00.000Z",
+                "owner": "project-oak",
+                "repo": "oak",
+                "stars": 17125
+              }
+            }
+          ],
+          "description": "HSMs are physical devices guaranteeing security of secret management at the hardware level.",
+          "node_type": "group",
+          "title": "Hardware Security Module (HSM)"
         }
       ],
       "title": "Secret Management"
     },
     {
-      "description": "HSMs are physical devices guaranteeing security of secret management at the hardware level.",
+      "description": "Once you've got a significant user base, it is called a community. You'll then be responsible to protect it: the customer, people, the company, the business, and facilitate all interactions and transactions happening therein.\nA critical intermediation complex driven by a policy and constraint by local laws, the Trust & Safety department is likely embodied by a cross-functional team of 24/7 operators and systems of highly advanced moderation and administration tools. You can see it as an extension of customer support services, specialized in edge-cases like manual identity checks, moderation of harmful content, stopping harassment, handling of warrants and copyright claims, data sequestration and other credit card disputes.",
       "items": [
         {
-          "node_type": "item",
-          "title": "Keystone",
-          "description": "Open-source project for building trusted execution environments (TEE) with secure hardware enclaves, based on the RISC-V architecture.",
-          "children": [],
-          "repo_info": {
-            "archived": true,
-            "id": 2757586031,
-            "language": "JavaScript",
-            "last_commit": "2023-12-01T00:00:00.000Z",
-            "owner": "keystone-enclave",
-            "repo": "keystone",
-            "stars": 36032
-          }
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Statistically Likely Usernames",
+              "description": "Wordlists for creating statistically likely usernames for use in username-enumeration, simulated password-attacks and other security testing tasks.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3926997677,
+                "language": "Ruby",
+                "last_commit": "2022-02-23T00:00:00.000Z",
+                "owner": "insidetrust",
+                "repo": "statistically-likely-usernames",
+                "stars": 47678
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Sherlock",
+              "description": "Hunt down social media accounts by username across social networks.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 180597036,
+                "language": "Java",
+                "last_commit": "2023-11-26T00:00:00.000Z",
+                "owner": "sherlock-project",
+                "repo": "sherlock",
+                "stars": 47037
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Ballerine",
+              "description": "An open-source infrastructure for user identity and risk management.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1371034829,
+                "language": null,
+                "last_commit": "2021-09-24T00:00:00.000Z",
+                "owner": "ballerine-io",
+                "repo": "ballerine",
+                "stars": 34830
+              }
+            }
+          ],
+          "description": "Most businesses do not collect customer's identity to create user profiles to sell to third party, no. But you still have to: local laws require to keep track of contract relationships under the large Know You Customer (KYC) banner.",
+          "node_type": "group",
+          "title": "User Identity"
         },
         {
-          "node_type": "item",
-          "title": "Project Oak",
-          "description": "A specification and a reference implementation for the secure transfer, storage and processing of data.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1305667124,
-            "language": "Rust",
-            "last_commit": "2023-08-30T00:00:00.000Z",
-            "owner": "project-oak",
-            "repo": "oak",
-            "stars": 17125
-          }
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Gephi",
+              "description": "Open-source platform for visualizing and manipulating large graphs.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1812930600,
+                "language": "TypeScript",
+                "last_commit": "2022-05-11T00:00:00.000Z",
+                "owner": "gephi",
+                "repo": "gephi",
+                "stars": 30601
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "MIDAS: Detecting Microcluster Anomalies in Edge Streams",
+              "description": "A proposed method to “detects microcluster anomalies, or suddenly arriving groups of suspiciously similar edges, in edge streams, using constant time and memory.”",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2671373646,
+                "language": "Java",
+                "last_commit": "2022-03-26T00:00:00.000Z",
+                "owner": "bhatiasiddharth",
+                "repo": "MIDAS",
+                "stars": 23647
+              }
+            }
+          ],
+          "description": "As an online service provider, you're exposed to fraud, crime and abuses. You'll be surprised by how much people gets clever when it comes to money. Expect any bug or discrepancies in your workflow to be exploited for financial gain.",
+          "node_type": "group",
+          "title": "Fraud"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "SecLists",
+              "description": "Collection of multiple types of lists used during security assessments, collected in one place. List types include usernames, passwords, URLs, sensitive data patterns, fuzzing payloads, web shells, and many more.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3094740955,
+                "language": "C++",
+                "last_commit": "2021-05-21T00:00:00.000Z",
+                "owner": "danielmiessler",
+                "repo": "SecLists",
+                "stars": 40956
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "PhishingKitTracker",
+              "description": "CSV database of email addresses used by threat actor in phishing kits.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1940137994,
+                "language": "Rust",
+                "last_commit": "2021-04-12T00:00:00.000Z",
+                "owner": "neonprimetime",
+                "repo": "PhishingKitTracker",
+                "stars": 37995
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Awesome Threat Intelligence",
+              "description": "“A concise definition of Threat Intelligence: evidence-based knowledge, including context, mechanisms, indicators, implications and actionable advice, about an existing or emerging menace or hazard to assets that can be used to inform decisions regarding the subject's response to that menace or hazard.”",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 4067624402,
+                "language": "Go",
+                "last_commit": "2022-11-25T00:00:00.000Z",
+                "owner": "hslatman",
+                "repo": "awesome-threat-intelligence",
+                "stars": 24403
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "The challenges of file formats",
+              "description": "At one point you will let users upload files in your system. Here is a corpus of suspicious media files that can be leveraged by scammers =to bypass security or fool users.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 249360229,
+                "language": null,
+                "last_commit": "2023-05-17T00:00:00.000Z",
+                "owner": "corkami",
+                "repo": "pocs",
+                "stars": 10230
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "PhoneInfoga",
+              "description": "Tools to scan phone numbers using only free resources. The goal is to first gather standard information such as country, area, carrier and line type on any international phone numbers with a very good accuracy. Then search for footprints on search engines to try to find the VoIP provider or identify the owner.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3005360031,
+                "language": "JavaScript",
+                "last_commit": "2023-12-01T00:00:00.000Z",
+                "owner": "sundowndev",
+                "repo": "PhoneInfoga",
+                "stars": 10032
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "SpiderFoot",
+              "description": "An open source intelligence (OSINT) automation tool. It integrates with just about every data source available and uses a range of methods for data analysis, making that data easy to navigate.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3838355882,
+                "language": "Go",
+                "last_commit": "2021-08-02T00:00:00.000Z",
+                "owner": "poppopjmp",
+                "repo": "spiderfoot",
+                "stars": 5883
+              }
+            }
+          ],
+          "description": "How to detect, unmask and classify offensive online activities. Most of the time these are monitored by security, networking and/or infrastructure engineering teams. Still, these are good resources for T&S and IAM people, who might be called upon for additional expertise for analysis and handling of threats.",
+          "node_type": "group",
+          "title": "Threat Intelligence"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Anubis",
+              "description": "An open-source solution to protect upstream resources from scraper bots.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 4190928625,
+                "language": "C++",
+                "last_commit": "2022-04-16T00:00:00.000Z",
+                "owner": "TecharoHQ",
+                "repo": "anubis",
+                "stars": 28626
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Awesome Captcha",
+              "description": "Reference all open-source captcha libraries, integration, alternatives and cracking tools.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3049216570,
+                "language": "TypeScript",
+                "last_commit": "2022-06-10T00:00:00.000Z",
+                "owner": "ZYSzys",
+                "repo": "awesome-captcha",
+                "stars": 16571
+              }
+            }
+          ],
+          "description": "Another line of defense against spammers.",
+          "node_type": "group",
+          "title": "Captcha"
         }
       ],
-      "title": "Hardware Security Module (HSM)"
+      "title": "Trust & Safety"
     },
     {
-      "description": "Most businesses do not collect customer's identity to create user profiles to sell to third party, no. But you still have to: local laws require to keep track of contract relationships under the large Know You Customer (KYC) banner.",
+      "description": "The first mechanical line of defense against abuses consist in plain and simple deny-listing. This is the low-hanging fruit of fraud fighting, but you'll be surprised how they're still effective.",
       "items": [
         {
-          "node_type": "item",
-          "title": "Statistically Likely Usernames",
-          "description": "Wordlists for creating statistically likely usernames for use in username-enumeration, simulated password-attacks and other security testing tasks.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3926997677,
-            "language": "Ruby",
-            "last_commit": "2022-02-23T00:00:00.000Z",
-            "owner": "insidetrust",
-            "repo": "statistically-likely-usernames",
-            "stars": 47678
-          }
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Country IP Blocks",
+              "description": "CIDR country-level IP data, straight from the Regional Internet Registries, updated hourly.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2077146198,
+                "language": "Shell",
+                "last_commit": "2023-06-17T00:00:00.000Z",
+                "owner": "herrbischoff",
+                "repo": "country-ip-blocks",
+                "stars": 46199
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "The Public Suffix List",
+              "description": "Mozilla's registry of public suffixes, under which Internet users can (or historically could) directly register names.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2953343838,
+                "language": "Shell",
+                "last_commit": "2021-09-15T00:00:00.000Z",
+                "owner": "publicsuffix",
+                "repo": "list",
+                "stars": 43839
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "",
+              "description": "Consolidates reputable hosts files, and merges them into a unified hosts file with duplicates removed.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1792492541,
+                "language": "JavaScript",
+                "last_commit": "2022-07-09T00:00:00.000Z",
+                "owner": "StevenBlack",
+                "repo": "hosts",
+                "stars": 42542
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Subdomain denylists: #1",
+              "description": ", #2, #3, #4.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3290568169,
+                "language": null,
+                "last_commit": "2023-07-16T00:00:00.000Z",
+                "owner": "sandeepshetty",
+                "repo": "subdomain-blacklist",
+                "stars": 18170
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "",
+              "description": "Extensive collection of list for security, privacy and parental control.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3012161501,
+                "language": "JavaScript",
+                "last_commit": "2022-08-18T00:00:00.000Z",
+                "owner": "nextdns",
+                "repo": "metadata",
+                "stars": 11502
+              }
+            }
+          ],
+          "description": "Useful to identified clients, catch and block swarms of bots, and limit effects of dDOS.",
+          "node_type": "group",
+          "title": "Hostnames and Subdomains"
         },
         {
-          "node_type": "item",
-          "title": "Sherlock",
-          "description": "Hunt down social media accounts by username across social networks.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 180597036,
-            "language": "Java",
-            "last_commit": "2023-11-26T00:00:00.000Z",
-            "owner": "sherlock-project",
-            "repo": "sherlock",
-            "stars": 47037
-          }
+          "children": [
+            {
+              "node_type": "item",
+              "title": "MailChecker",
+              "description": "Cross-language temporary (disposable/throwaway) email detection library.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 4179995069,
+                "language": null,
+                "last_commit": "2023-10-24T00:00:00.000Z",
+                "owner": "FGRibreau",
+                "repo": "mailchecker",
+                "stars": 45070
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Burner email providers",
+              "description": "A list of temporary email providers. And its derivative Python module.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1365867455,
+                "language": "C++",
+                "last_commit": "2022-10-03T00:00:00.000Z",
+                "owner": "wesbos",
+                "repo": "burner-email-providers",
+                "stars": 17456
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "",
+              "description": "“A ruby gem to check if the owner of a given email address or website is working for THE MAN (a.k.a verifies government domains).” Good resource to hunt for potential government customers in your user base.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3764405698,
+                "language": "Shell",
+                "last_commit": "2022-02-02T00:00:00.000Z",
+                "owner": "benbalter",
+                "repo": "gman",
+                "stars": 5699
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Emails"
         },
         {
-          "node_type": "item",
-          "title": "Ballerine",
-          "description": "An open-source infrastructure for user identity and risk management.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1371034829,
-            "language": null,
-            "last_commit": "2021-09-24T00:00:00.000Z",
-            "owner": "ballerine-io",
-            "repo": "ballerine",
-            "stars": 34830
-          }
+          "children": [
+            {
+              "node_type": "item",
+              "title": "",
+              "description": "Uses a linear SVM model trained on 200k human-labeled samples of clean and profane text strings.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 248625953,
+                "language": "Python",
+                "last_commit": "2021-05-23T00:00:00.000Z",
+                "owner": "vzhou842",
+                "repo": "profanity-check",
+                "stars": 25954
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "List of Dirty, Naughty, Obscene, and Otherwise Bad Words",
+              "description": "Profanity blocklist from Shutterstock.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3616155186,
+                "language": "Java",
+                "last_commit": "2023-06-29T00:00:00.000Z",
+                "owner": "LDNOOBW",
+                "repo": "List-of-Dirty-Naughty-Obscene-and-Otherwise-Bad-Words",
+                "stars": 5187
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Profanity"
         }
       ],
-      "title": "User Identity"
-    },
-    {
-      "description": "As an online service provider, you're exposed to fraud, crime and abuses. You'll be surprised by how much people gets clever when it comes to money. Expect any bug or discrepancies in your workflow to be exploited for financial gain.",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "Gephi",
-          "description": "Open-source platform for visualizing and manipulating large graphs.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1812930600,
-            "language": "TypeScript",
-            "last_commit": "2022-05-11T00:00:00.000Z",
-            "owner": "gephi",
-            "repo": "gephi",
-            "stars": 30601
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "MIDAS: Detecting Microcluster Anomalies in Edge Streams",
-          "description": "A proposed method to “detects microcluster anomalies, or suddenly arriving groups of suspiciously similar edges, in edge streams, using constant time and memory.”",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2671373646,
-            "language": "Java",
-            "last_commit": "2022-03-26T00:00:00.000Z",
-            "owner": "bhatiasiddharth",
-            "repo": "MIDAS",
-            "stars": 23647
-          }
-        }
-      ],
-      "title": "Fraud"
-    },
-    {
-      "description": "How to detect, unmask and classify offensive online activities. Most of the time these are monitored by security, networking and/or infrastructure engineering teams. Still, these are good resources for T&S and IAM people, who might be called upon for additional expertise for analysis and handling of threats.",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "SecLists",
-          "description": "Collection of multiple types of lists used during security assessments, collected in one place. List types include usernames, passwords, URLs, sensitive data patterns, fuzzing payloads, web shells, and many more.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3094740955,
-            "language": "C++",
-            "last_commit": "2021-05-21T00:00:00.000Z",
-            "owner": "danielmiessler",
-            "repo": "SecLists",
-            "stars": 40956
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "PhishingKitTracker",
-          "description": "CSV database of email addresses used by threat actor in phishing kits.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1940137994,
-            "language": "Rust",
-            "last_commit": "2021-04-12T00:00:00.000Z",
-            "owner": "neonprimetime",
-            "repo": "PhishingKitTracker",
-            "stars": 37995
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Awesome Threat Intelligence",
-          "description": "“A concise definition of Threat Intelligence: evidence-based knowledge, including context, mechanisms, indicators, implications and actionable advice, about an existing or emerging menace or hazard to assets that can be used to inform decisions regarding the subject's response to that menace or hazard.”",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 4067624402,
-            "language": "Go",
-            "last_commit": "2022-11-25T00:00:00.000Z",
-            "owner": "hslatman",
-            "repo": "awesome-threat-intelligence",
-            "stars": 24403
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "The challenges of file formats",
-          "description": "At one point you will let users upload files in your system. Here is a corpus of suspicious media files that can be leveraged by scammers =to bypass security or fool users.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 249360229,
-            "language": null,
-            "last_commit": "2023-05-17T00:00:00.000Z",
-            "owner": "corkami",
-            "repo": "pocs",
-            "stars": 10230
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "PhoneInfoga",
-          "description": "Tools to scan phone numbers using only free resources. The goal is to first gather standard information such as country, area, carrier and line type on any international phone numbers with a very good accuracy. Then search for footprints on search engines to try to find the VoIP provider or identify the owner.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3005360031,
-            "language": "JavaScript",
-            "last_commit": "2023-12-01T00:00:00.000Z",
-            "owner": "sundowndev",
-            "repo": "PhoneInfoga",
-            "stars": 10032
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "SpiderFoot",
-          "description": "An open source intelligence (OSINT) automation tool. It integrates with just about every data source available and uses a range of methods for data analysis, making that data easy to navigate.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3838355882,
-            "language": "Go",
-            "last_commit": "2021-08-02T00:00:00.000Z",
-            "owner": "poppopjmp",
-            "repo": "spiderfoot",
-            "stars": 5883
-          }
-        }
-      ],
-      "title": "Threat Intelligence"
-    },
-    {
-      "description": "Another line of defense against spammers.",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "Anubis",
-          "description": "An open-source solution to protect upstream resources from scraper bots.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 4190928625,
-            "language": "C++",
-            "last_commit": "2022-04-16T00:00:00.000Z",
-            "owner": "TecharoHQ",
-            "repo": "anubis",
-            "stars": 28626
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Awesome Captcha",
-          "description": "Reference all open-source captcha libraries, integration, alternatives and cracking tools.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3049216570,
-            "language": "TypeScript",
-            "last_commit": "2022-06-10T00:00:00.000Z",
-            "owner": "ZYSzys",
-            "repo": "awesome-captcha",
-            "stars": 16571
-          }
-        }
-      ],
-      "title": "Captcha"
-    },
-    {
-      "description": "Useful to identified clients, catch and block swarms of bots, and limit effects of dDOS.",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "Country IP Blocks",
-          "description": "CIDR country-level IP data, straight from the Regional Internet Registries, updated hourly.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2077146198,
-            "language": "Shell",
-            "last_commit": "2023-06-17T00:00:00.000Z",
-            "owner": "herrbischoff",
-            "repo": "country-ip-blocks",
-            "stars": 46199
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "The Public Suffix List",
-          "description": "Mozilla's registry of public suffixes, under which Internet users can (or historically could) directly register names.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2953343838,
-            "language": "Shell",
-            "last_commit": "2021-09-15T00:00:00.000Z",
-            "owner": "publicsuffix",
-            "repo": "list",
-            "stars": 43839
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "",
-          "description": "Consolidates reputable hosts files, and merges them into a unified hosts file with duplicates removed.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1792492541,
-            "language": "JavaScript",
-            "last_commit": "2022-07-09T00:00:00.000Z",
-            "owner": "StevenBlack",
-            "repo": "hosts",
-            "stars": 42542
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Subdomain denylists: #1",
-          "description": ", #2, #3, #4.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3290568169,
-            "language": null,
-            "last_commit": "2023-07-16T00:00:00.000Z",
-            "owner": "sandeepshetty",
-            "repo": "subdomain-blacklist",
-            "stars": 18170
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "",
-          "description": "Extensive collection of list for security, privacy and parental control.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3012161501,
-            "language": "JavaScript",
-            "last_commit": "2022-08-18T00:00:00.000Z",
-            "owner": "nextdns",
-            "repo": "metadata",
-            "stars": 11502
-          }
-        }
-      ],
-      "title": "Hostnames and Subdomains"
-    },
-    {
-      "description": "",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "MailChecker",
-          "description": "Cross-language temporary (disposable/throwaway) email detection library.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 4179995069,
-            "language": null,
-            "last_commit": "2023-10-24T00:00:00.000Z",
-            "owner": "FGRibreau",
-            "repo": "mailchecker",
-            "stars": 45070
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Burner email providers",
-          "description": "A list of temporary email providers. And its derivative Python module.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1365867455,
-            "language": "C++",
-            "last_commit": "2022-10-03T00:00:00.000Z",
-            "owner": "wesbos",
-            "repo": "burner-email-providers",
-            "stars": 17456
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "",
-          "description": "“A ruby gem to check if the owner of a given email address or website is working for THE MAN (a.k.a verifies government domains).” Good resource to hunt for potential government customers in your user base.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3764405698,
-            "language": "Shell",
-            "last_commit": "2022-02-02T00:00:00.000Z",
-            "owner": "benbalter",
-            "repo": "gman",
-            "stars": 5699
-          }
-        }
-      ],
-      "title": "Emails"
-    },
-    {
-      "description": "",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "",
-          "description": "Uses a linear SVM model trained on 200k human-labeled samples of clean and profane text strings.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 248625953,
-            "language": "Python",
-            "last_commit": "2021-05-23T00:00:00.000Z",
-            "owner": "vzhou842",
-            "repo": "profanity-check",
-            "stars": 25954
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "List of Dirty, Naughty, Obscene, and Otherwise Bad Words",
-          "description": "Profanity blocklist from Shutterstock.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3616155186,
-            "language": "Java",
-            "last_commit": "2023-06-29T00:00:00.000Z",
-            "owner": "LDNOOBW",
-            "repo": "List-of-Dirty-Naughty-Obscene-and-Otherwise-Bad-Words",
-            "stars": 5187
-          }
-        }
-      ],
-      "title": "Profanity"
+      "title": "Blocklists"
     },
     {
       "description": "As the guardian of user's data, the IAM stack is deeply bounded by the respect of privacy.",
@@ -1312,16 +1345,6 @@
         }
       ],
       "title": "Competitive Analysis"
-    },
-    {
-      "description": "Your contributions are always welcome! Please take a look at the contribution guidelines first.",
-      "items": [],
-      "title": "Contributing"
-    },
-    {
-      "description": "The header image is based on a modified photo by Ben Sweet.\n[0]: You can add your Identity & Authentication product in the list of sponsors via a GitHub sponsorship. [↑]\n[1]: Poison Study (Mira, 2007). [↑]",
-      "items": [],
-      "title": "Footnotes"
     }
   ],
   "metadata": {

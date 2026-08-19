@@ -43,6 +43,32 @@ function findItemByTitle(
   return undefined;
 }
 
+interface Container {
+  children?: unknown[];
+  description?: null | string;
+  items?: unknown[];
+  title: string;
+}
+
+function findContainer(
+  nodes: Container[],
+  title: string,
+): Container | undefined {
+  for (const node of nodes) {
+    if (node.title === title) {
+      return node;
+    }
+    const nested = findContainer(
+      (node.items ?? node.children ?? []) as Container[],
+      title,
+    );
+    if (nested) {
+      return nested;
+    }
+  }
+  return undefined;
+}
+
 // Any emitted node (item or group) for shape assertions in the identity tests.
 // `node_type` discriminates: 'item' carries repo_info, 'group' carries neither
 // repo_info nor children's identity — only children.
@@ -210,9 +236,12 @@ describe('Item titles and descriptions from README fixtures', () => {
         `enhansome/enhansome-${fixtureName}`,
       );
 
-      const sec = result.jsonData.items.find(s => s.title === section);
+      const sec = findContainer(result.jsonData.items, section);
       expect(sec, `section "${section}" should exist`).toBeDefined();
-      const item = findItemByTitle(sec?.items ?? [], title);
+      const item = findItemByTitle(
+        (sec?.items ?? sec?.children ?? []) as { children?: unknown[]; title: string }[],
+        title,
+      );
       expect(
         item,
         `item "${title}" should exist in section "${section}"`,
@@ -442,5 +471,436 @@ describe('Item identity: own-link only, categories become groups', () => {
     const section = jsonData.items.find(s => s.title === 'Section');
     const titles = section?.items.map(i => i.title) ?? [];
     expect(titles).toEqual(['starred', 'First category', 'Second category']);
+  });
+});
+
+// The section tree must mirror the source README's heading tree: sub-headings
+// nest as groups, a heading that is a single GitHub link is an item, containers
+// with no items anywhere beneath are dropped, and dead links emit nothing.
+// `shape` reduces a tree to title/type/repo/children so the assertions below
+// pin structure without pinning every repo_info field.
+describe('Tree shape: heading hierarchy, link-headings, empties, dead links', () => {
+  const token = 'test-token';
+  const sourceRepo = 'example/awesome-test';
+
+  beforeEach(() => {
+    vi.clearAllMocks();
+    vi.mocked(github.parseGitHubUrl).mockImplementation((url: string) => {
+      if (!url.includes('github.com')) {
+        return null;
+      }
+      const parts = url.split('/');
+      return { owner: parts[parts.length - 2], repo: parts[parts.length - 1] };
+    });
+    vi.mocked(github.getRepoInfo).mockImplementation((_ok, owner, repo) =>
+      // `o/dead` is the one repo whose fetch fails — the dead-link case. A real
+      // failure throws (and fetchTargetData catches), never resolves null.
+      `${owner}/${repo}` === 'o/dead'
+        ? Promise.reject(new Error('404 Not Found'))
+        : Promise.resolve({
+            archived: false,
+            id: 1,
+            language: 'TypeScript',
+            open_issues_count: 1,
+            owner,
+            repo,
+            pushed_at: '2025-01-01T00:00:00Z',
+            stargazers_count: 100,
+            topics: [],
+            description: null,
+          }),
+    );
+  });
+
+  async function process(md: string) {
+    const { jsonData } = await processMarkdownContent(
+      md,
+      token,
+      [],
+      { by: '', minLinks: 0 },
+      sourceRepo,
+      '',
+    );
+    return jsonData;
+  }
+
+  function shape(nodes: unknown[]): unknown[] {
+    return nodes.map(node => {
+      const n = node as {
+        children?: unknown[];
+        description?: null | string;
+        items?: unknown[];
+        node_type?: 'group' | 'item';
+        repo_info?: { owner: string; repo: string };
+        title: string;
+      };
+      return {
+        children: shape(n.items ?? n.children ?? []),
+        repo: n.repo_info ? `${n.repo_info.owner}/${n.repo_info.repo}` : null,
+        type: n.node_type ?? 'section',
+      };
+    });
+  }
+
+  it('nests sub-headings by depth instead of flattening them', async () => {
+    const data = await process(
+      [
+        '# List',
+        '',
+        '## Languages',
+        '',
+        '### Compiled',
+        '',
+        '#### Rust tooling',
+        '',
+        '- [tool](https://github.com/o/tool)',
+        '',
+      ].join('\n'),
+    );
+
+    expect(shape(data.items)).toEqual([
+      {
+        type: 'section',
+        repo: null,
+        children: [
+          {
+            type: 'group',
+            repo: null,
+            children: [
+              {
+                type: 'group',
+                repo: null,
+                children: [{ type: 'item', repo: 'o/tool', children: [] }],
+              },
+            ],
+          },
+        ],
+      },
+    ]);
+  });
+
+  it('a heading that is one GitHub link becomes an item with the following content', async () => {
+    const data = await process(
+      [
+        '# List',
+        '',
+        '## Section',
+        '',
+        '### [Repo](https://github.com/o/repo)',
+        '',
+        '> A blockquote description.',
+        '',
+        '- [child](https://github.com/o/child)',
+        '',
+      ].join('\n'),
+    );
+
+    expect(shape(data.items)).toEqual([
+      {
+        type: 'section',
+        repo: null,
+        children: [
+          {
+            type: 'item',
+            repo: 'o/repo',
+            children: [{ type: 'item', repo: 'o/child', children: [] }],
+          },
+        ],
+      },
+    ]);
+    const section = data.items[0];
+    const heading = (section?.items ?? [])[0] as { description: null | string };
+    expect(heading.description).toBe('A blockquote description.');
+  });
+
+  it('a non-GitHub link-heading stays a container and wraps the repos beneath it', async () => {
+    const data = await process(
+      [
+        '# List',
+        '',
+        '## Section',
+        '',
+        '### [Article](https://example.com/article)',
+        '',
+        '- [repo](https://github.com/o/repo)',
+        '',
+      ].join('\n'),
+    );
+
+    expect(shape(data.items)).toEqual([
+      {
+        type: 'section',
+        repo: null,
+        children: [
+          {
+            type: 'group',
+            repo: null,
+            children: [{ type: 'item', repo: 'o/repo', children: [] }],
+          },
+        ],
+      },
+    ]);
+  });
+
+  it('drops containers with no items beneath but keeps nesting intermediates that have them', async () => {
+    const data = await process(
+      [
+        '# List',
+        '',
+        '## Empty Section',
+        '',
+        '### Nested Empty',
+        '',
+        '## Full Section',
+        '',
+        '### Nested With Items',
+        '',
+        '- [a](https://github.com/o/a)',
+        '- [b](https://github.com/o/b)',
+        '',
+      ].join('\n'),
+    );
+
+    expect(shape(data.items)).toEqual([
+      {
+        type: 'section',
+        repo: null,
+        children: [
+          {
+            type: 'group',
+            repo: null,
+            children: [
+              { type: 'item', repo: 'o/a', children: [] },
+              { type: 'item', repo: 'o/b', children: [] },
+            ],
+          },
+        ],
+      },
+    ]);
+  });
+
+  it('skips a dead link at emit and lifts its children to the parent', async () => {
+    const data = await process(
+      [
+        '# List',
+        '',
+        '## Section',
+        '',
+        '- [dead](https://github.com/o/dead)',
+        '  - [live-child](https://github.com/o/live-child)',
+        '- [live](https://github.com/o/live)',
+        '',
+      ].join('\n'),
+    );
+
+    expect(shape(data.items)).toEqual([
+      {
+        type: 'section',
+        repo: null,
+        children: [
+          { type: 'item', repo: 'o/live-child', children: [] },
+          { type: 'item', repo: 'o/live', children: [] },
+        ],
+      },
+    ]);
+  });
+
+  it('a link-heading whose link is dead stays a container for its live children', async () => {
+    const data = await process(
+      [
+        '# List',
+        '',
+        '## Section',
+        '',
+        '### [Dead](https://github.com/o/dead)',
+        '',
+        '- [child](https://github.com/o/child)',
+        '',
+      ].join('\n'),
+    );
+
+    expect(shape(data.items)).toEqual([
+      {
+        type: 'section',
+        repo: null,
+        children: [
+          {
+            type: 'group',
+            repo: null,
+            children: [{ type: 'item', repo: 'o/child', children: [] }],
+          },
+        ],
+      },
+    ]);
+  });
+
+  it('treats H1s after the title as sections', async () => {
+    const data = await process(
+      [
+        '# Awesome List',
+        '',
+        '# Section A',
+        '',
+        '1. [a1](https://github.com/o/a1)',
+        '',
+        '# Section B',
+        '',
+        '- [b1](https://github.com/o/b1)',
+        '',
+      ].join('\n'),
+    );
+
+    expect(data.metadata.title).toBe('Awesome List');
+    expect(shape(data.items)).toEqual([
+      {
+        type: 'section',
+        repo: null,
+        children: [{ type: 'item', repo: 'o/a1', children: [] }],
+      },
+      {
+        type: 'section',
+        repo: null,
+        children: [{ type: 'item', repo: 'o/b1', children: [] }],
+      },
+    ]);
+  });
+
+  it('uses the shallowest heading depth present as the section level', async () => {
+    const data = await process(
+      [
+        '# List',
+        '',
+        '### First',
+        '',
+        '- [a](https://github.com/o/a)',
+        '',
+        '### Second',
+        '',
+        '- [b](https://github.com/o/b)',
+        '',
+      ].join('\n'),
+    );
+
+    expect(shape(data.items)).toEqual([
+      {
+        type: 'section',
+        repo: null,
+        children: [{ type: 'item', repo: 'o/a', children: [] }],
+      },
+      {
+        type: 'section',
+        repo: null,
+        children: [{ type: 'item', repo: 'o/b', children: [] }],
+      },
+    ]);
+  });
+
+  it('keeps every list in a section, not just the first', async () => {
+    const data = await process(
+      [
+        '# List',
+        '',
+        '## Section',
+        '',
+        '- [a](https://github.com/o/a)',
+        '',
+        'Prose between the lists.',
+        '',
+        '- [b](https://github.com/o/b)',
+        '',
+      ].join('\n'),
+    );
+
+    expect(shape(data.items)).toEqual([
+      {
+        type: 'section',
+        repo: null,
+        children: [
+          { type: 'item', repo: 'o/a', children: [] },
+          { type: 'item', repo: 'o/b', children: [] },
+        ],
+      },
+    ]);
+    expect(data.items[0]?.description).toBe('Prose between the lists.');
+  });
+
+  it('ignores spacer headings with no text', async () => {
+    // Real docs use a bare `#` or `#####` as a visual spacer (14× in one
+    // mirror). It must not open a section nor close the open one.
+    const data = await process(
+      [
+        '# List',
+        '',
+        '## Section',
+        '',
+        '- [a](https://github.com/o/a)',
+        '',
+        '#####',
+        '',
+        '- [b](https://github.com/o/b)',
+        '',
+      ].join('\n'),
+    );
+
+    expect(shape(data.items)).toEqual([
+      {
+        type: 'section',
+        repo: null,
+        children: [
+          { type: 'item', repo: 'o/a', children: [] },
+          { type: 'item', repo: 'o/b', children: [] },
+        ],
+      },
+    ]);
+  });
+
+  it('a table-of-contents heading does not wrap the document', async () => {
+    // free-for.dev shape: a `# Table of Contents` H1 after the title would
+    // nest every real section under a meaningless wrapper if it counted as
+    // structure.
+    const data = await process(
+      [
+        '# List',
+        '',
+        '# Table of Contents',
+        '',
+        '## Real Section',
+        '',
+        '- [a](https://github.com/o/a)',
+        '',
+      ].join('\n'),
+    );
+
+    expect(shape(data.items)).toEqual([
+      {
+        type: 'section',
+        repo: null,
+        children: [{ type: 'item', repo: 'o/a', children: [] }],
+      },
+    ]);
+  });
+
+  it('a generic first H1 stays the title slot instead of wrapping the document', async () => {
+    // guides.md shape: `# Guides` is not valid title material, but it IS the
+    // de-facto title slot (branding replaces it) — the H2s below it are
+    // sections, not its subsections.
+    const data = await process(
+      [
+        '# Guides',
+        '',
+        '## Section',
+        '',
+        '- [a](https://github.com/o/a)',
+        '',
+      ].join('\n'),
+    );
+
+    expect(shape(data.items)).toEqual([
+      {
+        type: 'section',
+        repo: null,
+        children: [{ type: 'item', repo: 'o/a', children: [] }],
+      },
+    ]);
   });
 });

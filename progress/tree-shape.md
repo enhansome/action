@@ -5,13 +5,12 @@ repo link (including link-headings), contain no empty sections and no dead
 links. (The `repo_info.id` half of the original goal landed separately —
 2026-08-19, root cause 5 below.)
 
-**Current state:** not started. Root causes fully diagnosed 2026-08-16 from
-the webapp side (mirror JSON + local DB measurements); evidence and fix design
-below. **Blocks webapp's schema-reset step** (user ordering 2026-08-17: action
-lands first; webapp ingest guards make the pipeline order-safe either way).
+**Current state:** implemented 2026-08-19, on `main` uncommitted — 12 new
+`Tree shape` unit tests, 60 goldens regenerated and audited, `make ci` green.
+Awaiting commit → release-please → cron spot checks (below), then archive.
 
-**Next step:** decide the nesting model (stack-based heading-depth walk) and
-rewrite `buildSections` in `packages/core/src/markdown.ts`.
+**Next step:** commit + release; after the 04:54 UTC cron pass, run the
+Verification spot checks.
 
 ## Root causes (all verified against live mirrors + webapp's local DB mirror)
 
@@ -48,27 +47,71 @@ rewrite `buildSections` in `packages/core/src/markdown.ts`.
    `archive/completed.md`. Ships in the same release-please cycle as this
    overhaul, so the post-cron check below covers both.
 
-## Fix design
+## Fix design (as implemented)
 
-- **Nesting:** walk headings with a depth stack — H2..H6 nest by their level;
-  the JSON section tree mirrors the README's heading tree.
-- **Link-headings → items:** a heading that is (or contains exactly) one repo
-  link emits an **item** node (repo_info from the existing repoInfoMap), with
-  the following content as its children/description — not a section title.
-  Non-repo link headings (toptout's `### [Atom](https://atom.io)`) stay
-  sections until v2 models non-repo resources.
-- **No empty sections:** after extraction, drop sections with no items
-  anywhere beneath (the intermediates from nesting carry their children, so
-  they survive; only true leaves vanish). Replaces §2.7.
-- **No dead links:** unresolvable GitHub links are skipped at emit; their list
-  children attach to the nearest live parent. Replaces §2.8.
-- **Optional:** dedupe a repo repeated within one README (first occurrence
-  wins) — webapp enforces this regardless; doing it here too keeps mirrors
-  honest. 5,407 repo+tree duplicate pairs measured.
-- **Contract + goldens move together:** the §2 contract notes in
-  `README.md`/webapp `indexer.ts` refs and `markdown.golden.test.ts` are
-  updated in the same release. Regenerate goldens deliberately (review the
-  diffs — they are the spec), never blind-snapshot-accept.
+- **Nesting:** walk headings with a depth stack; the JSON *node* tree mirrors
+  the README's heading tree. Sub-headings nest as `node_type: "group"`
+  containers (recursion `section.items → node.children → children…`) —
+  **user decision 2026-08-19**: reuse the existing group abstraction so the
+  emitted types are unchanged and today's webapp `parseNode` already recurses
+  into groups correctly (a nested-`JsonSection` shape would have needed webapp
+  changes first or silently dropped nested content).
+- **Section level = shallowest heading depth present, H1s included.** Corpus
+  sample (150 of 2,318 mirrors): 30 docs use `# Section` after the title H1
+  (e.g. awesome-mlops: 23 H1 sections → all items lost today); 2 have H3 as
+  shallowest. The title slot (valid title H1, else first H1 — the same node
+  branding replaces) never becomes a section; text-less headings (bare `#`
+  spacers, 14× in one mirror) and TOC headings ("Contents"/"Table of
+  Contents", the free-for-dev `# Table of Contents` wrapper) are transparent
+  to the walk. Boilerplate patterns beyond TOC ("Tools", "Guides", …) are NOT
+  skipped — they're only title-invalid, and `## Tools` is real content
+  (pinned by an orchestrator test).
+- **Link-headings → items:** a heading whose only link is a live GitHub link
+  emits an **item** (repo_info always present) with the following prose
+  (paragraphs AND blockquotes — snapmaker/toptout descriptions are `> …`) as
+  description and following lists/deeper headings as children. Non-repo or
+  dead link-headings stay containers (groups) — pruned if their subtree has no
+  items. A link-heading at section level becomes a section (the corpus has 3,
+  all prose notes; the contract has no top-level items).
+- **No dead links:** an own GitHub link absent from repoInfoMap emits nothing
+  for the item; its children lift to the nearest live parent at its position.
+  `JsonItem.repo_info` is now REQUIRED — every emitted item is a live repo.
+  (Caveat accepted: a throttled fetch looks dead for that run; the daily cron
+  self-heals.)
+- **No empty containers:** pruning falls out of finalize — a section/group
+  whose children array is empty (no items anywhere beneath) is dropped; lists
+  only return item-bearing nodes, so emptiness = children.length === 0.
+- **All lists in a container append** (the old walk closed a section at its
+  first list — a second list was silently dropped; static-analysis.md lost
+  247 of its 283 items to exactly this).
+- **Dedupe: deliberately NOT done here** — user decision 2026-08-19; the
+  webapp rebuild owns dedupe globally (~62k dupe drops accepted). Parked TODO
+  line added. Consequence for webapp cross-verification: its prune/merge/skip
+  counters should read zero after the cron pass, but the repo-drop counter
+  stays non-zero by design.
+- **Contract + goldens moved together:** README "Items vs. groups" rewritten;
+  goldens regenerated and audited (below). Webapp `registry.ts`/`indexer.ts`
+  mirror stays valid as-is (types unchanged); its stale "§2.7/§2.8" comments
+  fold into webapp's own rebuild step.
+
+## Measured results (local, deterministic repo-info mock)
+
+- 60 goldens: **zero empty containers, zero duplicate same-parent titles**
+  across all fixtures; item totals: 17 fixtures gain (static-analysis +247,
+  cl +209, Awesome-CoreML-Models +15 …), only `complex` loses 1 (its forced
+  dead link `user/repo-b` — by design).
+- Live offender READMEs (fetched 2026-08-19): snapmaker **0 → 88 items / 36
+  distinct repos** (dupes across machine categories are real; image `blob/`
+  links parse as the list's own repo — pre-existing `parseGitHubUrl`
+  semantics); toptout 11 → 69 items, template headings nested under apps;
+  machine-learning 845 items, 0 duplicate siblings (was 25 identical
+  sections); agent-memory 240 (orphan `### Start Here` promoted to section);
+  mlops 0 → 36 (H1 sections); appsec 11 (non-repo articles correctly absent —
+  v2).
+- Known pre-existing quirks, unchanged and out of scope: empty-title items
+  from backtick-wrapped link text (`[`gitleaks`](…)` → inlineCode → no text;
+  identical counts before/after); HTML `<h2>` headings (static-analysis
+  languages) invisible to mdast — content captured flat.
 
 ## Release & rollout
 
@@ -106,3 +149,17 @@ hierarchy/link extraction is pure parsing.
 - **2026-08-19:** root cause 5 (`repo_info.id`) landed on main — test-first,
   goldens regenerated (diff verified: only `"id": <n>` lines added); TODO line
   closed to `archive/completed.md`. Tree-shape work (root causes 1–4) remains.
+- **2026-08-19 (b):** tree-shape overhaul implemented (root causes 1–4).
+  Grounded in live data first: 150-mirror sample (H1-section docs 20%,
+  link-headings ≈2/doc, spacer/TOC headings) + all five offender READMEs
+  fetched and inspected (machine-learning nests H4 directly under H2;
+  agent-memory opens with an orphan `### Start Here`; offender list from
+  webapp `progress/indexer-perf.md` log 2026-08-16e). User decisions: groups
+  encoding (contract unchanged); dedupe skipped → parked TODO line. Test-first
+  (12 `Tree shape` cases), `processTree` rewritten as a depth-stack walk,
+  dead-link skip + child lifting in `processListRecursively`, `repo_info` now
+  required. Golden review drove three extra rules: title-slot exclusion
+  (guides.md `# Guides`), spacer/TOC-heading transparency (StarryDivineSky,
+  free-for.dev), and NOT skipping INVALID_TITLE_PATTERNS beyond TOC (`##
+  Tools` is content — caught by two orchestrator tests failing). Results in
+  the Measured results section above.

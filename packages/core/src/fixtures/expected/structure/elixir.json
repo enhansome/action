@@ -20938,610 +20938,622 @@
       "title": "YAML"
     },
     {
-      "description": "Fantastic books and e-books.",
+      "description": "Various resources, such as books, websites and articles, for improving your Elixir development skills and knowledge.",
       "items": [
         {
-          "node_type": "item",
-          "title": "Études for Elixir",
-          "description": "A collection of exercises to program in Elixir by J. David Eisenberg (2013) (Github Repo).",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2926691002,
-            "language": "Go",
-            "last_commit": "2023-12-30T00:00:00.000Z",
-            "owner": "oreillymedia",
-            "repo": "etudes-for-elixir",
-            "stars": 41003
-          }
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Études for Elixir",
+              "description": "A collection of exercises to program in Elixir by J. David Eisenberg (2013) (Github Repo).",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2926691002,
+                "language": "Go",
+                "last_commit": "2023-12-30T00:00:00.000Z",
+                "owner": "oreillymedia",
+                "repo": "etudes-for-elixir",
+                "stars": 41003
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Getting Started - Elixir",
+              "description": "PDF, MOBI, and EPUB documents for Elixir's Getting Started tutorial (2016).",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1152232654,
+                "language": "Rust",
+                "last_commit": "2022-03-18T00:00:00.000Z",
+                "owner": "potatogopher",
+                "repo": "elixir-getting-started",
+                "stars": 32655
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Async Elixir",
+              "description": "Dive into Elixir's world of concurrency and processes with this interactive Livebook.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 699578935,
+                "language": "C++",
+                "last_commit": "2021-06-10T00:00:00.000Z",
+                "owner": "Arp-G",
+                "repo": "async-elixir",
+                "stars": 28936
+              }
+            }
+          ],
+          "description": "Fantastic books and e-books.",
+          "node_type": "group",
+          "title": "Books"
         },
         {
-          "node_type": "item",
-          "title": "Getting Started - Elixir",
-          "description": "PDF, MOBI, and EPUB documents for Elixir's Getting Started tutorial (2016).",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1152232654,
-            "language": "Rust",
-            "last_commit": "2022-03-18T00:00:00.000Z",
-            "owner": "potatogopher",
-            "repo": "elixir-getting-started",
-            "stars": 32655
-          }
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Jetbrains",
+              "description": "Elixir for IntelliJ IDEA, RubyMine, WebStorm, PhpStorm, PyCharm, AppCode, Android Studio, 0xDBE.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3396349864,
+                "language": "Rust",
+                "last_commit": "2021-08-20T00:00:00.000Z",
+                "owner": "KronicDeth",
+                "repo": "intellij-elixir",
+                "stars": 49865
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "vim-elixir",
+              "description": "Vim configuration files for Elixir.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 331998138,
+                "language": "Shell",
+                "last_commit": "2023-08-16T00:00:00.000Z",
+                "owner": "elixir-lang",
+                "repo": "vim-elixir",
+                "stars": 48139
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "vim-mix-format",
+              "description": "Async for Vim and Neovim.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1843591057,
+                "language": "Ruby",
+                "last_commit": "2023-11-05T00:00:00.000Z",
+                "owner": "mhinz",
+                "repo": "vim-mix-format",
+                "stars": 41058
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "elixir-ls",
+              "description": "A frontend-independent IDE \"smartness\" server for Elixir. Implements the JSON-based \"Language Server Protocol\" standard and provides debugger support via VS Code's debugger protocol.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 854540964,
+                "language": "Rust",
+                "last_commit": "2021-05-12T00:00:00.000Z",
+                "owner": "JakeBecker",
+                "repo": "elixir-ls",
+                "stars": 40965
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "mix.nvim",
+              "description": "Mix wrapper plugin for Neovim.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1007886962,
+                "language": "Go",
+                "last_commit": "2021-05-14T00:00:00.000Z",
+                "owner": "brendalf",
+                "repo": "mix.nvim",
+                "stars": 36963
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "vscode-elixir-ls",
+              "description": "Elixir language support and debugger for VS Code, powered by ElixirLS.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 20436789,
+                "language": null,
+                "last_commit": "2021-11-03T00:00:00.000Z",
+                "owner": "JakeBecker",
+                "repo": "vscode-elixir-ls",
+                "stars": 36790
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Alchemist",
+              "description": "Elixir Tooling Integration Into Emacs.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3441985510,
+                "language": "TypeScript",
+                "last_commit": "2022-08-09T00:00:00.000Z",
+                "owner": "tonini",
+                "repo": "alchemist.el",
+                "stars": 35511
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "ElixirSublime",
+              "description": "Elixir plugin for SublimeText 3 that provides code completion and linting.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1170826709,
+                "language": null,
+                "last_commit": "2022-01-22T00:00:00.000Z",
+                "owner": "vishnevskiy",
+                "repo": "ElixirSublime",
+                "stars": 26710
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Notepad++",
+              "description": "Elixir syntax highlighting for Notepad++.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 769472534,
+                "language": "Rust",
+                "last_commit": "2022-07-16T00:00:00.000Z",
+                "owner": "Hades32",
+                "repo": "elixir-udl-npp",
+                "stars": 22535
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Alchemist.vim",
+              "description": "Elixir Tooling Integration Into Vim.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 890920898,
+                "language": "Shell",
+                "last_commit": "2021-07-17T00:00:00.000Z",
+                "owner": "slashmili",
+                "repo": "alchemist.vim",
+                "stars": 20899
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "atom-iex",
+              "description": "Run an IEx session in Atom.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1328718811,
+                "language": "JavaScript",
+                "last_commit": "2021-10-12T00:00:00.000Z",
+                "owner": "indiejames",
+                "repo": "atom-iex",
+                "stars": 18812
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "elixir-tmbundle",
+              "description": "A TextMate and SublimeText bundle for Elixir.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3288868323,
+                "language": "Python",
+                "last_commit": "2023-02-12T00:00:00.000Z",
+                "owner": "elixir-lang",
+                "repo": "elixir-tmbundle",
+                "stars": 18324
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Alchemist-Server",
+              "description": "Editor/IDE independent background server to inform about Elixir mix projects.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3677315909,
+                "language": null,
+                "last_commit": "2021-07-06T00:00:00.000Z",
+                "owner": "tonini",
+                "repo": "alchemist-server",
+                "stars": 15910
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "phoenix-snippets",
+              "description": "Phoenix Snippets for Atom.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2740813798,
+                "language": "Shell",
+                "last_commit": "2021-10-25T00:00:00.000Z",
+                "owner": "phoenixframework-Brazil",
+                "repo": "phoenix-snippets",
+                "stars": 13799
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "nvim",
+              "description": "Neovim host for writing plugins in Elixir.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3547013453,
+                "language": "Python",
+                "last_commit": "2022-10-05T00:00:00.000Z",
+                "owner": "dm1try",
+                "repo": "nvim",
+                "stars": 13454
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "atom-elixir",
+              "description": "An Atom package for Elixir.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1776513305,
+                "language": "C++",
+                "last_commit": "2023-03-02T00:00:00.000Z",
+                "owner": "msaraiva",
+                "repo": "atom-elixir",
+                "stars": 13306
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Nova Elixir",
+              "description": "Syntax highlighting and code completion for Elixir files (.ex, .exs, .eex) in Nova.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 638261504,
+                "language": "Rust",
+                "last_commit": "2022-08-15T00:00:00.000Z",
+                "owner": "stollcri",
+                "repo": "elixir.novaextension",
+                "stars": 11505
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "elixir_generator",
+              "description": "Vim plugin to generate Elixir module and test files with one command.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3143708343,
+                "language": "Python",
+                "last_commit": "2023-01-23T00:00:00.000Z",
+                "owner": "jadercorrea",
+                "repo": "elixir_generator.vim",
+                "stars": 8344
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "vscode-elixir",
+              "description": "Elixir Support for Visual Studio Code.",
+              "children": [],
+              "repo_info": {
+                "archived": true,
+                "id": 3738504051,
+                "language": "JavaScript",
+                "last_commit": "2023-11-11T00:00:00.000Z",
+                "owner": "mat-mcloughlin",
+                "repo": "vscode-elixir",
+                "stars": 4052
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "vim-ex_test",
+              "description": "Vim test runner based on Thoughtbots vim-rspec.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1909953809,
+                "language": null,
+                "last_commit": "2021-10-14T00:00:00.000Z",
+                "owner": "moofish32",
+                "repo": "vim-ex_test",
+                "stars": 3810
+              }
+            }
+          ],
+          "description": "Editors and IDEs useable for Elixir/Erlang",
+          "node_type": "group",
+          "title": "Editors"
         },
         {
-          "node_type": "item",
-          "title": "Async Elixir",
-          "description": "Dive into Elixir's world of concurrency and processes with this interactive Livebook.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 699578935,
-            "language": "C++",
-            "last_commit": "2021-06-10T00:00:00.000Z",
-            "owner": "Arp-G",
-            "repo": "async-elixir",
-            "stars": 28936
-          }
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Erlang Bookmarks",
+              "description": "A collection of links for Erlang developers.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2530234098,
+                "language": "Shell",
+                "last_commit": "2023-09-25T00:00:00.000Z",
+                "owner": "0xAX",
+                "repo": "erlang-bookmarks",
+                "stars": 34099
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Awesome Elixir and CQRS",
+              "description": "A curated list of awesome Elixir and Command Query Responsibility Segregation (CQRS) and event sourcing resources.",
+              "children": [],
+              "repo_info": {
+                "archived": true,
+                "id": 92828177,
+                "language": "Ruby",
+                "last_commit": "2023-07-08T00:00:00.000Z",
+                "owner": "slashdotdash",
+                "repo": "awesome-elixir-cqrs",
+                "stars": 28178
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Awesome Erlang",
+              "description": "A curated list of awesome Erlang libraries, resources and shiny things.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1371227379,
+                "language": null,
+                "last_commit": "2022-12-18T00:00:00.000Z",
+                "owner": "drobakowski",
+                "repo": "awesome-erlang",
+                "stars": 27380
+              }
+            }
+          ],
+          "description": "Other amazingly awesome lists can be found at jnv/lists or bayandin/awesome-awesomeness.",
+          "node_type": "group",
+          "title": "Other Awesome Lists"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "xElixir",
+              "description": "Exercism Exercises in Elixir.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 6343959,
+                "language": null,
+                "last_commit": "2021-05-17T00:00:00.000Z",
+                "owner": "exercism",
+                "repo": "xelixir",
+                "stars": 43960
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Elixir Refactorings",
+              "description": "A catalog of refactoring strategies to promote the redesign and improve the quality of code developed with Elixir.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3324239892,
+                "language": "Go",
+                "last_commit": "2021-07-23T00:00:00.000Z",
+                "owner": "lucasvegi",
+                "repo": "Elixir-Refactorings",
+                "stars": 39893
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "The Little Schemer in Elixir",
+              "description": "Exercises and algorithms from the Little Schemer book, ported to Elixir.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 785116489,
+                "language": null,
+                "last_commit": "2022-08-30T00:00:00.000Z",
+                "owner": "jwhiteman",
+                "repo": "a-little-elixir-goes-a-long-way",
+                "stars": 16490
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Elixir Code Smells",
+              "description": "A catalog of Elixir-specific code smells that can harm the quality of software developed using this language.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2413616333,
+                "language": "Python",
+                "last_commit": "2023-02-02T00:00:00.000Z",
+                "owner": "lucasvegi",
+                "repo": "Elixir-Code-Smells",
+                "stars": 16334
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Elixir Tab",
+              "description": "Chrome Extension which helps you learn the Elixir core lib.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2419410316,
+                "language": "Java",
+                "last_commit": "2023-02-19T00:00:00.000Z",
+                "owner": "efexen",
+                "repo": "elixir-tab",
+                "stars": 10317
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Elixir Functional Programming",
+              "description": "Material to introduce functional programming using the Elixir language.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 661358657,
+                "language": "Ruby",
+                "last_commit": "2022-03-15T00:00:00.000Z",
+                "owner": "kblake",
+                "repo": "functional-programming",
+                "stars": 8658
+              }
+            }
+          ],
+          "description": "Elixir-related reading materials.",
+          "node_type": "group",
+          "title": "Reading"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "christopheradams/elixir_style_guide",
+              "description": "A community-driven style guide for Elixir.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2615696557,
+                "language": "Ruby",
+                "last_commit": "2022-06-23T00:00:00.000Z",
+                "owner": "christopheradams",
+                "repo": "elixir_style_guide",
+                "stars": 46558
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "rrrene/elixir-style-guide",
+              "description": "Style guide checked by Credo.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2281840696,
+                "language": "Java",
+                "last_commit": "2022-02-04T00:00:00.000Z",
+                "owner": "rrrene",
+                "repo": "elixir-style-guide",
+                "stars": 40697
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "lexmag/elixir-style-guide",
+              "description": "An opinionated Elixir style guide.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 386721504,
+                "language": "Rust",
+                "last_commit": "2022-08-15T00:00:00.000Z",
+                "owner": "lexmag",
+                "repo": "elixir-style-guide",
+                "stars": 21505
+              }
+            }
+          ],
+          "description": "Styleguides for ensuring consistency while coding.",
+          "node_type": "group",
+          "title": "Styleguides"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Elixir Github Repository",
+              "description": "The project repository.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 723672749,
+                "language": null,
+                "last_commit": "2021-12-13T00:00:00.000Z",
+                "owner": "elixir-lang",
+                "repo": "elixir",
+                "stars": 22750
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Elixir Github Wiki",
+              "description": "The project's wiki, containing much useful information.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 723672749,
+                "language": null,
+                "last_commit": "2021-12-13T00:00:00.000Z",
+                "owner": "elixir-lang",
+                "repo": "elixir",
+                "stars": 22750
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "30 Days of Elixir",
+              "description": "A walk through the Elixir language in 30 exercises.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 700600588,
+                "language": "Shell",
+                "last_commit": "2022-05-23T00:00:00.000Z",
+                "owner": "seven1m",
+                "repo": "30-days-of-elixir",
+                "stars": 589
+              }
+            }
+          ],
+          "description": "Useful Elixir-related websites.",
+          "node_type": "group",
+          "title": "Websites"
         }
       ],
-      "title": "Books"
-    },
-    {
-      "description": "Editors and IDEs useable for Elixir/Erlang",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "Jetbrains",
-          "description": "Elixir for IntelliJ IDEA, RubyMine, WebStorm, PhpStorm, PyCharm, AppCode, Android Studio, 0xDBE.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3396349864,
-            "language": "Rust",
-            "last_commit": "2021-08-20T00:00:00.000Z",
-            "owner": "KronicDeth",
-            "repo": "intellij-elixir",
-            "stars": 49865
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "vim-elixir",
-          "description": "Vim configuration files for Elixir.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 331998138,
-            "language": "Shell",
-            "last_commit": "2023-08-16T00:00:00.000Z",
-            "owner": "elixir-lang",
-            "repo": "vim-elixir",
-            "stars": 48139
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "vim-mix-format",
-          "description": "Async for Vim and Neovim.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1843591057,
-            "language": "Ruby",
-            "last_commit": "2023-11-05T00:00:00.000Z",
-            "owner": "mhinz",
-            "repo": "vim-mix-format",
-            "stars": 41058
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "elixir-ls",
-          "description": "A frontend-independent IDE \"smartness\" server for Elixir. Implements the JSON-based \"Language Server Protocol\" standard and provides debugger support via VS Code's debugger protocol.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 854540964,
-            "language": "Rust",
-            "last_commit": "2021-05-12T00:00:00.000Z",
-            "owner": "JakeBecker",
-            "repo": "elixir-ls",
-            "stars": 40965
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "mix.nvim",
-          "description": "Mix wrapper plugin for Neovim.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1007886962,
-            "language": "Go",
-            "last_commit": "2021-05-14T00:00:00.000Z",
-            "owner": "brendalf",
-            "repo": "mix.nvim",
-            "stars": 36963
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "vscode-elixir-ls",
-          "description": "Elixir language support and debugger for VS Code, powered by ElixirLS.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 20436789,
-            "language": null,
-            "last_commit": "2021-11-03T00:00:00.000Z",
-            "owner": "JakeBecker",
-            "repo": "vscode-elixir-ls",
-            "stars": 36790
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Alchemist",
-          "description": "Elixir Tooling Integration Into Emacs.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3441985510,
-            "language": "TypeScript",
-            "last_commit": "2022-08-09T00:00:00.000Z",
-            "owner": "tonini",
-            "repo": "alchemist.el",
-            "stars": 35511
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "ElixirSublime",
-          "description": "Elixir plugin for SublimeText 3 that provides code completion and linting.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1170826709,
-            "language": null,
-            "last_commit": "2022-01-22T00:00:00.000Z",
-            "owner": "vishnevskiy",
-            "repo": "ElixirSublime",
-            "stars": 26710
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Notepad++",
-          "description": "Elixir syntax highlighting for Notepad++.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 769472534,
-            "language": "Rust",
-            "last_commit": "2022-07-16T00:00:00.000Z",
-            "owner": "Hades32",
-            "repo": "elixir-udl-npp",
-            "stars": 22535
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Alchemist.vim",
-          "description": "Elixir Tooling Integration Into Vim.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 890920898,
-            "language": "Shell",
-            "last_commit": "2021-07-17T00:00:00.000Z",
-            "owner": "slashmili",
-            "repo": "alchemist.vim",
-            "stars": 20899
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "atom-iex",
-          "description": "Run an IEx session in Atom.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1328718811,
-            "language": "JavaScript",
-            "last_commit": "2021-10-12T00:00:00.000Z",
-            "owner": "indiejames",
-            "repo": "atom-iex",
-            "stars": 18812
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "elixir-tmbundle",
-          "description": "A TextMate and SublimeText bundle for Elixir.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3288868323,
-            "language": "Python",
-            "last_commit": "2023-02-12T00:00:00.000Z",
-            "owner": "elixir-lang",
-            "repo": "elixir-tmbundle",
-            "stars": 18324
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Alchemist-Server",
-          "description": "Editor/IDE independent background server to inform about Elixir mix projects.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3677315909,
-            "language": null,
-            "last_commit": "2021-07-06T00:00:00.000Z",
-            "owner": "tonini",
-            "repo": "alchemist-server",
-            "stars": 15910
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "phoenix-snippets",
-          "description": "Phoenix Snippets for Atom.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2740813798,
-            "language": "Shell",
-            "last_commit": "2021-10-25T00:00:00.000Z",
-            "owner": "phoenixframework-Brazil",
-            "repo": "phoenix-snippets",
-            "stars": 13799
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "nvim",
-          "description": "Neovim host for writing plugins in Elixir.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3547013453,
-            "language": "Python",
-            "last_commit": "2022-10-05T00:00:00.000Z",
-            "owner": "dm1try",
-            "repo": "nvim",
-            "stars": 13454
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "atom-elixir",
-          "description": "An Atom package for Elixir.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1776513305,
-            "language": "C++",
-            "last_commit": "2023-03-02T00:00:00.000Z",
-            "owner": "msaraiva",
-            "repo": "atom-elixir",
-            "stars": 13306
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Nova Elixir",
-          "description": "Syntax highlighting and code completion for Elixir files (.ex, .exs, .eex) in Nova.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 638261504,
-            "language": "Rust",
-            "last_commit": "2022-08-15T00:00:00.000Z",
-            "owner": "stollcri",
-            "repo": "elixir.novaextension",
-            "stars": 11505
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "elixir_generator",
-          "description": "Vim plugin to generate Elixir module and test files with one command.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3143708343,
-            "language": "Python",
-            "last_commit": "2023-01-23T00:00:00.000Z",
-            "owner": "jadercorrea",
-            "repo": "elixir_generator.vim",
-            "stars": 8344
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "vscode-elixir",
-          "description": "Elixir Support for Visual Studio Code.",
-          "children": [],
-          "repo_info": {
-            "archived": true,
-            "id": 3738504051,
-            "language": "JavaScript",
-            "last_commit": "2023-11-11T00:00:00.000Z",
-            "owner": "mat-mcloughlin",
-            "repo": "vscode-elixir",
-            "stars": 4052
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "vim-ex_test",
-          "description": "Vim test runner based on Thoughtbots vim-rspec.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1909953809,
-            "language": null,
-            "last_commit": "2021-10-14T00:00:00.000Z",
-            "owner": "moofish32",
-            "repo": "vim-ex_test",
-            "stars": 3810
-          }
-        }
-      ],
-      "title": "Editors"
-    },
-    {
-      "description": "Other amazingly awesome lists can be found at jnv/lists or bayandin/awesome-awesomeness.",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "Erlang Bookmarks",
-          "description": "A collection of links for Erlang developers.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2530234098,
-            "language": "Shell",
-            "last_commit": "2023-09-25T00:00:00.000Z",
-            "owner": "0xAX",
-            "repo": "erlang-bookmarks",
-            "stars": 34099
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Awesome Elixir and CQRS",
-          "description": "A curated list of awesome Elixir and Command Query Responsibility Segregation (CQRS) and event sourcing resources.",
-          "children": [],
-          "repo_info": {
-            "archived": true,
-            "id": 92828177,
-            "language": "Ruby",
-            "last_commit": "2023-07-08T00:00:00.000Z",
-            "owner": "slashdotdash",
-            "repo": "awesome-elixir-cqrs",
-            "stars": 28178
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Awesome Erlang",
-          "description": "A curated list of awesome Erlang libraries, resources and shiny things.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1371227379,
-            "language": null,
-            "last_commit": "2022-12-18T00:00:00.000Z",
-            "owner": "drobakowski",
-            "repo": "awesome-erlang",
-            "stars": 27380
-          }
-        }
-      ],
-      "title": "Other Awesome Lists"
-    },
-    {
-      "description": "Elixir-related reading materials.",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "xElixir",
-          "description": "Exercism Exercises in Elixir.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 6343959,
-            "language": null,
-            "last_commit": "2021-05-17T00:00:00.000Z",
-            "owner": "exercism",
-            "repo": "xelixir",
-            "stars": 43960
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Elixir Refactorings",
-          "description": "A catalog of refactoring strategies to promote the redesign and improve the quality of code developed with Elixir.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3324239892,
-            "language": "Go",
-            "last_commit": "2021-07-23T00:00:00.000Z",
-            "owner": "lucasvegi",
-            "repo": "Elixir-Refactorings",
-            "stars": 39893
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "The Little Schemer in Elixir",
-          "description": "Exercises and algorithms from the Little Schemer book, ported to Elixir.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 785116489,
-            "language": null,
-            "last_commit": "2022-08-30T00:00:00.000Z",
-            "owner": "jwhiteman",
-            "repo": "a-little-elixir-goes-a-long-way",
-            "stars": 16490
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Elixir Code Smells",
-          "description": "A catalog of Elixir-specific code smells that can harm the quality of software developed using this language.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2413616333,
-            "language": "Python",
-            "last_commit": "2023-02-02T00:00:00.000Z",
-            "owner": "lucasvegi",
-            "repo": "Elixir-Code-Smells",
-            "stars": 16334
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Elixir Tab",
-          "description": "Chrome Extension which helps you learn the Elixir core lib.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2419410316,
-            "language": "Java",
-            "last_commit": "2023-02-19T00:00:00.000Z",
-            "owner": "efexen",
-            "repo": "elixir-tab",
-            "stars": 10317
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Elixir Functional Programming",
-          "description": "Material to introduce functional programming using the Elixir language.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 661358657,
-            "language": "Ruby",
-            "last_commit": "2022-03-15T00:00:00.000Z",
-            "owner": "kblake",
-            "repo": "functional-programming",
-            "stars": 8658
-          }
-        }
-      ],
-      "title": "Reading"
-    },
-    {
-      "description": "Styleguides for ensuring consistency while coding.",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "christopheradams/elixir_style_guide",
-          "description": "A community-driven style guide for Elixir.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2615696557,
-            "language": "Ruby",
-            "last_commit": "2022-06-23T00:00:00.000Z",
-            "owner": "christopheradams",
-            "repo": "elixir_style_guide",
-            "stars": 46558
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "rrrene/elixir-style-guide",
-          "description": "Style guide checked by Credo.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2281840696,
-            "language": "Java",
-            "last_commit": "2022-02-04T00:00:00.000Z",
-            "owner": "rrrene",
-            "repo": "elixir-style-guide",
-            "stars": 40697
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "lexmag/elixir-style-guide",
-          "description": "An opinionated Elixir style guide.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 386721504,
-            "language": "Rust",
-            "last_commit": "2022-08-15T00:00:00.000Z",
-            "owner": "lexmag",
-            "repo": "elixir-style-guide",
-            "stars": 21505
-          }
-        }
-      ],
-      "title": "Styleguides"
-    },
-    {
-      "description": "Useful Elixir-related websites.",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "Elixir Github Repository",
-          "description": "The project repository.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 723672749,
-            "language": null,
-            "last_commit": "2021-12-13T00:00:00.000Z",
-            "owner": "elixir-lang",
-            "repo": "elixir",
-            "stars": 22750
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Elixir Github Wiki",
-          "description": "The project's wiki, containing much useful information.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 723672749,
-            "language": null,
-            "last_commit": "2021-12-13T00:00:00.000Z",
-            "owner": "elixir-lang",
-            "repo": "elixir",
-            "stars": 22750
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "30 Days of Elixir",
-          "description": "A walk through the Elixir language in 30 exercises.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 700600588,
-            "language": "Shell",
-            "last_commit": "2022-05-23T00:00:00.000Z",
-            "owner": "seven1m",
-            "repo": "30-days-of-elixir",
-            "stars": 589
-          }
-        }
-      ],
-      "title": "Websites"
+      "title": "Resources"
     }
   ],
   "metadata": {

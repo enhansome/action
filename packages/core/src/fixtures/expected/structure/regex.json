@@ -1,12 +1,7 @@
 {
   "items": [
     {
-      "description": "Regex+ is a lightweight JavaScript library for more readable, high-performance, native JavaScript regexes with powerful features including free spacing, atomic groups, possessive quantifiers, subroutines, definition groups, and context-aware interpolation.",
-      "items": [],
-      "title": "Featured resource"
-    },
-    {
-      "description": "For building, testing, and playing with regexes.",
+      "description": "For building, testing, and playing with regexes.\nCommand line\nBy flavor\nMultiple flavors",
       "items": [
         {
           "node_type": "item",
@@ -51,6 +46,51 @@
             "owner": "aykutkardas",
             "repo": "regexlearn.com",
             "stars": 17001
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "fancy-regex (Rust library): fancy-regex playground",
+          "description": "[GitHub].",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 2832546136,
+            "language": "Java",
+            "last_commit": "2023-08-18T00:00:00.000Z",
+            "owner": "fancy-regex",
+            "repo": "fancy-regex",
+            "stars": 46137
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Swift: Swift Regex",
+          "description": "[GitHub] - Includes regex debugger, DSL builder.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 418738529,
+            "language": null,
+            "last_commit": "2022-07-21T00:00:00.000Z",
+            "owner": "swiftfiddle",
+            "repo": "swiftregex",
+            "stars": 38530
+          }
+        },
+        {
+          "node_type": "item",
+          "title": ".NET: Regex Storm",
+          "description": "[GitHub].",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 959429869,
+            "language": null,
+            "last_commit": "2021-08-15T00:00:00.000Z",
+            "owner": "lonekorean",
+            "repo": "regex-storm",
+            "stars": 29870
           }
         }
       ],
@@ -109,656 +149,664 @@
     },
     {
       "description": "Search and replace through files.",
-      "items": [],
-      "title": "Grep-like tools"
-    },
-    {
-      "description": "",
       "items": [
         {
-          "node_type": "item",
-          "title": "nomino",
-          "description": "Rename files uses regexes.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2583744907,
-            "language": "Ruby",
-            "last_commit": "2021-07-08T00:00:00.000Z",
-            "owner": "yaa110",
-            "repo": "nomino",
-            "stars": 44908
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "ripgrep",
-          "description": "Better and faster grep. Recursively searches directories while respecting gitignore rules and skipping hidden/binary files.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1718278154,
-            "language": "Rust",
-            "last_commit": "2023-07-31T00:00:00.000Z",
-            "owner": "BurntSushi",
-            "repo": "ripgrep",
-            "stars": 28155
-          }
-        }
-      ],
-      "title": "Command line"
-    },
-    {
-      "description": "Learn how to use regular expressions.",
-      "items": [],
-      "title": "Tutorials"
-    },
-    {
-      "description": "Major regex implementations, built into programming languages or as standalone libraries.",
-      "items": [],
-      "title": "Regex engines"
-    },
-    {
-      "description": "Official regex references and guides.",
-      "items": [],
-      "title": "Documentation"
-    },
-    {
-      "description": "",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "RE2: Syntax",
-          "description": ".",
-          "children": [],
-          "repo_info": {
-            "archived": true,
-            "id": 1539185304,
-            "language": "Rust",
-            "last_commit": "2023-03-03T00:00:00.000Z",
-            "owner": "google",
-            "repo": "re2",
-            "stars": 35305
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Oniguruma: RE",
-          "description": ".",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1780753625,
-            "language": "C++",
-            "last_commit": "2022-04-16T00:00:00.000Z",
-            "owner": "kkos",
-            "repo": "oniguruma",
-            "stars": 3626
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Onigmo: RE",
-          "description": ".",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3892351039,
-            "language": null,
-            "last_commit": "2023-11-23T00:00:00.000Z",
-            "owner": "k-takata",
-            "repo": "Onigmo",
-            "stars": 1040
-          }
-        }
-      ],
-      "title": "Regex flavors"
-    },
-    {
-      "description": "Read or contribute to the code behind major regex implementations.",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "Perl",
-          "description": "See perlreguts.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2660499911,
-            "language": "JavaScript",
-            "last_commit": "2021-07-04T00:00:00.000Z",
-            "owner": "Perl",
-            "repo": "perl5",
-            "stars": 49912
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Java: java.util.regex",
-          "description": "JDK standard regexes.",
-          "children": [],
-          "repo_info": {
-            "archived": true,
-            "id": 1406743676,
-            "language": "Java",
-            "last_commit": "2022-02-24T00:00:00.000Z",
-            "owner": "openjdk",
-            "repo": "jdk",
-            "stars": 43677
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Boost.Regex",
-          "description": "C++ regex library.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2539543286,
-            "language": "Java",
-            "last_commit": "2023-03-21T00:00:00.000Z",
-            "owner": "boostorg",
-            "repo": "regex",
-            "stars": 43287
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "RE2",
-          "description": "Popular C++ regex library used by Go, etc. Non-backtracking engine.",
-          "children": [],
-          "repo_info": {
-            "archived": true,
-            "id": 1539185304,
-            "language": "Rust",
-            "last_commit": "2023-03-03T00:00:00.000Z",
-            "owner": "google",
-            "repo": "re2",
-            "stars": 35305
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Python: re",
-          "description": "and regex - Standard and extended regex libraries.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2275272667,
-            "language": "Ruby",
-            "last_commit": "2022-03-05T00:00:00.000Z",
-            "owner": "python",
-            "repo": "cpython",
-            "stars": 22668
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Hyperscan",
-          "description": "Intel's high-performance library, used for DPI.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3600612607,
-            "language": "Ruby",
-            "last_commit": "2022-05-04T00:00:00.000Z",
-            "owner": "intel",
-            "repo": "hyperscan",
-            "stars": 12608
-          }
-        },
-        {
-          "node_type": "item",
-          "title": ".NET: System.Text.RegularExpressions",
-          "description": "Shared by all .NET languages (C#, VB, etc.).",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 4232862272,
-            "language": "Go",
-            "last_commit": "2023-04-04T00:00:00.000Z",
-            "owner": "dotnet",
-            "repo": "runtime",
-            "stars": 12273
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "PCRE2",
-          "description": "Popular C regex library used by PHP, R, etc.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 905060899,
-            "language": null,
-            "last_commit": "2021-07-16T00:00:00.000Z",
-            "owner": "PCRE2Project",
-            "repo": "pcre2",
-            "stars": 10900
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "ICU",
-          "description": "Unicode org's package with full Unicode support.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2974209491,
-            "language": "JavaScript",
-            "last_commit": "2022-08-28T00:00:00.000Z",
-            "owner": "unicode-org",
-            "repo": "icu",
-            "stars": 9492
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Rust: regex",
-          "description": "Non-backtracking engine.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3823454310,
-            "language": "TypeScript",
-            "last_commit": "2023-02-25T00:00:00.000Z",
-            "owner": "rust-lang",
-            "repo": "regex",
-            "stars": 4311
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Oniguruma",
-          "description": "C regex library used by Ruby 1.9, TextMate grammars, etc.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1780753625,
-            "language": "C++",
-            "last_commit": "2022-04-16T00:00:00.000Z",
-            "owner": "kkos",
-            "repo": "oniguruma",
-            "stars": 3626
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Onigmo",
-          "description": "Forked from Oniguruma. Used by Ruby 2.0+.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3892351039,
-            "language": null,
-            "last_commit": "2023-11-23T00:00:00.000Z",
-            "owner": "k-takata",
-            "repo": "Onigmo",
-            "stars": 1040
-          }
-        },
-        {
-          "node_type": "group",
-          "title": "JavaScript:",
-          "description": null,
           "children": [
             {
               "node_type": "item",
-              "title": "JavaScriptCore: RegExp",
-              "description": "Regex engine used by Safari.",
+              "title": "nomino",
+              "description": "Rename files uses regexes.",
               "children": [],
               "repo_info": {
                 "archived": false,
-                "id": 2026892870,
-                "language": "TypeScript",
-                "last_commit": "2021-08-14T00:00:00.000Z",
-                "owner": "WebKit",
-                "repo": "WebKit",
-                "stars": 42871
+                "id": 2583744907,
+                "language": "Ruby",
+                "last_commit": "2021-07-08T00:00:00.000Z",
+                "owner": "yaa110",
+                "repo": "nomino",
+                "stars": 44908
               }
             },
             {
               "node_type": "item",
-              "title": "V8: Irregexp",
-              "description": "Regex engine used by Chrome, Edge, Firefox, etc.",
+              "title": "ripgrep",
+              "description": "Better and faster grep. Recursively searches directories while respecting gitignore rules and skipping hidden/binary files.",
               "children": [],
               "repo_info": {
                 "archived": false,
-                "id": 3874465770,
-                "language": "TypeScript",
-                "last_commit": "2021-11-22T00:00:00.000Z",
-                "owner": "v8",
-                "repo": "v8",
-                "stars": 15771
-              }
-            }
-          ]
-        }
-      ],
-      "title": "Source code"
-    },
-    {
-      "description": "Pattern and engine performance, benchmarks, and ReDoS prevention.",
-      "items": [],
-      "title": "Performance"
-    },
-    {
-      "description": "",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "recheck",
-          "description": "[home] - JavaScript and Scala library for detecting ReDoS vulnerability. Can be used as an ESLint plugin.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1746190858,
-            "language": "Shell",
-            "last_commit": "2021-08-26T00:00:00.000Z",
-            "owner": "makenowjust-labs",
-            "repo": "recheck",
-            "stars": 40859
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "vuln-regex-detector",
-          "description": "Perl library for detecting ReDoS vulnerability.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 417140029,
-            "language": null,
-            "last_commit": "2023-12-03T00:00:00.000Z",
-            "owner": "davisjam",
-            "repo": "vuln-regex-detector",
-            "stars": 40030
-          }
-        }
-      ],
-      "title": "ReDoS checkers"
-    },
-    {
-      "description": "Open source JavaScript libraries for advanced regex use and processing.",
-      "items": [],
-      "title": "JavaScript regex libraries"
-    },
-    {
-      "description": "",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "Oniguruma-To-ES",
-          "description": "Convert Oniguruma patterns to native JavaScript regexes.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 4228243118,
-            "language": "Shell",
-            "last_commit": "2023-09-05T00:00:00.000Z",
-            "owner": "slevithan",
-            "repo": "oniguruma-to-es",
-            "stars": 43119
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Use other engines via WebAssembly: node-re2",
-          "description": "(RE2), rregex (Rust's ), vscode-oniguruma (Oniguruma).",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3940483152,
-            "language": "Go",
-            "last_commit": "2023-08-02T00:00:00.000Z",
-            "owner": "uhop",
-            "repo": "node-re2",
-            "stars": 33153
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Regex+",
-          "description": "A template tag for extended, readable, high-performance JavaScript regexes.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 4142316131,
-            "language": "JavaScript",
-            "last_commit": "2023-08-23T00:00:00.000Z",
-            "owner": "slevithan",
-            "repo": "regex",
-            "stars": 16132
-          }
-        }
-      ],
-      "title": "Alternative regex builders and engines"
-    },
-    {
-      "description": "",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "Rexx",
-          "description": "A template tag that uses structured syntax with variables and comments.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 4217887761,
-            "language": "JavaScript",
-            "last_commit": "2021-12-01T00:00:00.000Z",
-            "owner": "yyytcool",
-            "repo": "rexx",
-            "stars": 37762
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Compose with functions: compose-regexp.js",
-          "description": ", VerbalExpressions (implementations for many languages), magic-regexp [home], Super Expressive [playground].",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1373678511,
-            "language": "JavaScript",
-            "last_commit": "2022-08-08T00:00:00.000Z",
-            "owner": "compose-regexp",
-            "repo": "compose-regexp.js",
-            "stars": 28512
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Melody",
-          "description": "[docs] - A language that compiles to regexes.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2763607320,
-            "language": "TypeScript",
-            "last_commit": "2023-02-15T00:00:00.000Z",
-            "owner": "yoav-lavi",
-            "repo": "melody",
-            "stars": 7321
-          }
-        }
-      ],
-      "title": "Abstracted regex syntax"
-    },
-    {
-      "description": "",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "Generate strings that match a given regex: randexp.js",
-          "description": ", regex-to-strings.",
-          "children": [],
-          "repo_info": {
-            "archived": true,
-            "id": 2343293804,
-            "language": "Rust",
-            "last_commit": "2021-10-19T00:00:00.000Z",
-            "owner": "fent",
-            "repo": "randexp.js",
-            "stars": 43805
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "regex-to-mermaid",
-          "description": "Generate Mermaid diagrams to visualize regexes.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1006742001,
-            "language": "JavaScript",
-            "last_commit": "2023-12-31T00:00:00.000Z",
-            "owner": "tayles",
-            "repo": "regex-to-mermaid",
-            "stars": 42002
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "eslint-plugin-regexp",
-          "description": "[home] - ESLint plugin for finding regex mistakes, etc.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 577189546,
-            "language": "Java",
-            "last_commit": "2022-07-04T00:00:00.000Z",
-            "owner": "ota-meshi",
-            "repo": "eslint-plugin-regexp",
-            "stars": 39547
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "AST builders: regexpp",
-          "description": ", regexp-tree, regjsparser/regjsgen, regexp-simple-parser.",
-          "children": [
-            {
-              "node_type": "item",
-              "title": "regexp-ast-analysis",
-              "description": "[docs] - Analyze AST nodes produced by regexpp.",
-              "children": [],
-              "repo_info": {
-                "archived": false,
-                "id": 771679897,
-                "language": "Ruby",
-                "last_commit": "2021-07-18T00:00:00.000Z",
-                "owner": "RunDevelopment",
-                "repo": "regexp-ast-analysis",
-                "stars": 29898
+                "id": 1718278154,
+                "language": "Rust",
+                "last_commit": "2023-07-31T00:00:00.000Z",
+                "owner": "BurntSushi",
+                "repo": "ripgrep",
+                "stars": 28155
               }
             }
           ],
-          "repo_info": {
-            "archived": false,
-            "id": 74536816,
-            "language": "Java",
-            "last_commit": "2021-10-07T00:00:00.000Z",
-            "owner": "eslint-community",
-            "repo": "regexpp",
-            "stars": 36817
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "arkregex",
-          "description": "-equivalent constructor with TS types.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3720378980,
-            "language": "TypeScript",
-            "last_commit": "2021-04-26T00:00:00.000Z",
-            "owner": "arktypeio",
-            "repo": "arktype",
-            "stars": 28981
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Regex Colorizer",
-          "description": "[home] - Highlight regex syntax.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 475975205,
-            "language": "C++",
-            "last_commit": "2023-06-10T00:00:00.000Z",
-            "owner": "slevithan",
-            "repo": "regex-colorizer",
-            "stars": 25206
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "regexgen",
-          "description": "Generate a regex that matches a set of strings.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2958608888,
-            "language": "Shell",
-            "last_commit": "2021-07-27T00:00:00.000Z",
-            "owner": "devongovett",
-            "repo": "regexgen",
-            "stars": 8889
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "super-regex",
-          "description": "Add an execution timeout to regexes.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3813457948,
-            "language": "Shell",
-            "last_commit": "2021-05-28T00:00:00.000Z",
-            "owner": "sindresorhus",
-            "repo": "super-regex",
-            "stars": 7949
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "regex-utils",
-          "description": "Check regex equivalence, build regex intersections, and other utilities.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1826206937,
-            "language": "Ruby",
-            "last_commit": "2021-06-08T00:00:00.000Z",
-            "owner": "gruhn",
-            "repo": "regex-utils",
-            "stars": 6938
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Partial regex matching: regex-partial-match",
-          "description": ", incr-regex-package.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2150752845,
-            "language": "C++",
-            "last_commit": "2021-09-08T00:00:00.000Z",
-            "owner": "TomStrepsil",
-            "repo": "regex-partial-match",
-            "stars": 2846
-          }
+          "description": "➕ See also: Feature comparison of grep-like tools.",
+          "node_type": "group",
+          "title": "Command line"
         }
       ],
-      "title": "Regex processors, utilities, and more"
+      "title": "Grep-like tools"
     },
     {
-      "description": "The history of improvements to regular expressions in the JavaScript standard. Starting with ES2018, includes links to the TC39 proposals where features were developed and discussed.",
+      "description": "Major regex implementations, built into programming languages or as standalone libraries.",
+      "items": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "node_type": "item",
+                  "title": "RE2: Syntax",
+                  "description": ".",
+                  "children": [],
+                  "repo_info": {
+                    "archived": true,
+                    "id": 1539185304,
+                    "language": "Rust",
+                    "last_commit": "2023-03-03T00:00:00.000Z",
+                    "owner": "google",
+                    "repo": "re2",
+                    "stars": 35305
+                  }
+                },
+                {
+                  "node_type": "item",
+                  "title": "Oniguruma: RE",
+                  "description": ".",
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "id": 1780753625,
+                    "language": "C++",
+                    "last_commit": "2022-04-16T00:00:00.000Z",
+                    "owner": "kkos",
+                    "repo": "oniguruma",
+                    "stars": 3626
+                  }
+                },
+                {
+                  "node_type": "item",
+                  "title": "Onigmo: RE",
+                  "description": ".",
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "id": 3892351039,
+                    "language": null,
+                    "last_commit": "2023-11-23T00:00:00.000Z",
+                    "owner": "k-takata",
+                    "repo": "Onigmo",
+                    "stars": 1040
+                  }
+                }
+              ],
+              "description": "ℹ️ Raku (formerly Perl 6) reimagines regexes. See: Grammars (tutorial), Regexes (best practices).",
+              "node_type": "group",
+              "title": "Regex flavors"
+            }
+          ],
+          "description": "Official regex references and guides.",
+          "node_type": "group",
+          "title": "Documentation"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Perl",
+              "description": "See perlreguts.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2660499911,
+                "language": "JavaScript",
+                "last_commit": "2021-07-04T00:00:00.000Z",
+                "owner": "Perl",
+                "repo": "perl5",
+                "stars": 49912
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Java: java.util.regex",
+              "description": "JDK standard regexes.",
+              "children": [],
+              "repo_info": {
+                "archived": true,
+                "id": 1406743676,
+                "language": "Java",
+                "last_commit": "2022-02-24T00:00:00.000Z",
+                "owner": "openjdk",
+                "repo": "jdk",
+                "stars": 43677
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Boost.Regex",
+              "description": "C++ regex library.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2539543286,
+                "language": "Java",
+                "last_commit": "2023-03-21T00:00:00.000Z",
+                "owner": "boostorg",
+                "repo": "regex",
+                "stars": 43287
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "RE2",
+              "description": "Popular C++ regex library used by Go, etc. Non-backtracking engine.",
+              "children": [],
+              "repo_info": {
+                "archived": true,
+                "id": 1539185304,
+                "language": "Rust",
+                "last_commit": "2023-03-03T00:00:00.000Z",
+                "owner": "google",
+                "repo": "re2",
+                "stars": 35305
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Python: re",
+              "description": "and regex - Standard and extended regex libraries.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2275272667,
+                "language": "Ruby",
+                "last_commit": "2022-03-05T00:00:00.000Z",
+                "owner": "python",
+                "repo": "cpython",
+                "stars": 22668
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Hyperscan",
+              "description": "Intel's high-performance library, used for DPI.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3600612607,
+                "language": "Ruby",
+                "last_commit": "2022-05-04T00:00:00.000Z",
+                "owner": "intel",
+                "repo": "hyperscan",
+                "stars": 12608
+              }
+            },
+            {
+              "node_type": "item",
+              "title": ".NET: System.Text.RegularExpressions",
+              "description": "Shared by all .NET languages (C#, VB, etc.).",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 4232862272,
+                "language": "Go",
+                "last_commit": "2023-04-04T00:00:00.000Z",
+                "owner": "dotnet",
+                "repo": "runtime",
+                "stars": 12273
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "PCRE2",
+              "description": "Popular C regex library used by PHP, R, etc.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 905060899,
+                "language": null,
+                "last_commit": "2021-07-16T00:00:00.000Z",
+                "owner": "PCRE2Project",
+                "repo": "pcre2",
+                "stars": 10900
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "ICU",
+              "description": "Unicode org's package with full Unicode support.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2974209491,
+                "language": "JavaScript",
+                "last_commit": "2022-08-28T00:00:00.000Z",
+                "owner": "unicode-org",
+                "repo": "icu",
+                "stars": 9492
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Rust: regex",
+              "description": "Non-backtracking engine.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3823454310,
+                "language": "TypeScript",
+                "last_commit": "2023-02-25T00:00:00.000Z",
+                "owner": "rust-lang",
+                "repo": "regex",
+                "stars": 4311
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Oniguruma",
+              "description": "C regex library used by Ruby 1.9, TextMate grammars, etc.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1780753625,
+                "language": "C++",
+                "last_commit": "2022-04-16T00:00:00.000Z",
+                "owner": "kkos",
+                "repo": "oniguruma",
+                "stars": 3626
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Onigmo",
+              "description": "Forked from Oniguruma. Used by Ruby 2.0+.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3892351039,
+                "language": null,
+                "last_commit": "2023-11-23T00:00:00.000Z",
+                "owner": "k-takata",
+                "repo": "Onigmo",
+                "stars": 1040
+              }
+            },
+            {
+              "node_type": "group",
+              "title": "JavaScript:",
+              "description": null,
+              "children": [
+                {
+                  "node_type": "item",
+                  "title": "JavaScriptCore: RegExp",
+                  "description": "Regex engine used by Safari.",
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "id": 2026892870,
+                    "language": "TypeScript",
+                    "last_commit": "2021-08-14T00:00:00.000Z",
+                    "owner": "WebKit",
+                    "repo": "WebKit",
+                    "stars": 42871
+                  }
+                },
+                {
+                  "node_type": "item",
+                  "title": "V8: Irregexp",
+                  "description": "Regex engine used by Chrome, Edge, Firefox, etc.",
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "id": 3874465770,
+                    "language": "TypeScript",
+                    "last_commit": "2021-11-22T00:00:00.000Z",
+                    "owner": "v8",
+                    "repo": "v8",
+                    "stars": 15771
+                  }
+                }
+              ]
+            }
+          ],
+          "description": "Read or contribute to the code behind major regex implementations.",
+          "node_type": "group",
+          "title": "Source code"
+        }
+      ],
+      "title": "Regex engines"
+    },
+    {
+      "description": "Pattern and engine performance, benchmarks, and ReDoS prevention.",
+      "items": [
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "recheck",
+              "description": "[home] - JavaScript and Scala library for detecting ReDoS vulnerability. Can be used as an ESLint plugin.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1746190858,
+                "language": "Shell",
+                "last_commit": "2021-08-26T00:00:00.000Z",
+                "owner": "makenowjust-labs",
+                "repo": "recheck",
+                "stars": 40859
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "vuln-regex-detector",
+              "description": "Perl library for detecting ReDoS vulnerability.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 417140029,
+                "language": null,
+                "last_commit": "2023-12-03T00:00:00.000Z",
+                "owner": "davisjam",
+                "repo": "vuln-regex-detector",
+                "stars": 40030
+              }
+            }
+          ],
+          "description": "⚠️ These tools have limitations on supported syntax.",
+          "node_type": "group",
+          "title": "ReDoS checkers"
+        }
+      ],
+      "title": "Performance"
+    },
+    {
+      "description": "Open source JavaScript libraries for advanced regex use and processing.",
+      "items": [
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Oniguruma-To-ES",
+              "description": "Convert Oniguruma patterns to native JavaScript regexes.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 4228243118,
+                "language": "Shell",
+                "last_commit": "2023-09-05T00:00:00.000Z",
+                "owner": "slevithan",
+                "repo": "oniguruma-to-es",
+                "stars": 43119
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Use other engines via WebAssembly: node-re2",
+              "description": "(RE2), rregex (Rust's ), vscode-oniguruma (Oniguruma).",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3940483152,
+                "language": "Go",
+                "last_commit": "2023-08-02T00:00:00.000Z",
+                "owner": "uhop",
+                "repo": "node-re2",
+                "stars": 33153
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Regex+",
+              "description": "A template tag for extended, readable, high-performance JavaScript regexes.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 4142316131,
+                "language": "JavaScript",
+                "last_commit": "2023-08-23T00:00:00.000Z",
+                "owner": "slevithan",
+                "repo": "regex",
+                "stars": 16132
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Alternative regex builders and engines"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Rexx",
+              "description": "A template tag that uses structured syntax with variables and comments.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 4217887761,
+                "language": "JavaScript",
+                "last_commit": "2021-12-01T00:00:00.000Z",
+                "owner": "yyytcool",
+                "repo": "rexx",
+                "stars": 37762
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Compose with functions: compose-regexp.js",
+              "description": ", VerbalExpressions (implementations for many languages), magic-regexp [home], Super Expressive [playground].",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1373678511,
+                "language": "JavaScript",
+                "last_commit": "2022-08-08T00:00:00.000Z",
+                "owner": "compose-regexp",
+                "repo": "compose-regexp.js",
+                "stars": 28512
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Melody",
+              "description": "[docs] - A language that compiles to regexes.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2763607320,
+                "language": "TypeScript",
+                "last_commit": "2023-02-15T00:00:00.000Z",
+                "owner": "yoav-lavi",
+                "repo": "melody",
+                "stars": 7321
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Abstracted regex syntax"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Generate strings that match a given regex: randexp.js",
+              "description": ", regex-to-strings.",
+              "children": [],
+              "repo_info": {
+                "archived": true,
+                "id": 2343293804,
+                "language": "Rust",
+                "last_commit": "2021-10-19T00:00:00.000Z",
+                "owner": "fent",
+                "repo": "randexp.js",
+                "stars": 43805
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "regex-to-mermaid",
+              "description": "Generate Mermaid diagrams to visualize regexes.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1006742001,
+                "language": "JavaScript",
+                "last_commit": "2023-12-31T00:00:00.000Z",
+                "owner": "tayles",
+                "repo": "regex-to-mermaid",
+                "stars": 42002
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "eslint-plugin-regexp",
+              "description": "[home] - ESLint plugin for finding regex mistakes, etc.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 577189546,
+                "language": "Java",
+                "last_commit": "2022-07-04T00:00:00.000Z",
+                "owner": "ota-meshi",
+                "repo": "eslint-plugin-regexp",
+                "stars": 39547
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "AST builders: regexpp",
+              "description": ", regexp-tree, regjsparser/regjsgen, regexp-simple-parser.",
+              "children": [
+                {
+                  "node_type": "item",
+                  "title": "regexp-ast-analysis",
+                  "description": "[docs] - Analyze AST nodes produced by regexpp.",
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "id": 771679897,
+                    "language": "Ruby",
+                    "last_commit": "2021-07-18T00:00:00.000Z",
+                    "owner": "RunDevelopment",
+                    "repo": "regexp-ast-analysis",
+                    "stars": 29898
+                  }
+                }
+              ],
+              "repo_info": {
+                "archived": false,
+                "id": 74536816,
+                "language": "Java",
+                "last_commit": "2021-10-07T00:00:00.000Z",
+                "owner": "eslint-community",
+                "repo": "regexpp",
+                "stars": 36817
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "arkregex",
+              "description": "-equivalent constructor with TS types.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3720378980,
+                "language": "TypeScript",
+                "last_commit": "2021-04-26T00:00:00.000Z",
+                "owner": "arktypeio",
+                "repo": "arktype",
+                "stars": 28981
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Regex Colorizer",
+              "description": "[home] - Highlight regex syntax.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 475975205,
+                "language": "C++",
+                "last_commit": "2023-06-10T00:00:00.000Z",
+                "owner": "slevithan",
+                "repo": "regex-colorizer",
+                "stars": 25206
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "regexgen",
+              "description": "Generate a regex that matches a set of strings.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2958608888,
+                "language": "Shell",
+                "last_commit": "2021-07-27T00:00:00.000Z",
+                "owner": "devongovett",
+                "repo": "regexgen",
+                "stars": 8889
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "super-regex",
+              "description": "Add an execution timeout to regexes.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3813457948,
+                "language": "Shell",
+                "last_commit": "2021-05-28T00:00:00.000Z",
+                "owner": "sindresorhus",
+                "repo": "super-regex",
+                "stars": 7949
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "regex-utils",
+              "description": "Check regex equivalence, build regex intersections, and other utilities.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1826206937,
+                "language": "Ruby",
+                "last_commit": "2021-06-08T00:00:00.000Z",
+                "owner": "gruhn",
+                "repo": "regex-utils",
+                "stars": 6938
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Partial regex matching: regex-partial-match",
+              "description": ", incr-regex-package.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2150752845,
+                "language": "C++",
+                "last_commit": "2021-09-08T00:00:00.000Z",
+                "owner": "TomStrepsil",
+                "repo": "regex-partial-match",
+                "stars": 2846
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Regex processors, utilities, and more"
+        }
+      ],
+      "title": "JavaScript regex libraries"
+    },
+    {
+      "description": "The history of improvements to regular expressions in the JavaScript standard. Starting with ES2018, includes links to the TC39 proposals where features were developed and discussed.\nEditions from ES2019 onward have added additional Unicode properties that can be used via and . ES2021 added string method , although the only difference from ES3's when given a regex is that it throws if not using flag .",
       "items": [
         {
           "node_type": "item",
@@ -856,24 +904,99 @@
               }
             }
           ]
+        },
+        {
+          "node_type": "item",
+          "title": "Legacy RegExp features",
+          "description": "(2015) - Standardization of legacy features.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 4094349755,
+            "language": "C++",
+            "last_commit": "2021-12-07T00:00:00.000Z",
+            "owner": "tc39",
+            "repo": "proposal-regexp-legacy-features",
+            "stars": 49756
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Extended mode and comments",
+          "description": "(2021) - Flag () with insignificant whitespace and line comments (), plus inline comments via .",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 1927177302,
+            "language": "Go",
+            "last_commit": "2023-03-05T00:00:00.000Z",
+            "owner": "tc39",
+            "repo": "proposal-regexp-x-mode",
+            "stars": 27303
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "\\R escape",
+          "description": "(2021) - Outside character classes, matches any line terminator.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 48569064,
+            "language": "Rust",
+            "last_commit": "2023-10-29T00:00:00.000Z",
+            "owner": "tc39",
+            "repo": "proposal-regexp-r-escape",
+            "stars": 19065
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Restrict subclassing support in built-ins",
+          "description": "(2020) - Scaled back subclassing.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 4197609174,
+            "language": "Rust",
+            "last_commit": "2023-07-11T00:00:00.000Z",
+            "owner": "tc39",
+            "repo": "proposal-rm-builtin-subclassing",
+            "stars": 9175
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Buffer boundaries",
+          "description": "(2021) - Anchors and , not affected by flag .",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 1349558649,
+            "language": null,
+            "last_commit": "2022-03-23T00:00:00.000Z",
+            "owner": "tc39",
+            "repo": "proposal-regexp-buffer-boundaries",
+            "stars": 8650
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Atomic operators",
+          "description": "(2021) - Atomic groups via and possessive quantifiers (ex: , ).",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 3584356219,
+            "language": null,
+            "last_commit": "2023-05-27T00:00:00.000Z",
+            "owner": "tc39",
+            "repo": "proposal-regexp-atomic-operators",
+            "stars": 6220
+          }
         }
       ],
       "title": "JavaScript regex evolution"
-    },
-    {
-      "description": "Awesome Regex was created by Steven Levithan and contributors.",
-      "items": [],
-      "title": "About"
-    },
-    {
-      "description": "",
-      "items": [],
-      "title": "Sponsors and backers"
-    },
-    {
-      "description": "If you want to support this project, I'd love your help by contributing improvements, sharing it with others, or sponsoring ongoing development.\n© 2024–present. CC BY 4.0.",
-      "items": [],
-      "title": "Past sponsors"
     }
   ],
   "metadata": {

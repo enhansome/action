@@ -188,60 +188,61 @@
             "repo": "antd-theme-webpack-plugin",
             "stars": 7472
           }
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "ant-dark-theme",
+              "description": "Dark theme variables of Ant Design.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2512842547,
+                "language": "Ruby",
+                "last_commit": "2022-07-03T00:00:00.000Z",
+                "owner": "Kuechlin",
+                "repo": "ant-dark-theme",
+                "stars": 42548
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "ant-design-aliyun-theme",
+              "description": "Aliyun console theme variables of Ant Design.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 637626201,
+                "language": "JavaScript",
+                "last_commit": "2023-06-14T00:00:00.000Z",
+                "owner": "ant-design",
+                "repo": "ant-design-aliyun-theme",
+                "stars": 26202
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "ant-design-dark-theme",
+              "description": "Dark theme variables of Ant Design.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1732056521,
+                "language": "JavaScript",
+                "last_commit": "2022-07-29T00:00:00.000Z",
+                "owner": "ant-design",
+                "repo": "ant-design-dark-theme",
+                "stars": 6522
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Themes"
         }
       ],
       "title": "Theming"
-    },
-    {
-      "description": "",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "ant-dark-theme",
-          "description": "Dark theme variables of Ant Design.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2512842547,
-            "language": "Ruby",
-            "last_commit": "2022-07-03T00:00:00.000Z",
-            "owner": "Kuechlin",
-            "repo": "ant-dark-theme",
-            "stars": 42548
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "ant-design-aliyun-theme",
-          "description": "Aliyun console theme variables of Ant Design.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 637626201,
-            "language": "JavaScript",
-            "last_commit": "2023-06-14T00:00:00.000Z",
-            "owner": "ant-design",
-            "repo": "ant-design-aliyun-theme",
-            "stars": 26202
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "ant-design-dark-theme",
-          "description": "Dark theme variables of Ant Design.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1732056521,
-            "language": "JavaScript",
-            "last_commit": "2022-07-29T00:00:00.000Z",
-            "owner": "ant-design",
-            "repo": "ant-design-dark-theme",
-            "stars": 6522
-          }
-        }
-      ],
-      "title": "Themes"
     },
     {
       "description": "Ant Design family of projects.",
@@ -649,7 +650,7 @@
       "title": "Components"
     },
     {
-      "description": "",
+      "description": null,
       "items": [
         {
           "node_type": "item",
@@ -1168,7 +1169,7 @@
       "title": "Non-JavaScript Libraries"
     },
     {
-      "description": "",
+      "description": null,
       "items": [
         {
           "node_type": "item",
@@ -1204,7 +1205,7 @@
       "title": "Electron"
     },
     {
-      "description": "",
+      "description": null,
       "items": [
         {
           "node_type": "item",
@@ -1253,16 +1254,6 @@
         }
       ],
       "title": "Icons"
-    },
-    {
-      "description": "Your contributions are always welcome! Click Here to read the guidelines.",
-      "items": [],
-      "title": "Contributing"
-    },
-    {
-      "description": "This work is licensed under a Creative Commons Attribution 4.0 International License.",
-      "items": [],
-      "title": "License"
     }
   ],
   "metadata": {

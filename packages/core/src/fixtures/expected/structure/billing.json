@@ -1,76 +1,84 @@
 {
   "items": [
     {
-      "description": "The dynamic scheme for elastic resources.",
+      "description": "From monthly subscription to commodity-like on-the-go consumption, there's plenty of scheme out there to structure your product's pricing. Including the good old shopping-cart funnel.",
       "items": [
         {
-          "node_type": "item",
-          "title": "Lago",
-          "description": "Open-source metering & usage-based billing in Ruby.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 164095698,
-            "language": "Shell",
-            "last_commit": "2022-02-02T00:00:00.000Z",
-            "owner": "getlago",
-            "repo": "lago",
-            "stars": 45699
-          }
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Lago",
+              "description": "Open-source metering & usage-based billing in Ruby.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 164095698,
+                "language": "Shell",
+                "last_commit": "2022-02-02T00:00:00.000Z",
+                "owner": "getlago",
+                "repo": "lago",
+                "stars": 45699
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "CGRateS",
+              "description": "An open-source, fast (50k+ CPS) and scalable (load-balancer + replication included) real-time billing for ISPs and Telecom Operators, written in Go.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1353472528,
+                "language": "Shell",
+                "last_commit": "2022-07-22T00:00:00.000Z",
+                "owner": "cgrates",
+                "repo": "cgrates",
+                "stars": 22529
+              }
+            }
+          ],
+          "description": "The dynamic scheme for elastic resources.",
+          "node_type": "group",
+          "title": "Usage-based Pricing"
         },
         {
-          "node_type": "item",
-          "title": "CGRateS",
-          "description": "An open-source, fast (50k+ CPS) and scalable (load-balancer + replication included) real-time billing for ISPs and Telecom Operators, written in Go.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1353472528,
-            "language": "Shell",
-            "last_commit": "2022-07-22T00:00:00.000Z",
-            "owner": "cgrates",
-            "repo": "cgrates",
-            "stars": 22529
-          }
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Lotus",
+              "description": "Open-source project to manage pricing & packaging infrastructure.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2322144467,
+                "language": "Ruby",
+                "last_commit": "2022-09-21T00:00:00.000Z",
+                "owner": "uselotus",
+                "repo": "lotus",
+                "stars": 44468
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "",
+              "description": "Open-source license key generation and verification tool in Go.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2711733822,
+                "language": "Go",
+                "last_commit": "2021-10-01T00:00:00.000Z",
+                "owner": "furkansenharputlu",
+                "repo": "f-license",
+                "stars": 33823
+              }
+            }
+          ],
+          "description": "Highly popular for SaaS businesses, subscription plans are easy to comprehend.",
+          "node_type": "group",
+          "title": "Subscription Plans"
         }
       ],
-      "title": "Usage-based Pricing"
-    },
-    {
-      "description": "Highly popular for SaaS businesses, subscription plans are easy to comprehend.",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "Lotus",
-          "description": "Open-source project to manage pricing & packaging infrastructure.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2322144467,
-            "language": "Ruby",
-            "last_commit": "2022-09-21T00:00:00.000Z",
-            "owner": "uselotus",
-            "repo": "lotus",
-            "stars": 44468
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "",
-          "description": "Open-source license key generation and verification tool in Go.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2711733822,
-            "language": "Go",
-            "last_commit": "2021-10-01T00:00:00.000Z",
-            "owner": "furkansenharputlu",
-            "repo": "f-license",
-            "stars": 33823
-          }
-        }
-      ],
-      "title": "Subscription Plans"
+      "title": "Pricing"
     },
     {
       "description": "The central repository of all available services, products, variants, options and pricing available to the customer to purchase. Catalogs for cloud services are most of the time tailor-made, but there is some classic PDM solutions (Product Data Management, a.k.a. PIM for Product Information Management) out there that might fit the bill.",
@@ -160,370 +168,421 @@
       "title": "Cost Forecast"
     },
     {
-      "description": "Targeted online advertisements marketplaces have a lot in common with traditional cloud marketplace. Some good inspiration there, from concepts to tech.",
+      "description": "A marketplace connect supply with demand that lead to a financial transaction. If there is no payment involved, then it is an aggregator, or a hub. Not a marketplace.",
       "items": [
         {
-          "node_type": "item",
-          "title": "Samsung's online ads platform/exchange war story",
-          "description": "How to scale to 5M bid request/s, 2ms Max Response Time.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1886597506,
-            "language": "Java",
-            "last_commit": "2022-08-13T00:00:00.000Z",
-            "owner": "eloraiby",
-            "repo": "fs-pacer",
-            "stars": 47507
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "RTB Budget Pacing Summarized",
-          "description": "A collection of budget pacing resources for targeted online advertisements.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3470160410,
-            "language": "TypeScript",
-            "last_commit": "2022-11-17T00:00:00.000Z",
-            "owner": "PragmaticLab",
-            "repo": "RTB_Budget_Pacing_Summarized",
-            "stars": 10411
-          }
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Samsung's online ads platform/exchange war story",
+              "description": "How to scale to 5M bid request/s, 2ms Max Response Time.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1886597506,
+                "language": "Java",
+                "last_commit": "2022-08-13T00:00:00.000Z",
+                "owner": "eloraiby",
+                "repo": "fs-pacer",
+                "stars": 47507
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "RTB Budget Pacing Summarized",
+              "description": "A collection of budget pacing resources for targeted online advertisements.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3470160410,
+                "language": "TypeScript",
+                "last_commit": "2022-11-17T00:00:00.000Z",
+                "owner": "PragmaticLab",
+                "repo": "RTB_Budget_Pacing_Summarized",
+                "stars": 10411
+              }
+            }
+          ],
+          "description": "Targeted online advertisements marketplaces have a lot in common with traditional cloud marketplace. Some good inspiration there, from concepts to tech.",
+          "node_type": "group",
+          "title": "Online Ads"
         }
       ],
-      "title": "Online Ads"
+      "title": "Marketplace"
     },
     {
-      "description": "Everything you need to know about the daily practice of keeping your accounting data clean and tidy.",
+      "description": null,
       "items": [
         {
-          "node_type": "item",
-          "title": "Ledger",
-          "description": "A scriptable financial ledger, designed to make it easy to model complex financial transactions.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1098047937,
-            "language": "Ruby",
-            "last_commit": "2021-06-08T00:00:00.000Z",
-            "owner": "numary",
-            "repo": "ledger",
-            "stars": 47938
-          }
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Ledger",
+              "description": "A scriptable financial ledger, designed to make it easy to model complex financial transactions.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1098047937,
+                "language": "Ruby",
+                "last_commit": "2021-06-08T00:00:00.000Z",
+                "owner": "numary",
+                "repo": "ledger",
+                "stars": 47938
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Frappe Books",
+              "description": "Free Desktop book-keeping software for small-businesses and freelancers.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 4201646018,
+                "language": "Shell",
+                "last_commit": "2023-12-14T00:00:00.000Z",
+                "owner": "frappe",
+                "repo": "books",
+                "stars": 46019
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Sequence",
+              "description": "API that store, validate and reports asset movements. Also known as a Ledger. Sequence is immutable, scalable, and easy to use.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 145044007,
+                "language": "Ruby",
+                "last_commit": "2023-12-25T00:00:00.000Z",
+                "owner": "decimals",
+                "repo": "sequence",
+                "stars": 44008
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Go DB Ledger",
+              "description": "An open source accounting system that aims to make the recording of double entry bookkeeping transactions programmable.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2085235887,
+                "language": "Ruby",
+                "last_commit": "2021-07-28T00:00:00.000Z",
+                "owner": "darcys22",
+                "repo": "godbledger",
+                "stars": 35888
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Akaunting",
+              "description": "Open source software designed for small businesses and freelancers.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 38623040,
+                "language": "TypeScript",
+                "last_commit": "2023-11-22T00:00:00.000Z",
+                "owner": "akaunting",
+                "repo": "akaunting",
+                "stars": 23041
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Luca",
+              "description": "YAML accounting and JSON tax forms.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 316619267,
+                "language": "Ruby",
+                "last_commit": "2023-04-09T00:00:00.000Z",
+                "owner": "brandon-rhodes",
+                "repo": "luca",
+                "stars": 19268
+              }
+            }
+          ],
+          "description": "Everything you need to know about the daily practice of keeping your accounting data clean and tidy.",
+          "node_type": "group",
+          "title": "Bookkeeping"
         },
         {
-          "node_type": "item",
-          "title": "Frappe Books",
-          "description": "Free Desktop book-keeping software for small-businesses and freelancers.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 4201646018,
-            "language": "Shell",
-            "last_commit": "2023-12-14T00:00:00.000Z",
-            "owner": "frappe",
-            "repo": "books",
-            "stars": 46019
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Sequence",
-          "description": "API that store, validate and reports asset movements. Also known as a Ledger. Sequence is immutable, scalable, and easy to use.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 145044007,
-            "language": "Ruby",
-            "last_commit": "2023-12-25T00:00:00.000Z",
-            "owner": "decimals",
-            "repo": "sequence",
-            "stars": 44008
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Go DB Ledger",
-          "description": "An open source accounting system that aims to make the recording of double entry bookkeeping transactions programmable.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2085235887,
-            "language": "Ruby",
-            "last_commit": "2021-07-28T00:00:00.000Z",
-            "owner": "darcys22",
-            "repo": "godbledger",
-            "stars": 35888
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Akaunting",
-          "description": "Open source software designed for small businesses and freelancers.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 38623040,
-            "language": "TypeScript",
-            "last_commit": "2023-11-22T00:00:00.000Z",
-            "owner": "akaunting",
-            "repo": "akaunting",
-            "stars": 23041
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Luca",
-          "description": "YAML accounting and JSON tax forms.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 316619267,
-            "language": "Ruby",
-            "last_commit": "2023-04-09T00:00:00.000Z",
-            "owner": "brandon-rhodes",
-            "repo": "luca",
-            "stars": 19268
-          }
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Managed accounts for Django",
+              "description": "A 'managed account' is an allocation of money that can be debited and credited.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 695783833,
+                "language": "Python",
+                "last_commit": "2021-09-20T00:00:00.000Z",
+                "owner": "django-oscar",
+                "repo": "django-oscar-accounts",
+                "stars": 33834
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "TigerBeetle",
+              "description": "A distributed financial accounting database to ensure that the money either moves, or doesn't move, that it doesn't get lost somewhere in between. It has been tested on Jepsen, which tested its strong serializability.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1797412082,
+                "language": "Go",
+                "last_commit": "2023-10-11T00:00:00.000Z",
+                "owner": "coilhq",
+                "repo": "tigerbeetle",
+                "stars": 12083
+              }
+            }
+          ],
+          "description": "Now that you're somewhat familiar with the concepts and practice of accounting, here are some resources to help you implement that knowledge into software systems.",
+          "node_type": "group",
+          "title": "Software design and implementation"
         }
       ],
-      "title": "Bookkeeping"
+      "title": "Accounting"
     },
     {
-      "description": "Now that you're somewhat familiar with the concepts and practice of accounting, here are some resources to help you implement that knowledge into software systems.",
+      "description": "The invoice materialize a consumed service or purchased product, waiting to be settled by a payment transaction.",
       "items": [
         {
-          "node_type": "item",
-          "title": "Managed accounts for Django",
-          "description": "A 'managed account' is an allocation of money that can be debited and credited.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 695783833,
-            "language": "Python",
-            "last_commit": "2021-09-20T00:00:00.000Z",
-            "owner": "django-oscar",
-            "repo": "django-oscar-accounts",
-            "stars": 33834
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "TigerBeetle",
-          "description": "A distributed financial accounting database to ensure that the money either moves, or doesn't move, that it doesn't get lost somewhere in between. It has been tested on Jepsen, which tested its strong serializability.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1797412082,
-            "language": "Go",
-            "last_commit": "2023-10-11T00:00:00.000Z",
-            "owner": "coilhq",
-            "repo": "tigerbeetle",
-            "stars": 12083
-          }
+          "children": [
+            {
+              "node_type": "item",
+              "title": "InvoicePlane",
+              "description": "A self-hosted open-source application for managing your invoices, clients and payments.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2753987400,
+                "language": "TypeScript",
+                "last_commit": "2022-11-27T00:00:00.000Z",
+                "owner": "InvoicePlane",
+                "repo": "InvoicePlane",
+                "stars": 37401
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "InvoiceGenerator",
+              "description": "Library to generate a simple invoices.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 430327125,
+                "language": "C++",
+                "last_commit": "2023-08-29T00:00:00.000Z",
+                "owner": "by-cx",
+                "repo": "InvoiceGenerator",
+                "stars": 27126
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Manta",
+              "description": "Flexible invoicing desktop app with beautiful & customizable templates.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1406612425,
+                "language": "C++",
+                "last_commit": "2022-11-02T00:00:00.000Z",
+                "owner": "hql287",
+                "repo": "Manta",
+                "stars": 12426
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Ruby Invoicing Framework",
+              "description": "For generating and displaying invoices (ideal for commercial Rails apps). It allows for flexible business logic; provides tools for tax handling, commission calculation etc.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2484555617,
+                "language": "Ruby",
+                "last_commit": "2022-04-24T00:00:00.000Z",
+                "owner": "code-mancers",
+                "repo": "invoicing",
+                "stars": 5618
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "klirr",
+              "description": "Zero-maintenance and smart FOSS CLI tool for generating beautiful invoices for services and expenses.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2855852573,
+                "language": "Python",
+                "last_commit": "2022-06-07T00:00:00.000Z",
+                "owner": "sajjon",
+                "repo": "klirr",
+                "stars": 2574
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Generators"
         }
       ],
-      "title": "Software design and implementation"
+      "title": "Invoice"
     },
     {
-      "description": "",
+      "description": "There's monetary incentives to exploit your business. Be prepared to fight hordes of fraudsters and shady users.",
       "items": [
         {
           "node_type": "item",
-          "title": "InvoicePlane",
-          "description": "A self-hosted open-source application for managing your invoices, clients and payments.",
+          "title": "Mojaloop Fraud Risk Management",
+          "description": "Some examples of AML rules.",
           "children": [],
           "repo_info": {
             "archived": false,
-            "id": 2753987400,
-            "language": "TypeScript",
-            "last_commit": "2022-11-27T00:00:00.000Z",
-            "owner": "InvoicePlane",
-            "repo": "InvoicePlane",
-            "stars": 37401
+            "id": 1358977919,
+            "language": null,
+            "last_commit": "2021-06-26T00:00:00.000Z",
+            "owner": "mojaloop",
+            "repo": "fraud_risk_management",
+            "stars": 27920
           }
         },
         {
           "node_type": "item",
-          "title": "InvoiceGenerator",
-          "description": "Library to generate a simple invoices.",
+          "title": "Awesome Fraud Detection Research Papers",
+          "description": "Papers sourced from several conferences on all sort of fraud: credit card, payment transactions, loans, customs inspections, money laundering networks, and more.",
           "children": [],
           "repo_info": {
             "archived": false,
-            "id": 430327125,
-            "language": "C++",
-            "last_commit": "2023-08-29T00:00:00.000Z",
-            "owner": "by-cx",
-            "repo": "InvoiceGenerator",
-            "stars": 27126
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Manta",
-          "description": "Flexible invoicing desktop app with beautiful & customizable templates.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1406612425,
-            "language": "C++",
-            "last_commit": "2022-11-02T00:00:00.000Z",
-            "owner": "hql287",
-            "repo": "Manta",
-            "stars": 12426
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Ruby Invoicing Framework",
-          "description": "For generating and displaying invoices (ideal for commercial Rails apps). It allows for flexible business logic; provides tools for tax handling, commission calculation etc.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2484555617,
-            "language": "Ruby",
-            "last_commit": "2022-04-24T00:00:00.000Z",
-            "owner": "code-mancers",
-            "repo": "invoicing",
-            "stars": 5618
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "klirr",
-          "description": "Zero-maintenance and smart FOSS CLI tool for generating beautiful invoices for services and expenses.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2855852573,
-            "language": "Python",
-            "last_commit": "2022-06-07T00:00:00.000Z",
-            "owner": "sajjon",
-            "repo": "klirr",
-            "stars": 2574
+            "id": 2638062231,
+            "language": "JavaScript",
+            "last_commit": "2023-05-15T00:00:00.000Z",
+            "owner": "benedekrozemberczki",
+            "repo": "awesome-fraud-detection-papers",
+            "stars": 12232
           }
         }
       ],
-      "title": "Generators"
+      "title": "Fraud"
     },
     {
       "description": "As stakeholder of the billing pipeline, you sat on all the critical data to measure and report on the health of the business.",
-      "items": [],
+      "items": [
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "PyMC-Marketing",
+              "description": "A full-featured Python package to analyze your users based on their \"alive\" and \"dead\" states.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 380138368,
+                "language": "Shell",
+                "last_commit": "2022-12-29T00:00:00.000Z",
+                "owner": "pymc-labs",
+                "repo": "pymc-marketing",
+                "stars": 38369
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "",
+              "description": "Python package to show the projected retention rates for each cohort and calculate the LTV of a given customer in that cohort.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2430186428,
+                "language": "Shell",
+                "last_commit": "2022-10-30T00:00:00.000Z",
+                "owner": "chrisclark",
+                "repo": "retentionizer",
+                "stars": 36429
+              }
+            }
+          ],
+          "description": "How much value do you produce per customer? The Customer Lifetime Value (CLV, or LTV for Life-Time Value) quantify that. Understanding and acting on it is the most important part of your business's sales efforts.",
+          "node_type": "group",
+          "title": "Customer Lifetime Value"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "",
+              "description": "Connect and query your data sources, build dashboards to visualize data and share them with your company.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3206796362,
+                "language": "Go",
+                "last_commit": "2023-01-04T00:00:00.000Z",
+                "owner": "getredash",
+                "repo": "redash",
+                "stars": 46363
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Meltano",
+              "description": "Open source convention-over-configuration product for the whole data lifecycle, all the way from loading data to analyzing it.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1600476704,
+                "language": "Rust",
+                "last_commit": "2022-01-27T00:00:00.000Z",
+                "owner": "meltano",
+                "repo": "meltano",
+                "stars": 26705
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Apache Superset",
+              "description": "Enterprise-ready business intelligence web application.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 643419827,
+                "language": "Ruby",
+                "last_commit": "2021-09-26T00:00:00.000Z",
+                "owner": "apache",
+                "repo": "incubator-superset",
+                "stars": 19828
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Metabase",
+              "description": "An open source solution to explore and visualize data and supports lots of databases.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1576453718,
+                "language": "Shell",
+                "last_commit": "2022-01-13T00:00:00.000Z",
+                "owner": "metabase",
+                "repo": "metabase",
+                "stars": 3719
+              }
+            }
+          ],
+          "description": "Software to build visualizations, dashboards, SQL queries and drill down into data.",
+          "node_type": "group",
+          "title": "Tools"
+        }
+      ],
       "title": "Business Intelligence"
-    },
-    {
-      "description": "How much value do you produce per customer? The Customer Lifetime Value (CLV, or LTV for Life-Time Value) quantify that. Understanding and acting on it is the most important part of your business's sales efforts.",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "PyMC-Marketing",
-          "description": "A full-featured Python package to analyze your users based on their \"alive\" and \"dead\" states.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 380138368,
-            "language": "Shell",
-            "last_commit": "2022-12-29T00:00:00.000Z",
-            "owner": "pymc-labs",
-            "repo": "pymc-marketing",
-            "stars": 38369
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "",
-          "description": "Python package to show the projected retention rates for each cohort and calculate the LTV of a given customer in that cohort.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2430186428,
-            "language": "Shell",
-            "last_commit": "2022-10-30T00:00:00.000Z",
-            "owner": "chrisclark",
-            "repo": "retentionizer",
-            "stars": 36429
-          }
-        }
-      ],
-      "title": "Customer Lifetime Value"
-    },
-    {
-      "description": "Software to build visualizations, dashboards, SQL queries and drill down into data.",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "",
-          "description": "Connect and query your data sources, build dashboards to visualize data and share them with your company.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3206796362,
-            "language": "Go",
-            "last_commit": "2023-01-04T00:00:00.000Z",
-            "owner": "getredash",
-            "repo": "redash",
-            "stars": 46363
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Meltano",
-          "description": "Open source convention-over-configuration product for the whole data lifecycle, all the way from loading data to analyzing it.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1600476704,
-            "language": "Rust",
-            "last_commit": "2022-01-27T00:00:00.000Z",
-            "owner": "meltano",
-            "repo": "meltano",
-            "stars": 26705
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Apache Superset",
-          "description": "Enterprise-ready business intelligence web application.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 643419827,
-            "language": "Ruby",
-            "last_commit": "2021-09-26T00:00:00.000Z",
-            "owner": "apache",
-            "repo": "incubator-superset",
-            "stars": 19828
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Metabase",
-          "description": "An open source solution to explore and visualize data and supports lots of databases.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1576453718,
-            "language": "Shell",
-            "last_commit": "2022-01-13T00:00:00.000Z",
-            "owner": "metabase",
-            "repo": "metabase",
-            "stars": 3719
-          }
-        }
-      ],
-      "title": "Tools"
-    },
-    {
-      "description": "Your contributions are always welcome! Please take a look at the contribution guidelines first.",
-      "items": [],
-      "title": "Contributing"
-    },
-    {
-      "description": "The header image is based on a modified photo by Denny Müller.\n[1]: Sapiens: A Brief History of Humankind (Harper, 2015). [↑]",
-      "items": [],
-      "title": "Footnotes"
     }
   ],
   "metadata": {

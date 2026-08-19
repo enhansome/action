@@ -1,7 +1,7 @@
 {
   "items": [
     {
-      "description": "",
+      "description": null,
       "items": [
         {
           "node_type": "item",
@@ -142,534 +142,537 @@
       "title": "Apps"
     },
     {
-      "description": "",
-      "items": [],
+      "description": null,
+      "items": [
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Web3-GPT",
+              "description": "Deploy smart contracts with ChatGPT.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3813398693,
+                "language": "Python",
+                "last_commit": "2022-02-07T00:00:00.000Z",
+                "owner": "Markeljan",
+                "repo": "Web3GPT",
+                "stars": 48694
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "roomGPT",
+              "description": "Generate your dream room.",
+              "children": [],
+              "repo_info": {
+                "archived": true,
+                "id": 1061245961,
+                "language": "JavaScript",
+                "last_commit": "2021-05-15T00:00:00.000Z",
+                "owner": "Nutlope",
+                "repo": "roomGPT",
+                "stars": 45962
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "chatbot-ui",
+              "description": "Alternative ChatGPT web UI.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 311595774,
+                "language": "Rust",
+                "last_commit": "2021-11-18T00:00:00.000Z",
+                "owner": "mckaywrigley",
+                "repo": "chatbot-ui",
+                "stars": 45775
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "ChatGPT Next Web",
+              "description": "Alternative ChatGPT web UI.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1643894651,
+                "language": "JavaScript",
+                "last_commit": "2022-03-21T00:00:00.000Z",
+                "owner": "Yidadaa",
+                "repo": "ChatGPT-Next-Web",
+                "stars": 44652
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "DocsGPT",
+              "description": "Documentation assistant.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1242441648,
+                "language": "Shell",
+                "last_commit": "2022-03-24T00:00:00.000Z",
+                "owner": "arc53",
+                "repo": "DocsGPT",
+                "stars": 41649
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "OpenChat",
+              "description": "Personalized ChatGPT chatbot.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 194590140,
+                "language": "TypeScript",
+                "last_commit": "2023-08-14T00:00:00.000Z",
+                "owner": "openchatai",
+                "repo": "OpenChat",
+                "stars": 40141
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "chatgpt-i18n",
+              "description": "Localize your websites.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1862686946,
+                "language": "Java",
+                "last_commit": "2021-05-30T00:00:00.000Z",
+                "owner": "ObservedObserver",
+                "repo": "chatgpt-i18n",
+                "stars": 36947
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "gpt-code-ui",
+              "description": "Code interpreter integrated with ChatGPT.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2926883633,
+                "language": "Python",
+                "last_commit": "2022-04-08T00:00:00.000Z",
+                "owner": "ricklamers",
+                "repo": "gpt-code-ui",
+                "stars": 33634
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "kindle-gpt",
+              "description": "Search and chat on your Kindle highlights.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 825181967,
+                "language": "Ruby",
+                "last_commit": "2021-05-09T00:00:00.000Z",
+                "owner": "mckaywrigley",
+                "repo": "kindle-gpt",
+                "stars": 31968
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Opik",
+              "description": "Open-source end-to-end LLM development platform.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1310930091,
+                "language": "JavaScript",
+                "last_commit": "2023-10-02T00:00:00.000Z",
+                "owner": "comet-ml",
+                "repo": "opik",
+                "stars": 30092
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Adrenaline",
+              "description": "Talk to your codebase.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1005528264,
+                "language": "Rust",
+                "last_commit": "2023-04-12T00:00:00.000Z",
+                "owner": "shobrook",
+                "repo": "adrenaline",
+                "stars": 28265
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "pdfGPT",
+              "description": "Interactive conversations with the contents of PDF files.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3706477240,
+                "language": "TypeScript",
+                "last_commit": "2023-05-06T00:00:00.000Z",
+                "owner": "bhaskatripathi",
+                "repo": "pdfGPT",
+                "stars": 27241
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Chat with GPT",
+              "description": "Open-source ChatGPT web app with a voice.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1867824831,
+                "language": "JavaScript",
+                "last_commit": "2021-09-22T00:00:00.000Z",
+                "owner": "cogentapps",
+                "repo": "chat-with-gpt",
+                "stars": 24832
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Anse",
+              "description": "Alternative ChatGPT web UI.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 213570862,
+                "language": "Go",
+                "last_commit": "2021-08-22T00:00:00.000Z",
+                "owner": "anse-app",
+                "repo": "anse",
+                "stars": 20863
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "ai-chatbot",
+              "description": "Personalized ChatGPT AI chatbot.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1846870598,
+                "language": "Shell",
+                "last_commit": "2022-05-13T00:00:00.000Z",
+                "owner": "vercel-labs",
+                "repo": "ai-chatbot",
+                "stars": 20599
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "eslint-gpt",
+              "description": "Generate ESLint rules from example code.",
+              "children": [],
+              "repo_info": {
+                "archived": true,
+                "id": 991470532,
+                "language": "Go",
+                "last_commit": "2022-07-18T00:00:00.000Z",
+                "owner": "ycjcl868",
+                "repo": "eslint-gpt",
+                "stars": 20533
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "OpenAgents",
+              "description": "Open-source replicate of ChatGPT Plus products including code interpreter, plugins and web browsing.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3776720303,
+                "language": "Python",
+                "last_commit": "2023-03-04T00:00:00.000Z",
+                "owner": "xlang-ai",
+                "repo": "OpenAgents",
+                "stars": 20304
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "chatgpt-demo",
+              "description": "Minimal web UI for ChatGPT.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3994069108,
+                "language": "Shell",
+                "last_commit": "2023-09-15T00:00:00.000Z",
+                "owner": "anse-app",
+                "repo": "chatgpt-demo",
+                "stars": 19109
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Chat Chat",
+              "description": "Your own unified AI interface.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1914019079,
+                "language": null,
+                "last_commit": "2023-10-14T00:00:00.000Z",
+                "owner": "okisdev",
+                "repo": "ChatChat",
+                "stars": 19080
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "promptsandbox",
+              "description": "Visual programming tool for experimenting with ChatGPT.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3710717937,
+                "language": "Ruby",
+                "last_commit": "2021-06-08T00:00:00.000Z",
+                "owner": "eg9y",
+                "repo": "promptsandbox.io",
+                "stars": 17938
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "DeepWrite AI",
+              "description": "Blog post generator.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 4036216171,
+                "language": "JavaScript",
+                "last_commit": "2023-07-14T00:00:00.000Z",
+                "owner": "simplysabir",
+                "repo": "AI-Writing-Assistant",
+                "stars": 16172
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "TaskMatrix",
+              "description": "Combines ChatGPT with Visual Models for enhanced image-chat interactions.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3317663700,
+                "language": "TypeScript",
+                "last_commit": "2022-01-31T00:00:00.000Z",
+                "owner": "microsoft",
+                "repo": "TaskMatrix",
+                "stars": 13701
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Ask-Anything",
+              "description": "ChatGPT with video understanding and communication.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 992211090,
+                "language": "TypeScript",
+                "last_commit": "2023-10-03T00:00:00.000Z",
+                "owner": "OpenGVLab",
+                "repo": "Ask-Anything",
+                "stars": 11091
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "AgentGPT",
+              "description": "Autonomous AI agents in your browser.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3078059634,
+                "language": "Rust",
+                "last_commit": "2022-04-07T00:00:00.000Z",
+                "owner": "reworkd",
+                "repo": "AgentGPT",
+                "stars": 9635
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "FastChat",
+              "description": "An open platform for training, serving, and evaluating large language model based chatbots.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 880158499,
+                "language": null,
+                "last_commit": "2022-08-20T00:00:00.000Z",
+                "owner": "lm-sys",
+                "repo": "FastChat",
+                "stars": 8500
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "OP Vault ChatGPT",
+              "description": "Give ChatGPT long-term memory using the OP Stack (OpenAI + Pinecone Vector Database).",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3977006267,
+                "language": "Ruby",
+                "last_commit": "2023-04-09T00:00:00.000Z",
+                "owner": "pashpashpash",
+                "repo": "vault-ai",
+                "stars": 6268
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Open Interpreter",
+              "description": "Code interpreter with ChatGPT.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 591155289,
+                "language": null,
+                "last_commit": "2023-03-18T00:00:00.000Z",
+                "owner": "KillianLucas",
+                "repo": "open-interpreter",
+                "stars": 5290
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "ShareGPT",
+              "description": "Share permanent links to ChatGPT conversations.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 969704234,
+                "language": "Rust",
+                "last_commit": "2023-05-12T00:00:00.000Z",
+                "owner": "domeccleston",
+                "repo": "sharegpt",
+                "stars": 4235
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "VLog",
+              "description": "Convert videos to documents.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2166101388,
+                "language": "Shell",
+                "last_commit": "2022-12-09T00:00:00.000Z",
+                "owner": "showlab",
+                "repo": "VLog",
+                "stars": 1389
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Hosted and self-hosted"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "ChatGPT-Paper-Reader",
+              "description": "Read and summarize academic papers.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1770893745,
+                "language": "C++",
+                "last_commit": "2021-12-17T00:00:00.000Z",
+                "owner": "talkingwallace",
+                "repo": "ChatGPT-Paper-Reader",
+                "stars": 43746
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Beelzebub",
+              "description": "Secure honeypot framework.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2866021982,
+                "language": "Go",
+                "last_commit": "2021-04-24T00:00:00.000Z",
+                "owner": "mariocandela",
+                "repo": "beelzebub",
+                "stars": 21983
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "twitterbio",
+              "description": "Generate your Twitter bio.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 693815860,
+                "language": "TypeScript",
+                "last_commit": "2021-08-24T00:00:00.000Z",
+                "owner": "Nutlope",
+                "repo": "twitterbio",
+                "stars": 15861
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Auto-GPT",
+              "description": "An experimental open-source attempt to make GPT-4 fully autonomous.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1319112874,
+                "language": "Rust",
+                "last_commit": "2021-08-10T00:00:00.000Z",
+                "owner": "Significant-Gravitas",
+                "repo": "Auto-GPT",
+                "stars": 12875
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Sidekick",
+              "description": "Connect external data to ChatGPT APIs through a dashboard.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2202708553,
+                "language": "Python",
+                "last_commit": "2022-06-27T00:00:00.000Z",
+                "owner": "ai-sidekick",
+                "repo": "sidekick",
+                "stars": 8554
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Self-hosted"
+        }
+      ],
       "title": "Web apps"
     },
     {
-      "description": "",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "Web3-GPT",
-          "description": "Deploy smart contracts with ChatGPT.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3813398693,
-            "language": "Python",
-            "last_commit": "2022-02-07T00:00:00.000Z",
-            "owner": "Markeljan",
-            "repo": "Web3GPT",
-            "stars": 48694
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "roomGPT",
-          "description": "Generate your dream room.",
-          "children": [],
-          "repo_info": {
-            "archived": true,
-            "id": 1061245961,
-            "language": "JavaScript",
-            "last_commit": "2021-05-15T00:00:00.000Z",
-            "owner": "Nutlope",
-            "repo": "roomGPT",
-            "stars": 45962
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "chatbot-ui",
-          "description": "Alternative ChatGPT web UI.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 311595774,
-            "language": "Rust",
-            "last_commit": "2021-11-18T00:00:00.000Z",
-            "owner": "mckaywrigley",
-            "repo": "chatbot-ui",
-            "stars": 45775
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "ChatGPT Next Web",
-          "description": "Alternative ChatGPT web UI.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1643894651,
-            "language": "JavaScript",
-            "last_commit": "2022-03-21T00:00:00.000Z",
-            "owner": "Yidadaa",
-            "repo": "ChatGPT-Next-Web",
-            "stars": 44652
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "DocsGPT",
-          "description": "Documentation assistant.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1242441648,
-            "language": "Shell",
-            "last_commit": "2022-03-24T00:00:00.000Z",
-            "owner": "arc53",
-            "repo": "DocsGPT",
-            "stars": 41649
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "OpenChat",
-          "description": "Personalized ChatGPT chatbot.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 194590140,
-            "language": "TypeScript",
-            "last_commit": "2023-08-14T00:00:00.000Z",
-            "owner": "openchatai",
-            "repo": "OpenChat",
-            "stars": 40141
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "chatgpt-i18n",
-          "description": "Localize your websites.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1862686946,
-            "language": "Java",
-            "last_commit": "2021-05-30T00:00:00.000Z",
-            "owner": "ObservedObserver",
-            "repo": "chatgpt-i18n",
-            "stars": 36947
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "gpt-code-ui",
-          "description": "Code interpreter integrated with ChatGPT.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2926883633,
-            "language": "Python",
-            "last_commit": "2022-04-08T00:00:00.000Z",
-            "owner": "ricklamers",
-            "repo": "gpt-code-ui",
-            "stars": 33634
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "kindle-gpt",
-          "description": "Search and chat on your Kindle highlights.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 825181967,
-            "language": "Ruby",
-            "last_commit": "2021-05-09T00:00:00.000Z",
-            "owner": "mckaywrigley",
-            "repo": "kindle-gpt",
-            "stars": 31968
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Opik",
-          "description": "Open-source end-to-end LLM development platform.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1310930091,
-            "language": "JavaScript",
-            "last_commit": "2023-10-02T00:00:00.000Z",
-            "owner": "comet-ml",
-            "repo": "opik",
-            "stars": 30092
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Adrenaline",
-          "description": "Talk to your codebase.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1005528264,
-            "language": "Rust",
-            "last_commit": "2023-04-12T00:00:00.000Z",
-            "owner": "shobrook",
-            "repo": "adrenaline",
-            "stars": 28265
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "pdfGPT",
-          "description": "Interactive conversations with the contents of PDF files.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3706477240,
-            "language": "TypeScript",
-            "last_commit": "2023-05-06T00:00:00.000Z",
-            "owner": "bhaskatripathi",
-            "repo": "pdfGPT",
-            "stars": 27241
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Chat with GPT",
-          "description": "Open-source ChatGPT web app with a voice.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1867824831,
-            "language": "JavaScript",
-            "last_commit": "2021-09-22T00:00:00.000Z",
-            "owner": "cogentapps",
-            "repo": "chat-with-gpt",
-            "stars": 24832
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Anse",
-          "description": "Alternative ChatGPT web UI.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 213570862,
-            "language": "Go",
-            "last_commit": "2021-08-22T00:00:00.000Z",
-            "owner": "anse-app",
-            "repo": "anse",
-            "stars": 20863
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "ai-chatbot",
-          "description": "Personalized ChatGPT AI chatbot.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1846870598,
-            "language": "Shell",
-            "last_commit": "2022-05-13T00:00:00.000Z",
-            "owner": "vercel-labs",
-            "repo": "ai-chatbot",
-            "stars": 20599
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "eslint-gpt",
-          "description": "Generate ESLint rules from example code.",
-          "children": [],
-          "repo_info": {
-            "archived": true,
-            "id": 991470532,
-            "language": "Go",
-            "last_commit": "2022-07-18T00:00:00.000Z",
-            "owner": "ycjcl868",
-            "repo": "eslint-gpt",
-            "stars": 20533
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "OpenAgents",
-          "description": "Open-source replicate of ChatGPT Plus products including code interpreter, plugins and web browsing.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3776720303,
-            "language": "Python",
-            "last_commit": "2023-03-04T00:00:00.000Z",
-            "owner": "xlang-ai",
-            "repo": "OpenAgents",
-            "stars": 20304
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "chatgpt-demo",
-          "description": "Minimal web UI for ChatGPT.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3994069108,
-            "language": "Shell",
-            "last_commit": "2023-09-15T00:00:00.000Z",
-            "owner": "anse-app",
-            "repo": "chatgpt-demo",
-            "stars": 19109
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Chat Chat",
-          "description": "Your own unified AI interface.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1914019079,
-            "language": null,
-            "last_commit": "2023-10-14T00:00:00.000Z",
-            "owner": "okisdev",
-            "repo": "ChatChat",
-            "stars": 19080
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "promptsandbox",
-          "description": "Visual programming tool for experimenting with ChatGPT.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3710717937,
-            "language": "Ruby",
-            "last_commit": "2021-06-08T00:00:00.000Z",
-            "owner": "eg9y",
-            "repo": "promptsandbox.io",
-            "stars": 17938
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "DeepWrite AI",
-          "description": "Blog post generator.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 4036216171,
-            "language": "JavaScript",
-            "last_commit": "2023-07-14T00:00:00.000Z",
-            "owner": "simplysabir",
-            "repo": "AI-Writing-Assistant",
-            "stars": 16172
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "TaskMatrix",
-          "description": "Combines ChatGPT with Visual Models for enhanced image-chat interactions.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3317663700,
-            "language": "TypeScript",
-            "last_commit": "2022-01-31T00:00:00.000Z",
-            "owner": "microsoft",
-            "repo": "TaskMatrix",
-            "stars": 13701
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Ask-Anything",
-          "description": "ChatGPT with video understanding and communication.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 992211090,
-            "language": "TypeScript",
-            "last_commit": "2023-10-03T00:00:00.000Z",
-            "owner": "OpenGVLab",
-            "repo": "Ask-Anything",
-            "stars": 11091
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "AgentGPT",
-          "description": "Autonomous AI agents in your browser.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3078059634,
-            "language": "Rust",
-            "last_commit": "2022-04-07T00:00:00.000Z",
-            "owner": "reworkd",
-            "repo": "AgentGPT",
-            "stars": 9635
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "FastChat",
-          "description": "An open platform for training, serving, and evaluating large language model based chatbots.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 880158499,
-            "language": null,
-            "last_commit": "2022-08-20T00:00:00.000Z",
-            "owner": "lm-sys",
-            "repo": "FastChat",
-            "stars": 8500
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "OP Vault ChatGPT",
-          "description": "Give ChatGPT long-term memory using the OP Stack (OpenAI + Pinecone Vector Database).",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3977006267,
-            "language": "Ruby",
-            "last_commit": "2023-04-09T00:00:00.000Z",
-            "owner": "pashpashpash",
-            "repo": "vault-ai",
-            "stars": 6268
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Open Interpreter",
-          "description": "Code interpreter with ChatGPT.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 591155289,
-            "language": null,
-            "last_commit": "2023-03-18T00:00:00.000Z",
-            "owner": "KillianLucas",
-            "repo": "open-interpreter",
-            "stars": 5290
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "ShareGPT",
-          "description": "Share permanent links to ChatGPT conversations.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 969704234,
-            "language": "Rust",
-            "last_commit": "2023-05-12T00:00:00.000Z",
-            "owner": "domeccleston",
-            "repo": "sharegpt",
-            "stars": 4235
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "VLog",
-          "description": "Convert videos to documents.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2166101388,
-            "language": "Shell",
-            "last_commit": "2022-12-09T00:00:00.000Z",
-            "owner": "showlab",
-            "repo": "VLog",
-            "stars": 1389
-          }
-        }
-      ],
-      "title": "Hosted and self-hosted"
-    },
-    {
-      "description": "",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "ChatGPT-Paper-Reader",
-          "description": "Read and summarize academic papers.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1770893745,
-            "language": "C++",
-            "last_commit": "2021-12-17T00:00:00.000Z",
-            "owner": "talkingwallace",
-            "repo": "ChatGPT-Paper-Reader",
-            "stars": 43746
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Beelzebub",
-          "description": "Secure honeypot framework.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2866021982,
-            "language": "Go",
-            "last_commit": "2021-04-24T00:00:00.000Z",
-            "owner": "mariocandela",
-            "repo": "beelzebub",
-            "stars": 21983
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "twitterbio",
-          "description": "Generate your Twitter bio.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 693815860,
-            "language": "TypeScript",
-            "last_commit": "2021-08-24T00:00:00.000Z",
-            "owner": "Nutlope",
-            "repo": "twitterbio",
-            "stars": 15861
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Auto-GPT",
-          "description": "An experimental open-source attempt to make GPT-4 fully autonomous.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1319112874,
-            "language": "Rust",
-            "last_commit": "2021-08-10T00:00:00.000Z",
-            "owner": "Significant-Gravitas",
-            "repo": "Auto-GPT",
-            "stars": 12875
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Sidekick",
-          "description": "Connect external data to ChatGPT APIs through a dashboard.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2202708553,
-            "language": "Python",
-            "last_commit": "2022-06-27T00:00:00.000Z",
-            "owner": "ai-sidekick",
-            "repo": "sidekick",
-            "stars": 8554
-          }
-        }
-      ],
-      "title": "Self-hosted"
-    },
-    {
-      "description": "",
+      "description": "User scripts\nBookmarklets",
       "items": [
         {
           "node_type": "item",
@@ -910,12 +913,117 @@
             "repo": "codereview.gpt",
             "stars": 2052
           }
+        },
+        {
+          "node_type": "item",
+          "title": "Autoclear ChatGPT History",
+          "description": "Auto-clear ChatGPT conversation history for increased privacy.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 1210482160,
+            "language": "TypeScript",
+            "last_commit": "2023-07-25T00:00:00.000Z",
+            "owner": "adamlui",
+            "repo": "autoclear-chatgpt-history",
+            "stars": 32161
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "KeepChatGPT",
+          "description": "Fixes common networks errors and problems with ChatGPT.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 1331130816,
+            "language": "Java",
+            "last_commit": "2021-10-07T00:00:00.000Z",
+            "owner": "xcanwin",
+            "repo": "KeepChatGPT",
+            "stars": 30817
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "ChatGPT Exporter",
+          "description": "Export and share ChatGPT conversation history.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 701477015,
+            "language": "C++",
+            "last_commit": "2023-12-17T00:00:00.000Z",
+            "owner": "pionxzh",
+            "repo": "chatgpt-exporter",
+            "stars": 27016
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "ChatGPT Auto-Continue",
+          "description": "Automatically clicks \"Continue generating\" when responses are cut off.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 2635069494,
+            "language": "Rust",
+            "last_commit": "2022-08-25T00:00:00.000Z",
+            "owner": "adamlui",
+            "repo": "chatgpt-auto-continue",
+            "stars": 19495
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "ChatGPT Auto Refresh",
+          "description": "Keeps ChatGPT sessions fresh to avoid network errors and Cloudflare checks.",
+          "children": [],
+          "repo_info": {
+            "archived": true,
+            "id": 978903010,
+            "language": "TypeScript",
+            "last_commit": "2023-12-22T00:00:00.000Z",
+            "owner": "adamlui",
+            "repo": "chatgpt-auto-refresh",
+            "stars": 3011
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "ChatGPT Export",
+          "description": "Export ChatGPT conversations to Markdown files.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 974196884,
+            "language": "Rust",
+            "last_commit": "2021-07-31T00:00:00.000Z",
+            "owner": "yaph",
+            "repo": "chatgpt-export",
+            "stars": 46885
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Conversation Saving",
+          "description": "Save your ChatGPT conversation.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 490506452,
+            "language": "Go",
+            "last_commit": "2022-10-06T00:00:00.000Z",
+            "owner": "jcubic",
+            "repo": "chat-gpt",
+            "stars": 6453
+          }
         }
       ],
       "title": "Browser extensions"
     },
     {
-      "description": "",
+      "description": null,
       "items": [
         {
           "node_type": "item",
@@ -1266,7 +1374,7 @@
       "title": "CLI tools"
     },
     {
-      "description": "",
+      "description": null,
       "items": [
         {
           "node_type": "item",
@@ -1527,7 +1635,7 @@
       "title": "Bots"
     },
     {
-      "description": "",
+      "description": null,
       "items": [
         {
           "node_type": "item",
@@ -1863,195 +1971,199 @@
       "title": "Integrations"
     },
     {
-      "description": "",
-      "items": [],
+      "description": null,
+      "items": [
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "PHP",
+              "description": null,
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3424442892,
+                "language": "Go",
+                "last_commit": "2021-07-23T00:00:00.000Z",
+                "owner": "openai-php",
+                "repo": "client",
+                "stars": 42893
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Swift",
+              "description": null,
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2629571991,
+                "language": "JavaScript",
+                "last_commit": "2021-04-15T00:00:00.000Z",
+                "owner": "MacPaw",
+                "repo": "OpenAI",
+                "stars": 21992
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Delphi",
+              "description": null,
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1453418871,
+                "language": "JavaScript",
+                "last_commit": "2021-08-13T00:00:00.000Z",
+                "owner": "HemulGM",
+                "repo": "DelphiOpenAI",
+                "stars": 18872
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Go",
+              "description": null,
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 4100065165,
+                "language": "C++",
+                "last_commit": "2023-07-20T00:00:00.000Z",
+                "owner": "AlmazDelDiablo",
+                "repo": "gpt3-5-turbo-go",
+                "stars": 15166
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Node.js",
+              "description": null,
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2002906759,
+                "language": null,
+                "last_commit": "2021-12-03T00:00:00.000Z",
+                "owner": "transitive-bullshit",
+                "repo": "chatgpt-api",
+                "stars": 6760
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Ruby",
+              "description": null,
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1487455301,
+                "language": "JavaScript",
+                "last_commit": "2023-03-06T00:00:00.000Z",
+                "owner": "alexrudall",
+                "repo": "ruby-openai",
+                "stars": 5302
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "API clients"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "llm-ui",
+              "description": "An open source library for building UIs for LLMs.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 849791425,
+                "language": "C++",
+                "last_commit": "2022-11-02T00:00:00.000Z",
+                "owner": "llm-ui-kit",
+                "repo": "llm-ui",
+                "stars": 41426
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Vercel AI SDK",
+              "description": "An open source library for building AI-powered user interfaces.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3649134956,
+                "language": "Java",
+                "last_commit": "2021-05-20T00:00:00.000Z",
+                "owner": "vercel-labs",
+                "repo": "ai",
+                "stars": 34957
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "chatgpt.js",
+              "description": "Easy interaction with the ChatGPT DOM.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2941479007,
+                "language": "Ruby",
+                "last_commit": "2023-12-25T00:00:00.000Z",
+                "owner": "kudoai",
+                "repo": "chatgpt.js",
+                "stars": 29008
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "JavaScript"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "GPTCache",
+              "description": "Semantic cache to store responses from LLM queries.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1485334041,
+                "language": "JavaScript",
+                "last_commit": "2023-11-21T00:00:00.000Z",
+                "owner": "zilliztech",
+                "repo": "GPTCache",
+                "stars": 34042
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "knowledge-gpt",
+              "description": "Extract knowledge from information sources.",
+              "children": [],
+              "repo_info": {
+                "archived": true,
+                "id": 2905879088,
+                "language": "Shell",
+                "last_commit": "2023-10-05T00:00:00.000Z",
+                "owner": "geeks-of-data",
+                "repo": "knowledge-gpt",
+                "stars": 29089
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Python"
+        }
+      ],
       "title": "Packages"
     },
     {
-      "description": "",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "PHP",
-          "description": null,
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3424442892,
-            "language": "Go",
-            "last_commit": "2021-07-23T00:00:00.000Z",
-            "owner": "openai-php",
-            "repo": "client",
-            "stars": 42893
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Swift",
-          "description": null,
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2629571991,
-            "language": "JavaScript",
-            "last_commit": "2021-04-15T00:00:00.000Z",
-            "owner": "MacPaw",
-            "repo": "OpenAI",
-            "stars": 21992
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Delphi",
-          "description": null,
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1453418871,
-            "language": "JavaScript",
-            "last_commit": "2021-08-13T00:00:00.000Z",
-            "owner": "HemulGM",
-            "repo": "DelphiOpenAI",
-            "stars": 18872
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Go",
-          "description": null,
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 4100065165,
-            "language": "C++",
-            "last_commit": "2023-07-20T00:00:00.000Z",
-            "owner": "AlmazDelDiablo",
-            "repo": "gpt3-5-turbo-go",
-            "stars": 15166
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Node.js",
-          "description": null,
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2002906759,
-            "language": null,
-            "last_commit": "2021-12-03T00:00:00.000Z",
-            "owner": "transitive-bullshit",
-            "repo": "chatgpt-api",
-            "stars": 6760
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Ruby",
-          "description": null,
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1487455301,
-            "language": "JavaScript",
-            "last_commit": "2023-03-06T00:00:00.000Z",
-            "owner": "alexrudall",
-            "repo": "ruby-openai",
-            "stars": 5302
-          }
-        }
-      ],
-      "title": "API clients"
-    },
-    {
-      "description": "",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "llm-ui",
-          "description": "An open source library for building UIs for LLMs.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 849791425,
-            "language": "C++",
-            "last_commit": "2022-11-02T00:00:00.000Z",
-            "owner": "llm-ui-kit",
-            "repo": "llm-ui",
-            "stars": 41426
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Vercel AI SDK",
-          "description": "An open source library for building AI-powered user interfaces.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3649134956,
-            "language": "Java",
-            "last_commit": "2021-05-20T00:00:00.000Z",
-            "owner": "vercel-labs",
-            "repo": "ai",
-            "stars": 34957
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "chatgpt.js",
-          "description": "Easy interaction with the ChatGPT DOM.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2941479007,
-            "language": "Ruby",
-            "last_commit": "2023-12-25T00:00:00.000Z",
-            "owner": "kudoai",
-            "repo": "chatgpt.js",
-            "stars": 29008
-          }
-        }
-      ],
-      "title": "JavaScript"
-    },
-    {
-      "description": "",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "GPTCache",
-          "description": "Semantic cache to store responses from LLM queries.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1485334041,
-            "language": "JavaScript",
-            "last_commit": "2023-11-21T00:00:00.000Z",
-            "owner": "zilliztech",
-            "repo": "GPTCache",
-            "stars": 34042
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "knowledge-gpt",
-          "description": "Extract knowledge from information sources.",
-          "children": [],
-          "repo_info": {
-            "archived": true,
-            "id": 2905879088,
-            "language": "Shell",
-            "last_commit": "2023-10-05T00:00:00.000Z",
-            "owner": "geeks-of-data",
-            "repo": "knowledge-gpt",
-            "stars": 29089
-          }
-        }
-      ],
-      "title": "Python"
-    },
-    {
-      "description": "",
+      "description": null,
       "items": [
         {
           "node_type": "item",

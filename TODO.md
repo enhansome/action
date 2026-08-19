@@ -17,4 +17,5 @@
 
 ## Later / parked
 
+- [ ] **Per-README repo dedupe** — the same repo linked in multiple sections emits multiple items (snapmaker: 88 items / 36 distinct repos). Skipped in the tree-shape overhaul (user decision 2026-08-19): the webapp rebuild's global one-node-per-repo dedupe owns this (~62k dupe drops accepted there). Revisit only if mirrors should be dupe-free in themselves.
 - [ ] **Non-repo resources in output (v2)** — YouTube/docs/app-site links produce nothing today; entire registries of them index as near-empty. Parked until webapp's v2 data model exists (webapp TODO "Index non-repo resources"); do not build the emission side before the consumer side wants it.

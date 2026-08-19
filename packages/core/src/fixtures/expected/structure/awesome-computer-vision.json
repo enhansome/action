@@ -1,12 +1,7 @@
 {
   "items": [
     {
-      "description": "Please feel free to send me pull requests or email (jbhuang@vt.edu) to add links.",
-      "items": [],
-      "title": "Contributing"
-    },
-    {
-      "description": "",
+      "description": null,
       "items": [
         {
           "node_type": "item",
@@ -822,435 +817,335 @@
       "title": "Awesome Lists"
     },
     {
-      "description": "",
-      "items": [],
-      "title": "Books"
-    },
-    {
-      "description": "",
-      "items": [],
-      "title": "Courses"
-    },
-    {
-      "description": "",
-      "items": [],
-      "title": "Papers"
-    },
-    {
-      "description": "",
-      "items": [],
-      "title": "Tutorials and talks"
-    },
-    {
-      "description": "",
-      "items": [],
+      "description": null,
+      "items": [
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Open source Python module for computer vision",
+              "description": null,
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1970270006,
+                "language": "Java",
+                "last_commit": "2023-12-26T00:00:00.000Z",
+                "owner": "jesolem",
+                "repo": "PCV",
+                "stars": 20007
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "ccv: A Modern Computer Vision Library",
+              "description": null,
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 547216958,
+                "language": "Shell",
+                "last_commit": "2021-05-18T00:00:00.000Z",
+                "owner": "liuliu",
+                "repo": "ccv",
+                "stars": 16959
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "General Purpose Computer Vision Library"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "SEEDS Revised",
+              "description": null,
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2807283963,
+                "language": "Python",
+                "last_commit": "2021-05-13T00:00:00.000Z",
+                "owner": "davidstutz",
+                "repo": "seeds-revised",
+                "stars": 33964
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Fast Edge Detection Using Structured Forests",
+              "description": null,
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1186275544,
+                "language": "Rust",
+                "last_commit": "2022-07-06T00:00:00.000Z",
+                "owner": "pdollar",
+                "repo": "edges",
+                "stars": 25545
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Contour Detection and Image Segmentation"
+        },
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "node_type": "item",
+                  "title": "SVO: Semi-direct visual odometry",
+                  "description": null,
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "id": 1546798865,
+                    "language": "C++",
+                    "last_commit": "2021-08-19T00:00:00.000Z",
+                    "owner": "uzh-rpg",
+                    "repo": "rpg_svo",
+                    "stars": 48866
+                  }
+                },
+                {
+                  "node_type": "item",
+                  "title": "KFusion: Implementation of KinectFusion",
+                  "description": null,
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "id": 77995804,
+                    "language": "Rust",
+                    "last_commit": "2021-10-19T00:00:00.000Z",
+                    "owner": "GerhardR",
+                    "repo": "kfusion",
+                    "stars": 45805
+                  }
+                },
+                {
+                  "node_type": "item",
+                  "title": "kinfu_remake: Lightweight, reworked and optimized version of Kinfu.",
+                  "description": null,
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "id": 1534675546,
+                    "language": "Java",
+                    "last_commit": "2022-07-04T00:00:00.000Z",
+                    "owner": "Nerei",
+                    "repo": "kinfu_remake",
+                    "stars": 25547
+                  }
+                },
+                {
+                  "node_type": "item",
+                  "title": "DVO: dense visual odometry",
+                  "description": null,
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "id": 3339223804,
+                    "language": "Rust",
+                    "last_commit": "2021-10-19T00:00:00.000Z",
+                    "owner": "tum-vision",
+                    "repo": "dvo_slam",
+                    "stars": 23805
+                  }
+                },
+                {
+                  "node_type": "item",
+                  "title": "VoxelHashing: Large-scale KinectFusion",
+                  "description": null,
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "id": 2398450792,
+                    "language": "Go",
+                    "last_commit": "2021-10-31T00:00:00.000Z",
+                    "owner": "nachtmar",
+                    "repo": "VoxelHashing",
+                    "stars": 793
+                  }
+                }
+              ],
+              "description": null,
+              "node_type": "group",
+              "title": "Tracking/Odometry:"
+            },
+            {
+              "children": [
+                {
+                  "node_type": "item",
+                  "title": "LSD-SLAM",
+                  "description": null,
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "id": 2074744480,
+                    "language": "TypeScript",
+                    "last_commit": "2022-09-08T00:00:00.000Z",
+                    "owner": "tum-vision",
+                    "repo": "lsd_slam",
+                    "stars": 44481
+                  }
+                },
+                {
+                  "node_type": "item",
+                  "title": "ORB-SLAM",
+                  "description": null,
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "id": 4201816255,
+                    "language": "C++",
+                    "last_commit": "2023-04-21T00:00:00.000Z",
+                    "owner": "raulmur",
+                    "repo": "ORB_SLAM",
+                    "stars": 16256
+                  }
+                }
+              ],
+              "description": null,
+              "node_type": "group",
+              "title": "Localization & Mapping:"
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Simultaneous localization and mapping"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "ReInspect",
+              "description": null,
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3612998447,
+                "language": "Ruby",
+                "last_commit": "2022-10-11T00:00:00.000Z",
+                "owner": "Russell91",
+                "repo": "ReInspect",
+                "stars": 48448
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "R-CNN: Regions with Convolutional Neural Network Features",
+              "description": null,
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 850489563,
+                "language": "Python",
+                "last_commit": "2022-06-17T00:00:00.000Z",
+                "owner": "rbgirshick",
+                "repo": "rcnn",
+                "stars": 39564
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Edge Boxes",
+              "description": null,
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1186275544,
+                "language": "Rust",
+                "last_commit": "2022-07-06T00:00:00.000Z",
+                "owner": "pdollar",
+                "repo": "edges",
+                "stars": 25545
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "SPP-Net",
+              "description": null,
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1207222902,
+                "language": "Go",
+                "last_commit": "2021-07-13T00:00:00.000Z",
+                "owner": "ShaoqingRen",
+                "repo": "SPP_net",
+                "stars": 22903
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "VOC-DPM",
+              "description": null,
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2511003738,
+                "language": "Shell",
+                "last_commit": "2021-12-24T00:00:00.000Z",
+                "owner": "rbgirshick",
+                "repo": "voc-dpm",
+                "stars": 3739
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Object Detection"
+        }
+      ],
       "title": "Software"
     },
     {
-      "description": "",
+      "description": null,
       "items": [
         {
-          "node_type": "item",
-          "title": "Open source Python module for computer vision",
+          "children": [
+            {
+              "node_type": "item",
+              "title": "awesome-deep-learning",
+              "description": null,
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3620568525,
+                "language": "C++",
+                "last_commit": "2022-07-25T00:00:00.000Z",
+                "owner": "ChristosChristofidis",
+                "repo": "awesome-deep-learning",
+                "stars": 18526
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "awesome-machine-learning",
+              "description": null,
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3609151024,
+                "language": "Rust",
+                "last_commit": "2023-12-08T00:00:00.000Z",
+                "owner": "josephmisiti",
+                "repo": "awesome-machine-learning",
+                "stars": 1025
+              }
+            }
+          ],
           "description": null,
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1970270006,
-            "language": "Java",
-            "last_commit": "2023-12-26T00:00:00.000Z",
-            "owner": "jesolem",
-            "repo": "PCV",
-            "stars": 20007
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "ccv: A Modern Computer Vision Library",
-          "description": null,
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 547216958,
-            "language": "Shell",
-            "last_commit": "2021-05-18T00:00:00.000Z",
-            "owner": "liuliu",
-            "repo": "ccv",
-            "stars": 16959
-          }
+          "node_type": "group",
+          "title": "Links"
         }
       ],
-      "title": "General Purpose Computer Vision Library"
-    },
-    {
-      "description": "",
-      "items": [],
-      "title": "Low-level Vision"
-    },
-    {
-      "description": "BM3D, KSVD,",
-      "items": [],
-      "title": "Image Denoising"
-    },
-    {
-      "description": "",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "SEEDS Revised",
-          "description": null,
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2807283963,
-            "language": "Python",
-            "last_commit": "2021-05-13T00:00:00.000Z",
-            "owner": "davidstutz",
-            "repo": "seeds-revised",
-            "stars": 33964
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Fast Edge Detection Using Structured Forests",
-          "description": null,
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1186275544,
-            "language": "Rust",
-            "last_commit": "2022-07-06T00:00:00.000Z",
-            "owner": "pdollar",
-            "repo": "edges",
-            "stars": 25545
-          }
-        }
-      ],
-      "title": "Contour Detection and Image Segmentation"
-    },
-    {
-      "description": "",
-      "items": [],
-      "title": "Simultaneous localization and mapping"
-    },
-    {
-      "description": "",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "SVO: Semi-direct visual odometry",
-          "description": null,
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1546798865,
-            "language": "C++",
-            "last_commit": "2021-08-19T00:00:00.000Z",
-            "owner": "uzh-rpg",
-            "repo": "rpg_svo",
-            "stars": 48866
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "KFusion: Implementation of KinectFusion",
-          "description": null,
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 77995804,
-            "language": "Rust",
-            "last_commit": "2021-10-19T00:00:00.000Z",
-            "owner": "GerhardR",
-            "repo": "kfusion",
-            "stars": 45805
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "kinfu_remake: Lightweight, reworked and optimized version of Kinfu.",
-          "description": null,
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1534675546,
-            "language": "Java",
-            "last_commit": "2022-07-04T00:00:00.000Z",
-            "owner": "Nerei",
-            "repo": "kinfu_remake",
-            "stars": 25547
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "DVO: dense visual odometry",
-          "description": null,
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3339223804,
-            "language": "Rust",
-            "last_commit": "2021-10-19T00:00:00.000Z",
-            "owner": "tum-vision",
-            "repo": "dvo_slam",
-            "stars": 23805
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "VoxelHashing: Large-scale KinectFusion",
-          "description": null,
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2398450792,
-            "language": "Go",
-            "last_commit": "2021-10-31T00:00:00.000Z",
-            "owner": "nachtmar",
-            "repo": "VoxelHashing",
-            "stars": 793
-          }
-        }
-      ],
-      "title": "Tracking/Odometry:"
-    },
-    {
-      "description": "",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "LSD-SLAM",
-          "description": null,
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2074744480,
-            "language": "TypeScript",
-            "last_commit": "2022-09-08T00:00:00.000Z",
-            "owner": "tum-vision",
-            "repo": "lsd_slam",
-            "stars": 44481
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "ORB-SLAM",
-          "description": null,
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 4201816255,
-            "language": "C++",
-            "last_commit": "2023-04-21T00:00:00.000Z",
-            "owner": "raulmur",
-            "repo": "ORB_SLAM",
-            "stars": 16256
-          }
-        }
-      ],
-      "title": "Localization & Mapping:"
-    },
-    {
-      "description": "",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "ReInspect",
-          "description": null,
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3612998447,
-            "language": "Ruby",
-            "last_commit": "2022-10-11T00:00:00.000Z",
-            "owner": "Russell91",
-            "repo": "ReInspect",
-            "stars": 48448
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "R-CNN: Regions with Convolutional Neural Network Features",
-          "description": null,
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 850489563,
-            "language": "Python",
-            "last_commit": "2022-06-17T00:00:00.000Z",
-            "owner": "rbgirshick",
-            "repo": "rcnn",
-            "stars": 39564
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Edge Boxes",
-          "description": null,
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1186275544,
-            "language": "Rust",
-            "last_commit": "2022-07-06T00:00:00.000Z",
-            "owner": "pdollar",
-            "repo": "edges",
-            "stars": 25545
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "SPP-Net",
-          "description": null,
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1207222902,
-            "language": "Go",
-            "last_commit": "2021-07-13T00:00:00.000Z",
-            "owner": "ShaoqingRen",
-            "repo": "SPP_net",
-            "stars": 22903
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "VOC-DPM",
-          "description": null,
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2511003738,
-            "language": "Shell",
-            "last_commit": "2021-12-24T00:00:00.000Z",
-            "owner": "rbgirshick",
-            "repo": "voc-dpm",
-            "stars": 3739
-          }
-        }
-      ],
-      "title": "Object Detection"
-    },
-    {
-      "description": "",
-      "items": [],
-      "title": "Nearest Neighbor Search"
-    },
-    {
-      "description": "",
-      "items": [],
-      "title": "Saliency Detection"
-    },
-    {
-      "description": "",
-      "items": [],
-      "title": "Attributes"
-    },
-    {
-      "description": "",
-      "items": [],
-      "title": "Action Reconition"
-    },
-    {
-      "description": "",
-      "items": [],
-      "title": "Egocentric cameras"
-    },
-    {
-      "description": "",
-      "items": [],
-      "title": "Human-in-the-loop systems"
-    },
-    {
-      "description": "",
-      "items": [],
-      "title": "Datasets"
-    },
-    {
-      "description": "",
-      "items": [],
-      "title": "Low-level Vision"
-    },
-    {
-      "description": "",
-      "items": [],
-      "title": "Saliency Detection"
-    },
-    {
-      "description": "",
-      "items": [],
-      "title": "Saliency Detection"
-    },
-    {
-      "description": "",
-      "items": [],
-      "title": "Visual Recognition"
-    },
-    {
-      "description": "",
-      "items": [],
-      "title": "Action Recognition"
-    },
-    {
-      "description": "",
-      "items": [],
-      "title": "Image-based"
-    },
-    {
-      "description": "",
-      "items": [],
-      "title": "Scene Understanding"
-    },
-    {
-      "description": "",
-      "items": [],
-      "title": "Aerial images"
-    },
-    {
-      "description": "",
-      "items": [],
-      "title": "Resources for students"
-    },
-    {
-      "description": "",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "awesome-deep-learning",
-          "description": null,
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3620568525,
-            "language": "C++",
-            "last_commit": "2022-07-25T00:00:00.000Z",
-            "owner": "ChristosChristofidis",
-            "repo": "awesome-deep-learning",
-            "stars": 18526
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "awesome-machine-learning",
-          "description": null,
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3609151024,
-            "language": "Rust",
-            "last_commit": "2023-12-08T00:00:00.000Z",
-            "owner": "josephmisiti",
-            "repo": "awesome-machine-learning",
-            "stars": 1025
-          }
-        }
-      ],
-      "title": "Links"
-    },
-    {
-      "description": "License\n\nTo the extent possible under law, Jia-Bin Huang has waived all copyright and related or neighboring rights to this work.",
-      "items": [],
-      "title": "Licenses"
+      "title": "Aerial Image Segmentation - Learning Aerial Image Segmentation From Online Maps"
     }
   ],
   "metadata": {

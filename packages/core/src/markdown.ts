@@ -71,24 +71,26 @@ export function toRepoInfo(details: RepoInfoDetails): RepoInfo {
   };
 }
 
-// A genuine GitHub node: the item's OWN paragraph links to a GitHub repo, so
-// when the link resolves it carries `repo_info`. It may still wrap nested
-// GitHub items/groups in `children`.
+// A genuine GitHub node: the item's OWN paragraph (or, for a link-heading,
+// its heading) links to a GitHub repo that resolved. Always carries
+// `repo_info` — a link that failed to resolve is not emitted (its children
+// lift to the nearest live parent instead). May still wrap nested GitHub
+// items/groups in `children`.
 export interface JsonItem {
   children: JsonNode[];
   description: null | string;
   // Discriminator present on every node so any consumer (TS or not) can switch
-  // cleanly without inferring from `repo_info` presence (a dead-link item has
-  // no repo_info).
+  // cleanly between items and groups without inferring from `repo_info`.
   node_type: 'item';
-  repo_info?: RepoInfo;
+  repo_info: RepoInfo;
   title: string;
 }
 
-// A grouping/category with NO GitHub identity of its own — an editor
-// subheading, a "see also" cluster, a wrapper around linked resources whose own
-// link is non-GitHub (e.g. SBCL linked via its website). Carries `children` but
-// NEVER `repo_info`: that belongs to genuine GitHub nodes only.
+// A grouping/category with NO GitHub identity of its own — a subheading
+// container, a "see also" cluster, a list item wrapping linked resources whose
+// own link is non-GitHub (e.g. SBCL linked via its website). Carries `children`
+// but NEVER `repo_info`: that belongs to genuine GitHub nodes only. Containers
+// whose subtree holds no items are not emitted.
 export interface JsonGroup {
   children: JsonNode[];
   description: null | string;
@@ -475,12 +477,12 @@ function processListRecursively(
     return [];
   }
 
-  // Zip each item with its JSON node and repo info so one sort orders both the
-  // rendered AST and the emitted JSON. `json` is null only for non-GitHub
-  // leaves (no own link, no nested GitHub children): kept in the AST, dropped
-  // from JSON.
+  // Zip each item with its emitted JSON nodes and repo info so one sort orders
+  // both the rendered AST and the emitted JSON. `emitted` is empty for
+  // non-GitHub leaves (no own link, no nested GitHub children): kept in the
+  // AST, dropped from JSON.
   const entries: {
-    json: JsonNode | null;
+    emitted: JsonNode[];
     node: ListItem;
     repoInfo: null | RepoInfoDetails;
   }[] = [];
@@ -522,28 +524,33 @@ function processListRecursively(
     // `repo_info`, that's the identity-borrowing bug. No-own-link, no-child
     // items are non-GitHub leaves: kept in markdown, dropped from JSON.
     // TODO(future): preserve non-GitHub leaves in a separate shape.
-    let jsonData: JsonNode | null = null;
-    if (githubUrl) {
-      const item: JsonItem = {
-        node_type: 'item',
-        title,
-        description: description || null,
-        children: childrenJson,
-      };
-      if (repoInfo) {
-        item.repo_info = toRepoInfo(repoInfo);
-      }
-      jsonData = item;
+    let emitted: JsonNode[] = [];
+    if (githubUrl && repoInfo) {
+      emitted = [
+        {
+          node_type: 'item',
+          title,
+          description: description || null,
+          children: childrenJson,
+          repo_info: toRepoInfo(repoInfo),
+        },
+      ];
+    } else if (githubUrl) {
+      // Dead target: the item itself is not emitted; its children lift to this
+      // list's level — the nearest live parent.
+      emitted = childrenJson;
     } else if (childrenJson.length > 0) {
-      jsonData = {
-        node_type: 'group',
-        title,
-        description: description || null,
-        children: childrenJson,
-      };
+      emitted = [
+        {
+          node_type: 'group',
+          title,
+          description: description || null,
+          children: childrenJson,
+        },
+      ];
     }
 
-    entries.push({ json: jsonData, node: itemNode, repoInfo });
+    entries.push({ emitted, node: itemNode, repoInfo });
   }
 
   if (sortOptions.by) {
@@ -554,9 +561,7 @@ function processListRecursively(
 
   // Reorder the AST to match the sort so rendered markdown and JSON agree.
   listNode.children = entries.map(entry => entry.node);
-  return entries
-    .map(entry => entry.json)
-    .filter((json): json is JsonNode => json !== null);
+  return entries.flatMap(entry => entry.emitted);
 }
 
 const INVALID_TITLE_PATTERNS = [
@@ -605,6 +610,23 @@ function isValidTitle(title: string): boolean {
     return false;
   }
   return !INVALID_TITLE_PATTERNS.some(pattern => pattern.test(title.trim()));
+}
+
+// Headings that mirror structure rather than delimit it. Unlike
+// INVALID_TITLE_PATTERNS (a title-detection aid — "## Tools" is a perfectly
+// good content section), a TOC heading never owns content: the worst offender
+// is a `# Table of Contents` H1 that would otherwise wrap the whole document
+// as its "section".
+const TOC_TITLE_PATTERNS = [/^contents$/i, /^table of contents$/i];
+
+// A heading that delimits content structure. Text-less headings (a bare `#`,
+// an image-only heading) are spacers in real docs; TOC headings are structure
+// mirrors. Neither participates in the section tree.
+function isStructuralHeading(node: Heading): boolean {
+  const title = getNodeText(node);
+  return (
+    !!title && !TOC_TITLE_PATTERNS.some(pattern => pattern.test(title.trim()))
+  );
 }
 
 /** Never duplicates "Awesome": if the title already contains it, append the suffix verbatim; otherwise prefix first. */
@@ -678,6 +700,17 @@ function processTree(
       ? ''
       : getNodeText(tree.children[titleHeadingIndex] as Heading);
 
+  // The heading branding owns even when it isn't a *valid* title: a generic
+  // first H1 ("# Guides", "# Contents") is still the de-facto title slot —
+  // applyBrandingToTree replaces it — so the section tree must not treat it
+  // as a section wrapping the whole document.
+  const titleSlotIndex =
+    titleHeadingIndex !== -1
+      ? titleHeadingIndex
+      : tree.children.findIndex(
+          (node): node is Heading => node.type === 'heading' && node.depth === 1,
+        );
+
   // Derive a subject from the *source* repository name when no valid H1 is
   // present. Using the source — not the enhanced/mirror repo — keeps the org
   // name out of the title.
@@ -688,50 +721,181 @@ function processTree(
     }
   }
 
-  const sections: JsonSection[] = [];
-  let currentSection: JsonSection | null = null;
+  const sectionDepth = findSectionDepth(tree, titleSlotIndex);
 
-  for (const node of tree.children) {
-    if (node.type === 'heading' && node.depth > 1) {
-      if (currentSection) {
-        sections.push(currentSection);
+  const sections: JsonSection[] = [];
+  const stack: ContainerBuilder[] = [];
+
+  for (let i = 0; i < tree.children.length; i++) {
+    const node = tree.children[i];
+
+    if (node.type === 'heading') {
+      // The title-slot H1 belongs to branding/metadata; non-structural
+      // headings (see isStructuralHeading) delimit nothing. Neither
+      // participates in the section tree.
+      if (i === titleSlotIndex || !isStructuralHeading(node)) {
+        continue;
       }
-      currentSection = {
-        description: '',
-        items: [],
-        title: getNodeText(node),
-      };
-    } else if (currentSection) {
-      if (node.type === 'paragraph') {
-        const paragraphText = getNodeText(node);
-        // Avoid adding boilerplate "back to top" links to description
-        if (!paragraphText.includes('back to top')) {
-          if (currentSection.description) {
-            currentSection.description += `\n${paragraphText}`;
-          } else {
-            currentSection.description = paragraphText;
-          }
-        }
-      } else if (node.type === 'list') {
-        const items = processListRecursively(node, repoInfoMap, sortOptions);
-        if (items.length > 0) {
-          currentSection.items = items;
-          sections.push(currentSection);
-        }
-        currentSection = null;
+      closeContainers(stack, node.depth, sections);
+      openContainer(stack, node, sectionDepth, repoInfoMap);
+    } else if (node.type === 'paragraph' || node.type === 'blockquote') {
+      const text = getNodeText(node);
+      const container = stack[stack.length - 1];
+      // Avoid adding boilerplate "back to top" links to descriptions.
+      if (container && text && !text.includes('back to top')) {
+        container.description = container.description
+          ? `${container.description}\n${text}`
+          : text;
       }
     } else if (node.type === 'list') {
-      // No active section: not part of any JSON section, but still sort its AST
-      // so the rendered markdown matches.
-      processListRecursively(node, repoInfoMap, sortOptions);
+      // Every list inside the open container contributes items — a section is
+      // not closed by its first list. With no open container (preamble), the
+      // list is not part of any JSON section, but its AST is still sorted so
+      // the rendered markdown matches.
+      const items = processListRecursively(node, repoInfoMap, sortOptions);
+      const container = stack[stack.length - 1];
+      if (container) {
+        container.children.push(...items);
+      }
     }
   }
 
-  if (currentSection) {
-    sections.push(currentSection);
-  }
+  closeContainers(stack, 0, sections);
 
   return { sections, title: documentTitle, titleHeadingIndex };
+}
+
+// One open heading while walking the document: the heading's depth, the JSON
+// nodes collected beneath it, and the prose accumulated as its description.
+// Finalized (and pruned, if empty) when a same-or-shallower heading closes it.
+interface ContainerBuilder {
+  children: JsonNode[];
+  description: string;
+  headingDepth: number;
+  kind: 'group' | 'item' | 'section';
+  repoInfo?: RepoInfoDetails;
+  title: string;
+}
+
+// The heading depth that opens top-level sections: the shallowest structural
+// heading in the document other than the title slot. H1s count — ~20% of
+// mirror READMEs use `# Section` after the title H1, and hardcoding H2 would
+// drop all their items. Non-structural headings are skipped here too (same
+// rule as the walk). Infinity when there is no such heading (no sections).
+function findSectionDepth(tree: Root, titleSlotIndex: number): number {
+  let depth = Infinity;
+  tree.children.forEach((node, i) => {
+    if (
+      node.type === 'heading' &&
+      i !== titleSlotIndex &&
+      isStructuralHeading(node) &&
+      node.depth < depth
+    ) {
+      depth = node.depth;
+    }
+  });
+  return depth;
+}
+
+// A heading whose only link is a live GitHub link represents a resource, not a
+// container — the link-heading pattern (`#### [Repo](github…)`). Badge images
+// wrapped in links or multiple links disqualify (more than one link means the
+// heading is not "the" resource), as does a dead target.
+function soleLiveHeadingLink(
+  heading: Heading,
+  repoInfoMap: Map<string, RepoInfoDetails>,
+): null | RepoInfoDetails {
+  const links = heading.children.filter(
+    (child): child is Link => child.type === 'link',
+  );
+  if (links.length !== 1) {
+    return null;
+  }
+  return repoInfoMap.get(links[0].url) ?? null;
+}
+
+function openContainer(
+  stack: ContainerBuilder[],
+  heading: Heading,
+  sectionDepth: number,
+  repoInfoMap: Map<string, RepoInfoDetails>,
+): void {
+  const title = getNodeText(heading);
+  // Sections sit at the section level — and any heading met with an empty
+  // stack is promoted: a deeper heading before the first section (orphan
+  // subheading) still owns its subtree, and a link-heading at section level
+  // becomes a section rather than a top-level item, which the contract has no
+  // place for.
+  if (stack.length === 0 || heading.depth === sectionDepth) {
+    stack.push({
+      children: [],
+      description: '',
+      headingDepth: heading.depth,
+      kind: 'section',
+      title,
+    });
+    return;
+  }
+  const repoInfo = soleLiveHeadingLink(heading, repoInfoMap);
+  stack.push({
+    children: [],
+    description: '',
+    headingDepth: heading.depth,
+    kind: repoInfo ? 'item' : 'group',
+    repoInfo: repoInfo ?? undefined,
+    title,
+  });
+}
+
+// Finalize every container a heading of `depth` closes (same-or-shallower),
+// bottom-up so each finalized node lands in its parent. Pruning falls out of
+// the finalize rule: a section/group whose children array is empty (no items
+// anywhere beneath — lists only return item-bearing nodes, and empty children
+// were never appended) is dropped; an item always survives, it IS the content.
+// The stack bottom is always a section (openContainer's promotion guarantees
+// it), so a finalized group/item always has a parent to land in.
+function closeContainers(
+  stack: ContainerBuilder[],
+  depth: number,
+  sections: JsonSection[],
+): void {
+  while (
+    stack.length > 0 &&
+    stack[stack.length - 1].headingDepth >= depth
+  ) {
+    const container = stack.pop() as ContainerBuilder;
+    if (container.children.length === 0 && container.kind !== 'item') {
+      continue;
+    }
+    const description = container.description || null;
+    if (container.kind === 'section') {
+      sections.push({
+        description,
+        items: container.children,
+        title: container.title,
+      });
+      continue;
+    }
+    const parent = stack[stack.length - 1];
+    // Non-section containers always have an open parent (stack invariant), and
+    // kind === 'item' exactly when repoInfo is set.
+    if (container.repoInfo) {
+      parent.children.push({
+        children: container.children,
+        description,
+        node_type: 'item',
+        repo_info: toRepoInfo(container.repoInfo),
+        title: container.title,
+      });
+    } else {
+      parent.children.push({
+        children: container.children,
+        description,
+        node_type: 'group',
+        title: container.title,
+      });
+    }
+  }
 }
 
 function serializeAst(tree: Root, originalContent: string): string {

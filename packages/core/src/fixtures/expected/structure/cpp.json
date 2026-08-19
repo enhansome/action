@@ -472,7 +472,7 @@
       "title": "Frameworks"
     },
     {
-      "description": "",
+      "description": null,
       "items": [
         {
           "node_type": "item",
@@ -703,7 +703,7 @@
       "title": "Artificial Intelligence"
     },
     {
-      "description": "",
+      "description": null,
       "items": [
         {
           "node_type": "item",
@@ -1171,7 +1171,7 @@
       "title": "Biology"
     },
     {
-      "description": "",
+      "description": null,
       "items": [
         {
           "node_type": "item",
@@ -2947,7 +2947,7 @@
       "title": "Configuration"
     },
     {
-      "description": "",
+      "description": null,
       "items": [
         {
           "node_type": "item",
@@ -5053,7 +5053,7 @@
       "title": "Debug"
     },
     {
-      "description": "",
+      "description": null,
       "items": [
         {
           "node_type": "item",
@@ -5281,7 +5281,7 @@
       "title": "Font"
     },
     {
-      "description": "",
+      "description": null,
       "items": [
         {
           "node_type": "item",
@@ -5677,7 +5677,7 @@
       "title": "Game Engine"
     },
     {
-      "description": "",
+      "description": null,
       "items": [
         {
           "node_type": "item",
@@ -6034,7 +6034,7 @@
       "title": "GUI"
     },
     {
-      "description": "",
+      "description": null,
       "items": [
         {
           "node_type": "item",
@@ -6430,7 +6430,7 @@
       "title": "Graphics"
     },
     {
-      "description": "",
+      "description": null,
       "items": [
         {
           "node_type": "item",
@@ -6886,7 +6886,7 @@
       "title": "Image Processing"
     },
     {
-      "description": "",
+      "description": null,
       "items": [
         {
           "node_type": "item",
@@ -6952,7 +6952,7 @@
       "title": "Internationalization"
     },
     {
-      "description": "",
+      "description": null,
       "items": [
         {
           "node_type": "item",
@@ -7153,7 +7153,7 @@
       "title": "Inter-process communication"
     },
     {
-      "description": "",
+      "description": null,
       "items": [
         {
           "node_type": "item",
@@ -7774,7 +7774,7 @@
       "title": "JSON"
     },
     {
-      "description": "",
+      "description": null,
       "items": [
         {
           "node_type": "item",
@@ -8035,7 +8035,7 @@
       "title": "Logging"
     },
     {
-      "description": "",
+      "description": null,
       "items": [
         {
           "node_type": "item",
@@ -8431,7 +8431,7 @@
       "title": "Machine Learning"
     },
     {
-      "description": "",
+      "description": null,
       "items": [
         {
           "node_type": "item",
@@ -9052,7 +9052,7 @@
       "title": "Math"
     },
     {
-      "description": "",
+      "description": null,
       "items": [
         {
           "node_type": "item",
@@ -9283,7 +9283,7 @@
       "title": "Memory Allocation"
     },
     {
-      "description": "",
+      "description": null,
       "items": [
         {
           "node_type": "item",
@@ -9394,7 +9394,7 @@
       "title": "Multimedia"
     },
     {
-      "description": "",
+      "description": null,
       "items": [
         {
           "node_type": "item",
@@ -10708,7 +10708,7 @@
       "title": "Physics"
     },
     {
-      "description": "",
+      "description": null,
       "items": [
         {
           "node_type": "item",
@@ -10984,7 +10984,7 @@
       "title": "Reflection"
     },
     {
-      "description": "",
+      "description": null,
       "items": [
         {
           "node_type": "item",
@@ -11155,7 +11155,7 @@
       "title": "Regular Expression"
     },
     {
-      "description": "",
+      "description": null,
       "items": [
         {
           "node_type": "item",
@@ -11221,7 +11221,7 @@
       "title": "Robotics"
     },
     {
-      "description": "",
+      "description": null,
       "items": [
         {
           "node_type": "item",
@@ -11332,7 +11332,7 @@
       "title": "Scientific Computing"
     },
     {
-      "description": "",
+      "description": null,
       "items": [
         {
           "node_type": "item",
@@ -11743,7 +11743,7 @@
       "title": "Scripting"
     },
     {
-      "description": "",
+      "description": null,
       "items": [
         {
           "node_type": "item",
@@ -12094,7 +12094,7 @@
       "title": "Serialization"
     },
     {
-      "description": "",
+      "description": null,
       "items": [
         {
           "node_type": "item",
@@ -12175,7 +12175,73 @@
       "title": "Serial Port"
     },
     {
-      "description": "",
+      "description": null,
+      "items": [
+        {
+          "node_type": "item",
+          "title": "Timsort",
+          "description": "A templated stable sorting function which outperforms quicksort-based algorithms including std::sort, for reversed or semi-sorted data. [MIT]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 1319099773,
+            "language": "Python",
+            "last_commit": "2021-11-19T00:00:00.000Z",
+            "owner": "gfx",
+            "repo": "cpp-TimSort",
+            "stars": 49774
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "pdqsort",
+          "description": "Pattern-defeating quicksort. [zlib]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 2061197484,
+            "language": "Rust",
+            "last_commit": "2022-09-04T00:00:00.000Z",
+            "owner": "orlp",
+            "repo": "pdqsort",
+            "stars": 47485
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Indiesort",
+          "description": "A sort wrapper which enables the use of std::sort (& other random-access sort functions) with non-random-access containers, and also improves sort performance for large/non-trivially-copyable types in random-access containers and arrays. [zLib] website",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 3203296869,
+            "language": null,
+            "last_commit": "2021-08-15T00:00:00.000Z",
+            "owner": "mattreecebentley",
+            "repo": "plf_indiesort",
+            "stars": 46870
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "x86-simd-sort",
+          "description": "C++ template library for high performance SIMD based sorting algorithms. [BSD-3-Clause]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 2166374548,
+            "language": "Shell",
+            "last_commit": "2022-07-02T00:00:00.000Z",
+            "owner": "numpy",
+            "repo": "x86-simd-sort",
+            "stars": 24549
+          }
+        }
+      ],
+      "title": "Sorting"
+    },
+    {
+      "description": null,
       "items": [
         {
           "node_type": "item",
@@ -12256,7 +12322,7 @@
       "title": "Video"
     },
     {
-      "description": "",
+      "description": null,
       "items": [
         {
           "node_type": "item",
@@ -12307,7 +12373,7 @@
       "title": "Virtual Machines"
     },
     {
-      "description": "",
+      "description": null,
       "items": [
         {
           "node_type": "item",
@@ -12619,7 +12685,7 @@
       "title": "XML"
     },
     {
-      "description": "",
+      "description": null,
       "items": [
         {
           "node_type": "item",
@@ -14086,1209 +14152,1457 @@
       "title": "Miscellaneous"
     },
     {
-      "description": "List of C or C++ compilers",
+      "description": "Software for creating a development environment.",
       "items": [
         {
-          "node_type": "item",
-          "title": "c",
-          "description": "Compile and execute C \"scripts\" in one go! [MIT]",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 944437716,
-            "language": "Java",
-            "last_commit": "2022-01-15T00:00:00.000Z",
-            "owner": "ryanmjacobs",
-            "repo": "c",
-            "stars": 37717
-          }
+          "children": [
+            {
+              "node_type": "item",
+              "title": "c",
+              "description": "Compile and execute C \"scripts\" in one go! [MIT]",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 944437716,
+                "language": "Java",
+                "last_commit": "2022-01-15T00:00:00.000Z",
+                "owner": "ryanmjacobs",
+                "repo": "c",
+                "stars": 37717
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "8cc",
+              "description": "A Small C Compiler.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 447124856,
+                "language": "Java",
+                "last_commit": "2021-08-28T00:00:00.000Z",
+                "owner": "rui314",
+                "repo": "8cc",
+                "stars": 24857
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "PCC",
+              "description": "A very old C compiler. Supports C99.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2846822083,
+                "language": "Python",
+                "last_commit": "2023-10-10T00:00:00.000Z",
+                "owner": "IanHarvey",
+                "repo": "pcc",
+                "stars": 22084
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "movfuscator",
+              "description": "The single instruction C compiler, compiling programs into only mov instructions. [MIT]",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1115412370,
+                "language": "TypeScript",
+                "last_commit": "2022-12-27T00:00:00.000Z",
+                "owner": "xoreaxeaxeax",
+                "repo": "movfuscator",
+                "stars": 12371
+              }
+            }
+          ],
+          "description": "List of C or C++ compilers",
+          "node_type": "group",
+          "title": "Compiler"
         },
         {
-          "node_type": "item",
-          "title": "8cc",
-          "description": "A Small C Compiler.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 447124856,
-            "language": "Java",
-            "last_commit": "2021-08-28T00:00:00.000Z",
-            "owner": "rui314",
-            "repo": "8cc",
-            "stars": 24857
-          }
+          "children": [
+            {
+              "node_type": "item",
+              "title": "rtags",
+              "description": "A c/c++ client/server indexer with for integration with emacs based on clang.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2345543922,
+                "language": "Go",
+                "last_commit": "2021-06-23T00:00:00.000Z",
+                "owner": "Andersbakken",
+                "repo": "rtags",
+                "stars": 43923
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Microsoft Visual Studio Code",
+              "description": "zap: - An open-source IDE from Microsoft. [MIT] website",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3596389890,
+                "language": "TypeScript",
+                "last_commit": "2021-07-25T00:00:00.000Z",
+                "owner": "microsoft",
+                "repo": "vscode",
+                "stars": 39891
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "color_coded",
+              "description": "A vim plugin for libclang-based highlighting. [MIT]",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2441273973,
+                "language": "Python",
+                "last_commit": "2021-05-03T00:00:00.000Z",
+                "owner": "jeaye",
+                "repo": "color_coded",
+                "stars": 23974
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Qt Creator",
+              "description": "zap: - A cross-platform C++, JavaScript and QML IDE which is part of the SDK for Qt. [GPL3 with exceptions] website",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3421464558,
+                "language": "Shell",
+                "last_commit": "2022-06-22T00:00:00.000Z",
+                "owner": "qt-creator",
+                "repo": "qt-creator",
+                "stars": 14559
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "cquery",
+              "description": "A C++ code completion engine for vscode, emacs, vim, etc.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 536214104,
+                "language": "Rust",
+                "last_commit": "2023-09-19T00:00:00.000Z",
+                "owner": "cquery-project",
+                "repo": "cquery",
+                "stars": 14105
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Embarcadero Dev-CPP",
+              "description": "A fork of Dev-C++ that comes preinstalled with new themes and modern compilers. [GPLv2] website",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2809604716,
+                "language": "Java",
+                "last_commit": "2022-01-15T00:00:00.000Z",
+                "owner": "Embarcadero",
+                "repo": "Dev-Cpp",
+                "stars": 4717
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "YouCompleteMe",
+              "description": "YouCompleteMe is a fast, as-you-type, fuzzy-search code completion engine for Vim.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1806102161,
+                "language": "JavaScript",
+                "last_commit": "2023-07-24T00:00:00.000Z",
+                "owner": "ycm-core",
+                "repo": "YouCompleteMe",
+                "stars": 2162
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Irony-mode",
+              "description": "A C/C++ minor mode for Emacs powered by libclang.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 915700177,
+                "language": "Ruby",
+                "last_commit": "2023-07-08T00:00:00.000Z",
+                "owner": "Sarcasm",
+                "repo": "irony-mode",
+                "stars": 178
+              }
+            }
+          ],
+          "description": "List of C or C++ nominal IDEs.",
+          "node_type": "group",
+          "title": "Integrated Development Environment"
         },
         {
-          "node_type": "item",
-          "title": "PCC",
-          "description": "A very old C compiler. Supports C99.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2846822083,
-            "language": "Python",
-            "last_commit": "2023-10-10T00:00:00.000Z",
-            "owner": "IanHarvey",
-            "repo": "pcc",
-            "stars": 22084
-          }
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Bear",
+              "description": "A tool to generate compilation database for clang tooling. [GPLv3]",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 374999920,
+                "language": "TypeScript",
+                "last_commit": "2021-06-25T00:00:00.000Z",
+                "owner": "rizsotto",
+                "repo": "Bear",
+                "stars": 49921
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "cmake-examples",
+              "description": "A collection of useful CMake examples for various scenarios. [MIT]",
+              "children": [],
+              "repo_info": {
+                "archived": true,
+                "id": 2573148526,
+                "language": "Java",
+                "last_commit": "2022-07-24T00:00:00.000Z",
+                "owner": "pr0g",
+                "repo": "cmake-examples",
+                "stars": 48527
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "tundra",
+              "description": "High-performance code build system designed to give the best possible incremental build times even for very large software projects.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1116143835,
+                "language": "C++",
+                "last_commit": "2021-09-18T00:00:00.000Z",
+                "owner": "deplinenoise",
+                "repo": "tundra",
+                "stars": 43836
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Sccache",
+              "description": "A fast compiler cache for C/C++, with cross-platform support and cloud backed storage options.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 790486908,
+                "language": "Shell",
+                "last_commit": "2021-07-07T00:00:00.000Z",
+                "owner": "mozilla",
+                "repo": "sccache",
+                "stars": 36909
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "clib",
+              "description": "Package manager for the C programming language. [MIT]",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 329986423,
+                "language": "Python",
+                "last_commit": "2022-11-04T00:00:00.000Z",
+                "owner": "clibs",
+                "repo": "clib",
+                "stars": 36424
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Buck",
+              "description": "A fast build system that encourages the creation of small, reusable modules over a variety of platforms and languages including C++ developed and used at Facebook. Written in Java. [Apache]",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 358235973,
+                "language": "Python",
+                "last_commit": "2021-05-03T00:00:00.000Z",
+                "owner": "facebook",
+                "repo": "buck",
+                "stars": 35974
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "CPM",
+              "description": "A C++ Package Manager based on CMake and Git.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 997483100,
+                "language": "TypeScript",
+                "last_commit": "2023-09-23T00:00:00.000Z",
+                "owner": "iauns",
+                "repo": "cpm",
+                "stars": 33101
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Cget",
+              "description": "Cmake package retrieval. [Boost] website",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1760731404,
+                "language": "Rust",
+                "last_commit": "2022-11-23T00:00:00.000Z",
+                "owner": "pfultz2",
+                "repo": "cget",
+                "stars": 31405
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Sconsolidator",
+              "description": "Scons build system integration for Eclipse CDT.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3971525226,
+                "language": "Java",
+                "last_commit": "2023-05-20T00:00:00.000Z",
+                "owner": "IFS-HSR",
+                "repo": "SConsolidator",
+                "stars": 25227
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Vcpkg",
+              "description": "C++ library manager for Windows, Linux, and MacOS. [MIT]",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 796661339,
+                "language": null,
+                "last_commit": "2023-01-27T00:00:00.000Z",
+                "owner": "microsoft",
+                "repo": "vcpkg",
+                "stars": 11340
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "awesome-cmake",
+              "description": "A curated list of awesome CMake scripts, modules, and resources.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3312710465,
+                "language": "C++",
+                "last_commit": "2022-09-23T00:00:00.000Z",
+                "owner": "onqtam",
+                "repo": "awesome-cmake",
+                "stars": 10466
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "boost-cmake",
+              "description": "CMake modules for Boost libraries. [BSD-3-Clause]",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 352958222,
+                "language": "Go",
+                "last_commit": "2023-05-24T00:00:00.000Z",
+                "owner": "Orphis",
+                "repo": "boost-cmake",
+                "stars": 8223
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Build Systems"
         },
         {
-          "node_type": "item",
-          "title": "movfuscator",
-          "description": "The single instruction C compiler, compiling programs into only mov instructions. [MIT]",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1115412370,
-            "language": "TypeScript",
-            "last_commit": "2022-12-27T00:00:00.000Z",
-            "owner": "xoreaxeaxeax",
-            "repo": "movfuscator",
-            "stars": 12371
-          }
+          "children": [
+            {
+              "node_type": "item",
+              "title": "include-what-you-use",
+              "description": "A tool for use with clang to analyze includes in C and C++ source files. website",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 4220996128,
+                "language": "Shell",
+                "last_commit": "2023-08-26T00:00:00.000Z",
+                "owner": "include-what-you-use",
+                "repo": "include-what-you-use",
+                "stars": 46129
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Infer",
+              "description": "A static analyzer for Java, C and Objective-C. [BSD]",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1130168626,
+                "language": "Java",
+                "last_commit": "2022-04-15T00:00:00.000Z",
+                "owner": "facebook",
+                "repo": "infer",
+                "stars": 18627
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "OCLint",
+              "description": "A static source code analysis tool to improve quality and reduce defects for C, C++ and Objective-C. - source",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 4205416120,
+                "language": "TypeScript",
+                "last_commit": "2023-09-03T00:00:00.000Z",
+                "owner": "oclint",
+                "repo": "oclint",
+                "stars": 16121
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Cppcheck",
+              "description": "A tool for static C/C++ code analysis. - source",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3019412146,
+                "language": "Java",
+                "last_commit": "2023-08-08T00:00:00.000Z",
+                "owner": "danmar",
+                "repo": "cppcheck",
+                "stars": 12147
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "IKOS",
+              "description": "Static analyzer for C/C++ based on the theory of Abstract Interpretation. [NOSA 1.3]",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1556612053,
+                "language": "Python",
+                "last_commit": "2023-11-09T00:00:00.000Z",
+                "owner": "NASA-SW-VnV",
+                "repo": "ikos",
+                "stars": 12054
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "OptView2",
+              "description": "Inspect missed Clang optimizations.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3115857878,
+                "language": "Shell",
+                "last_commit": "2021-08-06T00:00:00.000Z",
+                "owner": "OfekShilon",
+                "repo": "optview2",
+                "stars": 7879
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "CodeCompass",
+              "description": "An open-source code comprehension tool for large C/C++ projects. [GPL-3.0]",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1666157173,
+                "language": "Python",
+                "last_commit": "2023-07-12T00:00:00.000Z",
+                "owner": "Ericsson",
+                "repo": "CodeCompass",
+                "stars": 7174
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "cpp-dependencies",
+              "description": "Tool to check C++ #include dependencies (dependency graphs created in .dot format). [Apache]",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 61854376,
+                "language": "Java",
+                "last_commit": "2022-12-21T00:00:00.000Z",
+                "owner": "tomtom-international",
+                "repo": "cpp-dependencies",
+                "stars": 4377
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "CodeChecker",
+              "description": "An analyzer tooling, defect database and viewer extension for the Clang Static Analyzer and Clang-Tidy. [Apache-2.0]",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1012854274,
+                "language": "Rust",
+                "last_commit": "2023-04-02T00:00:00.000Z",
+                "owner": "Ericsson",
+                "repo": "codechecker",
+                "stars": 4275
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "cpplint",
+              "description": "A C++ style checker following Google's C++ style guide.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1535600748,
+                "language": "Shell",
+                "last_commit": "2021-12-14T00:00:00.000Z",
+                "owner": "cpplint",
+                "repo": "cpplint",
+                "stars": 749
+              }
+            }
+          ],
+          "description": "List of tools for improving quality and reducing defects by code analysis",
+          "node_type": "group",
+          "title": "Static Code Analysis"
         }
       ],
-      "title": "Compiler"
+      "title": "Software"
     },
     {
-      "description": "List of C or C++ nominal IDEs.",
+      "description": "Various resources, such as books, websites, and articles for improving your C++ development skills and knowledge.",
       "items": [
         {
-          "node_type": "item",
-          "title": "rtags",
-          "description": "A c/c++ client/server indexer with for integration with emacs based on clang.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2345543922,
-            "language": "Go",
-            "last_commit": "2021-06-23T00:00:00.000Z",
-            "owner": "Andersbakken",
-            "repo": "rtags",
-            "stars": 43923
-          }
+          "children": [
+            {
+              "node_type": "item",
+              "title": "C++Now 2013 Presentations",
+              "description": "Presentation materials presented at C++Now 2013.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2677948759,
+                "language": null,
+                "last_commit": "2021-12-03T00:00:00.000Z",
+                "owner": "boostcon",
+                "repo": "cppnow_presentations_2013",
+                "stars": 48760
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "CppCon 2017 Presentation Materials",
+              "description": "CppCon 2017 Presentation Materials.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2195296806,
+                "language": "Java",
+                "last_commit": "2021-10-17T00:00:00.000Z",
+                "owner": "CppCon",
+                "repo": "CppCon2017",
+                "stars": 46807
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "CppCon 2022 Presentation Materials",
+              "description": "CppCon 2022 Presentation Materials.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 366095050,
+                "language": "TypeScript",
+                "last_commit": "2023-11-12T00:00:00.000Z",
+                "owner": "CppCon",
+                "repo": "CppCon2022",
+                "stars": 45051
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "C++Now 2015 Presentations",
+              "description": "Presentation materials presented at C++Now 2015.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2644393521,
+                "language": "JavaScript",
+                "last_commit": "2022-07-29T00:00:00.000Z",
+                "owner": "boostcon",
+                "repo": "cppnow_presentations_2015",
+                "stars": 43522
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "C++ Compilation",
+              "description": "A short description of the C++ compilation process.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2787892327,
+                "language": "Ruby",
+                "last_commit": "2023-02-08T00:00:00.000Z",
+                "owner": "green7ea",
+                "repo": "cpp-compilation",
+                "stars": 42328
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "CppCon 2015 Presentation Materials",
+              "description": "CppCon 2015 Presentation Materials.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2161741568,
+                "language": "Shell",
+                "last_commit": "2022-06-12T00:00:00.000Z",
+                "owner": "CppCon",
+                "repo": "CppCon2015",
+                "stars": 41569
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "CppCon 2020 Presentation Materials",
+              "description": "CppCon 2020 Presentation Materials.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 332539812,
+                "language": "Go",
+                "last_commit": "2021-10-11T00:00:00.000Z",
+                "owner": "CppCon",
+                "repo": "CppCon2020",
+                "stars": 39813
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "C++Now 2017 Presentations",
+              "description": "Presentation materials presented at C++Now 2017.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2610838283,
+                "language": "Python",
+                "last_commit": "2023-03-24T00:00:00.000Z",
+                "owner": "boostcon",
+                "repo": "cppnow_presentations_2017",
+                "stars": 38284
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "C++Now 2021 Presentations",
+              "description": "Presentation materials presented at C++Now 2021.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2577135950,
+                "language": "TypeScript",
+                "last_commit": "2021-05-26T00:00:00.000Z",
+                "owner": "boostcon",
+                "repo": "cppnow_presentations_2021",
+                "stars": 35951
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "cpp17_in_TTs",
+              "description": "Descriptions of C++17 features, presented mostly in \"Tony Tables\".",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3539584418,
+                "language": "Shell",
+                "last_commit": "2022-11-09T00:00:00.000Z",
+                "owner": "tvaneerd",
+                "repo": "cpp17_in_TTs",
+                "stars": 34419
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "modern-cpp-features",
+              "description": "A cheatsheet of modern C++ language and library features.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3354883816,
+                "language": "Java",
+                "last_commit": "2021-10-07T00:00:00.000Z",
+                "owner": "AnthonyCalandra",
+                "repo": "modern-cpp-features",
+                "stars": 33817
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "C++Now 2019 Presentations",
+              "description": "Presentation materials presented at C++Now 2019.",
+              "children": [],
+              "repo_info": {
+                "archived": true,
+                "id": 2577283045,
+                "language": "C++",
+                "last_commit": "2023-11-17T00:00:00.000Z",
+                "owner": "boostcon",
+                "repo": "cppnow_presentations_2019",
+                "stars": 33046
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "C++Now 2023 Presentations",
+              "description": "Presentation materials presented at C++Now 2023.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2543580712,
+                "language": "Go",
+                "last_commit": "2022-01-19T00:00:00.000Z",
+                "owner": "boostcon",
+                "repo": "cppnow_presentations_2023",
+                "stars": 30713
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "CppCon 2016 Presentation Materials",
+              "description": "CppCon 2016 Presentation Materials.",
+              "children": [],
+              "repo_info": {
+                "archived": true,
+                "id": 2212074425,
+                "language": "C++",
+                "last_commit": "2022-11-02T00:00:00.000Z",
+                "owner": "CppCon",
+                "repo": "CppCon2016",
+                "stars": 24426
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "CppCon 2019 Presentation Materials",
+              "description": "CppCon 2019 Presentation Materials.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2363072996,
+                "language": "Java",
+                "last_commit": "2021-04-10T00:00:00.000Z",
+                "owner": "CppCon",
+                "repo": "CppCon2019",
+                "stars": 22997
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "CppCon 2023 Presentation Materials",
+              "description": "CppCon 2023 Presentation Materials.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 382872669,
+                "language": null,
+                "last_commit": "2022-03-03T00:00:00.000Z",
+                "owner": "CppCon",
+                "repo": "CppCon2023",
+                "stars": 22670
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "C++Now 2012 Presentations",
+              "description": "Presentation materials presented at C++Now 2012.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2661171140,
+                "language": "TypeScript",
+                "last_commit": "2023-08-14T00:00:00.000Z",
+                "owner": "boostcon",
+                "repo": "cppnow_presentations_2012",
+                "stars": 21141
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "CppCon 2014 Presentation Materials",
+              "description": "CppCon 2014 Presentation Materials.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2178519187,
+                "language": "Ruby",
+                "last_commit": "2023-06-28T00:00:00.000Z",
+                "owner": "CppCon",
+                "repo": "CppCon2014",
+                "stars": 19188
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "CppCon 2021 Presentation Materials",
+              "description": "CppCon 2021 Presentation Materials.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 349317431,
+                "language": "JavaScript",
+                "last_commit": "2022-10-27T00:00:00.000Z",
+                "owner": "CppCon",
+                "repo": "CppCon2021",
+                "stars": 17432
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "C++Now 2014 Presentations",
+              "description": "Presentation materials presented at C++Now 2014.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2627615902,
+                "language": "Go",
+                "last_commit": "2021-07-13T00:00:00.000Z",
+                "owner": "boostcon",
+                "repo": "cppnow_presentations_2014",
+                "stars": 15903
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "C++Now 2016 Presentations",
+              "description": "Presentation materials presented at C++Now 2016.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2594060664,
+                "language": "Rust",
+                "last_commit": "2022-03-08T00:00:00.000Z",
+                "owner": "boostcon",
+                "repo": "cppnow_presentations_2016",
+                "stars": 10665
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "C++Now 2022 Presentations",
+              "description": "Presentation materials presented at C++Now 2022.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2560358331,
+                "language": "JavaScript",
+                "last_commit": "2023-02-04T00:00:00.000Z",
+                "owner": "boostcon",
+                "repo": "cppnow_presentations_2022",
+                "stars": 8332
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "C++Now 2018 Presentations",
+              "description": "Presentation materials presented at C++Now 2018.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2560505426,
+                "language": "Java",
+                "last_commit": "2022-11-01T00:00:00.000Z",
+                "owner": "boostcon",
+                "repo": "cppnow_presentations_2018",
+                "stars": 5427
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "CppCon 2018 Presentation Materials",
+              "description": "CppCon 2018 Presentation Materials.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2379850615,
+                "language": "C++",
+                "last_commit": "2022-04-26T00:00:00.000Z",
+                "owner": "CppCon",
+                "repo": "CppCon2018",
+                "stars": 616
+              }
+            }
+          ],
+          "description": "Fantastic C++ related articles.",
+          "node_type": "group",
+          "title": "Articles"
         },
         {
-          "node_type": "item",
-          "title": "Microsoft Visual Studio Code",
-          "description": "zap: - An open-source IDE from Microsoft. [MIT] website",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3596389890,
-            "language": "TypeScript",
-            "last_commit": "2021-07-25T00:00:00.000Z",
-            "owner": "microsoft",
-            "repo": "vscode",
-            "stars": 39891
-          }
+          "children": [
+            {
+              "node_type": "item",
+              "title": "cppbestpractices",
+              "description": "Collaborative Collection of C++ Best Practices.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 240198834,
+                "language": "Rust",
+                "last_commit": "2021-09-19T00:00:00.000Z",
+                "owner": "lefticus",
+                "repo": "cppbestpractices",
+                "stars": 48835
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "List of Free C or C++ Books",
+              "description": null,
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 303394177,
+                "language": "Ruby",
+                "last_commit": "2023-07-08T00:00:00.000Z",
+                "owner": "fffaraz",
+                "repo": "awesome-cpp",
+                "stars": 44178
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Free C Books",
+              "description": "vhf/free-programming-books/C.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2472276616,
+                "language": "Java",
+                "last_commit": "2022-04-25T00:00:00.000Z",
+                "owner": "EbookFoundation",
+                "repo": "free-programming-books",
+                "stars": 26617
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Free C++ Books",
+              "description": "vhf/free-programming-books/C++.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2472276616,
+                "language": "Java",
+                "last_commit": "2022-04-25T00:00:00.000Z",
+                "owner": "EbookFoundation",
+                "repo": "free-programming-books",
+                "stars": 26617
+              }
+            }
+          ],
+          "description": "Fantastic C or C++ related books.",
+          "node_type": "group",
+          "title": "Books"
         },
         {
-          "node_type": "item",
-          "title": "color_coded",
-          "description": "A vim plugin for libclang-based highlighting. [MIT]",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2441273973,
-            "language": "Python",
-            "last_commit": "2021-05-03T00:00:00.000Z",
-            "owner": "jeaye",
-            "repo": "color_coded",
-            "stars": 23974
-          }
+          "children": [
+            {
+              "node_type": "item",
+              "title": "google-styleguide",
+              "description": "Style guides for Google-originated open-source projects.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 118247724,
+                "language": "Rust",
+                "last_commit": "2022-01-07T00:00:00.000Z",
+                "owner": "google",
+                "repo": "styleguide",
+                "stars": 47725
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "C++ Core Guidelines",
+              "description": "\"Official\" set of C++ guidelines, reviewed by the author of C++.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2097423009,
+                "language": null,
+                "last_commit": "2023-12-23T00:00:00.000Z",
+                "owner": "isocpp",
+                "repo": "CppCoreGuidelines",
+                "stars": 23010
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Coding Style"
         },
         {
-          "node_type": "item",
-          "title": "Qt Creator",
-          "description": "zap: - A cross-platform C++, JavaScript and QML IDE which is part of the SDK for Qt. [GPL3 with exceptions] website",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3421464558,
-            "language": "Shell",
-            "last_commit": "2022-06-22T00:00:00.000Z",
-            "owner": "qt-creator",
-            "repo": "qt-creator",
-            "stars": 14559
-          }
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Presentation on Hana for C++Now 2015",
+              "description": null,
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1198995116,
+                "language": "Java",
+                "last_commit": "2023-09-07T00:00:00.000Z",
+                "owner": "ldionne",
+                "repo": "hana-cppnow-2015",
+                "stars": 45117
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Quick game development with C++11/C++14",
+              "description": "CppCon 2014 talk by Vittorio Romeo.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1981070223,
+                "language": "Python",
+                "last_commit": "2023-05-23T00:00:00.000Z",
+                "owner": "SuperV1234",
+                "repo": "cppcon2014",
+                "stars": 20224
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "C++ Conferences",
+              "description": "Catalog of C++ conferences",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3337610853,
+                "language": "Python",
+                "last_commit": "2021-08-31T00:00:00.000Z",
+                "owner": "eoan-ermine",
+                "repo": "cpp-conferences",
+                "stars": 10854
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Talks"
         },
         {
-          "node_type": "item",
-          "title": "cquery",
-          "description": "A C++ code completion engine for vscode, emacs, vim, etc.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 536214104,
-            "language": "Rust",
-            "last_commit": "2023-09-19T00:00:00.000Z",
-            "owner": "cquery-project",
-            "repo": "cquery",
-            "stars": 14105
-          }
+          "children": [
+            {
+              "node_type": "item",
+              "title": "CppPatterns",
+              "description": "A repository of modern C++ patterns and idioms. website",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 442637871,
+                "language": "JavaScript",
+                "last_commit": "2021-08-13T00:00:00.000Z",
+                "owner": "sftrabbit",
+                "repo": "CppPatterns-Patterns",
+                "stars": 37872
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Function Pointers",
+              "description": "A guide to understanding function pointers in C/C++.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2410817958,
+                "language": "Shell",
+                "last_commit": "2021-05-18T00:00:00.000Z",
+                "owner": "jerryryle",
+                "repo": "fuckingfunctionpointers.com",
+                "stars": 17959
+              }
+            }
+          ],
+          "description": "Useful C or C++ related websites.",
+          "node_type": "group",
+          "title": "Websites"
         },
         {
-          "node_type": "item",
-          "title": "Embarcadero Dev-CPP",
-          "description": "A fork of Dev-C++ that comes preinstalled with new themes and modern compilers. [GPLv2] website",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2809604716,
-            "language": "Java",
-            "last_commit": "2022-01-15T00:00:00.000Z",
-            "owner": "Embarcadero",
-            "repo": "Dev-Cpp",
-            "stars": 4717
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "YouCompleteMe",
-          "description": "YouCompleteMe is a fast, as-you-type, fuzzy-search code completion engine for Vim.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1806102161,
-            "language": "JavaScript",
-            "last_commit": "2023-07-24T00:00:00.000Z",
-            "owner": "ycm-core",
-            "repo": "YouCompleteMe",
-            "stars": 2162
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Irony-mode",
-          "description": "A C/C++ minor mode for Emacs powered by libclang.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 915700177,
-            "language": "Ruby",
-            "last_commit": "2023-07-08T00:00:00.000Z",
-            "owner": "Sarcasm",
-            "repo": "irony-mode",
-            "stars": 178
-          }
+          "children": [
+            {
+              "node_type": "item",
+              "title": "cpp_functional_programming",
+              "description": "A list of materials and links for C++ functional programming.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1997746516,
+                "language": "Java",
+                "last_commit": "2022-08-03T00:00:00.000Z",
+                "owner": "graninas",
+                "repo": "cpp_functional_programming",
+                "stars": 46517
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "awesome-ld-preload",
+              "description": "A curated list of resources related to LD_PRELOAD.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2277689407,
+                "language": "Ruby",
+                "last_commit": "2022-11-20T00:00:00.000Z",
+                "owner": "gaul",
+                "repo": "awesome-ld-preload",
+                "stars": 39408
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "30 Seconds of C++",
+              "description": null,
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2348624701,
+                "language": "JavaScript",
+                "last_commit": "2022-01-30T00:00:00.000Z",
+                "owner": "Bhupesh-V",
+                "repo": "30-seconds-of-cpp",
+                "stars": 24702
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "algorithms_and_data_structures",
+              "description": "Implementation of algorithms and data structures in C++.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3680923721,
+                "language": "JavaScript",
+                "last_commit": "2022-01-10T00:00:00.000Z",
+                "owner": "mandliya",
+                "repo": "algorithms_and_data_structures",
+                "stars": 23722
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "c-algorithms",
+              "description": "C algorithms library.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3184068542,
+                "language": "Go",
+                "last_commit": "2022-07-08T00:00:00.000Z",
+                "owner": "fragglet",
+                "repo": "c-algorithms",
+                "stars": 18543
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "algorithms",
+              "description": "Algorithms & Data Structures in C++.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1326366699,
+                "language": null,
+                "last_commit": "2022-02-01T00:00:00.000Z",
+                "owner": "xtaci",
+                "repo": "algorithms",
+                "stars": 16700
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "awesome-static-analysis",
+              "description": "A curated list of static analysis tools for all programming languages.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1315812115,
+                "language": "C++",
+                "last_commit": "2023-09-08T00:00:00.000Z",
+                "owner": "mre",
+                "repo": "awesome-static-analysis",
+                "stars": 12116
+              }
+            }
+          ],
+          "description": "Collection of useful codes, snippets, ...",
+          "node_type": "group",
+          "title": "Other Awesome Projects"
         }
       ],
-      "title": "Integrated Development Environment"
+      "title": "Resources"
     },
     {
-      "description": "",
+      "description": "Other amazingly awesome lists",
       "items": [
         {
           "node_type": "item",
-          "title": "Bear",
-          "description": "A tool to generate compilation database for clang tooling. [GPLv3]",
+          "title": "Awesome C",
+          "description": "2",
           "children": [],
           "repo_info": {
             "archived": false,
-            "id": 374999920,
-            "language": "TypeScript",
-            "last_commit": "2021-06-25T00:00:00.000Z",
-            "owner": "rizsotto",
-            "repo": "Bear",
-            "stars": 49921
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "cmake-examples",
-          "description": "A collection of useful CMake examples for various scenarios. [MIT]",
-          "children": [],
-          "repo_info": {
-            "archived": true,
-            "id": 2573148526,
-            "language": "Java",
-            "last_commit": "2022-07-24T00:00:00.000Z",
-            "owner": "pr0g",
-            "repo": "cmake-examples",
-            "stars": 48527
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "tundra",
-          "description": "High-performance code build system designed to give the best possible incremental build times even for very large software projects.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1116143835,
+            "id": 2570194835,
             "language": "C++",
             "last_commit": "2021-09-18T00:00:00.000Z",
-            "owner": "deplinenoise",
-            "repo": "tundra",
-            "stars": 43836
+            "owner": "aleksandar-todorovic",
+            "repo": "awesome-c",
+            "stars": 44836
           }
         },
         {
           "node_type": "item",
-          "title": "Sccache",
-          "description": "A fast compiler cache for C/C++, with cross-platform support and cloud backed storage options.",
+          "title": "C++ links",
+          "description": "A categorized list of C++ resources.",
           "children": [],
           "repo_info": {
             "archived": false,
-            "id": 790486908,
+            "id": 1606292578,
             "language": "Shell",
-            "last_commit": "2021-07-07T00:00:00.000Z",
-            "owner": "mozilla",
-            "repo": "sccache",
-            "stars": 36909
+            "last_commit": "2022-06-02T00:00:00.000Z",
+            "owner": "MattPD",
+            "repo": "cpplinks",
+            "stars": 42579
           }
         },
         {
           "node_type": "item",
-          "title": "clib",
-          "description": "Package manager for the C programming language. [MIT]",
+          "title": "AwesomePerfCpp",
+          "description": "A curated list of awesome C/C++ performance optimization resources.",
           "children": [],
           "repo_info": {
             "archived": false,
-            "id": 329986423,
-            "language": "Python",
-            "last_commit": "2022-11-04T00:00:00.000Z",
-            "owner": "clibs",
-            "repo": "clib",
-            "stars": 36424
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Buck",
-          "description": "A fast build system that encourages the creation of small, reusable modules over a variety of platforms and languages including C++ developed and used at Facebook. Written in Java. [Apache]",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 358235973,
-            "language": "Python",
-            "last_commit": "2021-05-03T00:00:00.000Z",
-            "owner": "facebook",
-            "repo": "buck",
-            "stars": 35974
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "CPM",
-          "description": "A C++ Package Manager based on CMake and Git.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 997483100,
-            "language": "TypeScript",
-            "last_commit": "2023-09-23T00:00:00.000Z",
-            "owner": "iauns",
-            "repo": "cpm",
-            "stars": 33101
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Cget",
-          "description": "Cmake package retrieval. [Boost] website",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1760731404,
-            "language": "Rust",
-            "last_commit": "2022-11-23T00:00:00.000Z",
-            "owner": "pfultz2",
-            "repo": "cget",
-            "stars": 31405
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Sconsolidator",
-          "description": "Scons build system integration for Eclipse CDT.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3971525226,
-            "language": "Java",
-            "last_commit": "2023-05-20T00:00:00.000Z",
-            "owner": "IFS-HSR",
-            "repo": "SConsolidator",
-            "stars": 25227
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Vcpkg",
-          "description": "C++ library manager for Windows, Linux, and MacOS. [MIT]",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 796661339,
-            "language": null,
-            "last_commit": "2023-01-27T00:00:00.000Z",
-            "owner": "microsoft",
-            "repo": "vcpkg",
-            "stars": 11340
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "awesome-cmake",
-          "description": "A curated list of awesome CMake scripts, modules, and resources.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3312710465,
-            "language": "C++",
-            "last_commit": "2022-09-23T00:00:00.000Z",
-            "owner": "onqtam",
-            "repo": "awesome-cmake",
-            "stars": 10466
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "boost-cmake",
-          "description": "CMake modules for Boost libraries. [BSD-3-Clause]",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 352958222,
+            "id": 4289285682,
             "language": "Go",
-            "last_commit": "2023-05-24T00:00:00.000Z",
-            "owner": "Orphis",
-            "repo": "boost-cmake",
-            "stars": 8223
-          }
-        }
-      ],
-      "title": "Build Systems"
-    },
-    {
-      "description": "List of tools for improving quality and reducing defects by code analysis",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "include-what-you-use",
-          "description": "A tool for use with clang to analyze includes in C and C++ source files. website",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 4220996128,
-            "language": "Shell",
-            "last_commit": "2023-08-26T00:00:00.000Z",
-            "owner": "include-what-you-use",
-            "repo": "include-what-you-use",
-            "stars": 46129
+            "last_commit": "2022-02-18T00:00:00.000Z",
+            "owner": "fenbf",
+            "repo": "AwesomePerfCpp",
+            "stars": 35683
           }
         },
         {
           "node_type": "item",
-          "title": "Infer",
-          "description": "A static analyzer for Java, C and Objective-C. [BSD]",
+          "title": "free-programming-books",
+          "description": "List of Freely Available Programming Books.",
           "children": [],
           "repo_info": {
             "archived": false,
-            "id": 1130168626,
-            "language": "Java",
-            "last_commit": "2022-04-15T00:00:00.000Z",
-            "owner": "facebook",
-            "repo": "infer",
-            "stars": 18627
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "OCLint",
-          "description": "A static source code analysis tool to improve quality and reduce defects for C, C++ and Objective-C. - source",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 4205416120,
-            "language": "TypeScript",
-            "last_commit": "2023-09-03T00:00:00.000Z",
-            "owner": "oclint",
-            "repo": "oclint",
-            "stars": 16121
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Cppcheck",
-          "description": "A tool for static C/C++ code analysis. - source",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3019412146,
-            "language": "Java",
-            "last_commit": "2023-08-08T00:00:00.000Z",
-            "owner": "danmar",
-            "repo": "cppcheck",
-            "stars": 12147
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "IKOS",
-          "description": "Static analyzer for C/C++ based on the theory of Abstract Interpretation. [NOSA 1.3]",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1556612053,
+            "id": 3041983633,
             "language": "Python",
-            "last_commit": "2023-11-09T00:00:00.000Z",
-            "owner": "NASA-SW-VnV",
-            "repo": "ikos",
-            "stars": 12054
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "OptView2",
-          "description": "Inspect missed Clang optimizations.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3115857878,
-            "language": "Shell",
-            "last_commit": "2021-08-06T00:00:00.000Z",
-            "owner": "OfekShilon",
-            "repo": "optview2",
-            "stars": 7879
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "CodeCompass",
-          "description": "An open-source code comprehension tool for large C/C++ projects. [GPL-3.0]",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1666157173,
-            "language": "Python",
-            "last_commit": "2023-07-12T00:00:00.000Z",
-            "owner": "Ericsson",
-            "repo": "CodeCompass",
-            "stars": 7174
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "cpp-dependencies",
-          "description": "Tool to check C++ #include dependencies (dependency graphs created in .dot format). [Apache]",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 61854376,
-            "language": "Java",
-            "last_commit": "2022-12-21T00:00:00.000Z",
-            "owner": "tomtom-international",
-            "repo": "cpp-dependencies",
-            "stars": 4377
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "CodeChecker",
-          "description": "An analyzer tooling, defect database and viewer extension for the Clang Static Analyzer and Clang-Tidy. [Apache-2.0]",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1012854274,
-            "language": "Rust",
-            "last_commit": "2023-04-02T00:00:00.000Z",
-            "owner": "Ericsson",
-            "repo": "codechecker",
-            "stars": 4275
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "cpplint",
-          "description": "A C++ style checker following Google's C++ style guide.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1535600748,
-            "language": "Shell",
-            "last_commit": "2021-12-14T00:00:00.000Z",
-            "owner": "cpplint",
-            "repo": "cpplint",
-            "stars": 749
-          }
-        }
-      ],
-      "title": "Static Code Analysis"
-    },
-    {
-      "description": "Fantastic C++ related articles.",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "C++Now 2013 Presentations",
-          "description": "Presentation materials presented at C++Now 2013.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2677948759,
-            "language": null,
-            "last_commit": "2021-12-03T00:00:00.000Z",
-            "owner": "boostcon",
-            "repo": "cppnow_presentations_2013",
-            "stars": 48760
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "CppCon 2017 Presentation Materials",
-          "description": "CppCon 2017 Presentation Materials.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2195296806,
-            "language": "Java",
-            "last_commit": "2021-10-17T00:00:00.000Z",
-            "owner": "CppCon",
-            "repo": "CppCon2017",
-            "stars": 46807
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "CppCon 2022 Presentation Materials",
-          "description": "CppCon 2022 Presentation Materials.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 366095050,
-            "language": "TypeScript",
-            "last_commit": "2023-11-12T00:00:00.000Z",
-            "owner": "CppCon",
-            "repo": "CppCon2022",
-            "stars": 45051
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "C++Now 2015 Presentations",
-          "description": "Presentation materials presented at C++Now 2015.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2644393521,
-            "language": "JavaScript",
-            "last_commit": "2022-07-29T00:00:00.000Z",
-            "owner": "boostcon",
-            "repo": "cppnow_presentations_2015",
-            "stars": 43522
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "C++ Compilation",
-          "description": "A short description of the C++ compilation process.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2787892327,
-            "language": "Ruby",
-            "last_commit": "2023-02-08T00:00:00.000Z",
-            "owner": "green7ea",
-            "repo": "cpp-compilation",
-            "stars": 42328
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "CppCon 2015 Presentation Materials",
-          "description": "CppCon 2015 Presentation Materials.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2161741568,
-            "language": "Shell",
-            "last_commit": "2022-06-12T00:00:00.000Z",
-            "owner": "CppCon",
-            "repo": "CppCon2015",
-            "stars": 41569
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "CppCon 2020 Presentation Materials",
-          "description": "CppCon 2020 Presentation Materials.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 332539812,
-            "language": "Go",
-            "last_commit": "2021-10-11T00:00:00.000Z",
-            "owner": "CppCon",
-            "repo": "CppCon2020",
-            "stars": 39813
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "C++Now 2017 Presentations",
-          "description": "Presentation materials presented at C++Now 2017.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2610838283,
-            "language": "Python",
-            "last_commit": "2023-03-24T00:00:00.000Z",
-            "owner": "boostcon",
-            "repo": "cppnow_presentations_2017",
-            "stars": 38284
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "C++Now 2021 Presentations",
-          "description": "Presentation materials presented at C++Now 2021.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2577135950,
-            "language": "TypeScript",
-            "last_commit": "2021-05-26T00:00:00.000Z",
-            "owner": "boostcon",
-            "repo": "cppnow_presentations_2021",
-            "stars": 35951
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "cpp17_in_TTs",
-          "description": "Descriptions of C++17 features, presented mostly in \"Tony Tables\".",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3539584418,
-            "language": "Shell",
-            "last_commit": "2022-11-09T00:00:00.000Z",
-            "owner": "tvaneerd",
-            "repo": "cpp17_in_TTs",
-            "stars": 34419
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "modern-cpp-features",
-          "description": "A cheatsheet of modern C++ language and library features.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3354883816,
-            "language": "Java",
-            "last_commit": "2021-10-07T00:00:00.000Z",
-            "owner": "AnthonyCalandra",
-            "repo": "modern-cpp-features",
-            "stars": 33817
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "C++Now 2019 Presentations",
-          "description": "Presentation materials presented at C++Now 2019.",
-          "children": [],
-          "repo_info": {
-            "archived": true,
-            "id": 2577283045,
-            "language": "C++",
-            "last_commit": "2023-11-17T00:00:00.000Z",
-            "owner": "boostcon",
-            "repo": "cppnow_presentations_2019",
-            "stars": 33046
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "C++Now 2023 Presentations",
-          "description": "Presentation materials presented at C++Now 2023.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2543580712,
-            "language": "Go",
-            "last_commit": "2022-01-19T00:00:00.000Z",
-            "owner": "boostcon",
-            "repo": "cppnow_presentations_2023",
-            "stars": 30713
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "CppCon 2016 Presentation Materials",
-          "description": "CppCon 2016 Presentation Materials.",
-          "children": [],
-          "repo_info": {
-            "archived": true,
-            "id": 2212074425,
-            "language": "C++",
-            "last_commit": "2022-11-02T00:00:00.000Z",
-            "owner": "CppCon",
-            "repo": "CppCon2016",
-            "stars": 24426
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "CppCon 2019 Presentation Materials",
-          "description": "CppCon 2019 Presentation Materials.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2363072996,
-            "language": "Java",
-            "last_commit": "2021-04-10T00:00:00.000Z",
-            "owner": "CppCon",
-            "repo": "CppCon2019",
-            "stars": 22997
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "CppCon 2023 Presentation Materials",
-          "description": "CppCon 2023 Presentation Materials.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 382872669,
-            "language": null,
-            "last_commit": "2022-03-03T00:00:00.000Z",
-            "owner": "CppCon",
-            "repo": "CppCon2023",
-            "stars": 22670
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "C++Now 2012 Presentations",
-          "description": "Presentation materials presented at C++Now 2012.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2661171140,
-            "language": "TypeScript",
-            "last_commit": "2023-08-14T00:00:00.000Z",
-            "owner": "boostcon",
-            "repo": "cppnow_presentations_2012",
-            "stars": 21141
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "CppCon 2014 Presentation Materials",
-          "description": "CppCon 2014 Presentation Materials.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2178519187,
-            "language": "Ruby",
-            "last_commit": "2023-06-28T00:00:00.000Z",
-            "owner": "CppCon",
-            "repo": "CppCon2014",
-            "stars": 19188
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "CppCon 2021 Presentation Materials",
-          "description": "CppCon 2021 Presentation Materials.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 349317431,
-            "language": "JavaScript",
-            "last_commit": "2022-10-27T00:00:00.000Z",
-            "owner": "CppCon",
-            "repo": "CppCon2021",
-            "stars": 17432
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "C++Now 2014 Presentations",
-          "description": "Presentation materials presented at C++Now 2014.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2627615902,
-            "language": "Go",
-            "last_commit": "2021-07-13T00:00:00.000Z",
-            "owner": "boostcon",
-            "repo": "cppnow_presentations_2014",
-            "stars": 15903
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "C++Now 2016 Presentations",
-          "description": "Presentation materials presented at C++Now 2016.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2594060664,
-            "language": "Rust",
-            "last_commit": "2022-03-08T00:00:00.000Z",
-            "owner": "boostcon",
-            "repo": "cppnow_presentations_2016",
-            "stars": 10665
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "C++Now 2022 Presentations",
-          "description": "Presentation materials presented at C++Now 2022.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2560358331,
-            "language": "JavaScript",
-            "last_commit": "2023-02-04T00:00:00.000Z",
-            "owner": "boostcon",
-            "repo": "cppnow_presentations_2022",
-            "stars": 8332
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "C++Now 2018 Presentations",
-          "description": "Presentation materials presented at C++Now 2018.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2560505426,
-            "language": "Java",
-            "last_commit": "2022-11-01T00:00:00.000Z",
-            "owner": "boostcon",
-            "repo": "cppnow_presentations_2018",
-            "stars": 5427
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "CppCon 2018 Presentation Materials",
-          "description": "CppCon 2018 Presentation Materials.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2379850615,
-            "language": "C++",
-            "last_commit": "2022-04-26T00:00:00.000Z",
-            "owner": "CppCon",
-            "repo": "CppCon2018",
-            "stars": 616
-          }
-        }
-      ],
-      "title": "Articles"
-    },
-    {
-      "description": "Fantastic C or C++ related books.",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "cppbestpractices",
-          "description": "Collaborative Collection of C++ Best Practices.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 240198834,
-            "language": "Rust",
-            "last_commit": "2021-09-19T00:00:00.000Z",
-            "owner": "lefticus",
-            "repo": "cppbestpractices",
-            "stars": 48835
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "List of Free C or C++ Books",
-          "description": null,
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 303394177,
-            "language": "Ruby",
-            "last_commit": "2023-07-08T00:00:00.000Z",
-            "owner": "fffaraz",
-            "repo": "awesome-cpp",
-            "stars": 44178
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Free C Books",
-          "description": "vhf/free-programming-books/C.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2472276616,
-            "language": "Java",
-            "last_commit": "2022-04-25T00:00:00.000Z",
-            "owner": "EbookFoundation",
+            "last_commit": "2022-04-08T00:00:00.000Z",
+            "owner": "vhf",
             "repo": "free-programming-books",
-            "stars": 26617
+            "stars": 33634
           }
         },
         {
           "node_type": "item",
-          "title": "Free C++ Books",
-          "description": "vhf/free-programming-books/C++.",
+          "title": "awesome-awesomeness",
+          "description": "A curated list of awesome awesomeness.",
           "children": [],
           "repo_info": {
             "archived": false,
-            "id": 2472276616,
-            "language": "Java",
-            "last_commit": "2022-04-25T00:00:00.000Z",
-            "owner": "EbookFoundation",
-            "repo": "free-programming-books",
-            "stars": 26617
-          }
-        }
-      ],
-      "title": "Books"
-    },
-    {
-      "description": "",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "google-styleguide",
-          "description": "Style guides for Google-originated open-source projects.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 118247724,
+            "id": 301983474,
             "language": "Rust",
-            "last_commit": "2022-01-07T00:00:00.000Z",
-            "owner": "google",
-            "repo": "styleguide",
-            "stars": 47725
+            "last_commit": "2022-09-14T00:00:00.000Z",
+            "owner": "bayandin",
+            "repo": "awesome-awesomeness",
+            "stars": 33475
           }
         },
         {
           "node_type": "item",
-          "title": "C++ Core Guidelines",
-          "description": "\"Official\" set of C++ guidelines, reviewed by the author of C++.",
+          "title": "awesome",
+          "description": "zap: - A curated list of awesome lists.",
           "children": [],
           "repo_info": {
             "archived": false,
-            "id": 2097423009,
-            "language": null,
-            "last_commit": "2023-12-23T00:00:00.000Z",
-            "owner": "isocpp",
-            "repo": "CppCoreGuidelines",
-            "stars": 23010
-          }
-        }
-      ],
-      "title": "Coding Style"
-    },
-    {
-      "description": "",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "Presentation on Hana for C++Now 2015",
-          "description": null,
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1198995116,
+            "id": 2447772186,
             "language": "Java",
-            "last_commit": "2023-09-07T00:00:00.000Z",
-            "owner": "ldionne",
-            "repo": "hana-cppnow-2015",
-            "stars": 45117
+            "last_commit": "2023-06-29T00:00:00.000Z",
+            "owner": "sindresorhus",
+            "repo": "awesome",
+            "stars": 22187
           }
         },
         {
           "node_type": "item",
-          "title": "Quick game development with C++11/C++14",
-          "description": "CppCon 2014 talk by Vittorio Romeo.",
+          "title": "Awesome Modern C++",
+          "description": "A collection of resources on modern C++.",
           "children": [],
           "repo_info": {
             "archived": false,
-            "id": 1981070223,
-            "language": "Python",
-            "last_commit": "2023-05-23T00:00:00.000Z",
-            "owner": "SuperV1234",
-            "repo": "cppcon2014",
-            "stars": 20224
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "C++ Conferences",
-          "description": "Catalog of C++ conferences",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3337610853,
-            "language": "Python",
-            "last_commit": "2021-08-31T00:00:00.000Z",
-            "owner": "eoan-ermine",
-            "repo": "cpp-conferences",
-            "stars": 10854
-          }
-        }
-      ],
-      "title": "Talks"
-    },
-    {
-      "description": "Useful C or C++ related websites.",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "CppPatterns",
-          "description": "A repository of modern C++ patterns and idioms. website",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 442637871,
-            "language": "JavaScript",
-            "last_commit": "2021-08-13T00:00:00.000Z",
-            "owner": "sftrabbit",
-            "repo": "CppPatterns-Patterns",
-            "stars": 37872
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Function Pointers",
-          "description": "A guide to understanding function pointers in C/C++.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2410817958,
-            "language": "Shell",
-            "last_commit": "2021-05-18T00:00:00.000Z",
-            "owner": "jerryryle",
-            "repo": "fuckingfunctionpointers.com",
-            "stars": 17959
-          }
-        }
-      ],
-      "title": "Websites"
-    },
-    {
-      "description": "Collection of useful codes, snippets, ...",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "cpp_functional_programming",
-          "description": "A list of materials and links for C++ functional programming.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1997746516,
-            "language": "Java",
-            "last_commit": "2022-08-03T00:00:00.000Z",
-            "owner": "graninas",
-            "repo": "cpp_functional_programming",
-            "stars": 46517
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "awesome-ld-preload",
-          "description": "A curated list of resources related to LD_PRELOAD.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2277689407,
-            "language": "Ruby",
-            "last_commit": "2022-11-20T00:00:00.000Z",
-            "owner": "gaul",
-            "repo": "awesome-ld-preload",
-            "stars": 39408
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "30 Seconds of C++",
-          "description": null,
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2348624701,
-            "language": "JavaScript",
-            "last_commit": "2022-01-30T00:00:00.000Z",
-            "owner": "Bhupesh-V",
-            "repo": "30-seconds-of-cpp",
-            "stars": 24702
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "algorithms_and_data_structures",
-          "description": "Implementation of algorithms and data structures in C++.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3680923721,
-            "language": "JavaScript",
-            "last_commit": "2022-01-10T00:00:00.000Z",
-            "owner": "mandliya",
-            "repo": "algorithms_and_data_structures",
-            "stars": 23722
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "c-algorithms",
-          "description": "C algorithms library.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3184068542,
+            "id": 2608618302,
             "language": "Go",
-            "last_commit": "2022-07-08T00:00:00.000Z",
-            "owner": "fragglet",
-            "repo": "c-algorithms",
-            "stars": 18543
+            "last_commit": "2023-03-05T00:00:00.000Z",
+            "owner": "rigtorp",
+            "repo": "awesome-modern-cpp",
+            "stars": 18303
           }
         },
         {
           "node_type": "item",
-          "title": "algorithms",
-          "description": "Algorithms & Data Structures in C++.",
+          "title": "lists",
+          "description": "List of (awesome) lists curated on GitHub.",
           "children": [],
           "repo_info": {
             "archived": false,
-            "id": 1326366699,
+            "id": 3020018163,
+            "language": "Python",
+            "last_commit": "2023-07-22T00:00:00.000Z",
+            "owner": "jnv",
+            "repo": "lists",
+            "stars": 18164
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "awesome-algorithms",
+          "description": "A curated list of awesome places to learn and/or practice algorithms.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 488709419,
             "language": null,
-            "last_commit": "2022-02-01T00:00:00.000Z",
-            "owner": "xtaci",
-            "repo": "algorithms",
-            "stars": 16700
+            "last_commit": "2022-11-08T00:00:00.000Z",
+            "owner": "tayllan",
+            "repo": "awesome-algorithms",
+            "stars": 9420
           }
         },
         {
           "node_type": "item",
-          "title": "awesome-static-analysis",
-          "description": "A curated list of static analysis tools for all programming languages.",
+          "title": "Awesome interview questions",
+          "description": "A list of lists of interview questions for the most popular technologies, including C and C++.",
           "children": [],
           "repo_info": {
             "archived": false,
-            "id": 1315812115,
+            "id": 841557967,
+            "language": "Ruby",
+            "last_commit": "2021-05-09T00:00:00.000Z",
+            "owner": "MaximAbramchuck",
+            "repo": "awesome-interviews",
+            "stars": 7968
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "awesome-talks",
+          "description": "A lot of screencasts, recordings of user group gatherings and conference talks.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 1357005791,
+            "language": "JavaScript",
+            "last_commit": "2021-11-01T00:00:00.000Z",
+            "owner": "JanVanRyswyck",
+            "repo": "awesome-talks",
+            "stars": 5792
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "awesome-hpp",
+          "description": "A curated list of awesome header-only C++ libraries.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 1524304393,
+            "language": "Python",
+            "last_commit": "2022-12-04T00:00:00.000Z",
+            "owner": "p-ranav",
+            "repo": "awesome-hpp",
+            "stars": 4394
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "nothings/single_file_libs",
+          "description": "zap: - List of single-file C/C++ libraries.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 1524203456,
+            "language": "Java",
+            "last_commit": "2022-10-02T00:00:00.000Z",
+            "owner": "nothings",
+            "repo": "single_file_libs",
+            "stars": 3457
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "papers-we-love",
+          "description": "Papers from the computer science community to read and discuss.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 1738651000,
+            "language": "TypeScript",
+            "last_commit": "2024-01-01T00:00:00.000Z",
+            "owner": "papers-we-love",
+            "repo": "papers-we-love",
+            "stars": 1001
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Projects",
+          "description": "A list of practical projects that anyone can solve in any programming language.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 3033300325,
             "language": "C++",
-            "last_commit": "2023-09-08T00:00:00.000Z",
-            "owner": "mre",
-            "repo": "awesome-static-analysis",
-            "stars": 12116
+            "last_commit": "2023-02-10T00:00:00.000Z",
+            "owner": "karan",
+            "repo": "Projects",
+            "stars": 326
           }
         }
       ],
-      "title": "Other Awesome Projects"
-    },
-    {
-      "description": "",
-      "items": [],
-      "title": "If you see a project or link here that is no longer maintained or is not a good fit, please submit a pull request to improve this document. Thank you!"
+      "title": "Other Awesome Lists"
     }
   ],
   "metadata": {

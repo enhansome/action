@@ -1,7 +1,7 @@
 {
   "items": [
     {
-      "description": "",
+      "description": null,
       "items": [
         {
           "node_type": "item",
@@ -52,7 +52,7 @@
       "title": "Audio Editing"
     },
     {
-      "description": "",
+      "description": null,
       "items": [
         {
           "node_type": "item",
@@ -163,7 +163,7 @@
       "title": "Audio Libraries"
     },
     {
-      "description": "",
+      "description": null,
       "items": [
         {
           "node_type": "item",
@@ -379,7 +379,7 @@
       "title": "Audio Tools"
     },
     {
-      "description": "",
+      "description": null,
       "items": [
         {
           "node_type": "item",
@@ -475,7 +475,7 @@
       "title": "Free Music Scores"
     },
     {
-      "description": "",
+      "description": null,
       "items": [
         {
           "node_type": "item",
@@ -526,7 +526,7 @@
       "title": "MIDI Tools & Libraries"
     },
     {
-      "description": "",
+      "description": null,
       "items": [
         {
           "node_type": "item",
@@ -772,7 +772,7 @@
       "title": "Music Notation"
     },
     {
-      "description": "",
+      "description": null,
       "items": [
         {
           "node_type": "item",
@@ -1003,135 +1003,137 @@
       "title": "Music Programming"
     },
     {
-      "description": "",
+      "description": null,
       "items": [
         {
-          "node_type": "item",
-          "title": "Awesome Music Production",
-          "description": "A curated list of software and resources to create music.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1299897551,
-            "language": "JavaScript",
-            "last_commit": "2022-06-29T00:00:00.000Z",
-            "owner": "adius",
-            "repo": "awesome-music-production",
-            "stars": 47552
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Awesome sheet music",
-          "description": "A curated list of awesome sheet music software, libraries and resources.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2774496771,
-            "language": "JavaScript",
-            "last_commit": "2021-11-21T00:00:00.000Z",
-            "owner": "adius",
-            "repo": "awesome-sheet-music",
-            "stars": 46772
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Awesome Music Programming",
-          "description": "A curated collection of music programming languages, libraries, frameworks and tools.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 7332835,
-            "language": "C++",
-            "last_commit": "2021-09-18T00:00:00.000Z",
-            "owner": "zoejane",
-            "repo": "awesome-music-programming",
-            "stars": 32836
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Awesome Music Listening",
-          "description": "Awesome list of websites dedicated to listening to music.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 27528713,
-            "language": "Python",
-            "last_commit": "2022-01-18T00:00:00.000Z",
-            "owner": "ybayle",
-            "repo": "awesome-music-listening",
-            "stars": 28714
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Awesome Audio Visualization",
-          "description": "A curated list about Audio Visualization.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 229668748,
-            "language": "Shell",
-            "last_commit": "2021-12-14T00:00:00.000Z",
-            "owner": "willianjusten",
-            "repo": "awesome-audio-visualization",
-            "stars": 18749
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Awesome Audio DSP",
-          "description": "A curated list of audio DSP and plugin development resources.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1001912713,
-            "language": "Python",
-            "last_commit": "2022-01-18T00:00:00.000Z",
-            "owner": "BillyDM",
-            "repo": "awesome-audio-dsp",
-            "stars": 12714
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Awesome WebAudio",
-          "description": "A curated list of awesome WebAudio packages and resources.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1739361441,
-            "language": "JavaScript",
-            "last_commit": "2022-10-17T00:00:00.000Z",
-            "owner": "notthetup",
-            "repo": "awesome-webaudio",
-            "stars": 11442
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Awesome Python for Scientific Audio",
-          "description": "A curated list of python software and packages related to scientific research in audio.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3393755376,
-            "language": "Java",
-            "last_commit": "2022-12-21T00:00:00.000Z",
-            "owner": "faroit",
-            "repo": "awesome-python-scientific-audio",
-            "stars": 5377
-          }
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Awesome Music Production",
+              "description": "A curated list of software and resources to create music.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1299897551,
+                "language": "JavaScript",
+                "last_commit": "2022-06-29T00:00:00.000Z",
+                "owner": "adius",
+                "repo": "awesome-music-production",
+                "stars": 47552
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Awesome sheet music",
+              "description": "A curated list of awesome sheet music software, libraries and resources.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2774496771,
+                "language": "JavaScript",
+                "last_commit": "2021-11-21T00:00:00.000Z",
+                "owner": "adius",
+                "repo": "awesome-sheet-music",
+                "stars": 46772
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Awesome Music Programming",
+              "description": "A curated collection of music programming languages, libraries, frameworks and tools.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 7332835,
+                "language": "C++",
+                "last_commit": "2021-09-18T00:00:00.000Z",
+                "owner": "zoejane",
+                "repo": "awesome-music-programming",
+                "stars": 32836
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Awesome Music Listening",
+              "description": "Awesome list of websites dedicated to listening to music.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 27528713,
+                "language": "Python",
+                "last_commit": "2022-01-18T00:00:00.000Z",
+                "owner": "ybayle",
+                "repo": "awesome-music-listening",
+                "stars": 28714
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Awesome Audio Visualization",
+              "description": "A curated list about Audio Visualization.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 229668748,
+                "language": "Shell",
+                "last_commit": "2021-12-14T00:00:00.000Z",
+                "owner": "willianjusten",
+                "repo": "awesome-audio-visualization",
+                "stars": 18749
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Awesome Audio DSP",
+              "description": "A curated list of audio DSP and plugin development resources.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1001912713,
+                "language": "Python",
+                "last_commit": "2022-01-18T00:00:00.000Z",
+                "owner": "BillyDM",
+                "repo": "awesome-audio-dsp",
+                "stars": 12714
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Awesome WebAudio",
+              "description": "A curated list of awesome WebAudio packages and resources.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1739361441,
+                "language": "JavaScript",
+                "last_commit": "2022-10-17T00:00:00.000Z",
+                "owner": "notthetup",
+                "repo": "awesome-webaudio",
+                "stars": 11442
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Awesome Python for Scientific Audio",
+              "description": "A curated list of python software and packages related to scientific research in audio.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3393755376,
+                "language": "Java",
+                "last_commit": "2022-12-21T00:00:00.000Z",
+                "owner": "faroit",
+                "repo": "awesome-python-scientific-audio",
+                "stars": 5377
+              }
+            }
+          ],
+          "description": "Other amazingly awesome lists can be found in the list.",
+          "node_type": "group",
+          "title": "Related lists"
         }
       ],
-      "title": "Related lists"
-    },
-    {
-      "description": "To the extent possible under law, Sharon Rosner has waived all copyright and related or neighboring rights to this work.",
-      "items": [],
-      "title": "License"
+      "title": "Other Awesomeness"
     }
   ],
   "metadata": {

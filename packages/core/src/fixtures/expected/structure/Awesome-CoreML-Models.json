@@ -499,7 +499,7 @@
       "title": "Text - Metadata/Text"
     },
     {
-      "description": "",
+      "description": null,
       "items": [
         {
           "node_type": "item",
@@ -565,7 +565,7 @@
       "title": "Miscellaneous"
     },
     {
-      "description": "",
+      "description": null,
       "items": [
         {
           "node_type": "item",
@@ -599,6 +599,237 @@
         }
       ],
       "title": "Speech Processing"
+    },
+    {
+      "description": "Collections of machine learning models that could be converted to Core ML\nIndividual machine learning models that could be converted to Core ML. We'll keep adjusting the list as they become converted.",
+      "items": [
+        {
+          "node_type": "item",
+          "title": "Caffe Model Zoo",
+          "description": "Big list of models in Caffe format.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 794295416,
+            "language": "Java",
+            "last_commit": "2022-11-11T00:00:00.000Z",
+            "owner": "BVLC",
+            "repo": "caffe",
+            "stars": 45417
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "TensorFlow Models",
+          "description": "Models for TensorFlow.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 1960568887,
+            "language": "Ruby",
+            "last_commit": "2021-07-28T00:00:00.000Z",
+            "owner": "tensorflow",
+            "repo": "models",
+            "stars": 18888
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "TensorFlow Slim Models",
+          "description": "Another collection of TensorFlow Models.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 1960568887,
+            "language": "Ruby",
+            "last_commit": "2021-07-28T00:00:00.000Z",
+            "owner": "tensorflow",
+            "repo": "models",
+            "stars": 18888
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "deephorizon",
+          "description": "Single image horizon line estimation.",
+          "children": [],
+          "repo_info": {
+            "archived": true,
+            "id": 1924099525,
+            "language": "C++",
+            "last_commit": "2022-07-25T00:00:00.000Z",
+            "owner": "scottworkman",
+            "repo": "deephorizon",
+            "stars": 49526
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Saliency",
+          "description": "The prediction of salient areas in images has been traditionally addressed with hand-crafted features.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 4139498560,
+            "language": "TypeScript",
+            "last_commit": "2022-06-20T00:00:00.000Z",
+            "owner": "imatge-upc",
+            "repo": "saliency-2016-cvpr",
+            "stars": 48561
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Face Detection",
+          "description": "Detect face from image.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 2291383322,
+            "language": "Go",
+            "last_commit": "2023-02-13T00:00:00.000Z",
+            "owner": "DolotovEvgeniy",
+            "repo": "DeepPyramid",
+            "stars": 33323
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "ILGnet",
+          "description": "The aesthetic evaluation of images.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 2490380356,
+            "language": "Java",
+            "last_commit": "2023-01-10T00:00:00.000Z",
+            "owner": "BestiVictory",
+            "repo": "ILGnet",
+            "stars": 30357
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Image Analogy",
+          "description": "Find semantically-meaningful dense correspondences between two input images.",
+          "children": [],
+          "repo_info": {
+            "archived": true,
+            "id": 2493279755,
+            "language": "C++",
+            "last_commit": "2021-12-07T00:00:00.000Z",
+            "owner": "msracver",
+            "repo": "Deep-Image-Analogy",
+            "stars": 29756
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Colorization",
+          "description": "Automatic colorization using deep neural networks.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 1803122249,
+            "language": null,
+            "last_commit": "2023-04-27T00:00:00.000Z",
+            "owner": "richzhang",
+            "repo": "colorization",
+            "stars": 22250
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "mtcnn",
+          "description": "Joint Face Detection and Alignment.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 763620265,
+            "language": "C++",
+            "last_commit": "2023-04-11T00:00:00.000Z",
+            "owner": "CongWeilin",
+            "repo": "mtcnn-caffe",
+            "stars": 20266
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "LaMem",
+          "description": "Score the memorability of pictures.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 3090415316,
+            "language": "Java",
+            "last_commit": "2023-02-19T00:00:00.000Z",
+            "owner": "MiyainNYC",
+            "repo": "Visual-Memorability-through-Caffe",
+            "stars": 15317
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Fashion Detection",
+          "description": "Cloth detection from images.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 3000765117,
+            "language": "Ruby",
+            "last_commit": "2023-09-06T00:00:00.000Z",
+            "owner": "liuziwei7",
+            "repo": "fashion-detection",
+            "stars": 15118
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "CTPN",
+          "description": "Detecting text in natural image.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 3544857814,
+            "language": "Rust",
+            "last_commit": "2021-10-09T00:00:00.000Z",
+            "owner": "tianzhi0549",
+            "repo": "CTPN",
+            "stars": 7815
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Illustration2Vec",
+          "description": "Estimating a set of tags and extracting semantic feature vectors from given illustrations.",
+          "children": [],
+          "repo_info": {
+            "archived": true,
+            "id": 1453007323,
+            "language": "Python",
+            "last_commit": "2023-02-12T00:00:00.000Z",
+            "owner": "rezoo",
+            "repo": "illustration2vec",
+            "stars": 7324
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "iLID",
+          "description": "Automatic spoken language identification.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 3997501662,
+            "language": "Go",
+            "last_commit": "2022-03-10T00:00:00.000Z",
+            "owner": "twerkmeister",
+            "repo": "iLID",
+            "stars": 1663
+          }
+        }
+      ],
+      "title": "The Gold"
     }
   ],
   "metadata": {

@@ -1,441 +1,405 @@
 {
   "items": [
     {
-      "description": "and files help guide GitHub Copilot by providing contextual details about your repository such as the type of workflow your team follows, tools and other project specific details such as coding style, frameworks used or project specific rules.\nTip: Learn more about Copilot Instructions in the VS Code documentation.",
-      "items": [],
-      "title": "Why Copilot Instructions"
-    },
-    {
       "description": "Instructions provides Copilot with repository-specific context, such as coding standards, frameworks, or workflows, to improve code suggestions.",
-      "items": [],
+      "items": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "node_type": "item",
+                  "title": "Azure Function App",
+                  "description": "Azure Function Apps using TypeScript Node.js.",
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "id": 1501379506,
+                    "language": "Java",
+                    "last_commit": "2022-08-13T00:00:00.000Z",
+                    "owner": "Code-and-Sorts",
+                    "repo": "awesome-copilot-agents",
+                    "stars": 29507
+                  }
+                },
+                {
+                  "node_type": "item",
+                  "title": "Express API",
+                  "description": "REST API development with Express.js and TypeScript Node.js.",
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "id": 1501379506,
+                    "language": "Java",
+                    "last_commit": "2022-08-13T00:00:00.000Z",
+                    "owner": "Code-and-Sorts",
+                    "repo": "awesome-copilot-agents",
+                    "stars": 29507
+                  }
+                }
+              ],
+              "description": null,
+              "node_type": "group",
+              "title": "Node.js (TypeScript)"
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Framework / Library"
+        },
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "node_type": "item",
+                      "title": "Standard Focus",
+                      "description": "Standard Terraform instructions.",
+                      "children": [],
+                      "repo_info": {
+                        "archived": false,
+                        "id": 1501379506,
+                        "language": "Java",
+                        "last_commit": "2022-08-13T00:00:00.000Z",
+                        "owner": "Code-and-Sorts",
+                        "repo": "awesome-copilot-agents",
+                        "stars": 29507
+                      }
+                    },
+                    {
+                      "node_type": "item",
+                      "title": "Atmos",
+                      "description": "Terraform workflow orchestration with Atmos framework.",
+                      "children": [],
+                      "repo_info": {
+                        "archived": false,
+                        "id": 1501379506,
+                        "language": "Java",
+                        "last_commit": "2022-08-13T00:00:00.000Z",
+                        "owner": "Code-and-Sorts",
+                        "repo": "awesome-copilot-agents",
+                        "stars": 29507
+                      }
+                    }
+                  ],
+                  "description": null,
+                  "node_type": "group",
+                  "title": "Terraform"
+                }
+              ],
+              "description": null,
+              "node_type": "group",
+              "title": "Infra as Code (IaC)"
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Tools"
+        },
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "node_type": "item",
+                  "title": "PRD Creation",
+                  "description": "Create detailed Product Requirements Documents.",
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "id": 1501379506,
+                    "language": "Java",
+                    "last_commit": "2022-08-13T00:00:00.000Z",
+                    "owner": "Code-and-Sorts",
+                    "repo": "awesome-copilot-agents",
+                    "stars": 29507
+                  }
+                },
+                {
+                  "node_type": "item",
+                  "title": "Task Generation",
+                  "description": "Break PRDs into actionable development tasks.",
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "id": 1501379506,
+                    "language": "Java",
+                    "last_commit": "2022-08-13T00:00:00.000Z",
+                    "owner": "Code-and-Sorts",
+                    "repo": "awesome-copilot-agents",
+                    "stars": 29507
+                  }
+                },
+                {
+                  "node_type": "item",
+                  "title": "Task Execution",
+                  "description": "Systematic task execution with proper testing and Git practices.",
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "id": 1501379506,
+                    "language": "Java",
+                    "last_commit": "2022-08-13T00:00:00.000Z",
+                    "owner": "Code-and-Sorts",
+                    "repo": "awesome-copilot-agents",
+                    "stars": 29507
+                  }
+                }
+              ],
+              "description": "A comprehensive workflow for AI-assisted development featuring structured approaches to planning, task generation, and execution.",
+              "node_type": "group",
+              "title": "AI Development Instructions"
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Workflows"
+        }
+      ],
       "title": "Instructions"
     },
     {
-      "description": "",
-      "items": [],
-      "title": "Boilerplates & Templates"
-    },
-    {
-      "description": "",
-      "items": [],
-      "title": "Language & Stack"
-    },
-    {
-      "description": "",
-      "items": [],
-      "title": "Framework / Library"
-    },
-    {
-      "description": "",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "Azure Function App",
-          "description": "Azure Function Apps using TypeScript Node.js.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1501379506,
-            "language": "Java",
-            "last_commit": "2022-08-13T00:00:00.000Z",
-            "owner": "Code-and-Sorts",
-            "repo": "awesome-copilot-agents",
-            "stars": 29507
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Express API",
-          "description": "REST API development with Express.js and TypeScript Node.js.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1501379506,
-            "language": "Java",
-            "last_commit": "2022-08-13T00:00:00.000Z",
-            "owner": "Code-and-Sorts",
-            "repo": "awesome-copilot-agents",
-            "stars": 29507
-          }
-        }
-      ],
-      "title": "Node.js (TypeScript)"
-    },
-    {
-      "description": "",
-      "items": [],
-      "title": "Tools"
-    },
-    {
-      "description": "",
-      "items": [],
-      "title": "Content Management Systems (CMS)"
-    },
-    {
-      "description": "",
-      "items": [],
-      "title": "Infra as Code (IaC)"
-    },
-    {
-      "description": "",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "Standard Focus",
-          "description": "Standard Terraform instructions.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1501379506,
-            "language": "Java",
-            "last_commit": "2022-08-13T00:00:00.000Z",
-            "owner": "Code-and-Sorts",
-            "repo": "awesome-copilot-agents",
-            "stars": 29507
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Atmos",
-          "description": "Terraform workflow orchestration with Atmos framework.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1501379506,
-            "language": "Java",
-            "last_commit": "2022-08-13T00:00:00.000Z",
-            "owner": "Code-and-Sorts",
-            "repo": "awesome-copilot-agents",
-            "stars": 29507
-          }
-        }
-      ],
-      "title": "Terraform"
-    },
-    {
-      "description": "",
-      "items": [],
-      "title": "Workflows"
-    },
-    {
-      "description": "A comprehensive workflow for AI-assisted development featuring structured approaches to planning, task generation, and execution.",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "PRD Creation",
-          "description": "Create detailed Product Requirements Documents.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1501379506,
-            "language": "Java",
-            "last_commit": "2022-08-13T00:00:00.000Z",
-            "owner": "Code-and-Sorts",
-            "repo": "awesome-copilot-agents",
-            "stars": 29507
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Task Generation",
-          "description": "Break PRDs into actionable development tasks.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1501379506,
-            "language": "Java",
-            "last_commit": "2022-08-13T00:00:00.000Z",
-            "owner": "Code-and-Sorts",
-            "repo": "awesome-copilot-agents",
-            "stars": 29507
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Task Execution",
-          "description": "Systematic task execution with proper testing and Git practices.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1501379506,
-            "language": "Java",
-            "last_commit": "2022-08-13T00:00:00.000Z",
-            "owner": "Code-and-Sorts",
-            "repo": "awesome-copilot-agents",
-            "stars": 29507
-          }
-        }
-      ],
-      "title": "AI Development Instructions"
-    },
-    {
       "description": "Prompts are reusable tasks or workflow instructions that help guide Copilot to perform specific actions or generate certain outputs.",
-      "items": [],
+      "items": [
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "PRD Creation Prompt",
+              "description": "Create detailed Product Requirements Documents using prompt tasks.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1501379506,
+                "language": "Java",
+                "last_commit": "2022-08-13T00:00:00.000Z",
+                "owner": "Code-and-Sorts",
+                "repo": "awesome-copilot-agents",
+                "stars": 29507
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Task Generation Prompt",
+              "description": "Break PRDs into actionable development tasks using prompt tasks.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1501379506,
+                "language": "Java",
+                "last_commit": "2022-08-13T00:00:00.000Z",
+                "owner": "Code-and-Sorts",
+                "repo": "awesome-copilot-agents",
+                "stars": 29507
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Task Execution Prompt",
+              "description": "Systematic task execution with proper testing and Git practices using prompt tasks.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1501379506,
+                "language": "Java",
+                "last_commit": "2022-08-13T00:00:00.000Z",
+                "owner": "Code-and-Sorts",
+                "repo": "awesome-copilot-agents",
+                "stars": 29507
+              }
+            }
+          ],
+          "description": "A comprehensive workflow for AI-assisted development featuring structured approaches to planning, task generation, and execution.",
+          "node_type": "group",
+          "title": "AI Development Tasks"
+        }
+      ],
       "title": "Prompts"
     },
     {
-      "description": "A comprehensive workflow for AI-assisted development featuring structured approaches to planning, task generation, and execution.",
+      "description": "Custom agents let you set up different AI personas in VS Code for specific dev roles (like security reviewer, planner, or architect), each with its own instructions, tools, and behavior. You can also use handoffs to move between these specialized agents in a guided workflow (e.g., planning → implementation → review) with relevant context carried over.\nThe built-in available custom agents are:",
       "items": [
         {
-          "node_type": "item",
-          "title": "PRD Creation Prompt",
-          "description": "Create detailed Product Requirements Documents using prompt tasks.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1501379506,
-            "language": "Java",
-            "last_commit": "2022-08-13T00:00:00.000Z",
-            "owner": "Code-and-Sorts",
-            "repo": "awesome-copilot-agents",
-            "stars": 29507
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Task Generation Prompt",
-          "description": "Break PRDs into actionable development tasks using prompt tasks.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1501379506,
-            "language": "Java",
-            "last_commit": "2022-08-13T00:00:00.000Z",
-            "owner": "Code-and-Sorts",
-            "repo": "awesome-copilot-agents",
-            "stars": 29507
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Task Execution Prompt",
-          "description": "Systematic task execution with proper testing and Git practices using prompt tasks.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1501379506,
-            "language": "Java",
-            "last_commit": "2022-08-13T00:00:00.000Z",
-            "owner": "Code-and-Sorts",
-            "repo": "awesome-copilot-agents",
-            "stars": 29507
-          }
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Architect",
+              "description": "Design and plan software systems.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1501379506,
+                "language": "Java",
+                "last_commit": "2022-08-13T00:00:00.000Z",
+                "owner": "Code-and-Sorts",
+                "repo": "awesome-copilot-agents",
+                "stars": 29507
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Clean Code",
+              "description": "Write clean, readable, and maintainable code using clean code best practices.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1501379506,
+                "language": "Java",
+                "last_commit": "2022-08-13T00:00:00.000Z",
+                "owner": "Code-and-Sorts",
+                "repo": "awesome-copilot-agents",
+                "stars": 29507
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Debugger",
+              "description": "Debug your application code to find a fix.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1501379506,
+                "language": "Java",
+                "last_commit": "2022-08-13T00:00:00.000Z",
+                "owner": "Code-and-Sorts",
+                "repo": "awesome-copilot-agents",
+                "stars": 29507
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "PRD Creation",
+              "description": "Build Product Requirements Document (PRD).",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1501379506,
+                "language": "Java",
+                "last_commit": "2022-08-13T00:00:00.000Z",
+                "owner": "Code-and-Sorts",
+                "repo": "awesome-copilot-agents",
+                "stars": 29507
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "AI Development Mode"
         }
       ],
-      "title": "AI Development Tasks"
-    },
-    {
-      "description": "",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "Architect",
-          "description": "Design and plan software systems.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1501379506,
-            "language": "Java",
-            "last_commit": "2022-08-13T00:00:00.000Z",
-            "owner": "Code-and-Sorts",
-            "repo": "awesome-copilot-agents",
-            "stars": 29507
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Clean Code",
-          "description": "Write clean, readable, and maintainable code using clean code best practices.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1501379506,
-            "language": "Java",
-            "last_commit": "2022-08-13T00:00:00.000Z",
-            "owner": "Code-and-Sorts",
-            "repo": "awesome-copilot-agents",
-            "stars": 29507
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Debugger",
-          "description": "Debug your application code to find a fix.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1501379506,
-            "language": "Java",
-            "last_commit": "2022-08-13T00:00:00.000Z",
-            "owner": "Code-and-Sorts",
-            "repo": "awesome-copilot-agents",
-            "stars": 29507
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "PRD Creation",
-          "description": "Build Product Requirements Document (PRD).",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1501379506,
-            "language": "Java",
-            "last_commit": "2022-08-13T00:00:00.000Z",
-            "owner": "Code-and-Sorts",
-            "repo": "awesome-copilot-agents",
-            "stars": 29507
-          }
-        }
-      ],
-      "title": "AI Development Mode"
+      "title": "Custom Agents"
     },
     {
       "description": "Agent Skills are portable, open standard, version-controlled folders of instructions, scripts, and resources that agents can discover and load on demand to do tasks more accurately and efficiently. They let agents gain domain expertise, new capabilities, and repeatable workflows—while making those same skills reusable across different compatible agent products and teams.",
-      "items": [],
+      "items": [
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Calculator",
+              "description": "Performs arbitrary-precision arithmetic calculations including addition, subtraction, multiplication, division, and exponents.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1501379506,
+                "language": "Java",
+                "last_commit": "2022-08-13T00:00:00.000Z",
+                "owner": "Code-and-Sorts",
+                "repo": "awesome-copilot-agents",
+                "stars": 29507
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Jira CLI",
+              "description": "Interact with Jira from the command line to create, list, view, edit, and transition issues, manage sprints and epics, and perform common Jira workflows.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1501379506,
+                "language": "Java",
+                "last_commit": "2022-08-13T00:00:00.000Z",
+                "owner": "Code-and-Sorts",
+                "repo": "awesome-copilot-agents",
+                "stars": 29507
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "General"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "docx",
+              "description": "Document creation, editing, and analysis with support for tracked changes, comments, formatting preservation, and text extraction.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1501379506,
+                "language": "Java",
+                "last_commit": "2022-08-13T00:00:00.000Z",
+                "owner": "Code-and-Sorts",
+                "repo": "awesome-copilot-agents",
+                "stars": 29507
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "pdf",
+              "description": "PDF manipulation toolkit for extracting text and tables, creating new PDFs, merging/splitting documents, and handling forms.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1501379506,
+                "language": "Java",
+                "last_commit": "2022-08-13T00:00:00.000Z",
+                "owner": "Code-and-Sorts",
+                "repo": "awesome-copilot-agents",
+                "stars": 29507
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "pptx",
+              "description": "Presentation creation, editing, and analysis.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1501379506,
+                "language": "Java",
+                "last_commit": "2022-08-13T00:00:00.000Z",
+                "owner": "Code-and-Sorts",
+                "repo": "awesome-copilot-agents",
+                "stars": 29507
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "xlsx",
+              "description": "Spreadsheet creation, editing, and analysis with support for formulas, formatting, data analysis, and visualization.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1501379506,
+                "language": "Java",
+                "last_commit": "2022-08-13T00:00:00.000Z",
+                "owner": "Code-and-Sorts",
+                "repo": "awesome-copilot-agents",
+                "stars": 29507
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Documents"
+        }
+      ],
       "title": "Agent Skills"
-    },
-    {
-      "description": "",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "Calculator",
-          "description": "Performs arbitrary-precision arithmetic calculations including addition, subtraction, multiplication, division, and exponents.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1501379506,
-            "language": "Java",
-            "last_commit": "2022-08-13T00:00:00.000Z",
-            "owner": "Code-and-Sorts",
-            "repo": "awesome-copilot-agents",
-            "stars": 29507
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Jira CLI",
-          "description": "Interact with Jira from the command line to create, list, view, edit, and transition issues, manage sprints and epics, and perform common Jira workflows.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1501379506,
-            "language": "Java",
-            "last_commit": "2022-08-13T00:00:00.000Z",
-            "owner": "Code-and-Sorts",
-            "repo": "awesome-copilot-agents",
-            "stars": 29507
-          }
-        }
-      ],
-      "title": "General"
-    },
-    {
-      "description": "",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "docx",
-          "description": "Document creation, editing, and analysis with support for tracked changes, comments, formatting preservation, and text extraction.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1501379506,
-            "language": "Java",
-            "last_commit": "2022-08-13T00:00:00.000Z",
-            "owner": "Code-and-Sorts",
-            "repo": "awesome-copilot-agents",
-            "stars": 29507
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "pdf",
-          "description": "PDF manipulation toolkit for extracting text and tables, creating new PDFs, merging/splitting documents, and handling forms.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1501379506,
-            "language": "Java",
-            "last_commit": "2022-08-13T00:00:00.000Z",
-            "owner": "Code-and-Sorts",
-            "repo": "awesome-copilot-agents",
-            "stars": 29507
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "pptx",
-          "description": "Presentation creation, editing, and analysis.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1501379506,
-            "language": "Java",
-            "last_commit": "2022-08-13T00:00:00.000Z",
-            "owner": "Code-and-Sorts",
-            "repo": "awesome-copilot-agents",
-            "stars": 29507
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "xlsx",
-          "description": "Spreadsheet creation, editing, and analysis with support for formulas, formatting, data analysis, and visualization.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1501379506,
-            "language": "Java",
-            "last_commit": "2022-08-13T00:00:00.000Z",
-            "owner": "Code-and-Sorts",
-            "repo": "awesome-copilot-agents",
-            "stars": 29507
-          }
-        }
-      ],
-      "title": "Documents"
-    },
-    {
-      "description": "",
-      "items": [],
-      "title": "How to Use"
-    },
-    {
-      "description": "",
-      "items": [],
-      "title": "File Types"
-    },
-    {
-      "description": "- Contextual instructions that apply to specific files or file types.",
-      "items": [],
-      "title": "Instruction Files"
-    },
-    {
-      "description": "- Reusable prompts for specific tasks or workflows.",
-      "items": [],
-      "title": "Prompt Files"
-    },
-    {
-      "description": "- Predefined AI personas behavior in VS Code for specific dev roles.",
-      "items": [],
-      "title": "Custom Agent Files"
-    },
-    {
-      "description": "- Portable, version-controlled folders of instructions, scripts, and resources that agents can discover and load on demand.",
-      "items": [],
-      "title": "Custom Agent Skills"
-    },
-    {
-      "description": "Use YAML front matter to specify metadata like , , and .",
-      "items": [],
-      "title": "Formatting"
-    },
-    {
-      "description": "All contributions are welcome! If you would like to share instruction files (), prompt files (), skills ( in a skill folder) or custom agents (), see the contribution guide for details.",
-      "items": [],
-      "title": "Contributing"
     }
   ],
   "metadata": {

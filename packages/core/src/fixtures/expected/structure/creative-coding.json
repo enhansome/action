@@ -1,507 +1,511 @@
 {
   "items": [
     {
-      "description": "",
-      "items": [],
+      "description": null,
+      "items": [
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Fragment.tools",
+              "description": "[Cross-platform] - A web development environment for creative coding.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1527334968,
+                "language": "Shell",
+                "last_commit": "2021-05-08T00:00:00.000Z",
+                "owner": "raphaelameaume",
+                "repo": "fragment",
+                "stars": 34969
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Lygia",
+              "description": "[Cross-platform] - Granular and multi-language (GLSL, HLSL, WGSL, MSL and CUDA) shader library designed for performance and flexibility.",
+              "children": [],
+              "repo_info": {
+                "archived": true,
+                "id": 730830119,
+                "language": null,
+                "last_commit": "2023-09-04T00:00:00.000Z",
+                "owner": "patriciogonzalezvivo",
+                "repo": "lygia",
+                "stars": 30120
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "PixelKit",
+              "description": "[iOS, Mac] - Open source, live graphics, Swift framework, powered by Metal.",
+              "children": [],
+              "repo_info": {
+                "archived": true,
+                "id": 1139817394,
+                "language": "Rust",
+                "last_commit": "2022-12-03T00:00:00.000Z",
+                "owner": "heestand-xyz",
+                "repo": "PixelKit",
+                "stars": 17395
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Canvas-sketch",
+              "description": "[Cross-platform] - HTML5 framework for making generative artwork in JavaScript and the browser.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2487201571,
+                "language": "JavaScript",
+                "last_commit": "2022-06-09T00:00:00.000Z",
+                "owner": "mattdesl",
+                "repo": "canvas-sketch",
+                "stars": 1572
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "AsyncGraphics",
+              "description": "[iOS, macOS] - Open source, live graphics, async / await, Swift package, powered by Metal.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1086401115,
+                "language": "C++",
+                "last_commit": "2023-09-08T00:00:00.000Z",
+                "owner": "heestand-xyz",
+                "repo": "AsyncGraphics",
+                "stars": 1116
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Frameworks • Libraries • Ecosystems"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Theatre.js",
+              "description": "Motion design library with visual tools",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3250147169,
+                "language": null,
+                "last_commit": "2023-07-16T00:00:00.000Z",
+                "owner": "ariaminaei",
+                "repo": "theatre",
+                "stars": 47170
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "twigl",
+              "description": "A Tiny WebGL helper Library.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 5946559,
+                "language": null,
+                "last_commit": "2022-06-21T00:00:00.000Z",
+                "owner": "greggman",
+                "repo": "twgl.js",
+                "stars": 46560
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "regl",
+              "description": "Functional WebGL.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1863941662,
+                "language": "Go",
+                "last_commit": "2022-03-10T00:00:00.000Z",
+                "owner": "regl-project",
+                "repo": "regl",
+                "stars": 41663
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "luma.gl",
+              "description": "WebGL2 Components for Data Visualization.",
+              "children": [],
+              "repo_info": {
+                "archived": true,
+                "id": 343237276,
+                "language": "Java",
+                "last_commit": "2023-03-31T00:00:00.000Z",
+                "owner": "uber",
+                "repo": "luma.gl",
+                "stars": 37277
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Oimo.js",
+              "description": "Lightweight 3d physics engine for javascript",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1432886709,
+                "language": null,
+                "last_commit": "2022-01-22T00:00:00.000Z",
+                "owner": "lo-th",
+                "repo": "Oimo.js",
+                "stars": 36710
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "three.js",
+              "description": "JavaScript 3D library.",
+              "children": [],
+              "repo_info": {
+                "archived": true,
+                "id": 1003929254,
+                "language": "Rust",
+                "last_commit": "2023-04-22T00:00:00.000Z",
+                "owner": "mrdoob",
+                "repo": "three.js",
+                "stars": 29255
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Alfrid",
+              "description": "A WebGL tool set.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1081828274,
+                "language": "Rust",
+                "last_commit": "2023-04-02T00:00:00.000Z",
+                "owner": "yiwenl",
+                "repo": "Alfrid",
+                "stars": 28275
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Ammo.js",
+              "description": "Direct port of the Bullet physics engine to JavaScript using Emscripten.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2356869185,
+                "language": "C++",
+                "last_commit": "2023-06-30T00:00:00.000Z",
+                "owner": "kripken",
+                "repo": "ammo.js",
+                "stars": 19186
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "picogl.js",
+              "description": "A minimal WebGL 2 rendering library.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 867268164,
+                "language": "Rust",
+                "last_commit": "2023-07-21T00:00:00.000Z",
+                "owner": "tsherif",
+                "repo": "picogl.js",
+                "stars": 18165
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "lightgl.js",
+              "description": "A lightweight WebGL library.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3866009207,
+                "language": "Ruby",
+                "last_commit": "2023-06-08T00:00:00.000Z",
+                "owner": "evanw",
+                "repo": "lightgl.js",
+                "stars": 9208
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "OGL.js",
+              "description": "JavaScript 3D library (WebGL).",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 369703846,
+                "language": "Java",
+                "last_commit": "2021-09-07T00:00:00.000Z",
+                "owner": "oframe",
+                "repo": "ogl",
+                "stars": 3847
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Babylon.js",
+              "description": "complete JavaScript framework for building 3D games with HTML 5 and WebGL.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2770853768,
+                "language": "Shell",
+                "last_commit": "2021-11-24T00:00:00.000Z",
+                "owner": "BabylonJS",
+                "repo": "Babylon.js",
+                "stars": 3769
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Web Programming • Libraries"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Fragment",
+              "description": "[Mac]- App to live code GLSL graphics.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 872525236,
+                "language": "Java",
+                "last_commit": "2023-05-10T00:00:00.000Z",
+                "owner": "rezaali",
+                "repo": "fragment",
+                "stars": 25237
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Konstrukt",
+              "description": "[Cross-platform] - A commandline tool to generate different scalable patterns as SVGs.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3660864160,
+                "language": "TypeScript",
+                "last_commit": "2023-07-25T00:00:00.000Z",
+                "owner": "MarcelMue",
+                "repo": "konstrukt",
+                "stars": 14161
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Klak",
+              "description": "A collection of scripts for creative coding with Unity.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 944762144,
+                "language": "Rust",
+                "last_commit": "2023-08-10T00:00:00.000Z",
+                "owner": "keijiro",
+                "repo": "Klak",
+                "stars": 12145
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Other"
+        }
+      ],
       "title": "Tools"
     },
     {
-      "description": "",
+      "description": null,
       "items": [
         {
-          "node_type": "item",
-          "title": "Fragment.tools",
-          "description": "[Cross-platform] - A web development environment for creative coding.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1527334968,
-            "language": "Shell",
-            "last_commit": "2021-05-08T00:00:00.000Z",
-            "owner": "raphaelameaume",
-            "repo": "fragment",
-            "stars": 34969
-          }
+          "children": [
+            {
+              "children": [
+                {
+                  "node_type": "item",
+                  "title": "ThreeJS post-process example",
+                  "description": "example of post-processing effects in ThreeJS.",
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "id": 1182147442,
+                    "language": "Go",
+                    "last_commit": "2022-10-16T00:00:00.000Z",
+                    "owner": "Jam3",
+                    "repo": "threejs-post-process-example",
+                    "stars": 47443
+                  }
+                },
+                {
+                  "node_type": "item",
+                  "title": "WebGL Beyond Dom",
+                  "description": "Greg Tatum explains the basics of WebGL using Regl.",
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "id": 1159542651,
+                    "language": "JavaScript",
+                    "last_commit": "2022-03-21T00:00:00.000Z",
+                    "owner": "gregtatum",
+                    "repo": "talk-webgl-beyond-dom",
+                    "stars": 42652
+                  }
+                },
+                {
+                  "node_type": "item",
+                  "title": "WebGL Lessons — ThreeJS Shaders",
+                  "description": "Using custom vertex and fragment shaders in ThreeJS.",
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "id": 1527132085,
+                    "language": "C++",
+                    "last_commit": "2023-10-08T00:00:00.000Z",
+                    "owner": "Jam3",
+                    "repo": "jam3-lesson-webgl-shader-threejs",
+                    "stars": 32086
+                  }
+                },
+                {
+                  "node_type": "item",
+                  "title": "Three glslify example",
+                  "description": "Example on how to use three.js with glslify.",
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "id": 3444426796,
+                    "language": "Java",
+                    "last_commit": "2021-10-27T00:00:00.000Z",
+                    "owner": "mattdesl",
+                    "repo": "three-glslify-example",
+                    "stars": 26797
+                  }
+                },
+                {
+                  "node_type": "item",
+                  "title": "WebGL Lessons — Fragment Shaders",
+                  "description": "A brief introduction to fragment shaders.",
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "id": 1246422848,
+                    "language": "Shell",
+                    "last_commit": "2021-09-05T00:00:00.000Z",
+                    "owner": "Jam3",
+                    "repo": "jam3-lesson-webgl-shader-intro",
+                    "stars": 22849
+                  }
+                },
+                {
+                  "node_type": "item",
+                  "title": "GLSL lighting walkthrough",
+                  "description": "Phong shading tutorial with glslify.",
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "id": 3481666391,
+                    "language": "JavaScript",
+                    "last_commit": "2022-12-06T00:00:00.000Z",
+                    "owner": "stackgl",
+                    "repo": "glsl-lighting-walkthrough",
+                    "stars": 16392
+                  }
+                },
+                {
+                  "node_type": "item",
+                  "title": "Modern OpenGL Series",
+                  "description": "Good introduction to some of the OpenGL terms.",
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "id": 1762114868,
+                    "language": "Shell",
+                    "last_commit": "2021-08-16T00:00:00.000Z",
+                    "owner": "tomdalling",
+                    "repo": "opengl-series",
+                    "stars": 14869
+                  }
+                },
+                {
+                  "node_type": "item",
+                  "title": "lwjgl: Shaders",
+                  "description": "Shader tutorial in the context of lwjgl-basics.",
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "id": 625553162,
+                    "language": "Go",
+                    "last_commit": "2023-07-23T00:00:00.000Z",
+                    "owner": "mattdesl",
+                    "repo": "lwjgl-basics",
+                    "stars": 3163
+                  }
+                }
+              ],
+              "description": null,
+              "node_type": "group",
+              "title": "Shaders • OpenGL • WebGL"
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Articles • Tutorials"
         },
         {
-          "node_type": "item",
-          "title": "Lygia",
-          "description": "[Cross-platform] - Granular and multi-language (GLSL, HLSL, WGSL, MSL and CUDA) shader library designed for performance and flexibility.",
-          "children": [],
-          "repo_info": {
-            "archived": true,
-            "id": 730830119,
-            "language": null,
-            "last_commit": "2023-09-04T00:00:00.000Z",
-            "owner": "patriciogonzalezvivo",
-            "repo": "lygia",
-            "stars": 30120
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "PixelKit",
-          "description": "[iOS, Mac] - Open source, live graphics, Swift framework, powered by Metal.",
-          "children": [],
-          "repo_info": {
-            "archived": true,
-            "id": 1139817394,
-            "language": "Rust",
-            "last_commit": "2022-12-03T00:00:00.000Z",
-            "owner": "heestand-xyz",
-            "repo": "PixelKit",
-            "stars": 17395
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Canvas-sketch",
-          "description": "[Cross-platform] - HTML5 framework for making generative artwork in JavaScript and the browser.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2487201571,
-            "language": "JavaScript",
-            "last_commit": "2022-06-09T00:00:00.000Z",
-            "owner": "mattdesl",
-            "repo": "canvas-sketch",
-            "stars": 1572
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "AsyncGraphics",
-          "description": "[iOS, macOS] - Open source, live graphics, async / await, Swift package, powered by Metal.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1086401115,
-            "language": "C++",
-            "last_commit": "2023-09-08T00:00:00.000Z",
-            "owner": "heestand-xyz",
-            "repo": "AsyncGraphics",
-            "stars": 1116
-          }
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Shader-school",
+              "description": "Workshop for GLSL shaders and graphics programming.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 730182455,
+                "language": "C++",
+                "last_commit": "2022-10-03T00:00:00.000Z",
+                "owner": "stackgl",
+                "repo": "shader-school",
+                "stars": 32456
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Webgl-workshop",
+              "description": "The sequel to shader-school: Learn the WebGL API.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2367814416,
+                "language": "Java",
+                "last_commit": "2022-11-11T00:00:00.000Z",
+                "owner": "stackgl",
+                "repo": "webgl-workshop",
+                "stars": 14417
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Interactive"
         }
       ],
-      "title": "Frameworks • Libraries • Ecosystems"
-    },
-    {
-      "description": "",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "Theatre.js",
-          "description": "Motion design library with visual tools",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3250147169,
-            "language": null,
-            "last_commit": "2023-07-16T00:00:00.000Z",
-            "owner": "ariaminaei",
-            "repo": "theatre",
-            "stars": 47170
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "twigl",
-          "description": "A Tiny WebGL helper Library.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 5946559,
-            "language": null,
-            "last_commit": "2022-06-21T00:00:00.000Z",
-            "owner": "greggman",
-            "repo": "twgl.js",
-            "stars": 46560
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "regl",
-          "description": "Functional WebGL.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1863941662,
-            "language": "Go",
-            "last_commit": "2022-03-10T00:00:00.000Z",
-            "owner": "regl-project",
-            "repo": "regl",
-            "stars": 41663
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "luma.gl",
-          "description": "WebGL2 Components for Data Visualization.",
-          "children": [],
-          "repo_info": {
-            "archived": true,
-            "id": 343237276,
-            "language": "Java",
-            "last_commit": "2023-03-31T00:00:00.000Z",
-            "owner": "uber",
-            "repo": "luma.gl",
-            "stars": 37277
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Oimo.js",
-          "description": "Lightweight 3d physics engine for javascript",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1432886709,
-            "language": null,
-            "last_commit": "2022-01-22T00:00:00.000Z",
-            "owner": "lo-th",
-            "repo": "Oimo.js",
-            "stars": 36710
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "three.js",
-          "description": "JavaScript 3D library.",
-          "children": [],
-          "repo_info": {
-            "archived": true,
-            "id": 1003929254,
-            "language": "Rust",
-            "last_commit": "2023-04-22T00:00:00.000Z",
-            "owner": "mrdoob",
-            "repo": "three.js",
-            "stars": 29255
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Alfrid",
-          "description": "A WebGL tool set.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1081828274,
-            "language": "Rust",
-            "last_commit": "2023-04-02T00:00:00.000Z",
-            "owner": "yiwenl",
-            "repo": "Alfrid",
-            "stars": 28275
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Ammo.js",
-          "description": "Direct port of the Bullet physics engine to JavaScript using Emscripten.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2356869185,
-            "language": "C++",
-            "last_commit": "2023-06-30T00:00:00.000Z",
-            "owner": "kripken",
-            "repo": "ammo.js",
-            "stars": 19186
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "picogl.js",
-          "description": "A minimal WebGL 2 rendering library.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 867268164,
-            "language": "Rust",
-            "last_commit": "2023-07-21T00:00:00.000Z",
-            "owner": "tsherif",
-            "repo": "picogl.js",
-            "stars": 18165
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "lightgl.js",
-          "description": "A lightweight WebGL library.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3866009207,
-            "language": "Ruby",
-            "last_commit": "2023-06-08T00:00:00.000Z",
-            "owner": "evanw",
-            "repo": "lightgl.js",
-            "stars": 9208
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "OGL.js",
-          "description": "JavaScript 3D library (WebGL).",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 369703846,
-            "language": "Java",
-            "last_commit": "2021-09-07T00:00:00.000Z",
-            "owner": "oframe",
-            "repo": "ogl",
-            "stars": 3847
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Babylon.js",
-          "description": "complete JavaScript framework for building 3D games with HTML 5 and WebGL.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2770853768,
-            "language": "Shell",
-            "last_commit": "2021-11-24T00:00:00.000Z",
-            "owner": "BabylonJS",
-            "repo": "Babylon.js",
-            "stars": 3769
-          }
-        }
-      ],
-      "title": "Web Programming • Libraries"
-    },
-    {
-      "description": "",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "Fragment",
-          "description": "[Mac]- App to live code GLSL graphics.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 872525236,
-            "language": "Java",
-            "last_commit": "2023-05-10T00:00:00.000Z",
-            "owner": "rezaali",
-            "repo": "fragment",
-            "stars": 25237
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Konstrukt",
-          "description": "[Cross-platform] - A commandline tool to generate different scalable patterns as SVGs.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3660864160,
-            "language": "TypeScript",
-            "last_commit": "2023-07-25T00:00:00.000Z",
-            "owner": "MarcelMue",
-            "repo": "konstrukt",
-            "stars": 14161
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Klak",
-          "description": "A collection of scripts for creative coding with Unity.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 944762144,
-            "language": "Rust",
-            "last_commit": "2023-08-10T00:00:00.000Z",
-            "owner": "keijiro",
-            "repo": "Klak",
-            "stars": 12145
-          }
-        }
-      ],
-      "title": "Other"
-    },
-    {
-      "description": "",
-      "items": [],
       "title": "Learning Resources"
     },
     {
-      "description": "",
-      "items": [],
-      "title": "Articles • Tutorials"
-    },
-    {
-      "description": "",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "ThreeJS post-process example",
-          "description": "example of post-processing effects in ThreeJS.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1182147442,
-            "language": "Go",
-            "last_commit": "2022-10-16T00:00:00.000Z",
-            "owner": "Jam3",
-            "repo": "threejs-post-process-example",
-            "stars": 47443
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "WebGL Beyond Dom",
-          "description": "Greg Tatum explains the basics of WebGL using Regl.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1159542651,
-            "language": "JavaScript",
-            "last_commit": "2022-03-21T00:00:00.000Z",
-            "owner": "gregtatum",
-            "repo": "talk-webgl-beyond-dom",
-            "stars": 42652
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "WebGL Lessons — ThreeJS Shaders",
-          "description": "Using custom vertex and fragment shaders in ThreeJS.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1527132085,
-            "language": "C++",
-            "last_commit": "2023-10-08T00:00:00.000Z",
-            "owner": "Jam3",
-            "repo": "jam3-lesson-webgl-shader-threejs",
-            "stars": 32086
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Three glslify example",
-          "description": "Example on how to use three.js with glslify.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3444426796,
-            "language": "Java",
-            "last_commit": "2021-10-27T00:00:00.000Z",
-            "owner": "mattdesl",
-            "repo": "three-glslify-example",
-            "stars": 26797
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "WebGL Lessons — Fragment Shaders",
-          "description": "A brief introduction to fragment shaders.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1246422848,
-            "language": "Shell",
-            "last_commit": "2021-09-05T00:00:00.000Z",
-            "owner": "Jam3",
-            "repo": "jam3-lesson-webgl-shader-intro",
-            "stars": 22849
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "GLSL lighting walkthrough",
-          "description": "Phong shading tutorial with glslify.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3481666391,
-            "language": "JavaScript",
-            "last_commit": "2022-12-06T00:00:00.000Z",
-            "owner": "stackgl",
-            "repo": "glsl-lighting-walkthrough",
-            "stars": 16392
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Modern OpenGL Series",
-          "description": "Good introduction to some of the OpenGL terms.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1762114868,
-            "language": "Shell",
-            "last_commit": "2021-08-16T00:00:00.000Z",
-            "owner": "tomdalling",
-            "repo": "opengl-series",
-            "stars": 14869
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "lwjgl: Shaders",
-          "description": "Shader tutorial in the context of lwjgl-basics.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 625553162,
-            "language": "Go",
-            "last_commit": "2023-07-23T00:00:00.000Z",
-            "owner": "mattdesl",
-            "repo": "lwjgl-basics",
-            "stars": 3163
-          }
-        }
-      ],
-      "title": "Shaders • OpenGL • WebGL"
-    },
-    {
-      "description": "",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "Shader-school",
-          "description": "Workshop for GLSL shaders and graphics programming.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 730182455,
-            "language": "C++",
-            "last_commit": "2022-10-03T00:00:00.000Z",
-            "owner": "stackgl",
-            "repo": "shader-school",
-            "stars": 32456
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Webgl-workshop",
-          "description": "The sequel to shader-school: Learn the WebGL API.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2367814416,
-            "language": "Java",
-            "last_commit": "2022-11-11T00:00:00.000Z",
-            "owner": "stackgl",
-            "repo": "webgl-workshop",
-            "stars": 14417
-          }
-        }
-      ],
-      "title": "Interactive"
-    },
-    {
-      "description": "",
-      "items": [],
-      "title": "Communities"
-    },
-    {
-      "description": "",
+      "description": null,
       "items": [
         {
           "node_type": "item",
@@ -597,7 +601,7 @@
       "title": "Math"
     },
     {
-      "description": "",
+      "description": null,
       "items": [
         {
           "node_type": "item",
@@ -633,7 +637,7 @@
       "title": "Machine learning • Computer Vision • AI"
     },
     {
-      "description": "",
+      "description": null,
       "items": [
         {
           "node_type": "item",
@@ -832,11 +836,6 @@
         }
       ],
       "title": "Related"
-    },
-    {
-      "description": "To the extent possible under law, Terkel Gjervig has waived all copyright and related or neighboring rights to this work.",
-      "items": [],
-      "title": "License"
     }
   ],
   "metadata": {

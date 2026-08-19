@@ -1,140 +1,139 @@
 {
   "items": [
     {
-      "description": "On the profiles, attitude, behaviors, and expectations between developers, managers and executives.",
-      "items": [],
-      "title": "Roles"
-    },
-    {
       "description": "You're in a competitive sector in which talents are in high demand. Be prepared as a manager to spend a lot of time recruiting people, either to expand your team or fill-in open positions. The dynamics gets interesting too, as you are now on both sides of the hiring process: as a candidate to get a job, and as a recruiter to staff up your team.",
-      "items": [],
+      "items": [
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Hiring Without Whiteboards",
+              "description": "List of companies without the kind of CS trivia questions that are associated with bad interview practices.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 16493522,
+                "language": "Go",
+                "last_commit": "2022-07-28T00:00:00.000Z",
+                "owner": "poteto",
+                "repo": "hiring-without-whiteboards",
+                "stars": 43523
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Awesome Job Boards",
+              "description": "Niche job boards by domains, technology, roles and area.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 517700627,
+                "language": "Ruby",
+                "last_commit": "2022-04-14T00:00:00.000Z",
+                "owner": "tramcar",
+                "repo": "awesome-job-boards",
+                "stars": 628
+              }
+            }
+          ],
+          "description": "By targeting the right place to post your job offer to, you're increasing your chances of targeting the right candidates.",
+          "node_type": "group",
+          "title": "Job Boards"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Engineering Leadership Interviews",
+              "description": "An outline on how to recruit for engineering manager roles.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3427386280,
+                "language": "TypeScript",
+                "last_commit": "2023-03-27T00:00:00.000Z",
+                "owner": "kaushikb9",
+                "repo": "em-interviews",
+                "stars": 36281
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Reverse interview",
+              "description": "Questions to ask the company during your interview. Be prepared to answer them as a manager.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2800384555,
+                "language": "C++",
+                "last_commit": "2022-06-25T00:00:00.000Z",
+                "owner": "viraptor",
+                "repo": "reverse-interview",
+                "stars": 34556
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Back-End Developer Interview Questions",
+              "description": "A great source of inspiration.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1438167756,
+                "language": "Java",
+                "last_commit": "2021-12-06T00:00:00.000Z",
+                "owner": "arialdomartini",
+                "repo": "Back-End-Developer-Interview-Questions",
+                "stars": 17757
+              }
+            }
+          ],
+          "description": "List of questions that can be used when vetting potential candidates, and topics to draw inspiration from to be used as conversation starters.",
+          "node_type": "group",
+          "title": "Interview"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "FizzBuzz Enterprise Edition",
+              "description": "A satire of over-engineering for the sake of enterprise-grade software.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 22788837,
+                "language": "Ruby",
+                "last_commit": "2021-09-16T00:00:00.000Z",
+                "owner": "EnterpriseQualityCoding",
+                "repo": "FizzBuzzEnterpriseEdition",
+                "stars": 38838
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Awesome Interviews",
+              "description": "A huge database of questions sorted by topic to get inspiration from.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3846801598,
+                "language": "Shell",
+                "last_commit": "2022-05-13T00:00:00.000Z",
+                "owner": "MaximAbramchuck",
+                "repo": "awesome-interview-questions",
+                "stars": 1599
+              }
+            }
+          ],
+          "description": "The absence of coding exercise will left the door open to fraud. OTOH, if elitist challenges decrease the number of false-positive, you will pass on perfectly capable and great developers. Now it is your job as manager to find balance between these two extremes, and set the tone on how to have the candidate demonstrate coding skills.",
+          "node_type": "group",
+          "title": "Coding Challenge"
+        }
+      ],
       "title": "Recruitment"
     },
     {
-      "description": "By targeting the right place to post your job offer to, you're increasing your chances of targeting the right candidates.",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "Hiring Without Whiteboards",
-          "description": "List of companies without the kind of CS trivia questions that are associated with bad interview practices.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 16493522,
-            "language": "Go",
-            "last_commit": "2022-07-28T00:00:00.000Z",
-            "owner": "poteto",
-            "repo": "hiring-without-whiteboards",
-            "stars": 43523
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Awesome Job Boards",
-          "description": "Niche job boards by domains, technology, roles and area.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 517700627,
-            "language": "Ruby",
-            "last_commit": "2022-04-14T00:00:00.000Z",
-            "owner": "tramcar",
-            "repo": "awesome-job-boards",
-            "stars": 628
-          }
-        }
-      ],
-      "title": "Job Boards"
-    },
-    {
-      "description": "List of questions that can be used when vetting potential candidates, and topics to draw inspiration from to be used as conversation starters.",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "Engineering Leadership Interviews",
-          "description": "An outline on how to recruit for engineering manager roles.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3427386280,
-            "language": "TypeScript",
-            "last_commit": "2023-03-27T00:00:00.000Z",
-            "owner": "kaushikb9",
-            "repo": "em-interviews",
-            "stars": 36281
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Reverse interview",
-          "description": "Questions to ask the company during your interview. Be prepared to answer them as a manager.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2800384555,
-            "language": "C++",
-            "last_commit": "2022-06-25T00:00:00.000Z",
-            "owner": "viraptor",
-            "repo": "reverse-interview",
-            "stars": 34556
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Back-End Developer Interview Questions",
-          "description": "A great source of inspiration.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1438167756,
-            "language": "Java",
-            "last_commit": "2021-12-06T00:00:00.000Z",
-            "owner": "arialdomartini",
-            "repo": "Back-End-Developer-Interview-Questions",
-            "stars": 17757
-          }
-        }
-      ],
-      "title": "Interview"
-    },
-    {
-      "description": "The absence of coding exercise will left the door open to fraud. OTOH, if elitist challenges decrease the number of false-positive, you will pass on perfectly capable and great developers. Now it is your job as manager to find balance between these two extremes, and set the tone on how to have the candidate demonstrate coding skills.",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "FizzBuzz Enterprise Edition",
-          "description": "A satire of over-engineering for the sake of enterprise-grade software.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 22788837,
-            "language": "Ruby",
-            "last_commit": "2021-09-16T00:00:00.000Z",
-            "owner": "EnterpriseQualityCoding",
-            "repo": "FizzBuzzEnterpriseEdition",
-            "stars": 38838
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Awesome Interviews",
-          "description": "A huge database of questions sorted by topic to get inspiration from.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3846801598,
-            "language": "Shell",
-            "last_commit": "2022-05-13T00:00:00.000Z",
-            "owner": "MaximAbramchuck",
-            "repo": "awesome-interview-questions",
-            "stars": 1599
-          }
-        }
-      ],
-      "title": "Coding Challenge"
-    },
-    {
-      "description": "",
+      "description": null,
       "items": [
         {
           "node_type": "item",
@@ -168,16 +167,6 @@
         }
       ],
       "title": "Culture"
-    },
-    {
-      "description": "Thinking frameworks and mental models to improve decision making, understand systems and solve problems.",
-      "items": [],
-      "title": "Cognitive Tools"
-    },
-    {
-      "description": "You're no longer an engineer. Still, your team is responsible for the systems, technology and all the processes surrounding them. You'd better know a bit about engineering tenets.",
-      "items": [],
-      "title": "Engineering"
     },
     {
       "description": "The Product Manager is supposed to be the voice of the market. Here are more links on the role and its reach.",
@@ -229,31 +218,6 @@
         }
       ],
       "title": "Product Management"
-    },
-    {
-      "description": "It is not only about reading, writing and talking. It encompass all the social practice and context sharing of the team's activities.\nEspecially a software team, which generates a huge amount of knowledge. All this knowledge is fragile and about to be lost for good. Unless you materialization it in the form of writing.",
-      "items": [],
-      "title": "Communication"
-    },
-    {
-      "description": "It's not only about the salary, but the whole package: equity, bonuses, perks, and the dealings around all of these.",
-      "items": [],
-      "title": "Compensation"
-    },
-    {
-      "description": "As a manager, you have direct responsibility of the structure of the team. Past a certain size (around 8 to 12 depending on sources), you no longer have time to work with direct ICs, so you need to re-organize the team.\nAt a company level, re-orgs are mostly strategic and your influence on them depends on your political acumen.",
-      "items": [],
-      "title": "Re-organizations"
-    },
-    {
-      "description": "Your contributions are always welcome! Please take a look at the contribution guidelines first.",
-      "items": [],
-      "title": "Contributing"
-    },
-    {
-      "description": "The header image is based on a modified photo taken in November 2017 by Werner Du plessis.\n[1]: Peopleware: Productive Projects and Teams, 1987, page 34 (Addison-Wesley Professional, 3rd edition, 2013). [↑]",
-      "items": [],
-      "title": "Footnotes"
     }
   ],
   "metadata": {

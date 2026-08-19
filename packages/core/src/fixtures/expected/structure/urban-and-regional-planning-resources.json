@@ -1,721 +1,686 @@
 {
   "items": [
     {
-      "description": "The Technology's Division's Resource Repository is sponsored by the following companies and organizations.",
-      "items": [],
-      "title": "Sponsors"
-    },
-    {
-      "description": "Data resources that are publicly available for use. Licenses may apply.\nOpen Data Sites and national scale datasets should be near the top of each section.",
-      "items": [],
-      "title": "Public Data Resources"
-    },
-    {
-      "description": "Vendors that can provide purchased or licensed data for a variety of uses.",
-      "items": [],
-      "title": "Vendor Data Resources"
-    },
-    {
       "description": "A collection of urban planning related data specifications and standards for use as part of programs & projects.",
-      "items": [],
+      "items": [
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "BLDS",
+              "description": "The BLDS data standard is a collaborative effort by civic technology companies, governments and other interested parties to create a shared data specification for building and construction permit data.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3557179039,
+                "language": null,
+                "last_commit": "2023-11-23T00:00:00.000Z",
+                "owner": "open-data-standards",
+                "repo": "permitdata.org",
+                "stars": 29040
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "DTDL",
+              "description": "The Digital Twins Definition Language is the language by which developers can define the language of the entities they expect to use in their topologies.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 392504965,
+                "language": "C++",
+                "last_commit": "2021-05-11T00:00:00.000Z",
+                "owner": "Azure",
+                "repo": "opendigitaltwins-building",
+                "stars": 4966
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Built Environment"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "SharedStreets",
+              "description": "Referencing System is a global, non-proprietary linear referencing system for describing streets maintained by SharedStreets. Additional Information: GitHub",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 4001495990,
+                "language": "TypeScript",
+                "last_commit": "2021-04-16T00:00:00.000Z",
+                "owner": "sharedstreets",
+                "repo": "sharedstreets-ref-system",
+                "stars": 45991
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "MDS",
+              "description": "The Mobility Data Specification is a data standard to enable communication between mobility companies and local governments.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1359844798,
+                "language": "Shell",
+                "last_commit": "2021-10-25T00:00:00.000Z",
+                "owner": "openmobilityfoundation",
+                "repo": "mobility-data-specification",
+                "stars": 44799
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "CDS",
+              "description": "The Curb Data Specification provides data specifications for curb regulations alongside a connected event and metrics API intended to help cities manage their curb zone programs and surrounding areas, and measure the utilization and impact.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2314334345,
+                "language": "C++",
+                "last_commit": "2023-01-21T00:00:00.000Z",
+                "owner": "openmobilityfoundation",
+                "repo": "curb-data-specification",
+                "stars": 34346
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "OpenSidewalks",
+              "description": "A data specification for routable pedestrian networks and describing and sharing pedestrian network and pedestrian network-adjacent data.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3388876480,
+                "language": "TypeScript",
+                "last_commit": "2022-09-08T00:00:00.000Z",
+                "owner": "OpenSidewalks",
+                "repo": "OpenSidewalks-Schema",
+                "stars": 26481
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "shared-row",
+              "description": "A data specification for representing street right of ways.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 832423474,
+                "language": "Rust",
+                "last_commit": "2022-09-14T00:00:00.000Z",
+                "owner": "d-wasserman",
+                "repo": "shared-row",
+                "stars": 23475
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "GBFS",
+              "description": "The General Bikeshare Feed Specification is a standardized data feed for shared mobility system availability.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 853572945,
+                "language": "C++",
+                "last_commit": "2021-05-31T00:00:00.000Z",
+                "owner": "NABSA",
+                "repo": "gbfs",
+                "stars": 22946
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "GTFS-flex",
+              "description": "A data format that models flexible public transportation services (microtransit/paratransit) as an extension to GTFS.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3861915847,
+                "language": "Ruby",
+                "last_commit": "2021-09-06T00:00:00.000Z",
+                "owner": "MobilityData",
+                "repo": "gtfs-flex",
+                "stars": 15848
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "GMNS",
+              "description": "The General Modeling Network Specification defines a common human and machine readable format for sharing routable road network files.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2853206179,
+                "language": null,
+                "last_commit": "2023-07-06T00:00:00.000Z",
+                "owner": "zephyr-data-specs",
+                "repo": "GMNS",
+                "stars": 6180
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "MTLFS",
+              "description": "The Managed and Tolled Lanes Feed Specification is intended to be used by the managed lanes and toll industry for the standardization and sharing of dynamic toll rates, and any managed lane purpose including but not limited to, ramp metering, bus only lanes, express lanes, especially if the resources are being priced dynamically.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1420051620,
+                "language": "TypeScript",
+                "last_commit": "2022-04-21T00:00:00.000Z",
+                "owner": "vta",
+                "repo": "Managed-and-Tolled-Lanes-Feed-Specification",
+                "stars": 1621
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Transportation"
+        }
+      ],
       "title": "Planning Data Specifications"
     },
     {
-      "description": "",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "BLDS",
-          "description": "The BLDS data standard is a collaborative effort by civic technology companies, governments and other interested parties to create a shared data specification for building and construction permit data.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3557179039,
-            "language": null,
-            "last_commit": "2023-11-23T00:00:00.000Z",
-            "owner": "open-data-standards",
-            "repo": "permitdata.org",
-            "stars": 29040
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "DTDL",
-          "description": "The Digital Twins Definition Language is the language by which developers can define the language of the entities they expect to use in their topologies.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 392504965,
-            "language": "C++",
-            "last_commit": "2021-05-11T00:00:00.000Z",
-            "owner": "Azure",
-            "repo": "opendigitaltwins-building",
-            "stars": 4966
-          }
-        }
-      ],
-      "title": "Built Environment"
-    },
-    {
-      "description": "",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "SharedStreets",
-          "description": "Referencing System is a global, non-proprietary linear referencing system for describing streets maintained by SharedStreets. Additional Information: GitHub",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 4001495990,
-            "language": "TypeScript",
-            "last_commit": "2021-04-16T00:00:00.000Z",
-            "owner": "sharedstreets",
-            "repo": "sharedstreets-ref-system",
-            "stars": 45991
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "MDS",
-          "description": "The Mobility Data Specification is a data standard to enable communication between mobility companies and local governments.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1359844798,
-            "language": "Shell",
-            "last_commit": "2021-10-25T00:00:00.000Z",
-            "owner": "openmobilityfoundation",
-            "repo": "mobility-data-specification",
-            "stars": 44799
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "CDS",
-          "description": "The Curb Data Specification provides data specifications for curb regulations alongside a connected event and metrics API intended to help cities manage their curb zone programs and surrounding areas, and measure the utilization and impact.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2314334345,
-            "language": "C++",
-            "last_commit": "2023-01-21T00:00:00.000Z",
-            "owner": "openmobilityfoundation",
-            "repo": "curb-data-specification",
-            "stars": 34346
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "OpenSidewalks",
-          "description": "A data specification for routable pedestrian networks and describing and sharing pedestrian network and pedestrian network-adjacent data.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3388876480,
-            "language": "TypeScript",
-            "last_commit": "2022-09-08T00:00:00.000Z",
-            "owner": "OpenSidewalks",
-            "repo": "OpenSidewalks-Schema",
-            "stars": 26481
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "shared-row",
-          "description": "A data specification for representing street right of ways.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 832423474,
-            "language": "Rust",
-            "last_commit": "2022-09-14T00:00:00.000Z",
-            "owner": "d-wasserman",
-            "repo": "shared-row",
-            "stars": 23475
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "GBFS",
-          "description": "The General Bikeshare Feed Specification is a standardized data feed for shared mobility system availability.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 853572945,
-            "language": "C++",
-            "last_commit": "2021-05-31T00:00:00.000Z",
-            "owner": "NABSA",
-            "repo": "gbfs",
-            "stars": 22946
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "GTFS-flex",
-          "description": "A data format that models flexible public transportation services (microtransit/paratransit) as an extension to GTFS.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3861915847,
-            "language": "Ruby",
-            "last_commit": "2021-09-06T00:00:00.000Z",
-            "owner": "MobilityData",
-            "repo": "gtfs-flex",
-            "stars": 15848
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "GMNS",
-          "description": "The General Modeling Network Specification defines a common human and machine readable format for sharing routable road network files.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2853206179,
-            "language": null,
-            "last_commit": "2023-07-06T00:00:00.000Z",
-            "owner": "zephyr-data-specs",
-            "repo": "GMNS",
-            "stars": 6180
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "MTLFS",
-          "description": "The Managed and Tolled Lanes Feed Specification is intended to be used by the managed lanes and toll industry for the standardization and sharing of dynamic toll rates, and any managed lane purpose including but not limited to, ramp metering, bus only lanes, express lanes, especially if the resources are being priced dynamically.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1420051620,
-            "language": "TypeScript",
-            "last_commit": "2022-04-21T00:00:00.000Z",
-            "owner": "vta",
-            "repo": "Managed-and-Tolled-Lanes-Feed-Specification",
-            "stars": 1621
-          }
-        }
-      ],
-      "title": "Transportation"
-    },
-    {
       "description": "This is a curated list of Python, R, or other open-source libraries or programming tools can be useful for urban planning applications.",
-      "items": [],
+      "items": [
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "UrbanSim",
+              "description": "A platform for building statistical models of cities and regions. These models help forecast long-range patterns in real estate development, demographics, and related outcomes, under various policy scenarios. Information: License: BSD License: Provider: UrbanSim Inc. (UDST).",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 186499751,
+                "language": "JavaScript",
+                "last_commit": "2021-12-11T00:00:00.000Z",
+                "owner": "udst",
+                "repo": "urbansim",
+                "stars": 49752
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "rasterio",
+              "description": "Geographic information systems use GeoTIFF and other formats to organize and store gridded raster datasets such as satellite imagery and terrain models.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1680997880,
+                "language": "TypeScript",
+                "last_commit": "2021-08-04T00:00:00.000Z",
+                "owner": "rasterio",
+                "repo": "rasterio",
+                "stars": 47881
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Geemap",
+              "description": "A Python package for interactive mapping with Google Earth Engine, ipyleaflet, and ipywidgets.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2379147091,
+                "language": "JavaScript",
+                "last_commit": "2023-10-02T00:00:00.000Z",
+                "owner": "giswqs",
+                "repo": "geemap",
+                "stars": 47092
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "StreetTraffic",
+              "description": "A Python package that crawls the traffic flow data of your favorite routes, cities by using the API provided by HERE.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 880495736,
+                "language": "Java",
+                "last_commit": "2021-12-26T00:00:00.000Z",
+                "owner": "streettraffic",
+                "repo": "streettraffic",
+                "stars": 45737
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Pybikes",
+              "description": "Provides a set of tools to scrape bike sharing data from different websites and APIs, thus providing a coherent and generalized set of classes and methods to access this sort of information.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1061493870,
+                "language": "TypeScript",
+                "last_commit": "2021-08-14T00:00:00.000Z",
+                "owner": "eskerda",
+                "repo": "pybikes",
+                "stars": 43871
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Gleam",
+              "description": "A plotting library inspired by R-Shiny to create interactive plots.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2432142679,
+                "language": null,
+                "last_commit": "2022-02-21T00:00:00.000Z",
+                "owner": "dgrtwo",
+                "repo": "gleam",
+                "stars": 42680
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Geosnap",
+              "description": "Geospatial & temporal neighborhood analysis using US Census Data.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2172140849,
+                "language": null,
+                "last_commit": "2021-09-04T00:00:00.000Z",
+                "owner": "spatialucr",
+                "repo": "geosnap",
+                "stars": 40850
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Peartree",
+              "description": "Helps explore GTFS data and their network characteristics.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2595880825,
+                "language": "C++",
+                "last_commit": "2021-09-28T00:00:00.000Z",
+                "owner": "kuanb",
+                "repo": "peartree",
+                "stars": 30826
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "HerePy",
+              "description": "A library that provides a Python interface to HERE APIs.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3916273048,
+                "language": "Shell",
+                "last_commit": "2023-11-14T00:00:00.000Z",
+                "owner": "abdullahselek",
+                "repo": "HerePy",
+                "stars": 23049
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "OSMnx",
+              "description": "Python for street networks. Retrieve, model, analyze, and visualize street networks and other spatial data from OpenStreetMap.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3838622852,
+                "language": "Go",
+                "last_commit": "2021-09-01T00:00:00.000Z",
+                "owner": "gboeing",
+                "repo": "osmnx",
+                "stars": 22853
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Prettymaps",
+              "description": "A small set of Python functions to draw pretty maps from OpenStreetMap data.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 251468317,
+                "language": "Ruby",
+                "last_commit": "2023-02-18T00:00:00.000Z",
+                "owner": "marceloprates",
+                "repo": "prettymaps",
+                "stars": 18318
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Urbansprawl",
+              "description": "The urbansprawl project provides an open source framework for assessing urban sprawl using open data. It uses OpenStreetMap (OSM) data to calculate its sprawling indices, divided in Accessibility, Land use mix, and Dispersion.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3834766171,
+                "language": "JavaScript",
+                "last_commit": "2023-07-14T00:00:00.000Z",
+                "owner": "lgervasoni",
+                "repo": "urbansprawl",
+                "stars": 16172
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Leafmap",
+              "description": "A free and open-source Python package that enables users to analyze and visualize geospatial data with minimal coding in a Jupyter environment. Leafmap's interactive GUI allows no code layer management and analysis including a powerful analytical backend (i.e., WhiteboxTools). Additional Information: leafmap.org, JOSS Article, Medium Article.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1267712290,
+                "language": "TypeScript",
+                "last_commit": "2023-03-17T00:00:00.000Z",
+                "owner": "giswqs",
+                "repo": "leafmap",
+                "stars": 12291
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Neatnet",
+              "description": "An open source library for simplifying the structure of street networks.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1288311512,
+                "language": "Go",
+                "last_commit": "2022-08-07T00:00:00.000Z",
+                "owner": "uscuni",
+                "repo": "neatnet",
+                "stars": 11513
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Madina",
+              "description": "This is a package of classes and functions to streamline the representation and analysis of urban networks. This library includes a Python implementation of the Urban Network Analysis Tools.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 4047558774,
+                "language": "Rust",
+                "last_commit": "2021-11-18T00:00:00.000Z",
+                "owner": "City-Form-Lab",
+                "repo": "madina",
+                "stars": 8775
+              }
+            }
+          ],
+          "description": "Python Libraries & Related Resources.",
+          "node_type": "group",
+          "title": "Python"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Rgee",
+              "description": "Is an R binding package for calling Google Earth Engine API from within R. Various functions are implemented to simplify the connection with the R spatial ecosystem.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2688744724,
+                "language": "Rust",
+                "last_commit": "2022-01-07T00:00:00.000Z",
+                "owner": "r-spatial",
+                "repo": "rgee",
+                "stars": 44725
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "r5r",
+              "description": "Is an R package for rapid realistic routing on multimodal transport networks (walk, bike, public transport and car) leveraging the Conveyal R5 routing engine.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3770683128,
+                "language": "Shell",
+                "last_commit": "2023-08-26T00:00:00.000Z",
+                "owner": "ipeaGIT",
+                "repo": "r5r",
+                "stars": 33129
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "leafgl",
+              "description": "R package for fast web-gl rendering for leaflet maps.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1517004734,
+                "language": "Rust",
+                "last_commit": "2021-12-28T00:00:00.000Z",
+                "owner": "r-spatial",
+                "repo": "leafgl",
+                "stars": 4735
+              }
+            }
+          ],
+          "description": "R Packages & Related Resources.",
+          "node_type": "group",
+          "title": "R"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "global-indicators",
+              "description": "Case study projected dedicated to developing global healthy and sustainable city-indicators collaboration.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1468669194,
+                "language": "Rust",
+                "last_commit": "2023-06-21T00:00:00.000Z",
+                "owner": "global-healthy-liveable-cities",
+                "repo": "global-indicators",
+                "stars": 19195
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "civic-tech-patterns",
+              "description": "Common patterns and anti-patterns for civic tech and civic applications. Additional Information: Provided by Code for America.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1455061321,
+                "language": "JavaScript",
+                "last_commit": "2023-02-14T00:00:00.000Z",
+                "owner": "codeforamerica",
+                "repo": "civic-tech-patterns",
+                "stars": 11322
+              }
+            }
+          ],
+          "description": "Other coding special projects and/or other resources.",
+          "node_type": "group",
+          "title": "Other"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "GTFS-Js",
+              "description": "JavaScript library for working with GTFS data. Additional Information: Unlicense: WSDOT.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3365496501,
+                "language": "JavaScript",
+                "last_commit": "2022-08-18T00:00:00.000Z",
+                "owner": "WSDOT-GIS",
+                "repo": "GTFS-JS",
+                "stars": 46502
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Chart.js",
+              "description": "Create simple (or advanced) visualizations of data for web and mobile. Additional Information: GitHub.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3655745980,
+                "language": "TypeScript",
+                "last_commit": "2021-04-26T00:00:00.000Z",
+                "owner": "chartjs",
+                "repo": "Chart.js",
+                "stars": 45981
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Turf.js",
+              "description": "Advanced geospatial analysis for browsers and Node.js. Additional Information: GitHub.",
+              "children": [],
+              "repo_info": {
+                "archived": true,
+                "id": 4190837841,
+                "language": "JavaScript",
+                "last_commit": "2021-09-12T00:00:00.000Z",
+                "owner": "Turfjs",
+                "repo": "turf",
+                "stars": 37842
+              }
+            }
+          ],
+          "description": "Front-end web related packages and resources.",
+          "node_type": "group",
+          "title": "Web and JS"
+        }
+      ],
       "title": "Planning Coding Resources"
     },
     {
-      "description": "Python Libraries & Related Resources.",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "UrbanSim",
-          "description": "A platform for building statistical models of cities and regions. These models help forecast long-range patterns in real estate development, demographics, and related outcomes, under various policy scenarios. Information: License: BSD License: Provider: UrbanSim Inc. (UDST).",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 186499751,
-            "language": "JavaScript",
-            "last_commit": "2021-12-11T00:00:00.000Z",
-            "owner": "udst",
-            "repo": "urbansim",
-            "stars": 49752
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "rasterio",
-          "description": "Geographic information systems use GeoTIFF and other formats to organize and store gridded raster datasets such as satellite imagery and terrain models.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1680997880,
-            "language": "TypeScript",
-            "last_commit": "2021-08-04T00:00:00.000Z",
-            "owner": "rasterio",
-            "repo": "rasterio",
-            "stars": 47881
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Geemap",
-          "description": "A Python package for interactive mapping with Google Earth Engine, ipyleaflet, and ipywidgets.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2379147091,
-            "language": "JavaScript",
-            "last_commit": "2023-10-02T00:00:00.000Z",
-            "owner": "giswqs",
-            "repo": "geemap",
-            "stars": 47092
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "StreetTraffic",
-          "description": "A Python package that crawls the traffic flow data of your favorite routes, cities by using the API provided by HERE.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 880495736,
-            "language": "Java",
-            "last_commit": "2021-12-26T00:00:00.000Z",
-            "owner": "streettraffic",
-            "repo": "streettraffic",
-            "stars": 45737
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Pybikes",
-          "description": "Provides a set of tools to scrape bike sharing data from different websites and APIs, thus providing a coherent and generalized set of classes and methods to access this sort of information.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1061493870,
-            "language": "TypeScript",
-            "last_commit": "2021-08-14T00:00:00.000Z",
-            "owner": "eskerda",
-            "repo": "pybikes",
-            "stars": 43871
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Gleam",
-          "description": "A plotting library inspired by R-Shiny to create interactive plots.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2432142679,
-            "language": null,
-            "last_commit": "2022-02-21T00:00:00.000Z",
-            "owner": "dgrtwo",
-            "repo": "gleam",
-            "stars": 42680
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Geosnap",
-          "description": "Geospatial & temporal neighborhood analysis using US Census Data.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2172140849,
-            "language": null,
-            "last_commit": "2021-09-04T00:00:00.000Z",
-            "owner": "spatialucr",
-            "repo": "geosnap",
-            "stars": 40850
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Peartree",
-          "description": "Helps explore GTFS data and their network characteristics.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2595880825,
-            "language": "C++",
-            "last_commit": "2021-09-28T00:00:00.000Z",
-            "owner": "kuanb",
-            "repo": "peartree",
-            "stars": 30826
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "HerePy",
-          "description": "A library that provides a Python interface to HERE APIs.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3916273048,
-            "language": "Shell",
-            "last_commit": "2023-11-14T00:00:00.000Z",
-            "owner": "abdullahselek",
-            "repo": "HerePy",
-            "stars": 23049
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "OSMnx",
-          "description": "Python for street networks. Retrieve, model, analyze, and visualize street networks and other spatial data from OpenStreetMap.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3838622852,
-            "language": "Go",
-            "last_commit": "2021-09-01T00:00:00.000Z",
-            "owner": "gboeing",
-            "repo": "osmnx",
-            "stars": 22853
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Prettymaps",
-          "description": "A small set of Python functions to draw pretty maps from OpenStreetMap data.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 251468317,
-            "language": "Ruby",
-            "last_commit": "2023-02-18T00:00:00.000Z",
-            "owner": "marceloprates",
-            "repo": "prettymaps",
-            "stars": 18318
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Urbansprawl",
-          "description": "The urbansprawl project provides an open source framework for assessing urban sprawl using open data. It uses OpenStreetMap (OSM) data to calculate its sprawling indices, divided in Accessibility, Land use mix, and Dispersion.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3834766171,
-            "language": "JavaScript",
-            "last_commit": "2023-07-14T00:00:00.000Z",
-            "owner": "lgervasoni",
-            "repo": "urbansprawl",
-            "stars": 16172
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Leafmap",
-          "description": "A free and open-source Python package that enables users to analyze and visualize geospatial data with minimal coding in a Jupyter environment. Leafmap's interactive GUI allows no code layer management and analysis including a powerful analytical backend (i.e., WhiteboxTools). Additional Information: leafmap.org, JOSS Article, Medium Article.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1267712290,
-            "language": "TypeScript",
-            "last_commit": "2023-03-17T00:00:00.000Z",
-            "owner": "giswqs",
-            "repo": "leafmap",
-            "stars": 12291
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Neatnet",
-          "description": "An open source library for simplifying the structure of street networks.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1288311512,
-            "language": "Go",
-            "last_commit": "2022-08-07T00:00:00.000Z",
-            "owner": "uscuni",
-            "repo": "neatnet",
-            "stars": 11513
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Madina",
-          "description": "This is a package of classes and functions to streamline the representation and analysis of urban networks. This library includes a Python implementation of the Urban Network Analysis Tools.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 4047558774,
-            "language": "Rust",
-            "last_commit": "2021-11-18T00:00:00.000Z",
-            "owner": "City-Form-Lab",
-            "repo": "madina",
-            "stars": 8775
-          }
-        }
-      ],
-      "title": "Python"
-    },
-    {
-      "description": "R Packages & Related Resources.",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "Rgee",
-          "description": "Is an R binding package for calling Google Earth Engine API from within R. Various functions are implemented to simplify the connection with the R spatial ecosystem.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2688744724,
-            "language": "Rust",
-            "last_commit": "2022-01-07T00:00:00.000Z",
-            "owner": "r-spatial",
-            "repo": "rgee",
-            "stars": 44725
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "r5r",
-          "description": "Is an R package for rapid realistic routing on multimodal transport networks (walk, bike, public transport and car) leveraging the Conveyal R5 routing engine.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3770683128,
-            "language": "Shell",
-            "last_commit": "2023-08-26T00:00:00.000Z",
-            "owner": "ipeaGIT",
-            "repo": "r5r",
-            "stars": 33129
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "leafgl",
-          "description": "R package for fast web-gl rendering for leaflet maps.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1517004734,
-            "language": "Rust",
-            "last_commit": "2021-12-28T00:00:00.000Z",
-            "owner": "r-spatial",
-            "repo": "leafgl",
-            "stars": 4735
-          }
-        }
-      ],
-      "title": "R"
-    },
-    {
-      "description": "Other coding special projects and/or other resources.",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "global-indicators",
-          "description": "Case study projected dedicated to developing global healthy and sustainable city-indicators collaboration.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1468669194,
-            "language": "Rust",
-            "last_commit": "2023-06-21T00:00:00.000Z",
-            "owner": "global-healthy-liveable-cities",
-            "repo": "global-indicators",
-            "stars": 19195
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "civic-tech-patterns",
-          "description": "Common patterns and anti-patterns for civic tech and civic applications. Additional Information: Provided by Code for America.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1455061321,
-            "language": "JavaScript",
-            "last_commit": "2023-02-14T00:00:00.000Z",
-            "owner": "codeforamerica",
-            "repo": "civic-tech-patterns",
-            "stars": 11322
-          }
-        }
-      ],
-      "title": "Other"
-    },
-    {
-      "description": "Front-end web related packages and resources.",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "GTFS-Js",
-          "description": "JavaScript library for working with GTFS data. Additional Information: Unlicense: WSDOT.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3365496501,
-            "language": "JavaScript",
-            "last_commit": "2022-08-18T00:00:00.000Z",
-            "owner": "WSDOT-GIS",
-            "repo": "GTFS-JS",
-            "stars": 46502
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Chart.js",
-          "description": "Create simple (or advanced) visualizations of data for web and mobile. Additional Information: GitHub.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3655745980,
-            "language": "TypeScript",
-            "last_commit": "2021-04-26T00:00:00.000Z",
-            "owner": "chartjs",
-            "repo": "Chart.js",
-            "stars": 45981
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Turf.js",
-          "description": "Advanced geospatial analysis for browsers and Node.js. Additional Information: GitHub.",
-          "children": [],
-          "repo_info": {
-            "archived": true,
-            "id": 4190837841,
-            "language": "JavaScript",
-            "last_commit": "2021-09-12T00:00:00.000Z",
-            "owner": "Turfjs",
-            "repo": "turf",
-            "stars": 37842
-          }
-        }
-      ],
-      "title": "Web and JS"
-    },
-    {
-      "description": "Software and platforms for planners and those interested in the built environment.",
-      "items": [],
-      "title": "Platforms and Software Resources"
-    },
-    {
-      "description": "Collections of planning related literature, information aggregators, or similar resources.",
-      "items": [],
-      "title": "Educational and Informational Resources"
-    },
-    {
       "description": "Other types of planning data & technology resources. They are a good source of inspiration to contribute to this repo for example, but we don't need to duplicate efforts.",
-      "items": [],
-      "title": "Other Resources"
-    },
-    {
-      "description": "This page is registered as an awesome-list, but similar GitHub repositories can be listed here. These are managed curations of resources that relate to different topics.",
       "items": [
         {
-          "node_type": "item",
-          "title": "awesome-geojson",
-          "description": "GeoJSON utilities that will make your life easier.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2864547882,
-            "language": "Go",
-            "last_commit": "2021-08-02T00:00:00.000Z",
-            "owner": "tmcw",
-            "repo": "awesome-geojson",
-            "stars": 47883
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "awesome-sustainable-technology",
-          "description": "A curated list of open technology projects to sustain a stable climate, energy supply, and vital natural resources.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1763218428,
-            "language": "Shell",
-            "last_commit": "2022-10-30T00:00:00.000Z",
-            "owner": "protontypes",
-            "repo": "open-sustainable-technology",
-            "stars": 18429
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "ai-collection",
-          "description": "Review of the generative AI landscape including tools/utilities.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2205610844,
-            "language": "Rust",
-            "last_commit": "2021-09-09T00:00:00.000Z",
-            "owner": "ai-collection",
-            "repo": "ai-collection",
-            "stars": 10845
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "micromobility-tools-and-resources",
-          "description": "A collection of micromobility tools and data resources.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 1143008350,
-            "language": "TypeScript",
-            "last_commit": "2023-01-16T00:00:00.000Z",
-            "owner": "NABSA",
-            "repo": "micromobility-tools-and-resources",
-            "stars": 8351
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "awesome-transit",
-          "description": "A collection of transit data tools and resources.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 915656562,
-            "language": "Go",
-            "last_commit": "2022-06-18T00:00:00.000Z",
-            "owner": "CUTR-at-USF",
-            "repo": "awesome-transit",
-            "stars": 6563
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "awesome-gis",
-          "description": "Awesome GIS is a collection of geospatial related sources, including cartographic tools, geoanalysis tools, developer tools, data, conference & communities, news, massive open online course, some amazing map sites, and more.",
-          "children": [],
-          "repo_info": {
-            "archived": true,
-            "id": 3915854868,
-            "language": "Shell",
-            "last_commit": "2021-08-16T00:00:00.000Z",
-            "owner": "sshuair",
-            "repo": "awesome-gis",
-            "stars": 4869
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "awesome-agriculture",
-          "description": "Open source technology for agriculture, farming, and gardening.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2845051211,
-            "language": "JavaScript",
-            "last_commit": "2023-06-04T00:00:00.000Z",
-            "owner": "brycejohnston",
-            "repo": "awesome-agriculture",
-            "stars": 1212
-          }
+          "children": [
+            {
+              "node_type": "item",
+              "title": "awesome-geojson",
+              "description": "GeoJSON utilities that will make your life easier.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2864547882,
+                "language": "Go",
+                "last_commit": "2021-08-02T00:00:00.000Z",
+                "owner": "tmcw",
+                "repo": "awesome-geojson",
+                "stars": 47883
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "awesome-sustainable-technology",
+              "description": "A curated list of open technology projects to sustain a stable climate, energy supply, and vital natural resources.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1763218428,
+                "language": "Shell",
+                "last_commit": "2022-10-30T00:00:00.000Z",
+                "owner": "protontypes",
+                "repo": "open-sustainable-technology",
+                "stars": 18429
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "ai-collection",
+              "description": "Review of the generative AI landscape including tools/utilities.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2205610844,
+                "language": "Rust",
+                "last_commit": "2021-09-09T00:00:00.000Z",
+                "owner": "ai-collection",
+                "repo": "ai-collection",
+                "stars": 10845
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "micromobility-tools-and-resources",
+              "description": "A collection of micromobility tools and data resources.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1143008350,
+                "language": "TypeScript",
+                "last_commit": "2023-01-16T00:00:00.000Z",
+                "owner": "NABSA",
+                "repo": "micromobility-tools-and-resources",
+                "stars": 8351
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "awesome-transit",
+              "description": "A collection of transit data tools and resources.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 915656562,
+                "language": "Go",
+                "last_commit": "2022-06-18T00:00:00.000Z",
+                "owner": "CUTR-at-USF",
+                "repo": "awesome-transit",
+                "stars": 6563
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "awesome-gis",
+              "description": "Awesome GIS is a collection of geospatial related sources, including cartographic tools, geoanalysis tools, developer tools, data, conference & communities, news, massive open online course, some amazing map sites, and more.",
+              "children": [],
+              "repo_info": {
+                "archived": true,
+                "id": 3915854868,
+                "language": "Shell",
+                "last_commit": "2021-08-16T00:00:00.000Z",
+                "owner": "sshuair",
+                "repo": "awesome-gis",
+                "stars": 4869
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "awesome-agriculture",
+              "description": "Open source technology for agriculture, farming, and gardening.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2845051211,
+                "language": "JavaScript",
+                "last_commit": "2023-06-04T00:00:00.000Z",
+                "owner": "brycejohnston",
+                "repo": "awesome-agriculture",
+                "stars": 1212
+              }
+            }
+          ],
+          "description": "This page is registered as an awesome-list, but similar GitHub repositories can be listed here. These are managed curations of resources that relate to different topics.",
+          "node_type": "group",
+          "title": "Other GitHub Resource Lists"
         }
       ],
-      "title": "Other GitHub Resource Lists"
-    },
-    {
-      "description": "",
-      "items": [],
-      "title": "Contributing"
-    },
-    {
-      "description": "If you don't have a GitHub, but have a resources that falls into the categories below you would like to contribute try putting the information in this Google Sheet here. We will look at incorporating it into the repository pending review. https://docs.google.com/forms/d/e/1FAIpQLSfGp_XC5V-uIzafsVBhR4xKX9YhgNOz22w84Sg0zo0ONDdV4w/viewform?usp=sf_link",
-      "items": [],
-      "title": "Form Based Contributions"
-    },
-    {
-      "description": "We are actively looking for contributions from those interested in urban planning and technology. To find out more, visit the Contribution page to see our recommended format. For large contributions, file an issue first. The advantage of contributing to the repo in this manner is that your addition to this shared resource will be recorded.",
-      "items": [],
-      "title": "GitHub Contributions"
-    },
-    {
-      "description": "Similar to other resources aggregators, this repository is released into CC 1.0. We do not require citation, but in order to generate more contributions for and understanding of this resource we do appreciate sharing this repository or citing it where appropriate.\nIf you do cite this repository you can as:\nurban-and-regional-planning-resources. (2020) APA Technology Division. Taken from: from https://github.com/APA-Technology-Division",
-      "items": [],
-      "title": "License and Citation"
+      "title": "Other Resources"
     }
   ],
   "metadata": {

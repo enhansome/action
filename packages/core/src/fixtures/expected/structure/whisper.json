@@ -1,7 +1,7 @@
 {
   "items": [
     {
-      "description": "",
+      "description": null,
       "items": [
         {
           "node_type": "item",
@@ -143,7 +143,7 @@
       "title": "Model variants"
     },
     {
-      "description": "",
+      "description": null,
       "items": [
         {
           "node_type": "item",
@@ -254,78 +254,80 @@
       "title": "Apps"
     },
     {
-      "description": "",
-      "items": [],
+      "description": null,
+      "items": [
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Subs AI",
+              "description": "Subtitle generation.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3257032300,
+                "language": "TypeScript",
+                "last_commit": "2023-03-07T00:00:00.000Z",
+                "owner": "abdeladim-s",
+                "repo": "subsai",
+                "stars": 32301
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "writeout.ai",
+              "description": "Laravel app to transcribe and translate audio files.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2702574707,
+                "language": "Ruby",
+                "last_commit": "2022-01-24T00:00:00.000Z",
+                "owner": "beyondcode",
+                "repo": "writeout.ai",
+                "stars": 24708
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "WaaS",
+              "description": "GUI and API for Whisper.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 63859861,
+                "language": "JavaScript",
+                "last_commit": "2021-08-23T00:00:00.000Z",
+                "owner": "schibsted",
+                "repo": "WAAS",
+                "stars": 9862
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Meeper",
+              "description": "Transcriptions, summary and more for meetings and any browser tab. (Chrome app)",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 4186355997,
+                "language": "Ruby",
+                "last_commit": "2021-04-09T00:00:00.000Z",
+                "owner": "pas1ko",
+                "repo": "meeper",
+                "stars": 5998
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Self-hosted"
+        }
+      ],
       "title": "Web apps"
     },
     {
-      "description": "",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "Subs AI",
-          "description": "Subtitle generation.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 3257032300,
-            "language": "TypeScript",
-            "last_commit": "2023-03-07T00:00:00.000Z",
-            "owner": "abdeladim-s",
-            "repo": "subsai",
-            "stars": 32301
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "writeout.ai",
-          "description": "Laravel app to transcribe and translate audio files.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 2702574707,
-            "language": "Ruby",
-            "last_commit": "2022-01-24T00:00:00.000Z",
-            "owner": "beyondcode",
-            "repo": "writeout.ai",
-            "stars": 24708
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "WaaS",
-          "description": "GUI and API for Whisper.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 63859861,
-            "language": "JavaScript",
-            "last_commit": "2021-08-23T00:00:00.000Z",
-            "owner": "schibsted",
-            "repo": "WAAS",
-            "stars": 9862
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "Meeper",
-          "description": "Transcriptions, summary and more for meetings and any browser tab. (Chrome app)",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "id": 4186355997,
-            "language": "Ruby",
-            "last_commit": "2021-04-09T00:00:00.000Z",
-            "owner": "pas1ko",
-            "repo": "meeper",
-            "stars": 5998
-          }
-        }
-      ],
-      "title": "Self-hosted"
-    },
-    {
-      "description": "",
+      "description": null,
       "items": [
         {
           "node_type": "item",
@@ -436,7 +438,7 @@
       "title": "CLI tools"
     },
     {
-      "description": "",
+      "description": null,
       "items": [
         {
           "node_type": "item",
@@ -470,11 +472,6 @@
         }
       ],
       "title": "Playgrounds"
-    },
-    {
-      "description": "",
-      "items": [],
-      "title": "Packages"
     }
   ],
   "metadata": {

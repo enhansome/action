@@ -35,25 +35,18 @@
         },
         {
           "node_type": "item",
-          "title": "Repo B",
-          "description": "300 stars",
-          "children": [
-            {
-              "node_type": "item",
-              "title": "Nested 1",
-              "description": "50 stars.",
-              "children": [],
-              "repo_info": {
-                "archived": false,
-                "id": 3567242478,
-                "language": "Shell",
-                "last_commit": "2022-09-10T00:00:00.000Z",
-                "owner": "user",
-                "repo": "nested-1",
-                "stars": 42479
-              }
-            }
-          ]
+          "title": "Nested 1",
+          "description": "50 stars.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 3567242478,
+            "language": "Shell",
+            "last_commit": "2022-09-10T00:00:00.000Z",
+            "owner": "user",
+            "repo": "nested-1",
+            "stars": 42479
+          }
         }
       ],
       "title": "First Section"
