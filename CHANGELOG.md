@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.8.1](https://github.com/enhansome/action/compare/v1.8.0...v1.8.1) (2026-08-19)
+
+
+### Bug Fixes
+
+* emit original_repository_id in JSON metadata ([3a3a64e](https://github.com/enhansome/action/commit/3a3a64eb8d4862cd44b56e7cb4be9b86c3b24df3))
+
 ## [1.8.0](https://github.com/enhansome/action/compare/v1.7.1...v1.8.0) (2026-08-19)
 
 
