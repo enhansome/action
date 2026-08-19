@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.8.0](https://github.com/enhansome/action/compare/v1.7.1...v1.8.0) (2026-08-19)
+
+
+### Features
+
+* readme json tree-shape overhaul ([fbfc33c](https://github.com/enhansome/action/commit/fbfc33cdc9840e6d75862d1a800510baaeeccc65))
+
+
+### Bug Fixes
+
+* emit numeric GitHub id in repo_info ([552eafc](https://github.com/enhansome/action/commit/552eafc9d5a6d541d9f8a369f78343c853e7e3b6))
+
 ## [1.7.1](https://github.com/enhansome/action/compare/v1.7.0...v1.7.1) (2026-08-06)
 
 
