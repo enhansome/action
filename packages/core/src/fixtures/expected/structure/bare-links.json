@@ -1,0 +1,172 @@
+{
+  "items": [
+    {
+      "description": null,
+      "items": [
+        {
+          "node_type": "item",
+          "title": "github.com/example/kernel-two",
+          "description": "a second bare-URL entry so the section gate passes.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 1046894200,
+            "language": "TypeScript",
+            "last_commit": "2023-06-15T00:00:00.000Z",
+            "owner": "example",
+            "repo": "kernel-two",
+            "stars": 44201
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "github.com/example/kernel-tool",
+          "description": "a bare scheme-less URL with shields badges, the windows-kernel shape; the title is the URL text.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 414405716,
+            "language": "Java",
+            "last_commit": "2022-01-15T00:00:00.000Z",
+            "owner": "example",
+            "repo": "kernel-tool",
+            "stars": 5717
+          }
+        }
+      ],
+      "title": "Kernel Tools"
+    },
+    {
+      "description": "For the canonical upstream see github.com/example/prose-mention — a mid-sentence URL linkifies but never leads, so this paragraph is description.",
+      "items": [
+        {
+          "node_type": "item",
+          "title": "github.com/example/leading-url",
+          "description": "a paragraph led by a bare URL is an entry.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 2689275248,
+            "language": "Shell",
+            "last_commit": "2023-04-28T00:00:00.000Z",
+            "owner": "example",
+            "repo": "leading-url",
+            "stars": 25249
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "github.com/example/leading-two",
+          "description": "a second leading entry for the gate.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 4025711295,
+            "language": "C++",
+            "last_commit": "2023-03-12T00:00:00.000Z",
+            "owner": "example",
+            "repo": "leading-two",
+            "stars": 11296
+          }
+        }
+      ],
+      "title": "Prose Mentions"
+    },
+    {
+      "description": "A split anchor: the open tag's paragraph\nand its close tag sit in different paragraphs, so no pair forms and no entry appears.",
+      "items": [
+        {
+          "node_type": "item",
+          "title": "badge-anchor",
+          "description": "an image-only anchor carries the list face's identity, titled by the repo name.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 779695077,
+            "language": "Ruby",
+            "last_commit": "2023-10-16T00:00:00.000Z",
+            "owner": "example",
+            "repo": "badge-anchor",
+            "stars": 45078
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "anchor-tool",
+          "description": "an inline html anchor pair becomes the item's identity.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 1839675980,
+            "language": "TypeScript",
+            "last_commit": "2021-04-26T00:00:00.000Z",
+            "owner": "example",
+            "repo": "anchor-tool",
+            "stars": 25981
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "anchor-child",
+          "description": "the lifted child.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 2742643976,
+            "language": "Java",
+            "last_commit": "2021-04-30T00:00:00.000Z",
+            "owner": "example",
+            "repo": "anchor-child",
+            "stars": 43977
+          }
+        }
+      ],
+      "title": "Html Anchors"
+    },
+    {
+      "description": null,
+      "items": [
+        {
+          "node_type": "item",
+          "title": "github.com/example/inline-code",
+          "description": "a URL text inside a link label is never double-linkified.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 2066674035,
+            "language": "C++",
+            "last_commit": "2023-11-27T00:00:00.000Z",
+            "owner": "example",
+            "repo": "inline-code",
+            "stars": 24036
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "plain-tool",
+          "description": "keeps this section above the gate.",
+          "children": [],
+          "repo_info": {
+            "archived": true,
+            "id": 2081769595,
+            "language": "C++",
+            "last_commit": "2022-05-16T00:00:00.000Z",
+            "owner": "example",
+            "repo": "plain-tool",
+            "stars": 19596
+          }
+        }
+      ],
+      "title": "Inline Code And Labels"
+    }
+  ],
+  "metadata": {
+    "last_updated": "2025-01-01T00:00:00.000Z",
+    "original_repository": "example/bare-links",
+    "original_repository_id": 4242,
+    "original_repository_sha": "deadbeef",
+    "enhanced_repository": "enhansome/enhansome-bare-links",
+    "enhanced_repository_description": "enhanced list",
+    "title": "Awesome Bare Links with stars"
+  }
+}

@@ -14,6 +14,7 @@ import {
   countLinkedItems,
   findTitleSlotIndex,
   isStructuralHeading,
+  normalizeGitHubUrls,
 } from './markdown.js';
 import { silentLog } from './logger.js';
 import { enhance } from './orchestrator.js';
@@ -212,7 +213,12 @@ describeYield('yield harness', () => {
 
       for (const [fileNumber, file] of files.entries()) {
         const content = fs.readFileSync(path.join(corpusDir!, file), 'utf-8');
+        // The parser linkifies bare URLs and inline anchors before walking
+        // (normalizeGitHubUrls), so the expected model must too — otherwise
+        // repos that only exist as text/anchors land in `got` while being
+        // invisible to `expected`.
         const tree = processor.parse(content) as Root;
+        normalizeGitHubUrls(tree);
         const titleSlotIndex = findTitleSlotIndex(tree);
         const first = classifyFirstOccurrences(
           tree,

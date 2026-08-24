@@ -228,6 +228,7 @@ export async function processMarkdownContent(
 
   const processor = unified().use(remarkParse).use(remarkGfm);
   const tree = processor.parse(contentAfterReplacements);
+  normalizeGitHubUrls(tree);
 
   const githubUrls = collectGitHubLinks(tree);
 
@@ -350,6 +351,123 @@ function collectGitHubLinks(tree: Root): Set<string> {
     }
   });
   return urls;
+}
+
+// Input normalization, same family as fixRelativeLinks: make GitHub repos a
+// source expresses WITHOUT markdown links visible as real link nodes, so
+// every downstream consumer — repo fetch, entry tests, gates, badges — sees
+// the shape a markdown link would have produced. Two families:
+//
+// (1) Bare scheme-less `github.com/owner/repo` text — GFM autolinks only
+//     scheme-full URLs, so these stay plain text. The link's label is the
+//     URL text; only owner/repo are consumed (a deeper path like `/tree/main`
+//     stays in the trailing text — the identity reads the first two segments
+//     either way).
+// (2) Inline `<a href="…">…</a>` anchors — remark emits the open and close
+//     tags as separate html nodes around the label's inline nodes, so the
+//     pair is rewrapped as one link. Anchors inside BLOCK html (`<details>`
+//     summaries, centered banners) keep their raw form: that html is the
+//     structure the walk already reads (detailsSummaryTitle), and rewriting
+//     it is a different decision than link visibility.
+//
+// Text inside code spans/blocks never linkifies (code has no text nodes) and
+// text inside an existing link label is skipped — nested links are not a
+// thing. Non-GitHub and org-only anchors stay raw html.
+const BARE_GITHUB_URL =
+  /(?:^|(?<=[\s(>\[]))(?:www\.)?github\.com\/[A-Za-z0-9_.-]+\/[A-Za-z0-9_.-]+/g;
+const ANCHOR_OPEN = /^<a\s[^>]*href=(["'])([^"']*)\1[^>]*>$/;
+const ANCHOR_CLOSE = /^<\/a\s*>$/;
+
+export function normalizeGitHubUrls(tree: Root): void {
+  const walk = (node: Node, inLink: boolean): void => {
+    if (inLink) {
+      return;
+    }
+    const parent = node as Parent;
+    if (!Array.isArray(parent.children)) {
+      return;
+    }
+    for (const child of parent.children) {
+      walk(child, child.type === 'link');
+    }
+    parent.children = normalizeInlineChildren(
+      parent.children,
+    ) as typeof parent.children;
+  };
+  walk(tree, false);
+}
+
+// One parent's inline run: bare-URL text nodes split into text/link/text,
+// anchor open+close pairs rewrapped as a link. The anchor's inner nodes are
+// taken verbatim — they are the label, and splitting them would nest links.
+function normalizeInlineChildren(children: Node[]): Node[] {
+  const out: Node[] = [];
+  for (let i = 0; i < children.length; i++) {
+    const child = children[i];
+    if (child.type === 'html') {
+      const anchor = ANCHOR_OPEN.exec((child as Html).value.trim());
+      const url =
+        anchor && parseGitHubUrl(anchor[2]) ? anchor[2] : null;
+      if (url) {
+        const closeIndex = children.findIndex(
+          (candidate, j) =>
+            j > i &&
+            candidate.type === 'html' &&
+            ANCHOR_CLOSE.test((candidate as Html).value.trim()),
+        );
+        if (closeIndex !== -1) {
+          out.push({
+            type: 'link',
+            url,
+            children: children.slice(i + 1, closeIndex),
+          } as Link);
+          i = closeIndex;
+          continue;
+        }
+      }
+      out.push(child);
+      continue;
+    }
+    if (child.type === 'text') {
+      out.push(...linkifyBareUrls(child as Text));
+      continue;
+    }
+    out.push(child);
+  }
+  return out;
+}
+
+function linkifyBareUrls(node: Text): Node[] {
+  const matches = [...node.value.matchAll(BARE_GITHUB_URL)];
+  if (matches.length === 0) {
+    return [node];
+  }
+  const out: Node[] = [];
+  let cursor = 0;
+  for (const match of matches) {
+    const label = match[0].replace(/\.+$/, '');
+    const url = `https://${label.replace(/^www\./, '')}`;
+    if (!parseGitHubUrl(url)) {
+      continue;
+    }
+    const start = match.index;
+    if (start > cursor) {
+      out.push({
+        type: 'text',
+        value: node.value.slice(cursor, start),
+      } as Text);
+    }
+    out.push({
+      type: 'link',
+      url,
+      children: [{ type: 'text', value: label } as Text],
+    } as Link);
+    cursor = start + label.length;
+  }
+  if (cursor < node.value.length) {
+    out.push({ type: 'text', value: node.value.slice(cursor) } as Text);
+  }
+  return out;
 }
 
 function createBadgeText(info: RepoInfoDetails): string {

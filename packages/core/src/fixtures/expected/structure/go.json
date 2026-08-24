@@ -10614,6 +10614,21 @@
         {
           "node_type": "item",
           "title": "errors",
+          "description": "Providing errors with a stack trace and optional structured details. Compatible with github.com/pkg/errors API but does not use it internally.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 2068086589,
+            "language": null,
+            "last_commit": "2022-05-22T00:00:00.000Z",
+            "owner": "pkg",
+            "repo": "errors",
+            "stars": 36590
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "errors",
           "description": "Drop-in replacement for builtin Go errors. This is a minimal error handling package with custom error types, user friendly messages, Unwrap & Is. With very easy to use and straightforward helper functions.",
           "children": [],
           "repo_info": {

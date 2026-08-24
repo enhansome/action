@@ -6,16 +6,22 @@ today captures only 77.8% of the distinct GitHub repos linked across the
 `items: []` and still report success). Fix all 8 diagnosed causes, measured at
 every step — no unverified "should work now" landings.
 
-**Current state:** steps 0–7 landed 2026-08-24 (yield harness, minLinks per
-section, implicit sections, tables, paragraph entries, blockquote cards +
-details sections, link-headings as items + one-entry-section runs, own-link
-across all own paragraphs) — measured at every step on the fresh corpus
-(below). Goldens regenerated and reviewed per step; items only ever ADDED.
+**Current state:** steps 0–8 ALL LANDED 2026-08-24 — the plan is complete
+(yield harness, minLinks per section, implicit sections, tables, paragraph
+entries, blockquote cards + details sections, link-headings as items +
+one-entry-section runs, own-link across all own paragraphs, non-link URL
+normalization). Measured at every step on the fresh corpus (below). Goldens
+regenerated and reviewed per step; items only ever ADDED. Fleet yield
+77.8% → 97.8% (diagnosis-era basis) on the final consistent basis; residual
+families are diagnosed and recorded in the log for future threads.
 
-**Next step:** step 8 (normalize non-link URLs: bare scheme-less github.com
-text + `<a href>`; iwb, vlm-architectures,
-windows-kernel-security-development). This file is the only thing a
-resuming session needs to read.
+**Next step:** none from this plan. Before releasing to production: tell the
+webapp thread (it owns `../webapp/TODO.md`'s rebuild line) — the next mirror
+rebuild moves fleet numbers a lot. Release notes must flag the webapp-visible
+shape changes (synthesized "Overview" wrapper sections; one-item sections
+that previously parsed to nothing now appear; linkified bare URLs and
+converted html anchors in the rendered markdown). This file is the only
+thing a resuming session needs to read.
 
 ## Baseline (2026-08-24, fleet = 2,217 fetched READMEs)
 
@@ -98,7 +104,7 @@ worth it even where a bucket is small today.
 | 5 | **Blockquote cards** (cause 6, incl. `java`) — ✅ done 2026-08-24 | a blockquote whose leading link resolves to a repo → item (reuse step 4's entry test on the card's first paragraph); `<summary>` text opens the section (treat a details-summary html block as a heading-equivalent container) | fixture `details-cards.md` (java-shaped); **`java` corpus case 786→~786** — the webapp eval's named failure; goldens reviewed |
 | 6 | **Link-headings as items** (cause 4) — ✅ done 2026-08-24 | a link-heading at sectionDepth becomes an item (repo) under a synthesized section instead of an empty section that gets pruned; deeper link-headings keep today's item behavior. Webapp-visible shape change: sections appear that are one-item wrappers — flag in release notes | fixture `link-headings.md`; yield: heading bucket 4.2k → ~0; `useful-javascript-libraries` 478→~478; goldens reviewed |
 | 7 | **Own-link across all own paragraphs** (cause 7) — ✅ done 2026-08-24 | `findOwnGitHubLink` scans every OWN paragraph of the item (still never nested lists) — title stays the first paragraph's text | fixture `paper-list.md`; `Awesome-Parameter-Efficient-Transfer-Learning` 64 items recover; existing paper-ish fixtures unchanged |
-| 8 | **Normalize non-link URLs** (cause 8) | pre-parse pass (same stage family as `applyTextReplacements`/`fixRelativeLinks`): autolink scheme-less `github.com/owner/repo` text into proper links; extract `<a href>` GitHub anchors from raw html nodes. Fixes the INPUT, not the parser | fixture `bare-links.md`; the 10 A0 corpus registries go from 0 links seen to their true counts; no yield regression elsewhere (idempotent on already-linked docs) |
+| 8 | **Normalize non-link URLs** (cause 8) — ✅ done 2026-08-24 | pre-parse pass (same stage family as `applyTextReplacements`/`fixRelativeLinks`): autolink scheme-less `github.com/owner/repo` text into proper links; extract `<a href>` GitHub anchors from raw html nodes. Fixes the INPUT, not the parser | fixture `bare-links.md`; the 10 A0 corpus registries go from 0 links seen to their true counts; no yield regression elsewhere (idempotent on already-linked docs) |
 
 Sequence rationale: 0 is the instrument (nothing lands without it). 1 is the
 cheapest scope change and recovers 12k links with no new reading ability. 2
@@ -460,3 +466,71 @@ so production dead-link drops (~1–2%) are excluded on purpose.
   yield-report.json is the source of truth, and the step-6 baseline for the
   per-registry diff was produced by stashing ONLY the markdown.ts fix and
   re-running (git stash pop verified by status before diffing).**
+- **2026-08-24 (later): step 8 landed — non-link URL normalization. The
+  plan's 8 steps are complete.** Corpus-probed before implementing, and the
+  probe REDREW the step's expected material: of the 8 zero-band registries,
+  NONE are cause 8 — vlm-architectures (94), macos-screensavers (26), iwb
+  (88 of 100) lose their repos to IMAGE-ONLY link cards
+  (`[![screenshot](img)](repo)` / `[![GitHub](badge)](repo)` rows), which
+  the step-4 identity-must-carry-text guard rejects by design; iwb's
+  `<a href>` anchors are org-only profiles (not repo links). The true
+  cause-8 stock, measured on the AST: bare scheme-less github.com text =
+  1,656 occurrences / 1,579 distinct repos, 1,561 of them in
+  windows-kernel-security-development alone (its list items are bare URLs +
+  shields badge images — zero link nodes, hence 0/0 and invisible even to
+  the harness's expected); INLINE `<a href>` anchor pairs = 9,973 anchors
+  over 310 registries but only 1,375 distinct repos unreachable by markdown
+  links (the rest are dupe mentions; the best-of summaries' 555 anchors per
+  registry are BLOCK html). Anchors in BLOCK html (`<details><summary>`,
+  `<p align=center>` banners — book-of-secret 346, Federated-ML 306,
+  opencode 207, yazi 173) hold another 2,689 unreachable repos and are
+  deliberately OUT: rewriting block html means changing details-section
+  semantics, a walk decision, not input normalization.
+  The fix is ONE input pass, `normalizeGitHubUrls(tree)`, run right after
+  parse in processMarkdownContent — the same family as fixRelativeLinks, no
+  walk logic touched. Two mechanisms: (1) bare scheme-less
+  `github.com/owner/repo` text nodes (outside links; code spans have no
+  text nodes) split into text/link/text, label = the URL text, url =
+  `https://github.com/owner/repo` (only owner/repo consumed — a deeper path
+  stays in the trailing text since the identity reads the first two
+  segments); (2) an inline `<a href="…">` open tag pairs with the first
+  following `</a>` in the SAME parent — remark emits the tags as separate
+  html nodes around the label's inline nodes — and rewraps them as one link
+  (the label's nodes verbatim; org-only and non-GitHub anchors stay raw).
+  Fixture `bare-links.md` written FIRST, confirmed failing pre-fix (only
+  the plain-markdown section emitted); post-fix it pins: windows-kernel
+  list shape (bare-URL titles — the known cosmetic), leading-bare-URL
+  paragraphs as entries, mid-sentence URLs as description, anchor pairs as
+  identity, image-only anchors carrying the list face's identity with the
+  repo-name title fallback, org-only anchors untouched, dead targets
+  dropping with child lift, split-across-paragraphs anchors never pairing,
+  details-summary block html untouched (its section prunes empty), inline
+  code and link labels never linkified. Also RAW: anchors render as
+  markdown links with images preserved; badges land after linkified URLs.
+  **Measured (harness expected model now runs the same normalization —
+  exported and applied in yield.diag.test.ts, else got could exceed
+  expected): yield 97.79% → 97.80% (208,848/213,545) — but the real move is
+  +1,842 distinct repos captured out of 1,860 newly visible (99%); 0 of
+  2,293 registries lost items, 28 gained; bands zero 8 flat, low 23 flat,
+  mid 301 flat, high 1513→1522, perfect 405→398 — the 7 perfect-band exits
+  are each ONE newly-visible PROSE mention (e.g. "Inspired by
+  github.com/x/y") that correctly stays description: model honesty, not
+  lost items. Buckets paragraph 1945→1951, gated 949→961 (the same prose
+  mentions), heading 42→44. Named: windows-kernel-security-development
+  0→1,539/1,561; the best-of family recovers to near-perfect (web-python
+  287→533/535, atomistic 187→436/440, jupyter 93→284/286, react 275→433/435,
+  python 213→370/372, nix 291→412/414, python-dev 136→251/254,
+  mcp-servers 362→406/410); Awesome-Chart-Understanding 0→35/36. Goldens: 2
+  pre-existing changed, both additive — elm's "More awesome" section
+  (target=_blank anchors; previously gated out whole) +2 items, go +1 item
+  (its gitlab-linked "errors" item now takes the bare github.com/pkg/errors
+  reference as identity — the same rule a markdown link in that position
+  already followed). Known consequence, pinned by the go golden: a bare-URL
+  reference in an item description becomes that item's identity when it has
+  no GitHub link of its own.** Residual map for future threads: block-html
+  anchors 2,689 repos (details-summary semantics — yazi/book-of-secret/
+  Federated-ML/opencode/cms/bazel family), image-only link cards (vlm 94,
+  iwb 88, macos-screensavers 26 — needs its own badge-vs-card calibration),
+  OOD attribution-trailing paper lines 170 and scalability `<br>`-glued
+  lines 188 (step-7 log), jetpack tech-stack dependency mentions 50 (model
+  limit — not entries), FBI-tools prose-adjacent 74.
