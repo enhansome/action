@@ -45,6 +45,7 @@ const RAW_DIR = path.join(__dirname, 'fixtures', 'expected', 'raw');
 const FIXED_NOW = new Date('2025-01-01T00:00:00.000Z');
 const RAW_FIXTURES = new Set([
   'complex',
+  'details-cards',
   'guides',
   'paragraph-entries',
   'pinned-gists',

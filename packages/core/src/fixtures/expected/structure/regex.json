@@ -1,7 +1,7 @@
 {
   "items": [
     {
-      "description": "For building, testing, and playing with regexes.\nCommand line\nBy flavor\nMultiple flavors",
+      "description": "For building, testing, and playing with regexes.",
       "items": [
         {
           "node_type": "item",
@@ -47,7 +47,13 @@
             "repo": "regexlearn.com",
             "stars": 17001
           }
-        },
+        }
+      ],
+      "title": "Testers"
+    },
+    {
+      "description": "Command line\nBy flavor\nMultiple flavors",
+      "items": [
         {
           "node_type": "item",
           "title": "fancy-regex (Rust library): fancy-regex playground",
@@ -109,7 +115,7 @@
           }
         }
       ],
-      "title": "Testers"
+      "title": "✳️ Notable mentions"
     },
     {
       "description": "Visualize how your regular expressions are structured or operate.",
@@ -158,7 +164,13 @@
             "repo": "regulex",
             "stars": 7777
           }
-        },
+        }
+      ],
+      "title": "Visualizers"
+    },
+    {
+      "description": null,
+      "items": [
         {
           "node_type": "item",
           "title": "Regex Nodes",
@@ -175,7 +187,7 @@
           }
         }
       ],
-      "title": "Visualizers"
+      "title": "✳️ Notable mentions"
     },
     {
       "description": "Search and replace through files.",
@@ -261,21 +273,6 @@
                 "repo": "en.javascript.info",
                 "stars": 24963
               }
-            },
-            {
-              "node_type": "item",
-              "title": "Regular Expressions for Regular Folk",
-              "description": "[GitHub] - Visual, example-based ebook for beginners.",
-              "children": [],
-              "repo_info": {
-                "archived": false,
-                "id": 3634170849,
-                "language": null,
-                "last_commit": "2021-09-04T00:00:00.000Z",
-                "owner": "shreyasminocha",
-                "repo": "regex-for-regular-folk",
-                "stars": 20850
-              }
             }
           ],
           "description": null,
@@ -306,6 +303,27 @@
         }
       ],
       "title": "Tutorials"
+    },
+    {
+      "description": null,
+      "items": [
+        {
+          "node_type": "item",
+          "title": "Regular Expressions for Regular Folk",
+          "description": "[GitHub] - Visual, example-based ebook for beginners.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 3634170849,
+            "language": null,
+            "last_commit": "2021-09-04T00:00:00.000Z",
+            "owner": "shreyasminocha",
+            "repo": "regex-for-regular-folk",
+            "stars": 20850
+          }
+        }
+      ],
+      "title": "✳️ Notable mentions"
     },
     {
       "description": "Major regex implementations, built into programming languages or as standalone libraries.",
@@ -1065,7 +1083,13 @@
               }
             }
           ]
-        },
+        }
+      ],
+      "title": "JavaScript regex evolution"
+    },
+    {
+      "description": null,
+      "items": [
         {
           "node_type": "item",
           "title": "Backcompat libraries: regexpu",
@@ -1080,7 +1104,13 @@
             "repo": "regexpu",
             "stars": 5555
           }
-        },
+        }
+      ],
+      "title": "➕ See also"
+    },
+    {
+      "description": null,
+      "items": [
         {
           "node_type": "item",
           "title": "Legacy RegExp features",
@@ -1172,7 +1202,7 @@
           }
         }
       ],
-      "title": "JavaScript regex evolution"
+      "title": "🔮 Future: Active proposals"
     }
   ],
   "metadata": {

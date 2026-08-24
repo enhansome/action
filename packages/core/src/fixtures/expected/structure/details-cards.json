@@ -1,0 +1,301 @@
+{
+  "items": [
+    {
+      "description": "Frameworks and tools, grouped by collapsible sections.\nA list after the collapsible sections keeps collecting under the same wrapper section:",
+      "items": [
+        {
+          "node_type": "item",
+          "title": "wrapped-tool",
+          "description": "bold-wrapped list link whose description must split.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 3116040860,
+            "language": "TypeScript",
+            "last_commit": "2021-08-24T00:00:00.000Z",
+            "owner": "example",
+            "repo": "wrapped-tool",
+            "stars": 40861
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "plain-tool",
+          "description": "a sibling list item.",
+          "children": [],
+          "repo_info": {
+            "archived": true,
+            "id": 2081769595,
+            "language": "C++",
+            "last_commit": "2022-05-16T00:00:00.000Z",
+            "owner": "example",
+            "repo": "plain-tool",
+            "stars": 19596
+          }
+        }
+      ],
+      "title": "Wrapper"
+    },
+    {
+      "description": "not-github-card - no GitHub link, stays description.",
+      "items": [
+        {
+          "node_type": "item",
+          "title": "card-archunit",
+          "description": "★ 3.1k Apache-2.0 🟢Test library for asserting architecture rules.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 3351713257,
+            "language": "Ruby",
+            "last_commit": "2023-04-19T00:00:00.000Z",
+            "owner": "example",
+            "repo": "card-archunit",
+            "stars": 13258
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "card-jmolecules",
+          "description": "🟠Annotations for design concepts.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 1969280900,
+            "language": "TypeScript",
+            "last_commit": "2021-07-15T00:00:00.000Z",
+            "owner": "example",
+            "repo": "card-jmolecules",
+            "stars": 30901
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "card-plain",
+          "description": "a plain-link card with a dash description.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 2659307873,
+            "language": "Python",
+            "last_commit": "2021-08-11T00:00:00.000Z",
+            "owner": "example",
+            "repo": "card-plain",
+            "stars": 7874
+          }
+        }
+      ],
+      "title": "Architecture"
+    },
+    {
+      "description": null,
+      "items": [
+        {
+          "node_type": "item",
+          "title": "card-maven",
+          "description": "🟢Declarative build and dependency management.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 3145487318,
+            "language": "Shell",
+            "last_commit": "2023-02-17T00:00:00.000Z",
+            "owner": "example",
+            "repo": "card-maven",
+            "stars": 37319
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "card-bazel",
+          "description": "🟢Builds code quickly and reliably.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 285792217,
+            "language": "Ruby",
+            "last_commit": "2023-05-29T00:00:00.000Z",
+            "owner": "example",
+            "repo": "card-bazel",
+            "stars": 42218
+          }
+        }
+      ],
+      "title": "Build"
+    },
+    {
+      "description": null,
+      "items": [
+        {
+          "node_type": "item",
+          "title": "Lista dedicada: andalucia",
+          "description": null,
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 555556460,
+            "language": "TypeScript",
+            "last_commit": "2022-09-28T00:00:00.000Z",
+            "owner": "example",
+            "repo": "andalucia",
+            "stars": 6461
+          }
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Lista dedicada: aragon",
+              "description": null,
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2805524456,
+                "language": "Java",
+                "last_commit": "2022-10-02T00:00:00.000Z",
+                "owner": "example",
+                "repo": "aragon",
+                "stars": 24457
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Aragón"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Lista dedicada: asturies",
+              "description": null,
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 888246252,
+                "language": "Go",
+                "last_commit": "2023-04-24T00:00:00.000Z",
+                "owner": "example",
+                "repo": "asturies",
+                "stars": 46253
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Asturias"
+        }
+      ],
+      "title": "Spain Style"
+    },
+    {
+      "description": null,
+      "items": [
+        {
+          "node_type": "group",
+          "title": "Overview of nested datasets",
+          "description": null,
+          "children": [
+            {
+              "node_type": "item",
+              "title": "2023",
+              "description": "Nested paper one github",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3072537036,
+                "language": "Java",
+                "last_commit": "2023-11-26T00:00:00.000Z",
+                "owner": "example",
+                "repo": "nested-one",
+                "stars": 37037
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "2022",
+              "description": "Nested paper two github",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 344859794,
+                "language": "Rust",
+                "last_commit": "2021-10-29T00:00:00.000Z",
+                "owner": "example",
+                "repo": "nested-two",
+                "stars": 9795
+              }
+            }
+          ]
+        }
+      ],
+      "title": "Nested Tables"
+    },
+    {
+      "description": null,
+      "items": [
+        {
+          "node_type": "item",
+          "title": "2024",
+          "description": "Root paper github",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 4174249504,
+            "language": "Rust",
+            "last_commit": "2022-08-15T00:00:00.000Z",
+            "owner": "example",
+            "repo": "root-code",
+            "stars": 49505
+          }
+        }
+      ],
+      "title": "Root Details Table"
+    },
+    {
+      "description": null,
+      "items": [
+        {
+          "node_type": "item",
+          "title": "Note: archived-card",
+          "description": "is archived and unmaintained.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 3512576789,
+            "language": null,
+            "last_commit": "2021-11-03T00:00:00.000Z",
+            "owner": "example",
+            "repo": "archived-card",
+            "stars": 26790
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Demo: demo-card",
+          "description": "a colon-tagged quote.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 270927550,
+            "language": "TypeScript",
+            "last_commit": "2022-06-30T00:00:00.000Z",
+            "owner": "example",
+            "repo": "demo-card",
+            "stars": 27551
+          }
+        }
+      ],
+      "title": "Notes"
+    }
+  ],
+  "metadata": {
+    "last_updated": "2025-01-01T00:00:00.000Z",
+    "original_repository": "example/details-cards",
+    "original_repository_id": 4242,
+    "original_repository_sha": "deadbeef",
+    "enhanced_repository": "enhansome/enhansome-details-cards",
+    "enhanced_repository_description": "enhanced list",
+    "title": "Awesome Details Cards with stars"
+  }
+}

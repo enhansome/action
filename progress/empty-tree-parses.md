@@ -6,17 +6,16 @@ today captures only 77.8% of the distinct GitHub repos linked across the
 `items: []` and still report success). Fix all 8 diagnosed causes, measured at
 every step — no unverified "should work now" landings.
 
-**Current state:** steps 0–4 landed 2026-08-24 (yield harness, minLinks per
-section, implicit sections, tables, paragraph entries) — measured at every
-step on the fresh corpus (below). Goldens regenerated and reviewed per step;
-items only ever ADDED.
+**Current state:** steps 0–5 landed 2026-08-24 (yield harness, minLinks per
+section, implicit sections, tables, paragraph entries, blockquote cards +
+details sections) — measured at every step on the fresh corpus (below). Goldens
+regenerated and reviewed per step; items only ever ADDED.
 
-**Next step:** step 5 (blockquote cards, cause 6 — incl. `java` 0/785 and the
-378-repo `<details>`-nested table residual), then 6–8 in order. The shared
-emission helper (`splitEntryText` + `emitEntryNodes` + `entryTitle` in
-markdown.ts) is built; step 4 added `paragraphEntryLink` (the entry-ness test
-for top-level paragraphs) — step 5 reuses it on blockquote cards' first
-paragraph. This file is the only thing a resuming session needs to read.
+**Next step:** step 6 (link-headings as items — `useful-javascript-libraries`
+321/478 — plus the plain-heading-per-entry gated family found during step 4:
+FBI-tools 131, FLOSS 89, LLM-Uncertainty 89), then 7–8 in order. Step 6 leans
+on the implicit-section notion (step 2). This file is the only thing a
+resuming session needs to read.
 
 ## Baseline (2026-08-24, fleet = 2,217 fetched READMEs)
 
@@ -96,7 +95,7 @@ worth it even where a bucket is small today.
 | 2 | **Implicit sections** (cause 5) — ✅ done 2026-08-24 | when a list (or later: any entry source) appears with no open container, synthesize one (title from the doc title / "Overview") instead of dropping | fixtures `headingless.md`, `toc-only.md` fail pre / pass; `termux-hacking` corpus case 716 links recover; goldens reviewed |
 | 3 | **Tables** (cause 1) — ✅ done 2026-08-24 | walk `table` nodes: each row whose cells contain a GitHub repo link becomes an item under the nearest open container (implicit section from step 2 if none); title = first cell's leading text + link text, description = remaining cell text — via the shared emission helper | fixture `table-format.md` (scala-shaped); yield: table bucket 43k → ~0 (biggest single move); `scala` 268→~268 offline; goldens reviewed; raw fixture rendered sanely with badges |
 | 4 | **Paragraph entries** (cause 2) — ✅ done 2026-08-24 | a top-level paragraph that behaves like an entry becomes an item: contains a repo link AND the link sits at/near the start (same leading-tag allowance as list items). Calibration against prose false-positives ("Contributions welcome, open an issue at [repo]" must stay description) is THE risk — tune on corpus, not intuition | fixture `paragraph-entries.md` (paper style + CJK style); yield: paragraph bucket 14.7k → mostly recovered; spot-check titles in the harness output for prose leaks; `3dbody-papers` 191→~191 |
-| 5 | **Blockquote cards** (cause 6, incl. `java`) | a blockquote whose leading link resolves to a repo → item (reuse step 4's entry test on the card's first paragraph); `<summary>` text opens the section (treat a details-summary html block as a heading-equivalent container) | fixture `details-cards.md` (java-shaped); **`java` corpus case 786→~786** — the webapp eval's named failure; goldens reviewed |
+| 5 | **Blockquote cards** (cause 6, incl. `java`) — ✅ done 2026-08-24 | a blockquote whose leading link resolves to a repo → item (reuse step 4's entry test on the card's first paragraph); `<summary>` text opens the section (treat a details-summary html block as a heading-equivalent container) | fixture `details-cards.md` (java-shaped); **`java` corpus case 786→~786** — the webapp eval's named failure; goldens reviewed |
 | 6 | **Link-headings as items** (cause 4) | a link-heading at sectionDepth becomes an item (repo) under a synthesized section instead of an empty section that gets pruned; deeper link-headings keep today's item behavior. Webapp-visible shape change: sections appear that are one-item wrappers — flag in release notes | fixture `link-headings.md`; yield: heading bucket 4.2k → ~0; `useful-javascript-libraries` 478→~478; goldens reviewed |
 | 7 | **Own-link across all own paragraphs** (cause 7) | `findOwnGitHubLink` scans every OWN paragraph of the item (still never nested lists) — title stays the first paragraph's text | fixture `paper-list.md`; `Awesome-Parameter-Efficient-Transfer-Learning` 64 items recover; existing paper-ish fixtures unchanged |
 | 8 | **Normalize non-link URLs** (cause 8) | pre-parse pass (same stage family as `applyTextReplacements`/`fixRelativeLinks`): autolink scheme-less `github.com/owner/repo` text into proper links; extract `<a href>` GitHub anchors from raw html nodes. Fixes the INPUT, not the parser | fixture `bare-links.md`; the 10 A0 corpus registries go from 0 links seen to their true counts; no yield regression elsewhere (idempotent on already-linked docs) |
@@ -282,3 +281,53 @@ so production dead-link drops (~1–2%) are excluded on purpose.
   same family as step 6's link-headings — plain-heading-per-entry is the
   sibling), `<a href>`/org-URL shapes (step 8: iwb, vlm-architectures), and
   second occurrences under link-headings (crypto → step 6).
+- **2026-08-24 (later): step 5 landed — blockquote cards, details sections,
+  nested tables.** Corpus-calibrated before implementing: 793 card blockquotes
+  fleet-wide, 784 of them java's generated cards (`> **[Name](repo)**
+  <kbd>★…</kbd> 🟢<br>Description.`); the other card families are Spain's
+  `> Lista dedicada: **[list](repo)**` (18) and lone reference quotes — the
+  exact step-4 `paragraphEntryLink` rule reused on the card's first
+  paragraph, unchanged. `<details><summary>` opens a SECTION (title = summary
+  text, `<kbd>` chips stripped; `</details>` or the next summary closes it);
+  tables nested inside list items — the true shape of the "details-nested
+  table" residual (AwesomeAnimeResearch: `- <details><summary>…</summary>` +
+  indented table) — are walked by `processListRecursively` as item children,
+  with the summary text as the group title. En route, `splitEntryText` now
+  finds the first link through strong/emphasis wrappers: a bold-wrapped
+  leading link (`**[Foo](repo)** - desc`) used to put the whole text in the
+  title with no description. Sections are returned sorted by their document
+  index (a details-section finalizes inside its parent's span, so
+  finalization order ≠ document order). Two step-5 design invariants worth
+  keeping: a details boundary NEVER closes its enclosing section (content
+  after `</details>` keeps collecting under it — `closeInnermostDetails` pops
+  only down to the innermost details-section), and the details-section joins
+  the stack at `max(sectionDepth, current stack depth)` — the harness caught
+  the first draft inverting the stack on Awesome-Dify-Workflow (a
+  mid-document H1 sets sectionDepth=1 while content sections run at 2; a
+  depth-1 details-section pushed above them stranded the gate — which reads
+  the stack BOTTOM — on a tiny outer section, killing 3 items; fixed and that
+  registry now byte-identical to step 4). Known accepted behavior, encoded in
+  the fixture: colon-tagged prose quotes ("Note: [repo] is archived") emit in
+  passing sections — the same rule step 4 gave paragraphs ("Demo: [repo]");
+  lone ones die at the minLinks gate. Known cosmetics: card titles keep their
+  label prefix ("Lista dedicada: andalucia"), kbd chip text glues into card
+  descriptions ("★ 3.1k Apache-2.0 🟢Test library…").
+  **Measured: yield 96.50% → 96.77% (+589 distinct repos); 0 of 2,293
+  registries lost items; blockquote bucket 612 → 163, table bucket 378 → 239;
+  bands zero 26→25, low 35→33, perfect 343→346; hollow stock 52 → 50. Named:
+  `java` 0→783/785, AwesomeAnimeResearch 35→167/167 (perfect),
+  Awesome-Self-Improving-Agents 82→179/179 (perfect), `spain` 408→426/426
+  (perfect). Goldens: 65 byte-identical; `regex` restructured exactly as
+  designed (13 items that had scattered into wrong sections moved under their
+  true details-section titles — Future/Notable mentions/See also — zero
+  lost); new `details-cards` fixture covers every mechanism (cards, kbd
+  titles, dead/non-GitHub cards, spain groups, nested + root details tables,
+  stray `</details>`, note-quotes, gate-dropped lone card).** Residual
+  decomposition, for whoever picks up the table/blockquote tails: the
+  table bucket's 239 splits into multi-link rows/cells where only the first
+  link emits (robot-descriptions 16, deep-text-detection-recognition 27,
+  LLMs-In-China 12 — a per-cell emission refinement, NOT in any planned step)
+  and single-entry sections the gate drops by design (find-oss/hpp/ops
+  family, same as FBI-tools); the blockquote bucket's 163 is dominated by
+  Awesome-person-re-identification 78 (one quote per `######` heading — the
+  step-6 heading-per-entry family) plus singles.

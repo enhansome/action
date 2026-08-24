@@ -17,7 +17,9 @@ import type { GithubClient } from './github.js';
 import { consoleLog, Logger } from './logger.js';
 
 import type {
+  Blockquote,
   Heading,
+  Html,
   Link,
   List,
   ListItem,
@@ -495,11 +497,19 @@ interface EntryText {
 
 // One entry's title and description, split from its own inlines: leading text
 // up to and including the first link is the title (prefix tags like
-// "[UPDATED]" survive), the prose trailing it the description. With no link
+// "[UPDATED]" survive), the prose trailing it the description. The link is
+// found through emphasis wrappers — a bolded card link
+// (`**[Name](repo)** - description`) splits like a plain one. With no link
 // the whole text is the title — the description must never echo the title
 // back.
 function splitEntryText(inlines: Node[]): EntryText {
-  const linkIndex = inlines.findIndex(child => child.type === 'link');
+  const linkIndex = inlines.findIndex(child => {
+    let hasLink = false;
+    visit(child, 'link', () => {
+      hasLink = true;
+    });
+    return hasLink;
+  });
   if (linkIndex === -1) {
     return { title: getInlineText(inlines), description: '' };
   }
@@ -582,20 +592,33 @@ function processListRecursively(
     const githubUrl = findOwnGitHubLink(itemNode);
     const repoInfo = githubUrl ? (repoInfoMap.get(githubUrl) ?? null) : null;
 
-    const nestedLists = itemNode.children.filter(
-      (child): child is List => child.type === 'list',
+    // Nested content is the item's children: deeper lists as before, plus
+    // tables — the AnimeResearch shape wraps a <details><summary> block and
+    // its table inside one list item. Both emit under the parent item
+    // regardless of the gate: the top-level call already gated the section.
+    const nestedContent = itemNode.children.filter(
+      (child): child is List | Table =>
+        child.type === 'list' || child.type === 'table',
     );
-    const childrenJson = nestedLists.flatMap(nestedList =>
-      processListRecursively(nestedList, repoInfoMap, sortOptions, true),
+    const childrenJson = nestedContent.flatMap(child =>
+      child.type === 'list'
+        ? processListRecursively(child, repoInfoMap, sortOptions, true)
+        : processTableRows(child, repoInfoMap, true),
     );
 
     const paragraph = itemNode.children.find(
       (child): child is Paragraph => child.type === 'paragraph',
     );
+    const entryText = splitEntryText(paragraph?.children ?? []);
+    // A details-wrapped item carries its visible text in the summary, not in
+    // a paragraph — that text is the group's title.
+    if (!entryText.title) {
+      entryText.title = listItemSummaryTitle(itemNode);
+    }
     const emitted = emitEntryNodes(
       githubUrl,
       repoInfo,
-      splitEntryText(paragraph?.children ?? []),
+      entryText,
       childrenJson,
     );
 
@@ -818,6 +841,70 @@ function paragraphEntryLink(paragraph: Paragraph): Link | undefined {
   return undefined;
 }
 
+// A blockquote card is the blockquote face of an entry paragraph — java's
+// generated card layout (`> **[Name](repo)** <kbd>★ 3.1k</kbd> …<br>One-line
+// description.`), Spain's `> Lista dedicada: **[list](repo)**`. The same
+// entry test runs on the card's first paragraph, so a quote mentioning a repo
+// mid-prose stays description exactly as the paragraph face does.
+function blockquoteCardLink(blockquote: Blockquote): Link | undefined {
+  const first = blockquote.children.find(
+    (child): child is Paragraph => child.type === 'paragraph',
+  );
+  return first ? paragraphEntryLink(first) : undefined;
+}
+
+// The shared entry emission for the non-list sources (paragraph entries,
+// blockquote cards): resolve, split, title-fallback — the same decisions the
+// list and table paths make through the same helpers.
+function entryNodesFor(
+  ownLink: Link,
+  inlines: Node[],
+  repoInfoMap: Map<string, RepoInfoDetails>,
+): JsonNode[] {
+  const repoInfo = repoInfoMap.get(ownLink.url) ?? null;
+  const entryText = splitEntryText(inlines);
+  return emitEntryNodes(ownLink.url, repoInfo, {
+    title: entryTitle(entryText.title, ownLink, repoInfo),
+    description: entryText.description,
+  }, []);
+}
+
+// The <details><summary>…</summary> collapsible-section idiom: the summary
+// text delimits structure like a heading would (java's generated README,
+// paper-list tables behind "1.1 <topic>" summaries). kbd chips inside the
+// summary ("5 projects") are metadata, not the title. A details block with
+// no summary, or an empty one, delimits nothing.
+const DETAILS_SUMMARY =
+  /<details[^>]*>[\s\S]*?<summary[^>]*>([\s\S]*?)<\/summary>/i;
+const DETAILS_CLOSE = /^\s*<\/details>/i;
+
+function detailsSummaryTitle(htmlValue: string): null | string {
+  const match = DETAILS_SUMMARY.exec(htmlValue);
+  if (!match) {
+    return null;
+  }
+  const title = match[1]
+    .replace(/<kbd>[\s\S]*?<\/kbd>/gi, '')
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+  return title || null;
+}
+
+// The summary text of a <details><summary> block inside a list item, when the
+// item has no paragraph text of its own.
+function listItemSummaryTitle(itemNode: ListItem): string {
+  for (const child of itemNode.children) {
+    if (child.type === 'html') {
+      const title = detailsSummaryTitle((child as Html).value);
+      if (title) {
+        return title;
+      }
+    }
+  }
+  return '';
+}
+
 const INVALID_TITLE_PATTERNS = [
   /^contributing/i,
   /^license$/i,
@@ -983,8 +1070,31 @@ function processTree(
   const sectionDepth = findSectionDepth(tree, titleSlotIndex);
   const gateForSection = sectionGatePasses(tree, titleSlotIndex, sortOptions);
 
-  const sections: JsonSection[] = [];
+  // Sections finalize out of document order when a details-section closes
+  // inside its parent section's span, so each carries the document index it
+  // opened at for the document-order sort at the end.
+  const sectionRecords: SectionRecord[] = [];
   const stack: ContainerBuilder[] = [];
+
+  // Entry emission shared by the paragraph and blockquote-card faces: the
+  // implicit section opens for a containerless entry (the stack-bottom
+  // invariant), the minLinks gate is the section aggregate, and a gated or
+  // dead entry emits nothing and stays out of the description (mirrors dead
+  // list items).
+  const emitStandaloneEntry = (
+    ownLink: Link,
+    inlines: Node[],
+    atIndex: number,
+  ): void => {
+    if (stack.length === 0) {
+      openImplicitSection(stack, atIndex);
+    }
+    if (gateForSection(stack[0])) {
+      stack[stack.length - 1].children.push(
+        ...entryNodesFor(ownLink, inlines, repoInfoMap),
+      );
+    }
+  };
 
   for (let i = 0; i < tree.children.length; i++) {
     const node = tree.children[i];
@@ -996,38 +1106,17 @@ function processTree(
       if (i === titleSlotIndex || !isStructuralHeading(node)) {
         continue;
       }
-      closeContainers(stack, node.depth, sections);
+      closeContainers(stack, node.depth, sectionRecords);
       openContainer(stack, node, i, sectionDepth, repoInfoMap);
     } else if (node.type === 'paragraph') {
       const text = getNodeText(node);
       // Boilerplate "back to top" lines are neither entries nor description.
       const ownLink =
         BACK_TO_TOP.test(text) ? undefined : paragraphEntryLink(node);
-      // An entry paragraph behaves like a one-item list: the implicit section
-      // opens for one with no open container (the stack-bottom invariant),
-      // the minLinks gate is the same section aggregate, and emission is the
-      // shared path. A failed gate or dead target leaves plain description.
+      // An entry paragraph behaves like a one-item list; a failed gate or
+      // dead target leaves plain description.
       if (ownLink) {
-        if (stack.length === 0) {
-          openImplicitSection(stack, i);
-        }
-        // A gated or dead entry emits nothing and stays out of the
-        // description (mirrors dead list items); the section it would land
-        // in is pruned empty anyway when the gate fails.
-        if (gateForSection(stack[0])) {
-          const repoInfo = repoInfoMap.get(ownLink.url) ?? null;
-          const entryText = splitEntryText(node.children);
-          const emitted = emitEntryNodes(
-            ownLink.url,
-            repoInfo,
-            {
-              title: entryTitle(entryText.title, ownLink, repoInfo),
-              description: entryText.description,
-            },
-            [],
-          );
-          stack[stack.length - 1].children.push(...emitted);
-        }
+        emitStandaloneEntry(ownLink, node.children, i);
       } else {
         const container = stack[stack.length - 1];
         // Avoid adding boilerplate "back to top" links to descriptions.
@@ -1039,12 +1128,52 @@ function processTree(
       }
     } else if (node.type === 'blockquote') {
       const text = getNodeText(node);
-      const container = stack[stack.length - 1];
-      // Avoid adding boilerplate "back to top" links to descriptions.
-      if (container && text && !BACK_TO_TOP.test(text)) {
-        container.description = container.description
-          ? `${container.description}\n${text}`
-          : text;
+      // A card blockquote is the blockquote face of an entry paragraph; any
+      // other quote is container prose.
+      const ownLink =
+        BACK_TO_TOP.test(text) ? undefined : blockquoteCardLink(node);
+      if (ownLink) {
+        const first = node.children.find(
+          (child): child is Paragraph => child.type === 'paragraph',
+        );
+        emitStandaloneEntry(ownLink, first?.children ?? [], i);
+      } else {
+        const container = stack[stack.length - 1];
+        // Avoid adding boilerplate "back to top" links to descriptions.
+        if (container && text && !BACK_TO_TOP.test(text)) {
+          container.description = container.description
+            ? `${container.description}\n${text}`
+            : text;
+        }
+      }
+    } else if (node.type === 'html') {
+      // A details-summary block opens a section like a heading would; the
+      // close tag (or the next summary) ends it — never the enclosing
+      // section, which keeps collecting after the collapsible block.
+      const summaryTitle = detailsSummaryTitle(node.value);
+      if (summaryTitle) {
+        closeInnermostDetails(stack, sectionRecords);
+        // Container depths never decrease going up the stack. When the open
+        // containers sit deeper than sectionDepth (a mid-document H1 defines
+        // sectionDepth while the content sections run deeper), the
+        // details-section joins at the current depth — pushing at the
+        // shallower sectionDepth would invert the stack and strand the gate
+        // (which reads the stack bottom) on a tiny outer section.
+        const joinDepth =
+          stack.length === 0
+            ? sectionDepth
+            : Math.max(sectionDepth, stack[stack.length - 1].headingDepth);
+        stack.push({
+          children: [],
+          description: '',
+          headingDepth: joinDepth,
+          headingIndex: i,
+          kind: 'section',
+          openedByDetails: true,
+          title: summaryTitle,
+        });
+      } else if (DETAILS_CLOSE.test(node.value)) {
+        closeInnermostDetails(stack, sectionRecords);
       }
     } else if (node.type === 'list') {
       // A list with no open container still means content: synthesize the
@@ -1081,7 +1210,11 @@ function processTree(
     }
   }
 
-  closeContainers(stack, 0, sections);
+  closeContainers(stack, 0, sectionRecords);
+
+  const sections = sectionRecords
+    .sort((a, b) => a.headingIndex - b.headingIndex)
+    .map(record => record.section);
 
   return { sections, title: documentTitle, titleHeadingIndex };
 }
@@ -1097,6 +1230,9 @@ interface ContainerBuilder {
   // where the section's subtree starts.
   headingIndex: number;
   kind: 'group' | 'item' | 'section';
+  // True when this section was opened by a <details><summary> block rather
+  // than a heading — its closing </details> ends it.
+  openedByDetails?: boolean;
   repoInfo?: RepoInfoDetails;
   title: string;
 }
@@ -1242,6 +1378,8 @@ function sectionGatePasses(
         paragraphEntryLink(node)
       ) {
         linkedEntries += 1;
+      } else if (node.type === 'blockquote' && blockquoteCardLink(node)) {
+        linkedEntries += 1;
       }
     }
     const passes = linkedEntries >= sortOptions.minLinks;
@@ -1250,54 +1388,92 @@ function sectionGatePasses(
   };
 }
 
+// A finalized section plus the document index it opened at, so sections can
+// be returned in document order even when finalization order differs (a
+// details-section closes inside its parent section's span).
+interface SectionRecord {
+  headingIndex: number;
+  section: JsonSection;
+}
+
+// Prune-or-emit one popped container: a section/group whose children array is
+// empty (no items anywhere beneath — the entry sources only return
+// item-bearing nodes) is dropped; an item always survives, it IS the content.
+// Non-section containers always have an open parent (stack invariant), and
+// kind === 'item' exactly when repoInfo is set.
+function finalizeContainer(
+  container: ContainerBuilder,
+  stack: ContainerBuilder[],
+  sectionRecords: SectionRecord[],
+): void {
+  if (container.children.length === 0 && container.kind !== 'item') {
+    return;
+  }
+  const description = container.description || null;
+  if (container.kind === 'section') {
+    sectionRecords.push({
+      headingIndex: container.headingIndex,
+      section: { description, items: container.children, title: container.title },
+    });
+    return;
+  }
+  const parent = stack[stack.length - 1];
+  if (container.repoInfo) {
+    parent.children.push({
+      children: container.children,
+      description,
+      node_type: 'item',
+      repo_info: toRepoInfo(container.repoInfo),
+      title: container.title,
+    });
+  } else {
+    parent.children.push({
+      children: container.children,
+      description,
+      node_type: 'group',
+      title: container.title,
+    });
+  }
+}
+
 // Finalize every container a heading of `depth` closes (same-or-shallower),
-// bottom-up so each finalized node lands in its parent. Pruning falls out of
-// the finalize rule: a section/group whose children array is empty (no items
-// anywhere beneath — lists only return item-bearing nodes, and empty children
-// were never appended) is dropped; an item always survives, it IS the content.
-// The stack bottom is always a section (openContainer's promotion guarantees
-// it), so a finalized group/item always has a parent to land in.
+// bottom-up so each finalized node lands in its parent. The stack bottom is
+// always a section (openContainer's promotion guarantees it), so a finalized
+// group/item always has a parent to land in.
 function closeContainers(
   stack: ContainerBuilder[],
   depth: number,
-  sections: JsonSection[],
+  sectionRecords: SectionRecord[],
 ): void {
   while (
     stack.length > 0 &&
     stack[stack.length - 1].headingDepth >= depth
   ) {
-    const container = stack.pop() as ContainerBuilder;
-    if (container.children.length === 0 && container.kind !== 'item') {
-      continue;
+    finalizeContainer(stack.pop() as ContainerBuilder, stack, sectionRecords);
+  }
+}
+
+// Ends the innermost open details-section and everything opened inside it,
+// leaving the enclosing containers untouched — unlike a heading close, a
+// details boundary never ends its parent section, so content after the
+// collapsible block keeps collecting under it. A stray </details> (no
+// details-section open) is a no-op.
+function closeInnermostDetails(
+  stack: ContainerBuilder[],
+  sectionRecords: SectionRecord[],
+): void {
+  let detailsIndex = -1;
+  for (let s = stack.length - 1; s >= 0; s--) {
+    if (stack[s].openedByDetails) {
+      detailsIndex = s;
+      break;
     }
-    const description = container.description || null;
-    if (container.kind === 'section') {
-      sections.push({
-        description,
-        items: container.children,
-        title: container.title,
-      });
-      continue;
-    }
-    const parent = stack[stack.length - 1];
-    // Non-section containers always have an open parent (stack invariant), and
-    // kind === 'item' exactly when repoInfo is set.
-    if (container.repoInfo) {
-      parent.children.push({
-        children: container.children,
-        description,
-        node_type: 'item',
-        repo_info: toRepoInfo(container.repoInfo),
-        title: container.title,
-      });
-    } else {
-      parent.children.push({
-        children: container.children,
-        description,
-        node_type: 'group',
-        title: container.title,
-      });
-    }
+  }
+  if (detailsIndex === -1) {
+    return;
+  }
+  while (stack.length > detailsIndex) {
+    finalizeContainer(stack.pop() as ContainerBuilder, stack, sectionRecords);
   }
 }
 
