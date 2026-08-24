@@ -534,3 +534,12 @@ so production dead-link drops (~1–2%) are excluded on purpose.
   OOD attribution-trailing paper lines 170 and scalability `<br>`-glued
   lines 188 (step-7 log), jetpack tech-stack dependency mentions 50 (model
   limit — not entries), FBI-tools prose-adjacent 74.
+- **2026-08-24 (final): thread closed and archived at user direction.** All
+  8 steps landed (commits through 4b8b387); final offline fleet yield 97.8%
+  (208,848/213,545), 0 registry regressions at every step. Open at close:
+  release coordination — the webapp thread must be told before the next
+  mirror rebuild (it owns `../webapp/TODO.md`'s rebuild line), and release
+  notes must flag the webapp-visible shape changes (synthesized "Overview"
+  wrapper sections; one-item sections that previously parsed to nothing;
+  linkified bare URLs and converted html anchors in rendered markdown).
+  The residual map for future threads is in the step-8 entry.
