@@ -1,0 +1,152 @@
+{
+  "items": [
+    {
+      "description": null,
+      "items": [
+        {
+          "node_type": "item",
+          "title": "[1] Sample Paper: Doing More With Less, NeurIPS 2022.",
+          "description": null,
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 1853535178,
+            "language": "Shell",
+            "last_commit": "2023-07-07T00:00:00.000Z",
+            "owner": "example",
+            "repo": "paper-code",
+            "stars": 35179
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "[2] Second Paper: Foundations, ICML 2023.",
+          "description": null,
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 1224332328,
+            "language": "Shell",
+            "last_commit": "2023-02-07T00:00:00.000Z",
+            "owner": "example",
+            "repo": "second-code",
+            "stars": 32329
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "helper-tool",
+          "description": "a nested child of a dead entry lifts to the section.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 430261051,
+            "language": "JavaScript",
+            "last_commit": "2023-11-11T00:00:00.000Z",
+            "owner": "example",
+            "repo": "helper-tool",
+            "stars": 11052
+          }
+        }
+      ],
+      "title": "Adapter Tuning"
+    },
+    {
+      "description": null,
+      "items": [
+        {
+          "node_type": "item",
+          "title": "leading-tool",
+          "description": "a later paragraph mentioning another repo must not steal an identity that the first paragraph already carries.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 4127740033,
+            "language": "Python",
+            "last_commit": "2023-11-29T00:00:00.000Z",
+            "owner": "example",
+            "repo": "leading-tool",
+            "stars": 40034
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "[5] Third Paper: Clusters Carry One Identity, ECCV 2024.",
+          "description": null,
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 3346614111,
+            "language": "JavaScript",
+            "last_commit": "2023-09-12T00:00:00.000Z",
+            "owner": "example",
+            "repo": "third-code",
+            "stars": 14112
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "hosted site",
+          "description": "a site-only first paragraph; the mirror link in the later paragraph is the identity.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 2245451563,
+            "language": "Python",
+            "last_commit": "2022-06-17T00:00:00.000Z",
+            "owner": "example",
+            "repo": "hosted-mirror",
+            "stars": 1564
+          }
+        },
+        {
+          "node_type": "group",
+          "title": "Ecosystem tools",
+          "description": null,
+          "children": [
+            {
+              "node_type": "item",
+              "title": "eco-tool-two",
+              "description": "second.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2098717551,
+                "language": "JavaScript",
+                "last_commit": "2022-06-29T00:00:00.000Z",
+                "owner": "example",
+                "repo": "eco-tool-two",
+                "stars": 17552
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "eco-tool",
+              "description": "first.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3039916304,
+                "language": "Rust",
+                "last_commit": "2023-03-03T00:00:00.000Z",
+                "owner": "example",
+                "repo": "eco-tool",
+                "stars": 16305
+              }
+            }
+          ]
+        }
+      ],
+      "title": "Prompt Tuning"
+    }
+  ],
+  "metadata": {
+    "last_updated": "2025-01-01T00:00:00.000Z",
+    "original_repository": "example/paper-list",
+    "original_repository_id": 4242,
+    "original_repository_sha": "deadbeef",
+    "enhanced_repository": "enhansome/enhansome-paper-list",
+    "enhanced_repository_description": "enhanced list",
+    "title": "Awesome Paper List with stars"
+  }
+}

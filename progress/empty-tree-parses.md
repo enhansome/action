@@ -6,17 +6,16 @@ today captures only 77.8% of the distinct GitHub repos linked across the
 `items: []` and still report success). Fix all 8 diagnosed causes, measured at
 every step — no unverified "should work now" landings.
 
-**Current state:** steps 0–6 landed 2026-08-24 (yield harness, minLinks per
+**Current state:** steps 0–7 landed 2026-08-24 (yield harness, minLinks per
 section, implicit sections, tables, paragraph entries, blockquote cards +
-details sections, link-headings as items + one-entry-section runs) — measured
-at every step on the fresh corpus (below). Goldens regenerated and reviewed
-per step; items only ever ADDED.
+details sections, link-headings as items + one-entry-section runs, own-link
+across all own paragraphs) — measured at every step on the fresh corpus
+(below). Goldens regenerated and reviewed per step; items only ever ADDED.
 
-**Next step:** step 7 (own-link across all own paragraphs —
-`Awesome-Parameter-Efficient-Transfer-Learning` 64 items → 0), then 8
-(normalize non-link URLs: bare scheme-less github.com text + `<a href>`;
-iwb, vlm-architectures, windows-kernel-security-development). This file is
-the only thing a resuming session needs to read.
+**Next step:** step 8 (normalize non-link URLs: bare scheme-less github.com
+text + `<a href>`; iwb, vlm-architectures,
+windows-kernel-security-development). This file is the only thing a
+resuming session needs to read.
 
 ## Baseline (2026-08-24, fleet = 2,217 fetched READMEs)
 
@@ -98,7 +97,7 @@ worth it even where a bucket is small today.
 | 4 | **Paragraph entries** (cause 2) — ✅ done 2026-08-24 | a top-level paragraph that behaves like an entry becomes an item: contains a repo link AND the link sits at/near the start (same leading-tag allowance as list items). Calibration against prose false-positives ("Contributions welcome, open an issue at [repo]" must stay description) is THE risk — tune on corpus, not intuition | fixture `paragraph-entries.md` (paper style + CJK style); yield: paragraph bucket 14.7k → mostly recovered; spot-check titles in the harness output for prose leaks; `3dbody-papers` 191→~191 |
 | 5 | **Blockquote cards** (cause 6, incl. `java`) — ✅ done 2026-08-24 | a blockquote whose leading link resolves to a repo → item (reuse step 4's entry test on the card's first paragraph); `<summary>` text opens the section (treat a details-summary html block as a heading-equivalent container) | fixture `details-cards.md` (java-shaped); **`java` corpus case 786→~786** — the webapp eval's named failure; goldens reviewed |
 | 6 | **Link-headings as items** (cause 4) — ✅ done 2026-08-24 | a link-heading at sectionDepth becomes an item (repo) under a synthesized section instead of an empty section that gets pruned; deeper link-headings keep today's item behavior. Webapp-visible shape change: sections appear that are one-item wrappers — flag in release notes | fixture `link-headings.md`; yield: heading bucket 4.2k → ~0; `useful-javascript-libraries` 478→~478; goldens reviewed |
-| 7 | **Own-link across all own paragraphs** (cause 7) | `findOwnGitHubLink` scans every OWN paragraph of the item (still never nested lists) — title stays the first paragraph's text | fixture `paper-list.md`; `Awesome-Parameter-Efficient-Transfer-Learning` 64 items recover; existing paper-ish fixtures unchanged |
+| 7 | **Own-link across all own paragraphs** (cause 7) — ✅ done 2026-08-24 | `findOwnGitHubLink` scans every OWN paragraph of the item (still never nested lists) — title stays the first paragraph's text | fixture `paper-list.md`; `Awesome-Parameter-Efficient-Transfer-Learning` 64 items recover; existing paper-ish fixtures unchanged |
 | 8 | **Normalize non-link URLs** (cause 8) | pre-parse pass (same stage family as `applyTextReplacements`/`fixRelativeLinks`): autolink scheme-less `github.com/owner/repo` text into proper links; extract `<a href>` GitHub anchors from raw html nodes. Fixes the INPUT, not the parser | fixture `bare-links.md`; the 10 A0 corpus registries go from 0 links seen to their true counts; no yield regression elsewhere (idempotent on already-linked docs) |
 
 Sequence rationale: 0 is the instrument (nothing lands without it). 1 is the
@@ -408,3 +407,56 @@ so production dead-link drops (~1–2%) are excluded on purpose.
   a probe before step 7), iwb 88 + vlm-architectures 94 (`<a href>` html —
   step 8), jetpack-compose 50 gated (bare-URL list shape that passes the
   gate's count but emits fewer than expected — unexplained, probe next).
+- **2026-08-24 (later): step 7 landed — own-link across all own paragraphs.**
+  Probed the four undiagnosed step-6 residuals BEFORE implementing (all four
+  now diagnosed; three are new families recorded here, none step-7-shaped):
+  (a) `Awesome-Out-Of-Distribution-Detection` 170 — paper lines
+  `(TMLR 2026) Title… [Code] by Linderman et al.` whose `[Code]` tag
+  qualifies but the ATTRIBUTION trailing ("by X et al.") fails
+  `tagClusterEndsParagraph` — a paragraph-test refinement, future material;
+  (b) jetpack-compose 50 — the lost links are TECH-STACK dependency mentions
+  ("Tech Stack = [Retrofit](gh), [Koin](gh)…") inside one item's own
+  paragraph; one entry legitimately links dozens of dependency repos that are
+  not entries — model limit, not a defect (and step 7 cannot touch them:
+  those items' first paragraphs carry their own identity, which wins by
+  scan order); (c) scalability-toolbox 188 — `<br>`-glued runs of one-line
+  entries parse as ONE paragraph, whose leading label is polluted by the
+  earlier non-GitHub lines — a per-soft-break-line entry family, future
+  material; (d) package-manager 350 — org-mode `[[url][label]]` tables have
+  no markdown link nodes at all (step 8's regex could match these URLs in
+  text). The step-7 case itself probed exact: Parameter-Efficient's 64 lost
+  = 62 `[[Code]](github)` links in list items' LATER own paragraphs + 2
+  intro-badge links that correctly stay rejected.
+  The fix: `findOwnGitHubLink` scans own paragraphs in document order and
+  returns the first GitHub link found (identity); the title/description
+  split stays on the FIRST paragraph alone — a comment in
+  processListRecursively pins that divergence. The section gate needed no
+  change (`countLinkedItems` was already subtree-based). Behavior is
+  monotone by construction: an item whose first paragraph has a GitHub link
+  keeps the identical identity; only first-paragraph-linkless items change
+  (group/leaf → item, dead later link → dead-entry lift). Fixture
+  `paper-list.md` written FIRST, confirmed failing pre-fix (only the
+  dead-entry group and the controls emitted; paper-code / second-code /
+  third-code / hosted-mirror all absent); post-fix golden pins all seven
+  behaviors: paper entries titled by their first paragraph with paragraph-3
+  Code identities, website-only Code stays absent, dead Code lifts the
+  nested child to the section, a two-link cluster takes the first GitHub
+  link only, a first-paragraph identity is never stolen by a later
+  mention, a site-only first paragraph takes the later mirror link as
+  identity, and a no-own-link item with nested GitHub children stays a
+  GROUP (the identity-borrowing guard). Also in RAW_FIXTURES — badges render
+  inside the later paragraphs as intended. **Measured: yield 97.71% →
+  97.79% (+163 distinct repos; 207,006/211,685); 0 of 2,293 registries lost
+  items, 13 gained; buckets list 1,590 → 1,429, gated 951 → 949, every
+  other bucket flat; bands zero 11→8, low 25→23, perfect 404→405. Named:
+  `Awesome-Parameter-Efficient-Transfer-Learning` 0→62/64 (the two left are
+  the intro badge links), `Awesome-GUI-Agent` 28→111/114,
+  `lidar-place-recognition` 0→56/61, `early-exit-papers` 0→32/33,
+  `chatgpt-api` 82→89/93 — the three 0→N recoveries are the zero band's
+  11→8. Goldens: ZERO pre-existing fixtures changed (no fixture fleet list
+  item carries its first GitHub link in a later own paragraph) — the new
+  fixture is the entire golden diff. Regression method note: the harness's
+  console report was swallowed by vitest this run; the written
+  yield-report.json is the source of truth, and the step-6 baseline for the
+  per-registry diff was produced by stashing ONLY the markdown.ts fix and
+  re-running (git stash pop verified by status before diffing).**

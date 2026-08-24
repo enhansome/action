@@ -383,19 +383,28 @@ export function findFirstGitHubLink(node: Parent): Link | undefined {
 }
 
 // The GitHub link that represents a list item: the FIRST GitHub link in the
-// item's OWN paragraph only. A nested-descendant link is deliberately ignored
-// — it belongs to a child, not to this item. An item is a GitHub node iff its
-// own paragraph links to a GitHub repo; an item with no own GitHub link but
+// item's OWN paragraphs, in document order. Paper-list entries carry their
+// identity link ([[Code]](github)) in a paragraph after the title one, so
+// every own paragraph is scanned — the title still comes from the first
+// paragraph alone. A nested-descendant link is deliberately ignored — it
+// belongs to a child, not to this item. An item is a GitHub node iff its own
+// paragraphs link to a GitHub repo; an item with no own GitHub link but
 // nested GitHub children is a group, not a node borrowing a child's identity.
 //
-// A GitHub link that is secondary within the paragraph (e.g.
+// A GitHub link that is secondary within a paragraph (e.g.
 // `[name](marketplace) … [On GitHub](github)`) is still the item's own link, so
 // `findFirstGitHubLink` over the paragraph finds it correctly.
 function findOwnGitHubLink(itemNode: ListItem): Link | undefined {
-  const paragraph = itemNode.children.find(
-    (child): child is Paragraph => child.type === 'paragraph',
-  );
-  return paragraph ? findFirstGitHubLink(paragraph) : undefined;
+  for (const child of itemNode.children) {
+    if (child.type !== 'paragraph') {
+      continue;
+    }
+    const link = findFirstGitHubLink(child);
+    if (link) {
+      return link;
+    }
+  }
+  return undefined;
 }
 
 function fixRelativeLinks(tree: Root, relativeLinkPrefix: string) {
@@ -607,6 +616,9 @@ function processListRecursively(
         : processTableRows(child, repoInfoMap, true),
     );
 
+    // Title/description split on the FIRST paragraph only — a paper-list
+    // entry's identity link may live in a later paragraph (findOwnGitHubLink)
+    // while its title text stays the leading one.
     const paragraph = itemNode.children.find(
       (child): child is Paragraph => child.type === 'paragraph',
     );
