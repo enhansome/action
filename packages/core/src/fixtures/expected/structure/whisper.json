@@ -260,6 +260,28 @@
           "children": [
             {
               "node_type": "item",
+              "title": "Whisper-Web",
+              "description": "Local transcription using WebGPU, with optimised fine-tuned models for several languages. (FOSS)",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3104581877,
+                "language": "Ruby",
+                "last_commit": "2021-08-07T00:00:00.000Z",
+                "owner": "PierreMesure",
+                "repo": "whisper-web",
+                "stars": 31878
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Hosted"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
               "title": "Subs AI",
               "description": "Subtitle generation.",
               "children": [],

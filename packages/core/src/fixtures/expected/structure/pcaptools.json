@@ -632,6 +632,56 @@
         }
       ],
       "title": "File Extraction"
+    },
+    {
+      "description": null,
+      "items": [
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "USBPcap",
+              "description": "a solution for Windows.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3157498195,
+                "language": "C++",
+                "last_commit": "2023-06-20T00:00:00.000Z",
+                "owner": "desowin",
+                "repo": "usbpcap",
+                "stars": 48196
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Capture tools"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "USBPcapOdinDumper",
+              "description": "transforms .pcap files with and frames format of captures from flashing an Android phone with Odin or Heimdall into a set of files with frames payload. Useful for reverse-engineering. Has a modular architecture easily transformable for other applications formats.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2919566786,
+                "language": "Java",
+                "last_commit": "2021-11-06T00:00:00.000Z",
+                "owner": "KOLANICH",
+                "repo": "USBPcapOdinDumper",
+                "stars": 16787
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Analysis"
+        }
+      ],
+      "title": "USB"
     }
   ],
   "metadata": {

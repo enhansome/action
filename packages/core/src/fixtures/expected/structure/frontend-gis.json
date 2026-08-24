@@ -933,6 +933,28 @@
           "children": [
             {
               "node_type": "item",
+              "title": "movebank-api",
+              "description": "Platform for animal tracking data.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2054582942,
+                "language": "Go",
+                "last_commit": "2021-06-03T00:00:00.000Z",
+                "owner": "movebank",
+                "repo": "movebank-api-doc",
+                "stars": 32943
+              }
+            }
+          ],
+          "description": "Restful APIs for consuming geospatial data on the fly:",
+          "node_type": "group",
+          "title": "Web APIs"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
               "title": "Public APIs",
               "description": "A collective list of free APIs for use in software and web development.",
               "children": [],

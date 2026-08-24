@@ -44,6 +44,28 @@
           "children": [
             {
               "node_type": "item",
+              "title": "Burzum/CakeServiceLayer plugin",
+              "description": "Service layer and domain/business model implementation.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 735225555,
+                "language": "C++",
+                "last_commit": "2022-06-25T00:00:00.000Z",
+                "owner": "burzum",
+                "repo": "cakephp-service-layer",
+                "stars": 25556
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Architecture"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
               "title": "AssetCompress plugin",
               "description": "A complete asset manager for CakePHP.",
               "children": [],
@@ -647,6 +669,50 @@
           "children": [
             {
               "node_type": "item",
+              "title": "RuleFlow plugin",
+              "description": "A plugin that seamlessly transforms server-side validation rules into client-side JSON Logic validation, providing automatic form validation without requiring separate client-side validation code.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1915148391,
+                "language": "JavaScript",
+                "last_commit": "2022-12-06T00:00:00.000Z",
+                "owner": "skie",
+                "repo": "rule-flow",
+                "stars": 48392
+              }
+            }
+          ],
+          "description": "Data sanitization and validation rules.",
+          "node_type": "group",
+          "title": "Filtering and Validation"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Geo plugin",
+              "description": "Containing Geocoder behavior and GoogleMaps helper.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2395392943,
+                "language": "Python",
+                "last_commit": "2021-06-02T00:00:00.000Z",
+                "owner": "dereuromark",
+                "repo": "cakephp-geo",
+                "stars": 42944
+              }
+            }
+          ],
+          "description": "Geocoding addresses and working with latitudes and longitudes.",
+          "node_type": "group",
+          "title": "Geolocation"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
               "title": "Translate plugin",
               "description": "Translate your translations in the backend with ease.",
               "children": [],
@@ -798,6 +864,28 @@
           "description": "Useful libraries or tools that don't fit in any of the other categories.",
           "node_type": "group",
           "title": "Libs"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Markup plugin",
+              "description": "Allows to use PHP or JS based syntax highlighting.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3021740090,
+                "language": "TypeScript",
+                "last_commit": "2023-10-03T00:00:00.000Z",
+                "owner": "dereuromark",
+                "repo": "cakephp-markup",
+                "stars": 40091
+              }
+            }
+          ],
+          "description": "Syntax highlighting and markup processing.",
+          "node_type": "group",
+          "title": "Markup"
         },
         {
           "children": [
@@ -1072,6 +1160,28 @@
           "children": [
             {
               "node_type": "item",
+              "title": "Icings/Menu plugin",
+              "description": "A KnpMenu seasoned menu plugin for CakePHP.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3845444362,
+                "language": "Go",
+                "last_commit": "2023-01-04T00:00:00.000Z",
+                "owner": "icings",
+                "repo": "menu",
+                "stars": 44363
+              }
+            }
+          ],
+          "description": "Building navigation structures.",
+          "node_type": "group",
+          "title": "Navigation"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
               "title": "Crustum/Broadcasting plugin",
               "description": "The Broadcasting plugin provides real-time event broadcasting for CakePHP applications using WebSocket connections compatible with the Pusher protocol or Redis pub/sub.",
               "children": [],
@@ -1261,6 +1371,28 @@
           "description": "Plugins that implement object-relational mapping or data-mapping techniques.",
           "node_type": "group",
           "title": "ORM / Database / Datamapping"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "CakePdf plugin",
+              "description": "A plugin around PDF generation.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1514907546,
+                "language": "Java",
+                "last_commit": "2022-07-04T00:00:00.000Z",
+                "owner": "FriendsOfCake",
+                "repo": "CakePdf",
+                "stars": 7547
+              }
+            }
+          ],
+          "description": "Plugins and software for working with PDF files.",
+          "node_type": "group",
+          "title": "PDF"
         },
         {
           "children": [
@@ -2042,6 +2174,28 @@
           "description": "Software and tools for creating a sandboxed development environment.\nIDE specific compatibility information and tips can be found here.",
           "node_type": "group",
           "title": "Development Environment"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "baserCMS",
+              "description": "This is a website development framework with RESTful APIs. Installable as a plugin for CakePHP.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2392878106,
+                "language": "Java",
+                "last_commit": "2023-09-17T00:00:00.000Z",
+                "owner": "baserproject",
+                "repo": "basercms",
+                "stars": 28107
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "CMS and applications built on CakePHP"
         },
         {
           "children": [

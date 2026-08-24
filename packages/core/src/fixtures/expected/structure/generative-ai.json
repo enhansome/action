@@ -81,6 +81,50 @@
           "children": [
             {
               "node_type": "item",
+              "title": "ChatGPT for Jupyter",
+              "description": "Add various helper functions in Jupyter Notebooks and Jupyter Lab, powered by ChatGPT.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2641463999,
+                "language": null,
+                "last_commit": "2021-04-07T00:00:00.000Z",
+                "owner": "TiesdeKok",
+                "repo": "chat-gpt-jupyter-extension",
+                "stars": 14000
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "ChatGPT extensions"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Open Notebook",
+              "description": "An open source implementation of NotebookLM with more flexibility and features. #opensource",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3250583830,
+                "language": "TypeScript",
+                "last_commit": "2021-09-23T00:00:00.000Z",
+                "owner": "lfnovo",
+                "repo": "open-notebook",
+                "stars": 33831
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Productivity"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
               "title": "ASReview",
               "description": "Open-source AI-powered tool for systematic reviews, helping researchers screen large volumes of academic literature efficiently. #opensource",
               "children": [],
@@ -494,6 +538,28 @@
               "children": [
                 {
                   "node_type": "item",
+                  "title": "GitHub Models",
+                  "description": "Find and experiment with AI models to develop a generative AI application.",
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "id": 3449252787,
+                    "language": "Ruby",
+                    "last_commit": "2021-11-05T00:00:00.000Z",
+                    "owner": "marketplace",
+                    "repo": "models",
+                    "stars": 2788
+                  }
+                }
+              ],
+              "description": null,
+              "node_type": "group",
+              "title": "Playgrounds"
+            },
+            {
+              "children": [
+                {
+                  "node_type": "item",
                   "title": "Jan",
                   "description": "Run LLMs like Mistral or Llama2 locally and offline on your computer, or connect to remote AI APIs. #opensource",
                   "children": [],
@@ -794,6 +860,28 @@
               "description": null,
               "node_type": "group",
               "title": "Models"
+            },
+            {
+              "children": [
+                {
+                  "node_type": "item",
+                  "title": "Hugging Face Diffusion Models Course",
+                  "description": "Python materials for the online course on diffusion models by @huggingface.",
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "id": 3166909763,
+                    "language": "Python",
+                    "last_commit": "2021-11-29T00:00:00.000Z",
+                    "owner": "huggingface",
+                    "repo": "diffusion-models-class",
+                    "stars": 9764
+                  }
+                }
+              ],
+              "description": null,
+              "node_type": "group",
+              "title": "Stable Diffusion resources"
             }
           ],
           "description": null,
@@ -895,6 +983,28 @@
           "description": null,
           "node_type": "group",
           "title": "Audio"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Teleprompter",
+              "description": "An on-device AI for your meetings that listens to you and makes charismatic quote suggestions.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1671792570,
+                "language": "TypeScript",
+                "last_commit": "2022-06-10T00:00:00.000Z",
+                "owner": "danielgross",
+                "repo": "teleprompter",
+                "stars": 42571
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Other"
         },
         {
           "children": [

@@ -2156,6 +2156,28 @@
                   "children": [
                     {
                       "node_type": "item",
+                      "title": "docker.el",
+                      "description": "Manage docker from Emacs by Silex",
+                      "children": [],
+                      "repo_info": {
+                        "archived": false,
+                        "id": 3288056562,
+                        "language": "Go",
+                        "last_commit": "2022-06-18T00:00:00.000Z",
+                        "owner": "Silex",
+                        "repo": "docker.el",
+                        "stars": 6563
+                      }
+                    }
+                  ],
+                  "description": null,
+                  "node_type": "group",
+                  "title": "IDE integrations"
+                },
+                {
+                  "children": [
+                    {
+                      "node_type": "item",
                       "title": "Simple Docker UI",
                       "description": "Built on Electron. By felixgborrego.",
                       "children": [],
@@ -3918,6 +3940,28 @@
               "children": [
                 {
                   "node_type": "item",
+                  "title": "opencontainer",
+                  "description": "A convention and shared namespace for Docker labels defined by OCI Image Spec.",
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "id": 2194915045,
+                    "language": "C++",
+                    "last_commit": "2023-11-17T00:00:00.000Z",
+                    "owner": "opencontainers",
+                    "repo": "image-spec",
+                    "stars": 15046
+                  }
+                }
+              ],
+              "description": null,
+              "node_type": "group",
+              "title": "Metadata"
+            },
+            {
+              "children": [
+                {
+                  "node_type": "item",
                   "title": "Rescoyl",
                   "description": "Private Docker registry (free and open source).",
                   "children": [],
@@ -5368,6 +5412,21 @@
       "description": null,
       "items": [
         {
+          "node_type": "item",
+          "title": "Cloud Native Landscape",
+          "description": null,
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 526950543,
+            "language": "Python",
+            "last_commit": "2022-07-07T00:00:00.000Z",
+            "owner": "cncf",
+            "repo": "landscape",
+            "stars": 544
+          }
+        },
+        {
           "children": [
             {
               "node_type": "item",
@@ -5515,6 +5574,28 @@
           "description": null,
           "node_type": "group",
           "title": "Demos and Examples"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Dockerfile best practices",
+              "description": "This repository has best-practices for writing Dockerfiles.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3945916425,
+                "language": "C++",
+                "last_commit": "2022-11-02T00:00:00.000Z",
+                "owner": "hexops",
+                "repo": "dockerfile",
+                "stars": 16426
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Good Tips"
         },
         {
           "children": [

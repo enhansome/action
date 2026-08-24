@@ -121,6 +121,28 @@
               "children": [
                 {
                   "node_type": "item",
+                  "title": "Anvil",
+                  "description": "A small library to create reactive UI components, inspired by React. Provides data binding and event listener binding, fits well for MVVM.",
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "id": 743009435,
+                    "language": "C++",
+                    "last_commit": "2022-10-23T00:00:00.000Z",
+                    "owner": "anvil-ui",
+                    "repo": "anvil",
+                    "stars": 9436
+                  }
+                }
+              ],
+              "description": null,
+              "node_type": "group",
+              "title": "Data binding"
+            },
+            {
+              "children": [
+                {
+                  "node_type": "item",
                   "title": "Dagger 2",
                   "description": "A fast dependency injector for Android and Java.",
                   "children": [],
@@ -901,6 +923,50 @@
                   "children": [
                     {
                       "node_type": "item",
+                      "title": "NoPaginate",
+                      "description": "Simple Android pagination library",
+                      "children": [],
+                      "repo_info": {
+                        "archived": false,
+                        "id": 3220214012,
+                        "language": "Go",
+                        "last_commit": "2023-12-20T00:00:00.000Z",
+                        "owner": "NoNews",
+                        "repo": "NoPaginate",
+                        "stars": 14013
+                      }
+                    }
+                  ],
+                  "description": null,
+                  "node_type": "group",
+                  "title": "Paginate"
+                },
+                {
+                  "children": [
+                    {
+                      "node_type": "item",
+                      "title": "FadingActionBar",
+                      "description": "Fading action bar effect that can be seen in the new Play Music app.",
+                      "children": [],
+                      "repo_info": {
+                        "archived": false,
+                        "id": 2433713196,
+                        "language": "Java",
+                        "last_commit": "2023-06-19T00:00:00.000Z",
+                        "owner": "ManuelPeinado",
+                        "repo": "FadingActionBar",
+                        "stars": 13197
+                      }
+                    }
+                  ],
+                  "description": null,
+                  "node_type": "group",
+                  "title": "ActionBar"
+                },
+                {
+                  "children": [
+                    {
+                      "node_type": "item",
                       "title": "MaterialDrawer",
                       "description": "Simple take on a material design navigation drawer.",
                       "children": [],
@@ -1349,6 +1415,28 @@
                   "children": [
                     {
                       "node_type": "item",
+                      "title": "Material Dots Indicators",
+                      "description": "Three Material Dots Indicators styles for View Pagers.",
+                      "children": [],
+                      "repo_info": {
+                        "archived": false,
+                        "id": 871995536,
+                        "language": "Java",
+                        "last_commit": "2022-07-14T00:00:00.000Z",
+                        "owner": "tommybuonomo",
+                        "repo": "dotsindicator",
+                        "stars": 45537
+                      }
+                    }
+                  ],
+                  "description": null,
+                  "node_type": "group",
+                  "title": "View Pagers"
+                },
+                {
+                  "children": [
+                    {
+                      "node_type": "item",
                       "title": "Glide Bitmap Pool",
                       "description": "Glide Bitmap Pool is a memory management library for reusing the bitmap memory.",
                       "children": [],
@@ -1567,6 +1655,28 @@
                   "description": null,
                   "node_type": "group",
                   "title": "Camera"
+                },
+                {
+                  "children": [
+                    {
+                      "node_type": "item",
+                      "title": "Convalida",
+                      "description": "A simple and annotation-based way to validate your input fields.",
+                      "children": [],
+                      "repo_info": {
+                        "archived": false,
+                        "id": 1171950690,
+                        "language": "TypeScript",
+                        "last_commit": "2022-02-10T00:00:00.000Z",
+                        "owner": "WellingtonCosta",
+                        "repo": "convalida",
+                        "stars": 691
+                      }
+                    }
+                  ],
+                  "description": null,
+                  "node_type": "group",
+                  "title": "Field Validation"
                 }
               ],
               "description": null,
@@ -1624,6 +1734,28 @@
               "description": null,
               "node_type": "group",
               "title": "JSON"
+            },
+            {
+              "children": [
+                {
+                  "node_type": "item",
+                  "title": "Catcho",
+                  "description": "No Force Close any more.",
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "id": 485751110,
+                    "language": "TypeScript",
+                    "last_commit": "2023-09-13T00:00:00.000Z",
+                    "owner": "alhazmy13",
+                    "repo": "Catcho",
+                    "stars": 1111
+                  }
+                }
+              ],
+              "description": null,
+              "node_type": "group",
+              "title": "Crash monitoring"
             },
             {
               "children": [
@@ -2084,6 +2216,28 @@
               "children": [
                 {
                   "node_type": "item",
+                  "title": "Spring for Android - Rest Template",
+                  "description": "A Rest Client for Android.",
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "id": 2078888437,
+                    "language": "Ruby",
+                    "last_commit": "2022-10-21T00:00:00.000Z",
+                    "owner": "spring-projects",
+                    "repo": "spring-android",
+                    "stars": 38438
+                  }
+                }
+              ],
+              "description": null,
+              "node_type": "group",
+              "title": "REST"
+            },
+            {
+              "children": [
+                {
+                  "node_type": "item",
                   "title": "Green Coffee",
                   "description": "Run your Cucumber tests in your Android instrumentation tests.",
                   "children": [],
@@ -2512,6 +2666,28 @@
               "description": null,
               "node_type": "group",
               "title": "Debugging Tools"
+            },
+            {
+              "children": [
+                {
+                  "node_type": "item",
+                  "title": "SmartGattLib",
+                  "description": "Simplifies the work with Bluetooth SMART devices (a.k.a. Bluetooth Low Energy in Bluetooth 4.0).",
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "id": 1565017656,
+                    "language": "Java",
+                    "last_commit": "2022-03-16T00:00:00.000Z",
+                    "owner": "movisens",
+                    "repo": "SmartGattLib",
+                    "stars": 17657
+                  }
+                }
+              ],
+              "description": null,
+              "node_type": "group",
+              "title": "Wireless"
             },
             {
               "children": [
@@ -3378,6 +3554,28 @@
               "description": null,
               "node_type": "group",
               "title": "Code examples"
+            },
+            {
+              "children": [
+                {
+                  "node_type": "item",
+                  "title": "The Context",
+                  "description": "a podcast about Android Development with Hannes Dorfmann, Artem Zinnatullin and wonderful guests!",
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "id": 550532009,
+                    "language": null,
+                    "last_commit": "2023-12-23T00:00:00.000Z",
+                    "owner": "artem-zinnatullin",
+                    "repo": "TheContext-Podcast",
+                    "stars": 32010
+                  }
+                }
+              ],
+              "description": null,
+              "node_type": "group",
+              "title": "Podcasts"
             }
           ],
           "description": null,

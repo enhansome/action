@@ -5628,6 +5628,28 @@
           "children": [
             {
               "node_type": "item",
+              "title": "Tailor",
+              "description": "Streaming layout service for front-end microservices, inspired by Facebook's BigPipe.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3764731428,
+                "language": "Shell",
+                "last_commit": "2022-10-30T00:00:00.000Z",
+                "owner": "zalando",
+                "repo": "tailor",
+                "stars": 31429
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Streaming"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
               "title": "ocrad.js",
               "description": "OCR in JavaScript via Emscripten.",
               "children": [],
@@ -5787,6 +5809,50 @@
           "description": null,
           "node_type": "group",
           "title": "Machine Learning"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "bowser",
+              "description": "a browser detector.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2844553749,
+                "language": null,
+                "last_commit": "2021-12-13T00:00:00.000Z",
+                "owner": "ded",
+                "repo": "bowser",
+                "stars": 3750
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Browser Detection"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "os.js",
+              "description": "An open-source web desktop platform with a window manager, application APIs, GUI toolkit, filesystem abstractions and much more.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3167360097,
+                "language": "Ruby",
+                "last_commit": "2023-09-26T00:00:00.000Z",
+                "owner": "os-js",
+                "repo": "OS.js",
+                "stars": 10098
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Operating System"
         },
         {
           "children": [
@@ -10104,6 +10170,28 @@
           "description": null,
           "node_type": "group",
           "title": "WebSockets"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "KaibanJS",
+              "description": "KaibanJS is an open-source framework browser-compatibility of orchestration of multi-agent ai systems using a Kanban-inspired architecture.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1606152836,
+                "language": "Java",
+                "last_commit": "2021-09-17T00:00:00.000Z",
+                "owner": "kaiban-ai",
+                "repo": "KaibanJS",
+                "stars": 2837
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Generative AI"
         },
         {
           "children": [

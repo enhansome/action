@@ -230,6 +230,21 @@
         },
         {
           "node_type": "item",
+          "title": "clj-kondo",
+          "description": "A linter for Clojure code that sparks joy. It informs you about potential errors while you are typing.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 3136710601,
+            "language": "JavaScript",
+            "last_commit": "2022-05-10T00:00:00.000Z",
+            "owner": "borkdude",
+            "repo": "clj-kondo",
+            "stars": 10602
+          }
+        },
+        {
+          "node_type": "item",
           "title": "SonarDelphi",
           "description": "Delphi static analyzer for the SonarQube code quality platform.",
           "children": [],
@@ -256,6 +271,21 @@
             "owner": "integrated-application-development",
             "repo": "delphilint",
             "stars": 33734
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "D-scanner",
+          "description": "D-Scanner is a tool for analyzing D source code.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 3524890683,
+            "language": "Python",
+            "last_commit": "2022-02-17T00:00:00.000Z",
+            "owner": "dlang-community",
+            "repo": "D-Scanner",
+            "stars": 40684
           }
         },
         {
@@ -301,6 +331,36 @@
             "owner": "jeremyjh",
             "repo": "dialyxir",
             "stars": 5503
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "elvis",
+          "description": "Erlang Style Reviewer.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 4019017547,
+            "language": "Ruby",
+            "last_commit": "2022-07-03T00:00:00.000Z",
+            "owner": "inaka",
+            "repo": "elvis",
+            "stars": 17548
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "FSharpLint",
+          "description": "Lint tool for F#.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 1008571426,
+            "language": "Java",
+            "last_commit": "2022-11-01T00:00:00.000Z",
+            "owner": "fsprojects",
+            "repo": "FSharpLint",
+            "stars": 21427
           }
         },
         {
@@ -1385,6 +1445,21 @@
         },
         {
           "node_type": "item",
+          "title": "zarn",
+          "description": "A lightweight static security analysis tool for modern Perl Apps",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 1181435010,
+            "language": "TypeScript",
+            "last_commit": "2023-12-22T00:00:00.000Z",
+            "owner": "htrgouvea",
+            "repo": "zarn",
+            "stars": 35011
+          }
+        },
+        {
+          "node_type": "item",
           "title": "wily",
           "description": "A command-line tool for archiving, exploring and graphing the complexity of Python source code.",
           "children": [],
@@ -1696,6 +1771,21 @@
             "owner": "jimhester",
             "repo": "lintr",
             "stars": 5219
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Regal",
+          "description": "Regal is a linter for the policy language Rego. Regal aims to catch bugs and mistakes in policy code, while at the same time helping people learn the language, best practices and idiomatic constructs.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 3337543540,
+            "language": "TypeScript",
+            "last_commit": "2022-07-10T00:00:00.000Z",
+            "owner": "styrainc",
+            "repo": "regal",
+            "stars": 43541
           }
         },
         {
@@ -2270,6 +2360,21 @@
         },
         {
           "node_type": "item",
+          "title": "scapegoat",
+          "description": "Scala compiler plugin for static code analysis.",
+          "children": [],
+          "repo_info": {
+            "archived": true,
+            "id": 873817170,
+            "language": "TypeScript",
+            "last_commit": "2023-07-15T00:00:00.000Z",
+            "owner": "sksamuel",
+            "repo": "scapegoat",
+            "stars": 17171
+          }
+        },
+        {
+          "node_type": "item",
           "title": "kmdr",
           "description": "CLI tool for learning commands from your terminal. kmdr delivers a break down of commands with every attribute explained.",
           "children": [],
@@ -2311,6 +2416,36 @@
             "owner": "anordal",
             "repo": "shellharden",
             "stars": 18260
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "SwiftFormat",
+          "description": "A library and command-line formatting tool for reformatting Swift code.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 1364208591,
+            "language": "JavaScript",
+            "last_commit": "2022-05-20T00:00:00.000Z",
+            "owner": "nicklockwood",
+            "repo": "SwiftFormat",
+            "stars": 8592
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "tclchecker",
+          "description": "A static syntax analysis module (as part of TDK).",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 1533329026,
+            "language": "Java",
+            "last_commit": "2023-12-06T00:00:00.000Z",
+            "owner": "ActiveState",
+            "repo": "tdk",
+            "stars": 29027
           }
         },
         {
@@ -2927,6 +3062,21 @@
       "items": [
         {
           "node_type": "item",
+          "title": "alquitran",
+          "description": "Inspects tar archives and tries to spot portability issues in regard to POSIX 2017 pax specification and common tar implementations. This project is intended to be used by maintainers of projects who want to offer portable source code archives for as many systems as possible. Checking tar archives with alquitran before publishing them should help spotting issues before they reach distributors and users.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 2584808960,
+            "language": "TypeScript",
+            "last_commit": "2021-05-16T00:00:00.000Z",
+            "owner": "ferivoz",
+            "repo": "alquitran",
+            "stars": 8961
+          }
+        },
+        {
+          "node_type": "item",
           "title": "Nauz File Detector",
           "description": "Static Linker/Compiler/Tool detector for Windows, Linux and MacOS.",
           "children": [],
@@ -3092,6 +3242,21 @@
         },
         {
           "node_type": "item",
+          "title": "checkmake",
+          "description": "Linter / Analyzer for Makefiles.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 3027172860,
+            "language": "TypeScript",
+            "last_commit": "2021-08-24T00:00:00.000Z",
+            "owner": "mrtazz",
+            "repo": "checkmake",
+            "stars": 22861
+          }
+        },
+        {
+          "node_type": "item",
           "title": "Specificity Graph",
           "description": "CSS Specificity Graph Generator.",
           "children": [],
@@ -3118,6 +3283,21 @@
             "owner": "csscomb",
             "repo": "csscomb.js",
             "stars": 12622
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "gixy",
+          "description": "A tool to analyze Nginx configuration. The main goal is to prevent misconfiguration and automate flaw detection.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 3188073186,
+            "language": "Java",
+            "last_commit": "2023-06-29T00:00:00.000Z",
+            "owner": "yandex",
+            "repo": "gixy",
+            "stars": 23187
           }
         },
         {
@@ -3287,6 +3467,21 @@
         },
         {
           "node_type": "item",
+          "title": "composer-dependency-analyser",
+          "description": "Fast detection of composer dependency issues.",
+          "children": [],
+          "repo_info": {
+            "archived": true,
+            "id": 3612834084,
+            "language": "Rust",
+            "last_commit": "2023-10-09T00:00:00.000Z",
+            "owner": "shipmonk-rnd",
+            "repo": "composer-dependency-analyser",
+            "stars": 34085
+          }
+        },
+        {
+          "node_type": "item",
           "title": "Violations Lib",
           "description": "Java library for parsing report files from static code analysis. Used by a bunch of Jenkins, Maven and Gradle plugins.",
           "children": [],
@@ -3332,6 +3527,36 @@
         },
         {
           "node_type": "item",
+          "title": "deno_lint",
+          "description": "Official linter for Deno.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 2180518307,
+            "language": "Ruby",
+            "last_commit": "2023-02-28T00:00:00.000Z",
+            "owner": "denoland",
+            "repo": "deno_lint",
+            "stars": 18308
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "oelint-adv",
+          "description": "Linter for bitbake recipes used in open-embedded and YOCTO",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 1949927297,
+            "language": "Ruby",
+            "last_commit": "2023-03-10T00:00:00.000Z",
+            "owner": "priv-kweihmann",
+            "repo": "oelint-adv",
+            "stars": 27298
+          }
+        },
+        {
+          "node_type": "item",
           "title": "ERB Lint",
           "description": "Lint your ERB or HTML files",
           "children": [],
@@ -3373,6 +3598,21 @@
             "owner": "nebulab",
             "repo": "erb-formatter",
             "stars": 3628
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "gherkin-lint",
+          "description": "A linter for the Gherkin-Syntax written in Javascript.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 2374096766,
+            "language": "Java",
+            "last_commit": "2021-11-26T00:00:00.000Z",
+            "owner": "vsiakka",
+            "repo": "gherkin-lint",
+            "stars": 46767
           }
         },
         {
@@ -3587,6 +3827,51 @@
         },
         {
           "node_type": "item",
+          "title": "KubeLinter",
+          "description": "KubeLinter is a static analysis tool that checks Kubernetes YAML files and Helm charts to ensure the applications represented in them adhere to best practices.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 2056993269,
+            "language": null,
+            "last_commit": "2023-04-07T00:00:00.000Z",
+            "owner": "stackrox",
+            "repo": "kube-linter",
+            "stars": 43270
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "larastan",
+          "description": "Adds static analysis to Laravel improving developer productivity and code quality. It is a wrapper around PHPStan.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 3922330718,
+            "language": "Shell",
+            "last_commit": "2022-01-13T00:00:00.000Z",
+            "owner": "larastan",
+            "repo": "larastan",
+            "stars": 30719
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "checkmake",
+          "description": "Linter / Analyzer for Makefiles.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 3027172860,
+            "language": "TypeScript",
+            "last_commit": "2021-08-24T00:00:00.000Z",
+            "owner": "mrtazz",
+            "repo": "checkmake",
+            "stars": 22861
+          }
+        },
+        {
+          "node_type": "item",
           "title": "mdsf",
           "description": "Format markdown code blocks using your favorite code formatters.",
           "children": [],
@@ -3677,6 +3962,21 @@
         },
         {
           "node_type": "item",
+          "title": "FlowDroid",
+          "description": "Static taint analysis tool for Android applications.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 370404309,
+            "language": null,
+            "last_commit": "2023-02-26T00:00:00.000Z",
+            "owner": "secure-software-engineering",
+            "repo": "FlowDroid",
+            "stars": 4310
+          }
+        },
+        {
+          "node_type": "item",
           "title": "statix",
           "description": "Lints and suggestions for the Nix programming language. \"statix check\" highlights antipatterns in Nix code. \"statix fix\" can fix several such occurrences.",
           "children": [],
@@ -3707,6 +4007,51 @@
         },
         {
           "node_type": "item",
+          "title": "lockfile-lint",
+          "description": "Lint an npm or yarn lockfile to analyze and detect security issues",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 152083214,
+            "language": "Rust",
+            "last_commit": "2023-06-01T00:00:00.000Z",
+            "owner": "lirantal",
+            "repo": "lockfile-lint",
+            "stars": 33215
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "composer-dependency-analyser",
+          "description": "Fast detection of composer dependency issues.",
+          "children": [],
+          "repo_info": {
+            "archived": true,
+            "id": 3612834084,
+            "language": "Rust",
+            "last_commit": "2023-10-09T00:00:00.000Z",
+            "owner": "shipmonk-rnd",
+            "repo": "composer-dependency-analyser",
+            "stars": 34085
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "rpmlint",
+          "description": "Tool for checking common errors in rpm packages.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 2432945447,
+            "language": "Ruby",
+            "last_commit": "2022-10-11T00:00:00.000Z",
+            "owner": "rpm-software-management",
+            "repo": "rpmlint",
+            "stars": 45448
+          }
+        },
+        {
+          "node_type": "item",
           "title": "promval",
           "description": "PromQL validator written in Python. It can be used to validate that PromQL expressions are written as expected.",
           "children": [],
@@ -3733,6 +4078,36 @@
             "owner": "facetoe",
             "repo": "promformat",
             "stars": 31377
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "protolint",
+          "description": "Pluggable linter and fixer to enforce Protocol Buffer style and conventions.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 1696506956,
+            "language": "Java",
+            "last_commit": "2021-05-20T00:00:00.000Z",
+            "owner": "yoheimuta",
+            "repo": "protolint",
+            "stars": 6957
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "metadata-json-lint",
+          "description": "Tool to check the validity of Puppet metadata.json files.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 2088298646,
+            "language": "Java",
+            "last_commit": "2022-03-26T00:00:00.000Z",
+            "owner": "voxpupuli",
+            "repo": "metadata-json-lint",
+            "stars": 48647
           }
         },
         {
@@ -4123,6 +4498,21 @@
             "owner": "sds",
             "repo": "haml-lint",
             "stars": 2225
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "dennis",
+          "description": "A set of utilities for working with PO files to ease development and improve quality.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 52167863,
+            "language": "Python",
+            "last_commit": "2021-08-21T00:00:00.000Z",
+            "owner": "willkg",
+            "repo": "dennis",
+            "stars": 17864
           }
         },
         {

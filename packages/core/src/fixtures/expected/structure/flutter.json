@@ -7,6 +7,28 @@
           "children": [
             {
               "node_type": "item",
+              "title": "Awesome Flutter tips",
+              "description": "Tips to help developers increase productivity by erluxman.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3537820151,
+                "language": "JavaScript",
+                "last_commit": "2023-08-03T00:00:00.000Z",
+                "owner": "erluxman",
+                "repo": "awesomefluttertips",
+                "stars": 20152
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Websites / Blogs"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
               "title": "Roadmap to Flutter Development",
               "description": "[5794⭐] - Visual roadmap with principles, patterns, and frameworks for Flutter newbies by Olexandr Leuschenko.",
               "children": [],
@@ -1204,6 +1226,28 @@
               "description": null,
               "node_type": "group",
               "title": "Calendar"
+            },
+            {
+              "children": [
+                {
+                  "node_type": "item",
+                  "title": "Dynamic Widget",
+                  "description": "[1630⭐] - Build your dynamic UI with json, and the json format is very similar with flutter widget code by Denny Deng.",
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "id": 3882776952,
+                    "language": "Go",
+                    "last_commit": "2021-05-24T00:00:00.000Z",
+                    "owner": "dengyin2000",
+                    "repo": "dynamic_widget",
+                    "stars": 26953
+                  }
+                }
+              ],
+              "description": null,
+              "node_type": "group",
+              "title": "Backend-Driven"
             }
           ],
           "description": null,
@@ -2145,6 +2189,21 @@
         {
           "children": [
             {
+              "node_type": "item",
+              "title": "photo_manager",
+              "description": "[739⭐] - Provides assets (image/video/audio) abstraction management APIs that can be easily integrated with custom UI widgets by CaiJingLong and Alex Li.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 784519152,
+                "language": "Go",
+                "last_commit": "2023-08-02T00:00:00.000Z",
+                "owner": "fluttercandies",
+                "repo": "flutter_photo_manager",
+                "stars": 19153
+              }
+            },
+            {
               "children": [
                 {
                   "node_type": "item",
@@ -2292,6 +2351,28 @@
               "description": null,
               "node_type": "group",
               "title": "Video"
+            },
+            {
+              "children": [
+                {
+                  "node_type": "item",
+                  "title": "Speech Recognition",
+                  "description": "[338⭐] - Speech to text by Erick Ghaumez.",
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "id": 4132734547,
+                    "language": "Ruby",
+                    "last_commit": "2022-07-03T00:00:00.000Z",
+                    "owner": "rxlabz",
+                    "repo": "speech_recognition",
+                    "stars": 34548
+                  }
+                }
+              ],
+              "description": null,
+              "node_type": "group",
+              "title": "Voice"
             }
           ],
           "description": null,
@@ -2329,6 +2410,28 @@
                 "repo": "flutterfire",
                 "stars": 8149
               }
+            },
+            {
+              "children": [
+                {
+                  "node_type": "item",
+                  "title": "Streaming Shared Preferences",
+                  "description": "[248⭐] - Reactive key-value store, shared preferences with Streams by Iiro Krankka.",
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "id": 937443719,
+                    "language": null,
+                    "last_commit": "2022-01-12T00:00:00.000Z",
+                    "owner": "roughike",
+                    "repo": "streaming_shared_preferences",
+                    "stars": 43720
+                  }
+                }
+              ],
+              "description": null,
+              "node_type": "group",
+              "title": "Preferences"
             }
           ],
           "description": null,
@@ -2922,6 +3025,21 @@
     {
       "description": null,
       "items": [
+        {
+          "node_type": "item",
+          "title": "Plugins",
+          "description": "Official Flutter Team Plugins.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 3549636107,
+            "language": "Ruby",
+            "last_commit": "2023-09-16T00:00:00.000Z",
+            "owner": "flutter",
+            "repo": "packages",
+            "stars": 36108
+          }
+        },
         {
           "children": [
             {
@@ -3978,6 +4096,28 @@
           "description": null,
           "node_type": "group",
           "title": "Testing"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Responsive Framework",
+              "description": "[1370⭐] - Automatically adapt UI to different screen sizes. Responsiveness made simple by Codelessly.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2200210735,
+                "language": "C++",
+                "last_commit": "2021-12-27T00:00:00.000Z",
+                "owner": "Codelessly",
+                "repo": "ResponsiveFramework",
+                "stars": 10736
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Web"
         }
       ],
       "title": "Frameworks"
@@ -3985,6 +4125,28 @@
     {
       "description": null,
       "items": [
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Graphx",
+              "description": "[514⭐] - Making drawings and animations extremely simple, inspired by Flash, by Roi Peker.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1142596593,
+                "language": "Python",
+                "last_commit": "2022-05-18T00:00:00.000Z",
+                "owner": "roipeker",
+                "repo": "graphx",
+                "stars": 46594
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Rendering"
+        },
         {
           "children": [
             {
@@ -4173,6 +4335,28 @@
               "description": null,
               "node_type": "group",
               "title": "Open source games"
+            },
+            {
+              "children": [
+                {
+                  "node_type": "item",
+                  "title": "Awesome Flame",
+                  "description": "[1248⭐] - Curated list of the best Flame games, projects, libraries, tools, tutorials, articles and more by Flame Engine.",
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "id": 518543559,
+                    "language": null,
+                    "last_commit": "2022-06-21T00:00:00.000Z",
+                    "owner": "flame-engine",
+                    "repo": "awesome-flame",
+                    "stars": 43560
+                  }
+                }
+              ],
+              "description": null,
+              "node_type": "group",
+              "title": "Game Engine resources"
             }
           ],
           "description": null,
@@ -5019,6 +5203,28 @@
           "children": [
             {
               "node_type": "item",
+              "title": "Enhancement_Suite",
+              "description": "[289⭐] - Search for pub.dev libraries, update version, Bloc, Snippet, etc you're covered by Marius Höfler.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1418770220,
+                "language": "TypeScript",
+                "last_commit": "2023-05-26T00:00:00.000Z",
+                "owner": "marius-h",
+                "repo": "flutter_enhancement_suite",
+                "stars": 20221
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "IntelliJ / Android Studio"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
               "title": "Raspberry Pi Embedder",
               "description": "[1848⭐] - Light-weight Embedder for Raspberry Pi by Hannes Winkler.",
               "children": [],
@@ -5174,6 +5380,71 @@
         }
       ],
       "title": "Utilities"
+    },
+    {
+      "description": null,
+      "items": [
+        {
+          "node_type": "item",
+          "title": "Awesome Flutter Linux",
+          "description": "A curated list of awesome Linux-specific Flutter packages and projects by J-P Nurmi.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 311793886,
+            "language": "Java",
+            "last_commit": "2021-07-29T00:00:00.000Z",
+            "owner": "jpnurmi",
+            "repo": "awesome-flutter-linux",
+            "stars": 43887
+          }
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Matrix2",
+              "description": "Sense Hat's LED matrix control game by bus710.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 4262927325,
+                "language": "C++",
+                "last_commit": "2023-02-10T00:00:00.000Z",
+                "owner": "bus710",
+                "repo": "matrix2",
+                "stars": 27326
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Hardware"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Interview Questions",
+              "description": "List of helpful questions you can use to interview potential candidates by Whatsupcoders.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 402507488,
+                "language": "Shell",
+                "last_commit": "2022-08-31T00:00:00.000Z",
+                "owner": "whatsupcoders",
+                "repo": "Flutter-Interview-Questions",
+                "stars": 7489
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Guide & Interviews"
+        }
+      ],
+      "title": "Bonus"
     }
   ],
   "metadata": {

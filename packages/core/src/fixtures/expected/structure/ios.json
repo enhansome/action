@@ -14334,6 +14334,28 @@
           "description": null,
           "node_type": "group",
           "title": "Push Notifications"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Pushkin",
+              "description": "Free and open-source.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1929580562,
+                "language": "Go",
+                "last_commit": "2022-06-18T00:00:00.000Z",
+                "owner": "Nordeus",
+                "repo": "pushkin",
+                "stars": 30563
+              }
+            }
+          ],
+          "description": "Most of these are paid services, some have free tiers.",
+          "node_type": "group",
+          "title": "Push Notification Providers"
         }
       ],
       "title": "Notifications"
@@ -30823,6 +30845,28 @@
           "description": null,
           "node_type": "group",
           "title": "Splash View"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Bartinter",
+              "description": "Status bar tint depending on content behind, updates dynamically.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2886447431,
+                "language": "JavaScript",
+                "last_commit": "2022-10-27T00:00:00.000Z",
+                "owner": "MaximKotliar",
+                "repo": "Bartinter",
+                "stars": 47432
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Status Bar"
         },
         {
           "children": [

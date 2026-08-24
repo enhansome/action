@@ -1,0 +1,71 @@
+{
+  "items": [
+    {
+      "description": "Intermediate prose that splits the lists apart.",
+      "items": [
+        {
+          "node_type": "item",
+          "title": "alpha",
+          "description": "the first library.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 3060077618,
+            "language": "Shell",
+            "last_commit": "2022-04-23T00:00:00.000Z",
+            "owner": "example",
+            "repo": "alpha",
+            "stars": 27619
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "beta",
+          "description": "the second library.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 424105752,
+            "language": "Go",
+            "last_commit": "2021-12-10T00:00:00.000Z",
+            "owner": "example",
+            "repo": "beta",
+            "stars": 5753
+          }
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "gamma-web",
+              "description": "a nested single item.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 4146366156,
+                "language": "Java",
+                "last_commit": "2023-07-29T00:00:00.000Z",
+                "owner": "example",
+                "repo": "gamma-web",
+                "stars": 16157
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Frontend"
+        }
+      ],
+      "title": "Libraries"
+    }
+  ],
+  "metadata": {
+    "last_updated": "2025-01-01T00:00:00.000Z",
+    "original_repository": "example/single-item-sections",
+    "original_repository_id": 4242,
+    "original_repository_sha": "deadbeef",
+    "enhanced_repository": "enhansome/enhansome-single-item-sections",
+    "enhanced_repository_description": "enhanced list",
+    "title": "Awesome Single-Item Sections with stars"
+  }
+}

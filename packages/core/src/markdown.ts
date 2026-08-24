@@ -366,7 +366,7 @@ function createBadgeText(info: RepoInfoDetails): string {
   return ` ${parts.join(' | ')}`;
 }
 
-function findFirstGitHubLink(node: Parent): string | undefined {
+export function findFirstGitHubLink(node: Parent): string | undefined {
   let linkUrl: string | undefined;
   visit(node, 'link', (linkNode: Link) => {
     if (!linkUrl && parseGitHubUrl(linkNode.url)) {
@@ -465,22 +465,32 @@ function compareByRepoInfo(
   return timeB - timeA;
 }
 
+// The minLinks noise gate counts items whose SUBTREE contains a GitHub link,
+// not items with an own-paragraph link only. A category with no own link but
+// nested GitHub children still counts (it becomes a group); switching to
+// `findOwnGitHubLink` would silently drop purely categorical sections, so it
+// deliberately diverges from the identity resolver.
+export function countLinkedItems(listNode: List): number {
+  return listNode.children.filter(item => !!findFirstGitHubLink(item)).length;
+}
+
 function processListRecursively(
   listNode: List,
   repoInfoMap: Map<string, RepoInfoDetails>,
   sortOptions: SortOptions,
   isNested = false,
+  // The caller's section-scope gate decision (sectionGatePasses). Absent for
+  // nested lists (emitted under their parent regardless) and for top-level
+  // lists with no open container (preamble), which gate per list.
+  sectionGateOpen?: boolean,
 ): JsonNode[] {
-  // The section-sparsity gate counts items whose SUBTREE contains a GitHub
-  // link, not items with an own-paragraph link only. A category with no own
-  // link but nested GitHub children still counts (it becomes a group);
-  // switching to `findOwnGitHubLink` would silently drop purely categorical
-  // sections, so it deliberately diverges from the identity resolver below.
-  const itemsWithGitHubLinks = listNode.children.filter(
-    item => !!findFirstGitHubLink(item),
-  );
-  if (!isNested && itemsWithGitHubLinks.length < sortOptions.minLinks) {
-    return [];
+  if (!isNested) {
+    const gateOpen =
+      sectionGateOpen ??
+      countLinkedItems(listNode) >= sortOptions.minLinks;
+    if (!gateOpen) {
+      return [];
+    }
   }
 
   // Zip each item with its emitted JSON nodes and repo info so one sort orders
@@ -628,7 +638,7 @@ const TOC_TITLE_PATTERNS = [/^contents$/i, /^table of contents$/i];
 // A heading that delimits content structure. Text-less headings (a bare `#`,
 // an image-only heading) are spacers in real docs; TOC headings are structure
 // mirrors. Neither participates in the section tree.
-function isStructuralHeading(node: Heading): boolean {
+export function isStructuralHeading(node: Heading): boolean {
   const title = getNodeText(node);
   return (
     !!title && !TOC_TITLE_PATTERNS.some(pattern => pattern.test(title.trim()))
@@ -654,6 +664,20 @@ function findTitleHeadingIndex(tree: Root): number {
       node.type === 'heading' &&
       node.depth === 1 &&
       isValidTitle(getNodeText(node)),
+  );
+}
+
+// The heading branding owns even when it isn't a *valid* title: a generic
+// first H1 ("# Guides", "# Contents") is still the de-facto title slot —
+// applyBrandingToTree replaces it — so the section tree must not treat it
+// as a section wrapping the whole document.
+export function findTitleSlotIndex(tree: Root): number {
+  const titleHeadingIndex = findTitleHeadingIndex(tree);
+  if (titleHeadingIndex !== -1) {
+    return titleHeadingIndex;
+  }
+  return tree.children.findIndex(
+    (node): node is Heading => node.type === 'heading' && node.depth === 1,
   );
 }
 
@@ -706,16 +730,7 @@ function processTree(
       ? ''
       : getNodeText(tree.children[titleHeadingIndex] as Heading);
 
-  // The heading branding owns even when it isn't a *valid* title: a generic
-  // first H1 ("# Guides", "# Contents") is still the de-facto title slot —
-  // applyBrandingToTree replaces it — so the section tree must not treat it
-  // as a section wrapping the whole document.
-  const titleSlotIndex =
-    titleHeadingIndex !== -1
-      ? titleHeadingIndex
-      : tree.children.findIndex(
-          (node): node is Heading => node.type === 'heading' && node.depth === 1,
-        );
+  const titleSlotIndex = findTitleSlotIndex(tree);
 
   // Derive a subject from the *source* repository name when no valid H1 is
   // present. Using the source — not the enhanced/mirror repo — keeps the org
@@ -728,6 +743,7 @@ function processTree(
   }
 
   const sectionDepth = findSectionDepth(tree, titleSlotIndex);
+  const gateForSection = sectionGatePasses(tree, titleSlotIndex, sortOptions);
 
   const sections: JsonSection[] = [];
   const stack: ContainerBuilder[] = [];
@@ -743,7 +759,7 @@ function processTree(
         continue;
       }
       closeContainers(stack, node.depth, sections);
-      openContainer(stack, node, sectionDepth, repoInfoMap);
+      openContainer(stack, node, i, sectionDepth, repoInfoMap);
     } else if (node.type === 'paragraph' || node.type === 'blockquote') {
       const text = getNodeText(node);
       const container = stack[stack.length - 1];
@@ -755,10 +771,19 @@ function processTree(
       }
     } else if (node.type === 'list') {
       // Every list inside the open container contributes items — a section is
-      // not closed by its first list. With no open container (preamble), the
-      // list is not part of any JSON section, but its AST is still sorted so
-      // the rendered markdown matches.
-      const items = processListRecursively(node, repoInfoMap, sortOptions);
+      // not closed by its first list. The minLinks gate is decided per
+      // section, against the whole section subtree (the stack bottom — always
+      // a section by the openContainer invariant). With no open container
+      // (preamble), the list is not part of any JSON section and gates per
+      // list, but its AST is still sorted so the rendered markdown matches.
+      const openSection = stack[0];
+      const items = processListRecursively(
+        node,
+        repoInfoMap,
+        sortOptions,
+        false,
+        openSection && gateForSection(openSection),
+      );
       const container = stack[stack.length - 1];
       if (container) {
         container.children.push(...items);
@@ -778,6 +803,9 @@ interface ContainerBuilder {
   children: JsonNode[];
   description: string;
   headingDepth: number;
+  // The heading's index in the document — the section gate reads it to know
+  // where the section's subtree starts.
+  headingIndex: number;
   kind: 'group' | 'item' | 'section';
   repoInfo?: RepoInfoDetails;
   title: string;
@@ -823,6 +851,7 @@ function soleLiveHeadingLink(
 function openContainer(
   stack: ContainerBuilder[],
   heading: Heading,
+  headingIndex: number,
   sectionDepth: number,
   repoInfoMap: Map<string, RepoInfoDetails>,
 ): void {
@@ -837,6 +866,7 @@ function openContainer(
       children: [],
       description: '',
       headingDepth: heading.depth,
+      headingIndex,
       kind: 'section',
       title,
     });
@@ -847,10 +877,53 @@ function openContainer(
     children: [],
     description: '',
     headingDepth: heading.depth,
+    headingIndex,
     kind: repoInfo ? 'item' : 'group',
     repoInfo: repoInfo ?? undefined,
     title,
   });
+}
+
+// The minLinks gate scoped to a SECTION: every top-level list in the section
+// counts together — best-of-style documents put each entry in its own
+// single-item list, which the per-list gate dropped one by one. The section's
+// subtree runs from its heading to the first structural heading at or above
+// its depth (the same heading that would close it in closeContainers); the
+// gate fires only when the whole subtree holds fewer than minLinks
+// link-bearing entries, so a genuinely sparse section ("## My Blog" with one
+// link) is still noise-dropped.
+function sectionGatePasses(
+  tree: Root,
+  titleSlotIndex: number,
+  sortOptions: SortOptions,
+): (section: ContainerBuilder) => boolean {
+  const cache = new Map<number, boolean>();
+  return section => {
+    const cached = cache.get(section.headingIndex);
+    if (cached !== undefined) {
+      return cached;
+    }
+    let linkedEntries = 0;
+    for (let j = section.headingIndex + 1; j < tree.children.length; j++) {
+      const node = tree.children[j];
+      if (node.type === 'heading') {
+        if (
+          j !== titleSlotIndex &&
+          isStructuralHeading(node) &&
+          node.depth <= section.headingDepth
+        ) {
+          break;
+        }
+        continue;
+      }
+      if (node.type === 'list') {
+        linkedEntries += countLinkedItems(node);
+      }
+    }
+    const passes = linkedEntries >= sortOptions.minLinks;
+    cache.set(section.headingIndex, passes);
+    return passes;
+  };
 }
 
 // Finalize every container a heading of `depth` closes (same-or-shallower),

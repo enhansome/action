@@ -373,6 +373,28 @@
           "children": [
             {
               "node_type": "item",
+              "title": "Pokete",
+              "description": "Pokemon-like.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1222068898,
+                "language": "Shell",
+                "last_commit": "2021-07-17T00:00:00.000Z",
+                "owner": "lxgr-linux",
+                "repo": "Pokete",
+                "stars": 18899
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Games"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
               "title": "epr",
               "description": ", epy - EPUB reader.",
               "children": [],
@@ -2795,6 +2817,28 @@
           "children": [
             {
               "node_type": "item",
+              "title": "xxh",
+              "description": "Bring your favorite shell wherever you go through SSH.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1301420216,
+                "language": "Java",
+                "last_commit": "2023-05-30T00:00:00.000Z",
+                "owner": "xxh",
+                "repo": "xxh",
+                "stars": 20217
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "SSH"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
               "title": "sshuttle",
               "description": "Transparent proxy server that works as a poor man's VPN.",
               "children": [],
@@ -3722,6 +3766,28 @@
           "description": null,
           "node_type": "group",
           "title": "Internet Speedtest"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "periodic-table-cli",
+              "description": "View and explore the Periodic Table of Elements.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2485540649,
+                "language": null,
+                "last_commit": "2022-03-23T00:00:00.000Z",
+                "owner": "spirometaxas",
+                "repo": "periodic-table-cli",
+                "stars": 40650
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Science"
         }
       ],
       "title": "Utilities"
@@ -3855,6 +3921,21 @@
     {
       "description": null,
       "items": [
+        {
+          "node_type": "item",
+          "title": "visidata",
+          "description": "Spreadsheet multitool for data discovery and arrangement.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 1036047611,
+            "language": "JavaScript",
+            "last_commit": "2022-04-30T00:00:00.000Z",
+            "owner": "saulpw",
+            "repo": "visidata",
+            "stars": 47612
+          }
+        },
         {
           "children": [
             {
@@ -4115,6 +4196,50 @@
           "description": null,
           "node_type": "group",
           "title": "YAML"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "parse-columns-cli",
+              "description": "Parse text columns to JSON.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3752228659,
+                "language": null,
+                "last_commit": "2022-03-13T00:00:00.000Z",
+                "owner": "sindresorhus",
+                "repo": "parse-columns-cli",
+                "stars": 28660
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Columns"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "stegcloak",
+              "description": "Hide secrets with invisible characters in plain text securely.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2100881088,
+                "language": "Shell",
+                "last_commit": "2023-10-05T00:00:00.000Z",
+                "owner": "kurolabs",
+                "repo": "stegcloak",
+                "stars": 31089
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Text"
         }
       ],
       "title": "Data Manipulation"
@@ -5144,6 +5269,21 @@
     {
       "description": null,
       "items": [
+        {
+          "node_type": "item",
+          "title": "SnowFS",
+          "description": "A fast, scalable version control system for binaries.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 3639204686,
+            "language": "Java",
+            "last_commit": "2022-02-14T00:00:00.000Z",
+            "owner": "snowtrack",
+            "repo": "snowfs",
+            "stars": 4687
+          }
+        },
         {
           "children": [
             {

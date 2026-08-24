@@ -107,6 +107,28 @@
             "repo": "elm-cheat-sheet",
             "stars": 5679
           }
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Writing native",
+              "description": "Learn how to create native JavaScript modules for Elm.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2638465329,
+                "language": null,
+                "last_commit": "2023-02-06T00:00:00.000Z",
+                "owner": "NoRedInk",
+                "repo": "take-home",
+                "stars": 15330
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Outdated Tutorials and books (Elm 0.18 or earlier)"
         }
       ],
       "title": "Learning Guides"
@@ -114,6 +136,28 @@
     {
       "description": "Read the essentials. Check the official Elm blog: elm-lang.org/blog",
       "items": [
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "FP with games in Elm",
+              "description": "Switching from imperative to functional programming with games in Elm.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 261404403,
+                "language": "Python",
+                "last_commit": "2022-11-24T00:00:00.000Z",
+                "owner": "Dobiasd",
+                "repo": "articles",
+                "stars": 4404
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Why Elm?"
+        },
         {
           "children": [
             {
@@ -748,6 +792,28 @@
             "repo": "compiler",
             "stars": 18962
           }
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "grunt-elm",
+              "description": "Grunt plugin that compiles Elm files to JavaScript.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3569122754,
+                "language": "Rust",
+                "last_commit": "2021-12-08T00:00:00.000Z",
+                "owner": "rtfeldman",
+                "repo": "grunt-elm",
+                "stars": 22755
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Unmaintained"
         }
       ],
       "title": "Compile and bundle"
@@ -870,6 +936,72 @@
           "children": [
             {
               "node_type": "item",
+              "title": "atom-elm-snippets",
+              "description": "Elm snippets for Atom.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1279565815,
+                "language": "C++",
+                "last_commit": "2021-10-08T00:00:00.000Z",
+                "owner": "chiefGui",
+                "repo": "atom-elm-snippets",
+                "stars": 15816
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Atom"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "emacs-elm-mode",
+              "description": "Syntax highlighting, Elm REPL, Elm make and Elm format integration for the Emacs editor.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 763567397,
+                "language": "Ruby",
+                "last_commit": "2022-11-30T00:00:00.000Z",
+                "owner": "jcollard",
+                "repo": "elm-mode",
+                "stars": 17398
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Emacs"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "elm-plugin",
+              "description": "Elm plugin for IntelliJ IDEA.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2253880059,
+                "language": null,
+                "last_commit": "2023-11-03T00:00:00.000Z",
+                "owner": "klazuka",
+                "repo": "intellij-elm",
+                "stars": 30060
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "IntelliJ"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
               "title": "Elm Format on Save",
               "description": "Sublime Text plugin to run elm-format on save.",
               "children": [],
@@ -984,6 +1116,28 @@
           "description": null,
           "node_type": "group",
           "title": "Vim/Neovim"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "elm-light-table",
+              "description": "Syntax highlighting, REPL, autocompletion, package management and much more for Light Table.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2584796668,
+                "language": "Shell",
+                "last_commit": "2022-03-04T00:00:00.000Z",
+                "owner": "rundis",
+                "repo": "elm-light",
+                "stars": 46669
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Other editors"
         }
       ],
       "title": "Editor plugins"

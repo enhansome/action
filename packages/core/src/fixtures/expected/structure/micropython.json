@@ -4,6 +4,21 @@
       "description": "Other places you can look for MicroPython Libraries:",
       "items": [
         {
+          "node_type": "item",
+          "title": "GitHub Topic - MicroPython",
+          "description": "Browse GitHub Topics for projects tagged with MicroPython.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 740842636,
+            "language": "Java",
+            "last_commit": "2022-04-05T00:00:00.000Z",
+            "owner": "topics",
+            "repo": "micropython",
+            "stars": 42637
+          }
+        },
+        {
           "children": [
             {
               "node_type": "item",
@@ -595,6 +610,28 @@
               "description": null,
               "node_type": "group",
               "title": "APIs"
+            },
+            {
+              "children": [
+                {
+                  "node_type": "item",
+                  "title": "micropython-firebase-auth",
+                  "description": "Firebase Auth implementation for MicroPython.",
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "id": 1509898104,
+                    "language": "Rust",
+                    "last_commit": "2023-09-19T00:00:00.000Z",
+                    "owner": "WoolDoughnut310",
+                    "repo": "micropython-firebase-auth",
+                    "stars": 48105
+                  }
+                }
+              ],
+              "description": null,
+              "node_type": "group",
+              "title": "Authentication"
             },
             {
               "children": [
@@ -2145,6 +2182,28 @@
               "children": [
                 {
                   "node_type": "item",
+                  "title": "micropython-mdns",
+                  "description": "A pure Python implementation of MDNS with support for Service Discovery.",
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "id": 336263395,
+                    "language": "C++",
+                    "last_commit": "2022-12-02T00:00:00.000Z",
+                    "owner": "cbrand",
+                    "repo": "micropython-mdns",
+                    "stars": 13396
+                  }
+                }
+              ],
+              "description": null,
+              "node_type": "group",
+              "title": "MDNS"
+            },
+            {
+              "children": [
+                {
+                  "node_type": "item",
                   "title": "mp_modbus",
                   "description": "Modbus library for MicroPython.",
                   "children": [],
@@ -2414,6 +2473,28 @@
               "children": [
                 {
                   "node_type": "item",
+                  "title": "unbd",
+                  "description": "Micro implementation of network block device (NBD) for MicroPython.",
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "id": 2249871328,
+                    "language": "Shell",
+                    "last_commit": "2023-02-07T00:00:00.000Z",
+                    "owner": "pulkin",
+                    "repo": "unbd",
+                    "stars": 21329
+                  }
+                }
+              ],
+              "description": null,
+              "node_type": "group",
+              "title": "NBD"
+            },
+            {
+              "children": [
+                {
+                  "node_type": "item",
                   "title": "NFC_PN532_SPI",
                   "description": "Partial port of Adafruit CircuitPython to MicroPython of PN532 NFC/RFID control library (SPI).",
                   "children": [],
@@ -2548,6 +2629,28 @@
               "children": [
                 {
                   "node_type": "item",
+                  "title": "uminio",
+                  "description": "MicroPython library to upload files into a MinIO object storage server.",
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "id": 3358635176,
+                    "language": "Java",
+                    "last_commit": "2023-07-09T00:00:00.000Z",
+                    "owner": "paluigi",
+                    "repo": "uminio",
+                    "stars": 35177
+                  }
+                }
+              ],
+              "description": null,
+              "node_type": "group",
+              "title": "Object Storage"
+            },
+            {
+              "children": [
+                {
+                  "node_type": "item",
                   "title": "Onewire_DS18X20",
                   "description": "Classes for driving the DS18x20 sensor with the OneWire protocol for Pycom MicroPython.",
                   "children": [],
@@ -2600,6 +2703,28 @@
               "children": [
                 {
                   "node_type": "item",
+                  "title": "eiscp-micropython",
+                  "description": "MicroPython port for the Onkyo-EISCP protocol used, among others, by Pioneer.",
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "id": 3151482527,
+                    "language": "Ruby",
+                    "last_commit": "2022-07-23T00:00:00.000Z",
+                    "owner": "cbrand",
+                    "repo": "eiscp-micropython",
+                    "stars": 32528
+                  }
+                }
+              ],
+              "description": null,
+              "node_type": "group",
+              "title": "Onkyo EISCP"
+            },
+            {
+              "children": [
+                {
+                  "node_type": "item",
                   "title": "micropython-ota-updater",
                   "description": "OTA Updater for MicroPython.",
                   "children": [],
@@ -2647,6 +2772,28 @@
               "description": null,
               "node_type": "group",
               "title": "OTA"
+            },
+            {
+              "children": [
+                {
+                  "node_type": "item",
+                  "title": "uProxy",
+                  "description": "An asyncio-based, memory-efficient HTTP/HTTPS/SOCKS4/SOCKS5 forward proxy server for MicroPython, compatible with CPython.",
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "id": 2203676158,
+                    "language": "Shell",
+                    "last_commit": "2023-07-27T00:00:00.000Z",
+                    "owner": "shawwwn",
+                    "repo": "uProxy",
+                    "stars": 26159
+                  }
+                }
+              ],
+              "description": null,
+              "node_type": "group",
+              "title": "Proxy"
             },
             {
               "children": [
@@ -2839,6 +2986,50 @@
               "children": [
                 {
                   "node_type": "item",
+                  "title": "micropython-ppm_reader",
+                  "description": "Library to decode PPM signals coming from a RC receiver.",
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "id": 4016679789,
+                    "language": null,
+                    "last_commit": "2021-11-03T00:00:00.000Z",
+                    "owner": "redoxcode",
+                    "repo": "micropython-ppm_reader",
+                    "stars": 29790
+                  }
+                }
+              ],
+              "description": null,
+              "node_type": "group",
+              "title": "RC receiver"
+            },
+            {
+              "children": [
+                {
+                  "node_type": "item",
+                  "title": "FBConsole",
+                  "description": "Framebuffer console class for MicroPython.",
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "id": 326874964,
+                    "language": "Rust",
+                    "last_commit": "2021-05-12T00:00:00.000Z",
+                    "owner": "boochow",
+                    "repo": "FBConsole",
+                    "stars": 24965
+                  }
+                }
+              ],
+              "description": null,
+              "node_type": "group",
+              "title": "REPL"
+            },
+            {
+              "children": [
+                {
+                  "node_type": "item",
                   "title": "micropython-mfrc522",
                   "description": "Driver for NXP MFRC522 RFID reader/writer.",
                   "children": [],
@@ -2886,6 +3077,28 @@
               "description": null,
               "node_type": "group",
               "title": "RFID"
+            },
+            {
+              "children": [
+                {
+                  "node_type": "item",
+                  "title": "ujrpc",
+                  "description": "JSON RPC for MicroPython.",
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "id": 4252136924,
+                    "language": "Rust",
+                    "last_commit": "2021-06-21T00:00:00.000Z",
+                    "owner": "zcattacz",
+                    "repo": "ujrpc",
+                    "stars": 36925
+                  }
+                }
+              ],
+              "description": null,
+              "node_type": "group",
+              "title": "RPC"
             },
             {
               "children": [
@@ -3242,6 +3455,94 @@
               "children": [
                 {
                   "node_type": "item",
+                  "title": "uMail",
+                  "description": "A lightweight, scalable SMTP client for sending email in MicroPython.",
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "id": 1568188529,
+                    "language": null,
+                    "last_commit": "2022-07-21T00:00:00.000Z",
+                    "owner": "shawwwn",
+                    "repo": "uMail",
+                    "stars": 38530
+                  }
+                }
+              ],
+              "description": null,
+              "node_type": "group",
+              "title": "SMTP"
+            },
+            {
+              "children": [
+                {
+                  "node_type": "item",
+                  "title": "XAsyncSockets",
+                  "description": "XAsyncSockets is an efficient Python/MicroPython library of managed asynchronous sockets.",
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "id": 2466488113,
+                    "language": "Python",
+                    "last_commit": "2023-09-10T00:00:00.000Z",
+                    "owner": "jczic",
+                    "repo": "XAsyncSockets",
+                    "stars": 38114
+                  }
+                }
+              ],
+              "description": null,
+              "node_type": "group",
+              "title": "Sockets"
+            },
+            {
+              "children": [
+                {
+                  "node_type": "item",
+                  "title": "micropython-socks",
+                  "description": "MicroPython library implementing SOCKS server.",
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "id": 3102916489,
+                    "language": null,
+                    "last_commit": "2022-08-30T00:00:00.000Z",
+                    "owner": "kost",
+                    "repo": "micropython-socks",
+                    "stars": 16490
+                  }
+                }
+              ],
+              "description": null,
+              "node_type": "group",
+              "title": "SOCKS"
+            },
+            {
+              "children": [
+                {
+                  "node_type": "item",
+                  "title": "us2n",
+                  "description": "MicroPython bridge between UART and TCP for the ESP32.",
+                  "children": [],
+                  "repo_info": {
+                    "archived": true,
+                    "id": 2101889435,
+                    "language": "C++",
+                    "last_commit": "2022-10-23T00:00:00.000Z",
+                    "owner": "tiagocoutinho",
+                    "repo": "us2n",
+                    "stars": 39436
+                  }
+                }
+              ],
+              "description": null,
+              "node_type": "group",
+              "title": "TCP"
+            },
+            {
+              "children": [
+                {
+                  "node_type": "item",
                   "title": "MicroTelnetServer",
                   "description": "Simple telnet server for MicroPython and the ESP8266 allowing telnet clients access to the REPL.",
                   "children": [],
@@ -3311,6 +3612,50 @@
               "description": null,
               "node_type": "group",
               "title": "Text-to-Speech"
+            },
+            {
+              "children": [
+                {
+                  "node_type": "item",
+                  "title": "ustrftime",
+                  "description": "A MicroPython implementation of time.strftime.",
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "id": 3214106082,
+                    "language": "Go",
+                    "last_commit": "2023-10-11T00:00:00.000Z",
+                    "owner": "iyassou",
+                    "repo": "ustrftime",
+                    "stars": 6083
+                  }
+                }
+              ],
+              "description": null,
+              "node_type": "group",
+              "title": "Time"
+            },
+            {
+              "children": [
+                {
+                  "node_type": "item",
+                  "title": "uPyVoip",
+                  "description": "VoIP for MicroPython ESP32 with Interactive Voice Response.",
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "id": 2657207596,
+                    "language": "Java",
+                    "last_commit": "2022-05-15T00:00:00.000Z",
+                    "owner": "RetepRelleum",
+                    "repo": "uPyVoip",
+                    "stars": 7597
+                  }
+                }
+              ],
+              "description": null,
+              "node_type": "group",
+              "title": "VoIP"
             },
             {
               "children": [
@@ -3760,11 +4105,62 @@
               "description": null,
               "node_type": "group",
               "title": "WiFi"
+            },
+            {
+              "children": [
+                {
+                  "node_type": "item",
+                  "title": "ZbPy",
+                  "description": "MicroPython IEEE802.15.4 / Zigbee parser.",
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "id": 774567224,
+                    "language": "Rust",
+                    "last_commit": "2023-05-22T00:00:00.000Z",
+                    "owner": "osresearch",
+                    "repo": "ZbPy",
+                    "stars": 17225
+                  }
+                }
+              ],
+              "description": null,
+              "node_type": "group",
+              "title": "Zigbee"
             }
           ],
           "description": null,
           "node_type": "group",
           "title": "Communications"
+        },
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "node_type": "item",
+                  "title": "enigmapython",
+                  "description": "A simple yet faithful library to emulate different Enigma machines models using MicroPython.",
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "id": 772456000,
+                    "language": "TypeScript",
+                    "last_commit": "2024-01-01T00:00:00.000Z",
+                    "owner": "denismaggior8",
+                    "repo": "micropython-enigma-python",
+                    "stars": 6001
+                  }
+                }
+              ],
+              "description": null,
+              "node_type": "group",
+              "title": "Historical"
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Cryptography"
         },
         {
           "children": [
@@ -5779,6 +6175,28 @@
               "description": null,
               "node_type": "group",
               "title": "OLED"
+            },
+            {
+              "children": [
+                {
+                  "node_type": "item",
+                  "title": "micropython-thermal-printer",
+                  "description": "The MicroPython port of Python Thermal Printer by Adafruit.",
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "id": 3097202121,
+                    "language": "JavaScript",
+                    "last_commit": "2023-09-02T00:00:00.000Z",
+                    "owner": "ayoy",
+                    "repo": "micropython-thermal-printer",
+                    "stars": 2122
+                  }
+                }
+              ],
+              "description": null,
+              "node_type": "group",
+              "title": "Printer"
             }
           ],
           "description": null,
@@ -6484,6 +6902,28 @@
               "children": [
                 {
                   "node_type": "item",
+                  "title": "micropython-xl9535-kxv5-relay",
+                  "description": "A MicroPython library for jxl XL9535-KxV5 I2C relay boards.",
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "id": 3761322372,
+                    "language": "Go",
+                    "last_commit": "2022-12-25T00:00:00.000Z",
+                    "owner": "mcauser",
+                    "repo": "micropython-xl9535-kxv5-relay",
+                    "stars": 22373
+                  }
+                }
+              ],
+              "description": null,
+              "node_type": "group",
+              "title": "Relay"
+            },
+            {
+              "children": [
+                {
+                  "node_type": "item",
                   "title": "AS5600",
                   "description": "AS5600 MicroPython library for reading this magnetic sensor.",
                   "children": [],
@@ -6651,6 +7091,28 @@
               "description": null,
               "node_type": "group",
               "title": "Rotary Encoder"
+            },
+            {
+              "children": [
+                {
+                  "node_type": "item",
+                  "title": "micropython-74hc595",
+                  "description": "MicroPython driver for 74HC595 8-bit shift registers.",
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "id": 335078668,
+                    "language": "Shell",
+                    "last_commit": "2022-03-04T00:00:00.000Z",
+                    "owner": "mcauser",
+                    "repo": "micropython-74hc595",
+                    "stars": 28669
+                  }
+                }
+              ],
+              "description": null,
+              "node_type": "group",
+              "title": "Shift Registers"
             },
             {
               "children": [
@@ -6958,6 +7420,43 @@
         },
         {
           "children": [
+            {
+              "node_type": "item",
+              "title": "MicroPython Motor Kit",
+              "description": "General motor control libraries.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 482222557,
+                "language": "Ruby",
+                "last_commit": "2022-06-23T00:00:00.000Z",
+                "owner": "cnadler86",
+                "repo": "MicroPython_Motor",
+                "stars": 22558
+              }
+            },
+            {
+              "children": [
+                {
+                  "node_type": "item",
+                  "title": "pyl298",
+                  "description": "Driver for the L298 dual full-bridge motor controller.",
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "id": 182133471,
+                    "language": "JavaScript",
+                    "last_commit": "2022-09-17T00:00:00.000Z",
+                    "owner": "marcio-pessoa",
+                    "repo": "pyl298",
+                    "stars": 33472
+                  }
+                }
+              ],
+              "description": null,
+              "node_type": "group",
+              "title": "DC Motor"
+            },
             {
               "children": [
                 {
@@ -7919,6 +8418,28 @@
               "children": [
                 {
                   "node_type": "item",
+                  "title": "Micropython-LC709203F",
+                  "description": "A simple MicroPython library for LC709293F Fuel Gauge.",
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "id": 1035439011,
+                    "language": "JavaScript",
+                    "last_commit": "2023-12-21T00:00:00.000Z",
+                    "owner": "scopelemanuele",
+                    "repo": "Micropython-LC709203F",
+                    "stars": 39012
+                  }
+                }
+              ],
+              "description": null,
+              "node_type": "group",
+              "title": "Battery"
+            },
+            {
+              "children": [
+                {
+                  "node_type": "item",
                   "title": "micropython-fingerprint",
                   "description": "MicroPython library for reading Grow and ZhianTec fingerprint sensors.",
                   "children": [],
@@ -8680,6 +9201,28 @@
               "children": [
                 {
                   "node_type": "item",
+                  "title": "pyGP2Y",
+                  "description": "MicroPython library for the Sharp GP2Y1014AU0F Dust Sensor.",
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "id": 2977255037,
+                    "language": "Ruby",
+                    "last_commit": "2023-11-25T00:00:00.000Z",
+                    "owner": "amigcamel",
+                    "repo": "pyGP2Y",
+                    "stars": 5038
+                  }
+                }
+              ],
+              "description": null,
+              "node_type": "group",
+              "title": "Dust"
+            },
+            {
+              "children": [
+                {
+                  "node_type": "item",
                   "title": "esp32-solar2",
                   "description": "Simple solar regulator - MicroPython project.",
                   "children": [],
@@ -8899,6 +9442,50 @@
               "description": null,
               "node_type": "group",
               "title": "Gaseous"
+            },
+            {
+              "children": [
+                {
+                  "node_type": "item",
+                  "title": "ld2410",
+                  "description": "24GHz human presence sensing module, capable of detecting moving and stationary targets, and providing an approximate range.",
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "id": 526830410,
+                    "language": "TypeScript",
+                    "last_commit": "2022-11-17T00:00:00.000Z",
+                    "owner": "QuirkyCort",
+                    "repo": "IoTy",
+                    "stars": 30411
+                  }
+                }
+              ],
+              "description": null,
+              "node_type": "group",
+              "title": "Human Presence"
+            },
+            {
+              "children": [
+                {
+                  "node_type": "item",
+                  "title": "MicroPython_HTS221",
+                  "description": "MicroPython Driver for the HTS221 Humidity Sensor.",
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "id": 3374154989,
+                    "language": null,
+                    "last_commit": "2021-04-17T00:00:00.000Z",
+                    "owner": "jposada202020",
+                    "repo": "MicroPython_HTS221",
+                    "stars": 4990
+                  }
+                }
+              ],
+              "description": null,
+              "node_type": "group",
+              "title": "Humidity"
             },
             {
               "children": [
@@ -10798,6 +11385,28 @@
               "description": null,
               "node_type": "group",
               "title": "Touch Capacitive"
+            },
+            {
+              "children": [
+                {
+                  "node_type": "item",
+                  "title": "XPT2046-touch-pad-driver",
+                  "description": "Driver for XPT2046 touch pad controller used in many TFT modules.",
+                  "children": [],
+                  "repo_info": {
+                    "archived": true,
+                    "id": 2418054806,
+                    "language": "Java",
+                    "last_commit": "2021-10-17T00:00:00.000Z",
+                    "owner": "robert-hh",
+                    "repo": "XPT2046-touch-pad-driver",
+                    "stars": 4807
+                  }
+                }
+              ],
+              "description": null,
+              "node_type": "group",
+              "title": "Touch Resistive"
             }
           ],
           "description": null,
@@ -11235,6 +11844,72 @@
               "children": [
                 {
                   "node_type": "item",
+                  "title": "micropython-fram",
+                  "description": "Pyboard driver for Ferroelectric RAM module.",
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "id": 3132238762,
+                    "language": "Go",
+                    "last_commit": "2021-11-30T00:00:00.000Z",
+                    "owner": "rolandvs",
+                    "repo": "micropython-fram",
+                    "stars": 38763
+                  }
+                }
+              ],
+              "description": null,
+              "node_type": "group",
+              "title": "FRAM"
+            },
+            {
+              "children": [
+                {
+                  "node_type": "item",
+                  "title": "mb_PSRAM_64Mb_SPI",
+                  "description": "Very simple MicroPython module to use a generic 64Mbit PSRAM (ie Adafruit 4677) with a Raspberry Pi Pico (RP2040).",
+                  "children": [],
+                  "repo_info": {
+                    "archived": true,
+                    "id": 1454492970,
+                    "language": "TypeScript",
+                    "last_commit": "2021-05-06T00:00:00.000Z",
+                    "owner": "MarksBench",
+                    "repo": "mb_PSRAM_64Mb_SPI",
+                    "stars": 42971
+                  }
+                }
+              ],
+              "description": null,
+              "node_type": "group",
+              "title": "PSRAM"
+            },
+            {
+              "children": [
+                {
+                  "node_type": "item",
+                  "title": "mp-sdcard-littleFS",
+                  "description": "MicroPython SD card driver that works with LittleFS2 (implements extended interface).",
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "id": 728680777,
+                    "language": "Ruby",
+                    "last_commit": "2021-11-15T00:00:00.000Z",
+                    "owner": "jornamon",
+                    "repo": "mp-sdcard-littleFS",
+                    "stars": 30778
+                  }
+                }
+              ],
+              "description": null,
+              "node_type": "group",
+              "title": "SD"
+            },
+            {
+              "children": [
+                {
+                  "node_type": "item",
                   "title": "mb_23LC1024",
                   "description": "Very simple MicroPython module to use a Microchip 23LC1024 SPI SRAM with a Raspberry Pi Pico (RP2040).",
                   "children": [],
@@ -11272,6 +11947,50 @@
           "description": null,
           "node_type": "group",
           "title": "Storage"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "MicroWorkers",
+              "description": "A micro workers class that easily manages a pool of threads to optimise simultaneous jobs and jobs endings, for MicroPython (used on Pycom modules & ESP32).",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 250632006,
+                "language": "Java",
+                "last_commit": "2023-12-26T00:00:00.000Z",
+                "owner": "jczic",
+                "repo": "MicroWorkers",
+                "stars": 32007
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Threading"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "upymenu",
+              "description": "MicroPython Menu for LCD Displays.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1956242797,
+                "language": "Ruby",
+                "last_commit": "2021-10-26T00:00:00.000Z",
+                "owner": "jplattel",
+                "repo": "upymenu",
+                "stars": 42798
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "User Interface"
         },
         {
           "children": [
@@ -11707,6 +12426,28 @@
           "description": null,
           "node_type": "group",
           "title": "Debugging"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "micropython-builder",
+              "description": "Tool for building and flashing a custom MicroPython firmware.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2945416603,
+                "language": "Python",
+                "last_commit": "2022-05-08T00:00:00.000Z",
+                "owner": "jonahbron",
+                "repo": "micropython-builder",
+                "stars": 16604
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Firmware"
         },
         {
           "children": [

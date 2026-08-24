@@ -4167,6 +4167,28 @@
           "children": [
             {
               "node_type": "item",
+              "title": "geemap",
+              "description": "Python package for interactive mapping with Google Earth Engine (GEE)",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2379147091,
+                "language": "JavaScript",
+                "last_commit": "2023-10-02T00:00:00.000Z",
+                "owner": "giswqs",
+                "repo": "geemap",
+                "stars": 47092
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Map"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
               "title": "AutoViz",
               "description": "Visualize data automatically with 1 line of code (ideal for machine learning)",
               "children": [],
@@ -4214,6 +4236,28 @@
           "description": null,
           "node_type": "group",
           "title": "Automatic Plotting"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "pyLDAvis",
+              "description": "Visualize interactive topic model",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 4183549922,
+                "language": "Go",
+                "last_commit": "2021-06-23T00:00:00.000Z",
+                "owner": "bmabey",
+                "repo": "pyLDAvis",
+                "stars": 49923
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "NLP"
         }
       ],
       "title": "Visualization"
@@ -4838,6 +4882,28 @@
           "description": null,
           "node_type": "group",
           "title": "Data-centric AI"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "ydata-synthetic",
+              "description": "A package to generate synthetic tabular and time-series data leveraging the state-of-the-art generative models.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1501724032,
+                "language": "Go",
+                "last_commit": "2023-11-30T00:00:00.000Z",
+                "owner": "ydataai",
+                "repo": "ydata-synthetic",
+                "stars": 24033
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Synthetic Data"
         }
       ],
       "title": "Data Manipulation"

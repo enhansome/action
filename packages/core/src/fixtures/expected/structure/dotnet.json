@@ -679,6 +679,28 @@
           "children": [
             {
               "node_type": "item",
+              "title": "Bundle Transformer",
+              "description": "Modular extension for Microsoft ASP.NET Web Optimization Framework. Its modules supports LESS, Sass, CoffeeScript, TypeScript, Mustache, Handlebars, Autoprefixer along with a bunch of different JS and CSS minifiers.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 968779749,
+                "language": null,
+                "last_commit": "2021-12-13T00:00:00.000Z",
+                "owner": "Taritsyn",
+                "repo": "BundleTransformer",
+                "stars": 29750
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Assets"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
               "title": "ASP.NET SAML",
               "description": "SAML authentication support for ASP.NET apps",
               "children": [],
@@ -776,6 +798,28 @@
           "children": [
             {
               "node_type": "item",
+              "title": "BusyBee",
+              "description": "Fast, in-memory background job processing for .NET apps with configurable queues, timeouts, parallelism, and built-in OpenTelemetry support.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 726082086,
+                "language": "Java",
+                "last_commit": "2023-10-07T00:00:00.000Z",
+                "owner": "mikasjp",
+                "repo": "BusyBee",
+                "stars": 32087
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Background Processing"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
               "title": "BootstrapBlazor",
               "description": "A set of enterprise-class UI components based on Bootstrap and Blazor. - NOTE: This is not affiliated with Microsoft or .NET",
               "children": [],
@@ -868,6 +912,28 @@
           "description": null,
           "node_type": "group",
           "title": "Blazor"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Nethermind",
+              "description": "full Ethereum client in .NET Core",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1482217357,
+                "language": "Ruby",
+                "last_commit": "2023-01-09T00:00:00.000Z",
+                "owner": "NethermindEth",
+                "repo": "nethermind",
+                "stars": 17358
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Blockchain"
         },
         {
           "children": [
@@ -1015,6 +1081,28 @@
           "children": [
             {
               "node_type": "item",
+              "title": "FastReport",
+              "description": "The open source report generator for .NET Core 2.x/.Net Framework 4.x. FastReport can be used in ASP.NET MVC, Web API applications.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3249368315,
+                "language": "C++",
+                "last_commit": "2023-02-20T00:00:00.000Z",
+                "owner": "FastReports",
+                "repo": "FastReport",
+                "stars": 18316
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Business Intelligence"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
               "title": "CacheManager",
               "description": "A common interface and abstraction layer for caching.",
               "children": [],
@@ -1152,6 +1240,50 @@
           "description": null,
           "node_type": "group",
           "title": "Caching"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "iCal.NET",
+              "description": "iCal.NET is an iCalendar (RFC 5545) class library for .NET aimed at providing RFC 5545 compliance, while providing full compatibility with popular calendaring applications and libraries.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1882821277,
+                "language": "Ruby",
+                "last_commit": "2023-03-30T00:00:00.000Z",
+                "owner": "rianjs",
+                "repo": "ical.net",
+                "stars": 21278
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Calendar"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Stream",
+              "description": "Official .NET API client for Stream Chat, a service for building chat applications.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1550286063,
+                "language": "Python",
+                "last_commit": "2023-10-30T00:00:00.000Z",
+                "owner": "GetStream",
+                "repo": "stream-chat-net",
+                "stars": 36064
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Chat"
         },
         {
           "children": [
@@ -1324,6 +1456,28 @@
           "description": null,
           "node_type": "group",
           "title": "CLI"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Runtime",
+              "description": "Mono and CoreCLR .NET runtimes, as well as the standard library and some higher level components like and .",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 4232862272,
+                "language": "Go",
+                "last_commit": "2023-04-04T00:00:00.000Z",
+                "owner": "dotnet",
+                "repo": "runtime",
+                "stars": 12273
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "CLR"
         },
         {
           "children": [
@@ -1817,6 +1971,28 @@
           "description": null,
           "node_type": "group",
           "title": "Compression"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "AgileConfig",
+              "description": "AgileConfig is a lightweight configuration center that helps you manage all your application's configurations through website. - NOTE: This is not affiliated with Microsoft or .NET",
+              "children": [],
+              "repo_info": {
+                "archived": true,
+                "id": 2249863249,
+                "language": null,
+                "last_commit": "2023-04-27T00:00:00.000Z",
+                "owner": "dotnetcore",
+                "repo": "AgileConfig",
+                "stars": 13250
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Configuration"
         },
         {
           "children": [
@@ -2374,6 +2550,72 @@
           "children": [
             {
               "node_type": "item",
+              "title": "DbUp",
+              "description": ".NET library that helps you to deploy changes to SQL Server databases. It tracks which SQL scripts have been run already, and runs the change scripts that are needed to get your database up to date",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1064779608,
+                "language": "Shell",
+                "last_commit": "2022-05-03T00:00:00.000Z",
+                "owner": "DbUp",
+                "repo": "DbUp",
+                "stars": 29609
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Deployment"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Vortice.Windows",
+              "description": "Cross platform .NET standard libraries for DirectX, WIC, Direct2D1, XInput, XAudio and X3DAudio",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1263994185,
+                "language": "C++",
+                "last_commit": "2023-06-30T00:00:00.000Z",
+                "owner": "amerkoleci",
+                "repo": "Vortice.Windows",
+                "stars": 44186
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "DirectX"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Sucrose Wallpaper Engine",
+              "description": "Sucrose is a versatile wallpaper engine that brings life to your desktop with a wide range of interactive wallpapers.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 4091799926,
+                "language": "Java",
+                "last_commit": "2021-06-19T00:00:00.000Z",
+                "owner": "Taiizor",
+                "repo": "Sucrose",
+                "stars": 49927
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Desktop"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
               "title": "Akka.net",
               "description": "Akka.NET is a port of the popular Java/Scala framework Akka to .NET. This is a community-driven port and is not affiliated with Typesafe who makes the original Java/Scala version.",
               "children": [],
@@ -2695,6 +2937,50 @@
           "children": [
             {
               "node_type": "item",
+              "title": "Blzhawk",
+              "description": "BizHawk is a multi-system emulator written in C#. BizHawk provides nice features for casual gamers such as full screen, and joypad support in addition to full rerecording and debugging tools for all system cores.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2730165662,
+                "language": "Go",
+                "last_commit": "2022-03-10T00:00:00.000Z",
+                "owner": "TASEmulators",
+                "repo": "BizHawk",
+                "stars": 15663
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Emulators"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Dotnet CLI",
+              "description": "The cross-platform .NET Core command-line toolchain utility.",
+              "children": [],
+              "repo_info": {
+                "archived": true,
+                "id": 1370264192,
+                "language": "Go",
+                "last_commit": "2023-06-23T00:00:00.000Z",
+                "owner": "dotnet",
+                "repo": "sdk",
+                "stars": 14193
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Environment Management"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
               "title": "Cinchoo ETL",
               "description": "ETL Framework for .NET (Read / Write CSV, Flat, Xml, JSON, Key-Value formatted files)",
               "children": [],
@@ -2794,6 +3080,50 @@
           "description": null,
           "node_type": "group",
           "title": "Event aggregator and messenger"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Exceptionless",
+              "description": "Exceptionless .NET Client",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2407376849,
+                "language": null,
+                "last_commit": "2021-09-04T00:00:00.000Z",
+                "owner": "exceptionless",
+                "repo": "Exceptionless.Net",
+                "stars": 26850
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Exceptions"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Microsoft.FeatureManagement",
+              "description": "This library provides a way to develop and expose application functionality based on feature flags. It enables scenarios like new feature rollouts and A/B testing for experimentation purposes. It also provides integration with common .NET coding patterns and ASP.NET Core.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3651872778,
+                "language": "Shell",
+                "last_commit": "2021-11-14T00:00:00.000Z",
+                "owner": "microsoft",
+                "repo": "FeatureManagement-Dotnet",
+                "stars": 22779
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Feature management"
         },
         {
           "children": [
@@ -4074,6 +4404,28 @@
           "children": [
             {
               "node_type": "item",
+              "title": ".NET Interactive",
+              "description": ".NET Interactive takes the power of .NET and embeds it into your interactive experiences.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1511096848,
+                "language": "Shell",
+                "last_commit": "2021-09-05T00:00:00.000Z",
+                "owner": "dotnet",
+                "repo": "interactive",
+                "stars": 46849
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Interactive programming"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
               "title": "ResX Resource Manager",
               "description": "The most popular free tool to localize all kind of applications with resx-based resources.",
               "children": [],
@@ -4701,6 +5053,28 @@
           "children": [
             {
               "node_type": "item",
+              "title": "markdig",
+              "description": "A fast, powerful, CommonMark compliant, extensible Markdown processor for .NET.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 946693052,
+                "language": "Go",
+                "last_commit": "2023-11-10T00:00:00.000Z",
+                "owner": "lunet-io",
+                "repo": "markdig",
+                "stars": 43053
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Markdown Processors"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
               "title": "MimeKit",
               "description": "A cross-platform .NET MIME creation and parser library with support for S/MIME, PGP, TNEF and Unix mbox spools.",
               "children": [],
@@ -5002,6 +5376,28 @@
           "description": null,
           "node_type": "group",
           "title": "Media"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Foundatio",
+              "description": "A common interface with in-memory, Redis, StatsD, and Metrics.NET implementations.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2377525254,
+                "language": "Rust",
+                "last_commit": "2023-04-22T00:00:00.000Z",
+                "owner": "FoundatioFx",
+                "repo": "Foundatio",
+                "stars": 25255
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Metrics"
         },
         {
           "children": [
@@ -6307,6 +6703,28 @@
           "children": [
             {
               "node_type": "item",
+              "title": "MiniProfiler",
+              "description": "A simple but effective mini-profiler for ASP.NET websites",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 832927162,
+                "language": "Go",
+                "last_commit": "2023-07-23T00:00:00.000Z",
+                "owner": "MiniProfiler",
+                "repo": "dotnet",
+                "stars": 27163
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Profiler"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
               "title": "FluentFTP",
               "description": "An FTP and FTPS library for .NET, optimized for speed. Provides extensive FTP commands, file uploads/downloads and FTP proxies.",
               "children": [],
@@ -6354,6 +6772,28 @@
           "description": null,
           "node_type": "group",
           "title": "Protocols"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "InterpolatedSql",
+              "description": "SQL Builder using String Interpolation and Fluent API",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2253589487,
+                "language": "Ruby",
+                "last_commit": "2022-09-01T00:00:00.000Z",
+                "owner": "Drizin",
+                "repo": "InterpolatedSql",
+                "stars": 39488
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Query Builders"
         },
         {
           "children": [
@@ -6690,6 +7130,28 @@
           "description": null,
           "node_type": "group",
           "title": "Reactive Programming"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "SIPSorcery",
+              "description": "A cross platform C# .NET library supporting SIP, VoIP and WebRTC.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3798432976,
+                "language": "Java",
+                "last_commit": "2021-04-30T00:00:00.000Z",
+                "owner": "sipsorcery",
+                "repo": "sipsorcery",
+                "stars": 32977
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Real-time Communications"
         },
         {
           "children": [
@@ -7173,6 +7635,50 @@
           "children": [
             {
               "node_type": "item",
+              "title": "Twilio-csharp",
+              "description": "A C#/.NET Library for sending and receiving phone calls and text messages with Twilio.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2607735742,
+                "language": "Go",
+                "last_commit": "2021-12-20T00:00:00.000Z",
+                "owner": "twilio",
+                "repo": "twilio-csharp",
+                "stars": 35743
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "SMS and Phone calls"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Stateless",
+              "description": "Create state machines and lightweight state machine-based workflows directly in .NET code",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 602318320,
+                "language": "TypeScript",
+                "last_commit": "2023-02-15T00:00:00.000Z",
+                "owner": "dotnet-state-machine",
+                "repo": "stateless",
+                "stars": 18321
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "State machines"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
               "title": "AspNetStatic",
               "description": "Transform ASP.NET Core web app into a static site generator.",
               "children": [],
@@ -7205,6 +7711,50 @@
           "description": null,
           "node_type": "group",
           "title": "Static Site Generators"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": ".NET Assembly Strong-Name Signer",
+              "description": "Utility software to strong-name sign .NET assemblies, including assemblies you do not have the source code for.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 479884119,
+                "language": null,
+                "last_commit": "2023-09-04T00:00:00.000Z",
+                "owner": "brutaldev",
+                "repo": "StrongNameSigner",
+                "stars": 34120
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Strong Naming"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "C# Async Guidance",
+              "description": "list of problematic asynchronous patterns for .NET Core with an explanation of how to solve those issues",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 4195715712,
+                "language": "Go",
+                "last_commit": "2022-01-19T00:00:00.000Z",
+                "owner": "davidfowl",
+                "repo": "AspNetCoreDiagnosticScenarios",
+                "stars": 15713
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Style Guide"
         },
         {
           "children": [
@@ -8295,6 +8845,28 @@
           "description": null,
           "node_type": "group",
           "title": "WebSocket"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Servy",
+              "description": "A tool to turn any app into a native Windows service with powerful configuration and management options (a modern alternative to NSSM and WinSW).",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2193617862,
+                "language": "Go",
+                "last_commit": "2021-08-22T00:00:00.000Z",
+                "owner": "aelassas",
+                "repo": "servy",
+                "stars": 17863
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Windows Services"
         },
         {
           "children": [

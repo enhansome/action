@@ -12179,6 +12179,21 @@
       "items": [
         {
           "node_type": "item",
+          "title": "cpp-sort",
+          "description": "Sorting algorithms & related tools for C++14. [MIT]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 3966672170,
+            "language": "TypeScript",
+            "last_commit": "2023-07-15T00:00:00.000Z",
+            "owner": "Morwenn",
+            "repo": "cpp-sort",
+            "stars": 22171
+          }
+        },
+        {
+          "node_type": "item",
           "title": "Timsort",
           "description": "A templated stable sorting function which outperforms quicksort-based algorithms including std::sort, for reversed or semi-sorted data. [MIT]",
           "children": [],
@@ -14691,6 +14706,28 @@
           "description": "List of tools for improving quality and reducing defects by code analysis",
           "node_type": "group",
           "title": "Static Code Analysis"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Uncrustify",
+              "description": "Code beautifier.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1732407794,
+                "language": "Rust",
+                "last_commit": "2021-10-29T00:00:00.000Z",
+                "owner": "uncrustify",
+                "repo": "uncrustify",
+                "stars": 7795
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Coding Style Tools"
         }
       ],
       "title": "Software"
@@ -15220,6 +15257,28 @@
           "description": null,
           "node_type": "group",
           "title": "Talks"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "List of C or C++ YouTube Videos",
+              "description": null,
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 303394177,
+                "language": "Ruby",
+                "last_commit": "2023-07-08T00:00:00.000Z",
+                "owner": "fffaraz",
+                "repo": "awesome-cpp",
+                "stars": 44178
+              }
+            }
+          ],
+          "description": "Fantastic C or C++ related videos.",
+          "node_type": "group",
+          "title": "Videos"
         },
         {
           "children": [

@@ -1418,6 +1418,56 @@
         }
       ],
       "title": "Toolkits"
+    },
+    {
+      "description": "At this stage \"resources\" will not include websites, blogs, slides, presentation videos, etc. in fear of list size",
+      "items": [
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "SQL-exercise",
+              "description": "contains several SQL exercises, including the schema description figure, SQL code to build schema, questions and solutions in SQL. Based on wikibook SQL Exercises.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1336606664,
+                "language": "Rust",
+                "last_commit": "2022-03-08T00:00:00.000Z",
+                "owner": "XD-DENG",
+                "repo": "SQL-exercise",
+                "stars": 6665
+              }
+            }
+          ],
+          "description": "e-books as well as relevant materials on and around MySQL",
+          "node_type": "group",
+          "title": "e-books"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "VillageSQL",
+              "description": "A drop-in replacement for MySQL with extensions for the agentic AI era.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 4096526054,
+                "language": "Rust",
+                "last_commit": "2023-11-08T00:00:00.000Z",
+                "owner": "villagesql",
+                "repo": "villagesql-server",
+                "stars": 26055
+              }
+            }
+          ],
+          "description": "Projects that are known to be non-production and yet have either traction or substance that warrants exposure.",
+          "node_type": "group",
+          "title": "Incubating"
+        }
+      ],
+      "title": "Resources"
     }
   ],
   "metadata": {

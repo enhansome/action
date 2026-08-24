@@ -823,6 +823,28 @@
           "children": [
             {
               "node_type": "item",
+              "title": "gtmaker",
+              "description": null,
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1293444754,
+                "language": "Rust",
+                "last_commit": "2021-12-08T00:00:00.000Z",
+                "owner": "sanko-shoko",
+                "repo": "gtmaker",
+                "stars": 44755
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Annotation tools"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
               "title": "Open source Python module for computer vision",
               "description": null,
               "children": [],
@@ -855,6 +877,72 @@
           "description": null,
           "node_type": "group",
           "title": "General Purpose Computer Vision Library"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Awesome 3D reconstruction list",
+              "description": null,
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2690098776,
+                "language": "Java",
+                "last_commit": "2021-11-16T00:00:00.000Z",
+                "owner": "openMVG",
+                "repo": "awesome_3DReconstruction_list",
+                "stars": 48777
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Multiple-view Computer Vision"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Local Binary Patterns",
+              "description": null,
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 4216377764,
+                "language": "Rust",
+                "last_commit": "2021-11-28T00:00:00.000Z",
+                "owner": "nourani",
+                "repo": "LBP",
+                "stars": 27765
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Feature Detection and Extraction"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "HDR_Toolbox",
+              "description": null,
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1552162279,
+                "language": null,
+                "last_commit": "2023-03-28T00:00:00.000Z",
+                "owner": "banterle",
+                "repo": "HDR_Toolbox",
+                "stars": 12280
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "High Dynamic Range Imaging"
         },
         {
           "children": [
@@ -981,6 +1069,28 @@
               "children": [
                 {
                   "node_type": "item",
+                  "title": "G2O: General framework for graph optomization",
+                  "description": null,
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "id": 396850440,
+                    "language": "TypeScript",
+                    "last_commit": "2022-10-18T00:00:00.000Z",
+                    "owner": "RainerKuemmerle",
+                    "repo": "g2o",
+                    "stars": 441
+                  }
+                }
+              ],
+              "description": null,
+              "node_type": "group",
+              "title": "Graph Optimization:"
+            },
+            {
+              "children": [
+                {
+                  "node_type": "item",
                   "title": "LSD-SLAM",
                   "description": null,
                   "children": [],
@@ -1018,6 +1128,28 @@
           "description": null,
           "node_type": "group",
           "title": "Simultaneous localization and mapping"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "RGBD2Full3D",
+              "description": "Ruiqi Guo (UIUC)",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3274803730,
+                "language": "TypeScript",
+                "last_commit": "2022-01-01T00:00:00.000Z",
+                "owner": "arron2003",
+                "repo": "rgbd2full3d",
+                "stars": 3731
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Single-view Spatial Understanding"
         },
         {
           "children": [
@@ -1100,6 +1232,101 @@
           "description": null,
           "node_type": "group",
           "title": "Object Detection"
+        },
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "node_type": "item",
+                  "title": "PMBP: PatchMatch Belief Propagation",
+                  "description": null,
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "id": 3848016391,
+                    "language": "JavaScript",
+                    "last_commit": "2022-12-06T00:00:00.000Z",
+                    "owner": "fbesse",
+                    "repo": "pmbp",
+                    "stars": 16392
+                  }
+                }
+              ],
+              "description": null,
+              "node_type": "group",
+              "title": "Nearest Neighbor Field Estimation"
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Nearest Neighbor Search"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "NeuralTalk",
+              "description": null,
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 405663175,
+                "language": "C++",
+                "last_commit": "2023-07-10T00:00:00.000Z",
+                "owner": "karpathy",
+                "repo": "neuraltalk%EF%BB%BF",
+                "stars": 13176
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Image Captioning"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Awesome Deep Vision",
+              "description": null,
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1214156532,
+                "language": "Go",
+                "last_commit": "2022-07-18T00:00:00.000Z",
+                "owner": "kjw0612",
+                "repo": "awesome-deep-vision",
+                "stars": 6533
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Deep Learning"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Awesome Machine Learning",
+              "description": null,
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3609151024,
+                "language": "Rust",
+                "last_commit": "2023-12-08T00:00:00.000Z",
+                "owner": "josephmisiti",
+                "repo": "awesome-machine-learning",
+                "stars": 1025
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Machine Learning"
         }
       ],
       "title": "Software"
@@ -1107,6 +1334,28 @@
     {
       "description": null,
       "items": [
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Computer Vision Basics with Python Keras and OpenCV",
+              "description": "Jason Chin (University of Western Ontario)",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 40596460,
+                "language": "TypeScript",
+                "last_commit": "2022-09-28T00:00:00.000Z",
+                "owner": "jrobchin",
+                "repo": "Computer-Vision-Basics-with-Python-Keras-and-OpenCV",
+                "stars": 46461
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Blogs"
+        },
         {
           "children": [
             {

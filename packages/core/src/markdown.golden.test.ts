@@ -2,102 +2,39 @@ import * as fs from 'fs';
 import * as path from 'path';
 import { describe, expect, it, vi } from 'vitest';
 
-import type { RepoInfoDetails } from './github.js';
-
-import { silentLog } from './logger.js';
 import { enhance } from './orchestrator.js';
 
 // Golden-file suite: pins the full `jsonData` (structure) for every fixture and
 // the final rendered markdown (raw) for a few representative ones. Output is
 // fully deterministic:
 //   - `now` is fixed, so metadata.last_updated and the enhansomed footer never drift;
-//   - repo metadata is derived from a stable hash of owner/repo (see below), so star
-//     counts / languages / push dates are varied but immutable — sorting and badges
-//     are genuinely exercised without depending on live GitHub data that drifts weekly.
+//   - repo metadata comes from the shared offline stand-in (offline-github.ts), so
+//     star counts / languages / push dates are varied but immutable — sorting and
+//     badges are genuinely exercised without depending on live GitHub data that
+//     drifts weekly.
 //
 // Regenerate the on-disk goldens after an intentional parser change:
 //   UPDATE_GOLDENS=1 yarn test      (or:  yarn test:update-goldens)
 
-// --- deterministic repo-info generator -------------------------------------
-
-// FNV-1a 32-bit. Pure, stable across runs and platforms (Math.imul keeps the
-// 32-bit multiply exact; >>> 0 forces unsigned).
-function hashString(s: string): number {
-  let h = 0x811c9dc5;
-  for (let i = 0; i < s.length; i++) {
-    h ^= s.charCodeAt(i);
-    h = Math.imul(h, 0x01000193);
-  }
-  return h >>> 0;
-}
-
-const BASE_PUSHED_MS = Date.UTC(2024, 0, 1);
-const MS_PER_DAY = 86_400_000;
-// A fixed palette that includes `null` so the "no language" badge branch is hit.
-const LANGUAGES: (null | string)[] = [
-  'TypeScript',
-  'JavaScript',
-  'Go',
-  'Python',
-  'Rust',
-  'C++',
-  'Java',
-  'Ruby',
-  'Shell',
-  null,
-];
-
-// Derives metadata from the literal requested casing. Case-variant aliases
-// (ReactiveX/RxJS vs reactivex/rxjs) collapse upstream in the lookup's
-// case-insensitive memo, so this runs once per canonical repo and both
-// spellings share a record — as the real API answers both. Lowercasing the
-// hash here would reshuffle every mixed-case repo's star-derived sort position
-// across the fixtures, not just aliased pairs.
-function generateRepoInfo(owner: string, repo: string): RepoInfoDetails {
-  const hash = hashString(`${owner}/${repo}`);
-  const offsetDays = hash % 1000;
-  return {
-    archived: hash % 17 === 0,
-    description: null,
-    id: hash,
-    language: LANGUAGES[hash % LANGUAGES.length],
-    open_issues_count: hash % 100,
-    owner,
-    pushed_at: new Date(BASE_PUSHED_MS - offsetDays * MS_PER_DAY).toISOString(),
-    repo,
-    stargazers_count: 1 + (hash % 50_000),
-    topics: [],
-  };
-}
-
 // Mock only the networked surface of ./github.js: keep the REAL parseGitHubUrl
-// (it's pure — github.ts:227 — and faithful to production link detection) and
-// replace makeOctokit + getRepoInfo with deterministic stand-ins.
+// (it's pure and faithful to production link detection) and replace
+// makeOctokit + getRepoInfo with the shared deterministic stand-ins.
 vi.mock('./github.js', async () => {
   const actual =
     await vi.importActual<typeof import('./github.js')>('./github.js');
+  const { offlineGetRepoInfo: getRepoInfo, offlineMakeOctokit } =
+    await import('./offline-github.js');
   return {
     ...actual,
-    // A real client always carries a `log`; the code under test reads its sink
-    // back off it (`octokit.log`), so the stand-in has to have one too.
-    makeOctokit: (() => ({
-      log: silentLog,
-    })) as unknown as typeof actual.makeOctokit,
-    getRepoInfo: deterministicGetRepoInfo,
+    makeOctokit: offlineMakeOctokit,
+    // Force one known repo to return null so the "no repoInfo -> sorts last"
+    // branch is exercised deterministically in the `complex` fixture.
+    getRepoInfo: (octokit: unknown, owner: string, repo: string) =>
+      `${owner}/${repo}` === 'user/repo-b'
+        ? Promise.resolve(null)
+        : getRepoInfo(octokit, owner, repo),
   };
 });
-
-// Force one known repo to return null so the "no repoInfo -> sorts last" branch
-// (markdown.ts:421 / :695) is exercised deterministically in the `complex` fixture.
-function deterministicGetRepoInfo(
-  _octokit: unknown,
-  owner: string,
-  repo: string,
-): Promise<null | RepoInfoDetails> {
-  const info =
-    `${owner}/${repo}` === 'user/repo-b' ? null : generateRepoInfo(owner, repo);
-  return Promise.resolve(info);
-}
 
 // --- fixture inputs ---------------------------------------------------------
 

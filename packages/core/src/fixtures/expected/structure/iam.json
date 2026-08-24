@@ -103,6 +103,49 @@
       "title": "Account Management"
     },
     {
+      "description": "The whole authentication stack is based on cryptography primitives. This can't be overlooked.",
+      "items": [
+        {
+          "node_type": "item",
+          "title": "Papers we love: Cryptography",
+          "description": "Foundational papers of cryptography.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 1738651000,
+            "language": "TypeScript",
+            "last_commit": "2024-01-01T00:00:00.000Z",
+            "owner": "papers-we-love",
+            "repo": "papers-we-love",
+            "stars": 1001
+          }
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Awesome GUID",
+              "description": "Funny take on the global aspect of unique identifiers.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3388606576,
+                "language": "Java",
+                "last_commit": "2022-06-04T00:00:00.000Z",
+                "owner": "secretGeek",
+                "repo": "AwesomeGUID",
+                "stars": 6577
+              }
+            }
+          ],
+          "description": "Tokens, primary keys, UUIDs, … Whatever the end use, you'll have to generate these numbers with some randomness and uniqueness properties.",
+          "node_type": "group",
+          "title": "Identifiers"
+        }
+      ],
+      "title": "Cryptography"
+    },
+    {
       "description": "Zero trust network security operates under the principle “never trust, always verify”.",
       "items": [
         {
@@ -346,6 +389,28 @@
           "description": "Certificate-based authentication.",
           "node_type": "group",
           "title": "Public-Key Infrastructure (PKI)"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Learn how to use JWT for Authentication",
+              "description": "Learn how to use JWT to secure your web app.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 990312643,
+                "language": "Python",
+                "last_commit": "2022-03-29T00:00:00.000Z",
+                "owner": "dwyl",
+                "repo": "learn-json-web-tokens",
+                "stars": 12644
+              }
+            }
+          ],
+          "description": "JSON Web Token is a bearer's token.",
+          "node_type": "group",
+          "title": "JWT"
         }
       ],
       "title": "Password-less auth"
@@ -605,6 +670,28 @@
           "description": "Tools and resources exclusively targeting the AWS IAM policies ecosystem.",
           "node_type": "group",
           "title": "AWS policy tools"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Gubernator",
+              "description": "High performance rate-limiting micro-service and library.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2848584269,
+                "language": null,
+                "last_commit": "2023-04-07T00:00:00.000Z",
+                "owner": "gubernator-io",
+                "repo": "gubernator",
+                "stars": 34270
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Other tools"
         }
       ],
       "title": "Authorization"
@@ -871,6 +958,21 @@
     {
       "description": "Once you've got a significant user base, it is called a community. You'll then be responsible to protect it: the customer, people, the company, the business, and facilitate all interactions and transactions happening therein.\nA critical intermediation complex driven by a policy and constraint by local laws, the Trust & Safety department is likely embodied by a cross-functional team of 24/7 operators and systems of highly advanced moderation and administration tools. You can see it as an extension of customer support services, specialized in edge-cases like manual identity checks, moderation of harmful content, stopping harassment, handling of warrants and copyright claims, data sequestration and other credit card disputes.",
       "items": [
+        {
+          "node_type": "item",
+          "title": "Awesome List of Billing and Payments: Fraud links",
+          "description": "Section dedicated to fraud management for billing and payment, from our sister repository.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 1219396067,
+            "language": "Ruby",
+            "last_commit": "2023-10-26T00:00:00.000Z",
+            "owner": "kdeldycke",
+            "repo": "awesome-billing",
+            "stars": 46068
+          }
+        },
         {
           "children": [
             {
@@ -1306,6 +1408,50 @@
             "repo": "papers-we-love",
             "stars": 1001
           }
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Presidio",
+              "description": "Context aware, pluggable and customizable data protection and PII data anonymization service for text and images.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1840133163,
+                "language": "Python",
+                "last_commit": "2023-07-22T00:00:00.000Z",
+                "owner": "microsoft",
+                "repo": "presidio",
+                "stars": 33164
+              }
+            }
+          ],
+          "description": "As a central repository of user data, the IAM stack stakeholders have to prevent any leakage of business and customer data. To allow for internal analytics, anonymization is required.",
+          "node_type": "group",
+          "title": "Anonymization"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "GDPR Developer Guide",
+              "description": "Best practices for developers.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 219763262,
+                "language": "Go",
+                "last_commit": "2023-04-14T00:00:00.000Z",
+                "owner": "LINCnil",
+                "repo": "GDPR-Developer-Guide",
+                "stars": 13263
+              }
+            }
+          ],
+          "description": "The well-known European privacy framework",
+          "node_type": "group",
+          "title": "GDPR"
         }
       ],
       "title": "Privacy"

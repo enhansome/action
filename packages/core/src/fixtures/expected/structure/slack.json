@@ -59,6 +59,50 @@
           "children": [
             {
               "node_type": "item",
+              "title": "slacker",
+              "description": "Erlang Slack REST API wrapper",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1856778820,
+                "language": "TypeScript",
+                "last_commit": "2021-10-03T00:00:00.000Z",
+                "owner": "julienXX",
+                "repo": "slacker",
+                "stars": 28821
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Erlang"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "webhook",
+              "description": "Easily run commands in response to HTTP webhook requests from Slack",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1336062169,
+                "language": null,
+                "last_commit": "2023-07-16T00:00:00.000Z",
+                "owner": "adnanh",
+                "repo": "webhook",
+                "stars": 12170
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Go"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
               "title": "simple-slack-api",
               "description": "A Slack client library in Java",
               "children": [],
@@ -245,6 +289,28 @@
           "children": [
             {
               "node_type": "item",
+              "title": "PSSlack",
+              "description": "PowerShell module for simple Slack integration.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2948133689,
+                "language": null,
+                "last_commit": "2022-02-11T00:00:00.000Z",
+                "owner": "RamblingCookieMonster",
+                "repo": "PSSlack",
+                "stars": 33690
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "PowerShell"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
               "title": "slackblocks",
               "description": "Python API for building Slack Block Kit messages",
               "children": [],
@@ -417,6 +483,28 @@
           "children": [
             {
               "node_type": "item",
+              "title": "slackr",
+              "description": "A package to send webhook API messages to Slack channels/users from R",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1694260200,
+                "language": "TypeScript",
+                "last_commit": "2023-06-15T00:00:00.000Z",
+                "owner": "hrbrmstr",
+                "repo": "slackr",
+                "stars": 10201
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "R"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
               "title": "slack-ruby-bot",
               "description": "The easiest way to write a Slack bot in Ruby",
               "children": [],
@@ -524,6 +612,72 @@
           "description": null,
           "node_type": "group",
           "title": "Ruby"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "slack-morphism-rust",
+              "description": "A modern async Slack API client for Rust",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1690278846,
+                "language": "Java",
+                "last_commit": "2021-09-07T00:00:00.000Z",
+                "owner": "abdolence",
+                "repo": "slack-morphism-rust",
+                "stars": 28847
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Rust"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "slack-scala-client",
+              "description": "A Scala Slack client for the Web and RTM API",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1900574608,
+                "language": "Shell",
+                "last_commit": "2022-05-03T00:00:00.000Z",
+                "owner": "gilbertw1",
+                "repo": "slack-scala-client",
+                "stars": 24609
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Scala"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "SwiftBlocksUI",
+              "description": "Interactive Slack messages and modals using a SwiftUI-like declarative style",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2009410152,
+                "language": "Go",
+                "last_commit": "2023-08-02T00:00:00.000Z",
+                "owner": "SwiftBlocksUI",
+                "repo": "SwiftBlocksUI",
+                "stars": 10153
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Swift"
         }
       ],
       "title": ":hammer_and_wrench: Libraries and SDKs"
@@ -531,6 +685,28 @@
     {
       "description": null,
       "items": [
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "jinora",
+              "description": "Slack webhook app to create anonymous public channels",
+              "children": [],
+              "repo_info": {
+                "archived": true,
+                "id": 2587615135,
+                "language": "C++",
+                "last_commit": "2023-08-19T00:00:00.000Z",
+                "owner": "sdslabs",
+                "repo": "jinora",
+                "stars": 15136
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "CoffeeScript"
+        },
         {
           "children": [
             {

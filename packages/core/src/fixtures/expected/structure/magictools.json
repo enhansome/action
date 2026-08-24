@@ -7,6 +7,28 @@
           "children": [
             {
               "node_type": "item",
+              "title": ":free: Matcaps",
+              "description": "A Huge library of matcap textures in PNG and ZMT, organized by color.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3488395551,
+                "language": "JavaScript",
+                "last_commit": "2022-06-29T00:00:00.000Z",
+                "owner": "nidorx",
+                "repo": "matcaps",
+                "stars": 45552
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Assets/Placeholders"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
               "title": ":tada: Tilesplit",
               "description": "CLI text-based tilesheet splitter and namer. Turn a spritesheet into many separate files with names you pick, or not if you don't care. Support templates and textures that are not all the same size.",
               "children": [],
@@ -106,6 +128,94 @@
           "description": null,
           "node_type": "group",
           "title": "Tile/Level Editors"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": ":tada: Pixel Composer",
+              "description": "Powerful node-based VFX editor for pixel art",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 499586474,
+                "language": "Rust",
+                "last_commit": "2022-09-14T00:00:00.000Z",
+                "owner": "Ttanasart-pt",
+                "repo": "Pixel-Composer",
+                "stars": 36475
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Animation"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": ":moneybag: Pixen",
+              "description": "Pixel Art Editor for OSX",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2254425820,
+                "language": "TypeScript",
+                "last_commit": "2021-10-03T00:00:00.000Z",
+                "owner": "Pixen",
+                "repo": "Pixen",
+                "stars": 25821
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Vector/Image Editor"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": ":free: Canvascript",
+              "description": "A tool for creating HTML canvas graphics without writing code.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 408654124,
+                "language": "Rust",
+                "last_commit": "2023-08-30T00:00:00.000Z",
+                "owner": "VBproDev",
+                "repo": "Canvascript",
+                "stars": 4125
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Modeling"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": ":tada: goxel",
+              "description": null,
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2272907197,
+                "language": "Ruby",
+                "last_commit": "2023-06-18T00:00:00.000Z",
+                "owner": "guillaumechereau",
+                "repo": "goxel",
+                "stars": 7198
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Voxel Editors"
         }
       ],
       "title": "Graphics"
@@ -960,6 +1070,28 @@
           "children": [
             {
               "node_type": "item",
+              "title": "awesome-gametalks",
+              "description": "A curated list of game talks (GDC, youtube, etc).",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 578426709,
+                "language": null,
+                "last_commit": "2022-01-22T00:00:00.000Z",
+                "owner": "hzoo",
+                "repo": "awesome-gametalks",
+                "stars": 26710
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Videos/Podcasts"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
               "title": ":tada: OpenRA",
               "description": null,
               "children": [],
@@ -1175,6 +1307,56 @@
         }
       ],
       "title": "Must see"
+    },
+    {
+      "description": "Online courses, tutorials, screencasts",
+      "items": [
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": ":free: miloyip/game-programmer",
+              "description": "A Study Path for Game Programmer :octocat:",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1992462062,
+                "language": "Go",
+                "last_commit": "2023-10-31T00:00:00.000Z",
+                "owner": "miloyip",
+                "repo": "game-programmer",
+                "stars": 12063
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "General Game Development"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": ":free: 3D Game Shaders For Beginners",
+              "description": null,
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1187402302,
+                "language": "Go",
+                "last_commit": "2023-03-05T00:00:00.000Z",
+                "owner": "lettier",
+                "repo": "3d-game-shaders-for-beginners",
+                "stars": 2303
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Computer Graphics"
+        }
+      ],
+      "title": "Learn"
     }
   ],
   "metadata": {

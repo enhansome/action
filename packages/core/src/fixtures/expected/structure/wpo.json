@@ -289,6 +289,28 @@
           "children": [
             {
               "node_type": "item",
+              "title": "CSS-perf",
+              "description": "Completely unscientific way of testing CSS performance. Most of these tests will revolve around methodologies and techniques for determining effective CSS architecture. Put another way, I want to know what works best given a particular comparison of CSS strategies.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 873099831,
+                "language": "JavaScript",
+                "last_commit": "2021-09-22T00:00:00.000Z",
+                "owner": "mdo",
+                "repo": "css-perf",
+                "stars": 49832
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Benchmark - CSS"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
               "title": "Matcha",
               "description": "Matcha allows you to design experiments that will measure the performance of your code. It is recommended that each bench focus on a specific point of impact in your application.",
               "children": [],
@@ -470,6 +492,72 @@
           "description": null,
           "node_type": "group",
           "title": "Bookmarklets"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "jsDelivr",
+              "description": "Similar to Google Hosted Libraries, jsDelivr is an open-source CDN that allows developers to host their own projects and anyone to link to our hosted files on their sites.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 102721940,
+                "language": "TypeScript",
+                "last_commit": "2021-06-05T00:00:00.000Z",
+                "owner": "jsdelivr",
+                "repo": "jsdelivr",
+                "stars": 21941
+              }
+            }
+          ],
+          "description": "A content delivery network or content distribution network (CDN) is a large distributed system of servers deployed in multiple data centers across the Internet. The goal of a CDN is to serve content to end-users with high availability and high performance. See a large list of CDN in Wikipedia.\nTo find useful more information for you to make the right choice between paid CDNs, please visit CDNPlanet.",
+          "node_type": "group",
+          "title": "CDN"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Gulp-google-cdn",
+              "description": "Replaces script references with Google CDN ones.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 4056167611,
+                "language": "JavaScript",
+                "last_commit": "2022-04-30T00:00:00.000Z",
+                "owner": "sindresorhus",
+                "repo": "gulp-google-cdn",
+                "stars": 17612
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "CDN - Utilities"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Browser Calories",
+              "description": "The easiest way to measure your performance budget.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1123832721,
+                "language": "JavaScript",
+                "last_commit": "2022-01-10T00:00:00.000Z",
+                "owner": "zenorocha",
+                "repo": "browser-calories-chrome",
+                "stars": 32722
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Extensions"
         },
         {
           "children": [
@@ -1090,6 +1178,28 @@
           "description": null,
           "node_type": "group",
           "title": "Metrics Monitor"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "WebPageTest API Wrapper for Node.js",
+              "description": "WebPageTest API Wrapper is an npm package that wraps WebPageTest API for Node.js as a module and a command-line tool.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3372535388,
+                "language": "Shell",
+                "last_commit": "2022-12-09T00:00:00.000Z",
+                "owner": "marcelduran",
+                "repo": "webpagetest-api",
+                "stars": 35389
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Metrics Monitor - API"
         },
         {
           "children": [
@@ -1837,6 +1947,28 @@
           "description": null,
           "node_type": "group",
           "title": "Web server Benchmarks"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "WebP-detect",
+              "description": "WebP with Accept negotiation.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 4118766025,
+                "language": "C++",
+                "last_commit": "2023-12-07T00:00:00.000Z",
+                "owner": "igrigorik",
+                "repo": "webp-detect",
+                "stars": 16026
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Web server Modules"
         }
       ],
       "title": "Application Performance Monitoring"

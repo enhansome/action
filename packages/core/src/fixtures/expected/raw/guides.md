@@ -93,8 +93,8 @@ coding style guides and development practices across the web.
 
 ### C++
 
-* [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html)
 * [C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#readme) ⭐ 23,010 | 🐛 9 | 📅 2023-12-23
+* [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html)
 
 ### C\#
 
@@ -196,8 +196,8 @@ coding style guides and development practices across the web.
 
 ### RSpec
 
-* [Better Specs { rspec guidelines with ruby }](https://www.betterspecs.org/)
 * [RSpec Style Guide](https://github.com/rubocop/rspec-style-guide#readme) ⭐ 41,485 | 🐛 84 | 🌐 Rust | 📅 2022-09-04
+* [Better Specs { rspec guidelines with ruby }](https://www.betterspecs.org/)
 * [Even Better Specs | Guidelines for Maintainable Tests](https://evenbetterspecs.github.io/)
 
 ### Rails

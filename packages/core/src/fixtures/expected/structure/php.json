@@ -201,6 +201,28 @@
           "children": [
             {
               "node_type": "item",
+              "title": "Yii2",
+              "description": "A fast, secure, and efficient web framework.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1305005554,
+                "language": "Rust",
+                "last_commit": "2022-06-26T00:00:00.000Z",
+                "owner": "yiisoft",
+                "repo": "yii2",
+                "stars": 5555
+              }
+            }
+          ],
+          "description": "Web development frameworks.",
+          "node_type": "group",
+          "title": "Frameworks"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
               "title": "LaravelS",
               "description": "An out-of-the-box adapter between Laravel/Lumen and Swoole.",
               "children": [],
@@ -1090,6 +1112,28 @@
           "description": "Libraries for file manipulation and MIME type detection.",
           "node_type": "group",
           "title": "Files"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Streamer",
+              "description": "A simple object-orientated stream wrapper library.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 697291283,
+                "language": "Python",
+                "last_commit": "2023-03-24T00:00:00.000Z",
+                "owner": "fzaninotto",
+                "repo": "Streamer",
+                "stars": 41284
+              }
+            }
+          ],
+          "description": "Libraries for working with streams.",
+          "node_type": "group",
+          "title": "Streams"
         },
         {
           "children": [
@@ -3338,6 +3382,28 @@
           "description": "Libraries that are event-driven or implement non-blocking event loops.",
           "node_type": "group",
           "title": "Event"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Monolog",
+              "description": "A comprehensive logger.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3955371760,
+                "language": "TypeScript",
+                "last_commit": "2021-12-02T00:00:00.000Z",
+                "owner": "Seldaek",
+                "repo": "monolog",
+                "stars": 21761
+              }
+            }
+          ],
+          "description": "Libraries for generating and working with log files.",
+          "node_type": "group",
+          "title": "Logging"
         },
         {
           "children": [
@@ -6025,6 +6091,28 @@
           "description": "Libraries for accessing third party APIs.",
           "node_type": "group",
           "title": "Third Party APIs"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Zephir",
+              "description": "A compiled language between PHP and C++ for developing PHP extensions.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 558536041,
+                "language": "JavaScript",
+                "last_commit": "2023-11-21T00:00:00.000Z",
+                "owner": "zephir-lang",
+                "repo": "zephir",
+                "stars": 36042
+              }
+            }
+          ],
+          "description": "Libraries to help build PHP extensions.",
+          "node_type": "group",
+          "title": "Extensions"
         },
         {
           "children": [

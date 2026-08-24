@@ -44,6 +44,28 @@
           "children": [
             {
               "node_type": "item",
+              "title": "Open Sourced Interview Process",
+              "description": "Cockroach Labs published their process “to create familiarity for candidates and account for bias, resulting in a better candidate experience and hiring decisions.”",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 368388755,
+                "language": "C++",
+                "last_commit": "2021-12-07T00:00:00.000Z",
+                "owner": "cockroachlabs",
+                "repo": "open-sourced-interview-process",
+                "stars": 38756
+              }
+            }
+          ],
+          "description": "High-growth company will all need to industrialize the hiring process at one point.",
+          "node_type": "group",
+          "title": "Hiring Process"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
               "title": "Engineering Leadership Interviews",
               "description": "An outline on how to recruit for engineering manager roles.",
               "children": [],
@@ -169,6 +191,56 @@
       "title": "Culture"
     },
     {
+      "description": "You're no longer an engineer. Still, your team is responsible for the systems, technology and all the processes surrounding them. You'd better know a bit about engineering tenets.",
+      "items": [
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "The Efficiency-Destroying Magic of Tidying Up",
+              "description": "“Efficiency tends to look messy, and good looks tend to be inefficient.” A reminder that sometimes we should just accept the messiness of the world.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 538965121,
+                "language": "JavaScript",
+                "last_commit": "2023-09-02T00:00:00.000Z",
+                "owner": "kdeldycke",
+                "repo": "awesome-falsehood",
+                "stars": 15122
+              }
+            }
+          ],
+          "description": "Whatever the technical stack, we are building systems first, and have to manage its complexity.",
+          "node_type": "group",
+          "title": "Systems Complexity"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Code reviews at Google",
+              "description": "“Why Should Code Reviews Be Fast? (…) To optimize for the speed at which a team of developers can produce a product together, as opposed to optimizing for the speed at which an individual developer can write code.”",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2100060778,
+                "language": "Shell",
+                "last_commit": "2021-11-14T00:00:00.000Z",
+                "owner": "google",
+                "repo": "eng-practices",
+                "stars": 10779
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Engineering Practices"
+        }
+      ],
+      "title": "Engineering"
+    },
+    {
       "description": "The Product Manager is supposed to be the voice of the market. Here are more links on the role and its reach.",
       "items": [
         {
@@ -215,6 +287,28 @@
             "repo": "open-product-management",
             "stars": 5080
           }
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Marketing for Engineers",
+              "description": "Lots of resources to help bootstrap your marketing activities and solve practical tasks.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2305235109,
+                "language": null,
+                "last_commit": "2023-09-14T00:00:00.000Z",
+                "owner": "LisaDziuba",
+                "repo": "Marketing-for-Engineers",
+                "stars": 35110
+              }
+            }
+          ],
+          "description": "How to find users, grow your customer base and make people talks about you product.",
+          "node_type": "group",
+          "title": "Product Marketing"
         }
       ],
       "title": "Product Management"

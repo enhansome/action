@@ -64,6 +64,21 @@
                 "repo": "cl-chroma",
                 "stars": 30701
               }
+            },
+            {
+              "node_type": "item",
+              "title": "Caten",
+              "description": "Deep Learning Compiler based on Polyhedral Compiler and Light-weight IRs, and Optimizing Pattern Matcher, written in Common Lisp",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2810249588,
+                "language": "Shell",
+                "last_commit": "2022-05-23T00:00:00.000Z",
+                "owner": "hikettei",
+                "repo": "Caten",
+                "stars": 49589
+              }
             }
           ],
           "description": "demos: cl-rag-example and cl-chat, a LLM chat library and web UI.\nWork In Progress:",
@@ -183,6 +198,21 @@
                 "owner": "melisgl",
                 "repo": "mgl",
                 "stars": 5934
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "llama.cl",
+              "description": "implementation of Llama inference operations. MIT.",
+              "children": [],
+              "repo_info": {
+                "archived": true,
+                "id": 3675537258,
+                "language": "Shell",
+                "last_commit": "2023-04-18T00:00:00.000Z",
+                "owner": "snunez1",
+                "repo": "llama.cl",
+                "stars": 37259
               }
             }
           ],
@@ -597,8 +627,66 @@
       "title": "Audio"
     },
     {
+      "description": "See also:",
+      "items": [
+        {
+          "node_type": "item",
+          "title": "asdf-viz",
+          "description": "a tool to visualize the library dependencies of ASDF systems, the call graph of a function and the class inheritances. LLGPL.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 3272005519,
+            "language": null,
+            "last_commit": "2022-07-31T00:00:00.000Z",
+            "owner": "guicho271828",
+            "repo": "asdf-viz",
+            "stars": 5520
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "asdf-linguist",
+          "description": "Extensions for ASDF for compiling various languages and running various preprocessing tools on files in your project. Expat.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 3931544407,
+            "language": "Ruby",
+            "last_commit": "2022-11-20T00:00:00.000Z",
+            "owner": "eudoxia0",
+            "repo": "asdf-linguist",
+            "stars": 44408
+          }
+        }
+      ],
+      "title": "Build Systems"
+    },
+    {
       "description": null,
       "items": [
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "April",
+              "description": "The APL programming language (a subset thereof) compiling to Common Lisp. Replace hundreds of lines of number-crunching code with a single line of APL. Apache2.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 613599484,
+                "language": "Rust",
+                "last_commit": "2022-09-04T00:00:00.000Z",
+                "owner": "phantomics",
+                "repo": "april",
+                "stars": 49485
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "APL"
+        },
         {
           "children": [
             {
@@ -926,6 +1014,21 @@
           }
         },
         {
+          "node_type": "item",
+          "title": "endatabas",
+          "description": "Schemaless SQL document database with full history. AGPL-3.0.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 1246662808,
+            "language": "Shell",
+            "last_commit": "2021-10-15T00:00:00.000Z",
+            "owner": "endatabas",
+            "repo": "endb",
+            "stars": 12809
+          }
+        },
+        {
           "children": [
             {
               "node_type": "item",
@@ -1152,6 +1255,21 @@
                   }
                 }
               ]
+            },
+            {
+              "node_type": "item",
+              "title": "restagraph",
+              "description": "an app that dynamically generates REST APIs for a Neo4j database, using a schema defined within the database. GPL3.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1012398676,
+                "language": "Java",
+                "last_commit": "2022-02-24T00:00:00.000Z",
+                "owner": "JermellB",
+                "repo": "restagraph",
+                "stars": 48677
+              }
             }
           ],
           "description": "and also:",
@@ -1404,6 +1522,28 @@
           "description": null,
           "node_type": "group",
           "title": "To third parties"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "⭐ pgloader",
+              "description": "a data loading tool for PostgreSQL. PostgreSQL Licence.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3757161872,
+                "language": "Go",
+                "last_commit": "2021-08-12T00:00:00.000Z",
+                "owner": "dimitri",
+                "repo": "pgloader",
+                "stars": 11873
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Tools"
         }
       ],
       "title": "Database"
@@ -1630,6 +1770,21 @@
                 "repo": "cl-jwk",
                 "stars": 1944
               }
+            },
+            {
+              "node_type": "item",
+              "title": "pantry",
+              "description": "client library for the Pantry JSON storage service. BSD.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3745779804,
+                "language": "Rust",
+                "last_commit": "2021-10-19T00:00:00.000Z",
+                "owner": "dotemacs",
+                "repo": "pantry",
+                "stars": 29805
+              }
             }
           ],
           "description": "See this extensive comparison of many more JSON libraries, as well as these benchmarks.\nJSON tools:\nJSON online services:\nand search for JSON RPC below.",
@@ -1771,6 +1926,21 @@
                   }
                 }
               ]
+            },
+            {
+              "node_type": "item",
+              "title": "cl-excel",
+              "description": "a modern and powerful Common Lisp library for reading and writing Microsoft Excel .xlsx and LibreOffice .ods files. MIT.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3235535287,
+                "language": "Ruby",
+                "last_commit": "2023-03-20T00:00:00.000Z",
+                "owner": "gwangjinkim",
+                "repo": "cl-excel",
+                "stars": 35288
+              }
             }
           ],
           "description": "To read Excel files:",
@@ -1972,6 +2142,21 @@
         },
         {
           "node_type": "item",
+          "title": "cl-freelock",
+          "description": "thread-safe, lock-free queues optimized for different use cases and hardware. The library offers three queue types, each designed for specific concurrency patterns and performance requirements.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 1046266756,
+            "language": "Java",
+            "last_commit": "2021-12-06T00:00:00.000Z",
+            "owner": "ItsMeForLua",
+            "repo": "cl-freelock",
+            "stars": 16757
+          }
+        },
+        {
+          "node_type": "item",
           "title": "cl-containers",
           "description": "an extensive library of data structures and utilities - queues, trees, heaps, doubly-linked lists, sets, bags,... MIT",
           "children": [],
@@ -2043,6 +2228,21 @@
             "owner": "thephoeron",
             "repo": "bit-smasher",
             "stars": 122
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "👍 access",
+          "description": "Consistent and nested access to most common data structures. BSD_3Clause.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 509394291,
+            "language": "JavaScript",
+            "last_commit": "2023-03-16T00:00:00.000Z",
+            "owner": "AccelerationNet",
+            "repo": "access",
+            "stars": 44292
           }
         }
       ],
@@ -2235,6 +2435,36 @@
           "children": [
             {
               "node_type": "item",
+              "title": "ABCLJ",
+              "description": "dead easy Clojure to Common lisp interop. EPL-2.0.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1728370608,
+                "language": "Shell",
+                "last_commit": "2022-05-03T00:00:00.000Z",
+                "owner": "lsevero",
+                "repo": "abclj",
+                "stars": 20609
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Cloture",
+              "description": "Clojure in Common Lisp.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 347496258,
+                "language": "Shell",
+                "last_commit": "2023-04-18T00:00:00.000Z",
+                "owner": "ruricolist",
+                "repo": "cloture",
+                "stars": 46259
+              }
+            },
+            {
+              "node_type": "item",
               "title": "cl-oju",
               "description": "a few idioms, mostly relating to sequences, that I miss when writing Common Lisp. MIT.",
               "children": [],
@@ -2327,6 +2557,50 @@
           "description": "In development:\nCloture is in very early (pre-alpha) stages, but it has progressed far enough to load clojure.test, allowing the test suite to actually be written in Clojure.\nSee also those libraries:",
           "node_type": "group",
           "title": "Clojure"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "CLERIC",
+              "description": "a Common Lisp Erlang Interface. An implementation of the Erlang distribution protocol, comparable with erl_interface and jinterface. MIT.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2658909603,
+                "language": "Python",
+                "last_commit": "2022-05-08T00:00:00.000Z",
+                "owner": "flambard",
+                "repo": "CLERIC",
+                "stars": 9604
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Erlang"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "open-ldk",
+              "description": "A Java JIT Compiler and Runtime in Common Lisp. GPL3.0. (Work In Progress)",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 276890997,
+                "language": "Ruby",
+                "last_commit": "2021-04-09T00:00:00.000Z",
+                "owner": "atgreen",
+                "repo": "openldk",
+                "stars": 40998
+              }
+            }
+          ],
+          "description": "See also:",
+          "node_type": "group",
+          "title": "Java"
         },
         {
           "children": [
@@ -2442,11 +2716,48 @@
                 "repo": "burgled-batteries",
                 "stars": 8487
               }
+            },
+            {
+              "node_type": "item",
+              "title": "cl-python",
+              "description": "an implementation of Python in Common Lisp. LLGPL, not under active development.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 80710904,
+                "language": "Rust",
+                "last_commit": "2021-07-11T00:00:00.000Z",
+                "owner": "metawilm",
+                "repo": "cl-python",
+                "stars": 10905
+              }
             }
           ],
           "description": "See also async-process.",
           "node_type": "group",
           "title": "Python"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Bike",
+              "description": "a cross-platform .Net Core interface. MIT.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2143218583,
+                "language": "Python",
+                "last_commit": "2022-05-28T00:00:00.000Z",
+                "owner": "Lovesan",
+                "repo": "bike",
+                "stars": 18584
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": ".Net Core"
         }
       ],
       "title": "Foreign Function Interface, languages interop"
@@ -2512,6 +2823,21 @@
             "owner": "bohonghuang",
             "repo": "eon",
             "stars": 6821
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Queen.lisp",
+          "description": "Chess Utilities For Common Lisp. MIT.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 2937804879,
+            "language": null,
+            "last_commit": "2021-08-05T00:00:00.000Z",
+            "owner": "mishoo",
+            "repo": "queen.lisp",
+            "stars": 4880
           }
         }
       ],
@@ -3056,6 +3382,21 @@
           "children": [
             {
               "node_type": "item",
+              "title": "Electron-lisp-boilerplate",
+              "description": "a rudimentary boilerplate for building Electron apps that start a Lisp process.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1596993878,
+                "language": "Shell",
+                "last_commit": "2021-08-06T00:00:00.000Z",
+                "owner": "mikelevins",
+                "repo": "electron-lisp-boilerplate",
+                "stars": 43879
+              }
+            },
+            {
+              "node_type": "item",
               "title": "clogframe",
               "description": "an executable wrapper for webview.h, allowing to display any web application served by a Common Lisp server.",
               "children": [],
@@ -3088,6 +3429,28 @@
           "description": "For Electron, see:\nRead: Three web views for Common Lisp.\nFor other web views, see:",
           "node_type": "group",
           "title": "Web views"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "sbcl-termux-build",
+              "description": "Prebuilt SBCL binary for Android (Termux).",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3842947213,
+                "language": "Python",
+                "last_commit": "2023-06-02T00:00:00.000Z",
+                "owner": "bohonghuang",
+                "repo": "sbcl-termux-build",
+                "stars": 47214
+              }
+            }
+          ],
+          "description": "Also:\nhello-alien, SBCL built for an Android application.",
+          "node_type": "group",
+          "title": "Mobile"
         }
       ],
       "title": "GUI"
@@ -3198,6 +3561,21 @@
               }
             }
           ]
+        },
+        {
+          "node_type": "item",
+          "title": "Corman Lisp",
+          "description": "a Common Lisp development environment for Microsoft Windows running on Intel platforms. MIT.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 3237408590,
+            "language": "TypeScript",
+            "last_commit": "2022-05-21T00:00:00.000Z",
+            "owner": "sharplispers",
+            "repo": "cormanlisp",
+            "stars": 8591
+          }
         }
       ],
       "title": "Implementations"
@@ -3235,6 +3613,21 @@
                 "owner": "atgreen",
                 "repo": "rewrite-cl",
                 "stars": 40221
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "breeze",
+              "description": "experiments on workflows for Common Lisp. WIP.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2668990936,
+                "language": "Java",
+                "last_commit": "2021-06-09T00:00:00.000Z",
+                "owner": "fstamour",
+                "repo": "breeze",
+                "stars": 40937
               }
             }
           ],
@@ -3338,6 +3731,28 @@
             "repo": "generic-cl",
             "stars": 7856
           }
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "⭐ trivia",
+              "description": "Optimized pattern-matching library. LLGPL.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2023267946,
+                "language": "Java",
+                "last_commit": "2021-05-30T00:00:00.000Z",
+                "owner": "guicho271828",
+                "repo": "trivia",
+                "stars": 17947
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Pattern matching"
         },
         {
           "children": [
@@ -3618,6 +4033,21 @@
                 "owner": "atlas-engineer",
                 "repo": "nclasses",
                 "stars": 38198
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "slot-extra-options",
+              "description": "lets you build a metaclass which in turn lets you specify extra slot options in its classes. LGPL3.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3234202916,
+                "language": "Java",
+                "last_commit": "2021-06-29T00:00:00.000Z",
+                "owner": "some-mthfka",
+                "repo": "slot-extra-options",
+                "stars": 2917
               }
             }
           ],
@@ -3949,6 +4379,28 @@
           "children": [
             {
               "node_type": "item",
+              "title": "quid-pro-quo",
+              "description": "a contract programming library in the style of Eiffel’s Design by Contract ™. Public domain.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3957668839,
+                "language": null,
+                "last_commit": "2021-09-14T00:00:00.000Z",
+                "owner": "sellout",
+                "repo": "quid-pro-quo",
+                "stars": 18840
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Contract programming"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
               "title": "algebraic-data-types",
               "description": "defining algebraic data types in a similar spirit to Haskell or Standard ML, as well as for operating on them. BSD_3Clause.",
               "children": [],
@@ -4051,6 +4503,21 @@
                 "owner": "coalton-lang",
                 "repo": "coalton",
                 "stars": 6310
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "typo",
+              "description": "A portable type inference library for Common Lisp. MIT.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3227341477,
+                "language": "Ruby",
+                "last_commit": "2022-09-11T00:00:00.000Z",
+                "owner": "marcoheisig",
+                "repo": "Typo",
+                "stars": 41478
               }
             }
           ],
@@ -4170,6 +4637,50 @@
         {
           "children": [
             {
+              "node_type": "item",
+              "title": "Lisp Tips",
+              "description": "A blog with useful tips and tricks.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 596869200,
+                "language": "TypeScript",
+                "last_commit": "2023-06-15T00:00:00.000Z",
+                "owner": "lisp-tips",
+                "repo": "lisp-tips",
+                "stars": 19201
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Intermediate"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "sbcl-wiki",
+              "description": "an open wiki to document SBCL's internals.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 579715574,
+                "language": "Rust",
+                "last_commit": "2022-06-06T00:00:00.000Z",
+                "owner": "guicho271828",
+                "repo": "sbcl-wiki",
+                "stars": 15575
+              }
+            }
+          ],
+          "description": "And a couple learning resources for SBCL internals:",
+          "node_type": "group",
+          "title": "Advanced"
+        },
+        {
+          "children": [
+            {
               "node_type": "group",
               "title": "Common Lisp Standard Draft (pdf)",
               "description": "The standard draft of the Common Lisp specifications, in a well formatted PDF with a sidebar.",
@@ -4217,6 +4728,35 @@
           "description": null,
           "node_type": "group",
           "title": "Reference"
+        },
+        {
+          "children": [
+            {
+              "node_type": "group",
+              "title": "Paradigms of Artificial Intelligence Programming: Case Studies in Common Lisp - A book on programming AI that covers some advanced Lisp.",
+              "description": null,
+              "children": [
+                {
+                  "node_type": "item",
+                  "title": "PAIP-lisp",
+                  "description": "Lisp code for the textbook \"Paradigms of Artificial Intelligence Programming\".",
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "id": 312388492,
+                    "language": "Go",
+                    "last_commit": "2022-08-27T00:00:00.000Z",
+                    "owner": "norvig",
+                    "repo": "paip-lisp",
+                    "stars": 38493
+                  }
+                }
+              ]
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Advanced"
         },
         {
           "children": [
@@ -4539,6 +5079,21 @@
                 "owner": "ralt",
                 "repo": "dh-quicklisp-buildapp",
                 "stars": 8482
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "asdf-sbcl",
+              "description": ", a plugin for the universal package manager.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1346417711,
+                "language": "JavaScript",
+                "last_commit": "2022-01-20T00:00:00.000Z",
+                "owner": "smashedtoatoms",
+                "repo": "asdf-sbcl",
+                "stars": 17712
               }
             }
           ],
@@ -5141,6 +5696,43 @@
           "children": [
             {
               "node_type": "item",
+              "title": "cl-html5-parser",
+              "description": "HTML5 parser for Common Lisp. GPL3.0.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 226516213,
+                "language": "Python",
+                "last_commit": "2023-06-02T00:00:00.000Z",
+                "owner": "rotatef",
+                "repo": "cl-html5-parser",
+                "stars": 16214
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "cl-sanitize-html",
+              "description": "OWASP-style HTML sanitization library for Common Lisp, designed for safely rendering untrusted HTML content (like HTML emails or user-generated content). MIT.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 4043571613,
+                "language": "Python",
+                "last_commit": "2022-04-28T00:00:00.000Z",
+                "owner": "atgreen",
+                "repo": "cl-sanitize-html",
+                "stars": 21614
+              }
+            }
+          ],
+          "description": "Sanitizing HTML:",
+          "node_type": "group",
+          "title": "Parsing html"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
               "title": "TEN",
               "description": "the completness of Djula with the full usability of Common Lisp code in templates. MIT.",
               "children": [],
@@ -5473,6 +6065,21 @@
             },
             {
               "node_type": "item",
+              "title": "Valtan",
+              "description": "Common Lisp to JavaScript compiler.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 4278932363,
+                "language": "Python",
+                "last_commit": "2023-01-03T00:00:00.000Z",
+                "owner": "cxxxr",
+                "repo": "valtan",
+                "stars": 32364
+              }
+            },
+            {
+              "node_type": "item",
               "title": "cl-react",
               "description": "Common Lisp (Parenscript) utilities for building web apps in ReactJs. MIT.",
               "children": [],
@@ -5529,6 +6136,36 @@
                 "owner": "michaeljforster",
                 "repo": "panic",
                 "stars": 444
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "datastar-cl",
+              "description": "Datastar Common Lisp SDK.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 340865060,
+                "language": "TypeScript",
+                "last_commit": "2023-11-02T00:00:00.000Z",
+                "owner": "fsmunoz",
+                "repo": "datastar-cl",
+                "stars": 15061
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "trident-mode",
+              "description": ", an Emacs minor mode for live Parenscript interaction.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3164734714,
+                "language": "Rust",
+                "last_commit": "2022-01-17T00:00:00.000Z",
+                "owner": "johnmastro",
+                "repo": "trident-mode.el",
+                "stars": 34715
               }
             }
           ],
@@ -5801,6 +6438,72 @@
         {
           "children": [
             {
+              "node_type": "item",
+              "title": "pure-tls",
+              "description": "Pure Common Lisp TLS 1.3 implementation, HTTPS server with automatic Let's Encrypt certificate. MIT",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 4022533202,
+                "language": "Go",
+                "last_commit": "2023-06-13T00:00:00.000Z",
+                "owner": "atgreen",
+                "repo": "pure-tls",
+                "stars": 33203
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "HTTPS"
+        },
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "node_type": "item",
+                  "title": "cl-webdriver-client",
+                  "description": "a binding library to WebDriver (supports Selenium 4.0).",
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "id": 837481236,
+                    "language": "Java",
+                    "last_commit": "2023-05-10T00:00:00.000Z",
+                    "owner": "copyleft",
+                    "repo": "cl-webdriver-client",
+                    "stars": 31237
+                  }
+                }
+              ],
+              "description": null,
+              "node_type": "group",
+              "title": "Browser tests"
+            },
+            {
+              "children": [
+                {
+                  "node_type": "item",
+                  "title": "👍 cl-forms",
+                  "description": "Web forms handling library for Common lisp. MIT.",
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "id": 2777307130,
+                    "language": "TypeScript",
+                    "last_commit": "2023-08-24T00:00:00.000Z",
+                    "owner": "mmontone",
+                    "repo": "cl-forms",
+                    "stars": 7131
+                  }
+                }
+              ],
+              "description": null,
+              "node_type": "group",
+              "title": "Form handling"
+            },
+            {
               "children": [
                 {
                   "node_type": "item",
@@ -6051,6 +6754,21 @@
               "children": [
                 {
                   "node_type": "item",
+                  "title": "trivial-imap",
+                  "description": "tries to make easy some common cases of working with IMAP servers, like reading emails from the server. A thin wrapper over post-office library (which is a fork of Franz's cl-imap). BSD.",
+                  "children": [],
+                  "repo_info": {
+                    "archived": true,
+                    "id": 2877694227,
+                    "language": "Ruby",
+                    "last_commit": "2023-05-19T00:00:00.000Z",
+                    "owner": "40ants",
+                    "repo": "trivial-imap",
+                    "stars": 44228
+                  }
+                },
+                {
+                  "node_type": "item",
                   "title": "sendgrid",
                   "description": "send emails with Sendgrid's API. MIT.",
                   "children": [],
@@ -6077,6 +6795,21 @@
                     "owner": "40ants",
                     "repo": "mailgun",
                     "stars": 26440
+                  }
+                },
+                {
+                  "node_type": "item",
+                  "title": "parcom/email",
+                  "description": "types and parsers for RFC5322 email addresses. The implementation is RFC-compliant and particularly memory-efficient for well-behaved addresses.",
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "id": 3906075068,
+                    "language": "Shell",
+                    "last_commit": "2023-10-25T00:00:00.000Z",
+                    "owner": "fosskers",
+                    "repo": "parcom",
+                    "stars": 25069
                   }
                 }
               ],
@@ -6130,11 +6863,48 @@
                     "repo": "cl-odata-client",
                     "stars": 25716
                   }
+                },
+                {
+                  "node_type": "item",
+                  "title": "jsonrpc",
+                  "description": "JSON-RPC 2.0 server/client for Common Lisp. BSD.",
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "id": 36426786,
+                    "language": "Java",
+                    "last_commit": "2021-11-06T00:00:00.000Z",
+                    "owner": "cxxxr",
+                    "repo": "jsonrpc",
+                    "stars": 26787
+                  }
                 }
               ],
               "description": null,
               "node_type": "group",
               "title": "OpenAPI, OData, OpenRPC"
+            },
+            {
+              "children": [
+                {
+                  "node_type": "item",
+                  "title": "coleslaw",
+                  "description": "and its coleslaw-cli - Flexible Lisp Blogware similar to Frog, Jekyll, or Hakyll. BSD.",
+                  "children": [],
+                  "repo_info": {
+                    "archived": true,
+                    "id": 2044592414,
+                    "language": "Rust",
+                    "last_commit": "2022-11-13T00:00:00.000Z",
+                    "owner": "kingcons",
+                    "repo": "coleslaw",
+                    "stars": 42415
+                  }
+                }
+              ],
+              "description": null,
+              "node_type": "group",
+              "title": "Static site generators"
             },
             {
               "children": [
@@ -6544,6 +7314,21 @@
           ]
         },
         {
+          "node_type": "item",
+          "title": "shop3",
+          "description": "a Hierarchical Task Network (HTN) AI planner. Mozilla Public License.",
+          "children": [],
+          "repo_info": {
+            "archived": true,
+            "id": 1253273014,
+            "language": "Rust",
+            "last_commit": "2023-12-18T00:00:00.000Z",
+            "owner": "shop-planner",
+            "repo": "shop3",
+            "stars": 23015
+          }
+        },
+        {
           "children": [
             {
               "node_type": "item",
@@ -6609,6 +7394,28 @@
           "description": null,
           "node_type": "group",
           "title": "Matrix libraries"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "physical-quantities",
+              "description": "a library that provides a numeric type with optional unit and/or uncertainty for computations with automatic error propagation. GPL2",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3309559425,
+                "language": "C++",
+                "last_commit": "2022-11-02T00:00:00.000Z",
+                "owner": "mrossini-ethz",
+                "repo": "physical-quantities",
+                "stars": 9426
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Units"
         },
         {
           "children": [
@@ -6690,6 +7497,21 @@
             },
             {
               "node_type": "item",
+              "title": "plotly-user",
+              "description": "Use plotly in your browser to explore data from a Common Lisp REPL. BSD_3Clause.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 4191530129,
+                "language": null,
+                "last_commit": "2023-08-25T00:00:00.000Z",
+                "owner": "ajberkley",
+                "repo": "plotly-user",
+                "stars": 30130
+              }
+            },
+            {
+              "node_type": "item",
               "title": "cl-text-plot",
               "description": "Plot with text in Common Lisp. No licence specified.",
               "children": [],
@@ -6722,6 +7544,28 @@
           "description": "cool but WIP:\nPlotting with text:\nSee also the chart facilities of IUP and ltk-plotchart (GUI section).",
           "node_type": "group",
           "title": "Plotting"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "cmu-infix",
+              "description": "A library for writing infix mathematical notation in Common Lisp. See also polisher.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3639342768,
+                "language": "Shell",
+                "last_commit": "2021-11-24T00:00:00.000Z",
+                "owner": "rigetti",
+                "repo": "cmu-infix",
+                "stars": 42769
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Utils"
         }
       ],
       "title": "Numerical and Scientific"
@@ -6911,7 +7755,37 @@
           }
         },
         {
+          "node_type": "item",
+          "title": "cl-etcd",
+          "description": "Run etcd as an asynchronous inferior process. etcd is a strongly consistent, distributed key-value store. AGPL-3.0.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 189788900,
+            "language": "TypeScript",
+            "last_commit": "2021-07-15T00:00:00.000Z",
+            "owner": "atgreen",
+            "repo": "cl-etcd",
+            "stars": 38901
+          }
+        },
+        {
           "children": [
+            {
+              "node_type": "item",
+              "title": "👍 Sento",
+              "description": "Sento (formerly cl-gserver) is a 'message passing' library/framework with actors similar to Erlang or Akka. It supports creating systems that should work reactive, require parallel computing and event based message handling. Apache2.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2520331157,
+                "language": "Ruby",
+                "last_commit": "2023-07-28T00:00:00.000Z",
+                "owner": "mdbergmann",
+                "repo": "cl-gserver",
+                "stars": 31158
+              }
+            },
             {
               "node_type": "item",
               "title": "Actors",
@@ -7069,6 +7943,42 @@
         }
       ],
       "title": "Parallelism and Concurrency"
+    },
+    {
+      "description": "See also:\nSee also clj-re above.",
+      "items": [
+        {
+          "node_type": "item",
+          "title": "one-more-re-nightmare",
+          "description": "a fast-ish regular expression compiler in Common Lisp. BSD_2Clause.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 2472230433,
+            "language": "Python",
+            "last_commit": "2022-10-25T00:00:00.000Z",
+            "owner": "no-defun-allowed",
+            "repo": "one-more-re-nightmare",
+            "stars": 30434
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "rexxparse",
+          "description": "A string parsing tool inspired by the REXX PARSE construct. MIT.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 4288475688,
+            "language": "Shell",
+            "last_commit": "2022-02-12T00:00:00.000Z",
+            "owner": "dtenny",
+            "repo": "rexxparse",
+            "stars": 25689
+          }
+        }
+      ],
+      "title": "Regular expressions and string parsing"
     },
     {
       "description": null,
@@ -7391,6 +8301,50 @@
           "children": [
             {
               "node_type": "item",
+              "title": "cl-unix-cybernetics",
+              "description": "(previously Adams) - UNIX system administration in Common Lisp. ISC.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1133113304,
+                "language": "Rust",
+                "last_commit": "2023-03-03T00:00:00.000Z",
+                "owner": "cl-unix-cybernetics",
+                "repo": "cl-unix-cybernetics",
+                "stars": 13305
+              }
+            }
+          ],
+          "description": "Configuration tools not unlike Ansible, Chef or Puppet.",
+          "node_type": "group",
+          "title": "System administration"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "cl-selfupdate",
+              "description": "Self-update functionality for Common Lisp executables via GitHub/GitLab Releases. MIT.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3862573053,
+                "language": "Python",
+                "last_commit": "2023-11-09T00:00:00.000Z",
+                "owner": "atgreen",
+                "repo": "cl-selfupdate",
+                "stars": 23054
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Updating executables"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
               "title": "clawk",
               "description": "an AWK implementation embedded into Common Lisp, to search files for lines and perform specified actions on its fields. BSD-style.",
               "children": [],
@@ -7417,6 +8371,21 @@
                 "owner": "inconvergent",
                 "repo": "lqn",
                 "stars": 19838
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "WCL",
+              "description": "[stalled] - allow hundreds of Lisp applications to be realistically available at once, while allowing several of them to run concurrently. WCL accomplishes this by providing Common Lisp as a Unix shared library that can be linked with Lisp and C code to produce efficient applications. For example, the executable for a Lisp version of the canonical program requires only 20k bytes on 32 bit x86 Linux. WCL also supports a full development environment, including dynamic file loading and debugging. A modified version of GDB is used to debug WCL programs, providing support for mixed language debugging.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3165505453,
+                "language": "Python",
+                "last_commit": "2022-10-05T00:00:00.000Z",
+                "owner": "wadehennessey",
+                "repo": "wcl",
+                "stars": 5454
               }
             }
           ],
@@ -7491,6 +8460,127 @@
                 "repo": "plain-common-lisp",
                 "stars": 6499
               }
+            },
+            {
+              "node_type": "item",
+              "title": "👍 slime-star",
+              "description": "a SLIME configuration with extensions pre-installed, with also some custom utilities and menus:",
+              "children": [
+                {
+                  "node_type": "item",
+                  "title": "Slime breakpoints",
+                  "description": null,
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "id": 3880348036,
+                    "language": "Java",
+                    "last_commit": "2023-11-26T00:00:00.000Z",
+                    "owner": "mmontone",
+                    "repo": "slime-breakpoints",
+                    "stars": 48037
+                  }
+                },
+                {
+                  "node_type": "item",
+                  "title": "Slite",
+                  "description": "a test runner for FiveAM.",
+                  "children": [],
+                  "repo_info": {
+                    "archived": true,
+                    "id": 1966584344,
+                    "language": "Rust",
+                    "last_commit": "2023-01-22T00:00:00.000Z",
+                    "owner": "tdrhq",
+                    "repo": "slite",
+                    "stars": 34345
+                  }
+                },
+                {
+                  "node_type": "item",
+                  "title": "slime-critic",
+                  "description": "the lisp critic gently critiques your code for bad patterns.",
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "id": 621180468,
+                    "language": "Shell",
+                    "last_commit": "2022-09-20T00:00:00.000Z",
+                    "owner": "mmontone",
+                    "repo": "slime-critic",
+                    "stars": 30469
+                  }
+                },
+                {
+                  "node_type": "item",
+                  "title": "Quicklisp systems",
+                  "description": "Search, browse and load Quicklisp systems from Emacs.",
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "id": 3181970741,
+                    "language": "JavaScript",
+                    "last_commit": "2021-12-21T00:00:00.000Z",
+                    "owner": "mmontone",
+                    "repo": "quicklisp-systems",
+                    "stars": 20742
+                  }
+                },
+                {
+                  "node_type": "item",
+                  "title": "SLIME doc contrib",
+                  "description": "enhance the default help buffer.",
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "id": 3254414751,
+                    "language": "JavaScript",
+                    "last_commit": "2021-12-11T00:00:00.000Z",
+                    "owner": "mmontone",
+                    "repo": "slime-doc-contribs",
+                    "stars": 14752
+                  }
+                },
+                {
+                  "node_type": "item",
+                  "title": "Quicklisp-apropos",
+                  "description": "Perform queries across libraries in Quicklisp (full-text search on symbol names, classes, documentation…).",
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "id": 3555163967,
+                    "language": "Ruby",
+                    "last_commit": "2021-05-09T00:00:00.000Z",
+                    "owner": "mmontone",
+                    "repo": "quicklisp-apropos",
+                    "stars": 13968
+                  }
+                }
+              ],
+              "repo_info": {
+                "archived": false,
+                "id": 596038184,
+                "language": "Rust",
+                "last_commit": "2023-07-01T00:00:00.000Z",
+                "owner": "mmontone",
+                "repo": "slime-star",
+                "stars": 38185
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Quicksearch",
+              "description": "search for projects on GitHub, Quicklisp, Cliki and Bitbucket. MIT.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3355235963,
+                "language": "Python",
+                "last_commit": "2021-05-13T00:00:00.000Z",
+                "owner": "lisp-maintainers",
+                "repo": "quicksearch",
+                "stars": 35964
+              }
             }
           ],
           "description": "Starter kits:\nSlime extensions:\nSly extensions:\nTools:",
@@ -7553,6 +8643,116 @@
           "children": [
             {
               "node_type": "item",
+              "title": "Dandelion",
+              "description": "a Common Lisp plugin for the Eclipse IDE.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 579652626,
+                "language": "Java",
+                "last_commit": "2022-04-15T00:00:00.000Z",
+                "owner": "Ragnaroek",
+                "repo": "dandelion",
+                "stars": 2627
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Eclipse"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Lem",
+              "description": "a general-purpose development environment extensible in Common Lisp.MIT.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2930004036,
+                "language": "Java",
+                "last_commit": "2023-11-26T00:00:00.000Z",
+                "owner": "lem-project",
+                "repo": "lem",
+                "stars": 4037
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Lem"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "lw-plugins",
+              "description": "LispWorks Plugins by April & May. OBSD.",
+              "children": [],
+              "repo_info": {
+                "archived": true,
+                "id": 3471699914,
+                "language": "Rust",
+                "last_commit": "2021-07-01T00:00:00.000Z",
+                "owner": "apr3vau",
+                "repo": "lw-plugins",
+                "stars": 49915
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "LispWorks"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "SLIMA",
+              "description": "allows you to interactively develop Common Lisp code, turning Atom (or now Pulsar) into a pretty good, and actively developped, Lisp IDE. MIT.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1216564074,
+                "language": "Rust",
+                "last_commit": "2023-10-19T00:00:00.000Z",
+                "owner": "neil-lindquist",
+                "repo": "slima",
+                "stars": 14075
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Atom, Pulsar"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Sublime Text",
+              "description": "(proprietary) has Common Lisp support with its SublimeREPL and Slyblime packages. Slyblime is an implementation of SLY and it uses the same backend (SLYNK). It ships advanced features including a debugger with stack frame inspection.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 348656538,
+                "language": "Shell",
+                "last_commit": "2022-07-12T00:00:00.000Z",
+                "owner": "s-clerc",
+                "repo": "slyblime",
+                "stars": 6539
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Sublime Text"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
               "title": "commonlisp-vscode",
               "description": "an extension to support syntax highlight, auto completion, documentation on hover, go to definition, compile & load file, REPL. It is On GitHub.",
               "children": [],
@@ -7585,6 +8785,66 @@
           "description": null,
           "node_type": "group",
           "title": "VSCode"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "SLT",
+              "description": "an IDE Plugin for Intellij/Jetbrains IDE lineup implementing support for Common Lisp via SBCL and Slime/Swank.",
+              "children": [
+                {
+                  "node_type": "item",
+                  "title": "see this fork",
+                  "description": "that is updated to work on Intellij 2025.3.2.",
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "id": 2090171900,
+                    "language": "TypeScript",
+                    "last_commit": "2021-07-15T00:00:00.000Z",
+                    "owner": "ivanbulanov",
+                    "repo": "SLT",
+                    "stars": 21901
+                  }
+                }
+              ],
+              "repo_info": {
+                "archived": false,
+                "id": 2066171957,
+                "language": "Ruby",
+                "last_commit": "2021-05-19T00:00:00.000Z",
+                "owner": "Enerccio",
+                "repo": "SLT",
+                "stars": 21958
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "JetBrains"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Geany-lisp",
+              "description": "is an experimental lisp mode for the Geany editor.",
+              "children": [],
+              "repo_info": {
+                "archived": true,
+                "id": 1624780627,
+                "language": "Ruby",
+                "last_commit": "2022-04-14T00:00:00.000Z",
+                "owner": "jasom",
+                "repo": "geany-lisp",
+                "stars": 30628
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Geany (experimental)"
         },
         {
           "children": [
@@ -8018,6 +9278,21 @@
             "repo": "wiki-lang-detect",
             "stars": 24714
           }
+        },
+        {
+          "node_type": "item",
+          "title": "Resolve",
+          "description": "A software for AST-based diff calculation, display, and automated resolution. Written in C++ and CL, you'll find Lisp utilities.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 3757706787,
+            "language": "Ruby",
+            "last_commit": "2021-11-05T00:00:00.000Z",
+            "owner": "GrammaTech",
+            "repo": "resolve",
+            "stars": 6788
+          }
         }
       ],
       "title": "Text Processing"
@@ -8203,6 +9478,21 @@
               }
             }
           ]
+        },
+        {
+          "node_type": "item",
+          "title": "Slite",
+          "description": "a SLIme-based TEst runner for FiveAM Tests. Apache2.0",
+          "children": [],
+          "repo_info": {
+            "archived": true,
+            "id": 1966584344,
+            "language": "Rust",
+            "last_commit": "2023-01-22T00:00:00.000Z",
+            "owner": "tdrhq",
+            "repo": "slite",
+            "stars": 34345
+          }
         }
       ],
       "title": "Unit Testing"
@@ -8298,6 +9588,28 @@
           "description": "See also the Persistent object databases section.",
           "node_type": "group",
           "title": "Caching (serialization)"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "function-cache",
+              "description": "A Common Lisp function caching / memoization library. BSD.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3436465774,
+                "language": "Rust",
+                "last_commit": "2021-11-18T00:00:00.000Z",
+                "owner": "AccelerationNet",
+                "repo": "function-cache",
+                "stars": 15775
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Caching (memoization)"
         },
         {
           "children": [
@@ -9124,6 +10436,21 @@
                 "repo": "sblint",
                 "stars": 26666
               }
+            },
+            {
+              "node_type": "item",
+              "title": "lisp-format",
+              "description": "and cl-indentify.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1536934115,
+                "language": "C++",
+                "last_commit": "2023-09-08T00:00:00.000Z",
+                "owner": "eschulte",
+                "repo": "lisp-format",
+                "stars": 34116
+              }
             }
           ],
           "description": "and also:",
@@ -9229,6 +10556,21 @@
                 "repo": "log4cl",
                 "stars": 3676
               }
+            },
+            {
+              "node_type": "item",
+              "title": "cl-fluent-logger",
+              "description": "A Common Lisp structured logger for Fluentd.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 4198188034,
+                "language": "Rust",
+                "last_commit": "2023-11-28T00:00:00.000Z",
+                "owner": "fukamachi",
+                "repo": "cl-fluent-logger",
+                "stars": 38035
+              }
             }
           ],
           "description": "To third parties:\nSee also: extensive comparison of logging libraries.",
@@ -9271,6 +10613,72 @@
           "description": null,
           "node_type": "group",
           "title": "Macro helpers"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "3bmd",
+              "description": "a markdown -> html converter. MIT.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 832335441,
+                "language": "JavaScript",
+                "last_commit": "2022-10-17T00:00:00.000Z",
+                "owner": "3b",
+                "repo": "3bmd",
+                "stars": 35442
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Markdown"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "cl-reexport",
+              "description": "when you want to import and re-export many symbols at once and or some.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1486338148,
+                "language": "Shell",
+                "last_commit": "2023-08-06T00:00:00.000Z",
+                "owner": "takagi",
+                "repo": "cl-reexport",
+                "stars": 38149
+              }
+            }
+          ],
+          "description": "See also uiop:define-package and its clause (without include/exclude), , …",
+          "node_type": "group",
+          "title": "Package declarations"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "cl-typesetting",
+              "description": "and cl-pdf - cross-platform Common Lisp libraries for generating PDF files. FreeBSD.",
+              "children": [],
+              "repo_info": {
+                "archived": true,
+                "id": 1762419665,
+                "language": "C++",
+                "last_commit": "2022-03-07T00:00:00.000Z",
+                "owner": "mbattyani",
+                "repo": "cl-typesetting",
+                "stars": 19666
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "PDF"
         },
         {
           "children": [

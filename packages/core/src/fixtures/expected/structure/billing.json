@@ -171,6 +171,43 @@
       "description": "A marketplace connect supply with demand that lead to a financial transaction. If there is no payment involved, then it is an aggregator, or a hub. Not a marketplace.",
       "items": [
         {
+          "node_type": "item",
+          "title": "Papers we love: Auctions and Bidding",
+          "description": "A collection of papers on bidding and auctions.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 1738651000,
+            "language": "TypeScript",
+            "last_commit": "2024-01-01T00:00:00.000Z",
+            "owner": "papers-we-love",
+            "repo": "papers-we-love",
+            "stars": 1001
+          }
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "AutoSpotting",
+              "description": "Tool that easily and reliably converts (all) your existing AutoScaling groups to cheaper spot instances.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 779968808,
+                "language": "Shell",
+                "last_commit": "2021-10-15T00:00:00.000Z",
+                "owner": "AutoSpotting",
+                "repo": "AutoSpotting",
+                "stars": 18809
+              }
+            }
+          ],
+          "description": "This sub-section focus on bid/ask mechanism matching resource producer with consumers. Most of the time these are one-sided markets with the big platform trying to amortized under-utilized inventory.",
+          "node_type": "group",
+          "title": "Cloud Resources"
+        },
+        {
           "children": [
             {
               "node_type": "item",
@@ -434,13 +471,137 @@
           "description": null,
           "node_type": "group",
           "title": "Generators"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "InvoiceNet",
+              "description": "Deep neural network to extract intelligent information from invoice documents.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3272026107,
+                "language": "Ruby",
+                "last_commit": "2023-09-16T00:00:00.000Z",
+                "owner": "naiveHobo",
+                "repo": "InvoiceNet",
+                "stars": 26108
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Extractors"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Factur-X",
+              "description": "Python library to support the e-invoicing standard for France and Germany.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2223019279,
+                "language": null,
+                "last_commit": "2023-03-28T00:00:00.000Z",
+                "owner": "akretion",
+                "repo": "factur-x",
+                "stars": 19280
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Electronic invoices"
         }
       ],
       "title": "Invoice"
     },
     {
+      "description": null,
+      "items": [
+        {
+          "node_type": "item",
+          "title": "Hyperswitch",
+          "description": "Open-source backend for payment processing.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 3691488212,
+            "language": "Go",
+            "last_commit": "2023-06-03T00:00:00.000Z",
+            "owner": "juspay",
+            "repo": "hyperswitch",
+            "stars": 38213
+          }
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "pci-blackbox",
+              "description": "PCI-DSS compliant card system built on PostgreSQL and PL/pgSQL.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1963544392,
+                "language": "Go",
+                "last_commit": "2022-12-05T00:00:00.000Z",
+                "owner": "pjfoley",
+                "repo": "pci-blackbox",
+                "stars": 44393
+              }
+            }
+          ],
+          "description": "The most popular payment device.",
+          "node_type": "group",
+          "title": "Credit Cards"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Swift Codes Repository",
+              "description": "A repository that seems to scrape the website above.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3378328140,
+                "language": "TypeScript",
+                "last_commit": "2023-08-14T00:00:00.000Z",
+                "owner": "PeterNotenboom",
+                "repo": "SwiftCodes",
+                "stars": 28141
+              }
+            }
+          ],
+          "description": "The old-fashioned way of payment: by the way of banks.",
+          "node_type": "group",
+          "title": "Bank Accounts"
+        }
+      ],
+      "title": "Payments"
+    },
+    {
       "description": "There's monetary incentives to exploit your business. Be prepared to fight hordes of fraudsters and shady users.",
       "items": [
+        {
+          "node_type": "item",
+          "title": "Awesome List of IAM: Fraud links",
+          "description": "Section dedicated to fraud management related to user accounts, from our sister repository.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 741285193,
+            "language": "Python",
+            "last_commit": "2023-06-22T00:00:00.000Z",
+            "owner": "kdeldycke",
+            "repo": "awesome-iam",
+            "stars": 35194
+          }
+        },
         {
           "node_type": "item",
           "title": "Mojaloop Fraud Risk Management",
@@ -470,6 +631,28 @@
             "repo": "awesome-fraud-detection-papers",
             "stars": 12232
           }
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Awesome Credit Modeling",
+              "description": "How to use statistical methods to classify applicants into categories to reduce risks. Lots of inspiration and research papers there to improve general scoring.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 4071243996,
+                "language": "Java",
+                "last_commit": "2021-04-10T00:00:00.000Z",
+                "owner": "mourarthur",
+                "repo": "awesome-credit-modeling",
+                "stars": 43997
+              }
+            }
+          ],
+          "description": "Synthetic score based on a collection of signals are often the best proxy of user's trustworthiness. Customer support most of the time rely on them to take action when these actions are not triggered automatically.",
+          "node_type": "group",
+          "title": "Trust Score"
         }
       ],
       "title": "Fraud"

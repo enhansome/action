@@ -92,6 +92,21 @@
             "repo": "regex-storm",
             "stars": 29870
           }
+        },
+        {
+          "node_type": "item",
+          "title": "CyrilEx",
+          "description": "[GitHub] - Java, JavaScript, MySQL, PHP, Python, Ruby.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 682816642,
+            "language": "Go",
+            "last_commit": "2022-03-30T00:00:00.000Z",
+            "owner": "cyrilbois",
+            "repo": "cyrilex",
+            "stars": 16643
+          }
         }
       ],
       "title": "Testers"
@@ -143,6 +158,21 @@
             "repo": "regulex",
             "stars": 7777
           }
+        },
+        {
+          "node_type": "item",
+          "title": "Regex Nodes",
+          "description": "[GitHub] - Graphical editor with visual hierarchy. Flavor: JavaScript.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 2736460850,
+            "language": "TypeScript",
+            "last_commit": "2021-09-03T00:00:00.000Z",
+            "owner": "johannesvollmer",
+            "repo": "regex-nodes",
+            "stars": 10851
+          }
         }
       ],
       "title": "Visualizers"
@@ -186,9 +216,96 @@
           "description": "➕ See also: Feature comparison of grep-like tools.",
           "node_type": "group",
           "title": "Command line"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "PowerRename",
+              "description": "(Windows) - Rename files using regexes.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3303110312,
+                "language": "Go",
+                "last_commit": "2023-02-23T00:00:00.000Z",
+                "owner": "microsoft",
+                "repo": "PowerToys",
+                "stars": 10313
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "GUI"
         }
       ],
       "title": "Grep-like tools"
+    },
+    {
+      "description": "Learn how to use regular expressions.",
+      "items": [
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "The Modern JavaScript Tutorial: Regular expressions",
+              "description": "[GitHub] - Guide to using regexes in JavaScript.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1937624962,
+                "language": "Go",
+                "last_commit": "2021-05-14T00:00:00.000Z",
+                "owner": "javascript-tutorial",
+                "repo": "en.javascript.info",
+                "stars": 24963
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Regular Expressions for Regular Folk",
+              "description": "[GitHub] - Visual, example-based ebook for beginners.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3634170849,
+                "language": null,
+                "last_commit": "2021-09-04T00:00:00.000Z",
+                "owner": "shreyasminocha",
+                "repo": "regex-for-regular-folk",
+                "stars": 20850
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Traditional"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "RegexLearn",
+              "description": "[GitHub] - Interactive tutorial and practice problems.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 4028717000,
+                "language": "TypeScript",
+                "last_commit": "2024-01-01T00:00:00.000Z",
+                "owner": "aykutkardas",
+                "repo": "regexlearn.com",
+                "stars": 17001
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "With interactive exercises"
+        }
+      ],
+      "title": "Tutorials"
     },
     {
       "description": "Major regex implementations, built into programming languages or as standalone libraries.",
@@ -475,6 +592,28 @@
           "description": "Read or contribute to the code behind major regex implementations.",
           "node_type": "group",
           "title": "Source code"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Ron Buckton: Regular Expression Feature Comparisons",
+              "description": "[GitHub].",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3294525543,
+                "language": "Python",
+                "last_commit": "2022-07-07T00:00:00.000Z",
+                "owner": "rbuckton",
+                "repo": "regexp-features",
+                "stars": 25544
+              }
+            }
+          ],
+          "description": "Syntax and behavior differences between regex flavors.",
+          "node_type": "group",
+          "title": "Flavor differences"
         }
       ],
       "title": "Regex engines"
@@ -482,6 +621,28 @@
     {
       "description": "Pattern and engine performance, benchmarks, and ReDoS prevention.",
       "items": [
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Cross-engine benchmarking libraries: rebar",
+              "description": ", regex-benchmark.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3618322355,
+                "language": "C++",
+                "last_commit": "2023-01-11T00:00:00.000Z",
+                "owner": "BurntSushi",
+                "repo": "rebar",
+                "stars": 22356
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Benchmarking"
+        },
         {
           "children": [
             {
@@ -904,6 +1065,21 @@
               }
             }
           ]
+        },
+        {
+          "node_type": "item",
+          "title": "Backcompat libraries: regexpu",
+          "description": ", regenerate (Unicode property sets).",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 2354855554,
+            "language": "Rust",
+            "last_commit": "2022-06-26T00:00:00.000Z",
+            "owner": "mathiasbynens",
+            "repo": "regexpu",
+            "stars": 5555
+          }
         },
         {
           "node_type": "item",

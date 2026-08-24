@@ -39,6 +39,28 @@
           "description": null,
           "node_type": "group",
           "title": "CSS"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Principles of writing idiomatic Sass",
+              "description": null,
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 4000350135,
+                "language": "C++",
+                "last_commit": "2023-08-19T00:00:00.000Z",
+                "owner": "anthonyshort",
+                "repo": "idiomatic-sass",
+                "stars": 136
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Sass"
         }
       ],
       "title": "Styling"
@@ -46,6 +68,116 @@
     {
       "description": null,
       "items": [
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "C++ Core Guidelines",
+              "description": null,
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2097423009,
+                "language": null,
+                "last_commit": "2023-12-23T00:00:00.000Z",
+                "owner": "isocpp",
+                "repo": "CppCoreGuidelines",
+                "stars": 23010
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "C++"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Clojure Style Guide",
+              "description": null,
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 244039338,
+                "language": "Shell",
+                "last_commit": "2023-01-28T00:00:00.000Z",
+                "owner": "bbatsov",
+                "repo": "clojure-style-guide",
+                "stars": 39339
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Clojure"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "CoffeeScript Style Guide",
+              "description": null,
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2412865120,
+                "language": "TypeScript",
+                "last_commit": "2023-09-03T00:00:00.000Z",
+                "owner": "polarmobile",
+                "repo": "coffeescript-style-guide",
+                "stars": 15121
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "CoffeeScript"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Elixir Style Guide",
+              "description": null,
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2615696557,
+                "language": "Ruby",
+                "last_commit": "2022-06-23T00:00:00.000Z",
+                "owner": "christopheradams",
+                "repo": "elixir_style_guide",
+                "stars": 46558
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Elixir"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Go Code Review Comments",
+              "description": null,
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 427911826,
+                "language": "Java",
+                "last_commit": "2021-09-27T00:00:00.000Z",
+                "owner": "golang",
+                "repo": "go",
+                "stars": 11827
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Go"
+        },
         {
           "children": [
             {
@@ -164,9 +296,147 @@
           "description": null,
           "node_type": "group",
           "title": "Objective-C"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Ruby Style Guide",
+              "description": null,
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1706452421,
+                "language": "JavaScript",
+                "last_commit": "2022-11-06T00:00:00.000Z",
+                "owner": "rubocop",
+                "repo": "ruby-style-guide",
+                "stars": 2422
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Ruby"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Rust Style Guide",
+              "description": null,
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3449207433,
+                "language": "Python",
+                "last_commit": "2022-10-25T00:00:00.000Z",
+                "owner": "rust-lang",
+                "repo": "rust",
+                "stars": 7434
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Rust"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "The Official Kodeco Swift Style Guide",
+              "description": null,
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3942641157,
+                "language": "Ruby",
+                "last_commit": "2023-07-28T00:00:00.000Z",
+                "owner": "kodecocodes",
+                "repo": "swift-style-guide",
+                "stars": 41158
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Swift"
         }
       ],
       "title": "Programming Languages"
+    },
+    {
+      "description": null,
+      "items": [
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "AngularJS Style Guide",
+              "description": null,
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3119346763,
+                "language": "Python",
+                "last_commit": "2021-11-29T00:00:00.000Z",
+                "owner": "johnpapa",
+                "repo": "angular-styleguide",
+                "stars": 46764
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "AngularJS"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "RSpec Style Guide",
+              "description": null,
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1743541484,
+                "language": "Rust",
+                "last_commit": "2022-09-04T00:00:00.000Z",
+                "owner": "rubocop",
+                "repo": "rspec-style-guide",
+                "stars": 41485
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "RSpec"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Rails Style Guide",
+              "description": null,
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 4104394652,
+                "language": "Go",
+                "last_commit": "2022-03-20T00:00:00.000Z",
+                "owner": "rubocop",
+                "repo": "rails-style-guide",
+                "stars": 44653
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Rails"
+        }
+      ],
+      "title": "Frameworks"
     },
     {
       "description": null,
@@ -207,6 +477,28 @@
           "description": null,
           "node_type": "group",
           "title": "API"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "favicon-cheat-sheet",
+              "description": null,
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1336442123,
+                "language": "Python",
+                "last_commit": "2023-08-31T00:00:00.000Z",
+                "owner": "audreyfeldroy",
+                "repo": "favicon-cheat-sheet",
+                "stars": 42124
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Favicon"
         },
         {
           "children": [

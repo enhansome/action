@@ -18181,6 +18181,21 @@
       "description": null,
       "items": [
         {
+          "node_type": "item",
+          "title": "unioffice",
+          "description": "Pure go library for creating and processing Office Word (.docx), Excel (.xlsx) and Powerpoint (.pptx) documents.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 1597163232,
+            "language": "Go",
+            "last_commit": "2023-05-14T00:00:00.000Z",
+            "owner": "unidoc",
+            "repo": "unioffice",
+            "stars": 13233
+          }
+        },
+        {
           "children": [
             {
               "node_type": "item",
@@ -18276,6 +18291,28 @@
           "description": "Libraries for working with Microsoft Excel.",
           "node_type": "group",
           "title": "Microsoft Excel"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "godocx",
+              "description": "Library for reading and writing Microsoft Word (Docx) files.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3583349563,
+                "language": "Python",
+                "last_commit": "2022-06-17T00:00:00.000Z",
+                "owner": "gomutex",
+                "repo": "godocx",
+                "stars": 49564
+              }
+            }
+          ],
+          "description": "Libraries for working with Microsoft Word.",
+          "node_type": "group",
+          "title": "Microsoft Word"
         }
       ],
       "title": "Microsoft Office"
@@ -27033,6 +27070,28 @@
           "description": null,
           "node_type": "group",
           "title": "Selenium and browser control tools"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "failpoint",
+              "description": "An implementation of failpoints for Golang.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 4133880210,
+                "language": "TypeScript",
+                "last_commit": "2023-06-05T00:00:00.000Z",
+                "owner": "pingcap",
+                "repo": "failpoint",
+                "stars": 30211
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Fail injection"
         }
       ],
       "title": "Testing"
@@ -28026,6 +28085,28 @@
           "description": null,
           "node_type": "group",
           "title": "Scrapers"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "podcast",
+              "description": "iTunes Compliant and RSS 2.0 Podcast Generator in Golang",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 4067367183,
+                "language": "Python",
+                "last_commit": "2023-07-02T00:00:00.000Z",
+                "owner": "eduncan911",
+                "repo": "podcast",
+                "stars": 17184
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "RSS"
         },
         {
           "children": [
@@ -39348,6 +39429,28 @@
               "description": null,
               "node_type": "group",
               "title": "Tutorials"
+            },
+            {
+              "children": [
+                {
+                  "node_type": "item",
+                  "title": "The Go Interview Practice",
+                  "description": "A GitHub repository offering coding challenges for Go technical interview preparation.",
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "id": 2524333312,
+                    "language": "Go",
+                    "last_commit": "2023-02-23T00:00:00.000Z",
+                    "owner": "RezaSi",
+                    "repo": "go-interview-practice",
+                    "stars": 33313
+                  }
+                }
+              ],
+              "description": null,
+              "node_type": "group",
+              "title": "Guided Learning"
             }
           ],
           "description": null,

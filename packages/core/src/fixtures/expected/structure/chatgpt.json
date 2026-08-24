@@ -667,6 +667,28 @@
           "description": null,
           "node_type": "group",
           "title": "Self-hosted"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "ChatGPT-Python-Applications",
+              "description": "A collection of Python web apps.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3467368004,
+                "language": "Rust",
+                "last_commit": "2023-12-28T00:00:00.000Z",
+                "owner": "xiaowuc2",
+                "repo": "ChatGPT-Python-Applications",
+                "stars": 18005
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Examples"
         }
       ],
       "title": "Web apps"
@@ -2158,6 +2180,28 @@
           "description": null,
           "node_type": "group",
           "title": "Python"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "doctorgpt",
+              "description": "Diagnosing web app log errors with ChatGPT.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 734853388,
+                "language": "Shell",
+                "last_commit": "2022-12-09T00:00:00.000Z",
+                "owner": "ingyamilmolinar",
+                "repo": "doctorgpt",
+                "stars": 3389
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Go"
         }
       ],
       "title": "Packages"
