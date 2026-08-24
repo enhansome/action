@@ -24,6 +24,7 @@ import type {
   Paragraph,
   Parent,
   Root,
+  Table,
   Text,
 } from 'mdast';
 import type { Node } from 'unist';
@@ -366,14 +367,17 @@ function createBadgeText(info: RepoInfoDetails): string {
   return ` ${parts.join(' | ')}`;
 }
 
-export function findFirstGitHubLink(node: Parent): string | undefined {
-  let linkUrl: string | undefined;
-  visit(node, 'link', (linkNode: Link) => {
-    if (!linkUrl && parseGitHubUrl(linkNode.url)) {
-      linkUrl = linkNode.url;
+// The first link in a subtree that points at a GitHub repo. Returns the link
+// node itself so callers can take both its URL (identity) and its text
+// (title fallbacks).
+export function findFirstGitHubLink(node: Parent): Link | undefined {
+  let linkNode: Link | undefined;
+  visit(node, 'link', (candidate: Link) => {
+    if (!linkNode && parseGitHubUrl(candidate.url)) {
+      linkNode = candidate;
     }
   });
-  return linkUrl;
+  return linkNode;
 }
 
 // The GitHub link that represents a list item: the FIRST GitHub link in the
@@ -389,7 +393,7 @@ function findOwnGitHubLink(itemNode: ListItem): string | undefined {
   const paragraph = itemNode.children.find(
     (child): child is Paragraph => child.type === 'paragraph',
   );
-  return paragraph ? findFirstGitHubLink(paragraph) : undefined;
+  return paragraph ? findFirstGitHubLink(paragraph)?.url : undefined;
 }
 
 function fixRelativeLinks(tree: Root, relativeLinkPrefix: string) {
@@ -474,6 +478,77 @@ export function countLinkedItems(listNode: List): number {
   return listNode.children.filter(item => !!findFirstGitHubLink(item)).length;
 }
 
+// The table counterpart of countLinkedItems for the section gate: rows whose
+// subtree contains a GitHub link. No header-row skip — a card grid's first row
+// sits above the delimiter and is content, while pure-label header rows carry
+// no links and count zero either way.
+function countLinkedRows(tableNode: Table): number {
+  return tableNode.children.filter(
+    row => row.type === 'tableRow' && !!findFirstGitHubLink(row),
+  ).length;
+}
+
+interface EntryText {
+  title: string;
+  description: string;
+}
+
+// One entry's title and description, split from its own inlines: leading text
+// up to and including the first link is the title (prefix tags like
+// "[UPDATED]" survive), the prose trailing it the description. With no link
+// the whole text is the title — the description must never echo the title
+// back.
+function splitEntryText(inlines: Node[]): EntryText {
+  const linkIndex = inlines.findIndex(child => child.type === 'link');
+  if (linkIndex === -1) {
+    return { title: getInlineText(inlines), description: '' };
+  }
+  return {
+    title: getInlineText(inlines.slice(0, linkIndex + 1)),
+    description: stripLeadingNoise(getInlineText(inlines.slice(linkIndex + 1))),
+  };
+}
+
+// The emission decision every entry source shares — list items, table rows,
+// and the paragraph/blockquote sources to come: an own GitHub link that
+// resolved makes an item; a dead own link drops the entry and lifts its
+// children to the nearest live parent; no own link with children makes a
+// group — never a `repo_info`, that's the identity-borrowing bug; no own link
+// and no children is a non-GitHub leaf, kept in markdown, dropped from JSON.
+// TODO(future): preserve non-GitHub leaves in a separate shape.
+function emitEntryNodes(
+  githubUrl: string | undefined,
+  repoInfo: null | RepoInfoDetails,
+  text: EntryText,
+  childrenJson: JsonNode[],
+): JsonNode[] {
+  if (githubUrl && repoInfo) {
+    return [
+      {
+        node_type: 'item',
+        title: text.title,
+        description: text.description || null,
+        children: childrenJson,
+        repo_info: toRepoInfo(repoInfo),
+      },
+    ];
+  }
+  if (githubUrl) {
+    return childrenJson;
+  }
+  if (childrenJson.length > 0) {
+    return [
+      {
+        node_type: 'group',
+        title: text.title,
+        description: text.description || null,
+        children: childrenJson,
+      },
+    ];
+  }
+  return [];
+}
+
 function processListRecursively(
   listNode: List,
   repoInfoMap: Map<string, RepoInfoDetails>,
@@ -514,57 +589,15 @@ function processListRecursively(
       processListRecursively(nestedList, repoInfoMap, sortOptions, true),
     );
 
-    let title = '';
-    let description = '';
-    const paragraph = itemNode.children.find(p => p.type === 'paragraph');
-    if (paragraph) {
-      const linkIndex = paragraph.children.findIndex(
-        (c): c is Link => c.type === 'link',
-      );
-      if (linkIndex !== -1) {
-        // Title = leading text + the first link's text, so prefix tags like
-        // "[UPDATED]" survive; description is the prose trailing the link.
-        title = getInlineText(paragraph.children.slice(0, linkIndex + 1));
-        description = stripLeadingNoise(
-          getInlineText(paragraph.children.slice(linkIndex + 1)),
-        );
-      } else {
-        // No link: the whole paragraph is the title, so leave description empty
-        // (avoid echoing the title back).
-        title = getInlineText(paragraph.children);
-        description = '';
-      }
-    }
-
-    // No-own-link items with children become groups — NEVER give them a
-    // `repo_info`, that's the identity-borrowing bug. No-own-link, no-child
-    // items are non-GitHub leaves: kept in markdown, dropped from JSON.
-    // TODO(future): preserve non-GitHub leaves in a separate shape.
-    let emitted: JsonNode[] = [];
-    if (githubUrl && repoInfo) {
-      emitted = [
-        {
-          node_type: 'item',
-          title,
-          description: description || null,
-          children: childrenJson,
-          repo_info: toRepoInfo(repoInfo),
-        },
-      ];
-    } else if (githubUrl) {
-      // Dead target: the item itself is not emitted; its children lift to this
-      // list's level — the nearest live parent.
-      emitted = childrenJson;
-    } else if (childrenJson.length > 0) {
-      emitted = [
-        {
-          node_type: 'group',
-          title,
-          description: description || null,
-          children: childrenJson,
-        },
-      ];
-    }
+    const paragraph = itemNode.children.find(
+      (child): child is Paragraph => child.type === 'paragraph',
+    );
+    const emitted = emitEntryNodes(
+      githubUrl,
+      repoInfo,
+      splitEntryText(paragraph?.children ?? []),
+      childrenJson,
+    );
 
     entries.push({ emitted, node: itemNode, repoInfo });
   }
@@ -578,6 +611,93 @@ function processListRecursively(
   // Reorder the AST to match the sort so rendered markdown and JSON agree.
   listNode.children = entries.map(entry => entry.node);
   return entries.flatMap(entry => entry.emitted);
+}
+
+// Title with the fallbacks every entry source shares when the split yields no
+// text (e.g. an image-only card link): the own link's text, then the repo
+// name.
+function entryTitle(
+  base: string,
+  ownLink: Link | undefined,
+  repoInfo: null | RepoInfoDetails,
+): string {
+  return (
+    base ||
+    (ownLink ? getInlineText(ownLink.children) : '') ||
+    repoInfo?.repo ||
+    ''
+  );
+}
+
+// Table rows are entries under the nearest open container. The common shape —
+// scala's `[name](repo) | description`, spec tables with the link in a later
+// column — holds ONE repo per row: the title is the first cell's text (the
+// own link's text, then the repo name, when the first cell is empty), the
+// description the remaining cells' text (badge images carry no text nodes, so
+// they never pollute it). Card grids pin several repos per row, each cell its
+// own card, so those emit one entry per link-bearing cell. A linked row above
+// the delimiter is content like any other (grid tables have no label header;
+// pure-label header rows carry no links and emit nothing). Rows stay in source
+// order — unlike the unranked lists the product sorts, a table's row order is
+// part of its meaning.
+function processTableRows(
+  tableNode: Table,
+  repoInfoMap: Map<string, RepoInfoDetails>,
+  gateOpen: boolean,
+): JsonNode[] {
+  if (!gateOpen) {
+    return [];
+  }
+  const items: JsonNode[] = [];
+  for (const row of tableNode.children) {
+    if (row.type !== 'tableRow') {
+      continue;
+    }
+    const cellLinks = row.children.map(cell => findFirstGitHubLink(cell));
+    const distinctUrls = new Set(
+      cellLinks.flatMap(link => (link ? [link.url] : [])),
+    );
+    if (distinctUrls.size === 0) {
+      continue;
+    }
+    if (distinctUrls.size === 1) {
+      const ownLink = cellLinks.find((link): link is Link => !!link);
+      if (!ownLink) {
+        continue;
+      }
+      const repoInfo = repoInfoMap.get(ownLink.url) ?? null;
+      const firstCellText = splitEntryText(row.children[0]?.children ?? []);
+      const restCellsText = row.children
+        .slice(1)
+        .map(cell => getNodeText(cell))
+        .filter(Boolean);
+      items.push(
+        ...emitEntryNodes(ownLink.url, repoInfo, {
+          title: entryTitle(firstCellText.title, ownLink, repoInfo),
+          description: [firstCellText.description, ...restCellsText]
+            .join(' ')
+            .trim(),
+        }, []),
+      );
+      continue;
+    }
+    const emittedUrls = new Set<string>();
+    for (const [cellIndex, ownLink] of cellLinks.entries()) {
+      if (!ownLink || emittedUrls.has(ownLink.url)) {
+        continue;
+      }
+      emittedUrls.add(ownLink.url);
+      const repoInfo = repoInfoMap.get(ownLink.url) ?? null;
+      const cellText = splitEntryText(row.children[cellIndex].children);
+      items.push(
+        ...emitEntryNodes(ownLink.url, repoInfo, {
+          title: entryTitle(cellText.title, ownLink, repoInfo),
+          description: cellText.description,
+        }, []),
+      );
+    }
+  }
+  return items;
 }
 
 const INVALID_TITLE_PATTERNS = [
@@ -788,6 +908,19 @@ function processTree(
         gateForSection(stack[0]),
       );
       stack[stack.length - 1].children.push(...items);
+    } else if (node.type === 'table') {
+      // Tables hold entries the same way lists do — the implicit section opens
+      // for one with no open container (the stack-bottom invariant), and the
+      // minLinks gate is the same section aggregate.
+      if (stack.length === 0) {
+        openImplicitSection(stack, i);
+      }
+      const items = processTableRows(
+        node,
+        repoInfoMap,
+        gateForSection(stack[0]),
+      );
+      stack[stack.length - 1].children.push(...items);
     }
   }
 
@@ -885,9 +1018,10 @@ function openContainer(
 }
 
 // A document can hold registry content with no heading above it — headingless
-// docs, TOC-only docs, or a preamble list before the first section heading.
-// Rather than dropping those lists, the first one synthesizes the section it
-// implicitly belongs to ("Overview"). It behaves exactly like a real section:
+// docs, TOC-only docs, or preamble entries (list, table) before the first
+// section heading. Rather than dropping them, the first one synthesizes the
+// section it implicitly belongs to ("Overview"). It behaves exactly like a
+// real section:
 // closed by the first structural heading (or document end), gated with its
 // whole subtree, and pruned when empty.
 function openImplicitSection(
@@ -909,9 +1043,10 @@ function openImplicitSection(
   });
 }
 
-// The minLinks gate scoped to a SECTION: every top-level list in the section
-// counts together — best-of-style documents put each entry in its own
-// single-item list, which the per-list gate dropped one by one. The section's
+// The minLinks gate scoped to a SECTION: every entry source in the section
+// counts together (list items and table rows) — best-of-style documents put
+// each entry in its own single-item list, which the per-list gate dropped one
+// by one. The section's
 // subtree runs from its heading to the first structural heading at or above
 // its depth (the same heading that would close it in closeContainers); the
 // gate fires only when the whole subtree holds fewer than minLinks
@@ -943,6 +1078,8 @@ function sectionGatePasses(
       }
       if (node.type === 'list') {
         linkedEntries += countLinkedItems(node);
+      } else if (node.type === 'table') {
+        linkedEntries += countLinkedRows(node);
       }
     }
     const passes = linkedEntries >= sortOptions.minLinks;

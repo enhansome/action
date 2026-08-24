@@ -6,12 +6,15 @@ today captures only 77.8% of the distinct GitHub repos linked across the
 `items: []` and still report success). Fix all 8 diagnosed causes, measured at
 every step — no unverified "should work now" landings.
 
-**Current state:** steps 0–2 landed 2026-08-24 (yield harness, minLinks per
-section, implicit sections) — measured at every step on the fresh corpus
-(below). Goldens regenerated and reviewed per step; items only ever ADDED.
+**Current state:** steps 0–3 landed 2026-08-24 (yield harness, minLinks per
+section, implicit sections, tables) — measured at every step on the fresh
+corpus (below). Goldens regenerated and reviewed per step; items only ever
+ADDED.
 
-**Next step:** step 3 (tables, cause 1 — the biggest bucket, ~18k repos),
-then 4–8 in order. This file is the only thing a resuming session needs to
+**Next step:** step 4 (paragraph entries, cause 2 — now the biggest residual
+bucket, ~5.9k repos), then 5–8 in order. The shared emission helper
+(`splitEntryText` + `emitEntryNodes` + `entryTitle` in markdown.ts) is built —
+steps 4–5 feed it. This file is the only thing a resuming session needs to
 read.
 
 ## Baseline (2026-08-24, fleet = 2,217 fetched READMEs)
@@ -90,7 +93,7 @@ worth it even where a bucket is small today.
 | 0 | **Yield harness** (instrument) — ✅ done 2026-08-24 | permanent diag tool: `packages/core/src/yield.diag.test.ts`, skipped unless `YIELD_DIR` is set; reuses the golden suite's offline repo-info mock (shared helper `offline-github.ts` — one way); reads a corpus dir, runs the real `enhance()` per file, and emits the yield report (per-registry expected/got/loss-bucket + fleet totals). Corpus is fetched, not committed (command in Method) | run over a freshly fetched corpus: reproduces baseline 77.8% ± fleet drift; harness is skipped in normal `yarn test` |
 | 1 | **minLinks per section** (cause 3) — ✅ done 2026-08-24 | aggregate the gate: a section's lists count together — decide emission per section subtree, not per top-level list. Gate stays ≥2 for the section | new fixture `single-item-sections.md` (best-of shape) fails pre-fix / passes; yield report: gated-list bucket ~12k → ~0; goldens: only intended diffs; watch false-positive noise (prose link lists under tiny sections must still be dropped) |
 | 2 | **Implicit sections** (cause 5) — ✅ done 2026-08-24 | when a list (or later: any entry source) appears with no open container, synthesize one (title from the doc title / "Overview") instead of dropping | fixtures `headingless.md`, `toc-only.md` fail pre / pass; `termux-hacking` corpus case 716 links recover; goldens reviewed |
-| 3 | **Tables** (cause 1) | walk `table` nodes: each row whose cells contain a GitHub repo link becomes an item under the nearest open container (implicit section from step 2 if none); title = first cell's leading text + link text, description = remaining cell text — via the shared emission helper | fixture `table-format.md` (scala-shaped); yield: table bucket 43k → ~0 (biggest single move); `scala` 268→~268 offline; goldens reviewed; raw fixture rendered sanely with badges |
+| 3 | **Tables** (cause 1) — ✅ done 2026-08-24 | walk `table` nodes: each row whose cells contain a GitHub repo link becomes an item under the nearest open container (implicit section from step 2 if none); title = first cell's leading text + link text, description = remaining cell text — via the shared emission helper | fixture `table-format.md` (scala-shaped); yield: table bucket 43k → ~0 (biggest single move); `scala` 268→~268 offline; goldens reviewed; raw fixture rendered sanely with badges |
 | 4 | **Paragraph entries** (cause 2) | a top-level paragraph that behaves like an entry becomes an item: contains a repo link AND the link sits at/near the start (same leading-tag allowance as list items). Calibration against prose false-positives ("Contributions welcome, open an issue at [repo]" must stay description) is THE risk — tune on corpus, not intuition | fixture `paragraph-entries.md` (paper style + CJK style); yield: paragraph bucket 14.7k → mostly recovered; spot-check titles in the harness output for prose leaks; `3dbody-papers` 191→~191 |
 | 5 | **Blockquote cards** (cause 6, incl. `java`) | a blockquote whose leading link resolves to a repo → item (reuse step 4's entry test on the card's first paragraph); `<summary>` text opens the section (treat a details-summary html block as a heading-equivalent container) | fixture `details-cards.md` (java-shaped); **`java` corpus case 786→~786** — the webapp eval's named failure; goldens reviewed |
 | 6 | **Link-headings as items** (cause 4) | a link-heading at sectionDepth becomes an item (repo) under a synthesized section instead of an empty section that gets pruned; deeper link-headings keep today's item behavior. Webapp-visible shape change: sections appear that are one-item wrappers — flag in release notes | fixture `link-headings.md`; yield: heading bucket 4.2k → ~0; `useful-javascript-libraries` 478→~478; goldens reviewed |
@@ -207,3 +210,33 @@ so production dead-link drops (~1–2%) are excluded on purpose.
   322 → 302; `termux-hacking` 0 → 352/354; `football_analytics` 45 →
   257/264.** Goldens: 4 fixtures changed (the 2 new + cakephp + quarto, both
   gaining an Overview section with their preamble list), additions only.
+- **2026-08-24 (later): step 3 landed — tables.** `processTableRows`
+  (markdown.ts) walks `table` nodes in processTree; rows with GitHub links
+  become items under the nearest open container (implicit section if none).
+  Corpus calibration before implementing: linked data rows split ~50/50
+  between link-in-first-cell (scala) and link-in-later-column (spec tables
+  like `2d-lidars` — first cell is the model name), 1,246 rows have an empty
+  first cell (title falls back to own-link text, then repo name), and card
+  grids (`A-collection-of-useful-repositories`) pin 2 repos per row with the
+  FIRST row above the delimiter — so multi-repo rows emit one entry per
+  link-bearing cell, and a linked row 0 is content, not labels (pure-label
+  headers carry no links and count zero either way). The section gate's scan
+  now counts table rows (`countLinkedRows`) — monotone with lists, so no
+  previously-passing section can fail. `findFirstGitHubLink` returns the link
+  NODE (URL for identity, text for title fallback). **The shared emission
+  helper is built**: `splitEntryText` (title/description split) +
+  `emitEntryNodes` (item/group/dead-link-lift decision) + `entryTitle`
+  (fallbacks) — steps 4–5 feed the same path; the list-item branch was
+  rewired onto it with zero output change (all 64 pre-existing goldens
+  byte-identical).** Rows emit in source order — a table's row order is part
+  of its meaning (spec/comparison tables), unlike the unranked lists the
+  product sorts. Fixture `table-format.md` written first, confirmed `items:
+  []` pre-fix; also in RAW_FIXTURES (badges render sanely in cells —
+  dead/non-repo rows stay bare). **Measured: yield 86.3% → 94.7% (+17,894 —
+  the biggest single move); table bucket 18,054 → 400 (residual = tables
+  nested in `<details>` html, step 5's material); every other bucket flat or
+  down; 0 registries lost items; hollow stock 292 → 86; bands zero 270→68,
+  perfect 243→324. Named: `scala` 5→265/268,
+  `A-collection-of-useful-repositories` 0→103/104; future-step cases untouched
+  (`java` 0/785, `3dbody-papers` 0/176, `useful-javascript-libraries`
+  321/478).**

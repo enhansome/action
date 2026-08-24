@@ -1,0 +1,211 @@
+{
+  "items": [
+    {
+      "description": null,
+      "items": [
+        {
+          "node_type": "item",
+          "title": "preamble-one",
+          "description": "listed before any section heading",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 4254418163,
+            "language": "Python",
+            "last_commit": "2023-07-22T00:00:00.000Z",
+            "owner": "example",
+            "repo": "preamble-one",
+            "stars": 18164
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "preamble-two",
+          "description": "also listed before any section heading",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 879027549,
+            "language": null,
+            "last_commit": "2022-07-01T00:00:00.000Z",
+            "owner": "example",
+            "repo": "preamble-two",
+            "stars": 27550
+          }
+        }
+      ],
+      "title": "Overview"
+    },
+    {
+      "description": null,
+      "items": [
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "anorm",
+              "description": "The Anorm database library",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2527516899,
+                "language": null,
+                "last_commit": "2021-07-16T00:00:00.000Z",
+                "owner": "example",
+                "repo": "anorm",
+                "stars": 16900
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "doobie",
+              "description": "Functional JDBC layer for Scala.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1471866808,
+                "language": "Shell",
+                "last_commit": "2021-10-15T00:00:00.000Z",
+                "owner": "example",
+                "repo": "doobie",
+                "stars": 16809
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Database"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Lidar One",
+              "description": "0.15-9 m driver-one",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3078572201,
+                "language": "JavaScript",
+                "last_commit": "2023-06-14T00:00:00.000Z",
+                "owner": "example",
+                "repo": "driver-one",
+                "stars": 22202
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Lidar Two",
+              "description": "0.1-5 m driver-two",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2622017667,
+                "language": "Ruby",
+                "last_commit": "2022-03-05T00:00:00.000Z",
+                "owner": "example",
+                "repo": "driver-two",
+                "stars": 17668
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "driver-three",
+              "description": "0.2-8 m driver-three",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2362394201,
+                "language": "JavaScript",
+                "last_commit": "2023-06-14T00:00:00.000Z",
+                "owner": "example",
+                "repo": "driver-three",
+                "stars": 44202
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Sensors"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "card-one",
+              "description": null,
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 671278613,
+                "language": "Python",
+                "last_commit": "2022-04-28T00:00:00.000Z",
+                "owner": "example",
+                "repo": "card-one",
+                "stars": 28614
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "card-two",
+              "description": null,
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 530476479,
+                "language": null,
+                "last_commit": "2022-09-09T00:00:00.000Z",
+                "owner": "example",
+                "repo": "card-two",
+                "stars": 26480
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "card-three",
+              "description": null,
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2463937333,
+                "language": "Python",
+                "last_commit": "2023-02-02T00:00:00.000Z",
+                "owner": "example",
+                "repo": "card-three",
+                "stars": 37334
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "card-four",
+              "description": null,
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 4065872259,
+                "language": null,
+                "last_commit": "2023-04-17T00:00:00.000Z",
+                "owner": "example",
+                "repo": "card-four",
+                "stars": 22260
+              }
+            }
+          ],
+          "description": "Card-grid tables pin two repos per row, and the first row sits above the delimiter — it is content, not column labels.",
+          "node_type": "group",
+          "title": "Cards"
+        }
+      ],
+      "title": "Projects"
+    }
+  ],
+  "metadata": {
+    "last_updated": "2025-01-01T00:00:00.000Z",
+    "original_repository": "example/table-format",
+    "original_repository_id": 4242,
+    "original_repository_sha": "deadbeef",
+    "enhanced_repository": "enhansome/enhansome-table-format",
+    "enhanced_repository_description": "enhanced list",
+    "title": "Awesome Table Format with stars"
+  }
+}
