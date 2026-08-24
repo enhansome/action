@@ -41,6 +41,90 @@
       "items": [
         {
           "node_type": "item",
+          "title": "Crystal AI",
+          "description": "Crystal is a fast, scalable and extensible utility based AI framework for C# and Unity.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 2694282498,
+            "language": "Shell",
+            "last_commit": "2022-08-21T00:00:00.000Z",
+            "owner": "igiagkiozis",
+            "repo": "CrystalAI",
+            "stars": 32499
+          }
+        }
+      ],
+      "title": "AI"
+    },
+    {
+      "description": null,
+      "items": [
+        {
+          "node_type": "item",
+          "title": "Virtual Reality Toolkit",
+          "description": "Virtual Reality framework that allows for powerful interactions, locomotion, and visual effects.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 4152548754,
+            "language": "Rust",
+            "last_commit": "2021-12-08T00:00:00.000Z",
+            "owner": "thestonefox",
+            "repo": "vrtk",
+            "stars": 48755
+          }
+        }
+      ],
+      "title": "Augmented & Virtual Reality"
+    },
+    {
+      "description": null,
+      "items": [
+        {
+          "node_type": "item",
+          "title": "CharacterController2D",
+          "description": "A 2D controller that behaves very similarly to Unity's CharacterController component.",
+          "children": [],
+          "repo_info": {
+            "archived": true,
+            "id": 3775104558,
+            "language": "Shell",
+            "last_commit": "2022-06-22T00:00:00.000Z",
+            "owner": "prime31",
+            "repo": "CharacterController2D",
+            "stars": 4559
+          }
+        }
+      ],
+      "title": "Character Controllers"
+    },
+    {
+      "description": null,
+      "items": [
+        {
+          "node_type": "item",
+          "title": "Fungus",
+          "description": "An easy to use Unity 3D library for creating illustrated Interactive Fiction games.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 1570753349,
+            "language": null,
+            "last_commit": "2023-01-17T00:00:00.000Z",
+            "owner": "snozbot",
+            "repo": "fungus",
+            "stars": 3350
+          }
+        }
+      ],
+      "title": "Frameworks"
+    },
+    {
+      "description": null,
+      "items": [
+        {
+          "node_type": "item",
           "title": "TouchKit",
           "description": "Makes it easy to recognize gestures and other touch input.",
           "children": [],
@@ -107,6 +191,48 @@
       "items": [
         {
           "node_type": "item",
+          "title": "Nakama",
+          "description": "Build social and realtime games with an open-source distributed server.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 231741317,
+            "language": "Ruby",
+            "last_commit": "2023-02-18T00:00:00.000Z",
+            "owner": "heroiclabs",
+            "repo": "nakama",
+            "stars": 41318
+          }
+        }
+      ],
+      "title": "Networking"
+    },
+    {
+      "description": null,
+      "items": [
+        {
+          "node_type": "item",
+          "title": "GoKit",
+          "description": "An open source, lightweight tween library aimed at making tweening objects dead simple.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 2437897357,
+            "language": "Ruby",
+            "last_commit": "2023-01-09T00:00:00.000Z",
+            "owner": "prime31",
+            "repo": "GoKit",
+            "stars": 47358
+          }
+        }
+      ],
+      "title": "Tweening"
+    },
+    {
+      "description": null,
+      "items": [
+        {
+          "node_type": "item",
           "title": "UniRx",
           "description": "UniRx (Reactive Extensions for Unity) is a reimplementation of the .NET Reactive Extensions. Rx cures the \"asynchronous blues\" without async/await.",
           "children": [],
@@ -167,6 +293,83 @@
         }
       ],
       "title": "Utilities"
+    },
+    {
+      "description": null,
+      "items": [
+        {
+          "node_type": "item",
+          "title": "Vimeo Unity SDK",
+          "description": "Easily stream your Vimeo videos into Unity or record and publish out to Vimeo.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 960103461,
+            "language": "JavaScript",
+            "last_commit": "2022-09-27T00:00:00.000Z",
+            "owner": "vimeo",
+            "repo": "vimeo-unity-sdk",
+            "stars": 3462
+          }
+        }
+      ],
+      "title": "Video"
+    },
+    {
+      "description": null,
+      "items": [
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Nodulus",
+              "description": "A complete puzzle game with a clever twist. Play it online.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2053069256,
+                "language": "Java",
+                "last_commit": "2023-04-20T00:00:00.000Z",
+                "owner": "Hyperparticle",
+                "repo": "nodulus",
+                "stars": 19257
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Games"
+        }
+      ],
+      "title": "Projects"
+    },
+    {
+      "description": null,
+      "items": [
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Unity Labs' Super Science",
+              "description": "Gems of Unity Labs for user education.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3734025455,
+                "language": "C++",
+                "last_commit": "2022-10-03T00:00:00.000Z",
+                "owner": "Unity-Technologies",
+                "repo": "SuperScience",
+                "stars": 25456
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Tips and Tricks"
+        }
+      ],
+      "title": "Resources"
     }
   ],
   "metadata": {

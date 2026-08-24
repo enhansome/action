@@ -6,16 +6,17 @@ today captures only 77.8% of the distinct GitHub repos linked across the
 `items: []` and still report success). Fix all 8 diagnosed causes, measured at
 every step — no unverified "should work now" landings.
 
-**Current state:** steps 0–5 landed 2026-08-24 (yield harness, minLinks per
+**Current state:** steps 0–6 landed 2026-08-24 (yield harness, minLinks per
 section, implicit sections, tables, paragraph entries, blockquote cards +
-details sections) — measured at every step on the fresh corpus (below). Goldens
-regenerated and reviewed per step; items only ever ADDED.
+details sections, link-headings as items + one-entry-section runs) — measured
+at every step on the fresh corpus (below). Goldens regenerated and reviewed
+per step; items only ever ADDED.
 
-**Next step:** step 6 (link-headings as items — `useful-javascript-libraries`
-321/478 — plus the plain-heading-per-entry gated family found during step 4:
-FBI-tools 131, FLOSS 89, LLM-Uncertainty 89), then 7–8 in order. Step 6 leans
-on the implicit-section notion (step 2). This file is the only thing a
-resuming session needs to read.
+**Next step:** step 7 (own-link across all own paragraphs —
+`Awesome-Parameter-Efficient-Transfer-Learning` 64 items → 0), then 8
+(normalize non-link URLs: bare scheme-less github.com text + `<a href>`;
+iwb, vlm-architectures, windows-kernel-security-development). This file is
+the only thing a resuming session needs to read.
 
 ## Baseline (2026-08-24, fleet = 2,217 fetched READMEs)
 
@@ -96,7 +97,7 @@ worth it even where a bucket is small today.
 | 3 | **Tables** (cause 1) — ✅ done 2026-08-24 | walk `table` nodes: each row whose cells contain a GitHub repo link becomes an item under the nearest open container (implicit section from step 2 if none); title = first cell's leading text + link text, description = remaining cell text — via the shared emission helper | fixture `table-format.md` (scala-shaped); yield: table bucket 43k → ~0 (biggest single move); `scala` 268→~268 offline; goldens reviewed; raw fixture rendered sanely with badges |
 | 4 | **Paragraph entries** (cause 2) — ✅ done 2026-08-24 | a top-level paragraph that behaves like an entry becomes an item: contains a repo link AND the link sits at/near the start (same leading-tag allowance as list items). Calibration against prose false-positives ("Contributions welcome, open an issue at [repo]" must stay description) is THE risk — tune on corpus, not intuition | fixture `paragraph-entries.md` (paper style + CJK style); yield: paragraph bucket 14.7k → mostly recovered; spot-check titles in the harness output for prose leaks; `3dbody-papers` 191→~191 |
 | 5 | **Blockquote cards** (cause 6, incl. `java`) — ✅ done 2026-08-24 | a blockquote whose leading link resolves to a repo → item (reuse step 4's entry test on the card's first paragraph); `<summary>` text opens the section (treat a details-summary html block as a heading-equivalent container) | fixture `details-cards.md` (java-shaped); **`java` corpus case 786→~786** — the webapp eval's named failure; goldens reviewed |
-| 6 | **Link-headings as items** (cause 4) | a link-heading at sectionDepth becomes an item (repo) under a synthesized section instead of an empty section that gets pruned; deeper link-headings keep today's item behavior. Webapp-visible shape change: sections appear that are one-item wrappers — flag in release notes | fixture `link-headings.md`; yield: heading bucket 4.2k → ~0; `useful-javascript-libraries` 478→~478; goldens reviewed |
+| 6 | **Link-headings as items** (cause 4) — ✅ done 2026-08-24 | a link-heading at sectionDepth becomes an item (repo) under a synthesized section instead of an empty section that gets pruned; deeper link-headings keep today's item behavior. Webapp-visible shape change: sections appear that are one-item wrappers — flag in release notes | fixture `link-headings.md`; yield: heading bucket 4.2k → ~0; `useful-javascript-libraries` 478→~478; goldens reviewed |
 | 7 | **Own-link across all own paragraphs** (cause 7) | `findOwnGitHubLink` scans every OWN paragraph of the item (still never nested lists) — title stays the first paragraph's text | fixture `paper-list.md`; `Awesome-Parameter-Efficient-Transfer-Learning` 64 items recover; existing paper-ish fixtures unchanged |
 | 8 | **Normalize non-link URLs** (cause 8) | pre-parse pass (same stage family as `applyTextReplacements`/`fixRelativeLinks`): autolink scheme-less `github.com/owner/repo` text into proper links; extract `<a href>` GitHub anchors from raw html nodes. Fixes the INPUT, not the parser | fixture `bare-links.md`; the 10 A0 corpus registries go from 0 links seen to their true counts; no yield regression elsewhere (idempotent on already-linked docs) |
 
@@ -331,3 +332,79 @@ so production dead-link drops (~1–2%) are excluded on purpose.
   family, same as FBI-tools); the blockquote bucket's 163 is dominated by
   Awesome-person-re-identification 78 (one quote per `######` heading — the
   step-6 heading-per-entry family) plus singles.
+- **2026-08-24 (later): step 6 landed — link-headings as items, one-entry
+  section runs, quote-heading cards.** Corpus-probed before implementing
+  (link-headings at sectionDepth: 30 registries / 1,125 repos, crypto 995 of
+  them; one-entry-section runs: 366 / 1,479, faces list 843 · paragraph 461 ·
+  table 122 · quote 53; quote-cards whose first child is a HEADING:
+  person-re-identification only — its conference blocks are ONE quote
+  holding many `######` paper-heading lines, so testing only the quote's
+  first child had undercounted it 5×). Four mechanisms, all through the
+  existing emission paths:
+  (1) **Entry headings** — a heading promoted to section level (at
+  sectionDepth, or arriving with an empty stack: useful-javascript-libraries'
+  pre-H1 prefix) whose first GitHub link resolved opens an ITEM, not a
+  section; a synthesized "Overview" section wraps the run (closeContainers'
+  new stopAtSynthesized keeps sibling entry headings' pops from closing it;
+  the gate scan counts entry headings as content). `entryHeadingInfo`
+  replaces `soleLiveHeadingLink` everywhere: identity = first GitHub link
+  through emphasis wrappers — go-recipes' `### [⏫](#contents) … with
+  [tool](gh)`, hand-pose's `[PDF](paper) [Code](gh)`, llm-services'
+  `**[Name](gh)**` all qualify now.
+  (2) **One-entry-section runs** — a section at section level failing
+  minLinks alone is re-gated against its run: the maximal sequence of
+  adjacent section spans each holding ≤ 1 linked entry (FBI-tools, FLOSS,
+  mysql/`## Proxy` — one real repo among non-GitHub links). Boundaries
+  follow the WALK's own promotion rule (empty-stack OR sectionDepth —
+  FLOSS's lone late `# Contributing` H1 pins sectionDepth at 1 while every
+  `## game` heading alternately closes its predecessor and is promoted; a
+  first draft keyed on `depth === sectionDepth` recovered 0 of FLOSS), and
+  each boundary's span closes at its own depth. Zero-entry headings join
+  runs (FBI's name-heading/description-heading pairs) without contributing;
+  the noise floor survives — a lone one-entry section between multi-entry
+  sections is a run of one and stays dropped (encoded in the fixture).
+  (3) **Quote-heading cards** — a blockquote's entry faces are its first
+  paragraph AND each heading child (`paragraphEntryLink` widened to
+  `Heading | Paragraph`).
+  (4) **Re-mention suppression** — a standalone entry restating the repo of
+  an open item container (crypto's generated cards repeat the repo URL in a
+  line under the link-heading) is that item's description, not a child item;
+  identity via repoInfoMap object identity (the per-repo memo makes aliased
+  URLs the same object).
+  Two regressions the nets caught, both fixed before landing: the goldens
+  rejected image-only badge identities at section level (streaming/vue's
+  `## Title [![Awesome](badge)](sindresorhus/awesome)` would have become an
+  item) — the must-carry-text guard now applies ONLY to the promotion flavor;
+  the harness then caught the same guard killing the deeper sole-link reading
+  (mac's `### Markdown Tools [![…](icon)](repo#tools)`, machine-learning-cn's
+  `### [](repo#anchor)类别` — deeper headings whose only link is textless
+  lost their items; the guard is promotion-only, deeper keeps sole-link
+  semantics; mac 641→641, machine-learning-cn 199→200). En route, the
+  list-item branch was wired onto the shared `entryTitle` fallbacks (an
+  inline-code link label carries no text nodes — 17 empty titles across
+  billing/falsehood/iam filled with the repo name; docker's one remaining
+  empty title is a GROUP, which correctly has no repo fallback).
+  **Measured: yield 96.77% → 97.71% (+1,985 distinct repos; 206,843/211,685);
+  0 of 2,293 registries lost items, 440 gained; buckets heading 1,053 → 42,
+  gated 1,645 → 951, blockquote 163 → 95, paragraph 2,113 → 1,945, table
+  239 → 200, list flat; bands zero 25→11, low 33→25, mid 410→301, perfect
+  346→404; hollow stock 25 → 11. Named: `crypto` 0→995/999,
+  `useful-javascript-libraries` 321→476/478, `go-recipes` 0→144/153,
+  `llm-services` 0→127/127 (perfect), `hand-pose-estimation` 11→129/133,
+  FLOSS-Games-on-Steam 0→78/89, `git-addons` 0→50/51,
+  Awesome-person-re-identification 14→93/103, FBI-tools 0→57/131. Goldens:
+  16 changed, all additive (1,157 insertions; the 17 deletions are the title
+  fills); new `link-headings` fixture pins every mechanism and both
+  regression guards (promotion badge heading stays a section; deeper
+  textless-badge and empty-label-anchor headings stay items). Webapp-visible
+  shape changes to flag at release: synthesized "Overview" wrapper sections,
+  and one-item sections that previously parsed to nothing now appear.**
+  Residual decomposition for whoever continues: heading bucket 42 (singles);
+  gated 951 and paragraph 1,945 are now dominated by entries that never
+  qualify — FBI-tools' remaining 74 (its description-heading sections hold
+  prose-adjacent links the entry test rejects by design), package-manager
+  350 / scalability-toolbox 188 / Awesome-Out-Of-Distribution-Detection 170
+  (paragraph families the tag-cluster rules reject — NOT yet diagnosed, worth
+  a probe before step 7), iwb 88 + vlm-architectures 94 (`<a href>` html —
+  step 8), jetpack-compose 50 gated (bare-URL list shape that passes the
+  gate's count but emits fewer than expected — unexplained, probe next).

@@ -370,6 +370,48 @@
       "title": "Binlog-Replication"
     },
     {
+      "description": "Scripts integrated into chat rooms",
+      "items": [
+        {
+          "node_type": "item",
+          "title": "Hubot MySQL ChatOps",
+          "description": null,
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 3824115158,
+            "language": "Shell",
+            "last_commit": "2023-07-27T00:00:00.000Z",
+            "owner": "samlambert",
+            "repo": "hubot-mysql-chatops",
+            "stars": 15159
+          }
+        }
+      ],
+      "title": "ChatOps"
+    },
+    {
+      "description": "MySQL sample configuration and advisors",
+      "items": [
+        {
+          "node_type": "item",
+          "title": "mysql-compatibility-config",
+          "description": "make MySQL configuration behave more like newer (or older) releases of MySQL.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 3564192108,
+            "language": "Shell",
+            "last_commit": "2023-09-15T00:00:00.000Z",
+            "owner": "morgo",
+            "repo": "mysql-compatibility-config",
+            "stars": 42109
+          }
+        }
+      ],
+      "title": "Configuration"
+    },
+    {
       "description": "MySQL connectors for various programming languages",
       "items": [
         {
@@ -1103,6 +1145,48 @@
         }
       ],
       "title": "MCP"
+    },
+    {
+      "description": "Proxies to MySQL",
+      "items": [
+        {
+          "node_type": "item",
+          "title": "ProxySQL",
+          "description": "High performance proxy for MySQL.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 598419799,
+            "language": null,
+            "last_commit": "2021-10-24T00:00:00.000Z",
+            "owner": "sysown",
+            "repo": "proxysql",
+            "stars": 19800
+          }
+        }
+      ],
+      "title": "Proxy"
+    },
+    {
+      "description": "Replication related software",
+      "items": [
+        {
+          "node_type": "item",
+          "title": "data-diff",
+          "description": "(archived) - Command-line tool and Python library to efficiently diff rows across two different databases.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 1947229517,
+            "language": "Ruby",
+            "last_commit": "2022-08-02T00:00:00.000Z",
+            "owner": "datafold",
+            "repo": "data-diff",
+            "stars": 29518
+          }
+        }
+      ],
+      "title": "Replication"
     },
     {
       "description": "Add-on schemas",

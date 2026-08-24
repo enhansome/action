@@ -47,6 +47,7 @@ const RAW_FIXTURES = new Set([
   'complex',
   'details-cards',
   'guides',
+  'link-headings',
   'paragraph-entries',
   'pinned-gists',
   'table-format',

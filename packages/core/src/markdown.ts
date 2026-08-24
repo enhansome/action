@@ -391,11 +391,11 @@ export function findFirstGitHubLink(node: Parent): Link | undefined {
 // A GitHub link that is secondary within the paragraph (e.g.
 // `[name](marketplace) … [On GitHub](github)`) is still the item's own link, so
 // `findFirstGitHubLink` over the paragraph finds it correctly.
-function findOwnGitHubLink(itemNode: ListItem): string | undefined {
+function findOwnGitHubLink(itemNode: ListItem): Link | undefined {
   const paragraph = itemNode.children.find(
     (child): child is Paragraph => child.type === 'paragraph',
   );
-  return paragraph ? findFirstGitHubLink(paragraph)?.url : undefined;
+  return paragraph ? findFirstGitHubLink(paragraph) : undefined;
 }
 
 function fixRelativeLinks(tree: Root, relativeLinkPrefix: string) {
@@ -589,7 +589,8 @@ function processListRecursively(
   }[] = [];
 
   for (const itemNode of listNode.children) {
-    const githubUrl = findOwnGitHubLink(itemNode);
+    const ownLink = findOwnGitHubLink(itemNode);
+    const githubUrl = ownLink?.url;
     const repoInfo = githubUrl ? (repoInfoMap.get(githubUrl) ?? null) : null;
 
     // Nested content is the item's children: deeper lists as before, plus
@@ -615,6 +616,9 @@ function processListRecursively(
     if (!entryText.title) {
       entryText.title = listItemSummaryTitle(itemNode);
     }
+    // The shared title fallbacks (an inline-code link label carries no text
+    // nodes, so the split alone can leave an empty title).
+    entryText.title = entryTitle(entryText.title, ownLink, repoInfo);
     const emitted = emitEntryNodes(
       githubUrl,
       repoInfo,
@@ -768,12 +772,12 @@ interface InlineScan {
   trailing: string;
 }
 
-// Flattened view of a paragraph's inline content for the entry test: the
-// first link, the free text before it, and the free text after the link
-// cluster (emphasis recursed into; link labels, images, and inline html
+// Flattened view of a paragraph's (or heading's) inline content for the entry
+// test: the first link, the free text before it, and the free text after the
+// link cluster (emphasis recursed into; link labels, images, and inline html
 // carry no positional weight — a bare [Code] tag's label is not trailing
 // prose).
-function scanInlines(paragraph: Paragraph): InlineScan {
+function scanInlines(paragraph: Heading | Paragraph): InlineScan {
   let firstLink: Link | undefined;
   let label = '';
   let trailing = '';
@@ -812,9 +816,10 @@ function tagClusterEndsParagraph(trailing: string): boolean {
   return DATE_TRAILING.test(trailing.replace(/^[\[\]()*\s:;,_-]+/, ''));
 }
 
-// The GitHub link that makes a top-level paragraph an entry, if it is one
-// (see the family comment above). Null for plain prose.
-function paragraphEntryLink(paragraph: Paragraph): Link | undefined {
+// The GitHub link that makes a top-level paragraph — or a heading inside a
+// blockquote — an entry, if it is one (see the family comment above). Null
+// for plain prose.
+function paragraphEntryLink(paragraph: Heading | Paragraph): Link | undefined {
   const githubLink = findFirstGitHubLink(paragraph);
   if (!githubLink) {
     return undefined;
@@ -841,16 +846,40 @@ function paragraphEntryLink(paragraph: Paragraph): Link | undefined {
   return undefined;
 }
 
-// A blockquote card is the blockquote face of an entry paragraph — java's
-// generated card layout (`> **[Name](repo)** <kbd>★ 3.1k</kbd> …<br>One-line
-// description.`), Spain's `> Lista dedicada: **[list](repo)**`. The same
-// entry test runs on the card's first paragraph, so a quote mentioning a repo
-// mid-prose stays description exactly as the paragraph face does.
-function blockquoteCardLink(blockquote: Blockquote): Link | undefined {
-  const first = blockquote.children.find(
-    (child): child is Paragraph => child.type === 'paragraph',
-  );
-  return first ? paragraphEntryLink(first) : undefined;
+// A blockquote card is the blockquote face of an entry — java's generated
+// card layout (`> **[Name](repo)** <kbd>★ 3.1k</kbd> …<br>One-line
+// description.`), Spain's `> Lista dedicada: **[list](repo)**`, and
+// person-re-identification's conference blocks: ONE quote holding many
+// `######` paper headings, each an entry line. The same entry test runs on
+// the card's first paragraph and on every heading child, so a quote
+// mentioning a repo mid-prose stays description exactly as the paragraph
+// face does.
+interface EntryFace {
+  inlines: Node[];
+  link: Link;
+}
+
+function blockquoteEntries(blockquote: Blockquote): EntryFace[] {
+  const faces: EntryFace[] = [];
+  let sawParagraph = false;
+  for (const child of blockquote.children) {
+    if (child.type === 'paragraph') {
+      if (sawParagraph) {
+        continue;
+      }
+      sawParagraph = true;
+      const link = paragraphEntryLink(child);
+      if (link) {
+        faces.push({ inlines: child.children, link });
+      }
+    } else if (child.type === 'heading') {
+      const link = paragraphEntryLink(child);
+      if (link) {
+        faces.push({ inlines: child.children, link });
+      }
+    }
+  }
+  return faces;
 }
 
 // The shared entry emission for the non-list sources (paragraph entries,
@@ -1068,7 +1097,13 @@ function processTree(
   }
 
   const sectionDepth = findSectionDepth(tree, titleSlotIndex);
-  const gateForSection = sectionGatePasses(tree, titleSlotIndex, sortOptions);
+  const gateForSection = sectionGatePasses(
+    tree,
+    titleSlotIndex,
+    sectionDepth,
+    repoInfoMap,
+    sortOptions,
+  );
 
   // Sections finalize out of document order when a details-section closes
   // inside its parent section's span, so each carries the document index it
@@ -1096,6 +1131,16 @@ function processTree(
     }
   };
 
+  // A standalone entry restating the repo of an open item container (crypto's
+  // generated cards repeat the repo URL in a line under the link-heading) is
+  // that item's description, not a second item for the same repo. The
+  // repoInfoMap resolves both URLs through one per-repo memo, so identity
+  // comparison holds even for aliased spellings.
+  const rementionsOpenItem = (link: Link): boolean => {
+    const repoInfo = repoInfoMap.get(link.url);
+    return !!repoInfo && stack.some(container => container.repoInfo === repoInfo);
+  };
+
   for (let i = 0; i < tree.children.length; i++) {
     const node = tree.children[i];
 
@@ -1106,16 +1151,24 @@ function processTree(
       if (i === titleSlotIndex || !isStructuralHeading(node)) {
         continue;
       }
-      closeContainers(stack, node.depth, sectionRecords);
-      openContainer(stack, node, i, sectionDepth, repoInfoMap);
+      const headingEntry = entryHeadingInfo(node, repoInfoMap);
+      // The promotion flavor of the entry test: a textless identity link is
+      // a title-line badge, not an entry (see entryHeadingInfo).
+      const promotedEntry =
+        headingEntry && getInlineText(headingEntry.link.children)
+          ? headingEntry
+          : null;
+      closeContainers(stack, node.depth, sectionRecords, !!promotedEntry);
+      openContainer(stack, node, i, sectionDepth, promotedEntry, headingEntry);
     } else if (node.type === 'paragraph') {
       const text = getNodeText(node);
       // Boilerplate "back to top" lines are neither entries nor description.
       const ownLink =
         BACK_TO_TOP.test(text) ? undefined : paragraphEntryLink(node);
-      // An entry paragraph behaves like a one-item list; a failed gate or
-      // dead target leaves plain description.
-      if (ownLink) {
+      // An entry paragraph behaves like a one-item list; a failed gate, a
+      // dead target, or a re-mention of the enclosing item leaves plain
+      // description.
+      if (ownLink && !rementionsOpenItem(ownLink)) {
         emitStandaloneEntry(ownLink, node.children, i);
       } else {
         const container = stack[stack.length - 1];
@@ -1128,15 +1181,16 @@ function processTree(
       }
     } else if (node.type === 'blockquote') {
       const text = getNodeText(node);
-      // A card blockquote is the blockquote face of an entry paragraph; any
-      // other quote is container prose.
-      const ownLink =
-        BACK_TO_TOP.test(text) ? undefined : blockquoteCardLink(node);
-      if (ownLink) {
-        const first = node.children.find(
-          (child): child is Paragraph => child.type === 'paragraph',
-        );
-        emitStandaloneEntry(ownLink, first?.children ?? [], i);
+      // A card blockquote is the blockquote face of entries — one per
+      // qualifying paragraph/heading child; any other quote is container
+      // prose.
+      const faces = BACK_TO_TOP.test(text)
+        ? []
+        : blockquoteEntries(node).filter(face => !rementionsOpenItem(face.link));
+      if (faces.length > 0) {
+        for (const face of faces) {
+          emitStandaloneEntry(face.link, face.inlines, i);
+        }
       } else {
         const container = stack[stack.length - 1];
         // Avoid adding boilerplate "back to top" links to descriptions.
@@ -1230,6 +1284,9 @@ interface ContainerBuilder {
   // where the section's subtree starts.
   headingIndex: number;
   kind: 'group' | 'item' | 'section';
+  // True when this section was opened to wrap a run of promoted entry
+  // headings (openSynthesizedSection) rather than by a heading of its own.
+  openedBySynthesis?: boolean;
   // True when this section was opened by a <details><summary> block rather
   // than a heading — its closing </details> ends it.
   openedByDetails?: boolean;
@@ -1257,21 +1314,37 @@ function findSectionDepth(tree: Root, titleSlotIndex: number): number {
   return depth;
 }
 
-// A heading whose only link is a live GitHub link represents a resource, not a
-// container — the link-heading pattern (`#### [Repo](github…)`). Badge images
-// wrapped in links or multiple links disqualify (more than one link means the
-// heading is not "the" resource), as does a dead target.
-function soleLiveHeadingLink(
+// A heading whose first GitHub link (found through emphasis wrappers)
+// resolved is an ENTRY heading: the link-heading pattern of generated indexes
+// (`### [repo](github)`, crypto's layout), go-recipes'
+// `### [⏫](#contents) … with [tool](github)`, hand-pose-estimation's
+// `[PDF](paper) [Code](github)` paper lines, and llm-services'
+// `**[Name](github)**` cards. Navigation anchors and paper links are skipped
+// by the GitHub filter. The identity is the first GitHub link —
+// paragraph-entry semantics — never a group borrowing a child's identity.
+// Callers that promote the heading to an ENTRY ITEM (openContainer's
+// promotion branch) additionally require the identity link to carry text: a
+// generated index always labels its repo, so a textless identity there is a
+// title-line badge (streaming's `## Title [![Awesome](badge)](repo)`). A
+// DEEPER heading's only link may legitimately be textless — mac's
+// `### Markdown Tools [![…](icon)](repo)`, machine-learning-cn's
+// `### [](repo#anchor)类别` — so the deeper container branch keeps the
+// sole-link reading.
+interface EntryHeading {
+  link: Link;
+  repoInfo: RepoInfoDetails;
+}
+
+function entryHeadingInfo(
   heading: Heading,
   repoInfoMap: Map<string, RepoInfoDetails>,
-): null | RepoInfoDetails {
-  const links = heading.children.filter(
-    (child): child is Link => child.type === 'link',
-  );
-  if (links.length !== 1) {
+): EntryHeading | null {
+  const link = findFirstGitHubLink(heading);
+  if (!link) {
     return null;
   }
-  return repoInfoMap.get(links[0].url) ?? null;
+  const repoInfo = repoInfoMap.get(link.url);
+  return repoInfo ? { link, repoInfo } : null;
 }
 
 function openContainer(
@@ -1279,15 +1352,31 @@ function openContainer(
   heading: Heading,
   headingIndex: number,
   sectionDepth: number,
-  repoInfoMap: Map<string, RepoInfoDetails>,
+  promotedEntry: EntryHeading | null,
+  headingEntry: EntryHeading | null,
 ): void {
   const title = getNodeText(heading);
   // Sections sit at the section level — and any heading met with an empty
   // stack is promoted: a deeper heading before the first section (orphan
-  // subheading) still owns its subtree, and a link-heading at section level
-  // becomes a section rather than a top-level item, which the contract has no
-  // place for.
+  // subheading) still owns its subtree. A promoted ENTRY heading (see
+  // entryHeadingInfo) is an item, not a section: the JSON contract has no
+  // top-level items, so a synthesized section wraps the whole run of them.
   if (stack.length === 0 || heading.depth === sectionDepth) {
+    if (promotedEntry) {
+      if (stack.length === 0) {
+        openSynthesizedSection(stack, headingIndex, sectionDepth);
+      }
+      stack.push({
+        children: [],
+        description: '',
+        headingDepth: heading.depth,
+        headingIndex,
+        kind: 'item',
+        repoInfo: promotedEntry.repoInfo,
+        title,
+      });
+      return;
+    }
     stack.push({
       children: [],
       description: '',
@@ -1298,14 +1387,15 @@ function openContainer(
     });
     return;
   }
-  const repoInfo = soleLiveHeadingLink(heading, repoInfoMap);
+  // A deeper entry heading opens an item container the same way a promoted
+  // one does — children and prose below it collect as its content.
   stack.push({
     children: [],
     description: '',
     headingDepth: heading.depth,
     headingIndex,
-    kind: repoInfo ? 'item' : 'group',
-    repoInfo: repoInfo ?? undefined,
+    kind: headingEntry ? 'item' : 'group',
+    repoInfo: headingEntry?.repoInfo,
     title,
   });
 }
@@ -1336,35 +1426,81 @@ function openImplicitSection(
   });
 }
 
+// The section synthesized around a run of promoted entry headings
+// (openContainer's entry branch). It behaves like the implicit section — same
+// "Overview" title, gated by its subtree — but sits at sectionDepth, so the
+// first plain heading at that level ends the run, and closeContainers'
+// stopAtSynthesized keeps the entry headings' own pops from closing it:
+// consecutive entry headings are siblings INSIDE it.
+function openSynthesizedSection(
+  stack: ContainerBuilder[],
+  firstEntryIndex: number,
+  depth: number,
+): void {
+  stack.push({
+    children: [],
+    description: '',
+    headingDepth: depth,
+    // One before the first entry heading so the gate's scan (from
+    // headingIndex + 1) counts that heading itself.
+    headingIndex: firstEntryIndex - 1,
+    kind: 'section',
+    openedBySynthesis: true,
+    title: 'Overview',
+  });
+}
+
 // The minLinks gate scoped to a SECTION: every entry source in the section
-// counts together (list items, table rows, entry paragraphs) — best-of-style
-// documents put each entry in its own single-item list, which the per-list
-// gate dropped one by one. The section's
+// counts together (list items, table rows, entry paragraphs, entry headings,
+// blockquote faces) — best-of-style documents put each entry in its own
+// single-item list, which the per-list gate dropped one by one. The section's
 // subtree runs from its heading to the first structural heading at or above
-// its depth (the same heading that would close it in closeContainers); the
-// gate fires only when the whole subtree holds fewer than minLinks
-// link-bearing entries, so a genuinely sparse section ("## My Blog" with one
-// link) is still noise-dropped.
+// its depth (the same heading that would close it in closeContainers).
+//
+// Heading-per-entry documents (FBI-tools' `### name` + link paragraph, FLOSS's
+// `## game` + link cluster) put exactly ONE entry in each section, so every
+// section fails the gate alone and the whole document drops. They are not
+// sparse sections but flat entry lists delimited by headings: a section at
+// sectionDepth that fails alone is re-gated against its RUN — the maximal
+// sequence of adjacent section spans each holding at most one entry. The
+// noise floor survives: a single one-entry section between multi-entry
+// sections is a run of one and stays dropped.
 function sectionGatePasses(
   tree: Root,
   titleSlotIndex: number,
+  sectionDepth: number,
+  repoInfoMap: Map<string, RepoInfoDetails>,
   sortOptions: SortOptions,
 ): (section: ContainerBuilder) => boolean {
   const cache = new Map<number, boolean>();
-  return section => {
-    const cached = cache.get(section.headingIndex);
-    if (cached !== undefined) {
-      return cached;
-    }
+
+  // Linked entries from scanStart to the first structural heading that would
+  // close a container of closeDepth. An entry heading counts as an entry
+  // wherever it sits inside the span — it opens an item, not a container —
+  // except at the scanned section's own depth, where the walk closes that
+  // section when the entry run starts (a same-depth entry heading is content
+  // only for the synthesized wrapper, hence sameDepthEntriesAreContent).
+  const scanCount = (
+    scanStart: number,
+    closeDepth: number,
+    sameDepthEntriesAreContent: boolean,
+  ): number => {
     let linkedEntries = 0;
-    for (let j = section.headingIndex + 1; j < tree.children.length; j++) {
+    for (let j = scanStart; j < tree.children.length; j++) {
       const node = tree.children[j];
       if (node.type === 'heading') {
-        if (
-          j !== titleSlotIndex &&
-          isStructuralHeading(node) &&
-          node.depth <= section.headingDepth
-        ) {
+        if (j === titleSlotIndex || !isStructuralHeading(node)) {
+          continue;
+        }
+        if (entryHeadingInfo(node, repoInfoMap)) {
+          if (sameDepthEntriesAreContent || node.depth > closeDepth) {
+            linkedEntries += 1;
+          } else {
+            break;
+          }
+          continue;
+        }
+        if (node.depth <= closeDepth) {
           break;
         }
         continue;
@@ -1373,16 +1509,105 @@ function sectionGatePasses(
         linkedEntries += countLinkedItems(node);
       } else if (node.type === 'table') {
         linkedEntries += countLinkedRows(node);
-      } else if (
-        node.type === 'paragraph' &&
-        paragraphEntryLink(node)
-      ) {
+      } else if (node.type === 'paragraph' && paragraphEntryLink(node)) {
         linkedEntries += 1;
-      } else if (node.type === 'blockquote' && blockquoteCardLink(node)) {
-        linkedEntries += 1;
+      } else if (node.type === 'blockquote') {
+        linkedEntries += blockquoteEntries(node).length;
       }
     }
-    const passes = linkedEntries >= sortOptions.minLinks;
+    return linkedEntries;
+  };
+
+  // A boundary's entry count for the run walk: the heading itself when it is
+  // an entry heading, plus its span's entries (the span closes at the first
+  // heading at or above the boundary's OWN depth, exactly where the walk
+  // closes that section).
+  const spanCountCache = new Map<number, number>();
+  const spanCount = (boundaryIndex: number): number => {
+    const cached = spanCountCache.get(boundaryIndex);
+    if (cached !== undefined) {
+      return cached;
+    }
+    const heading = tree.children[boundaryIndex] as Heading;
+    const count =
+      (entryHeadingInfo(heading, repoInfoMap) ? 1 : 0) +
+      scanCount(boundaryIndex + 1, heading.depth, false);
+    spanCountCache.set(boundaryIndex, count);
+    return count;
+  };
+
+  // The section boundaries in document order, by the walk's own promotion
+  // rule (openContainer): a heading opens a section when it sits at
+  // sectionDepth or arrives with nothing open — FLOSS-style documents have a
+  // lone late H1 that pins sectionDepth at 1 while every `## game` heading
+  // alternately closes its predecessor (stack empties) and is promoted. The
+  // depth simulation mirrors closeContainers/openContainer exactly.
+  let boundaries: number[] | undefined;
+  const sectionBoundaries = (): number[] => {
+    if (!boundaries) {
+      const indices: number[] = [];
+      const openDepths: number[] = [];
+      tree.children.forEach((node, i) => {
+        if (node.type !== 'heading' || i === titleSlotIndex) {
+          return;
+        }
+        if (!isStructuralHeading(node)) {
+          return;
+        }
+        while (
+          openDepths.length > 0 &&
+          openDepths[openDepths.length - 1] >= node.depth
+        ) {
+          openDepths.pop();
+        }
+        if (openDepths.length === 0 || node.depth === sectionDepth) {
+          indices.push(i);
+        }
+        openDepths.push(node.depth);
+      });
+      boundaries = indices;
+    }
+    return boundaries;
+  };
+
+  const runTotal = (section: ContainerBuilder): number => {
+    const list = sectionBoundaries();
+    const k = list.indexOf(section.headingIndex);
+    if (k === -1) {
+      return spanCount(section.headingIndex);
+    }
+    let total = spanCount(section.headingIndex);
+    for (const direction of [-1, 1]) {
+      for (
+        let m = k + direction;
+        m >= 0 && m < list.length;
+        m += direction
+      ) {
+        const count = spanCount(list[m]);
+        if (count > 1) {
+          break;
+        }
+        total += count;
+      }
+    }
+    return total;
+  };
+
+  return section => {
+    const cached = cache.get(section.headingIndex);
+    if (cached !== undefined) {
+      return cached;
+    }
+    const own = scanCount(
+      section.headingIndex + 1,
+      section.headingDepth,
+      !!section.openedBySynthesis,
+    );
+    const passes =
+      own >= sortOptions.minLinks ||
+      (!section.openedBySynthesis &&
+        sectionBoundaries().includes(section.headingIndex) &&
+        runTotal(section) >= sortOptions.minLinks);
     cache.set(section.headingIndex, passes);
     return passes;
   };
@@ -1439,16 +1664,22 @@ function finalizeContainer(
 // Finalize every container a heading of `depth` closes (same-or-shallower),
 // bottom-up so each finalized node lands in its parent. The stack bottom is
 // always a section (openContainer's promotion guarantees it), so a finalized
-// group/item always has a parent to land in.
+// group/item always has a parent to land in. stopAtSynthesized: the pop an
+// entry heading triggers must stop at the synthesized section wrapping its
+// run — the next entry heading of the run lands back inside it.
 function closeContainers(
   stack: ContainerBuilder[],
   depth: number,
   sectionRecords: SectionRecord[],
+  stopAtSynthesized = false,
 ): void {
   while (
     stack.length > 0 &&
     stack[stack.length - 1].headingDepth >= depth
   ) {
+    if (stopAtSynthesized && stack[stack.length - 1].openedBySynthesis) {
+      break;
+    }
     finalizeContainer(stack.pop() as ContainerBuilder, stack, sectionRecords);
   }
 }

@@ -3188,6 +3188,107 @@
       "items": [
         {
           "node_type": "group",
+          "title": "Honeyd stats",
+          "description": null,
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Honeydsum.pl",
+              "description": null,
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 541920727,
+                "language": "Ruby",
+                "last_commit": "2022-01-04T00:00:00.000Z",
+                "owner": "DataSoft",
+                "repo": "Honeyd",
+                "stars": 20728
+              }
+            }
+          ]
+        }
+      ],
+      "title": "Honeyd Tools"
+    },
+    {
+      "description": null,
+      "items": [
+        {
+          "node_type": "group",
+          "title": "Sandbox",
+          "description": null,
+          "children": [
+            {
+              "node_type": "item",
+              "title": "imalse",
+              "description": "Integrated MALware Simulator and Emulator.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1485444586,
+                "language": "Java",
+                "last_commit": "2022-05-25T00:00:00.000Z",
+                "owner": "hbhzwj",
+                "repo": "imalse",
+                "stars": 44587
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "dorothy2",
+              "description": "Malware/botnet analysis framework written in Ruby.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 960988089,
+                "language": null,
+                "last_commit": "2023-10-04T00:00:00.000Z",
+                "owner": "m4rco-",
+                "repo": "dorothy2",
+                "stars": 38090
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "libemu",
+              "description": "Shellcode emulation library, useful for shellcode detection.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2112213056,
+                "language": "Java",
+                "last_commit": "2023-11-06T00:00:00.000Z",
+                "owner": "buffer",
+                "repo": "libemu",
+                "stars": 13057
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "Pylibemu",
+              "description": "Libemu Cython wrapper.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 2025212387,
+                "language": "Ruby",
+                "last_commit": "2022-12-10T00:00:00.000Z",
+                "owner": "buffer",
+                "repo": "pylibemu",
+                "stars": 12388
+              }
+            }
+          ]
+        }
+      ],
+      "title": "Network and Artifact Analysis"
+    },
+    {
+      "description": null,
+      "items": [
+        {
+          "node_type": "group",
           "title": "Front Ends",
           "description": null,
           "children": [

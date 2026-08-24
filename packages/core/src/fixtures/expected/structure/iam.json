@@ -342,7 +342,7 @@
           "children": [
             {
               "node_type": "item",
-              "title": "",
+              "title": "lemur",
               "description": "Acts as a broker between CAs and environments, providing a central portal for developers to issue TLS certificates with 'sane' defaults.",
               "children": [],
               "repo_info": {
@@ -842,7 +842,7 @@
       "items": [
         {
           "node_type": "item",
-          "title": "",
+          "title": "gitleaks",
           "description": "Audit git repos for secrets.",
           "children": [],
           "repo_info": {
@@ -857,7 +857,7 @@
         },
         {
           "node_type": "item",
-          "title": "",
+          "title": "truffleHog",
           "description": "Searches through git repositories for high entropy strings and secrets, digging deep into commit history.",
           "children": [],
           "repo_info": {
@@ -902,7 +902,7 @@
         },
         {
           "node_type": "item",
-          "title": "",
+          "title": "sops",
           "description": "Editor of encrypted files that supports YAML, JSON, ENV, INI and BINARY formats and encrypts with AWS KMS, GCP KMS, Azure Key Vault, age, and PGP.",
           "children": [],
           "repo_info": {
@@ -1236,7 +1236,7 @@
             },
             {
               "node_type": "item",
-              "title": "",
+              "title": "hosts",
               "description": "Consolidates reputable hosts files, and merges them into a unified hosts file with duplicates removed.",
               "children": [],
               "repo_info": {
@@ -1266,7 +1266,7 @@
             },
             {
               "node_type": "item",
-              "title": "",
+              "title": "metadata",
               "description": "Extensive collection of list for security, privacy and parental control.",
               "children": [],
               "repo_info": {
@@ -1318,7 +1318,7 @@
             },
             {
               "node_type": "item",
-              "title": "",
+              "title": "gman",
               "description": "“A ruby gem to check if the owner of a given email address or website is working for THE MAN (a.k.a verifies government domains).” Good resource to hunt for potential government customers in your user base.",
               "children": [],
               "repo_info": {
@@ -1340,7 +1340,7 @@
           "children": [
             {
               "node_type": "item",
-              "title": "",
+              "title": "profanity-check",
               "description": "Uses a linear SVM model trained on 200k human-labeled samples of clean and profane text strings.",
               "children": [],
               "repo_info": {

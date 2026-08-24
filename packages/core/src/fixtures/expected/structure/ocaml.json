@@ -1945,6 +1945,128 @@
       "description": null,
       "items": [
         {
+          "node_type": "group",
+          "title": "Syntax Extensions:",
+          "description": null,
+          "children": [
+            {
+              "node_type": "item",
+              "title": "ppx_monad",
+              "description": "Monad syntax extension for OCaml.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 3706891564,
+                "language": "Rust",
+                "last_commit": "2022-06-16T00:00:00.000Z",
+                "owner": "rizo",
+                "repo": "ppx_monad",
+                "stars": 41565
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "ppx_string_interpolate",
+              "description": "A simple ppx filter to support string interpolation like .",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1975129256,
+                "language": "Java",
+                "last_commit": "2023-04-20T00:00:00.000Z",
+                "owner": "sheijk",
+                "repo": "ppx_string_interpolate",
+                "stars": 29257
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "ppx_import",
+              "description": "Import is a syntax extension that allows to pull in types or signatures from other compiled interface files.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1091266615,
+                "language": "C++",
+                "last_commit": "2022-04-26T00:00:00.000Z",
+                "owner": "ocaml-ppx",
+                "repo": "ppx_import",
+                "stars": 16616
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "ppx_deriving_yojson",
+              "description": "A Yojson codec generator for OCaml.",
+              "children": [],
+              "repo_info": {
+                "archived": true,
+                "id": 1780112415,
+                "language": "C++",
+                "last_commit": "2022-11-12T00:00:00.000Z",
+                "owner": "whitequark",
+                "repo": "ppx_deriving_yojson",
+                "stars": 12416
+              }
+            }
+          ]
+        }
+      ],
+      "title": "Metaprogramming"
+    },
+    {
+      "description": null,
+      "items": [
+        {
+          "node_type": "item",
+          "title": "prometheus",
+          "description": "OCaml client library for Prometheus monitoring.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 2928908703,
+            "language": "Python",
+            "last_commit": "2022-01-28T00:00:00.000Z",
+            "owner": "mirage",
+            "repo": "prometheus",
+            "stars": 8704
+          }
+        }
+      ],
+      "title": "Metrics"
+    },
+    {
+      "description": null,
+      "items": [
+        {
+          "node_type": "group",
+          "title": "Bindings:",
+          "description": null,
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Cordova plugins",
+              "description": "List of bindings to Cordova plugins. Get access to native device components like accelerometer, SMS, geolocation, etc in OCaml.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 219792589,
+                "language": null,
+                "last_commit": "2022-05-22T00:00:00.000Z",
+                "owner": "dannywillems",
+                "repo": "ocaml-cordova-plugin-list",
+                "stars": 42590
+              }
+            }
+          ]
+        }
+      ],
+      "title": "Mobile Applications"
+    },
+    {
+      "description": null,
+      "items": [
+        {
           "node_type": "item",
           "title": "ocaml-dns",
           "description": "A pure OCaml implementation of the DNS protocol.",

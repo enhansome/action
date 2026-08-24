@@ -714,6 +714,48 @@
       "items": [
         {
           "node_type": "item",
+          "title": "elm-starter",
+          "description": "An experimental Elm-based bootstrapper that can also be plugged into already existing Elm applications.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 2206264428,
+            "language": "Shell",
+            "last_commit": "2022-10-30T00:00:00.000Z",
+            "owner": "lucamug",
+            "repo": "elm-starter",
+            "stars": 14429
+          }
+        }
+      ],
+      "title": "Static site generators"
+    },
+    {
+      "description": null,
+      "items": [
+        {
+          "node_type": "item",
+          "title": "Elm UI Explorer",
+          "description": "Showcase your views and states.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 1462132754,
+            "language": "Rust",
+            "last_commit": "2021-12-08T00:00:00.000Z",
+            "owner": "kalutheo",
+            "repo": "elm-ui-explorer",
+            "stars": 32755
+          }
+        }
+      ],
+      "title": "Showcase generators"
+    },
+    {
+      "description": null,
+      "items": [
+        {
+          "node_type": "item",
           "title": "run-elm",
           "description": "Run Elm code from the command line",
           "children": [],

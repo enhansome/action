@@ -1,0 +1,367 @@
+{
+  "items": [
+    {
+      "description": null,
+      "items": [
+        {
+          "children": [],
+          "description": "The heading itself is the entry; this prose is its description.\nhttps://github.com/example/card-one",
+          "node_type": "item",
+          "repo_info": {
+            "archived": false,
+            "id": 671278613,
+            "language": "Python",
+            "last_commit": "2022-04-28T00:00:00.000Z",
+            "owner": "example",
+            "repo": "card-one",
+            "stars": 28614
+          },
+          "title": "card-one"
+        },
+        {
+          "children": [],
+          "description": "An org link is not a repo identity, so the heading still carries one identity.",
+          "node_type": "item",
+          "repo_info": {
+            "archived": false,
+            "id": 530476479,
+            "language": null,
+            "last_commit": "2022-09-09T00:00:00.000Z",
+            "owner": "example",
+            "repo": "card-two",
+            "stars": 26480
+          },
+          "title": "card-two by example-org"
+        },
+        {
+          "children": [],
+          "description": "Two repo links in one heading: the first is the identity.",
+          "node_type": "item",
+          "repo_info": {
+            "archived": false,
+            "id": 2463937333,
+            "language": "Python",
+            "last_commit": "2023-02-02T00:00:00.000Z",
+            "owner": "example",
+            "repo": "card-three",
+            "stars": 37334
+          },
+          "title": "card-three and its mirror"
+        }
+      ],
+      "title": "Overview"
+    },
+    {
+      "description": null,
+      "items": [
+        {
+          "node_type": "item",
+          "title": "list-tool",
+          "description": "a list under a normal heading.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 2468275859,
+            "language": null,
+            "last_commit": "2021-08-25T00:00:00.000Z",
+            "owner": "example",
+            "repo": "list-tool",
+            "stars": 25860
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "list-tool-two",
+          "description": "a second item so the section gate passes.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 1068414616,
+            "language": "Java",
+            "last_commit": "2022-04-25T00:00:00.000Z",
+            "owner": "example",
+            "repo": "list-tool-two",
+            "stars": 14617
+          }
+        }
+      ],
+      "title": "Real Section"
+    },
+    {
+      "description": "A promoted heading whose first GitHub link is an image-only badge stays a section, not an entry; the list below is its content.",
+      "items": [
+        {
+          "node_type": "item",
+          "title": "badge-tool-two",
+          "description": "second.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 2233499981,
+            "language": "JavaScript",
+            "last_commit": "2021-04-25T00:00:00.000Z",
+            "owner": "example",
+            "repo": "badge-tool-two",
+            "stars": 49982
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "badge-tool",
+          "description": "first.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 32821822,
+            "language": "Go",
+            "last_commit": "2021-10-01T00:00:00.000Z",
+            "owner": "example",
+            "repo": "badge-tool",
+            "stars": 21823
+          }
+        }
+      ],
+      "title": "Badge Title"
+    },
+    {
+      "description": null,
+      "items": [
+        {
+          "node_type": "item",
+          "title": "more-tool",
+          "description": "first.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 4042042612,
+            "language": "Go",
+            "last_commit": "2022-04-29T00:00:00.000Z",
+            "owner": "example",
+            "repo": "more-tool",
+            "stars": 42613
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "more-tool-two",
+          "description": "second.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 3898556867,
+            "language": "Ruby",
+            "last_commit": "2021-08-17T00:00:00.000Z",
+            "owner": "example",
+            "repo": "more-tool-two",
+            "stars": 6868
+          }
+        }
+      ],
+      "title": "More Tools"
+    },
+    {
+      "description": "An open-source thing whose heading names it; the link cluster carries the identity.",
+      "items": [
+        {
+          "node_type": "item",
+          "title": "Home",
+          "description": "Code | Docs",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 2909813459,
+            "language": null,
+            "last_commit": "2022-09-29T00:00:00.000Z",
+            "owner": "example",
+            "repo": "entry-alpha",
+            "stars": 13460
+          }
+        }
+      ],
+      "title": "entry-alpha"
+    },
+    {
+      "description": null,
+      "items": [
+        {
+          "node_type": "item",
+          "title": "beta-tool",
+          "description": "a one-item list, the list face of a one-entry section.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 681837727,
+            "language": "Ruby",
+            "last_commit": "2022-01-04T00:00:00.000Z",
+            "owner": "example",
+            "repo": "entry-beta",
+            "stars": 37728
+          }
+        }
+      ],
+      "title": "entry-beta"
+    },
+    {
+      "description": null,
+      "items": [
+        {
+          "node_type": "item",
+          "title": "gamma",
+          "description": "github",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 1024537298,
+            "language": "Shell",
+            "last_commit": "2023-03-09T00:00:00.000Z",
+            "owner": "example",
+            "repo": "entry-gamma",
+            "stars": 37299
+          }
+        }
+      ],
+      "title": "entry-gamma"
+    },
+    {
+      "description": "4) \"Paper four, no code\" [paper]",
+      "items": [
+        {
+          "node_type": "item",
+          "title": "1) \"Paper one title\" [paper",
+          "description": "] [github]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 4177711057,
+            "language": "Ruby",
+            "last_commit": "2023-11-05T00:00:00.000Z",
+            "owner": "example",
+            "repo": "paper-one",
+            "stars": 11058
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "2) \"Paper two title\" [paper",
+          "description": "] [github]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 539484603,
+            "language": "Python",
+            "last_commit": "2022-05-08T00:00:00.000Z",
+            "owner": "example",
+            "repo": "paper-two",
+            "stars": 34604
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "3) \"Paper three, code only\" [github",
+          "description": "]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 2727479345,
+            "language": "C++",
+            "last_commit": "2023-01-21T00:00:00.000Z",
+            "owner": "example",
+            "repo": "paper-three",
+            "stars": 29346
+          }
+        }
+      ],
+      "title": "Conference Papers"
+    },
+    {
+      "description": null,
+      "items": [
+        {
+          "children": [],
+          "description": "A deeper heading whose only GitHub link sits behind a back-to-top anchor is still an entry.",
+          "node_type": "item",
+          "repo_info": {
+            "archived": false,
+            "id": 1152085819,
+            "language": null,
+            "last_commit": "2021-10-04T00:00:00.000Z",
+            "owner": "example",
+            "repo": "cake-tool",
+            "stars": 35820
+          },
+          "title": "⏫ Bake a cake with cake-tool"
+        },
+        {
+          "children": [],
+          "description": "A paper-shaped deeper heading: the Code tag carries the identity.",
+          "node_type": "item",
+          "repo_info": {
+            "archived": false,
+            "id": 3769362769,
+            "language": null,
+            "last_commit": "2021-11-23T00:00:00.000Z",
+            "owner": "example",
+            "repo": "soup-code",
+            "stars": 12770
+          },
+          "title": "[2026 VENUE] Simmer soup reliably. [PDF] [Code]"
+        },
+        {
+          "children": [],
+          "description": "A bold-wrapped link behind raw html still qualifies.",
+          "node_type": "item",
+          "repo_info": {
+            "archived": false,
+            "id": 2647879934,
+            "language": "Rust",
+            "last_commit": "2021-06-11T00:00:00.000Z",
+            "owner": "example",
+            "repo": "bold-card",
+            "stars": 29935
+          },
+          "title": "bold-card"
+        },
+        {
+          "children": [],
+          "description": "A deeper heading whose only link is an image badge keeps the sole-link item reading.",
+          "node_type": "item",
+          "repo_info": {
+            "archived": false,
+            "id": 2049122941,
+            "language": "JavaScript",
+            "last_commit": "2021-06-04T00:00:00.000Z",
+            "owner": "example",
+            "repo": "tools-roundup",
+            "stars": 22942
+          },
+          "title": "Tools Roundup"
+        },
+        {
+          "children": [],
+          "description": "An empty-label anchor link as the sole link of a deeper heading carries the identity.",
+          "node_type": "item",
+          "repo_info": {
+            "archived": false,
+            "id": 2958890042,
+            "language": "Go",
+            "last_commit": "2023-11-20T00:00:00.000Z",
+            "owner": "example",
+            "repo": "anchor-category",
+            "stars": 40043
+          },
+          "title": "Anchor Category"
+        }
+      ],
+      "title": "Recipe Headings"
+    }
+  ],
+  "metadata": {
+    "last_updated": "2025-01-01T00:00:00.000Z",
+    "original_repository": "example/link-headings",
+    "original_repository_id": 4242,
+    "original_repository_sha": "deadbeef",
+    "enhanced_repository": "enhansome/enhansome-link-headings",
+    "enhanced_repository_description": "enhanced list",
+    "title": "Awesome Link Headings with stars"
+  }
+}
