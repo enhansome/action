@@ -6,13 +6,13 @@ today captures only 77.8% of the distinct GitHub repos linked across the
 `items: []` and still report success). Fix all 8 diagnosed causes, measured at
 every step — no unverified "should work now" landings.
 
-**Current state:** steps 0 (yield harness) and 1 (minLinks per section) landed
-2026-08-24 — measured on a freshly fetched corpus (below). Harness is the
-permanent instrument; goldens regenerated and reviewed (items only ADDED,
-zero removed).
+**Current state:** steps 0–2 landed 2026-08-24 (yield harness, minLinks per
+section, implicit sections) — measured at every step on the fresh corpus
+(below). Goldens regenerated and reviewed per step; items only ever ADDED.
 
-**Next step:** step 2 (implicit sections, cause 5), then 3–8 in order. This
-file is the only thing a resuming session needs to read.
+**Next step:** step 3 (tables, cause 1 — the biggest bucket, ~18k repos),
+then 4–8 in order. This file is the only thing a resuming session needs to
+read.
 
 ## Baseline (2026-08-24, fleet = 2,217 fetched READMEs)
 
@@ -89,7 +89,7 @@ worth it even where a bucket is small today.
 |---|---|---|---|
 | 0 | **Yield harness** (instrument) — ✅ done 2026-08-24 | permanent diag tool: `packages/core/src/yield.diag.test.ts`, skipped unless `YIELD_DIR` is set; reuses the golden suite's offline repo-info mock (shared helper `offline-github.ts` — one way); reads a corpus dir, runs the real `enhance()` per file, and emits the yield report (per-registry expected/got/loss-bucket + fleet totals). Corpus is fetched, not committed (command in Method) | run over a freshly fetched corpus: reproduces baseline 77.8% ± fleet drift; harness is skipped in normal `yarn test` |
 | 1 | **minLinks per section** (cause 3) — ✅ done 2026-08-24 | aggregate the gate: a section's lists count together — decide emission per section subtree, not per top-level list. Gate stays ≥2 for the section | new fixture `single-item-sections.md` (best-of shape) fails pre-fix / passes; yield report: gated-list bucket ~12k → ~0; goldens: only intended diffs; watch false-positive noise (prose link lists under tiny sections must still be dropped) |
-| 2 | **Implicit sections** (cause 5) | when a list (or later: any entry source) appears with no open container, synthesize one (title from the doc title / "Overview") instead of dropping | fixtures `headingless.md`, `toc-only.md` fail pre / pass; `termux-hacking` corpus case 716 links recover; goldens reviewed |
+| 2 | **Implicit sections** (cause 5) — ✅ done 2026-08-24 | when a list (or later: any entry source) appears with no open container, synthesize one (title from the doc title / "Overview") instead of dropping | fixtures `headingless.md`, `toc-only.md` fail pre / pass; `termux-hacking` corpus case 716 links recover; goldens reviewed |
 | 3 | **Tables** (cause 1) | walk `table` nodes: each row whose cells contain a GitHub repo link becomes an item under the nearest open container (implicit section from step 2 if none); title = first cell's leading text + link text, description = remaining cell text — via the shared emission helper | fixture `table-format.md` (scala-shaped); yield: table bucket 43k → ~0 (biggest single move); `scala` 268→~268 offline; goldens reviewed; raw fixture rendered sanely with badges |
 | 4 | **Paragraph entries** (cause 2) | a top-level paragraph that behaves like an entry becomes an item: contains a repo link AND the link sits at/near the start (same leading-tag allowance as list items). Calibration against prose false-positives ("Contributions welcome, open an issue at [repo]" must stay description) is THE risk — tune on corpus, not intuition | fixture `paragraph-entries.md` (paper style + CJK style); yield: paragraph bucket 14.7k → mostly recovered; spot-check titles in the harness output for prose leaks; `3dbody-papers` 191→~191 |
 | 5 | **Blockquote cards** (cause 6, incl. `java`) | a blockquote whose leading link resolves to a repo → item (reuse step 4's entry test on the card's first paragraph); `<summary>` text opens the section (treat a details-summary html block as a heading-equivalent container) | fixture `details-cards.md` (java-shaped); **`java` corpus case 786→~786** — the webapp eval's named failure; goldens reviewed |
@@ -194,3 +194,16 @@ so production dead-link drops (~1–2%) are excluded on purpose.
   occurrences appear (per-README dedupe stays parked — webapp owns it); one
   raw fixture (`guides`) now sorts two previously-gated lists. All other
   buckets flat or shrinking — no false-positive noise observed.
+- **2026-08-24 (later): step 2 landed — implicit sections.** `openImplicitSection`
+  (markdown.ts): the first containerless list opens an "Overview" section —
+  headingDepth Infinity (any structural heading closes it), headingIndex one
+  before the list (the section gate's scan counts the opening list), so the
+  whole preamble aggregates for the gate exactly like a real section. Preamble
+  lists switched from per-list gate to the implicit-section aggregate —
+  monotone (aggregate ≥ per-list count), so nothing that emitted before can
+  stop. Fixtures `headingless.md` + `toc-only.md` written first, confirmed
+  failing (`items: []`). **Measured: yield 85.8% → 86.3% (+934); preamble
+  bucket 323 → 19 (residual = aggregate < 2 noise, correct); hollow stock
+  322 → 302; `termux-hacking` 0 → 352/354; `football_analytics` 45 →
+  257/264.** Goldens: 4 fixtures changed (the 2 new + cakephp + quarto, both
+  gaining an Overview section with their preamble list), additions only.

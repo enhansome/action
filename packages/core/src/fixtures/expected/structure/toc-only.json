@@ -1,0 +1,49 @@
+{
+  "items": [
+    {
+      "description": "Prose under the TOC.",
+      "items": [
+        {
+          "node_type": "item",
+          "title": "tool-two",
+          "description": "second tool.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 3892333715,
+            "language": "C++",
+            "last_commit": "2022-01-16T00:00:00.000Z",
+            "owner": "example",
+            "repo": "tool-two",
+            "stars": 33716
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "tool-one",
+          "description": "first tool.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 1702051193,
+            "language": "Python",
+            "last_commit": "2023-06-22T00:00:00.000Z",
+            "owner": "example",
+            "repo": "tool-one",
+            "stars": 1194
+          }
+        }
+      ],
+      "title": "Overview"
+    }
+  ],
+  "metadata": {
+    "last_updated": "2025-01-01T00:00:00.000Z",
+    "original_repository": "example/toc-only",
+    "original_repository_id": 4242,
+    "original_repository_sha": "deadbeef",
+    "enhanced_repository": "enhansome/enhansome-toc-only",
+    "enhanced_repository_description": "enhanced list",
+    "title": "Awesome TOC Only with stars"
+  }
+}

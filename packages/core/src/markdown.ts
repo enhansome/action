@@ -770,24 +770,24 @@ function processTree(
           : text;
       }
     } else if (node.type === 'list') {
+      // A list with no open container still means content: synthesize the
+      // implicit section for it (see openImplicitSection). Afterwards the
+      // stack bottom is always a section — implicit or real — which is the
+      // invariant the gate below and closeContainers rely on.
+      if (stack.length === 0) {
+        openImplicitSection(stack, i);
+      }
       // Every list inside the open container contributes items — a section is
-      // not closed by its first list. The minLinks gate is decided per
-      // section, against the whole section subtree (the stack bottom — always
-      // a section by the openContainer invariant). With no open container
-      // (preamble), the list is not part of any JSON section and gates per
-      // list, but its AST is still sorted so the rendered markdown matches.
-      const openSection = stack[0];
+      // not closed by its first list — and the minLinks gate is decided per
+      // section, against the whole section subtree.
       const items = processListRecursively(
         node,
         repoInfoMap,
         sortOptions,
         false,
-        openSection && gateForSection(openSection),
+        gateForSection(stack[0]),
       );
-      const container = stack[stack.length - 1];
-      if (container) {
-        container.children.push(...items);
-      }
+      stack[stack.length - 1].children.push(...items);
     }
   }
 
@@ -881,6 +881,31 @@ function openContainer(
     kind: repoInfo ? 'item' : 'group',
     repoInfo: repoInfo ?? undefined,
     title,
+  });
+}
+
+// A document can hold registry content with no heading above it — headingless
+// docs, TOC-only docs, or a preamble list before the first section heading.
+// Rather than dropping those lists, the first one synthesizes the section it
+// implicitly belongs to ("Overview"). It behaves exactly like a real section:
+// closed by the first structural heading (or document end), gated with its
+// whole subtree, and pruned when empty.
+function openImplicitSection(
+  stack: ContainerBuilder[],
+  atIndex: number,
+): void {
+  stack.push({
+    children: [],
+    description: '',
+    // Infinity so ANY structural heading closes it in closeContainers and
+    // ends its span in the section gate — the implicit section never reaches
+    // past the preamble.
+    headingDepth: Infinity,
+    // One before the opening list so the gate's scan (from headingIndex + 1)
+    // counts that list itself.
+    headingIndex: atIndex - 1,
+    kind: 'section',
+    title: 'Overview',
   });
 }
 

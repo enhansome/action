@@ -1,0 +1,79 @@
+{
+  "items": [
+    {
+      "description": "Prose between the lists becomes the section description.\nA trailer list joins the same section — every list before the first heading counts together.",
+      "items": [
+        {
+          "node_type": "item",
+          "title": "tool-one",
+          "description": "first tool.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 1702051193,
+            "language": "Python",
+            "last_commit": "2023-06-22T00:00:00.000Z",
+            "owner": "example",
+            "repo": "tool-one",
+            "stars": 1194
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "tool-three",
+          "description": "third tool.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 1106385065,
+            "language": "C++",
+            "last_commit": "2023-10-28T00:00:00.000Z",
+            "owner": "example",
+            "repo": "tool-three",
+            "stars": 35066
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "tool-two",
+          "description": "second tool.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 3892333715,
+            "language": "C++",
+            "last_commit": "2022-01-16T00:00:00.000Z",
+            "owner": "example",
+            "repo": "tool-two",
+            "stars": 33716
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "solo",
+          "description": null,
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 902349754,
+            "language": "Rust",
+            "last_commit": "2021-12-08T00:00:00.000Z",
+            "owner": "example",
+            "repo": "solo-tool",
+            "stars": 49755
+          }
+        }
+      ],
+      "title": "Overview"
+    }
+  ],
+  "metadata": {
+    "last_updated": "2025-01-01T00:00:00.000Z",
+    "original_repository": "example/headingless",
+    "original_repository_id": 4242,
+    "original_repository_sha": "deadbeef",
+    "enhanced_repository": "enhansome/enhansome-headingless",
+    "enhanced_repository_description": "enhanced list",
+    "title": "Awesome headingless with stars"
+  }
+}
