@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.9.0](https://github.com/enhansome/action/compare/v1.8.1...v1.9.0) (2026-08-24)
+
+
+### Features
+
+* emit blockquote cards and details sections (empty-tree step 5) ([0532a52](https://github.com/enhansome/action/commit/0532a52f64f184d3293fc7a8d2848624f74ba6d4))
+* emit link-headings as items and gate one-entry sections by run (empty-tree step 6) ([1b3a694](https://github.com/enhansome/action/commit/1b3a694cd7268cba09180652d0aa5f4c06e1826d))
+* emit paragraph entries (empty-tree step 4) ([74f0aa2](https://github.com/enhansome/action/commit/74f0aa21c1fc2f902eac980e892810e446dcac13))
+* emit table rows as registry items (empty-tree step 3) ([ea8882b](https://github.com/enhansome/action/commit/ea8882ba962a3d331b849f674596ffb80a341139))
+* implicit Overview section for containerless lists (empty-tree step 2) ([04f1993](https://github.com/enhansome/action/commit/04f19935d1c58c4b8ea6e778910721208d3eb349))
+* minLinks gate per section + yield harness (empty-tree steps 0-1) ([65ad0a5](https://github.com/enhansome/action/commit/65ad0a5849c0f5d01e07d472bb44c7321b630641))
+* normalize bare github.com text and inline html anchors into links (empty-tree step 8) ([4b8b387](https://github.com/enhansome/action/commit/4b8b3875bfb5442ac961938de8bea676ae3b2d84))
+* resolve list-item own-link across all own paragraphs (empty-tree step 7) ([e0ed662](https://github.com/enhansome/action/commit/e0ed6623e7203427ce14a0caee2ced69f3745e51))
+
 ## [1.8.1](https://github.com/enhansome/action/compare/v1.8.0...v1.8.1) (2026-08-19)
 
 
