@@ -700,6 +700,124 @@ function processTableRows(
   return items;
 }
 
+// A top-level paragraph can BE an entry, not only feed container prose. Two
+// corpus families qualify (progress/empty-tree-parses.md, step 4): a GitHub
+// link LEADING the paragraph behind a short entry label, or the paragraph
+// ending in a tag cluster whose GitHub link carries the identity — the
+// paper-list shape whose first link points at the paper and a [Code]/[Github]
+// tag at the end, name/author lines ending in that tag, and dated lines
+// ("… [Github] 4 Feb 2023"). Prose that mentions a repo ("Please see
+// CONTRIBUTING", "See also [repo]", intro text ending in a bare repo URL) is
+// neither and stays description. Calibrated on the 2,293-README corpus plus
+// the fixture fleet, not intuition: an entry label is a TAG (empty, CJK/emoji,
+// bracketed, or colon-terminated) — never bare English prose — and the
+// identity link must carry text, so the ubiquitous image-only awesome badge
+// is not an entry.
+const ENTRY_LABEL_MAX = 15;
+const ENTRY_TRAILING_MAX = 3;
+const TAG_LINK_TEXT =
+  /^[\[\]()*\s:_-]*(?:source\s+code|code|github|repo|source|src|project|paper|page|web|site|home|official|notebook|demo|data|docs|implementation|arxiv)\b[\[\]()*\s:_-]*$/i;
+const URL_LINK_TEXT = /^https?:\/\/\S+$/i;
+// Dated entry lines end their tag cluster with a publication date ("4 Feb
+// 2023", "19 Apr 2022", "2023") — a real corpus family (dated paper/tutorial
+// lists), not a sentence continuation.
+const DATE_TRAILING = /^(\d{1,2}[ -])?([a-zà-ÿ]{3,12}[ -])?\d{2,4}$/i;
+// Boilerplate navigation line present in most mirror READMEs; casing and
+// the optional "the" vary ("⬆ back to top", "⬆️ Back to Top",
+// "Back to the Top").
+const BACK_TO_TOP = /back to (?:the )?top/i;
+// Tag-shaped leading label: empty, non-ASCII (CJK labels like 项目地址：,
+// emoji markers), bracketed ([6] Diffusion:), or colon-terminated (Demo:).
+// English prose ("Please see", "See also", "Inspired by the") is none of
+// these — those are cross-reference sentences, not entry labels.
+function isEntryLabel(label: string): boolean {
+  return (
+    label === '' ||
+    /[^\x00-\x7f]/.test(label) ||
+    label.startsWith('[') ||
+    /[:：]$/.test(label)
+  );
+}
+
+interface InlineScan {
+  firstLink: Link | undefined;
+  label: string;
+  trailing: string;
+}
+
+// Flattened view of a paragraph's inline content for the entry test: the
+// first link, the free text before it, and the free text after the link
+// cluster (emphasis recursed into; link labels, images, and inline html
+// carry no positional weight — a bare [Code] tag's label is not trailing
+// prose).
+function scanInlines(paragraph: Paragraph): InlineScan {
+  let firstLink: Link | undefined;
+  let label = '';
+  let trailing = '';
+  const walk = (node: Node): void => {
+    if (node.type === 'link') {
+      if (firstLink) {
+        trailing = '';
+      }
+      firstLink = firstLink ?? (node as Link);
+      return;
+    }
+    if (node.type === 'text') {
+      if (firstLink) {
+        trailing += (node as Text).value;
+      } else {
+        label += (node as Text).value;
+      }
+      return;
+    }
+    for (const child of (node as Parent).children ?? []) {
+      walk(child);
+    }
+  };
+  for (const child of paragraph.children) {
+    walk(child);
+  }
+  return { firstLink, label: label.trim(), trailing: trailing.trim() };
+}
+
+// True when nothing of substance follows the paragraph's last link: pure
+// punctuation, or a date (see DATE_TRAILING).
+function tagClusterEndsParagraph(trailing: string): boolean {
+  if (trailing.length <= ENTRY_TRAILING_MAX) {
+    return true;
+  }
+  return DATE_TRAILING.test(trailing.replace(/^[\[\]()*\s:;,_-]+/, ''));
+}
+
+// The GitHub link that makes a top-level paragraph an entry, if it is one
+// (see the family comment above). Null for plain prose.
+function paragraphEntryLink(paragraph: Paragraph): Link | undefined {
+  const githubLink = findFirstGitHubLink(paragraph);
+  if (!githubLink) {
+    return undefined;
+  }
+  const labelText = getInlineText(githubLink.children);
+  if (!labelText) {
+    return undefined;
+  }
+  const scan = scanInlines(paragraph);
+  if (
+    scan.firstLink === githubLink &&
+    scan.label.length <= ENTRY_LABEL_MAX &&
+    isEntryLabel(scan.label)
+  ) {
+    return githubLink;
+  }
+  if (
+    tagClusterEndsParagraph(scan.trailing) &&
+    (TAG_LINK_TEXT.test(labelText) ||
+      (URL_LINK_TEXT.test(labelText) && scan.firstLink !== githubLink))
+  ) {
+    return githubLink;
+  }
+  return undefined;
+}
+
 const INVALID_TITLE_PATTERNS = [
   /^contributing/i,
   /^license$/i,
@@ -880,11 +998,50 @@ function processTree(
       }
       closeContainers(stack, node.depth, sections);
       openContainer(stack, node, i, sectionDepth, repoInfoMap);
-    } else if (node.type === 'paragraph' || node.type === 'blockquote') {
+    } else if (node.type === 'paragraph') {
+      const text = getNodeText(node);
+      // Boilerplate "back to top" lines are neither entries nor description.
+      const ownLink =
+        BACK_TO_TOP.test(text) ? undefined : paragraphEntryLink(node);
+      // An entry paragraph behaves like a one-item list: the implicit section
+      // opens for one with no open container (the stack-bottom invariant),
+      // the minLinks gate is the same section aggregate, and emission is the
+      // shared path. A failed gate or dead target leaves plain description.
+      if (ownLink) {
+        if (stack.length === 0) {
+          openImplicitSection(stack, i);
+        }
+        // A gated or dead entry emits nothing and stays out of the
+        // description (mirrors dead list items); the section it would land
+        // in is pruned empty anyway when the gate fails.
+        if (gateForSection(stack[0])) {
+          const repoInfo = repoInfoMap.get(ownLink.url) ?? null;
+          const entryText = splitEntryText(node.children);
+          const emitted = emitEntryNodes(
+            ownLink.url,
+            repoInfo,
+            {
+              title: entryTitle(entryText.title, ownLink, repoInfo),
+              description: entryText.description,
+            },
+            [],
+          );
+          stack[stack.length - 1].children.push(...emitted);
+        }
+      } else {
+        const container = stack[stack.length - 1];
+        // Avoid adding boilerplate "back to top" links to descriptions.
+        if (container && text && !BACK_TO_TOP.test(text)) {
+          container.description = container.description
+            ? `${container.description}\n${text}`
+            : text;
+        }
+      }
+    } else if (node.type === 'blockquote') {
       const text = getNodeText(node);
       const container = stack[stack.length - 1];
       // Avoid adding boilerplate "back to top" links to descriptions.
-      if (container && text && !text.includes('back to top')) {
+      if (container && text && !BACK_TO_TOP.test(text)) {
         container.description = container.description
           ? `${container.description}\n${text}`
           : text;
@@ -1044,9 +1201,9 @@ function openImplicitSection(
 }
 
 // The minLinks gate scoped to a SECTION: every entry source in the section
-// counts together (list items and table rows) — best-of-style documents put
-// each entry in its own single-item list, which the per-list gate dropped one
-// by one. The section's
+// counts together (list items, table rows, entry paragraphs) — best-of-style
+// documents put each entry in its own single-item list, which the per-list
+// gate dropped one by one. The section's
 // subtree runs from its heading to the first structural heading at or above
 // its depth (the same heading that would close it in closeContainers); the
 // gate fires only when the whole subtree holds fewer than minLinks
@@ -1080,6 +1237,11 @@ function sectionGatePasses(
         linkedEntries += countLinkedItems(node);
       } else if (node.type === 'table') {
         linkedEntries += countLinkedRows(node);
+      } else if (
+        node.type === 'paragraph' &&
+        paragraphEntryLink(node)
+      ) {
+        linkedEntries += 1;
       }
     }
     const passes = linkedEntries >= sortOptions.minLinks;

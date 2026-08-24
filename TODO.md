@@ -1,21 +1,16 @@
 # TODO — open-work index (enhansome/action)
 
 > **Work-tracking system: `TODO.md` (this file) → `progress/` → `archive/`** — a physical Kanban (same design as webapp).
-> - **`TODO.md`** = the open-work INDEX (one line per thread). In-progress lines MUST carry a `→ progress/<slug>.md` pointer — added at task-start, by the task owner (rule ↓).
-> - **`progress/<slug>.md`** = created ONLY when a task is picked up AND spans sessions / needs running state. Holds goal · current state · next step · append-only log. **A resuming session reads ONLY that file.** Authored to the task — no rigid template; let the shape emerge.
+> - **`TODO.md` = the index.** One line per thread, two at most: title, priority tag, and — once one exists — a `→ progress/<slug>.md` pointer with a short status clause. Plans, anchors, measured numbers and fix sketches never live here — they are what the progress file is for. A line answers *what* and *how important*, nothing else. What's next is whatever sits highest in the file.
+> - **`progress/<slug>.md` = the detail home.** Created when a thread is picked up — or earlier, to hold the detail an index line cannot carry. Shape: goal · current state · next step · append-only log. **A resuming session reads ONLY that file.** Authored to the task — no rigid template; let the shape emerge.
 > - **`archive/`** = move the file there (verbatim) when done / killed / parked. Trivial one-shot completions → `archive/completed.md`.
 >
-> Trivial tasks skip `progress/` (TODO line → `archive/completed.md` on done). **One home per fact** — measured numbers and evidence live in the progress file that verified them; don't duplicate. Created 2026-08-17, seeded from the webapp indexer triage (`webapp/progress/indexer-perf.md`, log entry 2026-08-16e).
+> Trivial tasks skip `progress/` (TODO line → `archive/completed.md` on done). **One home per fact** — measured numbers and evidence live in the progress file that verified them; don't duplicate. Created 2026-08-17, seeded from the webapp indexer triage (`../webapp/archive/indexer-perf.md`, log entry 2026-08-16e). Last pruned 2026-08-24.
+>
+> **START-A-TASK RULE — the index is maintained by whoever picks the task up, at start, not after the fact.** The moment you begin a non-trivial task from this file, do **both**, in order: (1) annotate its TODO line with `→ progress/<slug>.md`; (2) create that `progress/<slug>.md` file if it does not exist (goal · current state · next step · append-only log). An in-flight task with no pointer = a broken, out-of-sync index. Trivial one-shots are the only exception (no `progress/` file — TODO → `archive/completed.md` on done).
+>
+> **PRIORITY:** `CRITICAL` · `HIGH` · `MEDIUM` · `LOW` — how bad it is to leave unfixed; untagged = backlog. Sequencing ("after X") is a note on the line, not a second ladder. When a thread lands, its file moves to `archive/` and its line is deleted — no completion history in this file.
 
-## P0 — critical path (gates webapp's index rebuild)
-
-> **Both P0 steps are done and released in 1.8.0** (`repo_info.id` + tree-shape
-> — verified live 2026-08-19, see `archive/tree-shape.md` and
-> `archive/completed.md`). The path continues in `../webapp/TODO.md`: its
-> registry-rebuild line (step 3) is unblocked — pick that up next.
-
-## Later / parked
-
-- [ ] **Empty-tree parses — parser yield fixes** → `progress/empty-tree-parses.md` — the parser captures only 77.8% of distinct GitHub repos linked across the fleet (65,234 land in no tree; 336 registries parse to `items: []` and still report success — webapp mcp-prod-health 2.1, `java` = upstream card-format switch 2026-07-28). **Diagnosis complete (2026-08-24): 8 root causes, all traced to specific parser rules; plan approved by user — steps 0–8 in the progress file (0 = yield harness, then minLinks-per-section, implicit sections, tables, paragraph entries, blockquote cards, link-headings, own-link scope, URL normalization). Steps 0–3 landed 2026-08-24 (per-section gate 83.1%→85.8%; implicit Overview sections →86.3%; table rows as items →94.7%, hollow stock 336→86, `scala` 5→265/268; goldens additive only, 0 registries lost items). Next = step 4 (paragraph entries).**
-- [ ] **Per-README repo dedupe** — the same repo linked in multiple sections emits multiple items (snapmaker: 88 items / 36 distinct repos). Skipped in the tree-shape overhaul (user decision 2026-08-19): the webapp rebuild's global one-node-per-repo dedupe owns this (~62k dupe drops accepted there). Revisit only if mirrors should be dupe-free in themselves.
-- [ ] **Non-repo resources in output (v2)** — YouTube/docs/app-site links produce nothing today; entire registries of them index as near-empty. Parked until webapp's v2 data model exists (webapp TODO "Index non-repo resources"); do not build the emission side before the consumer side wants it.
+- [ ] **Empty-tree parses — parser yield fixes** · CRITICAL → `progress/empty-tree-parses.md` — 8 diagnosed root causes on a measured step plan (yield harness + goldens; steps 0–4 landed 2026-08-24, yield 77.8%→96.5% offline); next: step 5 (blockquote cards, incl. `java`). The webapp hollow-registry stock rides this thread.
+- [ ] **Per-README repo dedupe** — the same repo linked in multiple sections emits multiple items. Deliberately skipped in the tree-shape overhaul (user decision 2026-08-19; `archive/tree-shape.md`): the webapp rebuild's global one-node-per-repo dedupe owns this. Revisit only if mirrors should be dupe-free in themselves.
+- [ ] **Non-repo resources in output (v2)** — YouTube/docs/app-site links produce nothing today; entire registries of them index as near-empty. Parked until webapp's v2 data model exists (`../webapp/TODO.md` "Index non-repo resources"); do not build the emission side before the consumer side wants it.

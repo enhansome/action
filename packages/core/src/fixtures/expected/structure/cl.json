@@ -67,6 +67,21 @@
             },
             {
               "node_type": "item",
+              "title": "demos: cl-rag-example",
+              "description": "and cl-chat, a LLM chat library and web UI.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1370232923,
+                "language": "Python",
+                "last_commit": "2021-06-22T00:00:00.000Z",
+                "owner": "atgreen",
+                "repo": "cl-rag-example",
+                "stars": 32924
+              }
+            },
+            {
+              "node_type": "item",
               "title": "Caten",
               "description": "Deep Learning Compiler based on Polyhedral Compiler and Light-weight IRs, and Optimizing Pattern Matcher, written in Common Lisp",
               "children": [],
@@ -81,7 +96,7 @@
               }
             }
           ],
-          "description": "demos: cl-rag-example and cl-chat, a LLM chat library and web UI.\nWork In Progress:",
+          "description": "Work In Progress:",
           "node_type": "group",
           "title": "Around the OpenAI API"
         },
@@ -3446,9 +3461,24 @@
                 "repo": "sbcl-termux-build",
                 "stars": 47214
               }
+            },
+            {
+              "node_type": "item",
+              "title": "hello-alien",
+              "description": ", SBCL built for an Android application.",
+              "children": [],
+              "repo_info": {
+                "archived": true,
+                "id": 1903107330,
+                "language": "TypeScript",
+                "last_commit": "2023-02-05T00:00:00.000Z",
+                "owner": "Gleefre",
+                "repo": "hello-alien",
+                "stars": 7331
+              }
             }
           ],
-          "description": "Also:\nhello-alien, SBCL built for an Android application.",
+          "description": "Also:",
           "node_type": "group",
           "title": "Mobile"
         }

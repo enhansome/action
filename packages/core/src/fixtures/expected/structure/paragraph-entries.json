@@ -1,0 +1,196 @@
+{
+  "items": [
+    {
+      "description": null,
+      "items": [
+        {
+          "node_type": "item",
+          "title": "preamble-one",
+          "description": "a leading-link entry before any heading opens the implicit Overview section.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 4254418163,
+            "language": "Python",
+            "last_commit": "2023-07-22T00:00:00.000Z",
+            "owner": "example",
+            "repo": "preamble-one",
+            "stars": 18164
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "项目地址：preamble-two",
+          "description": "a CJK labelled entry, its label short enough to count as leading.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 879027549,
+            "language": null,
+            "last_commit": "2022-07-01T00:00:00.000Z",
+            "owner": "example",
+            "repo": "preamble-two",
+            "stars": 27550
+          }
+        }
+      ],
+      "title": "Overview"
+    },
+    {
+      "description": "Paper-style entries lead with the paper link; the code tag carries the repo.",
+      "items": [
+        {
+          "node_type": "item",
+          "title": "Anorm: A Study of Querying",
+          "description": ". SIGGRAPH, 2015. [Page] [Code]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 2527516899,
+            "language": null,
+            "last_commit": "2021-07-16T00:00:00.000Z",
+            "owner": "example",
+            "repo": "anorm",
+            "stars": 16900
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Doobie: Functional JDBC",
+          "description": ". CVPR, 2020. [Code]",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 1471866808,
+            "language": "Shell",
+            "last_commit": "2021-10-15T00:00:00.000Z",
+            "owner": "example",
+            "repo": "doobie",
+            "stars": 16809
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Tag-Only Entry fixture-author [Github]",
+          "description": null,
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 822106923,
+            "language": "Python",
+            "last_commit": "2021-06-22T00:00:00.000Z",
+            "owner": "example",
+            "repo": "tag-entry",
+            "stars": 6924
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Dated Entry another-author [Github]",
+          "description": "4 Feb 2023",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 2953844135,
+            "language": "C++",
+            "last_commit": "2023-08-19T00:00:00.000Z",
+            "owner": "example",
+            "repo": "dated-entry",
+            "stars": 44136
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Tab-separated paper line Author One https://example.com/paper-tab",
+          "description": "https://github.com/example/tab-entry",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 159448912,
+            "language": "Go",
+            "last_commit": "2021-07-03T00:00:00.000Z",
+            "owner": "example",
+            "repo": "tab-entry",
+            "stars": 48913
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Game on Steam",
+          "description": "Source Code | Website",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 2941721234,
+            "language": "Rust",
+            "last_commit": "2023-05-12T00:00:00.000Z",
+            "owner": "example",
+            "repo": "floss-entry",
+            "stars": 21235
+          }
+        }
+      ],
+      "title": "Papers"
+    },
+    {
+      "description": "Some prose that must stay a description: contributions are welcome, please open an issue at the tracker if you spot a gap.\nA stats card is not an entry: the repo link sits mid-paragraph with prose after it. Tool home: https://example.com/stats-home https://github.com/example/stats-card 111 stars per week over 10 weeks\nPlease see contributing for details.\nFor more awesome lists, see https://github.com/sindresorhus/awesome",
+      "items": [
+        {
+          "node_type": "item",
+          "title": "line-entry",
+          "description": "a plain leading-link entry.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 363655689,
+            "language": null,
+            "last_commit": "2022-02-11T00:00:00.000Z",
+            "owner": "example",
+            "repo": "line-entry",
+            "stars": 5690
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "🔗 https://github.com/example/bare-url-entry",
+          "description": null,
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 301377927,
+            "language": "Ruby",
+            "last_commit": "2021-06-18T00:00:00.000Z",
+            "owner": "example",
+            "repo": "bare-url-entry",
+            "stars": 27928
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "bold-card",
+          "description": null,
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 2647879934,
+            "language": "Rust",
+            "last_commit": "2021-06-11T00:00:00.000Z",
+            "owner": "example",
+            "repo": "bold-card",
+            "stars": 29935
+          }
+        }
+      ],
+      "title": "Line Entries"
+    }
+  ],
+  "metadata": {
+    "last_updated": "2025-01-01T00:00:00.000Z",
+    "original_repository": "example/paragraph-entries",
+    "original_repository_id": 4242,
+    "original_repository_sha": "deadbeef",
+    "enhanced_repository": "enhansome/enhansome-paragraph-entries",
+    "enhanced_repository_description": "enhanced list",
+    "title": "Awesome Paragraph Entries with stars"
+  }
+}

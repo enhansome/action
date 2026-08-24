@@ -6,16 +6,17 @@ today captures only 77.8% of the distinct GitHub repos linked across the
 `items: []` and still report success). Fix all 8 diagnosed causes, measured at
 every step — no unverified "should work now" landings.
 
-**Current state:** steps 0–3 landed 2026-08-24 (yield harness, minLinks per
-section, implicit sections, tables) — measured at every step on the fresh
-corpus (below). Goldens regenerated and reviewed per step; items only ever
-ADDED.
+**Current state:** steps 0–4 landed 2026-08-24 (yield harness, minLinks per
+section, implicit sections, tables, paragraph entries) — measured at every
+step on the fresh corpus (below). Goldens regenerated and reviewed per step;
+items only ever ADDED.
 
-**Next step:** step 4 (paragraph entries, cause 2 — now the biggest residual
-bucket, ~5.9k repos), then 5–8 in order. The shared emission helper
-(`splitEntryText` + `emitEntryNodes` + `entryTitle` in markdown.ts) is built —
-steps 4–5 feed it. This file is the only thing a resuming session needs to
-read.
+**Next step:** step 5 (blockquote cards, cause 6 — incl. `java` 0/785 and the
+378-repo `<details>`-nested table residual), then 6–8 in order. The shared
+emission helper (`splitEntryText` + `emitEntryNodes` + `entryTitle` in
+markdown.ts) is built; step 4 added `paragraphEntryLink` (the entry-ness test
+for top-level paragraphs) — step 5 reuses it on blockquote cards' first
+paragraph. This file is the only thing a resuming session needs to read.
 
 ## Baseline (2026-08-24, fleet = 2,217 fetched READMEs)
 
@@ -94,7 +95,7 @@ worth it even where a bucket is small today.
 | 1 | **minLinks per section** (cause 3) — ✅ done 2026-08-24 | aggregate the gate: a section's lists count together — decide emission per section subtree, not per top-level list. Gate stays ≥2 for the section | new fixture `single-item-sections.md` (best-of shape) fails pre-fix / passes; yield report: gated-list bucket ~12k → ~0; goldens: only intended diffs; watch false-positive noise (prose link lists under tiny sections must still be dropped) |
 | 2 | **Implicit sections** (cause 5) — ✅ done 2026-08-24 | when a list (or later: any entry source) appears with no open container, synthesize one (title from the doc title / "Overview") instead of dropping | fixtures `headingless.md`, `toc-only.md` fail pre / pass; `termux-hacking` corpus case 716 links recover; goldens reviewed |
 | 3 | **Tables** (cause 1) — ✅ done 2026-08-24 | walk `table` nodes: each row whose cells contain a GitHub repo link becomes an item under the nearest open container (implicit section from step 2 if none); title = first cell's leading text + link text, description = remaining cell text — via the shared emission helper | fixture `table-format.md` (scala-shaped); yield: table bucket 43k → ~0 (biggest single move); `scala` 268→~268 offline; goldens reviewed; raw fixture rendered sanely with badges |
-| 4 | **Paragraph entries** (cause 2) | a top-level paragraph that behaves like an entry becomes an item: contains a repo link AND the link sits at/near the start (same leading-tag allowance as list items). Calibration against prose false-positives ("Contributions welcome, open an issue at [repo]" must stay description) is THE risk — tune on corpus, not intuition | fixture `paragraph-entries.md` (paper style + CJK style); yield: paragraph bucket 14.7k → mostly recovered; spot-check titles in the harness output for prose leaks; `3dbody-papers` 191→~191 |
+| 4 | **Paragraph entries** (cause 2) — ✅ done 2026-08-24 | a top-level paragraph that behaves like an entry becomes an item: contains a repo link AND the link sits at/near the start (same leading-tag allowance as list items). Calibration against prose false-positives ("Contributions welcome, open an issue at [repo]" must stay description) is THE risk — tune on corpus, not intuition | fixture `paragraph-entries.md` (paper style + CJK style); yield: paragraph bucket 14.7k → mostly recovered; spot-check titles in the harness output for prose leaks; `3dbody-papers` 191→~191 |
 | 5 | **Blockquote cards** (cause 6, incl. `java`) | a blockquote whose leading link resolves to a repo → item (reuse step 4's entry test on the card's first paragraph); `<summary>` text opens the section (treat a details-summary html block as a heading-equivalent container) | fixture `details-cards.md` (java-shaped); **`java` corpus case 786→~786** — the webapp eval's named failure; goldens reviewed |
 | 6 | **Link-headings as items** (cause 4) | a link-heading at sectionDepth becomes an item (repo) under a synthesized section instead of an empty section that gets pruned; deeper link-headings keep today's item behavior. Webapp-visible shape change: sections appear that are one-item wrappers — flag in release notes | fixture `link-headings.md`; yield: heading bucket 4.2k → ~0; `useful-javascript-libraries` 478→~478; goldens reviewed |
 | 7 | **Own-link across all own paragraphs** (cause 7) | `findOwnGitHubLink` scans every OWN paragraph of the item (still never nested lists) — title stays the first paragraph's text | fixture `paper-list.md`; `Awesome-Parameter-Efficient-Transfer-Learning` 64 items recover; existing paper-ish fixtures unchanged |
@@ -240,3 +241,44 @@ so production dead-link drops (~1–2%) are excluded on purpose.
   `A-collection-of-useful-repositories` 0→103/104; future-step cases untouched
   (`java` 0/785, `3dbody-papers` 0/176, `useful-javascript-libraries`
   321/478).**
+- **2026-08-24 (later): step 4 landed — paragraph entries.** Corpus-calibrated
+  BEFORE implementing (probes over all top-level GitHub-bearing paragraphs,
+  ~14.6k): two entry families exist. (1) LEADING — the first link is the repo,
+  behind a short label (nothing, an emoji, a CJK tag 项目地址：/【GitHub】);
+  prefix histogram showed prose starts intruding only past ~15 chars.
+  (2) TAG-CLUSTER — the paragraph ends in its link cluster and the GitHub
+  link is labelled as a tag: paper lists (`[Title](paper) … [[Code]](gh)` —
+  3dbody/diffusion-categorized), tab-separated bibliography lines (VAEs),
+  `| [Source Code](gh) |` pipe lines (FLOSS), name/author lines ending in
+  `[Github]` (Awesome-Diffusion-Models), dated lines (`… [Github] 4 Feb
+  2023`). The golden fleet then caught the leak families the plan called THE
+  risk, and each got its own guard: English prose prefixes ("Please see
+  CONTRIBUTING", "See also", "Inspired by the") — a leading label must be
+  TAG-shaped (empty / non-ASCII / bracketed / colon-terminated); the
+  image-only awesome badge — the identity link must carry text; intro prose
+  ending in a bare repo URL ("For more awesome lists, see <gh-url>") — a
+  URL-labelled link only qualifies with a preceding link (real paper lines
+  have the paper link first). Also found + fixed en route: the back-to-top
+  exclusion was case-sensitive and missed "the" ("⬆️ Back to Top" was feeding
+  descriptions — free-for-dev goldens cleaned; one shared `BACK_TO_TOP`
+  predicate now guards entry-ness AND descriptions). Emission is the shared
+  path (`paragraphEntryLink` → `splitEntryText`/`emitEntryNodes`/`entryTitle`);
+  paragraph entries count in the section gate (monotone); implicit Overview
+  opens for preamble entries. Known cosmetics (kept honest, not fixed):
+  bare-URL entries get the URL in the title (🔗 https://…), ADM-style titles
+  keep the trailing "[Github]", paper descriptions lead with ". VENUE".
+  **Measured: yield 94.7% → 96.5% (+3,794); paragraph bucket 5,872 → 2,114;
+  0 registries lost items; every other bucket flat or down; hollow stock
+  86 → 52; bands zero 68→26, low 71→35, perfect 324→343. Named: 3dbody
+  0→176/176 (perfect), diffusion-categorized 0→1202/1217, useful-projects
+  0→519/519, Awesome-Diffusion-Models 0→384/391, VAEs 0→133/149, cocoa
+  0→237/239, Developer-Handbook 1→356/381. Goldens: cl +2 items (its two
+  colon-labelled entry lines moved from section description into items — the
+  designed entry-or-description semantics), free-for-dev descriptions lost
+  boilerplate only; all 65 other pre-existing goldens byte-identical.**
+  Residual paragraph losses are NOT paragraph-shaped: heading-per-entry docs
+  (FBI-tools 131, FLOSS 89, LLM-Uncertainty 89 — every section holds exactly
+  one entry so the section gate, correctly by its own rule, drops them;
+  same family as step 6's link-headings — plain-heading-per-entry is the
+  sibling), `<a href>`/org-URL shapes (step 8: iwb, vlm-architectures), and
+  second occurrences under link-headings (crypto → step 6).
