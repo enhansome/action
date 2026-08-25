@@ -54,11 +54,7 @@ Expected effect: ~12k of 190k items retitle; webapp needs no COALESCE fallback
 
 ## Next step
 
-Push → release-please PR (`feat:` → 1.10.0) → merge cuts the tag, moves `v1`,
-publishes `@enhansome/core`. Then dispatch a couple of offender mirrors
-(themeselection/Awesome-JavaScript-Libraries, a best-of-*, an AnimeResearch
-mirror) and verify 0 degenerate titles in the regenerated README.json — then
-archive this file and delete the TODO line.
+None — landed and verified live. Archived.
 
 ## Log
 
@@ -82,3 +78,17 @@ archive this file and delete the TODO line.
   **0 degenerate titles** (was 161), dayjs titled `Day.js` with description
   `Fast 2kB alternative to Moment.js with the same modern API. JavaScript`.
   `make ci` green (typecheck + build + 233 tests). Not pushed.
+- 2026-08-25 c — **Released in 1.10.0 and verified live.** `v1`/`v1.10`/`v1.10.0`
+  all dereference to the release commit c736971. Dispatched the four offender
+  mirrors' `enhance.yml` (runs 32812249709 AJL, 32812252214 best-of-crypto,
+  32812254773 AwesomeAnimeResearch, 32812257953 acme — all success, committed
+  ~05:17Z). Counted at each mirror's HEAD sha (raw.githubusercontent serves
+  stale caches right after a push — first fetch showed 3 mirrors unchanged,
+  the at-sha fetch was the truth): **809 → 0 degenerate titles** across all
+  four (AJL 161→0 rank "N.", best-of-crypto 495→0 "GitHub", AnimeResearch
+  137→0 years, acme 16→0 URLs; item counts unchanged: 205/497/176/16). Spot
+  checks at HEAD: dayjs → `Day.js` / `Fast 2kB alternative to Moment.js.
+  JavaScript`; bitcoin → `bitcoin/bitcoin`; HumanArt → `IDEA-Research/HumanArt`
+  with the venue+paper title as description; acme-lsp → `9fans/acme-lsp`.
+  Remaining mirrors retitle on their own 23:55 cron. Archived → `archive/`;
+  TODO line deleted.
