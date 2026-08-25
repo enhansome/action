@@ -6,7 +6,7 @@ description: the linkified URL must lead an entry line to become one.
 ## Kernel Tools
 
 * [github.com/example/kernel-two](https://github.com/example/kernel-two) ⭐ 44,201 | 🐛 0 | 🌐 TypeScript | 📅 2023-06-15 - a second bare-URL entry so the section gate passes.
-* [github.com/example/kernel-tool](https://github.com/example/kernel-tool) ⭐ 5,717 | 🐛 16 | 🌐 Java | 📅 2022-01-15 ![stars](https://example.com/stars.svg) - a bare scheme-less URL with shields badges, the windows-kernel shape; the title is the URL text.
+* [github.com/example/kernel-tool](https://github.com/example/kernel-tool) ⭐ 5,717 | 🐛 16 | 🌐 Java | 📅 2022-01-15 ![stars](https://example.com/stars.svg) - a bare scheme-less URL with shields badges, the windows-kernel shape; a URL label is not a title, so the item takes owner/name.
 * [github.com/user/repo-b](https://github.com/user/repo-b) - a dead bare target drops its entry.
 
 ## Prose Mentions

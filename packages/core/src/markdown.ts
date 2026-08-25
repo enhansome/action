@@ -770,20 +770,27 @@ function processListRecursively(
   return entries.flatMap(entry => entry.emitted);
 }
 
-// Title with the fallbacks every entry source shares when the split yields no
-// text (e.g. an image-only card link): the own link's text, then the repo
-// name.
+// Title with the fallbacks every entry source shares: the split's own text
+// when it names something; else the own link's label when meaningful; else —
+// for a degenerate base (rank/year cell, URL label, tag word) owner/name, for
+// an absent base (an image-only link) the repo name. A degenerate base with
+// no live repo link (a group) keeps its text: nothing better exists.
 function entryTitle(
   base: string,
   ownLink: Link | undefined,
   repoInfo: null | RepoInfoDetails,
 ): string {
-  return (
-    base ||
-    (ownLink ? getInlineText(ownLink.children) : '') ||
-    repoInfo?.repo ||
-    ''
-  );
+  if (base && !isDegenerateTitle(base)) {
+    return base;
+  }
+  const linkText = ownLink ? getInlineText(ownLink.children) : '';
+  if (isMeaningfulLinkText(linkText)) {
+    return linkText;
+  }
+  if (base === '') {
+    return repoInfo?.repo ?? '';
+  }
+  return repoInfo ? `${repoInfo.owner}/${repoInfo.repo}` : base;
 }
 
 // Table rows are entries under the nearest open container. The common shape —
@@ -824,16 +831,29 @@ function processTableRows(
       }
       const repoInfo = repoInfoMap.get(ownLink.url) ?? null;
       const firstCellText = splitEntryText(row.children[0]?.children ?? []);
-      const restCellsText = row.children
-        .slice(1)
-        .map(cell => getNodeText(cell))
-        .filter(Boolean);
+      // A degenerate first cell (a rank/year column) moves the title source to
+      // the link's own cell: that cell no longer feeds the description — its
+      // label became the title — and the degenerate cell drops as noise.
+      const linkCellIndex = isDegenerateTitle(firstCellText.title)
+        ? cellLinks.findIndex(link => link === ownLink)
+        : -1;
+      const titleText =
+        linkCellIndex === -1
+          ? firstCellText
+          : splitEntryText(row.children[linkCellIndex].children);
+      const description = [
+        titleText.description,
+        ...row.children
+          .slice(1)
+          .filter((_cell, index) => index + 1 !== linkCellIndex)
+          .map(cell => getNodeText(cell)),
+      ]
+        .join(' ')
+        .trim();
       items.push(
         ...emitEntryNodes(ownLink.url, repoInfo, {
-          title: entryTitle(firstCellText.title, ownLink, repoInfo),
-          description: [firstCellText.description, ...restCellsText]
-            .join(' ')
-            .trim(),
+          title: entryTitle(titleText.title, ownLink, repoInfo),
+          description,
         }, []),
       );
       continue;
@@ -875,6 +895,33 @@ const ENTRY_TRAILING_MAX = 3;
 const TAG_LINK_TEXT =
   /^[\[\]()*\s:_-]*(?:source\s+code|code|github|repo|source|src|project|paper|page|web|site|home|official|notebook|demo|data|docs|implementation|arxiv)\b[\[\]()*\s:_-]*$/i;
 const URL_LINK_TEXT = /^https?:\/\/\S+$/i;
+
+// A title that names nothing — the degenerate families every entry source can
+// emit: a pure number/punctuation run (a table's rank or year column, "15."
+// / "2023" / "2025-05" / "-"), a URL (a link whose label is the URL itself,
+// scheme or scheme-less `github.com/…`), or a bare tag word ("GitHub",
+// "Source code" — best-of's generated lines). CJK labels are letters
+// (`\p{L}`) and stay titles.
+const URL_TITLE =
+  /^(?:[a-z][a-z0-9+.-]*:\/\/|www\.)\S+$|^github\.com\/\S+$/i;
+
+function isDegenerateTitle(title: string): boolean {
+  const trimmed = title.trim();
+  return (
+    !!trimmed &&
+    (URL_TITLE.test(trimmed) ||
+      TAG_LINK_TEXT.test(trimmed) ||
+      !/[\p{L}]/u.test(trimmed))
+  );
+}
+
+// A link label that can serve as a title. The degenerate shapes are excluded
+// twice over — a URL label stays a URL, and a tag label names the link's role
+// ("[Github](repo)"), not the repo.
+function isMeaningfulLinkText(text: string): boolean {
+  return text !== '' && !isDegenerateTitle(text);
+}
+
 // Dated entry lines end their tag cluster with a publication date ("4 Feb
 // 2023", "19 Apr 2022", "2023") — a real corpus family (dated paper/tutorial
 // lists), not a sentence continuation.

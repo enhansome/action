@@ -5,7 +5,7 @@ description: the linkified URL must lead an entry line to become one.
 
 ## Kernel Tools
 
-- github.com/example/kernel-tool ![stars](https://example.com/stars.svg) - a bare scheme-less URL with shields badges, the windows-kernel shape; the title is the URL text.
+- github.com/example/kernel-tool ![stars](https://example.com/stars.svg) - a bare scheme-less URL with shields badges, the windows-kernel shape; a URL label is not a title, so the item takes owner/name.
 - github.com/example/kernel-two - a second bare-URL entry so the section gate passes.
 - github.com/user/repo-b - a dead bare target drops its entry.
 

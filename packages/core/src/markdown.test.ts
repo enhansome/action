@@ -474,6 +474,179 @@ describe('Item identity: own-link only, categories become groups', () => {
   });
 });
 
+// A title that carries no name — a rank number, a year, a URL, or a bare tag
+// word — falls back to the repo link's own label when that names the repo,
+// else owner/name. The measured families (progress/degenerate-titles.md):
+// numbered rank tables (`| 15. | [**Day.js**](…) |`), year-first paper tables
+// with a tag link column, URL-as-label links, and best-of's `[GitHub](repo)`
+// lines. CJK labels and letter-bearing text are titles, not noise.
+describe('Degenerate titles fall back to the link label, then owner/name', () => {
+  const token = 'test-token';
+  const sourceRepo = 'example/awesome-test';
+
+  beforeEach(() => {
+    vi.clearAllMocks();
+    vi.mocked(github.parseGitHubUrl).mockImplementation((url: string) => {
+      if (!url.includes('github.com')) {
+        return null;
+      }
+      const parts = url.split('/');
+      return { owner: parts[parts.length - 2], repo: parts[parts.length - 1] };
+    });
+    vi.mocked(github.getRepoInfo).mockImplementation((_ok, owner, repo) =>
+      Promise.resolve({
+        archived: false,
+        id: 1,
+        language: 'TypeScript',
+        open_issues_count: 1,
+        owner,
+        pushed_at: '2025-01-01T00:00:00Z',
+        repo,
+        stargazers_count: 100,
+        topics: [],
+        description: null,
+      }),
+    );
+  });
+
+  async function process(md: string) {
+    const { jsonData } = await processMarkdownContent(
+      md,
+      token,
+      [],
+      { by: '', minLinks: 0 },
+      sourceRepo,
+      '',
+    );
+    return jsonData;
+  }
+
+  function sectionItems(
+    data: Awaited<ReturnType<typeof process>>,
+    title: string,
+  ) {
+    const section = data.items.find(s => s.title === title);
+    expect(section, `section "${title}" should exist`).toBeDefined();
+    return section?.items ?? [];
+  }
+
+  it('titles a numbered rank table row from the link label, not the rank cell', async () => {
+    const data = await process(
+      [
+        '# List',
+        '',
+        '## Ranking',
+        '',
+        '| # | Tool | Notes | License |',
+        '| - | ---- | ----- | ------- |',
+        '| 15. | [**Day.js**](https://github.com/iamkun/dayjs) | Fast 2kB alternative to Moment.js. | MIT |',
+        '| 16. | [**Tempus**](https://github.com/Eonasdan/tempus-dominus) | A date time picker. | MIT |',
+        '',
+      ].join('\n'),
+    );
+    const items = sectionItems(data, 'Ranking');
+    const dayjs = items.find(i => i.title === 'Day.js');
+    expect(dayjs, 'item titled "Day.js" should exist').toBeDefined();
+    expect(dayjs?.node_type).toBe('item');
+    // The rank cell and the label that became the title stay out of the
+    // description — no echo, no noise.
+    expect(dayjs?.description).toBe('Fast 2kB alternative to Moment.js. MIT');
+    expect(items.some(i => i.title === '15.')).toBe(false);
+  });
+
+  it('titles a year-first paper row owner/name when the link label is a tag', async () => {
+    const data = await process(
+      [
+        '# List',
+        '',
+        '## Papers',
+        '',
+        '| Year | Venue | Paper | Code |',
+        '| ---- | ----- | ----- | ---- |',
+        '| 2024 | Arxiv | [Human-Art](https://example.com/human-art.pdf) | [Github](https://github.com/IDEA-Research/HumanArt) |',
+        '| 2023 | CVPR | [CoMix](https://example.com/comix.pdf) | [Github](https://github.com/emanuelevivoli/comix-dataset) |',
+        '',
+      ].join('\n'),
+    );
+    const items = sectionItems(data, 'Papers');
+    const humanArt = items.find(i => i.title === 'IDEA-Research/HumanArt');
+    expect(
+      humanArt,
+      'item titled "IDEA-Research/HumanArt" should exist',
+    ).toBeDefined();
+    expect(humanArt?.node_type).toBe('item');
+    // The year cell and the tag label drop; venue and paper title survive.
+    expect(humanArt?.description).toBe('Arxiv Human-Art');
+    expect(items.some(i => i.title === '2024')).toBe(false);
+    expect(items.some(i => i.title === 'Github')).toBe(false);
+  });
+
+  it('titles a URL-label link owner/name', async () => {
+    const data = await process(
+      [
+        '# List',
+        '',
+        '## Tools',
+        '',
+        '- [https://github.com/o/repo](https://github.com/o/repo) - the label is the URL itself',
+        '- github.com/o/plain - the linkified bare form, same defect',
+        '',
+      ].join('\n'),
+    );
+    const items = sectionItems(data, 'Tools');
+    expect(items.map(i => i.title)).toEqual(['o/repo', 'o/plain']);
+  });
+
+  it('titles a tag-word label owner/name', async () => {
+    const data = await process(
+      [
+        '# List',
+        '',
+        '## Projects',
+        '',
+        '- [GitHub](https://github.com/bitcoin/bitcoin) (⭐ 77K · stats):',
+        '- [Source code](https://github.com/ElementsProject/lightning) (⭐ 2.8K):',
+        '',
+      ].join('\n'),
+    );
+    const items = sectionItems(data, 'Projects');
+    expect(items.map(i => i.title)).toEqual([
+      'bitcoin/bitcoin',
+      'ElementsProject/lightning',
+    ]);
+  });
+
+  it('keeps a CJK label as the title', async () => {
+    const data = await process(
+      [
+        '# List',
+        '',
+        '## 工具',
+        '',
+        '- 代码仓库：[tool](https://github.com/o/tool) - a CJK label is a name, not noise',
+        '',
+      ].join('\n'),
+    );
+    const items = sectionItems(data, '工具');
+    expect(items.map(i => i.title)).toEqual(['代码仓库：tool']);
+  });
+
+  it('keeps the repo-name fallback for an empty title (image-only link)', async () => {
+    const data = await process(
+      [
+        '# List',
+        '',
+        '## Badges',
+        '',
+        '- [![badge](https://example.com/b.svg)](https://github.com/o/badge-tool) - an image-only link',
+        '',
+      ].join('\n'),
+    );
+    const items = sectionItems(data, 'Badges');
+    expect(items.map(i => i.title)).toEqual(['badge-tool']);
+  });
+});
+
 // The section tree must mirror the source README's heading tree: sub-headings
 // nest as groups, a heading that is a single GitHub link is an item, containers
 // with no items anywhere beneath are dropped, and dead links emit nothing.

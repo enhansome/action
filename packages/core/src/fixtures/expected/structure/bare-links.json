@@ -5,7 +5,7 @@
       "items": [
         {
           "node_type": "item",
-          "title": "github.com/example/kernel-two",
+          "title": "example/kernel-two",
           "description": "a second bare-URL entry so the section gate passes.",
           "children": [],
           "repo_info": {
@@ -20,8 +20,8 @@
         },
         {
           "node_type": "item",
-          "title": "github.com/example/kernel-tool",
-          "description": "a bare scheme-less URL with shields badges, the windows-kernel shape; the title is the URL text.",
+          "title": "example/kernel-tool",
+          "description": "a bare scheme-less URL with shields badges, the windows-kernel shape; a URL label is not a title, so the item takes owner/name.",
           "children": [],
           "repo_info": {
             "archived": false,
@@ -41,7 +41,7 @@
       "items": [
         {
           "node_type": "item",
-          "title": "github.com/example/leading-url",
+          "title": "example/leading-url",
           "description": "a paragraph led by a bare URL is an entry.",
           "children": [],
           "repo_info": {
@@ -56,7 +56,7 @@
         },
         {
           "node_type": "item",
-          "title": "github.com/example/leading-two",
+          "title": "example/leading-two",
           "description": "a second leading entry for the gate.",
           "children": [],
           "repo_info": {
@@ -128,7 +128,7 @@
       "items": [
         {
           "node_type": "item",
-          "title": "github.com/example/inline-code",
+          "title": "example/inline-code",
           "description": "a URL text inside a link label is never double-linkified.",
           "children": [],
           "repo_info": {
