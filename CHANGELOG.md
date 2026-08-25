@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.10.0](https://github.com/enhansome/action/compare/v1.9.0...v1.10.0) (2026-08-25)
+
+
+### Features
+
+* fall back from degenerate item titles to the link label or owner/name ([72d5c02](https://github.com/enhansome/action/commit/72d5c024bcf0a8186cc224dab40ab52b31c2dbd5))
+
 ## [1.9.0](https://github.com/enhansome/action/compare/v1.8.1...v1.9.0) (2026-08-24)
 
 
