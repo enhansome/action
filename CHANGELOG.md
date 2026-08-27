@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.10.1](https://github.com/enhansome/action/compare/v1.10.0...v1.10.1) (2026-08-27)
+
+
+### Bug Fixes
+
+* emit the source repo as original_repository_info in README.json ([48ea0d2](https://github.com/enhansome/action/commit/48ea0d2c1a52cfcf88d8f9b8048f17b443a4cce6))
+
 ## [1.10.0](https://github.com/enhansome/action/compare/v1.9.0...v1.10.0) (2026-08-25)
 
 
