@@ -50,6 +50,29 @@ interface Container {
   title: string;
 }
 
+// The originalRepositoryInfo a "owner/name" source-repos entry stands for —
+// the repo name is what feeds the no-H1 title fallback.
+function sourceRepoInfo(
+  identifier: string | undefined,
+): null | RepoInfoDetails {
+  if (!identifier) {
+    return null;
+  }
+  const [owner, repo] = identifier.split('/');
+  return {
+    archived: false,
+    description: null,
+    id: 1,
+    language: null,
+    open_issues_count: 0,
+    owner,
+    pushed_at: null,
+    repo,
+    stargazers_count: 0,
+    topics: [],
+  };
+}
+
 function findContainer(
   nodes: Container[],
   title: string,
@@ -150,16 +173,17 @@ describe('Branded titles from README fixtures', () => {
     async (_category, fixtureName, expectedTitle) => {
       const fixturePath = path.join(fixturesDir, `${fixtureName}.md`);
       const content = fs.readFileSync(fixturePath, 'utf-8');
-      const sourceRepo = sourceRepos[fixtureName];
 
       const result = await processMarkdownContent(
         content,
         token,
         brandingRules,
         { by: '', minLinks: 2 },
-        sourceRepo,
         '',
         `enhansome/enhansome-${fixtureName}`,
+        undefined,
+        undefined,
+        sourceRepoInfo(sourceRepos[fixtureName]),
       );
 
       expect(result.jsonData.metadata.title).toBe(expectedTitle);
@@ -231,9 +255,11 @@ describe('Item titles and descriptions from README fixtures', () => {
         token,
         [],
         { by: '', minLinks: 2 },
-        sourceRepos[fixtureName],
         '',
         `enhansome/enhansome-${fixtureName}`,
+        undefined,
+        undefined,
+        sourceRepoInfo(sourceRepos[fixtureName]),
       );
 
       const sec = findContainer(result.jsonData.items, section);

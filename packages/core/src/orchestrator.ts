@@ -1,4 +1,5 @@
 import { Logger } from './logger.js';
+import type { RepoInfoDetails } from './github.js';
 import {
   JsonOutput,
   processMarkdownContent,
@@ -14,11 +15,9 @@ export interface EnhanceOptions {
   /** Defaults to the console sink; pass your own (e.g. an Actions workflow-command sink) to route diagnostics. */
   log?: Logger;
   now?: Date;
-  originalRepository: string;
-  originalRepositoryId?: number;
+  originalRepositoryInfo?: null | RepoInfoDetails;
   originalRepositorySha?: string;
   relativeLinkPrefix?: string;
-  /** Text substitutions applied to the source before it is parsed. */
   replacements?: ReplacementRule[];
   sortBy?: '' | 'last_commit' | 'stars';
   token: string;
@@ -35,8 +34,7 @@ export async function enhance(options: EnhanceOptions): Promise<EnhanceResult> {
     disableBranding = false,
     log,
     now = new Date(),
-    originalRepository,
-    originalRepositoryId,
+    originalRepositoryInfo,
     originalRepositorySha,
     relativeLinkPrefix = '',
     replacements = [],
@@ -61,12 +59,11 @@ export async function enhance(options: EnhanceOptions): Promise<EnhanceResult> {
     token,
     rules,
     sortOptions,
-    originalRepository,
     relativeLinkPrefix,
     enhancedRepository,
     enhancedRepositoryDescription,
     originalRepositorySha,
-    originalRepositoryId,
+    originalRepositoryInfo,
     now,
     log,
   );

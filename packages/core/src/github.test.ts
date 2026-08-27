@@ -7,8 +7,8 @@ import {
   createRateLimitHandler,
   getLatestCommitSha,
   getReadme,
-  getRepoId,
   getRepoInfo,
+  getRepoInfoOrNull,
   GithubClient,
   makeOctokit,
   parseGitHubUrl,
@@ -355,11 +355,11 @@ describe('github.ts', () => {
     });
   });
 
-  describe('getRepoId', () => {
+  describe('getRepoInfoOrNull', () => {
     const owner = 'test-owner';
     const repo = 'test-repo';
 
-    it('should return the repo numeric id', async () => {
+    it('should return the full repo info', async () => {
       const client = mockOctokit({
         'repos.get': () => ({
           archived: false,
@@ -375,9 +375,20 @@ describe('github.ts', () => {
         }),
       });
 
-      const result = await getRepoId(client, owner, repo);
+      const result = await getRepoInfoOrNull(client, owner, repo);
 
-      expect(result).toBe(4242);
+      expect(result).toEqual({
+        archived: false,
+        description: null,
+        id: 4242,
+        language: null,
+        open_issues_count: 0,
+        owner: owner,
+        pushed_at: null,
+        repo: repo,
+        stargazers_count: 0,
+        topics: [],
+      });
     });
 
     it('should return null and log the status on a request error', async () => {
@@ -387,11 +398,13 @@ describe('github.ts', () => {
         },
       });
 
-      const result = await getRepoId(client, owner, repo);
+      const result = await getRepoInfoOrNull(client, owner, repo);
 
       expect(result).toBeNull();
       expect(log.error).toHaveBeenCalledWith(
-        expect.stringContaining(`Failed to fetch repo id for ${owner}/${repo}`),
+        expect.stringContaining(
+          `Failed to fetch repo info for ${owner}/${repo}`,
+        ),
       );
     });
   });

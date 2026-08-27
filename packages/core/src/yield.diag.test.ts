@@ -230,7 +230,6 @@ describeYield('yield harness', () => {
           content,
           disableBranding: true,
           log: silentLog,
-          originalRepository: `corpus/${file}`,
           token: 'yield-harness',
         });
         const got = gotRepos(jsonData);

@@ -96,7 +96,7 @@ describe('golden: structure + raw output for README fixtures', () => {
     );
 
     // `complex` is a hand-crafted edge fixture with no source-repos entry; the
-    // fallback keeps metadata.original_repository populated.
+    // fallback keeps the root identity populated.
     const originalRepository = sourceRepos[name] ?? 'example/complex-list';
 
     const { finalContent, jsonData } = await enhance({
@@ -104,8 +104,18 @@ describe('golden: structure + raw output for README fixtures', () => {
       enhancedRepository: `enhansome/enhansome-${name}`,
       enhancedRepositoryDescription: 'enhanced list',
       now: FIXED_NOW,
-      originalRepository,
-      originalRepositoryId: 4242,
+      originalRepositoryInfo: {
+        archived: false,
+        description: null,
+        id: 4242,
+        language: 'JavaScript',
+        open_issues_count: 3,
+        owner: originalRepository.split('/')[0],
+        pushed_at: '2024-12-01T00:00:00Z',
+        repo: originalRepository.split('/')[1] ?? name,
+        stargazers_count: 1234,
+        topics: [],
+      },
       originalRepositorySha: 'deadbeef',
       sortBy: 'stars',
       token: 'test-token',

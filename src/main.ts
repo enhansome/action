@@ -4,7 +4,7 @@ import {
   enhance,
   getLatestCommitSha,
   getReadme,
-  getRepoId,
+  getRepoInfoOrNull,
   makeOctokit,
   parseOwnerRepo,
   type ReplacementRule,
@@ -49,11 +49,11 @@ export async function run(): Promise<void> {
 
     core.info(`Fetching source README from ${parsed.owner}/${parsed.repo}`);
     const octokit = makeOctokit(token, { log: actionsLog });
-    const [readme, originalRepositorySha, originalRepositoryId] =
+    const [readme, originalRepositorySha, originalRepositoryInfo] =
       await Promise.all([
         getReadme(octokit, parsed.owner, parsed.repo),
         getLatestCommitSha(octokit, parsed.owner, parsed.repo),
-        getRepoId(octokit, parsed.owner, parsed.repo),
+        getRepoInfoOrNull(octokit, parsed.owner, parsed.repo),
       ]);
     // getReadme throws on failure (strict mode); the top-level catch surfaces
     // it via setFailed, so there is no null branch to handle.
@@ -62,9 +62,9 @@ export async function run(): Promise<void> {
         `Could not determine the latest commit SHA for ${parsed.owner}/${parsed.repo}; it will be omitted from the JSON output.`,
       );
     }
-    if (originalRepositoryId === null) {
+    if (originalRepositoryInfo === null) {
       core.warning(
-        `Could not determine the numeric GitHub id for ${parsed.owner}/${parsed.repo}; it will be omitted from the JSON output.`,
+        `Could not determine the repo info for ${parsed.owner}/${parsed.repo}; the repo id and info will be omitted from the JSON output.`,
       );
     }
     const originalContent = readme;
@@ -83,8 +83,7 @@ export async function run(): Promise<void> {
     const result = await enhance({
       content: originalContent,
       disableBranding,
-      originalRepository,
-      originalRepositoryId: originalRepositoryId ?? undefined,
+      originalRepositoryInfo: originalRepositoryInfo ?? undefined,
       originalRepositorySha: originalRepositorySha ?? undefined,
       replacements,
       relativeLinkPrefix,

@@ -71,7 +71,6 @@ describe('Orchestrator: enhance()', () => {
       const { finalContent } = await enhance({
         content: originalContent,
         disableBranding: true,
-        originalRepository: 'owner/source-repo',
         token,
       });
 
@@ -113,7 +112,6 @@ describe('Orchestrator: enhance()', () => {
       const { finalContent } = await enhance({
         content: originalContent,
         disableBranding: true,
-        originalRepository: 'owner/source-repo',
         token,
       });
 
@@ -148,7 +146,6 @@ describe('Orchestrator: enhance()', () => {
         const { finalContent } = await enhance({
           content: input,
           disableBranding: true,
-          originalRepository: 'owner/source-repo',
           replacements: [{ find, replace, type }],
           token,
         });
@@ -172,7 +169,6 @@ describe('Orchestrator: enhance()', () => {
       const { finalContent } = await enhance({
         content: 'hello __VERSION__ 2025-01-01',
         disableBranding: true,
-        originalRepository: 'owner/source-repo',
         replacements: [
           { find: '__VERSION__', replace: '1.5.0', type: 'literal' },
           { find: '\\d{4}-\\d{2}-\\d{2}', replace: 'TBD', type: 'regex' },
@@ -204,7 +200,6 @@ A list of awesome Go frameworks.
 
       const { finalContent } = await enhance({
         content: originalContent,
-        originalRepository: 'owner/source-repo',
         token,
         now: new Date('2026-06-28T12:00:00Z'),
       });
@@ -217,7 +212,6 @@ A list of awesome Go frameworks.
       const { finalContent } = await enhance({
         content: originalContent,
         disableBranding: true,
-        originalRepository: 'owner/source-repo',
         token,
       });
       expect(finalContent).toBe(originalContent);
@@ -258,8 +252,20 @@ A list of awesome Go frameworks.
 
       const { finalContent, jsonData } = await enhance({
         content,
-        originalRepository: 'NARKOZ/guides',
         enhancedRepository: 'enhansome/enhansome-guides',
+        // No valid title H1 in the fixture — the source repo name brands it.
+        originalRepositoryInfo: {
+          archived: false,
+          description: null,
+          id: 1,
+          language: null,
+          open_issues_count: 0,
+          owner: 'NARKOZ',
+          pushed_at: null,
+          repo: 'guides',
+          stargazers_count: 0,
+          topics: [],
+        },
         token,
       });
 
@@ -294,7 +300,6 @@ A list of awesome Go frameworks.
 
       const { finalContent, jsonData } = await enhance({
         content,
-        originalRepository: 'x/awesome-foo',
         token,
       });
 
@@ -352,7 +357,6 @@ A list of awesome Go frameworks.
 
       const { finalContent, jsonData } = await enhance({
         content,
-        originalRepository: 'x/awesome-foo',
         token,
       });
 
@@ -383,7 +387,6 @@ A list of awesome Go frameworks.
 
       const { jsonData } = await enhance({
         content,
-        originalRepository: 'x/awesome-foo',
         token,
       });
 
@@ -404,7 +407,6 @@ A list of awesome Go frameworks.
     it('appends an enhansomed-on footer with an ISO date when branded', async () => {
       const { finalContent } = await enhance({
         content: '# Awesome Go\n\nA list of awesome Go frameworks.',
-        originalRepository: 'owner/source-repo',
         token,
         now: new Date('2026-06-28T12:00:00Z'),
       });
@@ -417,7 +419,6 @@ A list of awesome Go frameworks.
       const { finalContent } = await enhance({
         content: '# Awesome Go\n\nA list.',
         disableBranding: true,
-        originalRepository: 'owner/source-repo',
         token,
         now: new Date('2026-06-28T12:00:00Z'),
       });
@@ -445,7 +446,6 @@ A list of awesome Go frameworks.
     `;
       const { finalContent } = await enhance({
         content: originalContent,
-        originalRepository: 'owner/source-repo',
         sortBy: 'stars',
         token,
       });
@@ -479,7 +479,6 @@ A list of awesome Go frameworks.
 
       const { jsonData } = await enhance({
         content: complexContent,
-        originalRepository: 'owner/source-repo',
         sortBy: 'stars',
         token,
       });
@@ -556,7 +555,6 @@ Version: __VERSION__ | Last Updated: 2025-01-01
           { find: '__VERSION__', replace: '1.5.0', type: 'literal' },
           { find: '\\d{4}-\\d{2}-\\d{2}', replace: 'TBD', type: 'regex' },
         ],
-        originalRepository: 'owner/source-repo',
         sortBy: 'stars',
         token,
         now: new Date('2026-06-28T12:00:00Z'),
@@ -573,21 +571,18 @@ Version: __VERSION__ | Last Updated: 2025-01-01
       vi.mocked(github.parseGitHubUrl).mockReturnValue(null);
     });
 
-    it('should include original_repository in JSON metadata when provided', async () => {
+    it('should include enhanced_repository fields in JSON metadata when provided', async () => {
       const originalContent =
         '# Awesome Test List\n\n* [Some Repo](https://github.com/user/repo)';
-      const originalRepository = 'jorgebucaran/awsm.fish';
       const enhancedRepository = 'myuser/awsm-with-stars';
 
       const { jsonData } = await enhance({
         content: originalContent,
-        originalRepository,
         enhancedRepository,
         enhancedRepositoryDescription: 'Enhanced awesome list',
         token,
       });
 
-      expect(jsonData.metadata.original_repository).toBe(originalRepository);
       expect(jsonData.metadata.enhanced_repository).toBe(enhancedRepository);
       expect(jsonData.metadata.enhanced_repository_description).toBe(
         'Enhanced awesome list',
@@ -599,7 +594,6 @@ Version: __VERSION__ | Last Updated: 2025-01-01
 
       const { jsonData } = await enhance({
         content: originalContent,
-        originalRepository: 'jorgebucaran/awsm.fish',
         originalRepositorySha: 'deadbeefcafe',
         token,
       });
@@ -612,36 +606,52 @@ Version: __VERSION__ | Last Updated: 2025-01-01
 
       const { jsonData } = await enhance({
         content: originalContent,
-        originalRepository: 'jorgebucaran/awsm.fish',
         token,
       });
 
       expect(jsonData.metadata.original_repository_sha).toBeNull();
     });
 
-    it('should include the source repo numeric id in JSON metadata when provided', async () => {
+    it('should emit the source repo info in JSON metadata when provided', async () => {
       const originalContent = '# Awesome Test List';
 
       const { jsonData } = await enhance({
         content: originalContent,
-        originalRepository: 'jorgebucaran/awsm.fish',
-        originalRepositoryId: 123456,
+        originalRepositoryInfo: {
+          archived: false,
+          description: 'Awesomeness',
+          id: 123456,
+          language: 'Rust',
+          open_issues_count: 2,
+          owner: 'jorgebucaran',
+          pushed_at: '2026-08-20T03:35:38Z',
+          repo: 'awsm.fish',
+          stargazers_count: 4321,
+          topics: ['fish'],
+        },
         token,
       });
 
-      expect(jsonData.metadata.original_repository_id).toBe(123456);
+      expect(jsonData.metadata.original_repository_info).toEqual({
+        archived: false,
+        id: 123456,
+        language: 'Rust',
+        last_commit: '2026-08-20T03:35:38Z',
+        owner: 'jorgebucaran',
+        repo: 'awsm.fish',
+        stars: 4321,
+      });
     });
 
-    it('should set the source repo numeric id to null when not provided', async () => {
+    it('should set the source repo info to null when not provided', async () => {
       const originalContent = '# Awesome Test List';
 
       const { jsonData } = await enhance({
         content: originalContent,
-        originalRepository: 'jorgebucaran/awsm.fish',
         token,
       });
 
-      expect(jsonData.metadata.original_repository_id).toBeNull();
+      expect(jsonData.metadata.original_repository_info).toBeNull();
     });
   });
 

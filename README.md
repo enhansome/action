@@ -103,10 +103,13 @@ Three consequences worth knowing:
 
 ## Root identity
 
-`metadata.original_repository_id` is the source repo's numeric GitHub id — the
-stable identity consumers key a tree's root node on (items carry theirs in
-`repo_info.id`). It is `null` only when the lookup failed; the run continues and
-`original_repository` ("owner/name") stays authoritative for display.
+`metadata.original_repository_info` is the source repo's sole identity and
+metadata — same shape as an item's `repo_info` (numeric id, owner/name, stars,
+language, `last_commit`, archived) — so a tree's root needs no special case
+downstream: it flows through the same consumer path as any listed repo. It is
+`null` only when the lookup failed (transport error); such a tree carries no
+root identity at all. `metadata.original_repository_sha` is the source commit
+the enhanced list was built from (provenance).
 
 ## Development
 

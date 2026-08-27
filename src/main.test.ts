@@ -35,10 +35,23 @@ vi.mock('@enhansome/core', () => ({
   enhance: vi.fn(),
   getLatestCommitSha: vi.fn(),
   getReadme: vi.fn(),
-  getRepoId: vi.fn(),
+  getRepoInfoOrNull: vi.fn(),
   makeOctokit: vi.fn(() => ({ __client: true })),
   parseOwnerRepo: vi.fn(),
 }));
+
+const sourceRepoInfo = {
+  archived: false,
+  description: null,
+  id: 4242,
+  language: 'Ruby',
+  open_issues_count: 7,
+  owner: 'NARKOZ',
+  pushed_at: '2026-08-20T03:35:38Z',
+  repo: 'guides',
+  stargazers_count: 4321,
+  topics: [],
+};
 
 function enhanceResult(overrides: Partial<EnhanceResult> = {}): EnhanceResult {
   return {
@@ -47,8 +60,15 @@ function enhanceResult(overrides: Partial<EnhanceResult> = {}): EnhanceResult {
       items: [],
       metadata: {
         last_updated: '2026-06-27T00:00:00.000Z',
-        original_repository: 'NARKOZ/guides',
-        original_repository_id: 4242,
+        original_repository_info: {
+          archived: false,
+          id: 4242,
+          language: 'Ruby',
+          last_commit: '2026-08-20T03:35:38Z',
+          owner: 'NARKOZ',
+          repo: 'guides',
+          stars: 4321,
+        },
         original_repository_sha: 'abc123',
         enhanced_repository: 'me/my-list',
         enhanced_repository_description: 'enhanced list',
@@ -74,7 +94,7 @@ describe('main: run()', () => {
     });
     vi.mocked(githubClient.getReadme).mockResolvedValue('# Source README');
     vi.mocked(githubClient.getLatestCommitSha).mockResolvedValue('abc123');
-    vi.mocked(githubClient.getRepoId).mockResolvedValue(4242);
+    vi.mocked(githubClient.getRepoInfoOrNull).mockResolvedValue(sourceRepoInfo);
   });
 
   it('fetches the source README rather than reading the local file', async () => {
@@ -120,27 +140,27 @@ describe('main: run()', () => {
     expect(fs.writeFile).toHaveBeenCalledWith('README.md', 'enhanced', 'utf-8');
   });
 
-  it('passes the source repo id through to enhance()', async () => {
+  it('passes the source repo info through to enhance()', async () => {
     await run();
 
-    expect(githubClient.getRepoId).toHaveBeenCalledWith(
+    expect(githubClient.getRepoInfoOrNull).toHaveBeenCalledWith(
       { __client: true },
       'NARKOZ',
       'guides',
     );
     expect(vi.mocked(enhance).mock.calls[0][0]).toMatchObject({
-      originalRepositoryId: 4242,
+      originalRepositoryInfo: sourceRepoInfo,
     });
   });
 
-  it('proceeds (with a warning) when the repo id cannot be determined', async () => {
-    vi.mocked(githubClient.getRepoId).mockResolvedValue(null);
+  it('proceeds (with a warning) when the repo info cannot be determined', async () => {
+    vi.mocked(githubClient.getRepoInfoOrNull).mockResolvedValue(null);
 
     await run();
 
     expect(core.warning).toHaveBeenCalled();
     expect(vi.mocked(enhance).mock.calls[0][0]).toMatchObject({
-      originalRepositoryId: undefined,
+      originalRepositoryInfo: undefined,
     });
     expect(fs.writeFile).toHaveBeenCalledWith('README.md', 'enhanced', 'utf-8');
   });

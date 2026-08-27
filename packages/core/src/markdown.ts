@@ -109,11 +109,7 @@ export interface JsonMetadata {
   enhanced_repository: null | string;
   enhanced_repository_description: null | string;
   last_updated: string;
-  original_repository: string;
-  // The source repo's numeric GitHub id — the identity consumers key nodes on.
-  // Null only when the lookup failed (transport error); the name above stays
-  // authoritative for display.
-  original_repository_id: null | number;
+  original_repository_info: null | RepoInfo;
   original_repository_sha: null | string;
   title: string;
 }
@@ -209,12 +205,11 @@ export async function processMarkdownContent(
   token: string,
   replacements: ReplacementRule[] = [],
   sortOptions: SortOptions = { by: '', minLinks: 2 },
-  originalRepository: string,
   relativeLinkPrefix = '',
   enhancedRepository?: string,
   enhancedRepositoryDescription?: string,
   originalRepositorySha?: string,
-  originalRepositoryId?: number,
+  originalRepositoryInfo?: null | RepoInfoDetails,
   now: Date = new Date(),
   log: Logger = consoleLog,
 ): Promise<{ finalContent: string; jsonData: JsonOutput }> {
@@ -234,13 +229,11 @@ export async function processMarkdownContent(
 
   const repoInfoMap = await fetchTargetData(githubUrls, repos);
 
-  // The title derives from the *source* repository (originalRepository), never
-  // the enhanced/mirror repo — otherwise the org name doubles into the title.
   const {
     sections,
     title: rawTitle,
     titleHeadingIndex,
-  } = processTree(tree, repoInfoMap, sortOptions, originalRepository);
+  } = processTree(tree, repoInfoMap, sortOptions, originalRepositoryInfo);
 
   // Single source of truth for the document title: brand it once and use the
   // same value for the markdown H1 and metadata.title (parity).
@@ -251,8 +244,9 @@ export async function processMarkdownContent(
 
   const metadata: JsonMetadata = {
     last_updated: now.toISOString(),
-    original_repository: originalRepository.trim(),
-    original_repository_id: originalRepositoryId ?? null,
+    original_repository_info: originalRepositoryInfo
+      ? toRepoInfo(originalRepositoryInfo)
+      : null,
     original_repository_sha: (originalRepositorySha?.trim() ?? '') || null,
     enhanced_repository: (enhancedRepository?.trim() ?? '') || null,
     enhanced_repository_description:
@@ -1126,23 +1120,6 @@ const INVALID_TITLE_PATTERNS = [
   /^science/i,
 ];
 
-function repoNameFromIdentifier(identifier: string): string {
-  const trimmed = identifier.trim();
-  if (!trimmed) {
-    return '';
-  }
-  if (/^https?:\/\//i.test(trimmed)) {
-    const parts = trimmed
-      .replace(/\.git$/i, '')
-      .replace(/[?#].*$/, '')
-      .split('/')
-      .filter(Boolean);
-    return parts[parts.length - 1] ?? '';
-  }
-  const slashIndex = trimmed.lastIndexOf('/');
-  return slashIndex === -1 ? trimmed : trimmed.slice(slashIndex + 1);
-}
-
 function formatRepoNameAsTitle(repoName: string): string {
   const cleaned = repoName.replace(/[-_]/g, ' ').replace(/\s+/g, ' ').trim();
 
@@ -1251,7 +1228,7 @@ function processTree(
   tree: Root,
   repoInfoMap: Map<string, RepoInfoDetails>,
   sortOptions: SortOptions,
-  originalRepository?: string,
+  originalRepositoryInfo?: null | RepoInfoDetails,
 ): { sections: JsonSection[]; title: string; titleHeadingIndex: number } {
   // Remember the title H1's index so branding replaces the exact same node;
   // scope matches branding/section-building so they can't drift apart.
@@ -1266,11 +1243,8 @@ function processTree(
   // Derive a subject from the *source* repository name when no valid H1 is
   // present. Using the source — not the enhanced/mirror repo — keeps the org
   // name out of the title.
-  if (documentTitle === '' && originalRepository) {
-    const repoName = repoNameFromIdentifier(originalRepository);
-    if (repoName) {
-      documentTitle = formatRepoNameAsTitle(repoName);
-    }
+  if (documentTitle === '' && originalRepositoryInfo) {
+    documentTitle = formatRepoNameAsTitle(originalRepositoryInfo.repo);
   }
 
   const sectionDepth = findSectionDepth(tree, titleSlotIndex);

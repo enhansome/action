@@ -50,8 +50,10 @@ jobs:
           import json
           d = json.load(open("README.json"))
           assert isinstance(d.get("items"), list) and len(d["items"]) > 0, "items missing/empty"
-          got = d["metadata"]["original_repository"]
-          assert got == "NARKOZ/guides", f"original_repository={got!r}"
+          info = d["metadata"]["original_repository_info"]
+          got = f'{info["owner"]}/{info["repo"]}'
+          assert got == "NARKOZ/guides", f"original_repository_info={info!r}"
+          assert isinstance(info["id"], int) and info["stars"] > 0, f"info={info!r}"
           sha = d["metadata"]["original_repository_sha"]
           assert isinstance(sha, str) and len(sha) == 40, f"original_repository_sha={sha!r}"
           print("README.json OK:", len(d["items"]), "sections, sha", sha[:7])
