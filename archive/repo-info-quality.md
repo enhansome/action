@@ -1,11 +1,10 @@
 # repo_info data quality — wrong fields, stale/NULL metadata, rename currency
 
-**Status: fix implemented 2026-08-27 (this repo) — `metadata` now carries the
-root as `original_repository_info` alone (`original_repository` and
-`original_repository_id` deleted, breaking). NOT releasable until the webapp
-reads `original_repository_info`: the daily mirror cron propagates the new
-shape within a day of release, and the webapp fails every tree whose root id
-it cannot resolve (full ingest outage). See log.**
+**Status: DONE — v1.10.1 released 2026-08-27, fleet swept to the new shape
+the same day (playbook dispatch), and the webapp verified it live: root
+metadata landed (NULL-star id-bearing roots 852 → 1, the residual being the
+one mirror whose upstream is deleted), zero ingest errors, orphan rows
+pruned. Archived.**
 
 ## The defect (as suspected 2026-08-26 — see log for verdicts)
 
@@ -141,3 +140,29 @@ after roots carry data.
   repo, stars in `rootGithubIdFromMetadata` + `collectTreeRefs`) MUST land
   before this repo's release. Then also: prune the ~22k NULL-github_id
   orphan rows outside the id-keyed sync.
+- **2026-08-27** Released — user amended the commit to `fix:` and shipped
+  v1.10.1 (deliberate patch-level release of a breaking shape; new standing
+  rule: never choose a major bump without asking — now in ~/.claude/CLAUDE.md).
+  Because mirrors pin the moving `@v1` tag, the rollout is automatic at the
+  next 15:20 UTC cron — no bump gate. Handoff prompt for ../webapp updated
+  accordingly (timing now urgent; compat shim required for the mixed-fleet
+  rollout day).
+- **2026-08-27** CLOSED — verified live, same day. The webapp landed the
+  compat + consumption change (`enhansome/webapp@30fd92f`, failing-first)
+  hours before the deadline, then force-swept the fleet by replaying the
+  v1.10 playbook (smoke 3 mirrors → 2,343 dispatches → status pass: 2,343
+  success, the 1 failure being the known-dead
+  `enhansome-persona-distill-skills` upstream). Index run green
+  (**33080263782**, zero ingest errors). **The fix this thread existed for,
+  verified in D1:** id-bearing NULL-star roots **852 → 1** (residual = the
+  dead mirror, legacy-shape forever on the compat path); spot roots carry
+  full metadata (awesome-tmux NULL → 10,271★, go-recipes NULL → 4,500★ Go,
+  awesome-trilium 931★, awesome-selfhosted 315,506★). Orphan prune:
+  **22,139** NULL-github_id rows deleted, **20,072** stale verdicts
+  cascaded (reference-proof 0 nodes / 0 occurrences first);
+  repositories 222,869 → **200,730**, NULL gid **0**. Two latent webapp
+  bugs surfaced en route and were fixed there (retire vanished-id name
+  squatters, `acf8f96`; accept the livecoding hollowing — its upstream was
+  archived and moved to Codeberg, a source-side disappearance this action
+  faithfully reported). Webapp keeps one follow-up in its own tracking:
+  drop the legacy reads once fleet sampling stays clean.
