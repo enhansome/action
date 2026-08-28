@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.10.2](https://github.com/enhansome/action/compare/v1.10.1...v1.10.2) (2026-08-28)
+
+
+### Bug Fixes
+
+* emit first_seen per item ([40a9ce5](https://github.com/enhansome/action/commit/40a9ce54fd71be8d2bc4d22df5de362544bd643a))
+
 ## [1.10.1](https://github.com/enhansome/action/compare/v1.10.0...v1.10.1) (2026-08-27)
 
 
