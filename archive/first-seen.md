@@ -1,8 +1,9 @@
 # Emit first_seen per item — addition dates in the mirror contract
 
-**Status: in progress — implemented 2026-08-28, awaiting release (1.11.0) and
-one mirror cycle of real dates. Found in the 2026-08-26 webapp MCP capability
-test.**
+**Status: done — released as v1.10.2 (commit 40a9ce5, 2026-08-28). Dates
+become discriminative after each mirror's second post-upgrade run; the webapp
+consumption thread takes it from here. Found in the 2026-08-26 webapp MCP
+capability test.**
 
 ## The defect
 
