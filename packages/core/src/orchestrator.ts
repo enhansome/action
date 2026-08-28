@@ -12,11 +12,11 @@ export interface EnhanceOptions {
   disableBranding?: boolean;
   enhancedRepository?: string;
   enhancedRepositoryDescription?: string;
-  /** Defaults to the console sink; pass your own (e.g. an Actions workflow-command sink) to route diagnostics. */
   log?: Logger;
   now?: Date;
   originalRepositoryInfo?: null | RepoInfoDetails;
   originalRepositorySha?: string;
+  previousJson?: JsonOutput;
   relativeLinkPrefix?: string;
   replacements?: ReplacementRule[];
   sortBy?: '' | 'last_commit' | 'stars';
@@ -36,6 +36,7 @@ export async function enhance(options: EnhanceOptions): Promise<EnhanceResult> {
     now = new Date(),
     originalRepositoryInfo,
     originalRepositorySha,
+    previousJson,
     relativeLinkPrefix = '',
     replacements = [],
     sortBy = '',
@@ -64,6 +65,7 @@ export async function enhance(options: EnhanceOptions): Promise<EnhanceResult> {
     enhancedRepositoryDescription,
     originalRepositorySha,
     originalRepositoryInfo,
+    previousJson,
     now,
     log,
   );

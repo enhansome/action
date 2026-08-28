@@ -5,6 +5,7 @@ import {
   getLatestCommitSha,
   getReadme,
   getRepoInfoOrNull,
+  type JsonOutput,
   makeOctokit,
   parseOwnerRepo,
   type ReplacementRule,
@@ -80,11 +81,24 @@ export async function run(): Promise<void> {
       regexFindAndReplaceRaw,
     );
 
+    // Read before the overwrite: the previous output carries first_seen.
+    let fullJsonPath: string | undefined;
+    if (jsonOutputFile) {
+      fullJsonPath =
+        jsonOutputFile.toLowerCase() === 'auto'
+          ? `${path.basename(markdownFile, path.extname(markdownFile))}.json`
+          : jsonOutputFile;
+    }
+    const previousJson = fullJsonPath
+      ? await readPreviousJson(fullJsonPath)
+      : undefined;
+
     const result = await enhance({
       content: originalContent,
       disableBranding,
       originalRepositoryInfo: originalRepositoryInfo ?? undefined,
       originalRepositorySha: originalRepositorySha ?? undefined,
+      previousJson,
       replacements,
       relativeLinkPrefix,
       sortBy,
@@ -94,19 +108,7 @@ export async function run(): Promise<void> {
       log: actionsLog,
     });
 
-    if (jsonOutputFile) {
-      let fullJsonPath: string;
-
-      if (jsonOutputFile.toLowerCase() === 'auto') {
-        const baseName = path.basename(
-          markdownFile,
-          path.extname(markdownFile),
-        );
-        fullJsonPath = `${baseName}.json`;
-      } else {
-        fullJsonPath = jsonOutputFile;
-      }
-
+    if (fullJsonPath) {
       const outputDir = path.dirname(fullJsonPath);
       await fs.mkdir(outputDir, { recursive: true });
 
@@ -133,6 +135,42 @@ export async function run(): Promise<void> {
       core.setFailed(`Action failed with an unknown error: ${error}`);
     }
   }
+}
+
+async function readPreviousJson(
+  fullJsonPath: string,
+): Promise<JsonOutput | undefined> {
+  let raw: string;
+  try {
+    raw = await fs.readFile(fullJsonPath, 'utf-8');
+  } catch (error) {
+    if ((error as NodeJS.ErrnoException).code !== 'ENOENT') {
+      core.warning(
+        `Could not read previous JSON at ${fullJsonPath}: ${error instanceof Error ? error.message : error}`,
+      );
+    }
+    return undefined;
+  }
+  let value: unknown;
+  try {
+    value = JSON.parse(raw);
+  } catch (error) {
+    core.warning(
+      `Previous JSON at ${fullJsonPath} is not parseable; first_seen starts fresh. (${error instanceof Error ? error.message : error})`,
+    );
+    return undefined;
+  }
+  if (
+    typeof value !== 'object' ||
+    value === null ||
+    !Array.isArray((value as { items?: unknown }).items)
+  ) {
+    core.warning(
+      `Previous JSON at ${fullJsonPath} is not an enhansomed output; first_seen starts fresh.`,
+    );
+    return undefined;
+  }
+  return value as JsonOutput;
 }
 
 /**

@@ -85,6 +85,7 @@ describe('main: run()', () => {
     inputs = {
       github_token: 'test-token',
       markdown_file: 'README.md',
+      json_output_file: 'auto',
       original_repository: 'NARKOZ/guides',
     };
     vi.mocked(enhance).mockResolvedValue(enhanceResult());
@@ -100,7 +101,9 @@ describe('main: run()', () => {
   it('fetches the source README rather than reading the local file', async () => {
     await run();
 
-    expect(fs.readFile).not.toHaveBeenCalled();
+    // The previous run's JSON output (README.json) IS read — only the markdown
+    // source must come from the API.
+    expect(fs.readFile).not.toHaveBeenCalledWith('README.md', 'utf-8');
     expect(githubClient.makeOctokit).toHaveBeenCalledWith('test-token', {
       log: actionsLog,
     });
@@ -222,6 +225,64 @@ describe('main: run()', () => {
         { find: 'foo', replace: 'bar', type: 'literal' },
         { find: '\\d+', replace: 'N', type: 'regex' },
       ],
+    });
+  });
+
+  it("reads the previous run's JSON output and passes it to enhance()", async () => {
+    vi.mocked(fs.readFile).mockResolvedValue('{"items":[]}');
+
+    await run();
+
+    expect(fs.readFile).toHaveBeenCalledWith('README.json', 'utf-8');
+    expect(vi.mocked(enhance).mock.calls[0][0]).toMatchObject({
+      previousJson: { items: [] },
+    });
+  });
+
+  it('passes no previous output when the JSON file does not exist yet', async () => {
+    const enoent = Object.assign(new Error('no such file'), { code: 'ENOENT' });
+    vi.mocked(fs.readFile).mockRejectedValue(enoent);
+
+    await run();
+
+    expect(fs.readFile).toHaveBeenCalledWith('README.json', 'utf-8');
+    expect(vi.mocked(enhance).mock.calls[0][0]).toMatchObject({
+      previousJson: undefined,
+    });
+    expect(core.warning).not.toHaveBeenCalled();
+  });
+
+  it('warns and starts fresh when the previous JSON is corrupt', async () => {
+    vi.mocked(fs.readFile).mockResolvedValue('not json');
+
+    await run();
+
+    expect(core.warning).toHaveBeenCalled();
+    expect(vi.mocked(enhance).mock.calls[0][0]).toMatchObject({
+      previousJson: undefined,
+    });
+    expect(fs.writeFile).toHaveBeenCalledWith('README.md', 'enhanced', 'utf-8');
+  });
+
+  it('warns and starts fresh when the previous JSON is the wrong shape', async () => {
+    vi.mocked(fs.readFile).mockResolvedValue('{"foo":1}');
+
+    await run();
+
+    expect(core.warning).toHaveBeenCalled();
+    expect(vi.mocked(enhance).mock.calls[0][0]).toMatchObject({
+      previousJson: undefined,
+    });
+  });
+
+  it('skips the previous-output read when JSON output is disabled', async () => {
+    inputs.json_output_file = '';
+
+    await run();
+
+    expect(fs.readFile).not.toHaveBeenCalled();
+    expect(vi.mocked(enhance).mock.calls[0][0]).toMatchObject({
+      previousJson: undefined,
     });
   });
 });

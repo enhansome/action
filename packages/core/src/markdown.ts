@@ -5,6 +5,7 @@ import remarkStringify from 'remark-stringify';
 import { unified } from 'unified';
 import { visit } from 'unist-util-visit';
 
+import { firstSeenFor, type FirstSeen } from './first-seen.js';
 import {
   formatRequestError,
   getRepoInfo as fetchRepoInfo,
@@ -74,26 +75,16 @@ export function toRepoInfo(details: RepoInfoDetails): RepoInfo {
   };
 }
 
-// A genuine GitHub node: the item's OWN paragraph (or, for a link-heading,
-// its heading) links to a GitHub repo that resolved. Always carries
-// `repo_info` — a link that failed to resolve is not emitted (its children
-// lift to the nearest live parent instead). May still wrap nested GitHub
-// items/groups in `children`.
+// A genuine GitHub node
 export interface JsonItem {
   children: JsonNode[];
   description: null | string;
-  // Discriminator present on every node so any consumer (TS or not) can switch
-  // cleanly between items and groups without inferring from `repo_info`.
+  first_seen?: string;
   node_type: 'item';
   repo_info: RepoInfo;
   title: string;
 }
 
-// A grouping/category with NO GitHub identity of its own — a subheading
-// container, a "see also" cluster, a list item wrapping linked resources whose
-// own link is non-GitHub (e.g. SBCL linked via its website). Carries `children`
-// but NEVER `repo_info`: that belongs to genuine GitHub nodes only. Containers
-// whose subtree holds no items are not emitted.
 export interface JsonGroup {
   children: JsonNode[];
   description: null | string;
@@ -103,8 +94,7 @@ export interface JsonGroup {
 
 export type JsonNode = JsonGroup | JsonItem;
 
-// Top-level document metadata. `node_type` does not apply — `metadata` is a
-// distinct top-level shape, not a member of the items/children union.
+// Top-level document metadata.
 export interface JsonMetadata {
   enhanced_repository: null | string;
   enhanced_repository_description: null | string;
@@ -210,6 +200,7 @@ export async function processMarkdownContent(
   enhancedRepositoryDescription?: string,
   originalRepositorySha?: string,
   originalRepositoryInfo?: null | RepoInfoDetails,
+  previousJson?: JsonOutput,
   now: Date = new Date(),
   log: Logger = consoleLog,
 ): Promise<{ finalContent: string; jsonData: JsonOutput }> {
@@ -229,11 +220,12 @@ export async function processMarkdownContent(
 
   const repoInfoMap = await fetchTargetData(githubUrls, repos);
 
+  const firstSeen = firstSeenFor(previousJson, now);
   const {
     sections,
     title: rawTitle,
     titleHeadingIndex,
-  } = processTree(tree, repoInfoMap, sortOptions, originalRepositoryInfo);
+  } = processTree(tree, repoInfoMap, sortOptions, originalRepositoryInfo, firstSeen);
 
   // Single source of truth for the document title: brand it once and use the
   // same value for the markdown H1 and metadata.title (parity).
@@ -652,6 +644,7 @@ function emitEntryNodes(
   repoInfo: null | RepoInfoDetails,
   text: EntryText,
   childrenJson: JsonNode[],
+  firstSeen: FirstSeen,
 ): JsonNode[] {
   if (githubUrl && repoInfo) {
     return [
@@ -661,6 +654,7 @@ function emitEntryNodes(
         description: text.description || null,
         children: childrenJson,
         repo_info: toRepoInfo(repoInfo),
+        first_seen: firstSeen(repoInfo.id),
       },
     ];
   }
@@ -684,6 +678,7 @@ function processListRecursively(
   listNode: List,
   repoInfoMap: Map<string, RepoInfoDetails>,
   sortOptions: SortOptions,
+  firstSeen: FirstSeen,
   isNested = false,
   // The caller's section-scope gate decision (sectionGatePasses). Absent for
   // nested lists (emitted under their parent regardless) and for top-level
@@ -724,8 +719,8 @@ function processListRecursively(
     );
     const childrenJson = nestedContent.flatMap(child =>
       child.type === 'list'
-        ? processListRecursively(child, repoInfoMap, sortOptions, true)
-        : processTableRows(child, repoInfoMap, true),
+        ? processListRecursively(child, repoInfoMap, sortOptions, firstSeen, true)
+        : processTableRows(child, repoInfoMap, true, firstSeen),
     );
 
     // Title/description split on the FIRST paragraph only — a paper-list
@@ -748,6 +743,7 @@ function processListRecursively(
       repoInfo,
       entryText,
       childrenJson,
+      firstSeen,
     );
 
     entries.push({ emitted, node: itemNode, repoInfo });
@@ -787,21 +783,11 @@ function entryTitle(
   return repoInfo ? `${repoInfo.owner}/${repoInfo.repo}` : base;
 }
 
-// Table rows are entries under the nearest open container. The common shape —
-// scala's `[name](repo) | description`, spec tables with the link in a later
-// column — holds ONE repo per row: the title is the first cell's text (the
-// own link's text, then the repo name, when the first cell is empty), the
-// description the remaining cells' text (badge images carry no text nodes, so
-// they never pollute it). Card grids pin several repos per row, each cell its
-// own card, so those emit one entry per link-bearing cell. A linked row above
-// the delimiter is content like any other (grid tables have no label header;
-// pure-label header rows carry no links and emit nothing). Rows stay in source
-// order — unlike the unranked lists the product sorts, a table's row order is
-// part of its meaning.
 function processTableRows(
   tableNode: Table,
   repoInfoMap: Map<string, RepoInfoDetails>,
   gateOpen: boolean,
+  firstSeen: FirstSeen,
 ): JsonNode[] {
   if (!gateOpen) {
     return [];
@@ -848,7 +834,7 @@ function processTableRows(
         ...emitEntryNodes(ownLink.url, repoInfo, {
           title: entryTitle(titleText.title, ownLink, repoInfo),
           description,
-        }, []),
+        }, [], firstSeen),
       );
       continue;
     }
@@ -864,38 +850,19 @@ function processTableRows(
         ...emitEntryNodes(ownLink.url, repoInfo, {
           title: entryTitle(cellText.title, ownLink, repoInfo),
           description: cellText.description,
-        }, []),
+        }, [], firstSeen),
       );
     }
   }
   return items;
 }
 
-// A top-level paragraph can BE an entry, not only feed container prose. Two
-// corpus families qualify (progress/empty-tree-parses.md, step 4): a GitHub
-// link LEADING the paragraph behind a short entry label, or the paragraph
-// ending in a tag cluster whose GitHub link carries the identity — the
-// paper-list shape whose first link points at the paper and a [Code]/[Github]
-// tag at the end, name/author lines ending in that tag, and dated lines
-// ("… [Github] 4 Feb 2023"). Prose that mentions a repo ("Please see
-// CONTRIBUTING", "See also [repo]", intro text ending in a bare repo URL) is
-// neither and stays description. Calibrated on the 2,293-README corpus plus
-// the fixture fleet, not intuition: an entry label is a TAG (empty, CJK/emoji,
-// bracketed, or colon-terminated) — never bare English prose — and the
-// identity link must carry text, so the ubiquitous image-only awesome badge
-// is not an entry.
 const ENTRY_LABEL_MAX = 15;
 const ENTRY_TRAILING_MAX = 3;
 const TAG_LINK_TEXT =
   /^[\[\]()*\s:_-]*(?:source\s+code|code|github|repo|source|src|project|paper|page|web|site|home|official|notebook|demo|data|docs|implementation|arxiv)\b[\[\]()*\s:_-]*$/i;
 const URL_LINK_TEXT = /^https?:\/\/\S+$/i;
 
-// A title that names nothing — the degenerate families every entry source can
-// emit: a pure number/punctuation run (a table's rank or year column, "15."
-// / "2023" / "2025-05" / "-"), a URL (a link whose label is the URL itself,
-// scheme or scheme-less `github.com/…`), or a bare tag word ("GitHub",
-// "Source code" — best-of's generated lines). CJK labels are letters
-// (`\p{L}`) and stay titles.
 const URL_TITLE =
   /^(?:[a-z][a-z0-9+.-]*:\/\/|www\.)\S+$|^github\.com\/\S+$/i;
 
@@ -909,9 +876,6 @@ function isDegenerateTitle(title: string): boolean {
   );
 }
 
-// A link label that can serve as a title. The degenerate shapes are excluded
-// twice over — a URL label stays a URL, and a tag label names the link's role
-// ("[Github](repo)"), not the repo.
 function isMeaningfulLinkText(text: string): boolean {
   return text !== '' && !isDegenerateTitle(text);
 }
@@ -1060,13 +1024,14 @@ function entryNodesFor(
   ownLink: Link,
   inlines: Node[],
   repoInfoMap: Map<string, RepoInfoDetails>,
+  firstSeen: FirstSeen,
 ): JsonNode[] {
   const repoInfo = repoInfoMap.get(ownLink.url) ?? null;
   const entryText = splitEntryText(inlines);
   return emitEntryNodes(ownLink.url, repoInfo, {
     title: entryTitle(entryText.title, ownLink, repoInfo),
     description: entryText.description,
-  }, []);
+  }, [], firstSeen);
 }
 
 // The <details><summary>…</summary> collapsible-section idiom: the summary
@@ -1228,7 +1193,8 @@ function processTree(
   tree: Root,
   repoInfoMap: Map<string, RepoInfoDetails>,
   sortOptions: SortOptions,
-  originalRepositoryInfo?: null | RepoInfoDetails,
+  originalRepositoryInfo: null | RepoInfoDetails | undefined,
+  firstSeen: FirstSeen,
 ): { sections: JsonSection[]; title: string; titleHeadingIndex: number } {
   // Remember the title H1's index so branding replaces the exact same node;
   // scope matches branding/section-building so they can't drift apart.
@@ -1277,7 +1243,7 @@ function processTree(
     }
     if (gateForSection(stack[0])) {
       stack[stack.length - 1].children.push(
-        ...entryNodesFor(ownLink, inlines, repoInfoMap),
+        ...entryNodesFor(ownLink, inlines, repoInfoMap, firstSeen),
       );
     }
   };
@@ -1309,7 +1275,7 @@ function processTree(
         headingEntry && getInlineText(headingEntry.link.children)
           ? headingEntry
           : null;
-      closeContainers(stack, node.depth, sectionRecords, !!promotedEntry);
+      closeContainers(stack, node.depth, sectionRecords, firstSeen, !!promotedEntry);
       openContainer(stack, node, i, sectionDepth, promotedEntry, headingEntry);
     } else if (node.type === 'paragraph') {
       const text = getNodeText(node);
@@ -1357,7 +1323,7 @@ function processTree(
       // section, which keeps collecting after the collapsible block.
       const summaryTitle = detailsSummaryTitle(node.value);
       if (summaryTitle) {
-        closeInnermostDetails(stack, sectionRecords);
+        closeInnermostDetails(stack, sectionRecords, firstSeen);
         // Container depths never decrease going up the stack. When the open
         // containers sit deeper than sectionDepth (a mid-document H1 defines
         // sectionDepth while the content sections run deeper), the
@@ -1378,7 +1344,7 @@ function processTree(
           title: summaryTitle,
         });
       } else if (DETAILS_CLOSE.test(node.value)) {
-        closeInnermostDetails(stack, sectionRecords);
+        closeInnermostDetails(stack, sectionRecords, firstSeen);
       }
     } else if (node.type === 'list') {
       // A list with no open container still means content: synthesize the
@@ -1395,6 +1361,7 @@ function processTree(
         node,
         repoInfoMap,
         sortOptions,
+        firstSeen,
         false,
         gateForSection(stack[0]),
       );
@@ -1410,12 +1377,13 @@ function processTree(
         node,
         repoInfoMap,
         gateForSection(stack[0]),
+        firstSeen,
       );
       stack[stack.length - 1].children.push(...items);
     }
   }
 
-  closeContainers(stack, 0, sectionRecords);
+  closeContainers(stack, 0, sectionRecords, firstSeen);
 
   const sections = sectionRecords
     .sort((a, b) => a.headingIndex - b.headingIndex)
@@ -1781,6 +1749,7 @@ function finalizeContainer(
   container: ContainerBuilder,
   stack: ContainerBuilder[],
   sectionRecords: SectionRecord[],
+  firstSeen: FirstSeen,
 ): void {
   if (container.children.length === 0 && container.kind !== 'item') {
     return;
@@ -1801,6 +1770,7 @@ function finalizeContainer(
       node_type: 'item',
       repo_info: toRepoInfo(container.repoInfo),
       title: container.title,
+      first_seen: firstSeen(container.repoInfo.id),
     });
   } else {
     parent.children.push({
@@ -1822,6 +1792,7 @@ function closeContainers(
   stack: ContainerBuilder[],
   depth: number,
   sectionRecords: SectionRecord[],
+  firstSeen: FirstSeen,
   stopAtSynthesized = false,
 ): void {
   while (
@@ -1831,7 +1802,12 @@ function closeContainers(
     if (stopAtSynthesized && stack[stack.length - 1].openedBySynthesis) {
       break;
     }
-    finalizeContainer(stack.pop() as ContainerBuilder, stack, sectionRecords);
+    finalizeContainer(
+      stack.pop() as ContainerBuilder,
+      stack,
+      sectionRecords,
+      firstSeen,
+    );
   }
 }
 
@@ -1843,6 +1819,7 @@ function closeContainers(
 function closeInnermostDetails(
   stack: ContainerBuilder[],
   sectionRecords: SectionRecord[],
+  firstSeen: FirstSeen,
 ): void {
   let detailsIndex = -1;
   for (let s = stack.length - 1; s >= 0; s--) {
@@ -1855,7 +1832,12 @@ function closeInnermostDetails(
     return;
   }
   while (stack.length > detailsIndex) {
-    finalizeContainer(stack.pop() as ContainerBuilder, stack, sectionRecords);
+    finalizeContainer(
+      stack.pop() as ContainerBuilder,
+      stack,
+      sectionRecords,
+      firstSeen,
+    );
   }
 }
 
