@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.11.0](https://github.com/enhansome/action/compare/v1.10.2...v1.11.0) (2026-08-29)
+
+
+### Features
+
+* carry repo description, topics, license, homepage, open_issues into repo_info ([4163540](https://github.com/enhansome/action/commit/4163540c02d23e58da933259ccd5a8276d2b1292))
+
 ## [1.10.2](https://github.com/enhansome/action/compare/v1.10.1...v1.10.2) (2026-08-28)
 
 
