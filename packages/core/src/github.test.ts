@@ -173,8 +173,10 @@ describe('github.ts', () => {
     const mockRepoInfo: RepoInfoDetails = {
       archived: false,
       description: null,
+      homepage: 'https://test-repo.dev',
       id: 421879,
       language: 'TypeScript',
+      license: 'MIT',
       open_issues_count: 42,
       owner: 'test-owner',
       pushed_at: '2025-06-29T10:00:00Z',
@@ -185,8 +187,10 @@ describe('github.ts', () => {
 
     const apiPayload = {
       archived: mockRepoInfo.archived,
+      homepage: mockRepoInfo.homepage,
       id: mockRepoInfo.id,
       language: mockRepoInfo.language,
+      license: { spdx_id: mockRepoInfo.license },
       name: mockRepoInfo.repo,
       open_issues_count: mockRepoInfo.open_issues_count,
       owner: { login: mockRepoInfo.owner },
@@ -200,6 +204,31 @@ describe('github.ts', () => {
       const result = await getRepoInfo(client, owner, repo);
 
       expect(result).toEqual(mockRepoInfo);
+    });
+
+    it('carries spdx_id verbatim and nulls the unset homepage/license', async () => {
+      const client = mockOctokit({
+        'repos.get': () => ({
+          ...apiPayload,
+          homepage: '',
+          license: { spdx_id: 'NOASSERTION' },
+        }),
+      });
+
+      const result = await getRepoInfo(client, owner, repo);
+
+      expect(result.homepage).toBeNull();
+      expect(result.license).toBe('NOASSERTION');
+    });
+
+    it('maps a missing license object to null', async () => {
+      const client = mockOctokit({
+        'repos.get': () => ({ ...apiPayload, license: null }),
+      });
+
+      const result = await getRepoInfo(client, owner, repo);
+
+      expect(result.license).toBeNull();
     });
 
     it('should propagate the octokit error on failure (strict mode)', async () => {
@@ -236,7 +265,9 @@ describe('github.ts', () => {
       expect(result).toEqual({
         archived: true,
         description: null,
+        homepage: null,
         language: undefined,
+        license: null,
         open_issues_count: undefined,
         owner: 'test-owner',
         pushed_at: undefined,
@@ -364,8 +395,10 @@ describe('github.ts', () => {
         'repos.get': () => ({
           archived: false,
           description: null,
+          homepage: null,
           id: 4242,
           language: null,
+          license: null,
           name: repo,
           open_issues_count: 0,
           owner: { login: owner },
@@ -380,8 +413,10 @@ describe('github.ts', () => {
       expect(result).toEqual({
         archived: false,
         description: null,
+        homepage: null,
         id: 4242,
         language: null,
+        license: null,
         open_issues_count: 0,
         owner: owner,
         pushed_at: null,

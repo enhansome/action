@@ -107,8 +107,10 @@ describe('golden: structure + raw output for README fixtures', () => {
       originalRepositoryInfo: {
         archived: false,
         description: null,
+        homepage: null,
         id: 4242,
         language: 'JavaScript',
+        license: null,
         open_issues_count: 3,
         owner: originalRepository.split('/')[0],
         pushed_at: '2024-12-01T00:00:00Z',

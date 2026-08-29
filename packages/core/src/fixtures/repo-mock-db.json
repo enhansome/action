@@ -2,88 +2,133 @@
   "sorting": {
     "repo-a": {
       "archived": false,
+      "description": "Sorting fixture repo A",
+      "homepage": null,
+      "id": 101,
       "language": "Go",
+      "license": null,
       "open_issues_count": 1,
       "owner": "user",
       "pushed_at": "2025-01-01T00:00:00Z",
       "repo": "repo-a",
-      "stargazers_count": 200
+      "stargazers_count": 200,
+      "topics": ["go"]
     },
     "repo-b": {
       "archived": false,
+      "description": "Sorting fixture repo B",
+      "homepage": null,
+      "id": 102,
       "language": "Go",
+      "license": null,
       "open_issues_count": 1,
       "owner": "user",
       "pushed_at": "2025-02-01T00:00:00Z",
       "repo": "repo-b",
-      "stargazers_count": 100
+      "stargazers_count": 100,
+      "topics": ["go"]
     },
     "repo-c": {
       "archived": false,
+      "description": "Sorting fixture repo C",
+      "homepage": null,
+      "id": 103,
       "language": "Go",
+      "license": null,
       "open_issues_count": 1,
       "owner": "user",
       "pushed_at": "2025-03-01T00:00:00Z",
       "repo": "repo-c",
-      "stargazers_count": 300
+      "stargazers_count": 300,
+      "topics": ["go"]
     }
   },
   "structure": {
     "nested-1": {
       "archived": false,
+      "description": "Nested structure fixture",
+      "homepage": null,
+      "id": 201,
       "language": "JS",
+      "license": null,
       "open_issues_count": 4,
       "owner": "user",
       "pushed_at": "2025-01-15T00:00:00Z",
       "repo": "nested-1",
-      "stargazers_count": 50
+      "stargazers_count": 50,
+      "topics": ["js"]
     },
     "repo-a": {
       "archived": false,
+      "description": "Structure fixture repo A",
+      "homepage": null,
+      "id": 202,
       "language": "Go",
+      "license": null,
       "open_issues_count": 1,
       "owner": "user",
       "pushed_at": "2025-01-01T00:00:00Z",
       "repo": "repo-a",
-      "stargazers_count": 100
+      "stargazers_count": 100,
+      "topics": ["go"]
     },
     "repo-b": {
       "archived": false,
+      "description": "Structure fixture repo B",
+      "homepage": "https://example.com/rb",
+      "id": 203,
       "language": "Rust",
+      "license": "MIT",
       "open_issues_count": 2,
       "owner": "user",
       "pushed_at": "2025-03-01T00:00:00Z",
       "repo": "repo-b",
-      "stargazers_count": 300
+      "stargazers_count": 300,
+      "topics": ["rust", "cli"]
     },
     "repo-c": {
       "archived": false,
+      "description": "Structure fixture repo C",
+      "homepage": null,
+      "id": 204,
       "language": "Python",
+      "license": null,
       "open_issues_count": 3,
       "owner": "user",
       "pushed_at": "2025-02-01T00:00:00Z",
       "repo": "repo-c",
-      "stargazers_count": 200
+      "stargazers_count": 200,
+      "topics": ["python"]
     }
   },
   "endToEnd": {
     "repo-a": {
       "archived": false,
+      "description": "End-to-end fixture repo A",
+      "homepage": null,
+      "id": 301,
       "language": "Go",
+      "license": null,
       "open_issues_count": 10,
       "owner": "user",
       "pushed_at": "2024-05-10T12:00:00Z",
       "repo": "repo-a",
-      "stargazers_count": 1000
+      "stargazers_count": 1000,
+      "topics": ["go"]
     },
     "repo-c": {
       "archived": false,
+      "description": "End-to-end fixture repo C",
+      "homepage": null,
+      "id": 302,
       "language": "Rust",
+      "license": null,
       "open_issues_count": 1,
       "owner": "user",
       "pushed_at": "2025-07-12T12:00:00Z",
       "repo": "repo-c",
-      "stargazers_count": 50
+      "stargazers_count": 50,
+      "topics": ["rust"]
     }
   }
 }

@@ -62,8 +62,10 @@ function sourceRepoInfo(
   return {
     archived: false,
     description: null,
+    homepage: null,
     id: 1,
     language: null,
+    license: null,
     open_issues_count: 0,
     owner,
     pushed_at: null,
@@ -151,6 +153,8 @@ describe('Branded titles from README fixtures', () => {
       stargazers_count: 100,
       topics: [],
       description: null,
+      homepage: null,
+      license: null,
     });
     vi.mocked(github.parseGitHubUrl).mockImplementation((url: string) => {
       if (!url.includes('github.com')) {
@@ -234,6 +238,8 @@ describe('Item titles and descriptions from README fixtures', () => {
       stargazers_count: 100,
       topics: [],
       description: null,
+      homepage: null,
+      license: null,
     });
     vi.mocked(github.parseGitHubUrl).mockImplementation((url: string) => {
       if (!url.includes('github.com')) {
@@ -278,28 +284,35 @@ describe('Item titles and descriptions from README fixtures', () => {
 });
 
 describe('toRepoInfo', () => {
-  it('renames the API fields to the emitted ones', () => {
+  it('renames the API fields and carries the rest', () => {
     const details: RepoInfoDetails = {
       archived: true,
-      description: 'ignored by the emitted shape',
+      description: 'A curated list of Rust things',
+      homepage: 'https://example.org/r',
       id: 991823,
       language: 'Rust',
+      license: 'MIT',
       open_issues_count: 7,
       owner: 'o',
       pushed_at: '2025-01-01T00:00:00Z',
       repo: 'r',
       stargazers_count: 42,
-      topics: ['awesome-list'],
+      topics: ['awesome-list', 'rust'],
     };
 
     expect(toRepoInfo(details)).toEqual({
       archived: true,
+      description: 'A curated list of Rust things',
+      homepage: 'https://example.org/r',
       id: 991823,
       language: 'Rust',
+      license: 'MIT',
       last_commit: '2025-01-01T00:00:00Z',
+      open_issues: 7,
       owner: 'o',
       repo: 'r',
       stars: 42,
+      topics: ['awesome-list', 'rust'],
     });
   });
 });
@@ -331,6 +344,8 @@ describe('Item identity: own-link only, categories become groups', () => {
         stargazers_count: 100,
         topics: [],
         description: null,
+        homepage: null,
+        license: null,
       }),
     );
   });
@@ -531,6 +546,8 @@ describe('Degenerate titles fall back to the link label, then owner/name', () =>
         stargazers_count: 100,
         topics: [],
         description: null,
+        homepage: null,
+        license: null,
       }),
     );
   });
@@ -707,6 +724,8 @@ describe('Tree shape: heading hierarchy, link-headings, empties, dead links', ()
             stargazers_count: 100,
             topics: [],
             description: null,
+            homepage: null,
+            license: null,
           }),
     );
   });

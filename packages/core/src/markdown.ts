@@ -50,28 +50,36 @@ export interface SortOptions {
   minLinks: number;
 }
 
-// Field names are the *output* names (stars / last_commit), renamed from the
-// API fields (stargazers_count / pushed_at).
 export interface RepoInfo {
   archived: boolean;
+  description: null | string;
+  homepage: null | string;
   id: number;
   language: null | string;
+  license: null | string;
   last_commit: null | string;
+  open_issues: number;
   owner: string;
   repo: string;
   stars: number;
+  topics: string[];
 }
 
 /** The sole crossing from the API shape to the emitted one, so both agree on the renames. */
 export function toRepoInfo(details: RepoInfoDetails): RepoInfo {
   return {
     archived: details.archived,
+    description: details.description,
+    homepage: details.homepage,
     id: details.id,
     language: details.language,
+    license: details.license,
     last_commit: details.pushed_at,
+    open_issues: details.open_issues_count,
     owner: details.owner,
     repo: details.repo,
     stars: details.stargazers_count,
+    topics: details.topics,
   };
 }
 

@@ -60,6 +60,8 @@ describe('Orchestrator: enhance()', () => {
         stargazers_count: 1234,
         topics: [],
         description: null,
+        homepage: null,
+        license: null,
       };
 
       vi.mocked(github.parseGitHubUrl).mockReturnValue({
@@ -101,6 +103,8 @@ describe('Orchestrator: enhance()', () => {
         stargazers_count: 500,
         topics: [],
         description: null,
+        homepage: null,
+        license: null,
       };
 
       vi.mocked(github.parseGitHubUrl).mockReturnValue({
@@ -241,6 +245,8 @@ A list of awesome Go frameworks.
         stargazers_count: 100,
         topics: [],
         description: null,
+        homepage: null,
+        license: null,
       });
     });
 
@@ -257,8 +263,10 @@ A list of awesome Go frameworks.
         originalRepositoryInfo: {
           archived: false,
           description: null,
+          homepage: null,
           id: 1,
           language: null,
+          license: null,
           open_issues_count: 0,
           owner: 'NARKOZ',
           pushed_at: null,
@@ -340,6 +348,8 @@ A list of awesome Go frameworks.
         stargazers_count: 100,
         topics: [],
         description: null,
+        homepage: null,
+        license: null,
       });
     });
 
@@ -620,8 +630,10 @@ Version: __VERSION__ | Last Updated: 2025-01-01
         originalRepositoryInfo: {
           archived: false,
           description: 'Awesomeness',
+          homepage: 'https://awsm.fish',
           id: 123456,
           language: 'Rust',
+          license: 'MIT',
           open_issues_count: 2,
           owner: 'jorgebucaran',
           pushed_at: '2026-08-20T03:35:38Z',
@@ -634,12 +646,17 @@ Version: __VERSION__ | Last Updated: 2025-01-01
 
       expect(jsonData.metadata.original_repository_info).toEqual({
         archived: false,
+        description: 'Awesomeness',
+        homepage: 'https://awsm.fish',
         id: 123456,
         language: 'Rust',
         last_commit: '2026-08-20T03:35:38Z',
+        license: 'MIT',
+        open_issues: 2,
         owner: 'jorgebucaran',
         repo: 'awsm.fish',
         stars: 4321,
+        topics: ['fish'],
       });
     });
 

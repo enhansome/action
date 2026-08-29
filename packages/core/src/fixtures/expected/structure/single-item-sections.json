@@ -10,12 +10,20 @@
           "children": [],
           "repo_info": {
             "archived": false,
+            "description": "A curated list of awesome things.",
+            "homepage": "https://example.dev",
             "id": 3060077618,
             "language": "Shell",
+            "license": "NOASSERTION",
             "last_commit": "2022-04-23T00:00:00.000Z",
+            "open_issues": 18,
             "owner": "example",
             "repo": "alpha",
-            "stars": 27619
+            "stars": 27619,
+            "topics": [
+              "api",
+              "http"
+            ]
           },
           "first_seen": "2025-01-01T00:00:00.000Z"
         },
@@ -26,12 +34,19 @@
           "children": [],
           "repo_info": {
             "archived": false,
+            "description": "One-line utility, zero configuration.",
+            "homepage": null,
             "id": 424105752,
             "language": "Go",
+            "license": "MIT",
             "last_commit": "2021-12-10T00:00:00.000Z",
+            "open_issues": 52,
             "owner": "example",
             "repo": "beta",
-            "stars": 5753
+            "stars": 5753,
+            "topics": [
+              "go"
+            ]
           },
           "first_seen": "2025-01-01T00:00:00.000Z"
         },
@@ -44,12 +59,19 @@
               "children": [],
               "repo_info": {
                 "archived": false,
+                "description": "One-line utility, zero configuration.",
+                "homepage": "https://example.dev",
                 "id": 4146366156,
                 "language": "Java",
+                "license": "MIT",
                 "last_commit": "2023-07-29T00:00:00.000Z",
+                "open_issues": 56,
                 "owner": "example",
                 "repo": "gamma-web",
-                "stars": 16157
+                "stars": 16157,
+                "topics": [
+                  "rust"
+                ]
               },
               "first_seen": "2025-01-01T00:00:00.000Z"
             }
@@ -66,12 +88,17 @@
     "last_updated": "2025-01-01T00:00:00.000Z",
     "original_repository_info": {
       "archived": false,
+      "description": null,
+      "homepage": null,
       "id": 4242,
       "language": "JavaScript",
+      "license": null,
       "last_commit": "2024-12-01T00:00:00Z",
+      "open_issues": 3,
       "owner": "example",
       "repo": "single-item-sections",
-      "stars": 1234
+      "stars": 1234,
+      "topics": []
     },
     "original_repository_sha": "deadbeef",
     "enhanced_repository": "enhansome/enhansome-single-item-sections",

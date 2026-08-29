@@ -10,12 +10,20 @@
           "children": [],
           "repo_info": {
             "archived": false,
+            "description": "Fast, small, and dependency-free.",
+            "homepage": "https://example.dev",
             "id": 3892333715,
             "language": "C++",
+            "license": "MIT",
             "last_commit": "2022-01-16T00:00:00.000Z",
+            "open_issues": 15,
             "owner": "example",
             "repo": "tool-two",
-            "stars": 33716
+            "stars": 33716,
+            "topics": [
+              "api",
+              "http"
+            ]
           },
           "first_seen": "2025-01-01T00:00:00.000Z"
         },
@@ -26,12 +34,20 @@
           "children": [],
           "repo_info": {
             "archived": false,
+            "description": "One-line utility, zero configuration.",
+            "homepage": null,
             "id": 1702051193,
             "language": "Python",
+            "license": "NOASSERTION",
             "last_commit": "2023-06-22T00:00:00.000Z",
+            "open_issues": 93,
             "owner": "example",
             "repo": "tool-one",
-            "stars": 1194
+            "stars": 1194,
+            "topics": [
+              "react",
+              "ui"
+            ]
           },
           "first_seen": "2025-01-01T00:00:00.000Z"
         }
@@ -43,12 +59,17 @@
     "last_updated": "2025-01-01T00:00:00.000Z",
     "original_repository_info": {
       "archived": false,
+      "description": null,
+      "homepage": null,
       "id": 4242,
       "language": "JavaScript",
+      "license": null,
       "last_commit": "2024-12-01T00:00:00Z",
+      "open_issues": 3,
       "owner": "example",
       "repo": "toc-only",
-      "stars": 1234
+      "stars": 1234,
+      "topics": []
     },
     "original_repository_sha": "deadbeef",
     "enhanced_repository": "enhansome/enhansome-toc-only",
