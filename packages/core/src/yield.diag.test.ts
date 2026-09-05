@@ -169,7 +169,7 @@ function gotRepos(json: JsonOutput): Set<string> {
   const visitNode = (node: JsonNode): void => {
     if (node.node_type === 'item') {
       got.add(
-        `${node.repo_info.owner}/${node.repo_info.repo}`.toLowerCase(),
+        `${node.repo_info!.owner}/${node.repo_info!.repo}`.toLowerCase(),
       );
     }
     for (const child of node.children) {

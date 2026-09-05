@@ -50,19 +50,21 @@ export interface SortOptions {
   minLinks: number;
 }
 
+// The five optional fields landed in v1.11; mirrors that last ran an older
+// version emit RepoInfo without them. Everything else has always been present.
 export interface RepoInfo {
   archived: boolean;
-  description: null | string;
-  homepage: null | string;
+  description?: null | string;
+  homepage?: null | string;
   id: number;
   language: null | string;
-  license: null | string;
+  license?: null | string;
   last_commit: null | string;
-  open_issues: number;
+  open_issues?: number;
   owner: string;
   repo: string;
   stars: number;
-  topics: string[];
+  topics?: string[];
 }
 
 /** The sole crossing from the API shape to the emitted one, so both agree on the renames. */
@@ -83,13 +85,14 @@ export function toRepoInfo(details: RepoInfoDetails): RepoInfo {
   };
 }
 
-// A genuine GitHub node
+// A genuine GitHub node. Older action output kept dead-link entries as items
+// without repo_info; consumers hoist their children.
 export interface JsonItem {
   children: JsonNode[];
   description: null | string;
   first_seen?: string;
   node_type: 'item';
-  repo_info: RepoInfo;
+  repo_info?: RepoInfo;
   title: string;
 }
 
@@ -168,9 +171,9 @@ function createRepoInfoLookup(token: string, log: Logger): RepoInfoLookup {
  * collapse to a single fetch inside the lookup, then fan back out to every alias
  * here.
  *
- * Each target's failure is independent and non-fatal: a dead link is skipped
- * with a warning and its item is still emitted (no repo_info). Only the source
- * README fetch in main.ts can fail the run.
+ * Each target's failure is independent and non-fatal: a dead link drops its
+ * entry and lifts the children. Only the source README fetch in main.ts can
+ * fail the run.
  */
 async function fetchTargetData(
   urls: Set<string>,

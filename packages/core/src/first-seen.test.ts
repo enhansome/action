@@ -67,7 +67,7 @@ function firstSeenByRepo(
   json: JsonOutput,
 ): Map<string, string | undefined> {
   return new Map(
-    itemsOf(json).map(item => [item.repo_info.repo, item.first_seen]),
+    itemsOf(json).map(item => [item.repo_info!.repo, item.first_seen]),
   );
 }
 
@@ -141,7 +141,7 @@ describe('first_seen: mirror history in the JSON contract', () => {
       throw new Error('fixture output has no Alpha section');
     }
     alpha.items = alpha.items.filter(
-      node => !(node.node_type === 'item' && node.repo_info.repo === 'two'),
+      node => !(node.node_type === 'item' && node.repo_info?.repo === 'two'),
     ) as JsonNode[];
 
     const run2 = await runEnhance(CONTENT, RUN_2, withoutTwo);
@@ -175,7 +175,7 @@ describe('first_seen: mirror history in the JSON contract', () => {
     const run2 = await runEnhance(dup, RUN_2, run1);
 
     const fours = itemsOf(run2).filter(
-      item => item.repo_info.repo === 'four',
+      item => item.repo_info?.repo === 'four',
     );
     expect(fours).toHaveLength(2);
     for (const four of fours) {
@@ -192,12 +192,12 @@ describe('first_seen: mirror history in the JSON contract', () => {
       throw new Error('fixture output has no Alpha section');
     }
     const one = alpha.items.find(
-      node => node.node_type === 'item' && node.repo_info.repo === 'one',
+      node => node.node_type === 'item' && node.repo_info?.repo === 'one',
     );
     if (!one || one.node_type !== 'item') {
       throw new Error('fixture output has no item one');
     }
-    one.repo_info = { ...one.repo_info, owner: 'acme-old' };
+    one.repo_info = { ...one.repo_info!, owner: 'acme-old' };
 
     const run2 = await runEnhance(CONTENT, RUN_2, renamed);
 

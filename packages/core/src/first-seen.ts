@@ -17,7 +17,7 @@ export function firstSeenFor(
 
 function collect(nodes: JsonNode[], index: Map<number, string>): void {
   for (const node of nodes) {
-    if (node.node_type === 'item' && node.first_seen) {
+    if (node.node_type === 'item' && node.repo_info && node.first_seen) {
       const existing = index.get(node.repo_info.id);
       if (existing === undefined || node.first_seen < existing) {
         index.set(node.repo_info.id, node.first_seen);
