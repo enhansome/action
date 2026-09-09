@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.11.1](https://github.com/enhansome/action/compare/v1.11.0...v1.11.1) (2026-09-09)
+
+
+### Bug Fixes
+
+* follow a skeleton README's internal docs and refuse hollow mirrors ([7355d8b](https://github.com/enhansome/action/commit/7355d8b6f0da63554cc556a414a8b628ad56ac19))
+* repo_info contract types tell the truth — v1.11 fields and repo_info itself optional ([9ee0a34](https://github.com/enhansome/action/commit/9ee0a34f50cacabe7864788a15ae521fd488f54a))
+
 ## [1.11.0](https://github.com/enhansome/action/compare/v1.10.2...v1.11.0) (2026-08-29)
 
 
