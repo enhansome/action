@@ -6,6 +6,8 @@ import * as github from './github.js';
 import { RepoInfoDetails } from './github.js';
 import { silentLog } from './logger.js';
 import {
+  hollowsPrevious,
+  JsonOutput,
   processMarkdownContent,
   ReplacementRule,
   toRepoInfo,
@@ -1120,5 +1122,236 @@ describe('Tree shape: heading hierarchy, link-headings, empties, dead links', ()
         children: [{ type: 'item', repo: 'o/a', children: [] }],
       },
     ]);
+  });
+});
+
+describe('hollowsPrevious', () => {
+  const output = (count: number): JsonOutput =>
+    ({
+      items: Array.from({ length: count }, () => ({
+        description: null,
+        items: [{ children: [], node_type: 'item', title: 'x' }],
+        title: 's',
+      })),
+      metadata: {},
+    }) as unknown as JsonOutput;
+
+  it('fires when the tree collapses by more than 95%', () => {
+    expect(hollowsPrevious(output(642), output(2))).toBe(true);
+    expect(hollowsPrevious(output(100), output(4))).toBe(true);
+  });
+
+  it('passes at the boundary and above it', () => {
+    expect(hollowsPrevious(output(100), output(5))).toBe(false);
+    expect(hollowsPrevious(output(100), output(50))).toBe(false);
+  });
+
+  it('never fires without a previously-full output', () => {
+    expect(hollowsPrevious(output(0), output(0))).toBe(false);
+    expect(hollowsPrevious(output(10), output(0))).toBe(true);
+  });
+});
+
+describe('Following internal docs when the README is a skeleton', () => {
+  const source = { owner: 'o', repo: 'r' };
+  const token = 'test-token';
+
+  beforeEach(() => {
+    vi.clearAllMocks();
+    vi.mocked(github.makeOctokit).mockReturnValue({
+      log: silentLog,
+    } as unknown as github.GithubClient);
+    vi.mocked(github.getRepoInfo).mockImplementation(
+      (_ok, owner: string, repo: string) =>
+        Promise.resolve(
+          sourceRepoInfo(`${owner}/${repo}`) as RepoInfoDetails,
+        ),
+    );
+    // First-two-segment reading, matching the real parser's identity rule, so
+    // deep blob URLs don't masquerade as repo links.
+    vi.mocked(github.parseGitHubUrl).mockImplementation((url: string) => {
+      const m = /^https:\/\/github\.com\/([A-Za-z0-9_.-]+)\/([A-Za-z0-9_.-]+)/.exec(
+        url,
+      );
+      return m ? { owner: m[1], repo: m[2] } : null;
+    });
+  });
+
+  function serveFiles(files: Record<string, string>): void {
+    vi.mocked(github.getRepoFileOrNull).mockImplementation(
+      (_ok, _owner, _repo, path: string) =>
+        Promise.resolve(files[path] ?? null),
+    );
+  }
+
+  async function follow(
+    content: string,
+  ): Promise<ReturnType<typeof processMarkdownContent> extends Promise<infer R> ? R : never> {
+    return await processMarkdownContent(
+      content,
+      token,
+      [],
+      { by: '', minLinks: 2 },
+      '',
+      'enhansome/enhansome-r',
+      undefined,
+      undefined,
+      undefined,
+      source,
+    );
+  }
+
+  it('splices a linked content file as a category titled by the link text', async () => {
+    serveFiles({
+      'docs/tools.md': [
+        '---',
+        'title: Tools',
+        '---',
+        '',
+        '# Tools',
+        '',
+        '## CLI',
+        '',
+        '- [Alpha](https://github.com/a/alpha) - one',
+        '- [Beta](https://github.com/a/beta) - two',
+        '',
+      ].join('\n'),
+    });
+
+    const data = await follow('# List\n\nSee [Tools](docs/tools.md).\n');
+
+    const section = findContainer(
+      data.jsonData.items as unknown as Container[],
+      'Tools',
+    );
+    expect(section).toBeDefined();
+    const entries = (section?.items ?? []) as unknown as {
+      children?: unknown[];
+      title: string;
+    }[];
+    expect(findItemByTitle(entries, 'Alpha')).toBeDefined();
+    expect(findItemByTitle(entries, 'Beta')).toBeDefined();
+    // The file's own H1 is stripped — the category heading replaces it.
+    expect(data.finalContent.match(/^# Tools$/gm)).toHaveLength(1);
+    // The README's relative link now points at the source repo.
+    expect(data.finalContent).toContain(
+      'https://github.com/o/r/blob/HEAD/docs/tools.md',
+    );
+  });
+
+  it('gates files below minLinks and keeps following their links', async () => {
+    serveFiles({
+      'index.md':
+        '# Index\n\nAll content: [Tools](tools.md)\n',
+      'tools.md':
+        '# Tools\n\n- [Alpha](https://github.com/a/alpha)\n- [Beta](https://github.com/a/beta)\n',
+    });
+
+    const data = await follow('# List\n\nStart at [the index](index.md).\n');
+
+    expect(findContainer(data.jsonData.items as unknown as Container[], 'Tools')).toBeDefined();
+    // index.md carries no repo links of its own: followed, not spliced.
+    expect(findContainer(data.jsonData.items as unknown as Container[], 'Index')).toBeUndefined();
+  });
+
+  it('uses the file H1 when the link label is just a filename', async () => {
+    serveFiles({
+      'archived.md':
+        '# Archived\n\n- [Old](https://github.com/a/old)\n- [Older](https://github.com/a/older)\n',
+    });
+
+    const data = await follow(
+      '# List\n\nHistory lives in [archived.md](archived.md).\n',
+    );
+
+    expect(
+      findContainer(data.jsonData.items as unknown as Container[], 'Archived'),
+    ).toBeDefined();
+  });
+
+  it('skips meta files, root README variants, and other repos', async () => {
+    serveFiles({
+      'docs/security.md':
+        '# Security\n\n- [S1](https://github.com/a/s1)\n- [S2](https://github.com/a/s2)\n',
+    });
+
+    const data = await follow(
+      [
+        '# List',
+        '',
+        '[contributing](CONTRIBUTING.md), [template](.github/PULL_REQUEST_TEMPLATE.md),',
+        '[translation](/README_cn.md), [other repo](https://github.com/x/y/blob/main/a.md),',
+        '[security category](docs/security.md)',
+        '',
+      ].join('\n'),
+    );
+
+    const fetched = vi.mocked(github.getRepoFileOrNull).mock.calls.map(
+      call => call[3],
+    );
+    expect(fetched).toEqual(['docs/security.md']);
+    expect(
+      findContainer(
+        data.jsonData.items as unknown as Container[],
+        'security category',
+      ),
+    ).toBeDefined();
+  });
+
+  it('follows a same-repo absolute blob URL', async () => {
+    serveFiles({
+      'docs/full.md':
+        '# Full\n\n- [F1](https://github.com/a/f1)\n- [F2](https://github.com/a/f2)\n',
+    });
+
+    const data = await follow(
+      '# List\n\n[Full list](https://github.com/o/r/blob/main/docs/full.md)\n',
+    );
+
+    expect(
+      findContainer(data.jsonData.items as unknown as Container[], 'Full list'),
+    ).toBeDefined();
+  });
+
+  it('fetches a file linked twice only once', async () => {
+    serveFiles({
+      'docs/index.md':
+        '# Index\n\n[tools](tools.md)\n',
+      'docs/tools.md':
+        '# Tools\n\n- [Alpha](https://github.com/a/alpha)\n- [Beta](https://github.com/a/beta)\n',
+    });
+
+    await follow('# List\n\n[tools](docs/tools.md) and [the index](docs/index.md)\n');
+
+    const fetched = vi.mocked(github.getRepoFileOrNull).mock.calls.map(
+      call => call[3],
+    );
+    expect(fetched.filter(p => p === 'docs/tools.md')).toHaveLength(1);
+  });
+
+  it('never follows when the README itself carries the list', async () => {
+    serveFiles({
+      'docs/tools.md':
+        '# Tools\n\n- [Alpha](https://github.com/a/alpha)\n- [Beta](https://github.com/a/beta)\n',
+    });
+
+    const content = [
+      '# List',
+      '',
+      '- [One](https://github.com/a/one) - first',
+      '- [Two](https://github.com/a/two) - second',
+      '',
+      'Details in [docs](docs/tools.md).',
+      '',
+    ].join('\n');
+
+    const data = await follow(content);
+
+    expect(github.getRepoFileOrNull).not.toHaveBeenCalled();
+    expect(
+      findContainer(data.jsonData.items as unknown as Container[], 'Tools'),
+    ).toBeUndefined();
+    // The README's relative link is left exactly as it was.
+    expect(data.finalContent).toContain('(docs/tools.md)');
   });
 });

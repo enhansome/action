@@ -8,6 +8,7 @@ import { visit } from 'unist-util-visit';
 import { firstSeenFor, type FirstSeen } from './first-seen.js';
 import {
   formatRequestError,
+  getRepoFileOrNull,
   getRepoInfo as fetchRepoInfo,
   makeOctokit,
   parseGitHubUrl,
@@ -15,12 +16,21 @@ import {
   RepoInfoDetails,
 } from './github.js';
 import type { GithubClient } from './github.js';
+import {
+  isFilenameLabel,
+  isSkippedPath,
+  MAX_FOLLOWED_FILE_BYTES,
+  MAX_FOLLOWED_FILES,
+  parseSameRepoBlobPath,
+  resolveRepoPath,
+} from './internal-links.js';
 import { consoleLog, Logger } from './logger.js';
 
 import type {
   Blockquote,
   Heading,
   Html,
+  Image,
   Link,
   List,
   ListItem,
@@ -121,6 +131,30 @@ export interface JsonSection {
   title: string;
 }
 
+export function countItems(output: JsonOutput): number {
+  const count = (nodes: JsonNode[]): number =>
+    nodes.reduce(
+      (sum, node) =>
+        sum + (node.node_type === 'item' ? 1 : 0) + count(node.children),
+      0,
+    );
+  return count(output.items.flatMap(section => section.items));
+}
+
+// A >95% item collapse against the previous run is a parse regression or a
+// source restructure, never a real edit — the caller refuses to write rather
+// than hollow the mirror (android-root committed a skeleton daily for three
+// days before this guard existed).
+const HOLLOW_SHRINKAGE = 0.05;
+
+export function hollowsPrevious(
+  previous: JsonOutput,
+  next: JsonOutput,
+): boolean {
+  const before = countItems(previous);
+  return before > 0 && countItems(next) < before * HOLLOW_SHRINKAGE;
+}
+
 // The lookup's single throttled client coordinates rate limits across the whole
 // pool, so this bounds in-flight targets rather than requests.
 const FETCH_CONCURRENCY = 10;
@@ -201,6 +235,175 @@ async function fetchTargetData(
   return repoInfoMap;
 }
 
+interface FollowedLink {
+  label: string;
+  path: string;
+}
+
+// The same-repo markdown links of one document: resolved relative and
+// root-absolute targets, plus same-repo absolute blob/raw URLs. Labels ride
+// along because they become the spliced category's title.
+function collectDocLinks(
+  tree: Root,
+  baseDir: string,
+  source: RepoIdentifier,
+): FollowedLink[] {
+  const links: FollowedLink[] = [];
+  visit(tree, 'link', (node: Link) => {
+    const path =
+      resolveRepoPath(node.url, baseDir) ??
+      parseSameRepoBlobPath(node.url, source.owner, source.repo);
+    if (!path || isSkippedPath(path)) {
+      return;
+    }
+    links.push({ label: getInlineText(node.children), path });
+  });
+  return links;
+}
+
+const FRONTMATTER = /^---\r?\n[\s\S]*?\r?\n---\r?\n?/;
+
+// VitePress/Docusaurus content files open with YAML frontmatter that remark
+// would misread as a thematic break plus a setext heading.
+function stripFrontmatter(content: string): string {
+  return content.replace(FRONTMATTER, '');
+}
+
+// Removes the file's leading H1 — the injected category heading replaces it,
+// so the document never carries the same title twice — and returns its text
+// for the filename-label fallback.
+function stripTitleHeading(tree: Root): string {
+  const first = tree.children[0];
+  if (first?.type === 'heading' && first.depth === 1) {
+    tree.children.shift();
+    return getNodeText(first);
+  }
+  return '';
+}
+
+// One level shallower than the file's shallowest remaining heading, so the
+// file's own sections nest inside the category; a heading-less file takes the
+// conventional section level of 2.
+function categoryHeadingDepth(children: Root['children']): Heading['depth'] {
+  let shallowest = Infinity;
+  for (const node of children) {
+    if (node.type === 'heading') {
+      shallowest = Math.min(shallowest, node.depth);
+    }
+  }
+  // shallowest is 1..6, so the clamped result stays inside the depth union.
+  return shallowest === Infinity
+    ? 2
+    : (Math.max(1, shallowest - 1) as Heading['depth']);
+}
+
+// Relative links and images resolve against the source repo's tree; in the
+// mirror they dangle. Rewritten to GitHub URLs at HEAD.
+function rewriteRelativeLinksToSource(
+  tree: Root,
+  baseDir: string,
+  source: RepoIdentifier,
+): void {
+  const absolute = (url: string): string => {
+    if (!url || url.startsWith('#') || url.includes('://') || url.startsWith('mailto:')) {
+      return url;
+    }
+    const path = resolveRepoPath(url, baseDir);
+    return path
+      ? `https://github.com/${source.owner}/${source.repo}/blob/HEAD/${path}`
+      : url;
+  };
+  visit(tree, 'link', (node: Link) => {
+    node.url = absolute(node.url);
+  });
+  visit(tree, 'image', (node: Image) => {
+    node.url = absolute(node.url);
+  });
+}
+
+/**
+ * Appends the source's internal markdown files to the tree, each under a
+ * heading titled by its link's text — the README-is-a-landing-page shape.
+ * Breadth-first in document order with a visited set, so a file linked from
+ * both the README and an index page is fetched and spliced once, the README's
+ * label winning. A file joins the document only when it carries at least
+ * `minLinks` GitHub links; navigation pages are still parsed for their links,
+ * which is where this shape often keeps them.
+ */
+async function appendInternalDocs(
+  tree: Root,
+  source: RepoIdentifier,
+  repos: RepoInfoLookup,
+  minLinks: number,
+  log: Logger,
+): Promise<void> {
+  const processor = unified().use(remarkParse).use(remarkGfm);
+  const queue: FollowedLink[] = collectDocLinks(tree, '', source);
+  const visited = new Set<string>();
+  const labels = new Map<string, string>();
+  let fetched = 0;
+  let appended = 0;
+
+  let processed = 0;
+  while (queue.length > 0 && processed < MAX_FOLLOWED_FILES) {
+    const link = queue.shift() as FollowedLink;
+    if (visited.has(link.path)) {
+      continue;
+    }
+    processed += 1;
+    visited.add(link.path);
+    if (link.label.trim() && !labels.has(link.path)) {
+      labels.set(link.path, link.label);
+    }
+    const raw = await getRepoFileOrNull(
+      repos.client,
+      source.owner,
+      source.repo,
+      link.path,
+    );
+    if (!raw) {
+      continue;
+    }
+    fetched += 1;
+    if (raw.length > MAX_FOLLOWED_FILE_BYTES) {
+      log.warn(
+        `Skipping ${link.path}: over ${MAX_FOLLOWED_FILE_BYTES} bytes.`,
+      );
+      continue;
+    }
+    const fileTree = processor.parse(stripFrontmatter(raw));
+    const ownTitle = stripTitleHeading(fileTree);
+    const baseDir = link.path.includes('/')
+      ? link.path.slice(0, link.path.lastIndexOf('/'))
+      : '';
+    for (const nested of collectDocLinks(fileTree, baseDir, source)) {
+      if (!visited.has(nested.path)) {
+        queue.push(nested);
+      }
+    }
+    if (countGitHubRepos(fileTree) < minLinks) {
+      continue;
+    }
+    const label = labels.get(link.path) ?? '';
+    const title = isFilenameLabel(label, link.path)
+      ? ownTitle || label || link.path
+      : label;
+    const heading: Heading = {
+      type: 'heading',
+      depth: categoryHeadingDepth(fileTree.children),
+      children: [{ type: 'text', value: title }],
+    };
+    rewriteRelativeLinksToSource(fileTree, baseDir, source);
+    tree.children.push(heading, ...fileTree.children);
+    appended += 1;
+  }
+
+  rewriteRelativeLinksToSource(tree, '', source);
+  log.info(
+    `README skeleton: followed ${fetched} internal file(s), appended ${appended} as categories.`,
+  );
+}
+
 export async function processMarkdownContent(
   originalContent: string,
   token: string,
@@ -211,6 +414,7 @@ export async function processMarkdownContent(
   enhancedRepositoryDescription?: string,
   originalRepositorySha?: string,
   originalRepositoryInfo?: null | RepoInfoDetails,
+  sourceRepository?: RepoIdentifier,
   previousJson?: JsonOutput,
   now: Date = new Date(),
   log: Logger = consoleLog,
@@ -226,6 +430,14 @@ export async function processMarkdownContent(
   const processor = unified().use(remarkParse).use(remarkGfm);
   const tree = processor.parse(contentAfterReplacements);
   normalizeGitHubUrls(tree);
+
+  // A README too thin to carry the list is a landing page: the content lives
+  // in the files it links. Splice them in before anything reads the tree, so
+  // the repo fetch, badges and the section walk all see the combined document.
+  if (sourceRepository && countGitHubRepos(tree) < sortOptions.minLinks) {
+    await appendInternalDocs(tree, sourceRepository, repos, sortOptions.minLinks, log);
+    normalizeGitHubUrls(tree);
+  }
 
   const githubUrls = collectGitHubLinks(tree);
 
@@ -348,6 +560,21 @@ function collectGitHubLinks(tree: Root): Set<string> {
     }
   });
   return urls;
+}
+
+// The number of distinct GitHub REPOS a document addresses — the census unit
+// for both the skeleton trigger and the splice gate. Distinct URLs would
+// overcount: a skeleton README badges the source repo and links its issues
+// page, which is two URLs over one repo.
+function countGitHubRepos(tree: Root): number {
+  const repos = new Set<string>();
+  visit(tree, 'link', (node: Link) => {
+    const id = parseGitHubUrl(node.url);
+    if (id) {
+      repos.add(`${id.owner}/${id.repo}`.toLowerCase());
+    }
+  });
+  return repos.size;
 }
 
 // Input normalization, same family as fixRelativeLinks: make GitHub repos a

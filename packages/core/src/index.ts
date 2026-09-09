@@ -2,6 +2,7 @@ export {
   formatRequestError,
   getLatestCommitSha,
   getReadme,
+  getRepoFileOrNull,
   getRepoInfo,
   getRepoInfoOrNull,
   getRootEntryNames,
@@ -18,7 +19,7 @@ export type {
 } from './github.js';
 export type { Logger } from './logger.js';
 export { consoleLog, silentLog } from './logger.js';
-export { toRepoInfo } from './markdown.js';
+export { countItems, hollowsPrevious, toRepoInfo } from './markdown.js';
 export type {
   JsonGroup,
   JsonItem,

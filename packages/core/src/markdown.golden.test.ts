@@ -19,6 +19,9 @@ import { enhance } from './orchestrator.js';
 // Mock only the networked surface of ./github.js: keep the REAL parseGitHubUrl
 // (it's pure and faithful to production link detection) and replace
 // makeOctokit + getRepoInfo with the shared deterministic stand-ins.
+// getRepoFileOrNull serves a fixture's source-repo files from a same-named
+// subdirectory of fixtures/original (android-root/docs/apps-and-modules/*.md),
+// keyed by real repo path so relative links resolve as they do in the wild.
 vi.mock('./github.js', async () => {
   const actual =
     await vi.importActual<typeof import('./github.js')>('./github.js');
@@ -33,6 +36,28 @@ vi.mock('./github.js', async () => {
       `${owner}/${repo}` === 'user/repo-b'
         ? Promise.resolve(null)
         : getRepoInfo(octokit, owner, repo),
+    getRepoFileOrNull: async (
+      _octokit: unknown,
+      _owner: string,
+      _repo: string,
+      repoPath: string,
+    ): Promise<null | string> => {
+      const fs = await import('fs');
+      const path = await import('path');
+      const originals = path.join(__dirname, 'fixtures', 'original');
+      for (const entry of fs.readdirSync(originals, {
+        withFileTypes: true,
+      })) {
+        if (!entry.isDirectory()) {
+          continue;
+        }
+        const file = path.join(originals, entry.name, repoPath);
+        if (fs.existsSync(file)) {
+          return fs.readFileSync(file, 'utf-8');
+        }
+      }
+      return null;
+    },
   };
 });
 
@@ -44,6 +69,7 @@ const RAW_DIR = path.join(__dirname, 'fixtures', 'expected', 'raw');
 
 const FIXED_NOW = new Date('2025-01-01T00:00:00.000Z');
 const RAW_FIXTURES = new Set([
+  'android-root',
   'bare-links',
   'complex',
   'details-cards',
@@ -120,6 +146,10 @@ describe('golden: structure + raw output for README fixtures', () => {
       },
       originalRepositorySha: 'deadbeef',
       sortBy: 'stars',
+      sourceRepository: {
+        owner: originalRepository.split('/')[0],
+        repo: originalRepository.split('/')[1] ?? name,
+      },
       token: 'test-token',
     });
 

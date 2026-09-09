@@ -1,5 +1,5 @@
 import { Logger } from './logger.js';
-import type { RepoInfoDetails } from './github.js';
+import type { RepoInfoDetails, RepoIdentifier } from './github.js';
 import {
   JsonOutput,
   processMarkdownContent,
@@ -20,6 +20,7 @@ export interface EnhanceOptions {
   relativeLinkPrefix?: string;
   replacements?: ReplacementRule[];
   sortBy?: '' | 'last_commit' | 'stars';
+  sourceRepository?: RepoIdentifier;
   token: string;
 }
 
@@ -40,6 +41,7 @@ export async function enhance(options: EnhanceOptions): Promise<EnhanceResult> {
     relativeLinkPrefix = '',
     replacements = [],
     sortBy = '',
+    sourceRepository,
     enhancedRepository,
     enhancedRepositoryDescription,
     token,
@@ -65,6 +67,7 @@ export async function enhance(options: EnhanceOptions): Promise<EnhanceResult> {
     enhancedRepositoryDescription,
     originalRepositorySha,
     originalRepositoryInfo,
+    sourceRepository,
     previousJson,
     now,
     log,

@@ -5,6 +5,7 @@ import {
   getLatestCommitSha,
   getReadme,
   getRepoInfoOrNull,
+  hollowsPrevious,
   type JsonOutput,
   makeOctokit,
   parseOwnerRepo,
@@ -102,11 +103,24 @@ export async function run(): Promise<void> {
       replacements,
       relativeLinkPrefix,
       sortBy,
+      sourceRepository: parsed,
       enhancedRepository,
       enhancedRepositoryDescription,
       token,
       log: actionsLog,
     });
+
+    // The hollow guard: writing a >95% item collapse over a previously-full
+    // mirror is always a regression (parse bug, source restructure), never a
+    // real edit. Fail loud instead of committing the skeleton.
+    if (previousJson && hollowsPrevious(previousJson, result.jsonData)) {
+      core.setFailed(
+        'Refusing to write a hollow mirror: the new tree holds under 5% of ' +
+          "the previous output's items. The source likely restructured or " +
+          'moved its content; investigate before letting the mirror update.',
+      );
+      return;
+    }
 
     if (fullJsonPath) {
       const outputDir = path.dirname(fullJsonPath);

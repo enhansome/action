@@ -36,6 +36,7 @@ vi.mock('@enhansome/core', () => ({
   getLatestCommitSha: vi.fn(),
   getReadme: vi.fn(),
   getRepoInfoOrNull: vi.fn(),
+  hollowsPrevious: vi.fn(() => false),
   makeOctokit: vi.fn(() => ({ __client: true })),
   parseOwnerRepo: vi.fn(),
 }));
@@ -178,6 +179,32 @@ describe('main: run()', () => {
   it('writes the enhanced output to markdown_file', async () => {
     await run();
 
+    expect(fs.writeFile).toHaveBeenCalledWith('README.md', 'enhanced', 'utf-8');
+  });
+
+  // The hollow guard: a tree that collapses the mirror's item count by more
+  // than 95% must fail the run instead of committing the skeleton — the
+  // android-root regression committed hollow daily for three days.
+  it('fails without writing when the new tree would hollow the mirror', async () => {
+    vi.mocked(githubClient.getReadme).mockResolvedValue('# skeleton');
+    vi.mocked(fs.readFile).mockResolvedValue('{"items":[]}');
+    vi.mocked(githubClient.hollowsPrevious).mockReturnValue(true);
+
+    await run();
+
+    expect(core.setFailed).toHaveBeenCalledWith(
+      expect.stringContaining('hollow'),
+    );
+    expect(fs.writeFile).not.toHaveBeenCalled();
+  });
+
+  it('writes normally when the previous output was empty (first real run)', async () => {
+    vi.mocked(fs.readFile).mockResolvedValue('{"items":[]}');
+    vi.mocked(githubClient.hollowsPrevious).mockReturnValue(false);
+
+    await run();
+
+    expect(core.setFailed).not.toHaveBeenCalled();
     expect(fs.writeFile).toHaveBeenCalledWith('README.md', 'enhanced', 'utf-8');
   });
 

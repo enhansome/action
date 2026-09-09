@@ -243,6 +243,35 @@ export async function getReadme(
   return response.data as unknown as string;
 }
 
+/**
+ * One in-repo markdown file, for following a README's links into the source's
+ * content files. Returns null (logged) instead of failing the run: a followed
+ * file is best-effort the way repo-info failures are — only the README fetch
+ * itself can fail the run.
+ */
+export async function getRepoFileOrNull(
+  octokit: GithubClient,
+  owner: string,
+  repo: string,
+  path: string,
+): Promise<null | string> {
+  try {
+    octokit.log.debug(`Fetching ${owner}/${repo}/${path}`);
+    const { data } = await octokit.rest.repos.getContent({
+      mediaType: { format: 'raw' },
+      owner,
+      path,
+      repo,
+    });
+    return data as unknown as string;
+  } catch (error: unknown) {
+    octokit.log.warn(
+      `Failed to fetch ${owner}/${repo}/${path}: ${formatRequestError(error)}`,
+    );
+    return null;
+  }
+}
+
 /** Root file/directory names — the compile-manifest gate reads them to tell a
  * directory of resources from a repo that IS the deliverable. A `path: ''`
  * listing is always an array; the single-entry branch defends against a file
