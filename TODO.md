@@ -1,15 +1,6 @@
 # TODO — open-work index (enhansome/action)
 
-> **Work-tracking system: `TODO.md` (this file) → `progress/` → `archive/`** — a physical Kanban (same design as webapp).
-> - **`TODO.md` = the index.** One line per thread, two at most: title, priority tag, and — once one exists — a `→ progress/<slug>.md` pointer with a short status clause. Plans, anchors, measured numbers and fix sketches never live here — they are what the progress file is for. A line answers *what* and *how important*, nothing else. What's next is whatever sits highest in the file.
-> - **`progress/<slug>.md` = the detail home.** Created when a thread is picked up — or earlier, to hold the detail an index line cannot carry. Shape: goal · current state · next step · append-only log. **A resuming session reads ONLY that file.** Authored to the task — no rigid template; let the shape emerge.
-> - **`archive/`** = move the file there (verbatim) when done / killed / parked. Trivial one-shot completions → `archive/completed.md`.
->
-> Trivial tasks skip `progress/` (TODO line → `archive/completed.md` on done). **One home per fact** — measured numbers and evidence live in the progress file that verified them; don't duplicate. Created 2026-08-17, seeded from the webapp indexer triage (`../webapp/archive/indexer-perf.md`, log entry 2026-08-16e). Last pruned 2026-08-24.
->
-> **START-A-TASK RULE — the index is maintained by whoever picks the task up, at start, not after the fact.** The moment you begin a non-trivial task from this file, do **both**, in order: (1) annotate its TODO line with `→ progress/<slug>.md`; (2) create that `progress/<slug>.md` file if it does not exist (goal · current state · next step · append-only log). An in-flight task with no pointer = a broken, out-of-sync index. Trivial one-shots are the only exception (no `progress/` file — TODO → `archive/completed.md` on done).
->
-> **PRIORITY:** `CRITICAL` · `HIGH` · `MEDIUM` · `LOW` — how bad it is to leave unfixed; untagged = backlog. Sequencing ("after X") is a note on the line, not a second ladder. When a thread lands, its file moves to `archive/` and its line is deleted — no completion history in this file.
+> Tracking rules: `references/tracking.md` — read them before adding or editing a line here.
 
 - [ ] **Per-README repo dedupe** — the same repo linked in multiple sections emits multiple items. Deliberately skipped in the tree-shape overhaul (user decision 2026-08-19; `archive/tree-shape.md`): the webapp rebuild's global one-node-per-repo dedupe owns this. Revisit only if mirrors should be dupe-free in themselves.
 - [ ] **Non-repo resources in output (v2)** — YouTube/docs/app-site links produce nothing today; entire registries of them index as near-empty. Parked until webapp's v2 data model exists (`../webapp/TODO.md` "Index non-repo resources"); do not build the emission side before the consumer side wants it.
