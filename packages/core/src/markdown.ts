@@ -305,7 +305,12 @@ function rewriteRelativeLinksToSource(
   source: RepoIdentifier,
 ): void {
   const absolute = (url: string): string => {
-    if (!url || url.startsWith('#') || url.includes('://') || url.startsWith('mailto:')) {
+    if (
+      !url ||
+      url.startsWith('#') ||
+      url.includes('://') ||
+      url.startsWith('mailto:')
+    ) {
       return url;
     }
     const path = resolveRepoPath(url, baseDir);
@@ -366,9 +371,7 @@ async function appendInternalDocs(
     }
     fetched += 1;
     if (raw.length > MAX_FOLLOWED_FILE_BYTES) {
-      log.warn(
-        `Skipping ${link.path}: over ${MAX_FOLLOWED_FILE_BYTES} bytes.`,
-      );
+      log.warn(`Skipping ${link.path}: over ${MAX_FOLLOWED_FILE_BYTES} bytes.`);
       continue;
     }
     const fileTree = processor.parse(stripFrontmatter(raw));
@@ -435,7 +438,13 @@ export async function processMarkdownContent(
   // in the files it links. Splice them in before anything reads the tree, so
   // the repo fetch, badges and the section walk all see the combined document.
   if (sourceRepository && countGitHubRepos(tree) < sortOptions.minLinks) {
-    await appendInternalDocs(tree, sourceRepository, repos, sortOptions.minLinks, log);
+    await appendInternalDocs(
+      tree,
+      sourceRepository,
+      repos,
+      sortOptions.minLinks,
+      log,
+    );
     normalizeGitHubUrls(tree);
   }
 
@@ -448,7 +457,13 @@ export async function processMarkdownContent(
     sections,
     title: rawTitle,
     titleHeadingIndex,
-  } = processTree(tree, repoInfoMap, sortOptions, originalRepositoryInfo, firstSeen);
+  } = processTree(
+    tree,
+    repoInfoMap,
+    sortOptions,
+    originalRepositoryInfo,
+    firstSeen,
+  );
 
   // Single source of truth for the document title: brand it once and use the
   // same value for the markdown H1 and metadata.title (parity).
@@ -559,6 +574,15 @@ function collectGitHubLinks(tree: Root): Set<string> {
       urls.add(node.url);
     }
   });
+  // A details summary's anchor stays raw html (normalizeGitHubUrls leaves
+  // block html alone), so the identity it names joins the fetch set here;
+  // the summary promotion looks the repo up by the same href.
+  visit(tree, 'html', (node: Html) => {
+    const identity = parseDetailsSummary(node.value)?.identity;
+    if (identity) {
+      urls.add(identity.url);
+    }
+  });
   return urls;
 }
 
@@ -630,8 +654,7 @@ function normalizeInlineChildren(children: Node[]): Node[] {
     const child = children[i];
     if (child.type === 'html') {
       const anchor = ANCHOR_OPEN.exec((child as Html).value.trim());
-      const url =
-        anchor && parseGitHubUrl(anchor[2]) ? anchor[2] : null;
+      const url = anchor && parseGitHubUrl(anchor[2]) ? anchor[2] : null;
       if (url) {
         const closeIndex = children.findIndex(
           (candidate, j) =>
@@ -922,11 +945,15 @@ function processListRecursively(
   // nested lists (emitted under their parent regardless) and for top-level
   // lists with no open container (preamble), which gate per list.
   sectionGateOpen?: boolean,
+  // The promoted details-item this list sits directly inside: an entry
+  // restating that repo (the best-of "GitHub" bullet) is the entry the
+  // summary already emitted, not a second item — its children still lift,
+  // the way a dead link's do.
+  suppressRepo?: RepoInfoDetails,
 ): JsonNode[] {
   if (!isNested) {
     const gateOpen =
-      sectionGateOpen ??
-      countLinkedItems(listNode) >= sortOptions.minLinks;
+      sectionGateOpen ?? countLinkedItems(listNode) >= sortOptions.minLinks;
     if (!gateOpen) {
       return [];
     }
@@ -957,9 +984,20 @@ function processListRecursively(
     );
     const childrenJson = nestedContent.flatMap(child =>
       child.type === 'list'
-        ? processListRecursively(child, repoInfoMap, sortOptions, firstSeen, true)
+        ? processListRecursively(
+            child,
+            repoInfoMap,
+            sortOptions,
+            firstSeen,
+            true,
+          )
         : processTableRows(child, repoInfoMap, true, firstSeen),
     );
+
+    if (suppressRepo && repoInfo === suppressRepo) {
+      entries.push({ emitted: childrenJson, node: itemNode, repoInfo });
+      continue;
+    }
 
     // Title/description split on the FIRST paragraph only — a paper-list
     // entry's identity link may live in a later paragraph (findOwnGitHubLink)
@@ -976,10 +1014,7 @@ function processListRecursively(
     // The shared title fallbacks (an inline-code link label carries no text
     // nodes, so the split alone can leave an empty title).
     entryText.title = entryTitle(entryText.title, ownLink, repoInfo);
-    entryText.description = entryDescription(
-      entryText.description,
-      repoInfo,
-    );
+    entryText.description = entryDescription(entryText.description, repoInfo);
     const emitted = emitEntryNodes(
       githubUrl,
       repoInfo,
@@ -1090,10 +1125,16 @@ function processTableRows(
         .trim();
       const title = entryTitle(titleText.title, ownLink, repoInfo);
       items.push(
-        ...emitEntryNodes(ownLink.url, repoInfo, {
-          title,
-          description: entryDescription(description, repoInfo),
-        }, [], firstSeen),
+        ...emitEntryNodes(
+          ownLink.url,
+          repoInfo,
+          {
+            title,
+            description: entryDescription(description, repoInfo),
+          },
+          [],
+          firstSeen,
+        ),
       );
       continue;
     }
@@ -1107,10 +1148,16 @@ function processTableRows(
       const cellText = splitEntryText(row.children[cellIndex].children);
       const title = entryTitle(cellText.title, ownLink, repoInfo);
       items.push(
-        ...emitEntryNodes(ownLink.url, repoInfo, {
-          title,
-          description: entryDescription(cellText.description, repoInfo),
-        }, [], firstSeen),
+        ...emitEntryNodes(
+          ownLink.url,
+          repoInfo,
+          {
+            title,
+            description: entryDescription(cellText.description, repoInfo),
+          },
+          [],
+          firstSeen,
+        ),
       );
     }
   }
@@ -1123,8 +1170,7 @@ const TAG_LINK_TEXT =
   /^[\[\]()*\s:_-]*(?:source\s+code|code|github|repo|source|src|project|paper|page|web|site|home|official|notebook|demo|data|docs|implementation|arxiv)\b[\[\]()*\s:_-]*$/i;
 const URL_LINK_TEXT = /^https?:\/\/\S+$/i;
 
-const URL_TITLE =
-  /^(?:[a-z][a-z0-9+.-]*:\/\/|www\.)\S+$|^github\.com\/\S+$/i;
+const URL_TITLE = /^(?:[a-z][a-z0-9+.-]*:\/\/|www\.)\S+$|^github\.com\/\S+$/i;
 
 function isDegenerateTitle(title: string): boolean {
   const trimmed = title.trim();
@@ -1148,9 +1194,7 @@ const DESC_TAG_TEXT =
 function isDegenerateDescription(description: string): boolean {
   const trimmed = description.trim();
   return (
-    trimmed === '' ||
-    DESC_TAG_TEXT.test(trimmed) ||
-    isDegenerateTitle(trimmed)
+    trimmed === '' || DESC_TAG_TEXT.test(trimmed) || isDegenerateTitle(trimmed)
   );
 }
 
@@ -1303,10 +1347,16 @@ function entryNodesFor(
   const repoInfo = repoInfoMap.get(ownLink.url) ?? null;
   const entryText = splitEntryText(inlines);
   const title = entryTitle(entryText.title, ownLink, repoInfo);
-  return emitEntryNodes(ownLink.url, repoInfo, {
-    title,
-    description: entryDescription(entryText.description, repoInfo),
-  }, [], firstSeen);
+  return emitEntryNodes(
+    ownLink.url,
+    repoInfo,
+    {
+      title,
+      description: entryDescription(entryText.description, repoInfo),
+    },
+    [],
+    firstSeen,
+  );
 }
 
 // The <details><summary>…</summary> collapsible-section idiom: the summary
@@ -1318,17 +1368,66 @@ const DETAILS_SUMMARY =
   /<details[^>]*>[\s\S]*?<summary[^>]*>([\s\S]*?)<\/summary>/i;
 const DETAILS_CLOSE = /^\s*<\/details>/i;
 
-function detailsSummaryTitle(htmlValue: string): null | string {
+// One summary's read of the walk: the summary's whole text (the container
+// title when the block is not an entry), and — when the summary carries the
+// entry's identity (the best-of generator's shape: repo anchor, badge
+// cluster, curated sentence) — that anchor and the prose trailing it.
+const SUMMARY_ANCHOR = /<a\s[^>]*href=(["'])([^"']*)\1[^>]*>([\s\S]*?)<\/a>/gi;
+
+interface DetailsSummary {
+  identity: null | { label: string; url: string };
+  prose: string;
+  title: null | string;
+}
+
+function summaryHtmlText(html: string): string {
+  return html
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function parseDetailsSummary(htmlValue: string): DetailsSummary | null {
   const match = DETAILS_SUMMARY.exec(htmlValue);
   if (!match) {
     return null;
   }
-  const title = match[1]
+  const inner = match[1];
+  const title = inner
     .replace(/<kbd>[\s\S]*?<\/kbd>/gi, '')
     .replace(/<[^>]+>/g, ' ')
     .replace(/\s+/g, ' ')
     .trim();
-  return title || null;
+  let identity: DetailsSummary['identity'] = null;
+  let prose = '';
+  for (const anchor of inner.matchAll(SUMMARY_ANCHOR)) {
+    if (!parseGitHubUrl(anchor[2])) {
+      continue;
+    }
+    identity = { label: summaryHtmlText(anchor[3]), url: anchor[2] };
+    prose = summaryHtmlText(
+      inner.slice((anchor.index ?? 0) + anchor[0].length),
+    );
+    break;
+  }
+  return { identity, prose, title: title || null };
+}
+
+function detailsSummaryTitle(htmlValue: string): null | string {
+  return parseDetailsSummary(htmlValue)?.title ?? null;
+}
+
+// A badge cluster from a generated summary: a parenthesized run of medals,
+// counts and size suffixes (🥈31 · ⭐ 1.9K) — symbols, digits and punctuation,
+// no words. A parenthetical with any other letter (an aside in prose) stays.
+const BADGE_CLUSTER = /^\([\p{P}\p{S}\p{N}\sKMG]*\)\s*/u;
+
+function stripBadgeClusters(text: string): string {
+  let out = text.trimStart();
+  while (BADGE_CLUSTER.test(out)) {
+    out = out.replace(BADGE_CLUSTER, '');
+  }
+  return out;
 }
 
 // The summary text of a <details><summary> block inside a list item, when the
@@ -1530,7 +1629,9 @@ function processTree(
   // comparison holds even for aliased spellings.
   const rementionsOpenItem = (link: Link): boolean => {
     const repoInfo = repoInfoMap.get(link.url);
-    return !!repoInfo && stack.some(container => container.repoInfo === repoInfo);
+    return (
+      !!repoInfo && stack.some(container => container.repoInfo === repoInfo)
+    );
   };
 
   for (let i = 0; i < tree.children.length; i++) {
@@ -1550,13 +1651,20 @@ function processTree(
         headingEntry && getInlineText(headingEntry.link.children)
           ? headingEntry
           : null;
-      closeContainers(stack, node.depth, sectionRecords, firstSeen, !!promotedEntry);
+      closeContainers(
+        stack,
+        node.depth,
+        sectionRecords,
+        firstSeen,
+        !!promotedEntry,
+      );
       openContainer(stack, node, i, sectionDepth, promotedEntry, headingEntry);
     } else if (node.type === 'paragraph') {
       const text = getNodeText(node);
       // Boilerplate "back to top" lines are neither entries nor description.
-      const ownLink =
-        BACK_TO_TOP.test(text) ? undefined : paragraphEntryLink(node);
+      const ownLink = BACK_TO_TOP.test(text)
+        ? undefined
+        : paragraphEntryLink(node);
       // An entry paragraph behaves like a one-item list; a failed gate, a
       // dead target, or a re-mention of the enclosing item leaves plain
       // description.
@@ -1565,7 +1673,12 @@ function processTree(
       } else {
         const container = stack[stack.length - 1];
         // Avoid adding boilerplate "back to top" links to descriptions.
-        if (container && text && !BACK_TO_TOP.test(text)) {
+        if (
+          container &&
+          text &&
+          !BACK_TO_TOP.test(text) &&
+          collectsProse(container)
+        ) {
           container.description = container.description
             ? `${container.description}\n${text}`
             : text;
@@ -1578,7 +1691,9 @@ function processTree(
       // prose.
       const faces = BACK_TO_TOP.test(text)
         ? []
-        : blockquoteEntries(node).filter(face => !rementionsOpenItem(face.link));
+        : blockquoteEntries(node).filter(
+            face => !rementionsOpenItem(face.link),
+          );
       if (faces.length > 0) {
         for (const face of faces) {
           emitStandaloneEntry(face.link, face.inlines, i);
@@ -1586,38 +1701,77 @@ function processTree(
       } else {
         const container = stack[stack.length - 1];
         // Avoid adding boilerplate "back to top" links to descriptions.
-        if (container && text && !BACK_TO_TOP.test(text)) {
+        if (
+          container &&
+          text &&
+          !BACK_TO_TOP.test(text) &&
+          collectsProse(container)
+        ) {
           container.description = container.description
             ? `${container.description}\n${text}`
             : text;
         }
       }
     } else if (node.type === 'html') {
-      // A details-summary block opens a section like a heading would; the
-      // close tag (or the next summary) ends it — never the enclosing
-      // section, which keeps collecting after the collapsible block.
-      const summaryTitle = detailsSummaryTitle(node.value);
-      if (summaryTitle) {
+      // A details-summary block is the entry itself when its summary carries
+      // the identity (the best-of generator's shape) — promoted exactly like
+      // a link-bearing heading, so the entry nests in its real category with
+      // the summary's curated sentence as its description and the badges
+      // gone. Any other summary opens a container like a heading would: a
+      // group under the open container (the JSON has no nested sections), a
+      // section at document level. The close tag (or the next summary) ends
+      // it — never the enclosing section, which keeps collecting after the
+      // collapsible block.
+      const summary = parseDetailsSummary(node.value);
+      if (summary) {
         closeInnermostDetails(stack, sectionRecords, firstSeen);
         // Container depths never decrease going up the stack. When the open
         // containers sit deeper than sectionDepth (a mid-document H1 defines
-        // sectionDepth while the content sections run deeper), the
-        // details-section joins at the current depth — pushing at the
-        // shallower sectionDepth would invert the stack and strand the gate
-        // (which reads the stack bottom) on a tiny outer section.
+        // sectionDepth while the content sections run deeper), the container
+        // joins at the current depth — pushing at the shallower sectionDepth
+        // would invert the stack and strand the gate (which reads the stack
+        // bottom) on a tiny outer section.
         const joinDepth =
           stack.length === 0
             ? sectionDepth
             : Math.max(sectionDepth, stack[stack.length - 1].headingDepth);
-        stack.push({
-          children: [],
-          description: '',
-          headingDepth: joinDepth,
-          headingIndex: i,
-          kind: 'section',
-          openedByDetails: true,
-          title: summaryTitle,
-        });
+        const repoInfo = summary.identity
+          ? (repoInfoMap.get(summary.identity.url) ?? null)
+          : null;
+        const promoted =
+          summary.identity &&
+          repoInfo &&
+          isMeaningfulLinkText(summary.identity.label)
+            ? { identity: summary.identity, repoInfo }
+            : null;
+        if (promoted && stack.length === 0) {
+          openSynthesizedSection(stack, i, sectionDepth);
+        }
+        if (promoted && gateForSection(stack[0])) {
+          stack.push({
+            children: [],
+            description: entryDescription(
+              stripLeadingNoise(stripBadgeClusters(summary.prose)),
+              promoted.repoInfo,
+            ),
+            headingDepth: joinDepth,
+            headingIndex: i,
+            kind: 'item',
+            openedByDetails: true,
+            repoInfo: promoted.repoInfo,
+            title: promoted.identity.label,
+          });
+        } else {
+          stack.push({
+            children: [],
+            description: '',
+            headingDepth: joinDepth,
+            headingIndex: i,
+            kind: stack.length === 0 ? 'section' : 'group',
+            openedByDetails: true,
+            title: summary.title ?? '',
+          });
+        }
       } else if (DETAILS_CLOSE.test(node.value)) {
         closeInnermostDetails(stack, sectionRecords, firstSeen);
       }
@@ -1631,7 +1785,13 @@ function processTree(
       }
       // Every list inside the open container contributes items — a section is
       // not closed by its first list — and the minLinks gate is decided per
-      // section, against the whole section subtree.
+      // section, against the whole section subtree. A list directly inside a
+      // promoted details-item suppresses the re-mention of that item's repo.
+      const innermost = stack[stack.length - 1];
+      const suppress =
+        innermost.kind === 'item' && innermost.openedByDetails
+          ? innermost.repoInfo
+          : undefined;
       const items = processListRecursively(
         node,
         repoInfoMap,
@@ -1639,6 +1799,7 @@ function processTree(
         firstSeen,
         false,
         gateForSection(stack[0]),
+        suppress,
       );
       stack[stack.length - 1].children.push(...items);
     } else if (node.type === 'table') {
@@ -1686,6 +1847,13 @@ interface ContainerBuilder {
   openedByDetails?: boolean;
   repoInfo?: RepoInfoDetails;
   title: string;
+}
+
+// A details-promoted item's description is the summary's curated sentence;
+// prose inside the collapsible body is the card's content, not more
+// description.
+function collectsProse(container: ContainerBuilder): boolean {
+  return container.kind !== 'item' || !container.openedByDetails;
 }
 
 // The heading depth that opens top-level sections: the shallowest structural
@@ -1801,10 +1969,7 @@ function openContainer(
 // real section:
 // closed by the first structural heading (or document end), gated with its
 // whole subtree, and pruned when empty.
-function openImplicitSection(
-  stack: ContainerBuilder[],
-  atIndex: number,
-): void {
+function openImplicitSection(stack: ContainerBuilder[], atIndex: number): void {
   stack.push({
     children: [],
     description: '',
@@ -1972,11 +2137,7 @@ function sectionGatePasses(
     }
     let total = spanCount(section.headingIndex);
     for (const direction of [-1, 1]) {
-      for (
-        let m = k + direction;
-        m >= 0 && m < list.length;
-        m += direction
-      ) {
+      for (let m = k + direction; m >= 0 && m < list.length; m += direction) {
         const count = spanCount(list[m]);
         if (count > 1) {
           break;
@@ -2033,7 +2194,11 @@ function finalizeContainer(
   if (container.kind === 'section') {
     sectionRecords.push({
       headingIndex: container.headingIndex,
-      section: { description, items: container.children, title: container.title },
+      section: {
+        description,
+        items: container.children,
+        title: container.title,
+      },
     });
     return;
   }
@@ -2070,10 +2235,7 @@ function closeContainers(
   firstSeen: FirstSeen,
   stopAtSynthesized = false,
 ): void {
-  while (
-    stack.length > 0 &&
-    stack[stack.length - 1].headingDepth >= depth
-  ) {
+  while (stack.length > 0 && stack[stack.length - 1].headingDepth >= depth) {
     if (stopAtSynthesized && stack[stack.length - 1].openedBySynthesis) {
       break;
     }

@@ -6,13 +6,21 @@ A best-of `<details><summary>` entry emits as one item under its real category: 
 
 ## Current state
 
-Ruled (owner, issue #27): G2a as scoped above; G1a leaves the non-repo contract parked on webapp v2. Evidence: the live enhansome/enhansome-best-of-python-dev mirror emits pytest-xdist as `item{title: pytest-dev/pytest-xdist, description: (👨‍💻 120 · 🔀 290 · 📦 140K):}` inside a badge-titled wrapper section; 154 top-level sections for a 23-category source (135 badge wrappers, 17 "Show N hidden projects" toggles holding 114 items, 2 real categories with 3).
+Ruled (owner, issue #27): G2a as scoped above; G1a leaves the non-repo contract parked on webapp v2.
 
-Nothing built yet.
+Implemented on branch `fix/details-summary-entries`, all seams in `packages/core/src/markdown.ts`:
+
+1. `parseDetailsSummary` reads a summary into `{title, identity, prose}` — the first GitHub anchor (label + href) and the tags-stripped text after it; `collectGitHubLinks` adds that href to the fetch set (summary anchors stay raw html).
+2. The html walk promotes a summary whose identity resolved and whose label is meaningful to an item container (title = label, description = badge-stripped prose through `entryDescription`), gated by the same section gate its inner list would face; with an empty stack a synthesized section wraps the run. Any other details block opened inside a container finalizes as a group under it; with an empty stack it stays a top-level section. All details containers keep the old joinDepth and `</details>` closing.
+3. A list directly inside a promoted item suppresses the entry restating that repo (`suppressRepo` in `processListRecursively`), lifting its children the way a dead link does. Inner prose does not append to a promoted item's description (`collectsProse`).
+
+The fixture is a verbatim cut of ml-tooling/best-of-python-dev (owner asked for the filing registry; a first synthetic fixture was replaced by it) pinning pytest, pytest-xdist, the empty-href nox entry, the "Show 14 hidden projects…" toggle, and the category boundary. vinta/awesome-python was already fixture `python` — its openpyxl line pins the G1a side. Goldens regenerated (android-root, bare-links, details-cards, regex moved to the nested shapes).
+
+Verified on the full live best-of-python-dev README offline: 18 top-level sections (was 154), 260 items (was 252 — 8 entries recovered, nox among them: its inner GitHub bullet has an empty href, so only the summary can carry it), pytest-xdist under "Testing Tools" with `pytest plugin for distributed testing and loop-on-failures.. MIT` as description, zero badge-titled or toggle-titled top-level sections.
 
 ## Next step
 
-Implement the walk changes in `packages/core/src/markdown.ts`: summary parsing (identity anchor, label, prose), the promotion and group branches of the html walk, summary-anchor hrefs in the repo fetch set, and the list-walk re-mention suppression; then the best-of fixture and regenerated goldens.
+Owner: review and merge the `fix/details-summary-entries` PR, reply on issue #27 with both rulings, and close the issue when it lands.
 
 ## Design
 
