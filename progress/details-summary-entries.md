@@ -20,7 +20,7 @@ Verified on the full live best-of-python-dev README offline: 18 top-level sectio
 
 ## Next step
 
-Owner: review and merge the `fix/details-summary-entries` PR, reply on issue #27 with both rulings, and close the issue when it lands.
+Owner: review and merge PR #29 (both rulings recorded on issue #27); close the issue and this thread when it lands.
 
 ## Design
 
