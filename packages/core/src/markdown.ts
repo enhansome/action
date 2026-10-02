@@ -976,6 +976,10 @@ function processListRecursively(
     // The shared title fallbacks (an inline-code link label carries no text
     // nodes, so the split alone can leave an empty title).
     entryText.title = entryTitle(entryText.title, ownLink, repoInfo);
+    entryText.description = entryDescription(
+      entryText.description,
+      repoInfo,
+    );
     const emitted = emitEntryNodes(
       githubUrl,
       repoInfo,
@@ -1017,6 +1021,22 @@ function entryTitle(
   }
   if (base === '') {
     return repoInfo?.repo ?? '';
+  }
+  return repoInfo ? `${repoInfo.owner}/${repoInfo.repo}` : base;
+}
+
+// Description with the fallback every entry source shares: the split's own
+// trailing prose when it says something, else — for a live repo link —
+// owner/name. The own link's label is never consulted: in the corpus it
+// only ever echoes the title back (":tada: Doom" already says "Doom"). A
+// degenerate base with no live repo link (a group) keeps its text: nothing
+// better exists.
+function entryDescription(
+  base: string,
+  repoInfo: null | RepoInfoDetails,
+): string {
+  if (!isDegenerateDescription(base)) {
+    return base;
   }
   return repoInfo ? `${repoInfo.owner}/${repoInfo.repo}` : base;
 }
@@ -1068,10 +1088,11 @@ function processTableRows(
       ]
         .join(' ')
         .trim();
+      const title = entryTitle(titleText.title, ownLink, repoInfo);
       items.push(
         ...emitEntryNodes(ownLink.url, repoInfo, {
-          title: entryTitle(titleText.title, ownLink, repoInfo),
-          description,
+          title,
+          description: entryDescription(description, repoInfo),
         }, [], firstSeen),
       );
       continue;
@@ -1084,10 +1105,11 @@ function processTableRows(
       emittedUrls.add(ownLink.url);
       const repoInfo = repoInfoMap.get(ownLink.url) ?? null;
       const cellText = splitEntryText(row.children[cellIndex].children);
+      const title = entryTitle(cellText.title, ownLink, repoInfo);
       items.push(
         ...emitEntryNodes(ownLink.url, repoInfo, {
-          title: entryTitle(cellText.title, ownLink, repoInfo),
-          description: cellText.description,
+          title,
+          description: entryDescription(cellText.description, repoInfo),
         }, [], firstSeen),
       );
     }
@@ -1116,6 +1138,20 @@ function isDegenerateTitle(title: string): boolean {
 
 function isMeaningfulLinkText(text: string): boolean {
   return text !== '' && !isDegenerateTitle(text);
+}
+
+// Description-only tag words beyond the title set: the second-link label
+// families the corpus census measured ("website", "documentation", …).
+const DESC_TAG_TEXT =
+  /^(?:website|homepage|home\s+page|link|here|documentation|repository)$/i;
+
+function isDegenerateDescription(description: string): boolean {
+  const trimmed = description.trim();
+  return (
+    trimmed === '' ||
+    DESC_TAG_TEXT.test(trimmed) ||
+    isDegenerateTitle(trimmed)
+  );
 }
 
 // Dated entry lines end their tag cluster with a publication date ("4 Feb
@@ -1266,9 +1302,10 @@ function entryNodesFor(
 ): JsonNode[] {
   const repoInfo = repoInfoMap.get(ownLink.url) ?? null;
   const entryText = splitEntryText(inlines);
+  const title = entryTitle(entryText.title, ownLink, repoInfo);
   return emitEntryNodes(ownLink.url, repoInfo, {
-    title: entryTitle(entryText.title, ownLink, repoInfo),
-    description: entryText.description,
+    title,
+    description: entryDescription(entryText.description, repoInfo),
   }, [], firstSeen);
 }
 
