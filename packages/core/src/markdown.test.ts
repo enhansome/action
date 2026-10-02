@@ -519,8 +519,8 @@ describe('Item identity: own-link only, categories become groups', () => {
 
 // A title that carries no name — a rank number, a year, a URL, or a bare tag
 // word — falls back to the repo link's own label when that names the repo,
-// else owner/name. The measured families (progress/degenerate-titles.md):
-// numbered rank tables (`| 15. | [**Day.js**](…) |`), year-first paper tables
+// else owner/name. Corpus families this targets: numbered rank tables
+// (`| 15. | [**Day.js**](…) |`), year-first paper tables
 // with a tag link column, URL-as-label links, and best-of's `[GitHub](repo)`
 // lines. CJK labels and letter-bearing text are titles, not noise.
 describe('Degenerate titles fall back to the link label, then owner/name', () => {
@@ -689,6 +689,157 @@ describe('Degenerate titles fall back to the link label, then owner/name', () =>
     );
     const items = sectionItems(data, 'Badges');
     expect(items.map(i => i.title)).toEqual(['badge-tool']);
+  });
+});
+
+// A description that carries no annotation — a bare tag word left by a
+// multi-link entry (`- [Homepage](site) - [Repo](github.com/o/r)`), a URL, or
+// nothing at all — falls back to owner/name. The own link's label is never
+// consulted: in the corpus it only ever echoed the title back
+// (`:tada: [Doom](…)` already says "Doom" in the title). Real prose — even
+// one word — and group text are kept as-is.
+describe('Degenerate descriptions fall back to owner/name', () => {
+  const token = 'test-token';
+  const sourceRepo = 'example/awesome-test';
+
+  beforeEach(() => {
+    vi.clearAllMocks();
+    vi.mocked(github.parseGitHubUrl).mockImplementation((url: string) => {
+      if (!url.includes('github.com')) {
+        return null;
+      }
+      const parts = url.split('/');
+      return { owner: parts[parts.length - 2], repo: parts[parts.length - 1] };
+    });
+    vi.mocked(github.getRepoInfo).mockImplementation((_ok, owner, repo) =>
+      Promise.resolve({
+        archived: false,
+        id: 1,
+        language: 'TypeScript',
+        open_issues_count: 1,
+        owner,
+        pushed_at: '2025-01-01T00:00:00Z',
+        repo,
+        stargazers_count: 100,
+        topics: [],
+        description: null,
+        homepage: null,
+        license: null,
+      }),
+    );
+  });
+
+  async function process(md: string) {
+    const { jsonData } = await processMarkdownContent(
+      md,
+      token,
+      [],
+      { by: '', minLinks: 0 },
+      sourceRepo,
+      '',
+    );
+    return jsonData;
+  }
+
+  function sectionItems(
+    data: Awaited<ReturnType<typeof process>>,
+    title: string,
+  ) {
+    const section = data.items.find(s => s.title === title);
+    expect(section, `section "${title}" should exist`).toBeDefined();
+    return section?.items ?? [];
+  }
+
+  it('describes a trailing tag-label GitHub link owner/name (the literal "Repo" family)', async () => {
+    const data = await process(
+      [
+        '# List',
+        '',
+        '## Frontends',
+        '',
+        '- [Homepage](https://example.com/product) - [Repo](https://github.com/o/tool)',
+        '',
+      ].join('\n'),
+    );
+    const items = sectionItems(data, 'Frontends');
+    const tool = items.find(i => i.title === 'Homepage');
+    expect(tool, 'item titled "Homepage" should exist').toBeDefined();
+    expect(tool?.description).toBe('o/tool');
+  });
+
+  it('describes a table row whose only other cell text is the tag link', async () => {
+    const data = await process(
+      [
+        '# List',
+        '',
+        '## Frontends',
+        '',
+        '| Site | Code |',
+        '| ---- | ---- |',
+        '| [Homepage](https://example.com/product) | [Repo](https://github.com/o/front) |',
+        '',
+      ].join('\n'),
+    );
+    const items = sectionItems(data, 'Frontends');
+    const front = items.find(i => i.title === 'Homepage');
+    expect(front, 'item titled "Homepage" should exist').toBeDefined();
+    expect(front?.description).toBe('o/front');
+  });
+
+  it('describes a website-tag trailing link owner/name', async () => {
+    const data = await process(
+      [
+        '# List',
+        '',
+        '## Projects',
+        '',
+        '- [egghead-next](https://github.com/eggheadio/egghead-next) - [Website](https://egghead.io)',
+        '',
+      ].join('\n'),
+    );
+    const items = sectionItems(data, 'Projects');
+    const project = items.find(i => i.title === 'egghead-next');
+    expect(project, 'item titled "egghead-next" should exist').toBeDefined();
+    expect(project?.description).toBe('eggheadio/egghead-next');
+  });
+
+  it('fills an empty description with owner/name, never the title', async () => {
+    const data = await process(
+      [
+        '# List',
+        '',
+        '## Tools',
+        '',
+        '- [Day.js](https://github.com/iamkun/dayjs)',
+        '',
+      ].join('\n'),
+    );
+    const items = sectionItems(data, 'Tools');
+    const dayjs = items.find(i => i.title === 'Day.js');
+    expect(dayjs, 'item titled "Day.js" should exist').toBeDefined();
+    expect(dayjs?.description).toBe('iamkun/dayjs');
+  });
+
+  it('keeps real prose and keeps group text untouched', async () => {
+    const data = await process(
+      [
+        '# List',
+        '',
+        '## Section',
+        '',
+        '- [Name](https://github.com/o/repo) - A fast parser, with docs',
+        '- Category',
+        '  - [a](https://github.com/o/a)',
+        '',
+      ].join('\n'),
+    );
+    const items = sectionItems(data, 'Section');
+    expect(items.find(i => i.title === 'Name')?.description).toBe(
+      'A fast parser, with docs',
+    );
+    const group = items.find(i => i.title === 'Category');
+    expect(group?.node_type).toBe('group');
+    expect(group?.description).toBeNull();
   });
 });
 
