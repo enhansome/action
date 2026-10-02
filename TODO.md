@@ -1,7 +1,6 @@
 # TODO — open-work index
 
 ## core
-- **Degenerate item descriptions** · [packages/core] → progress/degenerate-descriptions.md
 - **Table annotation cells never reach item descriptions** · MEDIUM · [packages/core]
   Rows like android-root's category tables carry real annotation in a non-link cell, but the emitted item shows the owner/name fallback instead — the cell's text is dropped on the floor.
 - **Zero-width characters in link URLs parse to mojibake repo names** · LOW · [packages/core]

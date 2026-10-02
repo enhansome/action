@@ -8,7 +8,7 @@ Out of scope: `][PyTorch]`-style non-tag remnants (real word, kept), prose quali
 
 ## Current state
 
-The fix, its tests and regenerated goldens sit on branch `fix/degenerate-item-descriptions`, reworked after review; PR against main not merged.
+Merged to main as PR #26 (`f41cf4a` fix, `a420457` docs), rebase-merged to keep history linear.
 
 The fix is one seam, `entryDescription(base, repoInfo)` in `packages/core/src/markdown.ts`, called wherever `entryTitle` is (list items, both table paths, paragraph/blockquote entries): a non-degenerate base wins, else `owner/name`, else the base stands (groups, no repo link). Degeneracy is empty, `isDegenerateTitle` (URL, no letters, tag word), or a description-only tag word (`website`, `homepage`, `home page`, `link`, `here`, `documentation`, `repository`).
 
@@ -32,4 +32,4 @@ Found work filed as its own index entries before close: table annotation cells d
 
 ## Next step
 
-Owner: review and merge the reworked `fix/degenerate-item-descriptions` PR, then close this thread.
+None — closed on merge.
