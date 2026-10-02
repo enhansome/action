@@ -1,6 +1,15 @@
-# TODO — open-work index (enhansome/action)
+# TODO — open-work index
 
-> Tracking rules: `references/tracking.md` — read them before adding or editing a line here.
+## core
+- **Degenerate item descriptions** · [packages/core] → progress/degenerate-descriptions.md
+- **Table annotation cells never reach item descriptions** · MEDIUM · [packages/core]
+  Rows like android-root's category tables carry real annotation in a non-link cell, but the emitted item shows the owner/name fallback instead — the cell's text is dropped on the floor.
+- **Zero-width characters in link URLs parse to mojibake repo names** · LOW · [packages/core]
+  An item linked by a URL with an invisible zero-width character (awesome-computer-vision's NeuralTalk line) shows `%EF%BB%BF` in its repo name and description.
 
-- [ ] **Per-README repo dedupe** — the same repo linked in multiple sections emits multiple items. Deliberately skipped in the tree-shape overhaul (user decision 2026-08-19; `archive/tree-shape.md`): the webapp rebuild's global one-node-per-repo dedupe owns this. Revisit only if mirrors should be dupe-free in themselves.
-- [ ] **Non-repo resources in output (v2)** — YouTube/docs/app-site links produce nothing today; entire registries of them index as near-empty. Parked until webapp's v2 data model exists (`../webapp/TODO.md` "Index non-repo resources"); do not build the emission side before the consumer side wants it.
+## Parked
+- **Non-repo resources in output** — revisit when webapp's v2 data model exists and its "Index non-repo resources linked from registries" thread asks for the emission side
+  Registry links to non-repo resources (YouTube, docs, app sites) emit no items, so registries made of them index as near-empty.
+
+## Out of scope
+- **Per-README repo dedupe** — webapp's global one-node-per-repo dedupe owns it, unless mirrors must be dupe-free in themselves

@@ -1,8 +1,8 @@
 # Fetch gap — sources that move their content out of the README
 
-**Status: IMPLEMENTED 2026-09-09 — auto-follow + hollow guard built and
-tested (275 green, android-root heals to 617 items offline); awaiting owner
-review before commit/deploy.**
+**Status: done — owner-approved and committed as a `fix:` 2026-09-09.
+android-root heals on its next scheduled run (auto trigger, no workflow
+edit); the webapp applies the repopulated mirror on its next index run.**
 
 ## Goal
 
@@ -88,3 +88,8 @@ format-blindness disease (direction 3).
   `getRepoFileOrNull` stand-in), structure + raw goldens under `expected/`.
   Verified: 617 items / 22 sections / 188 KB, 91 relative links rewritten
   to source-repo URLs; no pre-existing golden changed.
+- **2026-09-09 (3rd)** — Owner review passed; archived. Review confirmed no
+  duplicated machinery and no pre-existing golden changed. Three gaps
+  accepted as-is, on record: the hollow guard only arms when
+  `json_output_file` is set; `decodeURIComponent` can throw on a
+  malformed blob-URL escape; followed files fetch sequentially.
