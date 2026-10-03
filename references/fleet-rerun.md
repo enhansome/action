@@ -59,5 +59,5 @@ Stage the pass, sample the drained tail, and back off ~30 min on the first
 | hollow-guard refusal | `Refusing to write a hollow mirror: … under 5% of the previous output's items` when the release legitimately removes items (v1.12's self-link exclusion: old trees that were 100% self-repo nav items — cms 69/69, iptv 37/37, package-manager 1/1) | investigate confirms the collapse is the release working → owner-consented baseline reset: commit `README.json` with `items: []` and metadata kept (`contents` PUT), re-dispatch → the honest tree writes |
 | dead upstream | source fetch 404s | nothing to fix; add to the exclusion list above |
 
-2026-10-03 final: 2,343 success · 1 dead upstream · 2 push races re-dispatched
+2026-10-03 final: 2,344 success · 1 dead upstream · 2 push races re-dispatched
 to green · 3 baseline resets (owner-consented) writing near-empty trees.
