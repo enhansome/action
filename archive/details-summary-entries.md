@@ -6,6 +6,8 @@ A best-of `<details><summary>` entry emits as one item under its real category: 
 
 ## Current state
 
+Merged to main as PR #29 (`e7efa65` feat — squashed with the `feat:` title for the 1.12.0 minor; `6052990` docs rode the branch), issue #27 closed.
+
 Ruled (owner, issue #27): G2a as scoped above; G1a leaves the non-repo contract parked on webapp v2.
 
 Implemented on branch `fix/details-summary-entries`, all seams in `packages/core/src/markdown.ts`:
@@ -18,9 +20,11 @@ The fixture is a verbatim cut of ml-tooling/best-of-python-dev (owner asked for 
 
 Verified on the full live best-of-python-dev README offline: 18 top-level sections (was 154), 260 items (was 252 — 8 entries recovered, nox among them: its inner GitHub bullet has an empty href, so only the summary can carry it), pytest-xdist under "Testing Tools" with `pytest plugin for distributed testing and loop-on-failures.. MIT` as description, zero badge-titled or toggle-titled top-level sections.
 
+Found work filed as its own index entry before close: leading badge clusters survive in list/paragraph entry descriptions (the hidden-toggle rows and cross-ref rows of the same registries — the badge strip runs on summary prose only).
+
 ## Next step
 
-Owner: review and merge PR #29 (both rulings recorded on issue #27); close the issue and this thread when it lands.
+None — closed on merge.
 
 ## Design
 

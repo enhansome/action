@@ -1,12 +1,8 @@
 # TODO — open-work index
 
 ## core
-- **Leading badge clusters survive in entry descriptions** · MEDIUM · [packages/core]
-  best-of-python-dev's hidden rows emit descriptions like `(🥈27 · ⭐ 4.5K · 💀) - Let your Python tests travel through time.` and its cross-ref rows `( ⭐ 2.6K · 💤) - Testing libraries…` — the details-summary fix strips these clusters from summary prose only, not from list or paragraph entry descriptions.
-- **Table annotation cells never reach item descriptions** · MEDIUM · [packages/core]
-  Rows like android-root's category tables carry real annotation in a non-link cell, but the emitted item shows the owner/name fallback instead — the cell's text is dropped on the floor.
-- **Zero-width characters in link URLs parse to mojibake repo names** · LOW · [packages/core]
-  An item linked by a URL with an invisible zero-width character (awesome-computer-vision's NeuralTalk line) shows `%EF%BB%BF` in its repo name and description.
+- **Entry descriptions lose their annotation** · MEDIUM · [packages/core] → progress/entry-annotation.md
+- **Zero-width characters in link URLs parse to mojibake repo names** · LOW · [packages/core] → progress/zero-width-urls.md
 
 ## Parked
 - **Non-repo resources in output** — revisit when webapp's v2 data model exists and its "Index non-repo resources linked from registries" thread asks for the emission side

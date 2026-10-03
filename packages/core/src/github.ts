@@ -330,7 +330,20 @@ export function parseOwnerRepo(value: string): null | RepoIdentifier {
     return null;
   }
 
-  return { owner: parts[0], repo: parts[1].replace(/\.git$/, '') };
+  return {
+    owner: stripZeroWidth(parts[0]),
+    repo: stripZeroWidth(parts[1]).replace(/\.git$/, ''),
+  };
+}
+
+// Zero-width characters glued to a repo name (awesome-computer-vision links
+// neuraltalk with an invisible BOM) are not identity; URL.pathname keeps them
+// percent-encoded, so both spellings are stripped before the name is used.
+const ZERO_WIDTH =
+  /(?:%EF%BB%BF|%E2%80%8[B-F]|%E2%81%A0)|[\u200B-\u200F\u2060\uFEFF]/gi;
+
+function stripZeroWidth(segment: string): string {
+  return segment.replace(ZERO_WIDTH, '');
 }
 
 export function parseGitHubUrl(url: string): null | RepoIdentifier {
@@ -343,8 +356,8 @@ export function parseGitHubUrl(url: string): null | RepoIdentifier {
       .split('/')
       .filter(part => part.length > 0);
     if (pathParts.length >= 2) {
-      const owner = pathParts[0],
-        repo = pathParts[1].replace(/\.git$/, '');
+      const owner = stripZeroWidth(pathParts[0]),
+        repo = stripZeroWidth(pathParts[1]).replace(/\.git$/, '');
       return { owner, repo };
     }
     return null;
