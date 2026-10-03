@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.12.0](https://github.com/enhansome/action/compare/v1.11.1...v1.12.0) (2026-10-03)
+
+
+### Features
+
+* promote identity-bearing details summaries to items and nest other details blocks as groups ([#29](https://github.com/enhansome/action/issues/29)) ([e7efa65](https://github.com/enhansome/action/commit/e7efa651e863807c7100bdb72362d9f998528681))
+
+
+### Bug Fixes
+
+* fall back from degenerate item descriptions to owner/name ([f41cf4a](https://github.com/enhansome/action/commit/f41cf4a1ba2cfef800deb65b37b0994f251ac960))
+* strip leading badge clusters from entry descriptions and never emit the source repo as an entry ([#31](https://github.com/enhansome/action/issues/31)) ([88d5528](https://github.com/enhansome/action/commit/88d55289203e748a2bf5e19e10494760302625f5))
+* strip zero-width characters from parsed repo identities ([#30](https://github.com/enhansome/action/issues/30)) ([f626f5a](https://github.com/enhansome/action/commit/f626f5a67c8b3ba69b87c5794c0fa845db5efb08))
+
 ## [1.11.1](https://github.com/enhansome/action/compare/v1.11.0...v1.11.1) (2026-09-09)
 
 
