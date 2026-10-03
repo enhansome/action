@@ -6,7 +6,7 @@ A repo identity parsed from a URL ignores zero-width characters, so awesome-comp
 
 ## Current state
 
-Merged to main as PR #<N> — implemented on branch `fix/zero-width-urls`: `stripZeroWidth` in `packages/core/src/github.ts` removes BOM/ZWSP/ZWNJ/ZWJ/LRM-RLM/word-joiner (raw and percent-encoded) from owner and repo in `parseGitHubUrl` and `parseOwnerRepo`. Four cases in `fixtures/url-parsing.json` (raw BOM, encoded BOM, ZWSP, config-input BOM). The awesome-computer-vision golden moved on the NeuralTalk row only: repo `karpathy/neuraltalk`, description fallback clean, offline repo info re-derived from the clean identity.
+Merged to main as PR #30 (`f626f5a`): `stripZeroWidth` in `packages/core/src/github.ts` removes BOM/ZWSP/ZWNJ/ZWJ/LRM-RLM/word-joiner (raw and percent-encoded) from owner and repo in `parseGitHubUrl` and `parseOwnerRepo`. Four cases in `fixtures/url-parsing.json` (raw BOM, encoded BOM, ZWSP, config-input BOM). The awesome-computer-vision golden moved on the NeuralTalk row only: repo `karpathy/neuraltalk`, description fallback clean, offline repo info re-derived from the clean identity.
 
 ## Next step
 

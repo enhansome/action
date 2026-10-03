@@ -6,7 +6,7 @@ Every entry face's description carries its annotation: leading badge clusters (`
 
 ## Current state
 
-Implemented on branch `fix/entry-annotation`, both halves in `packages/core/src/markdown.ts`:
+Merged to main as PR #31 (`88d5528`, rebased once over #30's squash). Both halves in `packages/core/src/markdown.ts`:
 
 1. The badge-cluster strip moved into `entryDescription` (the details branch's own pre-strip deleted); the leading-noise strip runs only behind a stripped cluster, so `-equivalent` and `:bird:` table descriptions keep their leading characters and `()` in prose stays (an empty pair is not a cluster).
 2. The investigation overturned the entry's framing: the failing rows were not losing cells — they were borrowing the source repo's identity. android-root's index and Starter Kit link the source's own doc pages (`root-management.md` → rewritten to `github.com/<source>/blob/HEAD/…`), so 21 navigation rows and every MiXplorer-class website row emitted items for `awesome-android-root/awesome-android-root`. Links into the source repository are now excluded from the target fetch, and every emission path reads them as dead links: no item, children lifted, the row markdown-only (the G1a contract for its non-repo rows).
@@ -15,7 +15,7 @@ Census of the golden transitions: self-repo items removed across 9 fixtures (and
 
 ## Next step
 
-Owner: review and merge the `fix/entry-annotation` PR; close this thread when it lands.
+None — closed on merge.
 
 ## Design
 
