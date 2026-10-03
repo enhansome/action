@@ -4,6 +4,139 @@
       "description": "Frameworks and tools, grouped by collapsible sections.\nA list after the collapsible sections keeps collecting under the same wrapper section:",
       "items": [
         {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "card-archunit",
+              "description": "★ 3.1k Apache-2.0 🟢Test library for asserting architecture rules.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "description": "The toolkit behind a thousand build pipelines.",
+                "homepage": "https://example.io/docs",
+                "id": 3351713257,
+                "language": "Ruby",
+                "license": "NOASSERTION",
+                "last_commit": "2023-04-19T00:00:00.000Z",
+                "open_issues": 57,
+                "owner": "example",
+                "repo": "card-archunit",
+                "stars": 13258,
+                "topics": [
+                  "cli",
+                  "developer-tools",
+                  "productivity"
+                ]
+              },
+              "first_seen": "2025-01-01T00:00:00.000Z"
+            },
+            {
+              "node_type": "item",
+              "title": "card-jmolecules",
+              "description": "🟠Annotations for design concepts.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "description": "A curated list of awesome things.",
+                "homepage": null,
+                "id": 1969280900,
+                "language": "TypeScript",
+                "license": "MIT",
+                "last_commit": "2021-07-15T00:00:00.000Z",
+                "open_issues": 0,
+                "owner": "example",
+                "repo": "card-jmolecules",
+                "stars": 30901,
+                "topics": [
+                  "go"
+                ]
+              },
+              "first_seen": "2025-01-01T00:00:00.000Z"
+            },
+            {
+              "node_type": "item",
+              "title": "card-plain",
+              "description": "a plain-link card with a dash description.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "description": "Fast, small, and dependency-free.",
+                "homepage": "https://example.io/docs",
+                "id": 2659307873,
+                "language": "Python",
+                "license": null,
+                "last_commit": "2021-08-11T00:00:00.000Z",
+                "open_issues": 73,
+                "owner": "example",
+                "repo": "card-plain",
+                "stars": 7874,
+                "topics": [
+                  "cli"
+                ]
+              },
+              "first_seen": "2025-01-01T00:00:00.000Z"
+            }
+          ],
+          "description": "not-github-card - no GitHub link, stays description.",
+          "node_type": "group",
+          "title": "Architecture"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "card-maven",
+              "description": "🟢Declarative build and dependency management.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "description": "Fast, small, and dependency-free.",
+                "homepage": "https://example.io/docs",
+                "id": 3145487318,
+                "language": "Shell",
+                "license": "MIT",
+                "last_commit": "2023-02-17T00:00:00.000Z",
+                "open_issues": 18,
+                "owner": "example",
+                "repo": "card-maven",
+                "stars": 37319,
+                "topics": [
+                  "cli",
+                  "developer-tools",
+                  "productivity"
+                ]
+              },
+              "first_seen": "2025-01-01T00:00:00.000Z"
+            },
+            {
+              "node_type": "item",
+              "title": "card-bazel",
+              "description": "🟢Builds code quickly and reliably.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "description": "The toolkit behind a thousand build pipelines.",
+                "homepage": "https://example.dev",
+                "id": 285792217,
+                "language": "Ruby",
+                "license": "GPL-3.0",
+                "last_commit": "2023-05-29T00:00:00.000Z",
+                "open_issues": 17,
+                "owner": "example",
+                "repo": "card-bazel",
+                "stars": 42218,
+                "topics": [
+                  "awesome-list"
+                ]
+              },
+              "first_seen": "2025-01-01T00:00:00.000Z"
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Build"
+        },
+        {
           "node_type": "item",
           "title": "wrapped-tool",
           "description": "bold-wrapped list link whose description must split.",
@@ -51,137 +184,6 @@
         }
       ],
       "title": "Wrapper"
-    },
-    {
-      "description": "not-github-card - no GitHub link, stays description.",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "card-archunit",
-          "description": "★ 3.1k Apache-2.0 🟢Test library for asserting architecture rules.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "description": "The toolkit behind a thousand build pipelines.",
-            "homepage": "https://example.io/docs",
-            "id": 3351713257,
-            "language": "Ruby",
-            "license": "NOASSERTION",
-            "last_commit": "2023-04-19T00:00:00.000Z",
-            "open_issues": 57,
-            "owner": "example",
-            "repo": "card-archunit",
-            "stars": 13258,
-            "topics": [
-              "cli",
-              "developer-tools",
-              "productivity"
-            ]
-          },
-          "first_seen": "2025-01-01T00:00:00.000Z"
-        },
-        {
-          "node_type": "item",
-          "title": "card-jmolecules",
-          "description": "🟠Annotations for design concepts.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "description": "A curated list of awesome things.",
-            "homepage": null,
-            "id": 1969280900,
-            "language": "TypeScript",
-            "license": "MIT",
-            "last_commit": "2021-07-15T00:00:00.000Z",
-            "open_issues": 0,
-            "owner": "example",
-            "repo": "card-jmolecules",
-            "stars": 30901,
-            "topics": [
-              "go"
-            ]
-          },
-          "first_seen": "2025-01-01T00:00:00.000Z"
-        },
-        {
-          "node_type": "item",
-          "title": "card-plain",
-          "description": "a plain-link card with a dash description.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "description": "Fast, small, and dependency-free.",
-            "homepage": "https://example.io/docs",
-            "id": 2659307873,
-            "language": "Python",
-            "license": null,
-            "last_commit": "2021-08-11T00:00:00.000Z",
-            "open_issues": 73,
-            "owner": "example",
-            "repo": "card-plain",
-            "stars": 7874,
-            "topics": [
-              "cli"
-            ]
-          },
-          "first_seen": "2025-01-01T00:00:00.000Z"
-        }
-      ],
-      "title": "Architecture"
-    },
-    {
-      "description": null,
-      "items": [
-        {
-          "node_type": "item",
-          "title": "card-maven",
-          "description": "🟢Declarative build and dependency management.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "description": "Fast, small, and dependency-free.",
-            "homepage": "https://example.io/docs",
-            "id": 3145487318,
-            "language": "Shell",
-            "license": "MIT",
-            "last_commit": "2023-02-17T00:00:00.000Z",
-            "open_issues": 18,
-            "owner": "example",
-            "repo": "card-maven",
-            "stars": 37319,
-            "topics": [
-              "cli",
-              "developer-tools",
-              "productivity"
-            ]
-          },
-          "first_seen": "2025-01-01T00:00:00.000Z"
-        },
-        {
-          "node_type": "item",
-          "title": "card-bazel",
-          "description": "🟢Builds code quickly and reliably.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "description": "The toolkit behind a thousand build pipelines.",
-            "homepage": "https://example.dev",
-            "id": 285792217,
-            "language": "Ruby",
-            "license": "GPL-3.0",
-            "last_commit": "2023-05-29T00:00:00.000Z",
-            "open_issues": 17,
-            "owner": "example",
-            "repo": "card-bazel",
-            "stars": 42218,
-            "topics": [
-              "awesome-list"
-            ]
-          },
-          "first_seen": "2025-01-01T00:00:00.000Z"
-        }
-      ],
-      "title": "Build"
     },
     {
       "description": null,
@@ -331,38 +333,39 @@
               "first_seen": "2025-01-01T00:00:00.000Z"
             }
           ]
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "example/root-code",
+              "description": "Root paper",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "description": "One-line utility, zero configuration.",
+                "homepage": null,
+                "id": 4174249504,
+                "language": "Rust",
+                "license": "GPL-3.0",
+                "last_commit": "2022-08-15T00:00:00.000Z",
+                "open_issues": 4,
+                "owner": "example",
+                "repo": "root-code",
+                "stars": 49505,
+                "topics": [
+                  "rust"
+                ]
+              },
+              "first_seen": "2025-01-01T00:00:00.000Z"
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Root Details Table"
         }
       ],
       "title": "Nested Tables"
-    },
-    {
-      "description": null,
-      "items": [
-        {
-          "node_type": "item",
-          "title": "example/root-code",
-          "description": "Root paper",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "description": "One-line utility, zero configuration.",
-            "homepage": null,
-            "id": 4174249504,
-            "language": "Rust",
-            "license": "GPL-3.0",
-            "last_commit": "2022-08-15T00:00:00.000Z",
-            "open_issues": 4,
-            "owner": "example",
-            "repo": "root-code",
-            "stars": 49505,
-            "topics": [
-              "rust"
-            ]
-          },
-          "first_seen": "2025-01-01T00:00:00.000Z"
-        }
-      ],
-      "title": "Root Details Table"
     },
     {
       "description": null,

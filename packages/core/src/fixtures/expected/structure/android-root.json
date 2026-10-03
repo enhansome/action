@@ -3463,6 +3463,64 @@
                 ]
               },
               "first_seen": "2025-01-01T00:00:00.000Z"
+            },
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "node_type": "item",
+                      "title": "Android VBMeta Fixer",
+                      "description": "A Magisk/KernelSU/Apatch module to fix VBMeta detections on Android.",
+                      "children": [],
+                      "repo_info": {
+                        "archived": false,
+                        "description": "One-line utility, zero configuration.",
+                        "homepage": null,
+                        "id": 788048239,
+                        "language": null,
+                        "license": "NOASSERTION",
+                        "last_commit": "2023-05-07T00:00:00.000Z",
+                        "open_issues": 39,
+                        "owner": "reveny",
+                        "repo": "Android-VBMeta-Fixer",
+                        "stars": 48240,
+                        "topics": [
+                          "go"
+                        ]
+                      },
+                      "first_seen": "2025-01-01T00:00:00.000Z"
+                    },
+                    {
+                      "node_type": "item",
+                      "title": "VBMeta Disguiser",
+                      "description": "Disguises the properties of vbmeta.",
+                      "children": [],
+                      "repo_info": {
+                        "archived": false,
+                        "description": "One-line utility, zero configuration.",
+                        "homepage": "https://example.io/docs",
+                        "id": 1916129435,
+                        "language": "C++",
+                        "license": null,
+                        "last_commit": "2022-10-23T00:00:00.000Z",
+                        "open_issues": 35,
+                        "owner": "Astoritin",
+                        "repo": "VBMetaDisguiser",
+                        "stars": 29436,
+                        "topics": []
+                      },
+                      "first_seen": "2025-01-01T00:00:00.000Z"
+                    }
+                  ],
+                  "description": null,
+                  "node_type": "group",
+                  "title": "What is VBMeta"
+                }
+              ],
+              "description": null,
+              "node_type": "group",
+              "title": "VBMeta Mods"
             }
           ],
           "description": null,
@@ -4926,56 +4984,6 @@
         }
       ],
       "title": "System"
-    },
-    {
-      "description": null,
-      "items": [
-        {
-          "node_type": "item",
-          "title": "Android VBMeta Fixer",
-          "description": "A Magisk/KernelSU/Apatch module to fix VBMeta detections on Android.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "description": "One-line utility, zero configuration.",
-            "homepage": null,
-            "id": 788048239,
-            "language": null,
-            "license": "NOASSERTION",
-            "last_commit": "2023-05-07T00:00:00.000Z",
-            "open_issues": 39,
-            "owner": "reveny",
-            "repo": "Android-VBMeta-Fixer",
-            "stars": 48240,
-            "topics": [
-              "go"
-            ]
-          },
-          "first_seen": "2025-01-01T00:00:00.000Z"
-        },
-        {
-          "node_type": "item",
-          "title": "VBMeta Disguiser",
-          "description": "Disguises the properties of vbmeta.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "description": "One-line utility, zero configuration.",
-            "homepage": "https://example.io/docs",
-            "id": 1916129435,
-            "language": "C++",
-            "license": null,
-            "last_commit": "2022-10-23T00:00:00.000Z",
-            "open_issues": 35,
-            "owner": "Astoritin",
-            "repo": "VBMetaDisguiser",
-            "stars": 29436,
-            "topics": []
-          },
-          "first_seen": "2025-01-01T00:00:00.000Z"
-        }
-      ],
-      "title": "What is VBMeta"
     },
     {
       "description": "Performance & Battery collects apps and modules that make a rooted Android faster and last longer: CPU/GPU and general performance optimization, kernel management, memory & RAM tuning, battery optimization, charging control and task & process management.\n[!TIP] For gaming-specific tweaks, see Gaming. For CPU/GPU management, see Kernel Management. For memory optimization, check Memory Management.",

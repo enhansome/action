@@ -72,108 +72,109 @@
             ]
           },
           "first_seen": "2025-01-01T00:00:00.000Z"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "fancy-regex (Rust library): fancy-regex playground",
+              "description": "[GitHub].",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "description": "The toolkit behind a thousand build pipelines.",
+                "homepage": null,
+                "id": 2832546136,
+                "language": "Java",
+                "license": "NOASSERTION",
+                "last_commit": "2023-08-18T00:00:00.000Z",
+                "open_issues": 36,
+                "owner": "fancy-regex",
+                "repo": "fancy-regex",
+                "stars": 46137,
+                "topics": [
+                  "go"
+                ]
+              },
+              "first_seen": "2025-01-01T00:00:00.000Z"
+            },
+            {
+              "node_type": "item",
+              "title": "Swift: Swift Regex",
+              "description": "[GitHub] - Includes regex debugger, DSL builder.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "description": "The toolkit behind a thousand build pipelines.",
+                "homepage": "https://example.io/docs",
+                "id": 418738529,
+                "language": null,
+                "license": "MIT",
+                "last_commit": "2022-07-21T00:00:00.000Z",
+                "open_issues": 29,
+                "owner": "swiftfiddle",
+                "repo": "swiftregex",
+                "stars": 38530,
+                "topics": [
+                  "react",
+                  "ui"
+                ]
+              },
+              "first_seen": "2025-01-01T00:00:00.000Z"
+            },
+            {
+              "node_type": "item",
+              "title": ".NET: Regex Storm",
+              "description": "[GitHub].",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "description": "A curated list of awesome things.",
+                "homepage": "https://example.io/docs",
+                "id": 959429869,
+                "language": null,
+                "license": null,
+                "last_commit": "2021-08-15T00:00:00.000Z",
+                "open_issues": 69,
+                "owner": "lonekorean",
+                "repo": "regex-storm",
+                "stars": 29870,
+                "topics": [
+                  "rust"
+                ]
+              },
+              "first_seen": "2025-01-01T00:00:00.000Z"
+            },
+            {
+              "node_type": "item",
+              "title": "CyrilEx",
+              "description": "[GitHub] - Java, JavaScript, MySQL, PHP, Python, Ruby.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "description": null,
+                "homepage": "https://example.io/docs",
+                "id": 682816642,
+                "language": "Go",
+                "license": "GPL-3.0",
+                "last_commit": "2022-03-30T00:00:00.000Z",
+                "open_issues": 42,
+                "owner": "cyrilbois",
+                "repo": "cyrilex",
+                "stars": 16643,
+                "topics": [
+                  "rust"
+                ]
+              },
+              "first_seen": "2025-01-01T00:00:00.000Z"
+            }
+          ],
+          "description": "Command line\nBy flavor\nMultiple flavors",
+          "node_type": "group",
+          "title": "✳️ Notable mentions"
         }
       ],
       "title": "Testers"
-    },
-    {
-      "description": "Command line\nBy flavor\nMultiple flavors",
-      "items": [
-        {
-          "node_type": "item",
-          "title": "fancy-regex (Rust library): fancy-regex playground",
-          "description": "[GitHub].",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "description": "The toolkit behind a thousand build pipelines.",
-            "homepage": null,
-            "id": 2832546136,
-            "language": "Java",
-            "license": "NOASSERTION",
-            "last_commit": "2023-08-18T00:00:00.000Z",
-            "open_issues": 36,
-            "owner": "fancy-regex",
-            "repo": "fancy-regex",
-            "stars": 46137,
-            "topics": [
-              "go"
-            ]
-          },
-          "first_seen": "2025-01-01T00:00:00.000Z"
-        },
-        {
-          "node_type": "item",
-          "title": "Swift: Swift Regex",
-          "description": "[GitHub] - Includes regex debugger, DSL builder.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "description": "The toolkit behind a thousand build pipelines.",
-            "homepage": "https://example.io/docs",
-            "id": 418738529,
-            "language": null,
-            "license": "MIT",
-            "last_commit": "2022-07-21T00:00:00.000Z",
-            "open_issues": 29,
-            "owner": "swiftfiddle",
-            "repo": "swiftregex",
-            "stars": 38530,
-            "topics": [
-              "react",
-              "ui"
-            ]
-          },
-          "first_seen": "2025-01-01T00:00:00.000Z"
-        },
-        {
-          "node_type": "item",
-          "title": ".NET: Regex Storm",
-          "description": "[GitHub].",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "description": "A curated list of awesome things.",
-            "homepage": "https://example.io/docs",
-            "id": 959429869,
-            "language": null,
-            "license": null,
-            "last_commit": "2021-08-15T00:00:00.000Z",
-            "open_issues": 69,
-            "owner": "lonekorean",
-            "repo": "regex-storm",
-            "stars": 29870,
-            "topics": [
-              "rust"
-            ]
-          },
-          "first_seen": "2025-01-01T00:00:00.000Z"
-        },
-        {
-          "node_type": "item",
-          "title": "CyrilEx",
-          "description": "[GitHub] - Java, JavaScript, MySQL, PHP, Python, Ruby.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "description": null,
-            "homepage": "https://example.io/docs",
-            "id": 682816642,
-            "language": "Go",
-            "license": "GPL-3.0",
-            "last_commit": "2022-03-30T00:00:00.000Z",
-            "open_issues": 42,
-            "owner": "cyrilbois",
-            "repo": "cyrilex",
-            "stars": 16643,
-            "topics": [
-              "rust"
-            ]
-          },
-          "first_seen": "2025-01-01T00:00:00.000Z"
-        }
-      ],
-      "title": "✳️ Notable mentions"
     },
     {
       "description": "Visualize how your regular expressions are structured or operate.",
@@ -242,36 +243,37 @@
             "topics": []
           },
           "first_seen": "2025-01-01T00:00:00.000Z"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Regex Nodes",
+              "description": "[GitHub] - Graphical editor with visual hierarchy. Flavor: JavaScript.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "description": "The toolkit behind a thousand build pipelines.",
+                "homepage": "https://example.dev",
+                "id": 2736460850,
+                "language": "TypeScript",
+                "license": "MIT",
+                "last_commit": "2021-09-03T00:00:00.000Z",
+                "open_issues": 50,
+                "owner": "johannesvollmer",
+                "repo": "regex-nodes",
+                "stars": 10851,
+                "topics": []
+              },
+              "first_seen": "2025-01-01T00:00:00.000Z"
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "✳️ Notable mentions"
         }
       ],
       "title": "Visualizers"
-    },
-    {
-      "description": null,
-      "items": [
-        {
-          "node_type": "item",
-          "title": "Regex Nodes",
-          "description": "[GitHub] - Graphical editor with visual hierarchy. Flavor: JavaScript.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "description": "The toolkit behind a thousand build pipelines.",
-            "homepage": "https://example.dev",
-            "id": 2736460850,
-            "language": "TypeScript",
-            "license": "MIT",
-            "last_commit": "2021-09-03T00:00:00.000Z",
-            "open_issues": 50,
-            "owner": "johannesvollmer",
-            "repo": "regex-nodes",
-            "stars": 10851,
-            "topics": []
-          },
-          "first_seen": "2025-01-01T00:00:00.000Z"
-        }
-      ],
-      "title": "✳️ Notable mentions"
     },
     {
       "description": "Search and replace through files.",
@@ -390,6 +392,38 @@
                 ]
               },
               "first_seen": "2025-01-01T00:00:00.000Z"
+            },
+            {
+              "children": [
+                {
+                  "node_type": "item",
+                  "title": "Regular Expressions for Regular Folk",
+                  "description": "[GitHub] - Visual, example-based ebook for beginners.",
+                  "children": [],
+                  "repo_info": {
+                    "archived": false,
+                    "description": "The toolkit behind a thousand build pipelines.",
+                    "homepage": "https://example.dev",
+                    "id": 3634170849,
+                    "language": null,
+                    "license": "GPL-3.0",
+                    "last_commit": "2021-09-04T00:00:00.000Z",
+                    "open_issues": 49,
+                    "owner": "shreyasminocha",
+                    "repo": "regex-for-regular-folk",
+                    "stars": 20850,
+                    "topics": [
+                      "cli",
+                      "developer-tools",
+                      "productivity"
+                    ]
+                  },
+                  "first_seen": "2025-01-01T00:00:00.000Z"
+                }
+              ],
+              "description": null,
+              "node_type": "group",
+              "title": "✳️ Notable mentions"
             }
           ],
           "description": null,
@@ -428,37 +462,6 @@
         }
       ],
       "title": "Tutorials"
-    },
-    {
-      "description": null,
-      "items": [
-        {
-          "node_type": "item",
-          "title": "Regular Expressions for Regular Folk",
-          "description": "[GitHub] - Visual, example-based ebook for beginners.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "description": "The toolkit behind a thousand build pipelines.",
-            "homepage": "https://example.dev",
-            "id": 3634170849,
-            "language": null,
-            "license": "GPL-3.0",
-            "last_commit": "2021-09-04T00:00:00.000Z",
-            "open_issues": 49,
-            "owner": "shreyasminocha",
-            "repo": "regex-for-regular-folk",
-            "stars": 20850,
-            "topics": [
-              "cli",
-              "developer-tools",
-              "productivity"
-            ]
-          },
-          "first_seen": "2025-01-01T00:00:00.000Z"
-        }
-      ],
-      "title": "✳️ Notable mentions"
     },
     {
       "description": "Major regex implementations, built into programming languages or as standalone libraries.",
@@ -1568,180 +1571,182 @@
               "first_seen": "2025-01-01T00:00:00.000Z"
             }
           ]
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Backcompat libraries: regexpu",
+              "description": ", regenerate (Unicode property sets).",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "description": "Fast, small, and dependency-free.",
+                "homepage": "https://example.dev",
+                "id": 2354855554,
+                "language": "Rust",
+                "license": null,
+                "last_commit": "2022-06-26T00:00:00.000Z",
+                "open_issues": 54,
+                "owner": "mathiasbynens",
+                "repo": "regexpu",
+                "stars": 5555,
+                "topics": [
+                  "python"
+                ]
+              },
+              "first_seen": "2025-01-01T00:00:00.000Z"
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "➕ See also"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "Legacy RegExp features",
+              "description": "(2015) - Standardization of legacy features.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "description": "One-line utility, zero configuration.",
+                "homepage": "https://example.io/docs",
+                "id": 4094349755,
+                "language": "C++",
+                "license": "Apache-2.0",
+                "last_commit": "2021-12-07T00:00:00.000Z",
+                "open_issues": 55,
+                "owner": "tc39",
+                "repo": "proposal-regexp-legacy-features",
+                "stars": 49756,
+                "topics": [
+                  "go"
+                ]
+              },
+              "first_seen": "2025-01-01T00:00:00.000Z"
+            },
+            {
+              "node_type": "item",
+              "title": "Extended mode and comments",
+              "description": "(2021) - Flag () with insignificant whitespace and line comments (), plus inline comments via .",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "description": "A curated list of awesome things.",
+                "homepage": null,
+                "id": 1927177302,
+                "language": "Go",
+                "license": "Apache-2.0",
+                "last_commit": "2023-03-05T00:00:00.000Z",
+                "open_issues": 2,
+                "owner": "tc39",
+                "repo": "proposal-regexp-x-mode",
+                "stars": 27303,
+                "topics": [
+                  "machine-learning"
+                ]
+              },
+              "first_seen": "2025-01-01T00:00:00.000Z"
+            },
+            {
+              "node_type": "item",
+              "title": "\\R escape",
+              "description": "(2021) - Outside character classes, matches any line terminator.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "description": "A curated list of awesome things.",
+                "homepage": null,
+                "id": 48569064,
+                "language": "Rust",
+                "license": "Apache-2.0",
+                "last_commit": "2023-10-29T00:00:00.000Z",
+                "open_issues": 64,
+                "owner": "tc39",
+                "repo": "proposal-regexp-r-escape",
+                "stars": 19065,
+                "topics": [
+                  "rust"
+                ]
+              },
+              "first_seen": "2025-01-01T00:00:00.000Z"
+            },
+            {
+              "node_type": "item",
+              "title": "Restrict subclassing support in built-ins",
+              "description": "(2020) - Scaled back subclassing.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "description": "The toolkit behind a thousand build pipelines.",
+                "homepage": null,
+                "id": 4197609174,
+                "language": "Rust",
+                "license": "MIT",
+                "last_commit": "2023-07-11T00:00:00.000Z",
+                "open_issues": 74,
+                "owner": "tc39",
+                "repo": "proposal-rm-builtin-subclassing",
+                "stars": 9175,
+                "topics": []
+              },
+              "first_seen": "2025-01-01T00:00:00.000Z"
+            },
+            {
+              "node_type": "item",
+              "title": "Buffer boundaries",
+              "description": "(2021) - Anchors and , not affected by flag .",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "description": null,
+                "homepage": null,
+                "id": 1349558649,
+                "language": null,
+                "license": "Apache-2.0",
+                "last_commit": "2022-03-23T00:00:00.000Z",
+                "open_issues": 49,
+                "owner": "tc39",
+                "repo": "proposal-regexp-buffer-boundaries",
+                "stars": 8650,
+                "topics": [
+                  "go"
+                ]
+              },
+              "first_seen": "2025-01-01T00:00:00.000Z"
+            },
+            {
+              "node_type": "item",
+              "title": "Atomic operators",
+              "description": "(2021) - Atomic groups via and possessive quantifiers (ex: , ).",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "description": "The toolkit behind a thousand build pipelines.",
+                "homepage": "https://example.io/docs",
+                "id": 3584356219,
+                "language": null,
+                "license": "MIT",
+                "last_commit": "2023-05-27T00:00:00.000Z",
+                "open_issues": 19,
+                "owner": "tc39",
+                "repo": "proposal-regexp-atomic-operators",
+                "stars": 6220,
+                "topics": [
+                  "cli"
+                ]
+              },
+              "first_seen": "2025-01-01T00:00:00.000Z"
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "🔮 Future: Active proposals"
         }
       ],
       "title": "JavaScript regex evolution"
-    },
-    {
-      "description": null,
-      "items": [
-        {
-          "node_type": "item",
-          "title": "Backcompat libraries: regexpu",
-          "description": ", regenerate (Unicode property sets).",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "description": "Fast, small, and dependency-free.",
-            "homepage": "https://example.dev",
-            "id": 2354855554,
-            "language": "Rust",
-            "license": null,
-            "last_commit": "2022-06-26T00:00:00.000Z",
-            "open_issues": 54,
-            "owner": "mathiasbynens",
-            "repo": "regexpu",
-            "stars": 5555,
-            "topics": [
-              "python"
-            ]
-          },
-          "first_seen": "2025-01-01T00:00:00.000Z"
-        }
-      ],
-      "title": "➕ See also"
-    },
-    {
-      "description": null,
-      "items": [
-        {
-          "node_type": "item",
-          "title": "Legacy RegExp features",
-          "description": "(2015) - Standardization of legacy features.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "description": "One-line utility, zero configuration.",
-            "homepage": "https://example.io/docs",
-            "id": 4094349755,
-            "language": "C++",
-            "license": "Apache-2.0",
-            "last_commit": "2021-12-07T00:00:00.000Z",
-            "open_issues": 55,
-            "owner": "tc39",
-            "repo": "proposal-regexp-legacy-features",
-            "stars": 49756,
-            "topics": [
-              "go"
-            ]
-          },
-          "first_seen": "2025-01-01T00:00:00.000Z"
-        },
-        {
-          "node_type": "item",
-          "title": "Extended mode and comments",
-          "description": "(2021) - Flag () with insignificant whitespace and line comments (), plus inline comments via .",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "description": "A curated list of awesome things.",
-            "homepage": null,
-            "id": 1927177302,
-            "language": "Go",
-            "license": "Apache-2.0",
-            "last_commit": "2023-03-05T00:00:00.000Z",
-            "open_issues": 2,
-            "owner": "tc39",
-            "repo": "proposal-regexp-x-mode",
-            "stars": 27303,
-            "topics": [
-              "machine-learning"
-            ]
-          },
-          "first_seen": "2025-01-01T00:00:00.000Z"
-        },
-        {
-          "node_type": "item",
-          "title": "\\R escape",
-          "description": "(2021) - Outside character classes, matches any line terminator.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "description": "A curated list of awesome things.",
-            "homepage": null,
-            "id": 48569064,
-            "language": "Rust",
-            "license": "Apache-2.0",
-            "last_commit": "2023-10-29T00:00:00.000Z",
-            "open_issues": 64,
-            "owner": "tc39",
-            "repo": "proposal-regexp-r-escape",
-            "stars": 19065,
-            "topics": [
-              "rust"
-            ]
-          },
-          "first_seen": "2025-01-01T00:00:00.000Z"
-        },
-        {
-          "node_type": "item",
-          "title": "Restrict subclassing support in built-ins",
-          "description": "(2020) - Scaled back subclassing.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "description": "The toolkit behind a thousand build pipelines.",
-            "homepage": null,
-            "id": 4197609174,
-            "language": "Rust",
-            "license": "MIT",
-            "last_commit": "2023-07-11T00:00:00.000Z",
-            "open_issues": 74,
-            "owner": "tc39",
-            "repo": "proposal-rm-builtin-subclassing",
-            "stars": 9175,
-            "topics": []
-          },
-          "first_seen": "2025-01-01T00:00:00.000Z"
-        },
-        {
-          "node_type": "item",
-          "title": "Buffer boundaries",
-          "description": "(2021) - Anchors and , not affected by flag .",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "description": null,
-            "homepage": null,
-            "id": 1349558649,
-            "language": null,
-            "license": "Apache-2.0",
-            "last_commit": "2022-03-23T00:00:00.000Z",
-            "open_issues": 49,
-            "owner": "tc39",
-            "repo": "proposal-regexp-buffer-boundaries",
-            "stars": 8650,
-            "topics": [
-              "go"
-            ]
-          },
-          "first_seen": "2025-01-01T00:00:00.000Z"
-        },
-        {
-          "node_type": "item",
-          "title": "Atomic operators",
-          "description": "(2021) - Atomic groups via and possessive quantifiers (ex: , ).",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "description": "The toolkit behind a thousand build pipelines.",
-            "homepage": "https://example.io/docs",
-            "id": 3584356219,
-            "language": null,
-            "license": "MIT",
-            "last_commit": "2023-05-27T00:00:00.000Z",
-            "open_issues": 19,
-            "owner": "tc39",
-            "repo": "proposal-regexp-atomic-operators",
-            "stars": 6220,
-            "topics": [
-              "cli"
-            ]
-          },
-          "first_seen": "2025-01-01T00:00:00.000Z"
-        }
-      ],
-      "title": "🔮 Future: Active proposals"
     }
   ],
   "metadata": {

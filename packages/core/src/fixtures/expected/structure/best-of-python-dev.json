@@ -1,0 +1,252 @@
+{
+  "items": [
+    {
+      "description": "🔗 unittest - Unittest is a test framework included in the Python standard library.",
+      "items": [
+        {
+          "node_type": "item",
+          "title": "🔗 best-of-web-python - Testing",
+          "description": "( ⭐ 2.6K · 💤) - Testing libraries & tools for python web frameworks.",
+          "children": [],
+          "repo_info": {
+            "archived": true,
+            "description": "A curated list of awesome things.",
+            "homepage": "https://example.io/docs",
+            "id": 943268664,
+            "language": "Rust",
+            "license": null,
+            "last_commit": "2022-03-08T00:00:00.000Z",
+            "open_issues": 64,
+            "owner": "ml-tooling",
+            "repo": "best-of-web-python",
+            "stars": 18665,
+            "topics": [
+              "go"
+            ]
+          },
+          "first_seen": "2025-01-01T00:00:00.000Z"
+        },
+        {
+          "children": [],
+          "description": "The pytest framework makes it easy to write small tests, yet scales to.. MIT",
+          "node_type": "item",
+          "repo_info": {
+            "archived": false,
+            "description": "A curated list of awesome things.",
+            "homepage": "https://example.dev",
+            "id": 3416176262,
+            "language": "Go",
+            "license": "Apache-2.0",
+            "last_commit": "2023-04-14T00:00:00.000Z",
+            "open_issues": 62,
+            "owner": "pytest-dev",
+            "repo": "pytest",
+            "stars": 26263,
+            "topics": [
+              "api",
+              "http"
+            ]
+          },
+          "title": "pytest",
+          "first_seen": "2025-01-01T00:00:00.000Z"
+        },
+        {
+          "children": [],
+          "description": "pytest plugin for distributed testing and loop-on-failures.. MIT",
+          "node_type": "item",
+          "repo_info": {
+            "archived": false,
+            "description": "The toolkit behind a thousand build pipelines.",
+            "homepage": "https://example.dev",
+            "id": 3110234859,
+            "language": null,
+            "license": "NOASSERTION",
+            "last_commit": "2021-08-25T00:00:00.000Z",
+            "open_issues": 59,
+            "owner": "pytest-dev",
+            "repo": "pytest-xdist",
+            "stars": 34860,
+            "topics": [
+              "python"
+            ]
+          },
+          "title": "pytest-xdist",
+          "first_seen": "2025-01-01T00:00:00.000Z"
+        },
+        {
+          "children": [],
+          "description": "Flexible test automation. Apache-2",
+          "node_type": "item",
+          "repo_info": {
+            "archived": false,
+            "description": "Fast, small, and dependency-free.",
+            "homepage": null,
+            "id": 2392756921,
+            "language": "JavaScript",
+            "license": "NOASSERTION",
+            "last_commit": "2021-06-24T00:00:00.000Z",
+            "open_issues": 21,
+            "owner": "wntrblm",
+            "repo": "nox",
+            "stars": 6922,
+            "topics": [
+              "machine-learning"
+            ]
+          },
+          "title": "nox",
+          "first_seen": "2025-01-01T00:00:00.000Z"
+        },
+        {
+          "children": [
+            {
+              "node_type": "item",
+              "title": "freezegun",
+              "description": "(🥈27 · ⭐ 4.5K · 💀) - Let your Python tests travel through time. Apache-2",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "description": "A curated list of awesome things.",
+                "homepage": "https://example.dev",
+                "id": 75586671,
+                "language": "JavaScript",
+                "license": "GPL-3.0",
+                "last_commit": "2022-03-01T00:00:00.000Z",
+                "open_issues": 71,
+                "owner": "spulec",
+                "repo": "freezegun",
+                "stars": 36672,
+                "topics": []
+              },
+              "first_seen": "2025-01-01T00:00:00.000Z"
+            },
+            {
+              "node_type": "item",
+              "title": "factory_boy",
+              "description": "(🥉25 · ⭐ 3.6K · 💀) - A test fixtures replacement for Python. MIT",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "description": "Fast, small, and dependency-free.",
+                "homepage": "https://example.io/docs",
+                "id": 2265869557,
+                "language": "Ruby",
+                "license": null,
+                "last_commit": "2022-06-23T00:00:00.000Z",
+                "open_issues": 57,
+                "owner": "FactoryBoy",
+                "repo": "factory_boy",
+                "stars": 19558,
+                "topics": [
+                  "rust"
+                ]
+              },
+              "first_seen": "2025-01-01T00:00:00.000Z"
+            },
+            {
+              "node_type": "item",
+              "title": "nose",
+              "description": "(🥈28 · ⭐ 1.4K · 💀) - nose is nicer testing for python. ❗️LGPL-2.1+",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "description": "One-line utility, zero configuration.",
+                "homepage": "https://example.dev",
+                "id": 3423060389,
+                "language": null,
+                "license": "GPL-3.0",
+                "last_commit": "2022-12-08T00:00:00.000Z",
+                "open_issues": 89,
+                "owner": "nose-devs",
+                "repo": "nose",
+                "stars": 10390,
+                "topics": [
+                  "cli",
+                  "developer-tools",
+                  "productivity"
+                ]
+              },
+              "first_seen": "2025-01-01T00:00:00.000Z"
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Show 14 hidden projects..."
+        }
+      ],
+      "title": "Testing Tools"
+    },
+    {
+      "description": "🔗 Python.org Packaging - An Overview of Packaging for Python.",
+      "items": [
+        {
+          "children": [],
+          "description": "Freeze (package) Python programs into stand-alone executables. ❗️GPL-2.0",
+          "node_type": "item",
+          "repo_info": {
+            "archived": false,
+            "description": "One-line utility, zero configuration.",
+            "homepage": "https://example.io/docs",
+            "id": 2654748876,
+            "language": "Java",
+            "license": "Apache-2.0",
+            "last_commit": "2021-08-08T00:00:00.000Z",
+            "open_issues": 76,
+            "owner": "pyinstaller",
+            "repo": "pyinstaller",
+            "stars": 48877,
+            "topics": [
+              "rust"
+            ]
+          },
+          "title": "pyinstaller",
+          "first_seen": "2025-01-01T00:00:00.000Z"
+        },
+        {
+          "children": [],
+          "description": "Nuitka is a Python compiler written in Python. Its fully compatible.. ❗️AGPL-3.0",
+          "node_type": "item",
+          "repo_info": {
+            "archived": false,
+            "description": "Fast, small, and dependency-free.",
+            "homepage": null,
+            "id": 2086213798,
+            "language": "Shell",
+            "license": "NOASSERTION",
+            "last_commit": "2021-10-25T00:00:00.000Z",
+            "open_issues": 98,
+            "owner": "Nuitka",
+            "repo": "Nuitka",
+            "stars": 13799,
+            "topics": [
+              "rust"
+            ]
+          },
+          "title": "Nuitka",
+          "first_seen": "2025-01-01T00:00:00.000Z"
+        }
+      ],
+      "title": "Code Packaging"
+    }
+  ],
+  "metadata": {
+    "last_updated": "2025-01-01T00:00:00.000Z",
+    "original_repository_info": {
+      "archived": false,
+      "description": null,
+      "homepage": null,
+      "id": 4242,
+      "language": "JavaScript",
+      "license": null,
+      "last_commit": "2024-12-01T00:00:00Z",
+      "open_issues": 3,
+      "owner": "ml-tooling",
+      "repo": "best-of-python-dev",
+      "stars": 1234,
+      "topics": []
+    },
+    "original_repository_sha": "deadbeef",
+    "enhanced_repository": "enhansome/enhansome-best-of-python-dev",
+    "enhanced_repository_description": "enhanced list",
+    "title": "Awesome best of python dev with stars"
+  }
+}
