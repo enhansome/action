@@ -1,7 +1,8 @@
 # TODO — open-work index
 
 ## core
-- **Best-of details entries lose their annotation and category** · HIGH · [packages/core] → progress/details-summary-entries.md
+- **Leading badge clusters survive in entry descriptions** · MEDIUM · [packages/core]
+  best-of-python-dev's hidden rows emit descriptions like `(🥈27 · ⭐ 4.5K · 💀) - Let your Python tests travel through time.` and its cross-ref rows `( ⭐ 2.6K · 💤) - Testing libraries…` — the details-summary fix strips these clusters from summary prose only, not from list or paragraph entry descriptions.
 - **Table annotation cells never reach item descriptions** · MEDIUM · [packages/core]
   Rows like android-root's category tables carry real annotation in a non-link cell, but the emitted item shows the owner/name fallback instead — the cell's text is dropped on the floor.
 - **Zero-width characters in link URLs parse to mojibake repo names** · LOW · [packages/core]
