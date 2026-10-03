@@ -48,11 +48,11 @@ Tool home: <https://example.com/stats-home>
 
 [![Awesome](https://example.com/awesome-badge.svg)](https://github.com/sindresorhus/awesome) ⭐ 22,187 | 🐛 86 | 🌐 Java | 📅 2023-06-29
 
-Please see [contributing](https://github.com/example/paragraph-entries/blob/main/CONTRIBUTING.md) ⭐ 45,430 | 🐛 29 | 📅 2022-10-29 for details.
+Please see [contributing](https://github.com/example/paragraph-entries/blob/main/CONTRIBUTING.md) for details.
 
 For more awesome lists, see <https://github.com/sindresorhus/awesome> ⭐ 22,187 | 🐛 86 | 🌐 Java | 📅 2023-06-29
 
-[Back to the Top](https://github.com/example/paragraph-entries#top) ⭐ 45,430 | 🐛 29 | 📅 2022-10-29
+[Back to the Top](https://github.com/example/paragraph-entries#top)
 
 ## Solo
 

@@ -12,7 +12,7 @@
 
 <sub>A curated collection of 600+ root apps, Magisk / KernelSU / APatch / LSPosed (Xposed) modules and step-by-step rooting guides.</sub>
 
-[![GitHub Repo stars](https://img.shields.io/github/stars/awesome-android-root/awesome-android-root?logo=github\&style=for-the-badge\&color=blue\&cacheSeconds=3600)](https://github.com/awesome-android-root/awesome-android-root) ⭐ 20,211 | 🐛 10 | 🌐 TypeScript | 📅 2023-06-05
+[![GitHub Repo stars](https://img.shields.io/github/stars/awesome-android-root/awesome-android-root?logo=github\&style=for-the-badge\&color=blue\&cacheSeconds=3600)](https://github.com/awesome-android-root/awesome-android-root)
 [![Web App](https://img.shields.io/badge/Web-App%E2%86%97-yellow?style=for-the-badge\&logo=googlechrome\&logoColor=white\&labelColor=blue)](https://awesome-android-root.zhoe.org)
 [![Total Entries](https://img.shields.io/badge/Apps%20%26%20Modules-600+-blue?style=for-the-badge\&logo=android\&cacheSeconds=3600)](https://awesome-android-root.zhoe.org/apps-and-modules/)
 [![Codeberg Mirror](https://img.shields.io/badge/Codeberg-Mirror-2185D0?style=for-the-badge\&logo=codeberg\&logoColor=white)](https://codeberg.org/awesome-android-root/awesome-android-root/)
@@ -43,57 +43,57 @@ The website adds what a single README cannot:
 
 ## Apps & Modules by Category
 
-Browse them in [`docs/apps-and-modules/`](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules) ⭐ 20,211 | 🐛 10 | 🌐 TypeScript | 📅 2023-06-05:
+Browse them in [`docs/apps-and-modules/`](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules):
 
-| Category                                                                                                                                                                                              | Description                                                                                                 | Website                                                                       |
-| :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------- |
-| **[📜 Category index](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/index.md) ⭐ 20,211 \| 🐛 10 \| 🌐 TypeScript \| 📅 2023-06-05**                    | Index of all categories                                                                                     | [↗](https://awesome-android-root.zhoe.org/apps-and-modules/index)             |
-| **🛠️ [Root Management](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/root-management.md) ⭐ 20,211 \| 🐛 10 \| 🌐 TypeScript \| 📅 2023-06-05**        | Root managers, temporary root, module managers, metamodules, LSPosed & Zygisk, root hiding & Play Integrity | [↗](https://awesome-android-root.zhoe.org/apps-and-modules/root-management)   |
-| **⚙️ [System](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/system.md) ⭐ 20,211 \| 🐛 10 \| 🌐 TypeScript \| 📅 2023-06-05**                           | System tweaks, VBMeta, System UI & OEM frameworks, boot & startup, app & package management                 | [↗](https://awesome-android-root.zhoe.org/apps-and-modules/system)            |
-| **⚡ [Performance & Battery](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/performance.md) ⭐ 20,211 \| 🐛 10 \| 🌐 TypeScript \| 📅 2023-06-05**        | Performance optimization, kernels, memory, battery & charging                                               | [↗](https://awesome-android-root.zhoe.org/apps-and-modules/performance)       |
-| **🕵️ [Privacy](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/privacy.md) ⭐ 20,211 \| 🐛 10 \| 🌐 TypeScript \| 📅 2023-06-05**                        | Privacy tools, device ID & location spoofing, app isolation                                                 | [↗](https://awesome-android-root.zhoe.org/apps-and-modules/privacy)           |
-| **🔐 [Security](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/security.md) ⭐ 20,211 \| 🐛 10 \| 🌐 TypeScript \| 📅 2023-06-05**                       | Security tools & firewalls                                                                                  | [↗](https://awesome-android-root.zhoe.org/apps-and-modules/security)          |
-| **🚫 [Ad Blocking](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/ad-blocking.md) ⭐ 20,211 \| 🐛 10 \| 🌐 TypeScript \| 📅 2023-06-05**                 | Hosts-based ad blockers & DNS filtering                                                                     | [↗](https://awesome-android-root.zhoe.org/apps-and-modules/ad-blocking)       |
-| **🧩 [App Modifications](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/app-modifications.md) ⭐ 20,211 \| 🐛 10 \| 🌐 TypeScript \| 📅 2023-06-05**     | App patchers, social media & browser mods, YouTube clients                                                  | [↗](https://awesome-android-root.zhoe.org/apps-and-modules/app-modifications) |
-| **🧹 [Debloating](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/debloating.md) ⭐ 20,211 \| 🐛 10 \| 🌐 TypeScript \| 📅 2023-06-05**                   | Remove bloatware & unwanted system apps                                                                     | [↗](https://awesome-android-root.zhoe.org/apps-and-modules/debloating)        |
-| **🗂️ [File Management](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/file-management.md) ⭐ 20,211 \| 🐛 10 \| 🌐 TypeScript \| 📅 2023-06-05**        | Root file managers, cleaners & partition tools                                                              | [↗](https://awesome-android-root.zhoe.org/apps-and-modules/file-management)   |
-| **💾 [Backup & Restore](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/backup.md) ⭐ 20,211 \| 🐛 10 \| 🌐 TypeScript \| 📅 2023-06-05**                 | Full app & data backups and recovery                                                                        | [↗](https://awesome-android-root.zhoe.org/apps-and-modules/backup)            |
-| **🎨 [Customization](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/customization.md) ⭐ 20,211 \| 🐛 10 \| 🌐 TypeScript \| 📅 2023-06-05**             | Themes, launchers, status bar, fonts, display                                                               | [↗](https://awesome-android-root.zhoe.org/apps-and-modules/customization)     |
-| **🎵 [Audio](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/audio.md) ⭐ 20,211 \| 🐛 10 \| 🌐 TypeScript \| 📅 2023-06-05**                             | Audio enhancement, control & effects                                                                        | [↗](https://awesome-android-root.zhoe.org/apps-and-modules/audio)             |
-| **🌐 [Networking](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/networking.md) ⭐ 20,211 \| 🐛 10 \| 🌐 TypeScript \| 📅 2023-06-05**                   | VPN/proxy modules, network tools, Wi-Fi, Bluetooth & NFC                                                    | [↗](https://awesome-android-root.zhoe.org/apps-and-modules/networking)        |
-| **🎮 [Gaming](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/gaming.md) ⭐ 20,211 \| 🐛 10 \| 🌐 TypeScript \| 📅 2023-06-05**                           | Gaming optimization, FPS unlockers & game tools                                                             | [↗](https://awesome-android-root.zhoe.org/apps-and-modules/gaming)            |
-| **🧑‍💻 [Development & Automation](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/development.md) ⭐ 20,211 \| 🐛 10 \| 🌐 TypeScript \| 📅 2023-06-05** | Terminal, ADB, developer tools, Linux environments, automation                                              | [↗](https://awesome-android-root.zhoe.org/apps-and-modules/development)       |
-| **🧰 [General Utilities](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/utilities.md) ⭐ 20,211 \| 🐛 10 \| 🌐 TypeScript \| 📅 2023-06-05**             | Sync, power, sharing, communication, toolboxes                                                              | [↗](https://awesome-android-root.zhoe.org/apps-and-modules/utilities)         |
+| Category                                                                                                                                          | Description                                                                                                 | Website                                                                       |
+| :------------------------------------------------------------------------------------------------------------------------------------------------ | :---------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------- |
+| **[📜 Category index](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/index.md)**                    | Index of all categories                                                                                     | [↗](https://awesome-android-root.zhoe.org/apps-and-modules/index)             |
+| **🛠️ [Root Management](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/root-management.md)**        | Root managers, temporary root, module managers, metamodules, LSPosed & Zygisk, root hiding & Play Integrity | [↗](https://awesome-android-root.zhoe.org/apps-and-modules/root-management)   |
+| **⚙️ [System](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/system.md)**                           | System tweaks, VBMeta, System UI & OEM frameworks, boot & startup, app & package management                 | [↗](https://awesome-android-root.zhoe.org/apps-and-modules/system)            |
+| **⚡ [Performance & Battery](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/performance.md)**        | Performance optimization, kernels, memory, battery & charging                                               | [↗](https://awesome-android-root.zhoe.org/apps-and-modules/performance)       |
+| **🕵️ [Privacy](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/privacy.md)**                        | Privacy tools, device ID & location spoofing, app isolation                                                 | [↗](https://awesome-android-root.zhoe.org/apps-and-modules/privacy)           |
+| **🔐 [Security](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/security.md)**                       | Security tools & firewalls                                                                                  | [↗](https://awesome-android-root.zhoe.org/apps-and-modules/security)          |
+| **🚫 [Ad Blocking](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/ad-blocking.md)**                 | Hosts-based ad blockers & DNS filtering                                                                     | [↗](https://awesome-android-root.zhoe.org/apps-and-modules/ad-blocking)       |
+| **🧩 [App Modifications](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/app-modifications.md)**     | App patchers, social media & browser mods, YouTube clients                                                  | [↗](https://awesome-android-root.zhoe.org/apps-and-modules/app-modifications) |
+| **🧹 [Debloating](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/debloating.md)**                   | Remove bloatware & unwanted system apps                                                                     | [↗](https://awesome-android-root.zhoe.org/apps-and-modules/debloating)        |
+| **🗂️ [File Management](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/file-management.md)**        | Root file managers, cleaners & partition tools                                                              | [↗](https://awesome-android-root.zhoe.org/apps-and-modules/file-management)   |
+| **💾 [Backup & Restore](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/backup.md)**                 | Full app & data backups and recovery                                                                        | [↗](https://awesome-android-root.zhoe.org/apps-and-modules/backup)            |
+| **🎨 [Customization](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/customization.md)**             | Themes, launchers, status bar, fonts, display                                                               | [↗](https://awesome-android-root.zhoe.org/apps-and-modules/customization)     |
+| **🎵 [Audio](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/audio.md)**                             | Audio enhancement, control & effects                                                                        | [↗](https://awesome-android-root.zhoe.org/apps-and-modules/audio)             |
+| **🌐 [Networking](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/networking.md)**                   | VPN/proxy modules, network tools, Wi-Fi, Bluetooth & NFC                                                    | [↗](https://awesome-android-root.zhoe.org/apps-and-modules/networking)        |
+| **🎮 [Gaming](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/gaming.md)**                           | Gaming optimization, FPS unlockers & game tools                                                             | [↗](https://awesome-android-root.zhoe.org/apps-and-modules/gaming)            |
+| **🧑‍💻 [Development & Automation](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/development.md)** | Terminal, ADB, developer tools, Linux environments, automation                                              | [↗](https://awesome-android-root.zhoe.org/apps-and-modules/development)       |
+| **🧰 [General Utilities](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/utilities.md)**             | Sync, power, sharing, communication, toolboxes                                                              | [↗](https://awesome-android-root.zhoe.org/apps-and-modules/utilities)         |
 
 ## Guides & Documentation
 
-| Section                                                                                                                                                                                       | Contents                                                                                                                                     |
-| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------- |
-| **[📖 Rooting Guides](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/rooting-guides/index.md) ⭐ 20,211 \| 🐛 10 \| 🌐 TypeScript \| 📅 2023-06-05**              | Introduction, root framework comparison, Magisk/KernelSU/APatch/LSPosed setup, bootloader unlocking, custom recovery, device-specific guides |
-| **[🛡️ General Guides / Tutorials](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/general-guides/index.md) ⭐ 20,211 \| 🐛 10 \| 🌐 TypeScript \| 📅 2023-06-05** | Ad blocking, debloating, stopping Play Store auto-updates                                                                                    |
-| **[❓ FAQ](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/faqs.md) ⭐ 20,211 \| 🐛 10 \| 🌐 TypeScript \| 📅 2023-06-05**                                          | Common questions before & after rooting                                                                                                      |
-| **[🔧 Troubleshooting](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/troubleshooting.md) ⭐ 20,211 \| 🐛 10 \| 🌐 TypeScript \| 📅 2023-06-05**                  | Bootloops, Magisk/KernelSU/APatch issues, Play Integrity & banking apps                                                                      |
-| **[🔀 Non-Root Alternatives](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/non-root-alternatives.md) ⭐ 20,211 \| 🐛 10 \| 🌐 TypeScript \| 📅 2023-06-05**      | Get many root-like features without root (Shizuku, ADB...)                                                                                   |
-| **[🌐 Community Resources](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/resources.md) ⭐ 20,211 \| 🐛 10 \| 🌐 TypeScript \| 📅 2023-06-05**                    | Firmware, tooling, communities & emergency help                                                                                              |
-| **[📝 Contributing](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/contributing.md) ⭐ 20,211 \| 🐛 10 \| 🌐 TypeScript \| 📅 2023-06-05**                        | How to add apps, modules & guides                                                                                                            |
-| **[📄 About and Legal](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/about.md) ⭐ 20,211 \| 🐛 10 \| 🌐 TypeScript \| 📅 2023-06-05**                            | Mission, legal disclaimer                                                                                                                    |
+| Section                                                                                                                                   | Contents                                                                                                                                     |
+| :---------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[📖 Rooting Guides](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/rooting-guides/index.md)**              | Introduction, root framework comparison, Magisk/KernelSU/APatch/LSPosed setup, bootloader unlocking, custom recovery, device-specific guides |
+| **[🛡️ General Guides / Tutorials](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/general-guides/index.md)** | Ad blocking, debloating, stopping Play Store auto-updates                                                                                    |
+| **[❓ FAQ](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/faqs.md)**                                          | Common questions before & after rooting                                                                                                      |
+| **[🔧 Troubleshooting](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/troubleshooting.md)**                  | Bootloops, Magisk/KernelSU/APatch issues, Play Integrity & banking apps                                                                      |
+| **[🔀 Non-Root Alternatives](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/non-root-alternatives.md)**      | Get many root-like features without root (Shizuku, ADB...)                                                                                   |
+| **[🌐 Community Resources](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/resources.md)**                    | Firmware, tooling, communities & emergency help                                                                                              |
+| **[📝 Contributing](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/contributing.md)**                        | How to add apps, modules & guides                                                                                                            |
+| **[📄 About and Legal](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/about.md)**                            | Mission, legal disclaimer                                                                                                                    |
 
 ## Contributing
 
-> 📝 Read the the [`Contributing Guide ↗`](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/contributing.md) ⭐ 20,211 | 🐛 10 | 🌐 TypeScript | 📅 2023-06-05 and the
-> [`PR template ↗`](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/.github/PULL_REQUEST_TEMPLATE.md) ⭐ 20,211 | 🐛 10 | 🌐 TypeScript | 📅 2023-06-05 for entry format, badges and category placement.
+> 📝 Read the the [`Contributing Guide ↗`](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/contributing.md) and the
+> [`PR template ↗`](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/.github/PULL_REQUEST_TEMPLATE.md) for entry format, badges and category placement.
 
-| Platform         | Purpose                       | Link                                                                                                                                     |
-| :--------------- | :---------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------- |
-| 🌐 **Website**   | Browse apps, modules & guides | [awesome-android-root.zhoe.org](https://awesome-android-root.zhoe.org)                                                                   |
-| 💬 **GitHub**    | Source & discussions          | [GitHub Repo](https://github.com/awesome-android-root/awesome-android-root) ⭐ 20,211 \| 🐛 10 \| 🌐 TypeScript \| 📅 2023-06-05          |
-| 🐛 Report issues | Issues reporting              | [GitHub Issues](https://github.com/awesome-android-root/awesome-android-root/issues) ⭐ 20,211 \| 🐛 10 \| 🌐 TypeScript \| 📅 2023-06-05 |
-| 𝕏 **X/Twitter** | Updates & news                | [@awsm\_and\_root](https://x.com/awsm_and_root)                                                                                          |
+| Platform         | Purpose                       | Link                                                                                 |
+| :--------------- | :---------------------------- | :----------------------------------------------------------------------------------- |
+| 🌐 **Website**   | Browse apps, modules & guides | [awesome-android-root.zhoe.org](https://awesome-android-root.zhoe.org)               |
+| 💬 **GitHub**    | Source & discussions          | [GitHub Repo](https://github.com/awesome-android-root/awesome-android-root)          |
+| 🐛 Report issues | Issues reporting              | [GitHub Issues](https://github.com/awesome-android-root/awesome-android-root/issues) |
+| 𝕏 **X/Twitter** | Updates & news                | [@awsm\_and\_root](https://x.com/awsm_and_root)                                      |
 
 ## License & Disclaimer
 
-* Licensed under [MIT](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/LICENSE) ⭐ 20,211 | 🐛 10 | 🌐 TypeScript | 📅 2023-06-05.
-* Read the [Legal Disclaimer](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/legal-disclaimer.md) ⭐ 20,211 | 🐛 10 | 🌐 TypeScript | 📅 2023-06-05 for details.
+* Licensed under [MIT](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/LICENSE).
+* Read the [Legal Disclaimer](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/legal-disclaimer.md) for details.
 
 > \[!IMPORTANT]
 > **Educational reference only. Proceed at your own risk.**
@@ -104,7 +104,7 @@ Browse them in [`docs/apps-and-modules/`](https://github.com/awesome-android-roo
 
 <div align="center">
 
-**Built with ❤️ by [Awesome Android Root](https://github.com/awesome-android-root/awesome-android-root) ⭐ 20,211 | 🐛 10 | 🌐 TypeScript | 📅 2023-06-05**
+**Built with ❤️ by [Awesome Android Root](https://github.com/awesome-android-root/awesome-android-root)**
 
 </div>
 
@@ -130,7 +130,7 @@ Browse them in [`docs/apps-and-modules/`](https://github.com/awesome-android-roo
 </div>
 
 > \[!TIP]
-> **New to rooting?** Start with the [Complete Rooting Guide](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/rooting-guides/index.md) ⭐ 20,211 | 🐛 10 | 🌐 TypeScript | 📅 2023-06-05 before exploring the
+> **New to rooting?** Start with the [Complete Rooting Guide](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/rooting-guides/index.md) before exploring the
 > lists below. For privacy-friendly installs, use the F-Droid ecosystem: install
 > [Droid-ify](https://github.com/Droid-ify/client/releases) ⭐ 28,557 | 🐛 56 | 🌐 Java | 📅 2022-06-24 (modern F-Droid client) and enable the
 > [IzzyOnDroid](https://apt.izzysoft.de/fdroid/) repo for many additional packages.
@@ -147,38 +147,38 @@ Browse them in [`docs/apps-and-modules/`](https://github.com/awesome-android-roo
 Apps and modules are grouped by **what you want to accomplish**, not by whether they are apps or modules -
 each page combines root apps, Magisk modules, KernelSU modules, APatch and LSPosed modules for that topic.
 
-* **🛠️ [Root Management](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/root-management.md) ⭐ 20,211 | 🐛 10 | 🌐 TypeScript | 📅 2023-06-05**
-* **⚙️ [System](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/system.md) ⭐ 20,211 | 🐛 10 | 🌐 TypeScript | 📅 2023-06-05**
-* **⚡ [Performance & Battery](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/performance.md) ⭐ 20,211 | 🐛 10 | 🌐 TypeScript | 📅 2023-06-05**
-* **🕵️ [Privacy](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/privacy.md) ⭐ 20,211 | 🐛 10 | 🌐 TypeScript | 📅 2023-06-05**
-* **🔐 [Security](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/security.md) ⭐ 20,211 | 🐛 10 | 🌐 TypeScript | 📅 2023-06-05**
-* **🚫 [Ad Blocking](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/ad-blocking.md) ⭐ 20,211 | 🐛 10 | 🌐 TypeScript | 📅 2023-06-05**
-* **🧩 [App Modifications](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/app-modifications.md) ⭐ 20,211 | 🐛 10 | 🌐 TypeScript | 📅 2023-06-05**
-* **🧹 [Debloating](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/debloating.md) ⭐ 20,211 | 🐛 10 | 🌐 TypeScript | 📅 2023-06-05**
-* **🗂️ [File Management](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/file-management.md) ⭐ 20,211 | 🐛 10 | 🌐 TypeScript | 📅 2023-06-05**
-* **💾 [Backup & Restore](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/backup.md) ⭐ 20,211 | 🐛 10 | 🌐 TypeScript | 📅 2023-06-05**
-* **🎨 [Customization](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/customization.md) ⭐ 20,211 | 🐛 10 | 🌐 TypeScript | 📅 2023-06-05**
-* **🎵 [Audio](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/audio.md) ⭐ 20,211 | 🐛 10 | 🌐 TypeScript | 📅 2023-06-05**
-* **🌐 [Networking](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/networking.md) ⭐ 20,211 | 🐛 10 | 🌐 TypeScript | 📅 2023-06-05**
-* **🎮 [Gaming](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/gaming.md) ⭐ 20,211 | 🐛 10 | 🌐 TypeScript | 📅 2023-06-05**
-* **🧑‍💻 [Development & Automation](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/development.md) ⭐ 20,211 | 🐛 10 | 🌐 TypeScript | 📅 2023-06-05**
-* **🧰 [General Utilities](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/utilities.md) ⭐ 20,211 | 🐛 10 | 🌐 TypeScript | 📅 2023-06-05**
+* **🛠️ [Root Management](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/root-management.md)**
+* **⚙️ [System](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/system.md)**
+* **⚡ [Performance & Battery](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/performance.md)**
+* **🕵️ [Privacy](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/privacy.md)**
+* **🔐 [Security](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/security.md)**
+* **🚫 [Ad Blocking](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/ad-blocking.md)**
+* **🧩 [App Modifications](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/app-modifications.md)**
+* **🧹 [Debloating](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/debloating.md)**
+* **🗂️ [File Management](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/file-management.md)**
+* **💾 [Backup & Restore](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/backup.md)**
+* **🎨 [Customization](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/customization.md)**
+* **🎵 [Audio](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/audio.md)**
+* **🌐 [Networking](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/networking.md)**
+* **🎮 [Gaming](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/gaming.md)**
+* **🧑‍💻 [Development & Automation](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/development.md)**
+* **🧰 [General Utilities](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/utilities.md)**
 
 > \[!TIP]
-> Looking for tutorials instead of tools? Browse the [Rooting Guides](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/rooting-guides/index.md) ⭐ 20,211 | 🐛 10 | 🌐 TypeScript | 📅 2023-06-05 or the
-> [General Guides](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/general-guides/index.md) ⭐ 20,211 | 🐛 10 | 🌐 TypeScript | 📅 2023-06-05.
+> Looking for tutorials instead of tools? Browse the [Rooting Guides](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/rooting-guides/index.md) or the
+> [General Guides](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/general-guides/index.md).
 
 ***
 
 ## Starter Kit: Must have Apps
 
-|                                                                                                                                                                  App                                                                                                                                                                  | Why it's essential                                       |
-| :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------- |
-|               **[Magisk](https://github.com/topjohnwu/Magisk) ⭐ 14,523 \| 🐛 22 \| 🌐 Go \| 📅 2022-07-28** <br><small> [Root Management](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/root-management.md) ⭐ 20,211 \| 🐛 10 \| 🌐 TypeScript \| 📅 2023-06-05 </small>               | If you chose Magisk, this is your manager.               |
-| **[App Manager](https://github.com/MuntashirAkon/AppManager) ⭐ 7,201 \| 🐛 0 \| 🌐 TypeScript \| 📅 2023-06-15** <br><small> [System → App & Package Management](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/system.md) ⭐ 20,211 \| 🐛 10 \| 🌐 TypeScript \| 📅 2023-06-05 </small> | Inspect and manage apps with root privileges.            |
-|                                          **[MiXplorer](https://mixplorer.com/)** <br><small> [File Management](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/file-management.md) ⭐ 20,211 \| 🐛 10 \| 🌐 TypeScript \| 📅 2023-06-05 </small>                                          | A powerful file manager with full root access.           |
-|                                                 **[AdAway](https://adaway.org/)** <br><small> [Ad Blocking](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/ad-blocking.md) ⭐ 20,211 \| 🐛 10 \| 🌐 TypeScript \| 📅 2023-06-05 </small>                                                 | Open-source system-wide ad blocker.                      |
-|                         **[Droid-ify](https://f-droid.org/packages/com.looker.droidify)** <br><small> [System → App & Package Management](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/system.md) ⭐ 20,211 \| 🐛 10 \| 🌐 TypeScript \| 📅 2023-06-05 </small>                        | A modern F-Droid client for installing open-source apps. |
+|                                                                                                                                        App                                                                                                                                        | Why it's essential                                       |
+| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------- |
+|               **[Magisk](https://github.com/topjohnwu/Magisk) ⭐ 14,523 \| 🐛 22 \| 🌐 Go \| 📅 2022-07-28** <br><small> [Root Management](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/root-management.md) </small>               | If you chose Magisk, this is your manager.               |
+| **[App Manager](https://github.com/MuntashirAkon/AppManager) ⭐ 7,201 \| 🐛 0 \| 🌐 TypeScript \| 📅 2023-06-15** <br><small> [System → App & Package Management](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/system.md) </small> | Inspect and manage apps with root privileges.            |
+|                                          **[MiXplorer](https://mixplorer.com/)** <br><small> [File Management](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/file-management.md) </small>                                          | A powerful file manager with full root access.           |
+|                                                 **[AdAway](https://adaway.org/)** <br><small> [Ad Blocking](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/ad-blocking.md) </small>                                                 | Open-source system-wide ad blocker.                      |
+|                         **[Droid-ify](https://f-droid.org/packages/com.looker.droidify)** <br><small> [System → App & Package Management](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/system.md) </small>                        | A modern F-Droid client for installing open-source apps. |
 
 ***
 
@@ -194,12 +194,12 @@ each page combines root apps, Magisk modules, KernelSU modules, APatch and LSPos
 
 ### Framework & Module Badges
 
-| Badge   | Framework               | Requires                                                                                                                                                                     |
-| :------ | :---------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `[M]`   | Magisk Module           | [Magisk](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/rooting-guides/magisk-guide.md) ⭐ 20,211 \| 🐛 10 \| 🌐 TypeScript \| 📅 2023-06-05     |
-| `[K]`   | KernelSU Module         | [KernelSU](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/rooting-guides/kernelsu-guide.md) ⭐ 20,211 \| 🐛 10 \| 🌐 TypeScript \| 📅 2023-06-05 |
-| `[A]`   | APatch Module           | [APatch](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/rooting-guides/apatch-guide.md) ⭐ 20,211 \| 🐛 10 \| 🌐 TypeScript \| 📅 2023-06-05     |
-| `[LSP]` | LSPosed / Xposed Module | [LSPosed](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/rooting-guides/lsposed-guide.md) ⭐ 20,211 \| 🐛 10 \| 🌐 TypeScript \| 📅 2023-06-05   |
+| Badge   | Framework               | Requires                                                                                                                 |
+| :------ | :---------------------- | :----------------------------------------------------------------------------------------------------------------------- |
+| `[M]`   | Magisk Module           | [Magisk](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/rooting-guides/magisk-guide.md)     |
+| `[K]`   | KernelSU Module         | [KernelSU](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/rooting-guides/kernelsu-guide.md) |
+| `[A]`   | APatch Module           | [APatch](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/rooting-guides/apatch-guide.md)     |
+| `[LSP]` | LSPosed / Xposed Module | [LSPosed](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/rooting-guides/lsposed-guide.md)   |
 
 ### Store & Source Icons
 
@@ -233,30 +233,30 @@ each page combines root apps, Magisk modules, KernelSU modules, APatch and LSPos
 
 ### Official Channels
 
-| Platform         | Purpose                       | Link                                                                                                                            |
-| :--------------- | :---------------------------- | :------------------------------------------------------------------------------------------------------------------------------ |
-| 🌐 **Website**   | Browse apps, modules & guides | [awesome-android-root.zhoe.org](https://awesome-android-root.zhoe.org)                                                          |
-| 📂 **GitHub**    | Source, discussions & issues  | [GitHub Repo](https://github.com/awesome-android-root/awesome-android-root) ⭐ 20,211 \| 🐛 10 \| 🌐 TypeScript \| 📅 2023-06-05 |
-| 𝕏 **X/Twitter** | Updates & news                | [@awsm\_and\_root](https://x.com/awsm_and_root)                                                                                 |
+| Platform         | Purpose                       | Link                                                                        |
+| :--------------- | :---------------------------- | :-------------------------------------------------------------------------- |
+| 🌐 **Website**   | Browse apps, modules & guides | [awesome-android-root.zhoe.org](https://awesome-android-root.zhoe.org)      |
+| 📂 **GitHub**    | Source, discussions & issues  | [GitHub Repo](https://github.com/awesome-android-root/awesome-android-root) |
+| 𝕏 **X/Twitter** | Updates & news                | [@awsm\_and\_root](https://x.com/awsm_and_root)                             |
 
 ### Quick Help Paths
 
-* First time here? Start at the [Introduction](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/rooting-guides) ⭐ 20,211 | 🐛 10 | 🌐 TypeScript | 📅 2023-06-05 & the
-  [4-Step Rooting Process](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/rooting-guides) ⭐ 20,211 | 🐛 10 | 🌐 TypeScript | 📅 2023-06-05
-* Need a walkthrough? Browse the [Rooting Guides Index](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/rooting-guides/index.md) ⭐ 20,211 | 🐛 10 | 🌐 TypeScript | 📅 2023-06-05
-* Common questions? Check the [FAQs](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/faqs.md) ⭐ 20,211 | 🐛 10 | 🌐 TypeScript | 📅 2023-06-05
-* Need fixes? See the [Troubleshooting Guide](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/troubleshooting.md) ⭐ 20,211 | 🐛 10 | 🌐 TypeScript | 📅 2023-06-05
+* First time here? Start at the [Introduction](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/rooting-guides) & the
+  [4-Step Rooting Process](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/rooting-guides)
 * Unsure about a term? Open the [Glossary](#glossary)
 * Want tools? Jump to [Browse by Category](#browse-by-category)
+* Need a walkthrough? Browse the [Rooting Guides Index](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/rooting-guides/index.md)
+* Common questions? Check the [FAQs](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/faqs.md)
+* Need fixes? See the [Troubleshooting Guide](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/troubleshooting.md)
 
 ### Contribute and Participate
 
-* ⭐ Star the [repo](https://github.com/awesome-android-root/awesome-android-root) ⭐ 20,211 | 🐛 10 | 🌐 TypeScript | 📅 2023-06-05 (boosts discovery)
-* 🐛 Report [issues](https://github.com/awesome-android-root/awesome-android-root/issues) ⭐ 20,211 | 🐛 10 | 🌐 TypeScript | 📅 2023-06-05
+* ⭐ Star the [repo](https://github.com/awesome-android-root/awesome-android-root) (boosts discovery)
+* 🐛 Report [issues](https://github.com/awesome-android-root/awesome-android-root/issues)
 * 💡 Suggest new apps/modules
 * 🧹 Improve formatting / dead link cleanup
 
-> 📝 Read the [Contributing Guide](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/contributing.md) ⭐ 20,211 | 🐛 10 | 🌐 TypeScript | 📅 2023-06-05 before major PRs.
+> 📝 Read the [Contributing Guide](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/contributing.md) before major PRs.
 
 ***
 
@@ -284,7 +284,7 @@ each page combines root apps, Magisk modules, KernelSU modules, APatch and LSPos
 <div align="center">
 
 *Respect licenses, ToS, and local laws. Do not use root to unlawfully bypass paid features. See the
-[Legal Disclaimer](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/legal-disclaimer.md) ⭐ 20,211 | 🐛 10 | 🌐 TypeScript | 📅 2023-06-05 for details.*
+[Legal Disclaimer](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/legal-disclaimer.md) for details.*
 
 </div>
 
@@ -297,7 +297,7 @@ hidden from apps (**Play Integrity, SUSFS**). Apps and modules live together her
 problem - controlling root access.
 
 > \[!TIP]
-> New to rooting? Read the [Complete Rooting Guide](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/rooting-guides) ⭐ 20,211 | 🐛 10 | 🌐 TypeScript | 📅 2023-06-05 first, then come back for the tools.
+> New to rooting? Read the [Complete Rooting Guide](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/rooting-guides) first, then come back for the tools.
 
 <ClientOnly>
   <AppSearch />
@@ -341,7 +341,7 @@ Exploits like **GhostLock (CVE-2026-43499)** - a 15-year-old Linux kernel bug - 
 * **[ghostlock-oneplus](https://github.com/JoinChang/ghostlock-oneplus) ⭐ 4,489 | 🐛 88 | 🌐 Shell | 📅 2022-08-31** - GhostLock kernel exploit for OnePlus/OPPO/realme (and some Xiaomi) devices with locked bootloader; installs KernelSU with runtime kernel auto-detection. `FOSS`
 
 > \[!TIP]
-> See the dedicated guide **[Root Without Unlocking the Bootloader](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/rooting-guides/root-without-unlocking-bootloader.md) ⭐ 20,211 | 🐛 10 | 🌐 TypeScript | 📅 2023-06-05** for what GhostLock can and can't do, device support, and every app, exploit port, and research project. Also see [Bootloader Mods & Temporary Root Solutions](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/rooting-guides/temporary-root-solutions.md) ⭐ 20,211 | 🐛 10 | 🌐 TypeScript | 📅 2023-06-05 for related locked-bootloader approaches (Kaeru, Fenrir).
+> See the dedicated guide **[Root Without Unlocking the Bootloader](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/rooting-guides/root-without-unlocking-bootloader.md)** for what GhostLock can and can't do, device support, and every app, exploit port, and research project. Also see [Bootloader Mods & Temporary Root Solutions](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/rooting-guides/temporary-root-solutions.md) for related locked-bootloader approaches (Kaeru, Fenrir).
 
 ## Module Managers
 
@@ -370,7 +370,7 @@ Exploits like **GhostLock (CVE-2026-43499)** - a 15-year-old Linux kernel bug - 
 * **[LSPosed](https://lsposed.zip)** - A Riru / Zygisk module that provides an ART hooking framework delivering consistent APIs with the OG Xposed, leveraging the LSPlant hooking framework. `Proprietary`
 
 > \[!TIP]
-> See our [LSPosed installation guide](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/rooting-guides/lsposed-guide.md) ⭐ 20,211 | 🐛 10 | 🌐 TypeScript | 📅 2023-06-05 for setup instructions.
+> See our [LSPosed installation guide](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/rooting-guides/lsposed-guide.md) for setup instructions.
 
 ## Zygisk
 
@@ -645,7 +645,7 @@ Magisk/KernelSU/LSPosed modules are listed together per topic.
 
 > \[!TIP]
 >
-> Check out our **[Zygisk Detach Guide ↗](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/general-guides/stop-android-app-auto-updates-play-store.md) ⭐ 20,211 | 🐛 10 | 🌐 TypeScript | 📅 2023-06-05**
+> Check out our **[Zygisk Detach Guide ↗](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/general-guides/stop-android-app-auto-updates-play-store.md)**
 
 ## Permissions & AppOps
 
@@ -655,7 +655,7 @@ Magisk/KernelSU/LSPosed modules are listed together per topic.
 * **[Permission Ruler](https://play.google.com/store/apps/details?id=com.stefanosiano.permissionruler\&hl=en)** - Automatically manages app permissions when the screen is off for enhanced privacy. `Proprietary`
 
 > \[!TIP]
-> Check out [Firewall Tools](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/security.md) ⭐ 20,211 | 🐛 10 | 🌐 TypeScript | 📅 2023-06-05 for network control of apps
+> Check out [Firewall Tools](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/security.md) for network control of apps
 
 ## System Information & Diagnostics
 
@@ -679,7 +679,7 @@ optimization**, charging control and task & process management.
 <div class="app-search-content">
 
 > \[!TIP]
-> For gaming-specific tweaks, see [Gaming](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/gaming.md) ⭐ 20,211 | 🐛 10 | 🌐 TypeScript | 📅 2023-06-05. For CPU/GPU management, see [Kernel Management](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/performance.md) ⭐ 20,211 | 🐛 10 | 🌐 TypeScript | 📅 2023-06-05. For memory optimization, check [Memory Management](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/performance.md) ⭐ 20,211 | 🐛 10 | 🌐 TypeScript | 📅 2023-06-05.
+> For gaming-specific tweaks, see [Gaming](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/gaming.md). For CPU/GPU management, see [Kernel Management](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/performance.md). For memory optimization, check [Memory Management](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/performance.md).
 
 ## Performance Optimization
 
@@ -742,7 +742,7 @@ optimization**, charging control and task & process management.
 * **[SaverTuner](https://codeberg.org/s1m/savertuner)** - Allows you to take advantage of this built-in battery saver. You can now set different profiles that save the battery more or less aggressively. [Does not work on Xiaomi](https://codeberg.org/s1m/savertuner/issues/98#issuecomment-5777054). `FOSS` | [🌱](https://f-droid.org/packages/s1m.savertuner/)
 
 > \[!TIP]
-> For privacy benefits of reducing Google Services activity, also see [privacy tools](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/privacy.md) ⭐ 20,211 | 🐛 10 | 🌐 TypeScript | 📅 2023-06-05.
+> For privacy benefits of reducing Google Services activity, also see [privacy tools](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/privacy.md).
 
 ## Charging & Power
 
@@ -770,8 +770,8 @@ other tools for improving privacy and controlling data access: hiding private fi
 tracking, spoofing your device identity or location, and isolating apps from your data.
 
 > \[!TIP]
-> Related: [Security](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/apps-and-modules/security.md) ⭐ 20,211 | 🐛 10 | 🌐 TypeScript | 📅 2023-06-05 tools and [Ad Blocking](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/apps-and-modules/ad-blocking.md) ⭐ 20,211 | 🐛 10 | 🌐 TypeScript | 📅 2023-06-05
-> stop trackers at the network level. See the [Glossary](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/apps-and-modules) ⭐ 20,211 | 🐛 10 | 🌐 TypeScript | 📅 2023-06-05 for badge meanings.
+> Related: [Security](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/apps-and-modules/security.md) tools and [Ad Blocking](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/apps-and-modules/ad-blocking.md)
+> stop trackers at the network level. See the [Glossary](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/apps-and-modules) for badge meanings.
 
 <ClientOnly>
   <AppSearch />
@@ -835,8 +835,8 @@ tracking, spoofing your device identity or location, and isolating apps from you
 firewalls for hardening your device, controlling which apps can reach the network, and auditing what runs on it.
 
 > \[!TIP]
-> Related: [Privacy](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/apps-and-modules/privacy.md) ⭐ 20,211 | 🐛 10 | 🌐 TypeScript | 📅 2023-06-05 covers data-access control and spoofing;
-> [Networking](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/apps-and-modules/networking.md) ⭐ 20,211 | 🐛 10 | 🌐 TypeScript | 📅 2023-06-05 covers VPNs, proxies and connection tools.
+> Related: [Privacy](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/apps-and-modules/privacy.md) covers data-access control and spoofing;
+> [Networking](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/apps-and-modules/networking.md) covers VPNs, proxies and connection tools.
 
 <ClientOnly>
   <AppSearch />
@@ -892,7 +892,7 @@ firewalls for hardening your device, controlling which apps can reach the networ
 hosts/DNS-based tools that block ads, trackers and malware system-wide, in every app and browser.
 
 > \[!TIP]
-> Start with our [Complete Android Ad Blocking Tutorial](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/general-guides/android-adblocking.md) ⭐ 20,211 | 🐛 10 | 🌐 TypeScript | 📅 2023-06-05, then pick the
+> Start with our [Complete Android Ad Blocking Tutorial](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/general-guides/android-adblocking.md), then pick the
 > tools below. Apps and modules are combined here because they all solve the same problem - blocking ads.
 
 <ClientOnly>
@@ -923,8 +923,8 @@ hosts/DNS-based tools that block ads, trackers and malware system-wide, in every
 * **[Blokada](https://blokada.org/)** - Advanced ad blocker with VPN functionality. `Proprietary`
 
 > \[!TIP]
-> **Related Guide**: [Complete Android Ad Blocking Tutorial ↗](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/general-guides/android-adblocking.md) ⭐ 20,211 | 🐛 10 | 🌐 TypeScript | 📅 2023-06-05\
-> For network-level blocking, also check [DNS Tools](#dns-network-filtering) and [Firewall Tools](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/security.md) ⭐ 20,211 | 🐛 10 | 🌐 TypeScript | 📅 2023-06-05
+> **Related Guide**: [Complete Android Ad Blocking Tutorial ↗](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/general-guides/android-adblocking.md)\
+> For network-level blocking, also check [DNS Tools](#dns-network-filtering) and [Firewall Tools](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/security.md)
 
 ## DNS & Network Filtering
 
@@ -935,7 +935,7 @@ hosts/DNS-based tools that block ads, trackers and malware system-wide, in every
 * **[Pi-hole-for-Android](https://github.com/DesktopECHO/Pi-hole-for-Android) ⭐ 16,910 | 🐛 9 | 📅 2021-07-06** - Pi-hole/Unbound Raspbian APK installer for Android 5.0+ devices. `FOSS`
 
 > \[!TIP]
-> For ad blocking at network level, combine these tools with our [ad blockers](#ad-tracker-blocking). See the [ad blocking guide](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/general-guides/android-adblocking.md) ⭐ 20,211 | 🐛 10 | 🌐 TypeScript | 📅 2023-06-05.
+> For ad blocking at network level, combine these tools with our [ad blockers](#ad-tracker-blocking). See the [ad blocking guide](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/general-guides/android-adblocking.md).
 
 </div>
 
@@ -1081,7 +1081,7 @@ that change app behavior. Root (or LSPosed) is required for most entries.
 * **[Zalo Patch](https://github.com/amarinne/zalo-patch) ⭐ 33,073 | 🐛 72 | 🌐 Go | 📅 2023-10-21** - Zalo customization module for LSPosed. `FOSS` `[LSP]`
 
 > \[!TIP]
-> Also check out [App Patchers section](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/app-modifications.md) ⭐ 20,211 | 🐛 10 | 🌐 TypeScript | 📅 2023-06-05
+> Also check out [App Patchers section](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/app-modifications.md)
 
 ## Browser Mods
 
@@ -1126,10 +1126,10 @@ privacy, battery life and performance.
 ## Debloating Apps & Modules
 
 > \[!TIP]
-> **Related Guide**: [Complete Debloating Tutorial](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/general-guides/android-apps-debloating.md) ⭐ 20,211 | 🐛 10 | 🌐 TypeScript | 📅 2023-06-05
+> **Related Guide**: [Complete Debloating Tutorial](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/general-guides/android-apps-debloating.md)
 
 * **[System App Nuker](https://github.com/ChiseWaguri/systemapp_nuker) ⭐ 49,990 | 🐛 89 | 📅 2021-04-17** - A module to debloat system apps with WebUI Interface. `FOSS` `[M]`
-* **[⭐ Canta](https://github.com/samolego/Canta) ⭐ 34,851 | 🐛 50 | 🌐 TypeScript | 📅 2021-09-03** - Uninstall any app without root using [Shizuku](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/development.md) ⭐ 20,211 | 🐛 10 | 🌐 TypeScript | 📅 2023-06-05. `FOSS` | [🌱](https://f-droid.org/en/packages/io.github.samolego.canta/) | [▶️](https://play.google.com/store/apps/details?id=io.github.samolego.canta)
+* **[⭐ Canta](https://github.com/samolego/Canta) ⭐ 34,851 | 🐛 50 | 🌐 TypeScript | 📅 2021-09-03** - Uninstall any app without root using [Shizuku](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/development.md). `FOSS` | [🌱](https://f-droid.org/en/packages/io.github.samolego.canta/) | [▶️](https://play.google.com/store/apps/details?id=io.github.samolego.canta)
 * **[Scalpel](https://github.com/Enginex0/Scalpel) ⭐ 22,373 | 🐛 72 | 🌐 Go | 📅 2022-12-25** - Precision Debloat & Systemize for Rooted Android. `FOSS` `[M]` `[K]`
 * **[De-Bloater](https://github.com/sunilpaulmathew/De-Bloater) ⚠️ Archived** - An application using the power of Magisk to debloat unwanted system apps!. `FOSS` | [🌱](https://f-droid.org/packages/com.sunilpaulmathew.debloater) | [▶️](https://play.google.com/store/apps/details?id=com.sunilpaulmathew.debloater)
 * **[EXA System App Remover](https://play.google.com/store/apps/details?id=exa.free.saux)** - Remove Bloatware, clear memory and speed up your phone now by uninstalling unused system apps. `Proprietary`
@@ -1143,7 +1143,7 @@ privacy, battery life and performance.
 Magisk/KernelSU modules, and file & partition tools for power users.
 
 > \[!TIP]
-> Related: [Backup & Restore](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/apps-and-modules/backup.md) ⭐ 20,211 | 🐛 10 | 🌐 TypeScript | 📅 2023-06-05 protects your files and app data before you clean or flash anything.
+> Related: [Backup & Restore](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/apps-and-modules/backup.md) protects your files and app data before you clean or flash anything.
 
 <ClientOnly>
   <AppSearch />
@@ -1195,8 +1195,8 @@ local backup solutions, partition images and data recovery tools. Back up before
 unlocking - always.
 
 > \[!TIP]
-> See [Backup before you start](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/rooting-guides) ⭐ 20,211 | 🐛 10 | 🌐 TypeScript | 📅 2023-06-05 in the rooting guides, and
-> [File Management](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/apps-and-modules/file-management.md) ⭐ 20,211 | 🐛 10 | 🌐 TypeScript | 📅 2023-06-05 for everyday file tools.
+> See [Backup before you start](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/rooting-guides) in the rooting guides, and
+> [File Management](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/apps-and-modules/file-management.md) for everyday file tools.
 
 <ClientOnly>
   <AppSearch />
@@ -1228,7 +1228,7 @@ Magisk/KernelSU/LSPosed modules.
 <div class="app-search-content">
 
 > \[!TIP]
-> Must check [ROM & OEM customization](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/system.md) ⭐ 20,211 | 🐛 10 | 🌐 TypeScript | 📅 2023-06-05 section for more theming and customization options.
+> Must check [ROM & OEM customization](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/system.md) section for more theming and customization options.
 
 ## Themes & Visual Mods
 
@@ -1369,8 +1369,8 @@ regardless of whether they are apps, Magisk modules, KernelSU modules or LSPosed
 more), network diagnostics, Wi-Fi & mobile data utilities and Bluetooth & NFC apps and modules.
 
 > \[!TIP]
-> Related: [Ad Blocking](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/apps-and-modules/ad-blocking.md) ⭐ 20,211 | 🐛 10 | 🌐 TypeScript | 📅 2023-06-05 covers DNS-level filtering;
-> [Security](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/apps-and-modules/security.md) ⭐ 20,211 | 🐛 10 | 🌐 TypeScript | 📅 2023-06-05 covers per-app firewalls.
+> Related: [Ad Blocking](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/apps-and-modules/ad-blocking.md) covers DNS-level filtering;
+> [Security](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/apps-and-modules/security.md) covers per-app firewalls.
 
 <ClientOnly>
   <AppSearch />
@@ -1436,7 +1436,7 @@ game-specific tools, mixing root apps, Magisk/KernelSU modules and LSPosed modul
 <div class="app-search-content">
 
 > \[!TIP]
-> For overall device performance tuning, see [Performance and Optimization](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/performance.md) ⭐ 20,211 | 🐛 10 | 🌐 TypeScript | 📅 2023-06-05. For CPU/GPU management, see [Kernel Management](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/performance.md) ⭐ 20,211 | 🐛 10 | 🌐 TypeScript | 📅 2023-06-05.
+> For overall device performance tuning, see [Performance and Optimization](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/performance.md). For CPU/GPU management, see [Kernel Management](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/performance.md).
 
 ## Gaming Optimization
 
@@ -1578,7 +1578,7 @@ tools, sharing & intent tweaks, communication helpers and all-in-one power-user 
 * **[System Tools Android](https://play.google.com/store/apps/details?id=com.redhome.sta)** - A system utility suite with many small tools for finer system work, including root utilities. `Proprietary`
 
 > \[!TIP]
-> If you are looking for classic root managers and module managers, start with [Root Management](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/root-management.md) ⭐ 20,211 | 🐛 10 | 🌐 TypeScript | 📅 2023-06-05. If you need shell commands or Linux tooling, see [Terminal and Shell Tools](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/development.md) ⭐ 20,211 | 🐛 10 | 🌐 TypeScript | 📅 2023-06-05.
+> If you are looking for classic root managers and module managers, start with [Root Management](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/root-management.md). If you need shell commands or Linux tooling, see [Terminal and Shell Tools](https://github.com/awesome-android-root/awesome-android-root/blob/HEAD/docs/apps-and-modules/development.md).
 
 </div>
 

@@ -84,7 +84,7 @@ A bare details block with no summary is ignored, and this paragraph stays out of
 
 > [![Status](https://example.com/badge.svg)](https://github.com/example/image-only-card) ⭐ 33,362 | 🐛 61 | 🌐 JavaScript | 📅 2023-01-05
 
-> [Back to the Top](https://github.com/example/details-cards#top) ⚠️ Archived
+> [Back to the Top](https://github.com/example/details-cards#top)
 
 ***
 

@@ -6,18 +6,18 @@ Every entry face's description carries its annotation: leading badge clusters (`
 
 ## Current state
 
-Two defects merged from the index (owner: fix all three found-work items, 2026-10-03; items 1 and 2 are the same subject):
+Implemented on branch `fix/entry-annotation`, both halves in `packages/core/src/markdown.ts`:
 
-1. Leading badge clusters survive in entry descriptions — best-of-python-dev's hidden rows emit `(🥈27 · ⭐ 4.5K · 💀) - Let your Python tests travel through time.` and its cross-ref rows `( ⭐ 2.6K · 💤) - Testing libraries…`. `stripBadgeClusters` runs on summary prose only.
-2. Table annotation cells never reach item descriptions — android-root's category tables carry real annotation in a non-link cell, but some rows' items show the `owner/name` fallback or residue instead.
+1. The badge-cluster strip moved into `entryDescription` (the details branch's own pre-strip deleted); the leading-noise strip runs only behind a stripped cluster, so `-equivalent` and `:bird:` table descriptions keep their leading characters and `()` in prose stays (an empty pair is not a cluster).
+2. The investigation overturned the entry's framing: the failing rows were not losing cells — they were borrowing the source repo's identity. android-root's index and Starter Kit link the source's own doc pages (`root-management.md` → rewritten to `github.com/<source>/blob/HEAD/…`), so 21 navigation rows and every MiXplorer-class website row emitted items for `awesome-android-root/awesome-android-root`. Links into the source repository are now excluded from the target fetch, and every emission path reads them as dead links: no item, children lifted, the row markdown-only (the G1a contract for its non-repo rows).
 
-Nothing built yet.
+Census of the golden transitions: self-repo items removed across 9 fixtures (android-root 21, copilot-agents 36, cakephp 4, R/cl/cpp/frontend-gis/quarto/static-analysis 1-2 each — every removal's repo equals its fixture's source); badge and year clusters stripped in best-of-python-dev, cl (`(2025) - Hand-written bindings…` → the sentence), regex; raw markdown no longer badges the registry's own links. First cut of the strip mangled `()` and `:bird:`/`-equivalent` leads — the golden census caught both before landing.
 
 ## Next step
 
-Branch `fix/entry-annotation`; investigate the table-cell loss on the android-root fixture (find the failing row shape, map it to `processTableRows`), then move the badge-cluster strip into `entryDescription` (dropping the details branch's own pre-strip — one way), regenerate goldens, census the moved descriptions.
+Owner: review and merge the `fix/entry-annotation` PR; close this thread when it lands.
 
 ## Design
 
-- The badge strip belongs in `entryDescription`, before the degeneracy judgment: a cluster-only base becomes empty and falls to `owner/name`; a cluster-prefixed sentence keeps its sentence. The details-summary branch's own `stripBadgeClusters` call goes — the shared seam is the only stripper.
-- The table fix's shape is not yet known; it is derived from the failing android-root rows, not fitted to the current code's assumptions.
+- Links into the source repository are navigation, never entry identity. Implemented at the fetch seam (the source repo never enters the target map) rather than by threading a skip predicate through every resolver: each emission path already treats an unresolved own link as dead, and the gates prune the emptied sections.
+- The badge strip stays summary-shaped (parenthesized, symbols/digits/size letters, at least one character); a parenthetical with any other word is prose.

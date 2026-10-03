@@ -101,7 +101,7 @@ A deeper heading whose only link is an image badge keeps the sole-link item read
 
 An empty-label anchor link as the sole link of a deeper heading carries the identity.
 
-> [Back to the Top](https://github.com/example/link-headings#top) ⭐ 26,123 | 🐛 22 | 🌐 Go | 📅 2023-09-01
+> [Back to the Top](https://github.com/example/link-headings#top)
 
 ***
 

@@ -450,7 +450,26 @@ export async function processMarkdownContent(
 
   const githubUrls = collectGitHubLinks(tree);
 
-  const repoInfoMap = await fetchTargetData(githubUrls, repos);
+  // Links into the source repository itself are navigation — its doc pages,
+  // its contributing links — never entries. android-root's index links every
+  // category page, and each of those links would borrow the source repo's
+  // identity and emit an item for it. Excluding the source from the target
+  // fetch leaves every emission path reading such a link as a dead one: no
+  // item, children lifted, the row left in markdown.
+  const targetUrls =
+    sourceRepository &&
+    new Set(
+      [...githubUrls].filter(url => {
+        const id = parseGitHubUrl(url);
+        return !(
+          id &&
+          `${id.owner}/${id.repo}`.toLowerCase() ===
+            `${sourceRepository.owner}/${sourceRepository.repo}`.toLowerCase()
+        );
+      }),
+    );
+
+  const repoInfoMap = await fetchTargetData(targetUrls ?? githubUrls, repos);
 
   const firstSeen = firstSeenFor(previousJson, now);
   const {
@@ -1061,19 +1080,25 @@ function entryTitle(
 }
 
 // Description with the fallback every entry source shares: the split's own
-// trailing prose when it says something, else — for a live repo link —
-// owner/name. The own link's label is never consulted: in the corpus it
-// only ever echoes the title back (":tada: Doom" already says "Doom"). A
-// degenerate base with no live repo link (a group) keeps its text: nothing
-// better exists.
+// trailing prose when it says something — minus a leading badge cluster —
+// else — for a live repo link — owner/name. The own link's label is never
+// consulted: in the corpus it only ever echoes the title back (":tada:
+// Doom" already says "Doom"). A degenerate base with no live repo link (a
+// group) keeps its text: nothing better exists.
 function entryDescription(
   base: string,
   repoInfo: null | RepoInfoDetails,
 ): string {
-  if (!isDegenerateDescription(base)) {
-    return base;
+  // The noise strip runs only behind a stripped cluster: a bare leading
+  // dash or colon can be a word's own (the table paths never noise-stripped
+  // their cells, and "-equivalent" / ":bird:" descriptions are real).
+  const withoutBadges = stripBadgeClusters(base);
+  const stripped =
+    withoutBadges === base ? base : stripLeadingNoise(withoutBadges);
+  if (!isDegenerateDescription(stripped)) {
+    return stripped;
   }
-  return repoInfo ? `${repoInfo.owner}/${repoInfo.repo}` : base;
+  return repoInfo ? `${repoInfo.owner}/${repoInfo.repo}` : stripped;
 }
 
 function processTableRows(
@@ -1419,8 +1444,9 @@ function detailsSummaryTitle(htmlValue: string): null | string {
 
 // A badge cluster from a generated summary: a parenthesized run of medals,
 // counts and size suffixes (🥈31 · ⭐ 1.9K) — symbols, digits and punctuation,
-// no words. A parenthetical with any other letter (an aside in prose) stays.
-const BADGE_CLUSTER = /^\([\p{P}\p{S}\p{N}\sKMG]*\)\s*/u;
+// no words, at least one of them. A parenthetical with any other letter (an
+// aside in prose) or an empty pair () stays.
+const BADGE_CLUSTER = /^\([\p{P}\p{S}\p{N}\sKMG]+\)\s*/u;
 
 function stripBadgeClusters(text: string): string {
   let out = text.trimStart();
@@ -1750,10 +1776,7 @@ function processTree(
         if (promoted && gateForSection(stack[0])) {
           stack.push({
             children: [],
-            description: entryDescription(
-              stripLeadingNoise(stripBadgeClusters(summary.prose)),
-              promoted.repoInfo,
-            ),
+            description: entryDescription(summary.prose, promoted.repoInfo),
             headingDepth: joinDepth,
             headingIndex: i,
             kind: 'item',
