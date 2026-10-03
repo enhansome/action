@@ -57,5 +57,9 @@
     "fn": "parseOwnerRepo",
     "input": "owner/repo/extra",
     "expected": null
-  }
+  },
+  { "fn": "parseGitHubUrl", "input": "https://github.com/karpathy/neuraltalk﻿", "expected": { "owner": "karpathy", "repo": "neuraltalk" } },
+  { "fn": "parseGitHubUrl", "input": "https://github.com/karpathy/neuraltalk%EF%BB%BF", "expected": { "owner": "karpathy", "repo": "neuraltalk" } },
+  { "fn": "parseGitHubUrl", "input": "https://github.com/karpathy/neuraltalk​", "expected": { "owner": "karpathy", "repo": "neuraltalk" } },
+  { "fn": "parseOwnerRepo", "input": "karpathy/neuraltalk﻿", "expected": { "owner": "karpathy", "repo": "neuraltalk" } }
 ]

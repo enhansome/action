@@ -6,10 +6,8 @@ A repo identity parsed from a URL ignores zero-width characters, so awesome-comp
 
 ## Current state
 
-Found in the degenerate-descriptions census (PR #26 review): the README's href carries a URL-encoded BOM (`%EF%BB%BF` → U+FEFF) on the repo segment, and it survives into `repo_info.repo`, the title/description fallbacks, and the emitted repo name.
-
-Nothing built yet.
+Merged to main as PR #<N> — implemented on branch `fix/zero-width-urls`: `stripZeroWidth` in `packages/core/src/github.ts` removes BOM/ZWSP/ZWNJ/ZWJ/LRM-RLM/word-joiner (raw and percent-encoded) from owner and repo in `parseGitHubUrl` and `parseOwnerRepo`. Four cases in `fixtures/url-parsing.json` (raw BOM, encoded BOM, ZWSP, config-input BOM). The awesome-computer-vision golden moved on the NeuralTalk row only: repo `karpathy/neuraltalk`, description fallback clean, offline repo info re-derived from the clean identity.
 
 ## Next step
 
-Branch `fix/zero-width-urls`; strip zero-width characters (BOM, ZWSP, ZWNJ, ZWJ, word joiner) from owner and repo when `parseGitHubUrl` builds the identity, regenerate goldens, confirm the awesome-computer-vision row.
+None — closed on merge.
