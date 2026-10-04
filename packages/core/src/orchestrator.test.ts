@@ -77,11 +77,12 @@ describe('Orchestrator: enhance()', () => {
       });
 
       // First arg is the injected Octokit client (a stub); assert the
-      // meaningful owner/repo args.
+      // meaningful owner/repo args and the item path's fork resolution.
       expect(github.getRepoInfo).toHaveBeenCalledWith(
         expect.anything(),
         'test-user',
         'test-repo',
+        { resolveForks: true },
       );
       expect(finalContent).toBe(expectedContent);
     });

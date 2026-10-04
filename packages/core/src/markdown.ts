@@ -191,7 +191,9 @@ function createRepoInfoLookup(token: string, log: Logger): RepoInfoLookup {
       const key = `${ref.owner.toLowerCase()}/${ref.repo.toLowerCase()}`;
       let pending = cache.get(key);
       if (!pending) {
-        pending = fetchRepoInfo(client, ref.owner, ref.repo);
+        pending = fetchRepoInfo(client, ref.owner, ref.repo, {
+          resolveForks: true,
+        });
         cache.set(key, pending);
       }
       return pending;

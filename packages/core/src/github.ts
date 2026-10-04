@@ -180,14 +180,25 @@ export function makeOctokit(
     : new HardenedOctokit(options);
 }
 
-export async function getRepoInfo(
-  octokit: GithubClient,
-  owner: string,
-  repo: string,
-): Promise<RepoInfoDetails> {
-  octokit.log.debug(`Fetching repository info for ${owner}/${repo}`);
-  const { data } = await octokit.rest.repos.get({ owner, repo });
+// The fields the mapper below reads. A structural subset of the repos.get
+// response, so the `source` object GitHub embeds on fork responses (present in
+// the payload, absent from the installed openapi types) flows through it too.
+type RepoApiObject = {
+  archived: boolean;
+  description?: null | string;
+  homepage?: null | string;
+  id: number;
+  language: null | string;
+  license?: { spdx_id: null | string } | null;
+  name: string;
+  open_issues_count: number;
+  owner: { login: string };
+  pushed_at: null | string;
+  stargazers_count: number;
+  topics?: string[];
+};
 
+function toRepoInfoDetails(data: RepoApiObject): RepoInfoDetails {
   return {
     archived: data.archived,
     description: data.description ?? null,
@@ -202,6 +213,30 @@ export async function getRepoInfo(
     stargazers_count: data.stargazers_count,
     topics: data.topics ?? [],
   };
+}
+
+/**
+ * A registry link names a project, not a copy: when a project renames and a
+ * fork re-takes the dead name, the link still means the project, and GitHub
+ * embeds the fork network's root on `source` in this same response. Item
+ * fetchers pass `resolveForks` to identity-map onto that root — the published
+ * fork graph, never a mapping we maintain. Callers describing the registry
+ * itself omit it: a forked list is its own registry. A fork whose response
+ * carries no source (deleted root) keeps its own identity.
+ */
+export async function getRepoInfo(
+  octokit: GithubClient,
+  owner: string,
+  repo: string,
+  { resolveForks = false }: { resolveForks?: boolean } = {},
+): Promise<RepoInfoDetails> {
+  octokit.log.debug(`Fetching repository info for ${owner}/${repo}`);
+  const { data } = await octokit.rest.repos.get({ owner, repo });
+
+  const source = (data as { source?: RepoApiObject }).source;
+  return toRepoInfoDetails(
+    resolveForks && data.fork && source ? source : data,
+  );
 }
 
 /**

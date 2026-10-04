@@ -278,6 +278,75 @@ describe('github.ts', () => {
       expect(log.warn).not.toHaveBeenCalled();
     });
 
+    describe('fork resolution', () => {
+      // astaxie/beego is the real dead-name case this guards: the project
+      // renamed to beego/beego, a fork re-took the old name, and GitHub now
+      // answers it with a fork whose embedded source is the live project.
+      const sourcePayload = {
+        archived: false,
+        description: 'beego is an open-source web framework',
+        id: 3577919,
+        language: 'Go',
+        license: { spdx_id: 'Apache-2.0' },
+        name: 'beego',
+        open_issues_count: 30,
+        owner: { login: 'beego' },
+        pushed_at: '2026-09-23T01:42:16Z',
+        stargazers_count: 32428,
+        topics: ['go', 'web-framework'],
+      };
+      const forkPayload = {
+        ...apiPayload,
+        fork: true,
+        source: sourcePayload,
+      };
+
+      it('resolves a fork to its embedded source when resolveForks is set', async () => {
+        const client = mockOctokit({ 'repos.get': () => forkPayload });
+
+        const result = await getRepoInfo(client, 'astaxie', 'beego', {
+          resolveForks: true,
+        });
+
+        expect(result).toEqual({
+          archived: false,
+          description: 'beego is an open-source web framework',
+          homepage: null,
+          id: 3577919,
+          language: 'Go',
+          license: 'Apache-2.0',
+          open_issues_count: 30,
+          owner: 'beego',
+          pushed_at: '2026-09-23T01:42:16Z',
+          repo: 'beego',
+          stargazers_count: 32428,
+          topics: ['go', 'web-framework'],
+        });
+      });
+
+      it('keeps the fetched identity when resolveForks is unset (registry root path)', async () => {
+        const client = mockOctokit({ 'repos.get': () => forkPayload });
+
+        const result = await getRepoInfo(client, 'astaxie', 'beego');
+
+        expect(result.id).toBe(mockRepoInfo.id);
+        expect(result.owner).toBe('test-owner');
+        expect(result.repo).toBe('test-repo');
+      });
+
+      it('falls back to the fork itself when the response carries no source', async () => {
+        const client = mockOctokit({
+          'repos.get': () => ({ ...apiPayload, fork: true }),
+        });
+
+        const result = await getRepoInfo(client, owner, repo, {
+          resolveForks: true,
+        });
+
+        expect(result.id).toBe(mockRepoInfo.id);
+      });
+    });
+
     it('should fetch real repository info from GitHub API for a sanity check', async () => {
       const realToken = process.env.GITHUB_TOKEN ?? '';
       if (!realToken) {
