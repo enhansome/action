@@ -225,22 +225,34 @@ export async function getRepoInfoOrNull(
   }
 }
 
+async function fetchBlobText(
+  octokit: GithubClient,
+  owner: string,
+  repo: string,
+  fileSha: string,
+): Promise<string> {
+  const { data } = await octokit.rest.git.getBlob({
+    file_sha: fileSha,
+    owner,
+    repo,
+  });
+  const bytes = Buffer.from(data.content, 'base64');
+  if (bytes.length !== data.size) {
+    throw new Error(
+      `Blob ${owner}/${repo}@${fileSha} decoded to ${bytes.length} bytes but the blob reports ${data.size} bytes`,
+    );
+  }
+  return bytes.toString('utf-8');
+}
+
 export async function getReadme(
   octokit: GithubClient,
   owner: string,
   repo: string,
-  format: 'html' | 'raw' = 'raw',
 ): Promise<string> {
-  octokit.log.debug(`Fetching ${format} README for ${owner}/${repo}`);
-  const response = await octokit.rest.repos.getReadme({
-    mediaType: { format },
-    owner,
-    repo,
-  });
-
-  // With `raw`/`html` media types the body is a string, but the generated types
-  // still describe the JSON shape - cast to string.
-  return response.data as unknown as string;
+  octokit.log.debug(`Fetching README for ${owner}/${repo}`);
+  const { data } = await octokit.rest.repos.getReadme({ owner, repo });
+  return fetchBlobText(octokit, owner, repo, data.sha);
 }
 
 /**
@@ -258,12 +270,14 @@ export async function getRepoFileOrNull(
   try {
     octokit.log.debug(`Fetching ${owner}/${repo}/${path}`);
     const { data } = await octokit.rest.repos.getContent({
-      mediaType: { format: 'raw' },
       owner,
       path,
       repo,
     });
-    return data as unknown as string;
+    if (Array.isArray(data)) {
+      throw new Error(`${owner}/${repo}/${path} resolved to a directory`);
+    }
+    return await fetchBlobText(octokit, owner, repo, data.sha);
   } catch (error: unknown) {
     octokit.log.warn(
       `Failed to fetch ${owner}/${repo}/${path}: ${formatRequestError(error)}`,
