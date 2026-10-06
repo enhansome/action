@@ -7,6 +7,7 @@ import {
   createRateLimitHandler,
   getLatestCommitSha,
   getReadme,
+  getRepoFileOrNull,
   getRepoInfo,
   getRepoInfoOrNull,
   GithubClient,
@@ -48,8 +49,12 @@ function mockOctokit(handlers: Record<string, Handler>): GithubClient {
   const client = {
     log,
     rest: {
+      git: {
+        getBlob: createMethod('git', 'getBlob'),
+      },
       repos: {
         get: createMethod('repos', 'get'),
+        getContent: createMethod('repos', 'getContent'),
         getReadme: createMethod('repos', 'getReadme'),
         listCommits: createMethod('repos', 'listCommits'),
       },
@@ -71,6 +76,29 @@ function notFound(label: string): RequestError {
     },
   });
 }
+
+// --- Blob-route fixtures (generated in-test) -------------------------------
+// The raw media routes cap near 512,000 bytes; the blob route (JSON resolve
+// for `sha`, then `git.getBlob`) is the uncapped replacement.
+
+const FILE_SHA = 'e2b0f1a9c8d73645a1b2c3d4e5f60718293a4b5c';
+const RAW_CAP_BYTES = 512_002;
+
+// Blob base64 arrives wrapped in 60-column lines; decoders skip the newlines.
+function blobResponse(text: string, size = Buffer.byteLength(text, 'utf8')) {
+  const base64 = Buffer.from(text, 'utf8').toString('base64');
+  return { content: base64.replace(/(.{60})/g, '$1\n'), size };
+}
+
+const multibyteLine = '- 📦 multi-byté ünïcödé — émoji ✨ line\n';
+const repeats = Math.ceil(600_000 / Buffer.byteLength(multibyteLine));
+const wholeReadme = `# Rëadme\n\n${multibyteLine.repeat(repeats)}`;
+const wholeBytes = Buffer.byteLength(wholeReadme, 'utf8');
+// The capped fetch's shape: a byte-prefix, possibly cut mid character.
+const truncatedReadme = Buffer.from(wholeReadme, 'utf8')
+  .subarray(0, RAW_CAP_BYTES)
+  .toString('utf8');
+const truncatedBytes = Buffer.byteLength(truncatedReadme, 'utf8');
 
 describe('github.ts', () => {
   beforeEach(() => {
@@ -310,17 +338,59 @@ describe('github.ts', () => {
     const repo = 'test-repo';
     const markdown = '# Awesome Things\n\n- item one\n';
 
-    it('should return the raw README markdown on success', async () => {
-      const getReadmeMock = vi.fn(() => markdown);
-      const client = mockOctokit({ 'repos.getReadme': getReadmeMock });
+    it('should return the README markdown fetched through the blob route', async () => {
+      const getReadmeMock = vi.fn(() => ({ name: 'README.md', sha: FILE_SHA }));
+      const getBlobMock = vi.fn(() => blobResponse(markdown));
+      const client = mockOctokit({
+        'git.getBlob': getBlobMock,
+        'repos.getReadme': getReadmeMock,
+      });
 
       const result = await getReadme(client, owner, repo);
 
       expect(result).toBe(markdown);
-      // Must request the raw media type so the body is the markdown text.
-      expect(getReadmeMock).toHaveBeenCalledWith(
-        expect.objectContaining({ mediaType: { format: 'raw' }, owner, repo }),
+      // The resolve sends no mediaType (the raw route is the defect); the blob
+      // fetch uses the sha that resolve returned.
+      expect(getReadmeMock).toHaveBeenCalledWith({ owner, repo });
+      expect(getBlobMock).toHaveBeenCalledWith(
+        expect.objectContaining({ file_sha: FILE_SHA }),
       );
+    });
+
+    it('should return a full-length multi-byte README whole', async () => {
+      const client = mockOctokit({
+        'git.getBlob': () => blobResponse(wholeReadme),
+        'repos.getReadme': () => ({ name: 'README.md', sha: FILE_SHA }),
+      });
+
+      const result = await getReadme(client, owner, repo);
+
+      expect(result).toBe(wholeReadme);
+    });
+
+    it('should reject when the blob decodes shorter than its declared size', async () => {
+      // Fixture contract: >512,000-byte multi-byte payload delivered as a
+      // byte-prefix of the declared whole — char count ≠ byte count, so a
+      // string-length guard reports different numbers than asserted here.
+      expect(wholeBytes).toBeGreaterThan(RAW_CAP_BYTES);
+      expect(truncatedBytes).toBeLessThan(wholeBytes);
+      expect(wholeReadme.length).toBeLessThan(wholeBytes);
+
+      const client = mockOctokit({
+        'git.getBlob': () => blobResponse(truncatedReadme, wholeBytes),
+        'repos.getReadme': () => ({ name: 'README.md', sha: FILE_SHA }),
+      });
+
+      let caught: unknown;
+      try {
+        await getReadme(client, owner, repo);
+      } catch (error) {
+        caught = error;
+      }
+
+      expect(caught).toBeInstanceOf(Error);
+      expect((caught as Error).message).toContain(String(truncatedBytes));
+      expect((caught as Error).message).toContain(String(wholeBytes));
     });
 
     it('should propagate the octokit error when the repo has no README (404)', async () => {
@@ -440,6 +510,37 @@ describe('github.ts', () => {
         expect.stringContaining(
           `Failed to fetch repo info for ${owner}/${repo}`,
         ),
+      );
+    });
+  });
+
+  describe('getRepoFileOrNull', () => {
+    const owner = 'test-owner';
+    const repo = 'test-repo';
+    const filePath = 'docs/ABOUT.md';
+
+    it('should return a full-length file whole through the blob route', async () => {
+      const client = mockOctokit({
+        'git.getBlob': () => blobResponse(wholeReadme),
+        'repos.getContent': () => ({ path: filePath, sha: FILE_SHA }),
+      });
+
+      const result = await getRepoFileOrNull(client, owner, repo, filePath);
+
+      expect(result).toBe(wholeReadme);
+    });
+
+    it('should return null and warn when the blob decodes shorter than its size', async () => {
+      const client = mockOctokit({
+        'git.getBlob': () => blobResponse(truncatedReadme, wholeBytes),
+        'repos.getContent': () => ({ path: filePath, sha: FILE_SHA }),
+      });
+
+      const result = await getRepoFileOrNull(client, owner, repo, filePath);
+
+      expect(result).toBeNull();
+      expect(log.warn).toHaveBeenCalledWith(
+        expect.stringContaining(String(truncatedBytes)),
       );
     });
   });
