@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.12.1](https://github.com/enhansome/action/compare/v1.12.0...v1.12.1) (2026-10-06)
+
+
+### Bug Fixes
+
+* fetch whole READMEs through git blobs so truncation is loud ([#33](https://github.com/enhansome/action/issues/33)) ([cdf51b4](https://github.com/enhansome/action/commit/cdf51b4a701e0348d09eaa56509c0f18c5193eb6))
+
 ## [1.12.0](https://github.com/enhansome/action/compare/v1.11.1...v1.12.0) (2026-10-03)
 
 
