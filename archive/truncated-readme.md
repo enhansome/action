@@ -6,11 +6,11 @@ The mirror never ingests a prefix silently: `getReadme` fetches the whole file t
 
 ## Current state
 
-Branch `truncated-readme`, tree clean. U2 landed at `8686531` (131/150 ceiling): route + guard + tests green — 44/44 scoped, full gate green immediately before commit, enforcement all-PASS, blind review no findings (guard mutation-tested live; mock shapes grounded in octokit's openapi types). U3 not started.
+Thread complete. U2 landed at `8686531` (route + guard + tests; enforcement 131/150 all-PASS; blind review no findings). U3 ritual run once, 2026-10-06T04:06:12Z, through the real exported path: bytes 1,364,081 (exact), sections 59 (exact), entries 4,173 by the fetch script's count — inside the plan's "about" band over the post-mortem's 4,086 (exact bytes and sections say the upstream file is identical to plan-time; the entry delta is counting method). PR opened to `main`.
 
 ## Next step
 
-Dispatch U3 (sonnet): run the Plan's pinned live ritual against `punkpeye/awesome-mcp-servers`, record the three numbers in the scratch ritual dir, then the orchestrator opens the PR to `main`.
+None — thread closes on the PR. The webapp re-mirror that consumes this fix is owned by `../webapp/AGENTS.md` ordering, out of this repo.
 
 ## Steps
 
@@ -18,7 +18,7 @@ Dispatch U3 (sonnet): run the Plan's pinned live ritual against `punkpeye/awesom
 |---|---|---|---|---|
 | U1 | Harden the plan | | | Every anchor the spec names is re-verified against the tree (`packages/core/src/github.ts` `getReadme`, `getRepoFileOrNull` — line ranges corrected if drifted); Steps rows for U2/U3 carry testable close criteria, per-unit reading lists, an enforcement inventory (protected assertions, forbidden idioms, line ceiling), and the pinned live-ritual invocation; committed docs-only. Evidence: blind review no findings, closed at `docs: harden the truncated-readme plan`. |
 | U2 | Fetch route + guard + tests | | | `getReadme` returns full content via a JSON resolve (`sha`) then `git.getBlob`; the surviving call surface `getReadme(octokit, owner, repo): Promise<string>` is unchanged for its only caller (`src/main.ts:56` needs no edit — the dead `format` param is deleted with the raw route it selected); decoded byte length ≠ blob `size` → `getReadme` throws (message carrying both byte counts), never returns a prefix; `getRepoFileOrNull` rides the same route, a mismatch landing in its existing catch → warn + null; `github.test.ts` serves a >512,000-byte multi-byte fixture truncated through the mocked fetch path asserting the throw (and null + warn for `getRepoFileOrNull`), and a full-length fixture asserting the content flows whole; diff within the Plan's line ceiling; full gate (`GITHUB_TOKEN="$(gh auth token)" make ci`) green immediately before handoff. Evidence: `8686531`, enforcement 131/150 all-PASS, blind review no findings. |
-| U3 | Live ritual + PR | | | The Plan's pinned ritual commands run the new exported fetch path against `punkpeye/awesome-mcp-servers` and record 1,364,081 bytes, 59 `^### ` sections, ~4,086 list entries (about — the parser's real count stands) in `progress/.scratch/truncated-readme/`; PR open with base `main` carrying U2's diff and citing the three numbers. |
+| U3 | Live ritual + PR | | | The Plan's pinned ritual commands run the new exported fetch path against `punkpeye/awesome-mcp-servers` and record 1,364,081 bytes, 59 `^### ` sections, ~4,086 list entries (about — the parser's real count stands) in `progress/.scratch/truncated-readme/`; PR open with base `main` carrying U2's diff and citing the three numbers. Evidence: stats recorded 2026-10-06T04:06:12Z — 1,364,081 bytes / 59 sections exact, 4,173 entries (about-band hit). |
 
 ## Plan
 
