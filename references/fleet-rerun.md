@@ -39,8 +39,9 @@ runs ~15 repos/min — 2.5 h; three run ~78/min — ~30 min):
 # per worker: sleep 0.$((RANDOM % 20)); gh api -X POST .../dispatches -f ref=main
 ```
 
-2026-10-03 (v1.12.0): fleet 2,345 · 2,345 × HTTP 204 · 0 dispatch errors ·
-~30 min. Queue drains ~40 min after the last dispatch.
+2026-10-06 (v1.12.1): 2,342 dispatched · 2,342 × HTTP 204 · 0 dispatch
+errors · 30 min (10:12–10:42 UTC). Queue drains ~40 min after the last
+dispatch.
 
 ## 4. Status pass — mind the API budget
 
@@ -49,15 +50,22 @@ via `xargs -P 4`. The wave plus a full pass plus log views can exhaust the
 5,000/hr core quota **and** trip the secondary (abuse) rate limiter — the
 secondary fires even with quota showing full, and retrying extends it.
 Stage the pass, sample the drained tail, and back off ~30 min on the first
-403 instead of retrying.
+403 instead of retrying. The block can outlast 35 min and covers the actions
+endpoints only — graphql and the repos/contents endpoints stay free, so a
+commit census (graphql, 50 repo aliases per call: an Enhansome commit on the
+default branch inside the wave window = the run pushed) tallies the
+remainder without touching the blocked path.
 
 ## 5. Failure families
 
 | family | signature | remedy |
 |---|---|---|
 | push race | `failed to push some refs` / `! [rejected] main -> main (non-fast-forward)` — a concurrent run pushed between checkout and push | re-dispatch; succeeds |
-| hollow-guard refusal | `Refusing to write a hollow mirror: … under 5% of the previous output's items` when the release legitimately removes items (v1.12's self-link exclusion: old trees that were 100% self-repo nav items — cms 69/69, iptv 37/37, package-manager 1/1) | investigate confirms the collapse is the release working → owner-consented baseline reset: commit `README.json` with `items: []` and metadata kept (`contents` PUT), re-dispatch → the honest tree writes |
+| hollow-guard refusal | `Refusing to write a hollow mirror: … under 5% of the previous output's items` when the source legitimately collapses (v1.12's self-link exclusion: old trees that were 100% self-repo nav items — cms 69/69, iptv 37/37, package-manager 1/1; v1.12.1: sources that archived or rescoped away from repo links) | investigate confirms the collapse is real → owner-consented baseline reset: commit `README.json` with `items: []` and metadata kept (`contents` PUT), re-dispatch → the honest tree writes |
+| corepack fetch flake | `corepack enable` dies fetching yarn — `Error when performing the request to https://repo.yarnpkg.com/…` / `ECONNRESET` — in setup, before the action runs | re-dispatch; succeeds |
 | dead upstream | source fetch 404s | nothing to fix; add to the exclusion list above |
 
-2026-10-03 final: 2,344 success · 1 dead upstream · 2 push races re-dispatched
-to green · 3 baseline resets (owner-consented) writing near-empty trees.
+2026-10-06 (v1.12.1) final: 2,340 green on first run · 1 push race and 4
+corepack flakes re-dispatched to green · 3 hollow refusals (upstreams
+archived or rescoped away from repo links) reset owner-consented, honest
+trees written · 2,345/2,345.
