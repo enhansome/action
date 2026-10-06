@@ -8,4 +8,4 @@ Comments explain *why*, not *what*.
 
 # Sibling repo
 
-`../webapp` is the same system; the cross-repo fix ordering (action before webapp) is owned by `../webapp/CLAUDE.md`.
+`../webapp` is the same system; the cross-repo fix ordering (action before webapp) is owned by `../webapp/AGENTS.md`.
